@@ -17,6 +17,7 @@
   let parlayStake = 25
   let recommendedLegCount = 4
   let selectedPicksByDay = {}
+  let expandedGameId = ''
 
   const labelForScore = (score) => {
     if (score >= 72) return 'High'
@@ -97,6 +98,14 @@
       : analysisPicks.filter((pick) => pick.league === activeFilter)
 
   $: analysisRankLookup = new Map(analysisPicks.map((pick) => [pick.gameId, pick.rank]))
+  $: signalLadderPicks = analysisPickPool.slice(0, 6)
+  $: modelCount = visibleGames.filter((game) => game.analysis.inputsUsed > 0).length
+  $: spotlightCount = visibleGames.filter((game) => game.spotlight).length
+  $: sourceCount = sources.length
+
+  $: if (!visibleGames.some((game) => game.id === expandedGameId)) {
+    expandedGameId = visibleGames[0]?.id ?? ''
+  }
 
   $: recommendationCounts =
     analysisPickPool.length >= PARLAY_MIN_LEGS
@@ -144,6 +153,8 @@
     activeSidebarTab = tabId
   }
 
+  const swingTextFor = (game) => game.swing || game.swingFactor || 'Swing factor still forming.'
+
   const selectDay = (dayId) => {
     if (!dayId || dayId === activeDayId) return
 
@@ -156,6 +167,10 @@
     const nextDay = slateDays[dayIndex + delta]
 
     if (nextDay) selectDay(nextDay.id)
+  }
+
+  const toggleExpandedGame = (gameId) => {
+    expandedGameId = expandedGameId === gameId ? '' : gameId
   }
 
   const toggleParlayPick = (gameId, participantId) => {
@@ -201,8 +216,8 @@
     savePicksForDay(
       activeDay.id,
       Object.fromEntries(
-      analysisPickPool.slice(0, legCount).map((pick) => [pick.gameId, pick.participantId])
-    )
+        analysisPickPool.slice(0, legCount).map((pick) => [pick.gameId, pick.participantId])
+      )
     )
     activeSidebarTab = 'ticket'
   }
@@ -216,144 +231,233 @@
   />
 </svelte:head>
 
-<div class="page-shell">
-  <section class="hero-panel">
-    <div class="hero-copy">
-      <p class="eyebrow">{activeDay.label} | {slateMeta.date}</p>
-      <h1>{slateMeta.title}</h1>
-      <p class="hero-text">{slateMeta.subtitle}</p>
+<div class="terminal-shell">
+  <header class="terminal-topbar">
+    <div class="terminal-brand">
+      <p class="eyebrow">Market Terminal</p>
+      <h1>Slate Desk</h1>
+      <p class="terminal-summary">{slateMeta.title} | {slateMeta.date} | {slateMeta.subtitle}</p>
     </div>
 
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <span class="hero-label">Total matchups</span>
-        <strong>{games.length}</strong>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-label">Stored days</span>
-        <strong>{slateDays.length}</strong>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-label">Confidence average</span>
-        <strong>{confidenceAverage}</strong>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-label">Volatility average</span>
-        <strong>{volatilityAverage}</strong>
-      </div>
-    </div>
-  </section>
-
-  <section class="daybook-panel" aria-label="Slate daybook">
-    <div class="daybook-header">
-      <div>
-        <p class="eyebrow">Slate Daybook</p>
-        <h2>Scroll Through Days</h2>
-        <p class="daybook-copy">
-          Keep each slate as its own day, then move backward and forward without rebuilding the
-          board from scratch.
-        </p>
-      </div>
-
-      <div class="daybook-actions">
-        <button type="button" disabled={!hasPreviousDay()} on:click={() => stepDay(-1)}>
-          Previous day
-        </button>
-        <button type="button" disabled={!hasNextDay()} on:click={() => stepDay(1)}>
-          Next day
-        </button>
-      </div>
-    </div>
-
-    <div class="daybook-row">
-      {#each slateDays as day}
-        <button
-          type="button"
-          class="daybook-chip"
-          class:active={activeDayId === day.id}
-          on:click={() => selectDay(day.id)}
-        >
-          <span class="daybook-chip-label">{day.label}</span>
-          <strong>{day.slateMeta.date}</strong>
-          <small>{day.summary.totalGames} games | {day.status}</small>
-        </button>
-      {/each}
-    </div>
-  </section>
-
-  <section class="summary-strip" aria-label="League summary">
-    {#each summaryCards as card}
-      <article class="summary-card">
-        <p class="summary-league">{card.league}</p>
-        <p class="summary-value">{card.total}</p>
-        <p class="summary-detail">{card.spotlightCount} spotlight reads</p>
+    <div class="terminal-state-strip">
+      <article class="state-chip">
+        <span>Day</span>
+        <strong>{activeDay.label}</strong>
       </article>
-    {/each}
-  </section>
+      <article class="state-chip">
+        <span>Scope</span>
+        <strong>{activeFilter}</strong>
+      </article>
+      <article class="state-chip">
+        <span>Markets</span>
+        <strong>{visibleGames.length}</strong>
+      </article>
+      <article class="state-chip">
+        <span>Moneylines</span>
+        <strong>{filteredMoneylineGames.length}</strong>
+      </article>
+      <article class="state-chip">
+        <span>Signals</span>
+        <strong>{analysisPickPool.length}</strong>
+      </article>
+      <article class="state-chip">
+        <span>Sources</span>
+        <strong>{sourceCount}</strong>
+      </article>
+    </div>
+  </header>
 
-  <div class="content-shell">
-    <main class="content-column">
-      <section class="notes-panel">
-        <div class="notes-copy">
-          <h2>How To Read The Board</h2>
-          <p>
-            Each card now layers a structured-input model on top of the written matchup read. The
-            confidence and volatility meters come from formatted local inputs like market price,
-            listed starter lines, fight-profile signals, and playoff or roster context where we
-            have it.
-          </p>
+  <div class="desk-layout">
+    <aside class="control-column">
+      <section class="desk-panel session-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Session</p>
+            <h2>Slate View</h2>
+          </div>
+          <span class="panel-meta">{activeDay.status}</span>
         </div>
 
-        <ul class="notes-list">
-          {#each slateMeta.notes as note}
-            <li>{note}</li>
+        <div class="session-copy">
+          <strong>{slateMeta.title}</strong>
+          <p>{slateMeta.date}</p>
+        </div>
+
+        <div class="session-metrics-grid">
+          <article class="mini-stat-card">
+            <span>Signal avg</span>
+            <strong>{confidenceAverage}</strong>
+          </article>
+          <article class="mini-stat-card">
+            <span>Volatility</span>
+            <strong>{volatilityAverage}</strong>
+          </article>
+          <article class="mini-stat-card">
+            <span>Model cards</span>
+            <strong>{modelCount}</strong>
+          </article>
+          <article class="mini-stat-card">
+            <span>Ticket legs</span>
+            <strong>{parlay.legCount}</strong>
+          </article>
+        </div>
+
+        <div class="summary-strip compact" aria-label="League summary">
+          {#each summaryCards as card}
+            <article class="summary-card">
+              <p class="summary-league">{card.league}</p>
+              <p class="summary-value">{card.total}</p>
+              <p class="summary-detail">{card.spotlightCount} spotlights</p>
+            </article>
           {/each}
-          {#each activeDay.feedNotes as note}
-            <li>{note}</li>
-          {/each}
-        </ul>
+        </div>
       </section>
 
-      <section class="filter-panel" aria-label="League filters">
-        {#each filterOptions as filter}
-          <button
-            type="button"
-            class:active={activeFilter === filter}
-            on:click={() => (activeFilter = filter)}
-          >
-            {filter}
+      <section class="desk-panel daybook-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Navigator</p>
+            <h2>Daybook</h2>
+          </div>
+          <span class="panel-meta">Day {dayIndex + 1} / {slateDays.length}</span>
+        </div>
+
+        <div class="daybook-actions">
+          <button type="button" disabled={!hasPreviousDay()} on:click={() => stepDay(-1)}>
+            Previous
           </button>
-        {/each}
+          <button type="button" disabled={!hasNextDay()} on:click={() => stepDay(1)}>
+            Next
+          </button>
+        </div>
+
+        <div class="daybook-row">
+          {#each slateDays as day}
+            <button
+              type="button"
+              class="daybook-chip"
+              class:active={activeDayId === day.id}
+              on:click={() => selectDay(day.id)}
+            >
+              <span class="daybook-chip-label">{day.label}</span>
+              <strong>{day.slateMeta.date}</strong>
+              <small>{day.summary.totalGames} games | {day.status}</small>
+            </button>
+          {/each}
+        </div>
+      </section>
+
+      <section class="desk-panel filter-panel-shell">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Scope</p>
+            <h2>Filters</h2>
+          </div>
+          <span class="panel-meta">{activeFilter}</span>
+        </div>
+
+        <div class="scope-strip">
+          <article class="scope-card">
+            <span>Signal pool</span>
+            <strong>{analysisPickPool.length}</strong>
+          </article>
+          <article class="scope-card">
+            <span>Analyst matches</span>
+            <strong>{parlay.metadata.analystPickCount}</strong>
+          </article>
+        </div>
+
+        <section class="filter-panel dashboard-filter-panel" aria-label="League filters">
+          {#each filterOptions as filter}
+            <button
+              type="button"
+              class:active={activeFilter === filter}
+              on:click={() => (activeFilter = filter)}
+            >
+              {filter}
+            </button>
+          {/each}
+        </section>
+      </section>
+
+      <section class="desk-panel watchlist-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Watchlist</p>
+            <h2>Best Signals</h2>
+          </div>
+          <span class="panel-meta">{signalLadderPicks.length} shown</span>
+        </div>
+
+        {#if signalLadderPicks.length === 0}
+          <p class="panel-empty">No model-backed moneyline signals are available in this scope.</p>
+        {:else}
+          <div class="watchlist">
+            {#each signalLadderPicks as pick}
+              <article class="watchlist-row">
+                <div class="watchlist-rank">#{pick.rank}</div>
+
+                <div class="watchlist-copy">
+                  <strong>{pick.participant.name}</strong>
+                  <p>{pick.gameTitle}</p>
+                  <small>{pick.league} | {pick.start} | Confidence {pick.confidence}</small>
+                </div>
+
+                <div class="watchlist-side">
+                  <span>{pick.participant.americanLabel}</span>
+                  <button
+                    type="button"
+                    class="analysis-action-button compact"
+                    class:active={selectedPicks[pick.gameId] === pick.participantId}
+                    disabled={atParlayLimit && !selectedPicks[pick.gameId]}
+                    on:click={() => toggleParlayPick(pick.gameId, pick.participantId)}
+                  >
+                    {selectedPicks[pick.gameId] === pick.participantId ? 'Remove' : 'Add'}
+                  </button>
+                </div>
+              </article>
+            {/each}
+          </div>
+        {/if}
       </section>
 
       {#if spotlightGames.length > 0}
-        <section class="spotlight-panel">
-          <div class="section-heading">
-            <h2>Spotlight Matchups</h2>
-            <p>The cards with the clearest leverage, biggest stakes, or widest swing potential.</p>
+        <section class="desk-panel priority-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Priority</p>
+              <h2>Spotlight Tape</h2>
+            </div>
+            <span class="panel-meta">{spotlightCount} spots</span>
           </div>
 
-          <div class="spotlight-grid">
-            {#each spotlightGames as game, index}
-              <article class="spotlight-card" style={`--order:${index};`}>
-                <div class="spotlight-topline">
-                  <span>{game.league}</span>
-                  <span>{game.start}</span>
+          <div class="priority-list">
+            {#each spotlightGames as game}
+              <article class="priority-row">
+                <div>
+                  <strong>{game.title}</strong>
+                  <p>{game.analysis.lean}</p>
                 </div>
-                <h3>{game.title}</h3>
-                <p class="spotlight-stage">{game.stage}</p>
-                <p class="spotlight-summary">{game.summary}</p>
-                <p class="spotlight-lean">{game.analysis.lean}</p>
+                <small>{game.league} | {game.start}</small>
               </article>
             {/each}
           </div>
         </section>
       {/if}
+    </aside>
 
-      <section class="board-panel">
-        <div class="section-heading">
-          <h2>{activeFilter === 'All' ? 'Full Slate Board' : `${activeFilter} Board`}</h2>
-          <p>{visibleGames.length} matchup{visibleGames.length === 1 ? '' : 's'} on screen.</p>
+    <main class="board-column">
+      <section class="desk-panel market-panel">
+        <div class="panel-header panel-header-spread">
+          <div>
+            <p class="eyebrow">Market Grid</p>
+            <h2>{activeFilter === 'All' ? 'Full Slate Board' : `${activeFilter} Board`}</h2>
+          </div>
+          <div class="market-panel-meta">
+            <span>{visibleGames.length} markets</span>
+            <span>{filteredMoneylineGames.length} moneylines</span>
+            <span>{oddsMeta.snapshot}</span>
+          </div>
         </div>
 
         {#if visibleGames.length === 0}
@@ -368,281 +472,302 @@
             </ul>
           </section>
         {:else}
-          <div class="game-grid">
-            {#each visibleGames as game, index}
-              <article class="game-card" style={`--order:${index};`}>
-              <div class="card-topline">
-                <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
-                <span class="time-pill">{game.start}</span>
-              </div>
+          <div class="market-table">
+            <div class="market-table-head">
+              <span>Market</span>
+              <span>Matchup</span>
+              <span>Model</span>
+              <span>Conf</span>
+              <span>Odds</span>
+              <span>Actions</span>
+            </div>
 
-              <h3>{game.title}</h3>
-              <p class="stage-line">{game.stage}</p>
-
-              <div class="tag-row">
-                {#each game.tags as tag}
-                  <span>{tag}</span>
-                {/each}
-              </div>
-
-              <div class="matchup-grid">
-                {#each game.matchup as side}
-                  <div class="matchup-cell">
-                    <p class="matchup-side">{side.side}</p>
-                    <h4>{side.name}</h4>
-                    <p>{side.detail}</p>
-                  </div>
-                {/each}
-              </div>
-
-              {#if game.moneyline.available}
-                <section class="pick-panel" aria-label={`Parlay picks for ${game.title}`}>
-                  <div class="pick-heading">
-                    <div>
-                      <p class="pick-kicker">Parlay Builder</p>
-                      <p class="pick-caption">{game.moneyline.label}</p>
+            {#each visibleGames as game}
+              <article class="market-row" data-open={expandedGameId === game.id}>
+                <div class="market-row-main">
+                  <div class="market-cell market-identity">
+                    <div class="market-title-topline">
+                      <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
+                      <span class="time-pill">{game.start}</span>
                     </div>
+                    <strong>{game.title}</strong>
+                    <small>{game.stage}</small>
+                  </div>
 
-                    <div class="pick-side-meta">
-                      <span class="pick-source">{game.moneyline.provider}</span>
-                      {#if game.analysis.available}
-                        <strong class="pick-analysis-note">
-                          My pick: {game.analysis.participant.name}
-                        </strong>
+                  <div class="market-cell market-matchup-compact">
+                    {#each game.matchup as side}
+                      <div class="market-side-line">
+                        <strong>{side.name}</strong>
+                        <small>{side.detail}</small>
+                      </div>
+                    {/each}
+                  </div>
+
+                  <div class="market-cell market-signal">
+                    <strong>{game.analysis.participant.name}</strong>
+                    <small>{game.analysis.modelEdgeLabel}</small>
+                    <p>{game.analysis.lean}</p>
+                  </div>
+
+                  <div class="market-cell market-confidence">
+                    <strong>{game.analysis.confidence}</strong>
+                    <small>{labelForScore(game.analysis.confidence)}</small>
+                  </div>
+
+                  <div class="market-cell market-odds-compact">
+                    {#if game.moneyline.available}
+                      {#each game.moneyline.participants as participant}
+                        <div class="odds-chip" data-active={game.analysis.participantId === participant.id}>
+                          <span>{participant.name}</span>
+                          <strong>{participant.americanLabel}</strong>
+                        </div>
+                      {/each}
+                    {:else}
+                      <span class="odds-chip empty">No moneyline</span>
+                    {/if}
+                  </div>
+
+                  <div class="market-cell market-actions">
+                    {#if game.moneyline.available}
+                      <div class="quick-pick-row">
+                        {#each game.moneyline.participants as participant}
+                          <button
+                            type="button"
+                            class="quick-pick-button"
+                            class:active={selectedPicks[game.id] === participant.id}
+                            disabled={atParlayLimit && !selectedPicks[game.id]}
+                            on:click={() => toggleParlayPick(game.id, participant.id)}
+                          >
+                            {participant.name}
+                          </button>
+                        {/each}
+                      </div>
+                    {/if}
+
+                    <button
+                      type="button"
+                      class="row-expand-button"
+                      on:click={() => toggleExpandedGame(game.id)}
+                    >
+                      {expandedGameId === game.id ? 'Hide details' : 'Show details'}
+                    </button>
+                  </div>
+                </div>
+
+                {#if expandedGameId === game.id}
+                  <div class="market-detail-grid">
+                    <section class="detail-panel insight-panel">
+                      <div class="detail-panel-header">
+                        <p class="eyebrow">Read</p>
+                        <span>{game.tags.join(' | ')}</span>
+                      </div>
+
+                      <p class="game-summary">{game.summary}</p>
+
+                      <div class="closeout">
+                        <p class="lean-line">{game.analysis.lean}</p>
+                        <p class="swing-line">{swingTextFor(game)}</p>
+                      </div>
+
+                      <div class="meter-grid compact">
+                        <div class="meter-card">
+                          <div class="meter-label">
+                            <span>Confidence</span>
+                            <strong>{labelForScore(game.analysis.confidence)}</strong>
+                          </div>
+                          <div class="meter-track">
+                            <span style={`width:${game.analysis.confidence}%;`}></span>
+                          </div>
+                        </div>
+
+                        <div class="meter-card">
+                          <div class="meter-label">
+                            <span>Volatility</span>
+                            <strong>{labelForScore(game.analysis.volatility)}</strong>
+                          </div>
+                          <div class="meter-track volatility">
+                            <span style={`width:${game.analysis.volatility}%;`}></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <ul class="factor-list compact">
+                        {#each game.factors as factor}
+                          <li>{factor}</li>
+                        {/each}
+                      </ul>
+                    </section>
+
+                    <div class="detail-stack">
+                      {#if game.moneyline.available}
+                        <section class="pick-panel" aria-label={`Parlay picks for ${game.title}`}>
+                          <div class="pick-heading">
+                            <div>
+                              <p class="pick-kicker">Ticket</p>
+                              <p class="pick-caption">{game.moneyline.label}</p>
+                            </div>
+
+                            <div class="pick-side-meta">
+                              <span class="pick-source">{game.moneyline.provider}</span>
+                              <strong class="pick-analysis-note">
+                                My pick: {game.analysis.participant.name}
+                              </strong>
+                            </div>
+                          </div>
+
+                          <div class="pick-grid compact">
+                            {#each game.moneyline.participants as participant}
+                              <button
+                                type="button"
+                                class="pick-button"
+                                class:active={selectedPicks[game.id] === participant.id}
+                                disabled={atParlayLimit && !selectedPicks[game.id]}
+                                on:click={() => toggleParlayPick(game.id, participant.id)}
+                              >
+                                <div class="pick-button-topline">
+                                  <span>{participant.name}</span>
+
+                                  {#if game.analysis.available && game.analysis.participantId === participant.id}
+                                    <span class="pick-badge">
+                                      Analyst #{analysisRankLookup.get(game.id)}
+                                    </span>
+                                  {/if}
+                                </div>
+
+                                <strong>{participant.americanLabel}</strong>
+                                <small>{participant.impliedProbabilityLabel} implied</small>
+                              </button>
+                            {/each}
+                          </div>
+                        </section>
+                      {/if}
+
+                      <section class="odds-panel" aria-label={`Odds snapshot for ${game.title}`}>
+                        <div class="odds-heading">
+                          <div>
+                            <p class="odds-kicker">Odds Snapshot</p>
+                            <p class="odds-caption">{game.odds.provider || oddsMeta.provider}</p>
+                          </div>
+                          <span class="odds-time">{oddsMeta.snapshot}</span>
+                        </div>
+
+                        <div class="odds-list">
+                          {#each game.odds.markets as market}
+                            <div class="odds-row">
+                              <div class="odds-row-topline">
+                                <span>{market.label}</span>
+                                <small>{market.book}</small>
+                              </div>
+                              <p>{market.value}</p>
+                            </div>
+                          {/each}
+                        </div>
+
+                        {#if game.odds.note}
+                          <p class="odds-note">{game.odds.note}</p>
+                        {/if}
+                      </section>
+
+                      {#if game.analysis.inputs.length > 0}
+                        <section class="model-panel" aria-label={`Structured input model for ${game.title}`}>
+                          <div class="model-heading">
+                            <div>
+                              <p class="model-kicker">Structured Model</p>
+                              <p class="model-caption">{game.analysis.sourceLabel}</p>
+                            </div>
+
+                            <div class="model-heading-meta">
+                              <strong>{game.analysis.participant.name}</strong>
+                              <span>{game.analysis.modelEdgeLabel}</span>
+                            </div>
+                          </div>
+
+                          <div class="model-chip-row">
+                            <span>Confidence {game.analysis.confidence}</span>
+                            <span>Volatility {game.analysis.volatility}</span>
+                            <span>Market {game.analysis.marketProbabilityLabel}</span>
+                          </div>
+
+                          <ul class="model-input-list">
+                            {#each game.analysis.inputs as input}
+                              <li>{input.summary}</li>
+                            {/each}
+                          </ul>
+
+                          {#if game.analysis.volatilityNotes.length > 0}
+                            <div class="model-note-row">
+                              {#each game.analysis.volatilityNotes.slice(0, 3) as note}
+                                <span>{note.label}</span>
+                              {/each}
+                            </div>
+                          {/if}
+                        </section>
                       {/if}
                     </div>
                   </div>
 
-                  <div class="pick-grid">
-                    {#each game.moneyline.participants as participant}
-                      <button
-                        type="button"
-                        class="pick-button"
-                        class:active={selectedPicks[game.id] === participant.id}
-                        disabled={atParlayLimit && !selectedPicks[game.id]}
-                        on:click={() => toggleParlayPick(game.id, participant.id)}
-                      >
-                        <div class="pick-button-topline">
-                          <span>{participant.name}</span>
-
-                          {#if game.analysis.available && game.analysis.participantId === participant.id}
-                            <span class="pick-badge">
-                              Analyst #{analysisRankLookup.get(game.id)}
-                            </span>
-                          {/if}
+                  {#if game.seriesBreakdown}
+                    <section class="series-panel" aria-label={`Series breakdown for ${game.title}`}>
+                      <div class="series-heading">
+                        <div>
+                          <p class="series-kicker">{game.seriesBreakdown.kicker}</p>
+                          <h4>{game.seriesBreakdown.title}</h4>
                         </div>
-
-                        <strong>{participant.americanLabel}</strong>
-                        <small>{participant.impliedProbabilityLabel} implied</small>
-                      </button>
-                    {/each}
-                  </div>
-                </section>
-              {/if}
-
-              <section class="odds-panel" aria-label={`Odds snapshot for ${game.title}`}>
-                <div class="odds-heading">
-                  <div>
-                    <p class="odds-kicker">Odds Snapshot</p>
-                    <p class="odds-caption">{game.odds.provider || oddsMeta.provider}</p>
-                  </div>
-                  <span class="odds-time">{oddsMeta.snapshot}</span>
-                </div>
-
-                <div class="odds-list">
-                  {#each game.odds.markets as market}
-                    <div class="odds-row">
-                      <div class="odds-row-topline">
-                        <span>{market.label}</span>
-                        <small>{market.book}</small>
+                        <span class="series-record">{game.seriesBreakdown.record}</span>
                       </div>
-                      <p>{market.value}</p>
-                    </div>
-                  {/each}
-                </div>
 
-                {#if game.odds.note}
-                  <p class="odds-note">{game.odds.note}</p>
-                {/if}
-              </section>
+                      <p class="series-recap">{game.seriesBreakdown.recap}</p>
 
-              {#if game.analysis.inputs.length > 0}
-                <section class="model-panel" aria-label={`Structured input model for ${game.title}`}>
-                  <div class="model-heading">
-                    <div>
-                      <p class="model-kicker">Structured Input Model</p>
-                      <p class="model-caption">{game.analysis.sourceLabel}</p>
-                    </div>
+                      <div class="series-stat-row">
+                        {#each game.seriesBreakdown.seriesStats as stat}
+                          <span>{stat}</span>
+                        {/each}
+                      </div>
 
-                    <div class="model-heading-meta">
-                      <strong>{game.analysis.participant.name}</strong>
-                      <span>{game.analysis.modelEdgeLabel}</span>
-                    </div>
-                  </div>
-
-                  <div class="model-chip-row">
-                    <span>Confidence {game.analysis.confidence}</span>
-                    <span>Volatility {game.analysis.volatility}</span>
-                    <span>Market {game.analysis.marketProbabilityLabel}</span>
-                  </div>
-
-                  <ul class="model-input-list">
-                    {#each game.analysis.inputs as input}
-                      <li>{input.summary}</li>
-                    {/each}
-                  </ul>
-
-                  {#if game.analysis.volatilityNotes.length > 0}
-                    <div class="model-note-row">
-                      {#each game.analysis.volatilityNotes.slice(0, 3) as note}
-                        <span>{note.label}</span>
-                      {/each}
-                    </div>
-                  {/if}
-                </section>
-              {/if}
-
-              <p class="game-summary">{game.summary}</p>
-
-              {#if game.seriesBreakdown}
-                <section class="series-panel" aria-label={`Series breakdown for ${game.title}`}>
-                  <div class="series-heading">
-                    <div>
-                      <p class="series-kicker">{game.seriesBreakdown.kicker}</p>
-                      <h4>{game.seriesBreakdown.title}</h4>
-                    </div>
-                    <span class="series-record">{game.seriesBreakdown.record}</span>
-                  </div>
-
-                  <p class="series-recap">{game.seriesBreakdown.recap}</p>
-
-                  <div class="series-stat-row">
-                    {#each game.seriesBreakdown.seriesStats as stat}
-                      <span>{stat}</span>
-                    {/each}
-                  </div>
-
-                  <div class="boxscore-grid">
-                    {#each game.seriesBreakdown.boxScores as boxScore}
-                      <article class="boxscore-card">
-                        <div class="boxscore-topline">
-                          <div>
-                            <p class="boxscore-label">{boxScore.label}</p>
-                            <h5>{boxScore.result}</h5>
-                          </div>
-                          <span>{boxScore.date}</span>
-                        </div>
-
-                        <ul class="boxscore-notes">
-                          {#each boxScore.notes as note}
-                            <li>{note}</li>
-                          {/each}
-                        </ul>
-
-                        <div class="leader-grid">
-                          {#each boxScore.leaders as leader}
-                            <div class="leader-column">
-                              <p class="leader-label">{leader.team}</p>
-                              <ul>
-                                {#each leader.lines as line}
-                                  <li>{line}</li>
-                                {/each}
-                              </ul>
+                      <div class="boxscore-grid">
+                        {#each game.seriesBreakdown.boxScores as boxScore}
+                          <article class="boxscore-card">
+                            <div class="boxscore-topline">
+                              <div>
+                                <p class="boxscore-label">{boxScore.label}</p>
+                                <h5>{boxScore.result}</h5>
+                              </div>
+                              <span>{boxScore.date}</span>
                             </div>
-                          {/each}
-                        </div>
-                      </article>
-                    {/each}
-                  </div>
 
-                  <div class="player-analysis">
-                    <p class="player-analysis-title">Player analysis</p>
-                    <ul class="player-analysis-list">
-                      {#each game.seriesBreakdown.playerAnalysis as note}
-                        <li>{note}</li>
-                      {/each}
-                    </ul>
-                  </div>
+                            <ul class="boxscore-notes">
+                              {#each boxScore.notes as note}
+                                <li>{note}</li>
+                              {/each}
+                            </ul>
+                          </article>
+                        {/each}
+                      </div>
 
-                  <div class="series-links">
-                    {#each game.seriesBreakdown.sources as source}
-                      <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
-                    {/each}
-                  </div>
-                </section>
-              {/if}
-
-              <ul class="factor-list">
-                {#each game.factors as factor}
-                  <li>{factor}</li>
-                {/each}
-              </ul>
-
-              <div class="meter-grid">
-                <div class="meter-card">
-                  <div class="meter-label">
-                    <span>Confidence</span>
-                    <strong>{labelForScore(game.analysis.confidence)}</strong>
-                  </div>
-                  <div class="meter-track">
-                    <span style={`width:${game.analysis.confidence}%;`}></span>
-                  </div>
-                </div>
-
-                <div class="meter-card">
-                  <div class="meter-label">
-                    <span>Volatility</span>
-                    <strong>{labelForScore(game.analysis.volatility)}</strong>
-                  </div>
-                  <div class="meter-track volatility">
-                    <span style={`width:${game.analysis.volatility}%;`}></span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="closeout">
-                <p class="lean-line">{game.analysis.lean}</p>
-                <p class="swing-line">{game.swing}</p>
-              </div>
+                      <div class="series-links">
+                        {#each game.seriesBreakdown.sources as source}
+                          <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
+                        {/each}
+                      </div>
+                    </section>
+                  {/if}
+                {/if}
               </article>
             {/each}
           </div>
         {/if}
       </section>
-
-      <section class="sources-panel">
-        <div class="section-heading">
-          <h2>Schedule And Odds Sources</h2>
-          <p>
-            These pages were used to verify the May 9, 2026 slate while keeping the supplied matchup
-            list intact and layering in the late-afternoon odds snapshot.
-          </p>
-        </div>
-
-        {#if sources.length > 0}
-          <div class="sources-list">
-            {#each sources as source}
-              <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
-            {/each}
-          </div>
-        {:else}
-          <p class="sources-empty">
-            No day-specific source links are attached yet. Use `daily-games-external.md` as the
-            known-good starting list for the next import.
-          </p>
-        {/if}
-      </section>
     </main>
 
     <aside class="sidebar-column">
-      <section class="parlay-sidebar" aria-label="Parlay sidebar">
+      <section class="desk-panel parlay-sidebar" aria-label="Parlay sidebar">
         <div class="parlay-sidebar-header">
           <div>
-            <p class="eyebrow">Pinned Sidebar</p>
+            <p class="eyebrow">Execution</p>
             <h2>Parlay Center</h2>
             <p class="parlay-sidebar-copy">
-              Build tickets from the board, from my best picks, or from prebuilt 2-to-10 leg
-              recommendations.
+              Build tickets from the board or load ranked recommendation sets directly into the
+              slip.
             </p>
           </div>
 
@@ -654,6 +779,23 @@
           >
             Clear ticket
           </button>
+        </div>
+
+        <div class="rail-mini-metrics">
+          <article class="rail-mini-card">
+            <span>Selected</span>
+            <strong>{parlay.legCount}</strong>
+          </article>
+
+          <article class="rail-mini-card">
+            <span>Analyst matches</span>
+            <strong>{parlay.metadata.analystPickCount}</strong>
+          </article>
+
+          <article class="rail-mini-card">
+            <span>Best set</span>
+            <strong>{activeRecommendedLegCount || 0}-leg</strong>
+          </article>
         </div>
 
         <div class="sidebar-tab-row" role="tablist" aria-label="Parlay tools">
@@ -694,8 +836,8 @@
             </article>
 
             <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Analyst matches</span>
-              <strong>{parlay.metadata.analystPickCount}</strong>
+              <span class="parlay-stat-label">Implied hit rate</span>
+              <strong>{parlay.impliedProbabilityLabel}</strong>
             </article>
           </div>
 
@@ -721,7 +863,6 @@
           <div class="sidebar-status-card" data-ready={parlayReady}>
             <p class="parlay-status-title">{parlayReady ? 'Ticket ready' : 'Ticket in progress'}</p>
             <p class="parlay-status-copy">{parlayStatus}</p>
-            <p class="parlay-status-copy">Implied hit rate: {parlay.impliedProbabilityLabel}</p>
           </div>
 
           {#if parlay.legCount > 0}
@@ -733,7 +874,7 @@
 
           {#if parlay.legCount === 0}
             <p class="parlay-empty">
-              Start from any matchup card, or jump into the best-picks and recommended tabs to load
+              Start from any matchup card, or use the best-picks and recommended tabs to load
               analyst-backed legs faster.
             </p>
           {:else}
@@ -824,7 +965,7 @@
           {:else}
             <div class="sidebar-section-copy">
               <p>
-                These are auto-built from my highest-confidence picks, in order, so you can load a
+                These are auto-built from the highest-confidence picks in order, so you can load a
                 2-to-10 leg ticket with one click.
               </p>
             </div>
@@ -877,9 +1018,7 @@
               {#each recommendedParlay.legs as leg, index}
                 <article class="parlay-leg-card">
                   <div>
-                    <p class="parlay-leg-topline">
-                      #{index + 1} | {leg.league} | {leg.start}
-                    </p>
+                    <p class="parlay-leg-topline">#{index + 1} | {leg.league} | {leg.start}</p>
                     <p class="parlay-leg-pick">{leg.pickName} over {leg.opponentName}</p>
                     <p class="parlay-leg-game">{leg.gameTitle}</p>
                   </div>
@@ -893,6 +1032,48 @@
               {/each}
             </div>
           {/if}
+        {/if}
+      </section>
+
+      <section class="desk-panel research-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Research</p>
+            <h2>Model Notes</h2>
+          </div>
+          <span class="panel-meta">{modelCount} cards</span>
+        </div>
+
+        <ul class="notes-list">
+          {#each slateMeta.notes as note}
+            <li>{note}</li>
+          {/each}
+          {#each activeDay.feedNotes ?? [] as note}
+            <li>{note}</li>
+          {/each}
+        </ul>
+      </section>
+
+      <section class="desk-panel sources-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Sources</p>
+            <h2>Feed Links</h2>
+          </div>
+          <span class="panel-meta">{sourceCount}</span>
+        </div>
+
+        {#if sources.length > 0}
+          <div class="sources-list">
+            {#each sources as source}
+              <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
+            {/each}
+          </div>
+        {:else}
+          <p class="sources-empty">
+            No day-specific source links are attached yet. Use `daily-games-external.md` as the
+            known-good starting list for the next import.
+          </p>
         {/if}
       </section>
     </aside>
