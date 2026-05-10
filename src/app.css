@@ -1,25 +1,25 @@
 :root {
-  --bg: #07111a;
-  --bg-deep: #0a1622;
-  --panel: rgba(14, 24, 37, 0.96);
-  --panel-strong: rgba(10, 18, 29, 0.98);
-  --panel-soft: rgba(18, 29, 44, 0.92);
-  --line: rgba(97, 124, 157, 0.18);
-  --line-strong: rgba(113, 157, 212, 0.32);
-  --text: #dbe7f4;
-  --muted: #8ea4c1;
-  --heading: #f6f9fe;
-  --accent: #47d2a5;
-  --accent-blue: #6cabff;
-  --warning: #f1bc76;
-  --danger: #ff8f85;
-  --shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  --bg: #050607;
+  --bg-deep: #090909;
+  --panel: rgba(12, 12, 13, 0.97);
+  --panel-strong: rgba(7, 7, 8, 0.99);
+  --panel-soft: rgba(19, 19, 21, 0.96);
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --text: #ebedf0;
+  --muted: #9b9fa6;
+  --heading: #ffffff;
+  --accent: #4fd2a6;
+  --accent-blue: #d0d4d8;
+  --warning: #c79b58;
+  --danger: #cc756d;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
   --sans: 'Avenir Next', 'Segoe UI', sans-serif;
   --mono: 'SFMono-Regular', 'IBM Plex Mono', 'Menlo', monospace;
   font: 13px/1.42 var(--sans);
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(108, 171, 255, 0.08), transparent 30%),
+    radial-gradient(circle at top left, rgba(79, 210, 166, 0.025), transparent 24%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,6 +30,12 @@
 * {
   box-sizing: border-box;
   min-width: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -255,15 +261,6 @@ h3 {
 .sources-list {
   overflow-x: auto;
   padding-bottom: 2px;
-  scrollbar-width: thin;
-}
-
-.date-chip-row::-webkit-scrollbar,
-.schedule-tape::-webkit-scrollbar,
-.market-scroll::-webkit-scrollbar,
-.action-rail::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
 }
 
 .nav-step-button,
@@ -347,7 +344,7 @@ h3 {
 .quick-pick-button.active,
 .pick-button.active,
 .row-expand-button.active {
-  background: linear-gradient(135deg, rgba(71, 210, 165, 0.18), rgba(108, 171, 255, 0.16));
+  background: linear-gradient(135deg, rgba(82, 214, 179, 0.14), rgba(255, 255, 255, 0.06));
   border-color: var(--line-strong);
 }
 
@@ -443,6 +440,7 @@ h3 {
 .model-note-row,
 .series-stat-row,
 .series-links,
+.recommendation-size-row,
 .quick-pick-row,
 .analysis-action-row {
   flex-wrap: wrap;
@@ -458,7 +456,7 @@ h3 {
   align-items: center;
   border-radius: 999px;
   padding: 4px 7px;
-  background: rgba(108, 171, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--heading);
 }
 
@@ -474,6 +472,8 @@ h3 {
   min-height: 0;
   overflow: auto;
   padding-right: 2px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .market-table {
@@ -484,7 +484,7 @@ h3 {
 .market-table-head,
 .market-row-main {
   display: grid;
-  grid-template-columns: minmax(164px, 1.04fr) minmax(196px, 1.15fr) minmax(158px, 0.94fr) 54px minmax(160px, 0.82fr) minmax(168px, 0.86fr);
+  grid-template-columns: minmax(168px, 1.02fr) minmax(216px, 1.2fr) minmax(182px, 1fr) 72px minmax(180px, 0.92fr) minmax(198px, 1fr);
   gap: 10px;
 }
 
@@ -509,11 +509,19 @@ h3 {
 
 .market-row-main {
   align-items: center;
+  cursor: pointer;
+}
+
+.market-row-main:focus-visible {
+  outline: 1px solid rgba(82, 214, 179, 0.55);
+  outline-offset: 2px;
+  border-radius: 8px;
 }
 
 .market-cell {
   display: grid;
   gap: 5px;
+  align-content: start;
 }
 
 .market-title-topline {
@@ -531,12 +539,12 @@ h3 {
 }
 
 .league-badge {
-  background: rgba(108, 171, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--accent-blue);
 }
 
 .league-mlb {
-  background: rgba(108, 171, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--accent-blue);
 }
 
@@ -547,8 +555,8 @@ h3 {
 
 .league-nba,
 .league-wnba {
-  background: rgba(71, 210, 165, 0.12);
-  color: var(--accent);
+  background: rgba(215, 176, 107, 0.12);
+  color: var(--warning);
 }
 
 .time-pill {
@@ -573,8 +581,28 @@ h3 {
   gap: 2px;
 }
 
+.market-side-line small,
+.market-signal p,
+.analysis-pick-game,
+.parlay-sidebar-copy {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
 .market-signal p {
-  color: var(--accent);
+  color: #7ce0c1;
+  -webkit-line-clamp: 2;
+}
+
+.market-side-line small,
+.analysis-pick-game {
+  -webkit-line-clamp: 2;
+}
+
+.parlay-sidebar-copy {
+  max-width: 34ch;
+  -webkit-line-clamp: 3;
 }
 
 .market-confidence {
@@ -597,7 +625,7 @@ h3 {
 
 .odds-chip[data-active='true'] {
   border-color: rgba(71, 210, 165, 0.34);
-  background: rgba(71, 210, 165, 0.08);
+  background: rgba(82, 214, 179, 0.09);
 }
 
 .odds-chip.empty {
@@ -732,7 +760,7 @@ h3 {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, var(--accent), var(--accent-blue));
+  background: linear-gradient(90deg, #5ed7b5, #8fe8cf);
 }
 
 .meter-track.volatility {
@@ -767,7 +795,7 @@ h3 {
 .pick-badge {
   border-radius: 999px;
   padding: 4px 6px;
-  background: rgba(108, 171, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--accent-blue);
   font: 600 0.62rem/1 var(--mono);
   letter-spacing: 0.08em;
@@ -827,22 +855,35 @@ h3 {
 .action-rail {
   height: 100%;
   padding: 12px;
-  display: grid;
-  grid-template-rows: auto auto auto minmax(0, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   overflow: auto;
+}
+
+.action-rail > * {
+  flex: 0 0 auto;
 }
 
 .parlay-sidebar-header h2 {
   margin-top: 4px;
+  font-size: 1.18rem;
 }
 
 .rail-mini-metrics,
 .parlay-stats-grid.compact,
 .parlay-return-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
+}
+
+.rail-mini-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.parlay-stats-grid.compact,
+.parlay-return-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .rail-mini-card,
@@ -865,7 +906,7 @@ h3 {
   display: block;
   margin-top: 6px;
   color: var(--heading);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .rail-mini-card span {
@@ -876,6 +917,22 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
+}
+
+.parlay-sidebar-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+}
+
+.sidebar-tab-button,
+.analysis-action-button,
+.size-chip {
+  font-size: 0.84rem;
+}
+
+.clear-parlay-button {
+  align-self: start;
 }
 
 .parlay-body {
@@ -895,14 +952,14 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 9px 10px;
-  background: rgba(7, 13, 21, 0.92);
+  background: rgba(4, 4, 5, 0.96);
   color: var(--heading);
 }
 
 .stake-card input:focus-visible,
 .source-form input:focus-visible,
 .desk-note-input:focus-visible {
-  outline: 2px solid rgba(108, 171, 255, 0.28);
+  outline: 2px solid rgba(82, 214, 179, 0.22);
   outline-offset: 1px;
 }
 
@@ -917,7 +974,7 @@ h3 {
   padding: 10px 11px;
   border-radius: 10px;
   border: 1px dashed var(--line-strong);
-  background: rgba(11, 18, 28, 0.8);
+  background: rgba(10, 10, 11, 0.9);
 }
 
 .parlay-leg-list {
@@ -951,7 +1008,7 @@ h3 {
   align-items: center;
   border-radius: 999px;
   padding: 4px 7px;
-  background: rgba(71, 210, 165, 0.12);
+  background: rgba(82, 214, 179, 0.11);
   color: var(--accent);
 }
 
@@ -988,8 +1045,9 @@ h3 {
 }
 
 .desk-note-input {
-  resize: vertical;
-  min-height: 180px;
+  resize: none;
+  min-height: 160px;
+  overflow: auto;
 }
 
 .notes-list {
@@ -1026,7 +1084,7 @@ h3 {
 @media (max-width: 1500px) {
   .market-table-head,
   .market-row-main {
-    grid-template-columns: minmax(150px, 1fr) minmax(180px, 1.06fr) minmax(150px, 0.92fr) 50px minmax(148px, 0.76fr) minmax(154px, 0.78fr);
+    grid-template-columns: minmax(150px, 1fr) minmax(192px, 1.08fr) minmax(164px, 0.96fr) 64px minmax(164px, 0.84fr) minmax(176px, 0.9fr);
   }
 
   .desk-workspace {

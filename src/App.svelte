@@ -84,11 +84,11 @@
   $: filterOptions = activeDay?.filters ?? ['All']
   $: oddsMeta = activeDay?.oddsMeta ?? { provider: '', snapshot: '', note: '' }
   $: sources = activeDay?.sources ?? []
-  $: customSources = activeDay ? customSourcesForDay(activeDay.id) : []
+  $: customSources = activeDay ? customSourcesByDay[activeDay.id] ?? [] : []
   $: allSources = [...sources, ...customSources]
-  $: selectedPicks = activeDay ? picksForDay(activeDay.id) : {}
-  $: pinnedSignalIds = activeDay ? pinnedSignalsForDay(activeDay.id) : []
-  $: deskNote = activeDay ? deskNoteForDay(activeDay.id) : ''
+  $: selectedPicks = activeDay ? selectedPicksByDay[activeDay.id] ?? {} : {}
+  $: pinnedSignalIds = activeDay ? pinnedSignalsByDay[activeDay.id] ?? [] : []
+  $: deskNote = activeDay ? deskNotesByDay[activeDay.id] ?? '' : ''
   $: dayIndex = slateDays.findIndex((day) => day.id === activeDay?.id)
   $: summaryCards =
     activeDay?.summary?.leagueCards ??
@@ -211,6 +211,12 @@
   const openGame = (gameId) => {
     if (!gameId) return
 
+    const targetGame = games.find((game) => game.id === gameId)
+
+    if (targetGame && activeFilter !== 'All' && activeFilter !== targetGame.league) {
+      activeFilter = targetGame.league
+    }
+
     expandedGameId = gameId
 
     if (typeof document !== 'undefined') {
@@ -221,6 +227,18 @@
         })
       })
     }
+  }
+
+  const openGameFromRow = (gameId) => {
+    if (!gameId) return
+    expandedGameId = expandedGameId === gameId ? '' : gameId
+  }
+
+  const openGameFromKey = (gameId, event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return
+
+    event.preventDefault()
+    openGameFromRow(gameId)
   }
 
   const togglePinnedSignal = (gameId) => {
@@ -413,7 +431,14 @@
 
               {#each visibleGames as game}
                 <article id={`market-${game.id}`} class="market-row" data-open={expandedGameId === game.id}>
-                  <div class="market-row-main">
+                  <div
+                    class="market-row-main"
+                    role="button"
+                    tabindex="0"
+                    aria-label={`Open ${game.title}`}
+                    on:click={() => openGameFromRow(game.id)}
+                    on:keydown={(event) => openGameFromKey(game.id, event)}
+                  >
                     <div class="market-cell market-identity">
                       <div class="market-title-topline">
                         <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
@@ -465,7 +490,7 @@
                               class="quick-pick-button"
                               class:active={selectedPicks[game.id] === participant.id}
                               disabled={atParlayLimit && !selectedPicks[game.id]}
-                              on:click={() => toggleParlayPick(game.id, participant.id)}
+                              on:click|stopPropagation={() => toggleParlayPick(game.id, participant.id)}
                             >
                               {participant.name}
                             </button>
@@ -474,14 +499,18 @@
                       {/if}
 
                       <div class="market-row-buttons">
-                        <button type="button" class="row-expand-button" on:click={() => toggleExpandedGame(game.id)}>
+                        <button
+                          type="button"
+                          class="row-expand-button"
+                          on:click|stopPropagation={() => toggleExpandedGame(game.id)}
+                        >
                           {expandedGameId === game.id ? 'Hide' : 'Details'}
                         </button>
                         <button
                           type="button"
                           class="row-expand-button"
                           class:active={pinnedSignalIds.includes(game.id)}
-                          on:click={() => togglePinnedSignal(game.id)}
+                          on:click|stopPropagation={() => togglePinnedSignal(game.id)}
                         >
                           {pinnedSignalIds.includes(game.id) ? 'Pinned' : 'Pin'}
                         </button>
@@ -557,7 +586,7 @@
                                   class="pick-button"
                                   class:active={selectedPicks[game.id] === participant.id}
                                   disabled={atParlayLimit && !selectedPicks[game.id]}
-                                  on:click={() => toggleParlayPick(game.id, participant.id)}
+                                  on:click|stopPropagation={() => toggleParlayPick(game.id, participant.id)}
                                 >
                                   <div class="pick-button-topline">
                                     <span>{participant.name}</span>
@@ -746,10 +775,6 @@
             </button>
           {/each}
         </div>
-
-        {#if activeFilter !== 'All'}
-          <p class="sidebar-filter-note">Scoped to the {activeFilter} board right now.</p>
-        {/if}
 
         {#if activeSidebarTab === 'ticket'}
           <div class="parlay-stats-grid compact">
