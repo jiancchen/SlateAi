@@ -298,6 +298,132 @@ const buildHomeFieldSignal = (participants, weight = 0.08) => {
   return createSignal('Venue edge', weight, values, 'Location context')
 }
 
+const parseWinningPercentage = (value = '') => {
+  const parsed = Number(value)
+
+  return Number.isFinite(parsed) ? parsed : 0.5
+}
+
+const parseGamesBack = (value = '') => {
+  if (!value || value === '-' || value === 'E') return 0
+
+  const parsed = Number(value)
+
+  return Number.isFinite(parsed) ? parsed : 0
+}
+
+const parseStreakCode = (value = '') => {
+  const match = value.match(/^([WL])(\d+)$/i)
+
+  if (!match) return 0
+
+  return match[1].toUpperCase() === 'W' ? Number(match[2]) : -Number(match[2])
+}
+
+const formatOrdinal = (value) => {
+  const numericValue = Number(value)
+
+  if (!Number.isFinite(numericValue)) return `${value}`
+  if (numericValue % 100 >= 11 && numericValue % 100 <= 13) return `${numericValue}th`
+  if (numericValue % 10 === 1) return `${numericValue}st`
+  if (numericValue % 10 === 2) return `${numericValue}nd`
+  if (numericValue % 10 === 3) return `${numericValue}rd`
+
+  return `${numericValue}th`
+}
+
+const buildStandingsScore = (team = {}) =>
+  clamp(
+    26 +
+      parseWinningPercentage(team.winningPercentage) * 56 +
+      (6 - (Number(team.divisionRank) || 5)) * 3 +
+      clamp(Number(team.runDifferential) || 0, -80, 80) / 5 +
+      (team.divisionLeader ? 6 : 0) +
+      parseStreakCode(team.streakCode) * 1.2 -
+      parseGamesBack(team.gamesBack) * 0.8,
+    18,
+    94
+  )
+
+const buildStandingsLabel = (team = {}) => {
+  const runDiff = Number(team.runDifferential) || 0
+  const runDiffLabel = `${runDiff >= 0 ? '+' : ''}${runDiff} RD`
+  const leaderLabel = team.divisionLeader ? 'division leader' : `${formatOrdinal(team.divisionRank)} in division`
+
+  return `${team.wins}-${team.losses}, ${leaderLabel}, ${runDiffLabel}`
+}
+
+const buildMlbStandingsSignal = (game, participants) => {
+  const awayContext = game.teamContext?.away
+  const homeContext = game.teamContext?.home
+
+  if (!awayContext || !homeContext || participants.length < 2) return null
+
+  return createSignal(
+    'Standings profile',
+    0.14,
+    [
+      {
+        label: buildStandingsLabel(awayContext),
+        score: buildStandingsScore(awayContext)
+      },
+      {
+        label: buildStandingsLabel(homeContext),
+        score: buildStandingsScore(homeContext)
+      }
+    ],
+    'Standings context'
+  )
+}
+
+const buildMlbParkModifiers = (game, starters = []) => {
+  const park = game.parkContext
+
+  if (!park) return []
+
+  const modifiers = []
+  const runIndex = Number(park.indexRuns)
+  const hrIndex = Number(park.indexHr)
+  const wobaIndex = Number(park.indexWoba)
+  const starterEras = starters
+    .map((starter) => starter?.era)
+    .filter((value) => Number.isFinite(value))
+  const hasSoftEra = starterEras.some((era) => era >= 4.5)
+
+  if (runIndex >= 106) {
+    modifiers.push({
+      label: `${park.venueName} boosts run scoring (${runIndex} runs factor)`,
+      delta: 5
+    })
+  } else if (runIndex <= 94) {
+    modifiers.push({
+      label: `${park.venueName} suppresses run scoring (${runIndex} runs factor)`,
+      delta: -4
+    })
+  }
+
+  if (hrIndex >= 114) {
+    modifiers.push({
+      label: `${park.venueName} lifts home-run damage (${hrIndex} HR factor)`,
+      delta: 4
+    })
+  } else if (hrIndex <= 86) {
+    modifiers.push({
+      label: `${park.venueName} suppresses home-run carry (${hrIndex} HR factor)`,
+      delta: -3
+    })
+  }
+
+  if (wobaIndex >= 104 && hasSoftEra) {
+    modifiers.push({
+      label: 'A hitter-friendlier park meets at least one shakier listed ERA',
+      delta: 4
+    })
+  }
+
+  return modifiers
+}
+
 const pitcherRecordScore = (pitcher) =>
   clamp(28 + pitcher.winPct * 46 + Math.min(pitcher.decisions, 6) * 2, 24, 86)
 
@@ -308,8 +434,15 @@ const pitcherStrikeoutScore = (pitcher) => clamp(34 + pitcher.strikeouts * 1.08,
 
 const buildMlbAnalysisContext = (game, participants) => {
   const starters = participants.map((participant) => parsePitcherDetail(participant.detail))
-  const signals = [buildMarketSignal(game.league, participants)].filter(Boolean)
+  const signals = [
+    buildMarketSignal(game.league, participants),
+    buildMlbStandingsSignal(game, participants)
+  ].filter(Boolean)
   const volatilityModifiers = []
+  const sourceParts = ['Moneyline', 'listed starter data']
+
+  if (game.teamContext?.away && game.teamContext?.home) sourceParts.push('standings context')
+  if (game.parkContext?.venueName) sourceParts.push('park factors')
 
   if (starters.every(Boolean)) {
     signals.push(
@@ -376,8 +509,10 @@ const buildMlbAnalysisContext = (game, participants) => {
     }
   }
 
+  volatilityModifiers.push(...buildMlbParkModifiers(game, starters))
+
   return {
-    sourceLabel: 'Moneyline + listed starter data',
+    sourceLabel: sourceParts.join(' + '),
     signals,
     volatilityBase: sportVolatilityBase.MLB,
     volatilityModifiers

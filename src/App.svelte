@@ -1,6 +1,6 @@
 <script>
-  import { filters, games, oddsMeta, slateMeta, sources } from './lib/slate'
   import { buildParlayModel, createParlayLeg, rankAnalysisPicks } from './lib/sports-model'
+  import { defaultSlateDayId, slateDays } from './lib/slate-days'
 
   const PARLAY_MIN_LEGS = 2
   const PARLAY_MAX_LEGS = 10
@@ -11,13 +11,12 @@
     { id: 'recommended', label: 'Recommended' }
   ]
 
+  let activeDayId = defaultSlateDayId
   let activeFilter = 'All'
   let activeSidebarTab = 'ticket'
   let parlayStake = 25
   let recommendedLegCount = 4
-  let selectedPicks = {}
-
-  const eligibleMoneylineGames = games.filter((game) => game.moneyline.available)
+  let selectedPicksByDay = {}
 
   const labelForScore = (score) => {
     if (score >= 72) return 'High'
@@ -34,16 +33,37 @@
 
   const countSelectedPicks = (picks) => Object.keys(picks).length
 
-  const summaryCards = leagueOrder.map((league) => {
-    const leagueGames = games.filter((game) => game.league === league)
-    const spotlightCount = leagueGames.filter((game) => game.spotlight).length
+  const picksForDay = (dayId) => selectedPicksByDay[dayId] ?? {}
 
-    return {
-      league,
-      total: leagueGames.length,
-      spotlightCount
+  const savePicksForDay = (dayId, nextPicks) => {
+    selectedPicksByDay = {
+      ...selectedPicksByDay,
+      [dayId]: nextPicks
     }
-  })
+  }
+
+  $: activeDay = slateDays.find((day) => day.id === activeDayId) ?? slateDays[0]
+  $: slateMeta = activeDay?.slateMeta ?? {
+    title: 'Slate Daybook',
+    date: '',
+    subtitle: '',
+    notes: []
+  }
+  $: games = activeDay?.games ?? []
+  $: filterOptions = activeDay?.filters ?? ['All']
+  $: oddsMeta = activeDay?.oddsMeta ?? { provider: '', snapshot: '', note: '' }
+  $: sources = activeDay?.sources ?? []
+  $: selectedPicks = activeDay ? picksForDay(activeDay.id) : {}
+  $: dayIndex = slateDays.findIndex((day) => day.id === activeDay?.id)
+  $: summaryCards =
+    activeDay?.summary?.leagueCards ??
+    leagueOrder.map((league) => ({ league, total: 0, spotlightCount: 0 }))
+
+  $: if (activeDay && !filterOptions.includes(activeFilter)) {
+    activeFilter = 'All'
+  }
+
+  $: eligibleMoneylineGames = games.filter((game) => game.moneyline.available)
 
   $: visibleGames =
     activeFilter === 'All' ? games : games.filter((game) => game.league === activeFilter)
@@ -55,13 +75,19 @@
 
   $: spotlightGames = visibleGames.filter((game) => game.spotlight).slice(0, 6)
 
-  $: confidenceAverage = Math.round(
-    visibleGames.reduce((total, game) => total + game.analysis.confidence, 0) / visibleGames.length
-  )
+  $: confidenceAverage = visibleGames.length
+    ? Math.round(
+        visibleGames.reduce((total, game) => total + game.analysis.confidence, 0) /
+          visibleGames.length
+      )
+    : 0
 
-  $: volatilityAverage = Math.round(
-    visibleGames.reduce((total, game) => total + game.analysis.volatility, 0) / visibleGames.length
-  )
+  $: volatilityAverage = visibleGames.length
+    ? Math.round(
+        visibleGames.reduce((total, game) => total + game.analysis.volatility, 0) /
+          visibleGames.length
+      )
+    : 0
 
   $: analysisPicks = rankAnalysisPicks(games)
 
@@ -111,48 +137,72 @@
         ? `${parlay.legCount}-leg parlay ready.`
         : `Add ${PARLAY_MIN_LEGS - parlay.legCount} more leg to turn this into a parlay.`
 
+  const hasPreviousDay = () => dayIndex > 0
+  const hasNextDay = () => dayIndex >= 0 && dayIndex < slateDays.length - 1
+
   const setSidebarTab = (tabId) => {
     activeSidebarTab = tabId
   }
 
+  const selectDay = (dayId) => {
+    if (!dayId || dayId === activeDayId) return
+
+    activeDayId = dayId
+    activeFilter = 'All'
+    activeSidebarTab = 'ticket'
+  }
+
+  const stepDay = (delta) => {
+    const nextDay = slateDays[dayIndex + delta]
+
+    if (nextDay) selectDay(nextDay.id)
+  }
+
   const toggleParlayPick = (gameId, participantId) => {
-    if (selectedPicks[gameId] === participantId) {
-      const nextPicks = { ...selectedPicks }
+    const currentPicks = picksForDay(activeDay.id)
+
+    if (currentPicks[gameId] === participantId) {
+      const nextPicks = { ...currentPicks }
       delete nextPicks[gameId]
-      selectedPicks = nextPicks
+      savePicksForDay(activeDay.id, nextPicks)
       return
     }
 
-    if (!selectedPicks[gameId] && countSelectedPicks(selectedPicks) >= PARLAY_MAX_LEGS) {
+    if (!currentPicks[gameId] && countSelectedPicks(currentPicks) >= PARLAY_MAX_LEGS) {
       activeSidebarTab = 'ticket'
       return
     }
 
-    selectedPicks = {
-      ...selectedPicks,
+    savePicksForDay(activeDay.id, {
+      ...currentPicks,
       [gameId]: participantId
-    }
+    })
 
     activeSidebarTab = 'ticket'
   }
 
   const removeParlayPick = (gameId) => {
-    if (!selectedPicks[gameId]) return
+    const currentPicks = picksForDay(activeDay.id)
 
-    const nextPicks = { ...selectedPicks }
+    if (!currentPicks[gameId]) return
+
+    const nextPicks = { ...currentPicks }
     delete nextPicks[gameId]
-    selectedPicks = nextPicks
+    savePicksForDay(activeDay.id, nextPicks)
   }
 
   const clearParlay = () => {
-    selectedPicks = {}
+    savePicksForDay(activeDay.id, {})
   }
 
   const loadRecommendedParlay = (legCount = activeRecommendedLegCount) => {
     if (!legCount) return
 
-    selectedPicks = Object.fromEntries(
+    savePicksForDay(
+      activeDay.id,
+      Object.fromEntries(
       analysisPickPool.slice(0, legCount).map((pick) => [pick.gameId, pick.participantId])
+    )
     )
     activeSidebarTab = 'ticket'
   }
@@ -162,14 +212,14 @@
   <title>{slateMeta.title} | {slateMeta.date}</title>
   <meta
     name="description"
-    content="A Svelte-built matchup board with full game-by-game analysis, ranked predictions, and parlay-building tools for the May 9, 2026 sports slate."
+    content={`A Svelte-built matchup board with full game-by-game analysis, ranked predictions, and parlay-building tools for the ${slateMeta.date} sports slate.`}
   />
 </svelte:head>
 
 <div class="page-shell">
   <section class="hero-panel">
     <div class="hero-copy">
-      <p class="eyebrow">{slateMeta.date} | Imported from sportsx.rtf + corrected UFC card</p>
+      <p class="eyebrow">{activeDay.label} | {slateMeta.date}</p>
       <h1>{slateMeta.title}</h1>
       <p class="hero-text">{slateMeta.subtitle}</p>
     </div>
@@ -180,8 +230,8 @@
         <strong>{games.length}</strong>
       </div>
       <div class="hero-stat">
-        <span class="hero-label">Spotlight cards</span>
-        <strong>{games.filter((game) => game.spotlight).length}</strong>
+        <span class="hero-label">Stored days</span>
+        <strong>{slateDays.length}</strong>
       </div>
       <div class="hero-stat">
         <span class="hero-label">Confidence average</span>
@@ -191,6 +241,43 @@
         <span class="hero-label">Volatility average</span>
         <strong>{volatilityAverage}</strong>
       </div>
+    </div>
+  </section>
+
+  <section class="daybook-panel" aria-label="Slate daybook">
+    <div class="daybook-header">
+      <div>
+        <p class="eyebrow">Slate Daybook</p>
+        <h2>Scroll Through Days</h2>
+        <p class="daybook-copy">
+          Keep each slate as its own day, then move backward and forward without rebuilding the
+          board from scratch.
+        </p>
+      </div>
+
+      <div class="daybook-actions">
+        <button type="button" disabled={!hasPreviousDay()} on:click={() => stepDay(-1)}>
+          Previous day
+        </button>
+        <button type="button" disabled={!hasNextDay()} on:click={() => stepDay(1)}>
+          Next day
+        </button>
+      </div>
+    </div>
+
+    <div class="daybook-row">
+      {#each slateDays as day}
+        <button
+          type="button"
+          class="daybook-chip"
+          class:active={activeDayId === day.id}
+          on:click={() => selectDay(day.id)}
+        >
+          <span class="daybook-chip-label">{day.label}</span>
+          <strong>{day.slateMeta.date}</strong>
+          <small>{day.summary.totalGames} games | {day.status}</small>
+        </button>
+      {/each}
     </div>
   </section>
 
@@ -221,11 +308,14 @@
           {#each slateMeta.notes as note}
             <li>{note}</li>
           {/each}
+          {#each activeDay.feedNotes as note}
+            <li>{note}</li>
+          {/each}
         </ul>
       </section>
 
       <section class="filter-panel" aria-label="League filters">
-        {#each filters as filter}
+        {#each filterOptions as filter}
           <button
             type="button"
             class:active={activeFilter === filter}
@@ -266,9 +356,21 @@
           <p>{visibleGames.length} matchup{visibleGames.length === 1 ? '' : 's'} on screen.</p>
         </div>
 
-        <div class="game-grid">
-          {#each visibleGames as game, index}
-            <article class="game-card" style={`--order:${index};`}>
+        {#if visibleGames.length === 0}
+          <section class="empty-day-panel">
+            <p class="empty-day-kicker">{activeDay.label} | {activeDay.status}</p>
+            <h3>{activeDay.intakePrompt}</h3>
+
+            <ul class="empty-day-list">
+              {#each activeDay.intakeChecklist as item}
+                <li>{item}</li>
+              {/each}
+            </ul>
+          </section>
+        {:else}
+          <div class="game-grid">
+            {#each visibleGames as game, index}
+              <article class="game-card" style={`--order:${index};`}>
               <div class="card-topline">
                 <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
                 <span class="time-pill">{game.start}</span>
@@ -389,6 +491,14 @@
                       <li>{input.summary}</li>
                     {/each}
                   </ul>
+
+                  {#if game.analysis.volatilityNotes.length > 0}
+                    <div class="model-note-row">
+                      {#each game.analysis.volatilityNotes.slice(0, 3) as note}
+                        <span>{note.label}</span>
+                      {/each}
+                    </div>
+                  {/if}
                 </section>
               {/if}
 
@@ -494,9 +604,10 @@
                 <p class="lean-line">{game.analysis.lean}</p>
                 <p class="swing-line">{game.swing}</p>
               </div>
-            </article>
-          {/each}
-        </div>
+              </article>
+            {/each}
+          </div>
+        {/if}
       </section>
 
       <section class="sources-panel">
@@ -508,11 +619,18 @@
           </p>
         </div>
 
-        <div class="sources-list">
-          {#each sources as source}
-            <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
-          {/each}
-        </div>
+        {#if sources.length > 0}
+          <div class="sources-list">
+            {#each sources as source}
+              <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
+            {/each}
+          </div>
+        {:else}
+          <p class="sources-empty">
+            No day-specific source links are attached yet. Use `daily-games-external.md` as the
+            known-good starting list for the next import.
+          </p>
+        {/if}
       </section>
     </main>
 
