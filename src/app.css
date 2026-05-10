@@ -1,26 +1,25 @@
 :root {
   --bg: #07111a;
-  --bg-deep: #0b1621;
-  --panel: rgba(15, 25, 38, 0.96);
-  --panel-soft: rgba(17, 29, 44, 0.9);
-  --panel-strong: rgba(11, 19, 29, 0.98);
-  --line: rgba(96, 123, 157, 0.16);
-  --line-strong: rgba(120, 156, 201, 0.3);
-  --text: #dce7f5;
-  --muted: #8fa5c0;
+  --bg-deep: #0a1622;
+  --panel: rgba(14, 24, 37, 0.96);
+  --panel-strong: rgba(10, 18, 29, 0.98);
+  --panel-soft: rgba(18, 29, 44, 0.92);
+  --line: rgba(97, 124, 157, 0.18);
+  --line-strong: rgba(113, 157, 212, 0.32);
+  --text: #dbe7f4;
+  --muted: #8ea4c1;
   --heading: #f6f9fe;
-  --accent: #48d4a6;
-  --accent-blue: #6aacff;
-  --warning: #f3bd76;
-  --danger: #ff8d84;
-  --shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+  --accent: #47d2a5;
+  --accent-blue: #6cabff;
+  --warning: #f1bc76;
+  --danger: #ff8f85;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
   --sans: 'Avenir Next', 'Segoe UI', sans-serif;
-  --serif: 'Avenir Next', 'Segoe UI', sans-serif;
   --mono: 'SFMono-Regular', 'IBM Plex Mono', 'Menlo', monospace;
-  font: 13.5px/1.45 var(--sans);
+  font: 13px/1.42 var(--sans);
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(106, 172, 255, 0.08), transparent 32%),
+    radial-gradient(circle at top left, rgba(108, 171, 255, 0.08), transparent 30%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,11 +35,13 @@
 body {
   margin: 0;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 button,
 a,
-input {
+input,
+textarea {
   font: inherit;
 }
 
@@ -81,70 +82,79 @@ a {
 }
 
 .terminal-shell {
-  width: min(1900px, calc(100% - 24px));
+  width: min(1920px, calc(100% - 20px));
+  height: 100svh;
   margin: 0 auto;
-  padding: 12px 0 22px;
+  padding: 10px 0 14px;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 10px;
 }
 
-.terminal-topbar,
-.desk-panel,
-.state-chip,
-.mini-stat-card,
-.summary-card,
-.scope-card,
-.watchlist-row,
-.priority-row,
-.market-row,
+.desk-topbar,
+.browser-panel,
+.action-rail,
+.state-card,
+.date-chip,
+.schedule-chip,
 .market-table-head,
+.market-row,
 .odds-chip,
 .quick-pick-button,
+.row-expand-button,
+.sport-tab,
+.analysis-action-button,
+.sidebar-tab-button,
+.size-chip,
+.load-recommended-button,
+.clear-parlay-button,
+.remove-leg-button,
 .pick-button,
 .parlay-stat-card,
 .parlay-return-card,
 .stake-card,
 .parlay-leg-card,
 .analysis-pick-card,
-.sidebar-status-card,
 .notes-list li,
 .sources-list a,
 .boxscore-card,
 .empty-day-panel,
-.rail-mini-card,
 .meter-card,
-.matchup-cell {
+.action-section,
+.ticket-autobuild,
+.detail-panel,
+.pick-panel,
+.odds-panel,
+.model-panel,
+.series-panel {
   background: var(--panel);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
 }
 
-.terminal-topbar,
-.desk-panel,
+.desk-topbar,
+.browser-panel,
+.action-rail,
 .market-row,
-.market-table-head {
-  backdrop-filter: blur(16px);
+.action-section,
+.ticket-autobuild {
+  border-radius: 14px;
 }
 
-.terminal-topbar,
-.desk-panel {
-  border-radius: 16px;
-}
-
-.terminal-topbar {
-  padding: 14px 16px;
+.desk-topbar {
+  padding: 12px 14px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
-  gap: 14px;
-  align-items: center;
+  gap: 10px;
 }
 
 .eyebrow,
-.state-chip span,
 .panel-meta,
+.date-chip small,
+.schedule-chip span,
 .summary-league,
-.daybook-chip-label,
 .parlay-stat-label,
 .parlay-leg-topline,
-.analysis-pick-topline,
 .pick-kicker,
 .odds-kicker,
 .model-kicker,
@@ -153,8 +163,9 @@ a {
 .market-table-head span,
 .market-title-topline,
 .league-badge,
-.time-pill {
-  font: 600 0.7rem/1.1 var(--mono);
+.time-pill,
+.analysis-pick-topline {
+  font: 600 0.68rem/1.1 var(--mono);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -165,190 +176,99 @@ a {
 
 h1 {
   margin-top: 4px;
-  font: 700 1.7rem/1 var(--serif);
+  font-size: 1.65rem;
+  line-height: 1;
   color: var(--heading);
-  letter-spacing: 0.01em;
 }
 
 h2 {
   margin-top: 2px;
-  font: 700 1rem/1.05 var(--serif);
+  font-size: 1rem;
+  line-height: 1.05;
+  color: var(--heading);
+}
+
+h3 {
+  font-size: 0.94rem;
+  line-height: 1.15;
   color: var(--heading);
 }
 
 .terminal-summary,
 .panel-meta,
-.session-copy p,
-.summary-detail,
-.daybook-chip small,
-.game-summary,
+.date-chip small,
+.schedule-chip small,
+.browser-toolbar-stats span,
+.market-cell small,
+.market-cell p,
 .pick-caption,
 .pick-source,
 .odds-caption,
 .odds-time,
 .model-caption,
-.series-recap,
-.sidebar-filter-note,
-.sidebar-section-copy p,
+.game-summary,
+.swing-line,
 .parlay-sidebar-copy,
 .parlay-status-copy,
 .parlay-meta-line,
 .parlay-leg-game,
-.analysis-pick-game,
-.analysis-pick-rationale,
 .notes-list li,
 .sources-empty,
-.watchlist-copy p,
-.watchlist-copy small,
-.priority-row p,
-.market-cell small,
-.market-cell p,
-.swing-line {
+.analysis-pick-game,
+.analysis-pick-rationale,
+.sidebar-section-copy p,
+.series-recap {
   color: var(--muted);
 }
 
-.terminal-state-strip,
-.session-metrics-grid,
-.summary-strip,
-.scope-strip,
-.daybook-row,
-.watchlist,
-.priority-list,
-.sources-list,
-.parlay-stats-grid,
-.parlay-return-grid,
-.analysis-pick-list,
-.rail-mini-metrics {
-  display: grid;
-  gap: 10px;
-}
-
-.terminal-state-strip {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.state-chip,
-.mini-stat-card,
-.summary-card,
-.scope-card,
-.rail-mini-card {
-  border-radius: 12px;
-  padding: 10px 12px;
-}
-
-.state-chip strong,
-.mini-stat-card strong,
-.summary-value,
-.scope-card strong,
-.rail-mini-card strong,
-.parlay-stat-card strong,
-.parlay-return-card strong {
-  display: block;
-  margin-top: 6px;
-  color: var(--heading);
-  font: 700 1.15rem/1 var(--serif);
-}
-
-.state-chip span,
-.mini-stat-card span,
-.scope-card span,
-.rail-mini-card span {
-  color: var(--muted);
-}
-
-.desk-layout {
-  margin-top: 12px;
-  display: grid;
-  grid-template-columns: 272px minmax(0, 1fr) 344px;
-  gap: 12px;
-  align-items: start;
-}
-
-.control-column,
-.board-column,
-.sidebar-column {
-  display: grid;
-  gap: 12px;
-  align-content: start;
-}
-
-.sidebar-column {
-  position: sticky;
-  top: 12px;
-}
-
-.desk-panel {
-  padding: 14px;
-}
-
-.panel-header,
-.panel-header-spread,
-.daybook-actions,
-.pick-heading,
-.odds-heading,
-.odds-row-topline,
-.model-heading,
-.series-heading,
-.boxscore-topline,
-.parlay-sidebar-header,
-.analysis-pick-topline,
-.pick-button-topline {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.panel-header,
-.panel-header-spread,
-.parlay-sidebar-header {
-  align-items: start;
-}
-
-.panel-header-spread {
-  align-items: end;
-}
-
-.session-copy {
-  margin-top: 10px;
+.date-header {
   display: grid;
   gap: 4px;
 }
 
-.session-copy strong,
-.watchlist-copy strong,
-.priority-row strong,
-.market-cell strong,
-.model-heading-meta strong,
-.pick-analysis-note,
-.boxscore-topline h5,
-.analysis-pick-card h3 {
-  color: var(--heading);
+.date-control-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
 }
 
-.session-metrics-grid {
-  margin-top: 12px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.date-chip-row,
+.schedule-tape,
+.sport-tab-strip,
+.recommendation-size-row,
+.model-chip-row,
+.model-note-row,
+.series-stat-row,
+.series-links,
+.sources-list,
+.quick-pick-row,
+.analysis-action-row,
+.browser-toolbar-stats,
+.market-row-buttons {
+  display: flex;
+  gap: 8px;
 }
 
-.summary-strip.compact {
-  margin-top: 12px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.date-chip-row,
+.schedule-tape,
+.sources-list {
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: thin;
 }
 
-.summary-league {
-  color: var(--accent);
+.date-chip-row::-webkit-scrollbar,
+.schedule-tape::-webkit-scrollbar,
+.market-scroll::-webkit-scrollbar,
+.action-rail::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
 }
 
-.summary-value {
-  font-size: 1.05rem;
-}
-
-.daybook-actions {
-  margin-top: 12px;
-}
-
-.daybook-actions button,
-.filter-panel button,
+.nav-step-button,
+.date-chip,
+.sport-tab,
 .analysis-action-button,
 .sidebar-tab-button,
 .size-chip,
@@ -357,7 +277,6 @@ h2 {
 .remove-leg-button,
 .quick-pick-button,
 .row-expand-button,
-.daybook-chip,
 .pick-button {
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -365,14 +284,13 @@ h2 {
   color: var(--heading);
   cursor: pointer;
   transition:
-    background-color 160ms ease,
-    border-color 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
+    border-color 150ms ease,
+    background-color 150ms ease,
+    transform 150ms ease;
 }
 
-.daybook-actions button,
-.filter-panel button,
+.nav-step-button,
+.sport-tab,
 .analysis-action-button,
 .sidebar-tab-button,
 .size-chip,
@@ -384,10 +302,63 @@ h2 {
   padding: 8px 10px;
 }
 
-.daybook-actions button:hover,
-.daybook-actions button:focus-visible,
-.filter-panel button:hover,
-.filter-panel button:focus-visible,
+.date-chip,
+.schedule-chip {
+  flex-shrink: 0;
+}
+
+.date-chip {
+  padding: 9px 11px;
+  display: grid;
+  gap: 5px;
+  text-align: left;
+}
+
+.date-chip strong {
+  color: var(--heading);
+  font-size: 0.92rem;
+}
+
+.schedule-chip {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panel-soft);
+  display: grid;
+  gap: 4px;
+  text-align: left;
+}
+
+.schedule-chip span {
+  color: var(--accent-blue);
+}
+
+.schedule-chip strong {
+  color: var(--heading);
+  font-size: 0.76rem;
+}
+
+.date-chip.active,
+.sport-tab.active,
+.analysis-action-button.active,
+.sidebar-tab-button.active,
+.size-chip.active,
+.load-recommended-button,
+.quick-pick-button.active,
+.pick-button.active,
+.row-expand-button.active {
+  background: linear-gradient(135deg, rgba(71, 210, 165, 0.18), rgba(108, 171, 255, 0.16));
+  border-color: var(--line-strong);
+}
+
+.nav-step-button:hover,
+.nav-step-button:focus-visible,
+.date-chip:hover,
+.date-chip:focus-visible,
+.schedule-chip:hover,
+.schedule-chip:focus-visible,
+.sport-tab:hover,
+.sport-tab:focus-visible,
 .analysis-action-button:hover,
 .analysis-action-button:focus-visible,
 .sidebar-tab-button:hover,
@@ -404,18 +375,18 @@ h2 {
 .quick-pick-button:focus-visible,
 .row-expand-button:hover,
 .row-expand-button:focus-visible,
-.daybook-chip:hover,
-.daybook-chip:focus-visible,
 .pick-button:hover,
 .pick-button:focus-visible,
 .sources-list a:hover,
-.sources-list a:focus-visible {
+.sources-list a:focus-visible,
+.series-links a:hover,
+.series-links a:focus-visible {
   transform: translateY(-1px);
   border-color: var(--line-strong);
   outline: none;
 }
 
-.daybook-actions button:disabled,
+.nav-step-button:disabled,
 .clear-parlay-button:disabled,
 .analysis-action-button:disabled,
 .quick-pick-button:disabled,
@@ -425,115 +396,59 @@ h2 {
   transform: none;
 }
 
-.daybook-row {
-  margin-top: 10px;
-  grid-template-columns: 1fr;
-}
-
-.daybook-chip {
-  padding: 10px 12px;
-  text-align: left;
-}
-
-.daybook-chip.active,
-.filter-panel button.active,
-.analysis-action-button.active,
-.sidebar-tab-button.active,
-.size-chip.active,
-.load-recommended-button,
-.quick-pick-button.active,
-.pick-button.active {
-  background: linear-gradient(135deg, rgba(72, 212, 166, 0.18), rgba(106, 172, 255, 0.16));
-  border-color: rgba(106, 172, 255, 0.34);
-}
-
-.daybook-chip-label {
-  color: var(--accent-blue);
-}
-
-.daybook-chip strong {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.96rem;
-}
-
-.filter-panel {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.scope-strip {
-  margin-top: 10px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.watchlist,
-.priority-list {
-  margin-top: 10px;
-}
-
-.watchlist-row,
-.priority-row {
-  border-radius: 12px;
-  padding: 10px 12px;
-}
-
-.watchlist-row {
+.desk-workspace {
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) 356px;
   gap: 10px;
-  align-items: center;
+  min-height: 0;
 }
 
-.watchlist-rank {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+.browser-column,
+.action-column {
+  min-height: 0;
+}
+
+.browser-panel {
+  height: 100%;
+  padding: 12px;
   display: grid;
-  place-items: center;
-  background: rgba(72, 212, 166, 0.1);
-  color: var(--accent);
-  font: 700 0.76rem/1 var(--mono);
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 10px;
 }
 
-.watchlist-side {
-  display: grid;
-  gap: 8px;
-  justify-items: end;
+.browser-toolbar,
+.panel-header,
+.pick-heading,
+.odds-heading,
+.odds-row-topline,
+.model-heading,
+.series-heading,
+.boxscore-topline,
+.parlay-sidebar-header,
+.analysis-pick-topline,
+.pick-button-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.watchlist-side span {
-  color: var(--accent-blue);
-  font-weight: 600;
+.browser-toolbar,
+.panel-header,
+.parlay-sidebar-header {
+  align-items: start;
 }
 
-.analysis-action-button.compact {
-  width: auto;
-  min-width: 74px;
-}
-
-.priority-row {
-  display: grid;
-  gap: 6px;
-}
-
-.market-panel-meta,
-.market-title-topline,
-.quick-pick-row,
+.browser-toolbar-stats,
 .model-chip-row,
 .model-note-row,
 .series-stat-row,
 .series-links,
-.recommendation-size-row,
-.analysis-pick-metrics {
-  display: flex;
+.quick-pick-row,
+.analysis-action-row {
   flex-wrap: wrap;
-  gap: 8px;
 }
 
-.market-panel-meta span,
+.browser-toolbar-stats span,
 .model-chip-row span,
 .model-note-row span,
 .series-stat-row span,
@@ -542,13 +457,26 @@ h2 {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  padding: 5px 8px;
-  background: rgba(106, 172, 255, 0.1);
+  padding: 4px 7px;
+  background: rgba(108, 171, 255, 0.1);
   color: var(--heading);
 }
 
+.sport-tab-strip {
+  flex-wrap: wrap;
+}
+
+.sport-tab {
+  min-width: 72px;
+}
+
+.market-scroll {
+  min-height: 0;
+  overflow: auto;
+  padding-right: 2px;
+}
+
 .market-table {
-  margin-top: 12px;
   display: grid;
   gap: 8px;
 }
@@ -556,25 +484,27 @@ h2 {
 .market-table-head,
 .market-row-main {
   display: grid;
-  grid-template-columns: minmax(170px, 1.05fr) minmax(210px, 1.18fr) minmax(160px, 0.92fr) 60px minmax(170px, 0.84fr) minmax(170px, 0.82fr);
-  gap: 12px;
-  align-items: start;
+  grid-template-columns: minmax(164px, 1.04fr) minmax(196px, 1.15fr) minmax(158px, 0.94fr) 54px minmax(160px, 0.82fr) minmax(168px, 0.86fr);
+  gap: 10px;
 }
 
 .market-table-head {
-  border-radius: 12px;
-  padding: 10px 12px;
-  color: var(--muted);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 9px 10px;
+  border-radius: 10px;
   box-shadow: none;
+  background: var(--panel-strong);
+  color: var(--muted);
 }
 
 .market-row {
-  border-radius: 14px;
-  padding: 10px 12px;
+  padding: 10px;
 }
 
 .market-row[data-open='true'] {
-  border-color: rgba(106, 172, 255, 0.32);
+  border-color: var(--line-strong);
 }
 
 .market-row-main {
@@ -583,12 +513,13 @@ h2 {
 
 .market-cell {
   display: grid;
-  gap: 6px;
+  gap: 5px;
 }
 
-.market-identity strong,
-.market-signal strong {
-  font-size: 0.95rem;
+.market-title-topline {
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 .league-badge,
@@ -596,27 +527,27 @@ h2 {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  padding: 4px 8px;
+  padding: 4px 7px;
 }
 
 .league-badge {
-  background: rgba(106, 172, 255, 0.12);
+  background: rgba(108, 171, 255, 0.12);
   color: var(--accent-blue);
 }
 
 .league-mlb {
-  background: rgba(106, 172, 255, 0.12);
+  background: rgba(108, 171, 255, 0.12);
   color: var(--accent-blue);
 }
 
 .league-ufc {
-  background: rgba(255, 141, 132, 0.14);
+  background: rgba(255, 143, 133, 0.14);
   color: var(--danger);
 }
 
 .league-nba,
 .league-wnba {
-  background: rgba(72, 212, 166, 0.12);
+  background: rgba(71, 210, 165, 0.12);
   color: var(--accent);
 }
 
@@ -625,8 +556,16 @@ h2 {
   color: var(--muted);
 }
 
-.market-matchup-compact {
-  gap: 8px;
+.market-identity strong,
+.market-signal strong {
+  font-size: 0.94rem;
+}
+
+.market-matchup-compact,
+.market-odds-compact,
+.market-actions,
+.market-row-buttons {
+  gap: 6px;
 }
 
 .market-side-line {
@@ -644,16 +583,12 @@ h2 {
 }
 
 .market-confidence strong {
-  font-size: 1.05rem;
-}
-
-.market-odds-compact {
-  gap: 6px;
+  font-size: 1rem;
 }
 
 .odds-chip {
   border-radius: 10px;
-  padding: 7px 8px;
+  padding: 6px 8px;
   display: flex;
   justify-content: space-between;
   gap: 8px;
@@ -661,17 +596,12 @@ h2 {
 }
 
 .odds-chip[data-active='true'] {
-  border-color: rgba(72, 212, 166, 0.34);
-  background: rgba(72, 212, 166, 0.08);
+  border-color: rgba(71, 210, 165, 0.34);
+  background: rgba(71, 210, 165, 0.08);
 }
 
 .odds-chip.empty {
   color: var(--muted);
-}
-
-.market-actions {
-  justify-items: stretch;
-  gap: 8px;
 }
 
 .quick-pick-row {
@@ -679,34 +609,39 @@ h2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.quick-pick-button {
+.quick-pick-button,
+.row-expand-button {
+  font-size: 0.75rem;
   text-align: center;
-  font-size: 0.76rem;
 }
 
-.row-expand-button {
-  width: 100%;
-  font-size: 0.76rem;
+.market-row-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .market-detail-grid {
-  margin-top: 12px;
-  padding-top: 12px;
+  margin-top: 10px;
+  padding-top: 10px;
   border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: minmax(250px, 0.95fr) minmax(320px, 1.05fr);
-  gap: 12px;
+  gap: 10px;
+}
+
+.detail-stack {
+  display: grid;
+  gap: 10px;
 }
 
 .detail-panel,
 .pick-panel,
 .odds-panel,
 .model-panel,
-.series-panel {
-  border-radius: 12px;
-  padding: 12px;
-  background: var(--panel-strong);
-  border: 1px solid var(--line);
+.series-panel,
+.ticket-autobuild,
+.action-section {
+  padding: 10px;
 }
 
 .detail-panel-header {
@@ -718,21 +653,17 @@ h2 {
 
 .detail-panel-header span {
   color: var(--muted);
-  font-size: 0.76rem;
-}
-
-.detail-stack {
-  display: grid;
-  gap: 10px;
+  font-size: 0.74rem;
 }
 
 .closeout {
-  margin-top: 12px;
+  margin-top: 10px;
   display: grid;
-  gap: 6px;
+  gap: 5px;
 }
 
-.lean-line {
+.lean-line,
+.analysis-pick-tone {
   color: var(--accent);
   font-weight: 600;
 }
@@ -740,7 +671,6 @@ h2 {
 .factor-list,
 .model-input-list,
 .boxscore-notes,
-.player-analysis-list,
 .empty-day-list {
   padding-left: 18px;
 }
@@ -748,8 +678,10 @@ h2 {
 .factor-list,
 .model-input-list,
 .boxscore-notes,
-.empty-day-list {
-  margin-top: 12px;
+.empty-day-list,
+.odds-list,
+.notes-list {
+  margin-top: 10px;
   display: grid;
   gap: 8px;
 }
@@ -757,25 +689,20 @@ h2 {
 .factor-list li::marker,
 .model-input-list li::marker,
 .boxscore-notes li::marker,
-.empty-day-list li::marker,
-.player-analysis-list li::marker {
+.empty-day-list li::marker {
   color: var(--accent);
 }
 
 .meter-grid {
-  margin-top: 12px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.meter-grid.compact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .meter-card {
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 8px;
   box-shadow: none;
 }
 
@@ -794,10 +721,10 @@ h2 {
 }
 
 .meter-track {
-  margin-top: 8px;
-  height: 7px;
+  margin-top: 7px;
+  height: 6px;
   border-radius: 999px;
-  background: rgba(72, 212, 166, 0.12);
+  background: rgba(71, 210, 165, 0.12);
   overflow: hidden;
 }
 
@@ -809,25 +736,11 @@ h2 {
 }
 
 .meter-track.volatility {
-  background: rgba(255, 141, 132, 0.12);
+  background: rgba(255, 143, 133, 0.12);
 }
 
 .meter-track.volatility span {
   background: linear-gradient(90deg, var(--warning), var(--danger));
-}
-
-.pick-heading,
-.odds-heading,
-.series-heading,
-.boxscore-topline {
-  align-items: baseline;
-}
-
-.pick-kicker,
-.odds-kicker,
-.model-kicker,
-.series-kicker {
-  color: var(--accent);
 }
 
 .pick-side-meta,
@@ -838,19 +751,15 @@ h2 {
   gap: 4px;
 }
 
-.pick-grid {
+.pick-grid.compact {
   margin-top: 10px;
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 }
 
-.pick-grid.compact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .pick-button {
-  border-radius: 12px;
-  padding: 10px;
+  padding: 9px;
   box-shadow: none;
   text-align: left;
 }
@@ -858,27 +767,21 @@ h2 {
 .pick-badge {
   border-radius: 999px;
   padding: 4px 6px;
-  background: rgba(106, 172, 255, 0.12);
+  background: rgba(108, 171, 255, 0.12);
   color: var(--accent-blue);
-  font: 600 0.64rem/1 var(--mono);
+  font: 600 0.62rem/1 var(--mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.odds-list {
-  margin-top: 10px;
-  display: grid;
-  gap: 8px;
-}
-
 .odds-row {
-  padding-top: 8px;
+  padding-top: 7px;
   border-top: 1px solid var(--line);
 }
 
 .odds-row:first-child {
-  border-top: 0;
   padding-top: 0;
+  border-top: 0;
 }
 
 .odds-row p {
@@ -888,8 +791,16 @@ h2 {
 }
 
 .odds-note {
-  margin-top: 10px;
+  margin-top: 8px;
   color: var(--warning);
+}
+
+.series-heading,
+.boxscore-topline,
+.pick-heading,
+.odds-heading,
+.model-heading {
+  align-items: baseline;
 }
 
 .series-record {
@@ -900,36 +811,26 @@ h2 {
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.boxscore-card {
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: none;
-}
-
-.series-links,
-.sources-list {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
   gap: 8px;
 }
 
-.series-links a,
-.sources-list a {
-  border-radius: 999px;
-  padding: 7px 10px;
+.boxscore-card {
+  border-radius: 10px;
+  padding: 8px;
   box-shadow: none;
 }
 
-.parlay-sidebar {
-  position: sticky;
-  top: 12px;
-  max-height: calc(100svh - 24px);
+.action-column {
+  min-height: 0;
+}
+
+.action-rail {
+  height: 100%;
+  padding: 12px;
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  gap: 10px;
   overflow: auto;
-  scrollbar-gutter: stable;
 }
 
 .parlay-sidebar-header h2 {
@@ -937,34 +838,49 @@ h2 {
 }
 
 .rail-mini-metrics,
-.parlay-stats-grid.compact {
-  margin-top: 12px;
+.parlay-stats-grid.compact,
+.parlay-return-grid {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .rail-mini-card,
 .parlay-stat-card,
 .parlay-return-card,
 .stake-card,
-.analysis-pick-card,
 .parlay-leg-card,
+.analysis-pick-card,
 .sidebar-status-card {
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 9px;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
   box-shadow: none;
 }
 
+.rail-mini-card strong,
+.parlay-stat-card strong,
+.parlay-return-card strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--heading);
+  font-size: 1.1rem;
+}
+
+.rail-mini-card span {
+  color: var(--muted);
+}
+
 .sidebar-tab-row {
-  margin-top: 12px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
 }
 
 .parlay-body {
-  margin-top: 12px;
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .stake-card {
@@ -972,36 +888,40 @@ h2 {
   gap: 8px;
 }
 
-.stake-card input {
+.stake-card input,
+.source-form input,
+.desk-note-input {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 10px;
-  padding: 10px 12px;
-  background: rgba(8, 14, 23, 0.92);
+  padding: 9px 10px;
+  background: rgba(7, 13, 21, 0.92);
   color: var(--heading);
 }
 
-.stake-card input:focus-visible {
-  outline: 2px solid rgba(106, 172, 255, 0.3);
+.stake-card input:focus-visible,
+.source-form input:focus-visible,
+.desk-note-input:focus-visible {
+  outline: 2px solid rgba(108, 171, 255, 0.28);
   outline-offset: 1px;
 }
 
-.parlay-meta-line,
-.parlay-empty {
-  margin-top: 12px;
+.ticket-autobuild-label {
+  color: var(--muted);
+  margin-bottom: 8px;
 }
 
 .parlay-empty,
 .sources-empty,
 .panel-empty {
-  padding: 10px 12px;
-  border-radius: 12px;
+  padding: 10px 11px;
+  border-radius: 10px;
   border: 1px dashed var(--line-strong);
-  background: rgba(11, 19, 29, 0.76);
+  background: rgba(11, 18, 28, 0.8);
 }
 
 .parlay-leg-list {
-  margin-top: 12px;
+  margin-top: 10px;
   display: grid;
   gap: 8px;
 }
@@ -1012,6 +932,12 @@ h2 {
   gap: 10px;
 }
 
+.parlay-leg-pick {
+  margin-top: 4px;
+  color: var(--heading);
+  font-weight: 600;
+}
+
 .parlay-leg-side {
   min-width: 110px;
   display: flex;
@@ -1020,56 +946,70 @@ h2 {
   gap: 4px;
 }
 
-.parlay-leg-pick {
-  margin-top: 4px;
-  color: var(--heading);
-  font-weight: 600;
-}
-
 .analyst-chip {
-  background: rgba(72, 212, 166, 0.12);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 7px;
+  background: rgba(71, 210, 165, 0.12);
   color: var(--accent);
 }
 
-.analysis-pick-list {
-  margin-top: 12px;
+.action-section {
+  display: grid;
+  gap: 10px;
 }
 
-.analysis-pick-card {
+.action-section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.analysis-pick-list {
   display: grid;
   gap: 8px;
 }
 
-.analysis-pick-card h3 {
-  font-size: 0.95rem;
-  line-height: 1.2;
+.analysis-pick-card.compact {
+  display: grid;
+  gap: 7px;
 }
 
-.analysis-pick-tone {
-  color: var(--accent);
-  font-weight: 600;
+.analysis-action-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.analysis-pick-lean {
-  color: var(--text);
+.source-form {
+  display: grid;
+  gap: 8px;
+}
+
+.desk-note-input {
+  resize: vertical;
+  min-height: 180px;
 }
 
 .notes-list {
   list-style: none;
-  display: grid;
-  gap: 8px;
 }
 
 .notes-list li {
-  border-radius: 12px;
-  padding: 10px 12px;
-  box-shadow: none;
+  border-radius: 10px;
+  padding: 9px 10px;
+}
+
+.sources-list a,
+.series-links a {
+  flex-shrink: 0;
+  border-radius: 999px;
+  padding: 6px 9px;
 }
 
 .empty-day-panel {
-  border-radius: 12px;
   padding: 12px;
-  box-shadow: none;
 }
 
 .empty-day-kicker {
@@ -1078,81 +1018,57 @@ h2 {
 
 .empty-day-panel h3 {
   margin-top: 8px;
-  color: var(--heading);
   font-size: 1rem;
+  line-height: 1.15;
+  color: var(--heading);
 }
 
-@media (max-width: 1680px) {
-  .desk-layout {
-    grid-template-columns: 258px minmax(0, 1fr) 332px;
-  }
-
+@media (max-width: 1500px) {
   .market-table-head,
   .market-row-main {
-    grid-template-columns: minmax(150px, 0.98fr) minmax(190px, 1.08fr) minmax(150px, 0.88fr) 56px minmax(160px, 0.8fr) minmax(160px, 0.78fr);
-  }
-}
-
-@media (max-width: 1440px) {
-  .terminal-topbar {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(150px, 1fr) minmax(180px, 1.06fr) minmax(150px, 0.92fr) 50px minmax(148px, 0.76fr) minmax(154px, 0.78fr);
   }
 
-  .terminal-state-strip {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .desk-layout {
-    grid-template-columns: 244px minmax(0, 1fr) 316px;
-  }
-
-  .market-table-head,
-  .market-row-main {
-    grid-template-columns: minmax(140px, 0.96fr) minmax(170px, 1fr) minmax(140px, 0.84fr) 56px minmax(140px, 0.72fr) minmax(150px, 0.72fr);
-    gap: 10px;
+  .desk-workspace {
+    grid-template-columns: minmax(0, 1fr) 336px;
   }
 }
 
 @media (max-width: 1220px) {
-  .desk-layout {
+  body {
+    overflow: auto;
+  }
+
+  .terminal-shell {
+    height: auto;
+  }
+
+  .desk-workspace {
     grid-template-columns: 1fr;
   }
 
-  .sidebar-column {
-    position: static;
-    top: auto;
+  .browser-panel,
+  .action-rail {
+    height: auto;
   }
 
-  .parlay-sidebar {
-    position: static;
-    top: auto;
-    max-height: none;
-  }
-
-  .control-column {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .market-scroll,
+  .action-rail {
+    overflow: visible;
   }
 }
 
 @media (max-width: 980px) {
   .terminal-shell {
-    width: min(100% - 18px, 1900px);
+    width: min(100% - 14px, 1920px);
   }
 
-  .control-column {
+  .date-control-row {
     grid-template-columns: 1fr;
   }
 
-  .terminal-state-strip,
-  .session-metrics-grid,
-  .summary-strip.compact,
-  .scope-strip,
-  .rail-mini-metrics,
-  .parlay-stats-grid.compact,
-  .parlay-return-grid,
-  .boxscore-grid,
-  .meter-grid.compact {
-    grid-template-columns: 1fr;
+  .terminal-summary {
+    max-width: none;
   }
 
   .market-table-head {
@@ -1160,43 +1076,28 @@ h2 {
   }
 
   .market-row-main,
-  .market-detail-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .market-actions {
-    justify-items: start;
-  }
-
-  .quick-pick-row,
+  .market-detail-grid,
+  .boxscore-grid,
   .pick-grid.compact,
+  .parlay-stats-grid.compact,
+  .parlay-return-grid,
+  .rail-mini-metrics,
+  .analysis-action-row,
+  .quick-pick-row {
+    grid-template-columns: 1fr;
+  }
+
+  .market-row-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sidebar-tab-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .watchlist-row,
-  .parlay-leg-card {
-    grid-template-columns: 1fr;
-    display: grid;
-  }
-
-  .watchlist-side,
-  .parlay-leg-side,
-  .pick-side-meta,
-  .model-heading-meta {
-    justify-items: start;
-    align-items: start;
-  }
-
-  .parlay-leg-side,
-  .pick-side-meta,
-  .model-heading-meta {
-    display: flex;
-  }
-
-  .panel-header,
-  .panel-header-spread,
   .parlay-sidebar-header,
+  .browser-toolbar,
+  .panel-header,
   .pick-heading,
   .odds-heading,
   .model-heading,
@@ -1204,5 +1105,15 @@ h2 {
   .boxscore-topline {
     flex-direction: column;
     align-items: start;
+  }
+
+  .pick-side-meta,
+  .model-heading-meta,
+  .parlay-leg-side {
+    align-items: start;
+  }
+
+  .parlay-leg-card {
+    display: grid;
   }
 }
