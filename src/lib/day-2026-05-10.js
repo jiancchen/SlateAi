@@ -1,27 +1,33 @@
 import { createSportsMatchModel } from './sports-model.js'
+import {
+  lineupMatchupContextByGame,
+  teamBullpenContextByTeam,
+  teamOffenseContextByTeam
+} from './mlb-context-2026-05-10.js'
 
 export const slateMeta = {
-  title: 'Sunday MLB Slate',
+  title: 'Sunday Cross-Sport Board',
   date: 'May 10, 2026',
   isoDate: '2026-05-10',
   timeZone: 'America/Los_Angeles',
   subtitle:
-    'A stored day-two board generated from the known-good source list, using official MLB matchup data and Covers opening moneylines for a real test-run build.',
+    'A stored May 10 board that now blends MLB, NBA, and WNBA using official league data, live market snapshots, and playoff-series box-score context.',
   notes: [
     'This day was built from the source-registry workflow instead of a hand-entered slate.',
     'Matchups and probable pitchers come from official MLB data, cross-checked against MLB.com probable-pitcher pages.',
-    'The MLB reads now blend moneyline, listed starter form, standings context, and Statcast park factors.',
-    'This automated ingest currently wires moneyline first; run line and total parsing are the next step in the daily build path.'
+    'The MLB reads now blend moneyline, listed starter form, standings context, Statcast park factors, team hit production, bullpen quality, and BallparkPal lineup-vs-starter context, with the Orioles starter updated to Keegan Akin on the latest morning refresh.',
+    'The NBA playoff cards now include official Games 1-3 box-score context, series trends, and key-player notes for today\'s Game 4 matchups.',
+    'WNBA and NBA prices come from the current ScoresAndOdds board snapshot, while MLB remains wired to the stored opening-moneyline ingest.'
   ]
 }
 
-export const filters = ['All', 'MLB']
+export const filters = ['All', 'MLB', 'NBA', 'WNBA']
 
 export const oddsMeta = {
-  provider: 'Official MLB data + Covers opening moneyline board',
-  snapshot: 'May 10, 2026, 1:16 AM ET',
+  provider: 'Mixed official league data + live board snapshots',
+  snapshot: 'May 10, 2026, 9:17 AM PT',
   note:
-    'This test-run build uses official MLB matchup and probable-pitcher data plus the Covers opening moneyline rows that were exposed in the accessible board. Run line and total parsing are still pending in the automated ingest flow.'
+    'MLB is still tied to the stored opening-moneyline ingest. NBA and WNBA use the current ScoresAndOdds board, and the two NBA playoff cards add official series box-score context from Games 1-3.'
 }
 
 export const sources = [
@@ -50,8 +56,60 @@ export const sources = [
     url: 'https://baseballsavant.mlb.com/leaderboard/statcast-park-factors'
   },
   {
+    label: 'TeamRankings MLB hits per game',
+    url: 'https://www.teamrankings.com/mlb/stat/hits-per-game'
+  },
+  {
+    label: 'Covers MLB bullpen ERA',
+    url: 'https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026'
+  },
+  {
+    label: 'BallparkPal matchup board',
+    url: 'https://www.ballparkpal.com/Matchups.php'
+  },
+  {
     label: 'Covers MLB odds board',
     url: 'https://www.covers.com/sport/baseball/mlb/odds'
+  },
+  {
+    label: 'NBA 2026 playoffs schedule',
+    url: 'https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true'
+  },
+  {
+    label: 'ScoresAndOdds NBA board',
+    url: 'https://www.scoresandodds.com/nba'
+  },
+  {
+    label: 'Knicks vs 76ers Game 1 official PDF box score',
+    url: 'https://statsdmz.nba.com/pdfs/20260504/20260504_PHINYK.pdf'
+  },
+  {
+    label: 'Knicks vs 76ers Game 2 official PDF box score',
+    url: 'https://statsdmz.nba.com/pdfs/20260506/20260506_PHINYK.pdf'
+  },
+  {
+    label: 'Knicks vs 76ers Game 3 official PDF box score',
+    url: 'https://statsdmz.nba.com/pdfs/20260508/20260508_NYKPHI.pdf'
+  },
+  {
+    label: 'Spurs vs Timberwolves Game 1 official PDF box score',
+    url: 'https://statsdmz.nba.com/pdfs/20260504/20260504_MINSAS.pdf'
+  },
+  {
+    label: 'Spurs vs Timberwolves Game 2 official PDF box score',
+    url: 'https://statsdmz.nba.com/pdfs/20260506/20260506_MINSAS.pdf'
+  },
+  {
+    label: 'Spurs vs Timberwolves Game 3 official PDF box score',
+    url: 'https://statsdmz.nba.com/pdfs/20260508/20260508_SASMIN.pdf'
+  },
+  {
+    label: 'WNBA daily slate hub',
+    url: 'https://www.wnba.com/'
+  },
+  {
+    label: 'ScoresAndOdds WNBA board',
+    url: 'https://www.scoresandodds.com/wnba'
   }
 ]
 
@@ -62,6 +120,18 @@ const makeOdds = (moneyline) => ({
   note:
     'Automated May 10 ingest is currently using the Covers opening moneyline row. Run line and total are the next parser stage.',
   provider: 'Covers opening board'
+})
+
+const makeBoardOdds = ({ spread = '', total = '', moneyline = '', provider = 'ScoresAndOdds board' }) => ({
+  participantOrder: [0, 1],
+  markets: [
+    ...(spread ? [market('Spread', provider, spread)] : []),
+    ...(total ? [market('Total', provider, total)] : []),
+    ...(moneyline ? [market('Moneyline', provider, moneyline)] : [])
+  ],
+  note:
+    'Current board snapshot from ScoresAndOdds on the May 10 morning refresh. This layer is meant to complement the deeper model read, not replace it.',
+  provider
 })
 
 const parseAmericanPair = (value = '') =>
@@ -773,12 +843,12 @@ const rawGames = [
       strikeOuts: 43
     },
     homePitcher: {
-      fullName: 'Chris Bassitt',
-      pitchHand: 'R',
-      wins: 2,
-      losses: 2,
-      era: '5.91',
-      strikeOuts: 20
+      fullName: 'Keegan Akin',
+      pitchHand: 'L',
+      wins: 0,
+      losses: 0,
+      era: '11.12',
+      strikeOuts: 5
     }
   },
   {
@@ -1095,15 +1165,504 @@ const rawGames = [
   }
 ]
 
+const basketballGames = [
+  {
+    id: 'storm-sun',
+    league: 'WNBA',
+    start: '10:00 AM PT',
+    startMinutes: 600,
+    title: 'Storm @ Sun',
+    stage: 'WNBA opening weekend',
+    spotlight: false,
+    tags: ['Short number', 'Home opener', 'Frontcourt test'],
+    matchup: [
+      {
+        side: 'Away',
+        name: 'Storm',
+        detail: 'Road opener | Perimeter creation and pace pressure'
+      },
+      {
+        side: 'Home',
+        name: 'Sun',
+        detail: 'Home opener | Interior-control profile and half-court discipline'
+      }
+    ],
+    summary:
+      'Connecticut gets the home-opener edge in a very short number, while Seattle needs cleaner guard shot creation to keep the Sun from dictating the game shape in the half court.',
+    factors: [
+      'This line is tight enough that rebounding, turnover margin, and late-clock execution matter more than broad preseason opinions.',
+      'Connecticut carries the cleaner home-environment case, especially if the game slows into a more physical half-court script.',
+      'Seattle still has enough perimeter creation to flip the read if the Storm can win the burst-scoring stretches early.'
+    ],
+    lean: 'Lean Sun on the home floor and the steadier opening baseline.',
+    swing: 'Swing factor: whether Seattle can win the guard-creation minutes enough to offset Connecticut\'s home-floor control.',
+    odds: makeBoardOdds({
+      spread: 'SEA +2.5 (-112) / CON -2.5 (-108)',
+      total: 'O 164.5 (-108) / U 164.5 (-112)',
+      moneyline: 'SEA +110 / CON -130'
+    })
+  },
+  {
+    id: 'liberty-mystics',
+    league: 'WNBA',
+    start: '12:00 PM PT',
+    startMinutes: 720,
+    title: 'Liberty @ Mystics',
+    stage: 'WNBA opening weekend',
+    spotlight: true,
+    tags: ['Road favorite', 'Talent gap', 'Half-court test'],
+    matchup: [
+      {
+        side: 'Away',
+        name: 'Liberty',
+        detail: 'Stewart | Ionescu | Jonquel Jones | Proven title-level core'
+      },
+      {
+        side: 'Home',
+        name: 'Mystics',
+        detail: 'Home opener | Younger group trying to slow the script'
+      }
+    ],
+    summary:
+      'New York brings the cleaner top-end talent and the deeper continuity profile, which is why the market still hangs a meaningful road-favorite tax despite the travel spot.',
+    factors: [
+      'The Liberty own the stronger shot-creation hierarchy and the safer possession baseline when games compress late.',
+      'Washington\'s path is to slow the pace, force a half-court grind, and turn this into a lower-event execution test.',
+      'If New York wins the glass and keeps the Mystics out of transition shortcuts, the talent edge should show up over four quarters.'
+    ],
+    lean: 'Lean Liberty because the championship core still sets the higher possession-to-possession floor.',
+    swing: 'Swing factor: whether Washington can slow the game enough to make New York earn every trip in the half court.',
+    odds: makeBoardOdds({
+      spread: 'NYL -5.5 (-108) / WAS +5.5 (-112)',
+      total: 'O 165.5 (-105) / U 165.5 (-115)',
+      moneyline: 'NYL -230 / WAS +190'
+    })
+  },
+  {
+    id: 'knicks-76ers',
+    league: 'NBA',
+    start: '12:30 PM PT',
+    startMinutes: 750,
+    title: 'Knicks @ 76ers',
+    stage: 'East semifinal Game 4',
+    spotlight: true,
+    tags: ['Series pressure', 'Paint edge', 'Closeout attempt'],
+    matchup: [
+      {
+        side: 'Away',
+        name: 'Knicks',
+        detail: 'Brunson | Towns | Bridges | Leading series 3-0'
+      },
+      {
+        side: 'Home',
+        name: '76ers',
+        detail: 'Maxey | George | Embiid | Home elimination spot'
+      }
+    ],
+    summary:
+      'New York has controlled the series through paint pressure, rebounding, and cleaner possessions, so Philadelphia now needs more than star-level scoring to change the math in Game 4.',
+    factors: [
+      'The Knicks are averaging 117.7 points per game in the series and have led the 76ers in paint scoring in every game so far.',
+      'Philadelphia has had enough individual scoring to keep stretches competitive, but the turnover count and rebound margin keep dragging the game back toward New York.',
+      'The 76ers are finally back home, which matters, but the burden is now on them to flip the possession battle instead of just matching Brunson shot for shot.'
+    ],
+    lean: 'Lean Knicks because the three-game sample keeps rewarding their paint pressure and cleaner possessions.',
+    swing: 'Swing factor: whether Philadelphia can finally win the turnover and paint battle at home instead of just trading star scoring.',
+    seriesBreakdown: {
+      kicker: 'Playoff series to date',
+      title: 'Why New York is one win from closing this out',
+      record: 'Knicks lead 3-0',
+      recap:
+        'The three-game sample has been remarkably consistent. New York has lived at the rim, owned more extra-possession minutes, and trusted Jalen Brunson to settle every unstable stretch. Philadelphia still has enough star scoring to threaten a single game, but the 76ers have not solved the turnover pressure or the paint deficit long enough to actually flip a result.',
+      seriesStats: [
+        'NYK 117.7 PPG | PHI 98.0 PPG',
+        'Paint points: NYK 55.3 | PHI 36.0',
+        'Rebounds: NYK 41.7 | PHI 33.3',
+        '76ers turnovers: 16.0 per game'
+      ],
+      boxScores: [
+        {
+          label: 'Game 1',
+          date: 'May 4, 2026',
+          result: 'Knicks 137, 76ers 98',
+          notes: [
+            'New York shot 63.1 percent and scored 58 points in the paint.',
+            'Philadelphia turned it over 19 times, which fed 25 Knicks points.',
+            'The opener never really stabilized once Brunson and the Knicks front line got downhill.'
+          ],
+          leaders: [
+            {
+              team: 'Knicks leaders',
+              lines: [
+                'Jalen Brunson: 35 points',
+                'OG Anunoby: 18 points',
+                'Karl-Anthony Towns: 17 points',
+                'Mikal Bridges: 17 points'
+              ]
+            },
+            {
+              team: '76ers leaders',
+              lines: [
+                'Paul George: 17 points',
+                'Joel Embiid: 14 points',
+                'Tyrese Maxey: 13 points'
+              ]
+            }
+          ]
+        },
+        {
+          label: 'Game 2',
+          date: 'May 6, 2026',
+          result: 'Knicks 108, 76ers 102',
+          notes: [
+            'The game was tighter, but New York still won the paint battle 56-30.',
+            'Philadelphia coughed it up 18 more times and never fully cleaned the possession margin.',
+            'Joel Embiid was inactive, which put even more creation load on Maxey and George.'
+          ],
+          leaders: [
+            {
+              team: 'Knicks leaders',
+              lines: [
+                'Jalen Brunson: 26 points',
+                'OG Anunoby: 24 points',
+                'Karl-Anthony Towns: 20 points',
+                'Mikal Bridges: 18 points'
+              ]
+            },
+            {
+              team: '76ers leaders',
+              lines: [
+                'Tyrese Maxey: 26 points',
+                'Paul George: 19 points',
+                'Kelly Oubre Jr.: 19 points'
+              ]
+            }
+          ]
+        },
+        {
+          label: 'Game 3',
+          date: 'May 8, 2026',
+          result: 'Knicks 108, 76ers 94',
+          notes: [
+            'New York again controlled the interior, posting a 52-46 paint edge and 20 second-chance points.',
+            'Philadelphia shot 42.9 percent and still never found enough support scoring around its stars.',
+            'OG Anunoby was inactive with a right hamstring strain, and the Knicks still kept the series script intact.'
+          ],
+          leaders: [
+            {
+              team: 'Knicks leaders',
+              lines: [
+                'Jalen Brunson: 33 points',
+                'Mikal Bridges: 23 points',
+                'Landry Shamet: 15 points',
+                'Josh Hart: 12 points, 11 rebounds'
+              ]
+            },
+            {
+              team: '76ers leaders',
+              lines: [
+                'Kelly Oubre Jr.: 22 points',
+                'Joel Embiid: 18 points',
+                'Tyrese Maxey: 17 points'
+              ]
+            }
+          ]
+        }
+      ],
+      playerAnalysis: [
+        'Jalen Brunson is dictating the series at 31.3 points per game and keeps getting Philadelphia into late-clock help decisions.',
+        'Mikal Bridges has quietly been the two-way stabilizer at 19.3 points per game, while Karl-Anthony Towns has added scoring, rebounding, and connective passing every night.',
+        'Tyrese Maxey has been Philadelphia\'s cleanest perimeter pressure source at 18.7 points per game, but New York has made every Maxey burst feel isolated rather than contagious.',
+        'Paul George and Kelly Oubre Jr. have both had scoring pockets, yet the 76ers still trail badly in paint production and second-chance control.',
+        'Joel Embiid missed Game 2 and returned in Game 3, so availability rhythm has been part of the series read entering this elimination spot.',
+        'OG Anunoby sat Game 3 with a right hamstring strain, which matters because New York has still controlled the series even while rotating through a key wing absence.'
+      ],
+      sources: [
+        {
+          label: 'NBA playoffs schedule',
+          url: 'https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true'
+        },
+        {
+          label: 'Game 1 official PDF box score',
+          url: 'https://statsdmz.nba.com/pdfs/20260504/20260504_PHINYK.pdf'
+        },
+        {
+          label: 'Game 2 official PDF box score',
+          url: 'https://statsdmz.nba.com/pdfs/20260506/20260506_PHINYK.pdf'
+        },
+        {
+          label: 'Game 3 official PDF box score',
+          url: 'https://statsdmz.nba.com/pdfs/20260508/20260508_NYKPHI.pdf'
+        }
+      ]
+    },
+    odds: makeBoardOdds({
+      spread: 'NYK -1.5 (-110) / PHI +1.5 (-110)',
+      total: 'O 214.5 (-110) / U 214.5 (-110)',
+      moneyline: 'NYK -120 / PHI +100'
+    })
+  },
+  {
+    id: 'aces-sparks',
+    league: 'WNBA',
+    start: '3:00 PM PT',
+    startMinutes: 900,
+    title: 'Aces @ Sparks',
+    stage: 'WNBA opening weekend',
+    spotlight: true,
+    tags: ['Short spread', 'Tradable number', 'Late-window game'],
+    matchup: [
+      {
+        side: 'Away',
+        name: 'Aces',
+        detail: 'Star-heavy road group | Slight market favorite'
+      },
+      {
+        side: 'Home',
+        name: 'Sparks',
+        detail: 'Home floor | Live dog in a one-possession spread'
+      }
+    ],
+    summary:
+      'This is the most tradable WNBA number on the board. Las Vegas still wears the shorter price, but the spread getting shaved to -1.5 says the market sees a very real one-possession game profile.',
+    factors: [
+      'The Aces own the cleaner closing-time star power case if the final five minutes are still live.',
+      'Los Angeles gets home-floor comfort and only needs one strong shot-making run to turn a near-pick game into a dog-cover or outright-win spot.',
+      'Because the number is so small, late-game free throws and turnover discipline can swing everything.'
+    ],
+    lean: 'Lean Aces on closing-time star reliability, but this is one of the swingier WNBA side reads on the slate.',
+    swing: 'Swing factor: whether the Sparks can turn the game into a half-court possession grind instead of letting Las Vegas play downhill late.',
+    odds: makeBoardOdds({
+      spread: 'LVA -1.5 (-115) / LAS +1.5 (-105)',
+      total: 'O 177.5 (-110) / U 177.5 (-110)',
+      moneyline: 'LVA -130 / LAS +110'
+    })
+  },
+  {
+    id: 'spurs-timberwolves',
+    league: 'NBA',
+    start: '4:30 PM PT',
+    startMinutes: 990,
+    title: 'Spurs @ Timberwolves',
+    stage: 'West semifinal Game 4',
+    spotlight: true,
+    tags: ['Series pressure', 'Wembanyama edge', 'Home response'],
+    matchup: [
+      {
+        side: 'Away',
+        name: 'Spurs',
+        detail: 'Wembanyama | Castle | Fox | Leading series 2-1'
+      },
+      {
+        side: 'Home',
+        name: 'Timberwolves',
+        detail: 'Edwards | Randle | Reid | Must-answer Game 4'
+      }
+    ],
+    summary:
+      'San Antonio has turned this series by controlling the interior and getting cleaner guard play behind Victor Wembanyama, which leaves Minnesota needing a real home-floor response in Game 4.',
+    factors: [
+      'The Spurs are averaging 116.7 points per game in the series and just dropped 133 in their most lopsided win.',
+      'Victor Wembanyama\'s two-way footprint is warping the matchup, especially when San Antonio can pair his rim control with Castle and Fox pace.',
+      'Minnesota is still live at home because Anthony Edwards can detonate a single game, but the Wolves need cleaner secondary support and fewer momentum-killing stretches.'
+    ],
+    lean: 'Lean Spurs because the current series sample keeps rewarding their interior control and cleaner backcourt orchestration.',
+    swing: 'Swing factor: whether Minnesota can keep San Antonio out of early transition and make Wembanyama guard in space without giving up the glass.',
+    seriesBreakdown: {
+      kicker: 'Playoff series to date',
+      title: 'Why San Antonio has taken control after Game 1',
+      record: 'Spurs lead 2-1',
+      recap:
+        'Minnesota grabbed the opener, but the series has increasingly tilted toward San Antonio\'s cleaner structure. The Spurs have gotten elite interior impact from Wembanyama, steadier guard orchestration from Castle and Fox, and enough pace pressure to make the Wolves chase the game shape more often than dictate it.',
+      seriesStats: [
+        'SAS 116.7 PPG | MIN 102.3 PPG',
+        'Wembanyama: 23.0 PPG | 15.0 RPG | 6.3 BPG',
+        'Castle: 17.0 PPG | 7.0 APG',
+        'Edwards: 20.7 PPG | 14.0 RPG in Game 3 response'
+      ],
+      boxScores: [
+        {
+          label: 'Game 1',
+          date: 'May 4, 2026',
+          result: 'Timberwolves 104, Spurs 102',
+          notes: [
+            'Minnesota edged the opener despite San Antonio winning the fast-break points 27-11.',
+            'The Wolves got 52 points in the paint and enough frontcourt scoring to survive the late swings.',
+            'Even in the loss, Wembanyama flashed the matchup problem with a 15-rebound, 12-block line.'
+          ],
+          leaders: [
+            {
+              team: 'Timberwolves leaders',
+              lines: [
+                'Julius Randle: 21 points',
+                'Anthony Edwards: 18 points',
+                'Jaden McDaniels: 16 points',
+                'Terrence Shannon Jr.: 16 points'
+              ]
+            },
+            {
+              team: 'Spurs leaders',
+              lines: [
+                'Dylan Harper: 18 points',
+                'Stephon Castle: 17 points',
+                'Julian Champagnie: 17 points',
+                'Victor Wembanyama: 11 points, 15 rebounds, 12 blocks'
+              ]
+            }
+          ]
+        },
+        {
+          label: 'Game 2',
+          date: 'May 6, 2026',
+          result: 'Spurs 133, Timberwolves 95',
+          notes: [
+            'San Antonio buried Minnesota with 16 made threes and a 29-5 fast-break edge.',
+            'The Wolves committed 22 turnovers and never recovered from the pace deficit.',
+            'This was the cleanest proof yet that the Spurs can win outside of pure Wembanyama shot volume.'
+          ],
+          leaders: [
+            {
+              team: 'Spurs leaders',
+              lines: [
+                'Stephon Castle: 21 points',
+                'Victor Wembanyama: 19 points, 15 rebounds',
+                'De’Aaron Fox: 16 points'
+              ]
+            },
+            {
+              team: 'Timberwolves leaders',
+              lines: [
+                'Jaden McDaniels: 12 points',
+                'Julius Randle: 12 points',
+                'Anthony Edwards: 12 points',
+                'Naz Reid: 11 points'
+              ]
+            }
+          ]
+        },
+        {
+          label: 'Game 3',
+          date: 'May 8, 2026',
+          result: 'Spurs 115, Timberwolves 108',
+          notes: [
+            'Wembanyama detonated for 39 points and 15 rebounds, and the Wolves still never fully solved the matchup.',
+            'Minnesota generated 30 second-chance points, but San Antonio stayed cleaner in the high-leverage possessions.',
+            'Donte DiVincenzo remained out, which left another support-minute gap for the Wolves to patch on the fly.'
+          ],
+          leaders: [
+            {
+              team: 'Spurs leaders',
+              lines: [
+                'Victor Wembanyama: 39 points, 15 rebounds, 5 blocks',
+                'De’Aaron Fox: 17 points',
+                'Stephon Castle: 13 points, 12 assists'
+              ]
+            },
+            {
+              team: 'Timberwolves leaders',
+              lines: [
+                'Anthony Edwards: 32 points, 14 rebounds',
+                'Naz Reid: 18 points',
+                'Jaden McDaniels: 17 points'
+              ]
+            }
+          ]
+        }
+      ],
+      playerAnalysis: [
+        'Victor Wembanyama has become the matchup winner of the series at 23.0 points, 15.0 rebounds, and 6.3 blocks per game.',
+        'Stephon Castle has quietly stabilized the Spurs offense with 17.0 points and 7.0 assists per game, which matters because it keeps San Antonio from living and dying on one creator.',
+        'De’Aaron Fox has given the Spurs enough downhill juice to punish Minnesota whenever the Wolves get loose in transition defense.',
+        'Anthony Edwards still carries the clearest single-game ceiling for Minnesota, and his 32-point Game 3 shows the Wolves are not out of answers if the supporting script improves.',
+        'Julius Randle opened the series well but needs a stronger interior response after San Antonio kept pulling the frontcourt matchup back toward Wembanyama.',
+        'Naz Reid and Jaden McDaniels have both had useful support bursts, but Minnesota still needs a cleaner collective game to avoid letting San Antonio dictate the terms again.'
+      ],
+      sources: [
+        {
+          label: 'NBA playoffs schedule',
+          url: 'https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true'
+        },
+        {
+          label: 'Game 1 official PDF box score',
+          url: 'https://statsdmz.nba.com/pdfs/20260504/20260504_MINSAS.pdf'
+        },
+        {
+          label: 'Game 2 official PDF box score',
+          url: 'https://statsdmz.nba.com/pdfs/20260506/20260506_MINSAS.pdf'
+        },
+        {
+          label: 'Game 3 official PDF box score',
+          url: 'https://statsdmz.nba.com/pdfs/20260508/20260508_SASMIN.pdf'
+        }
+      ]
+    },
+    odds: makeBoardOdds({
+      spread: 'SAS -4.5 (-115) / MIN +4.5 (-105)',
+      total: 'O 217.5 (-115) / U 217.5 (-105)',
+      moneyline: 'SAS -192 / MIN +160'
+    })
+  },
+  {
+    id: 'mercury-valkyries',
+    league: 'WNBA',
+    start: '5:30 PM PT',
+    startMinutes: 1050,
+    title: 'Mercury @ Valkyries',
+    stage: 'WNBA opening weekend',
+    spotlight: true,
+    tags: ['Home debut', 'Tight market', 'Late close'],
+    matchup: [
+      {
+        side: 'Away',
+        name: 'Mercury',
+        detail: 'Veteran road group | Live dog in a narrow number'
+      },
+      {
+        side: 'Home',
+        name: 'Valkyries',
+        detail: 'Inaugural home game | Slight market favorite'
+      }
+    ],
+    summary:
+      'Golden State gets the inaugural-home-game energy with only a slight market edge, while Phoenix brings the more familiar veteran backbone into the building.',
+    factors: [
+      'A one-bucket spread means crowd environment and late-game poise can matter almost as much as raw team strength.',
+      'Phoenix has the more familiar veteran feel, but the Valkyries get the schedule spot the market usually respects: a real home-stage debut with a short number.',
+      'If the game stays close late, it becomes a test of whether home energy outweighs Phoenix\'s steadier veteran rhythm.'
+    ],
+    lean: 'Lean Valkyries on the home debut energy in a very small market.',
+    swing: 'Swing factor: whether Phoenix can keep the building quiet early enough to turn this back into a pure execution game.',
+    odds: makeBoardOdds({
+      spread: 'PHX +1.5 (-105) / GSV -1.5 (-115)',
+      total: 'O 158.5 (-108) / U 158.5 (-112)',
+      moneyline: 'PHX +105 / GSV -125'
+    })
+  }
+]
+
 const enrichRawGame = (game) => ({
   ...game,
   teamContext: {
     away: standingsContextByTeam[game.away],
     home: standingsContextByTeam[game.home]
   },
-  parkContext: parkContextByHomeTeam[game.home] ?? null
+  parkContext: parkContextByHomeTeam[game.home] ?? null,
+  offenseContext: {
+    away: teamOffenseContextByTeam[game.away] ?? null,
+    home: teamOffenseContextByTeam[game.home] ?? null
+  },
+  bullpenContext: {
+    away: teamBullpenContextByTeam[game.away] ?? null,
+    home: teamBullpenContextByTeam[game.home] ?? null
+  },
+  lineupContext: lineupMatchupContextByGame[game.id] ?? null
 })
 
-export const games = rawGames.map((game) =>
-  createSportsMatchModel(buildRawGame(enrichRawGame(game)), oddsMeta.provider)
+const modeledGames = [
+  ...rawGames.map((game) => createSportsMatchModel(buildRawGame(enrichRawGame(game)), oddsMeta.provider)),
+  ...basketballGames.map((game) => createSportsMatchModel(game, game.odds.provider))
+]
+
+export const games = modeledGames.sort(
+  (left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title)
 )

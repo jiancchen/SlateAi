@@ -702,9 +702,37 @@
                                   <li>{note}</li>
                                 {/each}
                               </ul>
+
+                              {#if boxScore.leaders?.length}
+                                <div class="boxscore-leaders">
+                                  {#each boxScore.leaders as leaderGroup}
+                                    <div class="leader-group">
+                                      <p class="leader-group-title">{leaderGroup.team}</p>
+
+                                      <ul class="leader-list">
+                                        {#each leaderGroup.lines as line}
+                                          <li>{line}</li>
+                                        {/each}
+                                      </ul>
+                                    </div>
+                                  {/each}
+                                </div>
+                              {/if}
                             </article>
                           {/each}
                         </div>
+
+                        {#if game.seriesBreakdown.playerAnalysis?.length}
+                          <section class="player-analysis-panel">
+                            <p class="series-kicker">Key players</p>
+
+                            <ul class="player-analysis-list">
+                              {#each game.seriesBreakdown.playerAnalysis as note}
+                                <li>{note}</li>
+                              {/each}
+                            </ul>
+                          </section>
+                        {/if}
 
                         <div class="series-links">
                           {#each game.seriesBreakdown.sources as source}

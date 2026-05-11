@@ -848,6 +848,46 @@ h3 {
   box-shadow: none;
 }
 
+.boxscore-leaders {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.leader-group {
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.leader-group:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.leader-group-title {
+  color: var(--heading);
+  font: 600 0.66rem/1.2 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.leader-list,
+.player-analysis-list {
+  margin-top: 6px;
+  padding-left: 16px;
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+}
+
+.player-analysis-panel {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 9px 10px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
 .action-column {
   min-height: 0;
 }

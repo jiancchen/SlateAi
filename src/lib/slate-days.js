@@ -69,7 +69,7 @@ const createSlateDay = ({
 
 const may9Slate = createSlateDay({
   id: dayOneSlateMeta.isoDate,
-  label: 'Day 1',
+  label: dayOneSlateMeta.date,
   status: 'ready',
   slateMeta: dayOneSlateMeta,
   games: dayOneGames,
@@ -95,7 +95,7 @@ const may9Slate = createSlateDay({
 
 const may10Slate = createSlateDay({
   id: dayTwoSlateMeta.isoDate,
-  label: 'Day 2',
+  label: dayTwoSlateMeta.date,
   status: 'ready',
   slateMeta: dayTwoSlateMeta,
   games: dayTwoGames,
@@ -105,21 +105,22 @@ const may10Slate = createSlateDay({
   intakeChecklist: [
     'Backfill final scores and winning starters after the games close.',
     'Decide whether you want the automated ingest to persist opening odds, latest odds, or both.',
+    'Keep the NBA series links and WNBA board links in daily-games-external.md if they stay stable.',
     'Add run line and total parsing as the next MLB ingest pass.',
-    'When you want other leagues on this date, add equally clean schedule sources to daily-games-external.md.'
+    'Store postgame MLB, NBA, and WNBA results so this day can become a real archive reference.'
   ],
   intakePrompt:
-    'Day 2 is now a live test-run board built from the source registry. It is ready for postgame results, deeper odds parsing, or expansion into other leagues.',
+    'May 10 is now a live multi-sport board built from the source registry. It is ready for postgame results, deeper odds parsing, or the next day build.',
   feedNotes: [
-    'This stored day proves the daybook flow can hydrate a full MLB slate from reusable links.',
-    'Official MLB matchup data, standings context, and Statcast park factors were all structured cleanly enough to reuse.',
-    'The current automated pass wires moneyline only; run line and total are the next clean extension.'
+    'This stored day now proves the daybook flow can hydrate MLB plus same-day NBA and WNBA markets from reusable links.',
+    'Official MLB matchup data, standings context, Statcast park factors, and official NBA playoff box-score PDFs all structured cleanly enough to reuse.',
+    'The current automated pass still wires MLB moneyline first; run line and total are the next clean extension.'
   ],
   archive: {
     resultsStored: false,
-    leaguesTracked: ['MLB']
+    leaguesTracked: ['MLB', 'NBA', 'WNBA']
   }
 })
 
 export const slateDays = [may9Slate, may10Slate]
-export const defaultSlateDayId = slateDays[0]?.id ?? ''
+export const defaultSlateDayId = slateDays.at(-1)?.id ?? ''

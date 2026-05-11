@@ -376,6 +376,141 @@ const buildMlbStandingsSignal = (game, participants) => {
   )
 }
 
+const buildMlbOffenseScore = (profile = {}, role = '') => {
+  const splitHits = /home/i.test(role) ? Number(profile.homeHitsPerGame) : Number(profile.awayHitsPerGame)
+  const baselineHits = Number(profile.hitsPerGame)
+  const recentHits = Number(profile.last3HitsPerGame)
+
+  if (![splitHits, baselineHits, recentHits].every(Number.isFinite)) return null
+
+  return clamp(
+    48 +
+      (baselineHits - 7.8) * 10 +
+      (splitHits - 7.8) * 7 +
+      (recentHits - baselineHits) * 8,
+    24,
+    92
+  )
+}
+
+const buildMlbOffenseSignal = (game, participants) => {
+  const awayContext = game.offenseContext?.away
+  const homeContext = game.offenseContext?.home
+
+  if (!awayContext || !homeContext || participants.length < 2) return null
+
+  const scores = [
+    buildMlbOffenseScore(awayContext, participants[0].role),
+    buildMlbOffenseScore(homeContext, participants[1].role)
+  ]
+
+  if (scores.some((score) => !Number.isFinite(score))) return null
+
+  return createSignal(
+    'Hit-production baseline',
+    0.14,
+    [
+      {
+        label: `${awayContext.hitsPerGame.toFixed(2)} H/G | last 3 ${awayContext.last3HitsPerGame.toFixed(2)} | away ${awayContext.awayHitsPerGame.toFixed(2)}`,
+        score: scores[0]
+      },
+      {
+        label: `${homeContext.hitsPerGame.toFixed(2)} H/G | last 3 ${homeContext.last3HitsPerGame.toFixed(2)} | home ${homeContext.homeHitsPerGame.toFixed(2)}`,
+        score: scores[1]
+      }
+    ],
+    'TeamRankings team offense'
+  )
+}
+
+const buildMlbBullpenScore = (profile = {}) => {
+  const era = Number(profile.era)
+  const whip = Number(profile.whip)
+  const strikeouts = Number(profile.strikeouts)
+  const walks = Number(profile.walks)
+
+  if (![era, whip, strikeouts, walks].every(Number.isFinite)) return null
+
+  const eraScore = clamp(96 - era * 11, 18, 92)
+  const whipScore = clamp(114 - whip * 35, 20, 92)
+  const ratioScore = clamp(28 + (strikeouts / Math.max(walks, 1)) * 18, 22, 88)
+
+  return eraScore * 0.46 + whipScore * 0.34 + ratioScore * 0.2
+}
+
+const buildMlbBullpenSignal = (game, participants) => {
+  const awayContext = game.bullpenContext?.away
+  const homeContext = game.bullpenContext?.home
+
+  if (!awayContext || !homeContext || participants.length < 2) return null
+
+  const scores = [buildMlbBullpenScore(awayContext), buildMlbBullpenScore(homeContext)]
+
+  if (scores.some((score) => !Number.isFinite(score))) return null
+
+  return createSignal(
+    'Bullpen follow-through',
+    0.13,
+    [
+      {
+        label: `${awayContext.era.toFixed(2)} ERA | ${awayContext.whip.toFixed(2)} WHIP | ${awayContext.strikeouts} SO / ${awayContext.walks} BB`,
+        score: scores[0]
+      },
+      {
+        label: `${homeContext.era.toFixed(2)} ERA | ${homeContext.whip.toFixed(2)} WHIP | ${homeContext.strikeouts} SO / ${homeContext.walks} BB`,
+        score: scores[1]
+      }
+    ],
+    'Covers bullpen stats'
+  )
+}
+
+const buildMlbLineupMatchupScore = (profile = {}) => {
+  const grade = Number(profile.averageMatchupGrade)
+  const platoonCount = Number(profile.platoonCount)
+  const powerCount = Number(profile.powerCount)
+  const contactCount = Number(profile.contactCount)
+
+  if (![grade, platoonCount, powerCount, contactCount].every(Number.isFinite)) return null
+
+  return clamp(
+    50 +
+      grade * 2.8 +
+      (platoonCount - 6) * 1.7 +
+      (powerCount - 2) * 1.2 +
+      (contactCount - 1) * 1.1,
+    18,
+    92
+  )
+}
+
+const buildMlbLineupMatchupSignal = (game, participants) => {
+  const awayContext = game.lineupContext?.[participants[0].name]
+  const homeContext = game.lineupContext?.[participants[1].name]
+
+  if (!awayContext || !homeContext || participants.length < 2) return null
+
+  const scores = [buildMlbLineupMatchupScore(awayContext), buildMlbLineupMatchupScore(homeContext)]
+
+  if (scores.some((score) => !Number.isFinite(score))) return null
+
+  return createSignal(
+    'Lineup-vs-starter fit',
+    0.14,
+    [
+      {
+        label: `Grade ${awayContext.averageMatchupGrade >= 0 ? '+' : ''}${awayContext.averageMatchupGrade.toFixed(2)} | platoon ${awayContext.platoonCount} | power ${awayContext.powerCount}`,
+        score: scores[0]
+      },
+      {
+        label: `Grade ${homeContext.averageMatchupGrade >= 0 ? '+' : ''}${homeContext.averageMatchupGrade.toFixed(2)} | platoon ${homeContext.platoonCount} | power ${homeContext.powerCount}`,
+        score: scores[1]
+      }
+    ],
+    'BallparkPal matchup board'
+  )
+}
+
 const buildMlbParkModifiers = (game, starters = []) => {
   const park = game.parkContext
 
@@ -432,19 +567,58 @@ const pitcherEraScore = (pitcher) =>
 
 const pitcherStrikeoutScore = (pitcher) => clamp(34 + pitcher.strikeouts * 1.08, 24, 88)
 
+const starterScore = (pitcher) =>
+  pitcherRecordScore(pitcher) * 0.28 +
+  pitcherEraScore(pitcher) * 0.44 +
+  pitcherStrikeoutScore(pitcher) * 0.28
+
 const buildMlbAnalysisContext = (game, participants) => {
   const starters = participants.map((participant) => parsePitcherDetail(participant.detail))
+  const offenseProfiles = [game.offenseContext?.away, game.offenseContext?.home]
+  const bullpenProfiles = [game.bullpenContext?.away, game.bullpenContext?.home]
+  const lineupProfiles = [
+    game.lineupContext?.[participants[0]?.name],
+    game.lineupContext?.[participants[1]?.name]
+  ]
+  const offenseScores = offenseProfiles.map((profile, index) =>
+    profile ? buildMlbOffenseScore(profile, participants[index]?.role) : null
+  )
+  const bullpenScores = bullpenProfiles.map((profile) =>
+    profile ? buildMlbBullpenScore(profile) : null
+  )
+  const lineupScores = lineupProfiles.map((profile) =>
+    profile ? buildMlbLineupMatchupScore(profile) : null
+  )
+  const marketProbabilities = computeNoVigProbabilities(
+    participants.map((participant) => participant.americanOdds)
+  )
+  const favoriteIndex =
+    marketProbabilities.length === participants.length
+      ? marketProbabilities[0] >= marketProbabilities[1]
+        ? 0
+        : 1
+      : null
   const signals = [
     buildMarketSignal(game.league, participants),
-    buildMlbStandingsSignal(game, participants)
+    buildMlbStandingsSignal(game, participants),
+    buildMlbOffenseSignal(game, participants),
+    buildMlbBullpenSignal(game, participants),
+    buildMlbLineupMatchupSignal(game, participants)
   ].filter(Boolean)
   const volatilityModifiers = []
   const sourceParts = ['Moneyline', 'listed starter data']
 
   if (game.teamContext?.away && game.teamContext?.home) sourceParts.push('standings context')
   if (game.parkContext?.venueName) sourceParts.push('park factors')
+  if (game.offenseContext?.away && game.offenseContext?.home) sourceParts.push('team hit production')
+  if (game.bullpenContext?.away && game.bullpenContext?.home) sourceParts.push('bullpen quality')
+  if (game.lineupContext?.[participants[0]?.name] && game.lineupContext?.[participants[1]?.name]) {
+    sourceParts.push('daily lineup matchup context')
+  }
 
   if (starters.every(Boolean)) {
+    const starterScores = starters.map((starter) => starterScore(starter))
+
     signals.push(
       createSignal(
         'Starter record',
@@ -506,6 +680,68 @@ const buildMlbAnalysisContext = (game, participants) => {
 
     if (Math.abs(starters[0].strikeouts - starters[1].strikeouts) >= 14) {
       volatilityModifiers.push({ label: 'One starter owns a larger swing-and-miss edge', delta: 3 })
+    }
+
+    if (
+      offenseProfiles.every(Boolean) &&
+      (Number(offenseProfiles[0].last3HitsPerGame) >= 9 || Number(offenseProfiles[1].last3HitsPerGame) >= 9)
+    ) {
+      volatilityModifiers.push({ label: 'At least one lineup is entering with a hotter recent hit profile', delta: 3 })
+    }
+
+    if (
+      bullpenProfiles.every(Boolean) &&
+      (Number(bullpenProfiles[0].era) >= 4.5 || Number(bullpenProfiles[1].era) >= 4.5) &&
+      (Number(bullpenProfiles[0].whip) >= 1.4 || Number(bullpenProfiles[1].whip) >= 1.4)
+    ) {
+      volatilityModifiers.push({ label: 'At least one bullpen can leak traffic late', delta: 4 })
+    }
+
+    if (
+      bullpenProfiles.every(Boolean) &&
+      Number(bullpenProfiles[0].era) >= 4.5 &&
+      Number(bullpenProfiles[1].era) >= 4.5
+    ) {
+      volatilityModifiers.push({ label: 'Both bullpens bring genuine late-inning damage risk', delta: 5 })
+    }
+
+    if (favoriteIndex !== null) {
+      const underdogIndex = favoriteIndex === 0 ? 1 : 0
+
+      if (
+        Number.isFinite(bullpenScores[underdogIndex]) &&
+        Number.isFinite(bullpenScores[favoriteIndex]) &&
+        bullpenScores[underdogIndex] - bullpenScores[favoriteIndex] >= 8
+      ) {
+        volatilityModifiers.push({ label: 'The underdog owns the stronger bullpen escape hatch', delta: 5 })
+      }
+
+      if (
+        Number.isFinite(lineupScores[underdogIndex]) &&
+        Number.isFinite(lineupScores[favoriteIndex]) &&
+        lineupScores[underdogIndex] - lineupScores[favoriteIndex] >= 8
+      ) {
+        volatilityModifiers.push({ label: 'The underdog lineup fits today’s starter better', delta: 5 })
+      }
+
+      if (
+        Number.isFinite(offenseScores[underdogIndex]) &&
+        Number.isFinite(offenseScores[favoriteIndex]) &&
+        offenseScores[underdogIndex] - offenseScores[favoriteIndex] >= 6
+      ) {
+        volatilityModifiers.push({ label: 'The underdog hit-production trend is still live', delta: 3 })
+      }
+
+      if (
+        Number.isFinite(starterScores[favoriteIndex]) &&
+        Number.isFinite(starterScores[underdogIndex]) &&
+        Number.isFinite(bullpenScores[favoriteIndex]) &&
+        Number.isFinite(bullpenScores[underdogIndex]) &&
+        starterScores[favoriteIndex] - starterScores[underdogIndex] >= 12 &&
+        bullpenScores[favoriteIndex] - bullpenScores[underdogIndex] >= 8
+      ) {
+        volatilityModifiers.push({ label: 'Favorite also owns the cleaner starter-to-bullpen chain', delta: -4 })
+      }
     }
   }
 
