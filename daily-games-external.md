@@ -24,6 +24,9 @@ The rule:
   [https://www.covers.com/sport/baseball/mlb/odds](https://www.covers.com/sport/baseball/mlb/odds)
   Use for moneyline, run line, and total snapshots.
   The May 10 test run cleanly exposed opening moneyline rows in the accessible HTML.
+- Live odds board:
+  [https://www.scoresandodds.com/mlb](https://www.scoresandodds.com/mlb)
+  The May 11 pull exposed current moneyline, total, and run line rows in accessible HTML and was easier to work with for same-day MLB updates than the Covers page.
 ## Probable MLB Pitchers
 https://www.mlb.com/probable-pitchers
 
@@ -150,3 +153,90 @@ For each new slate day, gather data in this order:
   ScoresAndOdds gave the cleanest accessible current board for NBA and WNBA.
   Official NBA scorer PDFs were the cleanest way to pull reliable playoff box-score detail.
   Run line and total still need a second parser pass before they are ready for auto-ingest.
+
+### 2026-05-11
+- Schedule links used:
+  https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-11&hydrate=probablePitcher,team
+  https://www.mlb.com/probable-pitchers
+- Pitcher or lineup links used:
+  `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
+  https://www.ballparkpal.com/Matchups.php
+- Standings links used:
+  https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason
+- Park factor links used:
+  https://baseballsavant.mlb.com/leaderboard/statcast-park-factors
+  https://www.ballparkpal.com/Matchups.php
+- Odds links used:
+  https://www.scoresandodds.com/mlb
+  https://www.scoresandodds.com/nba
+- Box score or result links used:
+  https://statsdmz.nba.com/pdfs/20260505/20260505_LALOKC_book.pdf
+  https://statsdmz.nba.com/pdfs/20260507/20260507_LALOKC_book.pdf
+  https://statsdmz.nba.com/pdfs/20260509/20260509_OKCLAL_book.pdf
+  https://statsdmz.nba.com/pdfs/20260505/20260505_CLEDET_book.pdf
+  https://statsdmz.nba.com/pdfs/20260507/20260507_CLEDET_book.pdf
+  https://statsdmz.nba.com/pdfs/20260509/20260509_DETCLE_book.pdf
+- User links that worked:
+- Pages that failed or changed:
+  MLB.com still listed the Angels probable starter as TBD on the morning refresh while the live market board was dealing Brent Suter.
+- Notes for tomorrow:
+  ScoresAndOdds is now a known-good current-board source for same-day MLB, not just NBA and WNBA.
+  Official NBA scorer PDFs still gave the cleanest playoff series context and player lines.
+  When the official probable-pitchers page and the live market board disagree, keep both and raise variance instead of forcing a fake certainty.
+
+### 2026-05-12
+- Schedule links used:
+  https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-12&hydrate=probablePitcher,team
+  https://www.mlb.com/probable-pitchers
+- Pitcher or lineup links used:
+  `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
+- Standings links used:
+  https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason
+- Park factor links used:
+  https://baseballsavant.mlb.com/leaderboard/statcast-park-factors
+- Odds links used:
+  https://www.scoresandodds.com/mlb
+  https://www.scoresandodds.com/nba
+  https://www.scoresandodds.com/wnba
+- Box score or result links used:
+  https://statsdmz.nba.com/pdfs/20260504/20260504_MINSAS.pdf
+  https://statsdmz.nba.com/pdfs/20260506/20260506_MINSAS.pdf
+  https://statsdmz.nba.com/pdfs/20260508/20260508_SASMIN.pdf
+  https://statsdmz.nba.com/pdfs/20260510/20260510_SASMIN_book.pdf
+- User links that worked:
+- Pages that failed or changed:
+  https://www.ballparkpal.com/Matchups.php
+  On the May 12 pull, the page redirected to a secure checkout wall instead of the matchup table, so lineup-vs-starter context could not be parsed cleanly.
+- Notes for tomorrow:
+  ScoresAndOdds still exposes the cleanest accessible current board across MLB, NBA, and WNBA.
+  The MLB board parser should keep handling `even` prices as `+100`, because Yankees-Orioles exposed that on the total.
+  When BallparkPal fails, degrade to standings, offense, bullpen, park, market, and starter context instead of inventing a lineup-fit signal.
+
+### 2026-05-13
+- Schedule links used:
+  https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-13&hydrate=probablePitcher,team
+  https://www.mlb.com/probable-pitchers
+  https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true
+- Pitcher or lineup links used:
+  `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
+- Standings links used:
+  https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason
+- Park factor links used:
+  https://baseballsavant.mlb.com/leaderboard/statcast-park-factors
+- Odds links used:
+  https://www.scoresandodds.com/mlb
+  https://www.scoresandodds.com/nba
+  https://www.scoresandodds.com/wnba
+- Box score or result links used:
+  https://statsdmz.nba.com/pdfs/20260505/20260505_CLEDET_book.pdf
+  https://statsdmz.nba.com/pdfs/20260507/20260507_CLEDET_book.pdf
+  https://statsdmz.nba.com/pdfs/20260509/20260509_DETCLE_book.pdf
+  https://statsdmz.nba.com/pdfs/20260511/20260511_DETCLE_book.pdf
+- User links that worked:
+- Pages that failed or changed:
+  https://www.ballparkpal.com/Matchups.php
+  On the May 13 pull, the page still redirected to `/Checkout.php`, so the daily lineup-vs-starter layer stayed unavailable for a second straight slate.
+- Notes for tomorrow:
+  The official MLB schedule API exposed `In Progress` cleanly, which made it easy to store only the remaining actionable games instead of the whole day.
+  ScoresAndOdds still gave the quickest accessible live board across MLB, NBA, and WNBA.
+  If BallparkPal stays blocked, the next clean MLB upgrade should come from another lineup-context source rather than forcing stale inputs.

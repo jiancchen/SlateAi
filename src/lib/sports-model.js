@@ -707,6 +707,10 @@ const buildMlbAnalysisContext = (game, participants) => {
 
     if (favoriteIndex !== null) {
       const underdogIndex = favoriteIndex === 0 ? 1 : 0
+      const favoriteTeamContext =
+        favoriteIndex === 0 ? game.teamContext?.away : game.teamContext?.home
+      const underdogTeamContext =
+        underdogIndex === 0 ? game.teamContext?.away : game.teamContext?.home
 
       if (
         Number.isFinite(bullpenScores[underdogIndex]) &&
@@ -742,10 +746,57 @@ const buildMlbAnalysisContext = (game, participants) => {
       ) {
         volatilityModifiers.push({ label: 'Favorite also owns the cleaner starter-to-bullpen chain', delta: -4 })
       }
+
+      if (favoriteTeamContext && parseStreakCode(favoriteTeamContext.streakCode) <= -2) {
+        volatilityModifiers.push({ label: 'Favorite enters on a live losing streak', delta: 4 })
+      }
+
+      if (favoriteTeamContext && parseStreakCode(favoriteTeamContext.streakCode) <= -4) {
+        volatilityModifiers.push({
+          label: 'Favorite skid is now long enough to question market trust',
+          delta: 3
+        })
+      }
+
+      if (underdogTeamContext && parseStreakCode(underdogTeamContext.streakCode) >= 2) {
+        volatilityModifiers.push({ label: 'Underdog enters with positive recent form', delta: 3 })
+      }
+
+      if (
+        Number.isFinite(offenseScores[favoriteIndex]) &&
+        Number.isFinite(offenseScores[underdogIndex]) &&
+        Number.isFinite(bullpenScores[favoriteIndex]) &&
+        bullpenScores[favoriteIndex] < 58 &&
+        offenseScores[favoriteIndex] - offenseScores[underdogIndex] <= 4
+      ) {
+        volatilityModifiers.push({
+          label: 'Favorite still needs a shakier late bullpen to protect only a thin offense edge',
+          delta: 3
+        })
+      }
+
+      if (
+        favoriteTeamContext &&
+        (Number(favoriteTeamContext.runDifferential) || 0) <= 0 &&
+        Number.isFinite(starters[favoriteIndex]?.era) &&
+        starters[favoriteIndex].era >= 4.5
+      ) {
+        volatilityModifiers.push({
+          label: 'Favorite profile is carrying a shakier starter despite the price',
+          delta: 4
+        })
+      }
     }
   }
 
   volatilityModifiers.push(...buildMlbParkModifiers(game, starters))
+
+  if (game.pitcherSourceNote) {
+    volatilityModifiers.push({
+      label: 'Official probable-starter listing and market board are not perfectly aligned',
+      delta: 6
+    })
+  }
 
   return {
     sourceLabel: sourceParts.join(' + '),
