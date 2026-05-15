@@ -40,6 +40,13 @@ import {
   slateMeta as daySixSlateMeta,
   sources as daySixSources
 } from './day-2026-05-14.js'
+import {
+  filters as daySevenFilters,
+  games as daySevenGames,
+  oddsMeta as daySevenOddsMeta,
+  slateMeta as daySevenSlateMeta,
+  sources as daySevenSources
+} from './day-2026-05-15.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -262,5 +269,33 @@ const may14Slate = createSlateDay({
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate]
+const may15Slate = createSlateDay({
+  id: daySevenSlateMeta.isoDate,
+  label: daySevenSlateMeta.date,
+  status: 'ready',
+  slateMeta: daySevenSlateMeta,
+  games: daySevenGames,
+  filters: daySevenFilters,
+  oddsMeta: daySevenOddsMeta,
+  sources: daySevenSources,
+  intakeChecklist: [
+    'Store the final MLB results so the projected-hit edge and hit-efficiency layer can be checked against actual traffic, not just winners.',
+    'Review whether the Dodgers-style favorite caution and bullpen-volatility penalties improved the fragile-favorite reads from the last two slates.',
+    'Backfill the NBA Game 6 results so both playoff series stay as rolling archives instead of static snapshots.',
+    'Track the WNBA short-number games closely, because this is the first slate after explicitly leaning harder into lead-fragility variance.'
+  ],
+  intakePrompt:
+    'May 15 is now the live board. It carries a full MLB slate, both NBA playoff Game 6s, and four WNBA games with refreshed team and player context.',
+  feedNotes: [
+    'This is the first stored day where the full board carries MLB, NBA, and WNBA at once while the MLB model is already upgraded for projected hits, hit efficiency, pitcher types, bullpen shape, and contact quality.',
+    'The official MLB probable-pitchers feed still needed a variance note on the Brewers starter, so the daybook keeps the official listing and the live board discrepancy together instead of forcing false certainty.',
+    'WNBA player notes now come from current official roster production plus the LineStar team board, which makes the cards materially stronger than generic early-season blurbs.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['MLB', 'NBA', 'WNBA']
+  }
+})
+
+export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate]
 export const defaultSlateDayId = slateDays.at(-1)?.id ?? ''

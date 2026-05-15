@@ -692,5 +692,186 @@ export const structuredInputOverrides = {
         modifier('Portland has enough scoring punch to stay noisy if New York coasts', 3)
       ]
     }
+  },
+  'pistons-cavaliers-g6': {
+    sourceLabel: 'Moneyline + official Games 1-5 playoff box scores',
+    signals: [
+      signal('Series scoring profile', 0.16, [
+        { label: '108.6 points per game through five games', score: 49 },
+        { label: '109.0 points per game through five games', score: 51 }
+      ]),
+      signal('Lead-creator shape', 0.18, [
+        { label: 'Cunningham still owns the cleaner possession-by-possession script', score: 62 },
+        { label: 'Harden and Mitchell finally landed together in Game 5', score: 69 }
+      ]),
+      signal('Support-cast dependability', 0.16, [
+        { label: 'Detroit support has been steadier across the whole series', score: 58 },
+        { label: 'Cleveland support now has a stronger top-end answer after the comeback win', score: 63 }
+      ]),
+      signal('Late-game trust', 0.16, [
+        { label: 'Road elimination team still needs cleaner closing offense', score: 46 },
+        { label: 'Home closeout spot with revived shot creation', score: 67 }
+      ]),
+      signal('Venue and leverage', 0.12, [
+        { label: 'Road elimination game', score: 45 },
+        { label: 'Home floor in a Game 6 closeout chance', score: 55 }
+      ])
+    ],
+    volatility: {
+      base: 60,
+      modifiers: [
+        modifier('Detroit has already proven the series can bend back toward control basketball', 4),
+        modifier('Cleveland finally stole the first road win and carries better current momentum', -3),
+        modifier('Single-game Cunningham or Mitchell takeover paths still keep the board noisy', 5)
+      ]
+    }
+  },
+  'spurs-timberwolves-g6': {
+    sourceLabel: 'Moneyline + official Games 1-5 playoff box scores',
+    signals: [
+      signal('Series scoring profile', 0.18, [
+        { label: '117.0 points per game through five games', score: 79 },
+        { label: '103.6 points per game through five games', score: 21 }
+      ]),
+      signal('Interior force', 0.2, [
+        { label: 'Wembanyama reclaimed the paint script in Game 5', score: 86 },
+        { label: 'Minnesota still needs a cleaner frontcourt answer', score: 34 }
+      ]),
+      signal('Secondary creators', 0.14, [
+        { label: 'Fox and Castle keep extending the Spurs setup tree', score: 74 },
+        { label: 'Edwards still needs steadier support behind him', score: 44 }
+      ]),
+      signal('Current form', 0.14, [
+        { label: '126-97 response in Game 5', score: 78 },
+        { label: 'Home elimination urgency after a blowout loss', score: 43 }
+      ]),
+      signal('Venue and pressure', 0.12, [
+        { label: 'Road closeout attempt', score: 45 },
+        { label: 'Home elimination game', score: 55 }
+      ])
+    ],
+    volatility: {
+      base: 56,
+      modifiers: [
+        modifier('Minnesota home elimination spot adds real response variance', 6),
+        modifier('San Antonio owns the clearest current interior edge in the series', -4),
+        modifier('Edwards single-game eruption path still keeps the dog alive', 4)
+      ]
+    }
+  },
+  'aces-sun-2026-05-15': {
+    sourceLabel: 'LineStar WNBA team records + official WNBA roster production',
+    signals: [
+      signal('Team profile', 0.22, [
+        { label: '89.7 PPG with the No. 3 offense', score: 84 },
+        { label: '75.3 PPG with the No. 15 offense', score: 24 }
+      ]),
+      signal('Top-end star power', 0.2, [
+        { label: "A'ja Wilson, Chennedy Carter, and Jackie Young", score: 86 },
+        { label: 'Morrow and Griner need a compressed script', score: 34 }
+      ]),
+      signal('Defense and control', 0.16, [
+        { label: 'No. 6 defense and steadier late-game structure', score: 73 },
+        { label: 'No. 14 defense has leaked too much early-season pressure', score: 37 }
+      ]),
+      signal('Road professionalism', 0.12, [
+        { label: 'Veteran road favorite profile', score: 60 },
+        { label: 'Home underdog energy', score: 40 }
+      ])
+    ],
+    volatility: {
+      base: 55,
+      modifiers: [
+        modifier('Large spread lowers outright upset frequency', -8),
+        modifier('Backdoor-cover risk still matters in a number this big', 5)
+      ]
+    }
+  },
+  'mystics-fever-2026-05-15': {
+    sourceLabel: 'LineStar WNBA team records + official WNBA roster production',
+    signals: [
+      signal('Offensive ceiling', 0.22, [
+        { label: '80.5 PPG and more half-court grind', score: 38 },
+        { label: '95.5 PPG with the No. 2 offense', score: 82 }
+      ]),
+      signal('Lead creators', 0.2, [
+        { label: 'Citron and Austin keep Washington live', score: 54 },
+        { label: 'Clark and Mitchell own the cleaner scoring tree', score: 84 }
+      ]),
+      signal('Defense profile', 0.18, [
+        { label: 'No. 5 defense can flatten the game', score: 68 },
+        { label: 'No. 12 defense leaves more late-game leakage', score: 46 }
+      ]),
+      signal('Venue and market', 0.12, [
+        { label: 'Road dog around +295', score: 42 },
+        { label: 'Home favorite around -375', score: 58 }
+      ])
+    ],
+    volatility: {
+      base: 63,
+      modifiers: [
+        modifier('Washington defensive floor keeps the dog route alive', 5),
+        modifier('Indiana still owns the clearer offensive ceiling at home', -2),
+        modifier('WNBA lead-fragility remains part of the current environment', 4)
+      ]
+    }
+  },
+  'tempo-sparks-2026-05-15': {
+    sourceLabel: 'LineStar WNBA team records + official WNBA roster production',
+    signals: [
+      signal('Current team profile', 0.18, [
+        { label: '75.5 PPG but the No. 1 defense', score: 60 },
+        { label: '78.0 PPG with the No. 13 defense', score: 52 }
+      ]),
+      signal('Top-end scoring', 0.2, [
+        { label: 'Mabrey and Sykes can keep the dog live', score: 58 },
+        { label: 'Plum plus veteran frontcourt scoring still owns the cleaner ceiling', score: 72 }
+      ]),
+      signal('Late-game trust', 0.16, [
+        { label: 'Expansion team still proving the closing script', score: 42 },
+        { label: 'Home favorite with more veteran scoring answers', score: 66 }
+      ]),
+      signal('Venue and market', 0.12, [
+        { label: 'Road dog around +270', score: 43 },
+        { label: 'Home favorite around -340', score: 57 }
+      ])
+    ],
+    volatility: {
+      base: 67,
+      modifiers: [
+        modifier('Toronto defensive edge keeps this noisier than the moneyline suggests', 6),
+        modifier('Sparks defensive profile is still too loose for a clean favorite script', 4),
+        modifier('Plum single-game scoring ceiling trims some of the chaos', -2)
+      ]
+    }
+  },
+  'sky-mercury-2026-05-15': {
+    sourceLabel: 'LineStar WNBA team records + official WNBA roster production',
+    signals: [
+      signal('Current form and defense', 0.2, [
+        { label: '2-0 start with the No. 2 defense', score: 72 },
+        { label: '1-2 with a more neutral defense profile', score: 54 }
+      ]),
+      signal('Shot creation', 0.18, [
+        { label: 'Rickea plus the guard mix keep Chicago live', score: 56 },
+        { label: 'Copper and Alyssa Thomas still own the cleaner veteran creation tree', score: 68 }
+      ]),
+      signal('Interior control', 0.16, [
+        { label: 'Cardoso gives Chicago a real paint anchor', score: 66 },
+        { label: 'Phoenix still needs more than one interior answer', score: 52 }
+      ]),
+      signal('Venue and late-game trust', 0.14, [
+        { label: 'Road dog with stronger current defense', score: 48 },
+        { label: 'Home favorite with more proven closing creators', score: 62 }
+      ])
+    ],
+    volatility: {
+      base: 66,
+      modifiers: [
+        modifier('Short number keeps both fourth-quarter paths alive', 6),
+        modifier('Chicago defensive profile makes the dog more credible than usual', 4),
+        modifier('Phoenix veteran closers trim a little of the chaos', -2)
+      ]
+    }
   }
 }

@@ -289,3 +289,48 @@ For each new slate day, gather data in this order:
   Covers bullpen stats parsed cleanly enough to keep bullpen context in the same daily pass as offense and odds.
   LineStar is now a strong WNBA ingest source because it exposes the live moneyline, total, and team offense and defense ranks in a single embedded data object.
   RotoWire opponent averages is worth keeping in the stack for player-level matchup review, but it should be treated as a browser-first source because the table is rendered client-side.
+
+### 2026-05-15
+- Schedule links used:
+  https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-15&hydrate=probablePitcher,team
+  https://www.mlb.com/probable-pitchers
+  https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true
+- Pitcher or lineup links used:
+  `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
+  `https://statsapi.mlb.com/api/v1/people/search?names=Chad%20Patrick`
+- Standings links used:
+  https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason
+- Offense and contact-quality links used:
+  https://www.teamrankings.com/mlb/stat/hits-per-game
+  https://baseballsavant.mlb.com/league
+- Bullpen links used:
+  https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026
+- Park factor links used:
+  https://baseballsavant.mlb.com/leaderboard/statcast-park-factors
+- Odds links used:
+  https://www.scoresandodds.com/mlb
+  https://www.scoresandodds.com/nba
+  https://www.scoresandodds.com/wnba
+- WNBA matchup links used:
+  https://www.linestarapp.com/FantasyDefense/Sport/WNBA/Site/DraftKings
+  https://aces.wnba.com/roster
+  https://sun.wnba.com/roster
+  https://mystics.wnba.com/roster
+  https://fever.wnba.com/roster
+  https://tempo.wnba.com/roster
+  https://sparks.wnba.com/roster
+  https://sky.wnba.com/roster
+  https://mercury.wnba.com/roster
+- Box score or result links used:
+  https://statsdmz.nba.com/pdfs/20260513/20260513_CLEDET_book.pdf
+  https://statsdmz.nba.com/pdfs/20260512/20260512_MINSAS_book.pdf
+- User links that worked:
+  https://www.teamrankings.com/mlb/stat/hits-per-game
+  https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026
+  https://baseballsavant.mlb.com/league
+- Pages that failed or changed:
+  The official Brewers probable starter was still `TBD` on the MLB feed while the live board had `Chad Patrick (R)`, so keep the discrepancy and raise variance instead of forcing false confidence.
+- Notes for tomorrow:
+  ScoresAndOdds still parses cleanly with a desktop browser user-agent and remains the fastest accessible same-day board across MLB, NBA, and WNBA.
+  Official WNBA roster pages still expose current player production inside the rendered page payload, which makes them useful for same-day player-note refreshes.
+  The official probable-pitchers feed can carry surprising or late-set starter names, so it is worth keeping both the official feed and the live board in view before hardening any MLB read.
