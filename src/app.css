@@ -714,6 +714,41 @@ h3 {
   gap: 8px;
 }
 
+.model-projection-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.model-projection-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  display: grid;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.model-projection-card p,
+.model-projection-card span {
+  color: var(--muted);
+}
+
+.model-projection-card strong {
+  color: var(--heading);
+  font-size: 0.92rem;
+}
+
+.model-projection-card--edge {
+  border-color: rgba(82, 214, 179, 0.18);
+  background: rgba(82, 214, 179, 0.05);
+}
+
+.model-note-row--pitchers {
+  margin-top: 8px;
+}
+
 .factor-list li::marker,
 .model-input-list li::marker,
 .boxscore-notes li::marker,
@@ -1176,6 +1211,7 @@ h3 {
   .market-row-main,
   .market-detail-grid,
   .boxscore-grid,
+  .model-projection-grid,
   .pick-grid.compact,
   .parlay-stats-grid.compact,
   .parlay-return-grid,

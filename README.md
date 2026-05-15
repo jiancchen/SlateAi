@@ -1,43 +1,61 @@
-# Svelte + Vite
+# Sports Trading Board
 
-This template should help get you started developing with Svelte in Vite.
+Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards with structured matchup analysis, series context, and a parlay builder.
 
-## Recommended IDE Setup
+## Daily Workflow
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- Store each slate in a dated file such as `src/lib/day-2026-05-14.js`.
+- Register that slate in `src/lib/slate-days.js`.
+- Keep recurring source links in `daily-games-external.md`.
+- Add new structured inputs or matchup overrides in `src/lib/structured-inputs.js`.
 
-## Need an official Svelte framework?
+## Key Files
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+- `src/App.svelte`
+  Main trading dashboard UI.
+- `src/lib/sports-model.js`
+  Analysis engine, ranking logic, and parlay math.
+- `src/lib/structured-inputs.js`
+  Local overrides for playoff series, WNBA reads, and custom signals.
+- `src/lib/day-2026-05-14.js`
+  Example current-day slate with MLB and WNBA data.
+- `daily-games-external.md`
+  Known-good source registry for daily ingest.
 
-## Technical considerations
+## Recurring Data Sources
 
-**Why use this over SvelteKit?**
+### MLB
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+- [MLB probable pitchers](https://www.mlb.com/probable-pitchers)
+- [MLB schedule API](https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-14&hydrate=probablePitcher,team)
+- [MLB standings API](https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason)
+- [TeamRankings hits per game](https://www.teamrankings.com/mlb/stat/hits-per-game)
+- [Covers bullpen ERA](https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026)
+- [Statcast park factors](https://baseballsavant.mlb.com/leaderboard/statcast-park-factors)
+- [Baseball Savant league hitting](https://baseballsavant.mlb.com/league)
+- [ScoresAndOdds MLB board](https://www.scoresandodds.com/mlb)
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+### NBA
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+- [NBA playoffs schedule](https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true)
+- [ScoresAndOdds NBA board](https://www.scoresandodds.com/nba)
 
-**Why include `.vscode/extensions.json`?**
+### WNBA
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+- [WNBA home page](https://www.wnba.com/)
+- [ScoresAndOdds WNBA board](https://www.scoresandodds.com/wnba)
+- [RotoWire WNBA opponent averages](https://www.rotowire.com/wnba/opp-avg.php)
+- [LineStar WNBA fantasy defense](https://www.linestarapp.com/FantasyDefense/Sport/WNBA/Site/DraftKings)
 
-**Why enable `checkJs` in the JS template?**
+### UFC
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+- [UFC event cards](https://www.ufc.com/)
+- [Covers UFC odds](https://www.covers.com/sport/mma/ufc/odds)
 
-**Why is HMR not preserving my local component state?**
+## Development
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```bash
+npm install
+npm run dev
+npm run build
 ```

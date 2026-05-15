@@ -55,6 +55,11 @@ Use this for structured division rank, games back, run differential, and streak 
 https://www.teamrankings.com/mlb/stat/hits-per-game
 Use this for team-level hit production and recent contact trend, especially as a secondary offense input next to market, starters, and confirmed lineups.
 
+## MLB Team Contact Quality
+https://baseballsavant.mlb.com/league
+Use this for team-level Statcast hitting quality such as `BA`, `xBA`, `hard-hit %`, `barrel %`, and `xwOBA`.
+This is the cleanest source so far for building projected hit edge and hit-efficiency context instead of leaning only on surface hits per game.
+
 ## MLB Bullpen Quality
 https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026
 Use this for late-inning stability, bullpen leak risk, and underdog paths that survive once the starters leave.
@@ -90,6 +95,13 @@ https://www.espn.com/nba/odds
 - Live odds board:
   [https://www.scoresandodds.com/wnba](https://www.scoresandodds.com/wnba)
   This exposed current spread, total, and moneyline rows in accessible HTML.
+- Team defense and game-shape board:
+  [https://www.linestarapp.com/FantasyDefense/Sport/WNBA/Site/DraftKings](https://www.linestarapp.com/FantasyDefense/Sport/WNBA/Site/DraftKings)
+  This page embeds a parseable `vm.data` object with same-day `GameList`, moneylines, totals, and team offense and defense rankings.
+- Opponent averages:
+  [https://www.rotowire.com/wnba/opp-avg.php](https://www.rotowire.com/wnba/opp-avg.php)
+  Use this for extra player-matchup context and defensive allowances.
+  The table is more reliable as a browser or manual source than as a shell parser because it renders client-side.
 - Odds board:
   [https://www.covers.com/sport/basketball/wnba/odds](https://www.covers.com/sport/basketball/wnba/odds)
 - Game summary example:
@@ -240,3 +252,40 @@ For each new slate day, gather data in this order:
   The official MLB schedule API exposed `In Progress` cleanly, which made it easy to store only the remaining actionable games instead of the whole day.
   ScoresAndOdds still gave the quickest accessible live board across MLB, NBA, and WNBA.
   If BallparkPal stays blocked, the next clean MLB upgrade should come from another lineup-context source rather than forcing stale inputs.
+
+### 2026-05-14
+- Schedule links used:
+  https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-14&hydrate=probablePitcher,team
+  https://www.mlb.com/probable-pitchers
+- Pitcher or lineup links used:
+  `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
+- Standings links used:
+  https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason
+- Offense and contact-quality links used:
+  https://www.teamrankings.com/mlb/stat/hits-per-game
+  https://baseballsavant.mlb.com/league
+- Bullpen links used:
+  https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026
+- Park factor links used:
+  https://baseballsavant.mlb.com/leaderboard/statcast-park-factors
+- Odds links used:
+  https://www.scoresandodds.com/mlb
+  https://www.scoresandodds.com/wnba
+- WNBA matchup links used:
+  https://www.linestarapp.com/FantasyDefense/Sport/WNBA/Site/DraftKings
+  https://www.rotowire.com/wnba/opp-avg.php
+- Box score or result links used:
+  https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-13&hydrate=probablePitcher,team
+  https://www.scoresandodds.com/nba?date=2026-05-13
+  https://www.scoresandodds.com/wnba?date=2026-05-13
+- User links that worked:
+  https://baseballsavant.mlb.com/league
+  https://www.linestarapp.com/FantasyDefense/Sport/WNBA/Site/DraftKings
+  https://www.rotowire.com/wnba/opp-avg.php
+- Pages that failed or changed:
+- Notes for tomorrow:
+  The Baseball Savant league page is now a known-good contact-quality source and should be part of the standard MLB ingest.
+  TeamRankings exposed `2026`, `Last 3`, `Home`, and `Away` in the same table, which makes it much more efficient than using separate offense pages.
+  Covers bullpen stats parsed cleanly enough to keep bullpen context in the same daily pass as offense and odds.
+  LineStar is now a strong WNBA ingest source because it exposes the live moneyline, total, and team offense and defense ranks in a single embedded data object.
+  RotoWire opponent averages is worth keeping in the stack for player-level matchup review, but it should be treated as a browser-first source because the table is rendered client-side.

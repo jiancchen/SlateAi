@@ -33,6 +33,13 @@ import {
   slateMeta as dayFiveSlateMeta,
   sources as dayFiveSources
 } from './day-2026-05-13.js'
+import {
+  filters as daySixFilters,
+  games as daySixGames,
+  oddsMeta as daySixOddsMeta,
+  slateMeta as daySixSlateMeta,
+  sources as daySixSources
+} from './day-2026-05-14.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -227,5 +234,33 @@ const may13Slate = createSlateDay({
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate]
+const may14Slate = createSlateDay({
+  id: daySixSlateMeta.isoDate,
+  label: daySixSlateMeta.date,
+  status: 'ready',
+  slateMeta: daySixSlateMeta,
+  games: daySixGames,
+  filters: daySixFilters,
+  oddsMeta: daySixOddsMeta,
+  sources: daySixSources,
+  intakeChecklist: [
+    'Store the final MLB results so the new projected-hit model can be checked against actual traffic and not just winners.',
+    'Review whether the new shallow-sample starter penalties improved the noisy MLB spots from May 13.',
+    'Track whether the White Sox, Astros, and Braves contact-quality upgrades were enough to catch the kinds of surface-record traps the old model missed.',
+    'Keep the Baseball Savant league page in the source registry because it is now a real daily input, not just a nice-to-have reference.'
+  ],
+  intakePrompt:
+    'May 14 is now the live board. It carries the current MLB and WNBA slate, with the MLB model upgraded to include pitcher archetypes, projected hit edge, and hit-efficiency context.',
+  feedNotes: [
+    'This is the first stored day where the MLB model explicitly adds projected extra hits and hit efficiency to the read instead of leaning only on market, starter ERA, and team hits per game.',
+    'The May 13 review is baked into this slate: shallow-starter penalties are stronger, and better underlying contact teams can push back on cleaner-looking favorites.',
+    'There is no NBA game on the official May 14 schedule, so the daybook deliberately stays focused on the sports that actually have actionable boards.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['MLB', 'WNBA']
+  }
+})
+
+export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate]
 export const defaultSlateDayId = slateDays.at(-1)?.id ?? ''

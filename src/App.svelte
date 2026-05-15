@@ -650,6 +650,31 @@
                               <span>Market {game.analysis.marketProbabilityLabel}</span>
                             </div>
 
+                            {#if game.analysis.mlbProjection}
+                              <div class="model-projection-grid">
+                                <div class="model-projection-card">
+                                  <p>Projected hits</p>
+                                  <strong>{game.matchup[0].name} {game.analysis.mlbProjection.awayProjectedHits}</strong>
+                                  <span>{game.analysis.mlbProjection.awayHitEfficiencyPct}% hit efficiency</span>
+                                </div>
+                                <div class="model-projection-card">
+                                  <p>Projected hits</p>
+                                  <strong>{game.matchup[1].name} {game.analysis.mlbProjection.homeProjectedHits}</strong>
+                                  <span>{game.analysis.mlbProjection.homeHitEfficiencyPct}% hit efficiency</span>
+                                </div>
+                                <div class="model-projection-card model-projection-card--edge">
+                                  <p>Hit advantage</p>
+                                  <strong>{game.analysis.mlbProjection.edgeTeam} +{game.analysis.mlbProjection.edgeHits}</strong>
+                                  <span>Projected extra hits over opponent</span>
+                                </div>
+                              </div>
+
+                              <div class="model-note-row model-note-row--pitchers">
+                                <span>{game.matchup[0].name}: {game.analysis.mlbProjection.awayPitcherType}</span>
+                                <span>{game.matchup[1].name}: {game.analysis.mlbProjection.homePitcherType}</span>
+                              </div>
+                            {/if}
+
                             <ul class="model-input-list">
                               {#each game.analysis.inputs as input}
                                 <li>{input.summary}</li>
@@ -667,6 +692,18 @@
                         {/if}
                       </div>
                     </div>
+
+                    {#if game.playerAnalysis?.length}
+                      <section class="player-analysis-panel" aria-label={`Player analysis for ${game.title}`}>
+                        <p class="series-kicker">Player analysis</p>
+
+                        <ul class="player-analysis-list">
+                          {#each game.playerAnalysis as note}
+                            <li>{note}</li>
+                          {/each}
+                        </ul>
+                      </section>
+                    {/if}
 
                     {#if game.seriesBreakdown}
                       <section class="series-panel" aria-label={`Series breakdown for ${game.title}`}>

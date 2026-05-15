@@ -281,6 +281,129 @@ const parsePitcherDetail = (detail = '') => {
   }
 }
 
+const parseBaseballInnings = (value = 0) => {
+  const stringValue = `${value}`.trim()
+  const match = stringValue.match(/^(\d+)(?:\.(\d))?$/)
+
+  if (!match) return Number(stringValue) || 0
+
+  const wholeInnings = Number(match[1])
+  const partialOuts = Number(match[2] || 0)
+
+  return wholeInnings + (partialOuts === 1 ? 1 / 3 : partialOuts === 2 ? 2 / 3 : 0)
+}
+
+const normalizePitchHand = (value = '') => {
+  const normalized = `${value}`.trim().toUpperCase()
+
+  if (normalized.startsWith('L')) return 'L'
+  if (normalized.startsWith('R')) return 'R'
+
+  return ''
+}
+
+const formatPitcherType = (type = '', handedness = '') => {
+  const handLabel = handedness === 'L' ? 'lefty' : handedness === 'R' ? 'righty' : 'starter'
+
+  if (!type) return `Balanced ${handLabel}`.trim()
+  if (type === 'Unknown sample') return `${type} ${handLabel}`.trim()
+  if (type === 'Volatile bat-misser') return type
+  if (type === 'Contact suppressor') return type
+
+  return `${type} ${handLabel}`.trim()
+}
+
+const classifyPitcherType = (starter = {}) => {
+  const innings = Number(starter.inningsFloat)
+  const kPerNine = Number(starter.kPerNine)
+  const bbPerNine = Number(starter.bbPerNine)
+  const hitsPerNine = Number(starter.hitsPerNine)
+  const era = Number(starter.era)
+  const whip = Number(starter.whip)
+
+  if (!Number.isFinite(innings) || innings < 18 || !Number.isFinite(era)) return 'Unknown sample'
+
+  if (Number.isFinite(kPerNine) && kPerNine >= 10.2 && Number.isFinite(whip) && whip <= 1.18 && era <= 3.8) {
+    return 'Power'
+  }
+
+  if (Number.isFinite(kPerNine) && kPerNine >= 9.6 && ((Number.isFinite(bbPerNine) && bbPerNine >= 3.4) || (Number.isFinite(whip) && whip >= 1.28))) {
+    return 'Volatile bat-misser'
+  }
+
+  if (Number.isFinite(hitsPerNine) && hitsPerNine <= 7.3 && Number.isFinite(whip) && whip <= 1.18) {
+    return 'Contact suppressor'
+  }
+
+  if (Number.isFinite(kPerNine) && kPerNine <= 7.1 && Number.isFinite(whip) && whip <= 1.22 && era <= 4.1) {
+    return 'Craft'
+  }
+
+  if ((Number.isFinite(hitsPerNine) && hitsPerNine >= 9.3) || (Number.isFinite(whip) && whip >= 1.4)) {
+    return 'Traffic-risk'
+  }
+
+  if (Number.isFinite(bbPerNine) && bbPerNine <= 2.2 && Number.isFinite(kPerNine) && kPerNine >= 7.1) {
+    return 'Strike-throwing'
+  }
+
+  return 'Balanced'
+}
+
+const buildStarterProfile = (starterContext = null, detail = '') => {
+  const parsed = parsePitcherDetail(detail)
+
+  if (!starterContext && !parsed) return null
+
+  const handedness = normalizePitchHand(starterContext?.pitchHand || parsed?.handedness)
+  const strikeouts = Number(starterContext?.strikeOuts ?? starterContext?.strikeouts ?? parsed?.strikeouts ?? 0)
+  const wins = Number(starterContext?.wins ?? parsed?.wins ?? 0)
+  const losses = Number(starterContext?.losses ?? parsed?.losses ?? 0)
+  const decisions = wins + losses
+  const eraValue = Number(starterContext?.era ?? parsed?.era)
+  const era = Number.isFinite(eraValue) ? eraValue : null
+  const inningsFloat = parseBaseballInnings(starterContext?.inningsPitched ?? 0)
+  const whipValue = Number(starterContext?.whip)
+  const whip = Number.isFinite(whipValue) && whipValue > 0 ? whipValue : null
+  const walks = Number(starterContext?.walks)
+  const hitsAllowed = Number(starterContext?.hitsAllowed)
+  const homeRunsAllowed = Number(starterContext?.homeRunsAllowed)
+  const gamesStarted = Number(starterContext?.gamesStarted)
+  const kPerNine = inningsFloat > 0 ? (strikeouts / inningsFloat) * 9 : null
+  const bbPerNine = inningsFloat > 0 && Number.isFinite(walks) ? (walks / inningsFloat) * 9 : null
+  const hitsPerNine = inningsFloat > 0 && Number.isFinite(hitsAllowed) ? (hitsAllowed / inningsFloat) * 9 : null
+  const hrPerNine = inningsFloat > 0 && Number.isFinite(homeRunsAllowed) ? (homeRunsAllowed / inningsFloat) * 9 : null
+  const starter = {
+    name: starterContext?.fullName || parsed?.name || '',
+    handedness,
+    wins,
+    losses,
+    decisions,
+    winPct: decisions > 0 ? wins / decisions : parsed?.winPct ?? 0.5,
+    era,
+    strikeouts,
+    inningsFloat,
+    walks: Number.isFinite(walks) ? walks : null,
+    hitsAllowed: Number.isFinite(hitsAllowed) ? hitsAllowed : null,
+    homeRunsAllowed: Number.isFinite(homeRunsAllowed) ? homeRunsAllowed : null,
+    whip,
+    gamesStarted: Number.isFinite(gamesStarted) ? gamesStarted : null,
+    kPerNine,
+    bbPerNine,
+    hitsPerNine,
+    hrPerNine
+  }
+
+  const profileType = classifyPitcherType(starter)
+
+  return {
+    ...starter,
+    profileType,
+    profileLabel: formatPitcherType(profileType, handedness),
+    sampleEstablished: Number.isFinite(inningsFloat) && inningsFloat >= 18 && Number.isFinite(era)
+  }
+}
+
 const buildHomeFieldSignal = (participants, weight = 0.08) => {
   const homeIndex = participants.findIndex((participant) => /home/i.test(participant.role))
   const awayIndex = participants.findIndex((participant) => /away/i.test(participant.role))
@@ -465,6 +588,141 @@ const buildMlbBullpenSignal = (game, participants) => {
   )
 }
 
+const buildMlbSavantScore = (profile = {}) => {
+  const ba = Number(profile.ba)
+  const xba = Number(profile.xba)
+  const hardHitPct = Number(profile.hardHitPct)
+  const barrelPct = Number(profile.barrelPct)
+  const xwoba = Number(profile.xwoba)
+
+  if (![ba, xba, hardHitPct, barrelPct, xwoba].every(Number.isFinite)) return null
+
+  const blendedHitRate = average([ba, xba])
+
+  return clamp(
+    50 +
+      (blendedHitRate - 0.245) * 520 +
+      (hardHitPct - 39) * 1 +
+      (barrelPct - 7.5) * 1.5 +
+      (xwoba - 0.315) * 160,
+    18,
+    94
+  )
+}
+
+const buildMlbSavantSignal = (game, participants) => {
+  const awayContext = game.savantContext?.away
+  const homeContext = game.savantContext?.home
+
+  if (!awayContext || !homeContext || participants.length < 2) return null
+
+  const scores = [buildMlbSavantScore(awayContext), buildMlbSavantScore(homeContext)]
+
+  if (scores.some((score) => !Number.isFinite(score))) return null
+
+  return createSignal(
+    'Statcast contact quality',
+    0.1,
+    [
+      {
+        label: `BA ${awayContext.ba.toFixed(3)} | xBA ${awayContext.xba.toFixed(3)} | hard-hit ${awayContext.hardHitPct.toFixed(1)}%`,
+        score: scores[0]
+      },
+      {
+        label: `BA ${homeContext.ba.toFixed(3)} | xBA ${homeContext.xba.toFixed(3)} | hard-hit ${homeContext.hardHitPct.toFixed(1)}%`,
+        score: scores[1]
+      }
+    ],
+    'Baseball Savant team hitting'
+  )
+}
+
+const buildProjectedHitProfile = ({
+  role = '',
+  offenseProfile = {},
+  savantProfile = {},
+  opposingStarter = null,
+  opposingBullpen = {},
+  parkContext = null
+}) => {
+  const splitHits = /home/i.test(role)
+    ? Number(offenseProfile.homeHitsPerGame)
+    : Number(offenseProfile.awayHitsPerGame)
+  const baselineHits = Number(offenseProfile.hitsPerGame)
+  const recentHits = Number(offenseProfile.last3HitsPerGame)
+
+  if (![splitHits, baselineHits, recentHits].every(Number.isFinite)) return null
+
+  let projection = baselineHits * 0.4 + splitHits * 0.35 + recentHits * 0.25
+  const qualityNotes = []
+  const runIndex = Number(parkContext?.indexRuns)
+  const wobaIndex = Number(parkContext?.indexWoba)
+
+  if (
+    [Number(savantProfile.ba), Number(savantProfile.xba), Number(savantProfile.hardHitPct), Number(savantProfile.barrelPct), Number(savantProfile.xwoba)].every(
+      Number.isFinite
+    )
+  ) {
+    const blendedHitRate = average([Number(savantProfile.ba), Number(savantProfile.xba)])
+    projection += (blendedHitRate - 0.245) * 18
+    projection += (Number(savantProfile.hardHitPct) - 39) * 0.035
+    projection += (Number(savantProfile.barrelPct) - 7.5) * 0.06
+    projection += (Number(savantProfile.xwoba) - 0.315) * 2.8
+    qualityNotes.push('team contact quality')
+  }
+
+  if (opposingStarter) {
+    if (Number.isFinite(opposingStarter.hitsPerNine)) {
+      projection += (opposingStarter.hitsPerNine - 8.6) * 0.25
+    }
+
+    if (Number.isFinite(opposingStarter.whip)) {
+      projection += (opposingStarter.whip - 1.28) * 1.1
+    }
+
+    if (Number.isFinite(opposingStarter.bbPerNine)) {
+      projection += (opposingStarter.bbPerNine - 3.1) * 0.08
+    }
+
+    if (Number.isFinite(opposingStarter.kPerNine)) {
+      projection -= (opposingStarter.kPerNine - 8.6) * 0.07
+    }
+
+    if (!opposingStarter.sampleEstablished) {
+      projection += 0.2
+      qualityNotes.push('starter uncertainty')
+    }
+  }
+
+  if ([Number(opposingBullpen.era), Number(opposingBullpen.whip)].every(Number.isFinite)) {
+    projection += (Number(opposingBullpen.era) - 4.1) * 0.14
+    projection += (Number(opposingBullpen.whip) - 1.31) * 0.9
+    qualityNotes.push('bullpen shape')
+  }
+
+  if (Number.isFinite(runIndex)) {
+    projection += (runIndex - 100) * 0.028
+  }
+
+  if (Number.isFinite(wobaIndex)) {
+    projection += (wobaIndex - 100) * 0.018
+  }
+
+  projection = clamp(projection, 5.6, 11.6)
+
+  const estimatedAtBats = clamp(
+    34.4 + (Number.isFinite(runIndex) ? (runIndex - 100) * 0.025 : 0) + (/away/i.test(role) ? 0.2 : -0.1),
+    33.6,
+    35.8
+  )
+
+  return {
+    projectedHits: roundToTenths(projection),
+    hitEfficiencyPct: roundToTenths((projection / estimatedAtBats) * 100),
+    notes: qualityNotes
+  }
+}
+
 const buildMlbLineupMatchupScore = (profile = {}) => {
   const grade = Number(profile.averageMatchupGrade)
   const platoonCount = Number(profile.platoonCount)
@@ -573,9 +831,16 @@ const starterScore = (pitcher) =>
   pitcherStrikeoutScore(pitcher) * 0.28
 
 const buildMlbAnalysisContext = (game, participants) => {
-  const starters = participants.map((participant) => parsePitcherDetail(participant.detail))
+  const starterContexts = [
+    game.starterContext?.away ?? game.startingPitcherContext?.away ?? null,
+    game.starterContext?.home ?? game.startingPitcherContext?.home ?? null
+  ]
+  const starters = participants.map((participant, index) =>
+    buildStarterProfile(starterContexts[index], participant.detail)
+  )
   const offenseProfiles = [game.offenseContext?.away, game.offenseContext?.home]
   const bullpenProfiles = [game.bullpenContext?.away, game.bullpenContext?.home]
+  const savantProfiles = [game.savantContext?.away, game.savantContext?.home]
   const lineupProfiles = [
     game.lineupContext?.[participants[0]?.name],
     game.lineupContext?.[participants[1]?.name]
@@ -586,9 +851,30 @@ const buildMlbAnalysisContext = (game, participants) => {
   const bullpenScores = bullpenProfiles.map((profile) =>
     profile ? buildMlbBullpenScore(profile) : null
   )
+  const savantScores = savantProfiles.map((profile) =>
+    profile ? buildMlbSavantScore(profile) : null
+  )
   const lineupScores = lineupProfiles.map((profile) =>
     profile ? buildMlbLineupMatchupScore(profile) : null
   )
+  const projectedHitProfiles = [
+    buildProjectedHitProfile({
+      role: participants[0]?.role,
+      offenseProfile: offenseProfiles[0],
+      savantProfile: savantProfiles[0],
+      opposingStarter: starters[1],
+      opposingBullpen: bullpenProfiles[1],
+      parkContext: game.parkContext
+    }),
+    buildProjectedHitProfile({
+      role: participants[1]?.role,
+      offenseProfile: offenseProfiles[1],
+      savantProfile: savantProfiles[1],
+      opposingStarter: starters[0],
+      opposingBullpen: bullpenProfiles[0],
+      parkContext: game.parkContext
+    })
+  ]
   const marketProbabilities = computeNoVigProbabilities(
     participants.map((participant) => participant.americanOdds)
   )
@@ -603,15 +889,19 @@ const buildMlbAnalysisContext = (game, participants) => {
     buildMlbStandingsSignal(game, participants),
     buildMlbOffenseSignal(game, participants),
     buildMlbBullpenSignal(game, participants),
+    buildMlbSavantSignal(game, participants),
     buildMlbLineupMatchupSignal(game, participants)
   ].filter(Boolean)
   const volatilityModifiers = []
   const sourceParts = ['Moneyline', 'listed starter data']
+  let confidenceModifier = 0
+  let mlbProjection = null
 
   if (game.teamContext?.away && game.teamContext?.home) sourceParts.push('standings context')
   if (game.parkContext?.venueName) sourceParts.push('park factors')
   if (game.offenseContext?.away && game.offenseContext?.home) sourceParts.push('team hit production')
   if (game.bullpenContext?.away && game.bullpenContext?.home) sourceParts.push('bullpen quality')
+  if (game.savantContext?.away && game.savantContext?.home) sourceParts.push('Statcast contact quality')
   if (game.lineupContext?.[participants[0]?.name] && game.lineupContext?.[participants[1]?.name]) {
     sourceParts.push('daily lineup matchup context')
   }
@@ -655,6 +945,68 @@ const buildMlbAnalysisContext = (game, participants) => {
       )
     )
 
+    if (projectedHitProfiles.every(Boolean)) {
+      const projectedHitScores = projectedHitProfiles.map((profile) =>
+        clamp(24 + profile.projectedHits * 5 + profile.hitEfficiencyPct * 1.2, 18, 96)
+      )
+
+      signals.push(
+        createSignal(
+          'Projected hit volume',
+          0.12,
+          [
+            {
+              label: `${projectedHitProfiles[0].projectedHits} hits | ${projectedHitProfiles[0].hitEfficiencyPct}% efficiency`,
+              score: projectedHitScores[0]
+            },
+            {
+              label: `${projectedHitProfiles[1].projectedHits} hits | ${projectedHitProfiles[1].hitEfficiencyPct}% efficiency`,
+              score: projectedHitScores[1]
+            }
+          ],
+          'Composite offense vs starter and bullpen projection'
+        )
+      )
+
+      const hitEdgeIndex =
+        projectedHitProfiles[0].projectedHits >= projectedHitProfiles[1].projectedHits ? 0 : 1
+      const hitEdge = roundToTenths(
+        Math.abs(projectedHitProfiles[0].projectedHits - projectedHitProfiles[1].projectedHits)
+      )
+
+      mlbProjection = {
+        awayProjectedHits: projectedHitProfiles[0].projectedHits,
+        homeProjectedHits: projectedHitProfiles[1].projectedHits,
+        awayHitEfficiencyPct: projectedHitProfiles[0].hitEfficiencyPct,
+        homeHitEfficiencyPct: projectedHitProfiles[1].hitEfficiencyPct,
+        edgeTeam: participants[hitEdgeIndex]?.name ?? '',
+        edgeHits: hitEdge,
+        awayPitcherType: starters[0]?.profileLabel ?? 'Unknown sample starter',
+        homePitcherType: starters[1]?.profileLabel ?? 'Unknown sample starter'
+      }
+
+      if (hitEdge <= 0.4) {
+        volatilityModifiers.push({ label: 'Projected hit volume is nearly even', delta: 3 })
+      }
+
+      if (
+        favoriteIndex !== null &&
+        hitEdgeIndex !== favoriteIndex &&
+        hitEdge >= 0.6
+      ) {
+        volatilityModifiers.push({ label: 'The underdog owns the projected hit edge', delta: 6 })
+        confidenceModifier -= 4
+      }
+
+      if (projectedHitProfiles[0].projectedHits >= 9 && projectedHitProfiles[1].projectedHits >= 9) {
+        volatilityModifiers.push({ label: 'Both offenses project to create real traffic', delta: 5 })
+      }
+
+      if (favoriteIndex !== null && hitEdgeIndex !== favoriteIndex && hitEdge >= 1) {
+        confidenceModifier -= 2
+      }
+    }
+
     const homeFieldSignal = buildHomeFieldSignal(participants, 0.07)
 
     if (homeFieldSignal) signals.push(homeFieldSignal)
@@ -668,10 +1020,20 @@ const buildMlbAnalysisContext = (game, participants) => {
 
     if (starters.some((starter) => !Number.isFinite(starter.era))) {
       volatilityModifiers.push({ label: 'Starter sample is incomplete', delta: 10 })
+      confidenceModifier -= 4
     }
 
     if (starters.every((starter) => Number.isFinite(starter.era) && starter.era >= 4.75)) {
       volatilityModifiers.push({ label: 'Both listed ERAs carry damage risk', delta: 5 })
+    }
+
+    if (starters.some((starter) => starter && !starter.sampleEstablished)) {
+      volatilityModifiers.push({ label: 'At least one listed starter is still a shallow sample', delta: 7 })
+      confidenceModifier -= 3
+    }
+
+    if (starters.some((starter) => starter && starter.profileType === 'Traffic-risk')) {
+      volatilityModifiers.push({ label: 'At least one listed starter profiles as traffic-risk', delta: 4 })
     }
 
     if (starters[0].handedness && starters[1].handedness && starters[0].handedness !== starters[1].handedness) {
@@ -737,6 +1099,14 @@ const buildMlbAnalysisContext = (game, participants) => {
       }
 
       if (
+        Number.isFinite(savantScores[underdogIndex]) &&
+        Number.isFinite(savantScores[favoriteIndex]) &&
+        savantScores[underdogIndex] - savantScores[favoriteIndex] >= 6
+      ) {
+        volatilityModifiers.push({ label: 'The underdog owns the cleaner Statcast contact profile', delta: 4 })
+      }
+
+      if (
         Number.isFinite(starterScores[favoriteIndex]) &&
         Number.isFinite(starterScores[underdogIndex]) &&
         Number.isFinite(bullpenScores[favoriteIndex]) &&
@@ -786,6 +1156,13 @@ const buildMlbAnalysisContext = (game, participants) => {
           delta: 4
         })
       }
+
+      if (starters[favoriteIndex]?.profileType === 'Traffic-risk') {
+        volatilityModifiers.push({
+          label: 'Favorite still leans on a traffic-risk starter type',
+          delta: 4
+        })
+      }
     }
   }
 
@@ -802,7 +1179,9 @@ const buildMlbAnalysisContext = (game, participants) => {
     sourceLabel: sourceParts.join(' + '),
     signals,
     volatilityBase: sportVolatilityBase.MLB,
-    volatilityModifiers
+    volatilityModifiers,
+    confidenceModifier,
+    mlbProjection
   }
 }
 
@@ -1117,7 +1496,8 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
         modelEdge * 0.95 +
         coverageBonus +
         agreementBonus +
-        Math.abs(marketSupport - 0.5) * 12,
+        Math.abs(marketSupport - 0.5) * 12 +
+        (context.confidenceModifier ?? 0),
       52,
       89
     )
@@ -1183,7 +1563,8 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     marketProbabilityLabel: formatProbability(marketSupport),
     inputs,
     inputsUsed: normalizedSignals.length,
-    volatilityNotes: context.volatilityModifiers || []
+    volatilityNotes: context.volatilityModifiers || [],
+    mlbProjection: context.mlbProjection ?? null
   }
 }
 

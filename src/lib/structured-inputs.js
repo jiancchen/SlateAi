@@ -626,5 +626,71 @@ export const structuredInputOverrides = {
         modifier('Yesterdays late WNBA swings reinforce the caution here', 4)
       ]
     }
+  },
+  'lynx-wings': {
+    sourceLabel: 'LineStar WNBA team records + official WNBA roster production',
+    signals: [
+      signal('Lead-guard orchestration', 0.2, [
+        { label: 'Olivia Miles 17.0 PPG and 7.5 APG plus Courtney Williams 5.5 APG', score: 58 },
+        { label: 'Paige Bueckers 17.5 PPG plus Odyssey Sims support behind Arike', score: 62 }
+      ]),
+      signal('Pure shot-making ceiling', 0.18, [
+        { label: 'Kayla McBride 17.0 PPG keeps Minnesota live every quarter', score: 56 },
+        { label: 'Arike Ogunbowale 21.0 PPG is still the top single-game scorer', score: 69 }
+      ]),
+      signal('Team profile', 0.18, [
+        { label: '89.0 PPG with the No. 9 defense', score: 57 },
+        { label: '89.5 PPG with the No. 11 defense', score: 53 }
+      ]),
+      signal('Market and venue', 0.14, [
+        { label: 'Road dog on a short board', score: 46 },
+        { label: 'Home favorite around -175 and -3.5', score: 54 }
+      ]),
+      signal('Late-game control risk', 0.14, [
+        { label: 'Minnesota path rises if the game becomes a passing and poise contest', score: 52 },
+        { label: 'Dallas still needs to close a short number cleanly', score: 48 }
+      ])
+    ],
+    volatility: {
+      base: 68,
+      modifiers: [
+        modifier('Short spread keeps both fourth-quarter paths live', 7),
+        modifier('Early-season sample is still thin', 6),
+        modifier('Both teams have credible lead guards, which raises swing potential', 4)
+      ]
+    }
+  },
+  'liberty-fire': {
+    sourceLabel: 'LineStar WNBA team records + official WNBA roster production',
+    signals: [
+      signal('Offensive separation', 0.24, [
+        { label: '100.0 PPG and the No. 1 offense on the board', score: 89 },
+        { label: '90.5 PPG but facing a clear class jump', score: 39 }
+      ]),
+      signal('Top-end scorers', 0.2, [
+        { label: 'Stewart 23.3, Johannes 20.0, Jonquel 13.3', score: 88 },
+        { label: 'Leite 19.5 and Carleton 19.5 keep the dog from being empty', score: 47 }
+      ]),
+      signal('Secondary creation', 0.14, [
+        { label: 'Pauline Astier 15.7 PPG and 4.7 APG extend the setup tree', score: 79 },
+        { label: 'Leite is the cleanest home-side organizer at 4.5 APG', score: 44 }
+      ]),
+      signal('Defense profile', 0.16, [
+        { label: '88.7 allowed per game with more trusted rebound-and-close pieces', score: 64 },
+        { label: '97.0 allowed per game and 14th-ranked defense', score: 36 }
+      ]),
+      signal('Home-dog variance', 0.1, [
+        { label: 'Road favorite still carries some environment drag', score: 47 },
+        { label: 'Home crowd keeps a little dog equity alive', score: 53 }
+      ])
+    ],
+    volatility: {
+      base: 55,
+      modifiers: [
+        modifier('Large spread lowers outright upset frequency', -8),
+        modifier('Road favorite still has some backdoor variance', 4),
+        modifier('Portland has enough scoring punch to stay noisy if New York coasts', 3)
+      ]
+    }
   }
 }
