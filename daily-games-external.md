@@ -17,6 +17,7 @@ The rule:
 - Structured schedule pull:
   [https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-10&hydrate=probablePitcher,team](https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-10&hydrate=probablePitcher,team)
   This was the cleanest structured source for matchup times, teams, and probable pitchers.
+  Local shortcut: `npm run data:list:probables -- --date YYYY-MM-DD`
 - Official game feed pattern:
   `https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live`
   Use this for the trailing 3-day bullpen workload pull, all pitcher appearances, inning-by-inning first-five context, and likely first-reliever estimates.

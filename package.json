@@ -11,6 +11,7 @@
     "data:ingest:mlb-day": "python3 scripts/mlb_warehouse.py ingest-mlb-day",
     "data:ingest:mlb-range": "python3 scripts/mlb_warehouse.py ingest-mlb-range",
     "data:prep:mlb-day": "python3 scripts/mlb_warehouse.py prepare-mlb-day",
+    "data:list:probables": "python3 scripts/mlb_warehouse.py list-probable-starters",
     "data:derive:mlb": "python3 scripts/mlb_warehouse.py derive-mlb-features",
     "data:ingest:statcast-hr": "python3 scripts/mlb_warehouse.py ingest-statcast-hr",
     "data:import:hr": "python3 scripts/mlb_warehouse.py import-predictions",

@@ -745,6 +745,126 @@ h3 {
   background: rgba(82, 214, 179, 0.05);
 }
 
+.model-phase-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.model-phase-card,
+.reliever-chain-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.model-phase-card--edge {
+  border-color: rgba(82, 214, 179, 0.18);
+  background: rgba(82, 214, 179, 0.05);
+}
+
+.model-phase-head,
+.reliever-chain-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.model-phase-head p,
+.reliever-chain-head p,
+.flow-lane small,
+.reliever-row span {
+  color: var(--muted);
+}
+
+.model-phase-head strong,
+.reliever-chain-head strong,
+.reliever-row strong {
+  color: var(--heading);
+}
+
+.model-phase-head span,
+.reliever-chain-head span {
+  color: var(--accent);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.flow-lane-grid,
+.reliever-list {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.flow-lane {
+  display: grid;
+  gap: 4px;
+}
+
+.flow-lane-label,
+.reliever-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: start;
+}
+
+.flow-lane-label span {
+  color: var(--muted);
+}
+
+.flow-lane-label strong {
+  color: var(--heading);
+}
+
+.flow-track {
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.flow-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(82, 214, 179, 0.45), rgba(82, 214, 179, 0.95));
+}
+
+.reliever-chain-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.reliever-row {
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+}
+
+.reliever-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.reliever-row > div {
+  display: grid;
+  gap: 3px;
+}
+
+.reliever-meta {
+  justify-items: end;
+  text-align: right;
+}
+
 .model-note-row--pitchers {
   margin-top: 8px;
 }
@@ -1212,12 +1332,14 @@ h3 {
   .market-detail-grid,
   .boxscore-grid,
   .model-projection-grid,
+  .model-phase-grid,
   .pick-grid.compact,
   .parlay-stats-grid.compact,
   .parlay-return-grid,
   .rail-mini-metrics,
   .analysis-action-row,
-  .quick-pick-row {
+  .quick-pick-row,
+  .reliever-chain-grid {
     grid-template-columns: 1fr;
   }
 

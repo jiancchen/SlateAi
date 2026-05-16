@@ -47,6 +47,13 @@ import {
   slateMeta as daySevenSlateMeta,
   sources as daySevenSources
 } from './day-2026-05-15.js'
+import {
+  filters as dayEightFilters,
+  games as dayEightGames,
+  oddsMeta as dayEightOddsMeta,
+  slateMeta as dayEightSlateMeta,
+  sources as dayEightSources
+} from './day-2026-05-16.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -297,5 +304,33 @@ const may15Slate = createSlateDay({
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate]
+const may16Slate = createSlateDay({
+  id: dayEightSlateMeta.isoDate,
+  label: dayEightSlateMeta.date,
+  status: 'ready',
+  slateMeta: dayEightSlateMeta,
+  games: dayEightGames,
+  filters: dayEightFilters,
+  oddsMeta: dayEightOddsMeta,
+  sources: dayEightSources,
+  intakeChecklist: [
+    'Refresh the board once confirmed lineups land so the starter-phase and late-bridge split can be compared against the lineup-confirmed version.',
+    'Store final MLB results and first-five outcomes so the new bridge-chain indicators can be graded directly instead of only narratively.',
+    'Track whether the first-two-reliever chain helped catch the games that look cleaner for first five than for full-game moneyline.',
+    'Keep an eye on any official probable-starter changes because this day intentionally started from the early official morning feed.'
+  ],
+  intakePrompt:
+    'May 16 is now the live MLB board. It is the first one built around starter phase, bridge reliever chain, and full-game hold as separate parts of the same read.',
+  feedNotes: [
+    'This is the first daybook entry where the warehouse likely-reliever chain is a first-class model input instead of just a postgame explanation layer.',
+    'The model now splits the projected hit script into first five, late innings, and full game, which makes the UI much closer to an actual baseball desk view.',
+    'The slate is MLB-only by design for the morning pass so today’s baseball read can be refreshed faster when the next lineup wave arrives.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['MLB']
+  }
+})
+
+export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate]
 export const defaultSlateDayId = slateDays.at(-1)?.id ?? ''

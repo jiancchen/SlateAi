@@ -26,6 +26,10 @@ USER_AGENT = "SportsTradingBoardBot/1.0 (+https://baseballsavant.mlb.com)"
 
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={date}&hydrate=probablePitcher,team"
 MLB_FEED_URL = "https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live"
+MLB_PLAYER_PITCHING_URL = (
+    "https://statsapi.mlb.com/api/v1/people/{player_id}"
+    "?hydrate=stats(group=[pitching],type=[season],season={season})"
+)
 STATCAST_HOME_RUNS_CSV_URL = (
     "https://baseballsavant.mlb.com/leaderboard/home-runs"
     "?year={season}&player_type=Batter&cat=xhr&team=&min=0&csv=true"
@@ -416,6 +420,25 @@ def fetch_text(url: str) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT, "X-Requested-With": "XMLHttpRequest"})
     with urlopen(request, timeout=30) as response:
         return response.read().decode("utf-8", "ignore")
+
+
+def fetch_pitcher_season_snapshot(player_id: int | None, season: int) -> dict[str, Any]:
+    if not player_id:
+        return {}
+
+    payload = json.loads(fetch_text(MLB_PLAYER_PITCHING_URL.format(player_id=player_id, season=season)))
+    person = (payload.get("people") or [{}])[0]
+    stat_groups = person.get("stats") or []
+    splits = stat_groups[0].get("splits") if stat_groups else []
+    stat = (splits[0].get("stat") or {}) if splits else {}
+
+    return {
+        "pitch_hand": ((person.get("pitchHand") or {}).get("code")) or "",
+        "wins": to_int(stat.get("wins")),
+        "losses": to_int(stat.get("losses")),
+        "era": stat.get("era"),
+        "strikeouts": to_int(stat.get("strikeOuts")),
+    }
 
 
 def write_text(path: Path, text: str) -> None:
@@ -2174,6 +2197,61 @@ def print_likely_relievers(rows: list[sqlite3.Row]) -> None:
         )
 
 
+def list_probable_starters_snapshot(date_text: str) -> list[dict[str, Any]]:
+    schedule_url = MLB_SCHEDULE_URL.format(date=date_text)
+    schedule_payload = json.loads(fetch_text(schedule_url))
+    season = datetime.strptime(date_text, "%Y-%m-%d").year
+    rows: list[dict[str, Any]] = []
+
+    for game in schedule_payload.get("dates", [{}])[0].get("games", []):
+        away = game["teams"]["away"]["team"]["name"]
+        home = game["teams"]["home"]["team"]["name"]
+        away_probable = game["teams"]["away"].get("probablePitcher") or {}
+        home_probable = game["teams"]["home"].get("probablePitcher") or {}
+        away_details = fetch_pitcher_season_snapshot(to_int(away_probable.get("id")), season)
+        home_details = fetch_pitcher_season_snapshot(to_int(home_probable.get("id")), season)
+        rows.append(
+            {
+                "game_date": date_text,
+                "game_datetime": game.get("gameDate"),
+                "game_title": f"{away} @ {home}",
+                "venue_name": (game.get("venue") or {}).get("name"),
+                "away_team": away,
+                "home_team": home,
+                "away_pitcher_name": away_probable.get("fullName") or "TBD",
+                "away_pitcher_hand": away_details.get("pitch_hand") or "",
+                "away_pitcher_wins": away_details.get("wins"),
+                "away_pitcher_losses": away_details.get("losses"),
+                "away_pitcher_era": away_details.get("era"),
+                "away_pitcher_strikeouts": away_details.get("strikeouts"),
+                "home_pitcher_name": home_probable.get("fullName") or "TBD",
+                "home_pitcher_hand": home_details.get("pitch_hand") or "",
+                "home_pitcher_wins": home_details.get("wins"),
+                "home_pitcher_losses": home_details.get("losses"),
+                "home_pitcher_era": home_details.get("era"),
+                "home_pitcher_strikeouts": home_details.get("strikeouts"),
+            }
+        )
+
+    return rows
+
+
+def print_probable_starters(rows: list[dict[str, Any]]) -> None:
+    print(f"Official probable starter rows: {len(rows)}")
+    for row in rows:
+        away_record = f"{row['away_pitcher_wins']}-{row['away_pitcher_losses']}" if row["away_pitcher_wins"] is not None and row["away_pitcher_losses"] is not None else "-"
+        home_record = f"{row['home_pitcher_wins']}-{row['home_pitcher_losses']}" if row["home_pitcher_wins"] is not None and row["home_pitcher_losses"] is not None else "-"
+        away_era = row["away_pitcher_era"] if row["away_pitcher_era"] not in (None, "") else "-"
+        home_era = row["home_pitcher_era"] if row["home_pitcher_era"] not in (None, "") else "-"
+        away_so = row["away_pitcher_strikeouts"] if row["away_pitcher_strikeouts"] is not None else "-"
+        home_so = row["home_pitcher_strikeouts"] if row["home_pitcher_strikeouts"] is not None else "-"
+        print(
+            f"- {row['game_title']} | {row['away_pitcher_name']} ({row['away_pitcher_hand'] or '-'}) "
+            f"{away_record}, {away_era} ERA, {away_so} SO vs "
+            f"{row['home_pitcher_name']} ({row['home_pitcher_hand'] or '-'}) {home_record}, {home_era} ERA, {home_so} SO"
+        )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Local MLB warehouse utilities for modeling and backtesting.")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -2241,6 +2319,12 @@ def parse_args() -> argparse.Namespace:
     )
     list_relievers.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
     list_relievers.add_argument("--team", help="Optional team name filter.")
+
+    list_probables = subparsers.add_parser(
+        "list-probable-starters",
+        help="Print the official MLB probable starters for a date from the schedule API.",
+    )
+    list_probables.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
 
     return parser.parse_args()
 
@@ -2314,6 +2398,11 @@ def main() -> None:
         if args.command == "list-likely-relievers":
             rows = list_likely_relievers(conn, args.date, args.team)
             print_likely_relievers(rows)
+            return
+
+        if args.command == "list-probable-starters":
+            rows = list_probable_starters_snapshot(args.date)
+            print_probable_starters(rows)
             return
 
 

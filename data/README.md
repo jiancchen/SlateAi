@@ -24,6 +24,7 @@ This project now keeps the sports dashboard logic separate from the local event 
 ```bash
 npm run data:init
 npm run data:prep:mlb-day -- --date 2026-05-16 --lookback-days 3
+npm run data:list:probables -- --date 2026-05-16
 npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:derive:mlb -- --through-date 2026-05-15
 npm run data:list:bullpen -- --date 2026-05-16
@@ -45,6 +46,6 @@ npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 202
 
 - This warehouse is intentionally relational first. A vector database is not the right primary store for structured play-by-play, pitcher lines, or daily predictions.
 - The current schema already leaves room for `park_factor_snapshots` and `weather_observations`, so we can add day-level run environment and wind context without redesigning the store.
-- The daily MLB prep now depends mostly on official MLB Stats API pulls we already trust: target-day schedule/probables plus the trailing few days of `feed/live` data for bullpen workload and likely bridge relievers.
+- The daily MLB prep now depends mostly on official MLB Stats API pulls we already trust: target-day schedule/probables via `data:list:probables` plus the trailing few days of `feed/live` data for bullpen workload and likely bridge relievers.
 - The side-pick backtest flow is meant to expose pattern misses like `bullpen flip losses`, `thin-edge` misses, and `projected hit edge against pick` so we can tune first-5, spread, and moneyline models separately.
 - If we want semantic retrieval later, the best use would be embeddings for long-form notes, scouting blurbs, or source excerpts, while keeping game facts in SQLite.

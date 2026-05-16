@@ -38,6 +38,28 @@
     return 'Lean only'
   }
 
+  const comparisonBarWidth = (value, ...comparisonValues) => {
+    const numericValue = Number(value)
+    const maxValue = Math.max(
+      1,
+      ...comparisonValues.map((entry) => {
+        const numericEntry = Number(entry)
+        return Number.isFinite(numericEntry) ? numericEntry : 0
+      })
+    )
+
+    if (!Number.isFinite(numericValue) || maxValue <= 0) return '16%'
+
+    return `${Math.max(16, Math.min(100, (numericValue / maxValue) * 100)).toFixed(1)}%`
+  }
+
+  const relieverStatusLabel = (reliever) => {
+    if (!reliever) return 'Status unavailable'
+    if (reliever.backToBack) return 'Back to back'
+    if (reliever.workedYesterday) return 'Worked yesterday'
+    return 'Fresh'
+  }
+
   const countSelectedPicks = (picks) => Object.keys(picks).length
 
   const picksForDay = (dayId) => selectedPicksByDay[dayId] ?? {}
@@ -651,27 +673,242 @@
                             </div>
 
                             {#if game.analysis.mlbProjection}
-                              <div class="model-projection-grid">
-                                <div class="model-projection-card">
-                                  <p>Projected hits</p>
-                                  <strong>{game.matchup[0].name} {game.analysis.mlbProjection.awayProjectedHits}</strong>
-                                  <span>{game.analysis.mlbProjection.awayHitEfficiencyPct}% hit efficiency</span>
+                              {#if game.analysis.indicators}
+                                <div class="meter-grid">
+                                  <div class="meter-card">
+                                    <div class="meter-label">
+                                      <span>Starter leverage</span>
+                                      <strong>{game.analysis.indicators.starterLeverageIndex}</strong>
+                                    </div>
+                                    <div class="meter-track">
+                                      <span style={`width:${game.analysis.indicators.starterLeverageIndex}%`}></span>
+                                    </div>
+                                  </div>
+                                  <div class="meter-card">
+                                    <div class="meter-label">
+                                      <span>Late hold</span>
+                                      <strong>{game.analysis.indicators.lateInningStabilityIndex}</strong>
+                                    </div>
+                                    <div class="meter-track">
+                                      <span style={`width:${game.analysis.indicators.lateInningStabilityIndex}%`}></span>
+                                    </div>
+                                  </div>
+                                  <div class="meter-card">
+                                    <div class="meter-label">
+                                      <span>Relief risk</span>
+                                      <strong>{game.analysis.indicators.reliefPitchingRisk}</strong>
+                                    </div>
+                                    <div class="meter-track volatility">
+                                      <span style={`width:${game.analysis.indicators.reliefPitchingRisk}%`}></span>
+                                    </div>
+                                  </div>
+                                  <div class="meter-card">
+                                    <div class="meter-label">
+                                      <span>Coin-flip pressure</span>
+                                      <strong>{game.analysis.indicators.coinflipPressure}</strong>
+                                    </div>
+                                    <div class="meter-track volatility">
+                                      <span style={`width:${game.analysis.indicators.coinflipPressure}%`}></span>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="model-projection-card">
-                                  <p>Projected hits</p>
-                                  <strong>{game.matchup[1].name} {game.analysis.mlbProjection.homeProjectedHits}</strong>
-                                  <span>{game.analysis.mlbProjection.homeHitEfficiencyPct}% hit efficiency</span>
-                                </div>
-                                <div class="model-projection-card model-projection-card--edge">
-                                  <p>Hit advantage</p>
-                                  <strong>{game.analysis.mlbProjection.edgeTeam} +{game.analysis.mlbProjection.edgeHits}</strong>
-                                  <span>Projected extra hits over opponent</span>
-                                </div>
+                              {/if}
+
+                              <div class="model-phase-grid">
+                                <article class="model-phase-card">
+                                  <div class="model-phase-head">
+                                    <div>
+                                      <p>First 5</p>
+                                      <strong>{game.analysis.mlbProjection.first5EdgeTeam} +{game.analysis.mlbProjection.first5EdgeHits}</strong>
+                                    </div>
+                                    <span>Starter window</span>
+                                  </div>
+
+                                  <div class="flow-lane-grid">
+                                    <div class="flow-lane">
+                                      <div class="flow-lane-label">
+                                        <span>{game.matchup[0].name}</span>
+                                        <strong>{game.analysis.mlbProjection.awayFirst5ProjectedHits} H</strong>
+                                      </div>
+                                      <div class="flow-track">
+                                        <span
+                                          style={`width:${comparisonBarWidth(
+                                            game.analysis.mlbProjection.awayFirst5ProjectedHits,
+                                            game.analysis.mlbProjection.awayFirst5ProjectedHits,
+                                            game.analysis.mlbProjection.homeFirst5ProjectedHits
+                                          )}`}
+                                        ></span>
+                                      </div>
+                                      <small>{game.analysis.mlbProjection.awayFirst5HitEfficiencyPct}% efficiency</small>
+                                    </div>
+                                    <div class="flow-lane">
+                                      <div class="flow-lane-label">
+                                        <span>{game.matchup[1].name}</span>
+                                        <strong>{game.analysis.mlbProjection.homeFirst5ProjectedHits} H</strong>
+                                      </div>
+                                      <div class="flow-track">
+                                        <span
+                                          style={`width:${comparisonBarWidth(
+                                            game.analysis.mlbProjection.homeFirst5ProjectedHits,
+                                            game.analysis.mlbProjection.awayFirst5ProjectedHits,
+                                            game.analysis.mlbProjection.homeFirst5ProjectedHits
+                                          )}`}
+                                        ></span>
+                                      </div>
+                                      <small>{game.analysis.mlbProjection.homeFirst5HitEfficiencyPct}% efficiency</small>
+                                    </div>
+                                  </div>
+                                </article>
+
+                                <article class="model-phase-card">
+                                  <div class="model-phase-head">
+                                    <div>
+                                      <p>Rest of game</p>
+                                      <strong>{game.analysis.mlbProjection.lateEdgeTeam} +{game.analysis.mlbProjection.lateEdgeHits}</strong>
+                                    </div>
+                                    <span>Bridge and finish</span>
+                                  </div>
+
+                                  <div class="flow-lane-grid">
+                                    <div class="flow-lane">
+                                      <div class="flow-lane-label">
+                                        <span>{game.matchup[0].name}</span>
+                                        <strong>{game.analysis.mlbProjection.awayLateProjectedHits} H</strong>
+                                      </div>
+                                      <div class="flow-track">
+                                        <span
+                                          style={`width:${comparisonBarWidth(
+                                            game.analysis.mlbProjection.awayLateProjectedHits,
+                                            game.analysis.mlbProjection.awayLateProjectedHits,
+                                            game.analysis.mlbProjection.homeLateProjectedHits
+                                          )}`}
+                                        ></span>
+                                      </div>
+                                      <small>{game.analysis.mlbProjection.awayLateHitEfficiencyPct}% efficiency</small>
+                                    </div>
+                                    <div class="flow-lane">
+                                      <div class="flow-lane-label">
+                                        <span>{game.matchup[1].name}</span>
+                                        <strong>{game.analysis.mlbProjection.homeLateProjectedHits} H</strong>
+                                      </div>
+                                      <div class="flow-track">
+                                        <span
+                                          style={`width:${comparisonBarWidth(
+                                            game.analysis.mlbProjection.homeLateProjectedHits,
+                                            game.analysis.mlbProjection.awayLateProjectedHits,
+                                            game.analysis.mlbProjection.homeLateProjectedHits
+                                          )}`}
+                                        ></span>
+                                      </div>
+                                      <small>{game.analysis.mlbProjection.homeLateHitEfficiencyPct}% efficiency</small>
+                                    </div>
+                                  </div>
+                                </article>
+
+                                <article class="model-phase-card model-phase-card--edge">
+                                  <div class="model-phase-head">
+                                    <div>
+                                      <p>Full game</p>
+                                      <strong>{game.analysis.mlbProjection.edgeTeam} +{game.analysis.mlbProjection.edgeHits}</strong>
+                                    </div>
+                                    <span>Total hit edge</span>
+                                  </div>
+
+                                  <div class="flow-lane-grid">
+                                    <div class="flow-lane">
+                                      <div class="flow-lane-label">
+                                        <span>{game.matchup[0].name}</span>
+                                        <strong>{game.analysis.mlbProjection.awayProjectedHits} H</strong>
+                                      </div>
+                                      <div class="flow-track">
+                                        <span
+                                          style={`width:${comparisonBarWidth(
+                                            game.analysis.mlbProjection.awayProjectedHits,
+                                            game.analysis.mlbProjection.awayProjectedHits,
+                                            game.analysis.mlbProjection.homeProjectedHits
+                                          )}`}
+                                        ></span>
+                                      </div>
+                                      <small>{game.analysis.mlbProjection.awayHitEfficiencyPct}% efficiency</small>
+                                    </div>
+                                    <div class="flow-lane">
+                                      <div class="flow-lane-label">
+                                        <span>{game.matchup[1].name}</span>
+                                        <strong>{game.analysis.mlbProjection.homeProjectedHits} H</strong>
+                                      </div>
+                                      <div class="flow-track">
+                                        <span
+                                          style={`width:${comparisonBarWidth(
+                                            game.analysis.mlbProjection.homeProjectedHits,
+                                            game.analysis.mlbProjection.awayProjectedHits,
+                                            game.analysis.mlbProjection.homeProjectedHits
+                                          )}`}
+                                        ></span>
+                                      </div>
+                                      <small>{game.analysis.mlbProjection.homeHitEfficiencyPct}% efficiency</small>
+                                    </div>
+                                  </div>
+                                </article>
                               </div>
 
                               <div class="model-note-row model-note-row--pitchers">
                                 <span>{game.matchup[0].name}: {game.analysis.mlbProjection.awayPitcherType}</span>
                                 <span>{game.matchup[1].name}: {game.analysis.mlbProjection.homePitcherType}</span>
+                                {#if game.analysis.mlbProjection.bridgeEdgeTeam}
+                                  <span>Bridge edge: {game.analysis.mlbProjection.bridgeEdgeTeam} +{game.analysis.mlbProjection.bridgeEdgeScore}</span>
+                                {/if}
+                              </div>
+
+                              <div class="reliever-chain-grid">
+                                <article class="reliever-chain-card">
+                                  <div class="reliever-chain-head">
+                                    <div>
+                                      <p>{game.matchup[0].name} bridge chain</p>
+                                      <strong>{game.analysis.mlbProjection.awayBullpenChainScore ?? 'N/A'}</strong>
+                                    </div>
+                                    <span>Likely first two</span>
+                                  </div>
+
+                                  <div class="reliever-list">
+                                    {#each game.analysis.mlbProjection.awayLikelyRelievers as reliever}
+                                      <div class="reliever-row">
+                                        <div>
+                                          <strong>{reliever.name}</strong>
+                                          <span>{reliever.role} | {Math.round(reliever.firstRelieverLikelihood)}% first-up</span>
+                                        </div>
+                                        <div class="reliever-meta">
+                                          <strong>{Math.round(reliever.availabilityScore)} avail</strong>
+                                          <span>{relieverStatusLabel(reliever)}</span>
+                                        </div>
+                                      </div>
+                                    {/each}
+                                  </div>
+                                </article>
+
+                                <article class="reliever-chain-card">
+                                  <div class="reliever-chain-head">
+                                    <div>
+                                      <p>{game.matchup[1].name} bridge chain</p>
+                                      <strong>{game.analysis.mlbProjection.homeBullpenChainScore ?? 'N/A'}</strong>
+                                    </div>
+                                    <span>Likely first two</span>
+                                  </div>
+
+                                  <div class="reliever-list">
+                                    {#each game.analysis.mlbProjection.homeLikelyRelievers as reliever}
+                                      <div class="reliever-row">
+                                        <div>
+                                          <strong>{reliever.name}</strong>
+                                          <span>{reliever.role} | {Math.round(reliever.firstRelieverLikelihood)}% first-up</span>
+                                        </div>
+                                        <div class="reliever-meta">
+                                          <strong>{Math.round(reliever.availabilityScore)} avail</strong>
+                                          <span>{relieverStatusLabel(reliever)}</span>
+                                        </div>
+                                      </div>
+                                    {/each}
+                                  </div>
+                                </article>
                               </div>
                             {/if}
 

@@ -80,6 +80,7 @@ npm run build
 ```bash
 npm run data:init
 npm run data:prep:mlb-day -- --date 2026-05-16 --lookback-days 3
+npm run data:list:probables -- --date 2026-05-16
 npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:derive:mlb -- --through-date 2026-05-15
 npm run data:list:bullpen -- --date 2026-05-16
@@ -105,7 +106,8 @@ For a live MLB prediction day, the warehouse now has a concrete preflight:
 
 ```bash
 npm run data:prep:mlb-day -- --date YYYY-MM-DD --lookback-days 3
+npm run data:list:probables -- --date YYYY-MM-DD
 npm run data:list:relievers -- --date YYYY-MM-DD
 ```
 
-That pulls the target day plus the trailing workload window, refreshes rolling form, stores bullpen last-3-day usage, and estimates the likely first two relievers for each scheduled team.
+That pulls the target day plus the trailing workload window, refreshes rolling form, gives us the official probable-starter board for the date, stores bullpen last-3-day usage, and estimates the likely first two relievers for each scheduled team.
