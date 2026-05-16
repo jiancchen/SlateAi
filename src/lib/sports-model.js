@@ -395,9 +395,14 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
   }
 
   const profileType = classifyPitcherType(starter)
+  const avgInningsPerStart =
+    Number.isFinite(inningsFloat) && Number.isFinite(gamesStarted) && gamesStarted > 0
+      ? inningsFloat / gamesStarted
+      : null
 
   return {
     ...starter,
+    avgInningsPerStart,
     profileType,
     profileLabel: formatPitcherType(profileType, handedness),
     sampleEstablished: Number.isFinite(inningsFloat) && inningsFloat >= 18 && Number.isFinite(era)
@@ -653,10 +658,11 @@ const buildProjectedHitProfile = ({
 
   if (![splitHits, baselineHits, recentHits].every(Number.isFinite)) return null
 
-  let projection = baselineHits * 0.4 + splitHits * 0.35 + recentHits * 0.25
+  let starterPhaseProjection = baselineHits * 0.4 + splitHits * 0.35 + recentHits * 0.25
   const qualityNotes = []
   const runIndex = Number(parkContext?.indexRuns)
   const wobaIndex = Number(parkContext?.indexWoba)
+  let bullpenAdjustment = 0
 
   if (
     [Number(savantProfile.ba), Number(savantProfile.xba), Number(savantProfile.hardHitPct), Number(savantProfile.barrelPct), Number(savantProfile.xwoba)].every(
@@ -664,63 +670,186 @@ const buildProjectedHitProfile = ({
     )
   ) {
     const blendedHitRate = average([Number(savantProfile.ba), Number(savantProfile.xba)])
-    projection += (blendedHitRate - 0.245) * 18
-    projection += (Number(savantProfile.hardHitPct) - 39) * 0.035
-    projection += (Number(savantProfile.barrelPct) - 7.5) * 0.06
-    projection += (Number(savantProfile.xwoba) - 0.315) * 2.8
+    starterPhaseProjection += (blendedHitRate - 0.245) * 18
+    starterPhaseProjection += (Number(savantProfile.hardHitPct) - 39) * 0.035
+    starterPhaseProjection += (Number(savantProfile.barrelPct) - 7.5) * 0.06
+    starterPhaseProjection += (Number(savantProfile.xwoba) - 0.315) * 2.8
     qualityNotes.push('team contact quality')
   }
 
   if (opposingStarter) {
     if (Number.isFinite(opposingStarter.hitsPerNine)) {
-      projection += (opposingStarter.hitsPerNine - 8.6) * 0.25
+      starterPhaseProjection += (opposingStarter.hitsPerNine - 8.6) * 0.25
     }
 
     if (Number.isFinite(opposingStarter.whip)) {
-      projection += (opposingStarter.whip - 1.28) * 1.1
+      starterPhaseProjection += (opposingStarter.whip - 1.28) * 1.1
     }
 
     if (Number.isFinite(opposingStarter.bbPerNine)) {
-      projection += (opposingStarter.bbPerNine - 3.1) * 0.08
+      starterPhaseProjection += (opposingStarter.bbPerNine - 3.1) * 0.08
     }
 
     if (Number.isFinite(opposingStarter.kPerNine)) {
-      projection -= (opposingStarter.kPerNine - 8.6) * 0.07
+      starterPhaseProjection -= (opposingStarter.kPerNine - 8.6) * 0.07
     }
 
     if (!opposingStarter.sampleEstablished) {
-      projection += 0.2
+      starterPhaseProjection += 0.2
       qualityNotes.push('starter uncertainty')
     }
   }
 
   if ([Number(opposingBullpen.era), Number(opposingBullpen.whip)].every(Number.isFinite)) {
-    projection += (Number(opposingBullpen.era) - 4.1) * 0.14
-    projection += (Number(opposingBullpen.whip) - 1.31) * 0.9
+    bullpenAdjustment += (Number(opposingBullpen.era) - 4.1) * 0.14
+    bullpenAdjustment += (Number(opposingBullpen.whip) - 1.31) * 0.9
     qualityNotes.push('bullpen shape')
   }
 
   if (Number.isFinite(runIndex)) {
-    projection += (runIndex - 100) * 0.028
+    starterPhaseProjection += (runIndex - 100) * 0.028
   }
 
   if (Number.isFinite(wobaIndex)) {
-    projection += (wobaIndex - 100) * 0.018
+    starterPhaseProjection += (wobaIndex - 100) * 0.018
   }
-
-  projection = clamp(projection, 5.6, 11.6)
 
   const estimatedAtBats = clamp(
     34.4 + (Number.isFinite(runIndex) ? (runIndex - 100) * 0.025 : 0) + (/away/i.test(role) ? 0.2 : -0.1),
     33.6,
     35.8
   )
+  const estimatedFirst5AtBats = clamp(
+    19.0 + (Number.isFinite(runIndex) ? (runIndex - 100) * 0.013 : 0) + (/away/i.test(role) ? 0.1 : -0.05),
+    18.3,
+    19.8
+  )
+  const starterCoverageFirst5 = clamp(
+    Number.isFinite(opposingStarter?.avgInningsPerStart)
+      ? opposingStarter.avgInningsPerStart / 5
+      : 0.9,
+    0.72,
+    1
+  )
+  const first5ProjectionFullScale =
+    starterPhaseProjection + bullpenAdjustment * (1 - starterCoverageFirst5) * 0.45
+  const starterPhaseHits = clamp(
+    first5ProjectionFullScale * (estimatedFirst5AtBats / estimatedAtBats),
+    3.0,
+    7.1
+  )
+  const fullGameProjection = clamp(starterPhaseProjection + bullpenAdjustment, 5.6, 11.6)
 
   return {
-    projectedHits: roundToTenths(projection),
-    hitEfficiencyPct: roundToTenths((projection / estimatedAtBats) * 100),
+    projectedHits: roundToTenths(fullGameProjection),
+    hitEfficiencyPct: roundToTenths((fullGameProjection / estimatedAtBats) * 100),
+    first5ProjectedHits: roundToTenths(starterPhaseHits),
+    first5HitEfficiencyPct: roundToTenths((starterPhaseHits / estimatedFirst5AtBats) * 100),
+    estimatedAtBats: roundToTenths(estimatedAtBats),
+    estimatedFirst5AtBats: roundToTenths(estimatedFirst5AtBats),
     notes: qualityNotes
   }
+}
+
+const calibrateProjectedHitProfiles = ({
+  projectedHitProfiles = [],
+  offenseScores = [],
+  savantScores = [],
+  lineupScores = [],
+  starterScores = [],
+  bullpenScores = []
+}) => {
+  if (projectedHitProfiles.length < 2 || projectedHitProfiles.some((profile) => !profile)) {
+    return projectedHitProfiles
+  }
+
+  const safeDiff = (left, right) =>
+    Number.isFinite(left) && Number.isFinite(right) ? left - right : null
+  const buildSupportIndex = (gaps = [], divisors = []) => {
+    const normalized = gaps
+      .map((gap, index) =>
+        Number.isFinite(gap) && Number.isFinite(divisors[index]) && divisors[index] > 0
+          ? Math.min(Math.abs(gap) / divisors[index], 1.35)
+          : null
+      )
+      .filter((value) => Number.isFinite(value))
+
+    return normalized.length ? average(normalized) : 0
+  }
+  const amplifyGap = (rawGap, { supportIndex, multiplierBase, multiplierRange, intercept, cap }) => {
+    if (!Number.isFinite(rawGap) || rawGap === 0) return 0
+
+    const absoluteGap = Math.abs(rawGap)
+    let amplifiedGap = absoluteGap * (multiplierBase + supportIndex * multiplierRange)
+
+    if (absoluteGap >= 0.35) {
+      amplifiedGap += intercept * (0.75 + supportIndex * 0.5)
+    }
+
+    if (absoluteGap >= 0.8) {
+      amplifiedGap += intercept * 0.45
+    }
+
+    return Math.sign(rawGap) * clamp(amplifiedGap, 0, cap)
+  }
+
+  const offenseGap = safeDiff(offenseScores[0], offenseScores[1])
+  const savantGap = safeDiff(savantScores[0], savantScores[1])
+  const lineupGap = safeDiff(lineupScores[0], lineupScores[1])
+  const starterGap = safeDiff(starterScores[0], starterScores[1])
+  const bullpenGap = safeDiff(bullpenScores[0], bullpenScores[1])
+  const fullSupportIndex = buildSupportIndex(
+    [offenseGap, savantGap, lineupGap, starterGap, bullpenGap],
+    [18, 18, 16, 20, 16]
+  )
+  const first5SupportIndex = buildSupportIndex(
+    [offenseGap, savantGap, lineupGap, starterGap],
+    [18, 18, 16, 20]
+  )
+  const rawFullGap = projectedHitProfiles[0].projectedHits - projectedHitProfiles[1].projectedHits
+  const rawFirst5Gap =
+    projectedHitProfiles[0].first5ProjectedHits - projectedHitProfiles[1].first5ProjectedHits
+  const calibratedFullGap = amplifyGap(rawFullGap, {
+    supportIndex: fullSupportIndex,
+    multiplierBase: 1.75,
+    multiplierRange: 0.4,
+    intercept: 0.4,
+    cap: 4.8
+  })
+  const calibratedFirst5Gap = amplifyGap(rawFirst5Gap, {
+    supportIndex: first5SupportIndex,
+    multiplierBase: 1.55,
+    multiplierRange: 0.4,
+    intercept: 0.25,
+    cap: 3.4
+  })
+  const fullMidpoint =
+    (projectedHitProfiles[0].projectedHits + projectedHitProfiles[1].projectedHits) / 2
+  const first5Midpoint =
+    (projectedHitProfiles[0].first5ProjectedHits + projectedHitProfiles[1].first5ProjectedHits) / 2
+
+  return projectedHitProfiles.map((profile, index) => {
+    const projectedHits = clamp(
+      fullMidpoint + (index === 0 ? 1 : -1) * calibratedFullGap * 0.5,
+      5.2,
+      12.6
+    )
+    const first5ProjectedHits = clamp(
+      first5Midpoint + (index === 0 ? 1 : -1) * calibratedFirst5Gap * 0.5,
+      2.6,
+      7.5
+    )
+
+    return {
+      ...profile,
+      rawProjectedHits: profile.projectedHits,
+      rawFirst5ProjectedHits: profile.first5ProjectedHits,
+      projectedHits: roundToTenths(projectedHits),
+      hitEfficiencyPct: roundToTenths((projectedHits / profile.estimatedAtBats) * 100),
+      first5ProjectedHits: roundToTenths(first5ProjectedHits),
+      first5HitEfficiencyPct: roundToTenths((first5ProjectedHits / profile.estimatedFirst5AtBats) * 100)
+    }
+  })
 }
 
 const buildMlbLineupMatchupScore = (profile = {}) => {
@@ -857,7 +986,7 @@ const buildMlbAnalysisContext = (game, participants) => {
   const lineupScores = lineupProfiles.map((profile) =>
     profile ? buildMlbLineupMatchupScore(profile) : null
   )
-  const projectedHitProfiles = [
+  const baseProjectedHitProfiles = [
     buildProjectedHitProfile({
       role: participants[0]?.role,
       offenseProfile: offenseProfiles[0],
@@ -875,6 +1004,15 @@ const buildMlbAnalysisContext = (game, participants) => {
       parkContext: game.parkContext
     })
   ]
+  const starterScores = starters.every(Boolean) ? starters.map((starter) => starterScore(starter)) : []
+  const projectedHitProfiles = calibrateProjectedHitProfiles({
+    projectedHitProfiles: baseProjectedHitProfiles,
+    offenseScores,
+    savantScores,
+    lineupScores,
+    starterScores,
+    bullpenScores
+  })
   const marketProbabilities = computeNoVigProbabilities(
     participants.map((participant) => participant.americanOdds)
   )
@@ -979,8 +1117,19 @@ const buildMlbAnalysisContext = (game, participants) => {
         homeProjectedHits: projectedHitProfiles[1].projectedHits,
         awayHitEfficiencyPct: projectedHitProfiles[0].hitEfficiencyPct,
         homeHitEfficiencyPct: projectedHitProfiles[1].hitEfficiencyPct,
+        awayFirst5ProjectedHits: projectedHitProfiles[0].first5ProjectedHits,
+        homeFirst5ProjectedHits: projectedHitProfiles[1].first5ProjectedHits,
+        awayFirst5HitEfficiencyPct: projectedHitProfiles[0].first5HitEfficiencyPct,
+        homeFirst5HitEfficiencyPct: projectedHitProfiles[1].first5HitEfficiencyPct,
         edgeTeam: participants[hitEdgeIndex]?.name ?? '',
         edgeHits: hitEdge,
+        first5EdgeTeam:
+          participants[
+            projectedHitProfiles[0].first5ProjectedHits >= projectedHitProfiles[1].first5ProjectedHits ? 0 : 1
+          ]?.name ?? '',
+        first5EdgeHits: roundToTenths(
+          Math.abs(projectedHitProfiles[0].first5ProjectedHits - projectedHitProfiles[1].first5ProjectedHits)
+        ),
         awayPitcherType: starters[0]?.profileLabel ?? 'Unknown sample starter',
         homePitcherType: starters[1]?.profileLabel ?? 'Unknown sample starter'
       }
@@ -1184,7 +1333,7 @@ const buildMlbAnalysisContext = (game, participants) => {
     mlbProjection,
     mlbRiskContext: {
       starters,
-      starterScores: starters.every(Boolean) ? starters.map((starter) => starterScore(starter)) : [],
+      starterScores,
       offenseScores,
       bullpenScores,
       savantScores,

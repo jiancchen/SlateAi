@@ -296,6 +296,138 @@ def summarize_window(conn: sqlite3.Connection, model_name: str, start_date: str,
     }
 
 
+def compare_edge(away_value: float | int | None, home_value: float | int | None, epsilon: float = 0.0) -> str | None:
+    if away_value is None or home_value is None:
+        return None
+    if abs(away_value - home_value) <= epsilon:
+        return "tie"
+    return "away" if away_value > home_value else "home"
+
+
+def safe_pct(numerator: float | int | None, denominator: float | int | None) -> float | None:
+    if numerator is None or denominator in (None, 0):
+        return None
+    return (float(numerator) / float(denominator)) * 100
+
+
+def summarize_hit_projection_window(
+    conn: sqlite3.Connection, model_name: str, start_date: str, end_date: str
+) -> dict[str, float | int]:
+    rows = conn.execute(
+        """
+        SELECT
+          mlb_side_predictions.projection_json,
+          away_stats.hits AS away_hits,
+          away_stats.at_bats AS away_at_bats,
+          away_stats.hits_first5 AS away_hits_first5,
+          home_stats.hits AS home_hits,
+          home_stats.at_bats AS home_at_bats,
+          home_stats.hits_first5 AS home_hits_first5
+        FROM mlb_side_predictions
+        JOIN mlb_game_outcomes
+          ON mlb_game_outcomes.game_date = mlb_side_predictions.prediction_date
+         AND mlb_game_outcomes.away_team = mlb_side_predictions.away_team
+         AND mlb_game_outcomes.home_team = mlb_side_predictions.home_team
+        JOIN mlb_game_team_stats AS away_stats
+          ON away_stats.game_pk = mlb_game_outcomes.game_pk
+         AND away_stats.team_role = 'away'
+        JOIN mlb_game_team_stats AS home_stats
+          ON home_stats.game_pk = mlb_game_outcomes.game_pk
+         AND home_stats.team_role = 'home'
+        WHERE mlb_side_predictions.model_name = ?
+          AND mlb_side_predictions.prediction_date BETWEEN ? AND ?
+          AND mlb_side_predictions.projection_json IS NOT NULL
+          AND mlb_side_predictions.projection_json != 'null'
+        """,
+        (model_name, start_date, end_date),
+    ).fetchall()
+
+    summary = {
+        "games": 0,
+        "full_edge_decisions": 0,
+        "full_edge_correct": 0,
+        "first5_edge_decisions": 0,
+        "first5_edge_correct": 0,
+        "team_hit_samples": 0,
+        "team_hit_abs_error": 0.0,
+        "full_edge_abs_error": 0.0,
+        "full_efficiency_samples": 0,
+        "full_efficiency_abs_error": 0.0,
+    }
+
+    for row in rows:
+        projection = json.loads(row["projection_json"] or "null")
+        if not projection:
+            continue
+
+        away_projected_hits = projection.get("awayProjectedHits")
+        home_projected_hits = projection.get("homeProjectedHits")
+        away_projected_eff = projection.get("awayHitEfficiencyPct")
+        home_projected_eff = projection.get("homeHitEfficiencyPct")
+        away_first5_projected_hits = projection.get("awayFirst5ProjectedHits")
+        home_first5_projected_hits = projection.get("homeFirst5ProjectedHits")
+
+        away_actual_hits = row["away_hits"]
+        home_actual_hits = row["home_hits"]
+        away_actual_eff = safe_pct(row["away_hits"], row["away_at_bats"])
+        home_actual_eff = safe_pct(row["home_hits"], row["home_at_bats"])
+        away_actual_first5_hits = row["away_hits_first5"]
+        home_actual_first5_hits = row["home_hits_first5"]
+
+        summary["games"] += 1
+
+        if away_projected_hits is not None and home_projected_hits is not None:
+            summary["team_hit_samples"] += 2
+            summary["team_hit_abs_error"] += abs(float(away_projected_hits) - away_actual_hits)
+            summary["team_hit_abs_error"] += abs(float(home_projected_hits) - home_actual_hits)
+            summary["full_edge_abs_error"] += abs(
+                (float(away_projected_hits) - float(home_projected_hits))
+                - (away_actual_hits - home_actual_hits)
+            )
+
+            predicted_full_edge = compare_edge(float(away_projected_hits), float(home_projected_hits), 0.15)
+            actual_full_edge = compare_edge(away_actual_hits, home_actual_hits, 0.0)
+            if predicted_full_edge != "tie" and actual_full_edge != "tie":
+                summary["full_edge_decisions"] += 1
+                if predicted_full_edge == actual_full_edge:
+                    summary["full_edge_correct"] += 1
+
+        if away_projected_eff is not None and home_projected_eff is not None:
+            summary["full_efficiency_samples"] += 2
+            summary["full_efficiency_abs_error"] += abs(float(away_projected_eff) - away_actual_eff)
+            summary["full_efficiency_abs_error"] += abs(float(home_projected_eff) - home_actual_eff)
+
+        if away_first5_projected_hits is not None and home_first5_projected_hits is not None:
+            predicted_first5_edge = compare_edge(
+                float(away_first5_projected_hits), float(home_first5_projected_hits), 0.15
+            )
+            actual_first5_edge = compare_edge(away_actual_first5_hits, home_actual_first5_hits, 0.0)
+            if predicted_first5_edge != "tie" and actual_first5_edge != "tie":
+                summary["first5_edge_decisions"] += 1
+                if predicted_first5_edge == actual_first5_edge:
+                    summary["first5_edge_correct"] += 1
+
+    games = summary["games"] or 0
+    return {
+        "games": games,
+        "full_edge_accuracy": round(summary["full_edge_correct"] / summary["full_edge_decisions"], 3)
+        if summary["full_edge_decisions"]
+        else 0,
+        "first5_edge_accuracy": round(summary["first5_edge_correct"] / summary["first5_edge_decisions"], 3)
+        if summary["first5_edge_decisions"]
+        else 0,
+        "team_hit_mae": round(summary["team_hit_abs_error"] / summary["team_hit_samples"], 3)
+        if summary["team_hit_samples"]
+        else 0,
+        "full_edge_mae": round(summary["full_edge_abs_error"] / games, 3) if games else 0,
+        "full_efficiency_mae": round(
+            summary["full_efficiency_abs_error"] / summary["full_efficiency_samples"], 3
+        )
+        if summary["full_efficiency_samples"]
+        else 0,
+    }
+
+
 def top_misses(conn: sqlite3.Connection, model_name: str, start_date: str, end_date: str) -> list[sqlite3.Row]:
     return conn.execute(
         """
@@ -334,6 +466,8 @@ def top_misses(conn: sqlite3.Connection, model_name: str, start_date: str, end_d
 def write_report(conn: sqlite3.Connection, model_name: str, train_end: str, verify_start: str, verify_end: str, out_path: Path) -> None:
     train = summarize_window(conn, model_name, "2026-05-10", train_end)
     verify = summarize_window(conn, model_name, verify_start, verify_end)
+    train_hit_projection = summarize_hit_projection_window(conn, model_name, "2026-05-10", train_end)
+    verify_hit_projection = summarize_hit_projection_window(conn, model_name, verify_start, verify_end)
     misses = top_misses(conn, model_name, verify_start, verify_end)
     starter_led_verify = conn.execute(
         """
@@ -391,6 +525,20 @@ def write_report(conn: sqlite3.Connection, model_name: str, train_end: str, veri
         f"- Hit-edge-against-pick misses in verification: `{verify['hit_edge_against_pick_misses']}`",
         f"- Avg relief-pitching risk in training: `{train['avg_relief_pitching_risk']}`",
         f"- Avg relief-pitching risk in verification: `{verify['avg_relief_pitching_risk']}`",
+        "",
+        "## Hit Projection Accuracy",
+        "",
+        f"- Training projection-ready games: `{train_hit_projection['games']}`",
+        f"- Training full-game hit-edge accuracy: `{train_hit_projection['full_edge_accuracy']}`",
+        f"- Training first-5 hit-edge accuracy: `{train_hit_projection['first5_edge_accuracy']}`",
+        f"- Training team-hit MAE: `{train_hit_projection['team_hit_mae']}`",
+        f"- Training full-game hit-efficiency MAE: `{train_hit_projection['full_efficiency_mae']}`",
+        f"- Verification projection-ready games: `{verify_hit_projection['games']}`",
+        f"- Verification full-game hit-edge accuracy: `{verify_hit_projection['full_edge_accuracy']}`",
+        f"- Verification first-5 hit-edge accuracy: `{verify_hit_projection['first5_edge_accuracy']}`",
+        f"- Verification team-hit MAE: `{verify_hit_projection['team_hit_mae']}`",
+        f"- Verification full-game hit-efficiency MAE: `{verify_hit_projection['full_efficiency_mae']}`",
+        "- First-five hit efficiency is not graded yet because the warehouse does not store first-five at-bats separately.",
         "",
         "## Starter-Led Verification Reads",
         "",
