@@ -18,13 +18,18 @@
   ]
   const recommendationModes = [
     {
-      id: 'core',
-      label: 'Core',
+      id: 'favorites',
+      label: 'Favorites',
       copy: 'Current model favorites and strongest standard reads.'
     },
     {
-      id: 'flip',
-      label: 'Flip risk',
+      id: 'balanced',
+      label: 'Balanced',
+      copy: 'Blends core legs with a measured amount of live upset exposure.'
+    },
+    {
+      id: 'flips',
+      label: 'Flips',
       copy: 'Higher-variance dogs and fragile-favorite fade spots.'
     }
   ]
@@ -34,7 +39,8 @@
   let activeSidebarTab = 'ticket'
   let parlayStake = 25
   let recommendedLegCount = 4
-  let recommendationMode = 'core'
+  let recommendationMode = 'favorites'
+  let balanceWeight = 0.5
   let selectedPicksByDay = {}
   let expandedGameId = ''
   let pinnedSignalsByDay = {}
@@ -78,7 +84,74 @@
     return 'Fresh'
   }
 
+  const clampValue = (value, min, max) => Math.min(max, Math.max(min, value))
+
   const countSelectedPicks = (picks) => Object.keys(picks).length
+
+  const buildBalancedRecommendationSet = (favoritePicks, flipPicks, legCount, rawWeight = 0.5) => {
+    const targetLegCount = clampValue(Math.round(Number(legCount) || 0), 0, PARLAY_MAX_LEGS)
+    const safeWeight = clampValue(Number(rawWeight) || 0, 0, 1)
+
+    if (!targetLegCount) {
+      return {
+        picks: [],
+        targetFlipLegs: 0,
+        actualFlipLegs: 0,
+        averageFlipProbability: 0
+      }
+    }
+
+    const uniqueFavoritePicks = favoritePicks.filter(
+      (pick, index, list) => list.findIndex((entry) => entry.gameId === pick.gameId) === index
+    )
+    const uniqueFlipPicks = flipPicks.filter(
+      (pick, index, list) => list.findIndex((entry) => entry.gameId === pick.gameId) === index
+    )
+    const flipSample = uniqueFlipPicks.slice(0, Math.min(targetLegCount * 2, uniqueFlipPicks.length))
+    const averageFlipProbability = flipSample.length
+      ? flipSample.reduce(
+          (total, pick) =>
+            total + clampValue(pick.flipProbability ?? (pick.flipScore ?? 55) / 100, 0.18, 0.82),
+          0
+        ) / flipSample.length
+      : 0
+
+    let targetFlipLegs = Math.round(targetLegCount * safeWeight * averageFlipProbability)
+
+    if (safeWeight >= 0.38 && targetFlipLegs === 0 && uniqueFlipPicks.length && targetLegCount >= 3) {
+      targetFlipLegs = 1
+    }
+
+    targetFlipLegs = clampValue(targetFlipLegs, 0, Math.min(targetLegCount, uniqueFlipPicks.length))
+
+    const picks = []
+    const gameIds = new Set()
+
+    uniqueFlipPicks.forEach((pick) => {
+      if (picks.length >= targetFlipLegs || gameIds.has(pick.gameId)) return
+      picks.push(pick)
+      gameIds.add(pick.gameId)
+    })
+
+    uniqueFavoritePicks.forEach((pick) => {
+      if (picks.length >= targetLegCount || gameIds.has(pick.gameId)) return
+      picks.push(pick)
+      gameIds.add(pick.gameId)
+    })
+
+    uniqueFlipPicks.forEach((pick) => {
+      if (picks.length >= targetLegCount || gameIds.has(pick.gameId)) return
+      picks.push(pick)
+      gameIds.add(pick.gameId)
+    })
+
+    return {
+      picks,
+      targetFlipLegs,
+      actualFlipLegs: picks.filter((pick) => pick.flipScore !== undefined).length,
+      averageFlipProbability
+    }
+  }
 
   const picksForDay = (dayId) => selectedPicksByDay[dayId] ?? {}
   const pinnedSignalsForDay = (dayId) => pinnedSignalsByDay[dayId] ?? []
@@ -177,8 +250,18 @@
       ? flipRiskPicks
       : flipRiskPicks.filter((pick) => pick.league === activeFilter)
 
+  $: balancedRecommendation = buildBalancedRecommendationSet(
+    analysisPickPool,
+    flipRiskPickPool,
+    activeRecommendedLegCount,
+    balanceWeight
+  )
   $: activeRecommendationPool =
-    recommendationMode === 'flip' ? flipRiskPickPool : analysisPickPool
+    recommendationMode === 'flips'
+      ? flipRiskPickPool
+      : recommendationMode === 'balanced'
+        ? balancedRecommendation.picks
+        : analysisPickPool
   $: activeRecommendationMeta =
     recommendationModes.find((mode) => mode.id === recommendationMode) ?? recommendationModes[0]
 
@@ -193,12 +276,12 @@
     expandedGameId = visibleGames[0]?.id ?? ''
   }
 
+  $: recommendationCapacity = Math.min(PARLAY_MAX_LEGS, filteredMoneylineGames.length)
   $: recommendationCounts =
-    activeRecommendationPool.length >= PARLAY_MIN_LEGS
+    recommendationCapacity >= PARLAY_MIN_LEGS
       ? Array.from(
           {
-            length:
-              Math.min(PARLAY_MAX_LEGS, activeRecommendationPool.length) - PARLAY_MIN_LEGS + 1
+            length: recommendationCapacity - PARLAY_MIN_LEGS + 1
           },
           (_, index) => index + PARLAY_MIN_LEGS
         )
@@ -216,7 +299,11 @@
             createParlayLeg(
               pick.game,
               pick.participantId,
-              recommendationMode === 'flip' ? 'flip-risk' : 'analysis'
+              recommendationMode === 'flips'
+                ? 'flip-risk'
+                : recommendationMode === 'balanced'
+                  ? 'balanced'
+                  : 'analysis'
             )
           )
       : []
@@ -708,6 +795,17 @@
                               <span>Market {game.analysis.marketProbabilityLabel}</span>
                             </div>
 
+                            {#if game.analysis.pickReasons?.length}
+                              <div class="model-reason-block">
+                                <p class="series-kicker">Why {game.analysis.participant.name}</p>
+                                <ul class="model-input-list model-input-list--tight">
+                                  {#each game.analysis.pickReasons as reason}
+                                    <li>{reason}</li>
+                                  {/each}
+                                </ul>
+                              </div>
+                            {/if}
+
                             {#if game.analysis.mlbProjection}
                               {#if game.analysis.indicators}
                                 <div class="meter-grid">
@@ -895,6 +993,59 @@
                                 {/if}
                               </div>
 
+                              <section class="totals-board" aria-label={`Totals board for ${game.title}`}>
+                                <div class="home-run-board-head">
+                                  <div>
+                                    <p class="series-kicker">Totals and flow</p>
+                                    <strong>
+                                      {game.analysis.mlbProjection.totals.fullGame.label} |
+                                      proj {game.analysis.mlbProjection.totals.projectedFullTotalRuns}
+                                    </strong>
+                                  </div>
+                                  <span>Full, first 5, late</span>
+                                </div>
+
+                                <div class="totals-grid">
+                                  <article class="totals-card">
+                                    <div class="totals-card-head">
+                                      <p>Full game</p>
+                                      <strong>{game.analysis.mlbProjection.totals.fullGame.label}</strong>
+                                    </div>
+                                    <span>
+                                      Proj {game.analysis.mlbProjection.totals.projectedFullTotalRuns} vs
+                                      {game.analysis.mlbProjection.postedTotal ?? 'N/A'}
+                                    </span>
+                                    <small>{game.analysis.mlbProjection.totals.fullGame.summary}</small>
+                                  </article>
+
+                                  <article class="totals-card">
+                                    <div class="totals-card-head">
+                                      <p>First 5</p>
+                                      <strong>{game.analysis.mlbProjection.totals.first5.label}</strong>
+                                    </div>
+                                    <span>
+                                      Proj {game.analysis.mlbProjection.totals.projectedFirst5TotalRuns} vs
+                                      {game.analysis.mlbProjection.totals.derivedFirst5TotalLine ?? 'N/A'}
+                                    </span>
+                                    <small>{game.analysis.mlbProjection.totals.first5.summary}</small>
+                                  </article>
+
+                                  <article class="totals-card">
+                                    <div class="totals-card-head">
+                                      <p>Rest of game</p>
+                                      <strong>{game.analysis.mlbProjection.totals.late.label}</strong>
+                                    </div>
+                                    <span>
+                                      Proj {game.analysis.mlbProjection.totals.projectedLateTotalRuns} vs
+                                      {game.analysis.mlbProjection.totals.derivedLateTotalLine ?? 'N/A'}
+                                    </span>
+                                    <small>{game.analysis.mlbProjection.totals.late.summary}</small>
+                                  </article>
+                                </div>
+
+                                <p class="totals-footnote">{game.analysis.mlbProjection.totals.bullpenExhaustionNote}</p>
+                              </section>
+
                               <div class="reliever-chain-grid">
                                 <article class="reliever-chain-card">
                                   <div class="reliever-chain-head">
@@ -902,7 +1053,7 @@
                                       <p>{game.matchup[0].name} bridge chain</p>
                                       <strong>{game.analysis.mlbProjection.awayBullpenChainScore ?? 'N/A'}</strong>
                                     </div>
-                                    <span>Likely first two</span>
+                                    <span>{game.analysis.mlbProjection.awayBullpenExhaustionLabel} workload</span>
                                   </div>
 
                                   <div class="reliever-list">
@@ -927,7 +1078,7 @@
                                       <p>{game.matchup[1].name} bridge chain</p>
                                       <strong>{game.analysis.mlbProjection.homeBullpenChainScore ?? 'N/A'}</strong>
                                     </div>
-                                    <span>Likely first two</span>
+                                    <span>{game.analysis.mlbProjection.homeBullpenExhaustionLabel} workload</span>
                                   </div>
 
                                   <div class="reliever-list">
@@ -945,6 +1096,38 @@
                                     {/each}
                                   </div>
                                 </article>
+                              </div>
+
+                              <div class="team-script-grid">
+                                {#each game.analysis.mlbProjection.teamScripts as script}
+                                  <article class="team-script-card">
+                                    <div class="team-script-head">
+                                      <div>
+                                        <p>{script.teamName}</p>
+                                        <strong>Hitter script</strong>
+                                      </div>
+                                      <span>
+                                        {script.overperformHitters.length ? 'Carry bats live' : 'Traffic-only lane'}
+                                      </span>
+                                    </div>
+
+                                    <div class="team-script-copy">
+                                      <strong>Overperform hitters</strong>
+                                      <span>
+                                        {script.overperformHitters.length
+                                          ? script.overperformHitters
+                                              .map((hitter) => `${hitter.name} (${hitter.tag})`)
+                                              .join(' • ')
+                                          : 'No clear carry bat surfaced yet before confirmed lineups.'}
+                                      </span>
+                                    </div>
+
+                                    <div class="team-script-copy">
+                                      <strong>Underperform watch</strong>
+                                      <span>{script.underperformNote}</span>
+                                    </div>
+                                  </article>
+                                {/each}
                               </div>
 
                               {#if game.homeRunTargets}
@@ -1225,6 +1408,22 @@
 
               <p class="ticket-autobuild-copy">{activeRecommendationMeta.copy}</p>
 
+              {#if recommendationMode === 'balanced'}
+                <label class="balance-slider-card" for="balance-weight">
+                  <div class="balance-slider-head">
+                    <span>Flip weight</span>
+                    <strong>{balanceWeight.toFixed(2)}</strong>
+                  </div>
+                  <input id="balance-weight" type="range" min="0" max="1" step="0.05" bind:value={balanceWeight} />
+                  <small>
+                    Targeting about {balancedRecommendation.targetFlipLegs} flip
+                    {balancedRecommendation.targetFlipLegs === 1 ? '' : 's'} in this
+                    {activeRecommendedLegCount}-leg mix from an average live-dog rate of
+                    {Math.round(balancedRecommendation.averageFlipProbability * 100)}%.
+                  </small>
+                </label>
+              {/if}
+
               <div class="recommendation-size-row">
                 {#each recommendationCounts as count}
                   <button
@@ -1242,6 +1441,10 @@
                 <p class="ticket-autobuild-preview">
                   {activeRecommendationMeta.label} set: {recommendedParlay.combinedAmericanLabel} |
                   {recommendedParlay.impliedProbabilityLabel} implied
+                  {#if recommendationMode === 'balanced'}
+                    | {balancedRecommendation.actualFlipLegs} flip leg
+                    {balancedRecommendation.actualFlipLegs === 1 ? '' : 's'}
+                  {/if}
                 </p>
               {/if}
 
@@ -1250,7 +1453,7 @@
                 class="load-recommended-button"
                 on:click={() => loadRecommendedParlay(activeRecommendedLegCount)}
               >
-                Load {activeRecommendedLegCount}-leg {recommendationMode === 'flip' ? 'flip-risk' : 'core'} ticket
+                Load {activeRecommendedLegCount}-leg {recommendationMode === 'flips' ? 'flip-risk' : recommendationMode} ticket
               </button>
             </div>
           {/if}

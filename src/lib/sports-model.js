@@ -844,6 +844,172 @@ const buildProjectedHitProfile = ({
   }
 }
 
+const normalizeTeamAlias = (value = '') => {
+  const normalized = normalizeText(value)
+
+  if (normalized === 'd backs' || normalized === 'dbacks') return 'diamondbacks'
+  if (normalized === 'a s' || normalized === 'as') return 'athletics'
+
+  return normalized
+}
+
+const teamNamesMatch = (left = '', right = '') => normalizeTeamAlias(left) === normalizeTeamAlias(right)
+
+const buildBullpenExhaustionScore = (profile = {}) => {
+  const relievers = Array.isArray(profile?.topRelievers) ? profile.topRelievers.slice(0, 2) : []
+
+  if (!relievers.length) return null
+
+  return roundToTenths(
+    average(
+      relievers.map((reliever, index) =>
+        clamp(
+          (100 - Number(reliever.availabilityScore || 55)) * 0.62 +
+            (reliever.workedYesterday ? 16 : 0) +
+            (reliever.backToBack ? 30 : 0) +
+            Math.max(Number(reliever.expectedOuts || 3) - 3, 0) * 4 +
+            index * 3,
+          0,
+          100
+        )
+      )
+    )
+  )
+}
+
+const getBullpenExhaustionLabel = (score) => {
+  if (!Number.isFinite(score)) return 'unknown'
+  if (score >= 58) return 'heavy'
+  if (score >= 42) return 'elevated'
+
+  return 'fresh'
+}
+
+const buildRunConversionRate = ({
+  offenseScore,
+  savantScore,
+  parkContext,
+  opposingStarter,
+  opposingBullpenExhaustion,
+  phase = 'full'
+}) => {
+  const runIndex = Number(parkContext?.indexRuns)
+  let rate = 0.47
+
+  if (Number.isFinite(offenseScore)) rate += (offenseScore - 56) * 0.0015
+  if (Number.isFinite(savantScore)) rate += (savantScore - 56) * 0.0018
+  if (Number.isFinite(runIndex)) rate += (runIndex - 100) * 0.0008
+
+  if (phase === 'first5') {
+    rate -= 0.008
+
+    if (opposingStarter?.profileType === 'Traffic-risk') rate += 0.024
+    if (opposingStarter?.profileType === 'Volatile bat-misser') rate += 0.01
+    if (opposingStarter?.profileType === 'Power') rate -= 0.012
+    if (opposingStarter?.profileType === 'Contact suppressor') rate -= 0.02
+  }
+
+  if (phase === 'late') {
+    rate += 0.012
+
+    if (Number.isFinite(opposingBullpenExhaustion)) {
+      rate += opposingBullpenExhaustion * 0.0012
+    }
+  }
+
+  return clamp(rate, 0.39, 0.72)
+}
+
+const buildTotalLean = (projectedRuns, line) => {
+  if (!Number.isFinite(projectedRuns) || !Number.isFinite(line)) {
+    return {
+      lean: 'Pass',
+      edge: null,
+      strength: 'No market',
+      label: 'No market',
+      summary: 'No posted total is available yet for this phase.'
+    }
+  }
+
+  const edge = roundToTenths(projectedRuns - line)
+  const lean = edge >= 0.45 ? 'Over' : edge <= -0.45 ? 'Under' : 'Pass'
+  const strength =
+    Math.abs(edge) >= 1.2 ? 'Strong' : Math.abs(edge) >= 0.7 ? 'Clear' : Math.abs(edge) >= 0.45 ? 'Lean' : 'Thin'
+
+  return {
+    lean,
+    edge,
+    strength,
+    label: lean === 'Pass' ? `Hold ${line}` : `${lean} ${line}`,
+    summary:
+      lean === 'Pass'
+        ? `Model projection ${projectedRuns} is essentially on the posted ${line}.`
+        : `${lean} lean with a ${Math.abs(edge).toFixed(1)}-run edge against ${line}.`
+  }
+}
+
+const buildTeamHitterScript = ({
+  teamName,
+  projectedHitProfile,
+  opposingStarter,
+  homeRunTargets,
+  isEdgeTeam,
+  isFirst5EdgeTeam,
+  isLateEdgeTeam,
+  hasBullpenBridgeEdge
+}) => {
+  const teamTargets = [...(homeRunTargets?.likely || []), ...(homeRunTargets?.possible || [])]
+    .filter((target) => teamNamesMatch(target.teamName, teamName))
+    .slice(0, 2)
+  const overperformHitters = teamTargets.map((target) => ({
+    name: target.playerName,
+    tag: `${target.scoreBand} | ${target.burstTag}`
+  }))
+
+  const underperformNote =
+    projectedHitProfile.hitEfficiencyPct <= 23.4
+      ? `${teamName} project for only ${projectedHitProfile.projectedHits} hits on ${projectedHitProfile.hitEfficiencyPct}% efficiency against a ${opposingStarter?.profileLabel || 'tougher starter'} lane.`
+      : projectedHitProfile.first5HitEfficiencyPct <= 23.1
+        ? `${teamName} may be quieter early if the ${opposingStarter?.profileLabel || 'starter lane'} holds through five.`
+        : `No obvious suppressor lane has surfaced yet, but this side still needs better sequencing than the raw hit count alone.`
+
+  const winPath = []
+
+  if (isEdgeTeam) {
+    winPath.push(`${teamName} own the cleaner full-game traffic script at ${projectedHitProfile.projectedHits} projected hits.`)
+  }
+
+  if (isFirst5EdgeTeam) {
+    winPath.push(`${teamName} have the better starter-window lane with ${projectedHitProfile.first5ProjectedHits} projected first-five hits.`)
+  }
+
+  if (isLateEdgeTeam) {
+    winPath.push(`${teamName} still hold the better bridge-and-finish script once the bullpens take over.`)
+  }
+
+  if (hasBullpenBridgeEdge) {
+    winPath.push(`${teamName} also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.`)
+  }
+
+  if (overperformHitters.length) {
+    const hitterList = overperformHitters.map((hitter) => hitter.name).join(' and ')
+    winPath.push(
+      `${hitterList} ${overperformHitters.length === 1 ? 'is' : 'are'} the best current carry ${
+        overperformHitters.length === 1 ? 'bat' : 'bats'
+      } in this lineup.`
+    )
+  } else {
+    winPath.push(`${teamName} look more like a broad traffic lineup than a single-bat carry script right now.`)
+  }
+
+  return {
+    teamName,
+    overperformHitters,
+    underperformNote,
+    winPath
+  }
+}
+
 const calibrateProjectedHitProfiles = ({
   projectedHitProfiles = [],
   offenseScores = [],
@@ -1134,6 +1300,7 @@ const buildMlbAnalysisContext = (game, participants) => {
   const sourceParts = ['Moneyline', 'listed starter data']
   let confidenceModifier = 0
   let mlbProjection = null
+  const postedTotal = parseFirstTotalNumber(getTotalMarketValue(game.odds))
 
   if (game.teamContext?.away && game.teamContext?.home) sourceParts.push('standings context')
   if (game.parkContext?.venueName) sourceParts.push('park factors')
@@ -1235,6 +1402,81 @@ const buildMlbAnalysisContext = (game, participants) => {
           ? Math.abs(bullpenChainScores[0] - bullpenChainScores[1])
           : 0
       )
+      const bullpenExhaustionScores = bullpenChainProfiles.map((profile) =>
+        buildBullpenExhaustionScore(profile)
+      )
+      const projectedRunProfiles = projectedHitProfiles.map((profile, index) => {
+        const first5ConversionRate = buildRunConversionRate({
+          offenseScore: offenseScores[index],
+          savantScore: savantScores[index],
+          parkContext: game.parkContext,
+          opposingStarter: starters[index === 0 ? 1 : 0],
+          opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
+          phase: 'first5'
+        })
+        const lateConversionRate = buildRunConversionRate({
+          offenseScore: offenseScores[index],
+          savantScore: savantScores[index],
+          parkContext: game.parkContext,
+          opposingStarter: starters[index === 0 ? 1 : 0],
+          opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
+          phase: 'late'
+        })
+        const first5Runs = roundToTenths(profile.first5ProjectedHits * first5ConversionRate)
+        const lateRuns = roundToTenths(profile.lateProjectedHits * lateConversionRate)
+
+        return {
+          first5Runs,
+          lateRuns,
+          fullRuns: roundToTenths(first5Runs + lateRuns),
+          first5ConversionPct: roundToTenths(first5ConversionRate * 100),
+          lateConversionPct: roundToTenths(lateConversionRate * 100)
+        }
+      })
+      const projectedFirst5TotalRuns = roundToTenths(
+        projectedRunProfiles[0].first5Runs + projectedRunProfiles[1].first5Runs
+      )
+      const projectedLateTotalRuns = roundToTenths(
+        projectedRunProfiles[0].lateRuns + projectedRunProfiles[1].lateRuns
+      )
+      const projectedFullTotalRuns = roundToTenths(
+        projectedRunProfiles[0].fullRuns + projectedRunProfiles[1].fullRuns
+      )
+      const first5Share =
+        projectedFullTotalRuns > 0 ? projectedFirst5TotalRuns / projectedFullTotalRuns : null
+      const derivedFirst5TotalLine =
+        Number.isFinite(postedTotal) && Number.isFinite(first5Share)
+          ? roundToTenths(postedTotal * first5Share)
+          : null
+      const derivedLateTotalLine =
+        Number.isFinite(postedTotal) && Number.isFinite(derivedFirst5TotalLine)
+          ? roundToTenths(postedTotal - derivedFirst5TotalLine)
+          : null
+      const fullGameTotalLean = buildTotalLean(projectedFullTotalRuns, postedTotal)
+      const first5TotalLean = buildTotalLean(projectedFirst5TotalRuns, derivedFirst5TotalLine)
+      const lateTotalLean = buildTotalLean(projectedLateTotalRuns, derivedLateTotalLine)
+      const exhaustedTeams = participants
+        .map((participant, index) => ({
+          teamName: participant.name,
+          score: bullpenExhaustionScores[index],
+          label: getBullpenExhaustionLabel(bullpenExhaustionScores[index])
+        }))
+        .filter((team) => Number.isFinite(team.score) && team.score >= 42)
+      const bullpenExhaustionNote = exhaustedTeams.length
+        ? `${exhaustedTeams.map((team) => `${team.teamName} ${team.label}`).join(' and ')} bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.`
+        : 'No major bridge-chain exhaustion flag has surfaced yet.'
+      const teamScripts = participants.map((participant, index) =>
+        buildTeamHitterScript({
+          teamName: participant.name,
+          projectedHitProfile: projectedHitProfiles[index],
+          opposingStarter: starters[index === 0 ? 1 : 0],
+          homeRunTargets: game.homeRunTargets,
+          isEdgeTeam: hitEdgeIndex === index,
+          isFirst5EdgeTeam: first5EdgeIndex === index,
+          isLateEdgeTeam: lateEdgeIndex === index,
+          hasBullpenBridgeEdge: bullpenChainEdgeIndex === index
+        })
+      )
 
       mlbProjection = {
         awayProjectedHits: projectedHitProfiles[0].projectedHits,
@@ -1266,8 +1508,31 @@ const buildMlbAnalysisContext = (game, participants) => {
         bridgeEdgeScore: bullpenChainEdgeIndex !== null ? bullpenChainEdge : null,
         awayLikelyRelievers: (bullpenChainProfiles[0]?.topRelievers || []).slice(0, 2),
         homeLikelyRelievers: (bullpenChainProfiles[1]?.topRelievers || []).slice(0, 2),
+        awayBullpenExhaustion: bullpenExhaustionScores[0],
+        homeBullpenExhaustion: bullpenExhaustionScores[1],
+        awayBullpenExhaustionLabel: getBullpenExhaustionLabel(bullpenExhaustionScores[0]),
+        homeBullpenExhaustionLabel: getBullpenExhaustionLabel(bullpenExhaustionScores[1]),
         awayPitcherType: starters[0]?.profileLabel ?? 'Unknown sample starter',
-        homePitcherType: starters[1]?.profileLabel ?? 'Unknown sample starter'
+        homePitcherType: starters[1]?.profileLabel ?? 'Unknown sample starter',
+        awayProjectedRuns: projectedRunProfiles[0].fullRuns,
+        homeProjectedRuns: projectedRunProfiles[1].fullRuns,
+        awayFirst5ProjectedRuns: projectedRunProfiles[0].first5Runs,
+        homeFirst5ProjectedRuns: projectedRunProfiles[1].first5Runs,
+        awayLateProjectedRuns: projectedRunProfiles[0].lateRuns,
+        homeLateProjectedRuns: projectedRunProfiles[1].lateRuns,
+        postedTotal,
+        totals: {
+          fullGame: fullGameTotalLean,
+          first5: first5TotalLean,
+          late: lateTotalLean,
+          projectedFullTotalRuns,
+          projectedFirst5TotalRuns,
+          projectedLateTotalRuns,
+          derivedFirst5TotalLine,
+          derivedLateTotalLine,
+          bullpenExhaustionNote
+        },
+        teamScripts
       }
 
       if (hitEdge <= 0.4) {
@@ -1304,11 +1569,9 @@ const buildMlbAnalysisContext = (game, participants) => {
 
     if (homeFieldSignal) signals.push(homeFieldSignal)
 
-    const total = parseFirstTotalNumber(getTotalMarketValue(game.odds))
-
-    if (Number.isFinite(total)) {
-      if (total >= 9) volatilityModifiers.push({ label: 'Higher posted total', delta: 5 })
-      if (total <= 7.5) volatilityModifiers.push({ label: 'Lower posted total', delta: -4 })
+    if (Number.isFinite(postedTotal)) {
+      if (postedTotal >= 9) volatilityModifiers.push({ label: 'Higher posted total', delta: 5 })
+      if (postedTotal <= 7.5) volatilityModifiers.push({ label: 'Lower posted total', delta: -4 })
     }
 
     if (starters.some((starter) => !Number.isFinite(starter.era))) {
@@ -2079,6 +2342,9 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     leanDrivers.length > 0
       ? `Model pick: ${participant.name} on ${leanDrivers.join(' and ')}.`
       : `Model pick: ${participant.name}.`
+  const pickScript = context.mlbProjection?.teamScripts?.find((script) =>
+    teamNamesMatch(script.teamName, participant.name)
+  )
 
   return {
     available: Boolean(hasFullMoneyline && participant && Number.isFinite(participant.americanOdds)),
@@ -2099,6 +2365,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     inputs,
     inputsUsed: normalizedSignals.length,
     volatilityNotes: [...(context.volatilityModifiers || []), ...(mlbIndicators?.notes || [])],
+    pickReasons: pickScript?.winPath?.slice(0, 4) ?? [],
     indicators: mlbIndicators
       ? {
           reliefPitchingRisk: mlbIndicators.reliefPitchingRisk,
@@ -2274,22 +2541,24 @@ export const rankFlipRiskPicks = (games) =>
       const splitScriptBonus =
         starterLeverageIndex >= 60 && lateInningStabilityIndex <= 48 ? 8 : 0
       const marketTightnessBonus = clamp(30 - marketGap * 100, 0, 24) * 0.45
-      const flipScore = clamp(
-        18 +
-          Math.max(volatility - 52, 0) * 0.9 +
-          Math.max(72 - confidence, 0) * 0.7 +
-          Math.max(10 - modelEdge, 0) * 1.2 +
-          reliefPitchingRisk * 0.13 +
-          coinflipPressure * 0.18 +
-          Math.max(starterLeverageIndex - lateInningStabilityIndex, 0) * 0.22 +
-          marketTightnessBonus +
-          underdogRangeBonus +
-          splitScriptBonus +
-          (modelAlreadyLikesDog ? 16 : 0) -
-          heavyFavoritePenalty,
-        0,
-        100
+      const flipBlendSignals = [
+        clamp((volatility - 52) / 32, 0, 1) * 0.2,
+        clamp((72 - confidence) / 24, 0, 1) * 0.16,
+        clamp((10 - modelEdge) / 10, 0, 1) * 0.13,
+        clamp((reliefPitchingRisk - 38) / 42, 0, 1) * 0.14,
+        clamp((coinflipPressure - 18) / 42, 0, 1) * 0.14,
+        clamp((starterLeverageIndex - lateInningStabilityIndex + 8) / 34, 0, 1) * 0.1,
+        clamp(marketTightnessBonus / 18, 0, 1) * 0.05,
+        clamp((underdogRangeBonus + 10) / 22, 0, 1) * 0.04,
+        (modelAlreadyLikesDog ? 1 : 0) * 0.03,
+        (splitScriptBonus ? 1 : 0) * 0.01
+      ]
+      const flipProbability = clamp(
+        0.18 + flipBlendSignals.reduce((sum, value) => sum + value, 0) * 0.56 - heavyFavoritePenalty / 140,
+        0.18,
+        0.74
       )
+      const flipScore = roundToTenths(flipProbability * 100)
       const flipTier =
         flipScore >= 76 ? 'High-volatility core' : flipScore >= 66 ? 'Live dog' : 'Fragile-favorite fade'
       const flipReason = modelAlreadyLikesDog
@@ -2315,7 +2584,8 @@ export const rankFlipRiskPicks = (games) =>
         modelEdgeLabel: game.analysis.modelEdgeLabel,
         marketProbabilityLabel: underdog.impliedProbabilityLabel,
         inputSummaries: game.analysis.inputs,
-        flipScore: roundToTenths(flipScore),
+        flipProbability,
+        flipScore,
         flipReason,
         isModelUnderdog: modelAlreadyLikesDog,
         game

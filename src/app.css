@@ -958,6 +958,93 @@ h3 {
   margin-top: 8px;
 }
 
+.model-reason-block {
+  margin-top: 10px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.model-input-list--tight {
+  margin-top: 6px;
+  gap: 5px;
+}
+
+.totals-board {
+  margin-top: 10px;
+  border: 1px solid rgba(79, 210, 166, 0.14);
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  background: linear-gradient(180deg, rgba(79, 210, 166, 0.05), rgba(255, 255, 255, 0.02));
+}
+
+.totals-grid,
+.team-script-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.totals-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-script-grid {
+  margin-top: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.totals-card,
+.team-script-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 8px;
+}
+
+.totals-card-head,
+.team-script-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.totals-card-head p,
+.team-script-head p,
+.team-script-copy span,
+.totals-card small,
+.totals-footnote {
+  color: var(--muted);
+}
+
+.totals-card-head strong,
+.team-script-head strong,
+.team-script-copy strong {
+  color: var(--heading);
+}
+
+.totals-card > span,
+.team-script-head span {
+  color: var(--warning);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.team-script-copy {
+  display: grid;
+  gap: 4px;
+}
+
+.totals-footnote {
+  padding-top: 2px;
+}
+
 .factor-list li::marker,
 .model-input-list li::marker,
 .boxscore-notes li::marker,
@@ -1263,6 +1350,37 @@ h3 {
   margin-top: 8px;
 }
 
+.balance-slider-card {
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 2px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.balance-slider-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.balance-slider-head span,
+.balance-slider-card small {
+  color: var(--muted);
+}
+
+.balance-slider-head strong {
+  color: var(--heading);
+}
+
+.balance-slider-card input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
 .recommendation-mode-button {
   flex: 1 1 0;
 }
@@ -1437,6 +1555,8 @@ h3 {
   .boxscore-grid,
   .model-projection-grid,
   .model-phase-grid,
+  .totals-grid,
+  .team-script-grid,
   .pick-grid.compact,
   .parlay-stats-grid.compact,
   .parlay-return-grid,
