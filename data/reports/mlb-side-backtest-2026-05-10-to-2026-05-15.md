@@ -5,23 +5,23 @@
 
 ## Summary
 
-- Training full-game hit rate: `0.639` on `36` games
-- Training first-5 hit rate: `0.556`
+- Training full-game hit rate: `0.694` on `36` games
+- Training first-5 hit rate: `0.611`
 - Training bullpen-flip losses: `2`
-- Verification full-game hit rate: `0.59` on `39` games
-- Verification first-5 hit rate: `0.564`
+- Verification full-game hit rate: `0.615` on `39` games
+- Verification first-5 hit rate: `0.59`
 - Verification bullpen-flip losses: `5`
 
 ## Failure Signals
 
-- Thin-edge misses in training: `7`
-- Thin-edge misses in verification: `9`
-- High-volatility misses in training: `7`
+- Thin-edge misses in training: `5`
+- Thin-edge misses in verification: `7`
+- High-volatility misses in training: `6`
 - High-volatility misses in verification: `7`
 - Hit-edge-against-pick misses in training: `4`
-- Hit-edge-against-pick misses in verification: `3`
-- Avg relief-pitching risk in training: `53.8`
-- Avg relief-pitching risk in verification: `55.8`
+- Hit-edge-against-pick misses in verification: `2`
+- Avg relief-pitching risk in training: `54.2`
+- Avg relief-pitching risk in verification: `57.3`
 
 ## Hit Projection Accuracy
 
@@ -30,12 +30,13 @@
 - Training first-5 hit-edge accuracy: `0.625`
 - Training team-hit MAE: `2.721`
 - Training full-game hit-efficiency MAE: `6.556`
+- Training first-five hit-efficiency MAE: `9.843`
 - Verification projection-ready games: `39`
 - Verification full-game hit-edge accuracy: `0.364`
 - Verification first-5 hit-edge accuracy: `0.419`
 - Verification team-hit MAE: `2.862`
 - Verification full-game hit-efficiency MAE: `7.602`
-- First-five hit efficiency is not graded yet because the warehouse does not store first-five at-bats separately.
+- Verification first-five hit-efficiency MAE: `10.145`
 
 ## Starter-Led Verification Reads
 
@@ -46,8 +47,8 @@
 ## F5 Versus Full-Game Split
 
 - Verification games flagged as `starter edge > late hold` profiles: `16`
-- Those games full-game hit rate: `0.375`
-- Those games first-5 hit rate: `0.375`
+- Those games full-game hit rate: `0.438`
+- Those games first-5 hit rate: `0.438`
 
 ## Verification Misses
 

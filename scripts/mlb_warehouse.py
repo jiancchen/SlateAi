@@ -104,7 +104,9 @@ CREATE TABLE IF NOT EXISTS mlb_game_team_stats (
   team_name TEXT NOT NULL,
   opponent_name TEXT NOT NULL,
   at_bats INTEGER,
+  at_bats_first5 INTEGER,
   plate_appearances INTEGER,
+  plate_appearances_first5 INTEGER,
   total_bases INTEGER,
   runs_scored INTEGER,
   hits INTEGER,
@@ -129,6 +131,33 @@ CREATE TABLE IF NOT EXISTS mlb_game_team_stats (
   first5_result TEXT,
   raw_json TEXT,
   PRIMARY KEY (game_pk, team_role)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_pitcher_appearances (
+  game_pk INTEGER NOT NULL,
+  game_date TEXT NOT NULL,
+  team_role TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  opponent_name TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  pitcher_role TEXT NOT NULL,
+  entry_order INTEGER,
+  first_inning INTEGER,
+  first_half TEXT,
+  innings_pitched REAL,
+  outs_recorded INTEGER,
+  runs_allowed INTEGER,
+  earned_runs INTEGER,
+  hits_allowed INTEGER,
+  home_runs_allowed INTEGER,
+  walks_allowed INTEGER,
+  strikeouts INTEGER,
+  pitches_thrown INTEGER,
+  strikes_thrown INTEGER,
+  batters_faced INTEGER,
+  raw_json TEXT,
+  PRIMARY KEY (game_pk, team_role, pitcher_id)
 );
 
 CREATE TABLE IF NOT EXISTS mlb_game_outcomes (
@@ -276,6 +305,51 @@ CREATE TABLE IF NOT EXISTS mlb_starting_pitcher_rolling_form (
   PRIMARY KEY (as_of_date, pitcher_id, window_starts)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_bullpen_usage (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  likely_role TEXT,
+  appearances_last3 INTEGER NOT NULL,
+  innings_last3 REAL,
+  outs_last3 INTEGER,
+  pitches_last3 INTEGER,
+  batters_faced_last3 INTEGER,
+  last_appearance_date TEXT,
+  days_since_last_appearance INTEGER,
+  worked_yesterday_flag INTEGER,
+  back_to_back_flag INTEGER,
+  avg_entry_order REAL,
+  avg_outs_per_appearance REAL,
+  avg_pitches_per_appearance REAL,
+  bridge_score REAL,
+  availability_score REAL,
+  fatigue_score REAL,
+  first_reliever_likelihood REAL,
+  raw_json TEXT,
+  PRIMARY KEY (as_of_date, team_name, pitcher_id)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_likely_relief_chains (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  opponent_name TEXT,
+  predicted_rank INTEGER NOT NULL,
+  pitcher_id INTEGER,
+  pitcher_name TEXT,
+  likely_role TEXT,
+  first_reliever_likelihood REAL,
+  availability_score REAL,
+  bridge_score REAL,
+  expected_outs REAL,
+  worked_yesterday_flag INTEGER,
+  back_to_back_flag INTEGER,
+  last_appearance_date TEXT,
+  raw_json TEXT,
+  PRIMARY KEY (as_of_date, team_name, predicted_rank)
+);
+
 CREATE TABLE IF NOT EXISTS park_factor_snapshots (
   snapshot_date TEXT NOT NULL,
   team_name TEXT NOT NULL,
@@ -316,7 +390,26 @@ def get_connection() -> sqlite3.Connection:
 
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA)
+    ensure_columns(
+        conn,
+        "mlb_game_team_stats",
+        {
+            "at_bats_first5": "INTEGER",
+            "plate_appearances_first5": "INTEGER",
+        },
+    )
     conn.commit()
+
+
+def ensure_columns(conn: sqlite3.Connection, table_name: str, columns: dict[str, str]) -> None:
+    existing = {
+        row["name"]
+        for row in conn.execute(f"PRAGMA table_info({table_name})").fetchall()
+    }
+    for column_name, column_type in columns.items():
+        if column_name in existing:
+            continue
+        conn.execute(f"ALTER TABLE {table_name} ADD COLUMN {column_name} {column_type}")
 
 
 def fetch_text(url: str) -> str:
@@ -412,6 +505,10 @@ def safe_pstdev(values: list[float | int]) -> float:
     return pstdev(values) if len(values) > 1 else 0.0
 
 
+def clamp_value(value: float, minimum: float, maximum: float) -> float:
+    return max(minimum, min(maximum, value))
+
+
 def split_recent(values: list[float | int], recent_window: int = 3) -> tuple[list[float | int], list[float | int]]:
     return values[:recent_window], values
 
@@ -422,6 +519,68 @@ def result_label(team_value: int, opponent_value: int) -> str:
     if team_value < opponent_value:
         return "loss"
     return "tie"
+
+
+NON_AT_BAT_EVENT_TYPES = {
+    "walk",
+    "intent_walk",
+    "hit_by_pitch",
+    "sac_bunt",
+    "sac_fly",
+    "catcher_interference",
+}
+
+
+def play_counts_as_at_bat(play: dict[str, Any]) -> bool:
+    event_type = (((play.get("result") or {}).get("eventType")) or "").lower()
+    if not event_type:
+        return True
+    if event_type in NON_AT_BAT_EVENT_TYPES:
+        return False
+    if event_type.startswith("sac_"):
+        return False
+    return True
+
+
+def extract_first5_batting_counts(
+    feed_game: dict[str, Any], away_team: str, home_team: str
+) -> dict[str, dict[str, int]]:
+    counts = {
+        away_team: {"plate_appearances": 0, "at_bats": 0},
+        home_team: {"plate_appearances": 0, "at_bats": 0},
+    }
+
+    for play in ((feed_game.get("liveData") or {}).get("plays") or {}).get("allPlays", []):
+        about = play.get("about") or {}
+        inning = to_int(about.get("inning")) or 0
+        if inning > 5:
+            continue
+        batting_team = away_team if about.get("isTopInning") else home_team
+        counts[batting_team]["plate_appearances"] += 1
+        if play_counts_as_at_bat(play):
+            counts[batting_team]["at_bats"] += 1
+
+    return counts
+
+
+def extract_pitcher_entry_metadata(feed_game: dict[str, Any]) -> dict[str, dict[int, dict[str, Any]]]:
+    metadata: dict[str, dict[int, dict[str, Any]]] = {"away": {}, "home": {}}
+    counters = {"away": 0, "home": 0}
+
+    for play in ((feed_game.get("liveData") or {}).get("plays") or {}).get("allPlays", []):
+        about = play.get("about") or {}
+        fielding_role = "home" if about.get("isTopInning") else "away"
+        pitcher_id = to_int((((play.get("matchup") or {}).get("pitcher")) or {}).get("id"))
+        if pitcher_id is None or pitcher_id in metadata[fielding_role]:
+            continue
+        counters[fielding_role] += 1
+        metadata[fielding_role][pitcher_id] = {
+            "entry_order": counters[fielding_role],
+            "first_inning": to_int(about.get("inning")),
+            "first_half": about.get("halfInning"),
+        }
+
+    return metadata
 
 
 def find_live_starter(feed_game: dict[str, Any], role: str) -> dict[str, Any]:
@@ -555,6 +714,7 @@ def build_team_game_stats_rows(
     home_team = game["teams"]["home"]["team"]["name"]
     linescore = (feed_game.get("liveData") or {}).get("linescore") or {}
     boxscore_teams = (((feed_game.get("liveData") or {}).get("boxscore") or {}).get("teams") or {})
+    first5_batting_counts = extract_first5_batting_counts(feed_game, away_team, home_team)
     rows: list[dict[str, Any]] = []
 
     for role, team_name, opponent_name in (
@@ -579,7 +739,9 @@ def build_team_game_stats_rows(
             "team_name": team_name,
             "opponent_name": opponent_name,
             "at_bats": to_int(batting.get("atBats")),
+            "at_bats_first5": first5_batting_counts[team_name]["at_bats"],
             "plate_appearances": to_int(batting.get("plateAppearances")),
+            "plate_appearances_first5": first5_batting_counts[team_name]["plate_appearances"],
             "total_bases": to_int(batting.get("totalBases")),
             "runs_scored": runs_scored,
             "hits": to_int(batting.get("hits")) or 0,
@@ -613,6 +775,70 @@ def build_team_game_stats_rows(
             ),
         }
         rows.append(row)
+
+    return rows
+
+
+def extract_pitcher_appearance_rows(
+    game: dict[str, Any], feed_game: dict[str, Any], date_text: str
+) -> list[dict[str, Any]]:
+    away_team = game["teams"]["away"]["team"]["name"]
+    home_team = game["teams"]["home"]["team"]["name"]
+    boxscore_teams = (((feed_game.get("liveData") or {}).get("boxscore") or {}).get("teams") or {})
+    entry_metadata = extract_pitcher_entry_metadata(feed_game)
+    rows: list[dict[str, Any]] = []
+
+    for role, team_name, opponent_name in (
+        ("away", away_team, home_team),
+        ("home", home_team, away_team),
+    ):
+        players = ((boxscore_teams.get(role) or {}).get("players") or {}).values()
+        for player in players:
+            pitching = ((player.get("stats") or {}).get("pitching") or {})
+            innings_pitched = innings_to_float(pitching.get("inningsPitched"))
+            outs_recorded = to_int(pitching.get("outs"))
+            batters_faced = to_int(pitching.get("battersFaced"))
+            pitches_thrown = to_int(pitching.get("pitchesThrown") or pitching.get("numberOfPitches"))
+            has_appearance = any(
+                value not in (None, 0, 0.0)
+                for value in (innings_pitched, outs_recorded, batters_faced, pitches_thrown)
+            )
+            if not has_appearance:
+                continue
+
+            pitcher_id = to_int((player.get("person") or {}).get("id"))
+            if pitcher_id is None:
+                continue
+
+            entry_info = entry_metadata[role].get(pitcher_id, {})
+            pitcher_role = "starter" if pitching.get("gamesStarted") == 1 or entry_info.get("entry_order") == 1 else "reliever"
+            rows.append(
+                {
+                    "game_pk": game["gamePk"],
+                    "game_date": date_text,
+                    "team_role": role,
+                    "team_name": team_name,
+                    "opponent_name": opponent_name,
+                    "pitcher_id": pitcher_id,
+                    "pitcher_name": (player.get("person") or {}).get("fullName") or "",
+                    "pitcher_role": pitcher_role,
+                    "entry_order": entry_info.get("entry_order"),
+                    "first_inning": entry_info.get("first_inning"),
+                    "first_half": entry_info.get("first_half"),
+                    "innings_pitched": innings_pitched,
+                    "outs_recorded": outs_recorded,
+                    "runs_allowed": to_int(pitching.get("runs")),
+                    "earned_runs": to_int(pitching.get("earnedRuns")),
+                    "hits_allowed": to_int(pitching.get("hits")),
+                    "home_runs_allowed": to_int(pitching.get("homeRuns")),
+                    "walks_allowed": to_int(pitching.get("baseOnBalls")),
+                    "strikeouts": to_int(pitching.get("strikeOuts")),
+                    "pitches_thrown": pitches_thrown,
+                    "strikes_thrown": to_int(pitching.get("strikes")),
+                    "batters_faced": batters_faced,
+                    "raw_json": json.dumps(player, sort_keys=True),
+                }
+            )
 
     return rows
 
@@ -758,23 +984,85 @@ def upsert_starting_pitcher_game_log(conn: sqlite3.Connection, row: dict[str, An
     )
 
 
+def upsert_pitcher_appearance(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO mlb_pitcher_appearances (
+          game_pk, game_date, team_role, team_name, opponent_name, pitcher_id, pitcher_name,
+          pitcher_role, entry_order, first_inning, first_half, innings_pitched, outs_recorded,
+          runs_allowed, earned_runs, hits_allowed, home_runs_allowed, walks_allowed, strikeouts,
+          pitches_thrown, strikes_thrown, batters_faced, raw_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk, team_role, pitcher_id) DO UPDATE SET
+          game_date=excluded.game_date,
+          team_name=excluded.team_name,
+          opponent_name=excluded.opponent_name,
+          pitcher_name=excluded.pitcher_name,
+          pitcher_role=excluded.pitcher_role,
+          entry_order=excluded.entry_order,
+          first_inning=excluded.first_inning,
+          first_half=excluded.first_half,
+          innings_pitched=excluded.innings_pitched,
+          outs_recorded=excluded.outs_recorded,
+          runs_allowed=excluded.runs_allowed,
+          earned_runs=excluded.earned_runs,
+          hits_allowed=excluded.hits_allowed,
+          home_runs_allowed=excluded.home_runs_allowed,
+          walks_allowed=excluded.walks_allowed,
+          strikeouts=excluded.strikeouts,
+          pitches_thrown=excluded.pitches_thrown,
+          strikes_thrown=excluded.strikes_thrown,
+          batters_faced=excluded.batters_faced,
+          raw_json=excluded.raw_json
+        """,
+        (
+            row["game_pk"],
+            row["game_date"],
+            row["team_role"],
+            row["team_name"],
+            row["opponent_name"],
+            row["pitcher_id"],
+            row["pitcher_name"],
+            row["pitcher_role"],
+            row["entry_order"],
+            row["first_inning"],
+            row["first_half"],
+            row["innings_pitched"],
+            row["outs_recorded"],
+            row["runs_allowed"],
+            row["earned_runs"],
+            row["hits_allowed"],
+            row["home_runs_allowed"],
+            row["walks_allowed"],
+            row["strikeouts"],
+            row["pitches_thrown"],
+            row["strikes_thrown"],
+            row["batters_faced"],
+            row["raw_json"],
+        ),
+    )
+
+
 def upsert_team_game_stats(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
     conn.execute(
         """
         INSERT INTO mlb_game_team_stats (
-          game_pk, game_date, team_role, team_name, opponent_name, at_bats, plate_appearances,
+          game_pk, game_date, team_role, team_name, opponent_name, at_bats, at_bats_first5,
+          plate_appearances, plate_appearances_first5,
           total_bases, runs_scored, hits, home_runs, walks, strikeouts, left_on_base,
           runs_allowed, hits_allowed, home_runs_allowed, walks_allowed, strikeouts_recorded,
           runs_scored_first5, hits_first5, home_runs_first5, runs_allowed_first5, hits_allowed_first5,
           home_runs_allowed_first5, bullpen_runs_scored, bullpen_runs_allowed, full_game_result,
           first5_result, raw_json
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(game_pk, team_role) DO UPDATE SET
           game_date=excluded.game_date,
           team_name=excluded.team_name,
           opponent_name=excluded.opponent_name,
           at_bats=excluded.at_bats,
+          at_bats_first5=excluded.at_bats_first5,
           plate_appearances=excluded.plate_appearances,
+          plate_appearances_first5=excluded.plate_appearances_first5,
           total_bases=excluded.total_bases,
           runs_scored=excluded.runs_scored,
           hits=excluded.hits,
@@ -806,7 +1094,9 @@ def upsert_team_game_stats(conn: sqlite3.Connection, row: dict[str, Any]) -> Non
             row["team_name"],
             row["opponent_name"],
             row["at_bats"],
+            row["at_bats_first5"],
             row["plate_appearances"],
+            row["plate_appearances_first5"],
             row["total_bases"],
             row["runs_scored"],
             row["hits"],
@@ -1015,6 +1305,10 @@ def ingest_mlb_day(conn: sqlite3.Connection, date_text: str) -> None:
 
         for starter_log in starter_game_logs:
             upsert_starting_pitcher_game_log(conn, starter_log)
+
+        pitcher_appearance_rows = extract_pitcher_appearance_rows(game, live_payload, date_text)
+        for row in pitcher_appearance_rows:
+            upsert_pitcher_appearance(conn, row)
 
         home_run_rows = extract_home_run_rows(
             live_payload,
@@ -1245,6 +1539,153 @@ def build_pitcher_form_row(
     }
 
 
+def classify_reliever_role(avg_entry_order: float, avg_outs_per_appearance: float) -> str:
+    if avg_entry_order <= 2.6 and avg_outs_per_appearance >= 2.5:
+        return "bridge"
+    if avg_outs_per_appearance >= 5.5:
+        return "bulk"
+    if avg_entry_order >= 4.0 and avg_outs_per_appearance <= 3.5:
+        return "late"
+    return "middle"
+
+
+def build_bullpen_usage_and_chain_rows(
+    as_of_date: str, team_name: str, opponent_name: str, rows: list[sqlite3.Row]
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    if not rows:
+        return [], []
+
+    as_of = datetime.strptime(as_of_date, "%Y-%m-%d").date()
+    recent3_cutoff = (as_of - timedelta(days=3)).isoformat()
+    recent10_cutoff = (as_of - timedelta(days=10)).isoformat()
+    by_pitcher: dict[int, list[sqlite3.Row]] = {}
+
+    for row in rows:
+        pitcher_id = row["pitcher_id"]
+        if pitcher_id is None:
+            continue
+        by_pitcher.setdefault(pitcher_id, []).append(row)
+
+    usage_rows: list[dict[str, Any]] = []
+    chain_candidates: list[dict[str, Any]] = []
+
+    for pitcher_id, appearances in by_pitcher.items():
+        appearances.sort(key=lambda row: (row["game_date"], row["entry_order"] or 99), reverse=True)
+        last10 = [row for row in appearances if row["game_date"] >= recent10_cutoff][:8]
+        recent3 = [row for row in last10 if row["game_date"] >= recent3_cutoff]
+        if not last10:
+            continue
+
+        last_row = last10[0]
+        last_appearance_date = last_row["game_date"]
+        days_since_last = (as_of - datetime.strptime(last_appearance_date, "%Y-%m-%d").date()).days
+        appearance_dates = sorted({row["game_date"] for row in recent3}, reverse=True)
+        worked_yesterday = 1 if days_since_last == 1 else 0
+        back_to_back = 1 if len(appearance_dates) >= 2 and appearance_dates[0] == (as_of - timedelta(days=1)).isoformat() and appearance_dates[1] == (as_of - timedelta(days=2)).isoformat() else 0
+        appearances_last3 = len(recent3)
+        outs_last3 = sum((row["outs_recorded"] or 0) for row in recent3)
+        innings_last3 = sum((row["innings_pitched"] or 0.0) for row in recent3)
+        pitches_last3 = sum((row["pitches_thrown"] or 0) for row in recent3)
+        batters_faced_last3 = sum((row["batters_faced"] or 0) for row in recent3)
+        avg_entry_order = safe_mean([row["entry_order"] or 5 for row in last10])
+        avg_outs_per_appearance = safe_mean([row["outs_recorded"] or 0 for row in last10])
+        avg_pitches_per_appearance = safe_mean([row["pitches_thrown"] or 0 for row in last10])
+        likely_role = classify_reliever_role(avg_entry_order, avg_outs_per_appearance)
+        recent_first_reliever_count = sum(1 for row in last10 if (row["entry_order"] or 99) == 2)
+        recent_first_two_count = sum(1 for row in last10 if (row["entry_order"] or 99) in (2, 3))
+
+        fatigue_score = clamp_value(
+            appearances_last3 * 14
+            + pitches_last3 * 0.45
+            + outs_last3 * 1.6
+            + worked_yesterday * 14
+            + back_to_back * 12,
+            0,
+            100,
+        )
+        rest_bonus = 8 if days_since_last >= 2 else (2 if days_since_last == 1 else -8)
+        availability_score = clamp_value(92 - fatigue_score + rest_bonus, 5, 95)
+        entry_anchor = clamp_value(88 - abs(avg_entry_order - 2.2) * 18, 10, 92)
+        length_anchor = clamp_value(86 - abs(avg_outs_per_appearance - 4.0) * 12, 10, 90)
+        bridge_bonus = min(28.0, recent_first_reliever_count * 10 + recent_first_two_count * 4)
+        role_bonus = 10 if likely_role == "bridge" else 5 if likely_role == "bulk" else -6 if likely_role == "late" else 0
+        bridge_score = clamp_value(entry_anchor * 0.5 + length_anchor * 0.35 + bridge_bonus + role_bonus, 5, 95)
+        first_reliever_likelihood = clamp_value(
+            bridge_score * 0.55 + availability_score * 0.35 + min(10.0, recent_first_two_count * 2.5),
+            0,
+            100,
+        )
+
+        usage_row = {
+            "as_of_date": as_of_date,
+            "team_name": team_name,
+            "pitcher_id": pitcher_id,
+            "pitcher_name": last_row["pitcher_name"],
+            "likely_role": likely_role,
+            "appearances_last3": appearances_last3,
+            "innings_last3": round(innings_last3, 3),
+            "outs_last3": outs_last3,
+            "pitches_last3": pitches_last3,
+            "batters_faced_last3": batters_faced_last3,
+            "last_appearance_date": last_appearance_date,
+            "days_since_last_appearance": days_since_last,
+            "worked_yesterday_flag": worked_yesterday,
+            "back_to_back_flag": back_to_back,
+            "avg_entry_order": round(avg_entry_order, 2),
+            "avg_outs_per_appearance": round(avg_outs_per_appearance, 2),
+            "avg_pitches_per_appearance": round(avg_pitches_per_appearance, 2),
+            "bridge_score": round(bridge_score, 2),
+            "availability_score": round(availability_score, 2),
+            "fatigue_score": round(fatigue_score, 2),
+            "first_reliever_likelihood": round(first_reliever_likelihood, 2),
+            "raw_json": json.dumps(
+                {
+                    "recentEntryOrders": [row["entry_order"] for row in last10],
+                    "recentDates": [row["game_date"] for row in last10],
+                    "recentOuts": [row["outs_recorded"] for row in last10],
+                    "recentPitches": [row["pitches_thrown"] for row in last10],
+                },
+                sort_keys=True,
+            ),
+        }
+        usage_rows.append(usage_row)
+        chain_candidates.append(usage_row)
+
+    chain_candidates.sort(
+        key=lambda row: (
+            row["first_reliever_likelihood"],
+            row["availability_score"],
+            row["bridge_score"],
+            -row["days_since_last_appearance"],
+        ),
+        reverse=True,
+    )
+
+    likely_relief_rows = []
+    for index, row in enumerate(chain_candidates[:2], start=1):
+        likely_relief_rows.append(
+            {
+                "as_of_date": as_of_date,
+                "team_name": team_name,
+                "opponent_name": opponent_name,
+                "predicted_rank": index,
+                "pitcher_id": row["pitcher_id"],
+                "pitcher_name": row["pitcher_name"],
+                "likely_role": row["likely_role"],
+                "first_reliever_likelihood": row["first_reliever_likelihood"],
+                "availability_score": row["availability_score"],
+                "bridge_score": row["bridge_score"],
+                "expected_outs": row["avg_outs_per_appearance"],
+                "worked_yesterday_flag": row["worked_yesterday_flag"],
+                "back_to_back_flag": row["back_to_back_flag"],
+                "last_appearance_date": row["last_appearance_date"],
+                "raw_json": row["raw_json"],
+            }
+        )
+
+    return usage_rows, likely_relief_rows
+
+
 def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = None) -> None:
     init_db(conn)
     params: tuple[Any, ...] = (through_date,) if through_date else ()
@@ -1258,9 +1699,13 @@ def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = No
     if through_date:
         conn.execute("DELETE FROM mlb_team_rolling_form WHERE as_of_date <= ?", (through_date,))
         conn.execute("DELETE FROM mlb_starting_pitcher_rolling_form WHERE as_of_date <= ?", (through_date,))
+        conn.execute("DELETE FROM mlb_bullpen_usage WHERE as_of_date <= ?", (through_date,))
+        conn.execute("DELETE FROM mlb_likely_relief_chains WHERE as_of_date <= ?", (through_date,))
     else:
         conn.execute("DELETE FROM mlb_team_rolling_form")
         conn.execute("DELETE FROM mlb_starting_pitcher_rolling_form")
+        conn.execute("DELETE FROM mlb_bullpen_usage")
+        conn.execute("DELETE FROM mlb_likely_relief_chains")
 
     for as_of_date in dates:
         teams = [
@@ -1384,6 +1829,100 @@ def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = No
                         form_row["recent_3_earned_runs_delta"],
                     ),
                 )
+
+        scheduled_teams = conn.execute(
+            """
+            SELECT game_pk, away_team, home_team
+            FROM mlb_games
+            WHERE game_date = ?
+            ORDER BY game_pk
+            """,
+            (as_of_date,),
+        ).fetchall()
+        for scheduled_game in scheduled_teams:
+            for team_name, opponent_name in (
+                (scheduled_game["away_team"], scheduled_game["home_team"]),
+                (scheduled_game["home_team"], scheduled_game["away_team"]),
+            ):
+                reliever_rows = conn.execute(
+                    """
+                    SELECT *
+                    FROM mlb_pitcher_appearances
+                    WHERE team_name = ?
+                      AND pitcher_role = 'reliever'
+                      AND game_date < ?
+                    ORDER BY game_date DESC, game_pk DESC, entry_order ASC
+                    """,
+                    (team_name, as_of_date),
+                ).fetchall()
+                usage_rows, likely_relief_rows = build_bullpen_usage_and_chain_rows(
+                    as_of_date, team_name, opponent_name, reliever_rows
+                )
+                for usage_row in usage_rows:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_bullpen_usage (
+                          as_of_date, team_name, pitcher_id, pitcher_name, likely_role,
+                          appearances_last3, innings_last3, outs_last3, pitches_last3,
+                          batters_faced_last3, last_appearance_date, days_since_last_appearance,
+                          worked_yesterday_flag, back_to_back_flag, avg_entry_order,
+                          avg_outs_per_appearance, avg_pitches_per_appearance, bridge_score,
+                          availability_score, fatigue_score, first_reliever_likelihood, raw_json
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            usage_row["as_of_date"],
+                            usage_row["team_name"],
+                            usage_row["pitcher_id"],
+                            usage_row["pitcher_name"],
+                            usage_row["likely_role"],
+                            usage_row["appearances_last3"],
+                            usage_row["innings_last3"],
+                            usage_row["outs_last3"],
+                            usage_row["pitches_last3"],
+                            usage_row["batters_faced_last3"],
+                            usage_row["last_appearance_date"],
+                            usage_row["days_since_last_appearance"],
+                            usage_row["worked_yesterday_flag"],
+                            usage_row["back_to_back_flag"],
+                            usage_row["avg_entry_order"],
+                            usage_row["avg_outs_per_appearance"],
+                            usage_row["avg_pitches_per_appearance"],
+                            usage_row["bridge_score"],
+                            usage_row["availability_score"],
+                            usage_row["fatigue_score"],
+                            usage_row["first_reliever_likelihood"],
+                            usage_row["raw_json"],
+                        ),
+                    )
+                for likely_row in likely_relief_rows:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_likely_relief_chains (
+                          as_of_date, team_name, opponent_name, predicted_rank, pitcher_id, pitcher_name,
+                          likely_role, first_reliever_likelihood, availability_score, bridge_score,
+                          expected_outs, worked_yesterday_flag, back_to_back_flag, last_appearance_date,
+                          raw_json
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            likely_row["as_of_date"],
+                            likely_row["team_name"],
+                            likely_row["opponent_name"],
+                            likely_row["predicted_rank"],
+                            likely_row["pitcher_id"],
+                            likely_row["pitcher_name"],
+                            likely_row["likely_role"],
+                            likely_row["first_reliever_likelihood"],
+                            likely_row["availability_score"],
+                            likely_row["bridge_score"],
+                            likely_row["expected_outs"],
+                            likely_row["worked_yesterday_flag"],
+                            likely_row["back_to_back_flag"],
+                            likely_row["last_appearance_date"],
+                            likely_row["raw_json"],
+                        ),
+                    )
 
     conn.commit()
 
@@ -1530,6 +2069,54 @@ def list_first5_outcomes(conn: sqlite3.Connection, date_text: str) -> list[sqlit
     ).fetchall()
 
 
+def list_bullpen_usage(
+    conn: sqlite3.Connection, date_text: str, team_name: str | None = None
+) -> list[sqlite3.Row]:
+    if team_name:
+        return conn.execute(
+            """
+            SELECT *
+            FROM mlb_bullpen_usage
+            WHERE as_of_date = ? AND team_name = ?
+            ORDER BY first_reliever_likelihood DESC, availability_score DESC
+            """,
+            (date_text, team_name),
+        ).fetchall()
+    return conn.execute(
+        """
+        SELECT *
+        FROM mlb_bullpen_usage
+        WHERE as_of_date = ?
+        ORDER BY team_name, first_reliever_likelihood DESC, availability_score DESC
+        """,
+        (date_text,),
+    ).fetchall()
+
+
+def list_likely_relievers(
+    conn: sqlite3.Connection, date_text: str, team_name: str | None = None
+) -> list[sqlite3.Row]:
+    if team_name:
+        return conn.execute(
+            """
+            SELECT *
+            FROM mlb_likely_relief_chains
+            WHERE as_of_date = ? AND team_name = ?
+            ORDER BY team_name, predicted_rank
+            """,
+            (date_text, team_name),
+        ).fetchall()
+    return conn.execute(
+        """
+        SELECT *
+        FROM mlb_likely_relief_chains
+        WHERE as_of_date = ?
+        ORDER BY team_name, predicted_rank
+        """,
+        (date_text,),
+    ).fetchall()
+
+
 def print_backtest_summary(rows: list[sqlite3.Row]) -> None:
     hits = [row for row in rows if row["actual_home_runs"]]
     print(f"Tracked picks: {len(rows)}")
@@ -1566,6 +2153,27 @@ def print_first5_outcomes(rows: list[sqlite3.Row]) -> None:
         )
 
 
+def print_bullpen_usage(rows: list[sqlite3.Row]) -> None:
+    print(f"Bullpen usage rows: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['team_name']} | {row['pitcher_name']} | role {row['likely_role']} | "
+            f"last3 app {row['appearances_last3']} | pitches {row['pitches_last3']} | "
+            f"days rest {row['days_since_last_appearance']} | availability {row['availability_score']} | "
+            f"bridge {row['bridge_score']} | first-reliever {row['first_reliever_likelihood']}"
+        )
+
+
+def print_likely_relievers(rows: list[sqlite3.Row]) -> None:
+    print(f"Likely reliever rows: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['team_name']} vs {row['opponent_name']} | #{row['predicted_rank']} {row['pitcher_name']} "
+            f"({row['likely_role']}) | first-reliever {row['first_reliever_likelihood']} | "
+            f"availability {row['availability_score']} | expected outs {row['expected_outs']}"
+        )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Local MLB warehouse utilities for modeling and backtesting.")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -1583,6 +2191,18 @@ def parse_args() -> argparse.Namespace:
     )
     ingest_range.add_argument("--start-date", required=True, help="Start date in YYYY-MM-DD format.")
     ingest_range.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format.")
+
+    prep_day = subparsers.add_parser(
+        "prepare-mlb-day",
+        help="Ingest the target MLB day plus a recent lookback window, then refresh rolling/bullpen features.",
+    )
+    prep_day.add_argument("--date", required=True, help="Target date in YYYY-MM-DD format.")
+    prep_day.add_argument(
+        "--lookback-days",
+        type=int,
+        default=3,
+        help="How many prior days to ingest for bullpen/workload context. Defaults to 3.",
+    )
 
     derive = subparsers.add_parser(
         "derive-mlb-features",
@@ -1610,6 +2230,18 @@ def parse_args() -> argparse.Namespace:
     list_f5 = subparsers.add_parser("list-first5", help="Print first-five outcomes stored for a date.")
     list_f5.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
 
+    list_bullpen = subparsers.add_parser(
+        "list-bullpen-usage", help="Print bullpen workload and availability rows for a date."
+    )
+    list_bullpen.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
+    list_bullpen.add_argument("--team", help="Optional team name filter.")
+
+    list_relievers = subparsers.add_parser(
+        "list-likely-relievers", help="Print the likely first two relievers for scheduled teams on a date."
+    )
+    list_relievers.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
+    list_relievers.add_argument("--team", help="Optional team name filter.")
+
     return parser.parse_args()
 
 
@@ -1629,6 +2261,16 @@ def main() -> None:
         if args.command == "ingest-mlb-range":
             ingest_mlb_date_range(conn, args.start_date, args.end_date)
             print(f"Ingested MLB games, summaries, starter logs, and HR events from {args.start_date} through {args.end_date}")
+            return
+
+        if args.command == "prepare-mlb-day":
+            target_date = datetime.strptime(args.date, "%Y-%m-%d").date()
+            start_date = (target_date - timedelta(days=args.lookback_days)).isoformat()
+            ingest_mlb_date_range(conn, start_date, args.date)
+            refresh_rolling_form(conn, args.date)
+            print(
+                f"Prepared MLB prediction context for {args.date} using lookback window {start_date} through {args.date}"
+            )
             return
 
         if args.command == "derive-mlb-features":
@@ -1662,6 +2304,16 @@ def main() -> None:
         if args.command == "list-first5":
             rows = list_first5_outcomes(conn, args.date)
             print_first5_outcomes(rows)
+            return
+
+        if args.command == "list-bullpen-usage":
+            rows = list_bullpen_usage(conn, args.date, args.team)
+            print_bullpen_usage(rows)
+            return
+
+        if args.command == "list-likely-relievers":
+            rows = list_likely_relievers(conn, args.date, args.team)
+            print_likely_relievers(rows)
             return
 
 

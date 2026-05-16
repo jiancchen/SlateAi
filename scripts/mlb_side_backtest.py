@@ -320,9 +320,11 @@ def summarize_hit_projection_window(
           away_stats.hits AS away_hits,
           away_stats.at_bats AS away_at_bats,
           away_stats.hits_first5 AS away_hits_first5,
+          away_stats.at_bats_first5 AS away_at_bats_first5,
           home_stats.hits AS home_hits,
           home_stats.at_bats AS home_at_bats,
-          home_stats.hits_first5 AS home_hits_first5
+          home_stats.hits_first5 AS home_hits_first5,
+          home_stats.at_bats_first5 AS home_at_bats_first5
         FROM mlb_side_predictions
         JOIN mlb_game_outcomes
           ON mlb_game_outcomes.game_date = mlb_side_predictions.prediction_date
@@ -353,6 +355,8 @@ def summarize_hit_projection_window(
         "full_edge_abs_error": 0.0,
         "full_efficiency_samples": 0,
         "full_efficiency_abs_error": 0.0,
+        "first5_efficiency_samples": 0,
+        "first5_efficiency_abs_error": 0.0,
     }
 
     for row in rows:
@@ -373,6 +377,8 @@ def summarize_hit_projection_window(
         home_actual_eff = safe_pct(row["home_hits"], row["home_at_bats"])
         away_actual_first5_hits = row["away_hits_first5"]
         home_actual_first5_hits = row["home_hits_first5"]
+        away_actual_first5_eff = safe_pct(row["away_hits_first5"], row["away_at_bats_first5"])
+        home_actual_first5_eff = safe_pct(row["home_hits_first5"], row["home_at_bats_first5"])
 
         summary["games"] += 1
 
@@ -407,6 +413,20 @@ def summarize_hit_projection_window(
                 if predicted_first5_edge == actual_first5_edge:
                     summary["first5_edge_correct"] += 1
 
+        away_first5_projected_eff = projection.get("awayFirst5HitEfficiencyPct")
+        home_first5_projected_eff = projection.get("homeFirst5HitEfficiencyPct")
+        if away_first5_projected_eff is not None and home_first5_projected_eff is not None:
+            if away_actual_first5_eff is not None:
+                summary["first5_efficiency_samples"] += 1
+                summary["first5_efficiency_abs_error"] += abs(
+                    float(away_first5_projected_eff) - away_actual_first5_eff
+                )
+            if home_actual_first5_eff is not None:
+                summary["first5_efficiency_samples"] += 1
+                summary["first5_efficiency_abs_error"] += abs(
+                    float(home_first5_projected_eff) - home_actual_first5_eff
+                )
+
     games = summary["games"] or 0
     return {
         "games": games,
@@ -424,6 +444,11 @@ def summarize_hit_projection_window(
             summary["full_efficiency_abs_error"] / summary["full_efficiency_samples"], 3
         )
         if summary["full_efficiency_samples"]
+        else 0,
+        "first5_efficiency_mae": round(
+            summary["first5_efficiency_abs_error"] / summary["first5_efficiency_samples"], 3
+        )
+        if summary["first5_efficiency_samples"]
         else 0,
     }
 
@@ -533,12 +558,13 @@ def write_report(conn: sqlite3.Connection, model_name: str, train_end: str, veri
         f"- Training first-5 hit-edge accuracy: `{train_hit_projection['first5_edge_accuracy']}`",
         f"- Training team-hit MAE: `{train_hit_projection['team_hit_mae']}`",
         f"- Training full-game hit-efficiency MAE: `{train_hit_projection['full_efficiency_mae']}`",
+        f"- Training first-five hit-efficiency MAE: `{train_hit_projection['first5_efficiency_mae']}`",
         f"- Verification projection-ready games: `{verify_hit_projection['games']}`",
         f"- Verification full-game hit-edge accuracy: `{verify_hit_projection['full_edge_accuracy']}`",
         f"- Verification first-5 hit-edge accuracy: `{verify_hit_projection['first5_edge_accuracy']}`",
         f"- Verification team-hit MAE: `{verify_hit_projection['team_hit_mae']}`",
         f"- Verification full-game hit-efficiency MAE: `{verify_hit_projection['full_efficiency_mae']}`",
-        "- First-five hit efficiency is not graded yet because the warehouse does not store first-five at-bats separately.",
+        f"- Verification first-five hit-efficiency MAE: `{verify_hit_projection['first5_efficiency_mae']}`",
         "",
         "## Starter-Led Verification Reads",
         "",

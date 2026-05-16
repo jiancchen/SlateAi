@@ -23,7 +23,7 @@ Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards wit
 - `daily-games-external.md`
   Known-good source registry for daily ingest.
 - `scripts/mlb_warehouse.py`
-  Local SQLite warehouse and ingest/grading CLI for MLB game outcomes, rolling form, and home-run backtests.
+  Local SQLite warehouse and ingest/grading CLI for MLB game outcomes, rolling form, bullpen workload, likely relievers, and home-run backtests.
 - `scripts/export-home-run-predictions.mjs`
   Statcast-driven HR prediction exporter for a stored day file.
 - `scripts/export-mlb-side-predictions.mjs`
@@ -79,8 +79,11 @@ npm run build
 
 ```bash
 npm run data:init
+npm run data:prep:mlb-day -- --date 2026-05-16 --lookback-days 3
 npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:derive:mlb -- --through-date 2026-05-15
+npm run data:list:bullpen -- --date 2026-05-16
+npm run data:list:relievers -- --date 2026-05-16
 npm run data:export:hr -- --date 2026-05-15
 npm run data:ingest:mlb-day -- --date 2026-05-15
 npm run data:ingest:statcast-hr -- --date 2026-05-15 --season 2026
@@ -95,3 +98,14 @@ npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 202
 ```
 
 This keeps prediction generation, official MLB results, first-5/full-game labels, rolling form, Statcast season context, and both home-run and side-pick backtests in a local store instead of pushing everything through the app or the model layer each day.
+
+## Daily MLB Prep
+
+For a live MLB prediction day, the warehouse now has a concrete preflight:
+
+```bash
+npm run data:prep:mlb-day -- --date YYYY-MM-DD --lookback-days 3
+npm run data:list:relievers -- --date YYYY-MM-DD
+```
+
+That pulls the target day plus the trailing workload window, refreshes rolling form, stores bullpen last-3-day usage, and estimates the likely first two relievers for each scheduled team.

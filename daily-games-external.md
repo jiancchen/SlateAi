@@ -17,6 +17,9 @@ The rule:
 - Structured schedule pull:
   [https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-10&hydrate=probablePitcher,team](https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-10&hydrate=probablePitcher,team)
   This was the cleanest structured source for matchup times, teams, and probable pitchers.
+- Official game feed pattern:
+  `https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live`
+  Use this for the trailing 3-day bullpen workload pull, all pitcher appearances, inning-by-inning first-five context, and likely first-reliever estimates.
 - Pitcher season line pattern:
   `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
   Use after the schedule pull when you need handedness, record, ERA, and strikeouts for the listed probable starters.
@@ -126,9 +129,19 @@ https://www.espn.com/nba/odds
 For each new slate day, gather data in this order:
 1. Schedule and start times
 2. Probable pitchers or expected starters
-3. Odds snapshot
-4. Context notes like injuries, travel, or lineup changes
-5. Final results after the day closes
+3. Trailing 3-day `feed/live` window for bullpen workload and likely bridge relievers
+4. Odds snapshot
+5. Context notes like injuries, travel, or lineup changes
+6. Final results after the day closes
+
+### Daily MLB Prediction Prep
+
+For an MLB prediction day, the minimum reliable pull is now:
+1. `schedule + probable pitchers` for the target date from the MLB schedule API
+2. `feed/live` for the previous 3 days plus the target date so bullpen usage and likely first 2 relievers can be derived
+3. team offense / contact-quality context from TeamRankings + Baseball Savant
+4. bullpen quality from Covers
+5. current odds from ScoresAndOdds or Covers
 
 ## Daily Log Template
 
