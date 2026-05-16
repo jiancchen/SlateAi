@@ -873,5 +873,175 @@ export const structuredInputOverrides = {
         modifier('Phoenix veteran closers trim a little of the chaos', -2)
       ]
     }
+  },
+  'aces-dream-2026-05-17': {
+    sourceLabel: 'WNBA official team and player stats + Covers moneyline snapshot',
+    signals: [
+      signal('Team scoring profile', 0.22, [
+        { label: '92.5 PPG with a +7.5 point differential', score: 82 },
+        { label: '84.0 PPG with a 2-0 start and +3 differential', score: 62 }
+      ]),
+      signal('Top-end star control', 0.24, [
+        { label: "A'ja Wilson 26.3 PPG with Jackie Young and Chelsea Gray behind her", score: 84 },
+        { label: 'Allisha Gray 25.0 PPG with Canada, Howard, and Reese keeping Atlanta live', score: 74 }
+      ]),
+      signal('Glass and physicality', 0.16, [
+        { label: '35.0 rebounds per game and cleaner shotmaking', score: 48 },
+        { label: '45.0 rebounds per game with Angel Reese at 15.0 boards', score: 72 }
+      ]),
+      signal('Late-game trust', 0.16, [
+        { label: 'Veteran Aces late-clock answers still grade cleaner', score: 76 },
+        { label: 'Dream are live, but still newer in this exact closing tier', score: 54 }
+      ]),
+      signal('Market and venue', 0.12, [
+        { label: 'Road side sitting near even money', score: 48 },
+        { label: 'Home side slight favorite around -120', score: 52 }
+      ])
+    ],
+    volatility: {
+      base: 69,
+      modifiers: [
+        modifier('Near-pickem board keeps both scripts alive', 8),
+        modifier('Atlanta rebounding edge can bend the game late', 5),
+        modifier("A'ja's top-end control trims some of the chaos", -2)
+      ]
+    }
+  },
+  'storm-fever-2026-05-17': {
+    sourceLabel: 'WNBA official team and player stats + Covers moneyline snapshot',
+    signals: [
+      signal('Offensive ceiling', 0.24, [
+        { label: '80.7 PPG with a much thinner half-court tree', score: 32 },
+        { label: '97.7 PPG and the cleanest scoring profile on the board', score: 88 }
+      ]),
+      signal('Lead creators', 0.22, [
+        { label: 'Malonga leads at 16.0 PPG, but the shot-creation tree is still forming', score: 36 },
+        { label: 'Kelsey Mitchell 25.7 and Caitlin Clark 25.3 with 8.0 APG', score: 90 }
+      ]),
+      signal('Ball movement and control', 0.16, [
+        { label: '16.0 assists per game with less reliable pressure release', score: 40 },
+        { label: '22.3 assists per game with more organized flow', score: 78 }
+      ]),
+      signal('Frontcourt support', 0.14, [
+        { label: 'Storm size keeps them from being empty', score: 50 },
+        { label: 'Aliyah Boston plus Monique Billings keep the favorite from being guard-only', score: 64 }
+      ]),
+      signal('Market and venue', 0.12, [
+        { label: 'Road dog north of +350', score: 28 },
+        { label: 'Home favorite around -556', score: 72 }
+      ])
+    ],
+    volatility: {
+      base: 59,
+      modifiers: [
+        modifier('Big favorite script lowers outright upset frequency', -6),
+        modifier('Early-season sample is still thin enough to keep some variance alive', 4),
+        modifier('Indiana offense has the cleanest current creation tree', -3)
+      ]
+    }
+  },
+  'sky-lynx-2026-05-17': {
+    sourceLabel: 'WNBA official team and player stats + Covers moneyline snapshot',
+    signals: [
+      signal('Current team shape', 0.22, [
+        { label: '83.3 PPG with a +4.3 point differential', score: 54 },
+        { label: '89.3 PPG with a +2.3 differential and stronger shot quality', score: 66 }
+      ]),
+      signal('Lead-guard orchestration', 0.22, [
+        { label: 'Skylar Diggins 5.7 APG behind Rickea Jackson scoring pressure', score: 48 },
+        { label: 'Olivia Miles 16.3 PPG and 7.0 APG with Courtney Williams support', score: 74 }
+      ]),
+      signal('Interior presence', 0.16, [
+        { label: 'Kamilla Cardoso 12.3 PPG and 9.7 RPG keep Chicago live inside', score: 66 },
+        { label: 'Natasha Howard 15.3 PPG and 7.0 RPG keep Minnesota balanced', score: 58 }
+      ]),
+      signal('Wing scoring dependability', 0.16, [
+        { label: 'Rickea is the sharpest single scorer in this matchup at 22.0 PPG', score: 64 },
+        { label: 'Minnesota has more scoring depth across four starters in double figures range', score: 70 }
+      ]),
+      signal('Market and venue', 0.12, [
+        { label: 'Road dog around +166', score: 42 },
+        { label: 'Home favorite around -208', score: 58 }
+      ])
+    ],
+    volatility: {
+      base: 66,
+      modifiers: [
+        modifier('Chicago interior edge keeps the dog route alive', 5),
+        modifier('Minnesota has the cleaner lead-guard structure at home', -2),
+        modifier('Short-to-medium number keeps fourth-quarter variance in play', 4)
+      ]
+    }
+  },
+  'tempo-sparks-2026-05-17': {
+    sourceLabel: 'WNBA official team and player stats + Covers moneyline snapshot',
+    signals: [
+      signal('Current team profile', 0.22, [
+        { label: '82.0 PPG with a positive point differential despite the 1-2 record', score: 66 },
+        { label: '85.0 PPG but a -10.7 point differential through three games', score: 46 }
+      ]),
+      signal('Top-end scoring', 0.22, [
+        { label: 'Mabrey 20.0 and Sykes 19.7 keep Toronto live every quarter', score: 60 },
+        { label: 'Kelsey Plum 26.3 plus Nneka and Hamby still own the cleaner star ceiling', score: 80 }
+      ]),
+      signal('Ball security and defensive pressure', 0.18, [
+        { label: '11.3 steals per game and less turnover leakage', score: 72 },
+        { label: '18.0 turnovers per game and a looser defensive script', score: 34 }
+      ]),
+      signal('Late-game trust', 0.14, [
+        { label: 'Expansion roster still proving the close', score: 42 },
+        { label: 'Home side still gets the veteran closing vote', score: 62 }
+      ]),
+      signal('Market and venue', 0.12, [
+        { label: 'Road dog around +266', score: 38 },
+        { label: 'Home favorite around -357', score: 62 }
+      ])
+    ],
+    volatility: {
+      base: 72,
+      modifiers: [
+        modifier('Toronto profile is better than the record, which keeps the dog alive', 7),
+        modifier('Sparks have the cleaner single-scorer ceiling through Plum', -2),
+        modifier('Expansion-game late scripts are still noisy', 5)
+      ]
+    }
+  },
+  'cavaliers-pistons-g7': {
+    sourceLabel: 'Moneyline + official Games 1-6 playoff results',
+    signals: [
+      signal('Series scoring profile', 0.18, [
+        { label: '106.2 points per game through six games', score: 44 },
+        { label: '109.7 points per game through six games', score: 56 }
+      ]),
+      signal('Possession organizer', 0.18, [
+        { label: 'Mitchell and Harden still own the fastest bailout scoring path', score: 58 },
+        { label: 'Cade Cunningham has been the steadier game-shape organizer', score: 66 }
+      ]),
+      signal('Current momentum', 0.22, [
+        { label: 'Cleveland got run out 115-94 in Game 6 and now has to answer on the road', score: 28 },
+        { label: 'Detroit forced Game 7 by taking back the physical script in Game 6', score: 72 }
+      ]),
+      signal('Support-cast dependability', 0.14, [
+        { label: 'Cleveland support still swings wider game to game', score: 46 },
+        { label: 'Detroit support has landed more consistent two-way possessions', score: 60 }
+      ]),
+      signal('Market and venue', 0.12, [
+        { label: 'Road dog around +150', score: 42 },
+        { label: 'Home favorite around -180 in a true Game 7', score: 58 }
+      ]),
+      signal('Late-shotmaking ceiling', 0.16, [
+        { label: 'Mitchell-Harden can still steal the last five minutes if the game compresses', score: 64 },
+        { label: 'Detroit still needs to finish the control work with enough shot making', score: 56 }
+      ])
+    ],
+    volatility: {
+      base: 78,
+      modifiers: [
+        modifier('Game 7 leverage alone makes this the noisiest board on the slate', 10),
+        modifier('Detroit just reset the series with a road blowout', 4),
+        modifier('Cleveland still has enough star scoring to flip a close finish', 6),
+        modifier('Home floor gives Detroit the cleanest control path', -2)
+      ]
+    }
   }
 }

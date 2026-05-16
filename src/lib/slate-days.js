@@ -54,6 +54,13 @@ import {
   slateMeta as dayEightSlateMeta,
   sources as dayEightSources
 } from './day-2026-05-16.js'
+import {
+  filters as dayNineFilters,
+  games as dayNineGames,
+  oddsMeta as dayNineOddsMeta,
+  slateMeta as dayNineSlateMeta,
+  sources as dayNineSources
+} from './day-2026-05-17.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -332,5 +339,45 @@ const may16Slate = createSlateDay({
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate]
-export const defaultSlateDayId = slateDays.at(-1)?.id ?? ''
+const may17Slate = createSlateDay({
+  id: dayNineSlateMeta.isoDate,
+  label: dayNineSlateMeta.date,
+  status: 'ready',
+  slateMeta: dayNineSlateMeta,
+  games: dayNineGames,
+  filters: dayNineFilters,
+  oddsMeta: dayNineOddsMeta,
+  sources: dayNineSources,
+  intakeChecklist: [
+    'Refresh the WNBA moneyline board once more before first tip if you want the latest same-day market snapshot.',
+    'Backfill the actual Game 7 result and key swing plays so the volatility tag can be graded against the final script.',
+    'Add the Sunday MLB board separately if you want May 17 to become a full all-sports slate instead of this focused WNBA plus NBA pass.'
+  ],
+  intakePrompt:
+    'May 17 is now the live cross-sport board for the four WNBA games and the one NBA Game 7. It intentionally skips MLB until that sport gets its own same-date refresh.',
+  feedNotes: [
+    'This is the first daybook entry built from official WNBA team and player stat dashboards instead of only lineup-adjacent roster blurbs.',
+    'The WNBA market layer is moneyline-first on the early pass because the accessible board exposed the cleanest same-day prices there.',
+    'The NBA side is a one-game volatility board by design, with Detroit carrying the cleaner path but the entire card still flagged as high-variance because it is a Game 7.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['NBA', 'WNBA']
+  }
+})
+
+export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate]
+
+const currentLocalIsoDate = () => {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = `${now.getMonth() + 1}`.padStart(2, '0')
+  const day = `${now.getDate()}`.padStart(2, '0')
+  return `${year}-${month}-${day}`
+}
+
+const latestActiveOrPastSlate = [...slateDays]
+  .filter((day) => day.id <= currentLocalIsoDate())
+  .at(-1)
+
+export const defaultSlateDayId = latestActiveOrPastSlate?.id ?? slateDays.at(-1)?.id ?? ''
