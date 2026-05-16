@@ -6,7 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "data:init": "python3 scripts/mlb_warehouse.py init-db",
+    "data:ingest:mlb-day": "python3 scripts/mlb_warehouse.py ingest-mlb-day",
+    "data:ingest:statcast-hr": "python3 scripts/mlb_warehouse.py ingest-statcast-hr",
+    "data:import:hr": "python3 scripts/mlb_warehouse.py import-predictions",
+    "data:grade:hr": "python3 scripts/mlb_warehouse.py grade-home-run-picks",
+    "data:list:hr": "python3 scripts/mlb_warehouse.py list-home-runs",
+    "data:export:hr": "node scripts/export-home-run-predictions.mjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
