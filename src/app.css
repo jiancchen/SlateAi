@@ -150,9 +150,9 @@ a {
 }
 
 .desk-topbar {
-  padding: 12px 14px;
+  padding: 10px 12px;
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .eyebrow,
@@ -236,7 +236,7 @@ h3 {
 .date-control-row {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
 }
 
@@ -309,25 +309,32 @@ h3 {
 }
 
 .date-chip {
-  padding: 9px 11px;
+  padding: 8px 11px;
   display: grid;
-  gap: 5px;
+  gap: 4px;
   text-align: left;
 }
 
 .date-chip strong {
   color: var(--heading);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 .schedule-chip {
-  padding: 8px 10px;
+  padding: 7px 10px;
   border-radius: 10px;
   border: 1px solid var(--line);
   background: var(--panel-soft);
   display: grid;
-  gap: 4px;
+  gap: 3px;
   text-align: left;
+}
+
+.schedule-chip-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
 }
 
 .schedule-chip span {
@@ -337,6 +344,27 @@ h3 {
 .schedule-chip strong {
   color: var(--heading);
   font-size: 0.76rem;
+}
+
+.schedule-chip.active {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.schedule-chip.sport-mlb {
+  border-color: rgba(82, 214, 179, 0.16);
+}
+
+.schedule-chip.sport-nba {
+  border-color: rgba(220, 136, 87, 0.18);
+}
+
+.schedule-chip.sport-wnba {
+  border-color: rgba(232, 173, 86, 0.2);
+}
+
+.schedule-chip.sport-ufc {
+  border-color: rgba(212, 103, 103, 0.2);
 }
 
 .date-chip.active,
@@ -351,6 +379,12 @@ h3 {
 .row-expand-button.active {
   background: linear-gradient(135deg, rgba(82, 214, 179, 0.14), rgba(255, 255, 255, 0.06));
   border-color: var(--line-strong);
+}
+
+.date-chip.active {
+  background: linear-gradient(135deg, rgba(82, 214, 179, 0.24), rgba(255, 255, 255, 0.08));
+  border-color: rgba(159, 240, 210, 0.42);
+  box-shadow: 0 0 0 1px rgba(159, 240, 210, 0.18) inset;
 }
 
 .nav-step-button:hover,
@@ -492,7 +526,7 @@ h3 {
 .market-table-head,
 .market-row-main {
   display: grid;
-  grid-template-columns: minmax(168px, 1.02fr) minmax(216px, 1.2fr) minmax(182px, 1fr) 72px minmax(180px, 0.92fr) minmax(198px, 1fr);
+  grid-template-columns: minmax(320px, 1.6fr) minmax(182px, 1fr) 72px minmax(180px, 0.92fr) minmax(198px, 1fr);
   gap: 10px;
 }
 
@@ -538,6 +572,36 @@ h3 {
   align-items: center;
 }
 
+.market-title-line,
+.team-line-label,
+.game-highlight-row,
+.team-logo-pair {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.market-title-line {
+  gap: 8px;
+}
+
+.team-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.team-logo--compact {
+  width: 14px;
+  height: 14px;
+}
+
+.team-logo--inline {
+  width: 16px;
+  height: 16px;
+}
+
 .league-badge,
 .time-pill {
   display: inline-flex;
@@ -577,7 +641,6 @@ h3 {
   font-size: 0.94rem;
 }
 
-.market-matchup-compact,
 .market-odds-compact,
 .market-actions,
 .market-row-buttons {
@@ -587,6 +650,94 @@ h3 {
 .market-side-line {
   display: grid;
   gap: 2px;
+}
+
+.pitcher-strip {
+  margin-top: 6px;
+  display: grid;
+  gap: 6px;
+}
+
+.pitcher-card {
+  display: grid;
+  gap: 3px;
+  padding: 7px 8px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--team-accent) 28%, rgba(255, 255, 255, 0.08));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--team-accent) 18%, rgba(255, 255, 255, 0.02)), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.02);
+}
+
+.pitcher-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.pitcher-card strong,
+.pitcher-name {
+  color: var(--heading);
+}
+
+.pitcher-name {
+  font-size: 0.78rem;
+  line-height: 1.05;
+}
+
+.pitcher-card small {
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+.pitcher-hover-metrics {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 140ms ease, opacity 140ms ease;
+}
+
+.pitcher-card:hover .pitcher-hover-metrics,
+.pitcher-card:focus-within .pitcher-hover-metrics {
+  max-height: 24px;
+  opacity: 1;
+}
+
+.game-highlight-row {
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.game-highlight-chip {
+  padding: 3px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.game-highlight-chip.accent {
+  border-color: rgba(82, 214, 179, 0.2);
+  color: var(--accent);
+}
+
+.game-highlight-chip.warning {
+  border-color: rgba(199, 155, 88, 0.22);
+  color: var(--warning);
+}
+
+.game-highlight-chip.danger {
+  border-color: rgba(204, 117, 109, 0.24);
+  color: var(--danger);
+}
+
+.game-highlight-chip.neutral {
+  border-color: rgba(208, 212, 216, 0.18);
+  color: var(--accent-blue);
 }
 
 .market-side-line small,

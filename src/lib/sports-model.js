@@ -649,7 +649,7 @@ const buildMlbBullpenChainSignal = (game, participants) => {
       .slice(0, 2)
       .map((reliever) => {
         const fatigueTag = reliever.backToBack ? ' B2B' : reliever.workedYesterday ? ' worked yesterday' : ''
-        return `${reliever.name} ${Number(reliever.firstRelieverLikelihood).toFixed(0)}% / ${Number(reliever.availabilityScore).toFixed(0)}${fatigueTag}`
+        return `${reliever.name} first up ${Number(reliever.firstRelieverLikelihood).toFixed(0)}% | availability ${Number(reliever.availabilityScore).toFixed(0)}/100${fatigueTag}`
       })
       .join(' | ')
 

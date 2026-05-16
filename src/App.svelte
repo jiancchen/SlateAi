@@ -33,6 +33,73 @@
       copy: 'Higher-variance dogs and fragile-favorite fade spots.'
     }
   ]
+  const mlbLogoBase = 'https://raw.githubusercontent.com/MLBAMGames/mlb_teams_logo_svg/main/light'
+  const mlbTeamLogoCode = {
+    'D-backs': 'ari',
+    Diamondbacks: 'ari',
+    Braves: 'atl',
+    Orioles: 'bal',
+    'Red Sox': 'bos',
+    Cubs: 'chc',
+    Reds: 'cin',
+    Guardians: 'cle',
+    Rockies: 'col',
+    'White Sox': 'cws',
+    Tigers: 'det',
+    Astros: 'hou',
+    Royals: 'kc',
+    Angels: 'laa',
+    Dodgers: 'lad',
+    Marlins: 'mia',
+    Brewers: 'mil',
+    Twins: 'min',
+    Mets: 'nym',
+    Yankees: 'nyy',
+    Athletics: 'oak',
+    Phillies: 'phi',
+    Pirates: 'pit',
+    Padres: 'sd',
+    Mariners: 'sea',
+    Giants: 'sf',
+    Cardinals: 'stl',
+    Rays: 'tb',
+    Rangers: 'tex',
+    'Blue Jays': 'tor',
+    Nationals: 'wsh'
+  }
+  const mlbTeamAccent = {
+    'D-backs': '#a71930',
+    Diamondbacks: '#a71930',
+    Braves: '#ce1141',
+    Orioles: '#df4601',
+    'Red Sox': '#bd3039',
+    Cubs: '#0e3386',
+    Reds: '#c6011f',
+    Guardians: '#e31937',
+    Rockies: '#33006f',
+    'White Sox': '#27251f',
+    Tigers: '#0c2c56',
+    Astros: '#eb6e1f',
+    Royals: '#004687',
+    Angels: '#ba0021',
+    Dodgers: '#005a9c',
+    Marlins: '#00a3e0',
+    Brewers: '#ffc52f',
+    Twins: '#002b5c',
+    Mets: '#002d72',
+    Yankees: '#0c2340',
+    Athletics: '#003831',
+    Phillies: '#e81828',
+    Pirates: '#fdb827',
+    Padres: '#2f241d',
+    Mariners: '#005c5c',
+    Giants: '#fd5a1e',
+    Cardinals: '#c41e3a',
+    Rays: '#092c5c',
+    Rangers: '#003278',
+    'Blue Jays': '#134a8e',
+    Nationals: '#ab0003'
+  }
 
   let activeDayId = defaultSlateDayId
   let activeFilter = 'All'
@@ -94,6 +161,77 @@
     const numericValue = Number(value)
     if (!Number.isFinite(numericValue)) return 'N/A'
     return `${numericValue >= 0 ? '+' : ''}${numericValue.toFixed(digits)}`
+  }
+
+  const getTeamLogoUrl = (league, teamName) => {
+    if (league !== 'MLB') return ''
+    const code = mlbTeamLogoCode[teamName]
+    return code ? `${mlbLogoBase}/${code}_l.svg` : ''
+  }
+
+  const getTeamAccent = (league, teamName) => {
+    if (league !== 'MLB') return '#4fd2a6'
+    return mlbTeamAccent[teamName] || '#4fd2a6'
+  }
+
+  const buildPitcherSummary = (pitcher = {}) => {
+    const pitchHand = pitcher.pitchHand ? `${pitcher.pitchHand}HP` : '?HP'
+    const record = `${pitcher.wins ?? 0}-${pitcher.losses ?? 0}`
+    const era = pitcher.era ? `${pitcher.era} ERA` : 'ERA n/a'
+    const whip = pitcher.whip ? `${pitcher.whip} WHIP` : 'WHIP n/a'
+    const extra = []
+    if (pitcher.strikeOuts !== undefined) extra.push(`${pitcher.strikeOuts} SO`)
+    if (pitcher.inningsPitched) extra.push(`${pitcher.inningsPitched} IP`)
+    return {
+      primary: `${pitchHand} | ${record} | ${era} | ${whip}`,
+      hover: extra.join(' | ')
+    }
+  }
+
+  const buildGameHighlights = (game) => {
+    const chips = []
+
+    if (game.league === 'MLB' && game.analysis?.mlbProjection) {
+      const projection = game.analysis.mlbProjection
+      const selectedScript =
+        projection.teamScripts?.find((script) => script.teamName === game.analysis?.participant?.name) ??
+        projection.teamScripts?.[0]
+      const carryHitter = selectedScript?.overperformHitters?.[0]?.name
+      const bothLineupsPosted =
+        game.lineupBoard?.status?.away === 'posted' && game.lineupBoard?.status?.home === 'posted'
+
+      if (projection.first5EdgeTeam && projection.first5EdgeTeam !== projection.edgeTeam) {
+        chips.push({ tone: 'warning', label: `F5 ${projection.first5EdgeTeam}` })
+      }
+
+      if (projection.bridgeEdgeTeam && projection.bridgeEdgeTeam !== projection.edgeTeam) {
+        chips.push({ tone: 'danger', label: `Late ${projection.bridgeEdgeTeam}` })
+      }
+
+      if (carryHitter) {
+        chips.push({ tone: 'accent', label: `Carry ${carryHitter}` })
+      }
+
+      if (projection.totals?.fullGame?.lean && projection.totals.fullGame.lean !== 'Pass') {
+        chips.push({
+          tone: projection.totals.fullGame.lean === 'Over' ? 'warning' : 'neutral',
+          label: projection.totals.fullGame.label
+        })
+      }
+
+      if (game.analysis?.indicators?.reliefPitchingRisk >= 68) {
+        chips.push({ tone: 'danger', label: 'Late risk' })
+      }
+
+      if (bothLineupsPosted) {
+        chips.push({ tone: 'accent', label: 'Lineups in' })
+      }
+    } else {
+      if (game.analysis?.confidence >= 72) chips.push({ tone: 'accent', label: 'High confidence' })
+      if (game.analysis?.volatility >= 68) chips.push({ tone: 'danger', label: 'High variance' })
+    }
+
+    return chips.slice(0, 4)
   }
 
   const clampValue = (value, min, max) => Math.min(max, Math.max(min, value))
@@ -337,6 +475,14 @@
       : parlayReady
         ? `${parlay.legCount}-leg parlay ready.`
         : `Add ${PARLAY_MIN_LEGS - parlay.legCount} more leg to turn this into a parlay.`
+  $: orderedSlateDays = activeDay
+    ? [
+        activeDay,
+        ...slateDays
+          .filter((day) => day.id !== activeDay.id)
+          .sort((left, right) => right.id.localeCompare(left.id))
+      ]
+    : [...slateDays].sort((left, right) => right.id.localeCompare(left.id))
 
   const hasPreviousDay = () => dayIndex > 0
   const hasNextDay = () => dayIndex >= 0 && dayIndex < slateDays.length - 1
@@ -491,19 +637,13 @@
 
 <div class="terminal-shell">
   <header class="desk-topbar">
-    <div class="date-header">
-      <p class="eyebrow">Date Navigator</p>
-      <h1>{slateMeta.date}</h1>
-      <p class="terminal-summary">{games.length} games | {filteredMoneylineGames.length} moneylines | {activeDay.status}</p>
-    </div>
-
     <div class="date-control-row">
       <button type="button" class="nav-step-button" disabled={!hasPreviousDay()} on:click={() => stepDay(-1)}>
         Previous
       </button>
 
       <div class="date-chip-row">
-        {#each slateDays as day}
+        {#each orderedSlateDays as day}
           <button
             type="button"
             class="date-chip"
@@ -511,7 +651,7 @@
             on:click={() => selectDay(day.id)}
           >
             <strong>{day.slateMeta.date}</strong>
-            <small>{day.summary.totalGames} games</small>
+            <small>{day.summary.totalGames} games{activeDayId === day.id ? ` | ${day.status}` : ''}</small>
           </button>
         {/each}
       </div>
@@ -523,8 +663,24 @@
 
     <div class="schedule-tape" aria-label="Rolling schedule">
       {#each games as game}
-        <button type="button" class="schedule-chip" on:click={() => openGame(game.id)}>
-          <span>{game.league}</span>
+        <button
+          type="button"
+          class={`schedule-chip sport-${game.league.toLowerCase()}`}
+          class:active={expandedGameId === game.id}
+          on:click={() => openGame(game.id)}
+        >
+          <div class="schedule-chip-topline">
+            <span>{game.league}</span>
+            {#if game.league === 'MLB'}
+              <div class="team-logo-pair team-logo-pair--compact" aria-hidden="true">
+                {#each game.matchup as side}
+                  {#if getTeamLogoUrl(game.league, side.name)}
+                    <img class="team-logo team-logo--compact" src={getTeamLogoUrl(game.league, side.name)} alt="" />
+                  {/if}
+                {/each}
+              </div>
+            {/if}
+          </div>
           <strong>{game.start}</strong>
           <small>{game.title}</small>
         </button>
@@ -579,7 +735,6 @@
             <div class="market-table">
               <div class="market-table-head">
                 <span>Market</span>
-                <span>Matchup</span>
                 <span>Model</span>
                 <span>Conf</span>
                 <span>Odds</span>
@@ -601,23 +756,66 @@
                         <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
                         <span class="time-pill">{game.start}</span>
                       </div>
-                      <strong>{game.title}</strong>
+                      <div class="market-title-line">
+                        {#if game.league === 'MLB'}
+                          <div class="team-logo-pair" aria-hidden="true">
+                            {#each game.matchup as side}
+                              {#if getTeamLogoUrl(game.league, side.name)}
+                                <img class="team-logo" src={getTeamLogoUrl(game.league, side.name)} alt="" />
+                              {/if}
+                            {/each}
+                          </div>
+                        {/if}
+                        <strong>{game.title}</strong>
+                      </div>
                       <small>{game.stage}</small>
-                    </div>
 
-                    <div class="market-cell market-matchup-compact">
-                      {#each game.matchup as side}
-                        <div class="market-side-line">
-                          <strong>{side.name}</strong>
-                          <small>{side.detail}</small>
+                      {#if game.league === 'MLB' && game.starterContext}
+                        <div class="pitcher-strip">
+                          {#each [
+                            {
+                              teamName: game.matchup[0].name,
+                              pitcher: game.starterContext.away
+                            },
+                            {
+                              teamName: game.matchup[1].name,
+                              pitcher: game.starterContext.home
+                            }
+                          ] as pitcherCard}
+                            <article
+                              class="pitcher-card"
+                              style={`--team-accent:${getTeamAccent(game.league, pitcherCard.teamName)}`}
+                            >
+                              <div class="pitcher-card-head">
+                                <div class="team-line-label">
+                                  {#if getTeamLogoUrl(game.league, pitcherCard.teamName)}
+                                    <img
+                                      class="team-logo team-logo--inline"
+                                      src={getTeamLogoUrl(game.league, pitcherCard.teamName)}
+                                      alt=""
+                                    />
+                                  {/if}
+                                  <strong>{pitcherCard.teamName}</strong>
+                                </div>
+                              </div>
+                              <span class="pitcher-name">{pitcherCard.pitcher.fullName}</span>
+                              <small>{buildPitcherSummary(pitcherCard.pitcher).primary}</small>
+                              <small class="pitcher-hover-metrics">{buildPitcherSummary(pitcherCard.pitcher).hover}</small>
+                            </article>
+                          {/each}
                         </div>
-                      {/each}
+                      {/if}
                     </div>
 
                     <div class="market-cell market-signal">
                       <strong>{game.analysis.participant.name}</strong>
                       <small>{game.analysis.modelEdgeLabel}</small>
                       <p>{game.analysis.lean}</p>
+                      <div class="game-highlight-row">
+                        {#each buildGameHighlights(game) as chip}
+                          <span class={`game-highlight-chip ${chip.tone}`}>{chip.label}</span>
+                        {/each}
+                      </div>
                     </div>
 
                     <div class="market-cell market-confidence">
@@ -1073,10 +1271,10 @@
                                       <div class="reliever-row">
                                         <div>
                                           <strong>{reliever.name}</strong>
-                                          <span>{reliever.role} | {Math.round(reliever.firstRelieverLikelihood)}% first-up</span>
+                                          <span>{reliever.role} | First up {Math.round(reliever.firstRelieverLikelihood)}%</span>
                                         </div>
                                         <div class="reliever-meta">
-                                          <strong>{Math.round(reliever.availabilityScore)} avail</strong>
+                                          <strong>Availability {Math.round(reliever.availabilityScore)}/100</strong>
                                           <span>{relieverStatusLabel(reliever)}</span>
                                         </div>
                                       </div>
@@ -1098,10 +1296,10 @@
                                       <div class="reliever-row">
                                         <div>
                                           <strong>{reliever.name}</strong>
-                                          <span>{reliever.role} | {Math.round(reliever.firstRelieverLikelihood)}% first-up</span>
+                                          <span>{reliever.role} | First up {Math.round(reliever.firstRelieverLikelihood)}%</span>
                                         </div>
                                         <div class="reliever-meta">
-                                          <strong>{Math.round(reliever.availabilityScore)} avail</strong>
+                                          <strong>Availability {Math.round(reliever.availabilityScore)}/100</strong>
                                           <span>{relieverStatusLabel(reliever)}</span>
                                         </div>
                                       </div>
