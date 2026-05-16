@@ -20,7 +20,10 @@ The rule:
   Local shortcut: `npm run data:list:probables -- --date YYYY-MM-DD`
 - Official game feed pattern:
   `https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live`
-  Use this for the trailing 3-day bullpen workload pull, all pitcher appearances, inning-by-inning first-five context, and likely first-reliever estimates.
+  Use this for the trailing 3-day bullpen workload pull, all pitcher appearances, inning-by-inning first-five context, likely first-reliever estimates, and confirmed batting orders once the lineup posts.
+- Official starting lineups page:
+  [https://www.mlb.com/starting-lineups](https://www.mlb.com/starting-lineups)
+  Use this as the browser-first lineup confirmation page when you want a fast visual check before or alongside the structured `feed/live` pull.
 - Pitcher season line pattern:
   `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
   Use after the schedule pull when you need handedness, record, ERA, and strikeouts for the listed probable starters.
@@ -139,10 +142,11 @@ For each new slate day, gather data in this order:
 
 For an MLB prediction day, the minimum reliable pull is now:
 1. `schedule + probable pitchers` for the target date from the MLB schedule API
-2. `feed/live` for the previous 3 days plus the target date so bullpen usage and likely first 2 relievers can be derived
+2. `feed/live` for the previous 3 days plus the target date so bullpen usage, likely first 2 relievers, and any posted batting orders can be derived
 3. team offense / contact-quality context from TeamRankings + Baseball Savant
 4. bullpen quality from Covers
 5. current odds from ScoresAndOdds or Covers
+6. the official MLB starting lineups page as a visual fallback or quick confirmation source when the structured lineup pull is partial
 
 ## Daily Log Template
 
