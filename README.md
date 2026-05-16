@@ -48,6 +48,7 @@ Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards wit
 - [Covers bullpen ERA](https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026)
 - [Statcast park factors](https://baseballsavant.mlb.com/leaderboard/statcast-park-factors)
 - [Baseball Savant league hitting](https://baseballsavant.mlb.com/league)
+- [MLB starting lineups](https://www.mlb.com/starting-lineups)
 - [ScoresAndOdds MLB board](https://www.scoresandodds.com/mlb)
 
 ### NBA
@@ -81,6 +82,7 @@ npm run build
 npm run data:init
 npm run data:prep:mlb-day -- --date 2026-05-16 --lookback-days 3
 npm run data:list:probables -- --date 2026-05-16
+npm run data:export:mlb-lineups -- --date 2026-05-16
 npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:derive:mlb -- --through-date 2026-05-15
 npm run data:list:bullpen -- --date 2026-05-16
@@ -107,7 +109,8 @@ For a live MLB prediction day, the warehouse now has a concrete preflight:
 ```bash
 npm run data:prep:mlb-day -- --date YYYY-MM-DD --lookback-days 3
 npm run data:list:probables -- --date YYYY-MM-DD
+npm run data:export:mlb-lineups -- --date YYYY-MM-DD
 npm run data:list:relievers -- --date YYYY-MM-DD
 ```
 
-That pulls the target day plus the trailing workload window, refreshes rolling form, gives us the official probable-starter board for the date, stores bullpen last-3-day usage, and estimates the likely first two relievers for each scheduled team.
+That pulls the target day plus the trailing workload window, refreshes rolling form, gives us the official probable-starter board for the date, stores bullpen last-3-day usage, estimates the likely first two relievers for each scheduled team, and can export a posted-lineup board with player recent form plus handedness-fit grades once official batting orders land.

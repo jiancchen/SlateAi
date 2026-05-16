@@ -855,6 +855,19 @@ const normalizeTeamAlias = (value = '') => {
 
 const teamNamesMatch = (left = '', right = '') => normalizeTeamAlias(left) === normalizeTeamAlias(right)
 
+const findLineupBoardForTeam = (lineupBoard = null, teamName = '') => {
+  if (!lineupBoard || !teamName) return null
+  if (teamNamesMatch(lineupBoard.away?.teamName, teamName)) return lineupBoard.away
+  if (teamNamesMatch(lineupBoard.home?.teamName, teamName)) return lineupBoard.home
+  return null
+}
+
+const formatLineupStatusLabel = (status = '') => {
+  if (status === 'posted') return 'confirmed lineup'
+  if (status === 'partial') return 'partial lineup'
+  return 'lineup pending'
+}
+
 const buildBullpenExhaustionScore = (profile = {}) => {
   const relievers = Array.isArray(profile?.topRelievers) ? profile.topRelievers.slice(0, 2) : []
 
@@ -953,25 +966,33 @@ const buildTeamHitterScript = ({
   projectedHitProfile,
   opposingStarter,
   homeRunTargets,
+  lineupTeamBoard,
   isEdgeTeam,
   isFirst5EdgeTeam,
   isLateEdgeTeam,
   hasBullpenBridgeEdge
 }) => {
-  const teamTargets = [...(homeRunTargets?.likely || []), ...(homeRunTargets?.possible || [])]
+  const lineupSummary = lineupTeamBoard?.summary || null
+  const lineupStatus = formatLineupStatusLabel(lineupTeamBoard?.status)
+  const lineupTopTargets = (lineupSummary?.overperformHitters || []).slice(0, 3)
+  const homeRunTopTargets = [...(homeRunTargets?.likely || []), ...(homeRunTargets?.possible || [])]
     .filter((target) => teamNamesMatch(target.teamName, teamName))
     .slice(0, 2)
-  const overperformHitters = teamTargets.map((target) => ({
-    name: target.playerName,
-    tag: `${target.scoreBand} | ${target.burstTag}`
-  }))
+  const overperformHitters = lineupTopTargets.length
+    ? lineupTopTargets
+    : homeRunTopTargets.map((target) => ({
+        name: target.playerName,
+        tag: `${target.scoreBand} | ${target.burstTag}`
+      }))
+  const underperformHitters = (lineupSummary?.underperformHitters || []).slice(0, 2)
 
   const underperformNote =
-    projectedHitProfile.hitEfficiencyPct <= 23.4
+    lineupSummary?.underperformNote ||
+    (projectedHitProfile.hitEfficiencyPct <= 23.4
       ? `${teamName} project for only ${projectedHitProfile.projectedHits} hits on ${projectedHitProfile.hitEfficiencyPct}% efficiency against a ${opposingStarter?.profileLabel || 'tougher starter'} lane.`
       : projectedHitProfile.first5HitEfficiencyPct <= 23.1
         ? `${teamName} may be quieter early if the ${opposingStarter?.profileLabel || 'starter lane'} holds through five.`
-        : `No obvious suppressor lane has surfaced yet, but this side still needs better sequencing than the raw hit count alone.`
+        : `No obvious suppressor lane has surfaced yet, but this side still needs better sequencing than the raw hit count alone.`)
 
   const winPath = []
 
@@ -991,6 +1012,14 @@ const buildTeamHitterScript = ({
     winPath.push(`${teamName} also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.`)
   }
 
+  if (lineupSummary?.overview) {
+    winPath.push(lineupSummary.overview)
+  }
+
+  if (lineupSummary?.topThirdScore >= 58) {
+    winPath.push(`${teamName} top third are live enough to pressure the starter before the bridge innings.`)
+  }
+
   if (overperformHitters.length) {
     const hitterList = overperformHitters.map((hitter) => hitter.name).join(' and ')
     winPath.push(
@@ -1004,9 +1033,73 @@ const buildTeamHitterScript = ({
 
   return {
     teamName,
+    lineupStatus,
     overperformHitters,
+    underperformHitters,
     underperformNote,
+    overview:
+      lineupSummary?.overview ||
+      `${teamName} still look more like a broad traffic lineup than a single-carry script until more lineup context lands.`,
+    topThirdScore: lineupSummary?.topThirdScore ?? null,
+    middleScore: lineupSummary?.middleScore ?? null,
+    depthScore: lineupSummary?.depthScore ?? null,
     winPath
+  }
+}
+
+const buildMlbLineupSimulation = ({
+  participants,
+  teamScripts,
+  projectedHitProfiles,
+  projectedRunProfiles,
+  first5EdgeIndex,
+  lateEdgeIndex,
+  hitEdgeIndex,
+  bridgeEdgeIndex
+}) => {
+  const hitterNames = (script) => (script?.overperformHitters || []).slice(0, 2).map((hitter) => hitter.name).join(', ')
+  const earlyNames = hitterNames(teamScripts[first5EdgeIndex])
+  const lateNames = hitterNames(teamScripts[lateEdgeIndex])
+  const fullNames = hitterNames(teamScripts[hitEdgeIndex])
+  const bridgeTeamName = bridgeEdgeIndex !== null ? participants[bridgeEdgeIndex]?.name : ''
+
+  return {
+    overview:
+      first5EdgeIndex === lateEdgeIndex && lateEdgeIndex === hitEdgeIndex
+        ? `${participants[hitEdgeIndex]?.name || 'One side'} carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.`
+        : `${participants[first5EdgeIndex]?.name || 'One side'} rate cleaner through the starter window, but the bridge and finish script still move later in the game.`,
+    phases: [
+      {
+        label: 'First 5',
+        edgeTeam: participants[first5EdgeIndex]?.name || '',
+        projection: projectedRunProfiles[first5EdgeIndex]
+          ? `${projectedRunProfiles[first5EdgeIndex].first5Runs} R`
+          : '',
+        note: earlyNames
+          ? `${participants[first5EdgeIndex]?.name || 'This side'} lean on ${earlyNames} to drive the early traffic lane against the listed starter.`
+          : `${participants[first5EdgeIndex]?.name || 'This side'} still own the cleaner starter-phase traffic lane.`
+      },
+      {
+        label: 'Bridge',
+        edgeTeam: participants[lateEdgeIndex]?.name || '',
+        projection: projectedRunProfiles[lateEdgeIndex]
+          ? `${projectedRunProfiles[lateEdgeIndex].lateRuns} R`
+          : '',
+        note: lateNames
+          ? `${participants[lateEdgeIndex]?.name || 'This side'} keep more late scoring paths alive, with ${lateNames} plus the ${bridgeTeamName || 'stronger'} bridge chain shaping the middle innings.`
+          : `${participants[lateEdgeIndex]?.name || 'This side'} look cleaner once the game turns over to the bridge relievers.`
+      },
+      {
+        label: 'Full game',
+        edgeTeam: participants[hitEdgeIndex]?.name || '',
+        projection: projectedHitProfiles[hitEdgeIndex]
+          ? `${projectedHitProfiles[hitEdgeIndex].projectedHits} H`
+          : '',
+        note: fullNames
+          ? `${participants[hitEdgeIndex]?.name || 'This side'} finish with the stronger aggregate traffic path, anchored by ${fullNames}.`
+          : `${participants[hitEdgeIndex]?.name || 'This side'} finish with the stronger full-game hit and conversion path.`
+      }
+    ]
   }
 }
 
@@ -1119,15 +1212,30 @@ const buildMlbLineupMatchupScore = (profile = {}) => {
 
   if (![grade, platoonCount, powerCount, contactCount].every(Number.isFinite)) return null
 
-  return clamp(
+  let score =
     50 +
       grade * 2.8 +
       (platoonCount - 6) * 1.7 +
       (powerCount - 2) * 1.2 +
-      (contactCount - 1) * 1.1,
-    18,
-    92
-  )
+      (contactCount - 1) * 1.1
+
+  if (Number.isFinite(Number(profile.heaterCount))) {
+    score += (Number(profile.heaterCount) - 2) * 1
+  }
+
+  if (Number.isFinite(Number(profile.suppressorCount))) {
+    score -= Number(profile.suppressorCount) * 0.8
+  }
+
+  if (Number.isFinite(Number(profile.topThirdScore))) {
+    score += (Number(profile.topThirdScore) - 50) * 0.12
+  }
+
+  if (Number.isFinite(Number(profile.depthScore))) {
+    score += (Number(profile.depthScore) - 50) * 0.08
+  }
+
+  return clamp(score, 18, 92)
 }
 
 const buildMlbLineupMatchupSignal = (game, participants) => {
@@ -1233,6 +1341,10 @@ const buildMlbAnalysisContext = (game, participants) => {
   const lineupProfiles = [
     game.lineupContext?.[participants[0]?.name],
     game.lineupContext?.[participants[1]?.name]
+  ]
+  const lineupBoards = [
+    findLineupBoardForTeam(game.lineupBoard, participants[0]?.name),
+    findLineupBoardForTeam(game.lineupBoard, participants[1]?.name)
   ]
   const offenseScores = offenseProfiles.map((profile, index) =>
     profile ? buildMlbOffenseScore(profile, participants[index]?.role) : null
@@ -1471,12 +1583,31 @@ const buildMlbAnalysisContext = (game, participants) => {
           projectedHitProfile: projectedHitProfiles[index],
           opposingStarter: starters[index === 0 ? 1 : 0],
           homeRunTargets: game.homeRunTargets,
+          lineupTeamBoard: lineupBoards[index]
+            ? {
+                ...lineupBoards[index],
+                status:
+                  index === 0
+                    ? game.lineupBoard?.status?.away
+                    : game.lineupBoard?.status?.home
+              }
+            : null,
           isEdgeTeam: hitEdgeIndex === index,
           isFirst5EdgeTeam: first5EdgeIndex === index,
           isLateEdgeTeam: lateEdgeIndex === index,
           hasBullpenBridgeEdge: bullpenChainEdgeIndex === index
         })
       )
+      const lineupSimulation = buildMlbLineupSimulation({
+        participants,
+        teamScripts,
+        projectedHitProfiles,
+        projectedRunProfiles,
+        first5EdgeIndex,
+        lateEdgeIndex,
+        hitEdgeIndex,
+        bridgeEdgeIndex: bullpenChainEdgeIndex
+      })
 
       mlbProjection = {
         awayProjectedHits: projectedHitProfiles[0].projectedHits,
@@ -1532,7 +1663,8 @@ const buildMlbAnalysisContext = (game, participants) => {
           derivedLateTotalLine,
           bullpenExhaustionNote
         },
-        teamScripts
+        teamScripts,
+        lineupSimulation
       }
 
       if (hitEdge <= 0.4) {

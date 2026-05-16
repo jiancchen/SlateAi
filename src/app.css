@@ -1045,6 +1045,142 @@ h3 {
   padding-top: 2px;
 }
 
+.lineup-simulation-board,
+.lineup-board {
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.simulation-phase-grid,
+.lineup-board-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.simulation-phase-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lineup-board-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.simulation-phase-card,
+.lineup-team-card,
+.lineup-row-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.simulation-phase-card,
+.lineup-team-card {
+  padding: 10px;
+}
+
+.simulation-phase-card,
+.lineup-team-card,
+.lineup-list,
+.lineup-row-card,
+.lineup-player-meta {
+  display: grid;
+  gap: 8px;
+}
+
+.simulation-phase-head,
+.lineup-team-head,
+.lineup-row-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.simulation-phase-head p,
+.simulation-phase-card p,
+.lineup-team-head p,
+.lineup-team-summary span,
+.lineup-team-overview,
+.lineup-player-meta span,
+.lineup-player-summary,
+.lineup-matchup-grade span {
+  color: var(--muted);
+}
+
+.simulation-phase-head strong,
+.lineup-team-head strong,
+.lineup-player-meta strong,
+.lineup-matchup-grade strong,
+.lineup-slot {
+  color: var(--heading);
+}
+
+.simulation-phase-head span,
+.lineup-team-head span,
+.lineup-tag-row span,
+.lineup-team-summary span {
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.simulation-phase-head span,
+.lineup-team-head span {
+  color: var(--warning);
+}
+
+.lineup-team-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lineup-team-summary span,
+.lineup-tag-row span {
+  padding: 4px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.lineup-row-card {
+  padding: 8px;
+  gap: 6px;
+}
+
+.lineup-slot {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  font: 700 0.76rem/1 var(--mono);
+}
+
+.lineup-player-meta {
+  flex: 1;
+}
+
+.lineup-matchup-grade {
+  display: grid;
+  gap: 2px;
+  justify-items: end;
+  text-align: right;
+}
+
+.lineup-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .factor-list li::marker,
 .model-input-list li::marker,
 .boxscore-notes li::marker,
@@ -1557,6 +1693,8 @@ h3 {
   .model-phase-grid,
   .totals-grid,
   .team-script-grid,
+  .simulation-phase-grid,
+  .lineup-board-grid,
   .pick-grid.compact,
   .parlay-stats-grid.compact,
   .parlay-return-grid,

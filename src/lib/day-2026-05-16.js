@@ -8,6 +8,7 @@ import {
 } from './mlb-context-2026-05-16.js'
 import { homeRunTargetsByGame } from './day-2026-05-16-home-run-data.js'
 import { bullpenChainByTeam, rawGames } from './day-2026-05-16-data.js'
+import { lineupBoardsByGameId, lineupMatchupContextByGameId } from './day-2026-05-16-lineups.js'
 
 export const slateMeta = {
   title: 'Saturday MLB Desk',
@@ -19,7 +20,7 @@ export const slateMeta = {
   notes: [
     'This is the first live board where the desk explicitly separates the starter phase, likely bridge-reliever window, and full-game hold instead of collapsing all nine innings into one read.',
     'The bullpen chain is still a probabilistic layer, not a certainty layer, but it is finally concrete enough to flag which sides look cleaner for first five than for full game.',
-    'Today’s MLB card is intentionally morning-built so the board can update again once confirmed lineups arrive and any late probable-starter changes hit the official feed.',
+    'The May 16 card now pulls posted batting orders from the official feed/live endpoint, then scores each listed hitter on recent form, handedness split, and starter-style fit.',
     'The home-run layer is a pre-lineup carry board built from Statcast xHR, recent bunching, no-doubter quality, and the opposing starter script, not just season HR totals.',
     'Official WNBA sources show no May 16 board, so the desk stays MLB-only today and will reopen WNBA on the next live date.'
   ]
@@ -54,6 +55,7 @@ export const sources = [
     url: 'https://baseballsavant.mlb.com/leaderboard/statcast-park-factors'
   },
   { label: 'Baseball Savant league hitting', url: 'https://baseballsavant.mlb.com/league' },
+  { label: 'MLB starting lineups', url: 'https://www.mlb.com/starting-lineups' },
   { label: 'Statcast home run tracker', url: 'https://baseballsavant.mlb.com/leaderboard/home-runs' },
   { label: 'ScoresAndOdds MLB board', url: 'https://www.scoresandodds.com/mlb' },
   { label: 'WNBA official scoreboard', url: 'https://stats.wnba.com/stats/scoreboardV2?GameDate=05/16/2026&LeagueID=10&DayOffset=0' }
@@ -360,6 +362,8 @@ const buildMlbGame = (raw) => {
     bullpenContext: raw.bullpenContext,
     bullpenChainContext: raw.bullpenChainContext,
     savantContext: raw.savantContext,
+    lineupContext: lineupMatchupContextByGameId[raw.id] ?? null,
+    lineupBoard: lineupBoardsByGameId[raw.id] ?? null,
     homeRunTargets: homeRunTargetsByGame[`${raw.away} @ ${raw.home}`] ?? null,
     starterContext: { away: raw.awayPitcher, home: raw.homePitcher },
     pitcherSourceNote: raw.pitcherSourceNote || '',

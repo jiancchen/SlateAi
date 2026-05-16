@@ -1,0 +1,10968 @@
+export const lineupSnapshotMeta = {
+  "date": "2026-05-16",
+  "snapshot": "2026-05-16T20:11:42.066Z",
+  "recentWindow": {
+    "start": "2026-05-09",
+    "end": "2026-05-15"
+  },
+  "gameCount": 15,
+  "playerCount": 207,
+  "sourceLabel": "Official MLB feed/live posted batting orders plus official player season, recent, and handedness split stats."
+}
+
+export const lineupBoardsByGameId = {
+  "blue-jays-tigers": {
+    "gameId": "blue-jays-tigers",
+    "title": "Blue Jays @ Tigers",
+    "snapshot": "2026-05-16T20:11:42.061Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Blue Jays",
+      "opposingStarter": {
+        "name": "Casey Mize",
+        "hand": "R",
+        "type": "Balanced"
+      },
+      "lineup": [
+        {
+          "playerId": 543807,
+          "slot": 1,
+          "name": "George Springer",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 27,
+            "hits": 19,
+            "homeRuns": 2,
+            "avg": 0.186,
+            "ops": 0.566
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.19,
+            "ops": 0.499
+          },
+          "split": {
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.162,
+            "ops": 0.51
+          },
+          "metrics": {
+            "powerScore": 29.9,
+            "contactScore": 41.8,
+            "patienceScore": 56.6,
+            "formScore": 22.6,
+            "splitScore": 45.3,
+            "varianceScore": 57.2,
+            "matchupScore": 24.3,
+            "matchupGrade": -5.22
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".186 AVG | .566 OPS | 19 H | 2 HR | 10g: .190 AVG | .499 OPS | 8 H | 0 HR | vs RHP: .162 AVG | .510 OPS | 2 HR | -5.2 matchup grade in a neutral lane",
+          "matchupNote": "-5.22 vs Casey Mize"
+        },
+        {
+          "playerId": 682818,
+          "slot": 2,
+          "name": "Yohendrick Piñango",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 15,
+            "hits": 16,
+            "homeRuns": 1,
+            "avg": 0.364,
+            "ops": 0.882
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.214,
+            "ops": 0.598
+          },
+          "split": {
+            "hits": 14,
+            "homeRuns": 1,
+            "avg": 0.368,
+            "ops": 0.888
+          },
+          "metrics": {
+            "powerScore": 51.3,
+            "contactScore": 84.1,
+            "patienceScore": 40.8,
+            "formScore": 18,
+            "splitScore": 54.8,
+            "varianceScore": 81,
+            "matchupScore": 26.3,
+            "matchupGrade": -4.84
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".364 AVG | .882 OPS | 16 H | 1 HR | 8g: .214 AVG | .598 OPS | 6 H | 0 HR | vs RHP: .368 AVG | .888 OPS | 1 HR | -4.8 matchup grade in a neutral lane",
+          "matchupNote": "-4.84 vs Casey Mize"
+        },
+        {
+          "playerId": 665489,
+          "slot": 3,
+          "name": "Vladimir Guerrero Jr.",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 46,
+            "homeRuns": 2,
+            "avg": 0.28,
+            "ops": 0.73
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.13,
+            "ops": 0.353
+          },
+          "split": {
+            "hits": 36,
+            "homeRuns": 0,
+            "avg": 0.275,
+            "ops": 0.67
+          },
+          "metrics": {
+            "powerScore": 25.1,
+            "contactScore": 71.2,
+            "patienceScore": 62.3,
+            "formScore": 18,
+            "splitScore": 30.9,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "traffic",
+          "summary": ".280 AVG | .730 OPS | 46 H | 2 HR | 12g: .130 AVG | .353 OPS | 6 H | 0 HR | vs RHP: .275 AVG | .670 OPS | 0 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Casey Mize"
+        },
+        {
+          "playerId": 672960,
+          "slot": 4,
+          "name": "Kazuma Okamoto",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 38,
+            "homeRuns": 10,
+            "avg": 0.233,
+            "ops": 0.767
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.182,
+            "ops": 0.542
+          },
+          "split": {
+            "hits": 28,
+            "homeRuns": 9,
+            "avg": 0.22,
+            "ops": 0.765
+          },
+          "metrics": {
+            "powerScore": 73.4,
+            "contactScore": 40.2,
+            "patienceScore": 60.9,
+            "formScore": 18,
+            "splitScore": 56.4,
+            "varianceScore": 92,
+            "matchupScore": 19.6,
+            "matchupGrade": -6.48
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".233 AVG | .767 OPS | 38 H | 10 HR | 12g: .182 AVG | .542 OPS | 8 H | 0 HR | vs RHP: .220 AVG | .765 OPS | 9 HR | -6.5 matchup grade in a neutral lane",
+          "matchupNote": "-6.48 vs Casey Mize"
+        },
+        {
+          "playerId": 662139,
+          "slot": 5,
+          "name": "Daulton Varsho",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 38,
+            "homeRuns": 5,
+            "avg": 0.253,
+            "ops": 0.732
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.292,
+            "ops": 0.737
+          },
+          "split": {
+            "hits": 29,
+            "homeRuns": 4,
+            "avg": 0.261,
+            "ops": 0.751
+          },
+          "metrics": {
+            "powerScore": 49.5,
+            "contactScore": 57.5,
+            "patienceScore": 51.4,
+            "formScore": 70,
+            "splitScore": 56.5,
+            "varianceScore": 41.8,
+            "matchupScore": 61.9,
+            "matchupGrade": 2.11
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".253 AVG | .732 OPS | 38 H | 5 HR | 12g: .292 AVG | .737 OPS | 14 H | 2 HR | vs RHP: .261 AVG | .751 OPS | 4 HR | +2.1 matchup grade in a neutral lane",
+          "matchupNote": "+2.11 vs Casey Mize"
+        },
+        {
+          "playerId": 664702,
+          "slot": 6,
+          "name": "Myles Straw",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 20,
+            "homeRuns": 2,
+            "avg": 0.286,
+            "ops": 0.777
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.65
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 1,
+            "avg": 0.355,
+            "ops": 0.912
+          },
+          "metrics": {
+            "powerScore": 46.8,
+            "contactScore": 67.8,
+            "patienceScore": 58.7,
+            "formScore": 18,
+            "splitScore": 82.5,
+            "varianceScore": 73.3,
+            "matchupScore": 47.9,
+            "matchupGrade": -0.36
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".286 AVG | .777 OPS | 20 H | 2 HR | 10g: .250 AVG | .650 OPS | 4 H | 0 HR | vs RHP: .355 AVG | .912 OPS | 1 HR | -0.4 matchup grade in a neutral lane",
+          "matchupNote": "-0.36 vs Casey Mize"
+        },
+        {
+          "playerId": 672820,
+          "slot": 7,
+          "name": "Lenyn Sosa",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 64,
+            "hits": 40,
+            "homeRuns": 2,
+            "avg": 0.215,
+            "ops": 0.535
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 0,
+            "avg": 0.203,
+            "ops": 0.475
+          },
+          "metrics": {
+            "powerScore": 21,
+            "contactScore": 42.4,
+            "patienceScore": 18,
+            "formScore": 18,
+            "splitScore": 29.8,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".215 AVG | .535 OPS | 40 H | 2 HR | 8g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .203 AVG | .475 OPS | 0 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Casey Mize"
+        },
+        {
+          "playerId": 676391,
+          "slot": 8,
+          "name": "Ernie Clement",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 50,
+            "homeRuns": 2,
+            "avg": 0.289,
+            "ops": 0.71
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 2,
+            "avg": 0.391,
+            "ops": 0.938
+          },
+          "split": {
+            "hits": 38,
+            "homeRuns": 1,
+            "avg": 0.299,
+            "ops": 0.717
+          },
+          "metrics": {
+            "powerScore": 32.8,
+            "contactScore": 80.6,
+            "patienceScore": 30.2,
+            "formScore": 92,
+            "splitScore": 49.3,
+            "varianceScore": 66.2,
+            "matchupScore": 88.1,
+            "matchupGrade": 7.9
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".289 AVG | .710 OPS | 50 H | 2 HR | 12g: .391 AVG | .938 OPS | 18 H | 2 HR | vs RHP: .299 AVG | .717 OPS | 1 HR | +7.9 matchup grade in a neutral lane",
+          "matchupNote": "+7.90 vs Casey Mize"
+        },
+        {
+          "playerId": 678218,
+          "slot": 9,
+          "name": "Brandon Valenzuela",
+          "position": "C",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 27,
+            "hits": 15,
+            "homeRuns": 4,
+            "avg": 0.231,
+            "ops": 0.746
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.385,
+            "ops": 1.192
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 2,
+            "avg": 0.239,
+            "ops": 0.691
+          },
+          "metrics": {
+            "powerScore": 62.1,
+            "contactScore": 37.7,
+            "patienceScore": 59.7,
+            "formScore": 92,
+            "splitScore": 29.9,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".231 AVG | .746 OPS | 15 H | 4 HR | 10g: .385 AVG | 1.192 OPS | 10 H | 2 HR | vs RHP: .239 AVG | .691 OPS | 2 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Casey Mize"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -1.43,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 4,
+        "powerCount": 2,
+        "platoonCount": 4,
+        "heaterCount": 3,
+        "suppressorCount": 2,
+        "topThirdScore": 22.9,
+        "depthScore": 66.7
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Brandon Valenzuela",
+            "tag": "carry | +10.00 vs Casey Mize"
+          },
+          {
+            "name": "Ernie Clement",
+            "tag": "carry | +7.90 vs Casey Mize"
+          },
+          {
+            "name": "Daulton Varsho",
+            "tag": "heater | +2.11 vs Casey Mize"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Vladimir Guerrero Jr.",
+            "tag": "traffic | -8.00 vs Casey Mize"
+          },
+          {
+            "name": "Lenyn Sosa",
+            "tag": "cold | -8.00 vs Casey Mize"
+          }
+        ],
+        "underperformNote": "Vladimir Guerrero Jr. and Lenyn Sosa carry the softer form or split fit into a balanced lane.",
+        "overview": "Blue Jays can lean on Brandon Valenzuela, Ernie Clement, Daulton Varsho to drive early pressure against Casey Mize.",
+        "topThirdScore": 22.9,
+        "middleScore": 43.1,
+        "depthScore": 66.7
+      }
+    },
+    "home": {
+      "teamName": "Tigers",
+      "opposingStarter": {
+        "name": "Mason Fluharty",
+        "hand": "L",
+        "type": "Unknown sample"
+      },
+      "lineup": [
+        {
+          "playerId": 805808,
+          "slot": 1,
+          "name": "Kevin McGonigle",
+          "position": "SS",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 48,
+            "homeRuns": 2,
+            "avg": 0.291,
+            "ops": 0.821
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.723
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 0,
+            "avg": 0.262,
+            "ops": 0.677
+          },
+          "metrics": {
+            "powerScore": 32.2,
+            "contactScore": 70.4,
+            "patienceScore": 70.7,
+            "formScore": 18.7,
+            "splitScore": 18,
+            "varianceScore": 68.8,
+            "matchupScore": 27.6,
+            "matchupGrade": -3.68
+          },
+          "tags": [
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "traffic",
+          "summary": ".291 AVG | .821 OPS | 48 H | 2 HR | 12g: .250 AVG | .723 OPS | 10 H | 0 HR | vs LHP: .262 AVG | .677 OPS | 0 HR | -3.7 matchup grade in a neutral lane",
+          "matchupNote": "-3.68 vs Mason Fluharty"
+        },
+        {
+          "playerId": 693307,
+          "slot": 2,
+          "name": "Dillon Dingler",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 35,
+            "homeRuns": 8,
+            "avg": 0.243,
+            "ops": 0.787
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 4,
+            "avg": 0.304,
+            "ops": 1.037
+          },
+          "split": {
+            "hits": 8,
+            "homeRuns": 1,
+            "avg": 0.174,
+            "ops": 0.559
+          },
+          "metrics": {
+            "powerScore": 56.7,
+            "contactScore": 48.1,
+            "patienceScore": 47.5,
+            "formScore": 92,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 83.3,
+            "matchupGrade": 7.5
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".243 AVG | .787 OPS | 35 H | 8 HR | 12g: .304 AVG | 1.037 OPS | 14 H | 4 HR | vs LHP: .174 AVG | .559 OPS | 1 HR | +7.5 matchup grade in a neutral lane",
+          "matchupNote": "+7.50 vs Mason Fluharty"
+        },
+        {
+          "playerId": 669398,
+          "slot": 3,
+          "name": "Gage Workman",
+          "position": "3B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 6,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.222,
+            "ops": 0.889
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 4,
+            "avg": 0.267,
+            "ops": 1.067
+          },
+          "split": null,
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 23.9,
+            "patienceScore": 18.2,
+            "formScore": 92,
+            "splitScore": 50,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "primaryTag": "carry",
+          "summary": ".222 AVG | .889 OPS | 4 H | 2 HR | 10g: .267 AVG | 1.067 OPS | 8 H | 4 HR | No clean split stored vs LHP | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Mason Fluharty"
+        },
+        {
+          "playerId": 663837,
+          "slot": 4,
+          "name": "Matt Vierling",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 23,
+            "homeRuns": 3,
+            "avg": 0.213,
+            "ops": 0.661
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.1,
+            "ops": 0.367
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 1,
+            "avg": 0.282,
+            "ops": 0.857
+          },
+          "metrics": {
+            "powerScore": 40.4,
+            "contactScore": 55.8,
+            "patienceScore": 52.3,
+            "formScore": 18,
+            "splitScore": 83.9,
+            "varianceScore": 92,
+            "matchupScore": 26.8,
+            "matchupGrade": -5.41
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".213 AVG | .661 OPS | 23 H | 3 HR | 10g: .100 AVG | .367 OPS | 4 H | 0 HR | vs LHP: .282 AVG | .857 OPS | 1 HR | -5.4 matchup grade in a neutral lane",
+          "matchupNote": "-5.41 vs Mason Fluharty"
+        },
+        {
+          "playerId": 682985,
+          "slot": 5,
+          "name": "Riley Greene",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 54,
+            "homeRuns": 4,
+            "avg": 0.327,
+            "ops": 0.904
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 20,
+            "homeRuns": 0,
+            "avg": 0.455,
+            "ops": 1.129
+          },
+          "split": {
+            "hits": 16,
+            "homeRuns": 1,
+            "avg": 0.372,
+            "ops": 1.049
+          },
+          "metrics": {
+            "powerScore": 49.7,
+            "contactScore": 66.8,
+            "patienceScore": 67.4,
+            "formScore": 75.1,
+            "splitScore": 74.1,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".327 AVG | .904 OPS | 54 H | 4 HR | 12g: .455 AVG | 1.129 OPS | 20 H | 0 HR | vs LHP: .372 AVG | 1.049 OPS | 1 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Mason Fluharty"
+        },
+        {
+          "playerId": 679529,
+          "slot": 6,
+          "name": "Spencer Torkelson",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 30,
+            "homeRuns": 6,
+            "avg": 0.201,
+            "ops": 0.698
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.15,
+            "ops": 0.48
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.176,
+            "ops": 0.628
+          },
+          "metrics": {
+            "powerScore": 33.4,
+            "contactScore": 25.9,
+            "patienceScore": 73.8,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".201 AVG | .698 OPS | 30 H | 6 HR | 12g: .150 AVG | .480 OPS | 6 H | 0 HR | vs LHP: .176 AVG | .628 OPS | 0 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Mason Fluharty"
+        },
+        {
+          "playerId": 656716,
+          "slot": 7,
+          "name": "Zach McKinstry",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 24,
+            "hits": 13,
+            "homeRuns": 1,
+            "avg": 0.178,
+            "ops": 0.51
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.111,
+            "ops": 0.311
+          },
+          "split": {
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.2
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 21.7,
+            "patienceScore": 52.1,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".178 AVG | .510 OPS | 13 H | 1 HR | 12g: .111 AVG | .311 OPS | 4 H | 0 HR | vs LHP: .000 AVG | .200 OPS | 0 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Mason Fluharty"
+        },
+        {
+          "playerId": 670097,
+          "slot": 8,
+          "name": "Zack Short",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 7,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.308
+          },
+          "recent": {
+            "gamesPlayed": 6,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.333
+          },
+          "split": {
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.5
+          },
+          "metrics": {
+            "powerScore": 25.5,
+            "contactScore": 18,
+            "patienceScore": 92,
+            "formScore": 52.8,
+            "splitScore": 50,
+            "varianceScore": 50.4,
+            "matchupScore": 26.4,
+            "matchupGrade": -5.7
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".000 AVG | .308 OPS | 0 H | 0 HR | 6g: .000 AVG | .333 OPS | 0 H | 0 HR | vs LHP: .000 AVG | .500 OPS | 0 HR | -5.7 matchup grade in a neutral lane",
+          "matchupNote": "-5.70 vs Mason Fluharty"
+        },
+        {
+          "playerId": 668670,
+          "slot": 9,
+          "name": "Jake Rogers",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 16,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.146,
+            "ops": 0.457
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.167
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.5,
+            "ops": 1.25
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 50,
+            "patienceScore": 45.5,
+            "formScore": 18,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".146 AVG | .457 OPS | 6 H | 0 HR | 4g: .000 AVG | .167 OPS | 0 H | 0 HR | vs LHP: .500 AVG | 1.250 OPS | 0 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Mason Fluharty"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -1.25,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 2,
+        "powerCount": 1,
+        "platoonCount": 6,
+        "heaterCount": 3,
+        "suppressorCount": 2,
+        "topThirdScore": 68.3,
+        "depthScore": 20.8
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Gage Workman",
+            "tag": "carry | +10.00 vs Mason Fluharty"
+          },
+          {
+            "name": "Riley Greene",
+            "tag": "carry | +10.00 vs Mason Fluharty"
+          },
+          {
+            "name": "Dillon Dingler",
+            "tag": "carry | +7.50 vs Mason Fluharty"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Spencer Torkelson",
+            "tag": "split edge | -8.00 vs Mason Fluharty"
+          },
+          {
+            "name": "Zach McKinstry",
+            "tag": "cold | -8.00 vs Mason Fluharty"
+          }
+        ],
+        "underperformNote": "Spencer Torkelson and Zach McKinstry carry the softer form or split fit into a unknown sample lane.",
+        "overview": "Tigers can lean on Gage Workman, Riley Greene, Dillon Dingler to drive early pressure against Mason Fluharty.",
+        "topThirdScore": 68.3,
+        "middleScore": 46.3,
+        "depthScore": 20.8
+      }
+    }
+  },
+  "royals-cardinals": {
+    "gameId": "royals-cardinals",
+    "title": "Royals @ Cardinals",
+    "snapshot": "2026-05-16T20:11:42.062Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Royals",
+      "opposingStarter": {
+        "name": "Kyle Leahy",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [
+        {
+          "playerId": 672580,
+          "slot": 1,
+          "name": "Maikel Garcia",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 46,
+            "homeRuns": 3,
+            "avg": 0.266,
+            "ops": 0.74
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.24,
+            "ops": 0.665
+          },
+          "split": {
+            "hits": 32,
+            "homeRuns": 1,
+            "avg": 0.234,
+            "ops": 0.636
+          },
+          "metrics": {
+            "powerScore": 34.2,
+            "contactScore": 63.7,
+            "patienceScore": 54.2,
+            "formScore": 18,
+            "splitScore": 22.3,
+            "varianceScore": 60.9,
+            "matchupScore": 32.3,
+            "matchupGrade": -2.64
+          },
+          "tags": [
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "traffic",
+          "summary": ".266 AVG | .740 OPS | 46 H | 3 HR | 12g: .240 AVG | .665 OPS | 12 H | 0 HR | vs RHP: .234 AVG | .636 OPS | 1 HR | -2.6 matchup grade in a traffic-risk lane",
+          "matchupNote": "-2.64 vs Kyle Leahy"
+        },
+        {
+          "playerId": 677951,
+          "slot": 2,
+          "name": "Bobby Witt Jr.",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 56,
+            "homeRuns": 7,
+            "avg": 0.311,
+            "ops": 0.891
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 6,
+            "avg": 0.375,
+            "ops": 1.236
+          },
+          "split": {
+            "hits": 43,
+            "homeRuns": 6,
+            "avg": 0.303,
+            "ops": 0.859
+          },
+          "metrics": {
+            "powerScore": 63.4,
+            "contactScore": 72.6,
+            "patienceScore": 58.5,
+            "formScore": 92,
+            "splitScore": 47.6,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".311 AVG | .891 OPS | 56 H | 7 HR | 12g: .375 AVG | 1.236 OPS | 18 H | 6 HR | vs RHP: .303 AVG | .859 OPS | 6 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Kyle Leahy"
+        },
+        {
+          "playerId": 686469,
+          "slot": 3,
+          "name": "Vinnie Pasquantino",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 33,
+            "homeRuns": 5,
+            "avg": 0.202,
+            "ops": 0.631
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.261,
+            "ops": 0.607
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 5,
+            "avg": 0.234,
+            "ops": 0.754
+          },
+          "metrics": {
+            "powerScore": 43.6,
+            "contactScore": 49,
+            "patienceScore": 59,
+            "formScore": 27.2,
+            "splitScore": 82.2,
+            "varianceScore": 60.2,
+            "matchupScore": 63.8,
+            "matchupGrade": 3.18
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".202 AVG | .631 OPS | 33 H | 5 HR | 12g: .261 AVG | .607 OPS | 12 H | 0 HR | vs RHP: .234 AVG | .754 OPS | 5 HR | +3.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "+3.18 vs Kyle Leahy"
+        },
+        {
+          "playerId": 521692,
+          "slot": 4,
+          "name": "Salvador Perez",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 34,
+            "homeRuns": 6,
+            "avg": 0.197,
+            "ops": 0.563
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.238,
+            "ops": 0.619
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 4,
+            "avg": 0.189,
+            "ops": 0.519
+          },
+          "metrics": {
+            "powerScore": 40.7,
+            "contactScore": 41.2,
+            "patienceScore": 32.7,
+            "formScore": 82.5,
+            "splitScore": 40.8,
+            "varianceScore": 58,
+            "matchupScore": 43.9,
+            "matchupGrade": -2.17
+          },
+          "tags": [
+            "heater",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".197 AVG | .563 OPS | 34 H | 6 HR | 10g: .238 AVG | .619 OPS | 10 H | 2 HR | vs RHP: .189 AVG | .519 OPS | 4 HR | -2.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "-2.17 vs Kyle Leahy"
+        },
+        {
+          "playerId": 695600,
+          "slot": 5,
+          "name": "Carter Jensen",
+          "position": "C",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 31,
+            "homeRuns": 6,
+            "avg": 0.238,
+            "ops": 0.747
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.462,
+            "ops": 1.248
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 6,
+            "avg": 0.258,
+            "ops": 0.835
+          },
+          "metrics": {
+            "powerScore": 61.5,
+            "contactScore": 40.3,
+            "patienceScore": 63.5,
+            "formScore": 92,
+            "splitScore": 77.5,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".238 AVG | .747 OPS | 31 H | 6 HR | 10g: .462 AVG | 1.248 OPS | 12 H | 0 HR | vs RHP: .258 AVG | .835 OPS | 6 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Kyle Leahy"
+        },
+        {
+          "playerId": 695506,
+          "slot": 6,
+          "name": "Jac Caglianone",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 32,
+            "homeRuns": 4,
+            "avg": 0.242,
+            "ops": 0.717
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.517
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 3,
+            "avg": 0.25,
+            "ops": 0.746
+          },
+          "metrics": {
+            "powerScore": 45.6,
+            "contactScore": 40.7,
+            "patienceScore": 51,
+            "formScore": 18,
+            "splitScore": 54.2,
+            "varianceScore": 90.2,
+            "matchupScore": 33,
+            "matchupGrade": -3.23
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".242 AVG | .717 OPS | 32 H | 4 HR | 12g: .200 AVG | .517 OPS | 6 H | 0 HR | vs RHP: .250 AVG | .746 OPS | 3 HR | -3.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "-3.23 vs Kyle Leahy"
+        },
+        {
+          "playerId": 686555,
+          "slot": 7,
+          "name": "Isaac Collins",
+          "position": "LF",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 27,
+            "homeRuns": 3,
+            "avg": 0.223,
+            "ops": 0.686
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.063,
+            "ops": 0.363
+          },
+          "split": {
+            "hits": 20,
+            "homeRuns": 2,
+            "avg": 0.26,
+            "ops": 0.788
+          },
+          "metrics": {
+            "powerScore": 34.2,
+            "contactScore": 43.1,
+            "patienceScore": 73.1,
+            "formScore": 18,
+            "splitScore": 69.3,
+            "varianceScore": 92,
+            "matchupScore": 23.8,
+            "matchupGrade": -5.79
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".223 AVG | .686 OPS | 27 H | 3 HR | 10g: .063 AVG | .363 OPS | 2 H | 0 HR | vs RHP: .260 AVG | .788 OPS | 2 HR | -5.8 matchup grade in a traffic-risk lane",
+          "matchupNote": "-5.79 vs Kyle Leahy"
+        },
+        {
+          "playerId": 686681,
+          "slot": 8,
+          "name": "Michael Massey",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 31,
+            "hits": 18,
+            "homeRuns": 3,
+            "avg": 0.217,
+            "ops": 0.648
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 2,
+            "homeRuns": 2,
+            "avg": 0.091,
+            "ops": 0.455
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 3,
+            "avg": 0.224,
+            "ops": 0.698
+          },
+          "metrics": {
+            "powerScore": 54.7,
+            "contactScore": 44.3,
+            "patienceScore": 30.3,
+            "formScore": 71.7,
+            "splitScore": 65,
+            "varianceScore": 84.1,
+            "matchupScore": 32.6,
+            "matchupGrade": -5.13
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".217 AVG | .648 OPS | 18 H | 3 HR | 8g: .091 AVG | .455 OPS | 2 H | 2 HR | vs RHP: .224 AVG | .698 OPS | 3 HR | -5.1 matchup grade in a traffic-risk lane",
+          "matchupNote": "-5.13 vs Kyle Leahy"
+        },
+        {
+          "playerId": 664728,
+          "slot": 9,
+          "name": "Kyle Isbel",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 38,
+            "hits": 29,
+            "homeRuns": 3,
+            "avg": 0.261,
+            "ops": 0.719
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.167,
+            "ops": 0.444
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 3,
+            "avg": 0.275,
+            "ops": 0.751
+          },
+          "metrics": {
+            "powerScore": 45.3,
+            "contactScore": 51.5,
+            "patienceScore": 42.6,
+            "formScore": 18,
+            "splitScore": 61.9,
+            "varianceScore": 92,
+            "matchupScore": 21.3,
+            "matchupGrade": -6.2
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".261 AVG | .719 OPS | 29 H | 3 HR | 10g: .167 AVG | .444 OPS | 6 H | 0 HR | vs RHP: .275 AVG | .751 OPS | 3 HR | -6.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "-6.20 vs Kyle Leahy"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -0.22,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 2,
+        "powerCount": 1,
+        "platoonCount": 6,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 63.4,
+        "depthScore": 25.9
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Bobby Witt Jr.",
+            "tag": "carry | +10.00 vs Kyle Leahy"
+          },
+          {
+            "name": "Carter Jensen",
+            "tag": "carry | +10.00 vs Kyle Leahy"
+          },
+          {
+            "name": "Vinnie Pasquantino",
+            "tag": "split edge | +3.18 vs Kyle Leahy"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Kyle Isbel",
+            "tag": "split edge | -6.20 vs Kyle Leahy"
+          },
+          {
+            "name": "Isaac Collins",
+            "tag": "split edge | -5.79 vs Kyle Leahy"
+          }
+        ],
+        "underperformNote": "Kyle Isbel and Isaac Collins carry the softer form or split fit into a traffic-risk lane.",
+        "overview": "Royals can lean on Bobby Witt Jr., Carter Jensen, Vinnie Pasquantino to drive early pressure against Kyle Leahy.",
+        "topThirdScore": 63.4,
+        "middleScore": 57,
+        "depthScore": 25.9
+      }
+    },
+    "home": {
+      "teamName": "Cardinals",
+      "opposingStarter": {
+        "name": "Noah Cameron",
+        "hand": "L",
+        "type": "Traffic-risk"
+      },
+      "lineup": [
+        {
+          "playerId": 691026,
+          "slot": 1,
+          "name": "Masyn Winn",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 38,
+            "homeRuns": 1,
+            "avg": 0.253,
+            "ops": 0.683
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.208,
+            "ops": 0.588
+          },
+          "split": {
+            "hits": 13,
+            "homeRuns": 0,
+            "avg": 0.361,
+            "ops": 0.915
+          },
+          "metrics": {
+            "powerScore": 23.1,
+            "contactScore": 66.8,
+            "patienceScore": 51.7,
+            "formScore": 23.5,
+            "splitScore": 92,
+            "varianceScore": 87.7,
+            "matchupScore": 66.3,
+            "matchupGrade": 3.65
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".253 AVG | .683 OPS | 38 H | 1 HR | 12g: .208 AVG | .588 OPS | 10 H | 0 HR | vs LHP: .361 AVG | .915 OPS | 0 HR | +3.6 matchup grade in a traffic-risk lane",
+          "matchupNote": "+3.65 vs Noah Cameron"
+        },
+        {
+          "playerId": 671056,
+          "slot": 2,
+          "name": "Iván Herrera",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 44,
+            "homeRuns": 4,
+            "avg": 0.267,
+            "ops": 0.809
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.269,
+            "ops": 0.593
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 1,
+            "avg": 0.25,
+            "ops": 0.785
+          },
+          "metrics": {
+            "powerScore": 40.8,
+            "contactScore": 61.3,
+            "patienceScore": 74.6,
+            "formScore": 18,
+            "splitScore": 41.9,
+            "varianceScore": 76.2,
+            "matchupScore": 40.8,
+            "matchupGrade": -1.09
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".267 AVG | .809 OPS | 44 H | 4 HR | 12g: .269 AVG | .593 OPS | 14 H | 0 HR | vs LHP: .250 AVG | .785 OPS | 1 HR | -1.1 matchup grade in a traffic-risk lane",
+          "matchupNote": "-1.09 vs Noah Cameron"
+        },
+        {
+          "playerId": 691023,
+          "slot": 3,
+          "name": "Jordan Walker",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 52,
+            "homeRuns": 13,
+            "avg": 0.311,
+            "ops": 0.988
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 6,
+            "avg": 0.346,
+            "ops": 1.14
+          },
+          "split": {
+            "hits": 10,
+            "homeRuns": 4,
+            "avg": 0.27,
+            "ops": 1.006
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 56.3,
+            "patienceScore": 55.3,
+            "formScore": 92,
+            "splitScore": 70.9,
+            "varianceScore": 90.1,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".311 AVG | .988 OPS | 52 H | 13 HR | 12g: .346 AVG | 1.140 OPS | 18 H | 6 HR | vs LHP: .270 AVG | 1.006 OPS | 4 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Noah Cameron"
+        },
+        {
+          "playerId": 676475,
+          "slot": 4,
+          "name": "Alec Burleson",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 47,
+            "homeRuns": 6,
+            "avg": 0.275,
+            "ops": 0.785
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.292,
+            "ops": 0.625
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 1,
+            "avg": 0.216,
+            "ops": 0.539
+          },
+          "metrics": {
+            "powerScore": 48.2,
+            "contactScore": 60.3,
+            "patienceScore": 52.6,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -7.24
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".275 AVG | .785 OPS | 47 H | 6 HR | 12g: .292 AVG | .625 OPS | 14 H | 0 HR | vs LHP: .216 AVG | .539 OPS | 1 HR | -7.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "-7.24 vs Noah Cameron"
+        },
+        {
+          "playerId": 665877,
+          "slot": 5,
+          "name": "José Fermín",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 22,
+            "hits": 11,
+            "homeRuns": 1,
+            "avg": 0.234,
+            "ops": 0.689
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.685
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 1,
+            "avg": 0.273,
+            "ops": 0.929
+          },
+          "metrics": {
+            "powerScore": 42.4,
+            "contactScore": 51.4,
+            "patienceScore": 65,
+            "formScore": 21.3,
+            "splitScore": 92,
+            "varianceScore": 71.7,
+            "matchupScore": 80.2,
+            "matchupGrade": 7.01
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".234 AVG | .689 OPS | 11 H | 1 HR | 12g: .200 AVG | .685 OPS | 4 H | 0 HR | vs LHP: .273 AVG | .929 OPS | 1 HR | +7.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+7.01 vs Noah Cameron"
+        },
+        {
+          "playerId": 695336,
+          "slot": 6,
+          "name": "Thomas Saggese",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 24,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.159,
+            "ops": 0.399
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "split": {
+            "hits": 1,
+            "homeRuns": 0,
+            "avg": 0.083,
+            "ops": 0.35
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 18,
+            "patienceScore": 41.6,
+            "formScore": 18,
+            "splitScore": 30.2,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".159 AVG | .399 OPS | 10 H | 0 HR | 10g: .000 AVG | .000 OPS | 0 H | 0 HR | vs LHP: .083 AVG | .350 OPS | 0 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Noah Cameron"
+        },
+        {
+          "playerId": 701675,
+          "slot": 7,
+          "name": "Nathan Church",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 33,
+            "homeRuns": 5,
+            "avg": 0.248,
+            "ops": 0.693
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.227,
+            "ops": 0.564
+          },
+          "split": {
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.308,
+            "ops": 0.629
+          },
+          "metrics": {
+            "powerScore": 37.1,
+            "contactScore": 57.6,
+            "patienceScore": 35.2,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 70.8,
+            "matchupScore": 18,
+            "matchupGrade": -6.54
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".248 AVG | .693 OPS | 33 H | 5 HR | 12g: .227 AVG | .564 OPS | 10 H | 0 HR | vs LHP: .308 AVG | .629 OPS | 0 HR | -6.5 matchup grade in a traffic-risk lane",
+          "matchupNote": "-6.54 vs Noah Cameron"
+        },
+        {
+          "playerId": 686780,
+          "slot": 8,
+          "name": "Pedro Pagés",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 30,
+            "hits": 20,
+            "homeRuns": 4,
+            "avg": 0.208,
+            "ops": 0.617
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.167,
+            "ops": 0.583
+          },
+          "split": {
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.143,
+            "ops": 0.351
+          },
+          "metrics": {
+            "powerScore": 33.3,
+            "contactScore": 32,
+            "patienceScore": 35.2,
+            "formScore": 78.4,
+            "splitScore": 18,
+            "varianceScore": 89.3,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".208 AVG | .617 OPS | 20 H | 4 HR | 8g: .167 AVG | .583 OPS | 4 H | 2 HR | vs LHP: .143 AVG | .351 OPS | 0 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Noah Cameron"
+        },
+        {
+          "playerId": 687363,
+          "slot": 9,
+          "name": "Victor Scott II",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 20,
+            "homeRuns": 2,
+            "avg": 0.187,
+            "ops": 0.51
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 2,
+            "homeRuns": 2,
+            "avg": 0.1,
+            "ops": 0.5
+          },
+          "split": {
+            "hits": 10,
+            "homeRuns": 1,
+            "avg": 0.313,
+            "ops": 0.749
+          },
+          "metrics": {
+            "powerScore": 27.2,
+            "contactScore": 40.3,
+            "patienceScore": 44.5,
+            "formScore": 92,
+            "splitScore": 92,
+            "varianceScore": 82.9,
+            "matchupScore": 60.3,
+            "matchupGrade": 0.26
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".187 AVG | .510 OPS | 20 H | 2 HR | 12g: .100 AVG | .500 OPS | 2 H | 2 HR | vs LHP: .313 AVG | .749 OPS | 1 HR | +0.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "+0.26 vs Noah Cameron"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -1.11,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 3,
+        "powerCount": 1,
+        "platoonCount": 7,
+        "heaterCount": 3,
+        "suppressorCount": 2,
+        "topThirdScore": 67,
+        "depthScore": 32.1
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Jordan Walker",
+            "tag": "carry | +10.00 vs Noah Cameron"
+          },
+          {
+            "name": "José Fermín",
+            "tag": "carry | +7.01 vs Noah Cameron"
+          },
+          {
+            "name": "Masyn Winn",
+            "tag": "split edge | +3.65 vs Noah Cameron"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Thomas Saggese",
+            "tag": "split edge | -8.00 vs Noah Cameron"
+          },
+          {
+            "name": "Pedro Pagés",
+            "tag": "heater | -8.00 vs Noah Cameron"
+          }
+        ],
+        "underperformNote": "Thomas Saggese and Pedro Pagés carry the softer form or split fit into a traffic-risk lane.",
+        "overview": "Cardinals can lean on Jordan Walker, José Fermín, Masyn Winn to drive early pressure against Noah Cameron.",
+        "topThirdScore": 67,
+        "middleScore": 38.7,
+        "depthScore": 32.1
+      }
+    }
+  },
+  "diamondbacks-rockies": {
+    "gameId": "diamondbacks-rockies",
+    "title": "Diamondbacks @ Rockies",
+    "snapshot": "2026-05-16T20:11:42.062Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Diamondbacks",
+      "opposingStarter": {
+        "name": "Tomoyuki Sugano",
+        "hand": "R",
+        "type": "Craft"
+      },
+      "lineup": [
+        {
+          "playerId": 606466,
+          "slot": 1,
+          "name": "Ketel Marte",
+          "position": "DH",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 35,
+            "homeRuns": 5,
+            "avg": 0.212,
+            "ops": 0.623
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.208,
+            "ops": 0.644
+          },
+          "split": {
+            "hits": 21,
+            "homeRuns": 5,
+            "avg": 0.189,
+            "ops": 0.626
+          },
+          "metrics": {
+            "powerScore": 47.2,
+            "contactScore": 49,
+            "patienceScore": 44.1,
+            "formScore": 18,
+            "splitScore": 59.3,
+            "varianceScore": 41,
+            "matchupScore": 51.3,
+            "matchupGrade": 1
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".212 AVG | .623 OPS | 35 H | 5 HR | 12g: .208 AVG | .644 OPS | 10 H | 0 HR | vs RHP: .189 AVG | .626 OPS | 5 HR | +1.0 matchup grade in a craft lane",
+          "matchupNote": "+1.00 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 682998,
+          "slot": 2,
+          "name": "Corbin Carroll",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 39,
+            "homeRuns": 5,
+            "avg": 0.269,
+            "ops": 0.876
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.3,
+            "ops": 0.862
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 4,
+            "avg": 0.174,
+            "ops": 0.722
+          },
+          "metrics": {
+            "powerScore": 61,
+            "contactScore": 46.9,
+            "patienceScore": 72.5,
+            "formScore": 20.1,
+            "splitScore": 22.5,
+            "varianceScore": 71.7,
+            "matchupScore": 46.3,
+            "matchupGrade": 0.63
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".269 AVG | .876 OPS | 39 H | 5 HR | 12g: .300 AVG | .862 OPS | 12 H | 0 HR | vs RHP: .174 AVG | .722 OPS | 4 HR | +0.6 matchup grade in a craft lane",
+          "matchupNote": "+0.63 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 672695,
+          "slot": 3,
+          "name": "Geraldo Perdomo",
+          "position": "SS",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 31,
+            "homeRuns": 2,
+            "avg": 0.223,
+            "ops": 0.694
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.182,
+            "ops": 0.507
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 1,
+            "avg": 0.211,
+            "ops": 0.652
+          },
+          "metrics": {
+            "powerScore": 28.6,
+            "contactScore": 54.9,
+            "patienceScore": 76.4,
+            "formScore": 18,
+            "splitScore": 40.2,
+            "varianceScore": 70.3,
+            "matchupScore": 25.5,
+            "matchupGrade": -4.68
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".223 AVG | .694 OPS | 31 H | 2 HR | 12g: .182 AVG | .507 OPS | 8 H | 0 HR | vs RHP: .211 AVG | .652 OPS | 1 HR | -4.7 matchup grade in a craft lane",
+          "matchupNote": "-4.68 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 571448,
+          "slot": 4,
+          "name": "Nolan Arenado",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 38,
+            "homeRuns": 6,
+            "avg": 0.277,
+            "ops": 0.808
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.333,
+            "ops": 1.056
+          },
+          "split": {
+            "hits": 28,
+            "homeRuns": 5,
+            "avg": 0.298,
+            "ops": 0.858
+          },
+          "metrics": {
+            "powerScore": 63.8,
+            "contactScore": 61.8,
+            "patienceScore": 54.2,
+            "formScore": 41.9,
+            "splitScore": 68.4,
+            "varianceScore": 89,
+            "matchupScore": 92.9,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".277 AVG | .808 OPS | 38 H | 6 HR | 12g: .333 AVG | 1.056 OPS | 12 H | 0 HR | vs RHP: .298 AVG | .858 OPS | 5 HR | +10.0 matchup grade in a craft lane",
+          "matchupNote": "+10.00 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 545121,
+          "slot": 5,
+          "name": "Ildemaro Vargas",
+          "position": "2B",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 50,
+            "homeRuns": 7,
+            "avg": 0.345,
+            "ops": 0.939
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 16,
+            "homeRuns": 2,
+            "avg": 0.32,
+            "ops": 0.826
+          },
+          "split": {
+            "hits": 31,
+            "homeRuns": 2,
+            "avg": 0.337,
+            "ops": 0.871
+          },
+          "metrics": {
+            "powerScore": 67,
+            "contactScore": 88,
+            "patienceScore": 30,
+            "formScore": 23.5,
+            "splitScore": 18,
+            "varianceScore": 58.1,
+            "matchupScore": 42.4,
+            "matchupGrade": -0.29
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".345 AVG | .939 OPS | 50 H | 7 HR | 12g: .320 AVG | .826 OPS | 16 H | 2 HR | vs RHP: .337 AVG | .871 OPS | 2 HR | -0.3 matchup grade in a craft lane",
+          "matchupNote": "-0.29 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 666971,
+          "slot": 6,
+          "name": "Lourdes Gurriel Jr.",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 20,
+            "hits": 15,
+            "homeRuns": 0,
+            "avg": 0.211,
+            "ops": 0.555
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.105,
+            "ops": 0.34
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 0,
+            "avg": 0.184,
+            "ops": 0.479
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 48.5,
+            "patienceScore": 55.9,
+            "formScore": 18,
+            "splitScore": 35.5,
+            "varianceScore": 82.9,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".211 AVG | .555 OPS | 15 H | 0 HR | 10g: .105 AVG | .340 OPS | 4 H | 0 HR | vs RHP: .184 AVG | .479 OPS | 0 HR | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 699912,
+          "slot": 7,
+          "name": "Jose Fernandez",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 31,
+            "homeRuns": 3,
+            "avg": 0.272,
+            "ops": 0.694
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.077,
+            "ops": 0.231
+          },
+          "split": {
+            "hits": 21,
+            "homeRuns": 3,
+            "avg": 0.276,
+            "ops": 0.734
+          },
+          "metrics": {
+            "powerScore": 47.8,
+            "contactScore": 53.5,
+            "patienceScore": 34.8,
+            "formScore": 18,
+            "splitScore": 68.2,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".272 AVG | .694 OPS | 31 H | 3 HR | 10g: .077 AVG | .231 OPS | 2 H | 0 HR | vs RHP: .276 AVG | .734 OPS | 3 HR | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 543510,
+          "slot": 8,
+          "name": "James McCann",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 21,
+            "hits": 11,
+            "homeRuns": 0,
+            "avg": 0.196,
+            "ops": 0.461
+          },
+          "recent": {
+            "gamesPlayed": 2,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.333,
+            "ops": 0.667
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.222,
+            "ops": 0.546
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 31.9,
+            "patienceScore": 24.8,
+            "formScore": 92,
+            "splitScore": 65.4,
+            "varianceScore": 92,
+            "matchupScore": 65.2,
+            "matchupGrade": 2.05
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".196 AVG | .461 OPS | 11 H | 0 HR | 2g: .333 AVG | .667 OPS | 2 H | 0 HR | vs RHP: .222 AVG | .546 OPS | 0 HR | +2.1 matchup grade in a craft lane",
+          "matchupNote": "+2.05 vs Tomoyuki Sugano"
+        },
+        {
+          "playerId": 814439,
+          "slot": 9,
+          "name": "Ryan Waldschmidt",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 8,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.261,
+            "ops": 0.639
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.238,
+            "ops": 0.606
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.167,
+            "ops": 0.417
+          },
+          "metrics": {
+            "powerScore": 20.9,
+            "contactScore": 34.4,
+            "patienceScore": 33.7,
+            "formScore": 41.8,
+            "splitScore": 18,
+            "varianceScore": 86.8,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".261 AVG | .639 OPS | 6 H | 0 HR | 12g: .238 AVG | .606 OPS | 10 H | 0 HR | vs RHP: .167 AVG | .417 OPS | 0 HR | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Tomoyuki Sugano"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -1.7,
+        "trackedBatters": 9,
+        "starterThreatCount": 2,
+        "contactCount": 2,
+        "powerCount": 2,
+        "platoonCount": 7,
+        "heaterCount": 1,
+        "suppressorCount": 2,
+        "topThirdScore": 41,
+        "depthScore": 33.7
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Nolan Arenado",
+            "tag": "carry | +10.00 vs Tomoyuki Sugano"
+          },
+          {
+            "name": "James McCann",
+            "tag": "heater | +2.05 vs Tomoyuki Sugano"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Lourdes Gurriel Jr.",
+            "tag": "cold | -8.00 vs Tomoyuki Sugano"
+          },
+          {
+            "name": "Jose Fernandez",
+            "tag": "split edge | -8.00 vs Tomoyuki Sugano"
+          }
+        ],
+        "underperformNote": "Lourdes Gurriel Jr. and Jose Fernandez carry the softer form or split fit into a craft lane.",
+        "overview": "Diamondbacks can lean on Nolan Arenado, James McCann to drive early pressure against Tomoyuki Sugano.",
+        "topThirdScore": 41,
+        "middleScore": 51.1,
+        "depthScore": 33.7
+      }
+    },
+    "home": {
+      "teamName": "Rockies",
+      "opposingStarter": {
+        "name": "Eduardo Rodriguez",
+        "hand": "L",
+        "type": "Craft"
+      },
+      "lineup": [
+        {
+          "playerId": 650489,
+          "slot": 1,
+          "name": "Willi Castro",
+          "position": "2B",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 29,
+            "homeRuns": 2,
+            "avg": 0.238,
+            "ops": 0.629
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 2,
+            "homeRuns": 2,
+            "avg": 0.053,
+            "ops": 0.311
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 0,
+            "avg": 0.265,
+            "ops": 0.609
+          },
+          "metrics": {
+            "powerScore": 22.9,
+            "contactScore": 39.5,
+            "patienceScore": 47.6,
+            "formScore": 19.9,
+            "splitScore": 37.4,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".238 AVG | .629 OPS | 29 H | 2 HR | 12g: .053 AVG | .311 OPS | 2 H | 2 HR | vs LHP: .265 AVG | .609 OPS | 0 HR | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 686668,
+          "slot": 2,
+          "name": "Brenton Doyle",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 21,
+            "homeRuns": 1,
+            "avg": 0.198,
+            "ops": 0.531
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.1,
+            "ops": 0.2
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.176,
+            "ops": 0.517
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 21.9,
+            "patienceScore": 51.3,
+            "formScore": 18,
+            "splitScore": 35.7,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".198 AVG | .531 OPS | 21 H | 1 HR | 8g: .100 AVG | .200 OPS | 2 H | 0 HR | vs LHP: .176 AVG | .517 OPS | 0 HR | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 681198,
+          "slot": 3,
+          "name": "TJ Rumfield",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 45,
+            "homeRuns": 6,
+            "avg": 0.276,
+            "ops": 0.784
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.294,
+            "ops": 0.929
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 0,
+            "avg": 0.189,
+            "ops": 0.42
+          },
+          "metrics": {
+            "powerScore": 40.5,
+            "contactScore": 57,
+            "patienceScore": 50.1,
+            "formScore": 89.8,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 38.7,
+            "matchupGrade": -3.08
+          },
+          "tags": [
+            "heater",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".276 AVG | .784 OPS | 45 H | 6 HR | 10g: .294 AVG | .929 OPS | 10 H | 2 HR | vs LHP: .189 AVG | .420 OPS | 0 HR | -3.1 matchup grade in a craft lane",
+          "matchupNote": "-3.08 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 696100,
+          "slot": 4,
+          "name": "Hunter Goodman",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 38,
+            "homeRuns": 11,
+            "avg": 0.245,
+            "ops": 0.817
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.2,
+            "ops": 0.6
+          },
+          "split": {
+            "hits": 10,
+            "homeRuns": 3,
+            "avg": 0.244,
+            "ops": 0.823
+          },
+          "metrics": {
+            "powerScore": 84.9,
+            "contactScore": 36,
+            "patienceScore": 45.1,
+            "formScore": 18,
+            "splitScore": 52.1,
+            "varianceScore": 92,
+            "matchupScore": 34.4,
+            "matchupGrade": -2.84
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".245 AVG | .817 OPS | 38 H | 11 HR | 10g: .200 AVG | .600 OPS | 8 H | 2 HR | vs LHP: .244 AVG | .823 OPS | 3 HR | -2.8 matchup grade in a craft lane",
+          "matchupNote": "-2.84 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 666160,
+          "slot": 5,
+          "name": "Mickey Moniak",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 38,
+            "hits": 42,
+            "homeRuns": 12,
+            "avg": 0.311,
+            "ops": 1.03
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.261,
+            "ops": 0.857
+          },
+          "split": {
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.16,
+            "ops": 0.56
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 47.8,
+            "patienceScore": 41.1,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".311 AVG | 1.030 OPS | 42 H | 12 HR | 12g: .261 AVG | .857 OPS | 12 H | 2 HR | vs LHP: .160 AVG | .560 OPS | 2 HR | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 678662,
+          "slot": 6,
+          "name": "Ezequiel Tovar",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 30,
+            "homeRuns": 1,
+            "avg": 0.201,
+            "ops": 0.532
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.357,
+            "ops": 0.829
+          },
+          "split": {
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.276,
+            "ops": 0.674
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 40.4,
+            "patienceScore": 39,
+            "formScore": 92,
+            "splitScore": 74.9,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 9.77
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".201 AVG | .532 OPS | 30 H | 1 HR | 10g: .357 AVG | .829 OPS | 10 H | 0 HR | vs LHP: .276 AVG | .674 OPS | 0 HR | +9.8 matchup grade in a craft lane",
+          "matchupNote": "+9.77 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 694514,
+          "slot": 7,
+          "name": "Sterlin Thompson",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 2,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "recent": {
+            "gamesPlayed": 2,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "split": null,
+          "metrics": {
+            "powerScore": 25.5,
+            "contactScore": 18,
+            "patienceScore": 74.9,
+            "formScore": 50,
+            "splitScore": 50,
+            "varianceScore": 75.7,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".000 AVG | .000 OPS | 0 H | 0 HR | 2g: .000 AVG | .000 OPS | 0 H | 0 HR | No clean split stored vs LHP | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 691720,
+          "slot": 8,
+          "name": "Kyle Karros",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 28,
+            "homeRuns": 1,
+            "avg": 0.228,
+            "ops": 0.649
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.214,
+            "ops": 0.552
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 0,
+            "avg": 0.282,
+            "ops": 0.682
+          },
+          "metrics": {
+            "powerScore": 18.5,
+            "contactScore": 46.6,
+            "patienceScore": 74.4,
+            "formScore": 28.5,
+            "splitScore": 57.1,
+            "varianceScore": 65.8,
+            "matchupScore": 41.1,
+            "matchupGrade": -1.67
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".228 AVG | .649 OPS | 28 H | 1 HR | 10g: .214 AVG | .552 OPS | 6 H | 0 HR | vs LHP: .282 AVG | .682 OPS | 0 HR | -1.7 matchup grade in a craft lane",
+          "matchupNote": "-1.67 vs Eduardo Rodriguez"
+        },
+        {
+          "playerId": 664983,
+          "slot": 9,
+          "name": "Jake McCarthy",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 35,
+            "hits": 24,
+            "homeRuns": 2,
+            "avg": 0.286,
+            "ops": 0.839
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.231,
+            "ops": 0.593
+          },
+          "split": {
+            "hits": 3,
+            "homeRuns": 0,
+            "avg": 0.3,
+            "ops": 0.8
+          },
+          "metrics": {
+            "powerScore": 42.1,
+            "contactScore": 61.9,
+            "patienceScore": 49.8,
+            "formScore": 18,
+            "splitScore": 27.1,
+            "varianceScore": 83.2,
+            "matchupScore": 18,
+            "matchupGrade": -6.43
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".286 AVG | .839 OPS | 24 H | 2 HR | 10g: .231 AVG | .593 OPS | 6 H | 0 HR | vs LHP: .300 AVG | .800 OPS | 0 HR | -6.4 matchup grade in a craft lane",
+          "matchupNote": "-6.43 vs Eduardo Rodriguez"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -4.03,
+        "trackedBatters": 9,
+        "starterThreatCount": 1,
+        "contactCount": 1,
+        "powerCount": 2,
+        "platoonCount": 5,
+        "heaterCount": 2,
+        "suppressorCount": 2,
+        "topThirdScore": 24.9,
+        "depthScore": 25.7
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Ezequiel Tovar",
+            "tag": "carry | +9.77 vs Eduardo Rodriguez"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Willi Castro",
+            "tag": "split edge | -8.00 vs Eduardo Rodriguez"
+          },
+          {
+            "name": "Brenton Doyle",
+            "tag": "split edge | -8.00 vs Eduardo Rodriguez"
+          }
+        ],
+        "underperformNote": "Willi Castro and Brenton Doyle carry the softer form or split fit into a craft lane.",
+        "overview": "Rockies can lean on Ezequiel Tovar to drive early pressure against Eduardo Rodriguez.",
+        "topThirdScore": 24.9,
+        "middleScore": 48.8,
+        "depthScore": 25.7
+      }
+    }
+  },
+  "orioles-nationals": {
+    "gameId": "orioles-nationals",
+    "title": "Orioles @ Nationals",
+    "snapshot": "2026-05-16T20:11:42.063Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Orioles",
+      "opposingStarter": {
+        "name": "Cade Cavalli",
+        "hand": "R",
+        "type": "Volatile bat-misser"
+      },
+      "lineup": [
+        {
+          "playerId": 683002,
+          "slot": 1,
+          "name": "Gunnar Henderson",
+          "position": "SS",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 38,
+            "homeRuns": 9,
+            "avg": 0.201,
+            "ops": 0.652
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.231,
+            "ops": 0.538
+          },
+          "split": {
+            "hits": 29,
+            "homeRuns": 6,
+            "avg": 0.21,
+            "ops": 0.655
+          },
+          "metrics": {
+            "powerScore": 55.6,
+            "contactScore": 37.3,
+            "patienceScore": 43.2,
+            "formScore": 18,
+            "splitScore": 48.5,
+            "varianceScore": 75.8,
+            "matchupScore": 30.7,
+            "matchupGrade": -3.64
+          },
+          "tags": [
+            "split edge",
+            "whiff risk",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".201 AVG | .652 OPS | 38 H | 9 HR | 12g: .231 AVG | .538 OPS | 12 H | 0 HR | vs RHP: .210 AVG | .655 OPS | 6 HR | -3.6 matchup grade in a whiff-variance lane",
+          "matchupNote": "-3.64 vs Cade Cavalli"
+        },
+        {
+          "playerId": 621493,
+          "slot": 2,
+          "name": "Taylor Ward",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 42,
+            "homeRuns": 1,
+            "avg": 0.269,
+            "ops": 0.806
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.222,
+            "ops": 0.739
+          },
+          "split": {
+            "hits": 32,
+            "homeRuns": 0,
+            "avg": 0.267,
+            "ops": 0.784
+          },
+          "metrics": {
+            "powerScore": 25.6,
+            "contactScore": 61.3,
+            "patienceScore": 92,
+            "formScore": 27.3,
+            "splitScore": 41.8,
+            "varianceScore": 51.4,
+            "matchupScore": 56.7,
+            "matchupGrade": 2.45
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".269 AVG | .806 OPS | 42 H | 1 HR | 12g: .222 AVG | .739 OPS | 8 H | 0 HR | vs RHP: .267 AVG | .784 OPS | 0 HR | +2.5 matchup grade in a whiff-variance lane",
+          "matchupNote": "+2.45 vs Cade Cavalli"
+        },
+        {
+          "playerId": 668939,
+          "slot": 3,
+          "name": "Adley Rutschman",
+          "position": "C",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 30,
+            "hits": 30,
+            "homeRuns": 6,
+            "avg": 0.275,
+            "ops": 0.845
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 2,
+            "avg": 0.12,
+            "ops": 0.395
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 3,
+            "avg": 0.292,
+            "ops": 0.891
+          },
+          "metrics": {
+            "powerScore": 72.1,
+            "contactScore": 65.7,
+            "patienceScore": 40.9,
+            "formScore": 18,
+            "splitScore": 50.2,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -7.33
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".275 AVG | .845 OPS | 30 H | 6 HR | 12g: .120 AVG | .395 OPS | 6 H | 2 HR | vs RHP: .292 AVG | .891 OPS | 3 HR | -7.3 matchup grade in a whiff-variance lane",
+          "matchupNote": "-7.33 vs Cade Cavalli"
+        },
+        {
+          "playerId": 624413,
+          "slot": 4,
+          "name": "Pete Alonso",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 36,
+            "homeRuns": 8,
+            "avg": 0.213,
+            "ops": 0.718
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.13,
+            "ops": 0.261
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 6,
+            "avg": 0.217,
+            "ops": 0.752
+          },
+          "metrics": {
+            "powerScore": 58.2,
+            "contactScore": 42.4,
+            "patienceScore": 60.9,
+            "formScore": 18,
+            "splitScore": 56.5,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "whiff risk",
+            "cold"
+          ],
+          "primaryTag": "whiff risk",
+          "summary": ".213 AVG | .718 OPS | 36 H | 8 HR | 12g: .130 AVG | .261 OPS | 6 H | 0 HR | vs RHP: .217 AVG | .752 OPS | 6 HR | -8.0 matchup grade in a whiff-variance lane",
+          "matchupNote": "-8.00 vs Cade Cavalli"
+        },
+        {
+          "playerId": 694212,
+          "slot": 5,
+          "name": "Samuel Basallo",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 35,
+            "hits": 34,
+            "homeRuns": 5,
+            "avg": 0.279,
+            "ops": 0.819
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.4,
+            "ops": 0.971
+          },
+          "split": {
+            "hits": 27,
+            "homeRuns": 4,
+            "avg": 0.278,
+            "ops": 0.834
+          },
+          "metrics": {
+            "powerScore": 61.2,
+            "contactScore": 54.1,
+            "patienceScore": 51.3,
+            "formScore": 46.2,
+            "splitScore": 52.3,
+            "varianceScore": 76.5,
+            "matchupScore": 80,
+            "matchupGrade": 7.19
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "whiff risk"
+          ],
+          "primaryTag": "carry",
+          "summary": ".279 AVG | .819 OPS | 34 H | 5 HR | 8g: .400 AVG | .971 OPS | 12 H | 0 HR | vs RHP: .278 AVG | .834 OPS | 4 HR | +7.2 matchup grade in a whiff-variance lane",
+          "matchupNote": "+7.19 vs Cade Cavalli"
+        },
+        {
+          "playerId": 641933,
+          "slot": 6,
+          "name": "Tyler O'Neill",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 25,
+            "hits": 11,
+            "homeRuns": 1,
+            "avg": 0.169,
+            "ops": 0.547
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.083,
+            "ops": 0.479
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 1,
+            "avg": 0.25,
+            "ops": 0.774
+          },
+          "metrics": {
+            "powerScore": 20.7,
+            "contactScore": 37,
+            "patienceScore": 81.2,
+            "formScore": 18,
+            "splitScore": 92,
+            "varianceScore": 87.6,
+            "matchupScore": 67.2,
+            "matchupGrade": 4.01
+          },
+          "tags": [
+            "split edge",
+            "whiff risk",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".169 AVG | .547 OPS | 11 H | 1 HR | 10g: .083 AVG | .479 OPS | 2 H | 0 HR | vs RHP: .250 AVG | .774 OPS | 1 HR | +4.0 matchup grade in a whiff-variance lane",
+          "matchupNote": "+4.01 vs Cade Cavalli"
+        },
+        {
+          "playerId": 665750,
+          "slot": 7,
+          "name": "Leody Taveras",
+          "position": "CF",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 25,
+            "homeRuns": 2,
+            "avg": 0.248,
+            "ops": 0.732
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.133,
+            "ops": 0.321
+          },
+          "split": {
+            "hits": 20,
+            "homeRuns": 2,
+            "avg": 0.282,
+            "ops": 0.821
+          },
+          "metrics": {
+            "powerScore": 38.9,
+            "contactScore": 52.6,
+            "patienceScore": 71.7,
+            "formScore": 18,
+            "splitScore": 75,
+            "varianceScore": 92,
+            "matchupScore": 22,
+            "matchupGrade": -6.35
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".248 AVG | .732 OPS | 25 H | 2 HR | 12g: .133 AVG | .321 OPS | 4 H | 0 HR | vs RHP: .282 AVG | .821 OPS | 2 HR | -6.4 matchup grade in a whiff-variance lane",
+          "matchupNote": "-6.35 vs Cade Cavalli"
+        },
+        {
+          "playerId": 691723,
+          "slot": 8,
+          "name": "Coby Mayo",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 38,
+            "hits": 20,
+            "homeRuns": 4,
+            "avg": 0.179,
+            "ops": 0.571
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.286,
+            "ops": 0.983
+          },
+          "split": {
+            "hits": 10,
+            "homeRuns": 1,
+            "avg": 0.137,
+            "ops": 0.411
+          },
+          "metrics": {
+            "powerScore": 32.1,
+            "contactScore": 20,
+            "patienceScore": 50.4,
+            "formScore": 92,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 60,
+            "matchupGrade": 1.95
+          },
+          "tags": [
+            "heater",
+            "whiff risk"
+          ],
+          "primaryTag": "heater",
+          "summary": ".179 AVG | .571 OPS | 20 H | 4 HR | 10g: .286 AVG | .983 OPS | 8 H | 2 HR | vs RHP: .137 AVG | .411 OPS | 1 HR | +2.0 matchup grade in a whiff-variance lane",
+          "matchupNote": "+1.95 vs Cade Cavalli"
+        },
+        {
+          "playerId": 669236,
+          "slot": 9,
+          "name": "Jeremiah Jackson",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 32,
+            "homeRuns": 6,
+            "avg": 0.241,
+            "ops": 0.665
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.482
+          },
+          "split": {
+            "hits": 23,
+            "homeRuns": 5,
+            "avg": 0.23,
+            "ops": 0.643
+          },
+          "metrics": {
+            "powerScore": 59.7,
+            "contactScore": 48.5,
+            "patienceScore": 26.7,
+            "formScore": 18,
+            "splitScore": 50.7,
+            "varianceScore": 80,
+            "matchupScore": 18,
+            "matchupGrade": -7.65
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".241 AVG | .665 OPS | 32 H | 6 HR | 8g: .200 AVG | .482 OPS | 4 H | 0 HR | vs RHP: .230 AVG | .643 OPS | 5 HR | -7.7 matchup grade in a whiff-variance lane",
+          "matchupNote": "-7.65 vs Cade Cavalli"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -1.93,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 2,
+        "powerCount": 1,
+        "platoonCount": 5,
+        "heaterCount": 1,
+        "suppressorCount": 2,
+        "topThirdScore": 35.1,
+        "depthScore": 33.3
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Samuel Basallo",
+            "tag": "carry | +7.19 vs Cade Cavalli"
+          },
+          {
+            "name": "Tyler O'Neill",
+            "tag": "split edge | +4.01 vs Cade Cavalli"
+          },
+          {
+            "name": "Taylor Ward",
+            "tag": "cold | +2.45 vs Cade Cavalli"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Pete Alonso",
+            "tag": "whiff risk | -8.00 vs Cade Cavalli"
+          },
+          {
+            "name": "Jeremiah Jackson",
+            "tag": "cold | -7.65 vs Cade Cavalli"
+          }
+        ],
+        "underperformNote": "Pete Alonso and Jeremiah Jackson carry the softer form or split fit into a volatile bat-misser lane.",
+        "overview": "Orioles can lean on Samuel Basallo, Tyler O'Neill, Taylor Ward to drive early pressure against Cade Cavalli.",
+        "topThirdScore": 35.1,
+        "middleScore": 55.1,
+        "depthScore": 33.3
+      }
+    },
+    "home": {
+      "teamName": "Nationals",
+      "opposingStarter": {
+        "name": "Chris Bassitt",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [
+        {
+          "playerId": 695578,
+          "slot": 1,
+          "name": "James Wood",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 40,
+            "homeRuns": 12,
+            "avg": 0.234,
+            "ops": 0.888
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 4,
+            "avg": 0.227,
+            "ops": 0.937
+          },
+          "split": {
+            "hits": 28,
+            "homeRuns": 9,
+            "avg": 0.25,
+            "ops": 0.945
+          },
+          "metrics": {
+            "powerScore": 81.9,
+            "contactScore": 39.7,
+            "patienceScore": 86.4,
+            "formScore": 78.1,
+            "splitScore": 68.4,
+            "varianceScore": 85.1,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".234 AVG | .888 OPS | 40 H | 12 HR | 12g: .227 AVG | .937 OPS | 10 H | 4 HR | vs RHP: .250 AVG | .945 OPS | 9 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Chris Bassitt"
+        },
+        {
+          "playerId": 671277,
+          "slot": 2,
+          "name": "Luis García Jr.",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 35,
+            "homeRuns": 3,
+            "avg": 0.267,
+            "ops": 0.725
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 20,
+            "homeRuns": 4,
+            "avg": 0.435,
+            "ops": 1.35
+          },
+          "split": {
+            "hits": 30,
+            "homeRuns": 2,
+            "avg": 0.263,
+            "ops": 0.719
+          },
+          "metrics": {
+            "powerScore": 42.7,
+            "contactScore": 62.5,
+            "patienceScore": 34,
+            "formScore": 92,
+            "splitScore": 43.3,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".267 AVG | .725 OPS | 35 H | 3 HR | 12g: .435 AVG | 1.350 OPS | 20 H | 4 HR | vs RHP: .263 AVG | .719 OPS | 2 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Chris Bassitt"
+        },
+        {
+          "playerId": 677588,
+          "slot": 3,
+          "name": "José Tena",
+          "position": "3B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 33,
+            "hits": 21,
+            "homeRuns": 2,
+            "avg": 0.273,
+            "ops": 0.788
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.673
+          },
+          "split": {
+            "hits": 20,
+            "homeRuns": 2,
+            "avg": 0.274,
+            "ops": 0.786
+          },
+          "metrics": {
+            "powerScore": 50,
+            "contactScore": 43.4,
+            "patienceScore": 46.3,
+            "formScore": 18,
+            "splitScore": 51.9,
+            "varianceScore": 71.5,
+            "matchupScore": 47.4,
+            "matchupGrade": 0.26
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".273 AVG | .788 OPS | 21 H | 2 HR | 8g: .200 AVG | .673 OPS | 4 H | 0 HR | vs RHP: .274 AVG | .786 OPS | 2 HR | +0.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "+0.26 vs Chris Bassitt"
+        },
+        {
+          "playerId": 682928,
+          "slot": 4,
+          "name": "CJ Abrams",
+          "position": "SS",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 46,
+            "homeRuns": 9,
+            "avg": 0.291,
+            "ops": 0.912
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.292,
+            "ops": 0.804
+          },
+          "split": {
+            "hits": 30,
+            "homeRuns": 9,
+            "avg": 0.288,
+            "ops": 1.012
+          },
+          "metrics": {
+            "powerScore": 83.5,
+            "contactScore": 63.6,
+            "patienceScore": 61.3,
+            "formScore": 18,
+            "splitScore": 83.9,
+            "varianceScore": 79.5,
+            "matchupScore": 79.6,
+            "matchupGrade": 7.15
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".291 AVG | .912 OPS | 46 H | 9 HR | 12g: .292 AVG | .804 OPS | 14 H | 0 HR | vs RHP: .288 AVG | 1.012 OPS | 9 HR | +7.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "+7.15 vs Chris Bassitt"
+        },
+        {
+          "playerId": 695734,
+          "slot": 5,
+          "name": "Daylen Lile",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 48,
+            "homeRuns": 7,
+            "avg": 0.274,
+            "ops": 0.798
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 22,
+            "homeRuns": 8,
+            "avg": 0.458,
+            "ops": 1.506
+          },
+          "split": {
+            "hits": 35,
+            "homeRuns": 7,
+            "avg": 0.285,
+            "ops": 0.877
+          },
+          "metrics": {
+            "powerScore": 65.4,
+            "contactScore": 65.5,
+            "patienceScore": 48.9,
+            "formScore": 92,
+            "splitScore": 77.5,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".274 AVG | .798 OPS | 48 H | 7 HR | 12g: .458 AVG | 1.506 OPS | 22 H | 8 HR | vs RHP: .285 AVG | .877 OPS | 7 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Chris Bassitt"
+        },
+        {
+          "playerId": 683083,
+          "slot": 6,
+          "name": "Nasim Nuñez",
+          "position": "2B",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 25,
+            "homeRuns": 0,
+            "avg": 0.202,
+            "ops": 0.536
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.071,
+            "ops": 0.307
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 0,
+            "avg": 0.167,
+            "ops": 0.458
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 39.7,
+            "patienceScore": 68.4,
+            "formScore": 18,
+            "splitScore": 34,
+            "varianceScore": 89.1,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".202 AVG | .536 OPS | 25 H | 0 HR | 12g: .071 AVG | .307 OPS | 2 H | 0 HR | vs RHP: .167 AVG | .458 OPS | 0 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Chris Bassitt"
+        },
+        {
+          "playerId": 660688,
+          "slot": 7,
+          "name": "Keibert Ruiz",
+          "position": "C",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 28,
+            "hits": 17,
+            "homeRuns": 3,
+            "avg": 0.207,
+            "ops": 0.638
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.222,
+            "ops": 0.889
+          },
+          "split": {
+            "hits": 8,
+            "homeRuns": 1,
+            "avg": 0.167,
+            "ops": 0.529
+          },
+          "metrics": {
+            "powerScore": 46.3,
+            "contactScore": 43.9,
+            "patienceScore": 23.9,
+            "formScore": 92,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 62.6,
+            "matchupGrade": 2.55
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".207 AVG | .638 OPS | 17 H | 3 HR | 4g: .222 AVG | .889 OPS | 4 H | 2 HR | vs RHP: .167 AVG | .529 OPS | 1 HR | +2.6 matchup grade in a traffic-risk lane",
+          "matchupNote": "+2.55 vs Chris Bassitt"
+        },
+        {
+          "playerId": 678391,
+          "slot": 8,
+          "name": "Jorbit Vivas",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 34,
+            "hits": 20,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.644
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.286,
+            "ops": 0.873
+          },
+          "split": {
+            "hits": 17,
+            "homeRuns": 0,
+            "avg": 0.239,
+            "ops": 0.625
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 57.4,
+            "patienceScore": 55.1,
+            "formScore": 82.3,
+            "splitScore": 45.7,
+            "varianceScore": 73.1,
+            "matchupScore": 74.4,
+            "matchupGrade": 4.98
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".250 AVG | .644 OPS | 20 H | 0 HR | 10g: .286 AVG | .873 OPS | 4 H | 0 HR | vs RHP: .239 AVG | .625 OPS | 0 HR | +5.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+4.98 vs Chris Bassitt"
+        },
+        {
+          "playerId": 696285,
+          "slot": 9,
+          "name": "Jacob Young",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 32,
+            "homeRuns": 3,
+            "avg": 0.213,
+            "ops": 0.569
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.087,
+            "ops": 0.247
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 2,
+            "avg": 0.204,
+            "ops": 0.517
+          },
+          "metrics": {
+            "powerScore": 29,
+            "contactScore": 49.4,
+            "patienceScore": 39,
+            "formScore": 18,
+            "splitScore": 40.8,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".213 AVG | .569 OPS | 32 H | 3 HR | 12g: .087 AVG | .247 OPS | 4 H | 0 HR | vs RHP: .204 AVG | .517 OPS | 2 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Chris Bassitt"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 3.22,
+        "trackedBatters": 9,
+        "starterThreatCount": 6,
+        "contactCount": 3,
+        "powerCount": 3,
+        "platoonCount": 8,
+        "heaterCount": 5,
+        "suppressorCount": 2,
+        "topThirdScore": 78.5,
+        "depthScore": 51.7
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "James Wood",
+            "tag": "carry | +10.00 vs Chris Bassitt"
+          },
+          {
+            "name": "Luis García Jr.",
+            "tag": "carry | +10.00 vs Chris Bassitt"
+          },
+          {
+            "name": "Daylen Lile",
+            "tag": "carry | +10.00 vs Chris Bassitt"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Nasim Nuñez",
+            "tag": "split edge | -8.00 vs Chris Bassitt"
+          },
+          {
+            "name": "Jacob Young",
+            "tag": "cold | -8.00 vs Chris Bassitt"
+          }
+        ],
+        "underperformNote": "Nasim Nuñez and Jacob Young carry the softer form or split fit into a traffic-risk lane.",
+        "overview": "Nationals can lean on James Wood, Luis García Jr., Daylen Lile to drive early pressure against Chris Bassitt.",
+        "topThirdScore": 78.5,
+        "middleScore": 63.9,
+        "depthScore": 51.7
+      }
+    }
+  },
+  "phillies-pirates": {
+    "gameId": "phillies-pirates",
+    "title": "Phillies @ Pirates",
+    "snapshot": "2026-05-16T20:11:42.063Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Phillies",
+      "opposingStarter": {
+        "name": "Bubba Chandler",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [
+        {
+          "playerId": 607208,
+          "slot": 1,
+          "name": "Trea Turner",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 43,
+            "homeRuns": 4,
+            "avg": 0.235,
+            "ops": 0.623
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.261,
+            "ops": 0.541
+          },
+          "split": {
+            "hits": 31,
+            "homeRuns": 3,
+            "avg": 0.244,
+            "ops": 0.638
+          },
+          "metrics": {
+            "powerScore": 35,
+            "contactScore": 52.9,
+            "patienceScore": 42.9,
+            "formScore": 21.8,
+            "splitScore": 55.6,
+            "varianceScore": 57.4,
+            "matchupScore": 34.9,
+            "matchupGrade": -2.93
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".235 AVG | .623 OPS | 43 H | 4 HR | 12g: .261 AVG | .541 OPS | 12 H | 0 HR | vs RHP: .244 AVG | .638 OPS | 3 HR | -2.9 matchup grade in a traffic-risk lane",
+          "matchupNote": "-2.93 vs Bubba Chandler"
+        },
+        {
+          "playerId": 656941,
+          "slot": 2,
+          "name": "Kyle Schwarber",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 40,
+            "homeRuns": 20,
+            "avg": 0.237,
+            "ops": 1.013
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 14,
+            "avg": 0.375,
+            "ops": 1.714
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 14,
+            "avg": 0.233,
+            "ops": 1.033
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 38.4,
+            "patienceScore": 78.2,
+            "formScore": 92,
+            "splitScore": 66.7,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".237 AVG | 1.013 OPS | 40 H | 20 HR | 12g: .375 AVG | 1.714 OPS | 18 H | 14 HR | vs RHP: .233 AVG | 1.033 OPS | 14 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Bubba Chandler"
+        },
+        {
+          "playerId": 547180,
+          "slot": 3,
+          "name": "Bryce Harper",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 46,
+            "homeRuns": 10,
+            "avg": 0.282,
+            "ops": 0.906
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.286,
+            "ops": 0.747
+          },
+          "split": {
+            "hits": 31,
+            "homeRuns": 7,
+            "avg": 0.31,
+            "ops": 1.005
+          },
+          "metrics": {
+            "powerScore": 81.6,
+            "contactScore": 69.3,
+            "patienceScore": 65.1,
+            "formScore": 23.9,
+            "splitScore": 74.5,
+            "varianceScore": 81,
+            "matchupScore": 73.3,
+            "matchupGrade": 5.72
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".282 AVG | .906 OPS | 46 H | 10 HR | 12g: .286 AVG | .747 OPS | 12 H | 2 HR | vs RHP: .310 AVG | 1.005 OPS | 7 HR | +5.7 matchup grade in a traffic-risk lane",
+          "matchupNote": "+5.72 vs Bubba Chandler"
+        },
+        {
+          "playerId": 664761,
+          "slot": 4,
+          "name": "Alec Bohm",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 29,
+            "homeRuns": 3,
+            "avg": 0.195,
+            "ops": 0.536
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 4,
+            "avg": 0.391,
+            "ops": 1.112
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 1,
+            "avg": 0.184,
+            "ops": 0.485
+          },
+          "metrics": {
+            "powerScore": 22.3,
+            "contactScore": 48.8,
+            "patienceScore": 45,
+            "formScore": 92,
+            "splitScore": 32.3,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "primaryTag": "carry",
+          "summary": ".195 AVG | .536 OPS | 29 H | 3 HR | 12g: .391 AVG | 1.112 OPS | 18 H | 4 HR | vs RHP: .184 AVG | .485 OPS | 1 HR | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Bubba Chandler"
+        },
+        {
+          "playerId": 669016,
+          "slot": 5,
+          "name": "Brandon Marsh",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 50,
+            "homeRuns": 4,
+            "avg": 0.336,
+            "ops": 0.846
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 16,
+            "homeRuns": 0,
+            "avg": 0.348,
+            "ops": 0.725
+          },
+          "split": {
+            "hits": 42,
+            "homeRuns": 4,
+            "avg": 0.356,
+            "ops": 0.906
+          },
+          "metrics": {
+            "powerScore": 56.1,
+            "contactScore": 77.6,
+            "patienceScore": 33.5,
+            "formScore": 18,
+            "splitScore": 68,
+            "varianceScore": 66.8,
+            "matchupScore": 54,
+            "matchupGrade": 1.45
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".336 AVG | .846 OPS | 50 H | 4 HR | 12g: .348 AVG | .725 OPS | 16 H | 0 HR | vs RHP: .356 AVG | .906 OPS | 4 HR | +1.4 matchup grade in a traffic-risk lane",
+          "matchupNote": "+1.45 vs Bubba Chandler"
+        },
+        {
+          "playerId": 666969,
+          "slot": 6,
+          "name": "Adolis García",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 35,
+            "homeRuns": 4,
+            "avg": 0.22,
+            "ops": 0.634
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.095,
+            "ops": 0.279
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 2,
+            "avg": 0.209,
+            "ops": 0.572
+          },
+          "metrics": {
+            "powerScore": 33.6,
+            "contactScore": 38.3,
+            "patienceScore": 49.4,
+            "formScore": 18,
+            "splitScore": 33.3,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".220 AVG | .634 OPS | 35 H | 4 HR | 12g: .095 AVG | .279 OPS | 4 H | 0 HR | vs RHP: .209 AVG | .572 OPS | 2 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Bubba Chandler"
+        },
+        {
+          "playerId": 681082,
+          "slot": 7,
+          "name": "Bryson Stott",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 39,
+            "hits": 30,
+            "homeRuns": 3,
+            "avg": 0.222,
+            "ops": 0.627
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.286,
+            "ops": 0.654
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 2,
+            "avg": 0.203,
+            "ops": 0.567
+          },
+          "metrics": {
+            "powerScore": 35.1,
+            "contactScore": 50.2,
+            "patienceScore": 37.2,
+            "formScore": 41,
+            "splitScore": 34.7,
+            "varianceScore": 49.6,
+            "matchupScore": 38.2,
+            "matchupGrade": -2.18
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".222 AVG | .627 OPS | 30 H | 3 HR | 12g: .286 AVG | .654 OPS | 12 H | 0 HR | vs RHP: .203 AVG | .567 OPS | 2 HR | -2.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "-2.18 vs Bubba Chandler"
+        },
+        {
+          "playerId": 592663,
+          "slot": 8,
+          "name": "J.T. Realmuto",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 27,
+            "hits": 21,
+            "homeRuns": 1,
+            "avg": 0.231,
+            "ops": 0.598
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.111,
+            "ops": 0.269
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 1,
+            "avg": 0.224,
+            "ops": 0.622
+          },
+          "metrics": {
+            "powerScore": 24.8,
+            "contactScore": 52.8,
+            "patienceScore": 40.9,
+            "formScore": 18,
+            "splitScore": 55.1,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".231 AVG | .598 OPS | 21 H | 1 HR | 10g: .111 AVG | .269 OPS | 4 H | 0 HR | vs RHP: .224 AVG | .622 OPS | 1 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Bubba Chandler"
+        },
+        {
+          "playerId": 702222,
+          "slot": 9,
+          "name": "Justin Crawford",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 35,
+            "homeRuns": 2,
+            "avg": 0.276,
+            "ops": 0.752
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 2,
+            "avg": 0.214,
+            "ops": 0.741
+          },
+          "split": {
+            "hits": 34,
+            "homeRuns": 2,
+            "avg": 0.315,
+            "ops": 0.85
+          },
+          "metrics": {
+            "powerScore": 38.7,
+            "contactScore": 61.9,
+            "patienceScore": 49.2,
+            "formScore": 92,
+            "splitScore": 71.8,
+            "varianceScore": 55.4,
+            "matchupScore": 71.1,
+            "matchupGrade": 3.31
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".276 AVG | .752 OPS | 35 H | 2 HR | 12g: .214 AVG | .741 OPS | 6 H | 2 HR | vs RHP: .315 AVG | .850 OPS | 2 HR | +3.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "+3.31 vs Bubba Chandler"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 1.04,
+        "trackedBatters": 9,
+        "starterThreatCount": 4,
+        "contactCount": 3,
+        "powerCount": 2,
+        "platoonCount": 5,
+        "heaterCount": 3,
+        "suppressorCount": 2,
+        "topThirdScore": 67.4,
+        "depthScore": 42.4
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Kyle Schwarber",
+            "tag": "carry | +10.00 vs Bubba Chandler"
+          },
+          {
+            "name": "Alec Bohm",
+            "tag": "carry | +10.00 vs Bubba Chandler"
+          },
+          {
+            "name": "Bryce Harper",
+            "tag": "carry | +5.72 vs Bubba Chandler"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Adolis García",
+            "tag": "cold | -8.00 vs Bubba Chandler"
+          },
+          {
+            "name": "J.T. Realmuto",
+            "tag": "cold | -8.00 vs Bubba Chandler"
+          }
+        ],
+        "underperformNote": "Adolis García and J.T. Realmuto carry the softer form or split fit into a traffic-risk lane.",
+        "overview": "Phillies can lean on Kyle Schwarber, Alec Bohm, Bryce Harper to drive early pressure against Bubba Chandler.",
+        "topThirdScore": 67.4,
+        "middleScore": 55.3,
+        "depthScore": 42.4
+      }
+    },
+    "home": {
+      "teamName": "Pirates",
+      "opposingStarter": {
+        "name": "Cristopher Sánchez",
+        "hand": "L",
+        "type": "Volatile bat-misser"
+      },
+      "lineup": [
+        {
+          "playerId": 665833,
+          "slot": 1,
+          "name": "Oneil Cruz",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 48,
+            "homeRuns": 10,
+            "avg": 0.265,
+            "ops": 0.812
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 20,
+            "homeRuns": 2,
+            "avg": 0.37,
+            "ops": 1.026
+          },
+          "split": {
+            "hits": 17,
+            "homeRuns": 4,
+            "avg": 0.309,
+            "ops": 0.908
+          },
+          "metrics": {
+            "powerScore": 78.5,
+            "contactScore": 48.7,
+            "patienceScore": 49.5,
+            "formScore": 74.2,
+            "splitScore": 88.6,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 8.86
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "whiff risk"
+          ],
+          "primaryTag": "carry",
+          "summary": ".265 AVG | .812 OPS | 48 H | 10 HR | 12g: .370 AVG | 1.026 OPS | 20 H | 2 HR | vs LHP: .309 AVG | .908 OPS | 4 HR | +8.9 matchup grade in a whiff-variance lane",
+          "matchupNote": "+8.86 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 804606,
+          "slot": 2,
+          "name": "Konnor Griffin",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 39,
+            "hits": 36,
+            "homeRuns": 3,
+            "avg": 0.254,
+            "ops": 0.699
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.231,
+            "ops": 0.635
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 0,
+            "avg": 0.31,
+            "ops": 0.812
+          },
+          "metrics": {
+            "powerScore": 30.6,
+            "contactScore": 51.4,
+            "patienceScore": 45.6,
+            "formScore": 58.2,
+            "splitScore": 55.2,
+            "varianceScore": 75.4,
+            "matchupScore": 53.6,
+            "matchupGrade": 0.5
+          },
+          "tags": [
+            "split edge",
+            "whiff risk"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".254 AVG | .699 OPS | 36 H | 3 HR | 12g: .231 AVG | .635 OPS | 12 H | 2 HR | vs LHP: .310 AVG | .812 OPS | 0 HR | +0.5 matchup grade in a whiff-variance lane",
+          "matchupNote": "+0.50 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 668804,
+          "slot": 3,
+          "name": "Bryan Reynolds",
+          "position": "LF",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 40,
+            "homeRuns": 4,
+            "avg": 0.253,
+            "ops": 0.776
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.286,
+            "ops": 0.634
+          },
+          "split": {
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.264,
+            "ops": 0.796
+          },
+          "metrics": {
+            "powerScore": 44.1,
+            "contactScore": 52.5,
+            "patienceScore": 84.6,
+            "formScore": 18,
+            "splitScore": 65.7,
+            "varianceScore": 70.2,
+            "matchupScore": 52.9,
+            "matchupGrade": 1.24
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".253 AVG | .776 OPS | 40 H | 4 HR | 12g: .286 AVG | .634 OPS | 12 H | 0 HR | vs LHP: .264 AVG | .796 OPS | 2 HR | +1.2 matchup grade in a whiff-variance lane",
+          "matchupNote": "+1.24 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 542303,
+          "slot": 4,
+          "name": "Marcell Ozuna",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 38,
+            "hits": 27,
+            "homeRuns": 5,
+            "avg": 0.188,
+            "ops": 0.597
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 2,
+            "avg": 0.13,
+            "ops": 0.615
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 2,
+            "avg": 0.257,
+            "ops": 0.852
+          },
+          "metrics": {
+            "powerScore": 45.9,
+            "contactScore": 41.3,
+            "patienceScore": 58.2,
+            "formScore": 44.9,
+            "splitScore": 92,
+            "varianceScore": 86.8,
+            "matchupScore": 88.8,
+            "matchupGrade": 8.4
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "whiff risk"
+          ],
+          "primaryTag": "carry",
+          "summary": ".188 AVG | .597 OPS | 27 H | 5 HR | 12g: .130 AVG | .615 OPS | 6 H | 2 HR | vs LHP: .257 AVG | .852 OPS | 2 HR | +8.4 matchup grade in a whiff-variance lane",
+          "matchupNote": "+8.40 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 656811,
+          "slot": 5,
+          "name": "Ryan O'Hearn",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 46,
+            "homeRuns": 7,
+            "avg": 0.291,
+            "ops": 0.832
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 16,
+            "homeRuns": 4,
+            "avg": 0.296,
+            "ops": 0.9
+          },
+          "split": {
+            "hits": 13,
+            "homeRuns": 1,
+            "avg": 0.283,
+            "ops": 0.697
+          },
+          "metrics": {
+            "powerScore": 52.8,
+            "contactScore": 64.9,
+            "patienceScore": 57.6,
+            "formScore": 92,
+            "splitScore": 18,
+            "varianceScore": 68.9,
+            "matchupScore": 55.5,
+            "matchupGrade": 0.88
+          },
+          "tags": [
+            "heater",
+            "traffic"
+          ],
+          "primaryTag": "heater",
+          "summary": ".291 AVG | .832 OPS | 46 H | 7 HR | 12g: .296 AVG | .900 OPS | 16 H | 4 HR | vs LHP: .283 AVG | .697 OPS | 1 HR | +0.9 matchup grade in a whiff-variance lane",
+          "matchupNote": "+0.88 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 693304,
+          "slot": 6,
+          "name": "Nick Gonzales",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 45,
+            "homeRuns": 0,
+            "avg": 0.313,
+            "ops": 0.738
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.35,
+            "ops": 0.831
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 0,
+            "avg": 0.22,
+            "ops": 0.539
+          },
+          "metrics": {
+            "powerScore": 22.3,
+            "contactScore": 63.6,
+            "patienceScore": 48,
+            "formScore": 67.7,
+            "splitScore": 18,
+            "varianceScore": 80.2,
+            "matchupScore": 41.3,
+            "matchupGrade": -1.82
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".313 AVG | .738 OPS | 45 H | 0 HR | 10g: .350 AVG | .831 OPS | 14 H | 0 HR | vs LHP: .220 AVG | .539 OPS | 0 HR | -1.8 matchup grade in a whiff-variance lane",
+          "matchupNote": "-1.82 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 664040,
+          "slot": 7,
+          "name": "Brandon Lowe",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 39,
+            "hits": 38,
+            "homeRuns": 12,
+            "avg": 0.252,
+            "ops": 0.915
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 4,
+            "avg": 0.2,
+            "ops": 0.86
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 3,
+            "avg": 0.163,
+            "ops": 0.601
+          },
+          "metrics": {
+            "powerScore": 89.9,
+            "contactScore": 45.9,
+            "patienceScore": 67.7,
+            "formScore": 31.8,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -7.01
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".252 AVG | .915 OPS | 38 H | 12 HR | 12g: .200 AVG | .860 OPS | 10 H | 4 HR | vs LHP: .163 AVG | .601 OPS | 3 HR | -7.0 matchup grade in a whiff-variance lane",
+          "matchupNote": "-7.01 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 669707,
+          "slot": 8,
+          "name": "Jared Triolo",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 17,
+            "hits": 11,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.608
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.556,
+            "ops": 1.156
+          },
+          "split": {
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.267,
+            "ops": 0.646
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 56.3,
+            "patienceScore": 44.1,
+            "formScore": 92,
+            "splitScore": 57.7,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".250 AVG | .608 OPS | 11 H | 0 HR | 10g: .556 AVG | 1.156 OPS | 10 H | 0 HR | vs LHP: .267 AVG | .646 OPS | 0 HR | +10.0 matchup grade in a whiff-variance lane",
+          "matchupNote": "+10.00 vs Cristopher Sánchez"
+        },
+        {
+          "playerId": 680779,
+          "slot": 9,
+          "name": "Henry Davis",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 33,
+            "hits": 13,
+            "homeRuns": 2,
+            "avg": 0.151,
+            "ops": 0.518
+          },
+          "recent": {
+            "gamesPlayed": 6,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.111,
+            "ops": 0.444
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.133,
+            "ops": 0.267
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 31.8,
+            "patienceScore": 64.7,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 85.4,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".151 AVG | .518 OPS | 13 H | 2 HR | 6g: .111 AVG | .444 OPS | 2 H | 0 HR | vs LHP: .133 AVG | .267 OPS | 0 HR | -8.0 matchup grade in a whiff-variance lane",
+          "matchupNote": "-8.00 vs Cristopher Sánchez"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 1.45,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 2,
+        "powerCount": 2,
+        "platoonCount": 7,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 66.8,
+        "depthScore": 43.3
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Jared Triolo",
+            "tag": "carry | +10.00 vs Cristopher Sánchez"
+          },
+          {
+            "name": "Oneil Cruz",
+            "tag": "carry | +8.86 vs Cristopher Sánchez"
+          },
+          {
+            "name": "Marcell Ozuna",
+            "tag": "carry | +8.40 vs Cristopher Sánchez"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Henry Davis",
+            "tag": "split edge | -8.00 vs Cristopher Sánchez"
+          },
+          {
+            "name": "Brandon Lowe",
+            "tag": "cold | -7.01 vs Cristopher Sánchez"
+          }
+        ],
+        "underperformNote": "Henry Davis and Brandon Lowe carry the softer form or split fit into a volatile bat-misser lane.",
+        "overview": "Pirates can lean on Jared Triolo, Oneil Cruz, Marcell Ozuna to drive early pressure against Cristopher Sánchez.",
+        "topThirdScore": 66.8,
+        "middleScore": 61.9,
+        "depthScore": 43.3
+      }
+    }
+  },
+  "marlins-rays": {
+    "gameId": "marlins-rays",
+    "title": "Marlins @ Rays",
+    "snapshot": "2026-05-16T20:11:42.064Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Marlins",
+      "opposingStarter": {
+        "name": "Nick Martinez",
+        "hand": "R",
+        "type": "Craft"
+      },
+      "lineup": [
+        {
+          "playerId": 669364,
+          "slot": 1,
+          "name": "Xavier Edwards",
+          "position": "2B",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 52,
+            "homeRuns": 4,
+            "avg": 0.317,
+            "ops": 0.88
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 0.808
+          },
+          "split": {
+            "hits": 39,
+            "homeRuns": 2,
+            "avg": 0.312,
+            "ops": 0.867
+          },
+          "metrics": {
+            "powerScore": 46.7,
+            "contactScore": 79.8,
+            "patienceScore": 64.4,
+            "formScore": 49.4,
+            "splitScore": 40.2,
+            "varianceScore": 44.1,
+            "matchupScore": 63.6,
+            "matchupGrade": 3.48
+          },
+          "tags": [
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".317 AVG | .880 OPS | 52 H | 4 HR | 12g: .250 AVG | .808 OPS | 12 H | 2 HR | vs RHP: .312 AVG | .867 OPS | 2 HR | +3.5 matchup grade in a craft lane",
+          "matchupNote": "+3.48 vs Nick Martinez"
+        },
+        {
+          "playerId": 689414,
+          "slot": 2,
+          "name": "Liam Hicks",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 39,
+            "homeRuns": 9,
+            "avg": 0.287,
+            "ops": 0.856
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.136,
+            "ops": 0.376
+          },
+          "split": {
+            "hits": 33,
+            "homeRuns": 8,
+            "avg": 0.303,
+            "ops": 0.91
+          },
+          "metrics": {
+            "powerScore": 81.5,
+            "contactScore": 76.4,
+            "patienceScore": 47.9,
+            "formScore": 18,
+            "splitScore": 65.7,
+            "varianceScore": 92,
+            "matchupScore": 22.8,
+            "matchupGrade": -5.94
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".287 AVG | .856 OPS | 39 H | 9 HR | 12g: .136 AVG | .376 OPS | 6 H | 0 HR | vs RHP: .303 AVG | .910 OPS | 8 HR | -5.9 matchup grade in a craft lane",
+          "matchupNote": "-5.94 vs Nick Martinez"
+        },
+        {
+          "playerId": 672640,
+          "slot": 3,
+          "name": "Otto Lopez",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 59,
+            "homeRuns": 4,
+            "avg": 0.337,
+            "ops": 0.859
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.572
+          },
+          "split": {
+            "hits": 37,
+            "homeRuns": 3,
+            "avg": 0.294,
+            "ops": 0.772
+          },
+          "metrics": {
+            "powerScore": 52.1,
+            "contactScore": 75.3,
+            "patienceScore": 32.8,
+            "formScore": 18,
+            "splitScore": 32.1,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -6.92
+          },
+          "tags": [
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "traffic",
+          "summary": ".337 AVG | .859 OPS | 59 H | 4 HR | 12g: .250 AVG | .572 OPS | 12 H | 0 HR | vs RHP: .294 AVG | .772 OPS | 3 HR | -6.9 matchup grade in a craft lane",
+          "matchupNote": "-6.92 vs Nick Martinez"
+        },
+        {
+          "playerId": 669065,
+          "slot": 4,
+          "name": "Kyle Stowers",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 23,
+            "hits": 17,
+            "homeRuns": 1,
+            "avg": 0.205,
+            "ops": 0.594
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.2,
+            "ops": 0.733
+          },
+          "split": {
+            "hits": 13,
+            "homeRuns": 1,
+            "avg": 0.21,
+            "ops": 0.635
+          },
+          "metrics": {
+            "powerScore": 23.1,
+            "contactScore": 40.7,
+            "patienceScore": 61.5,
+            "formScore": 92,
+            "splitScore": 59.1,
+            "varianceScore": 73.8,
+            "matchupScore": 76,
+            "matchupGrade": 4.76
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".205 AVG | .594 OPS | 17 H | 1 HR | 12g: .200 AVG | .733 OPS | 8 H | 2 HR | vs RHP: .210 AVG | .635 OPS | 1 HR | +4.8 matchup grade in a craft lane",
+          "matchupNote": "+4.76 vs Nick Martinez"
+        },
+        {
+          "playerId": 681393,
+          "slot": 5,
+          "name": "Connor Norby",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 30,
+            "homeRuns": 4,
+            "avg": 0.234,
+            "ops": 0.726
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.267,
+            "ops": 0.846
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 3,
+            "avg": 0.266,
+            "ops": 0.763
+          },
+          "metrics": {
+            "powerScore": 45.2,
+            "contactScore": 40.5,
+            "patienceScore": 60.6,
+            "formScore": 92,
+            "splitScore": 62.3,
+            "varianceScore": 78.3,
+            "matchupScore": 76.9,
+            "matchupGrade": 4.91
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".234 AVG | .726 OPS | 30 H | 4 HR | 8g: .267 AVG | .846 OPS | 8 H | 2 HR | vs RHP: .266 AVG | .763 OPS | 3 HR | +4.9 matchup grade in a craft lane",
+          "matchupNote": "+4.91 vs Nick Martinez"
+        },
+        {
+          "playerId": 805300,
+          "slot": 6,
+          "name": "Jakob Marsee",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 31,
+            "homeRuns": 3,
+            "avg": 0.19,
+            "ops": 0.602
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 4,
+            "avg": 0.3,
+            "ops": 1.017
+          },
+          "split": {
+            "hits": 23,
+            "homeRuns": 2,
+            "avg": 0.187,
+            "ops": 0.561
+          },
+          "metrics": {
+            "powerScore": 25.2,
+            "contactScore": 36.3,
+            "patienceScore": 69.1,
+            "formScore": 92,
+            "splitScore": 42.7,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 9.57
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".190 AVG | .602 OPS | 31 H | 3 HR | 12g: .300 AVG | 1.017 OPS | 12 H | 4 HR | vs RHP: .187 AVG | .561 OPS | 2 HR | +9.6 matchup grade in a craft lane",
+          "matchupNote": "+9.57 vs Nick Martinez"
+        },
+        {
+          "playerId": 691594,
+          "slot": 7,
+          "name": "Javier Sanoja",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 33,
+            "hits": 22,
+            "homeRuns": 0,
+            "avg": 0.253,
+            "ops": 0.615
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 0,
+            "avg": 0.268,
+            "ops": 0.631
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 62.6,
+            "patienceScore": 49.7,
+            "formScore": 18,
+            "splitScore": 54.8,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".253 AVG | .615 OPS | 22 H | 0 HR | 4g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .268 AVG | .631 OPS | 0 HR | -8.0 matchup grade in a craft lane",
+          "matchupNote": "-8.00 vs Nick Martinez"
+        },
+        {
+          "playerId": 683357,
+          "slot": 8,
+          "name": "Owen Caissie",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 38,
+            "hits": 22,
+            "homeRuns": 3,
+            "avg": 0.206,
+            "ops": 0.61
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 0.925
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 3,
+            "avg": 0.209,
+            "ops": 0.614
+          },
+          "metrics": {
+            "powerScore": 39.8,
+            "contactScore": 18.2,
+            "patienceScore": 44.7,
+            "formScore": 92,
+            "splitScore": 55.3,
+            "varianceScore": 92,
+            "matchupScore": 83.6,
+            "matchupGrade": 6.67
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".206 AVG | .610 OPS | 22 H | 3 HR | 8g: .250 AVG | .925 OPS | 4 H | 2 HR | vs RHP: .209 AVG | .614 OPS | 3 HR | +6.7 matchup grade in a craft lane",
+          "matchupNote": "+6.67 vs Nick Martinez"
+        },
+        {
+          "playerId": 691788,
+          "slot": 9,
+          "name": "Joe Mack",
+          "position": "C",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.526
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.176,
+            "ops": 0.516
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.655
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 28,
+            "patienceScore": 30.6,
+            "formScore": 44.3,
+            "splitScore": 75.1,
+            "varianceScore": 76.5,
+            "matchupScore": 50.4,
+            "matchupGrade": -0.34
+          },
+          "tags": [
+            "split edge"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".200 AVG | .526 OPS | 6 H | 0 HR | 10g: .176 AVG | .516 OPS | 6 H | 0 HR | vs RHP: .250 AVG | .655 OPS | 0 HR | -0.3 matchup grade in a craft lane",
+          "matchupNote": "-0.34 vs Nick Martinez"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 0.91,
+        "trackedBatters": 9,
+        "starterThreatCount": 5,
+        "contactCount": 4,
+        "powerCount": 1,
+        "platoonCount": 7,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 34.8,
+        "depthScore": 50.7
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Jakob Marsee",
+            "tag": "carry | +9.57 vs Nick Martinez"
+          },
+          {
+            "name": "Owen Caissie",
+            "tag": "carry | +6.67 vs Nick Martinez"
+          },
+          {
+            "name": "Connor Norby",
+            "tag": "heater | +4.91 vs Nick Martinez"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Javier Sanoja",
+            "tag": "cold | -8.00 vs Nick Martinez"
+          },
+          {
+            "name": "Otto Lopez",
+            "tag": "traffic | -6.92 vs Nick Martinez"
+          }
+        ],
+        "underperformNote": "Javier Sanoja and Otto Lopez carry the softer form or split fit into a craft lane.",
+        "overview": "Marlins can lean on Jakob Marsee, Owen Caissie, Connor Norby to drive early pressure against Nick Martinez.",
+        "topThirdScore": 34.8,
+        "middleScore": 82.3,
+        "depthScore": 50.7
+      }
+    },
+    "home": {
+      "teamName": "Rays",
+      "opposingStarter": {
+        "name": "Sandy Alcantara",
+        "hand": "R",
+        "type": "Balanced"
+      },
+      "lineup": [
+        {
+          "playerId": 802415,
+          "slot": 1,
+          "name": "Chandler Simpson",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 50,
+            "homeRuns": 0,
+            "avg": 0.305,
+            "ops": 0.693
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.294,
+            "ops": 0.745
+          },
+          "split": {
+            "hits": 37,
+            "homeRuns": 0,
+            "avg": 0.336,
+            "ops": 0.776
+          },
+          "metrics": {
+            "powerScore": 22.2,
+            "contactScore": 83.7,
+            "patienceScore": 34.2,
+            "formScore": 53.6,
+            "splitScore": 66,
+            "varianceScore": 48.8,
+            "matchupScore": 75.2,
+            "matchupGrade": 5.51
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".305 AVG | .693 OPS | 50 H | 0 HR | 8g: .294 AVG | .745 OPS | 10 H | 0 HR | vs RHP: .336 AVG | .776 OPS | 0 HR | +5.5 matchup grade in a neutral lane",
+          "matchupNote": "+5.51 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 691406,
+          "slot": 2,
+          "name": "Junior Caminero",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 41,
+            "homeRuns": 11,
+            "avg": 0.248,
+            "ops": 0.798
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.227,
+            "ops": 0.625
+          },
+          "split": {
+            "hits": 30,
+            "homeRuns": 8,
+            "avg": 0.25,
+            "ops": 0.782
+          },
+          "metrics": {
+            "powerScore": 75.7,
+            "contactScore": 59.9,
+            "patienceScore": 60.1,
+            "formScore": 18,
+            "splitScore": 49.6,
+            "varianceScore": 73.8,
+            "matchupScore": 29.4,
+            "matchupGrade": -3.99
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".248 AVG | .798 OPS | 41 H | 11 HR | 10g: .227 AVG | .625 OPS | 10 H | 2 HR | vs RHP: .250 AVG | .782 OPS | 8 HR | -4.0 matchup grade in a neutral lane",
+          "matchupNote": "-3.99 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 666018,
+          "slot": 3,
+          "name": "Jonathan Aranda",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 42,
+            "homeRuns": 8,
+            "avg": 0.28,
+            "ops": 0.863
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.429,
+            "ops": 1.188
+          },
+          "split": {
+            "hits": 32,
+            "homeRuns": 7,
+            "avg": 0.294,
+            "ops": 0.921
+          },
+          "metrics": {
+            "powerScore": 69.2,
+            "contactScore": 58.2,
+            "patienceScore": 72.9,
+            "formScore": 92,
+            "splitScore": 70,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".280 AVG | .863 OPS | 42 H | 8 HR | 10g: .429 AVG | 1.188 OPS | 12 H | 2 HR | vs RHP: .294 AVG | .921 OPS | 7 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 650490,
+          "slot": 4,
+          "name": "Yandy Díaz",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 47,
+            "homeRuns": 6,
+            "avg": 0.297,
+            "ops": 0.827
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.182,
+            "ops": 0.568
+          },
+          "split": {
+            "hits": 35,
+            "homeRuns": 4,
+            "avg": 0.299,
+            "ops": 0.833
+          },
+          "metrics": {
+            "powerScore": 53.9,
+            "contactScore": 76,
+            "patienceScore": 52.7,
+            "formScore": 18,
+            "splitScore": 47.5,
+            "varianceScore": 76,
+            "matchupScore": 18.7,
+            "matchupGrade": -6.48
+          },
+          "tags": [
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "traffic",
+          "summary": ".297 AVG | .827 OPS | 47 H | 6 HR | 10g: .182 AVG | .568 OPS | 8 H | 2 HR | vs RHP: .299 AVG | .833 OPS | 4 HR | -6.5 matchup grade in a neutral lane",
+          "matchupNote": "-6.48 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 680700,
+          "slot": 5,
+          "name": "Richie Palacios",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 29,
+            "hits": 16,
+            "homeRuns": 1,
+            "avg": 0.246,
+            "ops": 0.69
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.462,
+            "ops": 1
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 1,
+            "avg": 0.259,
+            "ops": 0.725
+          },
+          "metrics": {
+            "powerScore": 27.6,
+            "contactScore": 45.9,
+            "patienceScore": 70.3,
+            "formScore": 92,
+            "splitScore": 58,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".246 AVG | .690 OPS | 16 H | 1 HR | 8g: .462 AVG | 1.000 OPS | 12 H | 0 HR | vs RHP: .259 AVG | .725 OPS | 1 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 656775,
+          "slot": 6,
+          "name": "Cedric Mullins",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 38,
+            "hits": 23,
+            "homeRuns": 3,
+            "avg": 0.176,
+            "ops": 0.502
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.368,
+            "ops": 0.926
+          },
+          "split": {
+            "hits": 16,
+            "homeRuns": 3,
+            "avg": 0.162,
+            "ops": 0.5
+          },
+          "metrics": {
+            "powerScore": 30.3,
+            "contactScore": 39.7,
+            "patienceScore": 37.4,
+            "formScore": 92,
+            "splitScore": 54.4,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".176 AVG | .502 OPS | 23 H | 3 HR | 10g: .368 AVG | .926 OPS | 14 H | 2 HR | vs RHP: .162 AVG | .500 OPS | 3 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 676356,
+          "slot": 7,
+          "name": "Jonny DeLuca",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 35,
+            "hits": 26,
+            "homeRuns": 2,
+            "avg": 0.277,
+            "ops": 0.749
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.333,
+            "ops": 0.956
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 0,
+            "avg": 0.313,
+            "ops": 0.722
+          },
+          "metrics": {
+            "powerScore": 36.2,
+            "contactScore": 59.3,
+            "patienceScore": 36.8,
+            "formScore": 60,
+            "splitScore": 33.1,
+            "varianceScore": 78.6,
+            "matchupScore": 79.2,
+            "matchupGrade": 7.06
+          },
+          "tags": [
+            "carry"
+          ],
+          "primaryTag": "carry",
+          "summary": ".277 AVG | .749 OPS | 26 H | 2 HR | 10g: .333 AVG | .956 OPS | 6 H | 0 HR | vs RHP: .313 AVG | .722 OPS | 0 HR | +7.1 matchup grade in a neutral lane",
+          "matchupNote": "+7.06 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 676439,
+          "slot": 8,
+          "name": "Hunter Feduccia",
+          "position": "C",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 24,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.261,
+            "ops": 0.668
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.222,
+            "ops": 0.606
+          },
+          "split": {
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.667
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 34.5,
+            "patienceScore": 66.2,
+            "formScore": 35.5,
+            "splitScore": 48,
+            "varianceScore": 63.2,
+            "matchupScore": 38.1,
+            "matchupGrade": -2.38
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".261 AVG | .668 OPS | 12 H | 0 HR | 8g: .222 AVG | .606 OPS | 4 H | 0 HR | vs RHP: .250 AVG | .667 OPS | 0 HR | -2.4 matchup grade in a neutral lane",
+          "matchupNote": "-2.38 vs Sandy Alcantara"
+        },
+        {
+          "playerId": 670764,
+          "slot": 9,
+          "name": "Taylor Walls",
+          "position": "SS",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 32,
+            "hits": 20,
+            "homeRuns": 0,
+            "avg": 0.211,
+            "ops": 0.586
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.771
+          },
+          "split": {
+            "hits": 13,
+            "homeRuns": 0,
+            "avg": 0.217,
+            "ops": 0.619
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 40.2,
+            "patienceScore": 63.8,
+            "formScore": 78.3,
+            "splitScore": 55.3,
+            "varianceScore": 80,
+            "matchupScore": 76.5,
+            "matchupGrade": 5.38
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".211 AVG | .586 OPS | 20 H | 0 HR | 10g: .250 AVG | .771 OPS | 8 H | 0 HR | vs RHP: .217 AVG | .619 OPS | 0 HR | +5.4 matchup grade in a neutral lane",
+          "matchupNote": "+5.38 vs Sandy Alcantara"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 3.9,
+        "trackedBatters": 9,
+        "starterThreatCount": 6,
+        "contactCount": 2,
+        "powerCount": 2,
+        "platoonCount": 6,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 66.2,
+        "depthScore": 64.6
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Jonathan Aranda",
+            "tag": "carry | +10.00 vs Sandy Alcantara"
+          },
+          {
+            "name": "Richie Palacios",
+            "tag": "carry | +10.00 vs Sandy Alcantara"
+          },
+          {
+            "name": "Cedric Mullins",
+            "tag": "carry | +10.00 vs Sandy Alcantara"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Yandy Díaz",
+            "tag": "traffic | -6.48 vs Sandy Alcantara"
+          },
+          {
+            "name": "Junior Caminero",
+            "tag": "cold | -3.99 vs Sandy Alcantara"
+          }
+        ],
+        "underperformNote": "Yandy Díaz and Junior Caminero carry the softer form or split fit into a balanced lane.",
+        "overview": "Rays can lean on Jonathan Aranda, Richie Palacios, Cedric Mullins to drive early pressure against Sandy Alcantara.",
+        "topThirdScore": 66.2,
+        "middleScore": 68.9,
+        "depthScore": 64.6
+      }
+    }
+  },
+  "reds-guardians": {
+    "gameId": "reds-guardians",
+    "title": "Reds @ Guardians",
+    "snapshot": "2026-05-16T20:11:42.064Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Reds",
+      "opposingStarter": {
+        "name": "Joey Cantillo",
+        "hand": "L",
+        "type": "Balanced"
+      },
+      "lineup": [
+        {
+          "playerId": 667472,
+          "slot": 1,
+          "name": "Dane Myers",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 36,
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.237,
+            "ops": 0.722
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.222,
+            "ops": 0.967
+          },
+          "split": {
+            "hits": 5,
+            "homeRuns": 1,
+            "avg": 0.135,
+            "ops": 0.516
+          },
+          "metrics": {
+            "powerScore": 39.2,
+            "contactScore": 29.9,
+            "patienceScore": 75.2,
+            "formScore": 92,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 79.6,
+            "matchupGrade": 6.61
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".237 AVG | .722 OPS | 14 H | 2 HR | 8g: .222 AVG | .967 OPS | 4 H | 2 HR | vs LHP: .135 AVG | .516 OPS | 1 HR | +6.6 matchup grade in a neutral lane",
+          "matchupNote": "+6.61 vs Joey Cantillo"
+        },
+        {
+          "playerId": 682829,
+          "slot": 2,
+          "name": "Elly De La Cruz",
+          "position": "SS",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 54,
+            "homeRuns": 10,
+            "avg": 0.298,
+            "ops": 0.885
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 24,
+            "homeRuns": 0,
+            "avg": 0.462,
+            "ops": 1.058
+          },
+          "split": {
+            "hits": 14,
+            "homeRuns": 5,
+            "avg": 0.292,
+            "ops": 0.994
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 58.6,
+            "patienceScore": 49.7,
+            "formScore": 41.7,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".298 AVG | .885 OPS | 54 H | 10 HR | 12g: .462 AVG | 1.058 OPS | 24 H | 0 HR | vs LHP: .292 AVG | .994 OPS | 5 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Joey Cantillo"
+        },
+        {
+          "playerId": 701398,
+          "slot": 3,
+          "name": "Sal Stewart",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 41,
+            "homeRuns": 10,
+            "avg": 0.238,
+            "ops": 0.784
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.566
+          },
+          "split": {
+            "hits": 8,
+            "homeRuns": 3,
+            "avg": 0.242,
+            "ops": 0.981
+          },
+          "metrics": {
+            "powerScore": 77.3,
+            "contactScore": 54.6,
+            "patienceScore": 61.8,
+            "formScore": 18,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "matchupScore": 48.3,
+            "matchupGrade": -0.49
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".238 AVG | .784 OPS | 41 H | 10 HR | 12g: .200 AVG | .566 OPS | 10 H | 0 HR | vs LHP: .242 AVG | .981 OPS | 3 HR | -0.5 matchup grade in a neutral lane",
+          "matchupNote": "-0.49 vs Joey Cantillo"
+        },
+        {
+          "playerId": 668715,
+          "slot": 4,
+          "name": "Spencer Steer",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 40,
+            "homeRuns": 7,
+            "avg": 0.263,
+            "ops": 0.783
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 2,
+            "avg": 0.346,
+            "ops": 0.893
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 3,
+            "avg": 0.314,
+            "ops": 1.013
+          },
+          "metrics": {
+            "powerScore": 75.6,
+            "contactScore": 60.7,
+            "patienceScore": 50.9,
+            "formScore": 72.2,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".263 AVG | .783 OPS | 40 H | 7 HR | 12g: .346 AVG | .893 OPS | 18 H | 2 HR | vs LHP: .314 AVG | 1.013 OPS | 3 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Joey Cantillo"
+        },
+        {
+          "playerId": 668709,
+          "slot": 5,
+          "name": "JJ Bleday",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 17,
+            "hits": 20,
+            "homeRuns": 6,
+            "avg": 0.345,
+            "ops": 1.241
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 20,
+            "homeRuns": 4,
+            "avg": 0.455,
+            "ops": 1.526
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 1,
+            "avg": 0.154,
+            "ops": 0.697
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 64.1,
+            "patienceScore": 83.7,
+            "formScore": 87.6,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 84.4,
+            "matchupGrade": 7.89
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".345 AVG | 1.241 OPS | 20 H | 6 HR | 12g: .455 AVG | 1.526 OPS | 20 H | 4 HR | vs LHP: .154 AVG | .697 OPS | 1 HR | +7.9 matchup grade in a neutral lane",
+          "matchupNote": "+7.89 vs Joey Cantillo"
+        },
+        {
+          "playerId": 680574,
+          "slot": 6,
+          "name": "Matt McLain",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 35,
+            "homeRuns": 5,
+            "avg": 0.223,
+            "ops": 0.699
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 4,
+            "avg": 0.35,
+            "ops": 1.208
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 2,
+            "avg": 0.241,
+            "ops": 0.869
+          },
+          "metrics": {
+            "powerScore": 52.4,
+            "contactScore": 48.1,
+            "patienceScore": 67.6,
+            "formScore": 92,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".223 AVG | .699 OPS | 35 H | 5 HR | 12g: .350 AVG | 1.208 OPS | 14 H | 4 HR | vs LHP: .241 AVG | .869 OPS | 2 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Joey Cantillo"
+        },
+        {
+          "playerId": 694362,
+          "slot": 7,
+          "name": "Blake Dunn",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 7,
+            "hits": 3,
+            "homeRuns": 1,
+            "avg": 0.214,
+            "ops": 0.853
+          },
+          "recent": {
+            "gamesPlayed": 6,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.1,
+            "ops": 0.45
+          },
+          "split": {
+            "hits": 1,
+            "homeRuns": 0,
+            "avg": 0.167,
+            "ops": 0.452
+          },
+          "metrics": {
+            "powerScore": 54.1,
+            "contactScore": 32.6,
+            "patienceScore": 85.5,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".214 AVG | .853 OPS | 3 H | 1 HR | 6g: .100 AVG | .450 OPS | 2 H | 0 HR | vs LHP: .167 AVG | .452 OPS | 0 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Joey Cantillo"
+        },
+        {
+          "playerId": 624431,
+          "slot": 8,
+          "name": "Jose Trevino",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 13,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.143,
+            "ops": 0.351
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.167,
+            "ops": 0.333
+          },
+          "split": {
+            "hits": 3,
+            "homeRuns": 0,
+            "avg": 0.5,
+            "ops": 1
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 64.4,
+            "patienceScore": 31.5,
+            "formScore": 52.8,
+            "splitScore": 92,
+            "varianceScore": 39.1,
+            "matchupScore": 27.3,
+            "matchupGrade": -6.48
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".143 AVG | .351 OPS | 4 H | 0 HR | 4g: .167 AVG | .333 OPS | 2 H | 0 HR | vs LHP: .500 AVG | 1.000 OPS | 0 HR | -6.5 matchup grade in a neutral lane",
+          "matchupNote": "-6.48 vs Joey Cantillo"
+        },
+        {
+          "playerId": 663647,
+          "slot": 9,
+          "name": "Ke'Bryan Hayes",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 17,
+            "homeRuns": 2,
+            "avg": 0.153,
+            "ops": 0.447
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.286,
+            "ops": 0.643
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 1,
+            "avg": 0.28,
+            "ops": 0.748
+          },
+          "metrics": {
+            "powerScore": 30.3,
+            "contactScore": 47,
+            "patienceScore": 41.5,
+            "formScore": 77.8,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 9.57
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".153 AVG | .447 OPS | 17 H | 2 HR | 10g: .286 AVG | .643 OPS | 8 H | 0 HR | vs LHP: .280 AVG | .748 OPS | 1 HR | +9.6 matchup grade in a neutral lane",
+          "matchupNote": "+9.57 vs Joey Cantillo"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 4.34,
+        "trackedBatters": 9,
+        "starterThreatCount": 6,
+        "contactCount": 3,
+        "powerCount": 4,
+        "platoonCount": 8,
+        "heaterCount": 5,
+        "suppressorCount": 2,
+        "topThirdScore": 74,
+        "depthScore": 46.4
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Elly De La Cruz",
+            "tag": "carry | +10.00 vs Joey Cantillo"
+          },
+          {
+            "name": "Spencer Steer",
+            "tag": "carry | +10.00 vs Joey Cantillo"
+          },
+          {
+            "name": "Matt McLain",
+            "tag": "carry | +10.00 vs Joey Cantillo"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Blake Dunn",
+            "tag": "split edge | -8.00 vs Joey Cantillo"
+          },
+          {
+            "name": "Jose Trevino",
+            "tag": "split edge | -6.48 vs Joey Cantillo"
+          }
+        ],
+        "underperformNote": "Blake Dunn and Jose Trevino carry the softer form or split fit into a balanced lane.",
+        "overview": "Reds can lean on Elly De La Cruz, Spencer Steer, Matt McLain to drive early pressure against Joey Cantillo.",
+        "topThirdScore": 74,
+        "middleScore": 90.8,
+        "depthScore": 46.4
+      }
+    },
+    "home": {
+      "teamName": "Guardians",
+      "opposingStarter": {
+        "name": "Chris Paddack",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [
+        {
+          "playerId": 682177,
+          "slot": 1,
+          "name": "Daniel Schneemann",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 31,
+            "homeRuns": 4,
+            "avg": 0.272,
+            "ops": 0.804
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.568
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 3,
+            "avg": 0.262,
+            "ops": 0.776
+          },
+          "metrics": {
+            "powerScore": 53.8,
+            "contactScore": 44.9,
+            "patienceScore": 61.3,
+            "formScore": 18,
+            "splitScore": 45.3,
+            "varianceScore": 92,
+            "matchupScore": 37.2,
+            "matchupGrade": -2.01
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".272 AVG | .804 OPS | 31 H | 4 HR | 10g: .200 AVG | .568 OPS | 6 H | 0 HR | vs RHP: .262 AVG | .776 OPS | 3 HR | -2.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-2.01 vs Chris Paddack"
+        },
+        {
+          "playerId": 608070,
+          "slot": 2,
+          "name": "José Ramírez",
+          "position": "3B",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 37,
+            "homeRuns": 6,
+            "avg": 0.22,
+            "ops": 0.727
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.227,
+            "ops": 0.63
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 2,
+            "avg": 0.185,
+            "ops": 0.621
+          },
+          "metrics": {
+            "powerScore": 38.7,
+            "contactScore": 52.9,
+            "patienceScore": 79,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 64.6,
+            "matchupScore": 37.4,
+            "matchupGrade": -1.32
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".220 AVG | .727 OPS | 37 H | 6 HR | 12g: .227 AVG | .630 OPS | 10 H | 0 HR | vs RHP: .185 AVG | .621 OPS | 2 HR | -1.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "-1.32 vs Chris Paddack"
+        },
+        {
+          "playerId": 800050,
+          "slot": 3,
+          "name": "Chase DeLauter",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 42,
+            "homeRuns": 6,
+            "avg": 0.286,
+            "ops": 0.86
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.174,
+            "ops": 0.433
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 6,
+            "avg": 0.245,
+            "ops": 0.811
+          },
+          "metrics": {
+            "powerScore": 67.4,
+            "contactScore": 71.6,
+            "patienceScore": 63.1,
+            "formScore": 18,
+            "splitScore": 51.2,
+            "varianceScore": 92,
+            "matchupScore": 18.7,
+            "matchupGrade": -6.57
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".286 AVG | .860 OPS | 42 H | 6 HR | 12g: .174 AVG | .433 OPS | 8 H | 0 HR | vs RHP: .245 AVG | .811 OPS | 6 HR | -6.6 matchup grade in a traffic-risk lane",
+          "matchupNote": "-6.57 vs Chris Paddack"
+        },
+        {
+          "playerId": 700932,
+          "slot": 4,
+          "name": "Kyle Manzardo",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 25,
+            "homeRuns": 2,
+            "avg": 0.208,
+            "ops": 0.602
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.267,
+            "ops": 0.888
+          },
+          "split": {
+            "hits": 20,
+            "homeRuns": 2,
+            "avg": 0.194,
+            "ops": 0.599
+          },
+          "metrics": {
+            "powerScore": 27.8,
+            "contactScore": 30.3,
+            "patienceScore": 56.6,
+            "formScore": 75.4,
+            "splitScore": 49.2,
+            "varianceScore": 92,
+            "matchupScore": 85.4,
+            "matchupGrade": 7.73
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".208 AVG | .602 OPS | 25 H | 2 HR | 12g: .267 AVG | .888 OPS | 8 H | 0 HR | vs RHP: .194 AVG | .599 OPS | 2 HR | +7.7 matchup grade in a traffic-risk lane",
+          "matchupNote": "+7.73 vs Chris Paddack"
+        },
+        {
+          "playerId": 683953,
+          "slot": 5,
+          "name": "Travis Bazzana",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 15,
+            "hits": 12,
+            "homeRuns": 1,
+            "avg": 0.24,
+            "ops": 0.726
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.3,
+            "ops": 0.812
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 0,
+            "avg": 0.206,
+            "ops": 0.622
+          },
+          "metrics": {
+            "powerScore": 22.2,
+            "contactScore": 55.7,
+            "patienceScore": 92,
+            "formScore": 52.6,
+            "splitScore": 18,
+            "varianceScore": 62.4,
+            "matchupScore": 60.9,
+            "matchupGrade": 3.27
+          },
+          "tags": [
+            "split edge"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".240 AVG | .726 OPS | 12 H | 1 HR | 12g: .300 AVG | .812 OPS | 12 H | 0 HR | vs RHP: .206 AVG | .622 OPS | 0 HR | +3.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "+3.27 vs Chris Paddack"
+        },
+        {
+          "playerId": 680757,
+          "slot": 6,
+          "name": "Steven Kwan",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 32,
+            "homeRuns": 1,
+            "avg": 0.201,
+            "ops": 0.566
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.053,
+            "ops": 0.27
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 1,
+            "avg": 0.21,
+            "ops": 0.601
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 56.4,
+            "patienceScore": 67,
+            "formScore": 18,
+            "splitScore": 58.6,
+            "varianceScore": 85.4,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".201 AVG | .566 OPS | 32 H | 1 HR | 10g: .053 AVG | .270 OPS | 2 H | 0 HR | vs RHP: .210 AVG | .601 OPS | 1 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Chris Paddack"
+        },
+        {
+          "playerId": 682657,
+          "slot": 7,
+          "name": "Angel Martínez",
+          "position": "RF",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 35,
+            "homeRuns": 7,
+            "avg": 0.259,
+            "ops": 0.77
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 4,
+            "avg": 0.25,
+            "ops": 0.836
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 5,
+            "avg": 0.256,
+            "ops": 0.812
+          },
+          "metrics": {
+            "powerScore": 69.3,
+            "contactScore": 52.9,
+            "patienceScore": 35.9,
+            "formScore": 92,
+            "splitScore": 59.9,
+            "varianceScore": 64.8,
+            "matchupScore": 75.7,
+            "matchupGrade": 4.68
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".259 AVG | .770 OPS | 35 H | 7 HR | 12g: .250 AVG | .836 OPS | 10 H | 4 HR | vs RHP: .256 AVG | .812 OPS | 5 HR | +4.7 matchup grade in a traffic-risk lane",
+          "matchupNote": "+4.68 vs Chris Paddack"
+        },
+        {
+          "playerId": 595978,
+          "slot": 8,
+          "name": "Austin Hedges",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 21,
+            "hits": 15,
+            "homeRuns": 1,
+            "avg": 0.273,
+            "ops": 0.728
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.143
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.214,
+            "ops": 0.552
+          },
+          "metrics": {
+            "powerScore": 31.2,
+            "contactScore": 46.2,
+            "patienceScore": 47.8,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".273 AVG | .728 OPS | 15 H | 1 HR | 8g: .000 AVG | .143 OPS | 0 H | 0 HR | vs RHP: .214 AVG | .552 OPS | 0 HR | -8.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-8.00 vs Chris Paddack"
+        },
+        {
+          "playerId": 677587,
+          "slot": 9,
+          "name": "Brayan Rocchio",
+          "position": "SS",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 39,
+            "homeRuns": 3,
+            "avg": 0.269,
+            "ops": 0.713
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.3,
+            "ops": 0.698
+          },
+          "split": {
+            "hits": 27,
+            "homeRuns": 1,
+            "avg": 0.273,
+            "ops": 0.68
+          },
+          "metrics": {
+            "powerScore": 31.6,
+            "contactScore": 69.6,
+            "patienceScore": 54,
+            "formScore": 32.8,
+            "splitScore": 37.4,
+            "varianceScore": 36.2,
+            "matchupScore": 43.3,
+            "matchupGrade": -0.81
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".269 AVG | .713 OPS | 39 H | 3 HR | 12g: .300 AVG | .698 OPS | 12 H | 0 HR | vs RHP: .273 AVG | .680 OPS | 1 HR | -0.8 matchup grade in a traffic-risk lane",
+          "matchupNote": "-0.81 vs Chris Paddack"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -1.23,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 2,
+        "powerCount": 2,
+        "platoonCount": 8,
+        "heaterCount": 2,
+        "suppressorCount": 2,
+        "topThirdScore": 31.1,
+        "depthScore": 45.7
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Kyle Manzardo",
+            "tag": "carry | +7.73 vs Chris Paddack"
+          },
+          {
+            "name": "Angel Martínez",
+            "tag": "heater | +4.68 vs Chris Paddack"
+          },
+          {
+            "name": "Travis Bazzana",
+            "tag": "split edge | +3.27 vs Chris Paddack"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Steven Kwan",
+            "tag": "split edge | -8.00 vs Chris Paddack"
+          },
+          {
+            "name": "Austin Hedges",
+            "tag": "cold | -8.00 vs Chris Paddack"
+          }
+        ],
+        "underperformNote": "Steven Kwan and Austin Hedges carry the softer form or split fit into a traffic-risk lane.",
+        "overview": "Guardians can lean on Kyle Manzardo, Angel Martínez, Travis Bazzana to drive early pressure against Chris Paddack.",
+        "topThirdScore": 31.1,
+        "middleScore": 54.8,
+        "depthScore": 45.7
+      }
+    }
+  },
+  "rangers-astros": {
+    "gameId": "rangers-astros",
+    "title": "Rangers @ Astros",
+    "snapshot": "2026-05-16T20:11:42.064Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Rangers",
+      "opposingStarter": {
+        "name": "Kai-Wei Teng",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [
+        {
+          "playerId": 592626,
+          "slot": 1,
+          "name": "Joc Pederson",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 21,
+            "homeRuns": 3,
+            "avg": 0.21,
+            "ops": 0.652
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.222,
+            "ops": 0.864
+          },
+          "split": {
+            "hits": 21,
+            "homeRuns": 3,
+            "avg": 0.219,
+            "ops": 0.671
+          },
+          "metrics": {
+            "powerScore": 36.7,
+            "contactScore": 37.2,
+            "patienceScore": 72.1,
+            "formScore": 92,
+            "splitScore": 55,
+            "varianceScore": 83.7,
+            "matchupScore": 73.7,
+            "matchupGrade": 4.31
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".210 AVG | .652 OPS | 21 H | 3 HR | 12g: .222 AVG | .864 OPS | 8 H | 2 HR | vs RHP: .219 AVG | .671 OPS | 3 HR | +4.3 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+4.31 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 607043,
+          "slot": 2,
+          "name": "Brandon Nimmo",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 45,
+            "homeRuns": 4,
+            "avg": 0.276,
+            "ops": 0.774
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.182,
+            "ops": 0.523
+          },
+          "split": {
+            "hits": 31,
+            "homeRuns": 3,
+            "avg": 0.265,
+            "ops": 0.769
+          },
+          "metrics": {
+            "powerScore": 43.8,
+            "contactScore": 62.2,
+            "patienceScore": 56.1,
+            "formScore": 18,
+            "splitScore": 47.9,
+            "varianceScore": 82,
+            "matchupScore": 21.9,
+            "matchupGrade": -5.73
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".276 AVG | .774 OPS | 45 H | 4 HR | 12g: .182 AVG | .523 OPS | 8 H | 0 HR | vs RHP: .265 AVG | .769 OPS | 3 HR | -5.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-5.73 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 673962,
+          "slot": 3,
+          "name": "Josh Jung",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 49,
+            "homeRuns": 5,
+            "avg": 0.316,
+            "ops": 0.86
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 2,
+            "avg": 0.375,
+            "ops": 0.917
+          },
+          "split": {
+            "hits": 43,
+            "homeRuns": 4,
+            "avg": 0.347,
+            "ops": 0.916
+          },
+          "metrics": {
+            "powerScore": 58.2,
+            "contactScore": 78.4,
+            "patienceScore": 40.9,
+            "formScore": 82.3,
+            "splitScore": 62.8,
+            "varianceScore": 52.3,
+            "matchupScore": 74.8,
+            "matchupGrade": 4.69
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "heater",
+          "summary": ".316 AVG | .860 OPS | 49 H | 5 HR | 12g: .375 AVG | .917 OPS | 18 H | 2 HR | vs RHP: .347 AVG | .916 OPS | 4 HR | +4.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+4.69 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 694497,
+          "slot": 4,
+          "name": "Evan Carter",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 23,
+            "homeRuns": 5,
+            "avg": 0.174,
+            "ops": 0.621
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 2,
+            "avg": 0.158,
+            "ops": 0.554
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 5,
+            "avg": 0.202,
+            "ops": 0.708
+          },
+          "metrics": {
+            "powerScore": 43.1,
+            "contactScore": 37.6,
+            "patienceScore": 73.1,
+            "formScore": 58.8,
+            "splitScore": 72.4,
+            "varianceScore": 67.1,
+            "matchupScore": 41.8,
+            "matchupGrade": -2.73
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".174 AVG | .621 OPS | 23 H | 5 HR | 12g: .158 AVG | .554 OPS | 6 H | 2 HR | vs RHP: .202 AVG | .708 OPS | 5 HR | -2.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-2.73 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 677649,
+          "slot": 5,
+          "name": "Ezequiel Duran",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 36,
+            "hits": 29,
+            "homeRuns": 3,
+            "avg": 0.274,
+            "ops": 0.797
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.174,
+            "ops": 0.556
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 3,
+            "avg": 0.299,
+            "ops": 0.853
+          },
+          "metrics": {
+            "powerScore": 52.5,
+            "contactScore": 55.1,
+            "patienceScore": 55,
+            "formScore": 23.5,
+            "splitScore": 67.8,
+            "varianceScore": 92,
+            "matchupScore": 24.7,
+            "matchupGrade": -5.69
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".274 AVG | .797 OPS | 29 H | 3 HR | 12g: .174 AVG | .556 OPS | 8 H | 2 HR | vs RHP: .299 AVG | .853 OPS | 3 HR | -5.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-5.69 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 696030,
+          "slot": 6,
+          "name": "Alejandro Osuna",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 19,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.256,
+            "ops": 0.713
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.294,
+            "ops": 0.723
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 0,
+            "avg": 0.243,
+            "ops": 0.687
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 48.5,
+            "patienceScore": 87.3,
+            "formScore": 58.6,
+            "splitScore": 44.3,
+            "varianceScore": 44.7,
+            "matchupScore": 41.1,
+            "matchupGrade": -2.22
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".256 AVG | .713 OPS | 10 H | 0 HR | 12g: .294 AVG | .723 OPS | 10 H | 0 HR | vs RHP: .243 AVG | .687 OPS | 0 HR | -2.2 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-2.22 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 669394,
+          "slot": 7,
+          "name": "Jake Burger",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 36,
+            "homeRuns": 7,
+            "avg": 0.224,
+            "ops": 0.648
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.417,
+            "ops": 1.167
+          },
+          "split": {
+            "hits": 29,
+            "homeRuns": 6,
+            "avg": 0.221,
+            "ops": 0.652
+          },
+          "metrics": {
+            "powerScore": 54.8,
+            "contactScore": 41.7,
+            "patienceScore": 36.5,
+            "formScore": 92,
+            "splitScore": 53,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "primaryTag": "carry",
+          "summary": ".224 AVG | .648 OPS | 36 H | 7 HR | 8g: .417 AVG | 1.167 OPS | 10 H | 2 HR | vs RHP: .221 AVG | .652 OPS | 6 HR | +10.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+10.00 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 643376,
+          "slot": 8,
+          "name": "Danny Jansen",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 28,
+            "hits": 17,
+            "homeRuns": 2,
+            "avg": 0.195,
+            "ops": 0.619
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.533
+          },
+          "split": {
+            "hits": 13,
+            "homeRuns": 2,
+            "avg": 0.188,
+            "ops": 0.611
+          },
+          "metrics": {
+            "powerScore": 35.8,
+            "contactScore": 30.9,
+            "patienceScore": 53.9,
+            "formScore": 18,
+            "splitScore": 53.5,
+            "varianceScore": 66.5,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".195 AVG | .619 OPS | 17 H | 2 HR | 4g: .200 AVG | .533 OPS | 2 H | 0 HR | vs RHP: .188 AVG | .611 OPS | 2 HR | -8.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-8.00 vs Kai-Wei Teng"
+        },
+        {
+          "playerId": 679822,
+          "slot": 9,
+          "name": "Justin Foscue",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 7,
+            "hits": 3,
+            "homeRuns": 1,
+            "avg": 0.214,
+            "ops": 0.643
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.2,
+            "ops": 0.7
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 1,
+            "avg": 0.167,
+            "ops": 0.583
+          },
+          "metrics": {
+            "powerScore": 84.7,
+            "contactScore": 35.1,
+            "patienceScore": 18.2,
+            "formScore": 87.7,
+            "splitScore": 45.9,
+            "varianceScore": 78.3,
+            "matchupScore": 40.5,
+            "matchupGrade": -3.24
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".214 AVG | .643 OPS | 3 H | 1 HR | 8g: .200 AVG | .700 OPS | 4 H | 2 HR | vs RHP: .167 AVG | .583 OPS | 1 HR | -3.2 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-3.24 vs Kai-Wei Teng"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -0.96,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 2,
+        "powerCount": 1,
+        "platoonCount": 6,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 56.8,
+        "depthScore": 50.8
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Jake Burger",
+            "tag": "carry | +10.00 vs Kai-Wei Teng"
+          },
+          {
+            "name": "Josh Jung",
+            "tag": "heater | +4.69 vs Kai-Wei Teng"
+          },
+          {
+            "name": "Joc Pederson",
+            "tag": "heater | +4.31 vs Kai-Wei Teng"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Danny Jansen",
+            "tag": "cold | -8.00 vs Kai-Wei Teng"
+          },
+          {
+            "name": "Brandon Nimmo",
+            "tag": "split edge | -5.73 vs Kai-Wei Teng"
+          }
+        ],
+        "underperformNote": "Danny Jansen and Brandon Nimmo carry the softer form or split fit into a contact suppressor lane.",
+        "overview": "Rangers can lean on Jake Burger, Josh Jung, Joc Pederson to drive early pressure against Kai-Wei Teng.",
+        "topThirdScore": 56.8,
+        "middleScore": 35.9,
+        "depthScore": 50.8
+      }
+    },
+    "home": {
+      "teamName": "Astros",
+      "opposingStarter": {
+        "name": "Jacob deGrom",
+        "hand": "R",
+        "type": "Power"
+      },
+      "lineup": [
+        {
+          "playerId": 514888,
+          "slot": 1,
+          "name": "Jose Altuve",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 39,
+            "homeRuns": 3,
+            "avg": 0.245,
+            "ops": 0.693
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.261,
+            "ops": 0.569
+          },
+          "split": {
+            "hits": 28,
+            "homeRuns": 3,
+            "avg": 0.246,
+            "ops": 0.71
+          },
+          "metrics": {
+            "powerScore": 37.2,
+            "contactScore": 56.7,
+            "patienceScore": 58.2,
+            "formScore": 19.6,
+            "splitScore": 59.1,
+            "varianceScore": 61.9,
+            "matchupScore": 37.2,
+            "matchupGrade": -2.41
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".245 AVG | .693 OPS | 39 H | 3 HR | 12g: .261 AVG | .569 OPS | 12 H | 0 HR | vs RHP: .246 AVG | .710 OPS | 3 HR | -2.4 matchup grade in a power-arm lane",
+          "matchupNote": "-2.41 vs Jacob deGrom"
+        },
+        {
+          "playerId": 670623,
+          "slot": 2,
+          "name": "Isaac Paredes",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 38,
+            "homeRuns": 4,
+            "avg": 0.257,
+            "ops": 0.734
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.222,
+            "ops": 0.609
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 4,
+            "avg": 0.243,
+            "ops": 0.71
+          },
+          "metrics": {
+            "powerScore": 45.4,
+            "contactScore": 58.6,
+            "patienceScore": 56.1,
+            "formScore": 42.3,
+            "splitScore": 53.6,
+            "varianceScore": 61.3,
+            "matchupScore": 39.5,
+            "matchupGrade": -2.36
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".257 AVG | .734 OPS | 38 H | 4 HR | 14g: .222 AVG | .609 OPS | 12 H | 2 HR | vs RHP: .243 AVG | .710 OPS | 4 HR | -2.4 matchup grade in a power-arm lane",
+          "matchupNote": "-2.36 vs Jacob deGrom"
+        },
+        {
+          "playerId": 670541,
+          "slot": 3,
+          "name": "Yordan Alvarez",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 54,
+            "homeRuns": 14,
+            "avg": 0.321,
+            "ops": 1.068
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.304,
+            "ops": 0.988
+          },
+          "split": {
+            "hits": 35,
+            "homeRuns": 8,
+            "avg": 0.321,
+            "ops": 1.076
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 76.1,
+            "patienceScore": 72.3,
+            "formScore": 18,
+            "splitScore": 40.9,
+            "varianceScore": 55.3,
+            "matchupScore": 81.7,
+            "matchupGrade": 8.67
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".321 AVG | 1.068 OPS | 54 H | 14 HR | 14g: .304 AVG | .988 OPS | 14 H | 2 HR | vs RHP: .321 AVG | 1.076 OPS | 8 HR | +8.7 matchup grade in a power-arm lane",
+          "matchupNote": "+8.67 vs Jacob deGrom"
+        },
+        {
+          "playerId": 572233,
+          "slot": 4,
+          "name": "Christian Walker",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 44,
+            "homeRuns": 10,
+            "avg": 0.265,
+            "ops": 0.848
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.083,
+            "ops": 0.435
+          },
+          "split": {
+            "hits": 37,
+            "homeRuns": 8,
+            "avg": 0.282,
+            "ops": 0.869
+          },
+          "metrics": {
+            "powerScore": 76.7,
+            "contactScore": 60.7,
+            "patienceScore": 55.2,
+            "formScore": 18,
+            "splitScore": 58.2,
+            "varianceScore": 92,
+            "matchupScore": 19.8,
+            "matchupGrade": -6.47
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".265 AVG | .848 OPS | 44 H | 10 HR | 14g: .083 AVG | .435 OPS | 4 H | 2 HR | vs RHP: .282 AVG | .869 OPS | 8 HR | -6.5 matchup grade in a power-arm lane",
+          "matchupNote": "-6.47 vs Jacob deGrom"
+        },
+        {
+          "playerId": 669699,
+          "slot": 5,
+          "name": "Braden Shewmake",
+          "position": "SS",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 15,
+            "hits": 15,
+            "homeRuns": 3,
+            "avg": 0.366,
+            "ops": 0.976
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 2,
+            "avg": 0.375,
+            "ops": 0.917
+          },
+          "split": {
+            "hits": 14,
+            "homeRuns": 3,
+            "avg": 0.4,
+            "ops": 1.086
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 84.1,
+            "patienceScore": 18.2,
+            "formScore": 18,
+            "splitScore": 81.8,
+            "varianceScore": 62,
+            "matchupScore": 88.9,
+            "matchupGrade": 9.43
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "carry",
+          "summary": ".366 AVG | .976 OPS | 15 H | 3 HR | 12g: .375 AVG | .917 OPS | 18 H | 2 HR | vs RHP: .400 AVG | 1.086 OPS | 3 HR | +9.4 matchup grade in a power-arm lane",
+          "matchupNote": "+9.43 vs Jacob deGrom"
+        },
+        {
+          "playerId": 694728,
+          "slot": 6,
+          "name": "Brice Matthews",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 22,
+            "homeRuns": 4,
+            "avg": 0.208,
+            "ops": 0.638
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.148,
+            "ops": 0.296
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 2,
+            "avg": 0.221,
+            "ops": 0.633
+          },
+          "metrics": {
+            "powerScore": 44.8,
+            "contactScore": 28.9,
+            "patienceScore": 44.3,
+            "formScore": 18,
+            "splitScore": 43.5,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "whiff risk",
+            "cold"
+          ],
+          "primaryTag": "whiff risk",
+          "summary": ".208 AVG | .638 OPS | 22 H | 4 HR | 14g: .148 AVG | .296 OPS | 8 H | 0 HR | vs RHP: .221 AVG | .633 OPS | 2 HR | -8.0 matchup grade in a power-arm lane",
+          "matchupNote": "-8.00 vs Jacob deGrom"
+        },
+        {
+          "playerId": 805904,
+          "slot": 7,
+          "name": "Zach Cole",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 10,
+            "hits": 7,
+            "homeRuns": 2,
+            "avg": 0.226,
+            "ops": 0.702
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.488
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 2,
+            "avg": 0.259,
+            "ops": 0.804
+          },
+          "metrics": {
+            "powerScore": 79.8,
+            "contactScore": 26,
+            "patienceScore": 22.6,
+            "formScore": 18,
+            "splitScore": 77.8,
+            "varianceScore": 92,
+            "matchupScore": 33.7,
+            "matchupGrade": -3.63
+          },
+          "tags": [
+            "split edge",
+            "whiff risk",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".226 AVG | .702 OPS | 7 H | 2 HR | 12g: .200 AVG | .488 OPS | 8 H | 0 HR | vs RHP: .259 AVG | .804 OPS | 2 HR | -3.6 matchup grade in a power-arm lane",
+          "matchupNote": "-3.63 vs Jacob deGrom"
+        },
+        {
+          "playerId": 701305,
+          "slot": 8,
+          "name": "Zach Dezenzo",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 8,
+            "hits": 3,
+            "homeRuns": 1,
+            "avg": 0.158,
+            "ops": 0.659
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.154,
+            "ops": 0.574
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.143,
+            "ops": 0.536
+          },
+          "metrics": {
+            "powerScore": 42.2,
+            "contactScore": 18,
+            "patienceScore": 55.5,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "whiff risk",
+            "cold"
+          ],
+          "primaryTag": "whiff risk",
+          "summary": ".158 AVG | .659 OPS | 3 H | 1 HR | 12g: .154 AVG | .574 OPS | 4 H | 0 HR | vs RHP: .143 AVG | .536 OPS | 0 HR | -8.0 matchup grade in a power-arm lane",
+          "matchupNote": "-8.00 vs Jacob deGrom"
+        },
+        {
+          "playerId": 543877,
+          "slot": 9,
+          "name": "Christian Vázquez",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 26,
+            "hits": 20,
+            "homeRuns": 3,
+            "avg": 0.253,
+            "ops": 0.724
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.071,
+            "ops": 0.205
+          },
+          "split": {
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.233,
+            "ops": 0.686
+          },
+          "metrics": {
+            "powerScore": 50.7,
+            "contactScore": 53.2,
+            "patienceScore": 44.2,
+            "formScore": 18,
+            "splitScore": 37.1,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".253 AVG | .724 OPS | 20 H | 3 HR | 10g: .071 AVG | .205 OPS | 2 H | 0 HR | vs RHP: .233 AVG | .686 OPS | 2 HR | -8.0 matchup grade in a power-arm lane",
+          "matchupNote": "-8.00 vs Jacob deGrom"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -2.31,
+        "trackedBatters": 9,
+        "starterThreatCount": 2,
+        "contactCount": 3,
+        "powerCount": 4,
+        "platoonCount": 5,
+        "heaterCount": 0,
+        "suppressorCount": 2,
+        "topThirdScore": 52.8,
+        "depthScore": 23.2
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Braden Shewmake",
+            "tag": "carry | +9.43 vs Jacob deGrom"
+          },
+          {
+            "name": "Yordan Alvarez",
+            "tag": "carry | +8.67 vs Jacob deGrom"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Brice Matthews",
+            "tag": "whiff risk | -8.00 vs Jacob deGrom"
+          },
+          {
+            "name": "Zach Dezenzo",
+            "tag": "whiff risk | -8.00 vs Jacob deGrom"
+          }
+        ],
+        "underperformNote": "Brice Matthews and Zach Dezenzo carry the softer form or split fit into a power lane.",
+        "overview": "Astros can lean on Braden Shewmake, Yordan Alvarez to drive early pressure against Jacob deGrom.",
+        "topThirdScore": 52.8,
+        "middleScore": 42.2,
+        "depthScore": 23.2
+      }
+    }
+  },
+  "cubs-white-sox": {
+    "gameId": "cubs-white-sox",
+    "title": "Cubs @ White Sox",
+    "snapshot": "2026-05-16T20:11:42.065Z",
+    "status": {
+      "away": "pending",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Cubs",
+      "opposingStarter": {
+        "name": "Davis Martin",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "White Sox",
+      "opposingStarter": {
+        "name": "Jameson Taillon",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [
+        {
+          "playerId": 803011,
+          "slot": 1,
+          "name": "Sam Antonacci",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 27,
+            "hits": 23,
+            "homeRuns": 1,
+            "avg": 0.274,
+            "ops": 0.797
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.263,
+            "ops": 0.785
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 1,
+            "avg": 0.314,
+            "ops": 0.895
+          },
+          "metrics": {
+            "powerScore": 36.2,
+            "contactScore": 71.2,
+            "patienceScore": 53.8,
+            "formScore": 34.8,
+            "splitScore": 71.7,
+            "varianceScore": 46.6,
+            "matchupScore": 64.8,
+            "matchupGrade": 3.44
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".274 AVG | .797 OPS | 23 H | 1 HR | 12g: .263 AVG | .785 OPS | 10 H | 0 HR | vs RHP: .314 AVG | .895 OPS | 1 HR | +3.4 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+3.44 vs Jameson Taillon"
+        },
+        {
+          "playerId": 808959,
+          "slot": 2,
+          "name": "Munetaka Murakami",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 35,
+            "homeRuns": 15,
+            "avg": 0.227,
+            "ops": 0.894
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.158,
+            "ops": 0.518
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 11,
+            "avg": 0.229,
+            "ops": 0.901
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 33.4,
+            "patienceScore": 87.8,
+            "formScore": 18,
+            "splitScore": 54.9,
+            "varianceScore": 92,
+            "matchupScore": 18.6,
+            "matchupGrade": -6.68
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".227 AVG | .894 OPS | 35 H | 15 HR | 12g: .158 AVG | .518 OPS | 6 H | 0 HR | vs RHP: .229 AVG | .901 OPS | 11 HR | -6.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-6.68 vs Jameson Taillon"
+        },
+        {
+          "playerId": 678246,
+          "slot": 3,
+          "name": "Miguel Vargas",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 38,
+            "homeRuns": 10,
+            "avg": 0.247,
+            "ops": 0.869
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "homeRuns": 6,
+            "avg": 0.429,
+            "ops": 1.432
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 4,
+            "avg": 0.21,
+            "ops": 0.703
+          },
+          "metrics": {
+            "powerScore": 64.7,
+            "contactScore": 55.1,
+            "patienceScore": 79.5,
+            "formScore": 92,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 93.8,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "primaryTag": "carry",
+          "summary": ".247 AVG | .869 OPS | 38 H | 10 HR | 12g: .429 AVG | 1.432 OPS | 18 H | 6 HR | vs RHP: .210 AVG | .703 OPS | 4 HR | +10.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+10.00 vs Jameson Taillon"
+        },
+        {
+          "playerId": 695657,
+          "slot": 4,
+          "name": "Colson Montgomery",
+          "position": "SS",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 37,
+            "homeRuns": 12,
+            "avg": 0.237,
+            "ops": 0.854
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 12,
+            "homeRuns": 6,
+            "avg": 0.316,
+            "ops": 1.139
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 8,
+            "avg": 0.239,
+            "ops": 0.85
+          },
+          "metrics": {
+            "powerScore": 85.4,
+            "contactScore": 41.6,
+            "patienceScore": 57.3,
+            "formScore": 92,
+            "splitScore": 46.6,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".237 AVG | .854 OPS | 37 H | 12 HR | 10g: .316 AVG | 1.139 OPS | 12 H | 6 HR | vs RHP: .239 AVG | .850 OPS | 8 HR | +10.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+10.00 vs Jameson Taillon"
+        },
+        {
+          "playerId": 805367,
+          "slot": 5,
+          "name": "Chase Meidroth",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 43,
+            "homeRuns": 3,
+            "avg": 0.277,
+            "ops": 0.746
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.278,
+            "ops": 0.864
+          },
+          "split": {
+            "hits": 27,
+            "homeRuns": 3,
+            "avg": 0.241,
+            "ops": 0.663
+          },
+          "metrics": {
+            "powerScore": 40.2,
+            "contactScore": 53.4,
+            "patienceScore": 57,
+            "formScore": 92,
+            "splitScore": 39.5,
+            "varianceScore": 75.7,
+            "matchupScore": 53.8,
+            "matchupGrade": -0.05
+          },
+          "tags": [
+            "heater"
+          ],
+          "primaryTag": "heater",
+          "summary": ".277 AVG | .746 OPS | 43 H | 3 HR | 12g: .278 AVG | .864 OPS | 10 H | 2 HR | vs RHP: .241 AVG | .663 OPS | 3 HR | -0.1 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-0.05 vs Jameson Taillon"
+        },
+        {
+          "playerId": 643217,
+          "slot": 6,
+          "name": "Andrew Benintendi",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 27,
+            "homeRuns": 2,
+            "avg": 0.216,
+            "ops": 0.604
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.231
+          },
+          "split": {
+            "hits": 22,
+            "homeRuns": 2,
+            "avg": 0.212,
+            "ops": 0.623
+          },
+          "metrics": {
+            "powerScore": 30.9,
+            "contactScore": 32.9,
+            "patienceScore": 45,
+            "formScore": 18,
+            "splitScore": 54.3,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".216 AVG | .604 OPS | 27 H | 2 HR | 8g: .000 AVG | .231 OPS | 0 H | 0 HR | vs RHP: .212 AVG | .623 OPS | 2 HR | -8.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-8.00 vs Jameson Taillon"
+        },
+        {
+          "playerId": 672284,
+          "slot": 7,
+          "name": "Jarred Kelenic",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 13,
+            "hits": 9,
+            "homeRuns": 1,
+            "avg": 0.25,
+            "ops": 0.703
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.222,
+            "ops": 0.744
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 1,
+            "avg": 0.226,
+            "ops": 0.669
+          },
+          "metrics": {
+            "powerScore": 41.2,
+            "contactScore": 43.8,
+            "patienceScore": 63.9,
+            "formScore": 79.8,
+            "splitScore": 45.6,
+            "varianceScore": 56.4,
+            "matchupScore": 45.9,
+            "matchupGrade": -1.73
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".250 AVG | .703 OPS | 9 H | 1 HR | 12g: .222 AVG | .744 OPS | 8 H | 2 HR | vs RHP: .226 AVG | .669 OPS | 1 HR | -1.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-1.73 vs Jameson Taillon"
+        },
+        {
+          "playerId": 671976,
+          "slot": 8,
+          "name": "Tristan Peters",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 26,
+            "homeRuns": 0,
+            "avg": 0.26,
+            "ops": 0.635
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.235,
+            "ops": 0.588
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 0,
+            "avg": 0.274,
+            "ops": 0.667
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 48.8,
+            "patienceScore": 43.2,
+            "formScore": 39.9,
+            "splitScore": 56.5,
+            "varianceScore": 56,
+            "matchupScore": 31,
+            "matchupGrade": -4.39
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".260 AVG | .635 OPS | 26 H | 0 HR | 12g: .235 AVG | .588 OPS | 8 H | 0 HR | vs RHP: .274 AVG | .667 OPS | 0 HR | -4.4 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-4.39 vs Jameson Taillon"
+        },
+        {
+          "playerId": 691011,
+          "slot": 9,
+          "name": "Drew Romo",
+          "position": "C",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 12,
+            "hits": 7,
+            "homeRuns": 4,
+            "avg": 0.2,
+            "ops": 0.964
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.267,
+            "ops": 0.867
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 3,
+            "avg": 0.231,
+            "ops": 1.029
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 44,
+            "patienceScore": 91.3,
+            "formScore": 23.6,
+            "splitScore": 66.5,
+            "varianceScore": 84.2,
+            "matchupScore": 58.2,
+            "matchupGrade": 2.32
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".200 AVG | .964 OPS | 7 H | 4 HR | 8g: .267 AVG | .867 OPS | 8 H | 2 HR | vs RHP: .231 AVG | 1.029 OPS | 3 HR | +2.3 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+2.32 vs Jameson Taillon"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 0.55,
+        "trackedBatters": 9,
+        "starterThreatCount": 4,
+        "contactCount": 1,
+        "powerCount": 4,
+        "platoonCount": 7,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 59.1,
+        "depthScore": 45
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Miguel Vargas",
+            "tag": "carry | +10.00 vs Jameson Taillon"
+          },
+          {
+            "name": "Colson Montgomery",
+            "tag": "carry | +10.00 vs Jameson Taillon"
+          },
+          {
+            "name": "Sam Antonacci",
+            "tag": "split edge | +3.44 vs Jameson Taillon"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Andrew Benintendi",
+            "tag": "split edge | -8.00 vs Jameson Taillon"
+          },
+          {
+            "name": "Munetaka Murakami",
+            "tag": "split edge | -6.68 vs Jameson Taillon"
+          }
+        ],
+        "underperformNote": "Andrew Benintendi and Munetaka Murakami carry the softer form or split fit into a contact suppressor lane.",
+        "overview": "White Sox can lean on Miguel Vargas, Colson Montgomery, Sam Antonacci to drive early pressure against Jameson Taillon.",
+        "topThirdScore": 59.1,
+        "middleScore": 55.3,
+        "depthScore": 45
+      }
+    }
+  },
+  "brewers-twins": {
+    "gameId": "brewers-twins",
+    "title": "Brewers @ Twins",
+    "snapshot": "2026-05-16T20:11:42.065Z",
+    "status": {
+      "away": "pending",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Brewers",
+      "opposingStarter": {
+        "name": "Connor Prielipp",
+        "hand": "L",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Twins",
+      "opposingStarter": {
+        "name": "Logan Henderson",
+        "hand": "R",
+        "type": "Unknown sample"
+      },
+      "lineup": [
+        {
+          "playerId": 668885,
+          "slot": 1,
+          "name": "Austin Martin",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 39,
+            "hits": 36,
+            "homeRuns": 1,
+            "avg": 0.33,
+            "ops": 0.87
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.318,
+            "ops": 0.784
+          },
+          "split": {
+            "hits": 20,
+            "homeRuns": 0,
+            "avg": 0.323,
+            "ops": 0.771
+          },
+          "metrics": {
+            "powerScore": 31.1,
+            "contactScore": 73.7,
+            "patienceScore": 78.8,
+            "formScore": 29.2,
+            "splitScore": 28.8,
+            "varianceScore": 61.8,
+            "matchupScore": 39.7,
+            "matchupGrade": -1.36
+          },
+          "tags": [
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "traffic",
+          "summary": ".330 AVG | .870 OPS | 36 H | 1 HR | 12g: .318 AVG | .784 OPS | 14 H | 0 HR | vs RHP: .323 AVG | .771 OPS | 0 HR | -1.4 matchup grade in a neutral lane",
+          "matchupNote": "-1.36 vs Logan Henderson"
+        },
+        {
+          "playerId": 686797,
+          "slot": 2,
+          "name": "Brooks Lee",
+          "position": "SS",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 39,
+            "homeRuns": 5,
+            "avg": 0.26,
+            "ops": 0.715
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.167,
+            "ops": 0.439
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 3,
+            "avg": 0.265,
+            "ops": 0.712
+          },
+          "metrics": {
+            "powerScore": 47.2,
+            "contactScore": 60.8,
+            "patienceScore": 44.3,
+            "formScore": 18,
+            "splitScore": 48.5,
+            "varianceScore": 83.9,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".260 AVG | .715 OPS | 39 H | 5 HR | 12g: .167 AVG | .439 OPS | 8 H | 0 HR | vs RHP: .265 AVG | .712 OPS | 3 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Logan Henderson"
+        },
+        {
+          "playerId": 680777,
+          "slot": 3,
+          "name": "Ryan Jeffers",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 34,
+            "hits": 32,
+            "homeRuns": 6,
+            "avg": 0.286,
+            "ops": 0.922
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 4,
+            "homeRuns": 2,
+            "avg": 0.167,
+            "ops": 0.875
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 5,
+            "avg": 0.279,
+            "ops": 0.949
+          },
+          "metrics": {
+            "powerScore": 77.1,
+            "contactScore": 64.3,
+            "patienceScore": 78.1,
+            "formScore": 43.4,
+            "splitScore": 68.7,
+            "varianceScore": 52.9,
+            "matchupScore": 65.1,
+            "matchupGrade": 3.33
+          },
+          "tags": [
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".286 AVG | .922 OPS | 32 H | 6 HR | 8g: .167 AVG | .875 OPS | 4 H | 2 HR | vs RHP: .279 AVG | .949 OPS | 5 HR | +3.3 matchup grade in a neutral lane",
+          "matchupNote": "+3.33 vs Logan Henderson"
+        },
+        {
+          "playerId": 663616,
+          "slot": 4,
+          "name": "Trevor Larnach",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 33,
+            "hits": 26,
+            "homeRuns": 1,
+            "avg": 0.268,
+            "ops": 0.78
+          },
+          "recent": {
+            "gamesPlayed": 6,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.705
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 0,
+            "avg": 0.309,
+            "ops": 0.847
+          },
+          "metrics": {
+            "powerScore": 26.9,
+            "contactScore": 61.9,
+            "patienceScore": 82.3,
+            "formScore": 27.9,
+            "splitScore": 57.3,
+            "varianceScore": 59.6,
+            "matchupScore": 55.5,
+            "matchupGrade": 1.76
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".268 AVG | .780 OPS | 26 H | 1 HR | 6g: .250 AVG | .705 OPS | 4 H | 0 HR | vs RHP: .309 AVG | .847 OPS | 0 HR | +1.8 matchup grade in a neutral lane",
+          "matchupNote": "+1.76 vs Logan Henderson"
+        },
+        {
+          "playerId": 605137,
+          "slot": 5,
+          "name": "Josh Bell",
+          "position": "DH",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 33,
+            "homeRuns": 3,
+            "avg": 0.209,
+            "ops": 0.592
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.167,
+            "ops": 0.417
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 2,
+            "avg": 0.153,
+            "ops": 0.474
+          },
+          "metrics": {
+            "powerScore": 29.9,
+            "contactScore": 36.4,
+            "patienceScore": 49.6,
+            "formScore": 18,
+            "splitScore": 26.3,
+            "varianceScore": 90.7,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".209 AVG | .592 OPS | 33 H | 3 HR | 12g: .167 AVG | .417 OPS | 8 H | 0 HR | vs RHP: .153 AVG | .474 OPS | 2 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Logan Henderson"
+        },
+        {
+          "playerId": 665019,
+          "slot": 6,
+          "name": "Kody Clemens",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 33,
+            "hits": 23,
+            "homeRuns": 4,
+            "avg": 0.225,
+            "ops": 0.742
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.368,
+            "ops": 1.084
+          },
+          "split": {
+            "hits": 18,
+            "homeRuns": 3,
+            "avg": 0.202,
+            "ops": 0.686
+          },
+          "metrics": {
+            "powerScore": 49.5,
+            "contactScore": 37.5,
+            "patienceScore": 59.1,
+            "formScore": 92,
+            "splitScore": 34.6,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".225 AVG | .742 OPS | 23 H | 4 HR | 10g: .368 AVG | 1.084 OPS | 14 H | 2 HR | vs RHP: .202 AVG | .686 OPS | 3 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Logan Henderson"
+        },
+        {
+          "playerId": 668904,
+          "slot": 7,
+          "name": "Royce Lewis",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 29,
+            "hits": 16,
+            "homeRuns": 3,
+            "avg": 0.165,
+            "ops": 0.557
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.125,
+            "ops": 0.451
+          },
+          "split": {
+            "hits": 12,
+            "homeRuns": 3,
+            "avg": 0.174,
+            "ops": 0.608
+          },
+          "metrics": {
+            "powerScore": 37.6,
+            "contactScore": 26.4,
+            "patienceScore": 62.4,
+            "formScore": 18,
+            "splitScore": 68.8,
+            "varianceScore": 78.7,
+            "matchupScore": 23.2,
+            "matchupGrade": -5.91
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".165 AVG | .557 OPS | 16 H | 3 HR | 10g: .125 AVG | .451 OPS | 4 H | 0 HR | vs RHP: .174 AVG | .608 OPS | 3 HR | -5.9 matchup grade in a neutral lane",
+          "matchupNote": "-5.91 vs Logan Henderson"
+        },
+        {
+          "playerId": 656484,
+          "slot": 8,
+          "name": "Tristan Gray",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 21,
+            "hits": 16,
+            "homeRuns": 3,
+            "avg": 0.242,
+            "ops": 0.676
+          },
+          "recent": {
+            "gamesPlayed": 2,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "split": {
+            "hits": 13,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 0.67
+          },
+          "metrics": {
+            "powerScore": 52.6,
+            "contactScore": 34.3,
+            "patienceScore": 35.3,
+            "formScore": 18,
+            "splitScore": 44.7,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".242 AVG | .676 OPS | 16 H | 3 HR | 2g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .250 AVG | .670 OPS | 2 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Logan Henderson"
+        },
+        {
+          "playerId": 681546,
+          "slot": 9,
+          "name": "James Outman",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 33,
+            "hits": 7,
+            "homeRuns": 0,
+            "avg": 0.179,
+            "ops": 0.495
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.5,
+            "ops": 1.238
+          },
+          "split": {
+            "hits": 5,
+            "homeRuns": 0,
+            "avg": 0.161,
+            "ops": 0.438
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 18,
+            "patienceScore": 45.9,
+            "formScore": 92,
+            "splitScore": 39.7,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".179 AVG | .495 OPS | 7 H | 0 HR | 10g: .500 AVG | 1.238 OPS | 6 H | 0 HR | vs RHP: .161 AVG | .438 OPS | 0 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Logan Henderson"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -0.69,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 4,
+        "powerCount": 1,
+        "platoonCount": 8,
+        "heaterCount": 2,
+        "suppressorCount": 2,
+        "topThirdScore": 40.9,
+        "depthScore": 45.1
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Kody Clemens",
+            "tag": "carry | +10.00 vs Logan Henderson"
+          },
+          {
+            "name": "James Outman",
+            "tag": "carry | +10.00 vs Logan Henderson"
+          },
+          {
+            "name": "Ryan Jeffers",
+            "tag": "split edge | +3.33 vs Logan Henderson"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Brooks Lee",
+            "tag": "split edge | -8.00 vs Logan Henderson"
+          },
+          {
+            "name": "Josh Bell",
+            "tag": "split edge | -8.00 vs Logan Henderson"
+          }
+        ],
+        "underperformNote": "Brooks Lee and Josh Bell carry the softer form or split fit into a unknown sample lane.",
+        "overview": "Twins can lean on Kody Clemens, James Outman, Ryan Jeffers to drive early pressure against Logan Henderson.",
+        "topThirdScore": 40.9,
+        "middleScore": 55.8,
+        "depthScore": 45.1
+      }
+    }
+  },
+  "padres-mariners": {
+    "gameId": "padres-mariners",
+    "title": "Padres @ Mariners",
+    "snapshot": "2026-05-16T20:11:42.065Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Padres",
+      "opposingStarter": {
+        "name": "Logan Gilbert",
+        "hand": "R",
+        "type": "Strike-throwing"
+      },
+      "lineup": [
+        {
+          "playerId": 701538,
+          "slot": 1,
+          "name": "Jackson Merrill",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 34,
+            "homeRuns": 4,
+            "avg": 0.21,
+            "ops": 0.614
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.053,
+            "ops": 0.234
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 4,
+            "avg": 0.203,
+            "ops": 0.613
+          },
+          "metrics": {
+            "powerScore": 37.2,
+            "contactScore": 39.4,
+            "patienceScore": 51,
+            "formScore": 18,
+            "splitScore": 54.3,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".210 AVG | .614 OPS | 34 H | 4 HR | 10g: .053 AVG | .234 OPS | 2 H | 0 HR | vs RHP: .203 AVG | .613 OPS | 4 HR | -8.0 matchup grade in a in-zone lane",
+          "matchupNote": "-8.00 vs Logan Gilbert"
+        },
+        {
+          "playerId": 665487,
+          "slot": 2,
+          "name": "Fernando Tatis Jr.",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 38,
+            "homeRuns": 0,
+            "avg": 0.237,
+            "ops": 0.593
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.174,
+            "ops": 0.443
+          },
+          "split": {
+            "hits": 32,
+            "homeRuns": 0,
+            "avg": 0.242,
+            "ops": 0.581
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 47.9,
+            "patienceScore": 55,
+            "formScore": 20.8,
+            "splitScore": 49.4,
+            "varianceScore": 71.8,
+            "matchupScore": 18.9,
+            "matchupGrade": -6.57
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".237 AVG | .593 OPS | 38 H | 0 HR | 12g: .174 AVG | .443 OPS | 8 H | 0 HR | vs RHP: .242 AVG | .581 OPS | 0 HR | -6.6 matchup grade in a in-zone lane",
+          "matchupNote": "-6.57 vs Logan Gilbert"
+        },
+        {
+          "playerId": 592518,
+          "slot": 3,
+          "name": "Manny Machado",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 28,
+            "homeRuns": 6,
+            "avg": 0.185,
+            "ops": 0.611
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 2,
+            "avg": 0.13,
+            "ops": 0.386
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 5,
+            "avg": 0.154,
+            "ops": 0.531
+          },
+          "metrics": {
+            "powerScore": 43.3,
+            "contactScore": 35.7,
+            "patienceScore": 63.9,
+            "formScore": 23.3,
+            "splitScore": 35.3,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".185 AVG | .611 OPS | 28 H | 6 HR | 12g: .130 AVG | .386 OPS | 6 H | 2 HR | vs RHP: .154 AVG | .531 OPS | 5 HR | -8.0 matchup grade in a in-zone lane",
+          "matchupNote": "-8.00 vs Logan Gilbert"
+        },
+        {
+          "playerId": 657757,
+          "slot": 4,
+          "name": "Gavin Sheets",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 29,
+            "homeRuns": 6,
+            "avg": 0.24,
+            "ops": 0.766
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.333,
+            "ops": 0.955
+          },
+          "split": {
+            "hits": 27,
+            "homeRuns": 6,
+            "avg": 0.248,
+            "ops": 0.806
+          },
+          "metrics": {
+            "powerScore": 67.4,
+            "contactScore": 50.4,
+            "patienceScore": 47.8,
+            "formScore": 89.5,
+            "splitScore": 61.5,
+            "varianceScore": 84.5,
+            "matchupScore": 94,
+            "matchupGrade": 9.43
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".240 AVG | .766 OPS | 29 H | 6 HR | 12g: .333 AVG | .955 OPS | 12 H | 2 HR | vs RHP: .248 AVG | .806 OPS | 6 HR | +9.4 matchup grade in a in-zone lane",
+          "matchupNote": "+9.43 vs Logan Gilbert"
+        },
+        {
+          "playerId": 593428,
+          "slot": 5,
+          "name": "Xander Bogaerts",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 41,
+            "homeRuns": 7,
+            "avg": 0.263,
+            "ops": 0.752
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.227,
+            "ops": 0.534
+          },
+          "split": {
+            "hits": 32,
+            "homeRuns": 7,
+            "avg": 0.254,
+            "ops": 0.765
+          },
+          "metrics": {
+            "powerScore": 60.8,
+            "contactScore": 61.6,
+            "patienceScore": 54.8,
+            "formScore": 18,
+            "splitScore": 59.6,
+            "varianceScore": 74.6,
+            "matchupScore": 29.3,
+            "matchupGrade": -4.25
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".263 AVG | .752 OPS | 41 H | 7 HR | 12g: .227 AVG | .534 OPS | 10 H | 0 HR | vs RHP: .254 AVG | .765 OPS | 7 HR | -4.2 matchup grade in a in-zone lane",
+          "matchupNote": "-4.25 vs Logan Gilbert"
+        },
+        {
+          "playerId": 609280,
+          "slot": 6,
+          "name": "Miguel Andujar",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 33,
+            "hits": 35,
+            "homeRuns": 3,
+            "avg": 0.297,
+            "ops": 0.811
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.3,
+            "ops": 0.9
+          },
+          "split": {
+            "hits": 27,
+            "homeRuns": 2,
+            "avg": 0.314,
+            "ops": 0.841
+          },
+          "metrics": {
+            "powerScore": 53.1,
+            "contactScore": 67.8,
+            "patienceScore": 28.3,
+            "formScore": 90.9,
+            "splitScore": 55,
+            "varianceScore": 57.8,
+            "matchupScore": 79.9,
+            "matchupGrade": 5.82
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".297 AVG | .811 OPS | 35 H | 3 HR | 10g: .300 AVG | .900 OPS | 12 H | 2 HR | vs RHP: .314 AVG | .841 OPS | 2 HR | +5.8 matchup grade in a in-zone lane",
+          "matchupNote": "+5.82 vs Logan Gilbert"
+        },
+        {
+          "playerId": 592206,
+          "slot": 7,
+          "name": "Nick Castellanos",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 28,
+            "hits": 17,
+            "homeRuns": 2,
+            "avg": 0.2,
+            "ops": 0.563
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.286,
+            "ops": 0.857
+          },
+          "split": {
+            "hits": 13,
+            "homeRuns": 2,
+            "avg": 0.206,
+            "ops": 0.604
+          },
+          "metrics": {
+            "powerScore": 37.6,
+            "contactScore": 32.1,
+            "patienceScore": 34.9,
+            "formScore": 92,
+            "splitScore": 63.9,
+            "varianceScore": 92,
+            "matchupScore": 77,
+            "matchupGrade": 4.91
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".200 AVG | .563 OPS | 17 H | 2 HR | 8g: .286 AVG | .857 OPS | 8 H | 2 HR | vs RHP: .206 AVG | .604 OPS | 2 HR | +4.9 matchup grade in a in-zone lane",
+          "matchupNote": "+4.91 vs Logan Gilbert"
+        },
+        {
+          "playerId": 657656,
+          "slot": 8,
+          "name": "Ramón Laureano",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 32,
+            "homeRuns": 5,
+            "avg": 0.222,
+            "ops": 0.683
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.2,
+            "ops": 0.494
+          },
+          "split": {
+            "hits": 26,
+            "homeRuns": 5,
+            "avg": 0.236,
+            "ops": 0.745
+          },
+          "metrics": {
+            "powerScore": 49.9,
+            "contactScore": 36.4,
+            "patienceScore": 55.9,
+            "formScore": 18,
+            "splitScore": 69.3,
+            "varianceScore": 92,
+            "matchupScore": 25.2,
+            "matchupGrade": -5.45
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".222 AVG | .683 OPS | 32 H | 5 HR | 12g: .200 AVG | .494 OPS | 6 H | 0 HR | vs RHP: .236 AVG | .745 OPS | 5 HR | -5.5 matchup grade in a in-zone lane",
+          "matchupNote": "-5.45 vs Logan Gilbert"
+        },
+        {
+          "playerId": 660710,
+          "slot": 9,
+          "name": "Rodolfo Durán",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 3,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "split": {
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "metrics": {
+            "powerScore": 25.5,
+            "contactScore": 18,
+            "patienceScore": 74.9,
+            "formScore": 50,
+            "splitScore": 50,
+            "varianceScore": 75.7,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".000 AVG | .000 OPS | 0 H | 0 HR | 4g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .000 AVG | .000 OPS | 0 HR | -8.0 matchup grade in a in-zone lane",
+          "matchupNote": "-8.00 vs Logan Gilbert"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -2.23,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 2,
+        "powerCount": 1,
+        "platoonCount": 5,
+        "heaterCount": 3,
+        "suppressorCount": 2,
+        "topThirdScore": 18.3,
+        "depthScore": 40.1
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Gavin Sheets",
+            "tag": "carry | +9.43 vs Logan Gilbert"
+          },
+          {
+            "name": "Miguel Andujar",
+            "tag": "carry | +5.82 vs Logan Gilbert"
+          },
+          {
+            "name": "Nick Castellanos",
+            "tag": "heater | +4.91 vs Logan Gilbert"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Jackson Merrill",
+            "tag": "split edge | -8.00 vs Logan Gilbert"
+          },
+          {
+            "name": "Manny Machado",
+            "tag": "cold | -8.00 vs Logan Gilbert"
+          }
+        ],
+        "underperformNote": "Jackson Merrill and Manny Machado carry the softer form or split fit into a strike-throwing lane.",
+        "overview": "Padres can lean on Gavin Sheets, Miguel Andujar, Nick Castellanos to drive early pressure against Logan Gilbert.",
+        "topThirdScore": 18.3,
+        "middleScore": 67.7,
+        "depthScore": 40.1
+      }
+    },
+    "home": {
+      "teamName": "Mariners",
+      "opposingStarter": {
+        "name": "Walker Buehler",
+        "hand": "R",
+        "type": "Balanced"
+      },
+      "lineup": [
+        {
+          "playerId": 680977,
+          "slot": 1,
+          "name": "Brendan Donovan",
+          "position": "3B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 25,
+            "hits": 23,
+            "homeRuns": 3,
+            "avg": 0.274,
+            "ops": 0.839
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.217,
+            "ops": 0.628
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 3,
+            "avg": 0.311,
+            "ops": 0.999
+          },
+          "metrics": {
+            "powerScore": 57,
+            "contactScore": 68.4,
+            "patienceScore": 64.6,
+            "formScore": 18,
+            "splitScore": 86.1,
+            "varianceScore": 92,
+            "matchupScore": 51.4,
+            "matchupGrade": 0.38
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".274 AVG | .839 OPS | 23 H | 3 HR | 12g: .217 AVG | .628 OPS | 10 H | 0 HR | vs RHP: .311 AVG | .999 OPS | 3 HR | +0.4 matchup grade in a neutral lane",
+          "matchupNote": "+0.38 vs Walker Buehler"
+        },
+        {
+          "playerId": 677594,
+          "slot": 2,
+          "name": "Julio Rodríguez",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 47,
+            "homeRuns": 7,
+            "avg": 0.257,
+            "ops": 0.744
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.214,
+            "ops": 0.683
+          },
+          "split": {
+            "hits": 35,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 0.662
+          },
+          "metrics": {
+            "powerScore": 44.2,
+            "contactScore": 52.9,
+            "patienceScore": 49.3,
+            "formScore": 31.7,
+            "splitScore": 18,
+            "varianceScore": 66,
+            "matchupScore": 34.6,
+            "matchupGrade": -2.37
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".257 AVG | .744 OPS | 47 H | 7 HR | 14g: .214 AVG | .683 OPS | 12 H | 2 HR | vs RHP: .250 AVG | .662 OPS | 2 HR | -2.4 matchup grade in a neutral lane",
+          "matchupNote": "-2.37 vs Walker Buehler"
+        },
+        {
+          "playerId": 647304,
+          "slot": 3,
+          "name": "Josh Naylor",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 42,
+            "homeRuns": 5,
+            "avg": 0.247,
+            "ops": 0.675
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.25,
+            "ops": 0.644
+          },
+          "split": {
+            "hits": 33,
+            "homeRuns": 5,
+            "avg": 0.264,
+            "ops": 0.754
+          },
+          "metrics": {
+            "powerScore": 45.3,
+            "contactScore": 62.2,
+            "patienceScore": 48.8,
+            "formScore": 18,
+            "splitScore": 72.2,
+            "varianceScore": 51.8,
+            "matchupScore": 55.6,
+            "matchupGrade": 1.72
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".247 AVG | .675 OPS | 42 H | 5 HR | 14g: .250 AVG | .644 OPS | 14 H | 0 HR | vs RHP: .264 AVG | .754 OPS | 5 HR | +1.7 matchup grade in a neutral lane",
+          "matchupNote": "+1.72 vs Walker Buehler"
+        },
+        {
+          "playerId": 668227,
+          "slot": 4,
+          "name": "Randy Arozarena",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 51,
+            "homeRuns": 4,
+            "avg": 0.305,
+            "ops": 0.847
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 24,
+            "homeRuns": 2,
+            "avg": 0.444,
+            "ops": 1.146
+          },
+          "split": {
+            "hits": 40,
+            "homeRuns": 2,
+            "avg": 0.317,
+            "ops": 0.865
+          },
+          "metrics": {
+            "powerScore": 44.1,
+            "contactScore": 64.3,
+            "patienceScore": 57.3,
+            "formScore": 92,
+            "splitScore": 47.3,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".305 AVG | .847 OPS | 51 H | 4 HR | 14g: .444 AVG | 1.146 OPS | 24 H | 2 HR | vs RHP: .317 AVG | .865 OPS | 2 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Walker Buehler"
+        },
+        {
+          "playerId": 670042,
+          "slot": 5,
+          "name": "Luke Raley",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 30,
+            "homeRuns": 10,
+            "avg": 0.265,
+            "ops": 0.92
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 4,
+            "avg": 0.313,
+            "ops": 1.137
+          },
+          "split": {
+            "hits": 29,
+            "homeRuns": 10,
+            "avg": 0.266,
+            "ops": 0.935
+          },
+          "metrics": {
+            "powerScore": 92,
+            "contactScore": 37.7,
+            "patienceScore": 46.1,
+            "formScore": 92,
+            "splitScore": 54.6,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".265 AVG | .920 OPS | 30 H | 10 HR | 12g: .313 AVG | 1.137 OPS | 10 H | 4 HR | vs RHP: .266 AVG | .935 OPS | 10 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Walker Buehler"
+        },
+        {
+          "playerId": 641487,
+          "slot": 6,
+          "name": "J.P. Crawford",
+          "position": "SS",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 38,
+            "hits": 28,
+            "homeRuns": 5,
+            "avg": 0.211,
+            "ops": 0.713
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.214,
+            "ops": 0.647
+          },
+          "split": {
+            "hits": 21,
+            "homeRuns": 4,
+            "avg": 0.223,
+            "ops": 0.759
+          },
+          "metrics": {
+            "powerScore": 44.6,
+            "contactScore": 53.7,
+            "patienceScore": 87.5,
+            "formScore": 45.7,
+            "splitScore": 62.3,
+            "varianceScore": 51.5,
+            "matchupScore": 49.9,
+            "matchupGrade": -0.18
+          },
+          "tags": [
+            "split edge"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".211 AVG | .713 OPS | 28 H | 5 HR | 14g: .214 AVG | .647 OPS | 12 H | 2 HR | vs RHP: .223 AVG | .759 OPS | 4 HR | -0.2 matchup grade in a neutral lane",
+          "matchupNote": "-0.18 vs Walker Buehler"
+        },
+        {
+          "playerId": 686527,
+          "slot": 7,
+          "name": "Dominic Canzone",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 39,
+            "hits": 24,
+            "homeRuns": 4,
+            "avg": 0.258,
+            "ops": 0.786
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 0.715
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 4,
+            "avg": 0.27,
+            "ops": 0.806
+          },
+          "metrics": {
+            "powerScore": 61.1,
+            "contactScore": 49.8,
+            "patienceScore": 50.6,
+            "formScore": 61.5,
+            "splitScore": 56.9,
+            "varianceScore": 61.1,
+            "matchupScore": 51.6,
+            "matchupGrade": -0.12
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".258 AVG | .786 OPS | 24 H | 4 HR | 12g: .250 AVG | .715 OPS | 8 H | 2 HR | vs RHP: .270 AVG | .806 OPS | 4 HR | -0.1 matchup grade in a neutral lane",
+          "matchupNote": "-0.12 vs Walker Buehler"
+        },
+        {
+          "playerId": 641598,
+          "slot": 8,
+          "name": "Mitch Garver",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 22,
+            "hits": 9,
+            "homeRuns": 1,
+            "avg": 0.173,
+            "ops": 0.598
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 2,
+            "homeRuns": 2,
+            "avg": 0.143,
+            "ops": 0.971
+          },
+          "split": {
+            "hits": 3,
+            "homeRuns": 1,
+            "avg": 0.103,
+            "ops": 0.485
+          },
+          "metrics": {
+            "powerScore": 26,
+            "contactScore": 18,
+            "patienceScore": 92,
+            "formScore": 92,
+            "splitScore": 35.9,
+            "varianceScore": 92,
+            "matchupScore": 89.1,
+            "matchupGrade": 8.43
+          },
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "primaryTag": "carry",
+          "summary": ".173 AVG | .598 OPS | 9 H | 1 HR | 8g: .143 AVG | .971 OPS | 2 H | 2 HR | vs RHP: .103 AVG | .485 OPS | 1 HR | +8.4 matchup grade in a neutral lane",
+          "matchupNote": "+8.43 vs Walker Buehler"
+        },
+        {
+          "playerId": 702284,
+          "slot": 9,
+          "name": "Cole Young",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 46,
+            "hits": 41,
+            "homeRuns": 3,
+            "avg": 0.255,
+            "ops": 0.704
+          },
+          "recent": {
+            "gamesPlayed": 14,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.16,
+            "ops": 0.49
+          },
+          "split": {
+            "hits": 28,
+            "homeRuns": 1,
+            "avg": 0.259,
+            "ops": 0.707
+          },
+          "metrics": {
+            "powerScore": 31.6,
+            "contactScore": 52.7,
+            "patienceScore": 51.9,
+            "formScore": 18,
+            "splitScore": 42.6,
+            "varianceScore": 79.5,
+            "matchupScore": 18,
+            "matchupGrade": -7.14
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".255 AVG | .704 OPS | 41 H | 3 HR | 14g: .160 AVG | .490 OPS | 8 H | 0 HR | vs RHP: .259 AVG | .707 OPS | 1 HR | -7.1 matchup grade in a neutral lane",
+          "matchupNote": "-7.14 vs Walker Buehler"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 2.3,
+        "trackedBatters": 9,
+        "starterThreatCount": 3,
+        "contactCount": 3,
+        "powerCount": 1,
+        "platoonCount": 6,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 47.2,
+        "depthScore": 52.9
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Randy Arozarena",
+            "tag": "carry | +10.00 vs Walker Buehler"
+          },
+          {
+            "name": "Luke Raley",
+            "tag": "carry | +10.00 vs Walker Buehler"
+          },
+          {
+            "name": "Mitch Garver",
+            "tag": "carry | +8.43 vs Walker Buehler"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Cole Young",
+            "tag": "split edge | -7.14 vs Walker Buehler"
+          },
+          {
+            "name": "Julio Rodríguez",
+            "tag": "cold | -2.37 vs Walker Buehler"
+          }
+        ],
+        "underperformNote": "Cole Young and Julio Rodríguez carry the softer form or split fit into a balanced lane.",
+        "overview": "Mariners can lean on Randy Arozarena, Luke Raley, Mitch Garver to drive early pressure against Walker Buehler.",
+        "topThirdScore": 47.2,
+        "middleScore": 79.3,
+        "depthScore": 52.9
+      }
+    }
+  },
+  "red-sox-braves": {
+    "gameId": "red-sox-braves",
+    "title": "Red Sox @ Braves",
+    "snapshot": "2026-05-16T20:11:42.066Z",
+    "status": {
+      "away": "posted",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Red Sox",
+      "opposingStarter": {
+        "name": "Bryce Elder",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [
+        {
+          "playerId": 680776,
+          "slot": 1,
+          "name": "Jarren Duran",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 39,
+            "hits": 27,
+            "homeRuns": 4,
+            "avg": 0.174,
+            "ops": 0.528
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.048,
+            "ops": 0.178
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 4,
+            "avg": 0.158,
+            "ops": 0.512
+          },
+          "metrics": {
+            "powerScore": 34,
+            "contactScore": 31,
+            "patienceScore": 45.4,
+            "formScore": 18,
+            "splitScore": 51.9,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".174 AVG | .528 OPS | 27 H | 4 HR | 10g: .048 AVG | .178 OPS | 2 H | 0 HR | vs RHP: .158 AVG | .512 OPS | 4 HR | -8.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-8.00 vs Bryce Elder"
+        },
+        {
+          "playerId": 681508,
+          "slot": 2,
+          "name": "Mickey Gasper",
+          "position": "C",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 5,
+            "hits": 7,
+            "homeRuns": 0,
+            "avg": 0.412,
+            "ops": 0.974
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.412,
+            "ops": 0.974
+          },
+          "split": {
+            "hits": 5,
+            "homeRuns": 0,
+            "avg": 0.385,
+            "ops": 0.967
+          },
+          "metrics": {
+            "powerScore": 40.8,
+            "contactScore": 92,
+            "patienceScore": 24.1,
+            "formScore": 50,
+            "splitScore": 44.3,
+            "varianceScore": 31,
+            "matchupScore": 67.8,
+            "matchupGrade": 4.37
+          },
+          "tags": [
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".412 AVG | .974 OPS | 7 H | 0 HR | 10g: .412 AVG | .974 OPS | 14 H | 0 HR | vs RHP: .385 AVG | .967 OPS | 0 HR | +4.4 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+4.37 vs Bryce Elder"
+        },
+        {
+          "playerId": 677800,
+          "slot": 3,
+          "name": "Wilyer Abreu",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 49,
+            "homeRuns": 6,
+            "avg": 0.302,
+            "ops": 0.84
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 12,
+            "homeRuns": 0,
+            "avg": 0.3,
+            "ops": 0.6
+          },
+          "split": {
+            "hits": 30,
+            "homeRuns": 5,
+            "avg": 0.268,
+            "ops": 0.815
+          },
+          "metrics": {
+            "powerScore": 59.1,
+            "contactScore": 65.7,
+            "patienceScore": 57.9,
+            "formScore": 18,
+            "splitScore": 46.9,
+            "varianceScore": 82.6,
+            "matchupScore": 26.4,
+            "matchupGrade": -4.64
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".302 AVG | .840 OPS | 49 H | 6 HR | 10g: .300 AVG | .600 OPS | 12 H | 0 HR | vs RHP: .268 AVG | .815 OPS | 5 HR | -4.6 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-4.64 vs Bryce Elder"
+        },
+        {
+          "playerId": 575929,
+          "slot": 4,
+          "name": "Willson Contreras",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 36,
+            "homeRuns": 8,
+            "avg": 0.245,
+            "ops": 0.802
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.083,
+            "ops": 0.321
+          },
+          "split": {
+            "hits": 25,
+            "homeRuns": 4,
+            "avg": 0.236,
+            "ops": 0.721
+          },
+          "metrics": {
+            "powerScore": 56.9,
+            "contactScore": 42.9,
+            "patienceScore": 65.8,
+            "formScore": 18,
+            "splitScore": 24.6,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".245 AVG | .802 OPS | 36 H | 8 HR | 8g: .083 AVG | .321 OPS | 2 H | 0 HR | vs RHP: .236 AVG | .721 OPS | 4 HR | -8.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-8.00 vs Bryce Elder"
+        },
+        {
+          "playerId": 807799,
+          "slot": 5,
+          "name": "Masataka Yoshida",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 29,
+            "hits": 20,
+            "homeRuns": 0,
+            "avg": 0.27,
+            "ops": 0.711
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.222,
+            "ops": 0.586
+          },
+          "split": {
+            "hits": 17,
+            "homeRuns": 0,
+            "avg": 0.279,
+            "ops": 0.717
+          },
+          "metrics": {
+            "powerScore": 18.3,
+            "contactScore": 68.1,
+            "patienceScore": 71.8,
+            "formScore": 26.7,
+            "splitScore": 52.3,
+            "varianceScore": 49.9,
+            "matchupScore": 27.2,
+            "matchupGrade": -4.82
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".270 AVG | .711 OPS | 20 H | 0 HR | 10g: .222 AVG | .586 OPS | 4 H | 0 HR | vs RHP: .279 AVG | .717 OPS | 0 HR | -4.8 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-4.82 vs Bryce Elder"
+        },
+        {
+          "playerId": 678882,
+          "slot": 6,
+          "name": "Ceddanne Rafaela",
+          "position": "CF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 40,
+            "homeRuns": 4,
+            "avg": 0.284,
+            "ops": 0.785
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.267,
+            "ops": 0.886
+          },
+          "split": {
+            "hits": 27,
+            "homeRuns": 3,
+            "avg": 0.248,
+            "ops": 0.676
+          },
+          "metrics": {
+            "powerScore": 47.7,
+            "contactScore": 54.8,
+            "patienceScore": 44.4,
+            "formScore": 92,
+            "splitScore": 28.9,
+            "varianceScore": 74.9,
+            "matchupScore": 52.5,
+            "matchupGrade": -0.1
+          },
+          "tags": [
+            "heater"
+          ],
+          "primaryTag": "heater",
+          "summary": ".284 AVG | .785 OPS | 40 H | 4 HR | 10g: .267 AVG | .886 OPS | 8 H | 2 HR | vs RHP: .248 AVG | .676 OPS | 3 HR | -0.1 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-0.10 vs Bryce Elder"
+        },
+        {
+          "playerId": 691785,
+          "slot": 7,
+          "name": "Marcelo Mayer",
+          "position": "2B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 39,
+            "hits": 27,
+            "homeRuns": 2,
+            "avg": 0.233,
+            "ops": 0.639
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "homeRuns": 2,
+            "avg": 0.2,
+            "ops": 0.694
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 1,
+            "avg": 0.222,
+            "ops": 0.603
+          },
+          "metrics": {
+            "powerScore": 27.3,
+            "contactScore": 48.6,
+            "patienceScore": 49.2,
+            "formScore": 92,
+            "splitScore": 36.5,
+            "varianceScore": 53.4,
+            "matchupScore": 42.4,
+            "matchupGrade": -2.69
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".233 AVG | .639 OPS | 27 H | 2 HR | 10g: .200 AVG | .694 OPS | 6 H | 2 HR | vs RHP: .222 AVG | .603 OPS | 1 HR | -2.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-2.69 vs Bryce Elder"
+        },
+        {
+          "playerId": 655316,
+          "slot": 8,
+          "name": "Andruw Monasterio",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 22,
+            "hits": 17,
+            "homeRuns": 1,
+            "avg": 0.258,
+            "ops": 0.734
+          },
+          "recent": {
+            "gamesPlayed": 6,
+            "hits": 10,
+            "homeRuns": 0,
+            "avg": 0.455,
+            "ops": 1.273
+          },
+          "split": {
+            "hits": 11,
+            "homeRuns": 0,
+            "avg": 0.282,
+            "ops": 0.727
+          },
+          "metrics": {
+            "powerScore": 33.2,
+            "contactScore": 56.3,
+            "patienceScore": 44.5,
+            "formScore": 92,
+            "splitScore": 39.5,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "primaryTag": "carry",
+          "summary": ".258 AVG | .734 OPS | 17 H | 1 HR | 6g: .455 AVG | 1.273 OPS | 10 H | 0 HR | vs RHP: .282 AVG | .727 OPS | 0 HR | +10.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+10.00 vs Bryce Elder"
+        },
+        {
+          "playerId": 702332,
+          "slot": 9,
+          "name": "Caleb Durbin",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 23,
+            "homeRuns": 1,
+            "avg": 0.169,
+            "ops": 0.502
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.083,
+            "ops": 0.381
+          },
+          "split": {
+            "hits": 19,
+            "homeRuns": 1,
+            "avg": 0.181,
+            "ops": 0.528
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 42.6,
+            "patienceScore": 50.4,
+            "formScore": 18,
+            "splitScore": 57.6,
+            "varianceScore": 59.4,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".169 AVG | .502 OPS | 23 H | 1 HR | 10g: .083 AVG | .381 OPS | 2 H | 0 HR | vs RHP: .181 AVG | .528 OPS | 1 HR | -8.0 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-8.00 vs Bryce Elder"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -2.43,
+        "trackedBatters": 9,
+        "starterThreatCount": 2,
+        "contactCount": 3,
+        "powerCount": 0,
+        "platoonCount": 5,
+        "heaterCount": 3,
+        "suppressorCount": 2,
+        "topThirdScore": 37.4,
+        "depthScore": 51.5
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Andruw Monasterio",
+            "tag": "carry | +10.00 vs Bryce Elder"
+          },
+          {
+            "name": "Mickey Gasper",
+            "tag": "split edge | +4.37 vs Bryce Elder"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Jarren Duran",
+            "tag": "split edge | -8.00 vs Bryce Elder"
+          },
+          {
+            "name": "Willson Contreras",
+            "tag": "cold | -8.00 vs Bryce Elder"
+          }
+        ],
+        "underperformNote": "Jarren Duran and Willson Contreras carry the softer form or split fit into a contact suppressor lane.",
+        "overview": "Red Sox can lean on Andruw Monasterio, Mickey Gasper to drive early pressure against Bryce Elder.",
+        "topThirdScore": 37.4,
+        "middleScore": 32.6,
+        "depthScore": 51.5
+      }
+    },
+    "home": {
+      "teamName": "Braves",
+      "opposingStarter": {
+        "name": "Payton Tolle",
+        "hand": "L",
+        "type": "Power"
+      },
+      "lineup": [
+        {
+          "playerId": 686948,
+          "slot": 1,
+          "name": "Drake Baldwin",
+          "position": "DH",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 54,
+            "homeRuns": 12,
+            "avg": 0.298,
+            "ops": 0.908
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 6,
+            "avg": 0.304,
+            "ops": 1.099
+          },
+          "split": {
+            "hits": 23,
+            "homeRuns": 6,
+            "avg": 0.329,
+            "ops": 1.027
+          },
+          "metrics": {
+            "powerScore": 88.9,
+            "contactScore": 68.4,
+            "patienceScore": 56,
+            "formScore": 92,
+            "splitScore": 86.5,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".298 AVG | .908 OPS | 54 H | 12 HR | 12g: .304 AVG | 1.099 OPS | 14 H | 6 HR | vs LHP: .329 AVG | 1.027 OPS | 6 HR | +10.0 matchup grade in a power-arm lane",
+          "matchupNote": "+10.00 vs Payton Tolle"
+        },
+        {
+          "playerId": 645277,
+          "slot": 2,
+          "name": "Ozzie Albies",
+          "position": "2B",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 49,
+            "homeRuns": 8,
+            "avg": 0.283,
+            "ops": 0.807
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.091,
+            "ops": 0.258
+          },
+          "split": {
+            "hits": 24,
+            "homeRuns": 3,
+            "avg": 0.324,
+            "ops": 0.887
+          },
+          "metrics": {
+            "powerScore": 61.9,
+            "contactScore": 76,
+            "patienceScore": 45.7,
+            "formScore": 18,
+            "splitScore": 64.2,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -7.6
+          },
+          "tags": [
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".283 AVG | .807 OPS | 49 H | 8 HR | 12g: .091 AVG | .258 OPS | 4 H | 0 HR | vs LHP: .324 AVG | .887 OPS | 3 HR | -7.6 matchup grade in a power-arm lane",
+          "matchupNote": "-7.60 vs Payton Tolle"
+        },
+        {
+          "playerId": 621566,
+          "slot": 3,
+          "name": "Matt Olson",
+          "position": "1B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 50,
+            "homeRuns": 14,
+            "avg": 0.287,
+            "ops": 0.979
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 0.625
+          },
+          "split": {
+            "hits": 20,
+            "homeRuns": 4,
+            "avg": 0.267,
+            "ops": 0.859
+          },
+          "metrics": {
+            "powerScore": 90.3,
+            "contactScore": 56.2,
+            "patienceScore": 58.6,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18.1,
+            "matchupGrade": -5.92
+          },
+          "tags": [
+            "whiff risk",
+            "cold"
+          ],
+          "primaryTag": "whiff risk",
+          "summary": ".287 AVG | .979 OPS | 50 H | 14 HR | 12g: .250 AVG | .625 OPS | 12 H | 2 HR | vs LHP: .267 AVG | .859 OPS | 4 HR | -5.9 matchup grade in a power-arm lane",
+          "matchupNote": "-5.92 vs Payton Tolle"
+        },
+        {
+          "playerId": 663586,
+          "slot": 4,
+          "name": "Austin Riley",
+          "position": "3B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 37,
+            "homeRuns": 6,
+            "avg": 0.219,
+            "ops": 0.656
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.273,
+            "ops": 0.742
+          },
+          "split": {
+            "hits": 17,
+            "homeRuns": 1,
+            "avg": 0.283,
+            "ops": 0.732
+          },
+          "metrics": {
+            "powerScore": 38.3,
+            "contactScore": 46.6,
+            "patienceScore": 48.7,
+            "formScore": 81.8,
+            "splitScore": 54.2,
+            "varianceScore": 72.6,
+            "matchupScore": 71.6,
+            "matchupGrade": 4.12
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "whiff risk"
+          ],
+          "primaryTag": "heater",
+          "summary": ".219 AVG | .656 OPS | 37 H | 6 HR | 12g: .273 AVG | .742 OPS | 12 H | 2 HR | vs LHP: .283 AVG | .732 OPS | 1 HR | +4.1 matchup grade in a power-arm lane",
+          "matchupNote": "+4.12 vs Payton Tolle"
+        },
+        {
+          "playerId": 643289,
+          "slot": 5,
+          "name": "Mauricio Dubón",
+          "position": "LF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 43,
+            "hits": 40,
+            "homeRuns": 3,
+            "avg": 0.25,
+            "ops": 0.7
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 8,
+            "homeRuns": 2,
+            "avg": 0.16,
+            "ops": 0.512
+          },
+          "split": {
+            "hits": 15,
+            "homeRuns": 0,
+            "avg": 0.242,
+            "ops": 0.572
+          },
+          "metrics": {
+            "powerScore": 30.8,
+            "contactScore": 57.3,
+            "patienceScore": 43.6,
+            "formScore": 36.7,
+            "splitScore": 18,
+            "varianceScore": 87.4,
+            "matchupScore": 18,
+            "matchupGrade": -7.33
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".250 AVG | .700 OPS | 40 H | 3 HR | 12g: .160 AVG | .512 OPS | 8 H | 2 HR | vs LHP: .242 AVG | .572 OPS | 0 HR | -7.3 matchup grade in a power-arm lane",
+          "matchupNote": "-7.33 vs Payton Tolle"
+        },
+        {
+          "playerId": 671739,
+          "slot": 6,
+          "name": "Michael Harris II",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 42,
+            "hits": 44,
+            "homeRuns": 8,
+            "avg": 0.308,
+            "ops": 0.844
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 0.667
+          },
+          "split": {
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.227,
+            "ops": 0.647
+          },
+          "metrics": {
+            "powerScore": 71.9,
+            "contactScore": 59,
+            "patienceScore": 32.4,
+            "formScore": 18,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "matchupScore": 18.3,
+            "matchupGrade": -5.88
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".308 AVG | .844 OPS | 44 H | 8 HR | 12g: .250 AVG | .667 OPS | 12 H | 2 HR | vs LHP: .227 AVG | .647 OPS | 2 HR | -5.9 matchup grade in a power-arm lane",
+          "matchupNote": "-5.88 vs Payton Tolle"
+        },
+        {
+          "playerId": 673490,
+          "slot": 7,
+          "name": "Ha-Seong Kim",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 4,
+            "hits": 1,
+            "homeRuns": 0,
+            "avg": 0.077,
+            "ops": 0.22
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.077,
+            "ops": 0.22
+          },
+          "split": {
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0.143
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 18,
+            "patienceScore": 47.2,
+            "formScore": 50,
+            "splitScore": 36.2,
+            "varianceScore": 33.5,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".077 AVG | .220 OPS | 1 H | 0 HR | 8g: .077 AVG | .220 OPS | 2 H | 0 HR | vs LHP: .000 AVG | .143 OPS | 0 HR | -8.0 matchup grade in a power-arm lane",
+          "matchupNote": "-8.00 vs Payton Tolle"
+        },
+        {
+          "playerId": 506702,
+          "slot": 8,
+          "name": "Sandy León",
+          "position": "C",
+          "bats": "S",
+          "season": {
+            "gamesPlayed": 2,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.5,
+            "ops": 1
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.5,
+            "ops": 1
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.5,
+            "ops": 1
+          },
+          "metrics": {
+            "powerScore": 37.6,
+            "contactScore": 88.3,
+            "patienceScore": 18.2,
+            "formScore": 50,
+            "splitScore": 50,
+            "varianceScore": 45.3,
+            "matchupScore": 69.3,
+            "matchupGrade": 4.6
+          },
+          "tags": [
+            "split edge",
+            "traffic"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".500 AVG | 1.000 OPS | 2 H | 0 HR | 4g: .500 AVG | 1.000 OPS | 4 H | 0 HR | vs LHP: .500 AVG | 1.000 OPS | 0 HR | +4.6 matchup grade in a power-arm lane",
+          "matchupNote": "+4.60 vs Payton Tolle"
+        },
+        {
+          "playerId": 640492,
+          "slot": 9,
+          "name": "José Azócar",
+          "position": "RF",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 5,
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.286,
+            "ops": 0.571
+          },
+          "recent": {
+            "gamesPlayed": 6,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.4,
+            "ops": 0.8
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.286,
+            "ops": 0.571
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 41,
+            "patienceScore": 18.2,
+            "formScore": 92,
+            "splitScore": 50,
+            "varianceScore": 88.1,
+            "matchupScore": 65.3,
+            "matchupGrade": 2.44
+          },
+          "tags": [
+            "heater",
+            "split edge",
+            "whiff risk"
+          ],
+          "primaryTag": "heater",
+          "summary": ".286 AVG | .571 OPS | 2 H | 0 HR | 6g: .400 AVG | .800 OPS | 4 H | 0 HR | vs LHP: .286 AVG | .571 OPS | 0 HR | +2.4 matchup grade in a power-arm lane",
+          "matchupNote": "+2.44 vs Payton Tolle"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": -1.51,
+        "trackedBatters": 9,
+        "starterThreatCount": 4,
+        "contactCount": 3,
+        "powerCount": 3,
+        "platoonCount": 7,
+        "heaterCount": 3,
+        "suppressorCount": 2,
+        "topThirdScore": 43.4,
+        "depthScore": 50.9
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Drake Baldwin",
+            "tag": "carry | +10.00 vs Payton Tolle"
+          },
+          {
+            "name": "Sandy León",
+            "tag": "split edge | +4.60 vs Payton Tolle"
+          },
+          {
+            "name": "Austin Riley",
+            "tag": "heater | +4.12 vs Payton Tolle"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Ha-Seong Kim",
+            "tag": "split edge | -8.00 vs Payton Tolle"
+          },
+          {
+            "name": "Ozzie Albies",
+            "tag": "split edge | -7.60 vs Payton Tolle"
+          }
+        ],
+        "underperformNote": "Ha-Seong Kim and Ozzie Albies carry the softer form or split fit into a power lane.",
+        "overview": "Braves can lean on Drake Baldwin, Sandy León, Austin Riley to drive early pressure against Payton Tolle.",
+        "topThirdScore": 43.4,
+        "middleScore": 36,
+        "depthScore": 50.9
+      }
+    }
+  },
+  "yankees-mets": {
+    "gameId": "yankees-mets",
+    "title": "Yankees @ Mets",
+    "snapshot": "2026-05-16T20:11:42.066Z",
+    "status": {
+      "away": "pending",
+      "home": "posted"
+    },
+    "away": {
+      "teamName": "Yankees",
+      "opposingStarter": {
+        "name": "Huascar Brazobán",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Mets",
+      "opposingStarter": {
+        "name": "Carlos Rodón",
+        "hand": "L",
+        "type": "Unknown sample"
+      },
+      "lineup": [
+        {
+          "playerId": 701807,
+          "slot": 1,
+          "name": "Carson Benge",
+          "position": "RF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 31,
+            "homeRuns": 3,
+            "avg": 0.23,
+            "ops": 0.621
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 16,
+            "homeRuns": 0,
+            "avg": 0.308,
+            "ops": 0.615
+          },
+          "split": {
+            "hits": 5,
+            "homeRuns": 0,
+            "avg": 0.263,
+            "ops": 0.627
+          },
+          "metrics": {
+            "powerScore": 25,
+            "contactScore": 50.8,
+            "patienceScore": 46.7,
+            "formScore": 40.3,
+            "splitScore": 36.2,
+            "varianceScore": 42.9,
+            "matchupScore": 44.7,
+            "matchupGrade": -0.66
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".230 AVG | .621 OPS | 31 H | 3 HR | 12g: .308 AVG | .615 OPS | 16 H | 0 HR | vs LHP: .263 AVG | .627 OPS | 0 HR | -0.7 matchup grade in a neutral lane",
+          "matchupNote": "-0.66 vs Carlos Rodón"
+        },
+        {
+          "playerId": 666182,
+          "slot": 2,
+          "name": "Bo Bichette",
+          "position": "SS",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 38,
+            "homeRuns": 2,
+            "avg": 0.213,
+            "ops": 0.54
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.091,
+            "ops": 0.322
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 1,
+            "avg": 0.188,
+            "ops": 0.577
+          },
+          "metrics": {
+            "powerScore": 23.7,
+            "contactScore": 49.3,
+            "patienceScore": 43.5,
+            "formScore": 18,
+            "splitScore": 58.5,
+            "varianceScore": 79.4,
+            "matchupScore": 18,
+            "matchupGrade": -7.97
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".213 AVG | .540 OPS | 38 H | 2 HR | 12g: .091 AVG | .322 OPS | 4 H | 0 HR | vs LHP: .188 AVG | .577 OPS | 1 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-7.97 vs Carlos Rodón"
+        },
+        {
+          "playerId": 665742,
+          "slot": 3,
+          "name": "Juan Soto",
+          "position": "LF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 29,
+            "hits": 29,
+            "homeRuns": 6,
+            "avg": 0.271,
+            "ops": 0.858
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 4,
+            "avg": 0.227,
+            "ops": 0.82
+          },
+          "split": {
+            "hits": 7,
+            "homeRuns": 1,
+            "avg": 0.167,
+            "ops": 0.549
+          },
+          "metrics": {
+            "powerScore": 59.8,
+            "contactScore": 55.2,
+            "patienceScore": 65.7,
+            "formScore": 75,
+            "splitScore": 18,
+            "varianceScore": 87.1,
+            "matchupScore": 29.2,
+            "matchupGrade": -4.9
+          },
+          "tags": [
+            "heater",
+            "cold"
+          ],
+          "primaryTag": "heater",
+          "summary": ".271 AVG | .858 OPS | 29 H | 6 HR | 12g: .227 AVG | .820 OPS | 10 H | 4 HR | vs LHP: .167 AVG | .549 OPS | 1 HR | -4.9 matchup grade in a neutral lane",
+          "matchupNote": "-4.90 vs Carlos Rodón"
+        },
+        {
+          "playerId": 668901,
+          "slot": 4,
+          "name": "Mark Vientos",
+          "position": "1B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 36,
+            "hits": 29,
+            "homeRuns": 6,
+            "avg": 0.234,
+            "ops": 0.698
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.208,
+            "ops": 0.573
+          },
+          "split": {
+            "hits": 12,
+            "homeRuns": 2,
+            "avg": 0.286,
+            "ops": 0.818
+          },
+          "metrics": {
+            "powerScore": 60.5,
+            "contactScore": 55.1,
+            "patienceScore": 38.8,
+            "formScore": 25.1,
+            "splitScore": 74.8,
+            "varianceScore": 80.2,
+            "matchupScore": 48.1,
+            "matchupGrade": -0.32
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".234 AVG | .698 OPS | 29 H | 6 HR | 12g: .208 AVG | .573 OPS | 10 H | 2 HR | vs LHP: .286 AVG | .818 OPS | 2 HR | -0.3 matchup grade in a neutral lane",
+          "matchupNote": "-0.32 vs Carlos Rodón"
+        },
+        {
+          "playerId": 543760,
+          "slot": 5,
+          "name": "Marcus Semien",
+          "position": "2B",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 44,
+            "hits": 36,
+            "homeRuns": 3,
+            "avg": 0.229,
+            "ops": 0.616
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 10,
+            "homeRuns": 2,
+            "avg": 0.238,
+            "ops": 0.714
+          },
+          "split": {
+            "hits": 9,
+            "homeRuns": 0,
+            "avg": 0.257,
+            "ops": 0.664
+          },
+          "metrics": {
+            "powerScore": 23.2,
+            "contactScore": 53.3,
+            "patienceScore": 47.3,
+            "formScore": 91.8,
+            "splitScore": 43.8,
+            "varianceScore": 63,
+            "matchupScore": 71.4,
+            "matchupGrade": 4.05
+          },
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "heater",
+          "summary": ".229 AVG | .616 OPS | 36 H | 3 HR | 12g: .238 AVG | .714 OPS | 10 H | 2 HR | vs LHP: .257 AVG | .664 OPS | 0 HR | +4.0 matchup grade in a neutral lane",
+          "matchupNote": "+4.05 vs Carlos Rodón"
+        },
+        {
+          "playerId": 805999,
+          "slot": 6,
+          "name": "A.J. Ewing",
+          "position": "CF",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 4,
+            "hits": 3,
+            "homeRuns": 1,
+            "avg": 0.25,
+            "ops": 1.104
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 6,
+            "homeRuns": 2,
+            "avg": 0.25,
+            "ops": 1.104
+          },
+          "split": {
+            "hits": 2,
+            "homeRuns": 0,
+            "avg": 0.5,
+            "ops": 1.6
+          },
+          "metrics": {
+            "powerScore": 73.4,
+            "contactScore": 68.8,
+            "patienceScore": 92,
+            "formScore": 50,
+            "splitScore": 32.5,
+            "varianceScore": 47.1,
+            "matchupScore": 78.1,
+            "matchupGrade": 7.11
+          },
+          "tags": [
+            "carry",
+            "traffic"
+          ],
+          "primaryTag": "carry",
+          "summary": ".250 AVG | 1.104 OPS | 3 H | 1 HR | 8g: .250 AVG | 1.104 OPS | 6 H | 2 HR | vs LHP: .500 AVG | 1.600 OPS | 0 HR | +7.1 matchup grade in a neutral lane",
+          "matchupNote": "+7.11 vs Carlos Rodón"
+        },
+        {
+          "playerId": 596103,
+          "slot": 7,
+          "name": "Austin Slater",
+          "position": "DH",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 40,
+            "hits": 18,
+            "homeRuns": 0,
+            "avg": 0.22,
+            "ops": 0.527
+          },
+          "recent": {
+            "gamesPlayed": 4,
+            "hits": 0,
+            "homeRuns": 0,
+            "avg": 0,
+            "ops": 0
+          },
+          "split": {
+            "hits": 14,
+            "homeRuns": 0,
+            "avg": 0.184,
+            "ops": 0.449
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 26.6,
+            "patienceScore": 50.4,
+            "formScore": 18,
+            "splitScore": 33.9,
+            "varianceScore": 92,
+            "matchupScore": 18,
+            "matchupGrade": -8
+          },
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "primaryTag": "split edge",
+          "summary": ".220 AVG | .527 OPS | 18 H | 0 HR | 4g: .000 AVG | .000 OPS | 0 H | 0 HR | vs LHP: .184 AVG | .449 OPS | 0 HR | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Carlos Rodón"
+        },
+        {
+          "playerId": 683146,
+          "slot": 8,
+          "name": "Brett Baty",
+          "position": "3B",
+          "bats": "L",
+          "season": {
+            "gamesPlayed": 41,
+            "hits": 29,
+            "homeRuns": 2,
+            "avg": 0.23,
+            "ops": 0.644
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 14,
+            "homeRuns": 2,
+            "avg": 0.389,
+            "ops": 1.087
+          },
+          "split": {
+            "hits": 4,
+            "homeRuns": 0,
+            "avg": 0.211,
+            "ops": 0.581
+          },
+          "metrics": {
+            "powerScore": 24.1,
+            "contactScore": 38.9,
+            "patienceScore": 53.1,
+            "formScore": 92,
+            "splitScore": 24.6,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "primaryTag": "carry",
+          "summary": ".230 AVG | .644 OPS | 29 H | 2 HR | 12g: .389 AVG | 1.087 OPS | 14 H | 2 HR | vs LHP: .211 AVG | .581 OPS | 0 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Carlos Rodón"
+        },
+        {
+          "playerId": 620443,
+          "slot": 9,
+          "name": "Luis Torrens",
+          "position": "C",
+          "bats": "R",
+          "season": {
+            "gamesPlayed": 21,
+            "hits": 11,
+            "homeRuns": 0,
+            "avg": 0.204,
+            "ops": 0.536
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 8,
+            "homeRuns": 0,
+            "avg": 0.364,
+            "ops": 0.916
+          },
+          "split": {
+            "hits": 6,
+            "homeRuns": 0,
+            "avg": 0.353,
+            "ops": 0.859
+          },
+          "metrics": {
+            "powerScore": 18,
+            "contactScore": 56.3,
+            "patienceScore": 40.3,
+            "formScore": 92,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "primaryTag": "carry",
+          "summary": ".204 AVG | .536 OPS | 11 H | 0 HR | 8g: .364 AVG | .916 OPS | 8 H | 0 HR | vs LHP: .353 AVG | .859 OPS | 0 HR | +10.0 matchup grade in a neutral lane",
+          "matchupNote": "+10.00 vs Carlos Rodón"
+        }
+      ],
+      "aggregate": {
+        "averageMatchupGrade": 1.03,
+        "trackedBatters": 9,
+        "starterThreatCount": 4,
+        "contactCount": 1,
+        "powerCount": 1,
+        "platoonCount": 5,
+        "heaterCount": 4,
+        "suppressorCount": 2,
+        "topThirdScore": 30.6,
+        "depthScore": 68.7
+      },
+      "summary": {
+        "pressureLabel": "carry bats live",
+        "overperformHitters": [
+          {
+            "name": "Brett Baty",
+            "tag": "carry | +10.00 vs Carlos Rodón"
+          },
+          {
+            "name": "Luis Torrens",
+            "tag": "carry | +10.00 vs Carlos Rodón"
+          },
+          {
+            "name": "A.J. Ewing",
+            "tag": "carry | +7.11 vs Carlos Rodón"
+          }
+        ],
+        "underperformHitters": [
+          {
+            "name": "Austin Slater",
+            "tag": "split edge | -8.00 vs Carlos Rodón"
+          },
+          {
+            "name": "Bo Bichette",
+            "tag": "split edge | -7.97 vs Carlos Rodón"
+          }
+        ],
+        "underperformNote": "Austin Slater and Bo Bichette carry the softer form or split fit into a unknown sample lane.",
+        "overview": "Mets can lean on Brett Baty, Luis Torrens, A.J. Ewing to drive early pressure against Carlos Rodón.",
+        "topThirdScore": 30.6,
+        "middleScore": 65.9,
+        "depthScore": 68.7
+      }
+    }
+  },
+  "dodgers-angels": {
+    "gameId": "dodgers-angels",
+    "title": "Dodgers @ Angels",
+    "snapshot": "2026-05-16T20:11:42.066Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Dodgers",
+      "opposingStarter": {
+        "name": "José Soriano",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Angels",
+      "opposingStarter": {
+        "name": "Justin Wrobleski",
+        "hand": "L",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "giants-athletics": {
+    "gameId": "giants-athletics",
+    "title": "Giants @ Athletics",
+    "snapshot": "2026-05-16T20:11:42.066Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Giants",
+      "opposingStarter": {
+        "name": "Luis Severino",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Athletics",
+      "opposingStarter": {
+        "name": "Trevor McDonald",
+        "hand": "R",
+        "type": "Unknown sample"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  }
+}
+
+export const lineupMatchupContextByGameId = {
+  "blue-jays-tigers": {
+    "Blue Jays": {
+      "averageMatchupGrade": -1.43,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 4,
+      "powerCount": 2,
+      "platoonCount": 4,
+      "heaterCount": 3,
+      "suppressorCount": 2,
+      "topThirdScore": 22.9,
+      "depthScore": 66.7
+    },
+    "Tigers": {
+      "averageMatchupGrade": -1.25,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 2,
+      "powerCount": 1,
+      "platoonCount": 6,
+      "heaterCount": 3,
+      "suppressorCount": 2,
+      "topThirdScore": 68.3,
+      "depthScore": 20.8
+    }
+  },
+  "royals-cardinals": {
+    "Royals": {
+      "averageMatchupGrade": -0.22,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 2,
+      "powerCount": 1,
+      "platoonCount": 6,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 63.4,
+      "depthScore": 25.9
+    },
+    "Cardinals": {
+      "averageMatchupGrade": -1.11,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 3,
+      "powerCount": 1,
+      "platoonCount": 7,
+      "heaterCount": 3,
+      "suppressorCount": 2,
+      "topThirdScore": 67,
+      "depthScore": 32.1
+    }
+  },
+  "diamondbacks-rockies": {
+    "Diamondbacks": {
+      "averageMatchupGrade": -1.7,
+      "trackedBatters": 9,
+      "starterThreatCount": 2,
+      "contactCount": 2,
+      "powerCount": 2,
+      "platoonCount": 7,
+      "heaterCount": 1,
+      "suppressorCount": 2,
+      "topThirdScore": 41,
+      "depthScore": 33.7
+    },
+    "Rockies": {
+      "averageMatchupGrade": -4.03,
+      "trackedBatters": 9,
+      "starterThreatCount": 1,
+      "contactCount": 1,
+      "powerCount": 2,
+      "platoonCount": 5,
+      "heaterCount": 2,
+      "suppressorCount": 2,
+      "topThirdScore": 24.9,
+      "depthScore": 25.7
+    }
+  },
+  "orioles-nationals": {
+    "Orioles": {
+      "averageMatchupGrade": -1.93,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 2,
+      "powerCount": 1,
+      "platoonCount": 5,
+      "heaterCount": 1,
+      "suppressorCount": 2,
+      "topThirdScore": 35.1,
+      "depthScore": 33.3
+    },
+    "Nationals": {
+      "averageMatchupGrade": 3.22,
+      "trackedBatters": 9,
+      "starterThreatCount": 6,
+      "contactCount": 3,
+      "powerCount": 3,
+      "platoonCount": 8,
+      "heaterCount": 5,
+      "suppressorCount": 2,
+      "topThirdScore": 78.5,
+      "depthScore": 51.7
+    }
+  },
+  "phillies-pirates": {
+    "Phillies": {
+      "averageMatchupGrade": 1.04,
+      "trackedBatters": 9,
+      "starterThreatCount": 4,
+      "contactCount": 3,
+      "powerCount": 2,
+      "platoonCount": 5,
+      "heaterCount": 3,
+      "suppressorCount": 2,
+      "topThirdScore": 67.4,
+      "depthScore": 42.4
+    },
+    "Pirates": {
+      "averageMatchupGrade": 1.45,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 2,
+      "powerCount": 2,
+      "platoonCount": 7,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 66.8,
+      "depthScore": 43.3
+    }
+  },
+  "marlins-rays": {
+    "Marlins": {
+      "averageMatchupGrade": 0.91,
+      "trackedBatters": 9,
+      "starterThreatCount": 5,
+      "contactCount": 4,
+      "powerCount": 1,
+      "platoonCount": 7,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 34.8,
+      "depthScore": 50.7
+    },
+    "Rays": {
+      "averageMatchupGrade": 3.9,
+      "trackedBatters": 9,
+      "starterThreatCount": 6,
+      "contactCount": 2,
+      "powerCount": 2,
+      "platoonCount": 6,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 66.2,
+      "depthScore": 64.6
+    }
+  },
+  "reds-guardians": {
+    "Reds": {
+      "averageMatchupGrade": 4.34,
+      "trackedBatters": 9,
+      "starterThreatCount": 6,
+      "contactCount": 3,
+      "powerCount": 4,
+      "platoonCount": 8,
+      "heaterCount": 5,
+      "suppressorCount": 2,
+      "topThirdScore": 74,
+      "depthScore": 46.4
+    },
+    "Guardians": {
+      "averageMatchupGrade": -1.23,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 2,
+      "powerCount": 2,
+      "platoonCount": 8,
+      "heaterCount": 2,
+      "suppressorCount": 2,
+      "topThirdScore": 31.1,
+      "depthScore": 45.7
+    }
+  },
+  "rangers-astros": {
+    "Rangers": {
+      "averageMatchupGrade": -0.96,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 2,
+      "powerCount": 1,
+      "platoonCount": 6,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 56.8,
+      "depthScore": 50.8
+    },
+    "Astros": {
+      "averageMatchupGrade": -2.31,
+      "trackedBatters": 9,
+      "starterThreatCount": 2,
+      "contactCount": 3,
+      "powerCount": 4,
+      "platoonCount": 5,
+      "heaterCount": 0,
+      "suppressorCount": 2,
+      "topThirdScore": 52.8,
+      "depthScore": 23.2
+    }
+  },
+  "cubs-white-sox": {
+    "Cubs": null,
+    "White Sox": {
+      "averageMatchupGrade": 0.55,
+      "trackedBatters": 9,
+      "starterThreatCount": 4,
+      "contactCount": 1,
+      "powerCount": 4,
+      "platoonCount": 7,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 59.1,
+      "depthScore": 45
+    }
+  },
+  "brewers-twins": {
+    "Brewers": null,
+    "Twins": {
+      "averageMatchupGrade": -0.69,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 4,
+      "powerCount": 1,
+      "platoonCount": 8,
+      "heaterCount": 2,
+      "suppressorCount": 2,
+      "topThirdScore": 40.9,
+      "depthScore": 45.1
+    }
+  },
+  "padres-mariners": {
+    "Padres": {
+      "averageMatchupGrade": -2.23,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 2,
+      "powerCount": 1,
+      "platoonCount": 5,
+      "heaterCount": 3,
+      "suppressorCount": 2,
+      "topThirdScore": 18.3,
+      "depthScore": 40.1
+    },
+    "Mariners": {
+      "averageMatchupGrade": 2.3,
+      "trackedBatters": 9,
+      "starterThreatCount": 3,
+      "contactCount": 3,
+      "powerCount": 1,
+      "platoonCount": 6,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 47.2,
+      "depthScore": 52.9
+    }
+  },
+  "red-sox-braves": {
+    "Red Sox": {
+      "averageMatchupGrade": -2.43,
+      "trackedBatters": 9,
+      "starterThreatCount": 2,
+      "contactCount": 3,
+      "powerCount": 0,
+      "platoonCount": 5,
+      "heaterCount": 3,
+      "suppressorCount": 2,
+      "topThirdScore": 37.4,
+      "depthScore": 51.5
+    },
+    "Braves": {
+      "averageMatchupGrade": -1.51,
+      "trackedBatters": 9,
+      "starterThreatCount": 4,
+      "contactCount": 3,
+      "powerCount": 3,
+      "platoonCount": 7,
+      "heaterCount": 3,
+      "suppressorCount": 2,
+      "topThirdScore": 43.4,
+      "depthScore": 50.9
+    }
+  },
+  "yankees-mets": {
+    "Yankees": null,
+    "Mets": {
+      "averageMatchupGrade": 1.03,
+      "trackedBatters": 9,
+      "starterThreatCount": 4,
+      "contactCount": 1,
+      "powerCount": 1,
+      "platoonCount": 5,
+      "heaterCount": 4,
+      "suppressorCount": 2,
+      "topThirdScore": 30.6,
+      "depthScore": 68.7
+    }
+  },
+  "dodgers-angels": {
+    "Dodgers": null,
+    "Angels": null
+  },
+  "giants-athletics": {
+    "Giants": null,
+    "Athletics": null
+  }
+}

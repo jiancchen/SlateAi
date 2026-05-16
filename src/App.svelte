@@ -84,6 +84,18 @@
     return 'Fresh'
   }
 
+  const lineupStatusLabel = (status = '') => {
+    if (status === 'posted') return 'Confirmed'
+    if (status === 'partial') return 'Partial'
+    return 'Pending'
+  }
+
+  const signedValue = (value, digits = 1) => {
+    const numericValue = Number(value)
+    if (!Number.isFinite(numericValue)) return 'N/A'
+    return `${numericValue >= 0 ? '+' : ''}${numericValue.toFixed(digits)}`
+  }
+
   const clampValue = (value, min, max) => Math.min(max, Math.max(min, value))
 
   const countSelectedPicks = (picks) => Object.keys(picks).length
@@ -1107,8 +1119,13 @@
                                         <strong>Hitter script</strong>
                                       </div>
                                       <span>
-                                        {script.overperformHitters.length ? 'Carry bats live' : 'Traffic-only lane'}
+                                        {script.overperformHitters.length ? 'Carry bats live' : script.lineupStatus}
                                       </span>
+                                    </div>
+
+                                    <div class="team-script-copy">
+                                      <strong>Why the lane works</strong>
+                                      <span>{script.overview}</span>
                                     </div>
 
                                     <div class="team-script-copy">
@@ -1122,6 +1139,17 @@
                                       </span>
                                     </div>
 
+                                    {#if script.underperformHitters?.length}
+                                      <div class="team-script-copy">
+                                        <strong>Underperform hitters</strong>
+                                        <span>
+                                          {script.underperformHitters
+                                            .map((hitter) => `${hitter.name} (${hitter.tag})`)
+                                            .join(' • ')}
+                                        </span>
+                                      </div>
+                                    {/if}
+
                                     <div class="team-script-copy">
                                       <strong>Underperform watch</strong>
                                       <span>{script.underperformNote}</span>
@@ -1129,6 +1157,112 @@
                                   </article>
                                 {/each}
                               </div>
+
+                              {#if game.analysis.mlbProjection.lineupSimulation}
+                                <section class="lineup-simulation-board" aria-label={`Game flow simulation for ${game.title}`}>
+                                  <div class="home-run-board-head">
+                                    <div>
+                                      <p class="series-kicker">Probable game flow</p>
+                                      <strong>{game.analysis.mlbProjection.lineupSimulation.overview}</strong>
+                                    </div>
+                                    <span>Starter, bridge, finish</span>
+                                  </div>
+
+                                  <div class="simulation-phase-grid">
+                                    {#each game.analysis.mlbProjection.lineupSimulation.phases as phase}
+                                      <article class="simulation-phase-card">
+                                        <div class="simulation-phase-head">
+                                          <div>
+                                            <p>{phase.label}</p>
+                                            <strong>{phase.edgeTeam}</strong>
+                                          </div>
+                                          <span>{phase.projection}</span>
+                                        </div>
+                                        <p>{phase.note}</p>
+                                      </article>
+                                    {/each}
+                                  </div>
+                                </section>
+                              {/if}
+
+                              {#if game.lineupBoard}
+                                <section class="lineup-board" aria-label={`Confirmed lineups for ${game.title}`}>
+                                  <div class="home-run-board-head">
+                                    <div>
+                                      <p class="series-kicker">Full batting orders</p>
+                                      <strong>Recent form, split fit, and starter-lane tags</strong>
+                                    </div>
+                                    <span>Official posted lineups</span>
+                                  </div>
+
+                                  <div class="lineup-board-grid">
+                                    {#each [
+                                      {
+                                        board: game.lineupBoard.away,
+                                        status: game.lineupBoard.status?.away
+                                      },
+                                      {
+                                        board: game.lineupBoard.home,
+                                        status: game.lineupBoard.status?.home
+                                      }
+                                    ] as lineupTeam}
+                                      <article class="lineup-team-card">
+                                        <div class="lineup-team-head">
+                                          <div>
+                                            <p>{lineupTeam.board.teamName}</p>
+                                            <strong>{lineupStatusLabel(lineupTeam.status)}</strong>
+                                          </div>
+                                          <span>
+                                            vs {lineupTeam.board.opposingStarter.name}
+                                            ({lineupTeam.board.opposingStarter.hand}HP,
+                                            {lineupTeam.board.opposingStarter.type})
+                                          </span>
+                                        </div>
+
+                                        <div class="lineup-team-summary">
+                                          <span>Top third {lineupTeam.board.summary.topThirdScore}</span>
+                                          <span>Depth {lineupTeam.board.summary.depthScore}</span>
+                                          <span>{lineupTeam.board.summary.pressureLabel}</span>
+                                        </div>
+
+                                        <p class="lineup-team-overview">{lineupTeam.board.summary.overview}</p>
+
+                                        {#if lineupTeam.board.lineup.length}
+                                          <div class="lineup-list">
+                                            {#each lineupTeam.board.lineup as hitter}
+                                              <article class="lineup-row-card">
+                                                <div class="lineup-row-head">
+                                                  <div class="lineup-slot">{hitter.slot}</div>
+                                                  <div class="lineup-player-meta">
+                                                    <strong>{hitter.name}</strong>
+                                                    <span>{hitter.position} | {hitter.bats || '?'}HB</span>
+                                                  </div>
+                                                  <div class="lineup-matchup-grade">
+                                                    <strong>{signedValue(hitter.metrics.matchupGrade, 2)}</strong>
+                                                    <span>{hitter.primaryTag}</span>
+                                                  </div>
+                                                </div>
+
+                                                <p class="lineup-player-summary">{hitter.summary}</p>
+
+                                                {#if hitter.tags?.length}
+                                                  <div class="lineup-tag-row">
+                                                    {#each hitter.tags as tag}
+                                                      <span>{tag}</span>
+                                                    {/each}
+                                                  </div>
+                                                {/if}
+                                              </article>
+                                            {/each}
+                                          </div>
+                                        {:else}
+                                          <p class="lineup-team-overview">Official batting order is still pending for this side.</p>
+                                        {/if}
+                                      </article>
+                                    {/each}
+                                  </div>
+                                </section>
+                              {/if}
 
                               {#if game.homeRunTargets}
                                 <section class="home-run-board" aria-label={`Home run looks for ${game.title}`}>

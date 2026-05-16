@@ -20,6 +20,7 @@
     "data:list:first5": "python3 scripts/mlb_warehouse.py list-first5",
     "data:list:bullpen": "python3 scripts/mlb_warehouse.py list-bullpen-usage",
     "data:list:relievers": "python3 scripts/mlb_warehouse.py list-likely-relievers",
+    "data:export:mlb-lineups": "node scripts/export-mlb-lineup-model.mjs",
     "data:export:hr": "node scripts/export-home-run-predictions.mjs",
     "data:export:mlb-sides": "node scripts/export-mlb-side-predictions.mjs",
     "data:import:mlb-sides": "python3 scripts/mlb_side_backtest.py import",
