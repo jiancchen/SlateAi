@@ -1181,7 +1181,16 @@ const buildMlbAnalysisContext = (game, participants) => {
     volatilityBase: sportVolatilityBase.MLB,
     volatilityModifiers,
     confidenceModifier,
-    mlbProjection
+    mlbProjection,
+    mlbRiskContext: {
+      starters,
+      starterScores: starters.every(Boolean) ? starters.map((starter) => starterScore(starter)) : [],
+      offenseScores,
+      bullpenScores,
+      savantScores,
+      lineupScores,
+      projectedHitProfiles
+    }
   }
 }
 
@@ -1424,6 +1433,160 @@ const buildStructuredAnalysisContext = (game, participants) => {
   return null
 }
 
+const buildMlbDecisionIndicators = ({
+  riskContext,
+  participants,
+  winnerIndex,
+  loserIndex,
+  modelEdge,
+  baseVolatility
+}) => {
+  if (!riskContext) return null
+
+  const pickBullpenScore = riskContext.bullpenScores?.[winnerIndex]
+  const opponentBullpenScore = riskContext.bullpenScores?.[loserIndex]
+  const pickStarterScore = riskContext.starterScores?.[winnerIndex]
+  const opponentStarterScore = riskContext.starterScores?.[loserIndex]
+  const pickProjectedHits = riskContext.projectedHitProfiles?.[winnerIndex]?.projectedHits
+  const opponentProjectedHits = riskContext.projectedHitProfiles?.[loserIndex]?.projectedHits
+  const projectedHitEdgeForPick =
+    Number.isFinite(pickProjectedHits) && Number.isFinite(opponentProjectedHits)
+      ? roundToTenths(pickProjectedHits - opponentProjectedHits)
+      : null
+  const hitEdgeAgainstPick =
+    Number.isFinite(projectedHitEdgeForPick) && projectedHitEdgeForPick < -0.2
+  const starterGap =
+    Number.isFinite(pickStarterScore) && Number.isFinite(opponentStarterScore)
+      ? pickStarterScore - opponentStarterScore
+      : null
+  const bullpenGap =
+    Number.isFinite(pickBullpenScore) && Number.isFinite(opponentBullpenScore)
+      ? pickBullpenScore - opponentBullpenScore
+      : null
+  const starterLeverageIndex = clamp(
+    50 +
+      (Number.isFinite(starterGap) ? starterGap * 1.15 : 0) +
+      (Number.isFinite(projectedHitEdgeForPick) ? projectedHitEdgeForPick * 6 : 0),
+    0,
+    100
+  )
+  const lateInningStabilityIndex = clamp(
+    50 +
+      (Number.isFinite(bullpenGap) ? bullpenGap * 1.3 : 0) -
+      Math.max(baseVolatility - 70, 0) * 0.65 -
+      (hitEdgeAgainstPick ? 6 : 0),
+    0,
+    100
+  )
+
+  let reliefPitchingRisk = 36
+  let coinflipPressure = 18
+  const notes = []
+  let confidenceDelta = 0
+  let volatilityDelta = 0
+
+  if (Number.isFinite(opponentBullpenScore) && Number.isFinite(pickBullpenScore)) {
+    reliefPitchingRisk += Math.max(opponentBullpenScore - pickBullpenScore, 0) * 1.7
+  }
+
+  if (Number.isFinite(starterGap)) {
+    if (starterGap >= 8) reliefPitchingRisk += 5
+    if (starterGap >= 14) reliefPitchingRisk += 4
+  }
+
+  if (hitEdgeAgainstPick) {
+    reliefPitchingRisk += 9
+    coinflipPressure += 10
+  }
+
+  if (modelEdge <= 2) {
+    reliefPitchingRisk += 8
+    coinflipPressure += 18
+  } else if (modelEdge <= 5) {
+    reliefPitchingRisk += 5
+    coinflipPressure += 12
+  } else if (modelEdge <= 8) {
+    coinflipPressure += 6
+  }
+
+  if (baseVolatility >= 85) {
+    reliefPitchingRisk += 7
+    coinflipPressure += 16
+  } else if (baseVolatility >= 75) {
+    reliefPitchingRisk += 4
+    coinflipPressure += 9
+  }
+
+  if (starterLeverageIndex >= 60 && lateInningStabilityIndex <= 52) {
+    reliefPitchingRisk += 8
+    coinflipPressure += 10
+  }
+
+  if (starterLeverageIndex >= 72 && lateInningStabilityIndex <= 46) {
+    reliefPitchingRisk += 5
+    coinflipPressure += 7
+  }
+
+  reliefPitchingRisk = clamp(reliefPitchingRisk, 22, 95)
+  coinflipPressure = clamp(coinflipPressure, 8, 95)
+
+  if (coinflipPressure >= 60) {
+    notes.push({ label: 'Coin-flip pressure is elevated for this full-game side', delta: 4 })
+    confidenceDelta -= 4
+    volatilityDelta += 4
+  }
+
+  if (reliefPitchingRisk >= 72) {
+    notes.push({
+      label: 'Relief-pitching risk is elevated if the game flips after the starter phase',
+      delta: 6
+    })
+    confidenceDelta -= 5
+    volatilityDelta += 6
+  } else if (reliefPitchingRisk >= 62) {
+    notes.push({ label: 'Late-inning hold risk is above average for this side', delta: 4 })
+    confidenceDelta -= 3
+    volatilityDelta += 4
+  }
+
+  if (starterLeverageIndex >= 60 && lateInningStabilityIndex <= 52) {
+    notes.push({
+      label: 'Starter edge looks better than the late-inning hold profile; this reads cleaner for first five',
+      delta: 5
+    })
+    confidenceDelta -= 3
+    volatilityDelta += 5
+  }
+
+  if (
+    Number.isFinite(opponentBullpenScore) &&
+    Number.isFinite(pickBullpenScore) &&
+    opponentBullpenScore - pickBullpenScore >= 6
+  ) {
+    notes.push({ label: `${participants[loserIndex].name} carry the cleaner bullpen profile`, delta: 3 })
+  }
+
+  if (hitEdgeAgainstPick) {
+    notes.push({ label: `${participants[loserIndex].name} also own the projected hit edge`, delta: 3 })
+  }
+
+  return {
+    reliefPitchingRisk: roundToTenths(reliefPitchingRisk),
+    coinflipPressure: roundToTenths(coinflipPressure),
+    starterLeverageIndex: roundToTenths(starterLeverageIndex),
+    lateInningStabilityIndex: roundToTenths(lateInningStabilityIndex),
+    pickBullpenScore: Number.isFinite(pickBullpenScore) ? roundToTenths(pickBullpenScore) : null,
+    oppBullpenScore: Number.isFinite(opponentBullpenScore) ? roundToTenths(opponentBullpenScore) : null,
+    pickStarterScore: Number.isFinite(pickStarterScore) ? roundToTenths(pickStarterScore) : null,
+    oppStarterScore: Number.isFinite(opponentStarterScore) ? roundToTenths(opponentStarterScore) : null,
+    projectedHitEdgeForPick,
+    hitEdgeAgainstPick,
+    confidenceDelta,
+    volatilityDelta,
+    notes
+  }
+}
+
 const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
   const participant = findAnalysisParticipant(game.lean, participants)
   const opponent = participant ? participants.find((entry) => entry.id !== participant.id) : null
@@ -1490,7 +1653,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
   const agreementBonus =
     marketWinnerIndex === null ? 0 : marketWinnerIndex === winnerIndex ? 5 : -3
   const marketSupport = marketProbabilities[winnerIndex] ?? participant.impliedProbability ?? 0.5
-  const confidence = Math.round(
+  const baseConfidence = Math.round(
     clamp(
       50 +
         modelEdge * 0.95 +
@@ -1510,7 +1673,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     (sum, modifier) => sum + modifier.delta,
     0
   )
-  const volatility = Math.round(
+  const baseVolatility = Math.round(
     clamp(
       (context.volatilityBase ?? sportVolatilityBase[game.league] ?? 55) +
         marketTightness +
@@ -1520,6 +1683,23 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
       30,
       92
     )
+  )
+  const mlbIndicators =
+    game.league === 'MLB'
+      ? buildMlbDecisionIndicators({
+          riskContext: context.mlbRiskContext,
+          participants,
+          winnerIndex,
+          loserIndex,
+          modelEdge,
+          baseVolatility
+        })
+      : null
+  const confidence = Math.round(
+    clamp(baseConfidence + (mlbIndicators?.confidenceDelta ?? 0), 52, 89)
+  )
+  const volatility = Math.round(
+    clamp(baseVolatility + (mlbIndicators?.volatilityDelta ?? 0), 30, 92)
   )
   const recommendationScore = Math.round(
     confidence * structuredRecommendationWeight.confidence +
@@ -1563,7 +1743,21 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     marketProbabilityLabel: formatProbability(marketSupport),
     inputs,
     inputsUsed: normalizedSignals.length,
-    volatilityNotes: context.volatilityModifiers || [],
+    volatilityNotes: [...(context.volatilityModifiers || []), ...(mlbIndicators?.notes || [])],
+    indicators: mlbIndicators
+      ? {
+          reliefPitchingRisk: mlbIndicators.reliefPitchingRisk,
+          coinflipPressure: mlbIndicators.coinflipPressure,
+          starterLeverageIndex: mlbIndicators.starterLeverageIndex,
+          lateInningStabilityIndex: mlbIndicators.lateInningStabilityIndex,
+          pickBullpenScore: mlbIndicators.pickBullpenScore,
+          oppBullpenScore: mlbIndicators.oppBullpenScore,
+          pickStarterScore: mlbIndicators.pickStarterScore,
+          oppStarterScore: mlbIndicators.oppStarterScore,
+          projectedHitEdgeForPick: mlbIndicators.projectedHitEdgeForPick,
+          hitEdgeAgainstPick: mlbIndicators.hitEdgeAgainstPick
+        }
+      : null,
     mlbProjection: context.mlbProjection ?? null
   }
 }

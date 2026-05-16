@@ -16,7 +16,11 @@
     "data:grade:hr": "python3 scripts/mlb_warehouse.py grade-home-run-picks",
     "data:list:hr": "python3 scripts/mlb_warehouse.py list-home-runs",
     "data:list:first5": "python3 scripts/mlb_warehouse.py list-first5",
-    "data:export:hr": "node scripts/export-home-run-predictions.mjs"
+    "data:export:hr": "node scripts/export-home-run-predictions.mjs",
+    "data:export:mlb-sides": "node scripts/export-mlb-side-predictions.mjs",
+    "data:import:mlb-sides": "python3 scripts/mlb_side_backtest.py import",
+    "data:grade:mlb-sides": "python3 scripts/mlb_side_backtest.py grade",
+    "data:report:mlb-sides": "python3 scripts/mlb_side_backtest.py report"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.0.0",

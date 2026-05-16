@@ -26,6 +26,10 @@ Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards wit
   Local SQLite warehouse and ingest/grading CLI for MLB game outcomes, rolling form, and home-run backtests.
 - `scripts/export-home-run-predictions.mjs`
   Statcast-driven HR prediction exporter for a stored day file.
+- `scripts/export-mlb-side-predictions.mjs`
+  Export stored MLB side picks with starter, bullpen, and hit-edge indicators for retrospective grading.
+- `scripts/mlb_side_backtest.py`
+  Import, grade, and report MLB side predictions against first-5 and full-game outcomes.
 - `data/README.md`
   Local data layout and warehouse workflow.
 - `tickets/action_1.md`
@@ -84,6 +88,10 @@ npm run data:import:hr -- --file data/predictions/mlb-home-runs/2026-05-15-statc
 npm run data:grade:hr -- --date 2026-05-15 --model-name statcast-hr-prototype-v1
 npm run data:list:hr -- --date 2026-05-15
 npm run data:list:first5 -- --date 2026-05-15
+npm run data:export:mlb-sides -- --start-date 2026-05-10 --end-date 2026-05-15
+npm run data:import:mlb-sides -- --file data/predictions/mlb-sides/2026-05-10-to-2026-05-15-board-v2.json
+npm run data:grade:mlb-sides -- --model-name board-moneyline-v2
+npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 2026-05-12 --verify-start 2026-05-13 --verify-end 2026-05-15 --out data/reports/mlb-side-backtest-2026-05-10-to-2026-05-15.md
 ```
 
-This keeps prediction generation, official MLB results, first-5/full-game labels, rolling form, Statcast season context, and later backtests in a local store instead of pushing everything through the app or the model layer each day.
+This keeps prediction generation, official MLB results, first-5/full-game labels, rolling form, Statcast season context, and both home-run and side-pick backtests in a local store instead of pushing everything through the app or the model layer each day.
