@@ -910,6 +910,72 @@
                                   </div>
                                 </article>
                               </div>
+
+                              {#if game.homeRunTargets}
+                                <section class="home-run-board" aria-label={`Home run looks for ${game.title}`}>
+                                  <div class="home-run-board-head">
+                                    <div>
+                                      <p class="series-kicker">Home run looks</p>
+                                      <strong>{game.homeRunTargets.summary}</strong>
+                                    </div>
+                                    <span>Likely and possible</span>
+                                  </div>
+
+                                  <div class="home-run-tier-grid">
+                                    <article class="home-run-tier">
+                                      <div class="home-run-tier-head">
+                                        <p>Likely</p>
+                                        <span>Best current lane</span>
+                                      </div>
+
+                                      <div class="home-run-target-list">
+                                        {#if game.homeRunTargets.likely.length}
+                                          {#each game.homeRunTargets.likely as target}
+                                            <div class="home-run-target-row">
+                                              <div>
+                                                <strong>{target.playerName}</strong>
+                                                <span>{target.teamName} vs {target.opposingPitcher} ({target.opposingPitcherHand}HP)</span>
+                                              </div>
+                                              <div class="home-run-target-meta">
+                                                <strong>{Math.round(target.score)}</strong>
+                                                <span>{target.scoreBand} | {target.burstTag}</span>
+                                              </div>
+                                            </div>
+                                          {/each}
+                                        {:else}
+                                          <p class="home-run-empty">No strong likely bat has surfaced yet.</p>
+                                        {/if}
+                                      </div>
+                                    </article>
+
+                                    <article class="home-run-tier">
+                                      <div class="home-run-tier-head">
+                                        <p>Possible</p>
+                                        <span>Secondary lanes</span>
+                                      </div>
+
+                                      <div class="home-run-target-list">
+                                        {#if game.homeRunTargets.possible.length}
+                                          {#each game.homeRunTargets.possible as target}
+                                            <div class="home-run-target-row">
+                                              <div>
+                                                <strong>{target.playerName}</strong>
+                                                <span>{target.teamName} | {target.homeRunsLast7Days} HR last 7 days</span>
+                                              </div>
+                                              <div class="home-run-target-meta">
+                                                <strong>{Math.round(target.score)}</strong>
+                                                <span>{target.opposingPitcherHr9} HR/9</span>
+                                              </div>
+                                            </div>
+                                          {/each}
+                                        {:else}
+                                          <p class="home-run-empty">No second-tier lane yet beyond the lead bat.</p>
+                                        {/if}
+                                      </div>
+                                    </article>
+                                  </div>
+                                </section>
+                              {/if}
                             {/if}
 
                             <ul class="model-input-list">

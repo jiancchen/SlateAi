@@ -1,0 +1,969 @@
+export const homeRunBoardMeta = {
+  "modelName": "statcast-hr-prototype-v2",
+  "date": "2026-05-16",
+  "generatedAt": "2026-05-16T15:55:59.832Z",
+  "sources": [
+    "https://baseballsavant.mlb.com/leaderboard/home-runs",
+    "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
+    "https://baseballsavant.mlb.com/leaderboard/home-runs?type=details"
+  ]
+}
+
+export const homeRunTargetsByGame = {
+  "Blue Jays @ Tigers": {
+    "gameTitle": "Blue Jays @ Tigers",
+    "likely": [
+      {
+        "playerId": 672960,
+        "playerName": "Kazuma Okamoto",
+        "teamAbbrev": "TOR",
+        "teamName": "Blue Jays",
+        "gameTitle": "Blue Jays @ Tigers",
+        "opposingPitcher": "Casey Mize",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.58,
+        "parkHrIndex": 100,
+        "seasonHr": 10,
+        "seasonXHR": 10.3,
+        "xhrDiff": -0.3,
+        "baseScore": 42.44451612903225,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 0,
+        "noDoubterRate": 0.4,
+        "avgExitVelocityOnHomers": 108.8,
+        "score": 61.2,
+        "scoreBand": "thin",
+        "burstTag": "active",
+        "rationale": [
+          "10 HR and 10.3 xHR on the season",
+          "5 HR since May 1 with 0 in the last week",
+          "Casey Mize is allowing roughly 0.58 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [],
+    "summary": "Kazuma Okamoto is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+  },
+  "Royals @ Cardinals": {
+    "gameTitle": "Royals @ Cardinals",
+    "likely": [
+      {
+        "playerId": 691023,
+        "playerName": "Jordan Walker",
+        "teamAbbrev": "STL",
+        "teamName": "Cardinals",
+        "gameTitle": "Royals @ Cardinals",
+        "opposingPitcher": "Noah Cameron",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 1.28,
+        "parkHrIndex": 100,
+        "seasonHr": 13,
+        "seasonXHR": 10.7,
+        "xhrDiff": 2.3,
+        "baseScore": 49.688863636363635,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 3,
+        "noDoubterRate": 0.25,
+        "avgExitVelocityOnHomers": 107,
+        "score": 68.7,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "13 HR and 10.7 xHR on the season",
+          "4 HR since May 1 with 3 in the last week",
+          "Noah Cameron is allowing roughly 1.28 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 676475,
+        "playerName": "Alec Burleson",
+        "teamAbbrev": "STL",
+        "teamName": "Cardinals",
+        "gameTitle": "Royals @ Cardinals",
+        "opposingPitcher": "Noah Cameron",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 1.28,
+        "parkHrIndex": 100,
+        "seasonHr": 6,
+        "seasonXHR": 8.4,
+        "xhrDiff": -2.4,
+        "baseScore": 42.188863636363635,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 0,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 108.5,
+        "score": 53,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "6 HR and 8.4 xHR on the season",
+          "2 HR since May 1 with 0 in the last week",
+          "Noah Cameron is allowing roughly 1.28 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "summary": "Jordan Walker is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+  },
+  "Diamondbacks @ Rockies": {
+    "gameTitle": "Diamondbacks @ Rockies",
+    "likely": [
+      {
+        "playerId": 666160,
+        "playerName": "Mickey Moniak",
+        "teamAbbrev": "COL",
+        "teamName": "Rockies",
+        "gameTitle": "Diamondbacks @ Rockies",
+        "opposingPitcher": "Eduardo Rodriguez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.75,
+        "parkHrIndex": 100,
+        "seasonHr": 12,
+        "seasonXHR": 13.4,
+        "xhrDiff": -1.4,
+        "baseScore": 56.089999999999996,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 104.3,
+        "score": 73.5,
+        "scoreBand": "live",
+        "burstTag": "carry",
+        "rationale": [
+          "12 HR and 13.4 xHR on the season",
+          "4 HR since May 1 with 1 in the last week",
+          "Eduardo Rodriguez is allowing roughly 0.75 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 696100,
+        "playerName": "Hunter Goodman",
+        "teamAbbrev": "COL",
+        "teamName": "Rockies",
+        "gameTitle": "Diamondbacks @ Rockies",
+        "opposingPitcher": "Eduardo Rodriguez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.75,
+        "parkHrIndex": 100,
+        "seasonHr": 11,
+        "seasonXHR": 11.6,
+        "xhrDiff": -0.6,
+        "baseScore": 48.71,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 106.5,
+        "score": 58.8,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "11 HR and 11.6 xHR on the season",
+          "2 HR since May 1 with 2 in the last week",
+          "Eduardo Rodriguez is allowing roughly 0.75 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "summary": "Mickey Moniak is the cleanest likely bat here, driven by 4 recent homers, a 0.75 HR/9 starter matchup, and a live contact-quality signal."
+  },
+  "Orioles @ Nationals": {
+    "gameTitle": "Orioles @ Nationals",
+    "likely": [
+      {
+        "playerId": 695578,
+        "playerName": "James Wood",
+        "teamAbbrev": "WSH",
+        "teamName": "Nationals",
+        "gameTitle": "Orioles @ Nationals",
+        "opposingPitcher": "Chris Bassitt",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.71,
+        "parkHrIndex": 100,
+        "seasonHr": 12,
+        "seasonXHR": 13.1,
+        "xhrDiff": -1.1,
+        "baseScore": 54.433684210526316,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 109,
+        "score": 71.7,
+        "scoreBand": "live",
+        "burstTag": "carry",
+        "rationale": [
+          "12 HR and 13.1 xHR on the season",
+          "2 HR since May 1 with 2 in the last week",
+          "Chris Bassitt is allowing roughly 0.71 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 695734,
+        "playerName": "Daylen Lile",
+        "teamAbbrev": "WSH",
+        "teamName": "Nationals",
+        "gameTitle": "Orioles @ Nationals",
+        "opposingPitcher": "Chris Bassitt",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.71,
+        "parkHrIndex": 100,
+        "seasonHr": 7,
+        "seasonXHR": 7.1,
+        "xhrDiff": -0.1,
+        "baseScore": 31.333684210526314,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 4,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 106,
+        "score": 55.9,
+        "scoreBand": "thin",
+        "burstTag": "heater",
+        "rationale": [
+          "7 HR and 7.1 xHR on the season",
+          "4 HR since May 1 with 4 in the last week",
+          "Chris Bassitt is allowing roughly 0.71 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "summary": "James Wood is the cleanest likely bat here, driven by 2 recent homers, a 0.71 HR/9 starter matchup, and a live contact-quality signal."
+  },
+  "Phillies @ Pirates": {
+    "gameTitle": "Phillies @ Pirates",
+    "likely": [
+      {
+        "playerId": 656941,
+        "playerName": "Kyle Schwarber",
+        "teamAbbrev": "PHI",
+        "teamName": "Phillies",
+        "gameTitle": "Phillies @ Pirates",
+        "opposingPitcher": "Bubba Chandler",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.38,
+        "parkHrIndex": 80,
+        "seasonHr": 20,
+        "seasonXHR": 19.2,
+        "xhrDiff": 0.8,
+        "baseScore": 78.73230769230769,
+        "recentHrSinceMay1": 9,
+        "homeRunsLast7Days": 8,
+        "noDoubterRate": 0.44,
+        "avgExitVelocityOnHomers": 108.6,
+        "score": 121.7,
+        "scoreBand": "premium",
+        "burstTag": "heater",
+        "rationale": [
+          "20 HR and 19.2 xHR on the season",
+          "9 HR since May 1 with 8 in the last week",
+          "Bubba Chandler is allowing roughly 1.38 HR/9",
+          "Park HR index 80"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 664040,
+        "playerName": "Brandon Lowe",
+        "teamAbbrev": "PIT",
+        "teamName": "Pirates",
+        "gameTitle": "Phillies @ Pirates",
+        "opposingPitcher": "Cristopher Sánchez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.49,
+        "parkHrIndex": 80,
+        "seasonHr": 12,
+        "seasonXHR": 11.8,
+        "xhrDiff": 0.2,
+        "baseScore": 44.790127041742295,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 108,
+        "score": 64.2,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "12 HR and 11.8 xHR on the season",
+          "4 HR since May 1 with 2 in the last week",
+          "Cristopher Sánchez is allowing roughly 0.49 HR/9",
+          "Park HR index 80"
+        ]
+      },
+      {
+        "playerId": 547180,
+        "playerName": "Bryce Harper",
+        "teamAbbrev": "PHI",
+        "teamName": "Phillies",
+        "gameTitle": "Phillies @ Pirates",
+        "opposingPitcher": "Bubba Chandler",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.38,
+        "parkHrIndex": 80,
+        "seasonHr": 10,
+        "seasonXHR": 10.5,
+        "xhrDiff": -0.5,
+        "baseScore": 46.5923076923077,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0.25,
+        "avgExitVelocityOnHomers": 102.5,
+        "score": 60.9,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "10 HR and 10.5 xHR on the season",
+          "4 HR since May 1 with 1 in the last week",
+          "Bubba Chandler is allowing roughly 1.38 HR/9",
+          "Park HR index 80"
+        ]
+      }
+    ],
+    "summary": "Kyle Schwarber is the premium carry bat here, driven by 9 recent homers, a 1.38 HR/9 starter matchup, and elite carry quality."
+  },
+  "Marlins @ Rays": {
+    "gameTitle": "Marlins @ Rays",
+    "likely": [
+      {
+        "playerId": 691406,
+        "playerName": "Junior Caminero",
+        "teamAbbrev": "TB",
+        "teamName": "Rays",
+        "gameTitle": "Marlins @ Rays",
+        "opposingPitcher": "Sandy Alcantara",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.63,
+        "parkHrIndex": 100,
+        "seasonHr": 11,
+        "seasonXHR": 10.3,
+        "xhrDiff": 0.7,
+        "baseScore": 42.86559440559441,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 110.7,
+        "score": 62.2,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "rationale": [
+          "11 HR and 10.3 xHR on the season",
+          "3 HR since May 1 with 1 in the last week",
+          "Sandy Alcantara is allowing roughly 0.63 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [],
+    "summary": "Junior Caminero is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+  },
+  "Reds @ Guardians": {
+    "gameTitle": "Reds @ Guardians",
+    "likely": [
+      {
+        "playerId": 682657,
+        "playerName": "Angel Martínez",
+        "teamAbbrev": "CLE",
+        "teamName": "Guardians",
+        "gameTitle": "Reds @ Guardians",
+        "opposingPitcher": "Chris Paddack",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.79,
+        "parkHrIndex": 94,
+        "seasonHr": 7,
+        "seasonXHR": 6.4,
+        "xhrDiff": 0.6,
+        "baseScore": 35.77655629139073,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 103,
+        "score": 44.6,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "7 HR and 6.4 xHR on the season",
+          "2 HR since May 1 with 2 in the last week",
+          "Chris Paddack is allowing roughly 1.79 HR/9",
+          "Park HR index 94"
+        ]
+      }
+    ],
+    "possible": [],
+    "summary": "Angel Martínez is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+  },
+  "Rangers @ Astros": {
+    "gameTitle": "Rangers @ Astros",
+    "likely": [
+      {
+        "playerId": 670541,
+        "playerName": "Yordan Alvarez",
+        "teamAbbrev": "HOU",
+        "teamName": "Astros",
+        "gameTitle": "Rangers @ Astros",
+        "opposingPitcher": "Jacob deGrom",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.22,
+        "parkHrIndex": 116,
+        "seasonHr": 14,
+        "seasonXHR": 15.7,
+        "xhrDiff": -1.7,
+        "baseScore": 70.09203619909502,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 113.5,
+        "score": 86.6,
+        "scoreBand": "strong",
+        "burstTag": "watch",
+        "rationale": [
+          "14 HR and 15.7 xHR on the season",
+          "2 HR since May 1 with 2 in the last week",
+          "Jacob deGrom is allowing roughly 1.22 HR/9",
+          "Park HR index 116"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 572233,
+        "playerName": "Christian Walker",
+        "teamAbbrev": "HOU",
+        "teamName": "Astros",
+        "gameTitle": "Rangers @ Astros",
+        "opposingPitcher": "Jacob deGrom",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.22,
+        "parkHrIndex": 116,
+        "seasonHr": 10,
+        "seasonXHR": 10.6,
+        "xhrDiff": -0.6,
+        "baseScore": 50.23203619909502,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0.67,
+        "avgExitVelocityOnHomers": 104,
+        "score": 64.3,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "rationale": [
+          "10 HR and 10.6 xHR on the season",
+          "3 HR since May 1 with 1 in the last week",
+          "Jacob deGrom is allowing roughly 1.22 HR/9",
+          "Park HR index 116"
+        ]
+      }
+    ],
+    "summary": "Yordan Alvarez is the cleanest likely bat here, driven by 2 recent homers, a 1.22 HR/9 starter matchup, and a strong contact-quality signal."
+  },
+  "Cubs @ White Sox": {
+    "gameTitle": "Cubs @ White Sox",
+    "likely": [
+      {
+        "playerId": 808959,
+        "playerName": "Munetaka Murakami",
+        "teamAbbrev": "CWS",
+        "teamName": "White Sox",
+        "gameTitle": "Cubs @ White Sox",
+        "opposingPitcher": "Jameson Taillon",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 2.19,
+        "parkHrIndex": 95,
+        "seasonHr": 15,
+        "seasonXHR": 14.3,
+        "xhrDiff": 0.7,
+        "baseScore": 67.99185840707965,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0.33,
+        "avgExitVelocityOnHomers": 108.7,
+        "score": 82.3,
+        "scoreBand": "strong",
+        "burstTag": "watch",
+        "rationale": [
+          "15 HR and 14.3 xHR on the season",
+          "3 HR since May 1 with 1 in the last week",
+          "Jameson Taillon is allowing roughly 2.19 HR/9",
+          "Park HR index 95"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 695657,
+        "playerName": "Colson Montgomery",
+        "teamAbbrev": "CWS",
+        "teamName": "White Sox",
+        "gameTitle": "Cubs @ White Sox",
+        "opposingPitcher": "Jameson Taillon",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 2.19,
+        "parkHrIndex": 95,
+        "seasonHr": 12,
+        "seasonXHR": 11.1,
+        "xhrDiff": 0.9,
+        "baseScore": 56.25185840707964,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 3,
+        "noDoubterRate": 0.25,
+        "avgExitVelocityOnHomers": 103.3,
+        "score": 73.8,
+        "scoreBand": "live",
+        "burstTag": "watch",
+        "rationale": [
+          "12 HR and 11.1 xHR on the season",
+          "4 HR since May 1 with 3 in the last week",
+          "Jameson Taillon is allowing roughly 2.19 HR/9",
+          "Park HR index 95"
+        ]
+      },
+      {
+        "playerId": 678246,
+        "playerName": "Miguel Vargas",
+        "teamAbbrev": "CWS",
+        "teamName": "White Sox",
+        "gameTitle": "Cubs @ White Sox",
+        "opposingPitcher": "Jameson Taillon",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 2.19,
+        "parkHrIndex": 95,
+        "seasonHr": 10,
+        "seasonXHR": 8.7,
+        "xhrDiff": 1.3,
+        "baseScore": 47.57185840707964,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 3,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 105.8,
+        "score": 67.4,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "10 HR and 8.7 xHR on the season",
+          "4 HR since May 1 with 3 in the last week",
+          "Jameson Taillon is allowing roughly 2.19 HR/9",
+          "Park HR index 95"
+        ]
+      },
+      {
+        "playerId": 664023,
+        "playerName": "Ian Happ",
+        "teamAbbrev": "CHC",
+        "teamName": "Cubs",
+        "gameTitle": "Cubs @ White Sox",
+        "opposingPitcher": "Davis Martin",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.36,
+        "parkHrIndex": 95,
+        "seasonHr": 10,
+        "seasonXHR": 11.3,
+        "xhrDiff": -1.3,
+        "baseScore": 44.900000000000006,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0.67,
+        "avgExitVelocityOnHomers": 108,
+        "score": 60.9,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "rationale": [
+          "10 HR and 11.3 xHR on the season",
+          "3 HR since May 1 with 1 in the last week",
+          "Davis Martin is allowing roughly 0.36 HR/9",
+          "Park HR index 95"
+        ]
+      }
+    ],
+    "summary": "Munetaka Murakami is the cleanest likely bat here, driven by 3 recent homers, a 2.19 HR/9 starter matchup, and a strong contact-quality signal."
+  },
+  "Brewers @ Twins": {
+    "gameTitle": "Brewers @ Twins",
+    "likely": [
+      {
+        "playerId": 621439,
+        "playerName": "Byron Buxton",
+        "teamAbbrev": "MIN",
+        "teamName": "Twins",
+        "gameTitle": "Brewers @ Twins",
+        "opposingPitcher": "Logan Henderson",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.69,
+        "parkHrIndex": 98,
+        "seasonHr": 15,
+        "seasonXHR": 14.7,
+        "xhrDiff": 0.3,
+        "baseScore": 59.14615384615384,
+        "recentHrSinceMay1": 7,
+        "homeRunsLast7Days": 4,
+        "noDoubterRate": 0.57,
+        "avgExitVelocityOnHomers": 102.6,
+        "score": 88.6,
+        "scoreBand": "strong",
+        "burstTag": "heater",
+        "rationale": [
+          "15 HR and 14.7 xHR on the season",
+          "7 HR since May 1 with 4 in the last week",
+          "Logan Henderson is allowing roughly 0.69 HR/9",
+          "Park HR index 98"
+        ]
+      }
+    ],
+    "possible": [],
+    "summary": "Byron Buxton is the cleanest likely bat here, driven by 7 recent homers, a 0.69 HR/9 starter matchup, and a strong contact-quality signal."
+  },
+  "Padres @ Mariners": {
+    "gameTitle": "Padres @ Mariners",
+    "likely": [
+      {
+        "playerId": 670042,
+        "playerName": "Luke Raley",
+        "teamAbbrev": "SEA",
+        "teamName": "Mariners",
+        "gameTitle": "Padres @ Mariners",
+        "opposingPitcher": "Walker Buehler",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.75,
+        "parkHrIndex": 100,
+        "seasonHr": 10,
+        "seasonXHR": 7.4,
+        "xhrDiff": 2.6,
+        "baseScore": 33.91545706371191,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 4,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 105.2,
+        "score": 54.9,
+        "scoreBand": "thin",
+        "burstTag": "heater",
+        "rationale": [
+          "10 HR and 7.4 xHR on the season",
+          "5 HR since May 1 with 4 in the last week",
+          "Walker Buehler is allowing roughly 0.75 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 677594,
+        "playerName": "Julio Rodríguez",
+        "teamAbbrev": "SEA",
+        "teamName": "Mariners",
+        "gameTitle": "Padres @ Mariners",
+        "opposingPitcher": "Walker Buehler",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.75,
+        "parkHrIndex": 100,
+        "seasonHr": 7,
+        "seasonXHR": 6.9,
+        "xhrDiff": 0.1,
+        "baseScore": 30.81545706371191,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 107,
+        "score": 53.1,
+        "scoreBand": "thin",
+        "burstTag": "active",
+        "rationale": [
+          "7 HR and 6.9 xHR on the season",
+          "5 HR since May 1 with 2 in the last week",
+          "Walker Buehler is allowing roughly 0.75 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "summary": "Luke Raley is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+  },
+  "Red Sox @ Braves": {
+    "gameTitle": "Red Sox @ Braves",
+    "likely": [
+      {
+        "playerId": 621566,
+        "playerName": "Matt Olson",
+        "teamAbbrev": "ATL",
+        "teamName": "Braves",
+        "gameTitle": "Red Sox @ Braves",
+        "opposingPitcher": "Payton Tolle",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.81,
+        "parkHrIndex": 95,
+        "seasonHr": 14,
+        "seasonXHR": 16.1,
+        "xhrDiff": -2.1,
+        "baseScore": 66.53567567567568,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 107.4,
+        "score": 87.4,
+        "scoreBand": "strong",
+        "burstTag": "active",
+        "rationale": [
+          "14 HR and 16.1 xHR on the season",
+          "5 HR since May 1 with 1 in the last week",
+          "Payton Tolle is allowing roughly 0.81 HR/9",
+          "Park HR index 95"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 686948,
+        "playerName": "Drake Baldwin",
+        "teamAbbrev": "ATL",
+        "teamName": "Braves",
+        "gameTitle": "Red Sox @ Braves",
+        "opposingPitcher": "Payton Tolle",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.81,
+        "parkHrIndex": 95,
+        "seasonHr": 12,
+        "seasonXHR": 10.4,
+        "xhrDiff": 1.6,
+        "baseScore": 44.35567567567568,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 3,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 103.2,
+        "score": 63.2,
+        "scoreBand": "thin",
+        "burstTag": "active",
+        "rationale": [
+          "12 HR and 10.4 xHR on the season",
+          "5 HR since May 1 with 3 in the last week",
+          "Payton Tolle is allowing roughly 0.81 HR/9",
+          "Park HR index 95"
+        ]
+      }
+    ],
+    "summary": "Matt Olson is the cleanest likely bat here, driven by 5 recent homers, a 0.81 HR/9 starter matchup, and a strong contact-quality signal."
+  },
+  "Yankees @ Mets": {
+    "gameTitle": "Yankees @ Mets",
+    "likely": [
+      {
+        "playerId": 592450,
+        "playerName": "Aaron Judge",
+        "teamAbbrev": "NYY",
+        "teamName": "Yankees",
+        "gameTitle": "Yankees @ Mets",
+        "opposingPitcher": "Huascar Brazobán",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.43,
+        "parkHrIndex": 102,
+        "seasonHr": 16,
+        "seasonXHR": 14.9,
+        "xhrDiff": 1.1,
+        "baseScore": 58.92,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 108.3,
+        "score": 73.8,
+        "scoreBand": "live",
+        "burstTag": "watch",
+        "rationale": [
+          "16 HR and 14.9 xHR on the season",
+          "4 HR since May 1 with 1 in the last week",
+          "Huascar Brazobán is allowing roughly 0.43 HR/9",
+          "Park HR index 102"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 700250,
+        "playerName": "Ben Rice",
+        "teamAbbrev": "NYY",
+        "teamName": "Yankees",
+        "gameTitle": "Yankees @ Mets",
+        "opposingPitcher": "Huascar Brazobán",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.43,
+        "parkHrIndex": 102,
+        "seasonHr": 14,
+        "seasonXHR": 12.5,
+        "xhrDiff": 1.5,
+        "baseScore": 50.24,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 106,
+        "score": 65.6,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "14 HR and 12.5 xHR on the season",
+          "4 HR since May 1 with 2 in the last week",
+          "Huascar Brazobán is allowing roughly 0.43 HR/9",
+          "Park HR index 102"
+        ]
+      },
+      {
+        "playerId": 668901,
+        "playerName": "Mark Vientos",
+        "teamAbbrev": "NYM",
+        "teamName": "Mets",
+        "gameTitle": "Yankees @ Mets",
+        "opposingPitcher": "Carlos Rodón",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
+        "parkHrIndex": 102,
+        "seasonHr": 6,
+        "seasonXHR": 8.7,
+        "xhrDiff": -2.7,
+        "baseScore": 34.86,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 105.3,
+        "score": 54.4,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "rationale": [
+          "6 HR and 8.7 xHR on the season",
+          "4 HR since May 1 with 2 in the last week",
+          "Carlos Rodón is allowing roughly 0 HR/9",
+          "Park HR index 102"
+        ]
+      }
+    ],
+    "summary": "Aaron Judge is the cleanest likely bat here, driven by 4 recent homers, a 0.43 HR/9 starter matchup, and a live contact-quality signal."
+  },
+  "Dodgers @ Angels": {
+    "gameTitle": "Dodgers @ Angels",
+    "likely": [
+      {
+        "playerId": 571970,
+        "playerName": "Max Muncy",
+        "teamAbbrev": "LAD",
+        "teamName": "Dodgers",
+        "gameTitle": "Dodgers @ Angels",
+        "opposingPitcher": "José Soriano",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.83,
+        "parkHrIndex": 100,
+        "seasonHr": 12,
+        "seasonXHR": 12.7,
+        "xhrDiff": -0.7,
+        "baseScore": 53.44255083179297,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 3,
+        "noDoubterRate": 0.67,
+        "avgExitVelocityOnHomers": 107,
+        "score": 72.2,
+        "scoreBand": "live",
+        "burstTag": "carry",
+        "rationale": [
+          "12 HR and 12.7 xHR on the season",
+          "3 HR since May 1 with 3 in the last week",
+          "José Soriano is allowing roughly 0.83 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 681624,
+        "playerName": "Andy Pages",
+        "teamAbbrev": "LAD",
+        "teamName": "Dodgers",
+        "gameTitle": "Dodgers @ Angels",
+        "opposingPitcher": "José Soriano",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.83,
+        "parkHrIndex": 100,
+        "seasonHr": 10,
+        "seasonXHR": 8.1,
+        "xhrDiff": 1.9,
+        "baseScore": 36.74255083179297,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 2,
+        "noDoubterRate": 0.4,
+        "avgExitVelocityOnHomers": 105.4,
+        "score": 57,
+        "scoreBand": "thin",
+        "burstTag": "active",
+        "rationale": [
+          "10 HR and 8.1 xHR on the season",
+          "5 HR since May 1 with 2 in the last week",
+          "José Soriano is allowing roughly 0.83 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "summary": "Max Muncy is the cleanest likely bat here, driven by 3 recent homers, a 0.83 HR/9 starter matchup, and a live contact-quality signal."
+  },
+  "Giants @ Athletics": {
+    "gameTitle": "Giants @ Athletics",
+    "likely": [
+      {
+        "playerId": 669127,
+        "playerName": "Shea Langeliers",
+        "teamAbbrev": "ATH",
+        "teamName": "Athletics",
+        "gameTitle": "Giants @ Athletics",
+        "opposingPitcher": "Trevor McDonald",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.49,
+        "parkHrIndex": 100,
+        "seasonHr": 12,
+        "seasonXHR": 10.8,
+        "xhrDiff": 1.2,
+        "baseScore": 50.97322314049587,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 106.8,
+        "score": 69.6,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "rationale": [
+          "12 HR and 10.8 xHR on the season",
+          "4 HR since May 1 with 1 in the last week",
+          "Trevor McDonald is allowing roughly 1.49 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "playerId": 701762,
+        "playerName": "Nick Kurtz",
+        "teamAbbrev": "ATH",
+        "teamName": "Athletics",
+        "gameTitle": "Giants @ Athletics",
+        "opposingPitcher": "Trevor McDonald",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.49,
+        "parkHrIndex": 100,
+        "seasonHr": 8,
+        "seasonXHR": 8.2,
+        "xhrDiff": -0.2,
+        "baseScore": 40.93322314049587,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 3,
+        "noDoubterRate": 0.33,
+        "avgExitVelocityOnHomers": 106.7,
+        "score": 57.4,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "rationale": [
+          "8 HR and 8.2 xHR on the season",
+          "3 HR since May 1 with 3 in the last week",
+          "Trevor McDonald is allowing roughly 1.49 HR/9",
+          "Park HR index 100"
+        ]
+      }
+    ],
+    "summary": "Shea Langeliers is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+  }
+}

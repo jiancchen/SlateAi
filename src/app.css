@@ -865,6 +865,87 @@ h3 {
   text-align: right;
 }
 
+.home-run-board {
+  margin-top: 10px;
+  border: 1px solid rgba(199, 155, 88, 0.16);
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  background: linear-gradient(180deg, rgba(199, 155, 88, 0.06), rgba(255, 255, 255, 0.02));
+}
+
+.home-run-board-head,
+.home-run-tier-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.home-run-board-head strong,
+.home-run-tier-head p,
+.home-run-target-row strong {
+  color: var(--heading);
+}
+
+.home-run-board-head span,
+.home-run-tier-head span {
+  color: var(--warning);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-run-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.home-run-tier {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 10px;
+}
+
+.home-run-target-list {
+  display: grid;
+  gap: 8px;
+}
+
+.home-run-target-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.home-run-target-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.home-run-target-row > div {
+  display: grid;
+  gap: 3px;
+}
+
+.home-run-target-row span,
+.home-run-empty {
+  color: var(--muted);
+}
+
+.home-run-target-meta {
+  justify-items: end;
+  text-align: right;
+}
+
 .model-note-row--pitchers {
   margin-top: 8px;
 }
@@ -1339,7 +1420,8 @@ h3 {
   .rail-mini-metrics,
   .analysis-action-row,
   .quick-pick-row,
-  .reliever-chain-grid {
+  .reliever-chain-grid,
+  .home-run-tier-grid {
     grid-template-columns: 1fr;
   }
 

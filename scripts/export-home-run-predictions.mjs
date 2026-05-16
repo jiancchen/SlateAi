@@ -49,7 +49,9 @@ const parseArgs = () => {
     date: null,
     top: 12,
     scanLimit: 24,
-    out: null
+    teamLimit: 4,
+    out: null,
+    moduleOut: null
   }
 
   for (let index = 0; index < args.length; index += 1) {
@@ -57,7 +59,9 @@ const parseArgs = () => {
     if (arg === '--date') options.date = args[++index]
     else if (arg === '--top') options.top = Number(args[++index])
     else if (arg === '--scan-limit') options.scanLimit = Number(args[++index])
+    else if (arg === '--team-limit') options.teamLimit = Number(args[++index])
     else if (arg === '--out') options.out = args[++index]
+    else if (arg === '--module-out') options.moduleOut = args[++index]
   }
 
   if (!options.date) {
@@ -66,6 +70,11 @@ const parseArgs = () => {
 
   options.out ||= path.join(rootDir, 'data', 'predictions', 'mlb-home-runs', `${options.date}-statcast-prototype.json`)
   return options
+}
+
+const formatPlayerName = (value = '') => {
+  const [lastName = '', firstName = ''] = value.split(',').map((part) => part.trim())
+  return firstName ? `${firstName} ${lastName}` : value
 }
 
 const parseCsv = (text) => {
@@ -207,12 +216,55 @@ const fetchPlayerDetails = async (playerId, season) => {
   return response.json()
 }
 
-const scoreCandidates = async ({ date, season, top, scanLimit }) => {
+const scoreCandidateDetails = (candidate, detailRows, season) => {
+  const recentRows = detailRows.filter((row) => row.result === 'home_run' && row.game_date >= `${season}-05-01`)
+  const last7Rows = detailRows.filter((row) => row.result === 'home_run' && row.game_date >= `${season}-05-08`)
+  const noDoubterRate = recentRows.length
+    ? recentRows.filter((row) => row.hr_cat === 'No Doubter').length / recentRows.length
+    : 0
+  const avgEv = recentRows.length
+    ? recentRows.reduce((sum, row) => sum + Number(row.exit_velocity || 0), 0) / recentRows.length
+    : 0
+
+  candidate.recentHrSinceMay1 = recentRows.length
+  candidate.homeRunsLast7Days = last7Rows.length
+  candidate.noDoubterRate = Number(noDoubterRate.toFixed(2))
+  candidate.avgExitVelocityOnHomers = Number(avgEv.toFixed(1))
+  candidate.score = Number(
+    (
+      candidate.baseScore +
+      candidate.recentHrSinceMay1 * 2.8 +
+      candidate.homeRunsLast7Days * 1.6 +
+      candidate.noDoubterRate * 6 +
+      Math.max(0, (avgEv - 104) * 0.5)
+    ).toFixed(1)
+  )
+  candidate.scoreBand =
+    candidate.score >= 100 ? 'premium' : candidate.score >= 82 ? 'strong' : candidate.score >= 70 ? 'live' : 'thin'
+  candidate.burstTag =
+    candidate.homeRunsLast7Days >= 4
+      ? 'heater'
+      : candidate.recentHrSinceMay1 >= 5
+        ? 'active'
+        : candidate.noDoubterRate >= 0.55
+          ? 'carry'
+          : 'watch'
+  candidate.rationale = [
+    `${candidate.seasonHr} HR and ${candidate.seasonXHR} xHR on the season`,
+    `${candidate.recentHrSinceMay1} HR since May 1 with ${candidate.homeRunsLast7Days} in the last week`,
+    `${candidate.opposingPitcher} is allowing roughly ${candidate.opposingPitcherHr9} HR/9`,
+    `Park HR index ${candidate.parkHrIndex}`
+  ]
+
+  return candidate
+}
+
+const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
   const games = await loadDayGames(date)
   const matchupByAbbr = buildMatchupMap(games)
   const leaderboard = await fetchStatcastLeaderboard(season)
 
-  const candidates = leaderboard
+  const preScoredCandidates = leaderboard
     .filter((row) => matchupByAbbr[row.team_abbrev])
     .map((row) => {
       const matchup = matchupByAbbr[row.team_abbrev]
@@ -229,8 +281,9 @@ const scoreCandidates = async ({ date, season, top, scanLimit }) => {
 
       return {
         playerId: Number(row.player_id),
-        playerName: row.player,
+        playerName: formatPlayerName(row.player),
         teamAbbrev: row.team_abbrev,
+        teamName: matchup.teamName,
         gameTitle: matchup.gameTitle,
         opposingPitcher: matchup.opposingPitcher,
         opposingPitcherHand: matchup.opposingPitcherHand,
@@ -244,67 +297,115 @@ const scoreCandidates = async ({ date, season, top, scanLimit }) => {
     })
     .filter((candidate) => candidate.seasonHr >= 5 || candidate.seasonXHR >= 5)
     .sort((left, right) => right.baseScore - left.baseScore)
-    .slice(0, scanLimit)
 
-  for (const candidate of candidates) {
-    const detailRows = await fetchPlayerDetails(candidate.playerId, season)
-    const recentRows = detailRows.filter((row) => row.result === 'home_run' && row.game_date >= `${season}-05-01`)
-    const last7Rows = detailRows.filter((row) => row.result === 'home_run' && row.game_date >= `${season}-05-08`)
-    const noDoubterRate = recentRows.length
-      ? recentRows.filter((row) => row.hr_cat === 'No Doubter').length / recentRows.length
-      : 0
-    const avgEv = recentRows.length
-      ? recentRows.reduce((sum, row) => sum + Number(row.exit_velocity || 0), 0) / recentRows.length
-      : 0
+  const shortlistedCandidates = Object.values(
+    preScoredCandidates.reduce((accumulator, candidate) => {
+      accumulator[candidate.teamAbbrev] ||= []
+      accumulator[candidate.teamAbbrev].push(candidate)
+      return accumulator
+    }, {})
+  )
+    .flatMap((teamCandidates) => teamCandidates.slice(0, teamLimit))
+    .slice(0, Math.max(scanLimit, games.length * 6))
 
-    candidate.recentHrSinceMay1 = recentRows.length
-    candidate.homeRunsLast7Days = last7Rows.length
-    candidate.noDoubterRate = Number(noDoubterRate.toFixed(2))
-    candidate.avgExitVelocityOnHomers = Number(avgEv.toFixed(1))
-    candidate.score = Number(
-      (
-        candidate.baseScore +
-        candidate.recentHrSinceMay1 * 2.8 +
-        candidate.homeRunsLast7Days * 1.6 +
-        candidate.noDoubterRate * 6 +
-        Math.max(0, (avgEv - 104) * 0.5)
-      ).toFixed(1)
+  const scoredCandidates = []
+  const chunkSize = 8
+  for (let start = 0; start < shortlistedCandidates.length; start += chunkSize) {
+    const batch = shortlistedCandidates.slice(start, start + chunkSize)
+    const batchScores = await Promise.all(
+      batch.map(async (candidate) => {
+        const detailRows = await fetchPlayerDetails(candidate.playerId, season)
+        return scoreCandidateDetails(candidate, detailRows, season)
+      })
     )
-    candidate.rationale = [
-      `${candidate.seasonHr} HR and ${candidate.seasonXHR} xHR on the season`,
-      `${candidate.recentHrSinceMay1} HR since May 1 with ${candidate.homeRunsLast7Days} in the last week`,
-      `${candidate.opposingPitcher} is allowing roughly ${candidate.opposingPitcherHr9} HR/9`,
-      `Park HR index ${candidate.parkHrIndex}`
-    ]
+    scoredCandidates.push(...batchScores)
   }
 
-  return candidates
+  const rankedPicks = scoredCandidates
     .sort((left, right) => right.score - left.score)
     .slice(0, top)
     .map((candidate, index) => ({
       rank: index + 1,
       ...candidate
     }))
+
+  const gameBoards = games.map((game) => {
+    const candidates = scoredCandidates
+      .filter((candidate) => candidate.gameTitle === game.title)
+      .sort((left, right) => right.score - left.score)
+
+    const likely = candidates.slice(0, 1)
+    if (candidates[1] && candidates[1].score >= Math.max(68, candidates[0].score - 7)) {
+      likely.push(candidates[1])
+    }
+    const possible = candidates
+      .filter((candidate) => !likely.some((likelyCandidate) => likelyCandidate.playerId === candidate.playerId))
+      .slice(0, 3)
+      .filter((candidate) => candidate.score >= 53)
+
+    const leadCandidate = likely[0] ?? possible[0] ?? null
+    let gameSummary = 'No usable home-run lane has surfaced yet on the pre-lineup board.'
+    if (leadCandidate) {
+      gameSummary =
+        leadCandidate.scoreBand === 'premium'
+          ? `${leadCandidate.playerName} is the premium carry bat here, driven by ${leadCandidate.recentHrSinceMay1} recent homers, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and elite carry quality.`
+          : leadCandidate.scoreBand === 'strong' || leadCandidate.scoreBand === 'live'
+            ? `${leadCandidate.playerName} is the cleanest likely bat here, driven by ${leadCandidate.recentHrSinceMay1} recent homers, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and a ${leadCandidate.scoreBand} contact-quality signal.`
+            : `${leadCandidate.playerName} is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive.`
+    }
+
+    return {
+      gameTitle: game.title,
+      likely,
+      possible,
+      summary: gameSummary
+    }
+  })
+
+  return {
+    picks: rankedPicks,
+    games: gameBoards
+  }
 }
 
 const main = async () => {
-  const { date, top, scanLimit, out } = parseArgs()
+  const { date, top, scanLimit, teamLimit, out, moduleOut } = parseArgs()
   const season = Number(date.slice(0, 4))
-  const picks = await scoreCandidates({ date, season, top, scanLimit })
+  const { picks, games } = await scoreCandidates({ date, season, top, scanLimit, teamLimit })
 
   const payload = {
-    modelName: 'statcast-hr-prototype-v1',
+    modelName: 'statcast-hr-prototype-v2',
     date,
     generatedAt: new Date().toISOString(),
     sources: [
       'https://baseballsavant.mlb.com/leaderboard/home-runs',
-      `https://baseballsavant.mlb.com/leaderboard/home-runs?year=${season}&player_type=Batter&cat=xhr&team=&min=0&csv=true`
+      `https://baseballsavant.mlb.com/leaderboard/home-runs?year=${season}&player_type=Batter&cat=xhr&team=&min=0&csv=true`,
+      'https://baseballsavant.mlb.com/leaderboard/home-runs?type=details'
     ],
-    picks
+    picks,
+    games
   }
 
   await mkdir(path.dirname(out), { recursive: true })
   await writeFile(out, JSON.stringify(payload, null, 2))
+  if (moduleOut) {
+    const moduleSource = `export const homeRunBoardMeta = ${JSON.stringify(
+      {
+        modelName: payload.modelName,
+        date: payload.date,
+        generatedAt: payload.generatedAt,
+        sources: payload.sources
+      },
+      null,
+      2
+    )}\n\nexport const homeRunTargetsByGame = ${JSON.stringify(
+      Object.fromEntries(payload.games.map((entry) => [entry.gameTitle, entry])),
+      null,
+      2
+    )}\n`
+    await mkdir(path.dirname(moduleOut), { recursive: true })
+    await writeFile(moduleOut, moduleSource)
+  }
   console.log(`Saved ${picks.length} home-run picks to ${out}`)
 }
 
