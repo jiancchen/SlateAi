@@ -7,7 +7,7 @@ This project now keeps the sports dashboard logic separate from the local event 
 - `data/raw/`
   Local source snapshots fetched from official APIs or known-good pages. This directory is ignored by git so we can store full schedule and game-feed payloads without bloating the repo.
 - `data/warehouse/sports.db`
-  Local SQLite warehouse for normalized MLB games, starting pitchers, home-run events, Statcast leaderboard snapshots, prediction snapshots, backtests, and reserved park/weather tables.
+  Local SQLite warehouse for normalized MLB games, starting pitchers, starter game logs, per-team game stats, first-5/full-game outcomes, rolling form tables, Statcast leaderboard snapshots, prediction snapshots, backtests, and reserved park/weather tables.
 - `data/predictions/mlb-home-runs/`
   Saved home-run model outputs that can be imported and graded later.
 
@@ -21,12 +21,15 @@ This project now keeps the sports dashboard logic separate from the local event 
 
 ```bash
 npm run data:init
+npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
+npm run data:derive:mlb -- --through-date 2026-05-15
 npm run data:export:hr -- --date 2026-05-15
 npm run data:ingest:mlb-day -- --date 2026-05-15
 npm run data:ingest:statcast-hr -- --date 2026-05-15 --season 2026
 npm run data:import:hr -- --file data/predictions/mlb-home-runs/2026-05-15-statcast-prototype.json
 npm run data:grade:hr -- --date 2026-05-15 --model-name statcast-hr-prototype-v1
 npm run data:list:hr -- --date 2026-05-15
+npm run data:list:first5 -- --date 2026-05-15
 ```
 
 ## Notes

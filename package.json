@@ -9,10 +9,13 @@
     "preview": "vite preview",
     "data:init": "python3 scripts/mlb_warehouse.py init-db",
     "data:ingest:mlb-day": "python3 scripts/mlb_warehouse.py ingest-mlb-day",
+    "data:ingest:mlb-range": "python3 scripts/mlb_warehouse.py ingest-mlb-range",
+    "data:derive:mlb": "python3 scripts/mlb_warehouse.py derive-mlb-features",
     "data:ingest:statcast-hr": "python3 scripts/mlb_warehouse.py ingest-statcast-hr",
     "data:import:hr": "python3 scripts/mlb_warehouse.py import-predictions",
     "data:grade:hr": "python3 scripts/mlb_warehouse.py grade-home-run-picks",
     "data:list:hr": "python3 scripts/mlb_warehouse.py list-home-runs",
+    "data:list:first5": "python3 scripts/mlb_warehouse.py list-first5",
     "data:export:hr": "node scripts/export-home-run-predictions.mjs"
   },
   "devDependencies": {

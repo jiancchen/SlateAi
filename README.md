@@ -23,11 +23,15 @@ Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards wit
 - `daily-games-external.md`
   Known-good source registry for daily ingest.
 - `scripts/mlb_warehouse.py`
-  Local SQLite warehouse and ingest/grading CLI for MLB home-run events and prediction snapshots.
+  Local SQLite warehouse and ingest/grading CLI for MLB game outcomes, rolling form, and home-run backtests.
 - `scripts/export-home-run-predictions.mjs`
   Statcast-driven HR prediction exporter for a stored day file.
 - `data/README.md`
   Local data layout and warehouse workflow.
+- `tickets/action_1.md`
+  MLB warehouse and first-5/spread/moneyline foundation plan.
+- `tickets/action_2.md`
+  Modeling roadmap from first-5 through home runs.
 
 ## Recurring Data Sources
 
@@ -71,12 +75,15 @@ npm run build
 
 ```bash
 npm run data:init
+npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
+npm run data:derive:mlb -- --through-date 2026-05-15
 npm run data:export:hr -- --date 2026-05-15
 npm run data:ingest:mlb-day -- --date 2026-05-15
 npm run data:ingest:statcast-hr -- --date 2026-05-15 --season 2026
 npm run data:import:hr -- --file data/predictions/mlb-home-runs/2026-05-15-statcast-prototype.json
 npm run data:grade:hr -- --date 2026-05-15 --model-name statcast-hr-prototype-v1
 npm run data:list:hr -- --date 2026-05-15
+npm run data:list:first5 -- --date 2026-05-15
 ```
 
-This keeps prediction generation, official MLB results, Statcast season context, and later backtests in a local store instead of pushing everything through the app or the model layer each day.
+This keeps prediction generation, official MLB results, first-5/full-game labels, rolling form, Statcast season context, and later backtests in a local store instead of pushing everything through the app or the model layer each day.
