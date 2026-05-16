@@ -2215,6 +2215,129 @@ export const rankAnalysisPicks = (games) =>
       game
     }))
 
+const getFavoriteAndUnderdog = (game) => {
+  const participants = game.moneyline?.participants?.filter((participant) =>
+    Number.isFinite(participant.americanOdds)
+  )
+
+  if (!participants || participants.length < 2) return null
+
+  const sorted = [...participants].sort((left, right) => {
+    const leftProbability = left.impliedProbability ?? impliedProbabilityFromAmerican(left.americanOdds) ?? 0
+    const rightProbability =
+      right.impliedProbability ?? impliedProbabilityFromAmerican(right.americanOdds) ?? 0
+
+    return rightProbability - leftProbability
+  })
+
+  return {
+    favorite: sorted[0],
+    underdog: sorted.at(-1)
+  }
+}
+
+const getUnderdogRangeBonus = (americanOdds) => {
+  if (!Number.isFinite(americanOdds)) return 0
+  if (americanOdds <= 110) return 6
+  if (americanOdds <= 145) return 12
+  if (americanOdds <= 190) return 9
+  if (americanOdds <= 240) return 5
+  if (americanOdds <= 290) return 1
+
+  return -10
+}
+
+export const rankFlipRiskPicks = (games) =>
+  games
+    .filter((game) => game.analysis?.available && game.moneyline?.available)
+    .map((game) => {
+      const favoriteAndDog = getFavoriteAndUnderdog(game)
+
+      if (!favoriteAndDog) return null
+
+      const { favorite, underdog } = favoriteAndDog
+      const marketGap = Math.abs(
+        (favorite.impliedProbability ?? 0) - (underdog.impliedProbability ?? 0)
+      )
+      const indicatorSet = game.analysis.indicators ?? {}
+      const volatility = game.analysis.volatility ?? 50
+      const confidence = game.analysis.confidence ?? 50
+      const modelEdge = Math.abs(game.analysis.modelEdge ?? 0)
+      const reliefPitchingRisk = indicatorSet.reliefPitchingRisk ?? 42
+      const coinflipPressure = indicatorSet.coinflipPressure ?? 28
+      const starterLeverageIndex = indicatorSet.starterLeverageIndex ?? 50
+      const lateInningStabilityIndex = indicatorSet.lateInningStabilityIndex ?? 50
+      const modelAlreadyLikesDog = game.analysis.participantId === underdog.id
+      const underdogRangeBonus = getUnderdogRangeBonus(Math.abs(underdog.americanOdds))
+      const heavyFavoritePenalty =
+        game.analysis.participantId === favorite.id && confidence >= 76 && volatility <= 48 ? 18 : 0
+      const splitScriptBonus =
+        starterLeverageIndex >= 60 && lateInningStabilityIndex <= 48 ? 8 : 0
+      const marketTightnessBonus = clamp(30 - marketGap * 100, 0, 24) * 0.45
+      const flipScore = clamp(
+        18 +
+          Math.max(volatility - 52, 0) * 0.9 +
+          Math.max(72 - confidence, 0) * 0.7 +
+          Math.max(10 - modelEdge, 0) * 1.2 +
+          reliefPitchingRisk * 0.13 +
+          coinflipPressure * 0.18 +
+          Math.max(starterLeverageIndex - lateInningStabilityIndex, 0) * 0.22 +
+          marketTightnessBonus +
+          underdogRangeBonus +
+          splitScriptBonus +
+          (modelAlreadyLikesDog ? 16 : 0) -
+          heavyFavoritePenalty,
+        0,
+        100
+      )
+      const flipTier =
+        flipScore >= 76 ? 'High-volatility core' : flipScore >= 66 ? 'Live dog' : 'Fragile-favorite fade'
+      const flipReason = modelAlreadyLikesDog
+        ? `${underdog.name} is already the model dog and the game profile is volatile enough to keep the upset live.`
+        : `${favorite.name} is carrying a more fragile favorite script, so ${underdog.name} becomes the flip side.`
+
+      return {
+        gameId: game.id,
+        league: game.league,
+        gameTitle: game.title,
+        start: game.start,
+        stage: game.stage,
+        confidence,
+        volatility,
+        recommendationScore: flipScore,
+        tier: flipTier,
+        participantId: underdog.id,
+        participant: underdog,
+        opponent: favorite,
+        lean: `Flip-risk look: ${underdog.name} can punish a fragile ${favorite.name} favorite script.`,
+        rationale: flipReason,
+        modelEdge: game.analysis.modelEdge,
+        modelEdgeLabel: game.analysis.modelEdgeLabel,
+        marketProbabilityLabel: underdog.impliedProbabilityLabel,
+        inputSummaries: game.analysis.inputs,
+        flipScore: roundToTenths(flipScore),
+        flipReason,
+        isModelUnderdog: modelAlreadyLikesDog,
+        game
+      }
+    })
+    .filter(Boolean)
+    .sort((left, right) => {
+      if (right.flipScore !== left.flipScore) {
+        return right.flipScore - left.flipScore
+      }
+
+      if (right.volatility !== left.volatility) {
+        return right.volatility - left.volatility
+      }
+
+      return left.confidence - right.confidence
+    })
+    .map((pick, index) => ({
+      ...pick,
+      rank: index + 1
+    }))
+
 export const createParlayLeg = (game, participantId, selectionSource = 'manual') => {
   const pick = game.moneyline.participants.find((participant) => participant.id === participantId)
 

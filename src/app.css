@@ -112,6 +112,7 @@ a {
 .analysis-action-button,
 .sidebar-tab-button,
 .size-chip,
+.recommendation-mode-button,
 .load-recommended-button,
 .clear-parlay-button,
 .remove-leg-button,
@@ -242,6 +243,7 @@ h3 {
 .date-chip-row,
 .schedule-tape,
 .sport-tab-strip,
+.recommendation-mode-row,
 .recommendation-size-row,
 .model-chip-row,
 .model-note-row,
@@ -269,6 +271,7 @@ h3 {
 .analysis-action-button,
 .sidebar-tab-button,
 .size-chip,
+.recommendation-mode-button,
 .load-recommended-button,
 .clear-parlay-button,
 .remove-leg-button,
@@ -291,6 +294,7 @@ h3 {
 .analysis-action-button,
 .sidebar-tab-button,
 .size-chip,
+.recommendation-mode-button,
 .load-recommended-button,
 .clear-parlay-button,
 .remove-leg-button,
@@ -340,6 +344,7 @@ h3 {
 .analysis-action-button.active,
 .sidebar-tab-button.active,
 .size-chip.active,
+.recommendation-mode-button.active,
 .load-recommended-button,
 .quick-pick-button.active,
 .pick-button.active,
@@ -362,6 +367,8 @@ h3 {
 .sidebar-tab-button:focus-visible,
 .size-chip:hover,
 .size-chip:focus-visible,
+.recommendation-mode-button:hover,
+.recommendation-mode-button:focus-visible,
 .load-recommended-button:hover,
 .load-recommended-button:focus-visible,
 .clear-parlay-button:hover,
@@ -440,6 +447,7 @@ h3 {
 .model-note-row,
 .series-stat-row,
 .series-links,
+.recommendation-mode-row,
 .recommendation-size-row,
 .quick-pick-row,
 .analysis-action-row {
@@ -1242,6 +1250,21 @@ h3 {
 .ticket-autobuild-label {
   color: var(--muted);
   margin-bottom: 8px;
+}
+
+.ticket-autobuild-copy,
+.ticket-autobuild-preview {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.ticket-autobuild-preview {
+  margin-top: 8px;
+}
+
+.recommendation-mode-button {
+  flex: 1 1 0;
 }
 
 .parlay-empty,

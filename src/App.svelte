@@ -1,5 +1,10 @@
 <script>
-  import { buildParlayModel, createParlayLeg, rankAnalysisPicks } from './lib/sports-model'
+  import {
+    buildParlayModel,
+    createParlayLeg,
+    rankAnalysisPicks,
+    rankFlipRiskPicks
+  } from './lib/sports-model'
   import { defaultSlateDayId, slateDays } from './lib/slate-days'
 
   const PARLAY_MIN_LEGS = 2
@@ -11,12 +16,25 @@
     { id: 'sources', label: 'Sources' },
     { id: 'notes', label: 'Notes' }
   ]
+  const recommendationModes = [
+    {
+      id: 'core',
+      label: 'Core',
+      copy: 'Current model favorites and strongest standard reads.'
+    },
+    {
+      id: 'flip',
+      label: 'Flip risk',
+      copy: 'Higher-variance dogs and fragile-favorite fade spots.'
+    }
+  ]
 
   let activeDayId = defaultSlateDayId
   let activeFilter = 'All'
   let activeSidebarTab = 'ticket'
   let parlayStake = 25
   let recommendedLegCount = 4
+  let recommendationMode = 'core'
   let selectedPicksByDay = {}
   let expandedGameId = ''
   let pinnedSignalsByDay = {}
@@ -147,11 +165,22 @@
     : 0
 
   $: analysisPicks = rankAnalysisPicks(games)
+  $: flipRiskPicks = rankFlipRiskPicks(games)
 
   $: analysisPickPool =
     activeFilter === 'All'
       ? analysisPicks
       : analysisPicks.filter((pick) => pick.league === activeFilter)
+
+  $: flipRiskPickPool =
+    activeFilter === 'All'
+      ? flipRiskPicks
+      : flipRiskPicks.filter((pick) => pick.league === activeFilter)
+
+  $: activeRecommendationPool =
+    recommendationMode === 'flip' ? flipRiskPickPool : analysisPickPool
+  $: activeRecommendationMeta =
+    recommendationModes.find((mode) => mode.id === recommendationMode) ?? recommendationModes[0]
 
   $: analysisRankLookup = new Map(analysisPicks.map((pick) => [pick.gameId, pick.rank]))
   $: signalLadderPicks = analysisPickPool.slice(0, 6)
@@ -165,10 +194,11 @@
   }
 
   $: recommendationCounts =
-    analysisPickPool.length >= PARLAY_MIN_LEGS
+    activeRecommendationPool.length >= PARLAY_MIN_LEGS
       ? Array.from(
           {
-            length: Math.min(PARLAY_MAX_LEGS, analysisPickPool.length) - PARLAY_MIN_LEGS + 1
+            length:
+              Math.min(PARLAY_MAX_LEGS, activeRecommendationPool.length) - PARLAY_MIN_LEGS + 1
           },
           (_, index) => index + PARLAY_MIN_LEGS
         )
@@ -180,9 +210,15 @@
 
   $: recommendedParlayLegs =
     activeRecommendedLegCount > 0
-      ? analysisPickPool
+      ? activeRecommendationPool
           .slice(0, activeRecommendedLegCount)
-          .map((pick) => createParlayLeg(pick.game, pick.participantId, 'analysis'))
+          .map((pick) =>
+            createParlayLeg(
+              pick.game,
+              pick.participantId,
+              recommendationMode === 'flip' ? 'flip-risk' : 'analysis'
+            )
+          )
       : []
 
   $: recommendedParlay = buildParlayModel(recommendedParlayLegs, parlayStake)
@@ -339,7 +375,7 @@
     savePicksForDay(
       activeDay.id,
       Object.fromEntries(
-        analysisPickPool.slice(0, legCount).map((pick) => [pick.gameId, pick.participantId])
+        activeRecommendationPool.slice(0, legCount).map((pick) => [pick.gameId, pick.participantId])
       )
     )
     activeSidebarTab = 'ticket'
@@ -1170,7 +1206,24 @@
 
           {#if recommendationCounts.length > 0}
             <div class="ticket-autobuild">
-              <p class="ticket-autobuild-label">Auto-build from model picks</p>
+              <p class="ticket-autobuild-label">Auto-build ticket</p>
+
+              <div class="recommendation-mode-row" role="tablist" aria-label="Recommendation mode">
+                {#each recommendationModes as mode}
+                  <button
+                    type="button"
+                    role="tab"
+                    class="recommendation-mode-button"
+                    class:active={recommendationMode === mode.id}
+                    aria-selected={recommendationMode === mode.id}
+                    on:click={() => (recommendationMode = mode.id)}
+                  >
+                    {mode.label}
+                  </button>
+                {/each}
+              </div>
+
+              <p class="ticket-autobuild-copy">{activeRecommendationMeta.copy}</p>
 
               <div class="recommendation-size-row">
                 {#each recommendationCounts as count}
@@ -1185,12 +1238,19 @@
                 {/each}
               </div>
 
+              {#if recommendedParlay.legCount > 0}
+                <p class="ticket-autobuild-preview">
+                  {activeRecommendationMeta.label} set: {recommendedParlay.combinedAmericanLabel} |
+                  {recommendedParlay.impliedProbabilityLabel} implied
+                </p>
+              {/if}
+
               <button
                 type="button"
                 class="load-recommended-button"
                 on:click={() => loadRecommendedParlay(activeRecommendedLegCount)}
               >
-                Load {activeRecommendedLegCount}-leg ticket
+                Load {activeRecommendedLegCount}-leg {recommendationMode === 'flip' ? 'flip-risk' : 'core'} ticket
               </button>
             </div>
           {/if}
@@ -1228,8 +1288,8 @@
 
           {#if parlay.legCount === 0}
             <p class="parlay-empty">
-              Start from any matchup card, or use the best-picks and recommended tabs to load
-              analyst-backed legs faster.
+              Start from any matchup card, or use the core and flip-risk builders to load analyst-backed
+              legs faster.
             </p>
           {:else}
             <div class="parlay-leg-list">
