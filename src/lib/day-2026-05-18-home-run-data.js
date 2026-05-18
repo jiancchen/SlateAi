@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v2",
   "date": "2026-05-18",
-  "generatedAt": "2026-05-18T13:24:57.296Z",
+  "generatedAt": "2026-05-18T13:35:58.869Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -29,6 +29,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 58.901440677966114,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 1,
         "noDoubterRate": 0.6,
@@ -41,6 +42,7 @@ export const homeRunTargetsByGame = {
           "5 HR since May 1 with 1 in the last week",
           "Max Meyer is allowing roughly 0.76 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -62,6 +64,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 44.991440677966104,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 4,
         "noDoubterRate": 0,
@@ -74,6 +77,7 @@ export const homeRunTargetsByGame = {
           "6 HR since May 1 with 4 in the last week",
           "Max Meyer is allowing roughly 0.76 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       },
@@ -93,6 +97,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 37.127169811320755,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 0,
         "noDoubterRate": 1,
@@ -105,6 +110,7 @@ export const homeRunTargetsByGame = {
           "2 HR since May 1 with 0 in the last week",
           "JR Ritchie is allowing roughly 1.7 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -130,6 +136,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 33.41,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 4,
         "noDoubterRate": 0.25,
@@ -142,6 +149,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 4 in the last week",
           "Framber Valdez is allowing roughly 0.9 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -168,6 +176,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 46.14860703812317,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 0.75,
@@ -180,6 +189,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 2 in the last week",
           "Trevor Rogers is allowing roughly 1.32 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -206,6 +216,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 82.09582417582418,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 9,
         "homeRunsLast7Days": 8,
         "noDoubterRate": 0.44,
@@ -218,6 +229,7 @@ export const homeRunTargetsByGame = {
           "9 HR since May 1 with 8 in the last week",
           "Nick Lodolo is allowing roughly 2.97 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -239,6 +251,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 58.49082417582418,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 3,
         "noDoubterRate": 0.33,
@@ -251,6 +264,7 @@ export const homeRunTargetsByGame = {
           "6 HR since May 1 with 3 in the last week",
           "Nick Lodolo is allowing roughly 2.97 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       },
@@ -270,6 +284,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 42.64112903225807,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 1,
         "homeRunsLast7Days": 1,
         "noDoubterRate": 1,
@@ -282,6 +297,7 @@ export const homeRunTargetsByGame = {
           "1 HR since May 1 with 1 in the last week",
           "Andrew Painter is allowing roughly 1.69 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -307,6 +323,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 48.02131578947369,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 1,
@@ -319,6 +336,7 @@ export const homeRunTargetsByGame = {
           "2 HR since May 1 with 2 in the last week",
           "Christian Scott is allowing roughly 0.59 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -340,6 +358,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 39.30642180094787,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 0.75,
@@ -352,6 +371,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 2 in the last week",
           "Jake Irvin is allowing roughly 1.28 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -377,6 +397,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 48.4541642228739,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 3,
         "noDoubterRate": 0,
@@ -389,6 +410,7 @@ export const homeRunTargetsByGame = {
           "5 HR since May 1 with 3 in the last week",
           "Patrick Corbin is allowing roughly 0.79 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -410,6 +432,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 53.64916422287389,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "noDoubterRate": 0,
@@ -422,6 +445,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 1 in the last week",
           "Patrick Corbin is allowing roughly 0.79 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       },
@@ -441,6 +465,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 41.605,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 0,
         "noDoubterRate": 0.4,
@@ -453,6 +478,7 @@ export const homeRunTargetsByGame = {
           "5 HR since May 1 with 0 in the last week",
           "Ryan Weathers is allowing roughly 1.2 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -478,6 +504,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 57.157786885245905,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 7,
         "homeRunsLast7Days": 4,
         "noDoubterRate": 0.57,
@@ -490,6 +517,7 @@ export const homeRunTargetsByGame = {
           "7 HR since May 1 with 4 in the last week",
           "Tatsuya Imai is allowing roughly 1.48 HR/9",
           "Park HR index 98",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -511,6 +539,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 55.035,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 3,
         "noDoubterRate": 0.33,
@@ -523,6 +552,7 @@ export const homeRunTargetsByGame = {
           "3 HR since May 1 with 3 in the last week",
           "Kendry Rojas is allowing roughly 0 HR/9",
           "Park HR index 98",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       },
@@ -542,6 +572,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 32.127786885245904,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 1,
@@ -554,6 +585,7 @@ export const homeRunTargetsByGame = {
           "3 HR since May 1 with 2 in the last week",
           "Tatsuya Imai is allowing roughly 1.48 HR/9",
           "Park HR index 98",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       },
@@ -573,6 +605,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 37.67,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 0.75,
@@ -585,6 +618,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 2 in the last week",
           "Kendry Rojas is allowing roughly 0 HR/9",
           "Park HR index 98",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -610,6 +644,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 51.19500000000001,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "noDoubterRate": 0.67,
@@ -622,6 +657,7 @@ export const homeRunTargetsByGame = {
           "3 HR since May 1 with 1 in the last week",
           "Brandon Sproat is allowing roughly 2 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -643,6 +679,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 32.21000000000001,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 1,
         "noDoubterRate": 0.5,
@@ -655,6 +692,7 @@ export const homeRunTargetsByGame = {
           "2 HR since May 1 with 1 in the last week",
           "Brandon Sproat is allowing roughly 2 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -680,6 +718,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 31.875,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 0.5,
@@ -692,6 +731,7 @@ export const homeRunTargetsByGame = {
           "2 HR since May 1 with 2 in the last week",
           "Sonny Gray is allowing roughly 1.06 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -718,6 +758,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 52.059999999999995,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "noDoubterRate": 0.75,
@@ -730,6 +771,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 1 in the last week",
           "MacKenzie Gore is allowing roughly 1.13 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -751,6 +793,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 45.54,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 0,
@@ -763,6 +806,7 @@ export const homeRunTargetsByGame = {
           "2 HR since May 1 with 2 in the last week",
           "MacKenzie Gore is allowing roughly 1.13 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -788,6 +832,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 39.69660516605166,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "noDoubterRate": 0.75,
@@ -800,6 +845,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 1 in the last week",
           "Walbert Ureña is allowing roughly 0.66 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -826,6 +872,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 37.082,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 4,
         "noDoubterRate": 0.6,
@@ -838,6 +885,7 @@ export const homeRunTargetsByGame = {
           "5 HR since May 1 with 4 in the last week",
           "Yoshinobu Yamamoto is allowing roughly 1.44 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -859,6 +907,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 46.295606653620354,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 3,
         "noDoubterRate": 0.67,
@@ -871,6 +920,7 @@ export const homeRunTargetsByGame = {
           "3 HR since May 1 with 3 in the last week",
           "Michael King is allowing roughly 0.7 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -896,6 +946,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 37.24453488372093,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "noDoubterRate": 0.5,
@@ -908,6 +959,7 @@ export const homeRunTargetsByGame = {
           "4 HR since May 1 with 2 in the last week",
           "Zac Gallen is allowing roughly 1.26 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -934,6 +986,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 57.53830188679246,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 3,
         "noDoubterRate": 0.4,
@@ -946,6 +999,7 @@ export const homeRunTargetsByGame = {
           "5 HR since May 1 with 3 in the last week",
           "Bryan Woo is allowing roughly 1.02 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }
@@ -967,6 +1021,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 46.16330188679245,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 4,
         "noDoubterRate": 0.4,
@@ -979,6 +1034,7 @@ export const homeRunTargetsByGame = {
           "5 HR since May 1 with 4 in the last week",
           "Bryan Woo is allowing roughly 1.02 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       },
@@ -998,6 +1054,7 @@ export const homeRunTargetsByGame = {
         "baseScore": 40.04830188679245,
         "lineupContext": null,
         "lineupPriority": 0,
+        "battingImpactContext": null,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 4,
         "noDoubterRate": 0.6,
@@ -1010,6 +1067,7 @@ export const homeRunTargetsByGame = {
           "5 HR since May 1 with 4 in the last week",
           "Bryan Woo is allowing roughly 1.02 HR/9",
           "Park HR index 100",
+          "No recent batting-leader signal stored yet",
           "Lineup slot not posted yet"
         ]
       }

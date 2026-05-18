@@ -21,6 +21,7 @@
     "data:list:bullpen": "python3 scripts/mlb_warehouse.py list-bullpen-usage",
     "data:list:relievers": "python3 scripts/mlb_warehouse.py list-likely-relievers",
     "data:generate:mlb-day": "node scripts/generate-mlb-day-files.mjs",
+    "data:export:mlb-batting-impact": "node scripts/export-mlb-batting-impact.mjs",
     "data:export:mlb-lineups": "node scripts/export-mlb-lineup-model.mjs",
     "data:export:hr": "node scripts/export-home-run-predictions.mjs",
     "data:export:mlb-sides": "node scripts/export-mlb-side-predictions.mjs",

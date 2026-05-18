@@ -13,7 +13,7 @@ import { lineupBoardsByGameId, lineupMatchupContextByGameId } from './day-2026-0
 export const mlbNotes = [
   'The May 18 MLB board is built after grading May 17, where the model improved overall but still dropped several noisy live-dog shots and missed again on a Mariners favorite lane.',
   'Today’s emphasis is cleaner separation between core sides and volatility boards: if the starter window, projected traffic, and late hold are not aligned, the card should read more like a watchlist than a conviction pick.',
-  'The home-run layer is now more lineup-aware, so posted batting order, matchup fit, and recent form can drag in game-specific bats instead of only leaning on the biggest xHR names.'
+  'The home-run layer now also uses recent batting-impact history from daily leaderboards, which is how hot bats like Ben Rice, Gavin Sheets, Casey Schmitt, and Salvador Perez can surface even when they are not just the loudest season-long xHR names.'
 ]
 
 export const mlbSources = [
@@ -32,6 +32,10 @@ export const mlbSources = [
     url: 'https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026'
   },
   { label: 'Baseball Savant league hitting', url: 'https://baseballsavant.mlb.com/league' },
+  {
+    label: 'ESPN MLB daily batting leaders for May 17, 2026',
+    url: 'https://www.espn.com/mlb/stats/dailyleaders/_/date/20260517/type/batting'
+  },
   { label: 'MLB starting lineups', url: 'https://www.mlb.com/starting-lineups' },
   { label: 'ScoresAndOdds MLB board', url: 'https://www.scoresandodds.com/mlb?date=2026-05-18' }
 ]

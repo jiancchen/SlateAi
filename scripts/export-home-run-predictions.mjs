@@ -160,6 +160,55 @@ const loadLineupBoards = async (date) => {
   }
 }
 
+const loadBattingImpactHistory = async () => {
+  try {
+    const modulePath = path.join(rootDir, 'src', 'lib', 'mlb-batting-impact-history.js')
+    const impactModule = await import(pathToFileURL(modulePath).href)
+    return impactModule.battingImpactByPlayerName || {}
+  } catch {
+    return {}
+  }
+}
+
+const daysBetween = (earlierIsoDate = '', laterIsoDate = '') => {
+  const earlier = new Date(`${earlierIsoDate}T12:00:00Z`)
+  const later = new Date(`${laterIsoDate}T12:00:00Z`)
+  const diff = later.getTime() - earlier.getTime()
+  return Math.round(diff / 86400000)
+}
+
+const buildBattingImpactContext = (playerName, battingImpactByPlayerName, targetDate) => {
+  const entry = battingImpactByPlayerName[playerName]
+  if (!entry) return null
+
+  const datedEntries = (entry.dates || [])
+    .map((date) => ({ date, age: daysBetween(date, targetDate) }))
+    .filter((item) => item.age >= 1 && item.age <= 5)
+    .sort((left, right) => left.age - right.age)
+
+  const recentAppearances = datedEntries.length
+  if (!recentAppearances) return null
+
+  const lastSeenAge = datedEntries[0].age
+  const recencyBoost = lastSeenAge === 1 ? 1 : lastSeenAge === 2 ? 0.75 : lastSeenAge === 3 ? 0.5 : 0.25
+  const repeatBoost = recentAppearances >= 3 ? 1.15 : recentAppearances >= 2 ? 1 : 0.82
+  const impactWindowScore =
+    Number(entry.averageImpactScore || 0) * repeatBoost +
+    Number(entry.hrGames || 0) * 1.8 +
+    Number(entry.totalBases || 0) / Math.max(Number(entry.appearances || 1), 1) * 0.35 +
+    recencyBoost * 4.5
+
+  return {
+    recentAppearances,
+    hrGames: Number(entry.hrGames || 0),
+    averageImpactScore: Number(entry.averageImpactScore || 0),
+    totalBases: Number(entry.totalBases || 0),
+    dates: datedEntries.map((item) => item.date),
+    lastSeenAge,
+    impactWindowScore: Number(impactWindowScore.toFixed(1))
+  }
+}
+
 const buildMatchupMap = (games) => {
   const matchupByAbbr = {}
 
@@ -317,6 +366,13 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
       : candidate.noDoubterRate <= 0.15 && candidate.avgExitVelocityOnHomers <= 103
         ? -2
         : 0
+  const battingImpactBoost = candidate.battingImpactContext
+    ? Math.min(
+        10,
+        candidate.battingImpactContext.impactWindowScore * 0.28 +
+          Math.max(candidate.battingImpactContext.recentAppearances - 1, 0) * 1.4
+      )
+    : 0
 
   candidate.score = Number(
     (
@@ -327,7 +383,8 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
       Math.max(0, (avgEv - 104) * 0.5) +
       pitcherHrBoost +
       recentBurstBoost +
-      carryQualityBoost
+      carryQualityBoost +
+      battingImpactBoost
     ).toFixed(1)
   )
   candidate.scoreBand =
@@ -345,6 +402,9 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
     `${candidate.recentHrSinceMay1} HR since May 1 with ${candidate.homeRunsLast7Days} in the last week`,
     `${candidate.opposingPitcher} is allowing roughly ${candidate.opposingPitcherHr9} HR/9`,
     `Park HR index ${candidate.parkHrIndex}`,
+    candidate.battingImpactContext
+      ? `${candidate.battingImpactContext.recentAppearances} recent batting-leader appearances | ${candidate.battingImpactContext.averageImpactScore.toFixed(1)} avg impact`
+      : 'No recent batting-leader signal stored yet',
     candidate.lineupContext
       ? `Slot ${candidate.lineupContext.slot} | ${candidate.lineupContext.primaryTag || 'posted lineup'} | lineup priority ${candidate.lineupPriority}`
       : 'Lineup slot not posted yet'
@@ -358,17 +418,20 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
   const matchupByAbbr = buildMatchupMap(games)
   const lineupBoardsByGameId = await loadLineupBoards(date)
   const lineupLookup = buildLineupLookup(lineupBoardsByGameId)
+  const battingImpactByPlayerName = await loadBattingImpactHistory()
   const leaderboard = await fetchStatcastLeaderboard(season)
   const leaderboardByPlayerId = new Map(leaderboard.map((row) => [Number(row.player_id), row]))
 
   const createCandidate = (row) => {
     const matchup = matchupByAbbr[row.team_abbrev]
     const lineupContext = lineupLookup.get(Number(row.player_id)) || null
+    const battingImpactContext = buildBattingImpactContext(formatPlayerName(row.player), battingImpactByPlayerName, date)
     const hr = Number(row.hr_total)
     const xhr = Number(row.xhr)
     const xhrDiff = Number(row.xhr_diff)
     const lineupPriority = buildLineupPriority(lineupContext)
     const slotPenalty = lineupContext ? Math.max(0, Number(lineupContext.slot || 9) - 6) * 1.3 : 0
+    const battingImpactPriority = battingImpactContext ? battingImpactContext.impactWindowScore * 0.45 : 0
     const baseScore =
       xhr * 2.15 +
       hr * 1.05 +
@@ -378,6 +441,7 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
       Math.max(0, (lineupContext?.powerScore || 50) - 55) * 0.2 +
       Math.max(0, (lineupContext?.matchupScore || 50) - 50) * 0.14 +
       Math.max(0, (lineupContext?.formScore || 50) - 48) * 0.1 +
+      battingImpactPriority +
       lineupPriority * 0.55 -
       Math.max(0, xhrDiff) * 0.7 -
       slotPenalty
@@ -397,14 +461,20 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
       xhrDiff,
       baseScore,
       lineupContext,
-      lineupPriority: Number(lineupPriority.toFixed(1))
+      lineupPriority: Number(lineupPriority.toFixed(1)),
+      battingImpactContext
     }
   }
 
   const preScoredCandidates = leaderboard
     .filter((row) => matchupByAbbr[row.team_abbrev])
     .map(createCandidate)
-    .filter((candidate) => candidate.seasonHr >= 5 || candidate.seasonXHR >= 5)
+    .filter(
+      (candidate) =>
+        candidate.seasonHr >= 5 ||
+        candidate.seasonXHR >= 5 ||
+        Number(candidate.battingImpactContext?.impactWindowScore || 0) >= 16
+    )
     .sort((left, right) => right.baseScore - left.baseScore)
 
   const supplementalCandidates = [...lineupLookup.entries()]
@@ -418,8 +488,33 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
     .filter((candidate) => candidate.lineupPriority >= 13 || candidate.lineupContext?.recentHomeRuns >= 2)
     .sort((left, right) => right.lineupPriority - left.lineupPriority)
 
+  const battingImpactCandidates = Object.entries(battingImpactByPlayerName)
+    .map(([playerName, context]) => {
+      const row = leaderboard.find((entry) => formatPlayerName(entry.player) === playerName)
+      if (!row) return null
+      if (!matchupByAbbr[row.team_abbrev]) return null
+      const candidate = createCandidate(row)
+      if (!candidate.battingImpactContext) return null
+      return candidate
+    })
+    .filter(Boolean)
+    .filter(
+      (candidate) =>
+        candidate.battingImpactContext.recentAppearances >= 1 &&
+        candidate.battingImpactContext.impactWindowScore >= 18
+    )
+    .sort(
+      (left, right) =>
+        right.battingImpactContext.impactWindowScore - left.battingImpactContext.impactWindowScore
+    )
+
   const mergedCandidates = [...preScoredCandidates]
   for (const candidate of supplementalCandidates) {
+    if (!mergedCandidates.some((existing) => existing.playerId === candidate.playerId)) {
+      mergedCandidates.push(candidate)
+    }
+  }
+  for (const candidate of battingImpactCandidates) {
     if (!mergedCandidates.some((existing) => existing.playerId === candidate.playerId)) {
       mergedCandidates.push(candidate)
     }

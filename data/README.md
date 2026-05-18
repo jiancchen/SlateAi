@@ -27,6 +27,7 @@ npm run data:prep:mlb-day -- --date 2026-05-16 --lookback-days 3
 npm run data:list:probables -- --date 2026-05-16
 npm run data:generate:mlb-day -- --date 2026-05-16
 npm run data:export:mlb-lineups -- --date 2026-05-16
+npm run data:export:mlb-batting-impact
 npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:derive:mlb -- --through-date 2026-05-15
 npm run data:list:bullpen -- --date 2026-05-16
@@ -50,5 +51,6 @@ npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 202
 - The current schema already leaves room for `park_factor_snapshots` and `weather_observations`, so we can add day-level run environment and wind context without redesigning the store.
 - The daily MLB prep now depends mostly on official MLB Stats API pulls we already trust: target-day schedule/probables via `data:list:probables` plus the trailing few days of `feed/live` data for bullpen workload and likely bridge relievers.
 - Posted batting orders can now be exported from the official `feed/live` endpoint with `data:export:mlb-lineups`, then combined with official season, recent-window, and handedness split stats so the app can render full lineup boards instead of only team-level traffic hints.
+- Saved ESPN daily batting-leader files can now be normalized with `data:export:mlb-batting-impact`, which gives the HR model a reusable recent-impact pool instead of relying only on season-long xHR leaders.
 - The side-pick backtest flow is meant to expose pattern misses like `bullpen flip losses`, `thin-edge` misses, and `projected hit edge against pick` so we can tune first-5, spread, and moneyline models separately.
 - If we want semantic retrieval later, the best use would be embeddings for long-form notes, scouting blurbs, or source excerpts, while keeping game facts in SQLite.

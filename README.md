@@ -83,6 +83,7 @@ npm run data:init
 npm run data:prep:mlb-day -- --date 2026-05-16 --lookback-days 3
 npm run data:list:probables -- --date 2026-05-16
 npm run data:export:mlb-lineups -- --date 2026-05-16
+npm run data:export:mlb-batting-impact
 npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:derive:mlb -- --through-date 2026-05-15
 npm run data:list:bullpen -- --date 2026-05-16
@@ -111,6 +112,7 @@ npm run data:prep:mlb-day -- --date YYYY-MM-DD --lookback-days 3
 npm run data:list:probables -- --date YYYY-MM-DD
 npm run data:generate:mlb-day -- --date YYYY-MM-DD
 npm run data:export:mlb-lineups -- --date YYYY-MM-DD
+npm run data:export:mlb-batting-impact
 npm run data:list:relievers -- --date YYYY-MM-DD
 ```
 

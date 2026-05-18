@@ -1,0 +1,3918 @@
+export const battingImpactMeta = {
+  "season": 2026,
+  "generatedAt": "2026-05-18T13:35:58.695Z",
+  "files": [
+    "/Users/jcchen/Downloads/may14batting leaders.rtf",
+    "/Users/jcchen/Downloads/may14_battingleaders.rtf",
+    "/Users/jcchen/Downloads/may15battingleaders.rtf",
+    "/Users/jcchen/Downloads/may16batting leaders.rtf",
+    "/Users/jcchen/Downloads/may17_batting_leaders.txt.rtf"
+  ],
+  "rowCount": 150,
+  "playerCount": 123
+}
+
+export const battingImpactRows = [
+  {
+    "date": "2026-05-14",
+    "playerName": "Mickey Moniak",
+    "teamAbbrev": "COL",
+    "teamName": "Rockies",
+    "opponent": "@ PIT",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 5,
+    "walks": 0,
+    "totalBases": 9,
+    "stolenBases": 0,
+    "impactScore": 29.6
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Byron Buxton",
+    "teamAbbrev": "MIN",
+    "teamName": "Twins",
+    "opponent": "vs MIA",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 2,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 8,
+    "stolenBases": 0,
+    "impactScore": 29.1
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Nick Kurtz",
+    "teamAbbrev": "ATH",
+    "teamName": "Athletics",
+    "opponent": "vs STL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 4,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 23.1
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "TJ Rumfield",
+    "teamAbbrev": "COL",
+    "teamName": "Rockies",
+    "opponent": "@ PIT",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 7,
+    "stolenBases": 0,
+    "impactScore": 22.2
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Colson Montgomery",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs KC",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 20.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Jake Burger",
+    "teamAbbrev": "TEX",
+    "teamName": "Rangers",
+    "opponent": "vs ARI",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 4,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 20.6
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Xavier Edwards",
+    "teamAbbrev": "MIA",
+    "teamName": "Marlins",
+    "opponent": "@ MIN",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 3,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 14.6
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Daylen Lile",
+    "teamAbbrev": "WSH",
+    "teamName": "Nationals",
+    "opponent": "@ CIN",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 1,
+    "impactScore": 20
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Ryan O'Hearn",
+    "teamAbbrev": "PIT",
+    "teamName": "Pirates",
+    "opponent": "vs COL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 19.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Gavin Sheets",
+    "teamAbbrev": "SD",
+    "teamName": "Padres",
+    "opponent": "@ MIL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 19.4
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Blaze Alexander",
+    "teamAbbrev": "BAL",
+    "teamName": "Orioles",
+    "opponent": "vs NYY",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 1,
+    "impactScore": 12.7
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Zach Neto",
+    "teamAbbrev": "LAA",
+    "teamName": "Angels",
+    "opponent": "@ CLE",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Nolan Arenado",
+    "teamAbbrev": "ARI",
+    "teamName": "Diamondbacks",
+    "opponent": "@ TEX",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 12.8
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Kody Clemens",
+    "teamAbbrev": "MIN",
+    "teamName": "Twins",
+    "opponent": "vs MIA",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Tyler Stephenson",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "vs WSH",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 4,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 18.4
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Daulton Varsho",
+    "teamAbbrev": "TOR",
+    "teamName": "Blue Jays",
+    "opponent": "vs TB",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 4,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 18.4
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Trevor Story",
+    "teamAbbrev": "BOS",
+    "teamName": "Red Sox",
+    "opponent": "vs PHI",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Adley Rutschman",
+    "teamAbbrev": "BAL",
+    "teamName": "Orioles",
+    "opponent": "vs NYY",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.7
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Bobby Witt Jr.",
+    "teamAbbrev": "KC",
+    "teamName": "Royals",
+    "opponent": "@ CHW",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 2,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 17.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Luke Raley",
+    "teamAbbrev": "SEA",
+    "teamName": "Mariners",
+    "opponent": "@ HOU",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Leo Jimenez",
+    "teamAbbrev": "MIA",
+    "teamName": "Marlins",
+    "opponent": "@ MIN",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 0,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 1,
+    "impactScore": 12
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Owen Caissie",
+    "teamAbbrev": "MIA",
+    "teamName": "Marlins",
+    "opponent": "@ MIN",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.8
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "J.P. Crawford",
+    "teamAbbrev": "SEA",
+    "teamName": "Mariners",
+    "opponent": "@ HOU",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Ceddanne Rafaela",
+    "teamAbbrev": "BOS",
+    "teamName": "Red Sox",
+    "opponent": "vs PHI",
+    "hits": 1,
+    "atBats": 1,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 15.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Jarred Kelenic",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs KC",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.8
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Spencer Steer",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "vs WSH",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.4
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Riley Greene",
+    "teamAbbrev": "DET",
+    "teamName": "Tigers",
+    "opponent": "@ NYM",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Angel Martinez",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs LAA",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 2,
+    "impactScore": 16.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Mauricio Dubon",
+    "teamAbbrev": "ATL",
+    "teamName": "Braves",
+    "opponent": "vs CHC",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 15.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Keibert Ruiz",
+    "teamAbbrev": "WSH",
+    "teamName": "Nationals",
+    "opponent": "@ CIN",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 15.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "JJ Bleday",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "vs WSH",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 2,
+    "runs": 2,
+    "rbi": 6,
+    "walks": 0,
+    "totalBases": 9,
+    "stolenBases": 0,
+    "impactScore": 36.1
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Yordan Alvarez",
+    "teamAbbrev": "HOU",
+    "teamName": "Astros",
+    "opponent": "vs SEA",
+    "hits": 3,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 7,
+    "stolenBases": 0,
+    "impactScore": 22.7
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Matt McLain",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "vs WSH",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 3,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 22
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Ryan O'Hearn",
+    "teamAbbrev": "PIT",
+    "teamName": "Pirates",
+    "opponent": "vs COL",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 21.7
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Randal Grichuk",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs KC",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 4,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 20.6
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Luke Raley",
+    "teamAbbrev": "SEA",
+    "teamName": "Mariners",
+    "opponent": "@ HOU",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 20.2
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Gage Workman",
+    "teamAbbrev": "DET",
+    "teamName": "Tigers",
+    "opponent": "@ NYM",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 21.1
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Juan Soto",
+    "teamAbbrev": "NYM",
+    "teamName": "Mets",
+    "opponent": "vs DET",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 19
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Jordan Walker",
+    "teamAbbrev": "STL",
+    "teamName": "Cardinals",
+    "opponent": "@ ATH",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 19.9
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Marcus Semien",
+    "teamAbbrev": "NYM",
+    "teamName": "Mets",
+    "opponent": "vs DET",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Ian Happ",
+    "teamAbbrev": "CHC",
+    "teamName": "Cubs",
+    "opponent": "@ ATL",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "James Outman",
+    "teamAbbrev": "MIN",
+    "teamName": "Twins",
+    "opponent": "vs MIA",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 12.8
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Brendan Donovan",
+    "teamAbbrev": "SEA",
+    "teamName": "Mariners",
+    "opponent": "@ HOU",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 0,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 14
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Austin Martin",
+    "teamAbbrev": "MIN",
+    "teamName": "Twins",
+    "opponent": "vs MIA",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 1,
+    "impactScore": 12.6
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Nick Kurtz",
+    "teamAbbrev": "ATH",
+    "teamName": "Athletics",
+    "opponent": "vs STL",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Mitch Garver",
+    "teamAbbrev": "SEA",
+    "teamName": "Mariners",
+    "opponent": "@ HOU",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.8
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Teoscar Hernandez",
+    "teamAbbrev": "LAD",
+    "teamName": "Dodgers",
+    "opponent": "vs SF",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 0,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 12.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Zack Gelof",
+    "teamAbbrev": "ATH",
+    "teamName": "Athletics",
+    "opponent": "vs STL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "A.J. Ewing",
+    "teamAbbrev": "NYM",
+    "teamName": "Mets",
+    "opponent": "vs DET",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Dane Myers",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "vs WSH",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.7
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Andrew Vaughn",
+    "teamAbbrev": "MIL",
+    "teamName": "Brewers",
+    "opponent": "vs SD",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.8
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Brett Baty",
+    "teamAbbrev": "NYM",
+    "teamName": "Mets",
+    "opponent": "vs DET",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Jung Hoo Lee",
+    "teamAbbrev": "SF",
+    "teamName": "Giants",
+    "opponent": "@ LAD",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 15.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Ke'Bryan Hayes",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "vs WSH",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Mark Vientos",
+    "teamAbbrev": "NYM",
+    "teamName": "Mets",
+    "opponent": "vs DET",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 15.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Shea Langeliers",
+    "teamAbbrev": "ATH",
+    "teamName": "Athletics",
+    "opponent": "vs STL",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.5
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Endy Rodriguez",
+    "teamAbbrev": "PIT",
+    "teamName": "Pirates",
+    "opponent": "vs COL",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Ryan Kreidler",
+    "teamAbbrev": "MIN",
+    "teamName": "Twins",
+    "opponent": "vs MIA",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 3,
+    "rbi": 0,
+    "walks": 1,
+    "totalBases": 2,
+    "stolenBases": 0,
+    "impactScore": 8.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Spencer Steer",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "vs WSH",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 3,
+    "rbi": 0,
+    "walks": 1,
+    "totalBases": 2,
+    "stolenBases": 0,
+    "impactScore": 8.3
+  },
+  {
+    "date": "2026-05-14",
+    "playerName": "Luis Rengifo",
+    "teamAbbrev": "MIL",
+    "teamName": "Brewers",
+    "opponent": "vs SD",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 2,
+    "stolenBases": 0,
+    "impactScore": 9
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Kyle Schwarber",
+    "teamAbbrev": "PHI",
+    "teamName": "Phillies",
+    "opponent": "@ PIT",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 2,
+    "runs": 2,
+    "rbi": 5,
+    "walks": 1,
+    "totalBases": 9,
+    "stolenBases": 0,
+    "impactScore": 35.4
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Cedric Mullins",
+    "teamAbbrev": "TB",
+    "teamName": "Rays",
+    "opponent": "vs MIA",
+    "hits": 4,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 3,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 7,
+    "stolenBases": 1,
+    "impactScore": 24.6
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Luis Arraez",
+    "teamAbbrev": "SF",
+    "teamName": "Giants",
+    "opponent": "@ ATH",
+    "hits": 4,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 8,
+    "stolenBases": 0,
+    "impactScore": 24.1
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Brandon Lowe",
+    "teamAbbrev": "PIT",
+    "teamName": "Pirates",
+    "opponent": "vs PHI",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 2,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 8,
+    "stolenBases": 0,
+    "impactScore": 29.8
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Ildemaro Vargas",
+    "teamAbbrev": "ARI",
+    "teamName": "Diamondbacks",
+    "opponent": "@ COL",
+    "hits": 4,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 16.5
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Daylen Lile",
+    "teamAbbrev": "WSH",
+    "teamName": "Nationals",
+    "opponent": "vs BAL",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 7,
+    "stolenBases": 0,
+    "impactScore": 22.6
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Matt McLain",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "@ CLE",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 1,
+    "impactScore": 20.5
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Jordan Walker",
+    "teamAbbrev": "STL",
+    "teamName": "Cardinals",
+    "opponent": "vs KC",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 20.9
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Ben Rice",
+    "teamAbbrev": "NYY",
+    "teamName": "Yankees",
+    "opponent": "@ NYM",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 20.5
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Jakob Marsee",
+    "teamAbbrev": "MIA",
+    "teamName": "Marlins",
+    "opponent": "@ TB",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 1,
+    "impactScore": 20.3
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Bryce Harper",
+    "teamAbbrev": "PHI",
+    "teamName": "Phillies",
+    "opponent": "@ PIT",
+    "hits": 4,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 14
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "JJ Bleday",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "@ CLE",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 14.3
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Carson Kelly",
+    "teamAbbrev": "CHC",
+    "teamName": "Cubs",
+    "opponent": "@ CHW",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 4,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 14.6
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Jazz Chisholm Jr.",
+    "teamAbbrev": "NYY",
+    "teamName": "Yankees",
+    "opponent": "@ NYM",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 1,
+    "impactScore": 14.1
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Max Muncy",
+    "teamAbbrev": "LAD",
+    "teamName": "Dodgers",
+    "opponent": "@ LAA",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.3
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Teoscar Hernandez",
+    "teamAbbrev": "LAD",
+    "teamName": "Dodgers",
+    "opponent": "@ LAA",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.2
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Miguel Vargas",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Harrison Bader",
+    "teamAbbrev": "SF",
+    "teamName": "Giants",
+    "opponent": "@ ATH",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Drake Baldwin",
+    "teamAbbrev": "ATL",
+    "teamName": "Braves",
+    "opponent": "vs BOS",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Colson Montgomery",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Nick Kurtz",
+    "teamAbbrev": "ATH",
+    "teamName": "Athletics",
+    "opponent": "vs SF",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.7
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Jose Ramirez",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs CIN",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 11
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Andy Pages",
+    "teamAbbrev": "LAD",
+    "teamName": "Dodgers",
+    "opponent": "@ LAA",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.7
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Yandy Diaz",
+    "teamAbbrev": "TB",
+    "teamName": "Rays",
+    "opponent": "vs MIA",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Rhys Hoskins",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs CIN",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 2,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.1
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Gabriel Moreno",
+    "teamAbbrev": "ARI",
+    "teamName": "Diamondbacks",
+    "opponent": "@ COL",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 11.5
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Seiya Suzuki",
+    "teamAbbrev": "CHC",
+    "teamName": "Cubs",
+    "opponent": "@ CHW",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.4
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Marcell Ozuna",
+    "teamAbbrev": "PIT",
+    "teamName": "Pirates",
+    "opponent": "vs PHI",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Jeff McNeil",
+    "teamAbbrev": "ATH",
+    "teamName": "Athletics",
+    "opponent": "vs SF",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 9.1
+  },
+  {
+    "date": "2026-05-15",
+    "playerName": "Isaac Paredes",
+    "teamAbbrev": "HOU",
+    "teamName": "Astros",
+    "opponent": "vs TEX",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 14.3
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Casey Schmitt",
+    "teamAbbrev": "SF",
+    "teamName": "Giants",
+    "opponent": "@ ATH",
+    "hits": 4,
+    "atBats": 5,
+    "homeRuns": 2,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 10,
+    "stolenBases": 0,
+    "impactScore": 35.2
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Keibert Ruiz",
+    "teamAbbrev": "WSH",
+    "teamName": "Nationals",
+    "opponent": "vs BAL",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 5,
+    "walks": 0,
+    "totalBases": 7,
+    "stolenBases": 1,
+    "impactScore": 27.6
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Munetaka Murakami",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 2,
+    "runs": 3,
+    "rbi": 3,
+    "walks": 1,
+    "totalBases": 8,
+    "stolenBases": 0,
+    "impactScore": 31.1
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Shohei Ohtani",
+    "teamAbbrev": "LAD",
+    "teamName": "Dodgers",
+    "opponent": "@ LAA",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 5,
+    "walks": 2,
+    "totalBases": 5,
+    "stolenBases": 1,
+    "impactScore": 19.7
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Brady House",
+    "teamAbbrev": "WSH",
+    "teamName": "Nationals",
+    "opponent": "vs BAL",
+    "hits": 2,
+    "atBats": 2,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 21.9
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Angel Martinez",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs CIN",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 3,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 21.5
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Brent Rooker",
+    "teamAbbrev": "ATH",
+    "teamName": "Athletics",
+    "opponent": "vs SF",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 19.4
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "CJ Abrams",
+    "teamAbbrev": "WSH",
+    "teamName": "Nationals",
+    "opponent": "vs BAL",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 14.3
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Jacob Young",
+    "teamAbbrev": "WSH",
+    "teamName": "Nationals",
+    "opponent": "vs BAL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 19.4
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Javier Sanoja",
+    "teamAbbrev": "MIA",
+    "teamName": "Marlins",
+    "opponent": "@ TB",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 4,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 14.4
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Drake Baldwin",
+    "teamAbbrev": "ATL",
+    "teamName": "Braves",
+    "opponent": "vs BOS",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Mookie Betts",
+    "teamAbbrev": "LAD",
+    "teamName": "Dodgers",
+    "opponent": "@ LAA",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.3
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Andrew Benintendi",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Jakob Marsee",
+    "teamAbbrev": "MIA",
+    "teamName": "Marlins",
+    "opponent": "@ TB",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 0,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 13.6
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Willson Contreras",
+    "teamAbbrev": "BOS",
+    "teamName": "Red Sox",
+    "opponent": "@ ATL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.2
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Jackson Chourio",
+    "teamAbbrev": "MIL",
+    "teamName": "Brewers",
+    "opponent": "@ MIN",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Carson Benge",
+    "teamAbbrev": "NYM",
+    "teamName": "Mets",
+    "opponent": "vs NYY",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 0,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 11.4
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Bryce Harper",
+    "teamAbbrev": "PHI",
+    "teamName": "Phillies",
+    "opponent": "@ PIT",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 2,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 17.7
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Nick Castellanos",
+    "teamAbbrev": "SD",
+    "teamName": "Padres",
+    "opponent": "@ SEA",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.7
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Willy Adames",
+    "teamAbbrev": "SF",
+    "teamName": "Giants",
+    "opponent": "@ ATH",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 12.2
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Miguel Amaya",
+    "teamAbbrev": "CHC",
+    "teamName": "Cubs",
+    "opponent": "@ CHW",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Jac Caglianone",
+    "teamAbbrev": "KC",
+    "teamName": "Royals",
+    "opponent": "@ STL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Matt Vierling",
+    "teamAbbrev": "DET",
+    "teamName": "Tigers",
+    "opponent": "vs TOR",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Miguel Vargas",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.7
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Yohendrick Pinango",
+    "teamAbbrev": "TOR",
+    "teamName": "Blue Jays",
+    "opponent": "@ DET",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "J.P. Crawford",
+    "teamAbbrev": "SEA",
+    "teamName": "Mariners",
+    "opponent": "vs SD",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Trea Turner",
+    "teamAbbrev": "PHI",
+    "teamName": "Phillies",
+    "opponent": "@ PIT",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.4
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Pete Crow-Armstrong",
+    "teamAbbrev": "CHC",
+    "teamName": "Cubs",
+    "opponent": "@ CHW",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Rodolfo Duran",
+    "teamAbbrev": "SD",
+    "teamName": "Padres",
+    "opponent": "@ SEA",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 15.5
+  },
+  {
+    "date": "2026-05-16",
+    "playerName": "Junior Caminero",
+    "teamAbbrev": "TB",
+    "teamName": "Rays",
+    "opponent": "vs MIA",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 10.3
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Gavin Sheets",
+    "teamAbbrev": "SD",
+    "teamName": "Padres",
+    "opponent": "@ SEA",
+    "hits": 3,
+    "atBats": 3,
+    "homeRuns": 2,
+    "runs": 2,
+    "rbi": 4,
+    "walks": 2,
+    "totalBases": 10,
+    "stolenBases": 0,
+    "impactScore": 36.4
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Corbin Carroll",
+    "teamAbbrev": "ARI",
+    "teamName": "Diamondbacks",
+    "opponent": "@ COL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 2,
+    "runs": 3,
+    "rbi": 3,
+    "walks": 1,
+    "totalBases": 8,
+    "stolenBases": 0,
+    "impactScore": 31.1
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Gunnar Henderson",
+    "teamAbbrev": "BAL",
+    "teamName": "Orioles",
+    "opponent": "@ WSH",
+    "hits": 4,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 8,
+    "stolenBases": 1,
+    "impactScore": 25.9
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Kyle Manzardo",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs CIN",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 2,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 8,
+    "stolenBases": 0,
+    "impactScore": 29.8
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Jake Burger",
+    "teamAbbrev": "TEX",
+    "teamName": "Rangers",
+    "opponent": "@ HOU",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 4,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 23.1
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Edgar Quero",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 22.9
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Austin Riley",
+    "teamAbbrev": "ATL",
+    "teamName": "Braves",
+    "opponent": "vs BOS",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 21.9
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Luis Arraez",
+    "teamAbbrev": "SF",
+    "teamName": "Giants",
+    "opponent": "@ ATH",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 21
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Kyle Higashioka",
+    "teamAbbrev": "TEX",
+    "teamName": "Rangers",
+    "opponent": "@ HOU",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 20.2
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Kyle Tucker",
+    "teamAbbrev": "LAD",
+    "teamName": "Dodgers",
+    "opponent": "@ LAA",
+    "hits": 3,
+    "atBats": 5,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 15
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Bryson Stott",
+    "teamAbbrev": "PHI",
+    "teamName": "Phillies",
+    "opponent": "@ PIT",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 21.1
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Michael Conforto",
+    "teamAbbrev": "CHC",
+    "teamName": "Cubs",
+    "opponent": "@ CHW",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 19.9
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Salvador Perez",
+    "teamAbbrev": "KC",
+    "teamName": "Royals",
+    "opponent": "@ STL",
+    "hits": 2,
+    "atBats": 2,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Harrison Bader",
+    "teamAbbrev": "SF",
+    "teamName": "Giants",
+    "opponent": "@ ATH",
+    "hits": 1,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 4,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 19.2
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Mike Yastrzemski",
+    "teamAbbrev": "ATL",
+    "teamName": "Braves",
+    "opponent": "vs BOS",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.3
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Daulton Varsho",
+    "teamAbbrev": "TOR",
+    "teamName": "Blue Jays",
+    "opponent": "@ DET",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 13.8
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Brayan Rocchio",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs CIN",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17.8
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Ryan Jeffers",
+    "teamAbbrev": "MIN",
+    "teamName": "Twins",
+    "opponent": "vs MIL",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.3
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Chase DeLauter",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs CIN",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 19
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Tristan Peters",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 3,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 18
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Andrew Benintendi",
+    "teamAbbrev": "CHW",
+    "teamName": "White Sox",
+    "opponent": "vs CHC",
+    "hits": 3,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 1,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 12.3
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Vladimir Guerrero Jr.",
+    "teamAbbrev": "TOR",
+    "teamName": "Blue Jays",
+    "opponent": "@ DET",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 17.8
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Anthony Volpe",
+    "teamAbbrev": "NYY",
+    "teamName": "Yankees",
+    "opponent": "@ NYM",
+    "hits": 2,
+    "atBats": 3,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 2,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 12.5
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Jose Ramirez",
+    "teamAbbrev": "CLE",
+    "teamName": "Guardians",
+    "opponent": "vs CIN",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 2,
+    "rbi": 2,
+    "walks": 2,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 17.3
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Ty France",
+    "teamAbbrev": "SD",
+    "teamName": "Padres",
+    "opponent": "@ SEA",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 0,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 3,
+    "stolenBases": 0,
+    "impactScore": 11.7
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Lourdes Gurriel Jr.",
+    "teamAbbrev": "ARI",
+    "teamName": "Diamondbacks",
+    "opponent": "@ COL",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 5,
+    "stolenBases": 0,
+    "impactScore": 18.2
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Elly De La Cruz",
+    "teamAbbrev": "CIN",
+    "teamName": "Reds",
+    "opponent": "@ CLE",
+    "hits": 2,
+    "atBats": 5,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 1,
+    "walks": 0,
+    "totalBases": 6,
+    "stolenBases": 0,
+    "impactScore": 18.7
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Tyrone Taylor",
+    "teamAbbrev": "NYM",
+    "teamName": "Mets",
+    "opponent": "vs NYY",
+    "hits": 1,
+    "atBats": 3,
+    "homeRuns": 1,
+    "runs": 1,
+    "rbi": 3,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 16.7
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Kody Clemens",
+    "teamAbbrev": "MIN",
+    "teamName": "Twins",
+    "opponent": "vs MIL",
+    "hits": 2,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 1,
+    "rbi": 2,
+    "walks": 0,
+    "totalBases": 4,
+    "stolenBases": 0,
+    "impactScore": 12
+  },
+  {
+    "date": "2026-05-17",
+    "playerName": "Gabriel Moreno",
+    "teamAbbrev": "ARI",
+    "teamName": "Diamondbacks",
+    "opponent": "@ COL",
+    "hits": 3,
+    "atBats": 4,
+    "homeRuns": 0,
+    "runs": 2,
+    "rbi": 0,
+    "walks": 1,
+    "totalBases": 3,
+    "stolenBases": 1,
+    "impactScore": 10.8
+  }
+]
+
+export const battingImpactByPlayerName = {
+  "Nick Kurtz": {
+    "playerName": "Nick Kurtz",
+    "teamName": "Athletics",
+    "appearances": 3,
+    "impactScore": 57.3,
+    "averageImpactScore": 19.1,
+    "hrGames": 3,
+    "totalBases": 15,
+    "dates": [
+      "2026-05-14",
+      "2026-05-15"
+    ]
+  },
+  "Gavin Sheets": {
+    "playerName": "Gavin Sheets",
+    "teamName": "Padres",
+    "appearances": 2,
+    "impactScore": 55.8,
+    "averageImpactScore": 27.9,
+    "hrGames": 2,
+    "totalBases": 15,
+    "dates": [
+      "2026-05-14",
+      "2026-05-17"
+    ]
+  },
+  "JJ Bleday": {
+    "playerName": "JJ Bleday",
+    "teamName": "Reds",
+    "appearances": 2,
+    "impactScore": 50.4,
+    "averageImpactScore": 25.2,
+    "hrGames": 1,
+    "totalBases": 14,
+    "dates": [
+      "2026-05-14",
+      "2026-05-15"
+    ]
+  },
+  "Luis Arraez": {
+    "playerName": "Luis Arraez",
+    "teamName": "Giants",
+    "appearances": 2,
+    "impactScore": 45.1,
+    "averageImpactScore": 22.55,
+    "hrGames": 2,
+    "totalBases": 14,
+    "dates": [
+      "2026-05-15",
+      "2026-05-17"
+    ]
+  },
+  "Jake Burger": {
+    "playerName": "Jake Burger",
+    "teamName": "Rangers",
+    "appearances": 2,
+    "impactScore": 43.7,
+    "averageImpactScore": 21.85,
+    "hrGames": 2,
+    "totalBases": 11,
+    "dates": [
+      "2026-05-14",
+      "2026-05-17"
+    ]
+  },
+  "Keibert Ruiz": {
+    "playerName": "Keibert Ruiz",
+    "teamName": "Nationals",
+    "appearances": 2,
+    "impactScore": 43.1,
+    "averageImpactScore": 21.55,
+    "hrGames": 2,
+    "totalBases": 11,
+    "dates": [
+      "2026-05-14",
+      "2026-05-16"
+    ]
+  },
+  "Daylen Lile": {
+    "playerName": "Daylen Lile",
+    "teamName": "Nationals",
+    "appearances": 2,
+    "impactScore": 42.6,
+    "averageImpactScore": 21.3,
+    "hrGames": 2,
+    "totalBases": 12,
+    "dates": [
+      "2026-05-14",
+      "2026-05-15"
+    ]
+  },
+  "Matt McLain": {
+    "playerName": "Matt McLain",
+    "teamName": "Reds",
+    "appearances": 2,
+    "impactScore": 42.5,
+    "averageImpactScore": 21.25,
+    "hrGames": 2,
+    "totalBases": 11,
+    "dates": [
+      "2026-05-14",
+      "2026-05-15"
+    ]
+  },
+  "Ryan O'Hearn": {
+    "playerName": "Ryan O'Hearn",
+    "teamName": "Pirates",
+    "appearances": 2,
+    "impactScore": 41.2,
+    "averageImpactScore": 20.6,
+    "hrGames": 2,
+    "totalBases": 12,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Jordan Walker": {
+    "playerName": "Jordan Walker",
+    "teamName": "Cardinals",
+    "appearances": 2,
+    "impactScore": 40.8,
+    "averageImpactScore": 20.4,
+    "hrGames": 2,
+    "totalBases": 12,
+    "dates": [
+      "2026-05-14",
+      "2026-05-15"
+    ]
+  },
+  "Angel Martinez": {
+    "playerName": "Angel Martinez",
+    "teamName": "Guardians",
+    "appearances": 2,
+    "impactScore": 37.8,
+    "averageImpactScore": 18.9,
+    "hrGames": 2,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-14",
+      "2026-05-16"
+    ]
+  },
+  "Colson Montgomery": {
+    "playerName": "Colson Montgomery",
+    "teamName": "White Sox",
+    "appearances": 2,
+    "impactScore": 37.5,
+    "averageImpactScore": 18.75,
+    "hrGames": 2,
+    "totalBases": 11,
+    "dates": [
+      "2026-05-14",
+      "2026-05-15"
+    ]
+  },
+  "Luke Raley": {
+    "playerName": "Luke Raley",
+    "teamName": "Mariners",
+    "appearances": 2,
+    "impactScore": 37.2,
+    "averageImpactScore": 18.6,
+    "hrGames": 2,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Harrison Bader": {
+    "playerName": "Harrison Bader",
+    "teamName": "Giants",
+    "appearances": 2,
+    "impactScore": 36.2,
+    "averageImpactScore": 18.1,
+    "hrGames": 2,
+    "totalBases": 9,
+    "dates": [
+      "2026-05-15",
+      "2026-05-17"
+    ]
+  },
+  "Drake Baldwin": {
+    "playerName": "Drake Baldwin",
+    "teamName": "Braves",
+    "appearances": 2,
+    "impactScore": 35.7,
+    "averageImpactScore": 17.85,
+    "hrGames": 2,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-15",
+      "2026-05-16"
+    ]
+  },
+  "Kyle Schwarber": {
+    "playerName": "Kyle Schwarber",
+    "teamName": "Phillies",
+    "appearances": 1,
+    "impactScore": 35.4,
+    "averageImpactScore": 35.4,
+    "hrGames": 1,
+    "totalBases": 9,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Miguel Vargas": {
+    "playerName": "Miguel Vargas",
+    "teamName": "White Sox",
+    "appearances": 2,
+    "impactScore": 35.4,
+    "averageImpactScore": 17.7,
+    "hrGames": 2,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-15",
+      "2026-05-16"
+    ]
+  },
+  "Casey Schmitt": {
+    "playerName": "Casey Schmitt",
+    "teamName": "Giants",
+    "appearances": 1,
+    "impactScore": 35.2,
+    "averageImpactScore": 35.2,
+    "hrGames": 1,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "J.P. Crawford": {
+    "playerName": "J.P. Crawford",
+    "teamName": "Mariners",
+    "appearances": 2,
+    "impactScore": 34,
+    "averageImpactScore": 17,
+    "hrGames": 2,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-14",
+      "2026-05-16"
+    ]
+  },
+  "Jakob Marsee": {
+    "playerName": "Jakob Marsee",
+    "teamName": "Marlins",
+    "appearances": 2,
+    "impactScore": 33.9,
+    "averageImpactScore": 16.95,
+    "hrGames": 1,
+    "totalBases": 11,
+    "dates": [
+      "2026-05-15",
+      "2026-05-16"
+    ]
+  },
+  "Daulton Varsho": {
+    "playerName": "Daulton Varsho",
+    "teamName": "Blue Jays",
+    "appearances": 2,
+    "impactScore": 32.2,
+    "averageImpactScore": 16.1,
+    "hrGames": 1,
+    "totalBases": 9,
+    "dates": [
+      "2026-05-14",
+      "2026-05-17"
+    ]
+  },
+  "Bryce Harper": {
+    "playerName": "Bryce Harper",
+    "teamName": "Phillies",
+    "appearances": 2,
+    "impactScore": 31.7,
+    "averageImpactScore": 15.85,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-15",
+      "2026-05-16"
+    ]
+  },
+  "Munetaka Murakami": {
+    "playerName": "Munetaka Murakami",
+    "teamName": "White Sox",
+    "appearances": 1,
+    "impactScore": 31.1,
+    "averageImpactScore": 31.1,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Corbin Carroll": {
+    "playerName": "Corbin Carroll",
+    "teamName": "Diamondbacks",
+    "appearances": 1,
+    "impactScore": 31.1,
+    "averageImpactScore": 31.1,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Andrew Benintendi": {
+    "playerName": "Andrew Benintendi",
+    "teamName": "White Sox",
+    "appearances": 2,
+    "impactScore": 31,
+    "averageImpactScore": 15.5,
+    "hrGames": 1,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-16",
+      "2026-05-17"
+    ]
+  },
+  "Kody Clemens": {
+    "playerName": "Kody Clemens",
+    "teamName": "Twins",
+    "appearances": 2,
+    "impactScore": 30.7,
+    "averageImpactScore": 15.35,
+    "hrGames": 1,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-14",
+      "2026-05-17"
+    ]
+  },
+  "Teoscar Hernandez": {
+    "playerName": "Teoscar Hernandez",
+    "teamName": "Dodgers",
+    "appearances": 2,
+    "impactScore": 30.5,
+    "averageImpactScore": 15.25,
+    "hrGames": 1,
+    "totalBases": 10,
+    "dates": [
+      "2026-05-14",
+      "2026-05-15"
+    ]
+  },
+  "Brandon Lowe": {
+    "playerName": "Brandon Lowe",
+    "teamName": "Pirates",
+    "appearances": 1,
+    "impactScore": 29.8,
+    "averageImpactScore": 29.8,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Kyle Manzardo": {
+    "playerName": "Kyle Manzardo",
+    "teamName": "Guardians",
+    "appearances": 1,
+    "impactScore": 29.8,
+    "averageImpactScore": 29.8,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Mickey Moniak": {
+    "playerName": "Mickey Moniak",
+    "teamName": "Rockies",
+    "appearances": 1,
+    "impactScore": 29.6,
+    "averageImpactScore": 29.6,
+    "hrGames": 1,
+    "totalBases": 9,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Byron Buxton": {
+    "playerName": "Byron Buxton",
+    "teamName": "Twins",
+    "appearances": 1,
+    "impactScore": 29.1,
+    "averageImpactScore": 29.1,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Jose Ramirez": {
+    "playerName": "Jose Ramirez",
+    "teamName": "Guardians",
+    "appearances": 2,
+    "impactScore": 28.3,
+    "averageImpactScore": 14.15,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-15",
+      "2026-05-17"
+    ]
+  },
+  "Gunnar Henderson": {
+    "playerName": "Gunnar Henderson",
+    "teamName": "Orioles",
+    "appearances": 1,
+    "impactScore": 25.9,
+    "averageImpactScore": 25.9,
+    "hrGames": 1,
+    "totalBases": 8,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Cedric Mullins": {
+    "playerName": "Cedric Mullins",
+    "teamName": "Rays",
+    "appearances": 1,
+    "impactScore": 24.6,
+    "averageImpactScore": 24.6,
+    "hrGames": 1,
+    "totalBases": 7,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Edgar Quero": {
+    "playerName": "Edgar Quero",
+    "teamName": "White Sox",
+    "appearances": 1,
+    "impactScore": 22.9,
+    "averageImpactScore": 22.9,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Yordan Alvarez": {
+    "playerName": "Yordan Alvarez",
+    "teamName": "Astros",
+    "appearances": 1,
+    "impactScore": 22.7,
+    "averageImpactScore": 22.7,
+    "hrGames": 1,
+    "totalBases": 7,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Gabriel Moreno": {
+    "playerName": "Gabriel Moreno",
+    "teamName": "Diamondbacks",
+    "appearances": 2,
+    "impactScore": 22.3,
+    "averageImpactScore": 11.15,
+    "hrGames": 0,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-15",
+      "2026-05-17"
+    ]
+  },
+  "TJ Rumfield": {
+    "playerName": "TJ Rumfield",
+    "teamName": "Rockies",
+    "appearances": 1,
+    "impactScore": 22.2,
+    "averageImpactScore": 22.2,
+    "hrGames": 1,
+    "totalBases": 7,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Brady House": {
+    "playerName": "Brady House",
+    "teamName": "Nationals",
+    "appearances": 1,
+    "impactScore": 21.9,
+    "averageImpactScore": 21.9,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Austin Riley": {
+    "playerName": "Austin Riley",
+    "teamName": "Braves",
+    "appearances": 1,
+    "impactScore": 21.9,
+    "averageImpactScore": 21.9,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Gage Workman": {
+    "playerName": "Gage Workman",
+    "teamName": "Tigers",
+    "appearances": 1,
+    "impactScore": 21.1,
+    "averageImpactScore": 21.1,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Bryson Stott": {
+    "playerName": "Bryson Stott",
+    "teamName": "Phillies",
+    "appearances": 1,
+    "impactScore": 21.1,
+    "averageImpactScore": 21.1,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Randal Grichuk": {
+    "playerName": "Randal Grichuk",
+    "teamName": "White Sox",
+    "appearances": 1,
+    "impactScore": 20.6,
+    "averageImpactScore": 20.6,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Ben Rice": {
+    "playerName": "Ben Rice",
+    "teamName": "Yankees",
+    "appearances": 1,
+    "impactScore": 20.5,
+    "averageImpactScore": 20.5,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Kyle Higashioka": {
+    "playerName": "Kyle Higashioka",
+    "teamName": "Rangers",
+    "appearances": 1,
+    "impactScore": 20.2,
+    "averageImpactScore": 20.2,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Michael Conforto": {
+    "playerName": "Michael Conforto",
+    "teamName": "Cubs",
+    "appearances": 1,
+    "impactScore": 19.9,
+    "averageImpactScore": 19.9,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Shohei Ohtani": {
+    "playerName": "Shohei Ohtani",
+    "teamName": "Dodgers",
+    "appearances": 1,
+    "impactScore": 19.7,
+    "averageImpactScore": 19.7,
+    "hrGames": 0,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Brent Rooker": {
+    "playerName": "Brent Rooker",
+    "teamName": "Athletics",
+    "appearances": 1,
+    "impactScore": 19.4,
+    "averageImpactScore": 19.4,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Jacob Young": {
+    "playerName": "Jacob Young",
+    "teamName": "Nationals",
+    "appearances": 1,
+    "impactScore": 19.4,
+    "averageImpactScore": 19.4,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Juan Soto": {
+    "playerName": "Juan Soto",
+    "teamName": "Mets",
+    "appearances": 1,
+    "impactScore": 19,
+    "averageImpactScore": 19,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Chase DeLauter": {
+    "playerName": "Chase DeLauter",
+    "teamName": "Guardians",
+    "appearances": 1,
+    "impactScore": 19,
+    "averageImpactScore": 19,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Zach Neto": {
+    "playerName": "Zach Neto",
+    "teamName": "Angels",
+    "appearances": 1,
+    "impactScore": 18.7,
+    "averageImpactScore": 18.7,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Spencer Steer": {
+    "playerName": "Spencer Steer",
+    "teamName": "Reds",
+    "appearances": 2,
+    "impactScore": 18.7,
+    "averageImpactScore": 9.35,
+    "hrGames": 0,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Jackson Chourio": {
+    "playerName": "Jackson Chourio",
+    "teamName": "Brewers",
+    "appearances": 1,
+    "impactScore": 18.7,
+    "averageImpactScore": 18.7,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Salvador Perez": {
+    "playerName": "Salvador Perez",
+    "teamName": "Royals",
+    "appearances": 1,
+    "impactScore": 18.7,
+    "averageImpactScore": 18.7,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Elly De La Cruz": {
+    "playerName": "Elly De La Cruz",
+    "teamName": "Reds",
+    "appearances": 1,
+    "impactScore": 18.7,
+    "averageImpactScore": 18.7,
+    "hrGames": 1,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Tyler Stephenson": {
+    "playerName": "Tyler Stephenson",
+    "teamName": "Reds",
+    "appearances": 1,
+    "impactScore": 18.4,
+    "averageImpactScore": 18.4,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Marcus Semien": {
+    "playerName": "Marcus Semien",
+    "teamName": "Mets",
+    "appearances": 1,
+    "impactScore": 18.3,
+    "averageImpactScore": 18.3,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Ian Happ": {
+    "playerName": "Ian Happ",
+    "teamName": "Cubs",
+    "appearances": 1,
+    "impactScore": 18.3,
+    "averageImpactScore": 18.3,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Max Muncy": {
+    "playerName": "Max Muncy",
+    "teamName": "Dodgers",
+    "appearances": 1,
+    "impactScore": 18.3,
+    "averageImpactScore": 18.3,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Mookie Betts": {
+    "playerName": "Mookie Betts",
+    "teamName": "Dodgers",
+    "appearances": 1,
+    "impactScore": 18.3,
+    "averageImpactScore": 18.3,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Mike Yastrzemski": {
+    "playerName": "Mike Yastrzemski",
+    "teamName": "Braves",
+    "appearances": 1,
+    "impactScore": 18.3,
+    "averageImpactScore": 18.3,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Ryan Jeffers": {
+    "playerName": "Ryan Jeffers",
+    "teamName": "Twins",
+    "appearances": 1,
+    "impactScore": 18.3,
+    "averageImpactScore": 18.3,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Willson Contreras": {
+    "playerName": "Willson Contreras",
+    "teamName": "Red Sox",
+    "appearances": 1,
+    "impactScore": 18.2,
+    "averageImpactScore": 18.2,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Lourdes Gurriel Jr.": {
+    "playerName": "Lourdes Gurriel Jr.",
+    "teamName": "Diamondbacks",
+    "appearances": 1,
+    "impactScore": 18.2,
+    "averageImpactScore": 18.2,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Tristan Peters": {
+    "playerName": "Tristan Peters",
+    "teamName": "White Sox",
+    "appearances": 1,
+    "impactScore": 18,
+    "averageImpactScore": 18,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Brayan Rocchio": {
+    "playerName": "Brayan Rocchio",
+    "teamName": "Guardians",
+    "appearances": 1,
+    "impactScore": 17.8,
+    "averageImpactScore": 17.8,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Vladimir Guerrero Jr.": {
+    "playerName": "Vladimir Guerrero Jr.",
+    "teamName": "Blue Jays",
+    "appearances": 1,
+    "impactScore": 17.8,
+    "averageImpactScore": 17.8,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Bobby Witt Jr.": {
+    "playerName": "Bobby Witt Jr.",
+    "teamName": "Royals",
+    "appearances": 1,
+    "impactScore": 17.3,
+    "averageImpactScore": 17.3,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Trevor Story": {
+    "playerName": "Trevor Story",
+    "teamName": "Red Sox",
+    "appearances": 1,
+    "impactScore": 17,
+    "averageImpactScore": 17,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Zack Gelof": {
+    "playerName": "Zack Gelof",
+    "teamName": "Athletics",
+    "appearances": 1,
+    "impactScore": 17,
+    "averageImpactScore": 17,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "A.J. Ewing": {
+    "playerName": "A.J. Ewing",
+    "teamName": "Mets",
+    "appearances": 1,
+    "impactScore": 17,
+    "averageImpactScore": 17,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Miguel Amaya": {
+    "playerName": "Miguel Amaya",
+    "teamName": "Cubs",
+    "appearances": 1,
+    "impactScore": 17,
+    "averageImpactScore": 17,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Jac Caglianone": {
+    "playerName": "Jac Caglianone",
+    "teamName": "Royals",
+    "appearances": 1,
+    "impactScore": 17,
+    "averageImpactScore": 17,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Matt Vierling": {
+    "playerName": "Matt Vierling",
+    "teamName": "Tigers",
+    "appearances": 1,
+    "impactScore": 17,
+    "averageImpactScore": 17,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Yohendrick Pinango": {
+    "playerName": "Yohendrick Pinango",
+    "teamName": "Blue Jays",
+    "appearances": 1,
+    "impactScore": 17,
+    "averageImpactScore": 17,
+    "hrGames": 1,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Owen Caissie": {
+    "playerName": "Owen Caissie",
+    "teamName": "Marlins",
+    "appearances": 1,
+    "impactScore": 16.8,
+    "averageImpactScore": 16.8,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Mitch Garver": {
+    "playerName": "Mitch Garver",
+    "teamName": "Mariners",
+    "appearances": 1,
+    "impactScore": 16.8,
+    "averageImpactScore": 16.8,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Adley Rutschman": {
+    "playerName": "Adley Rutschman",
+    "teamName": "Orioles",
+    "appearances": 1,
+    "impactScore": 16.7,
+    "averageImpactScore": 16.7,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Dane Myers": {
+    "playerName": "Dane Myers",
+    "teamName": "Reds",
+    "appearances": 1,
+    "impactScore": 16.7,
+    "averageImpactScore": 16.7,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Andy Pages": {
+    "playerName": "Andy Pages",
+    "teamName": "Dodgers",
+    "appearances": 1,
+    "impactScore": 16.7,
+    "averageImpactScore": 16.7,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Nick Castellanos": {
+    "playerName": "Nick Castellanos",
+    "teamName": "Padres",
+    "appearances": 1,
+    "impactScore": 16.7,
+    "averageImpactScore": 16.7,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Tyrone Taylor": {
+    "playerName": "Tyrone Taylor",
+    "teamName": "Mets",
+    "appearances": 1,
+    "impactScore": 16.7,
+    "averageImpactScore": 16.7,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Ildemaro Vargas": {
+    "playerName": "Ildemaro Vargas",
+    "teamName": "Diamondbacks",
+    "appearances": 1,
+    "impactScore": 16.5,
+    "averageImpactScore": 16.5,
+    "hrGames": 0,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Rhys Hoskins": {
+    "playerName": "Rhys Hoskins",
+    "teamName": "Guardians",
+    "appearances": 1,
+    "impactScore": 16.1,
+    "averageImpactScore": 16.1,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Brett Baty": {
+    "playerName": "Brett Baty",
+    "teamName": "Mets",
+    "appearances": 1,
+    "impactScore": 16,
+    "averageImpactScore": 16,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Yandy Diaz": {
+    "playerName": "Yandy Diaz",
+    "teamName": "Rays",
+    "appearances": 1,
+    "impactScore": 16,
+    "averageImpactScore": 16,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Marcell Ozuna": {
+    "playerName": "Marcell Ozuna",
+    "teamName": "Pirates",
+    "appearances": 1,
+    "impactScore": 16,
+    "averageImpactScore": 16,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Pete Crow-Armstrong": {
+    "playerName": "Pete Crow-Armstrong",
+    "teamName": "Cubs",
+    "appearances": 1,
+    "impactScore": 16,
+    "averageImpactScore": 16,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Ceddanne Rafaela": {
+    "playerName": "Ceddanne Rafaela",
+    "teamName": "Red Sox",
+    "appearances": 1,
+    "impactScore": 15.5,
+    "averageImpactScore": 15.5,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Mauricio Dubon": {
+    "playerName": "Mauricio Dubon",
+    "teamName": "Braves",
+    "appearances": 1,
+    "impactScore": 15.5,
+    "averageImpactScore": 15.5,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Jung Hoo Lee": {
+    "playerName": "Jung Hoo Lee",
+    "teamName": "Giants",
+    "appearances": 1,
+    "impactScore": 15.5,
+    "averageImpactScore": 15.5,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Mark Vientos": {
+    "playerName": "Mark Vientos",
+    "teamName": "Mets",
+    "appearances": 1,
+    "impactScore": 15.5,
+    "averageImpactScore": 15.5,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Rodolfo Duran": {
+    "playerName": "Rodolfo Duran",
+    "teamName": "Padres",
+    "appearances": 1,
+    "impactScore": 15.5,
+    "averageImpactScore": 15.5,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Kyle Tucker": {
+    "playerName": "Kyle Tucker",
+    "teamName": "Dodgers",
+    "appearances": 1,
+    "impactScore": 15,
+    "averageImpactScore": 15,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Xavier Edwards": {
+    "playerName": "Xavier Edwards",
+    "teamName": "Marlins",
+    "appearances": 1,
+    "impactScore": 14.6,
+    "averageImpactScore": 14.6,
+    "hrGames": 0,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Carson Kelly": {
+    "playerName": "Carson Kelly",
+    "teamName": "Cubs",
+    "appearances": 1,
+    "impactScore": 14.6,
+    "averageImpactScore": 14.6,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Javier Sanoja": {
+    "playerName": "Javier Sanoja",
+    "teamName": "Marlins",
+    "appearances": 1,
+    "impactScore": 14.4,
+    "averageImpactScore": 14.4,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Isaac Paredes": {
+    "playerName": "Isaac Paredes",
+    "teamName": "Astros",
+    "appearances": 1,
+    "impactScore": 14.3,
+    "averageImpactScore": 14.3,
+    "hrGames": 1,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "CJ Abrams": {
+    "playerName": "CJ Abrams",
+    "teamName": "Nationals",
+    "appearances": 1,
+    "impactScore": 14.3,
+    "averageImpactScore": 14.3,
+    "hrGames": 0,
+    "totalBases": 5,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Jazz Chisholm Jr.": {
+    "playerName": "Jazz Chisholm Jr.",
+    "teamName": "Yankees",
+    "appearances": 1,
+    "impactScore": 14.1,
+    "averageImpactScore": 14.1,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Brendan Donovan": {
+    "playerName": "Brendan Donovan",
+    "teamName": "Mariners",
+    "appearances": 1,
+    "impactScore": 14,
+    "averageImpactScore": 14,
+    "hrGames": 0,
+    "totalBases": 6,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Nolan Arenado": {
+    "playerName": "Nolan Arenado",
+    "teamName": "Diamondbacks",
+    "appearances": 1,
+    "impactScore": 12.8,
+    "averageImpactScore": 12.8,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "James Outman": {
+    "playerName": "James Outman",
+    "teamName": "Twins",
+    "appearances": 1,
+    "impactScore": 12.8,
+    "averageImpactScore": 12.8,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Blaze Alexander": {
+    "playerName": "Blaze Alexander",
+    "teamName": "Orioles",
+    "appearances": 1,
+    "impactScore": 12.7,
+    "averageImpactScore": 12.7,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Austin Martin": {
+    "playerName": "Austin Martin",
+    "teamName": "Twins",
+    "appearances": 1,
+    "impactScore": 12.6,
+    "averageImpactScore": 12.6,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Anthony Volpe": {
+    "playerName": "Anthony Volpe",
+    "teamName": "Yankees",
+    "appearances": 1,
+    "impactScore": 12.5,
+    "averageImpactScore": 12.5,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Willy Adames": {
+    "playerName": "Willy Adames",
+    "teamName": "Giants",
+    "appearances": 1,
+    "impactScore": 12.2,
+    "averageImpactScore": 12.2,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Leo Jimenez": {
+    "playerName": "Leo Jimenez",
+    "teamName": "Marlins",
+    "appearances": 1,
+    "impactScore": 12,
+    "averageImpactScore": 12,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Ty France": {
+    "playerName": "Ty France",
+    "teamName": "Padres",
+    "appearances": 1,
+    "impactScore": 11.7,
+    "averageImpactScore": 11.7,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-17"
+    ]
+  },
+  "Carson Benge": {
+    "playerName": "Carson Benge",
+    "teamName": "Mets",
+    "appearances": 1,
+    "impactScore": 11.4,
+    "averageImpactScore": 11.4,
+    "hrGames": 0,
+    "totalBases": 4,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Jarred Kelenic": {
+    "playerName": "Jarred Kelenic",
+    "teamName": "White Sox",
+    "appearances": 1,
+    "impactScore": 10.8,
+    "averageImpactScore": 10.8,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Andrew Vaughn": {
+    "playerName": "Andrew Vaughn",
+    "teamName": "Brewers",
+    "appearances": 1,
+    "impactScore": 10.8,
+    "averageImpactScore": 10.8,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Riley Greene": {
+    "playerName": "Riley Greene",
+    "teamName": "Tigers",
+    "appearances": 1,
+    "impactScore": 10.5,
+    "averageImpactScore": 10.5,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Shea Langeliers": {
+    "playerName": "Shea Langeliers",
+    "teamName": "Athletics",
+    "appearances": 1,
+    "impactScore": 10.5,
+    "averageImpactScore": 10.5,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Seiya Suzuki": {
+    "playerName": "Seiya Suzuki",
+    "teamName": "Cubs",
+    "appearances": 1,
+    "impactScore": 10.4,
+    "averageImpactScore": 10.4,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Trea Turner": {
+    "playerName": "Trea Turner",
+    "teamName": "Phillies",
+    "appearances": 1,
+    "impactScore": 10.4,
+    "averageImpactScore": 10.4,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Ke'Bryan Hayes": {
+    "playerName": "Ke'Bryan Hayes",
+    "teamName": "Reds",
+    "appearances": 1,
+    "impactScore": 10.3,
+    "averageImpactScore": 10.3,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Junior Caminero": {
+    "playerName": "Junior Caminero",
+    "teamName": "Rays",
+    "appearances": 1,
+    "impactScore": 10.3,
+    "averageImpactScore": 10.3,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-16"
+    ]
+  },
+  "Endy Rodriguez": {
+    "playerName": "Endy Rodriguez",
+    "teamName": "Pirates",
+    "appearances": 1,
+    "impactScore": 10,
+    "averageImpactScore": 10,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Jeff McNeil": {
+    "playerName": "Jeff McNeil",
+    "teamName": "Athletics",
+    "appearances": 1,
+    "impactScore": 9.1,
+    "averageImpactScore": 9.1,
+    "hrGames": 0,
+    "totalBases": 3,
+    "dates": [
+      "2026-05-15"
+    ]
+  },
+  "Luis Rengifo": {
+    "playerName": "Luis Rengifo",
+    "teamName": "Brewers",
+    "appearances": 1,
+    "impactScore": 9,
+    "averageImpactScore": 9,
+    "hrGames": 0,
+    "totalBases": 2,
+    "dates": [
+      "2026-05-14"
+    ]
+  },
+  "Ryan Kreidler": {
+    "playerName": "Ryan Kreidler",
+    "teamName": "Twins",
+    "appearances": 1,
+    "impactScore": 8.3,
+    "averageImpactScore": 8.3,
+    "hrGames": 0,
+    "totalBases": 2,
+    "dates": [
+      "2026-05-14"
+    ]
+  }
+}
