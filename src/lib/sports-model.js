@@ -2273,6 +2273,24 @@ const buildMlbDecisionIndicators = ({
     coinflipPressure += 9
   }
 
+  if (baseVolatility >= 84) {
+    notes.push({
+      label: 'Overall baseball variance is still high enough that the side reads better as a watchlist edge than a clean conviction tag',
+      delta: 3
+    })
+    confidenceDelta -= 3
+    volatilityDelta += 3
+  }
+
+  if (baseVolatility >= 88 && modelEdge >= 8) {
+    notes.push({
+      label: 'A big paper edge is still sitting inside a noisy baseball script, so conviction should stay capped',
+      delta: 3
+    })
+    confidenceDelta -= 3
+    volatilityDelta += 2
+  }
+
   if (starterLeverageIndex >= 60 && lateInningStabilityIndex <= 52) {
     reliefPitchingRisk += 8
     coinflipPressure += 10

@@ -1,0 +1,759 @@
+export const lineupSnapshotMeta = {
+  "date": "2026-05-18",
+  "snapshot": "2026-05-18T13:21:43.708Z",
+  "recentWindow": {
+    "start": "2026-05-11",
+    "end": "2026-05-17"
+  },
+  "gameCount": 14,
+  "playerCount": 0,
+  "sourceLabel": "Official MLB feed/live posted batting orders plus official player season, recent, and handedness split stats."
+}
+
+export const lineupBoardsByGameId = {
+  "braves-marlins": {
+    "gameId": "braves-marlins",
+    "title": "Braves @ Marlins",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Braves",
+      "opposingStarter": {
+        "name": "Max Meyer",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Marlins",
+      "opposingStarter": {
+        "name": "JR Ritchie",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "guardians-tigers": {
+    "gameId": "guardians-tigers",
+    "title": "Guardians @ Tigers",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Guardians",
+      "opposingStarter": {
+        "name": "Framber Valdez",
+        "hand": "L",
+        "type": "Balanced"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Tigers",
+      "opposingStarter": {
+        "name": "Slade Cecconi",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "orioles-rays": {
+    "gameId": "orioles-rays",
+    "title": "Orioles @ Rays",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Orioles",
+      "opposingStarter": {
+        "name": "Shane McClanahan",
+        "hand": "L",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Rays",
+      "opposingStarter": {
+        "name": "Trevor Rogers",
+        "hand": "L",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "reds-phillies": {
+    "gameId": "reds-phillies",
+    "title": "Reds @ Phillies",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Reds",
+      "opposingStarter": {
+        "name": "Andrew Painter",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Phillies",
+      "opposingStarter": {
+        "name": "Nick Lodolo",
+        "hand": "L",
+        "type": "Unknown sample"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "mets-nationals": {
+    "gameId": "mets-nationals",
+    "title": "Mets @ Nationals",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Mets",
+      "opposingStarter": {
+        "name": "Jake Irvin",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Nationals",
+      "opposingStarter": {
+        "name": "Christian Scott",
+        "hand": "R",
+        "type": "Unknown sample"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "blue-jays-yankees": {
+    "gameId": "blue-jays-yankees",
+    "title": "Blue Jays @ Yankees",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Blue Jays",
+      "opposingStarter": {
+        "name": "Ryan Weathers",
+        "hand": "L",
+        "type": "Power"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Yankees",
+      "opposingStarter": {
+        "name": "Patrick Corbin",
+        "hand": "L",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "astros-twins": {
+    "gameId": "astros-twins",
+    "title": "Astros @ Twins",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Astros",
+      "opposingStarter": {
+        "name": "Kendry Rojas",
+        "hand": "L",
+        "type": "Unknown sample"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Twins",
+      "opposingStarter": {
+        "name": "Tatsuya Imai",
+        "hand": "R",
+        "type": "Unknown sample"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "brewers-cubs": {
+    "gameId": "brewers-cubs",
+    "title": "Brewers @ Cubs",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Brewers",
+      "opposingStarter": {
+        "name": "Shota Imanaga",
+        "hand": "L",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Cubs",
+      "opposingStarter": {
+        "name": "Brandon Sproat",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "red-sox-royals": {
+    "gameId": "red-sox-royals",
+    "title": "Red Sox @ Royals",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Red Sox",
+      "opposingStarter": {
+        "name": "Seth Lugo",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Royals",
+      "opposingStarter": {
+        "name": "Sonny Gray",
+        "hand": "R",
+        "type": "Craft"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "rangers-rockies": {
+    "gameId": "rangers-rockies",
+    "title": "Rangers @ Rockies",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Rangers",
+      "opposingStarter": {
+        "name": "Jose Quintana",
+        "hand": "L",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Rockies",
+      "opposingStarter": {
+        "name": "MacKenzie Gore",
+        "hand": "L",
+        "type": "Volatile bat-misser"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "athletics-angels": {
+    "gameId": "athletics-angels",
+    "title": "Athletics @ Angels",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Athletics",
+      "opposingStarter": {
+        "name": "Walbert Ureña",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Angels",
+      "opposingStarter": {
+        "name": "J.T. Ginn",
+        "hand": "R",
+        "type": "Craft"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "dodgers-padres": {
+    "gameId": "dodgers-padres",
+    "title": "Dodgers @ Padres",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Dodgers",
+      "opposingStarter": {
+        "name": "Michael King",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Padres",
+      "opposingStarter": {
+        "name": "Yoshinobu Yamamoto",
+        "hand": "R",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "giants-diamondbacks": {
+    "gameId": "giants-diamondbacks",
+    "title": "Giants @ Diamondbacks",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "Giants",
+      "opposingStarter": {
+        "name": "Zac Gallen",
+        "hand": "R",
+        "type": "Traffic-risk"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Diamondbacks",
+      "opposingStarter": {
+        "name": "Robbie Ray",
+        "hand": "L",
+        "type": "Contact suppressor"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  },
+  "white-sox-mariners": {
+    "gameId": "white-sox-mariners",
+    "title": "White Sox @ Mariners",
+    "snapshot": "2026-05-18T13:21:43.708Z",
+    "status": {
+      "away": "pending",
+      "home": "pending"
+    },
+    "away": {
+      "teamName": "White Sox",
+      "opposingStarter": {
+        "name": "Bryan Woo",
+        "hand": "R",
+        "type": "Strike-throwing"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted away lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    },
+    "home": {
+      "teamName": "Mariners",
+      "opposingStarter": {
+        "name": "Noah Schultz",
+        "hand": "L",
+        "type": "Balanced"
+      },
+      "lineup": [],
+      "aggregate": null,
+      "summary": {
+        "pressureLabel": "lineup pending",
+        "overperformHitters": [],
+        "underperformHitters": [],
+        "underperformNote": "Official batting order is still pending.",
+        "overview": "No posted home lineup yet.",
+        "topThirdScore": 50,
+        "middleScore": 50,
+        "depthScore": 50
+      }
+    }
+  }
+}
+
+export const lineupMatchupContextByGameId = {
+  "braves-marlins": {
+    "Braves": null,
+    "Marlins": null
+  },
+  "guardians-tigers": {
+    "Guardians": null,
+    "Tigers": null
+  },
+  "orioles-rays": {
+    "Orioles": null,
+    "Rays": null
+  },
+  "reds-phillies": {
+    "Reds": null,
+    "Phillies": null
+  },
+  "mets-nationals": {
+    "Mets": null,
+    "Nationals": null
+  },
+  "blue-jays-yankees": {
+    "Blue Jays": null,
+    "Yankees": null
+  },
+  "astros-twins": {
+    "Astros": null,
+    "Twins": null
+  },
+  "brewers-cubs": {
+    "Brewers": null,
+    "Cubs": null
+  },
+  "red-sox-royals": {
+    "Red Sox": null,
+    "Royals": null
+  },
+  "rangers-rockies": {
+    "Rangers": null,
+    "Rockies": null
+  },
+  "athletics-angels": {
+    "Athletics": null,
+    "Angels": null
+  },
+  "dodgers-padres": {
+    "Dodgers": null,
+    "Padres": null
+  },
+  "giants-diamondbacks": {
+    "Giants": null,
+    "Diamondbacks": null
+  },
+  "white-sox-mariners": {
+    "White Sox": null,
+    "Mariners": null
+  }
+}

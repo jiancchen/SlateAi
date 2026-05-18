@@ -9,6 +9,8 @@ import { games as may13 } from '../src/lib/day-2026-05-13.js'
 import { games as may14 } from '../src/lib/day-2026-05-14.js'
 import { games as may15 } from '../src/lib/day-2026-05-15.js'
 import { games as may16 } from '../src/lib/day-2026-05-16.js'
+import { games as may17 } from '../src/lib/day-2026-05-17.js'
+import { games as may18 } from '../src/lib/day-2026-05-18.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -21,7 +23,9 @@ const slates = {
   '2026-05-13': may13,
   '2026-05-14': may14,
   '2026-05-15': may15,
-  '2026-05-16': may16
+  '2026-05-16': may16,
+  '2026-05-17': may17,
+  '2026-05-18': may18
 }
 
 const teamAliasToOfficial = {

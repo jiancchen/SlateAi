@@ -69,6 +69,7 @@ const parseArgs = () => {
   }
 
   options.out ||= path.join(rootDir, 'data', 'predictions', 'mlb-home-runs', `${options.date}-statcast-prototype.json`)
+  options.moduleOut ||= path.join(rootDir, 'src', 'lib', `day-${options.date}-home-run-data.js`)
   return options
 }
 
@@ -149,6 +150,16 @@ const loadDayGames = async (date) => {
   return dayModule.games.filter((game) => game.league === 'MLB')
 }
 
+const loadLineupBoards = async (date) => {
+  try {
+    const lineupModulePath = path.join(rootDir, 'src', 'lib', `day-${date}-lineups.js`)
+    const lineupModule = await import(pathToFileURL(lineupModulePath).href)
+    return lineupModule.lineupBoardsByGameId || {}
+  } catch {
+    return {}
+  }
+}
+
 const buildMatchupMap = (games) => {
   const matchupByAbbr = {}
 
@@ -187,6 +198,58 @@ const buildMatchupMap = (games) => {
   }
 
   return matchupByAbbr
+}
+
+const buildLineupLookup = (lineupBoardsByGameId = {}) => {
+  const lookup = new Map()
+
+  for (const board of Object.values(lineupBoardsByGameId)) {
+    for (const sideKey of ['away', 'home']) {
+      const side = board?.[sideKey]
+      if (!side?.lineup?.length) continue
+
+      for (const hitter of side.lineup) {
+        if (!hitter?.playerId) continue
+        lookup.set(Number(hitter.playerId), {
+          gameTitle: board.title,
+          teamName: side.teamName,
+          slot: hitter.slot,
+          primaryTag: hitter.primaryTag || '',
+          tags: hitter.tags || [],
+          powerScore: Number(hitter.metrics?.powerScore ?? 50),
+          contactScore: Number(hitter.metrics?.contactScore ?? 50),
+          formScore: Number(hitter.metrics?.formScore ?? 50),
+          splitScore: Number(hitter.metrics?.splitScore ?? 50),
+          matchupScore: Number(hitter.metrics?.matchupScore ?? 50),
+          varianceScore: Number(hitter.metrics?.varianceScore ?? 50),
+          recentHomeRuns: Number(hitter.recent?.homeRuns ?? 0),
+          seasonHomeRuns: Number(hitter.season?.homeRuns ?? 0),
+          splitHomeRuns: Number(hitter.split?.homeRuns ?? 0)
+        })
+      }
+    }
+  }
+
+  return lookup
+}
+
+const buildLineupPriority = (context = null) => {
+  if (!context) return 0
+
+  const slotBonus = Math.max(0, 6 - Number(context.slot || 9)) * 2.2
+  const powerBoost = Math.max(0, (context.powerScore || 50) - 52) * 0.45
+  const matchupBoost = ((context.matchupScore || 50) - 48) * 0.18
+  const splitBoost = ((context.splitScore || 50) - 48) * 0.12
+  const formBoost = ((context.formScore || 50) - 45) * 0.14
+  const recentHrBoost = (context.recentHomeRuns || 0) * 1.6
+  const splitHrBoost = (context.splitHomeRuns || 0) * 0.45
+  const tagBoost =
+    /carry|heater|split edge/i.test(context.primaryTag || '') ||
+    (context.tags || []).some((tag) => /carry|heater|split edge/i.test(tag))
+      ? 3.2
+      : 0
+
+  return slotBonus + powerBoost + matchupBoost + splitBoost + formBoost + recentHrBoost + splitHrBoost + tagBoost
 }
 
 const fetchStatcastLeaderboard = async (season) => {
@@ -230,13 +293,41 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
   candidate.homeRunsLast7Days = last7Rows.length
   candidate.noDoubterRate = Number(noDoubterRate.toFixed(2))
   candidate.avgExitVelocityOnHomers = Number(avgEv.toFixed(1))
+  const pitcherHrBoost =
+    candidate.opposingPitcherHr9 >= 1.7
+      ? 7
+      : candidate.opposingPitcherHr9 >= 1.35
+        ? 4
+        : candidate.opposingPitcherHr9 <= 0.85
+          ? -5
+          : candidate.opposingPitcherHr9 <= 1
+            ? -2
+            : 0
+  const recentBurstBoost =
+    candidate.homeRunsLast7Days >= 5
+      ? 6
+      : candidate.homeRunsLast7Days >= 3
+        ? 3
+        : candidate.homeRunsLast7Days === 0 && candidate.recentHrSinceMay1 <= 2
+          ? -3
+          : 0
+  const carryQualityBoost =
+    candidate.noDoubterRate >= 0.6
+      ? 3
+      : candidate.noDoubterRate <= 0.15 && candidate.avgExitVelocityOnHomers <= 103
+        ? -2
+        : 0
+
   candidate.score = Number(
     (
       candidate.baseScore +
       candidate.recentHrSinceMay1 * 2.8 +
       candidate.homeRunsLast7Days * 1.6 +
       candidate.noDoubterRate * 6 +
-      Math.max(0, (avgEv - 104) * 0.5)
+      Math.max(0, (avgEv - 104) * 0.5) +
+      pitcherHrBoost +
+      recentBurstBoost +
+      carryQualityBoost
     ).toFixed(1)
   )
   candidate.scoreBand =
@@ -253,7 +344,10 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
     `${candidate.seasonHr} HR and ${candidate.seasonXHR} xHR on the season`,
     `${candidate.recentHrSinceMay1} HR since May 1 with ${candidate.homeRunsLast7Days} in the last week`,
     `${candidate.opposingPitcher} is allowing roughly ${candidate.opposingPitcherHr9} HR/9`,
-    `Park HR index ${candidate.parkHrIndex}`
+    `Park HR index ${candidate.parkHrIndex}`,
+    candidate.lineupContext
+      ? `Slot ${candidate.lineupContext.slot} | ${candidate.lineupContext.primaryTag || 'posted lineup'} | lineup priority ${candidate.lineupPriority}`
+      : 'Lineup slot not posted yet'
   ]
 
   return candidate
@@ -262,44 +356,77 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
 const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
   const games = await loadDayGames(date)
   const matchupByAbbr = buildMatchupMap(games)
+  const lineupBoardsByGameId = await loadLineupBoards(date)
+  const lineupLookup = buildLineupLookup(lineupBoardsByGameId)
   const leaderboard = await fetchStatcastLeaderboard(season)
+  const leaderboardByPlayerId = new Map(leaderboard.map((row) => [Number(row.player_id), row]))
+
+  const createCandidate = (row) => {
+    const matchup = matchupByAbbr[row.team_abbrev]
+    const lineupContext = lineupLookup.get(Number(row.player_id)) || null
+    const hr = Number(row.hr_total)
+    const xhr = Number(row.xhr)
+    const xhrDiff = Number(row.xhr_diff)
+    const lineupPriority = buildLineupPriority(lineupContext)
+    const slotPenalty = lineupContext ? Math.max(0, Number(lineupContext.slot || 9) - 6) * 1.3 : 0
+    const baseScore =
+      xhr * 2.15 +
+      hr * 1.05 +
+      matchup.opposingPitcherHr9 * 6.8 +
+      (matchup.parkHrIndex - 100) * 0.11 +
+      Math.max(0, -xhrDiff) * 2 +
+      Math.max(0, (lineupContext?.powerScore || 50) - 55) * 0.2 +
+      Math.max(0, (lineupContext?.matchupScore || 50) - 50) * 0.14 +
+      Math.max(0, (lineupContext?.formScore || 50) - 48) * 0.1 +
+      lineupPriority * 0.55 -
+      Math.max(0, xhrDiff) * 0.7 -
+      slotPenalty
+
+    return {
+      playerId: Number(row.player_id),
+      playerName: formatPlayerName(row.player),
+      teamAbbrev: row.team_abbrev,
+      teamName: matchup.teamName,
+      gameTitle: matchup.gameTitle,
+      opposingPitcher: matchup.opposingPitcher,
+      opposingPitcherHand: matchup.opposingPitcherHand,
+      opposingPitcherHr9: Number(matchup.opposingPitcherHr9.toFixed(2)),
+      parkHrIndex: matchup.parkHrIndex,
+      seasonHr: hr,
+      seasonXHR: xhr,
+      xhrDiff,
+      baseScore,
+      lineupContext,
+      lineupPriority: Number(lineupPriority.toFixed(1))
+    }
+  }
 
   const preScoredCandidates = leaderboard
     .filter((row) => matchupByAbbr[row.team_abbrev])
-    .map((row) => {
-      const matchup = matchupByAbbr[row.team_abbrev]
-      const hr = Number(row.hr_total)
-      const xhr = Number(row.xhr)
-      const xhrDiff = Number(row.xhr_diff)
-      const baseScore =
-        xhr * 2.4 +
-        hr * 1.3 +
-        matchup.opposingPitcherHr9 * 7 +
-        (matchup.parkHrIndex - 100) * 0.12 +
-        Math.max(0, -xhrDiff) * 2.2 -
-        Math.max(0, xhrDiff) * 0.8
-
-      return {
-        playerId: Number(row.player_id),
-        playerName: formatPlayerName(row.player),
-        teamAbbrev: row.team_abbrev,
-        teamName: matchup.teamName,
-        gameTitle: matchup.gameTitle,
-        opposingPitcher: matchup.opposingPitcher,
-        opposingPitcherHand: matchup.opposingPitcherHand,
-        opposingPitcherHr9: Number(matchup.opposingPitcherHr9.toFixed(2)),
-        parkHrIndex: matchup.parkHrIndex,
-        seasonHr: hr,
-        seasonXHR: xhr,
-        xhrDiff,
-        baseScore
-      }
-    })
+    .map(createCandidate)
     .filter((candidate) => candidate.seasonHr >= 5 || candidate.seasonXHR >= 5)
     .sort((left, right) => right.baseScore - left.baseScore)
 
+  const supplementalCandidates = [...lineupLookup.entries()]
+    .map(([playerId, context]) => {
+      const row = leaderboardByPlayerId.get(Number(playerId))
+      if (!row) return null
+      if (!matchupByAbbr[row.team_abbrev]) return null
+      return createCandidate(row)
+    })
+    .filter(Boolean)
+    .filter((candidate) => candidate.lineupPriority >= 13 || candidate.lineupContext?.recentHomeRuns >= 2)
+    .sort((left, right) => right.lineupPriority - left.lineupPriority)
+
+  const mergedCandidates = [...preScoredCandidates]
+  for (const candidate of supplementalCandidates) {
+    if (!mergedCandidates.some((existing) => existing.playerId === candidate.playerId)) {
+      mergedCandidates.push(candidate)
+    }
+  }
+
   const shortlistedCandidates = Object.values(
-    preScoredCandidates.reduce((accumulator, candidate) => {
+    mergedCandidates.reduce((accumulator, candidate) => {
       accumulator[candidate.teamAbbrev] ||= []
       accumulator[candidate.teamAbbrev].push(candidate)
       return accumulator

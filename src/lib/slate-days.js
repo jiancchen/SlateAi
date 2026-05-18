@@ -61,6 +61,13 @@ import {
   slateMeta as dayNineSlateMeta,
   sources as dayNineSources
 } from './day-2026-05-17.js'
+import {
+  filters as dayTenFilters,
+  games as dayTenGames,
+  oddsMeta as dayTenOddsMeta,
+  slateMeta as dayTenSlateMeta,
+  sources as dayTenSources
+} from './day-2026-05-18.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -369,7 +376,35 @@ const may17Slate = createSlateDay({
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate]
+const may18Slate = createSlateDay({
+  id: dayTenSlateMeta.isoDate,
+  label: dayTenSlateMeta.date,
+  status: 'ready',
+  slateMeta: dayTenSlateMeta,
+  games: dayTenGames,
+  filters: dayTenFilters,
+  oddsMeta: dayTenOddsMeta,
+  sources: dayTenSources,
+  intakeChecklist: [
+    'Refresh the lineup board once MLB posts official batting orders, because the early pass is still operating in pre-lineup mode.',
+    'Export and store the May 18 side board so tomorrow’s backtest can grade today without another manual bridge step.',
+    'Store the final MLB results and home-run events so the lineup-aware HR board can be checked against the actual Sunday carry bats.',
+    'Watch whether the softer conviction cap on very high-variance MLB scripts improves the noisy favorite and live-dog lanes from May 17.'
+  ],
+  intakePrompt:
+    'May 18 is now the live MLB board. It keeps the May 17 review in the model, while waiting on official posted lineups to sharpen the hitter scripts and home-run lanes later in the day.',
+  feedNotes: [
+    'This is the first May 18 pass after the May 17 review, and it deliberately tones down conviction on games that still carry very high baseball variance even when the model edge looks big on paper.',
+    'The home-run board is refreshed for today, but the official lineup feed had not posted batting orders yet on this pass, so the HR lanes are explicitly pre-lineup rather than pretending to be final.',
+    'There is no NBA or WNBA action on the current May 18 board, so the desk stays MLB-only and faster to refresh once lineups start landing.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['MLB']
+  }
+})
+
+export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate, may18Slate]
 
 const currentLocalIsoDate = () => {
   const now = new Date()

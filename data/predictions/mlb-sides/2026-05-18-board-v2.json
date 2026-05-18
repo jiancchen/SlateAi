@@ -1,0 +1,2983 @@
+{
+  "modelName": "board-moneyline-v2-may18",
+  "generatedAt": "2026-05-18T13:24:56.821Z",
+  "startDate": "2026-05-18",
+  "endDate": "2026-05-18",
+  "picks": [
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "braves-marlins",
+      "gameTitle": "Braves @ Marlins",
+      "awayTeam": "Atlanta Braves",
+      "homeTeam": "Miami Marlins",
+      "predictedTeam": "Atlanta Braves",
+      "predictedSide": "away",
+      "confidence": 52,
+      "volatility": 83,
+      "modelEdge": 2.2,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Standings profile",
+        "Hit-production baseline",
+        "Bullpen follow-through"
+      ],
+      "projection": {
+        "awayProjectedHits": 6.3,
+        "homeProjectedHits": 6.3,
+        "awayHitEfficiencyPct": 18.2,
+        "homeHitEfficiencyPct": 18.4,
+        "awayFirst5ProjectedHits": 4.2,
+        "homeFirst5ProjectedHits": 4.2,
+        "awayFirst5HitEfficiencyPct": 22,
+        "homeFirst5HitEfficiencyPct": 22.1,
+        "awayLateProjectedHits": 2,
+        "homeLateProjectedHits": 2.1,
+        "awayLateHitEfficiencyPct": 13,
+        "homeLateHitEfficiencyPct": 13.9,
+        "awayBullpenChainScore": 84.4,
+        "homeBullpenChainScore": 93.8,
+        "edgeTeam": "Braves",
+        "edgeHits": 0,
+        "first5EdgeTeam": "Braves",
+        "first5EdgeHits": 0,
+        "lateEdgeTeam": "Marlins",
+        "lateEdgeHits": 0.1,
+        "bridgeEdgeTeam": "Marlins",
+        "bridgeEdgeScore": 9.5,
+        "awayLikelyRelievers": [
+          {
+            "name": "Martín Pérez",
+            "role": "bridge",
+            "firstRelieverLikelihood": 83.47,
+            "availabilityScore": 74.9,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Dylan Lee",
+            "role": "middle",
+            "firstRelieverLikelihood": 76.02,
+            "availabilityScore": 78.3,
+            "bridgeScore": 79.3,
+            "expectedOuts": 2.67,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Calvin Faucher",
+            "role": "bridge",
+            "firstRelieverLikelihood": 90.5,
+            "availabilityScore": 95,
+            "bridgeScore": 95,
+            "expectedOuts": 5.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Michael Petersen",
+            "role": "bridge",
+            "firstRelieverLikelihood": 80.41,
+            "availabilityScore": 73.3,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 16,
+        "homeBullpenExhaustion": 18.3,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Traffic-risk righty",
+        "homePitcherType": "Contact suppressor",
+        "awayProjectedRuns": 2.6,
+        "homeProjectedRuns": 2.9,
+        "awayFirst5ProjectedRuns": 1.7,
+        "homeFirst5ProjectedRuns": 1.9,
+        "awayLateProjectedRuns": 0.9,
+        "homeLateProjectedRuns": 1,
+        "postedTotal": 8,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.5,
+            "strength": "Strong",
+            "label": "Under 8",
+            "summary": "Under lean with a 2.5-run edge against 8."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.6,
+            "strength": "Strong",
+            "label": "Under 5.2",
+            "summary": "Under lean with a 1.6-run edge against 5.2."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 2.8",
+            "summary": "Under lean with a 0.9-run edge against 2.8."
+          },
+          "projectedFullTotalRuns": 5.5,
+          "projectedFirst5TotalRuns": 3.6,
+          "projectedLateTotalRuns": 1.9,
+          "derivedFirst5TotalLine": 5.2,
+          "derivedLateTotalLine": 2.8,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Braves",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Matt Olson",
+                "tag": "live | active"
+              },
+              {
+                "name": "Drake Baldwin",
+                "tag": "thin | heater"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Braves own the cleaner full-game traffic script at 6.3 projected hits.",
+              "Braves have the better starter-window lane with 4.2 projected first-five hits.",
+              "No posted away lineup yet.",
+              "Matt Olson and Drake Baldwin are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Marlins",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Marlins still hold the better bridge-and-finish script once the bullpens take over.",
+              "Marlins also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Marlins look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Braves rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Braves",
+              "projection": "1.7 R",
+              "note": "Braves lean on Matt Olson, Drake Baldwin to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Marlins",
+              "projection": "1 R",
+              "note": "Marlins look cleaner once the game turns over to the bridge relievers."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Braves",
+              "projection": "6.3 H",
+              "note": "Braves finish with the stronger aggregate traffic path, anchored by Matt Olson, Drake Baldwin."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 36.7,
+        "lateInningStabilityIndex": 60.7,
+        "reliefPitchingRisk": 63.9,
+        "coinflipPressure": 49,
+        "pickBullpenScore": 71.1,
+        "oppBullpenScore": 65.3,
+        "pickStarterScore": 63.3,
+        "oppStarterScore": 74.8,
+        "projectedHitEdgeForPick": 0,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "guardians-tigers",
+      "gameTitle": "Guardians @ Tigers",
+      "awayTeam": "Cleveland Guardians",
+      "homeTeam": "Detroit Tigers",
+      "predictedTeam": "Detroit Tigers",
+      "predictedSide": "home",
+      "confidence": 65,
+      "volatility": 77,
+      "modelEdge": 6.6,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Projected hit volume",
+        "Market price",
+        "Hit-production baseline"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.5,
+        "homeProjectedHits": 9.3,
+        "awayHitEfficiencyPct": 16,
+        "homeHitEfficiencyPct": 27,
+        "awayFirst5ProjectedHits": 3.7,
+        "homeFirst5ProjectedHits": 5.6,
+        "awayFirst5HitEfficiencyPct": 19.2,
+        "homeFirst5HitEfficiencyPct": 29.6,
+        "awayLateProjectedHits": 2.4,
+        "homeLateProjectedHits": 3.1,
+        "awayLateHitEfficiencyPct": 15.7,
+        "homeLateHitEfficiencyPct": 20.5,
+        "awayBullpenChainScore": 84.5,
+        "homeBullpenChainScore": 88.4,
+        "edgeTeam": "Tigers",
+        "edgeHits": 3.8,
+        "first5EdgeTeam": "Tigers",
+        "first5EdgeHits": 1.9,
+        "lateEdgeTeam": "Tigers",
+        "lateEdgeHits": 0.7,
+        "bridgeEdgeTeam": "Tigers",
+        "bridgeEdgeScore": 3.9,
+        "awayLikelyRelievers": [
+          {
+            "name": "Matt Festa",
+            "role": "middle",
+            "firstRelieverLikelihood": 85.71,
+            "availabilityScore": 81.25,
+            "bridgeScore": 90.5,
+            "expectedOuts": 1.67,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Colin Holderman",
+            "role": "bridge",
+            "firstRelieverLikelihood": 82.5,
+            "availabilityScore": 72.15,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Kyle Finnegan",
+            "role": "middle",
+            "firstRelieverLikelihood": 83.57,
+            "availabilityScore": 75.35,
+            "bridgeScore": 94.9,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Brant Hurter",
+            "role": "bridge",
+            "firstRelieverLikelihood": 82.61,
+            "availabilityScore": 72.45,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 17.9,
+        "homeBullpenExhaustion": 19.7,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Traffic-risk righty",
+        "homePitcherType": "Balanced lefty",
+        "awayProjectedRuns": 2.6,
+        "homeProjectedRuns": 4.2,
+        "awayFirst5ProjectedRuns": 1.5,
+        "homeFirst5ProjectedRuns": 2.7,
+        "awayLateProjectedRuns": 1.1,
+        "homeLateProjectedRuns": 1.5,
+        "postedTotal": 8,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.2,
+            "strength": "Strong",
+            "label": "Under 8",
+            "summary": "Under lean with a 1.2-run edge against 8."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -0.7,
+            "strength": "Clear",
+            "label": "Under 4.9",
+            "summary": "Under lean with a 0.7-run edge against 4.9."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.5,
+            "strength": "Lean",
+            "label": "Under 3.1",
+            "summary": "Under lean with a 0.5-run edge against 3.1."
+          },
+          "projectedFullTotalRuns": 6.8,
+          "projectedFirst5TotalRuns": 4.2,
+          "projectedLateTotalRuns": 2.6,
+          "derivedFirst5TotalLine": 4.9,
+          "derivedLateTotalLine": 3.1,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Guardians",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Angel Martínez",
+                "tag": "thin | heater"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "No posted away lineup yet.",
+              "Angel Martínez is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Tigers",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Tigers own the cleaner full-game traffic script at 9.3 projected hits.",
+              "Tigers have the better starter-window lane with 5.6 projected first-five hits.",
+              "Tigers still hold the better bridge-and-finish script once the bullpens take over.",
+              "Tigers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Tigers look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Tigers carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Tigers",
+              "projection": "2.7 R",
+              "note": "Tigers still own the cleaner starter-phase traffic lane."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Tigers",
+              "projection": "1.5 R",
+              "note": "Tigers look cleaner once the game turns over to the bridge relievers."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Tigers",
+              "projection": "9.3 H",
+              "note": "Tigers finish with the stronger full-game hit and conversion path."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 81.2,
+        "lateInningStabilityIndex": 38.1,
+        "reliefPitchingRisk": 58,
+        "coinflipPressure": 43,
+        "pickBullpenScore": 58.7,
+        "oppBullpenScore": 64,
+        "pickStarterScore": 62.1,
+        "oppStarterScore": 54.8,
+        "projectedHitEdgeForPick": 3.8,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "orioles-rays",
+      "gameTitle": "Orioles @ Rays",
+      "awayTeam": "Baltimore Orioles",
+      "homeTeam": "Tampa Bay Rays",
+      "predictedTeam": "Tampa Bay Rays",
+      "predictedSide": "home",
+      "confidence": 79,
+      "volatility": 64,
+      "modelEdge": 20.7,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Starter ERA",
+        "Standings profile",
+        "Hit-production baseline"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.2,
+        "homeProjectedHits": 9.6,
+        "awayHitEfficiencyPct": 15,
+        "homeHitEfficiencyPct": 28,
+        "awayFirst5ProjectedHits": 2.7,
+        "homeFirst5ProjectedHits": 6.1,
+        "awayFirst5HitEfficiencyPct": 14.1,
+        "homeFirst5HitEfficiencyPct": 32.1,
+        "awayLateProjectedHits": 2.2,
+        "homeLateProjectedHits": 3.4,
+        "awayLateHitEfficiencyPct": 14.3,
+        "homeLateHitEfficiencyPct": 22.3,
+        "awayBullpenChainScore": 84.7,
+        "homeBullpenChainScore": 88.8,
+        "edgeTeam": "Rays",
+        "edgeHits": 4.4,
+        "first5EdgeTeam": "Rays",
+        "first5EdgeHits": 3.4,
+        "lateEdgeTeam": "Rays",
+        "lateEdgeHits": 1.2,
+        "bridgeEdgeTeam": "Rays",
+        "bridgeEdgeScore": 4.1,
+        "awayLikelyRelievers": [
+          {
+            "name": "Dietrich Enns",
+            "role": "bridge",
+            "firstRelieverLikelihood": 85.34,
+            "availabilityScore": 73.1,
+            "bridgeScore": 95,
+            "expectedOuts": 3.67,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Keegan Akin",
+            "role": "middle",
+            "firstRelieverLikelihood": 75.62,
+            "availabilityScore": 74.5,
+            "bridgeScore": 81,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Casey Legumina",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.95,
+            "availabilityScore": 67.85,
+            "bridgeScore": 93.1,
+            "expectedOuts": 5.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Hunter Bigge",
+            "role": "middle",
+            "firstRelieverLikelihood": 73.13,
+            "availabilityScore": 68.15,
+            "bridgeScore": 80.5,
+            "expectedOuts": 3.67,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "awayBullpenExhaustion": 19.1,
+        "homeBullpenExhaustion": 27.7,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Traffic-risk lefty",
+        "homePitcherType": "Contact suppressor",
+        "awayProjectedRuns": 2.1,
+        "homeProjectedRuns": 4.8,
+        "awayFirst5ProjectedRuns": 1.1,
+        "homeFirst5ProjectedRuns": 3,
+        "awayLateProjectedRuns": 1,
+        "homeLateProjectedRuns": 1.8,
+        "postedTotal": 7.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -0.6,
+            "strength": "Lean",
+            "label": "Under 7.5",
+            "summary": "Under lean with a 0.6-run edge against 7.5."
+          },
+          "first5": {
+            "lean": "Pass",
+            "edge": -0.4,
+            "strength": "Thin",
+            "label": "Hold 4.5",
+            "summary": "Model projection 4.1 is essentially on the posted 4.5."
+          },
+          "late": {
+            "lean": "Pass",
+            "edge": -0.2,
+            "strength": "Thin",
+            "label": "Hold 3",
+            "summary": "Model projection 2.8 is essentially on the posted 3."
+          },
+          "projectedFullTotalRuns": 6.9,
+          "projectedFirst5TotalRuns": 4.1,
+          "projectedLateTotalRuns": 2.8,
+          "derivedFirst5TotalLine": 4.5,
+          "derivedLateTotalLine": 3,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Orioles",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "No posted away lineup yet.",
+              "Orioles look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          },
+          {
+            "teamName": "Rays",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Junior Caminero",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Rays own the cleaner full-game traffic script at 9.6 projected hits.",
+              "Rays have the better starter-window lane with 6.1 projected first-five hits.",
+              "Rays still hold the better bridge-and-finish script once the bullpens take over.",
+              "Rays also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Junior Caminero is the best current carry bat in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Rays carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Rays",
+              "projection": "3 R",
+              "note": "Rays lean on Junior Caminero to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Rays",
+              "projection": "1.8 R",
+              "note": "Rays keep more late scoring paths alive, with Junior Caminero plus the Rays bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Rays",
+              "projection": "9.6 H",
+              "note": "Rays finish with the stronger aggregate traffic path, anchored by Junior Caminero."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 100,
+        "lateInningStabilityIndex": 45.7,
+        "reliefPitchingRisk": 58.6,
+        "coinflipPressure": 35,
+        "pickBullpenScore": 60.8,
+        "oppBullpenScore": 61.2,
+        "pickStarterScore": 73.2,
+        "oppStarterScore": 51.7,
+        "projectedHitEdgeForPick": 4.4,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "reds-phillies",
+      "gameTitle": "Reds @ Phillies",
+      "awayTeam": "Cincinnati Reds",
+      "homeTeam": "Philadelphia Phillies",
+      "predictedTeam": "Cincinnati Reds",
+      "predictedSide": "away",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 2.6,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Hit-production baseline",
+        "Projected hit volume",
+        "Statcast contact quality"
+      ],
+      "projection": {
+        "awayProjectedHits": 10,
+        "homeProjectedHits": 7.2,
+        "awayHitEfficiencyPct": 29,
+        "homeHitEfficiencyPct": 20.9,
+        "awayFirst5ProjectedHits": 5.9,
+        "homeFirst5ProjectedHits": 4.3,
+        "awayFirst5HitEfficiencyPct": 30.7,
+        "homeFirst5HitEfficiencyPct": 22.8,
+        "awayLateProjectedHits": 3.7,
+        "homeLateProjectedHits": 3.2,
+        "awayLateHitEfficiencyPct": 23.6,
+        "homeLateHitEfficiencyPct": 21.2,
+        "awayBullpenChainScore": 85.6,
+        "homeBullpenChainScore": 79.6,
+        "edgeTeam": "Reds",
+        "edgeHits": 2.8,
+        "first5EdgeTeam": "Reds",
+        "first5EdgeHits": 1.6,
+        "lateEdgeTeam": "Reds",
+        "lateEdgeHits": 0.5,
+        "bridgeEdgeTeam": "Reds",
+        "bridgeEdgeScore": 6,
+        "awayLikelyRelievers": [
+          {
+            "name": "Sam Moll",
+            "role": "bridge",
+            "firstRelieverLikelihood": 86.65,
+            "availabilityScore": 69.7,
+            "bridgeScore": 95,
+            "expectedOuts": 2.75,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Luis Mey",
+            "role": "middle",
+            "firstRelieverLikelihood": 82.74,
+            "availabilityScore": 74.95,
+            "bridgeScore": 89.1,
+            "expectedOuts": 3.33,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Brad Keller",
+            "role": "middle",
+            "firstRelieverLikelihood": 77.94,
+            "availabilityScore": 95,
+            "bridgeScore": 76.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Tanner Banks",
+            "role": "bridge",
+            "firstRelieverLikelihood": 76.36,
+            "availabilityScore": 57.6,
+            "bridgeScore": 93.1,
+            "expectedOuts": 2.5,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          }
+        ],
+        "awayBullpenExhaustion": 19.3,
+        "homeBullpenExhaustion": 24.2,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Unknown sample lefty",
+        "homePitcherType": "Traffic-risk righty",
+        "awayProjectedRuns": 5.1,
+        "homeProjectedRuns": 3.3,
+        "awayFirst5ProjectedRuns": 3.1,
+        "homeFirst5ProjectedRuns": 1.8,
+        "awayLateProjectedRuns": 2,
+        "homeLateProjectedRuns": 1.5,
+        "postedTotal": 9.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.1,
+            "strength": "Clear",
+            "label": "Under 9.5",
+            "summary": "Under lean with a 1.1-run edge against 9.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -0.6,
+            "strength": "Lean",
+            "label": "Under 5.5",
+            "summary": "Under lean with a 0.6-run edge against 5.5."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.5,
+            "strength": "Lean",
+            "label": "Under 4",
+            "summary": "Under lean with a 0.5-run edge against 4."
+          },
+          "projectedFullTotalRuns": 8.4,
+          "projectedFirst5TotalRuns": 4.9,
+          "projectedLateTotalRuns": 3.5,
+          "derivedFirst5TotalLine": 5.5,
+          "derivedLateTotalLine": 4,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Reds",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Elly De La Cruz",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Reds own the cleaner full-game traffic script at 10 projected hits.",
+              "Reds have the better starter-window lane with 5.9 projected first-five hits.",
+              "Reds still hold the better bridge-and-finish script once the bullpens take over.",
+              "Reds also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted away lineup yet.",
+              "Elly De La Cruz is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Phillies",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Kyle Schwarber",
+                "tag": "premium | heater"
+              },
+              {
+                "name": "Bryce Harper",
+                "tag": "strong | active"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "No posted home lineup yet.",
+              "Kyle Schwarber and Bryce Harper are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Reds carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Reds",
+              "projection": "3.1 R",
+              "note": "Reds lean on Elly De La Cruz to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Reds",
+              "projection": "2 R",
+              "note": "Reds keep more late scoring paths alive, with Elly De La Cruz plus the Reds bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Reds",
+              "projection": "10 H",
+              "note": "Reds finish with the stronger aggregate traffic path, anchored by Elly De La Cruz."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 43.1,
+        "lateInningStabilityIndex": 15,
+        "reliefPitchingRisk": 68.6,
+        "coinflipPressure": 48,
+        "pickBullpenScore": 52.8,
+        "oppBullpenScore": 64.4,
+        "pickStarterScore": 28.3,
+        "oppStarterScore": 48.9,
+        "projectedHitEdgeForPick": 2.8,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "mets-nationals",
+      "gameTitle": "Mets @ Nationals",
+      "awayTeam": "New York Mets",
+      "homeTeam": "Washington Nationals",
+      "predictedTeam": "New York Mets",
+      "predictedSide": "away",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 2.2,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Starter ERA",
+        "Market price",
+        "Bullpen follow-through"
+      ],
+      "projection": {
+        "awayProjectedHits": 7.5,
+        "homeProjectedHits": 7.8,
+        "awayHitEfficiencyPct": 21.8,
+        "homeHitEfficiencyPct": 22.6,
+        "awayFirst5ProjectedHits": 4.2,
+        "homeFirst5ProjectedHits": 5.2,
+        "awayFirst5HitEfficiencyPct": 22.1,
+        "homeFirst5HitEfficiencyPct": 27.3,
+        "awayLateProjectedHits": 3.1,
+        "homeLateProjectedHits": 2.8,
+        "awayLateHitEfficiencyPct": 20.2,
+        "homeLateHitEfficiencyPct": 18.2,
+        "awayBullpenChainScore": 92.4,
+        "homeBullpenChainScore": 87.5,
+        "edgeTeam": "Nationals",
+        "edgeHits": 0.3,
+        "first5EdgeTeam": "Nationals",
+        "first5EdgeHits": 1,
+        "lateEdgeTeam": "Mets",
+        "lateEdgeHits": 0.3,
+        "bridgeEdgeTeam": "Mets",
+        "bridgeEdgeScore": 4.9,
+        "awayLikelyRelievers": [
+          {
+            "name": "Tobias Myers",
+            "role": "bridge",
+            "firstRelieverLikelihood": 82.55,
+            "availabilityScore": 65.15,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Huascar Brazobán",
+            "role": "bridge",
+            "firstRelieverLikelihood": 81.78,
+            "availabilityScore": 95,
+            "bridgeScore": 83.7,
+            "expectedOuts": 7,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Zak Kent",
+            "role": "bulk",
+            "firstRelieverLikelihood": 79.53,
+            "availabilityScore": 95,
+            "bridgeScore": 79.6,
+            "expectedOuts": 5.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "PJ Poulin",
+            "role": "middle",
+            "firstRelieverLikelihood": 76.91,
+            "availabilityScore": 74.25,
+            "bridgeScore": 83.5,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "awayBullpenExhaustion": 23.9,
+        "homeBullpenExhaustion": 16,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Unknown sample righty",
+        "homePitcherType": "Traffic-risk righty",
+        "awayProjectedRuns": 3.5,
+        "homeProjectedRuns": 4.1,
+        "awayFirst5ProjectedRuns": 2,
+        "homeFirst5ProjectedRuns": 2.6,
+        "awayLateProjectedRuns": 1.5,
+        "homeLateProjectedRuns": 1.5,
+        "postedTotal": 10,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.4,
+            "strength": "Strong",
+            "label": "Under 10",
+            "summary": "Under lean with a 2.4-run edge against 10."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.5,
+            "strength": "Strong",
+            "label": "Under 6.1",
+            "summary": "Under lean with a 1.5-run edge against 6.1."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 3.9",
+            "summary": "Under lean with a 0.9-run edge against 3.9."
+          },
+          "projectedFullTotalRuns": 7.6,
+          "projectedFirst5TotalRuns": 4.6,
+          "projectedLateTotalRuns": 3,
+          "derivedFirst5TotalLine": 6.1,
+          "derivedLateTotalLine": 3.9,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Mets",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Mark Vientos",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Mets still hold the better bridge-and-finish script once the bullpens take over.",
+              "Mets also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted away lineup yet.",
+              "Mark Vientos is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Nationals",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "James Wood",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Nationals own the cleaner full-game traffic script at 7.8 projected hits.",
+              "Nationals have the better starter-window lane with 5.2 projected first-five hits.",
+              "No posted home lineup yet.",
+              "James Wood is the best current carry bat in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Nationals rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Nationals",
+              "projection": "2.6 R",
+              "note": "Nationals lean on James Wood to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Mets",
+              "projection": "1.5 R",
+              "note": "Mets keep more late scoring paths alive, with Mark Vientos plus the Mets bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Nationals",
+              "projection": "7.8 H",
+              "note": "Nationals finish with the stronger aggregate traffic path, anchored by James Wood."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 51.9,
+        "lateInningStabilityIndex": 53,
+        "reliefPitchingRisk": 61,
+        "coinflipPressure": 60,
+        "pickBullpenScore": 67,
+        "oppBullpenScore": 45.5,
+        "pickStarterScore": 56.7,
+        "oppStarterScore": 53.4,
+        "projectedHitEdgeForPick": -0.3,
+        "hitEdgeAgainstPick": true
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "blue-jays-yankees",
+      "gameTitle": "Blue Jays @ Yankees",
+      "awayTeam": "Toronto Blue Jays",
+      "homeTeam": "New York Yankees",
+      "predictedTeam": "New York Yankees",
+      "predictedSide": "home",
+      "confidence": 63,
+      "volatility": 92,
+      "modelEdge": 10.1,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Market price",
+        "Standings profile",
+        "Strikeout ceiling"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.6,
+        "homeProjectedHits": 6.8,
+        "awayHitEfficiencyPct": 16.2,
+        "homeHitEfficiencyPct": 19.9,
+        "awayFirst5ProjectedHits": 3.9,
+        "homeFirst5ProjectedHits": 4,
+        "awayFirst5HitEfficiencyPct": 20.2,
+        "homeFirst5HitEfficiencyPct": 21.3,
+        "awayLateProjectedHits": 2.1,
+        "homeLateProjectedHits": 2.4,
+        "awayLateHitEfficiencyPct": 13.3,
+        "homeLateHitEfficiencyPct": 15.7,
+        "awayBullpenChainScore": 83,
+        "homeBullpenChainScore": 86.1,
+        "edgeTeam": "Yankees",
+        "edgeHits": 1.2,
+        "first5EdgeTeam": "Yankees",
+        "first5EdgeHits": 0.1,
+        "lateEdgeTeam": "Yankees",
+        "lateEdgeHits": 0.3,
+        "bridgeEdgeTeam": "Yankees",
+        "bridgeEdgeScore": 3.1,
+        "awayLikelyRelievers": [
+          {
+            "name": "Tommy Nance",
+            "role": "middle",
+            "firstRelieverLikelihood": 82.52,
+            "availabilityScore": 72.2,
+            "bridgeScore": 95,
+            "expectedOuts": 3.67,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Mason Fluharty",
+            "role": "middle",
+            "firstRelieverLikelihood": 75.62,
+            "availabilityScore": 95,
+            "bridgeScore": 72.5,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Brent Headrick",
+            "role": "bridge",
+            "firstRelieverLikelihood": 80.46,
+            "availabilityScore": 66.3,
+            "bridgeScore": 95,
+            "expectedOuts": 3.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Ryan Yarbrough",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.16,
+            "availabilityScore": 51.75,
+            "bridgeScore": 91,
+            "expectedOuts": 6,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          }
+        ],
+        "awayBullpenExhaustion": 13,
+        "homeBullpenExhaustion": 41.9,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Traffic-risk lefty",
+        "homePitcherType": "Power lefty",
+        "awayProjectedRuns": 2.6,
+        "homeProjectedRuns": 2.6,
+        "awayFirst5ProjectedRuns": 1.6,
+        "homeFirst5ProjectedRuns": 1.6,
+        "awayLateProjectedRuns": 1,
+        "homeLateProjectedRuns": 1,
+        "postedTotal": 9,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -3.8,
+            "strength": "Strong",
+            "label": "Under 9",
+            "summary": "Under lean with a 3.8-run edge against 9."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -2.3,
+            "strength": "Strong",
+            "label": "Under 5.5",
+            "summary": "Under lean with a 2.3-run edge against 5.5."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -1.5,
+            "strength": "Strong",
+            "label": "Under 3.5",
+            "summary": "Under lean with a 1.5-run edge against 3.5."
+          },
+          "projectedFullTotalRuns": 5.2,
+          "projectedFirst5TotalRuns": 3.2,
+          "projectedLateTotalRuns": 2,
+          "derivedFirst5TotalLine": 5.5,
+          "derivedLateTotalLine": 3.5,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Blue Jays",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Kazuma Okamoto",
+                "tag": "thin | active"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "No posted away lineup yet.",
+              "Kazuma Okamoto is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Yankees",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Aaron Judge",
+                "tag": "thin | watch"
+              },
+              {
+                "name": "Ben Rice",
+                "tag": "thin | active"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Yankees own the cleaner full-game traffic script at 6.8 projected hits.",
+              "Yankees have the better starter-window lane with 4 projected first-five hits.",
+              "Yankees still hold the better bridge-and-finish script once the bullpens take over.",
+              "Yankees also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Aaron Judge and Ben Rice are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Yankees carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Yankees",
+              "projection": "1.6 R",
+              "note": "Yankees lean on Aaron Judge, Ben Rice to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Yankees",
+              "projection": "1 R",
+              "note": "Yankees keep more late scoring paths alive, with Aaron Judge, Ben Rice plus the Yankees bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Yankees",
+              "projection": "6.8 H",
+              "note": "Yankees finish with the stronger aggregate traffic path, anchored by Aaron Judge, Ben Rice."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 72.5,
+        "lateInningStabilityIndex": 37.2,
+        "reliefPitchingRisk": 61,
+        "coinflipPressure": 51,
+        "pickBullpenScore": 66.9,
+        "oppBullpenScore": 63.5,
+        "pickStarterScore": 69.8,
+        "oppStarterScore": 56.5,
+        "projectedHitEdgeForPick": 1.2,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "astros-twins",
+      "gameTitle": "Astros @ Twins",
+      "awayTeam": "Houston Astros",
+      "homeTeam": "Minnesota Twins",
+      "predictedTeam": "Minnesota Twins",
+      "predictedSide": "home",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 2,
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Starter ERA",
+        "Starter record",
+        "Standings profile"
+      ],
+      "projection": {
+        "awayProjectedHits": 11.7,
+        "homeProjectedHits": 7.6,
+        "awayHitEfficiencyPct": 33.6,
+        "homeHitEfficiencyPct": 22,
+        "awayFirst5ProjectedHits": 6.9,
+        "homeFirst5ProjectedHits": 4.5,
+        "awayFirst5HitEfficiencyPct": 35.8,
+        "homeFirst5HitEfficiencyPct": 23.7,
+        "awayLateProjectedHits": 4.3,
+        "homeLateProjectedHits": 3.6,
+        "awayLateHitEfficiencyPct": 27.5,
+        "homeLateHitEfficiencyPct": 23.5,
+        "awayBullpenChainScore": 93.1,
+        "homeBullpenChainScore": 94.5,
+        "edgeTeam": "Astros",
+        "edgeHits": 4.1,
+        "first5EdgeTeam": "Astros",
+        "first5EdgeHits": 2.4,
+        "lateEdgeTeam": "Astros",
+        "lateEdgeHits": 0.7,
+        "bridgeEdgeTeam": "Twins",
+        "bridgeEdgeScore": 1.4,
+        "awayLikelyRelievers": [
+          {
+            "name": "Steven Okert",
+            "role": "bridge",
+            "firstRelieverLikelihood": 86.28,
+            "availabilityScore": 75.8,
+            "bridgeScore": 95,
+            "expectedOuts": 3.33,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Jayden Murray",
+            "role": "bulk",
+            "firstRelieverLikelihood": 78.38,
+            "availabilityScore": 95,
+            "bridgeScore": 77.5,
+            "expectedOuts": 6,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-12"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Travis Adams",
+            "role": "bridge",
+            "firstRelieverLikelihood": 89.45,
+            "availabilityScore": 95,
+            "bridgeScore": 93.1,
+            "expectedOuts": 5.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Eric Orze",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.49,
+            "availabilityScore": 64.7,
+            "bridgeScore": 87.9,
+            "expectedOuts": 6,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "awayBullpenExhaustion": 17.2,
+        "homeBullpenExhaustion": 25,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Unknown sample righty",
+        "homePitcherType": "Unknown sample lefty",
+        "awayProjectedRuns": 5.7,
+        "homeProjectedRuns": 3.7,
+        "awayFirst5ProjectedRuns": 3.4,
+        "homeFirst5ProjectedRuns": 2,
+        "awayLateProjectedRuns": 2.3,
+        "homeLateProjectedRuns": 1.7,
+        "postedTotal": 9.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Pass",
+            "edge": -0.1,
+            "strength": "Thin",
+            "label": "Hold 9.5",
+            "summary": "Model projection 9.4 is essentially on the posted 9.5."
+          },
+          "first5": {
+            "lean": "Pass",
+            "edge": -0.1,
+            "strength": "Thin",
+            "label": "Hold 5.5",
+            "summary": "Model projection 5.4 is essentially on the posted 5.5."
+          },
+          "late": {
+            "lean": "Pass",
+            "edge": 0,
+            "strength": "Thin",
+            "label": "Hold 4",
+            "summary": "Model projection 4 is essentially on the posted 4."
+          },
+          "projectedFullTotalRuns": 9.4,
+          "projectedFirst5TotalRuns": 5.4,
+          "projectedLateTotalRuns": 4,
+          "derivedFirst5TotalLine": 5.5,
+          "derivedLateTotalLine": 4,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Astros",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Yordan Alvarez",
+                "tag": "live | watch"
+              },
+              {
+                "name": "Christian Walker",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Astros own the cleaner full-game traffic script at 11.7 projected hits.",
+              "Astros have the better starter-window lane with 6.9 projected first-five hits.",
+              "Astros still hold the better bridge-and-finish script once the bullpens take over.",
+              "No posted away lineup yet.",
+              "Yordan Alvarez and Christian Walker are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Twins",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Byron Buxton",
+                "tag": "strong | heater"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Twins also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Byron Buxton is the best current carry bat in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Astros carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Astros",
+              "projection": "3.4 R",
+              "note": "Astros lean on Yordan Alvarez, Christian Walker to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Astros",
+              "projection": "2.3 R",
+              "note": "Astros keep more late scoring paths alive, with Yordan Alvarez, Christian Walker plus the Twins bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Astros",
+              "projection": "11.7 H",
+              "note": "Astros finish with the stronger aggregate traffic path, anchored by Yordan Alvarez, Christian Walker."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 55.7,
+        "lateInningStabilityIndex": 32.2,
+        "reliefPitchingRisk": 77,
+        "coinflipPressure": 69,
+        "pickBullpenScore": 48.5,
+        "oppBullpenScore": 45.5,
+        "pickStarterScore": 64,
+        "oppStarterScore": 37.7,
+        "projectedHitEdgeForPick": -4.1,
+        "hitEdgeAgainstPick": true
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "brewers-cubs",
+      "gameTitle": "Brewers @ Cubs",
+      "awayTeam": "Milwaukee Brewers",
+      "homeTeam": "Chicago Cubs",
+      "predictedTeam": "Chicago Cubs",
+      "predictedSide": "home",
+      "confidence": 57,
+      "volatility": 92,
+      "modelEdge": 9,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Starter ERA",
+        "Market price",
+        "Projected hit volume"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.7,
+        "homeProjectedHits": 7.5,
+        "awayHitEfficiencyPct": 16.6,
+        "homeHitEfficiencyPct": 21.8,
+        "awayFirst5ProjectedHits": 3.5,
+        "homeFirst5ProjectedHits": 4.7,
+        "awayFirst5HitEfficiencyPct": 18.5,
+        "homeFirst5HitEfficiencyPct": 24.6,
+        "awayLateProjectedHits": 2.5,
+        "homeLateProjectedHits": 2.6,
+        "awayLateHitEfficiencyPct": 15.9,
+        "homeLateHitEfficiencyPct": 16.7,
+        "awayBullpenChainScore": 83.3,
+        "homeBullpenChainScore": 73.8,
+        "edgeTeam": "Cubs",
+        "edgeHits": 1.8,
+        "first5EdgeTeam": "Cubs",
+        "first5EdgeHits": 1.2,
+        "lateEdgeTeam": "Cubs",
+        "lateEdgeHits": 0.1,
+        "bridgeEdgeTeam": "Brewers",
+        "bridgeEdgeScore": 9.5,
+        "awayLikelyRelievers": [
+          {
+            "name": "Aaron Ashby",
+            "role": "middle",
+            "firstRelieverLikelihood": 80.37,
+            "availabilityScore": 66.05,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Shane Drohan",
+            "role": "middle",
+            "firstRelieverLikelihood": 78.59,
+            "availabilityScore": 95,
+            "bridgeScore": 77.9,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-12"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Hoby Milner",
+            "role": "bridge",
+            "firstRelieverLikelihood": 77.78,
+            "availabilityScore": 51.5,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          },
+          {
+            "name": "Phil Maton",
+            "role": "middle",
+            "firstRelieverLikelihood": 73.23,
+            "availabilityScore": 54.7,
+            "bridgeScore": 84.7,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          }
+        ],
+        "awayBullpenExhaustion": 15.6,
+        "homeBullpenExhaustion": 48.6,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "elevated",
+        "awayPitcherType": "Traffic-risk righty",
+        "homePitcherType": "Contact suppressor",
+        "awayProjectedRuns": 2.8,
+        "homeProjectedRuns": 3.2,
+        "awayFirst5ProjectedRuns": 1.5,
+        "homeFirst5ProjectedRuns": 2,
+        "awayLateProjectedRuns": 1.3,
+        "homeLateProjectedRuns": 1.2,
+        "postedTotal": 10.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -4.5,
+            "strength": "Strong",
+            "label": "Under 10.5",
+            "summary": "Under lean with a 4.5-run edge against 10.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -2.6,
+            "strength": "Strong",
+            "label": "Under 6.1",
+            "summary": "Under lean with a 2.6-run edge against 6.1."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -1.9,
+            "strength": "Strong",
+            "label": "Under 4.4",
+            "summary": "Under lean with a 1.9-run edge against 4.4."
+          },
+          "projectedFullTotalRuns": 6,
+          "projectedFirst5TotalRuns": 3.5,
+          "projectedLateTotalRuns": 2.5,
+          "derivedFirst5TotalLine": 6.1,
+          "derivedLateTotalLine": 4.4,
+          "bullpenExhaustionNote": "Cubs elevated bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Brewers",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Brewers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted away lineup yet.",
+              "Brewers look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          },
+          {
+            "teamName": "Cubs",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Ian Happ",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Cubs own the cleaner full-game traffic script at 7.5 projected hits.",
+              "Cubs have the better starter-window lane with 4.7 projected first-five hits.",
+              "Cubs still hold the better bridge-and-finish script once the bullpens take over.",
+              "No posted home lineup yet.",
+              "Ian Happ is the best current carry bat in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Cubs carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Cubs",
+              "projection": "2 R",
+              "note": "Cubs lean on Ian Happ to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Cubs",
+              "projection": "1.2 R",
+              "note": "Cubs keep more late scoring paths alive, with Ian Happ plus the Brewers bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Cubs",
+              "projection": "7.5 H",
+              "note": "Cubs finish with the stronger aggregate traffic path, anchored by Ian Happ."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 86.7,
+        "lateInningStabilityIndex": 43.3,
+        "reliefPitchingRisk": 84.9,
+        "coinflipPressure": 59,
+        "pickBullpenScore": 63.2,
+        "oppBullpenScore": 64.4,
+        "pickStarterScore": 74.5,
+        "oppStarterScore": 51.9,
+        "projectedHitEdgeForPick": 1.8,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "red-sox-royals",
+      "gameTitle": "Red Sox @ Royals",
+      "awayTeam": "Boston Red Sox",
+      "homeTeam": "Kansas City Royals",
+      "predictedTeam": "Boston Red Sox",
+      "predictedSide": "away",
+      "confidence": 65,
+      "volatility": 78,
+      "modelEdge": 3.9,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Starter record",
+        "Projected hit volume",
+        "Bullpen follow-through"
+      ],
+      "projection": {
+        "awayProjectedHits": 8.5,
+        "homeProjectedHits": 6.5,
+        "awayHitEfficiencyPct": 24.6,
+        "homeHitEfficiencyPct": 18.9,
+        "awayFirst5ProjectedHits": 4.9,
+        "homeFirst5ProjectedHits": 4.5,
+        "awayFirst5HitEfficiencyPct": 25.4,
+        "homeFirst5HitEfficiencyPct": 23.9,
+        "awayLateProjectedHits": 3.1,
+        "homeLateProjectedHits": 2.5,
+        "awayLateHitEfficiencyPct": 19.8,
+        "homeLateHitEfficiencyPct": 16.4,
+        "awayBullpenChainScore": 86.8,
+        "homeBullpenChainScore": 88.1,
+        "edgeTeam": "Red Sox",
+        "edgeHits": 2,
+        "first5EdgeTeam": "Red Sox",
+        "first5EdgeHits": 0.4,
+        "lateEdgeTeam": "Red Sox",
+        "lateEdgeHits": 0.6,
+        "bridgeEdgeTeam": "Royals",
+        "bridgeEdgeScore": 1.3,
+        "awayLikelyRelievers": [
+          {
+            "name": "Justin Slaten",
+            "role": "middle",
+            "firstRelieverLikelihood": 89.02,
+            "availabilityScore": 95,
+            "bridgeScore": 92.3,
+            "expectedOuts": 2.67,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Garrett Whitlock",
+            "role": "middle",
+            "firstRelieverLikelihood": 77.14,
+            "availabilityScore": 95,
+            "bridgeScore": 70.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Luinder Avila",
+            "role": "bridge",
+            "firstRelieverLikelihood": 90.5,
+            "availabilityScore": 95,
+            "bridgeScore": 95,
+            "expectedOuts": 5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "John Schreiber",
+            "role": "middle",
+            "firstRelieverLikelihood": 75.58,
+            "availabilityScore": 83.95,
+            "bridgeScore": 74.9,
+            "expectedOuts": 2.33,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 4.6,
+        "homeBullpenExhaustion": 12,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Craft righty",
+        "homePitcherType": "Traffic-risk righty",
+        "awayProjectedRuns": 3.9,
+        "homeProjectedRuns": 3.3,
+        "awayFirst5ProjectedRuns": 2.4,
+        "homeFirst5ProjectedRuns": 2.1,
+        "awayLateProjectedRuns": 1.5,
+        "homeLateProjectedRuns": 1.2,
+        "postedTotal": 9,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.8,
+            "strength": "Strong",
+            "label": "Under 9",
+            "summary": "Under lean with a 1.8-run edge against 9."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.1,
+            "strength": "Clear",
+            "label": "Under 5.6",
+            "summary": "Under lean with a 1.1-run edge against 5.6."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.7,
+            "strength": "Clear",
+            "label": "Under 3.4",
+            "summary": "Under lean with a 0.7-run edge against 3.4."
+          },
+          "projectedFullTotalRuns": 7.2,
+          "projectedFirst5TotalRuns": 4.5,
+          "projectedLateTotalRuns": 2.7,
+          "derivedFirst5TotalLine": 5.6,
+          "derivedLateTotalLine": 3.4,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Red Sox",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Willson Contreras",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Red Sox own the cleaner full-game traffic script at 8.5 projected hits.",
+              "Red Sox have the better starter-window lane with 4.9 projected first-five hits.",
+              "Red Sox still hold the better bridge-and-finish script once the bullpens take over.",
+              "No posted away lineup yet.",
+              "Willson Contreras is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Royals",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Royals also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Royals look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Red Sox carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Red Sox",
+              "projection": "2.4 R",
+              "note": "Red Sox lean on Willson Contreras to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Red Sox",
+              "projection": "1.5 R",
+              "note": "Red Sox keep more late scoring paths alive, with Willson Contreras plus the Royals bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Red Sox",
+              "projection": "8.5 H",
+              "note": "Red Sox finish with the stronger aggregate traffic path, anchored by Willson Contreras."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 64.7,
+        "lateInningStabilityIndex": 63,
+        "reliefPitchingRisk": 47.5,
+        "coinflipPressure": 41,
+        "pickBullpenScore": 67.1,
+        "oppBullpenScore": 54.1,
+        "pickStarterScore": 64.7,
+        "oppStarterScore": 62.3,
+        "projectedHitEdgeForPick": 2,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "rangers-rockies",
+      "gameTitle": "Rangers @ Rockies",
+      "awayTeam": "Texas Rangers",
+      "homeTeam": "Colorado Rockies",
+      "predictedTeam": "Texas Rangers",
+      "predictedSide": "away",
+      "confidence": 68,
+      "volatility": 85,
+      "modelEdge": 9.5,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Standings profile",
+        "Market price",
+        "Strikeout ceiling"
+      ],
+      "projection": {
+        "awayProjectedHits": 8.4,
+        "homeProjectedHits": 6.8,
+        "awayHitEfficiencyPct": 24.3,
+        "homeHitEfficiencyPct": 19.8,
+        "awayFirst5ProjectedHits": 4.7,
+        "homeFirst5ProjectedHits": 4.6,
+        "awayFirst5HitEfficiencyPct": 24.8,
+        "homeFirst5HitEfficiencyPct": 24,
+        "awayLateProjectedHits": 3.2,
+        "homeLateProjectedHits": 2.7,
+        "awayLateHitEfficiencyPct": 20.5,
+        "homeLateHitEfficiencyPct": 17.5,
+        "awayBullpenChainScore": 82.1,
+        "homeBullpenChainScore": 78.1,
+        "edgeTeam": "Rangers",
+        "edgeHits": 1.6,
+        "first5EdgeTeam": "Rangers",
+        "first5EdgeHits": 0.1,
+        "lateEdgeTeam": "Rangers",
+        "lateEdgeHits": 0.5,
+        "bridgeEdgeTeam": "Rangers",
+        "bridgeEdgeScore": 4,
+        "awayLikelyRelievers": [
+          {
+            "name": "Jalen Beeks",
+            "role": "middle",
+            "firstRelieverLikelihood": 82.8,
+            "availabilityScore": 95,
+            "bridgeScore": 81,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Cole Winn",
+            "role": "middle",
+            "firstRelieverLikelihood": 81.18,
+            "availabilityScore": 70.4,
+            "bridgeScore": 93.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Brennan Bernardino",
+            "role": "middle",
+            "firstRelieverLikelihood": 79.09,
+            "availabilityScore": 95,
+            "bridgeScore": 78.8,
+            "expectedOuts": 3.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Seth Halvorsen",
+            "role": "bridge",
+            "firstRelieverLikelihood": 70.95,
+            "availabilityScore": 24.85,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          }
+        ],
+        "awayBullpenExhaustion": 12.2,
+        "homeBullpenExhaustion": 35.3,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Volatile bat-misser",
+        "homePitcherType": "Traffic-risk lefty",
+        "awayProjectedRuns": 3.8,
+        "homeProjectedRuns": 3.6,
+        "awayFirst5ProjectedRuns": 2.2,
+        "homeFirst5ProjectedRuns": 2.2,
+        "awayLateProjectedRuns": 1.6,
+        "homeLateProjectedRuns": 1.4,
+        "postedTotal": 9.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.1,
+            "strength": "Strong",
+            "label": "Under 9.5",
+            "summary": "Under lean with a 2.1-run edge against 9.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.2,
+            "strength": "Strong",
+            "label": "Under 5.6",
+            "summary": "Under lean with a 1.2-run edge against 5.6."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 3.9",
+            "summary": "Under lean with a 0.9-run edge against 3.9."
+          },
+          "projectedFullTotalRuns": 7.4,
+          "projectedFirst5TotalRuns": 4.4,
+          "projectedLateTotalRuns": 3,
+          "derivedFirst5TotalLine": 5.6,
+          "derivedLateTotalLine": 3.9,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Rangers",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Rangers own the cleaner full-game traffic script at 8.4 projected hits.",
+              "Rangers have the better starter-window lane with 4.7 projected first-five hits.",
+              "Rangers still hold the better bridge-and-finish script once the bullpens take over.",
+              "Rangers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted away lineup yet.",
+              "Rangers look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          },
+          {
+            "teamName": "Rockies",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Mickey Moniak",
+                "tag": "thin | carry"
+              },
+              {
+                "name": "Hunter Goodman",
+                "tag": "thin | watch"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "No posted home lineup yet.",
+              "Mickey Moniak and Hunter Goodman are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Rangers carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Rangers",
+              "projection": "2.2 R",
+              "note": "Rangers still own the cleaner starter-phase traffic lane."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Rangers",
+              "projection": "1.6 R",
+              "note": "Rangers look cleaner once the game turns over to the bridge relievers."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Rangers",
+              "projection": "8.4 H",
+              "note": "Rangers finish with the stronger full-game hit and conversion path."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 73.4,
+        "lateInningStabilityIndex": 46,
+        "reliefPitchingRisk": 53,
+        "coinflipPressure": 37,
+        "pickBullpenScore": 65.6,
+        "oppBullpenScore": 60.8,
+        "pickStarterScore": 64.9,
+        "oppStarterScore": 52.9,
+        "projectedHitEdgeForPick": 1.6,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "athletics-angels",
+      "gameTitle": "Athletics @ Angels",
+      "awayTeam": "Athletics",
+      "homeTeam": "Los Angeles Angels",
+      "predictedTeam": "Athletics",
+      "predictedSide": "away",
+      "confidence": 64,
+      "volatility": 92,
+      "modelEdge": 12.6,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Standings profile",
+        "Projected hit volume",
+        "Hit-production baseline"
+      ],
+      "projection": {
+        "awayProjectedHits": 9.5,
+        "homeProjectedHits": 5.3,
+        "awayHitEfficiencyPct": 27.4,
+        "homeHitEfficiencyPct": 15.5,
+        "awayFirst5ProjectedHits": 5.7,
+        "homeFirst5ProjectedHits": 3.1,
+        "awayFirst5HitEfficiencyPct": 29.8,
+        "homeFirst5HitEfficiencyPct": 16.4,
+        "awayLateProjectedHits": 3.3,
+        "homeLateProjectedHits": 2.7,
+        "awayLateHitEfficiencyPct": 21.1,
+        "homeLateHitEfficiencyPct": 17.5,
+        "awayBullpenChainScore": 73.3,
+        "homeBullpenChainScore": 91.5,
+        "edgeTeam": "Athletics",
+        "edgeHits": 4.2,
+        "first5EdgeTeam": "Athletics",
+        "first5EdgeHits": 2.6,
+        "lateEdgeTeam": "Athletics",
+        "lateEdgeHits": 0.6,
+        "bridgeEdgeTeam": "Angels",
+        "bridgeEdgeScore": 18.2,
+        "awayLikelyRelievers": [
+          {
+            "name": "Justin Sterner",
+            "role": "bridge",
+            "firstRelieverLikelihood": 80.05,
+            "availabilityScore": 50.85,
+            "bridgeScore": 95,
+            "expectedOuts": 2.5,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          },
+          {
+            "name": "Joel Kuhnel",
+            "role": "middle",
+            "firstRelieverLikelihood": 77.14,
+            "availabilityScore": 74.9,
+            "bridgeScore": 83.5,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Sam Bachman",
+            "role": "bridge",
+            "firstRelieverLikelihood": 90.5,
+            "availabilityScore": 95,
+            "bridgeScore": 95,
+            "expectedOuts": 2.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Chase Silseth",
+            "role": "bridge",
+            "firstRelieverLikelihood": 83.87,
+            "availabilityScore": 76.05,
+            "bridgeScore": 95,
+            "expectedOuts": 2.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "awayBullpenExhaustion": 32.5,
+        "homeBullpenExhaustion": 10.5,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Craft righty",
+        "homePitcherType": "Traffic-risk righty",
+        "awayProjectedRuns": 4.5,
+        "homeProjectedRuns": 2.6,
+        "awayFirst5ProjectedRuns": 2.8,
+        "homeFirst5ProjectedRuns": 1.3,
+        "awayLateProjectedRuns": 1.7,
+        "homeLateProjectedRuns": 1.3,
+        "postedTotal": 9,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.9,
+            "strength": "Strong",
+            "label": "Under 9",
+            "summary": "Under lean with a 1.9-run edge against 9."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.1,
+            "strength": "Clear",
+            "label": "Under 5.2",
+            "summary": "Under lean with a 1.1-run edge against 5.2."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.8,
+            "strength": "Clear",
+            "label": "Under 3.8",
+            "summary": "Under lean with a 0.8-run edge against 3.8."
+          },
+          "projectedFullTotalRuns": 7.1,
+          "projectedFirst5TotalRuns": 4.1,
+          "projectedLateTotalRuns": 3,
+          "derivedFirst5TotalLine": 5.2,
+          "derivedLateTotalLine": 3.8,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Athletics",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Shea Langeliers",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Athletics own the cleaner full-game traffic script at 9.5 projected hits.",
+              "Athletics have the better starter-window lane with 5.7 projected first-five hits.",
+              "Athletics still hold the better bridge-and-finish script once the bullpens take over.",
+              "No posted away lineup yet.",
+              "Shea Langeliers is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Angels",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Angels also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Angels look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Athletics carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Athletics",
+              "projection": "2.8 R",
+              "note": "Athletics lean on Shea Langeliers to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Athletics",
+              "projection": "1.7 R",
+              "note": "Athletics keep more late scoring paths alive, with Shea Langeliers plus the Angels bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Athletics",
+              "projection": "9.5 H",
+              "note": "Athletics finish with the stronger aggregate traffic path, anchored by Shea Langeliers."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 84.4,
+        "lateInningStabilityIndex": 62.2,
+        "reliefPitchingRisk": 70.9,
+        "coinflipPressure": 42,
+        "pickBullpenScore": 55.6,
+        "oppBullpenScore": 50.5,
+        "pickStarterScore": 66,
+        "oppStarterScore": 58,
+        "projectedHitEdgeForPick": 4.2,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "dodgers-padres",
+      "gameTitle": "Dodgers @ Padres",
+      "awayTeam": "Los Angeles Dodgers",
+      "homeTeam": "San Diego Padres",
+      "predictedTeam": "Los Angeles Dodgers",
+      "predictedSide": "away",
+      "confidence": 67,
+      "volatility": 66,
+      "modelEdge": 5.4,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Market price",
+        "Hit-production baseline",
+        "Projected hit volume"
+      ],
+      "projection": {
+        "awayProjectedHits": 6.8,
+        "homeProjectedHits": 5.2,
+        "awayHitEfficiencyPct": 19.7,
+        "homeHitEfficiencyPct": 15.2,
+        "awayFirst5ProjectedHits": 4.9,
+        "homeFirst5ProjectedHits": 2.7,
+        "awayFirst5HitEfficiencyPct": 25.5,
+        "homeFirst5HitEfficiencyPct": 14.3,
+        "awayLateProjectedHits": 2,
+        "homeLateProjectedHits": 2.3,
+        "awayLateHitEfficiencyPct": 12.9,
+        "homeLateHitEfficiencyPct": 15.1,
+        "awayBullpenChainScore": 84.9,
+        "homeBullpenChainScore": 96,
+        "edgeTeam": "Dodgers",
+        "edgeHits": 1.6,
+        "first5EdgeTeam": "Dodgers",
+        "first5EdgeHits": 2.2,
+        "lateEdgeTeam": "Padres",
+        "lateEdgeHits": 0.3,
+        "bridgeEdgeTeam": "Padres",
+        "bridgeEdgeScore": 11.1,
+        "awayLikelyRelievers": [
+          {
+            "name": "Edgardo Henriquez",
+            "role": "bridge",
+            "firstRelieverLikelihood": 85.49,
+            "availabilityScore": 73.55,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Blake Treinen",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.68,
+            "availabilityScore": 49.8,
+            "bridgeScore": 95,
+            "expectedOuts": 2.75,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Ron Marinaccio",
+            "role": "bridge",
+            "firstRelieverLikelihood": 90.5,
+            "availabilityScore": 95,
+            "bridgeScore": 95,
+            "expectedOuts": 6.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Wandy Peralta",
+            "role": "bridge",
+            "firstRelieverLikelihood": 84.09,
+            "availabilityScore": 76.7,
+            "bridgeScore": 95,
+            "expectedOuts": 5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "awayBullpenExhaustion": 25.3,
+        "homeBullpenExhaustion": 21.3,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Contact suppressor",
+        "homePitcherType": "Contact suppressor",
+        "awayProjectedRuns": 3.1,
+        "homeProjectedRuns": 2.1,
+        "awayFirst5ProjectedRuns": 2.1,
+        "homeFirst5ProjectedRuns": 1.1,
+        "awayLateProjectedRuns": 1,
+        "homeLateProjectedRuns": 1,
+        "postedTotal": 7.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.3,
+            "strength": "Strong",
+            "label": "Under 7.5",
+            "summary": "Under lean with a 2.3-run edge against 7.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.4,
+            "strength": "Strong",
+            "label": "Under 4.6",
+            "summary": "Under lean with a 1.4-run edge against 4.6."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 2.9",
+            "summary": "Under lean with a 0.9-run edge against 2.9."
+          },
+          "projectedFullTotalRuns": 5.2,
+          "projectedFirst5TotalRuns": 3.2,
+          "projectedLateTotalRuns": 2,
+          "derivedFirst5TotalLine": 4.6,
+          "derivedLateTotalLine": 2.9,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Dodgers",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Max Muncy",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Dodgers own the cleaner full-game traffic script at 6.8 projected hits.",
+              "Dodgers have the better starter-window lane with 4.9 projected first-five hits.",
+              "No posted away lineup yet.",
+              "Max Muncy is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Padres",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Gavin Sheets",
+                "tag": "thin | heater"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Padres still hold the better bridge-and-finish script once the bullpens take over.",
+              "Padres also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Gavin Sheets is the best current carry bat in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Dodgers rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Dodgers",
+              "projection": "2.1 R",
+              "note": "Dodgers lean on Max Muncy to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Padres",
+              "projection": "1 R",
+              "note": "Padres keep more late scoring paths alive, with Gavin Sheets plus the Padres bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Dodgers",
+              "projection": "6.8 H",
+              "note": "Dodgers finish with the stronger aggregate traffic path, anchored by Max Muncy."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 53.6,
+        "lateInningStabilityIndex": 60.3,
+        "reliefPitchingRisk": 56.1,
+        "coinflipPressure": 34,
+        "pickBullpenScore": 67.5,
+        "oppBullpenScore": 67.7,
+        "pickStarterScore": 67.9,
+        "oppStarterScore": 73.1,
+        "projectedHitEdgeForPick": 1.6,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "giants-diamondbacks",
+      "gameTitle": "Giants @ Diamondbacks",
+      "awayTeam": "San Francisco Giants",
+      "homeTeam": "Arizona Diamondbacks",
+      "predictedTeam": "San Francisco Giants",
+      "predictedSide": "away",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 17.1,
+      "sourceLabel": "Moneyline + listed starter data + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Starter ERA",
+        "Projected hit volume",
+        "Hit-production baseline"
+      ],
+      "projection": {
+        "awayProjectedHits": 10.8,
+        "homeProjectedHits": 6,
+        "awayHitEfficiencyPct": 31.2,
+        "homeHitEfficiencyPct": 17.5,
+        "awayFirst5ProjectedHits": 6.3,
+        "homeFirst5ProjectedHits": 3.1,
+        "awayFirst5HitEfficiencyPct": 32.9,
+        "homeFirst5HitEfficiencyPct": 16.4,
+        "awayLateProjectedHits": 4.5,
+        "homeLateProjectedHits": 3,
+        "awayLateHitEfficiencyPct": 29.2,
+        "homeLateHitEfficiencyPct": 19.3,
+        "awayBullpenChainScore": 79.4,
+        "homeBullpenChainScore": 66.7,
+        "edgeTeam": "Giants",
+        "edgeHits": 4.8,
+        "first5EdgeTeam": "Giants",
+        "first5EdgeHits": 3.2,
+        "lateEdgeTeam": "Giants",
+        "lateEdgeHits": 1.5,
+        "bridgeEdgeTeam": "Giants",
+        "bridgeEdgeScore": 12.8,
+        "awayLikelyRelievers": [
+          {
+            "name": "Matt Gage",
+            "role": "bridge",
+            "firstRelieverLikelihood": 85.81,
+            "availabilityScore": 74.45,
+            "bridgeScore": 95,
+            "expectedOuts": 2.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Keaton Winn",
+            "role": "middle",
+            "firstRelieverLikelihood": 74.32,
+            "availabilityScore": 53.1,
+            "bridgeScore": 87.7,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Ryan Thompson",
+            "role": "middle",
+            "firstRelieverLikelihood": 75.3,
+            "availabilityScore": 63.05,
+            "bridgeScore": 87.7,
+            "expectedOuts": 1,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          },
+          {
+            "name": "Kevin Ginkel",
+            "role": "middle",
+            "firstRelieverLikelihood": 68.42,
+            "availabilityScore": 74.9,
+            "bridgeScore": 72.2,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          }
+        ],
+        "awayBullpenExhaustion": 32,
+        "homeBullpenExhaustion": 28.7,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Contact suppressor",
+        "homePitcherType": "Traffic-risk righty",
+        "awayProjectedRuns": 5.3,
+        "homeProjectedRuns": 2.8,
+        "awayFirst5ProjectedRuns": 3,
+        "homeFirst5ProjectedRuns": 1.3,
+        "awayLateProjectedRuns": 2.3,
+        "homeLateProjectedRuns": 1.5,
+        "postedTotal": 9,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 9",
+            "summary": "Under lean with a 0.9-run edge against 9."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -0.5,
+            "strength": "Lean",
+            "label": "Under 4.8",
+            "summary": "Under lean with a 0.5-run edge against 4.8."
+          },
+          "late": {
+            "lean": "Pass",
+            "edge": -0.4,
+            "strength": "Thin",
+            "label": "Hold 4.2",
+            "summary": "Model projection 3.8 is essentially on the posted 4.2."
+          },
+          "projectedFullTotalRuns": 8.1,
+          "projectedFirst5TotalRuns": 4.3,
+          "projectedLateTotalRuns": 3.8,
+          "derivedFirst5TotalLine": 4.8,
+          "derivedLateTotalLine": 4.2,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "Giants",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Casey Schmitt",
+                "tag": "thin | watch"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Giants own the cleaner full-game traffic script at 10.8 projected hits.",
+              "Giants have the better starter-window lane with 6.3 projected first-five hits.",
+              "Giants still hold the better bridge-and-finish script once the bullpens take over.",
+              "Giants also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted away lineup yet.",
+              "Casey Schmitt is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "Diamondbacks",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "No posted home lineup yet.",
+              "Diamondbacks look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Giants carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Giants",
+              "projection": "3 R",
+              "note": "Giants lean on Casey Schmitt to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Giants",
+              "projection": "2.3 R",
+              "note": "Giants keep more late scoring paths alive, with Casey Schmitt plus the Giants bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Giants",
+              "projection": "10.8 H",
+              "note": "Giants finish with the stronger aggregate traffic path, anchored by Casey Schmitt."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 98,
+        "lateInningStabilityIndex": 23.6,
+        "reliefPitchingRisk": 65,
+        "coinflipPressure": 51,
+        "pickBullpenScore": 45.5,
+        "oppBullpenScore": 45.5,
+        "pickStarterScore": 68.8,
+        "oppStarterScore": 52.1,
+        "projectedHitEdgeForPick": 4.8,
+        "hitEdgeAgainstPick": false
+      }
+    },
+    {
+      "predictionDate": "2026-05-18",
+      "modelName": "board-moneyline-v2-may18",
+      "gameId": "white-sox-mariners",
+      "gameTitle": "White Sox @ Mariners",
+      "awayTeam": "Chicago White Sox",
+      "homeTeam": "Seattle Mariners",
+      "predictedTeam": "Seattle Mariners",
+      "predictedSide": "home",
+      "confidence": 73,
+      "volatility": 71,
+      "modelEdge": 11.4,
+      "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Market price",
+        "Projected hit volume",
+        "Bullpen follow-through"
+      ],
+      "projection": {
+        "awayProjectedHits": 6.3,
+        "homeProjectedHits": 8.9,
+        "awayHitEfficiencyPct": 18.2,
+        "homeHitEfficiencyPct": 25.9,
+        "awayFirst5ProjectedHits": 4.6,
+        "homeFirst5ProjectedHits": 4.6,
+        "awayFirst5HitEfficiencyPct": 24.1,
+        "homeFirst5HitEfficiencyPct": 24.2,
+        "awayLateProjectedHits": 2.5,
+        "homeLateProjectedHits": 3.5,
+        "awayLateHitEfficiencyPct": 16.3,
+        "homeLateHitEfficiencyPct": 22.8,
+        "awayBullpenChainScore": 80.1,
+        "homeBullpenChainScore": 89.6,
+        "edgeTeam": "Mariners",
+        "edgeHits": 2.6,
+        "first5EdgeTeam": "White Sox",
+        "first5EdgeHits": 0,
+        "lateEdgeTeam": "Mariners",
+        "lateEdgeHits": 1,
+        "bridgeEdgeTeam": "Mariners",
+        "bridgeEdgeScore": 9.4,
+        "awayLikelyRelievers": [
+          {
+            "name": "Brandon Eisert",
+            "role": "bridge",
+            "firstRelieverLikelihood": 76.69,
+            "availabilityScore": 67.25,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "Sean Newcomb",
+            "role": "middle",
+            "firstRelieverLikelihood": 76.18,
+            "availabilityScore": 46.95,
+            "bridgeScore": 95,
+            "expectedOuts": 4.5,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-17"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Nick Davila",
+            "role": "bridge",
+            "firstRelieverLikelihood": 87.68,
+            "availabilityScore": 72.65,
+            "bridgeScore": 95,
+            "expectedOuts": 3.25,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-16"
+          },
+          {
+            "name": "José A. Ferrer",
+            "role": "bridge",
+            "firstRelieverLikelihood": 83.94,
+            "availabilityScore": 76.25,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 39.1,
+        "homeBullpenExhaustion": 17.8,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Balanced lefty",
+        "homePitcherType": "Strike-throwing righty",
+        "awayProjectedRuns": 3.5,
+        "homeProjectedRuns": 4.1,
+        "awayFirst5ProjectedRuns": 2.2,
+        "homeFirst5ProjectedRuns": 2.2,
+        "awayLateProjectedRuns": 1.3,
+        "homeLateProjectedRuns": 1.9,
+        "postedTotal": 7,
+        "totals": {
+          "fullGame": {
+            "lean": "Over",
+            "edge": 0.6,
+            "strength": "Lean",
+            "label": "Over 7",
+            "summary": "Over lean with a 0.6-run edge against 7."
+          },
+          "first5": {
+            "lean": "Pass",
+            "edge": 0.3,
+            "strength": "Thin",
+            "label": "Hold 4.1",
+            "summary": "Model projection 4.4 is essentially on the posted 4.1."
+          },
+          "late": {
+            "lean": "Pass",
+            "edge": 0.3,
+            "strength": "Thin",
+            "label": "Hold 2.9",
+            "summary": "Model projection 3.2 is essentially on the posted 2.9."
+          },
+          "projectedFullTotalRuns": 7.6,
+          "projectedFirst5TotalRuns": 4.4,
+          "projectedLateTotalRuns": 3.2,
+          "derivedFirst5TotalLine": 4.1,
+          "derivedLateTotalLine": 2.9,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet."
+        },
+        "teamScripts": [
+          {
+            "teamName": "White Sox",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Munetaka Murakami",
+                "tag": "live | active"
+              },
+              {
+                "name": "Colson Montgomery",
+                "tag": "thin | heater"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "White Sox have the better starter-window lane with 4.6 projected first-five hits.",
+              "No posted away lineup yet.",
+              "Munetaka Murakami and Colson Montgomery are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Mariners",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "winPath": [
+              "Mariners own the cleaner full-game traffic script at 8.9 projected hits.",
+              "Mariners still hold the better bridge-and-finish script once the bullpens take over.",
+              "Mariners also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Mariners look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "White Sox rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "White Sox",
+              "projection": "2.2 R",
+              "note": "White Sox lean on Munetaka Murakami, Colson Montgomery to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Mariners",
+              "projection": "1.9 R",
+              "note": "Mariners look cleaner once the game turns over to the bridge relievers."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Mariners",
+              "projection": "8.9 H",
+              "note": "Mariners finish with the stronger full-game hit and conversion path."
+            }
+          ]
+        }
+      },
+      "indicators": {
+        "starterLeverageIndex": 79.6,
+        "lateInningStabilityIndex": 69.5,
+        "reliefPitchingRisk": 41,
+        "coinflipPressure": 18,
+        "pickBullpenScore": 68,
+        "oppBullpenScore": 45.5,
+        "pickStarterScore": 67.1,
+        "oppStarterScore": 54.9,
+        "projectedHitEdgeForPick": 2.6,
+        "hitEdgeAgainstPick": false
+      }
+    }
+  ]
+}
