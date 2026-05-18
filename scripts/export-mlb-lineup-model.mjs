@@ -768,6 +768,12 @@ const buildPlayerLineupEntry = ({
 const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
   const sortedDesc = [...lineup].sort((left, right) => right.metrics.matchupGrade - left.metrics.matchupGrade)
   const sortedAsc = [...lineup].sort((left, right) => left.metrics.matchupGrade - right.metrics.matchupGrade)
+  const splitEdgeFilter = (entry) => entry.tags.includes('split edge')
+  const sameHandFilter = (entry) =>
+    entry.bats && opposingPitcher?.handedness && entry.bats !== 'S' && entry.bats === opposingPitcher.handedness
+  const oppositeHandFilter = (entry) =>
+    entry.bats === 'S' ||
+    (entry.bats && opposingPitcher?.handedness && entry.bats !== opposingPitcher.handedness)
   const overperformHitters = sortedDesc
     .filter((entry) => entry.metrics.matchupGrade >= 1.2)
     .slice(0, 3)
@@ -786,12 +792,43 @@ const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
   const middleScore = average(lineup.slice(3, 6).map((entry) => entry.metrics.matchupScore))
   const depthScore = average(lineup.slice(6).map((entry) => entry.metrics.matchupScore))
   const averageMatchupGrade = average(lineup.map((entry) => entry.metrics.matchupGrade))
-  const platoonCount = lineup.filter((entry) => entry.tags.includes('split edge')).length
+  const platoonCount = lineup.filter(splitEdgeFilter).length
   const powerCount = lineup.filter((entry) => entry.metrics.powerScore >= 62).length
   const contactCount = lineup.filter((entry) => entry.metrics.contactScore >= 60).length
   const heaterCount = lineup.filter((entry) => entry.tags.includes('heater')).length
   const suppressorCount = underperformHitters.length
   const starterThreatCount = lineup.filter((entry) => entry.metrics.matchupGrade >= 2).length
+  const switchCount = lineup.filter((entry) => entry.bats === 'S').length
+  const oppositeHandCount = lineup.filter(oppositeHandFilter).length
+  const sameHandCount = lineup.filter(sameHandFilter).length
+  const topThirdSplitCount = lineup.slice(0, 3).filter(splitEdgeFilter).length
+  const weightedSplitGrade = average(
+    lineup
+      .filter(splitEdgeFilter)
+      .map((entry) => entry.metrics.matchupGrade)
+  )
+  const platoonPressureIndex = clamp(
+    50 +
+      (platoonCount - 4) * 4 +
+      (topThirdSplitCount - 1) * 5 +
+      (oppositeHandCount - sameHandCount) * 2.2 +
+      (switchCount ? switchCount * 1.4 : 0) +
+      (Number.isFinite(weightedSplitGrade) ? weightedSplitGrade * 4.4 : 0),
+    18,
+    94
+  )
+  const starterPressureIndex = clamp(
+    46 +
+      (Number(topThirdScore || 50) - 50) * 0.55 +
+      (Number(depthScore || 50) - 50) * 0.15 +
+      (starterThreatCount - 3) * 4 +
+      (heaterCount - suppressorCount) * 2.4 +
+      (powerCount - 2) * 2 +
+      (Number(averageMatchupGrade || 0)) * 5.6 +
+      (platoonPressureIndex - 50) * 0.34,
+    18,
+    94
+  )
   const pressureLabel =
     topThirdScore >= 63 || overperformHitters.some((entry) => entry.tag.includes('carry'))
       ? 'carry bats live'
@@ -816,8 +853,14 @@ const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
       contactCount,
       powerCount,
       platoonCount,
+      oppositeHandCount,
+      sameHandCount,
+      switchCount,
+      topThirdSplitCount,
       heaterCount,
       suppressorCount,
+      platoonPressureIndex: roundToTenths(platoonPressureIndex),
+      starterPressureIndex: roundToTenths(starterPressureIndex),
       topThirdScore: roundToTenths(topThirdScore ?? 50),
       depthScore: roundToTenths(depthScore ?? 50)
     },

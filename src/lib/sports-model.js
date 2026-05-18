@@ -820,6 +820,7 @@ const buildProjectedHitProfile = ({
   role = '',
   offenseProfile = {},
   savantProfile = {},
+  lineupProfile = null,
   opposingStarter = null,
   opposingBullpen = {},
   opposingBullpenChain = null,
@@ -850,6 +851,30 @@ const buildProjectedHitProfile = ({
     starterPhaseProjection += (Number(savantProfile.barrelPct) - 7.5) * 0.06
     starterPhaseProjection += (Number(savantProfile.xwoba) - 0.315) * 2.8
     qualityNotes.push('team contact quality')
+  }
+
+  if (lineupProfile) {
+    if (Number.isFinite(lineupProfile.averageMatchupGrade)) {
+      starterPhaseProjection += lineupProfile.averageMatchupGrade * 0.14
+    }
+
+    if (Number.isFinite(lineupProfile.starterThreatCount)) {
+      starterPhaseProjection += (lineupProfile.starterThreatCount - 3) * 0.08
+    }
+
+    if (Number.isFinite(lineupProfile.topThirdScore)) {
+      starterPhaseProjection += (lineupProfile.topThirdScore - 50) * 0.018
+    }
+
+    if (Number.isFinite(lineupProfile.platoonPressureIndex)) {
+      starterPhaseProjection += (lineupProfile.platoonPressureIndex - 50) * 0.012
+    }
+
+    if (Number.isFinite(lineupProfile.starterPressureIndex)) {
+      starterPhaseProjection += (lineupProfile.starterPressureIndex - 50) * 0.014
+    }
+
+    qualityNotes.push('lineup split pressure')
   }
 
   if (opposingStarter) {
@@ -941,13 +966,50 @@ const buildProjectedHitProfile = ({
     18.3,
     19.8
   )
-  const starterCoverageFirst5 = clamp(
+  let starterCoverageFirst5 = clamp(
     Number.isFinite(opposingStarter?.avgInningsPerStart)
       ? opposingStarter.avgInningsPerStart / 5
       : 0.9,
     0.72,
     1
   )
+
+  if (opposingStarter?.recentForm && Number.isFinite(opposingStarter.recentFormWeight)) {
+    const recent = opposingStarter.recentForm
+    const weight = opposingStarter.recentFormWeight
+
+    if (Number.isFinite(recent.inningsPerStart)) {
+      starterCoverageFirst5 += (recent.inningsPerStart - 5) * 0.024 * (0.45 + weight)
+    }
+
+    if (Number.isFinite(recent.shortStartRate)) {
+      starterCoverageFirst5 -= recent.shortStartRate * 0.11 * (0.45 + weight)
+    }
+
+    if (Number.isFinite(recent.qualityStartRate)) {
+      starterCoverageFirst5 += recent.qualityStartRate * 0.05 * (0.45 + weight)
+    }
+
+    if (Number.isFinite(recent.runVolatility)) {
+      starterCoverageFirst5 -= clamp(recent.runVolatility - 1.1, 0, 2.6) * 0.018 * (0.45 + weight)
+    }
+  }
+
+  if (lineupProfile) {
+    if (Number.isFinite(lineupProfile.starterPressureIndex)) {
+      starterCoverageFirst5 -= (lineupProfile.starterPressureIndex - 50) * 0.0025
+    }
+
+    if (Number.isFinite(lineupProfile.topThirdScore)) {
+      starterCoverageFirst5 -= Math.max(lineupProfile.topThirdScore - 58, 0) * 0.0016
+    }
+
+    if (Number.isFinite(lineupProfile.oppositeHandCount)) {
+      starterCoverageFirst5 -= Math.max(lineupProfile.oppositeHandCount - 5, 0) * 0.008
+    }
+  }
+
+  starterCoverageFirst5 = clamp(starterCoverageFirst5, 0.58, 1)
   const first5ProjectionFullScale =
     starterPhaseProjection + bullpenAdjustment * (1 - starterCoverageFirst5) * 0.45
   const starterPhaseHits = clamp(
@@ -974,6 +1036,57 @@ const buildProjectedHitProfile = ({
       : null,
     notes: qualityNotes
   }
+}
+
+const buildStarterHoldConfidence = ({ starter = null, lineupProfile = null }) => {
+  if (!starter) return null
+
+  let score = 56
+
+  if (Number.isFinite(starter.avgInningsPerStart)) {
+    score += (starter.avgInningsPerStart - 5.2) * 7
+  }
+
+  if (starter.profileType === 'Power' || starter.profileType === 'Contact suppressor') score += 4
+  if (starter.profileType === 'Traffic-risk') score -= 6
+  if (starter.profileType === 'Volatile bat-misser') score -= 3
+
+  if (starter.recentForm && Number.isFinite(starter.recentFormWeight)) {
+    const recent = starter.recentForm
+    const weight = starter.recentFormWeight
+
+    if (Number.isFinite(recent.inningsPerStart)) {
+      score += (recent.inningsPerStart - 5.1) * 9 * (0.45 + weight)
+    }
+
+    if (Number.isFinite(recent.shortStartRate)) {
+      score -= recent.shortStartRate * 20 * (0.45 + weight)
+    }
+
+    if (Number.isFinite(recent.qualityStartRate)) {
+      score += recent.qualityStartRate * 14 * (0.45 + weight)
+    }
+
+    if (Number.isFinite(recent.runVolatility)) {
+      score -= clamp(recent.runVolatility - 0.9, 0, 3) * 5.5 * (0.45 + weight)
+    }
+
+    if (Number.isFinite(recent.homeRunsAllowedPerStart)) {
+      score -= Math.max(recent.homeRunsAllowedPerStart - 0.7, 0) * 7 * (0.45 + weight)
+    }
+  }
+
+  if (lineupProfile) {
+    if (Number.isFinite(lineupProfile.starterPressureIndex)) {
+      score -= (lineupProfile.starterPressureIndex - 50) * 0.42
+    }
+
+    if (Number.isFinite(lineupProfile.platoonPressureIndex)) {
+      score -= (lineupProfile.platoonPressureIndex - 50) * 0.24
+    }
+  }
+
+  return roundToTenths(clamp(score, 18, 92))
 }
 
 const normalizeTeamAlias = (value = '') => {
@@ -1406,11 +1519,11 @@ const buildMlbLineupMatchupSignal = (game, participants) => {
     0.14,
     [
       {
-        label: `Grade ${awayContext.averageMatchupGrade >= 0 ? '+' : ''}${awayContext.averageMatchupGrade.toFixed(2)} | platoon ${awayContext.platoonCount} | power ${awayContext.powerCount}`,
+        label: `Grade ${awayContext.averageMatchupGrade >= 0 ? '+' : ''}${awayContext.averageMatchupGrade.toFixed(2)} | platoon ${awayContext.platoonCount} | pressure ${Number(awayContext.starterPressureIndex || 50).toFixed(0)}`,
         score: scores[0]
       },
       {
-        label: `Grade ${homeContext.averageMatchupGrade >= 0 ? '+' : ''}${homeContext.averageMatchupGrade.toFixed(2)} | platoon ${homeContext.platoonCount} | power ${homeContext.powerCount}`,
+        label: `Grade ${homeContext.averageMatchupGrade >= 0 ? '+' : ''}${homeContext.averageMatchupGrade.toFixed(2)} | platoon ${homeContext.platoonCount} | pressure ${Number(homeContext.starterPressureIndex || 50).toFixed(0)}`,
         score: scores[1]
       }
     ],
@@ -1519,6 +1632,7 @@ const buildMlbAnalysisContext = (game, participants) => {
       role: participants[0]?.role,
       offenseProfile: offenseProfiles[0],
       savantProfile: savantProfiles[0],
+      lineupProfile: lineupProfiles[0],
       opposingStarter: starters[1],
       opposingBullpen: bullpenProfiles[1],
       opposingBullpenChain: bullpenChainProfiles[1],
@@ -1528,10 +1642,21 @@ const buildMlbAnalysisContext = (game, participants) => {
       role: participants[1]?.role,
       offenseProfile: offenseProfiles[1],
       savantProfile: savantProfiles[1],
+      lineupProfile: lineupProfiles[1],
       opposingStarter: starters[0],
       opposingBullpen: bullpenProfiles[0],
       opposingBullpenChain: bullpenChainProfiles[0],
       parkContext: game.parkContext
+    })
+  ]
+  const starterHoldConfidence = [
+    buildStarterHoldConfidence({
+      starter: starters[0],
+      lineupProfile: lineupProfiles[1]
+    }),
+    buildStarterHoldConfidence({
+      starter: starters[1],
+      lineupProfile: lineupProfiles[0]
     })
   ]
   const starterScores = starters.every(Boolean) ? starters.map((starter) => starterScore(starter)) : []
@@ -1813,6 +1938,8 @@ const buildMlbAnalysisContext = (game, participants) => {
         homeBullpenExhaustionLabel: getBullpenExhaustionLabel(bullpenExhaustionScores[1]),
         awayPitcherType: starters[0]?.profileLabel ?? 'Unknown sample starter',
         homePitcherType: starters[1]?.profileLabel ?? 'Unknown sample starter',
+        awayStarterHoldConfidence: starterHoldConfidence[0],
+        homeStarterHoldConfidence: starterHoldConfidence[1],
         awayProjectedRuns: projectedRunProfiles[0].fullRuns,
         homeProjectedRuns: projectedRunProfiles[1].fullRuns,
         awayFirst5ProjectedRuns: projectedRunProfiles[0].first5Runs,
@@ -1957,6 +2084,17 @@ const buildMlbAnalysisContext = (game, participants) => {
 
     if (starters[0].handedness && starters[1].handedness && starters[0].handedness !== starters[1].handedness) {
       volatilityModifiers.push({ label: 'Handedness contrast can change game shape quickly', delta: 2 })
+    }
+
+    if (
+      lineupProfiles.some(
+        (profile) =>
+          profile &&
+          Number.isFinite(profile.platoonPressureIndex) &&
+          profile.platoonPressureIndex >= 62
+      )
+    ) {
+      volatilityModifiers.push({ label: 'One lineup carries real platoon pressure versus the listed starter hand', delta: 3 })
     }
 
     if (Math.abs(starters[0].strikeouts - starters[1].strikeouts) >= 14) {
@@ -2157,10 +2295,12 @@ const buildMlbAnalysisContext = (game, participants) => {
     mlbRiskContext: {
       starters,
       starterScores,
+      starterHoldConfidence,
       offenseScores,
       bullpenScores,
       bullpenChainScores,
       savantScores,
+      lineupProfiles,
       lineupScores,
       projectedHitProfiles
     }
@@ -2422,6 +2562,10 @@ const buildMlbDecisionIndicators = ({
   const opponentBullpenChainScore = riskContext.bullpenChainScores?.[loserIndex]
   const pickStarterScore = riskContext.starterScores?.[winnerIndex]
   const opponentStarterScore = riskContext.starterScores?.[loserIndex]
+  const pickStarterHoldConfidence = riskContext.starterHoldConfidence?.[winnerIndex]
+  const opponentStarterHoldConfidence = riskContext.starterHoldConfidence?.[loserIndex]
+  const pickLineupPressure = riskContext.lineupProfiles?.[winnerIndex]?.starterPressureIndex
+  const opponentLineupPressure = riskContext.lineupProfiles?.[loserIndex]?.starterPressureIndex
   const pickProjectedHits = riskContext.projectedHitProfiles?.[winnerIndex]?.projectedHits
   const opponentProjectedHits = riskContext.projectedHitProfiles?.[loserIndex]?.projectedHits
   const projectedHitEdgeForPick =
@@ -2445,7 +2589,11 @@ const buildMlbDecisionIndicators = ({
   const starterLeverageIndex = clamp(
     50 +
       (Number.isFinite(starterGap) ? starterGap * 1.15 : 0) +
-      (Number.isFinite(projectedHitEdgeForPick) ? projectedHitEdgeForPick * 6 : 0),
+      (Number.isFinite(projectedHitEdgeForPick) ? projectedHitEdgeForPick * 6 : 0) +
+      (Number.isFinite(pickStarterHoldConfidence) && Number.isFinite(opponentStarterHoldConfidence)
+        ? (pickStarterHoldConfidence - opponentStarterHoldConfidence) * 0.35
+        : 0) -
+      (Number.isFinite(opponentLineupPressure) ? Math.max(opponentLineupPressure - 58, 0) * 0.28 : 0),
     0,
     100
   )
@@ -2476,6 +2624,32 @@ const buildMlbDecisionIndicators = ({
   if (Number.isFinite(starterGap)) {
     if (starterGap >= 8) reliefPitchingRisk += 5
     if (starterGap >= 14) reliefPitchingRisk += 4
+  }
+
+  if (Number.isFinite(opponentStarterHoldConfidence) && opponentStarterHoldConfidence <= 46) {
+    notes.push({
+      label: 'Opposing starter hold is shakier than the season line alone suggests',
+      delta: -2
+    })
+    confidenceDelta += 1
+  }
+
+  if (Number.isFinite(pickStarterHoldConfidence) && pickStarterHoldConfidence <= 44) {
+    notes.push({
+      label: 'Pick still leans on a starter with shaky innings hold confidence',
+      delta: 4
+    })
+    volatilityDelta += 3
+    coinflipPressure += 6
+  }
+
+  if (Number.isFinite(opponentLineupPressure) && opponentLineupPressure >= 64) {
+    notes.push({
+      label: 'Opponent lineup has real split and top-order pressure against this starter',
+      delta: 4
+    })
+    volatilityDelta += 3
+    coinflipPressure += 7
   }
 
   if (hitEdgeAgainstPick) {

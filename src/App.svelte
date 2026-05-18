@@ -1368,6 +1368,12 @@
                               <div class="model-note-row model-note-row--pitchers">
                                 <span>{game.matchup[0].name}: {game.analysis.mlbProjection.awayPitcherType}</span>
                                 <span>{game.matchup[1].name}: {game.analysis.mlbProjection.homePitcherType}</span>
+                                {#if game.analysis.mlbProjection.awayStarterHoldConfidence !== null}
+                                  <span>{game.starterContext.away.fullName}: hold {game.analysis.mlbProjection.awayStarterHoldConfidence}</span>
+                                {/if}
+                                {#if game.analysis.mlbProjection.homeStarterHoldConfidence !== null}
+                                  <span>{game.starterContext.home.fullName}: hold {game.analysis.mlbProjection.homeStarterHoldConfidence}</span>
+                                {/if}
                                 {#if game.analysis.mlbProjection.bridgeEdgeTeam}
                                   <span>Bridge edge: {game.analysis.mlbProjection.bridgeEdgeTeam} +{game.analysis.mlbProjection.bridgeEdgeScore}</span>
                                 {/if}
