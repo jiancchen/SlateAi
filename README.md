@@ -109,6 +109,7 @@ For a live MLB prediction day, the warehouse now has a concrete preflight:
 ```bash
 npm run data:prep:mlb-day -- --date YYYY-MM-DD --lookback-days 3
 npm run data:list:probables -- --date YYYY-MM-DD
+npm run data:generate:mlb-day -- --date YYYY-MM-DD
 npm run data:export:mlb-lineups -- --date YYYY-MM-DD
 npm run data:list:relievers -- --date YYYY-MM-DD
 ```

@@ -1,29 +1,31 @@
 import { createSportsMatchModel } from './sports-model.js'
+import { mlbGames, mlbNotes, mlbSources } from './day-2026-05-17-mlb.js'
 
 export const slateMeta = {
-  title: 'Sunday WNBA + Game 7 Desk',
+  title: 'Sunday All-Sports Desk',
   date: 'May 17, 2026',
   isoDate: '2026-05-17',
   timeZone: 'America/Los_Angeles',
   subtitle:
-    'A focused Sunday board built around the four live WNBA games and the one NBA Game 7, using official league team and player stats plus live board pricing.',
+    'A full Sunday board with the refreshed May 17 MLB slate, the four live WNBA games, and the one NBA Game 7, using official league data, live board pricing, lineup context, and bullpen-chain prep.',
   notes: [
+    ...mlbNotes,
     'The WNBA board is back live on Sunday after the official May 16 schedule came back empty.',
-    'This pass intentionally focuses on WNBA plus the one NBA Game 7 so the cross-sport desk can stay sharp without pretending the MLB layer was refreshed for the same date.',
     'The Game 7 card is deliberately tagged as a volatility board even with a home lean, because single-game elimination pressure can flip a clean edge into a shot-making war quickly.'
   ]
 }
 
-export const filters = ['All', 'WNBA', 'NBA']
+export const filters = ['All', 'MLB', 'WNBA', 'NBA']
 
 export const oddsMeta = {
-  provider: 'Official league stats + live odds board snapshots',
-  snapshot: 'May 16, 2026, 9:25 AM PT',
+  provider: 'Official league stats + live board snapshots',
+  snapshot: 'May 17, 2026, late morning PT',
   note:
-    'WNBA team and player context comes from official stats.wnba.com team and player dashboards, then layers live moneyline snapshots from the Sunday odds boards. The NBA Game 7 uses the official playoff schedule and the live same-day board price.'
+    'MLB pricing comes from the accessible ScoresAndOdds matchup pages, then layers official probable starters, current standings, team hit context, bullpen quality, bullpen-chain workload, and posted lineups. WNBA and NBA continue to use the official league dashboards plus the live board snapshots.'
 }
 
 export const sources = [
+  ...mlbSources,
   {
     label: 'WNBA official scoreboard for May 17, 2026',
     url: 'https://stats.wnba.com/stats/scoreboardV2?GameDate=05/17/2026&LeagueID=10&DayOffset=0'
@@ -60,6 +62,7 @@ const makeBoardOdds = ({ spread = '', total = '', moneyline = '', provider = odd
 const makeGame = (game) => createSportsMatchModel(game, oddsMeta.provider)
 
 export const games = [
+  ...mlbGames,
   makeGame({
     id: 'aces-dream-2026-05-17',
     league: 'WNBA',

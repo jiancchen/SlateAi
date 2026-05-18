@@ -476,6 +476,12 @@ h3 {
   align-items: start;
 }
 
+.browser-toolbar-meta {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
 .browser-toolbar-stats,
 .model-chip-row,
 .model-note-row,
@@ -500,6 +506,69 @@ h3 {
   padding: 4px 7px;
   background: rgba(255, 255, 255, 0.06);
   color: var(--heading);
+}
+
+.sim-toolbar-control {
+  min-width: 232px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+  display: grid;
+  gap: 6px;
+}
+
+.sim-toolbar-copy,
+.simulation-summary-row,
+.simulation-boxscore-head,
+.simulation-board-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.sim-toolbar-copy span,
+.simulation-summary-row p,
+.simulation-boxscore-head p,
+.simulation-boxscore-splits span,
+.simulation-driver-copy,
+.simulation-note-grid p,
+.simulation-empty-state p {
+  color: var(--muted);
+}
+
+.sim-toolbar-copy strong,
+.simulation-summary-row strong,
+.simulation-boxscore-head strong,
+.simulation-empty-state strong,
+.simulation-linescore th {
+  color: var(--heading);
+}
+
+.sim-toolbar-slider {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.sim-toolbar-control small,
+.simulation-board-actions span,
+.simulation-summary-meta span {
+  color: var(--warning);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.simulation-summary-meta {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+  text-align: right;
+}
+
+.simulation-summary-meta small {
+  color: var(--muted);
 }
 
 .sport-tab-strip {
@@ -1197,7 +1266,8 @@ h3 {
 }
 
 .lineup-simulation-board,
-.lineup-board {
+.lineup-board,
+.simulation-board {
   margin-top: 10px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
@@ -1205,6 +1275,31 @@ h3 {
   display: grid;
   gap: 10px;
   background: rgba(255, 255, 255, 0.02);
+}
+
+.simulation-board {
+  border-color: rgba(79, 210, 166, 0.14);
+  background: linear-gradient(180deg, rgba(79, 210, 166, 0.05), rgba(255, 255, 255, 0.02));
+}
+
+.simulation-run-button {
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--heading);
+  cursor: pointer;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    background 140ms ease;
+}
+
+.simulation-run-button:hover,
+.simulation-run-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--line-strong);
+  outline: none;
 }
 
 .simulation-phase-grid,
@@ -1283,6 +1378,108 @@ h3 {
 .simulation-phase-head span,
 .lineup-team-head span {
   color: var(--warning);
+}
+
+.simulation-boxscore-grid,
+.simulation-note-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.simulation-boxscore-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.simulation-boxscore-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 8px;
+}
+
+.simulation-boxscore-card[data-winner='true'] {
+  border-color: rgba(82, 214, 179, 0.2);
+  background: rgba(82, 214, 179, 0.06);
+}
+
+.simulation-boxscore-head span {
+  color: var(--accent);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.simulation-boxscore-splits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.simulation-boxscore-splits span {
+  padding: 4px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.simulation-linescore-wrap {
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.simulation-linescore {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+.simulation-linescore th,
+.simulation-linescore td {
+  padding: 8px 9px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.simulation-linescore thead th {
+  color: var(--muted);
+  font: 600 0.64rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.simulation-linescore tbody th {
+  text-align: left;
+}
+
+.simulation-linescore tbody td {
+  color: var(--text);
+}
+
+.simulation-linescore tbody tr:last-child th,
+.simulation-linescore tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.simulation-linescore tbody tr.winning-row {
+  background: rgba(82, 214, 179, 0.05);
+}
+
+.simulation-empty-state {
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .lineup-team-summary {
@@ -1844,6 +2041,7 @@ h3 {
   .model-phase-grid,
   .totals-grid,
   .team-script-grid,
+  .simulation-boxscore-grid,
   .simulation-phase-grid,
   .lineup-board-grid,
   .pick-grid.compact,
@@ -1872,9 +2070,16 @@ h3 {
   .odds-heading,
   .model-heading,
   .series-heading,
-  .boxscore-topline {
+  .boxscore-topline,
+  .simulation-summary-row,
+  .simulation-boxscore-head,
+  .simulation-board-actions {
     flex-direction: column;
     align-items: start;
+  }
+
+  .browser-toolbar-meta {
+    justify-items: stretch;
   }
 
   .pick-side-meta,

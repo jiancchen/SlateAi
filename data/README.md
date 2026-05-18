@@ -25,6 +25,7 @@ This project now keeps the sports dashboard logic separate from the local event 
 npm run data:init
 npm run data:prep:mlb-day -- --date 2026-05-16 --lookback-days 3
 npm run data:list:probables -- --date 2026-05-16
+npm run data:generate:mlb-day -- --date 2026-05-16
 npm run data:export:mlb-lineups -- --date 2026-05-16
 npm run data:ingest:mlb-range -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:derive:mlb -- --through-date 2026-05-15

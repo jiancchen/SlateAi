@@ -3,7 +3,8 @@
     buildParlayModel,
     createParlayLeg,
     rankAnalysisPicks,
-    rankFlipRiskPicks
+    rankFlipRiskPicks,
+    simulateMlbGame
   } from './lib/sports-model'
   import { defaultSlateDayId, slateDays } from './lib/slate-days'
 
@@ -108,11 +109,13 @@
   let recommendedLegCount = 4
   let recommendationMode = 'favorites'
   let balanceWeight = 0.5
+  let simulationTemperature = 0.5
   let selectedPicksByDay = {}
   let expandedGameId = ''
   let pinnedSignalsByDay = {}
   let customSourcesByDay = {}
   let deskNotesByDay = {}
+  let simulatedGamesByDay = {}
   let customSourceLabel = ''
   let customSourceUrl = ''
 
@@ -186,6 +189,14 @@
       primary: `${pitchHand} | ${record} | ${era} | ${whip}`,
       hover: extra.join(' | ')
     }
+  }
+
+  const simulationTemperatureLabel = (value) => {
+    if (value <= 0.18) return 'Cold'
+    if (value <= 0.42) return 'Stable'
+    if (value <= 0.68) return 'Balanced'
+    if (value <= 0.86) return 'Volatile'
+    return 'Chaos'
   }
 
   const buildGameHighlights = (game) => {
@@ -307,6 +318,7 @@
   const pinnedSignalsForDay = (dayId) => pinnedSignalsByDay[dayId] ?? []
   const customSourcesForDay = (dayId) => customSourcesByDay[dayId] ?? []
   const deskNoteForDay = (dayId) => deskNotesByDay[dayId] ?? ''
+  const simulationsForDay = (dayId) => simulatedGamesByDay[dayId] ?? {}
 
   const savePicksForDay = (dayId, nextPicks) => {
     selectedPicksByDay = {
@@ -333,6 +345,13 @@
     deskNotesByDay = {
       ...deskNotesByDay,
       [dayId]: note
+    }
+  }
+
+  const saveSimulationsForDay = (dayId, nextSimulations) => {
+    simulatedGamesByDay = {
+      ...simulatedGamesByDay,
+      [dayId]: nextSimulations
     }
   }
 
@@ -421,6 +440,8 @@
   $: modelCount = visibleGames.filter((game) => game.analysis.inputsUsed > 0).length
   $: spotlightCount = visibleGames.filter((game) => game.spotlight).length
   $: sourceCount = allSources.length
+  $: hasMlbSlate = games.some((game) => game.league === 'MLB')
+  $: activeSimulations = activeDay ? simulatedGamesByDay[activeDay.id] ?? {} : {}
 
   $: if (!visibleGames.some((game) => game.id === expandedGameId)) {
     expandedGameId = visibleGames[0]?.id ?? ''
@@ -614,6 +635,21 @@
     savePicksForDay(activeDay.id, {})
   }
 
+  const runGameSimulation = (game) => {
+    if (!activeDay || game.league !== 'MLB' || !game.analysis?.mlbProjection) return
+
+    const currentSimulations = simulationsForDay(activeDay.id)
+    const nextRunIndex = (currentSimulations[game.id]?.runIndex ?? 0) + 1
+    const nextSimulation = simulateMlbGame(game, simulationTemperature, nextRunIndex)
+
+    if (!nextSimulation) return
+
+    saveSimulationsForDay(activeDay.id, {
+      ...currentSimulations,
+      [game.id]: nextSimulation
+    })
+  }
+
   const loadRecommendedParlay = (legCount = activeRecommendedLegCount) => {
     if (!legCount) return
 
@@ -697,10 +733,30 @@
             <h2>{activeFilter === 'All' ? 'All Sports' : activeFilter}</h2>
           </div>
 
-          <div class="browser-toolbar-stats">
-            <span>{visibleGames.length} visible</span>
-            <span>{analysisPickPool.length} signals</span>
-            <span>{oddsMeta.snapshot}</span>
+          <div class="browser-toolbar-meta">
+            <div class="browser-toolbar-stats">
+              <span>{visibleGames.length} visible</span>
+              <span>{analysisPickPool.length} signals</span>
+              <span>{oddsMeta.snapshot}</span>
+            </div>
+
+            {#if hasMlbSlate}
+              <label class="sim-toolbar-control" aria-label="MLB simulator temperature">
+                <div class="sim-toolbar-copy">
+                  <span>MLB sim temp</span>
+                  <strong>{simulationTemperatureLabel(simulationTemperature)}</strong>
+                </div>
+                <input
+                  class="sim-toolbar-slider"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  bind:value={simulationTemperature}
+                />
+                <small>{simulationTemperature.toFixed(2)}</small>
+              </label>
+            {/if}
           </div>
         </div>
 
@@ -874,6 +930,7 @@
                   </div>
 
                   {#if expandedGameId === game.id}
+                    {@const gameSimulation = activeSimulations[game.id]}
                     <div class="market-detail-grid">
                       <section class="detail-panel insight-panel">
                         <div class="detail-panel-header">
@@ -1382,6 +1439,106 @@
                                   </div>
                                 </section>
                               {/if}
+
+                              <section class="simulation-board" aria-label={`Quick simulator for ${game.title}`}>
+                                <div class="home-run-board-head">
+                                  <div>
+                                    <p class="series-kicker">Quick simulator</p>
+                                    <strong>Approx box score and inning path at the current temperature index</strong>
+                                  </div>
+
+                                  <div class="simulation-board-actions">
+                                    <span>Temp {gameSimulation?.temperature?.toFixed(2) ?? simulationTemperature.toFixed(2)}</span>
+                                    <button
+                                      type="button"
+                                      class="simulation-run-button"
+                                      on:click|stopPropagation={() => runGameSimulation(game)}
+                                    >
+                                      {gameSimulation ? 'Re-roll sim' : 'Run sim'}
+                                    </button>
+                                  </div>
+                                </div>
+
+                                {#if gameSimulation}
+                                  <div class="simulation-summary-row">
+                                    <div>
+                                      <strong>{gameSimulation.summary}</strong>
+                                      <p>{gameSimulation.overview}</p>
+                                    </div>
+                                    <div class="simulation-summary-meta">
+                                      <span>{gameSimulation.temperatureLabel}</span>
+                                      <small>{gameSimulation.upset ? 'Flip result' : 'Model hold'}</small>
+                                    </div>
+                                  </div>
+
+                                  <div class="simulation-boxscore-grid">
+                                    {#each [gameSimulation.away, gameSimulation.home] as teamLine}
+                                      <article class="simulation-boxscore-card" data-winner={gameSimulation.winner === teamLine.teamName}>
+                                        <div class="simulation-boxscore-head">
+                                          <div>
+                                            <p>{teamLine.teamName}</p>
+                                            <strong>{teamLine.runs} R | {teamLine.hits} H | {teamLine.errors} E</strong>
+                                          </div>
+                                          <span>{gameSimulation.winner === teamLine.teamName ? 'Winner' : 'Chasing'}</span>
+                                        </div>
+
+                                        <div class="simulation-boxscore-splits">
+                                          <span>F5 {teamLine.first5Runs} R / {teamLine.first5Hits} H</span>
+                                          <span>Late {teamLine.lateRuns} R / {teamLine.lateHits} H</span>
+                                        </div>
+
+                                        <p class="simulation-driver-copy">
+                                          {teamLine.drivers?.length
+                                            ? `Likely drivers: ${teamLine.drivers.join(' • ')}`
+                                            : 'No clear driver cluster surfaced beyond the team-level traffic script.'}
+                                        </p>
+                                      </article>
+                                    {/each}
+                                  </div>
+
+                                  <div class="simulation-linescore-wrap">
+                                    <table class="simulation-linescore">
+                                      <thead>
+                                        <tr>
+                                          <th>Team</th>
+                                          {#each gameSimulation.innings as inning}
+                                            <th>{inning}</th>
+                                          {/each}
+                                          <th>R</th>
+                                          <th>H</th>
+                                          <th>E</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        {#each [gameSimulation.away, gameSimulation.home] as teamLine}
+                                          <tr class:winning-row={gameSimulation.winner === teamLine.teamName}>
+                                            <th>{teamLine.teamName}</th>
+                                            {#each teamLine.inningRuns as inningRuns}
+                                              <td>{inningRuns}</td>
+                                            {/each}
+                                            <td>{teamLine.runs}</td>
+                                            <td>{teamLine.hits}</td>
+                                            <td>{teamLine.errors}</td>
+                                          </tr>
+                                        {/each}
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+                                  <div class="simulation-note-grid">
+                                    <p>{gameSimulation.phaseSummary}</p>
+                                    <p>{gameSimulation.lineupNote}</p>
+                                  </div>
+                                {:else}
+                                  <div class="simulation-empty-state">
+                                    <strong>Run a quick sim for this MLB game.</strong>
+                                    <p>
+                                      The temperature slider shifts variance from steadier model-hold scripts
+                                      toward hotter bullpen swings and flip outcomes.
+                                    </p>
+                                  </div>
+                                {/if}
+                              </section>
 
                               {#if game.lineupBoard}
                                 <section class="lineup-board" aria-label={`Confirmed lineups for ${game.title}`}>

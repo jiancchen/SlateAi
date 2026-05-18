@@ -349,20 +349,23 @@ const may17Slate = createSlateDay({
   oddsMeta: dayNineOddsMeta,
   sources: dayNineSources,
   intakeChecklist: [
+    'Refresh posted MLB lineups again closer to first pitch if you want the last few unposted teams to move from projected script to live lineup script.',
     'Refresh the WNBA moneyline board once more before first tip if you want the latest same-day market snapshot.',
     'Backfill the actual Game 7 result and key swing plays so the volatility tag can be graded against the final script.',
-    'Add the Sunday MLB board separately if you want May 17 to become a full all-sports slate instead of this focused WNBA plus NBA pass.'
+    'Store the final MLB outcomes so the May 17 postmortem can test whether the traffic-first rebalance improved on the May 16 review.'
   ],
   intakePrompt:
-    'May 17 is now the live cross-sport board for the four WNBA games and the one NBA Game 7. It intentionally skips MLB until that sport gets its own same-date refresh.',
+    'May 17 is now the live all-sports board: refreshed MLB, the four WNBA games, and the one NBA Game 7 all share the same desk.',
   feedNotes: [
+    'This is the first May 17 pass where the MLB layer is fully refreshed instead of deferred, and it reflects the May 16 backtest adjustments directly in the model weights.',
+    'The baseball board now punishes fragile favorites more aggressively when the projected hit script points to the dog, which is why a few true flip spots now surface on the Sunday slate.',
     'This is the first daybook entry built from official WNBA team and player stat dashboards instead of only lineup-adjacent roster blurbs.',
     'The WNBA market layer is moneyline-first on the early pass because the accessible board exposed the cleanest same-day prices there.',
     'The NBA side is a one-game volatility board by design, with Detroit carrying the cleaner path but the entire card still flagged as high-variance because it is a Game 7.'
   ],
   archive: {
     resultsStored: false,
-    leaguesTracked: ['NBA', 'WNBA']
+    leaguesTracked: ['MLB', 'NBA', 'WNBA']
   }
 })
 
