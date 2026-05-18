@@ -814,6 +814,10 @@ h3 {
   line-height: 1.2;
 }
 
+.pitcher-recent-form {
+  color: color-mix(in srgb, var(--team-accent) 62%, white 38%);
+}
+
 .pitcher-hover-metrics {
   max-height: 0;
   opacity: 0;
@@ -1844,7 +1848,7 @@ h3 {
 
 .sidebar-tab-row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -2004,6 +2008,88 @@ h3 {
   gap: 8px;
 }
 
+.prop-pick-list {
+  display: grid;
+  gap: 8px;
+}
+
+.prop-pick-card,
+.player-prop-card {
+  border-radius: 10px;
+  padding: 9px;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+}
+
+.player-prop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.player-prop-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: start;
+}
+
+.player-prop-meta {
+  display: grid;
+  gap: 3px;
+  justify-items: end;
+  text-align: right;
+}
+
+.player-prop-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.player-prop-chip-row span {
+  padding: 4px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.player-prop-copy {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.player-prop-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.player-prop-actions small {
+  color: var(--muted);
+}
+
+.player-prop-toggle {
+  border-radius: 999px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--heading);
+}
+
+.player-prop-toggle.active {
+  border-color: rgba(82, 214, 179, 0.35);
+  background: rgba(82, 214, 179, 0.08);
+  color: var(--accent);
+}
+
 .analysis-pick-card.compact {
   display: grid;
   gap: 7px;
@@ -2135,6 +2221,10 @@ h3 {
 
   .sidebar-tab-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .player-prop-grid {
+    grid-template-columns: 1fr;
   }
 
   .parlay-sidebar-header,

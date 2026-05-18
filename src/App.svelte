@@ -2,6 +2,7 @@
   import {
     buildParlayModel,
     createParlayLeg,
+    rankMlbPlayerProps,
     rankAnalysisPicks,
     rankFlipRiskPicks,
     simulateMlbGame
@@ -13,9 +14,19 @@
   const leagueOrder = ['MLB', 'UFC', 'NBA', 'WNBA']
   const sidebarTabs = [
     { id: 'ticket', label: 'Ticket' },
+    { id: 'props', label: 'Props' },
     { id: 'signals', label: 'Signals' },
     { id: 'sources', label: 'Sources' },
     { id: 'notes', label: 'Notes' }
+  ]
+  const propTypeFilters = [
+    { id: 'all', label: 'All' },
+    { id: 'homeRun', label: 'HR' },
+    { id: 'rbi', label: 'RBI' },
+    { id: 'totalBases', label: 'TB' },
+    { id: 'hits', label: 'Hits' },
+    { id: 'walks', label: 'Walks' },
+    { id: 'singles', label: 'Singles' }
   ]
   const recommendationModes = [
     {
@@ -114,9 +125,11 @@
   let selectedPicksByDay = {}
   let expandedGameId = ''
   let pinnedSignalsByDay = {}
+  let selectedPropsByDay = {}
   let customSourcesByDay = {}
   let deskNotesByDay = {}
   let simulatedGamesByDay = {}
+  let activePropType = 'all'
   let customSourceLabel = ''
   let customSourceUrl = ''
 
@@ -186,8 +199,17 @@
     const extra = []
     if (pitcher.strikeOuts !== undefined) extra.push(`${pitcher.strikeOuts} SO`)
     if (pitcher.inningsPitched) extra.push(`${pitcher.inningsPitched} IP`)
+    const recentForm = pitcher.recentForm
+    const recent =
+      recentForm && recentForm.startsSample > 0
+        ? `Last ${recentForm.startsSample}: ${formatNumber(recentForm.inningsPerStart, 1)} IP | ${formatNumber(
+            recentForm.earnedRunsPerStart,
+            1
+          )} ER | ${formatNumber(recentForm.homeRunsAllowedPerStart, 1)} HR`
+        : ''
     return {
       primary: `${pitchHand} | ${record} | ${era} | ${whip}`,
+      recent,
       hover: extra.join(' | ')
     }
   }
@@ -320,6 +342,7 @@
   const customSourcesForDay = (dayId) => customSourcesByDay[dayId] ?? []
   const deskNoteForDay = (dayId) => deskNotesByDay[dayId] ?? ''
   const simulationsForDay = (dayId) => simulatedGamesByDay[dayId] ?? {}
+  const selectedPropsForDay = (dayId) => selectedPropsByDay[dayId] ?? {}
 
   const savePicksForDay = (dayId, nextPicks) => {
     selectedPicksByDay = {
@@ -332,6 +355,13 @@
     pinnedSignalsByDay = {
       ...pinnedSignalsByDay,
       [dayId]: nextSignals
+    }
+  }
+
+  const saveSelectedPropsForDay = (dayId, nextProps) => {
+    selectedPropsByDay = {
+      ...selectedPropsByDay,
+      [dayId]: nextProps
     }
   }
 
@@ -370,6 +400,7 @@
   $: customSources = activeDay ? customSourcesByDay[activeDay.id] ?? [] : []
   $: allSources = [...sources, ...customSources]
   $: selectedPicks = activeDay ? selectedPicksByDay[activeDay.id] ?? {} : {}
+  $: selectedProps = activeDay ? selectedPropsByDay[activeDay.id] ?? {} : {}
   $: pinnedSignalIds = activeDay ? pinnedSignalsByDay[activeDay.id] ?? [] : []
   $: deskNote = activeDay ? deskNotesByDay[activeDay.id] ?? '' : ''
   $: dayIndex = slateDays.findIndex((day) => day.id === activeDay?.id)
@@ -409,6 +440,18 @@
 
   $: analysisPicks = rankAnalysisPicks(games)
   $: flipRiskPicks = rankFlipRiskPicks(games)
+  $: mlbPlayerProps = rankMlbPlayerProps(games)
+  $: filteredMlbPlayerProps =
+    activePropType === 'all'
+      ? mlbPlayerProps
+      : mlbPlayerProps.filter((target) => target.propType === activePropType)
+  $: selectedPropEntries = Object.values(selectedProps)
+  $: propConfidenceAverage = selectedPropEntries.length
+    ? Math.round(
+        selectedPropEntries.reduce((total, prop) => total + (Number(prop.confidence) || 0), 0) /
+          selectedPropEntries.length
+      )
+    : 0
 
   $: analysisPickPool =
     activeFilter === 'All'
@@ -625,6 +668,39 @@
     })
 
     activeSidebarTab = 'ticket'
+  }
+
+  const togglePlayerProp = (prop) => {
+    if (!activeDay || !prop?.id) return
+
+    const currentProps = selectedPropsForDay(activeDay.id)
+
+    if (currentProps[prop.id]) {
+      const nextProps = { ...currentProps }
+      delete nextProps[prop.id]
+      saveSelectedPropsForDay(activeDay.id, nextProps)
+      return
+    }
+
+    saveSelectedPropsForDay(activeDay.id, {
+      ...currentProps,
+      [prop.id]: prop
+    })
+    activeSidebarTab = 'props'
+  }
+
+  const removeSelectedProp = (propId) => {
+    if (!activeDay || !propId) return
+    const currentProps = selectedPropsForDay(activeDay.id)
+    if (!currentProps[propId]) return
+    const nextProps = { ...currentProps }
+    delete nextProps[propId]
+    saveSelectedPropsForDay(activeDay.id, nextProps)
+  }
+
+  const clearSelectedProps = () => {
+    if (!activeDay) return
+    saveSelectedPropsForDay(activeDay.id, {})
   }
 
   const removeParlayPick = (gameId) => {
@@ -871,6 +947,7 @@
                               pitcher: game.starterContext.home
                             }
                           ] as pitcherCard}
+                            {@const pitcherSummary = buildPitcherSummary(pitcherCard.pitcher)}
                             <article
                               class="pitcher-card"
                               style={`--team-accent:${getTeamAccent(game.league, pitcherCard.teamName)}`}
@@ -888,8 +965,11 @@
                                 </div>
                               </div>
                               <span class="pitcher-name">{pitcherCard.pitcher.fullName}</span>
-                              <small>{buildPitcherSummary(pitcherCard.pitcher).primary}</small>
-                              <small class="pitcher-hover-metrics">{buildPitcherSummary(pitcherCard.pitcher).hover}</small>
+                              <small>{pitcherSummary.primary}</small>
+                              {#if pitcherSummary.recent}
+                                <small class="pitcher-recent-form">{pitcherSummary.recent}</small>
+                              {/if}
+                              <small class="pitcher-hover-metrics">{pitcherSummary.hover}</small>
                             </article>
                           {/each}
                         </div>
@@ -1737,6 +1817,55 @@
                                   </div>
                                 </section>
                               {/if}
+
+                              {#if game.playerProps?.available}
+                                <section class="player-prop-board" aria-label={`Player prop builder for ${game.title}`}>
+                                  <div class="home-run-board-head">
+                                    <div>
+                                      <p class="series-kicker">Player props</p>
+                                      <strong>{game.playerProps.summary}</strong>
+                                    </div>
+                                    <span>Hits, TB, RBI, walks, singles, HR</span>
+                                  </div>
+
+                                  <div class="player-prop-grid">
+                                    {#each game.playerProps.featured as prop}
+                                      <article class="player-prop-card">
+                                        <div class="player-prop-head">
+                                          <div>
+                                            <p>{prop.playerName}</p>
+                                            <strong>{prop.marketLabel}</strong>
+                                          </div>
+                                          <div class="player-prop-meta">
+                                            <strong>{prop.confidence}%</strong>
+                                            <span>{prop.recommendationTier}</span>
+                                          </div>
+                                        </div>
+
+                                        <div class="player-prop-chip-row">
+                                          <span>{prop.propLabel}</span>
+                                          <span>{prop.teamName}</span>
+                                          <span>{prop.statValueLabel}</span>
+                                        </div>
+
+                                        <p class="player-prop-copy">{prop.reason || prop.matchupNote}</p>
+
+                                        <div class="player-prop-actions">
+                                          <small>{prop.matchupNote}</small>
+                                          <button
+                                            type="button"
+                                            class="player-prop-toggle"
+                                            class:active={Boolean(selectedProps[prop.id])}
+                                            on:click={() => togglePlayerProp(prop)}
+                                          >
+                                            {selectedProps[prop.id] ? 'Saved' : 'Add prop'}
+                                          </button>
+                                        </div>
+                                      </article>
+                                    {/each}
+                                  </div>
+                                </section>
+                              {/if}
                             {/if}
 
                             <ul class="model-input-list">
@@ -2066,9 +2195,128 @@
               {/each}
             </div>
           {/if}
-        {/if}
+        {:else if activeSidebarTab === 'props'}
+          <div class="parlay-stats-grid compact">
+            <article class="parlay-stat-card">
+              <span class="parlay-stat-label">Eligible props</span>
+              <strong>{mlbPlayerProps.length}</strong>
+            </article>
 
-        {#if activeSidebarTab === 'signals'}
+            <article class="parlay-stat-card">
+              <span class="parlay-stat-label">Saved</span>
+              <strong>{selectedPropEntries.length}</strong>
+            </article>
+
+            <article class="parlay-stat-card">
+              <span class="parlay-stat-label">Avg confidence</span>
+              <strong>{selectedPropEntries.length ? `${propConfidenceAverage}%` : 'N/A'}</strong>
+            </article>
+
+            <article class="parlay-stat-card">
+              <span class="parlay-stat-label">Type filter</span>
+              <strong>{propTypeFilters.find((entry) => entry.id === activePropType)?.label ?? 'All'}</strong>
+            </article>
+          </div>
+
+          <div class="ticket-autobuild">
+            <div class="action-section-header">
+              <div>
+                <p class="ticket-autobuild-label">MLB prop builder</p>
+                <p class="ticket-autobuild-copy">
+                  The stronger edge might be on `hits`, `TB`, or `RBI` instead of forcing a HR
+                  prop when the game script is more traffic than pure carry.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="clear-parlay-button"
+                disabled={!selectedPropEntries.length}
+                on:click={clearSelectedProps}
+              >
+                Clear props
+              </button>
+            </div>
+
+            <div class="recommendation-size-row">
+              {#each propTypeFilters as filter}
+                <button
+                  type="button"
+                  class="size-chip"
+                  class:active={activePropType === filter.id}
+                  on:click={() => (activePropType = filter.id)}
+                >
+                  {filter.label}
+                </button>
+              {/each}
+            </div>
+          </div>
+
+          {#if selectedPropEntries.length > 0}
+            <div class="action-section">
+              <div class="action-section-header">
+                <h3>Saved Props</h3>
+                <span>{selectedPropEntries.length}</span>
+              </div>
+
+              <div class="prop-pick-list">
+                {#each selectedPropEntries as prop}
+                  <article class="prop-pick-card">
+                    <div>
+                      <p class="parlay-leg-topline">{prop.teamName} | {prop.gameTitle}</p>
+                      <p class="parlay-leg-pick">{prop.playerName} {prop.marketLabel}</p>
+                      <p class="parlay-leg-game">{prop.reason || prop.matchupNote}</p>
+                    </div>
+
+                    <div class="parlay-leg-side">
+                      <strong>{prop.confidence}%</strong>
+                      <span>{prop.recommendationTier}</span>
+                      <button type="button" class="remove-leg-button" on:click={() => removeSelectedProp(prop.id)}>
+                        Remove
+                      </button>
+                    </div>
+                  </article>
+                {/each}
+              </div>
+            </div>
+          {/if}
+
+          <div class="action-section">
+            <div class="action-section-header">
+              <h3>Top Props</h3>
+              <span>{filteredMlbPlayerProps.length}</span>
+            </div>
+
+            {#if filteredMlbPlayerProps.length > 0}
+              <div class="prop-pick-list">
+                {#each filteredMlbPlayerProps.slice(0, 18) as prop}
+                  <article class="prop-pick-card">
+                    <div>
+                      <p class="parlay-leg-topline">{prop.gameTitle}</p>
+                      <p class="parlay-leg-pick">{prop.playerName} {prop.marketLabel}</p>
+                      <p class="parlay-leg-game">{prop.reason || prop.matchupNote}</p>
+                    </div>
+
+                    <div class="parlay-leg-side">
+                      <strong>{prop.confidence}%</strong>
+                      <span>{prop.statValueLabel}</span>
+                      <button
+                        type="button"
+                        class="analysis-action-button"
+                        class:active={Boolean(selectedProps[prop.id])}
+                        on:click={() => togglePlayerProp(prop)}
+                      >
+                        {selectedProps[prop.id] ? 'Saved' : 'Add'}
+                      </button>
+                    </div>
+                  </article>
+                {/each}
+              </div>
+            {:else}
+              <p class="panel-empty">No MLB player props are available on this filtered board yet.</p>
+            {/if}
+          </div>
+        {:else if activeSidebarTab === 'signals'}
           <div class="sidebar-section-copy">
             <p>Open a market, pin it, or send it straight into the slip.</p>
           </div>

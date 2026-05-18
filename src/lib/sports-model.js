@@ -356,6 +356,54 @@ const classifyPitcherType = (starter = {}) => {
   return 'Balanced'
 }
 
+const getRecentStarterFormReliability = (startsSample = 0) => {
+  if (startsSample >= 5) return 1
+  if (startsSample === 4) return 0.88
+  if (startsSample === 3) return 0.74
+  if (startsSample === 2) return 0.5
+  if (startsSample === 1) return 0.26
+  return 0
+}
+
+const buildStarterRecentFormLabel = (starter = {}) => {
+  const recent = starter?.recentForm
+  if (!recent || !Number.isFinite(recent.startsSample) || recent.startsSample <= 0) return 'No recent form yet'
+
+  return `Last ${recent.startsSample}: ${recent.inningsPerStart?.toFixed?.(1) ?? recent.inningsPerStart} IP/start | ${recent.earnedRunsPerStart?.toFixed?.(1) ?? recent.earnedRunsPerStart} ER/start`
+}
+
+const buildStarterRecentFormScore = (starter = {}) => {
+  const recent = starter?.recentForm
+  const reliability = Number(starter?.recentFormWeight)
+
+  if (!recent || !Number.isFinite(reliability) || reliability <= 0) return null
+
+  const inningsScore = Number.isFinite(recent.inningsPerStart)
+    ? clamp(45 + (recent.inningsPerStart - 5.1) * 9, 18, 92)
+    : 50
+  const erScore = Number.isFinite(recent.earnedRunsPerStart)
+    ? clamp(90 - recent.earnedRunsPerStart * 13, 18, 92)
+    : 50
+  const hrScore = Number.isFinite(recent.homeRunsAllowedPerStart)
+    ? clamp(86 - recent.homeRunsAllowedPerStart * 24, 18, 92)
+    : 50
+  const shortStartPenalty = Number.isFinite(recent.shortStartRate) ? recent.shortStartRate * 26 : 0
+  const volatilityPenalty = Number.isFinite(recent.runVolatility) ? recent.runVolatility * 6 : 0
+  const trendAdjustment = Number.isFinite(recent.recent3EarnedRunsDelta)
+    ? clamp(-recent.recent3EarnedRunsDelta * 5, -12, 12)
+    : 0
+
+  return clamp(
+    (inningsScore * 0.28 + erScore * 0.38 + hrScore * 0.2 + (Number.isFinite(recent.qualityStartRate) ? 42 + recent.qualityStartRate * 38 : 50) * 0.14) *
+      (0.78 + reliability * 0.22) -
+      shortStartPenalty -
+      volatilityPenalty +
+      trendAdjustment,
+    18,
+    94
+  )
+}
+
 const buildStarterProfile = (starterContext = null, detail = '') => {
   const parsed = parsePitcherDetail(detail)
 
@@ -375,10 +423,55 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
   const hitsAllowed = Number(starterContext?.hitsAllowed)
   const homeRunsAllowed = Number(starterContext?.homeRunsAllowed)
   const gamesStarted = Number(starterContext?.gamesStarted)
+  const recentFormRaw = starterContext?.recentForm ?? null
   const kPerNine = inningsFloat > 0 ? (strikeouts / inningsFloat) * 9 : null
   const bbPerNine = inningsFloat > 0 && Number.isFinite(walks) ? (walks / inningsFloat) * 9 : null
   const hitsPerNine = inningsFloat > 0 && Number.isFinite(hitsAllowed) ? (hitsAllowed / inningsFloat) * 9 : null
   const hrPerNine = inningsFloat > 0 && Number.isFinite(homeRunsAllowed) ? (homeRunsAllowed / inningsFloat) * 9 : null
+  const recentForm = recentFormRaw
+    ? {
+        pitcherName: recentFormRaw.pitcherName || starterContext?.fullName || parsed?.name || '',
+        windowStarts: Number(recentFormRaw.windowStarts ?? 0) || 0,
+        startsSample: Number(recentFormRaw.startsSample ?? 0) || 0,
+        inningsPerStart: Number.isFinite(Number(recentFormRaw.inningsPerStart))
+          ? Number(recentFormRaw.inningsPerStart)
+          : null,
+        earnedRunsPerStart: Number.isFinite(Number(recentFormRaw.earnedRunsPerStart))
+          ? Number(recentFormRaw.earnedRunsPerStart)
+          : null,
+        hitsAllowedPerStart: Number.isFinite(Number(recentFormRaw.hitsAllowedPerStart))
+          ? Number(recentFormRaw.hitsAllowedPerStart)
+          : null,
+        homeRunsAllowedPerStart: Number.isFinite(Number(recentFormRaw.homeRunsAllowedPerStart))
+          ? Number(recentFormRaw.homeRunsAllowedPerStart)
+          : null,
+        walksAllowedPerStart: Number.isFinite(Number(recentFormRaw.walksAllowedPerStart))
+          ? Number(recentFormRaw.walksAllowedPerStart)
+          : null,
+        strikeoutsPerStart: Number.isFinite(Number(recentFormRaw.strikeoutsPerStart))
+          ? Number(recentFormRaw.strikeoutsPerStart)
+          : null,
+        whipLike: Number.isFinite(Number(recentFormRaw.whipLike))
+          ? Number(recentFormRaw.whipLike)
+          : null,
+        shortStartRate: Number.isFinite(Number(recentFormRaw.shortStartRate))
+          ? Number(recentFormRaw.shortStartRate)
+          : null,
+        qualityStartRate: Number.isFinite(Number(recentFormRaw.qualityStartRate))
+          ? Number(recentFormRaw.qualityStartRate)
+          : null,
+        runVolatility: Number.isFinite(Number(recentFormRaw.runVolatility))
+          ? Number(recentFormRaw.runVolatility)
+          : null,
+        homeRunBurstiness: Number.isFinite(Number(recentFormRaw.homeRunBurstiness))
+          ? Number(recentFormRaw.homeRunBurstiness)
+          : null,
+        recent3EarnedRunsDelta: Number.isFinite(Number(recentFormRaw.recent3EarnedRunsDelta))
+          ? Number(recentFormRaw.recent3EarnedRunsDelta)
+          : null
+      }
+    : null
+  const recentFormWeight = getRecentStarterFormReliability(recentForm?.startsSample || 0)
   const starter = {
     name: starterContext?.fullName || parsed?.name || '',
     handedness,
@@ -397,7 +490,9 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
     kPerNine,
     bbPerNine,
     hitsPerNine,
-    hrPerNine
+    hrPerNine,
+    recentForm,
+    recentFormWeight
   }
 
   const profileType = classifyPitcherType(starter)
@@ -411,7 +506,9 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
     avgInningsPerStart,
     profileType,
     profileLabel: formatPitcherType(profileType, handedness),
-    sampleEstablished: Number.isFinite(inningsFloat) && inningsFloat >= 18 && Number.isFinite(era)
+    sampleEstablished: Number.isFinite(inningsFloat) && inningsFloat >= 18 && Number.isFinite(era),
+    recentFormLabel: buildStarterRecentFormLabel(starter),
+    recentFormScore: buildStarterRecentFormScore(starter)
   }
 }
 
@@ -776,6 +873,41 @@ const buildProjectedHitProfile = ({
       starterPhaseProjection += 0.2
       qualityNotes.push('starter uncertainty')
     }
+
+    if (opposingStarter.recentForm && Number.isFinite(opposingStarter.recentFormWeight) && opposingStarter.recentFormWeight > 0) {
+      const weight = opposingStarter.recentFormWeight
+      const recent = opposingStarter.recentForm
+
+      if (Number.isFinite(recent.hitsAllowedPerStart)) {
+        starterPhaseProjection += (recent.hitsAllowedPerStart - 5.5) * 0.11 * (0.65 + weight)
+      }
+
+      if (Number.isFinite(recent.earnedRunsPerStart)) {
+        starterPhaseProjection += (recent.earnedRunsPerStart - 2.6) * 0.16 * (0.55 + weight)
+      }
+
+      if (Number.isFinite(recent.homeRunsAllowedPerStart)) {
+        starterPhaseProjection += (recent.homeRunsAllowedPerStart - 0.65) * 0.34 * (0.45 + weight)
+      }
+
+      if (Number.isFinite(recent.whipLike)) {
+        starterPhaseProjection += (recent.whipLike - 1.28) * 0.7 * (0.45 + weight)
+      }
+
+      if (Number.isFinite(recent.shortStartRate)) {
+        starterPhaseProjection += recent.shortStartRate * 0.42 * (0.45 + weight)
+      }
+
+      if (Number.isFinite(recent.qualityStartRate)) {
+        starterPhaseProjection -= recent.qualityStartRate * 0.24 * (0.45 + weight)
+      }
+
+      if (Number.isFinite(recent.recent3EarnedRunsDelta)) {
+        starterPhaseProjection += recent.recent3EarnedRunsDelta * 0.1 * (0.45 + weight)
+      }
+
+      qualityNotes.push('starter recent form')
+    }
   }
 
   if ([Number(opposingBullpen.era), Number(opposingBullpen.whip)].every(Number.isFinite)) {
@@ -920,6 +1052,27 @@ const buildRunConversionRate = ({
     if (opposingStarter?.profileType === 'Volatile bat-misser') rate += 0.01
     if (opposingStarter?.profileType === 'Power') rate -= 0.012
     if (opposingStarter?.profileType === 'Contact suppressor') rate -= 0.02
+
+    if (opposingStarter?.recentForm && Number.isFinite(opposingStarter.recentFormWeight)) {
+      const recent = opposingStarter.recentForm
+      const weight = opposingStarter.recentFormWeight
+
+      if (Number.isFinite(recent.earnedRunsPerStart)) {
+        rate += (recent.earnedRunsPerStart - 2.6) * 0.0035 * (0.55 + weight)
+      }
+
+      if (Number.isFinite(recent.homeRunsAllowedPerStart)) {
+        rate += (recent.homeRunsAllowedPerStart - 0.65) * 0.006 * (0.45 + weight)
+      }
+
+      if (Number.isFinite(recent.shortStartRate)) {
+        rate += recent.shortStartRate * 0.012 * (0.45 + weight)
+      }
+
+      if (Number.isFinite(recent.qualityStartRate)) {
+        rate -= recent.qualityStartRate * 0.008 * (0.45 + weight)
+      }
+    }
   }
 
   if (phase === 'late') {
@@ -1425,6 +1578,7 @@ const buildMlbAnalysisContext = (game, participants) => {
   if (game.lineupContext?.[participants[0]?.name] && game.lineupContext?.[participants[1]?.name]) {
     sourceParts.push('daily lineup matchup context')
   }
+  if (starters.some((starter) => starter?.recentForm)) sourceParts.push('recent starter form')
 
   if (starters.every(Boolean)) {
     const starterScores = starters.map((starter) => starterScore(starter))
@@ -1464,6 +1618,20 @@ const buildMlbAnalysisContext = (game, participants) => {
         'Listed probable starters'
       )
     )
+
+    if (starters.some((starter) => Number.isFinite(starter?.recentFormScore))) {
+      signals.push(
+        createSignal(
+          'Recent starter form',
+          0.11,
+          starters.map((starter) => ({
+            label: starter?.recentFormLabel || 'No recent form yet',
+            score: Number.isFinite(starter?.recentFormScore) ? starter.recentFormScore : 50
+          })),
+          'Warehouse rolling pitcher form'
+        )
+      )
+    }
 
     if (projectedHitProfiles.every(Boolean)) {
       const projectedHitScores = projectedHitProfiles.map((profile) =>
@@ -1748,6 +1916,45 @@ const buildMlbAnalysisContext = (game, participants) => {
       volatilityModifiers.push({ label: 'At least one listed starter profiles as traffic-risk', delta: 4 })
     }
 
+    if (
+      starters.some(
+        (starter) =>
+          starter?.recentForm &&
+          Number.isFinite(starter.recentForm.shortStartRate) &&
+          starter.recentForm.shortStartRate >= 0.45 &&
+          Number.isFinite(starter.recentFormWeight) &&
+          starter.recentFormWeight >= 0.45
+      )
+    ) {
+      volatilityModifiers.push({ label: 'A recent short-start pattern is live in this matchup', delta: 4 })
+    }
+
+    if (
+      starters.some(
+        (starter) =>
+          starter?.recentForm &&
+          Number.isFinite(starter.recentForm.homeRunsAllowedPerStart) &&
+          starter.recentForm.homeRunsAllowedPerStart >= 1.1 &&
+          Number.isFinite(starter.recentFormWeight) &&
+          starter.recentFormWeight >= 0.45
+      )
+    ) {
+      volatilityModifiers.push({ label: 'One listed starter has been leaking recent home-run damage', delta: 4 })
+    }
+
+    if (
+      starters.some(
+        (starter) =>
+          starter?.recentForm &&
+          Number.isFinite(starter.recentForm.runVolatility) &&
+          starter.recentForm.runVolatility >= 1.9 &&
+          Number.isFinite(starter.recentFormWeight) &&
+          starter.recentFormWeight >= 0.45
+      )
+    ) {
+      volatilityModifiers.push({ label: 'Recent starter form is carrying higher run volatility', delta: 3 })
+    }
+
     if (starters[0].handedness && starters[1].handedness && starters[0].handedness !== starters[1].handedness) {
       volatilityModifiers.push({ label: 'Handedness contrast can change game shape quickly', delta: 2 })
     }
@@ -1900,6 +2107,32 @@ const buildMlbAnalysisContext = (game, participants) => {
         volatilityModifiers.push({
           label: 'Favorite still leans on a traffic-risk starter type',
           delta: 4
+        })
+      }
+
+      if (
+        starters[favoriteIndex]?.recentForm &&
+        Number.isFinite(starters[favoriteIndex].recentForm.shortStartRate) &&
+        starters[favoriteIndex].recentForm.shortStartRate >= 0.45 &&
+        Number.isFinite(starters[favoriteIndex].recentFormWeight) &&
+        starters[favoriteIndex].recentFormWeight >= 0.45
+      ) {
+        volatilityModifiers.push({
+          label: 'Favorite starter has a live short-start pattern in recent form',
+          delta: 4
+        })
+      }
+
+      if (
+        starters[favoriteIndex]?.recentForm &&
+        Number.isFinite(starters[favoriteIndex].recentForm.recent3EarnedRunsDelta) &&
+        starters[favoriteIndex].recentForm.recent3EarnedRunsDelta >= 0.9 &&
+        Number.isFinite(starters[favoriteIndex].recentFormWeight) &&
+        starters[favoriteIndex].recentFormWeight >= 0.45
+      ) {
+        volatilityModifiers.push({
+          label: 'Favorite starter has been trending worse across the most recent turns',
+          delta: 3
         })
       }
     }
@@ -2643,6 +2876,7 @@ export const createSportsMatchModel = (game, fallbackOddsProvider = '') => {
     participants,
     moneylineParticipants.length === game.matchup.length
   )
+  const playerProps = buildMlbPlayerProps(game, analysis)
 
   return {
     ...game,
@@ -2658,6 +2892,7 @@ export const createSportsMatchModel = (game, fallbackOddsProvider = '') => {
       participants: moneylineParticipants
     },
     analysis,
+    playerProps,
     metadata: {
       participantCount: participants.length,
       participantNames: participants.map((participant) => participant.name),
@@ -2666,6 +2901,7 @@ export const createSportsMatchModel = (game, fallbackOddsProvider = '') => {
       hasMoneyline: Boolean(moneylineMarket),
       hasAnalysisPick: Boolean(analysis.participantId),
       hasStructuredInputs: analysis.inputsUsed > 0,
+      hasPlayerProps: playerProps.available,
       startMinutes: game.startMinutes,
       spotlight: game.spotlight,
       league: game.league,
@@ -2834,6 +3070,19 @@ export const rankFlipRiskPicks = (games) =>
     })
     .map((pick, index) => ({
       ...pick,
+      rank: index + 1
+    }))
+
+export const rankMlbPlayerProps = (games) =>
+  games
+    .filter((game) => game.playerProps?.available)
+    .flatMap((game) => game.playerProps.targets.map((target) => ({ ...target, game })))
+    .sort((left, right) => {
+      if (right.confidence !== left.confidence) return right.confidence - left.confidence
+      return right.expectedValue - left.expectedValue
+    })
+    .map((target, index) => ({
+      ...target,
       rank: index + 1
     }))
 
@@ -3168,6 +3417,406 @@ export const simulateMlbGame = (game, rawTemperature = 0.5, runIndex = 1) => {
       ? 'Both official batting orders were posted when this sim was built.'
       : 'At least one batting order is still incomplete, so this sim is looser than the full posted-lineup version.',
     favoredTeam: projection.edgeTeam || ''
+  }
+}
+
+const mlbPropTypeConfig = {
+  homeRun: {
+    label: 'HR',
+    marketLabel: 'Over 0.5 HR',
+    bucket: 'power'
+  },
+  rbi: {
+    label: 'RBI',
+    marketLabel: 'Over 0.5 RBI',
+    bucket: 'production'
+  },
+  totalBases: {
+    label: 'TB',
+    marketLabel: 'Over 1.5 total bases',
+    bucket: 'power'
+  },
+  hits: {
+    label: 'Hits',
+    marketLabel: 'Over 1.5 hits',
+    bucket: 'contact'
+  },
+  walks: {
+    label: 'Walks',
+    marketLabel: 'Over 0.5 walks',
+    bucket: 'patience'
+  },
+  singles: {
+    label: 'Singles',
+    marketLabel: 'Over 0.5 singles',
+    bucket: 'contact'
+  }
+}
+
+const poissonProbabilityAtLeast = (lambda, threshold) => {
+  if (!Number.isFinite(lambda) || lambda <= 0) return 0
+
+  let cumulative = 0
+  const floorThreshold = Math.floor(threshold)
+
+  for (let count = 0; count <= floorThreshold; count += 1) {
+    cumulative += Math.exp(-lambda) * Math.pow(lambda, count) / factorial(count)
+  }
+
+  return clamp(1 - cumulative, 0, 1)
+}
+
+const factorialMemo = [1]
+const factorial = (value) => {
+  const target = Math.max(0, Math.floor(value))
+  if (factorialMemo[target] !== undefined) return factorialMemo[target]
+  let result = factorialMemo[factorialMemo.length - 1]
+  for (let index = factorialMemo.length; index <= target; index += 1) {
+    result *= index
+    factorialMemo[index] = result
+  }
+  return factorialMemo[target]
+}
+
+const weightedRate = (hitter, key, fallback = 0) => {
+  const season = Number(hitter?.season?.[key])
+  const recent = Number(hitter?.recent?.[key])
+  const split = Number(hitter?.split?.[key])
+  const seasonWeight = Number.isFinite(season) ? season * 0.46 : 0
+  const recentWeight = Number.isFinite(recent) ? recent * 0.32 : 0
+  const splitWeight = Number.isFinite(split) ? split * 0.22 : 0
+  const totalWeight =
+    (Number.isFinite(season) ? 0.46 : 0) +
+    (Number.isFinite(recent) ? 0.32 : 0) +
+    (Number.isFinite(split) ? 0.22 : 0)
+
+  return totalWeight > 0 ? (seasonWeight + recentWeight + splitWeight) / totalWeight : fallback
+}
+
+const buildExpectedPlateAppearances = (slot = 9, projectedRuns = 4.2, topThirdScore = 50) => {
+  const baseBySlot = {
+    1: 4.75,
+    2: 4.63,
+    3: 4.55,
+    4: 4.44,
+    5: 4.29,
+    6: 4.12,
+    7: 3.98,
+    8: 3.88,
+    9: 3.8
+  }
+
+  return clamp(
+    (baseBySlot[slot] || 3.8) +
+      (Number(projectedRuns) - 4.3) * 0.11 +
+      (Number(topThirdScore || 50) - 50) * 0.004,
+    3.2,
+    5.4
+  )
+}
+
+const buildStarterWalkPressure = (starter = {}) => {
+  const innings = parseBaseballInnings(starter?.inningsPitched ?? 0)
+  const walks = Number(starter?.walks)
+  const bbPerNine = innings > 0 && Number.isFinite(walks) ? (walks / innings) * 9 : null
+  const whip = Number(starter?.whip)
+
+  return clamp(
+    (Number.isFinite(bbPerNine) ? (bbPerNine - 3) * 0.09 : 0) +
+      (Number.isFinite(whip) ? (whip - 1.28) * 0.22 : 0),
+    -0.12,
+    0.22
+  )
+}
+
+const getHomeRunTargetBoost = (game, teamName, playerName) => {
+  const candidates = [...(game.homeRunTargets?.likely || []), ...(game.homeRunTargets?.possible || [])]
+  const target = candidates.find(
+    (entry) => teamNamesMatch(entry.teamName, teamName) && normalizeText(entry.playerName) === normalizeText(playerName)
+  )
+
+  if (!target) return { scoreBoost: 0, confidenceBoost: 0, target: null }
+
+  const scoreBoost =
+    target.scoreBand === 'premium'
+      ? 0.11
+      : target.scoreBand === 'strong'
+        ? 0.075
+        : target.scoreBand === 'live'
+          ? 0.05
+          : 0.02
+  const confidenceBoost = target.scoreBand === 'premium' ? 8 : target.scoreBand === 'strong' ? 6 : 4
+
+  return { scoreBoost, confidenceBoost, target }
+}
+
+const describeHomeRunPropLane = (target = null) =>
+  target?.contextLabels?.[2] ||
+  target?.contextLabels?.[1] ||
+  (target?.burstTag ? `${target.burstTag} HR lane` : 'HR lane')
+
+const buildMlbPropCandidate = ({
+  game,
+  teamName,
+  hitter,
+  teamScript,
+  projectedProfile,
+  projectedRuns,
+  projectedHits,
+  opposingStarter,
+  propType
+}) => {
+  if (!hitter?.name || !hitter?.metrics) return null
+
+  const config = mlbPropTypeConfig[propType]
+  if (!config) return null
+
+  const expectedPA = buildExpectedPlateAppearances(hitter.slot, projectedRuns, teamScript?.topThirdScore)
+  const matchupFactor = clamp(0.72 + (Number(hitter.metrics.matchupScore || 50) - 50) / 110, 0.58, 1.38)
+  const contactFactor = clamp(0.78 + (Number(hitter.metrics.contactScore || 50) - 50) / 120, 0.58, 1.34)
+  const powerFactor = clamp(0.76 + (Number(hitter.metrics.powerScore || 50) - 50) / 112, 0.54, 1.4)
+  const patienceFactor = clamp(0.82 + (Number(hitter.metrics.patienceScore || 50) - 50) / 118, 0.6, 1.32)
+  const formFactor = clamp(0.82 + (Number(hitter.metrics.formScore || 50) - 50) / 115, 0.58, 1.35)
+  const teamTrafficFactor = clamp((Number(projectedHits || 8.3) / 8.3) * 0.72 + (Number(projectedRuns || 4.3) / 4.3) * 0.28, 0.68, 1.38)
+  const homeRunBoost = getHomeRunTargetBoost(game, teamName, hitter.name)
+  const slotPressure =
+    hitter.slot <= 2 ? 1.08 : hitter.slot <= 4 ? 1.12 : hitter.slot <= 6 ? 1.02 : 0.91
+  const overperformBoost = (teamScript?.overperformHitters || []).some(
+    (entry) => normalizeText(entry.name) === normalizeText(hitter.name)
+  )
+    ? 1.08
+    : 1
+  const seasonHitRate = weightedRate(hitter, 'hitRate', 0.23)
+  const seasonSinglesRate = weightedRate(hitter, 'singlesRate', 0.15)
+  const seasonTbRate = weightedRate(hitter, 'totalBasesRate', 0.34)
+  const seasonWalkRate = weightedRate(hitter, 'walkRate', 0.085)
+  const seasonHrRate = weightedRate(hitter, 'hrRate', 0.03)
+  const starterWalkPressure = buildStarterWalkPressure(opposingStarter)
+
+  let expectedValue = 0
+  let probability = 0
+  let line = ''
+  let statValueLabel = ''
+
+  if (propType === 'hits') {
+    expectedValue = expectedPA * seasonHitRate * contactFactor * formFactor * matchupFactor * teamTrafficFactor * 0.98
+    probability = poissonProbabilityAtLeast(expectedValue, 1)
+    line = config.marketLabel
+    statValueLabel = `${expectedValue.toFixed(2)} exp hits`
+  } else if (propType === 'singles') {
+    expectedValue =
+      expectedPA *
+      seasonSinglesRate *
+      contactFactor *
+      formFactor *
+      matchupFactor *
+      (0.94 + (Number(hitter.metrics.powerScore || 50) < 58 ? 0.08 : -0.02)) *
+      teamTrafficFactor
+    probability = 1 - Math.exp(-Math.max(expectedValue, 0))
+    line = config.marketLabel
+    statValueLabel = `${expectedValue.toFixed(2)} exp singles`
+  } else if (propType === 'walks') {
+    expectedValue = expectedPA * seasonWalkRate * patienceFactor * formFactor * (1 + starterWalkPressure) * slotPressure
+    probability = 1 - Math.exp(-Math.max(expectedValue, 0))
+    line = config.marketLabel
+    statValueLabel = `${expectedValue.toFixed(2)} exp walks`
+  } else if (propType === 'totalBases') {
+    expectedValue =
+      expectedPA *
+      seasonTbRate *
+      powerFactor *
+      formFactor *
+      matchupFactor *
+      teamTrafficFactor *
+      (1 + homeRunBoost.scoreBoost * 0.6)
+    probability = poissonProbabilityAtLeast(expectedValue, 1)
+    line = config.marketLabel
+    statValueLabel = `${expectedValue.toFixed(2)} exp TB`
+  } else if (propType === 'homeRun') {
+    expectedValue =
+      expectedPA *
+      seasonHrRate *
+      powerFactor *
+      formFactor *
+      matchupFactor *
+      slotPressure *
+      overperformBoost *
+      (1 + homeRunBoost.scoreBoost) *
+      (Number(homeRunBoost.target?.opposingPitcherHr9 || 1) >= 1.2 ? 1.08 : 0.96)
+    probability = 1 - Math.exp(-Math.max(expectedValue, 0))
+    line = config.marketLabel
+    statValueLabel = `${expectedValue.toFixed(2)} exp HR`
+  } else if (propType === 'rbi') {
+    const hittersAhead = Math.max(0, hitter.slot - 1)
+    const aheadTraffic = clamp(
+      0.92 +
+        hittersAhead * 0.035 +
+        ((Number(teamScript?.topThirdScore || 50) - 50) / 180) +
+        ((Number(teamScript?.middleScore || 50) - 50) / 240),
+      0.72,
+      1.36
+    )
+    expectedValue =
+      (Number(projectedRuns || 4.3) / 4.8) *
+      slotPressure *
+      powerFactor *
+      formFactor *
+      matchupFactor *
+      aheadTraffic *
+      overperformBoost
+    probability = 1 - Math.exp(-Math.max(expectedValue, 0))
+    line = config.marketLabel
+    statValueLabel = `${expectedValue.toFixed(2)} exp RBI`
+  }
+
+  const baseConfidence =
+    clamp(
+      32 +
+        probability * 34 +
+        (homeRunBoost.confidenceBoost || 0) * 0.4 +
+        Math.max(0, Number(hitter.metrics.matchupGrade || 0)) * 1.15 +
+        Math.max(0, (Number(hitter.metrics.formScore || 50) - 50) * 0.1),
+      18,
+      82
+    )
+  const confidence = Math.round(baseConfidence)
+  if (confidence < 54) return null
+
+  const reasons = []
+  if (hitter.primaryTag) reasons.push(`slot ${hitter.slot} ${hitter.primaryTag}`)
+  if ((hitter.tags || []).includes('heater')) reasons.push('recent form up')
+  if ((hitter.tags || []).includes('split edge')) reasons.push('split fit live')
+  if (propType === 'homeRun' && homeRunBoost.target) reasons.push(describeHomeRunPropLane(homeRunBoost.target))
+  if (propType === 'walks' && starterWalkPressure > 0.05) reasons.push('starter walk pressure')
+  if (propType === 'rbi' && hitter.slot <= 5) reasons.push('run-production slot')
+  if (propType === 'hits' || propType === 'singles') {
+    if (Number(projectedProfile?.hitEfficiencyPct || 24) >= 25) reasons.push('clean traffic lane')
+  }
+  if (propType === 'totalBases' && Number(hitter.metrics.powerScore || 50) >= 68) reasons.push('power lane')
+  if (propType === 'homeRun' && homeRunBoost.target?.contextLabels?.[2]) reasons.push(homeRunBoost.target.contextLabels[2])
+
+  return {
+    id: `${game.id}:${hitter.playerId}:${propType}`,
+    gameId: game.id,
+    gameTitle: game.title,
+    league: game.league,
+    playerId: hitter.playerId,
+    playerName: hitter.name,
+    teamName,
+    slot: hitter.slot,
+    propType,
+    propLabel: config.label,
+    marketLabel: line,
+    confidence,
+    probability: roundToTenths(probability * 100),
+    expectedValue: roundToTenths(expectedValue),
+    statValueLabel,
+    recommendationTier: confidence >= 79 ? 'Core' : confidence >= 68 ? 'Strong' : 'Lean',
+    reason: reasons.slice(0, 3).join(' | '),
+    matchupNote: hitter.matchupNote,
+    teamScriptLabel: teamScript?.pressureLabel || '',
+    playerSummary: hitter.summary,
+    game
+  }
+}
+
+const buildMlbPlayerProps = (game, analysis) => {
+  if (game?.league !== 'MLB' || !analysis?.mlbProjection || !game?.lineupBoard) {
+    return {
+      available: false,
+      targets: [],
+      featured: [],
+      byType: {}
+    }
+  }
+
+  const projection = analysis.mlbProjection
+  const teamBoardEntries = [
+    {
+      teamName: game.matchup?.[0]?.name,
+      lineupTeam: game.lineupBoard.away,
+      teamScript:
+        projection.teamScripts?.find((entry) => teamNamesMatch(entry.teamName, game.matchup?.[0]?.name)) || null,
+      projectedRuns: projection.awayProjectedRuns,
+      projectedHits: projection.awayProjectedHits,
+      projectedProfile: {
+        projectedHits: projection.awayProjectedHits,
+        hitEfficiencyPct: projection.awayHitEfficiencyPct
+      },
+      opposingStarter: game.starterContext?.home
+    },
+    {
+      teamName: game.matchup?.[1]?.name,
+      lineupTeam: game.lineupBoard.home,
+      teamScript:
+        projection.teamScripts?.find((entry) => teamNamesMatch(entry.teamName, game.matchup?.[1]?.name)) || null,
+      projectedRuns: projection.homeProjectedRuns,
+      projectedHits: projection.homeProjectedHits,
+      projectedProfile: {
+        projectedHits: projection.homeProjectedHits,
+        hitEfficiencyPct: projection.homeHitEfficiencyPct
+      },
+      opposingStarter: game.starterContext?.away
+    }
+  ]
+
+  const propTypes = ['homeRun', 'rbi', 'totalBases', 'hits', 'walks', 'singles']
+  const targets = teamBoardEntries.flatMap(({ teamName, lineupTeam, teamScript, projectedRuns, projectedHits, projectedProfile, opposingStarter }) =>
+    (lineupTeam?.lineup || []).flatMap((hitter) =>
+      propTypes
+        .map((propType) =>
+          buildMlbPropCandidate({
+            game,
+            teamName,
+            hitter,
+            teamScript,
+            projectedProfile,
+            projectedRuns,
+            projectedHits,
+            opposingStarter,
+            propType
+          })
+        )
+        .filter(Boolean)
+    )
+  )
+
+  const sortedTargets = targets.sort((left, right) => {
+    if (right.confidence !== left.confidence) return right.confidence - left.confidence
+    return right.expectedValue - left.expectedValue
+  })
+
+  const byType = Object.fromEntries(
+    Object.keys(mlbPropTypeConfig).map((propType) => [
+      propType,
+      sortedTargets.filter((target) => target.propType === propType).slice(0, 10)
+    ])
+  )
+
+  const featured = []
+  const featuredIds = new Set()
+  for (const propType of Object.keys(mlbPropTypeConfig)) {
+    const topOfType = byType[propType]?.[0]
+    if (topOfType && !featuredIds.has(topOfType.id)) {
+      featured.push(topOfType)
+      featuredIds.add(topOfType.id)
+    }
+  }
+
+  sortedTargets.forEach((target) => {
+    if (featured.length >= 8 || featuredIds.has(target.id)) return
+    featured.push(target)
+    featuredIds.add(target.id)
+  })
+
+  return {
+    available: sortedTargets.length > 0,
+    targets: sortedTargets,
+    featured,
+    byType,
+    summary: sortedTargets.length
+      ? `${sortedTargets[0].playerName} leads the prop board, but the cleaner edges spread across hits, total bases, and RBI instead of stacking only HR swings.`
+      : 'No reliable prop lanes surfaced yet before lineups and matchup data settled.'
   }
 }
 

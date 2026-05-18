@@ -1862,11 +1862,15 @@ def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = No
             """,
             (as_of_date,),
         ).fetchall()
+        processed_bullpen_teams: set[str] = set()
         for scheduled_game in scheduled_teams:
             for team_name, opponent_name in (
                 (scheduled_game["away_team"], scheduled_game["home_team"]),
                 (scheduled_game["home_team"], scheduled_game["away_team"]),
             ):
+                if team_name in processed_bullpen_teams:
+                    continue
+                processed_bullpen_teams.add(team_name)
                 reliever_rows = conn.execute(
                     """
                     SELECT *

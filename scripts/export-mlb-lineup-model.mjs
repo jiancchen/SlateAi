@@ -376,6 +376,9 @@ const aggregateStatSplits = (splits = []) => {
   const aggregate = {
     gamesPlayed: 0,
     hits: 0,
+    singles: 0,
+    doubles: 0,
+    triples: 0,
     atBats: 0,
     plateAppearances: 0,
     homeRuns: 0,
@@ -390,6 +393,8 @@ const aggregateStatSplits = (splits = []) => {
     const stat = split?.stat || {}
     aggregate.gamesPlayed += Number(stat.gamesPlayed || 0)
     aggregate.hits += Number(stat.hits || 0)
+    aggregate.doubles += Number(stat.doubles || 0)
+    aggregate.triples += Number(stat.triples || 0)
     aggregate.atBats += Number(stat.atBats || 0)
     aggregate.plateAppearances += Number(stat.plateAppearances || 0)
     aggregate.homeRuns += Number(stat.homeRuns || 0)
@@ -399,6 +404,8 @@ const aggregateStatSplits = (splits = []) => {
     aggregate.totalBases += Number(stat.totalBases || 0)
     aggregate.sacFlies += Number(stat.sacFlies || 0)
   }
+
+  aggregate.singles += Math.max(0, aggregate.hits - aggregate.doubles - aggregate.triples - aggregate.homeRuns)
 
   const denominatorForObp =
     aggregate.atBats + aggregate.baseOnBalls + aggregate.hitByPitch + aggregate.sacFlies
@@ -415,6 +422,9 @@ const aggregateStatSplits = (splits = []) => {
   return {
     gamesPlayed: aggregate.gamesPlayed,
     hits: aggregate.hits,
+    singles: aggregate.singles,
+    doubles: aggregate.doubles,
+    triples: aggregate.triples,
     atBats: aggregate.atBats,
     plateAppearances,
     homeRuns: aggregate.homeRuns,
@@ -428,7 +438,11 @@ const aggregateStatSplits = (splits = []) => {
     slg,
     ops,
     hitsPerGame: aggregate.gamesPlayed > 0 ? aggregate.hits / aggregate.gamesPlayed : null,
+    singlesPerGame: aggregate.gamesPlayed > 0 ? aggregate.singles / aggregate.gamesPlayed : null,
     hrRate: plateAppearances > 0 ? aggregate.homeRuns / plateAppearances : null,
+    hitRate: plateAppearances > 0 ? aggregate.hits / plateAppearances : null,
+    singlesRate: plateAppearances > 0 ? aggregate.singles / plateAppearances : null,
+    totalBasesRate: plateAppearances > 0 ? aggregate.totalBases / plateAppearances : null,
     kRate: plateAppearances > 0 ? aggregate.strikeOuts / plateAppearances : null,
     bbRate: plateAppearances > 0 ? aggregate.baseOnBalls / plateAppearances : null
   }
@@ -670,26 +684,68 @@ const buildPlayerLineupEntry = ({
       ? {
           gamesPlayed: seasonStats.gamesPlayed,
           hits: seasonStats.hits,
+          singles: seasonStats.singles,
+          doubles: seasonStats.doubles,
+          triples: seasonStats.triples,
           homeRuns: seasonStats.homeRuns,
+          walks: seasonStats.baseOnBalls,
+          totalBases: seasonStats.totalBases,
+          atBats: seasonStats.atBats,
+          plateAppearances: seasonStats.plateAppearances,
           avg: Number(formatRate(seasonStats.avg, 3).replace(/^\./, '0.')),
-          ops: Number(formatRate(seasonStats.ops, 3).replace(/^\./, '0.'))
+          obp: Number(formatRate(seasonStats.obp, 3).replace(/^\./, '0.')),
+          slg: Number(formatRate(seasonStats.slg, 3).replace(/^\./, '0.')),
+          ops: Number(formatRate(seasonStats.ops, 3).replace(/^\./, '0.')),
+          hitRate: roundToHundredths((seasonStats.hitRate || 0) * 100) / 100,
+          singlesRate: roundToHundredths((seasonStats.singlesRate || 0) * 100) / 100,
+          hrRate: roundToHundredths((seasonStats.hrRate || 0) * 100) / 100,
+          walkRate: roundToHundredths((seasonStats.bbRate || 0) * 100) / 100,
+          totalBasesRate: roundToHundredths((seasonStats.totalBasesRate || 0) * 100) / 100
         }
       : null,
     recent: recentStats
       ? {
           gamesPlayed: recentStats.gamesPlayed,
           hits: recentStats.hits,
+          singles: recentStats.singles,
+          doubles: recentStats.doubles,
+          triples: recentStats.triples,
           homeRuns: recentStats.homeRuns,
+          walks: recentStats.baseOnBalls,
+          totalBases: recentStats.totalBases,
+          atBats: recentStats.atBats,
+          plateAppearances: recentStats.plateAppearances,
           avg: Number(formatRate(recentStats.avg, 3).replace(/^\./, '0.')),
-          ops: Number(formatRate(recentStats.ops, 3).replace(/^\./, '0.'))
+          obp: Number(formatRate(recentStats.obp, 3).replace(/^\./, '0.')),
+          slg: Number(formatRate(recentStats.slg, 3).replace(/^\./, '0.')),
+          ops: Number(formatRate(recentStats.ops, 3).replace(/^\./, '0.')),
+          hitRate: roundToHundredths((recentStats.hitRate || 0) * 100) / 100,
+          singlesRate: roundToHundredths((recentStats.singlesRate || 0) * 100) / 100,
+          hrRate: roundToHundredths((recentStats.hrRate || 0) * 100) / 100,
+          walkRate: roundToHundredths((recentStats.bbRate || 0) * 100) / 100,
+          totalBasesRate: roundToHundredths((recentStats.totalBasesRate || 0) * 100) / 100
         }
       : null,
     split: splitStats
       ? {
           hits: splitStats.hits,
+          singles: splitStats.singles,
+          doubles: splitStats.doubles,
+          triples: splitStats.triples,
           homeRuns: splitStats.homeRuns,
+          walks: splitStats.baseOnBalls,
+          totalBases: splitStats.totalBases,
+          atBats: splitStats.atBats,
+          plateAppearances: splitStats.plateAppearances,
           avg: Number(formatRate(splitStats.avg, 3).replace(/^\./, '0.')),
-          ops: Number(formatRate(splitStats.ops, 3).replace(/^\./, '0.'))
+          obp: Number(formatRate(splitStats.obp, 3).replace(/^\./, '0.')),
+          slg: Number(formatRate(splitStats.slg, 3).replace(/^\./, '0.')),
+          ops: Number(formatRate(splitStats.ops, 3).replace(/^\./, '0.')),
+          hitRate: roundToHundredths((splitStats.hitRate || 0) * 100) / 100,
+          singlesRate: roundToHundredths((splitStats.singlesRate || 0) * 100) / 100,
+          hrRate: roundToHundredths((splitStats.hrRate || 0) * 100) / 100,
+          walkRate: roundToHundredths((splitStats.bbRate || 0) * 100) / 100,
+          totalBasesRate: roundToHundredths((splitStats.totalBasesRate || 0) * 100) / 100
         }
       : null,
     metrics: {

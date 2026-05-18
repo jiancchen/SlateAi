@@ -169,6 +169,7 @@ const buildPitcherSummary = (person = null) => {
   const homeRunsAllowed = Number(stat.homeRuns ?? 0)
 
   return {
+    id: Number(person?.id ?? 0) || null,
     fullName: person?.fullName || '',
     pitchHand: normalizePitchHand(person?.pitchHand?.code || person?.pitchHand?.description || ''),
     wins: Number(stat.wins ?? 0),
@@ -295,6 +296,74 @@ const buildBullpenChainByTeam = ({ date, games }) => {
   )
 }
 
+const roundMaybe = (value, digits = 2) => {
+  const numeric = Number(value)
+  return Number.isFinite(numeric) ? Number(numeric.toFixed(digits)) : null
+}
+
+const choosePreferredPitcherForm = (rows = []) => {
+  if (!rows.length) return null
+
+  return [...rows].sort((left, right) => {
+    const sampleGap = Number(right.starts_sample || 0) - Number(left.starts_sample || 0)
+    if (sampleGap !== 0) return sampleGap
+
+    const windowGap = Math.abs(Number(left.window_starts || 99) - 3) - Math.abs(Number(right.window_starts || 99) - 3)
+    if (windowGap !== 0) return windowGap
+
+    return Number(left.window_starts || 99) - Number(right.window_starts || 99)
+  })[0]
+}
+
+const buildRecentStarterFormByPitcherId = ({ date, games }) => {
+  const pitcherIds = [
+    ...new Set(
+      games.flatMap((game) => [game.awayPitcher?.id, game.homePitcher?.id]).filter((value) => Number.isFinite(value))
+    )
+  ]
+
+  if (!pitcherIds.length) return {}
+
+  const rows = runSqliteJson(
+    `select pitcher_id, pitcher_name, window_starts, starts_sample, innings_per_start, earned_runs_per_start, hits_allowed_per_start, home_runs_allowed_per_start, walks_allowed_per_start, strikeouts_per_start, whip_like, short_start_rate, quality_start_rate, run_volatility, home_run_burstiness, recent_3_earned_runs_delta from mlb_starting_pitcher_rolling_form where as_of_date='${date}' and pitcher_id in (${pitcherIds.join(',')}) order by pitcher_id, window_starts;`
+  )
+
+  const grouped = rows.reduce((map, row) => {
+    const key = Number(row.pitcher_id)
+    if (!map.has(key)) map.set(key, [])
+    map.get(key).push(row)
+    return map
+  }, new Map())
+
+  return Object.fromEntries(
+    [...grouped.entries()].map(([pitcherId, pitcherRows]) => {
+      const chosen = choosePreferredPitcherForm(pitcherRows)
+      if (!chosen) return [pitcherId, null]
+
+      return [
+        pitcherId,
+        {
+          pitcherName: chosen.pitcher_name || '',
+          windowStarts: Number(chosen.window_starts || 0) || null,
+          startsSample: Number(chosen.starts_sample || 0) || 0,
+          inningsPerStart: roundMaybe(chosen.innings_per_start),
+          earnedRunsPerStart: roundMaybe(chosen.earned_runs_per_start),
+          hitsAllowedPerStart: roundMaybe(chosen.hits_allowed_per_start),
+          homeRunsAllowedPerStart: roundMaybe(chosen.home_runs_allowed_per_start),
+          walksAllowedPerStart: roundMaybe(chosen.walks_allowed_per_start),
+          strikeoutsPerStart: roundMaybe(chosen.strikeouts_per_start),
+          whipLike: roundMaybe(chosen.whip_like),
+          shortStartRate: roundMaybe(chosen.short_start_rate),
+          qualityStartRate: roundMaybe(chosen.quality_start_rate),
+          runVolatility: roundMaybe(chosen.run_volatility),
+          homeRunBurstiness: roundMaybe(chosen.home_run_burstiness),
+          recent3EarnedRunsDelta: roundMaybe(chosen.recent_3_earned_runs_delta)
+        }
+      ]
+    })
+  )
+}
+
 const buildStandingsContext = (records = []) => {
   const context = {}
 
@@ -400,9 +469,25 @@ const main = async () => {
   rawGames.sort((left, right) => left.startMinutes - right.startMinutes || left.id.localeCompare(right.id))
 
   const bullpenChainByTeam = buildBullpenChainByTeam({ date: options.date, games: rawGames })
+  const recentStarterFormByPitcherId = buildRecentStarterFormByPitcherId({ date: options.date, games: rawGames })
   const standingsContextByTeam = buildStandingsContext(standings.records || [])
+  const enrichedRawGames = rawGames.map((game) => ({
+    ...game,
+    awayPitcher: {
+      ...game.awayPitcher,
+      recentForm: Number.isFinite(game.awayPitcher?.id)
+        ? recentStarterFormByPitcherId[game.awayPitcher.id] ?? null
+        : null
+    },
+    homePitcher: {
+      ...game.homePitcher,
+      recentForm: Number.isFinite(game.homePitcher?.id)
+        ? recentStarterFormByPitcherId[game.homePitcher.id] ?? null
+        : null
+    }
+  }))
 
-  const dayDataModule = `export const rawGames = ${JSON.stringify(rawGames, null, 2)}\n\nexport const bullpenChainByTeam = ${JSON.stringify(bullpenChainByTeam, null, 2)}\n`
+  const dayDataModule = `export const rawGames = ${JSON.stringify(enrichedRawGames, null, 2)}\n\nexport const bullpenChainByTeam = ${JSON.stringify(bullpenChainByTeam, null, 2)}\n`
   const dayContextModule = `import {\n  teamOffenseContextByTeam,\n  teamBullpenContextByTeam,\n  teamSavantContextByTeam\n} from './mlb-context-${options.baselineContextDate}.js'\n\nexport const standingsContextByTeam = ${JSON.stringify(standingsContextByTeam, null, 2)}\n\nexport { teamOffenseContextByTeam, teamBullpenContextByTeam, teamSavantContextByTeam }\n`
 
   await writeModuleFile(
