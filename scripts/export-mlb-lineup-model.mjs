@@ -73,6 +73,29 @@ const formatSigned = (value, digits = 1) => {
   return `${value >= 0 ? '+' : ''}${value.toFixed(digits)}`
 }
 
+const normalizePersonName = (value = '') =>
+  value
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[^a-z0-9]+/gi, ' ')
+    .trim()
+    .toLowerCase()
+
+const decodeHtmlEntities = (value = '') =>
+  value
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&deg;/g, '°')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;|&#x27;|&#8217;/g, "'")
+    .replace(/&ndash;|&#8211;/g, '-')
+
+const stripTags = (value = '') =>
+  decodeHtmlEntities(value)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+
 const formatRate = (value, digits = 3) => {
   if (!Number.isFinite(value)) return 'n/a'
   return value.toFixed(digits).replace(/^0/, '')
@@ -128,6 +151,18 @@ const fetchJson = async (url) => {
   }
 
   return response.json()
+}
+
+const fetchText = async (url) => {
+  const response = await fetch(url, {
+    headers: { 'User-Agent': 'Mozilla/5.0' }
+  })
+
+  if (!response.ok) {
+    throw new Error(`Failed request ${response.status} for ${url}`)
+  }
+
+  return response.text()
 }
 
 const loadRawGames = async (date) => {
@@ -229,6 +264,112 @@ const buildScheduleMap = (scheduleDates = []) => {
   return scheduleMap
 }
 
+const parseRotoWireSide = (listHtml = '') => {
+  const statusMatch = listHtml.match(/<li class="lineup__status[^"]*">[\s\S]*?<\/div>\s*([^<]+)\s*<\/li>/i)
+  const starterNameMatch = listHtml.match(/lineup__player-highlight-name">[\s\S]*?<a[^>]*>([^<]+)<\/a>/i)
+  const starterThrowMatch = listHtml.match(/<span class="lineup__throws">([^<]+)<\/span>/i)
+  const starterStatMatch = listHtml.match(/lineup__player-highlight-stats">\s*([\s\S]*?)\s*<\/div>/i)
+  const players = Array.from(
+    listHtml.matchAll(
+      /<li class="lineup__player">[\s\S]*?<div class="lineup__pos">([^<]+)<\/div>[\s\S]*?<a[^>]+title="([^"]+)"[^>]*>[\s\S]*?<\/a>[\s\S]*?<span class="lineup__bats">([^<]+)<\/span>[\s\S]*?<\/li>/gi
+    )
+  ).map((match, index) => ({
+    slot: index + 1,
+    position: stripTags(match[1]),
+    name: decodeHtmlEntities(match[2]).trim(),
+    bats: stripTags(match[3])
+  }))
+
+  return {
+    statusLabel: statusMatch ? stripTags(statusMatch[1]) : '',
+    starter: {
+      name: starterNameMatch ? stripTags(starterNameMatch[1]) : '',
+      throws: starterThrowMatch ? stripTags(starterThrowMatch[1]) : '',
+      statLine: starterStatMatch ? stripTags(starterStatMatch[1]) : ''
+    },
+    players
+  }
+}
+
+const parseRotoWireWeather = (segment = '') => {
+  const weatherMatch = segment.match(
+    /<div class="lineup__weather">[\s\S]*?<img class="lineup__weather-icon"[^>]*alt="([^"]+)"[\s\S]*?<div class="lineup__weather-text">([\s\S]*?)<\/div>\s*<\/div>/i
+  )
+  if (!weatherMatch) return null
+
+  const icon = stripTags(weatherMatch[1])
+  const summary = stripTags(weatherMatch[2])
+  if (/dome/i.test(summary)) {
+    return {
+      icon,
+      summary,
+      precipitationPct: null,
+      temperatureF: null,
+      windMph: null,
+      windDirection: '',
+      label: summary
+    }
+  }
+  const precipitation = Number(summary.match(/(\d+)%\s*Precipitation/i)?.[1] || '')
+  const temperature = Number(summary.match(/(-?\d+)\s*°/)?.[1] || '')
+  const windMatch = summary.match(/Wind\s+(\d+)\s*mph\s*([A-Za-z-]+)/i)
+
+  return {
+    icon,
+    summary,
+    precipitationPct: Number.isFinite(precipitation) ? precipitation : null,
+    temperatureF: Number.isFinite(temperature) ? temperature : null,
+    windMph: Number.isFinite(Number(windMatch?.[1])) ? Number(windMatch[1]) : null,
+    windDirection: windMatch?.[2] || '',
+    label: [
+      Number.isFinite(temperature) ? `${temperature}°F` : '',
+      windMatch ? `Wind ${windMatch[1]} mph ${windMatch[2]}` : '',
+      Number.isFinite(precipitation) ? `${precipitation}% precip` : ''
+    ]
+      .filter(Boolean)
+      .join(' | ')
+  }
+}
+
+const parseRotoWireOdds = (segment = '') => {
+  const lineMatch = segment.match(/<b>LINE<\/b>&nbsp;[\s\S]*?<span class="composite hide">([^<]+)<\/span>/i)
+  const totalMatch = segment.match(/<b>O\/U<\/b>&nbsp;[\s\S]*?<span class="composite hide">([^<]+)<\/span>/i)
+
+  return {
+    line: lineMatch ? stripTags(lineMatch[1]) : '',
+    total: totalMatch ? stripTags(totalMatch[1]) : ''
+  }
+}
+
+const fetchRotoWireLineupCards = async () => {
+  const html = await fetchText('https://www.rotowire.com/baseball/daily-lineups.php')
+  const segments = html.split('<div class="lineup is-mlb').slice(1)
+  const output = new Map()
+
+  for (const segment of segments) {
+    const awayTeamMatch = segment.match(/<div class="lineup__mteam is-visit">\s*([\s\S]*?)<span class="lineup__wl">/i)
+    const homeTeamMatch = segment.match(/<div class="lineup__mteam is-home">\s*([\s\S]*?)<span class="lineup__wl">/i)
+    if (!awayTeamMatch || !homeTeamMatch) continue
+
+    const awayOfficial = deskToOfficialTeam[stripTags(awayTeamMatch[1])] || stripTags(awayTeamMatch[1])
+    const homeOfficial = deskToOfficialTeam[stripTags(homeTeamMatch[1])] || stripTags(homeTeamMatch[1])
+    const key = `${awayOfficial} @ ${homeOfficial}`
+    const lists = Array.from(segment.matchAll(/<ul class="lineup__list is-(visit|home)">([\s\S]*?)<\/ul>/gi))
+    if (lists.length < 2) continue
+
+    const timeMatch = segment.match(/<div class="lineup__time">([^<]+)<\/div>/i)
+    output.set(key, {
+      time: timeMatch ? stripTags(timeMatch[1]) : '',
+      weather: parseRotoWireWeather(segment),
+      odds: parseRotoWireOdds(segment),
+      away: parseRotoWireSide(lists.find((entry) => entry[1] === 'visit')?.[2] || ''),
+      home: parseRotoWireSide(lists.find((entry) => entry[1] === 'home')?.[2] || '')
+    })
+  }
+
+  return output
+}
+
 const aggregateStatSplits = (splits = []) => {
   if (!Array.isArray(splits) || !splits.length) return null
 
@@ -317,6 +458,33 @@ const getStatRecord = (peopleMap, playerId) => {
 }
 
 const buildBatterHandCode = (person = {}) => person?.batSide?.code || ''
+
+const buildRosterLookup = (boxscoreSide = {}) => {
+  const lookup = new Map()
+
+  for (const playerRecord of Object.values(boxscoreSide.players || {})) {
+    const fullName = playerRecord?.person?.fullName
+    const playerId = playerRecord?.person?.id
+    if (!fullName || !playerId) continue
+
+    lookup.set(normalizePersonName(fullName), {
+      playerId,
+      playerRecord
+    })
+  }
+
+  return lookup
+}
+
+const mapRotoLineupPlayerIds = (rotoSide = null, boxscoreSide = {}) => {
+  if (!rotoSide?.players?.length) return []
+
+  const rosterLookup = buildRosterLookup(boxscoreSide)
+
+  return rotoSide.players
+    .map((player) => rosterLookup.get(normalizePersonName(player.name))?.playerId)
+    .filter(Boolean)
+}
 
 const buildSeasonLine = (stats = null) => {
   if (!stats || !Number.isFinite(stats.ops)) return 'Season line unavailable'
@@ -645,6 +813,80 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
     .filter(Boolean)
 }
 
+const extractSupplementalLineupPlayers = ({
+  rotoSide = null,
+  boxscoreSide = {},
+  playerStatMaps = {},
+  opposingPitcher = null
+}) => {
+  if (!rotoSide?.players?.length) return []
+
+  const rosterLookup = buildRosterLookup(boxscoreSide)
+
+  return rotoSide.players
+    .map((player) => {
+      const rosterEntry = rosterLookup.get(normalizePersonName(player.name))
+      if (!rosterEntry?.playerId) return null
+
+      const playerId = rosterEntry.playerId
+      const playerRecord = rosterEntry.playerRecord
+      const seasonStats = getStatRecord(playerStatMaps.season, playerId)
+      const recentStats = getStatRecord(playerStatMaps.recent, playerId)
+      const splitStats =
+        opposingPitcher?.handedness === 'L'
+          ? getStatRecord(playerStatMaps.vsLeft, playerId)
+          : getStatRecord(playerStatMaps.vsRight, playerId)
+      const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
+      const lineupPlayer = {
+        playerId,
+        slot: player.slot,
+        name: player.name,
+        position: player.position || playerRecord.position?.abbreviation || playerDetails?.primaryPosition?.abbreviation || '',
+        bats: player.bats || buildBatterHandCode(playerDetails) || ''
+      }
+
+      return buildPlayerLineupEntry({
+        lineupPlayer,
+        seasonStats,
+        recentStats,
+        splitStats,
+        opposingPitcher
+      })
+    })
+    .filter(Boolean)
+}
+
+const statusFromRotoWire = (statusLabel = '', lineupLength = 0) => {
+  if (/confirmed/i.test(statusLabel) || lineupLength >= 9 && /official/i.test(statusLabel)) return 'posted'
+  if (lineupLength > 0) return 'partial'
+  return 'pending'
+}
+
+const choosePreferredLineup = ({
+  officialLineup = [],
+  supplementalLineup = [],
+  officialStatus = 'pending',
+  supplementalStatus = 'pending'
+}) => {
+  if (officialStatus === 'posted' && officialLineup.length >= supplementalLineup.length) {
+    return { lineup: officialLineup, status: officialStatus, source: 'official-feed' }
+  }
+
+  if (supplementalLineup.length > officialLineup.length) {
+    return { lineup: supplementalLineup, status: supplementalStatus, source: 'rotowire-supplement' }
+  }
+
+  if (officialLineup.length) {
+    return { lineup: officialLineup, status: officialStatus, source: 'official-feed' }
+  }
+
+  if (supplementalLineup.length) {
+    return { lineup: supplementalLineup, status: supplementalStatus, source: 'rotowire-supplement' }
+  }
+
+  return { lineup: [], status: 'pending', source: 'none' }
+}
+
 const serializeModule = ({ meta, lineupBoardsByGameId, lineupMatchupContextByGameId }) =>
   `export const lineupSnapshotMeta = ${JSON.stringify(meta, null, 2)}\n\n` +
   `export const lineupBoardsByGameId = ${JSON.stringify(lineupBoardsByGameId, null, 2)}\n\n` +
@@ -658,6 +900,7 @@ const main = async () => {
   const scheduleUrl = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${options.date}&hydrate=team,probablePitcher`
   const schedule = await fetchJson(scheduleUrl)
   const scheduleMap = buildScheduleMap(schedule.dates || [])
+  const rotoWireCards = await fetchRotoWireLineupCards()
 
   const rawGamesByKey = new Map(
     rawGames.map((game) => [
@@ -684,7 +927,15 @@ const main = async () => {
     ...new Set(
       feedRecords.flatMap((record) => [
         ...(record.feed.liveData?.boxscore?.teams?.away?.battingOrder || []),
-        ...(record.feed.liveData?.boxscore?.teams?.home?.battingOrder || [])
+        ...(record.feed.liveData?.boxscore?.teams?.home?.battingOrder || []),
+        ...mapRotoLineupPlayerIds(
+          rotoWireCards.get(`${deskToOfficialTeam[record.rawGame.away] || record.rawGame.away} @ ${deskToOfficialTeam[record.rawGame.home] || record.rawGame.home}`)?.away,
+          record.feed.liveData?.boxscore?.teams?.away || {}
+        ),
+        ...mapRotoLineupPlayerIds(
+          rotoWireCards.get(`${deskToOfficialTeam[record.rawGame.away] || record.rawGame.away} @ ${deskToOfficialTeam[record.rawGame.home] || record.rawGame.home}`)?.home,
+          record.feed.liveData?.boxscore?.teams?.home || {}
+        )
       ])
     )
   ]
@@ -728,10 +979,38 @@ const main = async () => {
     const homePitcher = buildPitcherProfile(rawGame.awayPitcher)
     const awayBoxscore = feed.liveData?.boxscore?.teams?.away || {}
     const homeBoxscore = feed.liveData?.boxscore?.teams?.home || {}
-    const awayLineup = extractLineupPlayers(awayBoxscore, playerStatMaps, awayPitcher)
-    const homeLineup = extractLineupPlayers(homeBoxscore, playerStatMaps, homePitcher)
-    const awayStatus = awayLineup.length >= 9 ? 'posted' : awayLineup.length ? 'partial' : 'pending'
-    const homeStatus = homeLineup.length >= 9 ? 'posted' : homeLineup.length ? 'partial' : 'pending'
+    const officialKey = `${awayOfficial} @ ${homeOfficial}`
+    const rotoWireCard = rotoWireCards.get(officialKey) || null
+    const awayOfficialLineup = extractLineupPlayers(awayBoxscore, playerStatMaps, awayPitcher)
+    const homeOfficialLineup = extractLineupPlayers(homeBoxscore, playerStatMaps, homePitcher)
+    const awaySupplementalLineup = extractSupplementalLineupPlayers({
+      rotoSide: rotoWireCard?.away,
+      boxscoreSide: awayBoxscore,
+      playerStatMaps,
+      opposingPitcher: awayPitcher
+    })
+    const homeSupplementalLineup = extractSupplementalLineupPlayers({
+      rotoSide: rotoWireCard?.home,
+      boxscoreSide: homeBoxscore,
+      playerStatMaps,
+      opposingPitcher: homePitcher
+    })
+    const awaySelection = choosePreferredLineup({
+      officialLineup: awayOfficialLineup,
+      supplementalLineup: awaySupplementalLineup,
+      officialStatus: awayOfficialLineup.length >= 9 ? 'posted' : awayOfficialLineup.length ? 'partial' : 'pending',
+      supplementalStatus: statusFromRotoWire(rotoWireCard?.away?.statusLabel, awaySupplementalLineup.length)
+    })
+    const homeSelection = choosePreferredLineup({
+      officialLineup: homeOfficialLineup,
+      supplementalLineup: homeSupplementalLineup,
+      officialStatus: homeOfficialLineup.length >= 9 ? 'posted' : homeOfficialLineup.length ? 'partial' : 'pending',
+      supplementalStatus: statusFromRotoWire(rotoWireCard?.home?.statusLabel, homeSupplementalLineup.length)
+    })
+    const awayLineup = awaySelection.lineup
+    const homeLineup = homeSelection.lineup
+    const awayStatus = awaySelection.status
+    const homeStatus = homeSelection.status
     const awaySummary = awayLineup.length
       ? buildLineupTeamSummary({
           teamName: awayDesk,
@@ -779,8 +1058,15 @@ const main = async () => {
         away: awayStatus,
         home: homeStatus
       },
+      weather: rotoWireCard?.weather || null,
+      marketWeatherContext: {
+        line: rotoWireCard?.odds?.line || '',
+        total: rotoWireCard?.odds?.total || '',
+        source: rotoWireCard ? 'RotoWire daily lineups + weather' : ''
+      },
       away: {
         teamName: awayDesk,
+        lineupSource: awaySelection.source,
         opposingStarter: {
           name: awayPitcher?.fullName || '',
           hand: awayPitcher?.handedness || '',
@@ -791,6 +1077,7 @@ const main = async () => {
       },
       home: {
         teamName: homeDesk,
+        lineupSource: homeSelection.source,
         opposingStarter: {
           name: homePitcher?.fullName || '',
           hand: homePitcher?.handedness || '',
@@ -818,7 +1105,7 @@ const main = async () => {
       gameCount: Object.keys(lineupBoardsByGameId).length,
       playerCount: allPlayerIds.length,
       sourceLabel:
-        'Official MLB feed/live posted batting orders plus official player season, recent, and handedness split stats.'
+        'Official MLB feed/live batting orders plus official player season, recent, and handedness split stats, supplemented by RotoWire daily lineups and weather when the official order is still missing.'
     },
     lineupBoardsByGameId,
     lineupMatchupContextByGameId

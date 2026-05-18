@@ -1580,8 +1580,22 @@
                                       <p class="series-kicker">Full batting orders</p>
                                       <strong>Recent form, split fit, and starter-lane tags</strong>
                                     </div>
-                                    <span>Official posted lineups</span>
+                                    <span>Official + weather supplement</span>
                                   </div>
+
+                                  {#if game.lineupBoard.weather || game.lineupBoard.marketWeatherContext?.line || game.lineupBoard.marketWeatherContext?.total}
+                                    <div class="lineup-weather-row">
+                                      {#if game.lineupBoard.weather}
+                                        <span>{game.lineupBoard.weather.label || game.lineupBoard.weather.summary}</span>
+                                      {/if}
+                                      {#if game.lineupBoard.marketWeatherContext?.line}
+                                        <span>Line {game.lineupBoard.marketWeatherContext.line}</span>
+                                      {/if}
+                                      {#if game.lineupBoard.marketWeatherContext?.total}
+                                        <span>O/U {game.lineupBoard.marketWeatherContext.total}</span>
+                                      {/if}
+                                    </div>
+                                  {/if}
 
                                   <div class="lineup-board-grid">
                                     {#each [
@@ -1611,6 +1625,9 @@
                                           <span>Top third {lineupTeam.board.summary.topThirdScore}</span>
                                           <span>Depth {lineupTeam.board.summary.depthScore}</span>
                                           <span>{lineupTeam.board.summary.pressureLabel}</span>
+                                          {#if lineupTeam.board.lineupSource === 'rotowire-supplement'}
+                                            <span>RotoWire supplement</span>
+                                          {/if}
                                         </div>
 
                                         <p class="lineup-team-overview">{lineupTeam.board.summary.overview}</p>
@@ -1676,6 +1693,9 @@
                                               <div>
                                                 <strong>{target.playerName}</strong>
                                                 <span>{target.teamName} vs {target.opposingPitcher} ({target.opposingPitcherHand}HP)</span>
+                                                {#if target.signalSummary}
+                                                  <span>{target.signalSummary}</span>
+                                                {/if}
                                               </div>
                                               <div class="home-run-target-meta">
                                                 <strong>{Math.round(target.score)}</strong>
@@ -1701,11 +1721,11 @@
                                             <div class="home-run-target-row">
                                               <div>
                                                 <strong>{target.playerName}</strong>
-                                                <span>{target.teamName} | {target.homeRunsLast7Days} HR last 7 days</span>
+                                                <span>{target.signalSummary || `${target.teamName} | ${target.homeRunsLast7Days} HR last 7 days`}</span>
                                               </div>
                                               <div class="home-run-target-meta">
                                                 <strong>{Math.round(target.score)}</strong>
-                                                <span>{target.opposingPitcherHr9} HR/9</span>
+                                                <span>{target.scoreBand} | {target.burstTag}</span>
                                               </div>
                                             </div>
                                           {/each}

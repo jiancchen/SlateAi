@@ -24,6 +24,9 @@ The rule:
 - Official starting lineups page:
   [https://www.mlb.com/starting-lineups](https://www.mlb.com/starting-lineups)
   Use this as the browser-first lineup confirmation page when you want a fast visual check before or alongside the structured `feed/live` pull.
+- RotoWire MLB daily lineups:
+  [https://www.rotowire.com/baseball/daily-lineups.php](https://www.rotowire.com/baseball/daily-lineups.php)
+  Use this as the lineup and weather supplement when official `feed/live` batting orders are still sparse. It is especially useful for projected lineups, precipitation, temperature, wind, and same-page line / total context.
 - Pitcher season line pattern:
   `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
   Use after the schedule pull when you need handedness, record, ERA, and strikeouts for the listed probable starters.

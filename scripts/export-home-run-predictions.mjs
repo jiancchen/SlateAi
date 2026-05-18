@@ -42,6 +42,11 @@ const abbrToTeam = {
 }
 
 const teamToAbbr = Object.fromEntries(Object.entries(abbrToTeam).map(([abbr, team]) => [team, abbr]))
+const average = (values = []) => {
+  const numeric = values.filter((value) => Number.isFinite(value))
+  return numeric.length ? numeric.reduce((sum, value) => sum + value, 0) / numeric.length : null
+}
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -212,6 +217,28 @@ const buildBattingImpactContext = (playerName, battingImpactByPlayerName, target
 const buildMatchupMap = (games) => {
   const matchupByAbbr = {}
 
+  const buildBullpenVulnerability = (bullpenContext = null, chainContext = null) => {
+    if (!bullpenContext) return 0
+
+    const era = Number(bullpenContext.era)
+    const whip = Number(bullpenContext.whip)
+    const homeRuns = Number(bullpenContext.homeRuns)
+    const topRelievers = chainContext?.topRelievers || []
+    const averageAvailability = average(topRelievers.map((reliever) => Number(reliever.availabilityScore)))
+    const fatigueFlags = topRelievers.filter((reliever) => reliever.backToBack || reliever.workedYesterday).length
+    const bridgeLeak = average(topRelievers.map((reliever) => Number(reliever.bridgeScore)))
+
+    const score =
+      (Number.isFinite(era) ? (era - 4.1) * 1.4 : 0) +
+      (Number.isFinite(whip) ? (whip - 1.3) * 7 : 0) +
+      (Number.isFinite(homeRuns) ? (homeRuns - 22) * 0.08 : 0) +
+      (Number.isFinite(averageAvailability) ? (70 - averageAvailability) * 0.08 : 0) +
+      fatigueFlags * 0.9 +
+      (Number.isFinite(bridgeLeak) ? (78 - bridgeLeak) * 0.05 : 0)
+
+    return Number(clamp(score, -5, 8).toFixed(1))
+  }
+
   for (const game of games) {
     const awayTeam = game.participants[0].name
     const homeTeam = game.participants[1].name
@@ -226,6 +253,14 @@ const buildMatchupMap = (games) => {
       Number(homePitcher.homeRunsAllowed || 0) * 9 / Math.max(Number(homePitcher.inningsPitched || 1), 1)
     const homeOpponentHr9 =
       Number(awayPitcher.homeRunsAllowed || 0) * 9 / Math.max(Number(awayPitcher.inningsPitched || 1), 1)
+    const awayOpposingBullpenVulnerability = buildBullpenVulnerability(
+      game.bullpenContext?.home,
+      game.bullpenChainContext?.home
+    )
+    const homeOpposingBullpenVulnerability = buildBullpenVulnerability(
+      game.bullpenContext?.away,
+      game.bullpenChainContext?.away
+    )
 
     matchupByAbbr[awayAbbr] = {
       teamName: awayTeam,
@@ -233,7 +268,9 @@ const buildMatchupMap = (games) => {
       opposingPitcher: homePitcher.fullName,
       opposingPitcherHand: homePitcher.pitchHand,
       opposingPitcherHr9: awayOpponentHr9,
-      parkHrIndex: homeParkHrIndex
+      parkHrIndex: homeParkHrIndex,
+      isHomeToday: false,
+      opposingBullpenVulnerability: awayOpposingBullpenVulnerability
     }
 
     matchupByAbbr[homeAbbr] = {
@@ -242,7 +279,9 @@ const buildMatchupMap = (games) => {
       opposingPitcher: awayPitcher.fullName,
       opposingPitcherHand: awayPitcher.pitchHand,
       opposingPitcherHr9: homeOpponentHr9,
-      parkHrIndex: homeParkHrIndex
+      parkHrIndex: homeParkHrIndex,
+      isHomeToday: true,
+      opposingBullpenVulnerability: homeOpposingBullpenVulnerability
     }
   }
 
@@ -282,6 +321,47 @@ const buildLineupLookup = (lineupBoardsByGameId = {}) => {
   return lookup
 }
 
+const buildWeatherLookup = (lineupBoardsByGameId = {}) => {
+  const lookup = new Map()
+
+  for (const board of Object.values(lineupBoardsByGameId)) {
+    lookup.set(board.title, {
+      weather: board.weather || null,
+      total: Number(`${board.marketWeatherContext?.total || ''}`.match(/(\d+(\.\d+)?)/)?.[1] || '')
+    })
+  }
+
+  return lookup
+}
+
+const buildWeatherBoost = (weatherContext = null) => {
+  if (!weatherContext?.weather) return 0
+
+  const { weather, total } = weatherContext
+  const windDirection = `${weather.windDirection || ''}`.toLowerCase()
+  const windMph = Number(weather.windMph)
+  const temperatureF = Number(weather.temperatureF)
+  let boost = 0
+
+  if (Number.isFinite(windMph)) {
+    if (/out/.test(windDirection)) boost += windMph >= 10 ? 4 : windMph >= 7 ? 2 : 0.8
+    else if (/\bin\b/.test(windDirection)) boost -= windMph >= 10 ? 4 : windMph >= 7 ? 2 : 0.8
+  }
+
+  if (Number.isFinite(temperatureF)) {
+    if (temperatureF >= 90) boost += 2.4
+    else if (temperatureF >= 82) boost += 1.3
+    else if (temperatureF <= 60) boost -= 0.8
+  }
+
+  if (Number.isFinite(total)) {
+    if (total >= 9.5) boost += 1
+    else if (total <= 7.5) boost -= 0.8
+  }
+
+  return Math.max(-6, Math.min(6, boost))
+}
+
 const buildLineupPriority = (context = null) => {
   if (!context) return 0
 
@@ -299,6 +379,93 @@ const buildLineupPriority = (context = null) => {
       : 0
 
   return slotBonus + powerBoost + matchupBoost + splitBoost + formBoost + recentHrBoost + splitHrBoost + tagBoost
+}
+
+const buildGameFeedContextFetcher = () => {
+  const cache = new Map()
+
+  return async (gamePk) => {
+    const key = String(gamePk)
+    if (cache.has(key)) return cache.get(key)
+
+    const response = await fetch(`https://statsapi.mlb.com/api/v1.1/game/${key}/feed/live`, {
+      headers: { 'User-Agent': 'Mozilla/5.0' }
+    })
+    if (!response.ok) {
+      throw new Error(`Failed to fetch feed/live for HR context ${response.status} ${key}`)
+    }
+
+    const feed = await response.json()
+    const playLookup = new Map()
+    for (const play of feed.liveData?.plays?.allPlays || []) {
+      for (const playEvent of play.playEvents || []) {
+        if (playEvent.playId) playLookup.set(playEvent.playId, play)
+      }
+    }
+
+    const context = {
+      homeTeam: feed.gameData?.teams?.home?.name || '',
+      awayTeam: feed.gameData?.teams?.away?.name || '',
+      homeStarterId: Number(feed.gameData?.probablePitchers?.home?.id || 0),
+      awayStarterId: Number(feed.gameData?.probablePitchers?.away?.id || 0),
+      playLookup
+    }
+
+    cache.set(key, context)
+    return context
+  }
+}
+
+const describeHomeAwayBias = (candidate) => {
+  const share = candidate.isHomeToday ? candidate.homeRunContext?.homeShare : candidate.homeRunContext?.awayShare
+  const oppositeShare = candidate.isHomeToday ? candidate.homeRunContext?.awayShare : candidate.homeRunContext?.homeShare
+  if (!Number.isFinite(share) || !Number.isFinite(oppositeShare)) return 'neutral venue split'
+  if (share >= 0.68 && share - oppositeShare >= 0.18) return candidate.isHomeToday ? 'home-heavy carry' : 'road-heavy carry'
+  if (oppositeShare >= 0.68 && oppositeShare - share >= 0.18) return candidate.isHomeToday ? 'better on the road' : 'better at home'
+  return 'neutral venue split'
+}
+
+const describeTimingBias = (candidate) => {
+  const context = candidate.homeRunContext
+  if (!context) return 'mixed timing'
+  if (context.starterShare >= 0.62 && context.earlyShare >= 0.45) return 'starter ambush'
+  if (context.reliefShare >= 0.58 && context.lateShare >= 0.38) return 'late bridge damage'
+  if (context.highPressureShare >= 0.3) return 'close-game pop'
+  return 'mixed timing'
+}
+
+const describeBullpenLane = (candidate) => {
+  if (!Number.isFinite(candidate.opposingBullpenVulnerability)) return 'neutral bullpen'
+  if (candidate.opposingBullpenVulnerability >= 3) return 'bullpen leak live'
+  if (candidate.opposingBullpenVulnerability <= -2) return 'late lane tighter'
+  return 'neutral bullpen'
+}
+
+const buildSummaryFromLeadCandidate = (leadCandidate) => {
+  if (!leadCandidate) {
+    return 'No usable home-run lane has surfaced yet on the pre-lineup board.'
+  }
+
+  const homeAwayLine = describeHomeAwayBias(leadCandidate)
+  const timingLine = describeTimingBias(leadCandidate)
+  const matchupLine =
+    leadCandidate.lineupContext?.primaryTag === 'carry'
+      ? 'posted order still grades like a carry lane'
+      : `the posted order still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}`
+
+  if (leadCandidate.homeRunsLast7Days === 0 && leadCandidate.daysSinceLastHr >= 7) {
+    return `${leadCandidate.playerName} is more matchup-driven than form-driven here: ${matchupLine}, ${homeAwayLine}, ${timingLine}, and ${leadCandidate.opposingPitcherHr9} HR/9 across from him despite the recent cooldown.`
+  }
+
+  if (leadCandidate.scoreBand === 'premium') {
+    return `${leadCandidate.playerName} is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans ${timingLine}, and today lines up as a ${homeAwayLine} matchup into a ${leadCandidate.opposingPitcherHr9} HR/9 starter lane.`
+  }
+
+  if (leadCandidate.scoreBand === 'strong' || leadCandidate.scoreBand === 'live') {
+    return `${leadCandidate.playerName} is the cleanest likely bat here because the posted order still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}, the recent HR sample leans ${timingLine}, and today still profiles as a ${homeAwayLine} look.`
+  }
+
+  return `${leadCandidate.playerName} is the best available lane here, but this still looks thinner and more variance-driven than a true carry-bat HR script.`
 }
 
 const fetchStatcastLeaderboard = async (season) => {
@@ -328,7 +495,92 @@ const fetchPlayerDetails = async (playerId, season) => {
   return response.json()
 }
 
-const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
+const buildHomeRunEventContext = async (candidate, homeRunRows, fetchGameFeedContext) => {
+  const scopedRows = homeRunRows.slice(0, 12)
+  const eventContexts = (
+    await Promise.all(
+      scopedRows.map(async (row) => {
+        try {
+          const gameContext = await fetchGameFeedContext(row.game_pk)
+          const play = gameContext.playLookup.get(row.play_id)
+          if (!play) return null
+
+          const batterSide = play.about?.isTopInning ? 'away' : 'home'
+          const pitcherSide = batterSide === 'away' ? 'home' : 'away'
+          const battingTeam = batterSide === 'away' ? gameContext.awayTeam : gameContext.homeTeam
+          const isHome = batterSide === 'home'
+          const rbi = Number(play.result?.rbi || 0)
+          const awayScoreBefore = Number(play.result?.awayScore || 0) - (batterSide === 'away' ? rbi : 0)
+          const homeScoreBefore = Number(play.result?.homeScore || 0) - (batterSide === 'home' ? rbi : 0)
+          const battingScoreBefore = batterSide === 'away' ? awayScoreBefore : homeScoreBefore
+          const opponentScoreBefore = batterSide === 'away' ? homeScoreBefore : awayScoreBefore
+          const playEvent =
+            (play.playEvents || []).find((entry) => entry.playId === row.play_id) ||
+            [...(play.playEvents || [])].reverse().find((entry) => entry.isPitch)
+          const pitchType = playEvent?.details?.type?.description || ''
+          const inning = Number(play.about?.inning || 0)
+          const opponentStarterId = pitcherSide === 'home' ? gameContext.homeStarterId : gameContext.awayStarterId
+
+          return {
+            gameDate: row.game_date,
+            batterTeam: battingTeam,
+            isHome,
+            inning,
+            pitchType,
+            pitcherHand: play.matchup?.pitchHand?.code || '',
+            isStarter: Number(row.pitcher_id) === Number(opponentStarterId),
+            isLate: inning >= 7,
+            isEarly: inning > 0 && inning <= 3,
+            isHighPressure: inning >= 6 && Math.abs(battingScoreBefore - opponentScoreBefore) <= 2,
+            wasTrailing: battingScoreBefore < opponentScoreBefore
+          }
+        } catch {
+          return null
+        }
+      })
+    )
+  ).filter(Boolean)
+
+  if (!eventContexts.length) return null
+
+  const homeShare = eventContexts.filter((entry) => entry.isHome).length / eventContexts.length
+  const starterShare = eventContexts.filter((entry) => entry.isStarter).length / eventContexts.length
+  const earlyShare = eventContexts.filter((entry) => entry.isEarly).length / eventContexts.length
+  const lateShare = eventContexts.filter((entry) => entry.isLate).length / eventContexts.length
+  const highPressureShare = eventContexts.filter((entry) => entry.isHighPressure).length / eventContexts.length
+  const trailingShare = eventContexts.filter((entry) => entry.wasTrailing).length / eventContexts.length
+  const pitchTypeCounts = eventContexts.reduce((accumulator, entry) => {
+    if (!entry.pitchType) return accumulator
+    accumulator[entry.pitchType] = (accumulator[entry.pitchType] || 0) + 1
+    return accumulator
+  }, {})
+  const topPitchTypes = Object.entries(pitchTypeCounts)
+    .sort((left, right) => right[1] - left[1])
+    .slice(0, 2)
+    .map(([pitchType]) => pitchType)
+  const sortedDates = [...new Set(eventContexts.map((entry) => entry.gameDate))].sort()
+  const averageGap =
+    sortedDates.length >= 2
+      ? average(sortedDates.slice(1).map((date, index) => daysBetween(sortedDates[index], date)))
+      : null
+
+  return {
+    sampleSize: eventContexts.length,
+    homeShare: Number(homeShare.toFixed(2)),
+    awayShare: Number((1 - homeShare).toFixed(2)),
+    starterShare: Number(starterShare.toFixed(2)),
+    reliefShare: Number((1 - starterShare).toFixed(2)),
+    earlyShare: Number(earlyShare.toFixed(2)),
+    lateShare: Number(lateShare.toFixed(2)),
+    highPressureShare: Number(highPressureShare.toFixed(2)),
+    trailingShare: Number(trailingShare.toFixed(2)),
+    averageInning: Number((average(eventContexts.map((entry) => entry.inning)) || 0).toFixed(1)),
+    averageGapDays: Number.isFinite(averageGap) ? Number(averageGap.toFixed(1)) : null,
+    topPitchTypes
+  }
+}
+
+const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, fetchGameFeedContext) => {
   const homeRunRows = detailRows
     .filter((row) => row.result === 'home_run')
     .sort((left, right) => right.game_date.localeCompare(left.game_date))
@@ -348,6 +600,7 @@ const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
     ? recentRows.reduce((sum, row) => sum + Number(row.exit_velocity || 0), 0) / recentRows.length
     : 0
   const daysSinceLastHr = homeRunRows[0] ? Math.max(daysBetween(homeRunRows[0].game_date, targetDate), 0) : 999
+  const homeRunContext = await buildHomeRunEventContext(candidate, homeRunRows, fetchGameFeedContext)
 
   candidate.recentHrSinceMay1 = recentRows.length
   candidate.homeRunsLast7Days = last7Rows.length
@@ -355,6 +608,7 @@ const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
   candidate.daysSinceLastHr = daysSinceLastHr
   candidate.noDoubterRate = Number(noDoubterRate.toFixed(2))
   candidate.avgExitVelocityOnHomers = Number(avgEv.toFixed(1))
+  candidate.homeRunContext = homeRunContext
   const pitcherHrBoost =
     candidate.opposingPitcherHr9 >= 1.7
       ? 7
@@ -396,6 +650,53 @@ const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
           Math.max(candidate.battingImpactContext.recentAppearances - 1, 0) * 1.4
       )
     : 0
+  const homeAwayFitBoost = homeRunContext
+    ? candidate.isHomeToday
+      ? homeRunContext.homeShare >= 0.68 && homeRunContext.homeShare - homeRunContext.awayShare >= 0.18
+        ? 1.8
+        : homeRunContext.awayShare >= 0.7
+          ? -1.4
+          : 0
+      : homeRunContext.awayShare >= 0.68 && homeRunContext.awayShare - homeRunContext.homeShare >= 0.18
+        ? 1.8
+        : homeRunContext.homeShare >= 0.7
+          ? -1.4
+          : 0
+    : 0
+  const starterHunterBoost = homeRunContext
+    ? homeRunContext.starterShare >= 0.62
+      ? candidate.opposingPitcherHr9 >= 1.18
+        ? 2.8
+        : candidate.opposingPitcherHr9 <= 0.92
+          ? -2.2
+          : 0.8
+      : 0
+    : 0
+  const reliefHunterBoost = homeRunContext
+    ? homeRunContext.reliefShare >= 0.58
+      ? candidate.opposingBullpenVulnerability >= 2.2
+        ? 2.6
+        : candidate.opposingBullpenVulnerability <= -1.5
+          ? -1.5
+          : 0.8
+      : 0
+    : 0
+  const timingBoost = homeRunContext
+    ? homeRunContext.earlyShare >= 0.45 && candidate.opposingPitcherHr9 >= 1.2
+      ? 1.4
+      : homeRunContext.highPressureShare >= 0.35 && candidate.opposingBullpenVulnerability >= 1.6
+        ? 1.1
+        : 0
+    : 0
+  const streakShapeBoost = homeRunContext
+    ? Number.isFinite(homeRunContext.averageGapDays)
+      ? homeRunContext.averageGapDays <= 3.2 && candidate.homeRunsLast10Days >= 2
+        ? 1.4
+        : homeRunContext.averageGapDays >= 8 && candidate.homeRunsLast10Days <= 1
+          ? -1.2
+          : 0
+      : 0
+    : 0
 
   candidate.score = Number(
     (
@@ -408,7 +709,12 @@ const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
       recentBurstBoost +
       cooldownPenalty +
       carryQualityBoost +
-      battingImpactBoost
+      battingImpactBoost +
+      homeAwayFitBoost +
+      starterHunterBoost +
+      reliefHunterBoost +
+      timingBoost +
+      streakShapeBoost
     ).toFixed(1)
   )
   candidate.scoreBand =
@@ -423,6 +729,25 @@ const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
         : candidate.noDoubterRate >= 0.55
           ? 'carry'
           : 'watch'
+  const venueLabel = describeHomeAwayBias(candidate)
+  const timingLabel = describeTimingBias(candidate)
+  const bullpenLabel = describeBullpenLane(candidate)
+  candidate.contextLabels = [
+    candidate.lineupContext
+      ? `Slot ${candidate.lineupContext.slot} | ${candidate.lineupContext.primaryTag}`
+      : 'Lineup pending',
+    venueLabel,
+    timingLabel,
+    bullpenLabel
+  ]
+  candidate.signalSummary = [
+    candidate.contextLabels[0],
+    timingLabel !== 'mixed timing' ? timingLabel : venueLabel !== 'neutral venue split' ? venueLabel : bullpenLabel,
+    timingLabel !== 'mixed timing' && venueLabel !== 'neutral venue split' ? venueLabel : null,
+    Number.isFinite(candidate.opposingPitcherHr9) ? `${candidate.opposingPitcherHr9} HR/9 starter` : null
+  ]
+    .filter(Boolean)
+    .join(' | ')
   candidate.rationale = [
     `${candidate.seasonHr} HR and ${candidate.seasonXHR} xHR on the season`,
     `${candidate.recentHrSinceMay1} HR since May 1 with ${candidate.homeRunsLast7Days} in the last 7 days and ${candidate.homeRunsLast10Days} in the last 10`,
@@ -431,11 +756,25 @@ const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
     candidate.daysSinceLastHr < 999
       ? `Last HR came ${candidate.daysSinceLastHr} day${candidate.daysSinceLastHr === 1 ? '' : 's'} ago`
       : 'No tracked home run date available',
+    homeRunContext
+      ? `${candidate.isHomeToday ? 'Home' : 'Road'} today | historical split ${Math.round(
+          (candidate.isHomeToday ? homeRunContext.homeShare : homeRunContext.awayShare) * 100
+        )}% on this side`
+      : 'Venue split still unknown from tracked HR events',
+    homeRunContext
+      ? `${Math.round(homeRunContext.starterShare * 100)}% off starters | ${Math.round(homeRunContext.reliefShare * 100)}% off relievers | avg inning ${homeRunContext.averageInning}`
+      : 'Starter vs relief split not stored yet',
+    homeRunContext?.topPitchTypes?.length
+      ? `Most recent damage has skewed toward ${homeRunContext.topPitchTypes.join(' / ')}`
+      : 'Pitch-type tendency not stored yet',
     candidate.battingImpactContext
       ? `${candidate.battingImpactContext.recentAppearances} recent batting-leader appearances | ${candidate.battingImpactContext.averageImpactScore.toFixed(1)} avg impact`
       : 'No recent batting-leader signal stored yet',
+    candidate.weatherContext?.weather?.label
+      ? `Weather lane: ${candidate.weatherContext.weather.label}`
+      : 'Weather lane not stored yet',
     candidate.lineupContext
-      ? `Slot ${candidate.lineupContext.slot} | ${candidate.lineupContext.primaryTag || 'posted lineup'} | lineup priority ${candidate.lineupPriority}`
+      ? `Slot ${candidate.lineupContext.slot} | ${candidate.lineupContext.primaryTag || 'posted lineup'} | lineup priority ${candidate.lineupPriority} | bullpen vulnerability ${candidate.opposingBullpenVulnerability}`
       : 'Lineup slot not posted yet'
   ]
 
@@ -447,13 +786,16 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
   const matchupByAbbr = buildMatchupMap(games)
   const lineupBoardsByGameId = await loadLineupBoards(date)
   const lineupLookup = buildLineupLookup(lineupBoardsByGameId)
+  const weatherLookup = buildWeatherLookup(lineupBoardsByGameId)
   const battingImpactByPlayerName = await loadBattingImpactHistory()
+  const fetchGameFeedContext = buildGameFeedContextFetcher()
   const leaderboard = await fetchStatcastLeaderboard(season)
   const leaderboardByPlayerId = new Map(leaderboard.map((row) => [Number(row.player_id), row]))
 
   const createCandidate = (row) => {
     const matchup = matchupByAbbr[row.team_abbrev]
     const lineupContext = lineupLookup.get(Number(row.player_id)) || null
+    const weatherContext = weatherLookup.get(matchup.gameTitle) || null
     const battingImpactContext = buildBattingImpactContext(formatPlayerName(row.player), battingImpactByPlayerName, date)
     const hr = Number(row.hr_total)
     const xhr = Number(row.xhr)
@@ -461,6 +803,7 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
     const lineupPriority = buildLineupPriority(lineupContext)
     const slotPenalty = lineupContext ? Math.max(0, Number(lineupContext.slot || 9) - 6) * 1.3 : 0
     const battingImpactPriority = battingImpactContext ? battingImpactContext.impactWindowScore * 0.45 : 0
+    const weatherBoost = buildWeatherBoost(weatherContext)
     const baseScore =
       xhr * 2.15 +
       hr * 1.05 +
@@ -471,6 +814,7 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
       Math.max(0, (lineupContext?.matchupScore || 50) - 50) * 0.14 +
       Math.max(0, (lineupContext?.formScore || 50) - 48) * 0.1 +
       battingImpactPriority +
+      weatherBoost +
       lineupPriority * 0.55 -
       Math.max(0, xhrDiff) * 0.7 -
       slotPenalty
@@ -485,13 +829,17 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
       opposingPitcherHand: matchup.opposingPitcherHand,
       opposingPitcherHr9: Number(matchup.opposingPitcherHr9.toFixed(2)),
       parkHrIndex: matchup.parkHrIndex,
+      isHomeToday: matchup.isHomeToday,
+      opposingBullpenVulnerability: matchup.opposingBullpenVulnerability,
       seasonHr: hr,
       seasonXHR: xhr,
       xhrDiff,
       baseScore,
       lineupContext,
       lineupPriority: Number(lineupPriority.toFixed(1)),
-      battingImpactContext
+      battingImpactContext,
+      weatherContext,
+      weatherBoost: Number(weatherBoost.toFixed(1))
     }
   }
 
@@ -566,7 +914,7 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
     const batchScores = await Promise.all(
       batch.map(async (candidate) => {
         const detailRows = await fetchPlayerDetails(candidate.playerId, season)
-        return scoreCandidateDetails(candidate, detailRows, season, date)
+        return scoreCandidateDetails(candidate, detailRows, season, date, fetchGameFeedContext)
       })
     )
     scoredCandidates.push(...batchScores)
@@ -595,24 +943,11 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
       .filter((candidate) => candidate.score >= 53)
 
     const leadCandidate = likely[0] ?? possible[0] ?? null
-    let gameSummary = 'No usable home-run lane has surfaced yet on the pre-lineup board.'
-    if (leadCandidate) {
-      if (leadCandidate.homeRunsLast7Days === 0 && leadCandidate.daysSinceLastHr >= 7) {
-        gameSummary = `${leadCandidate.playerName} still owns the cleanest raw power lane here, but this is more matchup-driven than hot-form driven: no HR in the last 7 days, ${leadCandidate.homeRunsLast10Days} in the last 10, ${leadCandidate.opposingPitcherHr9} HR/9 across from him, and a ${leadCandidate.scoreBand} contact-quality baseline.`
-      } else if (leadCandidate.scoreBand === 'premium') {
-        gameSummary = `${leadCandidate.playerName} is the premium carry bat here, driven by ${leadCandidate.homeRunsLast7Days} homers in the last 7 days, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and elite carry quality.`
-      } else if (leadCandidate.scoreBand === 'strong' || leadCandidate.scoreBand === 'live') {
-        gameSummary = `${leadCandidate.playerName} is the cleanest likely bat here, driven by ${leadCandidate.homeRunsLast7Days} homers in the last 7 days, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and a ${leadCandidate.scoreBand} contact-quality signal.`
-      } else {
-        gameSummary = `${leadCandidate.playerName} is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive.`
-      }
-    }
-
     return {
       gameTitle: game.title,
       likely,
       possible,
-      summary: gameSummary
+      summary: buildSummaryFromLeadCandidate(leadCandidate)
     }
   })
 
@@ -628,7 +963,7 @@ const main = async () => {
   const { picks, games } = await scoreCandidates({ date, season, top, scanLimit, teamLimit })
 
   const payload = {
-    modelName: 'statcast-hr-prototype-v2',
+    modelName: 'statcast-hr-prototype-v3',
     date,
     generatedAt: new Date().toISOString(),
     sources: [
