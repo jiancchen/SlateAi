@@ -110,6 +110,7 @@
   let recommendationMode = 'favorites'
   let balanceWeight = 0.5
   let simulationTemperature = 0.5
+  let showDeskSettings = false
   let selectedPicksByDay = {}
   let expandedGameId = ''
   let pinnedSignalsByDay = {}
@@ -443,6 +444,10 @@
   $: hasMlbSlate = games.some((game) => game.league === 'MLB')
   $: activeSimulations = activeDay ? simulatedGamesByDay[activeDay.id] ?? {} : {}
 
+  $: if (!hasMlbSlate) {
+    showDeskSettings = false
+  }
+
   $: if (!visibleGames.some((game) => game.id === expandedGameId)) {
     expandedGameId = visibleGames[0]?.id ?? ''
   }
@@ -520,6 +525,7 @@
     activeDayId = dayId
     activeFilter = 'All'
     activeSidebarTab = 'ticket'
+    showDeskSettings = false
   }
 
   const stepDay = (delta) => {
@@ -734,28 +740,55 @@
           </div>
 
           <div class="browser-toolbar-meta">
-            <div class="browser-toolbar-stats">
-              <span>{visibleGames.length} visible</span>
-              <span>{analysisPickPool.length} signals</span>
-              <span>{oddsMeta.snapshot}</span>
+            <div class="browser-toolbar-meta-topline">
+              <div class="browser-toolbar-stats">
+                <span>{visibleGames.length} visible</span>
+                <span>{analysisPickPool.length} signals</span>
+                <span>{oddsMeta.snapshot}</span>
+              </div>
+
+              {#if hasMlbSlate}
+                <button
+                  type="button"
+                  class="desk-settings-button"
+                  class:active={showDeskSettings}
+                  aria-label="Open desk settings"
+                  aria-expanded={showDeskSettings}
+                  aria-controls="desk-settings-panel"
+                  on:click={() => (showDeskSettings = !showDeskSettings)}
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M10.3 2.5h3.4l.4 2.3c.7.2 1.3.5 1.9.8l2-1.1 2.4 2.4-1.1 2c.4.6.7 1.2.8 1.9l2.3.4v3.4l-2.3.4c-.2.7-.5 1.3-.8 1.9l1.1 2-2.4 2.4-2-1.1c-.6.4-1.2.7-1.9.8l-.4 2.3h-3.4l-.4-2.3c-.7-.2-1.3-.5-1.9-.8l-2 1.1-2.4-2.4 1.1-2c-.4-.6-.7-1.2-.8-1.9L2.5 13.7v-3.4l2.3-.4c.2-.7.5-1.3.8-1.9l-1.1-2 2.4-2.4 2 1.1c.6-.4 1.2-.7 1.9-.8zM12 8.3A3.7 3.7 0 1 0 12 15.7A3.7 3.7 0 1 0 12 8.3z"
+                    />
+                  </svg>
+                </button>
+              {/if}
             </div>
 
-            {#if hasMlbSlate}
-              <label class="sim-toolbar-control" aria-label="MLB simulator temperature">
-                <div class="sim-toolbar-copy">
-                  <span>MLB sim temp</span>
-                  <strong>{simulationTemperatureLabel(simulationTemperature)}</strong>
+            {#if hasMlbSlate && showDeskSettings}
+              <section id="desk-settings-panel" class="desk-settings-popover" aria-label="Desk settings">
+                <div class="desk-settings-head">
+                  <p class="eyebrow">Desk settings</p>
+                  <strong>MLB simulator</strong>
                 </div>
-                <input
-                  class="sim-toolbar-slider"
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.01"
-                  bind:value={simulationTemperature}
-                />
-                <small>{simulationTemperature.toFixed(2)}</small>
-              </label>
+
+                <label class="desk-settings-field" aria-label="MLB simulator temperature">
+                  <div class="desk-settings-copy">
+                    <span>Simulation temperature</span>
+                    <strong>{simulationTemperatureLabel(simulationTemperature)}</strong>
+                  </div>
+                  <input
+                    class="desk-settings-slider"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    bind:value={simulationTemperature}
+                  />
+                  <small>{simulationTemperature.toFixed(2)}</small>
+                </label>
+              </section>
             {/if}
           </div>
         </div>
