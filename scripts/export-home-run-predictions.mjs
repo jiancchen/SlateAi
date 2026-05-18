@@ -328,18 +328,31 @@ const fetchPlayerDetails = async (playerId, season) => {
   return response.json()
 }
 
-const scoreCandidateDetails = (candidate, detailRows, season) => {
-  const recentRows = detailRows.filter((row) => row.result === 'home_run' && row.game_date >= `${season}-05-01`)
-  const last7Rows = detailRows.filter((row) => row.result === 'home_run' && row.game_date >= `${season}-05-08`)
+const scoreCandidateDetails = (candidate, detailRows, season, targetDate) => {
+  const homeRunRows = detailRows
+    .filter((row) => row.result === 'home_run')
+    .sort((left, right) => right.game_date.localeCompare(left.game_date))
+  const recentRows = homeRunRows.filter((row) => row.game_date >= `${season}-05-01`)
+  const last7Rows = homeRunRows.filter((row) => {
+    const age = daysBetween(row.game_date, targetDate)
+    return age >= 1 && age <= 7
+  })
+  const last10Rows = homeRunRows.filter((row) => {
+    const age = daysBetween(row.game_date, targetDate)
+    return age >= 1 && age <= 10
+  })
   const noDoubterRate = recentRows.length
     ? recentRows.filter((row) => row.hr_cat === 'No Doubter').length / recentRows.length
     : 0
   const avgEv = recentRows.length
     ? recentRows.reduce((sum, row) => sum + Number(row.exit_velocity || 0), 0) / recentRows.length
     : 0
+  const daysSinceLastHr = homeRunRows[0] ? Math.max(daysBetween(homeRunRows[0].game_date, targetDate), 0) : 999
 
   candidate.recentHrSinceMay1 = recentRows.length
   candidate.homeRunsLast7Days = last7Rows.length
+  candidate.homeRunsLast10Days = last10Rows.length
+  candidate.daysSinceLastHr = daysSinceLastHr
   candidate.noDoubterRate = Number(noDoubterRate.toFixed(2))
   candidate.avgExitVelocityOnHomers = Number(avgEv.toFixed(1))
   const pitcherHrBoost =
@@ -360,6 +373,16 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
         : candidate.homeRunsLast7Days === 0 && candidate.recentHrSinceMay1 <= 2
           ? -3
           : 0
+  const cooldownPenalty =
+    candidate.homeRunsLast7Days === 0
+      ? candidate.daysSinceLastHr >= 10
+        ? -8
+        : candidate.daysSinceLastHr >= 7
+          ? -5
+          : -3
+      : candidate.homeRunsLast10Days <= 1 && candidate.recentHrSinceMay1 >= 4
+        ? -3
+        : 0
   const carryQualityBoost =
     candidate.noDoubterRate >= 0.6
       ? 3
@@ -383,6 +406,7 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
       Math.max(0, (avgEv - 104) * 0.5) +
       pitcherHrBoost +
       recentBurstBoost +
+      cooldownPenalty +
       carryQualityBoost +
       battingImpactBoost
     ).toFixed(1)
@@ -392,6 +416,8 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
   candidate.burstTag =
     candidate.homeRunsLast7Days >= 4
       ? 'heater'
+      : candidate.homeRunsLast7Days === 0 && candidate.daysSinceLastHr >= 7
+        ? 'cooling'
       : candidate.recentHrSinceMay1 >= 5
         ? 'active'
         : candidate.noDoubterRate >= 0.55
@@ -399,9 +425,12 @@ const scoreCandidateDetails = (candidate, detailRows, season) => {
           : 'watch'
   candidate.rationale = [
     `${candidate.seasonHr} HR and ${candidate.seasonXHR} xHR on the season`,
-    `${candidate.recentHrSinceMay1} HR since May 1 with ${candidate.homeRunsLast7Days} in the last week`,
+    `${candidate.recentHrSinceMay1} HR since May 1 with ${candidate.homeRunsLast7Days} in the last 7 days and ${candidate.homeRunsLast10Days} in the last 10`,
     `${candidate.opposingPitcher} is allowing roughly ${candidate.opposingPitcherHr9} HR/9`,
     `Park HR index ${candidate.parkHrIndex}`,
+    candidate.daysSinceLastHr < 999
+      ? `Last HR came ${candidate.daysSinceLastHr} day${candidate.daysSinceLastHr === 1 ? '' : 's'} ago`
+      : 'No tracked home run date available',
     candidate.battingImpactContext
       ? `${candidate.battingImpactContext.recentAppearances} recent batting-leader appearances | ${candidate.battingImpactContext.averageImpactScore.toFixed(1)} avg impact`
       : 'No recent batting-leader signal stored yet',
@@ -537,7 +566,7 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
     const batchScores = await Promise.all(
       batch.map(async (candidate) => {
         const detailRows = await fetchPlayerDetails(candidate.playerId, season)
-        return scoreCandidateDetails(candidate, detailRows, season)
+        return scoreCandidateDetails(candidate, detailRows, season, date)
       })
     )
     scoredCandidates.push(...batchScores)
@@ -568,12 +597,15 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
     const leadCandidate = likely[0] ?? possible[0] ?? null
     let gameSummary = 'No usable home-run lane has surfaced yet on the pre-lineup board.'
     if (leadCandidate) {
-      gameSummary =
-        leadCandidate.scoreBand === 'premium'
-          ? `${leadCandidate.playerName} is the premium carry bat here, driven by ${leadCandidate.recentHrSinceMay1} recent homers, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and elite carry quality.`
-          : leadCandidate.scoreBand === 'strong' || leadCandidate.scoreBand === 'live'
-            ? `${leadCandidate.playerName} is the cleanest likely bat here, driven by ${leadCandidate.recentHrSinceMay1} recent homers, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and a ${leadCandidate.scoreBand} contact-quality signal.`
-            : `${leadCandidate.playerName} is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive.`
+      if (leadCandidate.homeRunsLast7Days === 0 && leadCandidate.daysSinceLastHr >= 7) {
+        gameSummary = `${leadCandidate.playerName} still owns the cleanest raw power lane here, but this is more matchup-driven than hot-form driven: no HR in the last 7 days, ${leadCandidate.homeRunsLast10Days} in the last 10, ${leadCandidate.opposingPitcherHr9} HR/9 across from him, and a ${leadCandidate.scoreBand} contact-quality baseline.`
+      } else if (leadCandidate.scoreBand === 'premium') {
+        gameSummary = `${leadCandidate.playerName} is the premium carry bat here, driven by ${leadCandidate.homeRunsLast7Days} homers in the last 7 days, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and elite carry quality.`
+      } else if (leadCandidate.scoreBand === 'strong' || leadCandidate.scoreBand === 'live') {
+        gameSummary = `${leadCandidate.playerName} is the cleanest likely bat here, driven by ${leadCandidate.homeRunsLast7Days} homers in the last 7 days, a ${leadCandidate.opposingPitcherHr9} HR/9 starter matchup, and a ${leadCandidate.scoreBand} contact-quality signal.`
+      } else {
+        gameSummary = `${leadCandidate.playerName} is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive.`
+      }
     }
 
     return {
