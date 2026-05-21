@@ -2925,6 +2925,203 @@ h3 {
   accent-color: var(--accent);
 }
 
+.react-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.react-team-card,
+.react-mini-panel,
+.react-lineup-card,
+.react-prop-card,
+.react-comparison-row {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.028);
+}
+
+.react-team-card,
+.react-lineup-card,
+.react-prop-card,
+.react-mini-panel {
+  padding: 12px;
+}
+
+.react-team-card,
+.react-mini-panel,
+.react-lineup-card,
+.react-prop-card {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.react-team-card-top,
+.react-lineup-card-head,
+.react-prop-head,
+.react-comparison-meta,
+.react-comparison-values,
+.react-comparison-scoreline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.react-team-id {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.react-team-id > div {
+  display: grid;
+  gap: 3px;
+}
+
+.react-team-id strong,
+.react-mini-panel strong,
+.react-lineup-card strong,
+.react-prop-card strong,
+.react-comparison-meta strong,
+.react-comparison-scoreline span {
+  color: var(--heading);
+}
+
+.react-team-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.28));
+}
+
+.react-section-copy {
+  color: var(--muted);
+}
+
+.react-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.react-mini-panel {
+  min-height: 84px;
+}
+
+.react-lineup-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.react-lineup-card-head small,
+.react-team-id small,
+.react-prop-card small,
+.react-mini-panel small,
+.react-comparison-meta small,
+.react-comparison-values span {
+  color: var(--muted);
+}
+
+.react-lineup-list {
+  display: grid;
+  gap: 8px;
+}
+
+.react-lineup-player {
+  display: grid;
+  gap: 4px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.react-lineup-player:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.react-lineup-player > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.react-lineup-player span {
+  color: var(--muted);
+  font-size: 0.79rem;
+}
+
+.react-prop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.react-prop-head span {
+  color: var(--accent);
+  font: 600 0.68rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.react-comparison-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.react-comparison-row {
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.react-comparison-values {
+  font: 600 0.72rem/1 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.react-comparison-bars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.react-comparison-bar {
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.react-comparison-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(82, 214, 179, 0.32), rgba(82, 214, 179, 0.96));
+}
+
+.react-comparison-bar.right span {
+  margin-left: auto;
+}
+
+.react-comparison-scoreline {
+  font: 600 0.72rem/1 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+  .react-card-grid,
+  .react-lineup-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
 .recommendation-mode-button {
   flex: 1 1 0;
 }

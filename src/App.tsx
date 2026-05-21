@@ -1,0 +1,2046 @@
+import { useEffect, useMemo, useState } from 'react'
+import {
+  buildParlayModel,
+  createParlayLeg,
+  formatAmericanOdds,
+  rankAnalysisPicks,
+  rankFlipRiskPicks,
+  rankMlbPlayerProps
+} from './lib/sports-model.js'
+import { defaultSlateDayId, slateDays } from './lib/slate-days.js'
+
+type AnyRecord = Record<string, any>
+type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history'
+type SidebarTabId = 'ticket' | 'markets' | 'sources'
+
+const PARLAY_MIN_LEGS = 2
+const PARLAY_MAX_LEGS = 10
+
+const deskTabs: Array<{ id: DeskTabId; label: string }> = [
+  { id: 'board', label: 'Board' },
+  { id: 'parlay', label: 'Parlay builder' },
+  { id: 'tickets', label: 'Tickets' },
+  { id: 'models', label: 'Models' },
+  { id: 'history', label: 'History' }
+]
+
+const sidebarTabs: Array<{ id: SidebarTabId; label: string }> = [
+  { id: 'ticket', label: 'Ticket' },
+  { id: 'markets', label: 'Markets' },
+  { id: 'sources', label: 'Sources' }
+]
+
+const builderCatalogTabs = [
+  { id: 'all', label: 'All' },
+  { id: 'favorites', label: 'Favorites' },
+  { id: 'totals', label: 'O/U' },
+  { id: 'props', label: 'Props' },
+  { id: 'flips', label: 'Flips' }
+] as const
+
+const builderValidityFilters = [
+  { id: 'eligible', label: 'Eligible' },
+  { id: 'all', label: 'All' },
+  { id: 'invalid', label: 'Invalid' }
+] as const
+
+const builderSortOptions = [
+  { id: 'confidence', label: 'Confidence' },
+  { id: 'time', label: 'Start time' },
+  { id: 'edge', label: 'Edge' }
+] as const
+
+const propTypeFilters = [
+  { id: 'all', label: 'All' },
+  { id: 'homeRun', label: 'HR' },
+  { id: 'rbi', label: 'RBI' },
+  { id: 'totalBases', label: 'TB' },
+  { id: 'hits', label: 'Hits' },
+  { id: 'walks', label: 'Walks' },
+  { id: 'singles', label: 'Singles' }
+] as const
+
+const recommendationModes = [
+  {
+    id: 'favorites',
+    label: 'Favorites',
+    copy: 'Cleaner core reads only. On messy slates this lane stays intentionally short.'
+  },
+  {
+    id: 'balanced',
+    label: 'Balanced',
+    copy: 'Blends core legs with a measured amount of live upset exposure.'
+  },
+  {
+    id: 'flips',
+    label: 'Flips',
+    copy: 'Higher-variance dogs and fragile-favorite fade spots.'
+  }
+] as const
+
+const mlbLogoBase = 'https://raw.githubusercontent.com/MLBAMGames/mlb_teams_logo_svg/main/light'
+const mlbTeamLogoCode: Record<string, string> = {
+  'D-backs': 'ari',
+  Diamondbacks: 'ari',
+  Braves: 'atl',
+  Orioles: 'bal',
+  'Red Sox': 'bos',
+  Cubs: 'chc',
+  Reds: 'cin',
+  Guardians: 'cle',
+  Rockies: 'col',
+  'White Sox': 'cws',
+  Tigers: 'det',
+  Astros: 'hou',
+  Royals: 'kc',
+  Angels: 'laa',
+  Dodgers: 'lad',
+  Marlins: 'mia',
+  Brewers: 'mil',
+  Twins: 'min',
+  Mets: 'nym',
+  Yankees: 'nyy',
+  Athletics: 'oak',
+  Phillies: 'phi',
+  Pirates: 'pit',
+  Padres: 'sd',
+  Mariners: 'sea',
+  Giants: 'sf',
+  Cardinals: 'stl',
+  Rays: 'tb',
+  Rangers: 'tex',
+  'Blue Jays': 'tor',
+  Nationals: 'wsh'
+}
+
+const mlbTeamAccent: Record<string, string> = {
+  'D-backs': '#a71930',
+  Diamondbacks: '#a71930',
+  Braves: '#ce1141',
+  Orioles: '#df4601',
+  'Red Sox': '#bd3039',
+  Cubs: '#0e3386',
+  Reds: '#c6011f',
+  Guardians: '#e31937',
+  Rockies: '#33006f',
+  'White Sox': '#27251f',
+  Tigers: '#0c2c56',
+  Astros: '#eb6e1f',
+  Royals: '#004687',
+  Angels: '#ba0021',
+  Dodgers: '#005a9c',
+  Marlins: '#00a3e0',
+  Brewers: '#ffc52f',
+  Twins: '#002b5c',
+  Mets: '#002d72',
+  Yankees: '#0c2340',
+  Athletics: '#003831',
+  Phillies: '#e81828',
+  Pirates: '#fdb827',
+  Padres: '#2f241d',
+  Mariners: '#005c5c',
+  Giants: '#fd5a1e',
+  Cardinals: '#c41e3a',
+  Rays: '#092c5c',
+  Rangers: '#003278',
+  'Blue Jays': '#134a8e',
+  Nationals: '#ab0003'
+}
+
+const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value))
+
+const labelForScore = (score: number) => {
+  if (score >= 72) return 'High'
+  if (score >= 60) return 'Medium'
+  return 'Watch'
+}
+
+const formatOrdinal = (value: any) => {
+  const numericValue = Number(value)
+  if (!Number.isFinite(numericValue)) return String(value ?? '')
+  if (numericValue % 100 >= 11 && numericValue % 100 <= 13) return `${numericValue}th`
+  if (numericValue % 10 === 1) return `${numericValue}st`
+  if (numericValue % 10 === 2) return `${numericValue}nd`
+  if (numericValue % 10 === 3) return `${numericValue}rd`
+  return `${numericValue}th`
+}
+
+const formatNumber = (value: any, digits = 1) => {
+  const numericValue = Number(value)
+  if (!Number.isFinite(numericValue)) return 'N/A'
+  return numericValue.toFixed(digits)
+}
+
+const formatSnapshotTime = (isoString: string) => {
+  if (!isoString) return ''
+  return new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Los_Angeles',
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true
+  }).format(new Date(isoString))
+}
+
+const getPacificClock = () => {
+  const formatter = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Los_Angeles',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  })
+
+  const parts = Object.fromEntries(
+    formatter.formatToParts(new Date()).map((part) => [part.type, part.value])
+  ) as Record<string, string>
+
+  const isoDate = `${parts.year}-${parts.month}-${parts.day}`
+  const hour = Number(parts.hour) || 0
+  const minute = Number(parts.minute) || 0
+
+  return {
+    isoDate,
+    minutes: hour * 60 + minute,
+    label: `${parts.month}/${parts.day} ${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')} PT`
+  }
+}
+
+const getEventState = (game: AnyRecord, dayIsoDate: string, pacificClock: ReturnType<typeof getPacificClock>) => {
+  if (!game || !dayIsoDate || !pacificClock.isoDate) return { invalid: false, label: 'Open', tone: 'open' }
+  if (dayIsoDate < pacificClock.isoDate) return { invalid: true, label: 'Final', tone: 'invalid' }
+  if (dayIsoDate > pacificClock.isoDate) return { invalid: false, label: 'Upcoming', tone: 'open' }
+
+  if (Number.isFinite(Number(game.startMinutes)) && Number(game.startMinutes) <= pacificClock.minutes) {
+    return { invalid: true, label: 'Started', tone: 'invalid' }
+  }
+
+  return { invalid: false, label: 'Open', tone: 'open' }
+}
+
+const buildPitcherSummary = (pitcher: AnyRecord = {}) => {
+  const pitchHand = pitcher.pitchHand ? `${pitcher.pitchHand}HP` : '?HP'
+  const record = `${pitcher.wins ?? 0}-${pitcher.losses ?? 0}`
+  const era = pitcher.era ? `${pitcher.era} ERA` : 'ERA n/a'
+  const whip = pitcher.whip ? `${pitcher.whip} WHIP` : 'WHIP n/a'
+  const extra: string[] = []
+  if (pitcher.strikeOuts !== undefined) extra.push(`${pitcher.strikeOuts} SO`)
+  if (pitcher.inningsPitched) extra.push(`${pitcher.inningsPitched} IP`)
+  const recentForm = pitcher.recentForm
+  const recent =
+    recentForm && recentForm.startsSample > 0
+      ? `Last ${recentForm.startsSample}: ${formatNumber(recentForm.inningsPerStart, 1)} IP | ${formatNumber(recentForm.earnedRunsPerStart, 1)} ER | ${formatNumber(recentForm.homeRunsAllowedPerStart, 1)} HR`
+      : ''
+
+  return {
+    primary: `${pitchHand} | ${record} | ${era} | ${whip}`,
+    recent,
+    hover: extra.join(' | ')
+  }
+}
+
+const buildTeamContextSummary = (team: AnyRecord = {}) => {
+  if (!team || (!Number.isFinite(Number(team.wins)) && !Number.isFinite(Number(team.losses)))) return ''
+  const record = `${team.wins ?? '-'}-${team.losses ?? '-'}`
+  const rankLabel = team.divisionLeader ? '1st in division' : `${formatOrdinal(team.divisionRank)} in division`
+  const streak = team.streakCode ? ` | ${team.streakCode}` : ''
+  return `${record} | ${rankLabel}${streak}`
+}
+
+const lineupStatusLabel = (status = '') => {
+  if (status === 'posted') return 'Confirmed'
+  if (status === 'partial') return 'Projected'
+  return 'Pending'
+}
+
+const getTeamLogoUrl = (league: string, teamName: string) => {
+  if (league !== 'MLB') return ''
+  const code = mlbTeamLogoCode[teamName]
+  return code ? `${mlbLogoBase}/${code}_l.svg` : ''
+}
+
+const getTeamAccent = (league: string, teamName: string) => {
+  if (league !== 'MLB') return '#4fd2a6'
+  return mlbTeamAccent[teamName] || '#4fd2a6'
+}
+
+const getCompetitorDisplayName = (game: AnyRecord, side: AnyRecord, index: number) => {
+  if (game?.league === 'Tennis') {
+    return side?.displayName || game.tennisContext?.players?.[index]?.label || side?.name || ''
+  }
+  return side?.name || ''
+}
+
+const getGameDisplayTitle = (game: AnyRecord) => {
+  if (game?.league === 'Tennis') {
+    const left = getCompetitorDisplayName(game, game.matchup?.[0], 0)
+    const right = getCompetitorDisplayName(game, game.matchup?.[1], 1)
+    return `${left} vs ${right}`
+  }
+  return game?.title || ''
+}
+
+const swingTextFor = (game: AnyRecord) => game?.swingFactor || game?.swing || 'No swing-factor note stored yet.'
+
+const buildGameHighlights = (game: AnyRecord) => {
+  const chips: Array<{ tone: string; label: string }> = []
+
+  if (game.league === 'MLB' && game.analysis?.mlbProjection) {
+    const projection = game.analysis.mlbProjection
+    const selectedScript =
+      projection.teamScripts?.find((script: AnyRecord) => script.teamName === game.analysis?.participant?.name) ??
+      projection.teamScripts?.[0]
+    const pressureLabel = selectedScript?.pressureLabel
+    const bridgePressure = selectedScript?.bullpenOverview
+    const bothLineupsPosted =
+      game.lineupBoard?.status?.away === 'posted' && game.lineupBoard?.status?.home === 'posted'
+    const partialLineups =
+      !bothLineupsPosted &&
+      (game.lineupBoard?.status?.away === 'partial' || game.lineupBoard?.status?.home === 'partial')
+
+    if (projection.first5EdgeTeam && projection.first5EdgeTeam !== projection.edgeTeam) {
+      chips.push({ tone: 'warning', label: `F5 ${projection.first5EdgeTeam}` })
+    }
+    if (projection.bridgeEdgeTeam && projection.bridgeEdgeTeam !== projection.edgeTeam) {
+      chips.push({ tone: 'danger', label: `Late ${projection.bridgeEdgeTeam}` })
+    }
+    if (pressureLabel) {
+      chips.push({
+        tone: /traffic-only/i.test(pressureLabel) ? 'neutral' : 'accent',
+        label: pressureLabel
+      })
+    }
+    if (bridgePressure && !/no strong reliever-arsenal edge/i.test(bridgePressure)) {
+      chips.push({ tone: 'warning', label: 'Bridge live' })
+    }
+    if (projection.totals?.fullGame?.lean && projection.totals.fullGame.lean !== 'Pass') {
+      chips.push({
+        tone: projection.totals.fullGame.lean === 'Over' ? 'warning' : 'neutral',
+        label: projection.totals.fullGame.label
+      })
+    }
+    if ((game.analysis?.indicators?.reliefPitchingRisk ?? 0) >= 68) {
+      chips.push({ tone: 'danger', label: 'Late risk' })
+    }
+    if ((game.analysis?.indicators?.coinflipPressure ?? 0) >= 64) {
+      chips.push({ tone: 'danger', label: 'Flip live' })
+    }
+    if (bothLineupsPosted) chips.push({ tone: 'accent', label: 'Lineups in' })
+    else if (partialLineups) chips.push({ tone: 'neutral', label: 'Lineups partial' })
+    if (projection.weather?.label && /helps carry|suppresses carry/i.test(projection.weather.label)) {
+      chips.push({
+        tone: /helps carry/i.test(projection.weather.label) ? 'warning' : 'neutral',
+        label: /helps carry/i.test(projection.weather.label) ? 'Weather up' : 'Weather down'
+      })
+    }
+  } else if (game.league === 'Tennis' && game.tennisContext) {
+    if (game.tennisContext.surface) chips.push({ tone: 'neutral', label: game.tennisContext.surface })
+    if (game.tennisContext.h2hLeader === game.analysis?.participant?.name) chips.push({ tone: 'accent', label: 'H2H edge' })
+    if (game.tennisContext.liveDog) chips.push({ tone: 'warning', label: 'Dog live' })
+    if (game.tennisContext.fatigueFlag) chips.push({ tone: 'danger', label: 'Fatigue live' })
+    if (game.tennisContext.formEdgeName === game.analysis?.participant?.name) chips.push({ tone: 'accent', label: 'Form edge' })
+    if ((game.analysis?.volatility ?? 0) >= 70) chips.push({ tone: 'danger', label: 'Volatile' })
+  } else {
+    if ((game.analysis?.confidence ?? 0) >= 72) chips.push({ tone: 'accent', label: 'High confidence' })
+    if ((game.analysis?.volatility ?? 0) >= 68) chips.push({ tone: 'danger', label: 'High variance' })
+  }
+
+  return chips.slice(0, 4)
+}
+
+const buildBalancedRecommendationSet = (
+  favoritePicks: AnyRecord[],
+  flipPicks: AnyRecord[],
+  legCount: number,
+  rawWeight = 0.5
+) => {
+  const targetLegCount = clamp(Math.round(Number(legCount) || 0), 0, PARLAY_MAX_LEGS)
+  const safeWeight = clamp(Number(rawWeight) || 0, 0, 1)
+
+  if (!targetLegCount) {
+    return {
+      picks: [],
+      targetFlipLegs: 0,
+      actualFlipLegs: 0,
+      averageFlipProbability: 0
+    }
+  }
+
+  const uniqueFavoritePicks = favoritePicks.filter(
+    (pick, index, list) => list.findIndex((entry) => entry.gameId === pick.gameId) === index
+  )
+  const uniqueFlipPicks = flipPicks.filter(
+    (pick, index, list) => list.findIndex((entry) => entry.gameId === pick.gameId) === index
+  )
+  const flipSample = uniqueFlipPicks.slice(0, Math.min(targetLegCount * 2, uniqueFlipPicks.length))
+  const averageFlipProbability = flipSample.length
+    ? flipSample.reduce(
+        (total, pick) => total + clamp(pick.flipProbability ?? (pick.flipScore ?? 55) / 100, 0.18, 0.82),
+        0
+      ) / flipSample.length
+    : 0
+
+  let targetFlipLegs = Math.round(targetLegCount * safeWeight * averageFlipProbability)
+
+  if (safeWeight >= 0.38 && targetFlipLegs === 0 && uniqueFlipPicks.length && targetLegCount >= 3) {
+    targetFlipLegs = 1
+  }
+
+  targetFlipLegs = clamp(targetFlipLegs, 0, Math.min(targetLegCount, uniqueFlipPicks.length))
+
+  const picks: AnyRecord[] = []
+  const gameIds = new Set<string>()
+
+  uniqueFlipPicks.forEach((pick) => {
+    if (picks.length >= targetFlipLegs || gameIds.has(pick.gameId)) return
+    picks.push(pick)
+    gameIds.add(pick.gameId)
+  })
+
+  uniqueFavoritePicks.forEach((pick) => {
+    if (picks.length >= targetLegCount || gameIds.has(pick.gameId)) return
+    picks.push(pick)
+    gameIds.add(pick.gameId)
+  })
+
+  uniqueFlipPicks.forEach((pick) => {
+    if (picks.length >= targetLegCount || gameIds.has(pick.gameId)) return
+    picks.push(pick)
+    gameIds.add(pick.gameId)
+  })
+
+  return {
+    picks,
+    targetFlipLegs,
+    actualFlipLegs: picks.filter((pick) => pick.flipScore !== undefined).length,
+    averageFlipProbability
+  }
+}
+
+function App() {
+  const [activeDayId, setActiveDayId] = useState(defaultSlateDayId)
+  const [activeDeskTab, setActiveDeskTab] = useState<DeskTabId>('board')
+  const [activeFilter, setActiveFilter] = useState('All')
+  const [activeSidebarTab, setActiveSidebarTab] = useState<SidebarTabId>('ticket')
+  const [marketSearch, setMarketSearch] = useState('')
+  const [builderCatalogTab, setBuilderCatalogTab] = useState<(typeof builderCatalogTabs)[number]['id']>('all')
+  const [builderValidityFilter, setBuilderValidityFilter] = useState<(typeof builderValidityFilters)[number]['id']>('eligible')
+  const [builderSort, setBuilderSort] = useState<(typeof builderSortOptions)[number]['id']>('confidence')
+  const [activePropType, setActivePropType] = useState<(typeof propTypeFilters)[number]['id']>('all')
+  const [parlayStake, setParlayStake] = useState(25)
+  const [recommendedLegCount, setRecommendedLegCount] = useState(4)
+  const [recommendationMode, setRecommendationMode] = useState<(typeof recommendationModes)[number]['id']>('favorites')
+  const [balanceWeight, setBalanceWeight] = useState(0.5)
+  const [pacificClock, setPacificClock] = useState(getPacificClock())
+  const [selectedGameIdByDay, setSelectedGameIdByDay] = useState<Record<string, string>>({})
+  const [selectedPicksByDay, setSelectedPicksByDay] = useState<Record<string, Record<string, string>>>({})
+  const [selectedPropsByDay, setSelectedPropsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
+  const [selectedTotalsByDay, setSelectedTotalsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
+
+  useEffect(() => {
+    const updateClock = () => setPacificClock(getPacificClock())
+    updateClock()
+    const timer = window.setInterval(updateClock, 60_000)
+    return () => window.clearInterval(timer)
+  }, [])
+
+  const orderedSlateDays = useMemo(
+    () => [...slateDays].sort((left, right) => right.id.localeCompare(left.id)),
+    []
+  )
+
+  const activeDay = useMemo(
+    () => orderedSlateDays.find((day) => day.id === activeDayId) ?? orderedSlateDays[0],
+    [activeDayId, orderedSlateDays]
+  )
+
+  const activeDayIndex = orderedSlateDays.findIndex((day) => day.id === activeDay?.id)
+  const slateMeta = activeDay?.slateMeta ?? { date: 'Slate', isoDate: '' }
+  const oddsMeta = activeDay?.oddsMeta ?? { snapshot: pacificClock.label }
+  const games = activeDay?.games ?? []
+  const filterOptions = activeDay?.filters?.length ? activeDay.filters : ['All']
+  const activeDayIsoDate = activeDay?.slateMeta?.isoDate ?? activeDay?.id ?? ''
+
+  useEffect(() => {
+    if (!filterOptions.includes(activeFilter)) setActiveFilter('All')
+  }, [activeFilter, filterOptions])
+
+  useEffect(() => {
+    document.title = `${slateMeta.date} Sports Desk`
+  }, [slateMeta.date])
+
+  const visibleGames = useMemo(() => {
+    const search = marketSearch.trim().toLowerCase()
+    return games.filter((game: AnyRecord) => {
+      if (activeFilter !== 'All' && game.league !== activeFilter) return false
+      if (!search) return true
+      const haystack = [
+        game.title,
+        game.stage,
+        game.summary,
+        game.analysis?.participant?.name,
+        ...(game.matchup ?? []).map((entry: AnyRecord) => entry?.name)
+      ]
+        .flat()
+        .join(' ')
+        .toLowerCase()
+      return haystack.includes(search)
+    })
+  }, [activeFilter, games, marketSearch])
+
+  useEffect(() => {
+    const currentSelected = selectedGameIdByDay[activeDayId]
+    const currentVisible = visibleGames.find((game: AnyRecord) => game.id === currentSelected)
+    if (!currentVisible && visibleGames[0]) {
+      setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: visibleGames[0].id }))
+    }
+  }, [activeDayId, selectedGameIdByDay, visibleGames])
+
+  const selectedGameId = selectedGameIdByDay[activeDayId] ?? visibleGames[0]?.id ?? games[0]?.id ?? ''
+  const selectedGame =
+    games.find((game: AnyRecord) => game.id === selectedGameId) ?? visibleGames[0] ?? games[0] ?? null
+
+  const selectedPicks = selectedPicksByDay[activeDayId] ?? {}
+  const selectedProps = selectedPropsByDay[activeDayId] ?? {}
+  const selectedTotals = selectedTotalsByDay[activeDayId] ?? {}
+
+  const lineupStatusCounts = useMemo(() => {
+    return games
+      .filter((game: AnyRecord) => game.league === 'MLB' && game.lineupBoard?.status)
+      .reduce(
+        (totals: AnyRecord, game: AnyRecord) => {
+          totals.total += 2
+          const awayStatus = game.lineupBoard?.status?.away
+          const homeStatus = game.lineupBoard?.status?.home
+          if (awayStatus === 'posted') totals.posted += 1
+          else if (awayStatus === 'partial') totals.partial += 1
+          if (homeStatus === 'posted') totals.posted += 1
+          else if (homeStatus === 'partial') totals.partial += 1
+          return totals
+        },
+        { posted: 0, partial: 0, total: 0 }
+      )
+  }, [games])
+
+  const latestLineupSnapshot = useMemo(
+    () =>
+      games
+        .map((game: AnyRecord) => game.lineupBoard?.snapshot)
+        .filter(Boolean)
+        .sort()
+        .at(-1) ?? '',
+    [games]
+  )
+
+  const eligibleMoneylineGames = useMemo(
+    () =>
+      games.filter(
+        (game: AnyRecord) =>
+          game.moneyline?.available && !getEventState(game, activeDayIsoDate, pacificClock).invalid
+      ),
+    [activeDayIsoDate, games, pacificClock]
+  )
+
+  const analysisPicks = useMemo(() => rankAnalysisPicks(games), [games])
+  const flipRiskPicks = useMemo(() => rankFlipRiskPicks(games), [games])
+  const mlbPlayerProps = useMemo(() => rankMlbPlayerProps(games), [games])
+
+  const favoriteRecommendationPool = useMemo(
+    () => analysisPicks.filter((pick: AnyRecord) => pick.game?.moneyline?.available),
+    [analysisPicks]
+  )
+
+  const filteredMoneylineGames = useMemo(
+    () => favoriteRecommendationPool.filter((pick: AnyRecord) => !getEventState(pick.game, activeDayIsoDate, pacificClock).invalid),
+    [activeDayIsoDate, favoriteRecommendationPool, pacificClock]
+  )
+
+  const favoriteCatalogEntries = useMemo(
+    () =>
+      favoriteRecommendationPool.map((pick: AnyRecord) => {
+        const eventState = getEventState(pick.game, activeDayIsoDate, pacificClock)
+        return {
+          id: `favorite:${pick.gameId}:${pick.participantId}`,
+          category: 'favorites',
+          actionKind: 'ticket',
+          gameId: pick.gameId,
+          league: pick.league,
+          start: pick.start,
+          startMinutes: Number(pick.game?.startMinutes) || 0,
+          stage: pick.stage,
+          title: `${pick.participant.name} moneyline`,
+          subtitle: pick.gameTitle,
+          confidence: pick.confidence,
+          sortConfidence: pick.confidence,
+          sortEdge: Math.abs(Number(pick.modelEdge) || 0),
+          priceLabel: pick.participant?.americanLabel ?? 'Model only',
+          metaLabel: pick.marketProbabilityLabel,
+          summary: pick.rationale,
+          tags: [pick.tier, ...buildGameHighlights(pick.game).map((chip) => chip.label)].slice(0, 3),
+          invalid: eventState.invalid,
+          statusLabel: eventState.label,
+          tone: eventState.tone,
+          selected: selectedPicks[pick.gameId] === pick.participantId,
+          raw: pick
+        }
+      }),
+    [activeDayIsoDate, favoriteRecommendationPool, pacificClock, selectedPicks]
+  )
+
+  const flipCatalogEntries = useMemo(
+    () =>
+      flipRiskPicks.map((pick: AnyRecord) => {
+        const eventState = getEventState(pick.game, activeDayIsoDate, pacificClock)
+        return {
+          id: `flip:${pick.gameId}:${pick.participantId}`,
+          category: 'flips',
+          actionKind: 'ticket',
+          gameId: pick.gameId,
+          league: pick.league,
+          start: pick.start,
+          startMinutes: Number(pick.game?.startMinutes) || 0,
+          stage: pick.stage,
+          title: `${pick.participant.name} upset lane`,
+          subtitle: pick.gameTitle,
+          confidence: pick.flipScore,
+          sortConfidence: pick.flipScore,
+          sortEdge: Math.abs(Number(pick.flipProbability) || 0),
+          priceLabel: pick.participant?.americanLabel ?? 'Dog look',
+          metaLabel: pick.marketProbabilityLabel,
+          summary: pick.flipReason,
+          tags: [pick.tier, ...buildGameHighlights(pick.game).map((chip) => chip.label)].slice(0, 3),
+          invalid: eventState.invalid,
+          statusLabel: eventState.label,
+          tone: eventState.tone,
+          selected: selectedPicks[pick.gameId] === pick.participantId,
+          raw: pick
+        }
+      }),
+    [activeDayIsoDate, flipRiskPicks, pacificClock, selectedPicks]
+  )
+
+  const totalCatalogEntries = useMemo(
+    () =>
+      games
+        .filter((game: AnyRecord) => game.league === 'MLB' && game.analysis?.mlbProjection?.totals)
+        .flatMap((game: AnyRecord) => {
+          const totals = game.analysis.mlbProjection.totals
+          const eventState = getEventState(game, activeDayIsoDate, pacificClock)
+          const phases = [
+            {
+              id: 'full',
+              label: 'Full game',
+              lean: totals.fullGame,
+              projectedLabel: `Proj ${totals.projectedFullTotalRuns} vs ${game.analysis.mlbProjection.postedTotal ?? 'N/A'}`
+            },
+            {
+              id: 'first5',
+              label: 'First 5',
+              lean: totals.first5,
+              projectedLabel: `Proj ${totals.projectedFirst5TotalRuns} vs ${totals.derivedFirst5TotalLine ?? 'N/A'}`
+            },
+            {
+              id: 'late',
+              label: 'Rest of game',
+              lean: totals.late,
+              projectedLabel: `Proj ${totals.projectedLateTotalRuns} vs ${totals.derivedLateTotalLine ?? 'N/A'}`
+            }
+          ]
+
+          return phases
+            .filter((phase) => phase.lean?.lean && phase.lean.lean !== 'Pass')
+            .map((phase) => {
+              const savedId = `${game.id}:total:${phase.id}`
+              const confidence = Math.round(
+                Math.min(
+                  90,
+                  54 + Math.abs(Number(phase.lean.edge) || 0) * 18 + Math.max((game.analysis.confidence || 50) - 56, 0) * 0.2
+                )
+              )
+
+              return {
+                id: savedId,
+                category: 'totals',
+                actionKind: 'total',
+                gameId: game.id,
+                league: game.league,
+                start: game.start,
+                startMinutes: Number(game.startMinutes) || 0,
+                stage: game.stage,
+                title: phase.lean.label,
+                subtitle: `${game.title} · ${phase.label}`,
+                confidence,
+                sortConfidence: confidence,
+                sortEdge: Math.abs(Number(phase.lean.edge) || 0),
+                priceLabel: phase.projectedLabel,
+                metaLabel: phase.lean.strength,
+                summary: phase.lean.summary,
+                tags: [phase.label, totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'].slice(0, 2),
+                invalid: eventState.invalid,
+                statusLabel: eventState.label,
+                tone: eventState.tone,
+                selected: Boolean(selectedTotals[savedId]),
+                raw: {
+                  id: savedId,
+                  gameId: game.id,
+                  gameTitle: game.title,
+                  league: game.league,
+                  marketLabel: phase.lean.label,
+                  phaseLabel: phase.label,
+                  summary: phase.lean.summary,
+                  strength: phase.lean.strength,
+                  projectedLabel: phase.projectedLabel
+                }
+              }
+            })
+        }),
+    [activeDayIsoDate, games, pacificClock, selectedTotals]
+  )
+
+  const propCatalogEntries = useMemo(
+    () =>
+      mlbPlayerProps.map((prop: AnyRecord) => {
+        const eventState = getEventState(prop.game, activeDayIsoDate, pacificClock)
+        return {
+          id: prop.id,
+          category: 'props',
+          actionKind: 'prop',
+          gameId: prop.gameId,
+          league: prop.league,
+          start: prop.game?.start ?? prop.start ?? '',
+          startMinutes: Number(prop.game?.startMinutes) || 0,
+          stage: prop.game?.stage ?? '',
+          title: `${prop.playerName} ${prop.marketLabel}`,
+          subtitle: prop.gameTitle,
+          confidence: prop.confidence,
+          sortConfidence: prop.confidence,
+          sortEdge: Number(prop.expectedValue) || Number(prop.probability) || 0,
+          priceLabel: prop.statValueLabel,
+          metaLabel: `${prop.probability}% model`,
+          summary: prop.reason || prop.matchupNote,
+          tags: [prop.recommendationTier, prop.propLabel, prop.lineupStatus].filter(Boolean).slice(0, 3),
+          invalid: eventState.invalid,
+          statusLabel: eventState.label,
+          tone: eventState.tone,
+          selected: Boolean(selectedProps[prop.id]),
+          raw: prop
+        }
+      }),
+    [activeDayIsoDate, mlbPlayerProps, pacificClock, selectedProps]
+  )
+
+  const builderCatalogEntries = useMemo(() => {
+    const allEntries = [...favoriteCatalogEntries, ...totalCatalogEntries, ...propCatalogEntries, ...flipCatalogEntries]
+    return allEntries
+      .filter((entry) => {
+        if (builderCatalogTab !== 'all' && entry.category !== builderCatalogTab) return false
+        if (entry.category === 'props' && activePropType !== 'all' && entry.raw?.propType !== activePropType) return false
+        if (builderValidityFilter === 'eligible') return !entry.invalid
+        if (builderValidityFilter === 'invalid') return entry.invalid
+        return true
+      })
+      .sort((left, right) => {
+        if (builderValidityFilter === 'all' && left.invalid !== right.invalid) return left.invalid ? 1 : -1
+        if (builderSort === 'time') {
+          if (left.startMinutes !== right.startMinutes) return left.startMinutes - right.startMinutes
+          return right.sortConfidence - left.sortConfidence
+        }
+        if (builderSort === 'edge') {
+          if (right.sortEdge !== left.sortEdge) return right.sortEdge - left.sortEdge
+          return right.sortConfidence - left.sortConfidence
+        }
+        if (right.sortConfidence !== left.sortConfidence) return right.sortConfidence - left.sortConfidence
+        return left.startMinutes - right.startMinutes
+      })
+  }, [
+    activePropType,
+    builderCatalogTab,
+    builderSort,
+    builderValidityFilter,
+    favoriteCatalogEntries,
+    flipCatalogEntries,
+    propCatalogEntries,
+    totalCatalogEntries
+  ])
+
+  const parlayLegs = useMemo(() => {
+    return Object.entries(selectedPicks)
+      .map(([gameId, participantId]) => {
+        const game = games.find((entry: AnyRecord) => entry.id === gameId)
+        return game ? createParlayLeg(game, participantId, 'manual') : null
+      })
+      .filter(Boolean)
+  }, [games, selectedPicks])
+
+  const parlay = useMemo(() => buildParlayModel(parlayLegs, parlayStake), [parlayLegs, parlayStake])
+  const atParlayLimit = parlay.legCount >= PARLAY_MAX_LEGS
+  const parlayReady = parlay.legCount >= PARLAY_MIN_LEGS
+  const parlayStatus = parlayReady
+    ? `${parlay.legCount}-leg ticket ready at ${parlay.combinedAmericanLabel}.`
+    : `Add ${Math.max(0, PARLAY_MIN_LEGS - parlay.legCount)} more side${parlay.legCount === 0 ? 's' : ''} to price the parlay.`
+
+  const recommendationCounts = useMemo(() => {
+    const maxAvailable = Math.min(PARLAY_MAX_LEGS, filteredMoneylineGames.length)
+    return Array.from({ length: Math.max(0, maxAvailable - 1) }, (_, index) => index + 2)
+  }, [filteredMoneylineGames.length])
+
+  const recommendedLegTarget = clamp(recommendedLegCount, 2, Math.max(2, recommendationCounts.at(-1) ?? 2))
+
+  const balancedRecommendation = useMemo(
+    () => buildBalancedRecommendationSet(favoriteRecommendationPool, flipRiskPicks, recommendedLegTarget, balanceWeight),
+    [balanceWeight, favoriteRecommendationPool, flipRiskPicks, recommendedLegTarget]
+  )
+
+  const recommendedPicks = useMemo(() => {
+    if (recommendationMode === 'balanced') return balancedRecommendation.picks
+    if (recommendationMode === 'flips') return flipRiskPicks.slice(0, recommendedLegTarget)
+    return favoriteRecommendationPool.slice(0, recommendedLegTarget)
+  }, [balancedRecommendation.picks, favoriteRecommendationPool, flipRiskPicks, recommendationMode, recommendedLegTarget])
+
+  const recommendedParlay = useMemo(() => {
+    const legs = recommendedPicks
+      .map((pick: AnyRecord) => {
+        const game = games.find((entry: AnyRecord) => entry.id === pick.gameId)
+        return game ? createParlayLeg(game, pick.participantId, recommendationMode) : null
+      })
+      .filter(Boolean)
+    return buildParlayModel(legs, parlayStake)
+  }, [games, parlayStake, recommendationMode, recommendedPicks])
+
+  const selectedPropEntries = Object.values(selectedProps)
+  const selectedTotalEntries = Object.values(selectedTotals)
+  const propConfidenceAverage = selectedPropEntries.length
+    ? Math.round(selectedPropEntries.reduce((sum: number, entry: AnyRecord) => sum + (entry.confidence || 0), 0) / selectedPropEntries.length)
+    : 0
+
+  const selectDay = (dayId: string) => {
+    setActiveDayId(dayId)
+    setActiveFilter('All')
+  }
+
+  const stepDay = (offset: number) => {
+    const nextIndex = activeDayIndex + offset
+    const target = orderedSlateDays[nextIndex]
+    if (target) selectDay(target.id)
+  }
+
+  const openGame = (gameId: string) => {
+    setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: gameId }))
+    setActiveDeskTab('board')
+  }
+
+  const toggleMoneylineSelection = (game: AnyRecord, participantId: string) => {
+    const eventState = getEventState(game, activeDayIsoDate, pacificClock)
+    if (eventState.invalid) return
+
+    setSelectedPicksByDay((current) => {
+      const daySelections = { ...(current[activeDayId] ?? {}) }
+      if (daySelections[game.id] === participantId) delete daySelections[game.id]
+      else {
+        if (!daySelections[game.id] && Object.keys(daySelections).length >= PARLAY_MAX_LEGS) return current
+        daySelections[game.id] = participantId
+      }
+      return { ...current, [activeDayId]: daySelections }
+    })
+  }
+
+  const addAnalystPick = (game: AnyRecord) => {
+    if (!game?.moneyline?.available || !game.analysis?.participantId) return
+    toggleMoneylineSelection(game, game.analysis.participantId)
+  }
+
+  const removeParlayPick = (gameId: string) => {
+    setSelectedPicksByDay((current) => {
+      const daySelections = { ...(current[activeDayId] ?? {}) }
+      delete daySelections[gameId]
+      return { ...current, [activeDayId]: daySelections }
+    })
+  }
+
+  const clearParlay = () => {
+    setSelectedPicksByDay((current) => ({ ...current, [activeDayId]: {} }))
+  }
+
+  const toggleSelectedProp = (entry: AnyRecord) => {
+    setSelectedPropsByDay((current) => {
+      const daySelections = { ...(current[activeDayId] ?? {}) }
+      if (daySelections[entry.id]) delete daySelections[entry.id]
+      else daySelections[entry.id] = entry
+      return { ...current, [activeDayId]: daySelections }
+    })
+  }
+
+  const toggleSelectedTotal = (entry: AnyRecord) => {
+    setSelectedTotalsByDay((current) => {
+      const daySelections = { ...(current[activeDayId] ?? {}) }
+      if (daySelections[entry.id]) delete daySelections[entry.id]
+      else daySelections[entry.id] = entry
+      return { ...current, [activeDayId]: daySelections }
+    })
+  }
+
+  const clearSelectedProps = () => setSelectedPropsByDay((current) => ({ ...current, [activeDayId]: {} }))
+  const clearSelectedTotals = () => setSelectedTotalsByDay((current) => ({ ...current, [activeDayId]: {} }))
+
+  const applyBuilderEntry = (entry: AnyRecord) => {
+    if (entry.invalid) return
+    if (entry.actionKind === 'ticket') {
+      const game = games.find((item: AnyRecord) => item.id === entry.gameId)
+      if (game && entry.raw?.participantId) toggleMoneylineSelection(game, entry.raw.participantId)
+      return
+    }
+    if (entry.actionKind === 'prop') {
+      toggleSelectedProp(entry.raw)
+      return
+    }
+    toggleSelectedTotal(entry.raw)
+  }
+
+  const loadRecommendedParlay = () => {
+    const nextSelections: Record<string, string> = {}
+    recommendedPicks.forEach((pick: AnyRecord) => {
+      nextSelections[pick.gameId] = pick.participantId
+    })
+    setSelectedPicksByDay((current) => ({ ...current, [activeDayId]: nextSelections }))
+    setActiveSidebarTab('ticket')
+  }
+
+  const hasPreviousDay = activeDayIndex > 0
+  const hasNextDay = activeDayIndex >= 0 && activeDayIndex < orderedSlateDays.length - 1
+
+  const renderLeagueBadge = (league: string) => (
+    <span className={`league-badge league-${league.toLowerCase()}`}>{league}</span>
+  )
+
+  const renderMoneylinePanel = (game: AnyRecord) => {
+    if (!game?.moneyline?.available) return null
+    return (
+      <section className="pick-panel" aria-label={`Parlay picks for ${game.title}`}>
+        <div className="pick-heading">
+          <div>
+            <p className="pick-kicker">Ticket</p>
+            <p className="pick-caption">{game.moneyline.label}</p>
+          </div>
+          <div className="pick-side-meta">
+            <span className="pick-source">{game.moneyline.provider}</span>
+            <strong className="pick-analysis-note">My pick: {game.analysis?.participant?.name}</strong>
+          </div>
+        </div>
+
+        <div className="pick-grid compact">
+          {game.moneyline.participants.map((participant: AnyRecord) => (
+            <button
+              key={participant.id}
+              type="button"
+              className={`pick-button ${selectedPicks[game.id] === participant.id ? 'active' : ''}`}
+              onClick={() => toggleMoneylineSelection(game, participant.id)}
+            >
+              <span>{participant.name}</span>
+              <strong>{participant.americanLabel}</strong>
+              <small>{participant.impliedProbabilityLabel} implied</small>
+            </button>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  const renderMlbDetail = (game: AnyRecord) => {
+    const projection = game.analysis?.mlbProjection
+    const awayStarter = buildPitcherSummary(game.starterContext?.away)
+    const homeStarter = buildPitcherSummary(game.starterContext?.home)
+    const awayTeam = game.matchup?.[0]?.name ?? 'Away'
+    const homeTeam = game.matchup?.[1]?.name ?? 'Home'
+    const awayLineup = game.lineupBoard?.away
+    const homeLineup = game.lineupBoard?.home
+    const featuredProps = game.playerProps?.featured ?? []
+    const homeRunTargets = game.homeRunTargets?.featured ?? game.homeRunTargets?.targets ?? []
+    const awayScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === awayTeam)
+    const homeScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === homeTeam)
+
+    return (
+      <>
+        <section className="detail-panel react-card-grid">
+          <article className="react-team-card" style={{ borderColor: `${getTeamAccent('MLB', awayTeam)}55` }}>
+            <div className="react-team-card-top">
+              <div className="react-team-id">
+                {getTeamLogoUrl('MLB', awayTeam) ? <img src={getTeamLogoUrl('MLB', awayTeam)} alt={awayTeam} className="react-team-logo" /> : null}
+                <div>
+                  <strong>{awayTeam}</strong>
+                  <small>{buildTeamContextSummary(game.teamContext?.away)}</small>
+                </div>
+              </div>
+              <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.away)}</span>
+            </div>
+            <p>{awayStarter.primary}</p>
+            {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
+            {awayScript ? (
+              <>
+                <p className="react-section-copy">{awayScript.overview}</p>
+                <div className="react-pill-row">
+                  {(awayScript.overperformHitters ?? []).slice(0, 3).map((hitter: AnyRecord) => (
+                    <span key={`${awayTeam}-${hitter.name}`} className="game-highlight-chip accent">
+                      {hitter.name}
+                    </span>
+                  ))}
+                </div>
+              </>
+            ) : null}
+          </article>
+
+          <article className="react-team-card" style={{ borderColor: `${getTeamAccent('MLB', homeTeam)}55` }}>
+            <div className="react-team-card-top">
+              <div className="react-team-id">
+                {getTeamLogoUrl('MLB', homeTeam) ? <img src={getTeamLogoUrl('MLB', homeTeam)} alt={homeTeam} className="react-team-logo" /> : null}
+                <div>
+                  <strong>{homeTeam}</strong>
+                  <small>{buildTeamContextSummary(game.teamContext?.home)}</small>
+                </div>
+              </div>
+              <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.home)}</span>
+            </div>
+            <p>{homeStarter.primary}</p>
+            {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
+            {homeScript ? (
+              <>
+                <p className="react-section-copy">{homeScript.overview}</p>
+                <div className="react-pill-row">
+                  {(homeScript.overperformHitters ?? []).slice(0, 3).map((hitter: AnyRecord) => (
+                    <span key={`${homeTeam}-${hitter.name}`} className="game-highlight-chip accent">
+                      {hitter.name}
+                    </span>
+                  ))}
+                </div>
+              </>
+            ) : null}
+          </article>
+        </section>
+
+        {projection ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Game flow</p>
+              <span>{projection.weather?.label || 'No weather note'}</span>
+            </div>
+            <div className="react-card-grid">
+              <article className="react-mini-panel">
+                <span className="eyebrow">First 5</span>
+                <strong>{projection.first5EdgeTeam || 'Even'}</strong>
+                <small>{projection.totals?.first5?.summary}</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Bridge</span>
+                <strong>{projection.bridgeEdgeTeam || 'Even'}</strong>
+                <small>{projection.totals?.late?.summary}</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Full game</span>
+                <strong>{projection.edgeTeam || game.analysis?.participant?.name}</strong>
+                <small>{projection.totals?.fullGame?.summary}</small>
+              </article>
+            </div>
+          </section>
+        ) : null}
+
+        {game.lineupBoard ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Lineups</p>
+              <span>{game.lineupBoard.weather?.label || game.lineupBoard.marketWeatherContext?.total || 'Projected board'}</span>
+            </div>
+            <div className="react-lineup-columns">
+              {[awayLineup, homeLineup].map((lineupTeam: AnyRecord, index: number) => {
+                if (!lineupTeam) return null
+                const teamName = index === 0 ? awayTeam : homeTeam
+                return (
+                  <article key={teamName} className="react-lineup-card">
+                    <div className="react-lineup-card-head">
+                      <strong>{teamName}</strong>
+                      <small>{lineupStatusLabel(index === 0 ? game.lineupBoard?.status?.away : game.lineupBoard?.status?.home)}</small>
+                    </div>
+                    <p className="react-section-copy">{lineupTeam.summary?.overview || lineupTeam.summary?.bullpenOverview || lineupTeam.opposingStarter?.pitchMixSummary}</p>
+                    <div className="react-lineup-list">
+                      {(lineupTeam.lineup ?? []).slice(0, 9).map((player: AnyRecord) => (
+                        <div key={`${teamName}-${player.playerId}-${player.slot}`} className="react-lineup-player">
+                          <div>
+                            <strong>{player.slot}. {player.name}</strong>
+                            <small>{player.position} · {player.bats} · {player.primaryTag}</small>
+                          </div>
+                          <span>{player.matchupNote}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+          </section>
+        ) : null}
+
+        {featuredProps.length > 0 ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Featured props</p>
+              <span>{game.playerProps?.summary}</span>
+            </div>
+            <div className="react-prop-grid">
+              {featuredProps.slice(0, 6).map((prop: AnyRecord) => (
+                <article key={prop.id} className="react-prop-card">
+                  <div className="react-prop-head">
+                    <strong>{prop.playerName}</strong>
+                    <span>{prop.confidence}%</span>
+                  </div>
+                  <p>{prop.marketLabel}</p>
+                  <small>{prop.statValueLabel}</small>
+                  <small>{prop.reason}</small>
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {homeRunTargets.length > 0 ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Home run board</p>
+              <span>Weighted candidates</span>
+            </div>
+            <div className="react-prop-grid">
+              {homeRunTargets.slice(0, 6).map((target: AnyRecord) => (
+                <article key={target.id ?? `${target.teamName}-${target.playerName}`} className="react-prop-card">
+                  <div className="react-prop-head">
+                    <strong>{target.playerName}</strong>
+                    <span>{target.shareLabel || `${Math.round((target.weightedShare ?? 0) * 100)}%`}</span>
+                  </div>
+                  <p>{target.teamName}</p>
+                  <small>{target.reason || target.summary || target.formSummary}</small>
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : null}
+      </>
+    )
+  }
+
+  const renderTennisDetail = (game: AnyRecord) => {
+    const context = game.tennisContext
+    const projection = context?.projection
+    return (
+      <>
+        {context?.players?.length ? (
+          <section className="detail-panel react-card-grid">
+            {context.players.map((player: AnyRecord) => (
+              <article key={player.name} className="react-team-card">
+                <div className="react-team-card-top">
+                  <div className="react-team-id">
+                    <div>
+                      <strong>{player.label}</strong>
+                      <small>{player.record2026}</small>
+                    </div>
+                  </div>
+                  <span className="builder-status-pill open">{player.marketLabel}</span>
+                </div>
+                <p>{player.clayLine}</p>
+                <small>{player.notes}</small>
+                <p className="react-section-copy">{player.matchupNote}</p>
+              </article>
+            ))}
+          </section>
+        ) : null}
+
+        {context?.comparisonRows?.length ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Matchup board</p>
+              <span>{projection?.overview || 'Clay comparison board'}</span>
+            </div>
+            <div className="react-comparison-grid">
+              {context.comparisonRows.map((row: AnyRecord) => {
+                const max = Math.max(row.leftScore || 1, row.rightScore || 1, 1)
+                return (
+                  <article key={row.label} className="react-comparison-row">
+                    <div className="react-comparison-meta">
+                      <strong>{row.label}</strong>
+                      <small>{row.metric}</small>
+                    </div>
+                    <div className="react-comparison-values">
+                      <span>{row.leftLabel}</span>
+                      <span>{row.rightLabel}</span>
+                    </div>
+                    <div className="react-comparison-bars">
+                      <div className="react-comparison-bar">
+                        <span style={{ width: `${Math.max(12, (row.leftScore / max) * 100)}%` }} />
+                      </div>
+                      <div className="react-comparison-bar right">
+                        <span style={{ width: `${Math.max(12, (row.rightScore / max) * 100)}%` }} />
+                      </div>
+                    </div>
+                    <div className="react-comparison-scoreline">
+                      <span>{row.leftScore}</span>
+                      <span>{row.winner}</span>
+                      <span>{row.rightScore}</span>
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+          </section>
+        ) : null}
+
+        {projection ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Projected path</p>
+              <span>{projection.projectedWinner}</span>
+            </div>
+            <div className="react-card-grid">
+              <article className="react-mini-panel">
+                <span className="eyebrow">Set line</span>
+                <strong>{projection.projectedSetLine}</strong>
+                <small>{projection.projectedScoreline}</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Total games</span>
+                <strong>{projection.totalGames}</strong>
+                <small>{projection.straightSetsProbability}% straight sets</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Volatility</span>
+                <strong>{projection.upsetRisk}%</strong>
+                <small>Upset risk</small>
+              </article>
+            </div>
+
+            {projection.fantasy?.length ? (
+              <div className="react-prop-grid">
+                {projection.fantasy.map((entry: AnyRecord) => (
+                  <article key={entry.name} className="react-prop-card">
+                    <div className="react-prop-head">
+                      <strong>{entry.name}</strong>
+                      <span>{entry.projectedFantasyScore}</span>
+                    </div>
+                    <p>PrizePicks fantasy</p>
+                    <small>
+                      {entry.projectedSetsWon}-{entry.projectedSetsLost} sets · {entry.projectedGamesWon}-{entry.projectedGamesLost} games
+                    </small>
+                    <small>{entry.winPath}</small>
+                  </article>
+                ))}
+              </div>
+            ) : null}
+          </section>
+        ) : null}
+
+        {game.playerAnalysis?.length ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Player analysis</p>
+              <span>{game.analysis?.participant?.name} lean</span>
+            </div>
+            <ul className="factor-list compact">
+              {game.playerAnalysis.map((line: string, index: number) => (
+                <li key={`${game.id}-player-analysis-${index}`}>{line}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+      </>
+    )
+  }
+
+  return (
+    <div className="terminal-shell">
+      <header className="desk-globalbar">
+        <div className="topbar-brand">
+          <div className="brand-mark">S</div>
+          <div className="brand-wordmark">
+            Slate<span>.</span>
+          </div>
+        </div>
+
+        <div className="desk-tab-row" role="tablist" aria-label="Desk tabs">
+          {deskTabs.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              role="tab"
+              className={`desk-tab ${activeDeskTab === tab.id ? 'active' : ''}`}
+              aria-selected={activeDeskTab === tab.id}
+              onClick={() => setActiveDeskTab(tab.id)}
+            >
+              {tab.label}
+              {tab.id === 'parlay' ? <span className="desk-tab-count">{parlay.legCount}</span> : null}
+            </button>
+          ))}
+        </div>
+
+        <label className="global-search" aria-label="Search markets">
+          <span>Search markets, players, signals...</span>
+          <input
+            type="text"
+            value={marketSearch}
+            onChange={(event) => setMarketSearch(event.target.value)}
+            placeholder="Filter the current slate..."
+          />
+          <small>⌘K</small>
+        </label>
+
+        <div className="topbar-status mono">
+          <span className="live-dot" />
+          <span>Live</span>
+          <span>{oddsMeta?.snapshot || pacificClock.label}</span>
+        </div>
+      </header>
+
+      <div className="desk-datestrip">
+        <div className="datestrip-label">
+          <span className="eyebrow">Slate</span>
+        </div>
+        <button type="button" className="datestrip-step" disabled={!hasPreviousDay} onClick={() => stepDay(-1)}>
+          ‹
+        </button>
+        <div className="datestrip-scroll no-scrollbar">
+          {orderedSlateDays.map((day) => (
+            <button
+              key={day.id}
+              type="button"
+              className={`date-chip compact ${activeDayId === day.id ? 'active' : ''}`}
+              onClick={() => selectDay(day.id)}
+            >
+              <small>
+                {day.id.slice(8, 10)} / {day.id.slice(5, 7)}
+              </small>
+              <strong>{day.slateMeta.date}</strong>
+              <span>{day.summary.totalGames}</span>
+            </button>
+          ))}
+        </div>
+        <button type="button" className="datestrip-step" disabled={!hasNextDay} onClick={() => stepDay(1)}>
+          ›
+        </button>
+        <div className="datestrip-meta mono">
+          <span>{games.length} games</span>
+          <span>{eligibleMoneylineGames.length} eligible</span>
+          <span>{parlay.legCount} selected</span>
+        </div>
+      </div>
+
+      {activeDeskTab === 'board' ? (
+        <div className="desk-board-workspace">
+          <section className="games-rail">
+            <div className="games-rail-header">
+              <div>
+                <p className="eyebrow">Games</p>
+                <h2>
+                  {slateMeta.date} · {activeFilter === 'All' ? 'full board' : activeFilter}
+                </h2>
+              </div>
+              <div className="games-rail-meta mono">
+                <span>{visibleGames.length} visible</span>
+                {games.some((game: AnyRecord) => game.league === 'MLB') ? (
+                  <span>
+                    {lineupStatusCounts.posted}/{lineupStatusCounts.total} posted
+                  </span>
+                ) : null}
+              </div>
+            </div>
+
+            <div className="games-rail-filters">
+              {filterOptions.map((filter: string) => (
+                <button
+                  key={filter}
+                  type="button"
+                  className={`rail-filter-chip ${activeFilter === filter ? 'active' : ''}`}
+                  onClick={() => setActiveFilter(filter)}
+                >
+                  {filter}
+                </button>
+              ))}
+            </div>
+
+            <div className="games-rail-list no-scrollbar">
+              {visibleGames.length === 0 ? (
+                <div className="placeholder-panel compact">
+                  <p className="eyebrow">No markets</p>
+                  <h3>No results for this filter yet</h3>
+                  <p>Try a different date, sport, or a looser search phrase.</p>
+                </div>
+              ) : (
+                visibleGames.map((game: AnyRecord) => (
+                  <button
+                    key={game.id}
+                    type="button"
+                    className={`game-rail-row ${selectedGame?.id === game.id ? 'active' : ''}`}
+                    onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: game.id }))}
+                  >
+                    <div className="game-rail-row-meta">
+                      {renderLeagueBadge(game.league)}
+                      <span className="mono">{game.start}</span>
+                      <span className="game-rail-stage">{game.stage}</span>
+                    </div>
+
+                    <div className="game-rail-row-main">
+                      <div className="game-rail-title-wrap">
+                        <div className="game-rail-title">
+                          <span>{getCompetitorDisplayName(game, game.matchup?.[0], 0)}</span>
+                          <span className="versus-dot">vs</span>
+                          <span>{getCompetitorDisplayName(game, game.matchup?.[1], 1)}</span>
+                        </div>
+                        <small>{game.analysis?.participant?.name} lean</small>
+                      </div>
+                      <div className="game-rail-score mono">{game.analysis?.confidence}</div>
+                    </div>
+
+                    <div className="game-rail-row-bottom">
+                      <div className="game-rail-chips">
+                        {buildGameHighlights(game)
+                          .slice(0, 3)
+                          .map((chip, index) => (
+                            <span key={`${game.id}-chip-${index}`} className={`game-highlight-chip ${chip.tone}`}>
+                              {chip.label}
+                            </span>
+                          ))}
+                      </div>
+                      <div className="game-rail-vol">
+                        <span>{labelForScore(game.analysis?.confidence ?? 0)}</span>
+                        <div className="mini-vol-bar">
+                          <span style={{ width: `${game.analysis?.volatility ?? 0}%` }} />
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                ))
+              )}
+            </div>
+          </section>
+
+          <section className="detail-canvas">
+            {selectedGame ? (
+              <>
+                <div className="detail-canvas-header">
+                  <div className="detail-canvas-title-block">
+                    <div className="detail-canvas-topline">
+                      {renderLeagueBadge(selectedGame.league)}
+                      <span className="mono">{selectedGame.start}</span>
+                      <span>{selectedGame.stage}</span>
+                      {latestLineupSnapshot ? <span>{formatSnapshotTime(latestLineupSnapshot)}</span> : null}
+                    </div>
+                    <h1>{getGameDisplayTitle(selectedGame)}</h1>
+                  </div>
+
+                  <div className="detail-canvas-actions">
+                    {selectedGame.moneyline?.available ? (
+                      <button type="button" className="analysis-action-button active" onClick={() => addAnalystPick(selectedGame)}>
+                        {selectedPicks[selectedGame.id] === selectedGame.analysis?.participantId ? 'In ticket' : 'Add analyst pick'}
+                      </button>
+                    ) : null}
+                    <button type="button" className="analysis-action-button" onClick={() => setActiveDeskTab('parlay')}>
+                      Open builder
+                    </button>
+                  </div>
+                </div>
+
+                <div className="detail-kpi-strip">
+                  <article className="detail-kpi-card">
+                    <span className="eyebrow">Pick</span>
+                    <strong>{selectedGame.analysis?.participant?.name || 'No pick'}</strong>
+                    <small>Analyst read</small>
+                  </article>
+                  <article className="detail-kpi-card">
+                    <span className="eyebrow">Confidence</span>
+                    <strong>{selectedGame.analysis?.confidence}</strong>
+                    <small>{labelForScore(selectedGame.analysis?.confidence ?? 0)}</small>
+                  </article>
+                  <article className="detail-kpi-card">
+                    <span className="eyebrow">Volatility</span>
+                    <strong>{selectedGame.analysis?.volatility}%</strong>
+                    <small>{labelForScore(selectedGame.analysis?.volatility ?? 0)}</small>
+                  </article>
+                  <article className="detail-kpi-card">
+                    <span className="eyebrow">Market</span>
+                    <strong>{selectedGame.moneyline?.available ? selectedGame.analysis?.marketProbabilityLabel : 'Model only'}</strong>
+                    <small>{selectedGame.moneyline?.available ? selectedGame.moneyline.provider : 'No moneyline'}</small>
+                  </article>
+                  <article className="detail-kpi-card">
+                    <span className="eyebrow">Inputs</span>
+                    <strong>{selectedGame.analysis?.inputsUsed ?? 0}</strong>
+                    <small>{(selectedGame.tags ?? []).join(' · ')}</small>
+                  </article>
+                </div>
+
+                <div className="detail-canvas-scroll no-scrollbar">
+                  <div className="detail-canvas-grid">
+                    <section className="detail-panel insight-panel">
+                      <div className="detail-panel-header">
+                        <p className="eyebrow">Editorial read</p>
+                        <span>{(selectedGame.tags ?? []).join(' | ')}</span>
+                      </div>
+                      <p className="game-summary">{selectedGame.summary}</p>
+                      <div className="closeout">
+                        <p className="lean-line">{selectedGame.analysis?.lean}</p>
+                        <p className="swing-line">{swingTextFor(selectedGame)}</p>
+                      </div>
+                      <div className="meter-grid compact">
+                        <div className="meter-card">
+                          <div className="meter-label">
+                            <span>Confidence</span>
+                            <strong>{labelForScore(selectedGame.analysis?.confidence ?? 0)}</strong>
+                          </div>
+                          <div className="meter-track">
+                            <span style={{ width: `${selectedGame.analysis?.confidence ?? 0}%` }} />
+                          </div>
+                        </div>
+                        <div className="meter-card">
+                          <div className="meter-label">
+                            <span>Volatility</span>
+                            <strong>{labelForScore(selectedGame.analysis?.volatility ?? 0)}</strong>
+                          </div>
+                          <div className="meter-track volatility">
+                            <span style={{ width: `${selectedGame.analysis?.volatility ?? 0}%` }} />
+                          </div>
+                        </div>
+                      </div>
+                      <ul className="factor-list compact">
+                        {(selectedGame.factors ?? []).map((factor: string, index: number) => (
+                          <li key={`${selectedGame.id}-factor-${index}`}>{factor}</li>
+                        ))}
+                      </ul>
+                    </section>
+
+                    <div className="detail-stack">
+                      {renderMoneylinePanel(selectedGame)}
+                      <section className="odds-panel">
+                        <div className="detail-panel-header">
+                          <p className="eyebrow">Odds snapshot</p>
+                          <span>{selectedGame.odds?.provider || selectedGame.moneyline?.provider || 'Model board'}</span>
+                        </div>
+                        <p className="react-section-copy">{selectedGame.odds?.note || selectedGame.summary}</p>
+                        <div className="react-prop-grid">
+                          {(selectedGame.odds?.markets ?? []).map((market: AnyRecord) => (
+                            <article key={`${selectedGame.id}-${market.label}`} className="react-prop-card">
+                              <div className="react-prop-head">
+                                <strong>{market.label}</strong>
+                                <span>{market.book || selectedGame.odds?.provider}</span>
+                              </div>
+                              <p>{market.value}</p>
+                            </article>
+                          ))}
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  {selectedGame.league === 'MLB' ? renderMlbDetail(selectedGame) : null}
+                  {selectedGame.league === 'Tennis' ? renderTennisDetail(selectedGame) : null}
+                </div>
+              </>
+            ) : (
+              <div className="placeholder-panel">
+                <p className="eyebrow">Board</p>
+                <h3>No market selected</h3>
+                <p>Select a game from the rail to open the detail canvas.</p>
+              </div>
+            )}
+          </section>
+        </div>
+      ) : null}
+
+      {activeDeskTab === 'parlay' ? (
+        <div className="desk-tool-workspace">
+          <section className="builder-shell" aria-label="Parlay builder">
+            <div className="builder-layout">
+              <section className="builder-catalog">
+                <div className="builder-catalog-header">
+                  <div>
+                    <p className="eyebrow">Pick catalog</p>
+                    <h2>Favorite reads, totals, and props</h2>
+                    <p className="parlay-sidebar-copy">Use the left rail to sort live ideas. Started events stay visible but cannot be added.</p>
+                  </div>
+                  <div className="builder-catalog-meta mono">
+                    <span>{builderCatalogEntries.length} showing</span>
+                    <span>{pacificClock.label}</span>
+                  </div>
+                </div>
+
+                <div className="builder-filter-stack">
+                  <div className="builder-filter-row">
+                    {builderCatalogTabs.map((tab) => (
+                      <button
+                        key={tab.id}
+                        type="button"
+                        className={`builder-filter-chip ${builderCatalogTab === tab.id ? 'active' : ''}`}
+                        onClick={() => setBuilderCatalogTab(tab.id)}
+                      >
+                        {tab.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="builder-filter-row">
+                    {builderValidityFilters.map((filter) => (
+                      <button
+                        key={filter.id}
+                        type="button"
+                        className={`builder-filter-chip subtle ${builderValidityFilter === filter.id ? 'active' : ''}`}
+                        onClick={() => setBuilderValidityFilter(filter.id)}
+                      >
+                        {filter.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="builder-filter-row builder-filter-row--split">
+                    <div className="builder-filter-group">
+                      {builderSortOptions.map((option) => (
+                        <button
+                          key={option.id}
+                          type="button"
+                          className={`builder-filter-chip subtle ${builderSort === option.id ? 'active' : ''}`}
+                          onClick={() => setBuilderSort(option.id)}
+                        >
+                          {option.label}
+                        </button>
+                      ))}
+                    </div>
+
+                    <div className="builder-filter-group">
+                      {propTypeFilters.map((filter) => (
+                        <button
+                          key={filter.id}
+                          type="button"
+                          className={`builder-filter-chip subtle ${activePropType === filter.id ? 'active' : ''}`}
+                          onClick={() => setActivePropType(filter.id)}
+                        >
+                          {filter.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="builder-catalog-list no-scrollbar">
+                  {builderCatalogEntries.length === 0 ? (
+                    <div className="placeholder-panel compact">
+                      <p className="eyebrow">No candidates</p>
+                      <h3>Nothing matches this filter set yet</h3>
+                      <p>Try another lane, relax the invalid filter, or reset the prop type.</p>
+                    </div>
+                  ) : (
+                    builderCatalogEntries.map((entry) => (
+                      <article key={entry.id} className="builder-entry-card" data-invalid={entry.invalid}>
+                        <div className="builder-entry-topline">
+                          <div className="builder-entry-meta">
+                            {renderLeagueBadge(entry.league)}
+                            <span className="mono">{entry.start}</span>
+                            <span>{entry.stage}</span>
+                          </div>
+                          <span className={`builder-status-pill ${entry.tone}`}>{entry.statusLabel}</span>
+                        </div>
+
+                        <div className="builder-entry-main">
+                          <div className="builder-entry-copy">
+                            <strong>{entry.title}</strong>
+                            <p>{entry.subtitle}</p>
+                            <small>{entry.summary}</small>
+                            <div className="builder-entry-tags">
+                              {entry.tags.map((tag: string) => (
+                                <span key={`${entry.id}-${tag}`}>{tag}</span>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="builder-entry-side">
+                            <strong>{entry.confidence}%</strong>
+                            <span>{entry.priceLabel}</span>
+                            {entry.metaLabel ? <small>{entry.metaLabel}</small> : null}
+                            <button
+                              type="button"
+                              className={`analysis-action-button ${entry.selected ? 'active' : ''}`}
+                              disabled={entry.invalid || (entry.actionKind === 'ticket' && atParlayLimit && !entry.selected)}
+                              onClick={() => applyBuilderEntry(entry)}
+                            >
+                              {entry.actionKind === 'ticket'
+                                ? entry.selected
+                                  ? 'In ticket'
+                                  : 'Add side'
+                                : entry.actionKind === 'prop'
+                                  ? entry.selected
+                                    ? 'Saved'
+                                    : 'Save prop'
+                                  : entry.selected
+                                    ? 'Saved'
+                                    : 'Save total'}
+                            </button>
+                            <button
+                              type="button"
+                              className="analysis-action-button ghost"
+                              onClick={() => {
+                                openGame(entry.gameId)
+                                setActiveDeskTab('board')
+                              }}
+                            >
+                              Open game
+                            </button>
+                          </div>
+                        </div>
+                      </article>
+                    ))
+                  )}
+                </div>
+              </section>
+
+              <section className="builder-execution workspace-panel">
+                <div className="parlay-sidebar-header">
+                  <div>
+                    <p className="eyebrow">Execution</p>
+                    <h2>Slip and saved markets</h2>
+                    <p className="parlay-sidebar-copy">Moneyline legs price into the slip. Totals and props save alongside it until you price them manually.</p>
+                  </div>
+                  <button type="button" className="clear-parlay-button" disabled={parlay.legCount === 0} onClick={clearParlay}>
+                    Clear ticket
+                  </button>
+                </div>
+
+                <div className="sidebar-tab-row" role="tablist" aria-label="Builder tools">
+                  {sidebarTabs.map((tab) => (
+                    <button
+                      key={tab.id}
+                      type="button"
+                      role="tab"
+                      className={`sidebar-tab-button ${activeSidebarTab === tab.id ? 'active' : ''}`}
+                      aria-selected={activeSidebarTab === tab.id}
+                      onClick={() => setActiveSidebarTab(tab.id)}
+                    >
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+
+                {activeSidebarTab === 'ticket' ? (
+                  <>
+                    <div className="parlay-stats-grid compact">
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Eligible sides</span>
+                        <strong>{filteredMoneylineGames.length}</strong>
+                      </article>
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Selected</span>
+                        <strong>{parlay.legCount}</strong>
+                      </article>
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Combined odds</span>
+                        <strong>{parlay.combinedAmericanLabel}</strong>
+                        <small>Decimal {parlay.combinedDecimalLabel}</small>
+                      </article>
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Implied hit rate</span>
+                        <strong>{parlay.impliedProbabilityLabel}</strong>
+                      </article>
+                    </div>
+
+                    {recommendationCounts.length > 0 ? (
+                      <div className="ticket-autobuild">
+                        <p className="ticket-autobuild-label">Auto-build ticket</p>
+                        <div className="recommendation-mode-row" role="tablist" aria-label="Recommendation mode">
+                          {recommendationModes.map((mode) => (
+                            <button
+                              key={mode.id}
+                              type="button"
+                              role="tab"
+                              className={`recommendation-mode-button ${recommendationMode === mode.id ? 'active' : ''}`}
+                              aria-selected={recommendationMode === mode.id}
+                              onClick={() => setRecommendationMode(mode.id)}
+                            >
+                              {mode.label}
+                            </button>
+                          ))}
+                        </div>
+                        <p className="ticket-autobuild-copy">
+                          {recommendationModes.find((mode) => mode.id === recommendationMode)?.copy}
+                        </p>
+                        {recommendationMode === 'balanced' ? (
+                          <label className="balance-slider-card" htmlFor="balance-weight">
+                            <div className="balance-slider-head">
+                              <span>Flip weight</span>
+                              <strong>{balanceWeight.toFixed(2)}</strong>
+                            </div>
+                            <input
+                              id="balance-weight"
+                              type="range"
+                              min="0"
+                              max="1"
+                              step="0.05"
+                              value={balanceWeight}
+                              onChange={(event) => setBalanceWeight(Number(event.target.value))}
+                            />
+                            <small>
+                              Targeting about {balancedRecommendation.targetFlipLegs} flip
+                              {balancedRecommendation.targetFlipLegs === 1 ? '' : 's'} in this {recommendedLegTarget}-leg mix from an average live-dog rate of{' '}
+                              {Math.round(balancedRecommendation.averageFlipProbability * 100)}%.
+                            </small>
+                          </label>
+                        ) : null}
+
+                        <div className="recommendation-size-row">
+                          {recommendationCounts.map((count) => (
+                            <button
+                              key={count}
+                              type="button"
+                              className={`size-chip ${recommendedLegTarget === count ? 'active' : ''}`}
+                              onClick={() => setRecommendedLegCount(count)}
+                            >
+                              {count}-leg
+                            </button>
+                          ))}
+                        </div>
+
+                        <p className="ticket-autobuild-preview">
+                          {recommendationMode === 'flips' ? 'Flip-risk' : recommendationMode === 'balanced' ? 'Balanced' : 'Favorites'} set: {recommendedParlay.combinedAmericanLabel} | {recommendedParlay.impliedProbabilityLabel} implied
+                        </p>
+                        <button type="button" className="load-recommended-button" onClick={loadRecommendedParlay}>
+                          Load {recommendedLegTarget}-leg {recommendationMode === 'flips' ? 'flip-risk' : recommendationMode} ticket
+                        </button>
+                      </div>
+                    ) : null}
+
+                    <div className="parlay-body stacked">
+                      <label className="stake-card" htmlFor="parlay-stake">
+                        <span className="parlay-stat-label">Stake</span>
+                        <input
+                          id="parlay-stake"
+                          type="number"
+                          min="1"
+                          step="5"
+                          value={parlayStake}
+                          onChange={(event) => setParlayStake(Number(event.target.value) || 0)}
+                        />
+                      </label>
+                      <div className="parlay-return-grid">
+                        <article className="parlay-return-card">
+                          <span className="parlay-stat-label">Projected return</span>
+                          <strong>{parlay.grossReturnLabel}</strong>
+                        </article>
+                        <article className="parlay-return-card">
+                          <span className="parlay-stat-label">Projected profit</span>
+                          <strong>{parlay.profitLabel}</strong>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div className="sidebar-status-card" data-ready={parlayReady}>
+                      <p className="parlay-status-title">{parlayReady ? 'Ticket ready' : 'Ticket in progress'}</p>
+                      <p className="parlay-status-copy">{parlayStatus}</p>
+                    </div>
+
+                    {parlay.legCount === 0 ? (
+                      <p className="parlay-empty">Use the catalog on the left to add cleaner sides or save manual markets.</p>
+                    ) : (
+                      <div className="parlay-leg-list">
+                        {parlay.legs.map((leg: AnyRecord) => (
+                          <article key={leg.id} className="parlay-leg-card">
+                            <div>
+                              <p className="parlay-leg-topline">
+                                {leg.league} | {leg.start} | {leg.stage}
+                              </p>
+                              <p className="parlay-leg-pick">
+                                {leg.pickName} over {leg.opponentName}
+                              </p>
+                              <p className="parlay-leg-game">{leg.gameTitle}</p>
+                            </div>
+                            <div className="parlay-leg-side">
+                              <strong>{leg.americanLabel}</strong>
+                              <span>{leg.impliedProbabilityLabel} implied</span>
+                              {leg.isAnalystPick ? <span className="analyst-chip">Analyst match</span> : null}
+                              <button type="button" className="remove-leg-button" onClick={() => removeParlayPick(leg.gameId)}>
+                                Remove
+                              </button>
+                            </div>
+                          </article>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : null}
+
+                {activeSidebarTab === 'markets' ? (
+                  <>
+                    <div className="parlay-stats-grid compact">
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Saved props</span>
+                        <strong>{selectedPropEntries.length}</strong>
+                      </article>
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Saved totals</span>
+                        <strong>{selectedTotalEntries.length}</strong>
+                      </article>
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Avg confidence</span>
+                        <strong>{selectedPropEntries.length ? `${propConfidenceAverage}%` : 'N/A'}</strong>
+                      </article>
+                      <article className="parlay-stat-card">
+                        <span className="parlay-stat-label">Prop filter</span>
+                        <strong>{propTypeFilters.find((entry) => entry.id === activePropType)?.label ?? 'All'}</strong>
+                      </article>
+                    </div>
+
+                    <div className="action-section">
+                      <div className="action-section-header">
+                        <div>
+                          <p className="ticket-autobuild-label">Manual markets</p>
+                          <p className="ticket-autobuild-copy">These are the unpriced adds from the left catalog. Keep them here while you decide whether the edge is stronger in hits, TB, RBI, or totals.</p>
+                        </div>
+                        <div className="builder-clear-group">
+                          <button type="button" className="clear-parlay-button" disabled={!selectedPropEntries.length} onClick={clearSelectedProps}>
+                            Clear props
+                          </button>
+                          <button type="button" className="clear-parlay-button" disabled={!selectedTotalEntries.length} onClick={clearSelectedTotals}>
+                            Clear totals
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    {selectedTotalEntries.length ? (
+                      <div className="action-section">
+                        <div className="action-section-header">
+                          <h3>Saved totals</h3>
+                          <span>{selectedTotalEntries.length}</span>
+                        </div>
+                        <div className="prop-pick-list">
+                          {selectedTotalEntries.map((total: AnyRecord) => (
+                            <article key={total.id} className="prop-pick-card">
+                              <div>
+                                <p className="parlay-leg-topline">
+                                  {total.league} | {total.phaseLabel}
+                                </p>
+                                <p className="parlay-leg-pick">{total.marketLabel}</p>
+                                <p className="parlay-leg-game">{total.gameTitle}</p>
+                                <p className="parlay-leg-game">{total.projectedLabel}</p>
+                              </div>
+                              <div className="parlay-leg-side">
+                                <strong>{total.strength}</strong>
+                                <span>Manual price</span>
+                                <button type="button" className="remove-leg-button" onClick={() => toggleSelectedTotal(total)}>
+                                  Remove
+                                </button>
+                              </div>
+                            </article>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    {selectedPropEntries.length ? (
+                      <div className="action-section">
+                        <div className="action-section-header">
+                          <h3>Saved props</h3>
+                          <span>{selectedPropEntries.length}</span>
+                        </div>
+                        <div className="prop-pick-list">
+                          {selectedPropEntries.map((prop: AnyRecord) => (
+                            <article key={prop.id} className="prop-pick-card">
+                              <div>
+                                <p className="parlay-leg-topline">
+                                  {prop.league} | {prop.lineupStatus}
+                                </p>
+                                <p className="parlay-leg-pick">
+                                  {prop.playerName} {prop.marketLabel}
+                                </p>
+                                <p className="parlay-leg-game">{prop.gameTitle}</p>
+                                <p className="parlay-leg-game">{prop.reason}</p>
+                              </div>
+                              <div className="parlay-leg-side">
+                                <strong>{prop.confidence}%</strong>
+                                <span>{prop.probability}% model</span>
+                                <button type="button" className="remove-leg-button" onClick={() => toggleSelectedProp(prop)}>
+                                  Remove
+                                </button>
+                              </div>
+                            </article>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    {!selectedPropEntries.length && !selectedTotalEntries.length ? (
+                      <p className="parlay-empty">Save totals and props from the left catalog to stage manual markets here.</p>
+                    ) : null}
+                  </>
+                ) : null}
+
+                {activeSidebarTab === 'sources' ? (
+                  <div className="action-section">
+                    <div className="action-section-header">
+                      <h3>Source registry</h3>
+                      <span>{activeDay?.sources?.length ?? 0}</span>
+                    </div>
+                    <div className="sources-list">
+                      {(activeDay?.sources ?? []).map((source: AnyRecord, index: number) => (
+                        <a key={`${source.label || source.url}-${index}`} href={source.url} target="_blank" rel="noreferrer">
+                          <strong>{source.label || source.url}</strong>
+                          <small>{source.note || source.url}</small>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </section>
+            </div>
+          </section>
+        </div>
+      ) : null}
+
+      {activeDeskTab === 'tickets' ? (
+        <div className="desk-tool-workspace">
+          <section className="workspace-panel placeholder-panel">
+            <p className="eyebrow">Tickets</p>
+            <h3>Ticket history next</h3>
+            <p>The React migration keeps the shell ready for graded slips, settled parlays, and historical tracking.</p>
+          </section>
+        </div>
+      ) : null}
+
+      {activeDeskTab === 'models' ? (
+        <div className="desk-tool-workspace models-workspace">
+          <section className="workspace-panel action-section">
+            <div className="action-section-header">
+              <h3>Current slate diagnostics</h3>
+              <span>{games.length} games</span>
+            </div>
+            <ul className="factor-list compact">
+              <li>Slate day: {slateMeta.date}</li>
+              <li>Latest lineup refresh: {latestLineupSnapshot ? formatSnapshotTime(latestLineupSnapshot) : 'Not available'}</li>
+              <li>Eligible moneylines: {eligibleMoneylineGames.length}</li>
+              <li>Top analysis lane: {favoriteRecommendationPool[0]?.participant?.name ?? 'No active edge'}</li>
+            </ul>
+          </section>
+          <section className="workspace-panel action-section">
+            <div className="action-section-header">
+              <h3>Retrofit note</h3>
+              <span>React TS</span>
+            </div>
+            <p className="react-section-copy">
+              The model layer remains the same JS engine for now. This tab is the staging area for future typed diagnostics and calibration views.
+            </p>
+          </section>
+        </div>
+      ) : null}
+
+      {activeDeskTab === 'history' ? (
+        <div className="desk-tool-workspace">
+          <section className="workspace-panel placeholder-panel">
+            <p className="eyebrow">History</p>
+            <h3>Archive follow-ups stay intact</h3>
+            <p>
+              The markdown postmortems and warehouse reports are still on disk. This tab is reserved for the future in-app history view after the React migration settles.
+            </p>
+          </section>
+        </div>
+      ) : null}
+    </div>
+  )
+}
+
+export default App
