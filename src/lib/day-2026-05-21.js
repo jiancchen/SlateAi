@@ -1,4 +1,5 @@
 import { createSportsMatchModel } from './sports-model.js'
+import { tennisClayContext } from './day-2026-05-21-tennis-context.js'
 
 const oddsProvider = 'Official order of play + TennisStats H2H board'
 
@@ -36,22 +37,148 @@ const makeTennisOdds = (playerA, playerB, provider = oddsProvider) => {
   }
 }
 
+const formatPct = (value) => (Number.isFinite(value) ? `${value.toFixed(1)}%` : 'n/a')
+
+const formatRank = (value) => (Number.isFinite(value) ? `${Math.round(value)}` : 'n/a')
+
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
+
+const withClayContext = (player) => ({
+  ...player,
+  recentClay: tennisClayContext[player.name] ?? null
+})
+
+const clayCompositeScore = (player) => {
+  const ctx = player.recentClay
+  if (!ctx) return null
+  return ctx.spw + ctx.rpw + (ctx.dr - 1) * 18
+}
+
+const clayScoreDelta = (pick, opponent) => {
+  const pickScore = clayCompositeScore(pick)
+  const opponentScore = clayCompositeScore(opponent)
+  if (!Number.isFinite(pickScore) || !Number.isFinite(opponentScore)) return null
+
+  const pickOppAvg = pick.recentClay?.lastOppRankAvg
+  const opponentOppAvg = opponent.recentClay?.lastOppRankAvg
+  const scheduleAdjustment =
+    Number.isFinite(pickOppAvg) && Number.isFinite(opponentOppAvg)
+      ? clamp((opponentOppAvg - pickOppAvg) / 30, -3, 3)
+      : 0
+
+  return pickScore - opponentScore + scheduleAdjustment
+}
+
+const buildClayLine = (player) => {
+  const ctx = player.recentClay
+  if (!ctx) return ''
+
+  return `Clay ${ctx.wins}-${ctx.losses} | ${formatPct(ctx.spw)} SPW | ${formatPct(ctx.rpw)} RPW | avg opp rk ${formatRank(ctx.lastOppRankAvg)}`
+}
+
+const buildClayShape = (player) => {
+  const ctx = player.recentClay
+  if (!ctx) return `${player.name} does not have a clean recent clay sample loaded yet.`
+
+  return `${player.name} is ${ctx.wins}-${ctx.losses} over ${ctx.sample} recent clay matches, winning ${formatPct(ctx.spw)} of service points and ${formatPct(ctx.rpw)} of return points against opponents averaging rank ${formatRank(ctx.lastOppRankAvg)}.`
+}
+
+const buildClayDecisionNote = (pick, opponent) => {
+  const delta = clayScoreDelta(pick, opponent)
+  const pickSample = pick.recentClay?.sample ?? 0
+  const opponentSample = opponent.recentClay?.sample ?? 0
+  const smallSample = pickSample < 3 || opponentSample < 3
+  if (!Number.isFinite(delta)) {
+    return 'The lean is still more board-driven than data-rich because the recent clay point-winning sample is incomplete on at least one side.'
+  }
+
+  if (delta >= 5) {
+    if (smallSample) {
+      return `Recent clay point-winning still leans ${pick.name}, but the sample is thin enough that this should stay a controlled read rather than a full-trust spot.`
+    }
+    return `Recent clay point-winning data backs ${pick.name}: the combined service/return profile is clearly stronger than ${opponent.name}'s on this surface.`
+  }
+
+  if (delta >= 1.5) {
+    if (smallSample) {
+      return `Recent clay numbers lean ${pick.name}, but the small-sample warning keeps this in the cautious bucket.`
+    }
+    return `Recent clay numbers still lean ${pick.name}, but the edge is more about steadier point-winning than about any one knockout stat.`
+  }
+
+  if (delta > -1.5) {
+    return `Recent clay point-winning is basically flat here, so the pick is being separated more by rank, matchup shape, and match management than by raw surface dominance.`
+  }
+
+  if (delta > -5) {
+    return `Recent clay point-winning data actually tilts a bit toward ${opponent.name}, so this stays a thin board lean rather than a clean stats-supported side.`
+  }
+
+  return `Recent clay point-winning data runs against the pick in a real way, which is why this match should be treated as volatile even if the board still leans ${pick.name}.`
+}
+
+const adjustConfidenceFromClay = (baseConfidence, baseVolatility, pick, opponent) => {
+  const delta = clayScoreDelta(pick, opponent)
+  const pickSample = pick.recentClay?.sample ?? 0
+  const opponentSample = opponent.recentClay?.sample ?? 0
+
+  let confidence = baseConfidence
+  let volatility = baseVolatility
+
+  if (Number.isFinite(delta)) {
+    if (delta >= 5) {
+      confidence += 4
+      volatility -= 4
+    } else if (delta >= 2) {
+      confidence += 2
+      volatility -= 2
+    } else if (delta <= -5) {
+      confidence -= 6
+      volatility += 7
+    } else if (delta <= -2) {
+      confidence -= 3
+      volatility += 4
+    }
+  }
+
+  if (pickSample < 3 && opponentSample >= 4) {
+    confidence -= 2
+    volatility += 4
+  }
+
+  return {
+    confidence: clamp(Math.round(confidence), 50, 82),
+    volatility: clamp(Math.round(volatility), 40, 92)
+  }
+}
+
 const playerDetail = (player) => {
   const parts = [`Rank ${player.rank}`]
   if (Number.isFinite(player.form)) parts.push(`Form ${player.form}`)
   if (Number.isFinite(player.elo)) parts.push(`Elo ${player.elo}`)
   if (player.seed) parts.push(`Seed ${player.seed}`)
   if (player.record2026) parts.push(player.record2026)
+  if (player.recentClay) parts.push(buildClayLine(player))
   return parts.join(' | ')
 }
 
-const buildSummary = ({ pick, opponent, event, round, angle }) =>
-  `${pick.name} gets the lean in ${event} ${round} because the clay-week profile is steadier: form ${pick.form ?? 'n/a'} vs ${opponent.form ?? 'n/a'}, rank ${pick.rank} vs ${opponent.rank}, and ${angle}.`
+const buildSummary = ({ pick, opponent, event, round, angle }) => {
+  const pickClay = pick.recentClay
+  const opponentClay = opponent.recentClay
+  if (pickClay && opponentClay) {
+    return `${pick.name} gets the lean in ${event} ${round} because the recent clay profile is more stable: ${formatPct(pickClay.spw)} service points won and ${formatPct(pickClay.rpw)} return points won over the last ${pickClay.sample} clay matches, versus ${formatPct(opponentClay.spw)} and ${formatPct(opponentClay.rpw)} for ${opponent.name}, and the wider setup still says ${angle}.`
+  }
+
+  return `${pick.name} gets the lean in ${event} ${round} because the clay-week profile is steadier: form ${pick.form ?? 'n/a'} vs ${opponent.form ?? 'n/a'}, rank ${pick.rank} vs ${opponent.rank}, and ${angle}.`
+}
 
 const buildFactors = ({ playerA, playerB, pick, opponent, h2h, fatigue, angle, extraFactors = [] }) => {
   const factors = [
     `TennisStats form board: ${playerA.name} ${playerA.form ?? 'n/a'} vs ${playerB.name} ${playerB.form ?? 'n/a'} on a full-clay slate.`,
     `${pick.name} carries the stronger pre-match path on ranking / market shape: rank ${pick.rank} vs ${opponent.rank}${Number.isFinite(pick.decimalOdds) ? `, price ${pick.decimalOdds.toFixed(2)}` : ''}.`,
+    buildClayShape(pick),
+    buildClayShape(opponent),
+    buildClayDecisionNote(pick, opponent),
     h2h
       ? `${h2h.leader} ${h2h.record} in the visible head-to-head sample, which matters more here because both players are seeing a slower clay script.`
       : 'No strong accessible H2H edge surfaced, so the read leans more heavily on current form, clay fit, and weekly workload.'
@@ -82,11 +209,14 @@ const makeTennisMatch = ({
   extraFactors = [],
   sourceLabel = oddsProvider
 }) => {
-  const pick = pickName === playerA.name ? playerA : playerB
-  const opponent = pickName === playerA.name ? playerB : playerA
+  const enrichedPlayerA = withClayContext(playerA)
+  const enrichedPlayerB = withClayContext(playerB)
+  const pick = pickName === enrichedPlayerA.name ? enrichedPlayerA : enrichedPlayerB
+  const opponent = pickName === enrichedPlayerA.name ? enrichedPlayerB : enrichedPlayerA
   const isDog = Number.isFinite(pick.decimalOdds) && Number.isFinite(opponent.decimalOdds)
     ? pick.decimalOdds > opponent.decimalOdds
     : false
+  const adjusted = adjustConfidenceFromClay(confidence, volatility, pick, opponent)
 
   return createSportsMatchModel(
     {
@@ -97,23 +227,23 @@ const makeTennisMatch = ({
       title: `${playerA.name} vs ${playerB.name}`,
       stage: `${event} | ${stage || round}`,
       spotlight,
-      confidence,
-      volatility,
+      confidence: adjusted.confidence,
+      volatility: adjusted.volatility,
       tags: ['Clay', ...tags],
       matchup: [
         {
           side: 'Player 1',
-          name: playerA.name,
-          detail: playerDetail(playerA)
+          name: enrichedPlayerA.name,
+          detail: playerDetail(enrichedPlayerA)
         },
         {
           side: 'Player 2',
-          name: playerB.name,
-          detail: playerDetail(playerB)
+          name: enrichedPlayerB.name,
+          detail: playerDetail(enrichedPlayerB)
         }
       ],
       summary: buildSummary({ pick, opponent, event, round, angle }),
-      factors: buildFactors({ playerA, playerB, pick, opponent, h2h, fatigue, angle, extraFactors }),
+      factors: buildFactors({ playerA: enrichedPlayerA, playerB: enrichedPlayerB, pick, opponent, h2h, fatigue, angle, extraFactors }),
       lean: `Lean ${pick.name} because ${angle}.`,
       swing,
       odds: makeTennisOdds(playerA, playerB, sourceLabel),
@@ -132,13 +262,15 @@ const makeTennisMatch = ({
             : ''
       },
       playerAnalysis: [
-        `${pick.name} is the cleaner pre-match side because the combination of form, clay fit, and current board shape lands better than it does for ${opponent.name}.`,
+        `${pick.name} is the cleaner pre-match side because the recent clay point-winning profile, form signal, and current board shape land better than they do for ${opponent.name}.`,
+        buildClayDecisionNote(pick, opponent),
         fatigue
           ? fatigue
           : 'No fresh injury flag surfaced on the accessible pre-match sources for this pass, so the risk read is coming more from surface fit and recent match load than from explicit health news.',
         h2h
           ? `${h2h.leader} ${h2h.record} in the visible H2H sample, which matters more here because these points should be long and clay-driven.`
           : 'With no strong H2H edge exposed, this is more about who is arriving in the better clay rhythm today.',
+        buildClayShape(pick),
         swing
       ]
     },
