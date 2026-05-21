@@ -12,6 +12,13 @@
   const PARLAY_MIN_LEGS = 2
   const PARLAY_MAX_LEGS = 10
   const leagueOrder = ['MLB', 'Tennis', 'UFC', 'NBA', 'WNBA']
+  const deskTabs = [
+    { id: 'board', label: 'Board' },
+    { id: 'parlay', label: 'Parlay builder' },
+    { id: 'tickets', label: 'Tickets' },
+    { id: 'models', label: 'Models' },
+    { id: 'history', label: 'History' }
+  ]
   const sidebarTabs = [
     { id: 'ticket', label: 'Ticket' },
     { id: 'props', label: 'Props' },
@@ -114,8 +121,10 @@
   }
 
   let activeDayId = defaultSlateDayId
+  let activeDeskTab = 'board'
   let activeFilter = 'All'
   let activeSidebarTab = 'ticket'
+  let marketSearch = ''
   let parlayStake = 25
   let recommendedLegCount = 4
   let recommendationMode = 'favorites'
@@ -485,8 +494,21 @@
 
   $: eligibleMoneylineGames = games.filter((game) => game.moneyline.available)
 
-  $: visibleGames =
-    activeFilter === 'All' ? games : games.filter((game) => game.league === activeFilter)
+  $: sportFilteredGames = activeFilter === 'All' ? games : games.filter((game) => game.league === activeFilter)
+  $: visibleGames = marketSearch
+    ? sportFilteredGames.filter((game) => {
+        const query = marketSearch.trim().toLowerCase()
+        if (!query) return true
+        const tags = Array.isArray(game.tags) ? game.tags.join(' ').toLowerCase() : ''
+        const matchupNames = game.matchup?.map((side) => side.name.toLowerCase()).join(' ') ?? ''
+        return (
+          game.title.toLowerCase().includes(query) ||
+          game.stage.toLowerCase().includes(query) ||
+          matchupNames.includes(query) ||
+          tags.includes(query)
+        )
+      })
+    : sportFilteredGames
 
   $: filteredMoneylineGames =
     activeFilter === 'All'
@@ -597,6 +619,7 @@
   $: if (!visibleGames.some((game) => game.id === expandedGameId)) {
     expandedGameId = visibleGames[0]?.id ?? ''
   }
+  $: selectedGame = visibleGames.find((game) => game.id === expandedGameId) ?? visibleGames[0] ?? null
 
   $: recommendationCapacity = Math.min(PARLAY_MAX_LEGS, filteredMoneylineGames.length)
   $: recommendationCounts =
@@ -670,6 +693,7 @@
 
     activeDayId = dayId
     activeFilter = 'All'
+    marketSearch = ''
     activeSidebarTab = 'ticket'
     showDeskSettings = false
   }
@@ -707,7 +731,7 @@
 
   const openGameFromRow = (gameId) => {
     if (!gameId) return
-    expandedGameId = expandedGameId === gameId ? '' : gameId
+    expandedGameId = gameId
   }
 
   const openGameFromKey = (gameId, event) => {
@@ -715,6 +739,11 @@
 
     event.preventDefault()
     openGameFromRow(gameId)
+  }
+
+  const addAnalystPick = (game) => {
+    if (!game?.moneyline?.available || !game?.analysis?.participantId) return
+    toggleParlayPick(game.id, game.analysis.participantId)
   }
 
   const togglePinnedSignal = (gameId) => {
@@ -857,138 +886,96 @@
 </svelte:head>
 
 <div class="terminal-shell">
-  <header class="desk-topbar">
-    <div class="date-control-row">
-      <button type="button" class="nav-step-button" disabled={!hasPreviousDay()} on:click={() => stepDay(-1)}>
-        Previous
-      </button>
-
-      <div class="date-chip-row">
-        {#each orderedSlateDays as day}
-          <button
-            type="button"
-            class="date-chip"
-            class:active={activeDayId === day.id}
-            on:click={() => selectDay(day.id)}
-          >
-            <strong>{day.slateMeta.date}</strong>
-            <small>{day.summary.totalGames} games{activeDayId === day.id ? ` | ${day.status}` : ''}</small>
-          </button>
-        {/each}
-      </div>
-
-      <button type="button" class="nav-step-button" disabled={!hasNextDay()} on:click={() => stepDay(1)}>
-        Next
-      </button>
+  <header class="desk-globalbar">
+    <div class="topbar-brand">
+      <div class="brand-mark">S</div>
+      <div class="brand-wordmark">Slate<span>.</span></div>
     </div>
 
-    <div class="schedule-tape" aria-label="Rolling schedule">
-      {#each games as game}
+    <div class="desk-tab-row" role="tablist" aria-label="Desk tabs">
+      {#each deskTabs as tab}
         <button
           type="button"
-          class={`schedule-chip sport-${game.league.toLowerCase()}`}
-          class:active={expandedGameId === game.id}
-          on:click={() => openGame(game.id)}
+          role="tab"
+          class="desk-tab"
+          class:active={activeDeskTab === tab.id}
+          aria-selected={activeDeskTab === tab.id}
+          on:click={() => (activeDeskTab = tab.id)}
         >
-          <div class="schedule-chip-topline">
-            <span>{game.league}</span>
-            {#if game.league === 'MLB'}
-              <div class="team-logo-pair team-logo-pair--compact" aria-hidden="true">
-                {#each game.matchup as side}
-                  {#if getTeamLogoUrl(game.league, side.name)}
-                    <img class="team-logo team-logo--compact" src={getTeamLogoUrl(game.league, side.name)} alt="" />
-                  {/if}
-                {/each}
-              </div>
-            {/if}
-          </div>
-          <strong>{game.start}</strong>
-          <small>{game.title}</small>
+          {tab.label}
+          {#if tab.id === 'parlay'}
+            <span class="desk-tab-count">{parlay.legCount}</span>
+          {/if}
         </button>
       {/each}
     </div>
+
+    <label class="global-search" aria-label="Search markets">
+      <span>Search markets, players, signals...</span>
+      <input type="text" bind:value={marketSearch} placeholder="Filter the current slate..." />
+      <small>⌘K</small>
+    </label>
+
+    <div class="topbar-status mono">
+      <span class="live-dot"></span>
+      <span>Live</span>
+      <span>{oddsMeta.snapshot}</span>
+    </div>
   </header>
 
-  <div class="desk-workspace">
-    <main class="browser-column">
-      <section class="browser-panel">
-        <div class="browser-toolbar">
+  <div class="desk-datestrip">
+    <div class="datestrip-label">
+      <span class="eyebrow">Slate</span>
+    </div>
+    <button type="button" class="datestrip-step" disabled={!hasPreviousDay()} on:click={() => stepDay(-1)}>
+      ‹
+    </button>
+    <div class="datestrip-scroll no-scrollbar">
+      {#each orderedSlateDays as day}
+        <button
+          type="button"
+          class="date-chip compact"
+          class:active={activeDayId === day.id}
+          on:click={() => selectDay(day.id)}
+        >
+          <small>{day.id.slice(8, 10)} / {day.id.slice(5, 7)}</small>
+          <strong>{day.slateMeta.date}</strong>
+          <span>{day.summary.totalGames}</span>
+        </button>
+      {/each}
+    </div>
+    <button type="button" class="datestrip-step" disabled={!hasNextDay()} on:click={() => stepDay(1)}>
+      ›
+    </button>
+    <div class="datestrip-meta mono">
+      <span>{games.length} games</span>
+      <span>{eligibleMoneylineGames.length} eligible</span>
+      <span>{parlay.legCount} selected</span>
+    </div>
+  </div>
+
+  {#if activeDeskTab === 'board'}
+    <div class="desk-board-workspace">
+      <section class="games-rail">
+        <div class="games-rail-header">
           <div>
-            <p class="eyebrow">Main Browser</p>
-            <h2>{activeFilter === 'All' ? 'All Sports' : activeFilter}</h2>
+            <p class="eyebrow">Games</p>
+            <h2>{slateMeta.date} · {activeFilter === 'All' ? 'full board' : activeFilter}</h2>
           </div>
-
-          <div class="browser-toolbar-meta">
-            <div class="browser-toolbar-meta-topline">
-              <div class="browser-toolbar-stats">
-                <span>{visibleGames.length} visible</span>
-                <span>{analysisPickPool.length} signals</span>
-                {#if hasMlbSlate}
-                  <span>{lineupStatusCounts.posted}/{lineupStatusCounts.total} lineups posted</span>
-                  {#if lineupStatusCounts.partial > 0}
-                    <span>{lineupStatusCounts.partial} partial</span>
-                  {/if}
-                  {#if lineupRefreshLabel}
-                    <span>{lineupRefreshLabel}</span>
-                  {/if}
-                {/if}
-                <span>{oddsMeta.snapshot}</span>
-              </div>
-
-              {#if hasMlbSlate}
-                <button
-                  type="button"
-                  class="desk-settings-button"
-                  class:active={showDeskSettings}
-                  aria-label="Open desk settings"
-                  aria-expanded={showDeskSettings}
-                  aria-controls="desk-settings-panel"
-                  on:click={() => (showDeskSettings = !showDeskSettings)}
-                >
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M10.3 2.5h3.4l.4 2.3c.7.2 1.3.5 1.9.8l2-1.1 2.4 2.4-1.1 2c.4.6.7 1.2.8 1.9l2.3.4v3.4l-2.3.4c-.2.7-.5 1.3-.8 1.9l1.1 2-2.4 2.4-2-1.1c-.6.4-1.2.7-1.9.8l-.4 2.3h-3.4l-.4-2.3c-.7-.2-1.3-.5-1.9-.8l-2 1.1-2.4-2.4 1.1-2c-.4-.6-.7-1.2-.8-1.9L2.5 13.7v-3.4l2.3-.4c.2-.7.5-1.3.8-1.9l-1.1-2 2.4-2.4 2 1.1c.6-.4 1.2-.7 1.9-.8zM12 8.3A3.7 3.7 0 1 0 12 15.7A3.7 3.7 0 1 0 12 8.3z"
-                    />
-                  </svg>
-                </button>
-              {/if}
-            </div>
-
-            {#if hasMlbSlate && showDeskSettings}
-              <section id="desk-settings-panel" class="desk-settings-popover" aria-label="Desk settings">
-                <div class="desk-settings-head">
-                  <p class="eyebrow">Desk settings</p>
-                  <strong>MLB simulator</strong>
-                </div>
-
-                <label class="desk-settings-field" aria-label="MLB simulator temperature">
-                  <div class="desk-settings-copy">
-                    <span>Simulation temperature</span>
-                    <strong>{simulationTemperatureLabel(simulationTemperature)}</strong>
-                  </div>
-                  <input
-                    class="desk-settings-slider"
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.01"
-                    bind:value={simulationTemperature}
-                  />
-                  <small>{simulationTemperature.toFixed(2)}</small>
-                </label>
-              </section>
+          <div class="games-rail-meta mono">
+            <span>{visibleGames.length} visible</span>
+            {#if hasMlbSlate}
+              <span>{lineupStatusCounts.posted}/{lineupStatusCounts.total} posted</span>
             {/if}
           </div>
         </div>
 
-        <div class="sport-tab-strip" role="tablist" aria-label="Sports tabs">
+        <div class="games-rail-filters">
           {#each filterOptions as filter}
             <button
               type="button"
-              role="tab"
-              class="sport-tab"
+              class="rail-filter-chip"
               class:active={activeFilter === filter}
-              aria-selected={activeFilter === filter}
               on:click={() => (activeFilter = filter)}
             >
               {filter}
@@ -996,1225 +983,960 @@
           {/each}
         </div>
 
-        <div class="market-scroll">
+        <div class="games-rail-list no-scrollbar">
           {#if visibleGames.length === 0}
-            <section class="empty-day-panel">
-              <p class="empty-day-kicker">{slateMeta.date} | {activeDay.status}</p>
-              <h3>{activeDay.intakePrompt}</h3>
-
-              <ul class="empty-day-list">
-                {#each activeDay.intakeChecklist as item}
-                  <li>{item}</li>
-                {/each}
-              </ul>
-            </section>
-          {:else}
-            <div class="market-table">
-              <div class="market-table-head">
-                <span>Market</span>
-                <span>Model</span>
-                <span>Conf</span>
-                <span>Odds</span>
-                <span>Actions</span>
-              </div>
-
-              {#each visibleGames as game}
-                <article id={`market-${game.id}`} class="market-row" data-open={expandedGameId === game.id}>
-                  <div
-                    class="market-row-main"
-                    role="button"
-                    tabindex="0"
-                    aria-label={`Open ${game.title}`}
-                    on:click={() => openGameFromRow(game.id)}
-                    on:keydown={(event) => openGameFromKey(game.id, event)}
-                  >
-                    <div class="market-cell market-identity">
-                      <div class="market-title-topline">
-                        <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
-                        <span class="time-pill">{game.start}</span>
-                      </div>
-                      <div class="market-title-line">
-                        {#if game.league === 'MLB'}
-                          <div class="team-logo-pair" aria-hidden="true">
-                            {#each game.matchup as side}
-                              {#if getTeamLogoUrl(game.league, side.name)}
-                                <img class="team-logo" src={getTeamLogoUrl(game.league, side.name)} alt="" />
-                              {/if}
-                            {/each}
-                          </div>
-                        {/if}
-                        <strong>{game.title}</strong>
-                      </div>
-                      <small>{game.stage}</small>
-
-                      {#if game.league === 'MLB' && game.starterContext}
-                        <div class="pitcher-strip">
-                          {#each [
-                            {
-                              teamName: game.matchup[0].name,
-                              pitcher: game.starterContext.away,
-                              context: game.teamContext?.away
-                            },
-                            {
-                              teamName: game.matchup[1].name,
-                              pitcher: game.starterContext.home,
-                              context: game.teamContext?.home
-                            }
-                          ] as pitcherCard}
-                            {@const pitcherSummary = buildPitcherSummary(pitcherCard.pitcher)}
-                            <article
-                              class="pitcher-card"
-                              style={`--team-accent:${getTeamAccent(game.league, pitcherCard.teamName)}`}
-                            >
-                              <div class="pitcher-card-head">
-                                <div class="team-line-label">
-                                  {#if getTeamLogoUrl(game.league, pitcherCard.teamName)}
-                                    <img
-                                      class="team-logo team-logo--inline"
-                                      src={getTeamLogoUrl(game.league, pitcherCard.teamName)}
-                                      alt=""
-                                    />
-                                  {/if}
-                                  <strong>{pitcherCard.teamName}</strong>
-                                </div>
-                              </div>
-                              {#if buildTeamContextSummary(pitcherCard.context)}
-                                <small class="pitcher-team-context">{buildTeamContextSummary(pitcherCard.context)}</small>
-                              {/if}
-                              <span class="pitcher-name">{pitcherCard.pitcher.fullName}</span>
-                              <small>{pitcherSummary.primary}</small>
-                              {#if pitcherSummary.recent}
-                                <small class="pitcher-recent-form">{pitcherSummary.recent}</small>
-                              {/if}
-                              <small class="pitcher-hover-metrics">{pitcherSummary.hover}</small>
-                            </article>
-                          {/each}
-                        </div>
-                      {/if}
-                    </div>
-
-                    <div class="market-cell market-signal">
-                      <strong>{game.analysis.participant.name}</strong>
-                      <small>{game.analysis.modelEdgeLabel}</small>
-                      <p>{game.analysis.lean}</p>
-                      <div class="game-highlight-row">
-                        {#each buildGameHighlights(game) as chip}
-                          <span class={`game-highlight-chip ${chip.tone}`}>{chip.label}</span>
-                        {/each}
-                      </div>
-                    </div>
-
-                    <div class="market-cell market-confidence">
-                      <strong>{game.analysis.confidence}</strong>
-                      <small>{labelForScore(game.analysis.confidence)}</small>
-                    </div>
-
-                    <div class="market-cell market-odds-compact">
-                      {#if game.moneyline.available}
-                        {#each game.moneyline.participants as participant}
-                          <div class="odds-chip" data-active={game.analysis.participantId === participant.id}>
-                            <span>{participant.name}</span>
-                            <strong>{participant.americanLabel}</strong>
-                          </div>
-                        {/each}
-                      {:else}
-                        <span class="odds-chip empty">No moneyline</span>
-                      {/if}
-                    </div>
-
-                    <div class="market-cell market-actions">
-                      {#if game.moneyline.available}
-                        <div class="quick-pick-row">
-                          {#each game.moneyline.participants as participant}
-                            <button
-                              type="button"
-                              class="quick-pick-button"
-                              class:active={selectedPicks[game.id] === participant.id}
-                              disabled={atParlayLimit && !selectedPicks[game.id]}
-                              on:click|stopPropagation={() => toggleParlayPick(game.id, participant.id)}
-                            >
-                              {participant.name}
-                            </button>
-                          {/each}
-                        </div>
-                      {/if}
-
-                      <div class="market-row-buttons">
-                        <button
-                          type="button"
-                          class="row-expand-button"
-                          on:click|stopPropagation={() => toggleExpandedGame(game.id)}
-                        >
-                          {expandedGameId === game.id ? 'Hide' : 'Details'}
-                        </button>
-                        <button
-                          type="button"
-                          class="row-expand-button"
-                          class:active={pinnedSignalIds.includes(game.id)}
-                          on:click|stopPropagation={() => togglePinnedSignal(game.id)}
-                        >
-                          {pinnedSignalIds.includes(game.id) ? 'Pinned' : 'Pin'}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  {#if expandedGameId === game.id}
-                    {@const gameSimulation = activeSimulations[game.id]}
-                    <div class="market-detail-grid">
-                      <section class="detail-panel insight-panel">
-                        <div class="detail-panel-header">
-                          <p class="eyebrow">Read</p>
-                          <span>{game.tags.join(' | ')}</span>
-                        </div>
-
-                        <p class="game-summary">{game.summary}</p>
-
-                        <div class="closeout">
-                          <p class="lean-line">{game.analysis.lean}</p>
-                          <p class="swing-line">{swingTextFor(game)}</p>
-                        </div>
-
-                        <div class="meter-grid compact">
-                          <div class="meter-card">
-                            <div class="meter-label">
-                              <span>Confidence</span>
-                              <strong>{labelForScore(game.analysis.confidence)}</strong>
-                            </div>
-                            <div class="meter-track">
-                              <span style={`width:${game.analysis.confidence}%;`}></span>
-                            </div>
-                          </div>
-
-                          <div class="meter-card">
-                            <div class="meter-label">
-                              <span>Volatility</span>
-                              <strong>{labelForScore(game.analysis.volatility)}</strong>
-                            </div>
-                            <div class="meter-track volatility">
-                              <span style={`width:${game.analysis.volatility}%;`}></span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <ul class="factor-list compact">
-                          {#each game.factors as factor}
-                            <li>{factor}</li>
-                          {/each}
-                        </ul>
-                      </section>
-
-                      <div class="detail-stack">
-                        {#if game.moneyline.available}
-                          <section class="pick-panel" aria-label={`Parlay picks for ${game.title}`}>
-                            <div class="pick-heading">
-                              <div>
-                                <p class="pick-kicker">Ticket</p>
-                                <p class="pick-caption">{game.moneyline.label}</p>
-                              </div>
-
-                              <div class="pick-side-meta">
-                                <span class="pick-source">{game.moneyline.provider}</span>
-                                <strong class="pick-analysis-note">
-                                  My pick: {game.analysis.participant.name}
-                                </strong>
-                              </div>
-                            </div>
-
-                            <div class="pick-grid compact">
-                              {#each game.moneyline.participants as participant}
-                                <button
-                                  type="button"
-                                  class="pick-button"
-                                  class:active={selectedPicks[game.id] === participant.id}
-                                  disabled={atParlayLimit && !selectedPicks[game.id]}
-                                  on:click|stopPropagation={() => toggleParlayPick(game.id, participant.id)}
-                                >
-                                  <div class="pick-button-topline">
-                                    <span>{participant.name}</span>
-
-                                    {#if game.analysis.available && game.analysis.participantId === participant.id}
-                                      <span class="pick-badge">Analyst</span>
-                                    {/if}
-                                  </div>
-
-                                  <strong>{participant.americanLabel}</strong>
-                                  <small>{participant.impliedProbabilityLabel} implied</small>
-                                </button>
-                              {/each}
-                            </div>
-                          </section>
-                        {/if}
-
-                        <section class="odds-panel" aria-label={`Odds snapshot for ${game.title}`}>
-                          <div class="odds-heading">
-                            <div>
-                              <p class="odds-kicker">Odds Snapshot</p>
-                              <p class="odds-caption">{game.odds.provider || oddsMeta.provider}</p>
-                            </div>
-                            <span class="odds-time">{oddsMeta.snapshot}</span>
-                          </div>
-
-                          <div class="odds-list">
-                            {#each game.odds.markets as market}
-                              <div class="odds-row">
-                                <div class="odds-row-topline">
-                                  <span>{market.label}</span>
-                                  <small>{market.book}</small>
-                                </div>
-                                <p>{market.value}</p>
-                              </div>
-                            {/each}
-                          </div>
-
-                          {#if game.odds.note}
-                            <p class="odds-note">{game.odds.note}</p>
-                          {/if}
-                        </section>
-
-                        {#if game.analysis.inputs.length > 0}
-                          <section class="model-panel" aria-label={`Structured input model for ${game.title}`}>
-                            <div class="model-heading">
-                              <div>
-                                <p class="model-kicker">Structured Model</p>
-                                <p class="model-caption">{game.analysis.sourceLabel}</p>
-                              </div>
-
-                              <div class="model-heading-meta">
-                                <strong>{game.analysis.participant.name}</strong>
-                                <span>{game.analysis.modelEdgeLabel}</span>
-                              </div>
-                            </div>
-
-                            <div class="model-chip-row">
-                              <span>Confidence {game.analysis.confidence}</span>
-                              <span>Volatility {game.analysis.volatility}</span>
-                              <span>Market {game.analysis.marketProbabilityLabel}</span>
-                              {#if game.lineupBoard?.status}
-                                <span>
-                                  Lineups {lineupStatusLabel(game.lineupBoard.status.away)}/{lineupStatusLabel(game.lineupBoard.status.home)}
-                                </span>
-                              {/if}
-                              {#if game.analysis.mlbProjection?.weather?.label}
-                                <span>{game.analysis.mlbProjection.weather.label}</span>
-                              {/if}
-                            </div>
-
-                            {#if game.analysis.pickReasons?.length}
-                              <div class="model-reason-block">
-                                <p class="series-kicker">Why {game.analysis.participant.name}</p>
-                                <ul class="model-input-list model-input-list--tight">
-                                  {#each game.analysis.pickReasons as reason}
-                                    <li>{reason}</li>
-                                  {/each}
-                                </ul>
-                              </div>
-                            {/if}
-
-                            {#if game.analysis.mlbProjection}
-                              {#if game.analysis.indicators}
-                                <div class="meter-grid">
-                                  <div class="meter-card">
-                                    <div class="meter-label">
-                                      <span>Starter leverage</span>
-                                      <strong>{game.analysis.indicators.starterLeverageIndex}</strong>
-                                    </div>
-                                    <div class="meter-track">
-                                      <span style={`width:${game.analysis.indicators.starterLeverageIndex}%`}></span>
-                                    </div>
-                                  </div>
-                                  <div class="meter-card">
-                                    <div class="meter-label">
-                                      <span>Late hold</span>
-                                      <strong>{game.analysis.indicators.lateInningStabilityIndex}</strong>
-                                    </div>
-                                    <div class="meter-track">
-                                      <span style={`width:${game.analysis.indicators.lateInningStabilityIndex}%`}></span>
-                                    </div>
-                                  </div>
-                                  <div class="meter-card">
-                                    <div class="meter-label">
-                                      <span>Relief risk</span>
-                                      <strong>{game.analysis.indicators.reliefPitchingRisk}</strong>
-                                    </div>
-                                    <div class="meter-track volatility">
-                                      <span style={`width:${game.analysis.indicators.reliefPitchingRisk}%`}></span>
-                                    </div>
-                                  </div>
-                                  <div class="meter-card">
-                                    <div class="meter-label">
-                                      <span>Coin-flip pressure</span>
-                                      <strong>{game.analysis.indicators.coinflipPressure}</strong>
-                                    </div>
-                                    <div class="meter-track volatility">
-                                      <span style={`width:${game.analysis.indicators.coinflipPressure}%`}></span>
-                                    </div>
-                                  </div>
-                                </div>
-                              {/if}
-
-                              <div class="model-phase-grid">
-                                <article class="model-phase-card">
-                                  <div class="model-phase-head">
-                                    <div>
-                                      <p>First 5</p>
-                                      <strong>{game.analysis.mlbProjection.first5EdgeTeam} +{game.analysis.mlbProjection.first5EdgeHits}</strong>
-                                    </div>
-                                    <span>Starter window</span>
-                                  </div>
-
-                                  <div class="flow-lane-grid">
-                                    <div class="flow-lane">
-                                      <div class="flow-lane-label">
-                                        <span>{game.matchup[0].name}</span>
-                                        <strong>{game.analysis.mlbProjection.awayFirst5ProjectedHits} H</strong>
-                                      </div>
-                                      <div class="flow-track">
-                                        <span
-                                          style={`width:${comparisonBarWidth(
-                                            game.analysis.mlbProjection.awayFirst5ProjectedHits,
-                                            game.analysis.mlbProjection.awayFirst5ProjectedHits,
-                                            game.analysis.mlbProjection.homeFirst5ProjectedHits
-                                          )}`}
-                                        ></span>
-                                      </div>
-                                      <small>{game.analysis.mlbProjection.awayFirst5HitEfficiencyPct}% efficiency</small>
-                                    </div>
-                                    <div class="flow-lane">
-                                      <div class="flow-lane-label">
-                                        <span>{game.matchup[1].name}</span>
-                                        <strong>{game.analysis.mlbProjection.homeFirst5ProjectedHits} H</strong>
-                                      </div>
-                                      <div class="flow-track">
-                                        <span
-                                          style={`width:${comparisonBarWidth(
-                                            game.analysis.mlbProjection.homeFirst5ProjectedHits,
-                                            game.analysis.mlbProjection.awayFirst5ProjectedHits,
-                                            game.analysis.mlbProjection.homeFirst5ProjectedHits
-                                          )}`}
-                                        ></span>
-                                      </div>
-                                      <small>{game.analysis.mlbProjection.homeFirst5HitEfficiencyPct}% efficiency</small>
-                                    </div>
-                                  </div>
-                                </article>
-
-                                <article class="model-phase-card">
-                                  <div class="model-phase-head">
-                                    <div>
-                                      <p>Rest of game</p>
-                                      <strong>{game.analysis.mlbProjection.lateEdgeTeam} +{game.analysis.mlbProjection.lateEdgeHits}</strong>
-                                    </div>
-                                    <span>Bridge and finish</span>
-                                  </div>
-
-                                  <div class="flow-lane-grid">
-                                    <div class="flow-lane">
-                                      <div class="flow-lane-label">
-                                        <span>{game.matchup[0].name}</span>
-                                        <strong>{game.analysis.mlbProjection.awayLateProjectedHits} H</strong>
-                                      </div>
-                                      <div class="flow-track">
-                                        <span
-                                          style={`width:${comparisonBarWidth(
-                                            game.analysis.mlbProjection.awayLateProjectedHits,
-                                            game.analysis.mlbProjection.awayLateProjectedHits,
-                                            game.analysis.mlbProjection.homeLateProjectedHits
-                                          )}`}
-                                        ></span>
-                                      </div>
-                                      <small>{game.analysis.mlbProjection.awayLateHitEfficiencyPct}% efficiency</small>
-                                    </div>
-                                    <div class="flow-lane">
-                                      <div class="flow-lane-label">
-                                        <span>{game.matchup[1].name}</span>
-                                        <strong>{game.analysis.mlbProjection.homeLateProjectedHits} H</strong>
-                                      </div>
-                                      <div class="flow-track">
-                                        <span
-                                          style={`width:${comparisonBarWidth(
-                                            game.analysis.mlbProjection.homeLateProjectedHits,
-                                            game.analysis.mlbProjection.awayLateProjectedHits,
-                                            game.analysis.mlbProjection.homeLateProjectedHits
-                                          )}`}
-                                        ></span>
-                                      </div>
-                                      <small>{game.analysis.mlbProjection.homeLateHitEfficiencyPct}% efficiency</small>
-                                    </div>
-                                  </div>
-                                </article>
-
-                                <article class="model-phase-card model-phase-card--edge">
-                                  <div class="model-phase-head">
-                                    <div>
-                                      <p>Full game</p>
-                                      <strong>{game.analysis.mlbProjection.edgeTeam} +{game.analysis.mlbProjection.edgeHits}</strong>
-                                    </div>
-                                    <span>Total hit edge</span>
-                                  </div>
-
-                                  <div class="flow-lane-grid">
-                                    <div class="flow-lane">
-                                      <div class="flow-lane-label">
-                                        <span>{game.matchup[0].name}</span>
-                                        <strong>{game.analysis.mlbProjection.awayProjectedHits} H</strong>
-                                      </div>
-                                      <div class="flow-track">
-                                        <span
-                                          style={`width:${comparisonBarWidth(
-                                            game.analysis.mlbProjection.awayProjectedHits,
-                                            game.analysis.mlbProjection.awayProjectedHits,
-                                            game.analysis.mlbProjection.homeProjectedHits
-                                          )}`}
-                                        ></span>
-                                      </div>
-                                      <small>{game.analysis.mlbProjection.awayHitEfficiencyPct}% efficiency</small>
-                                    </div>
-                                    <div class="flow-lane">
-                                      <div class="flow-lane-label">
-                                        <span>{game.matchup[1].name}</span>
-                                        <strong>{game.analysis.mlbProjection.homeProjectedHits} H</strong>
-                                      </div>
-                                      <div class="flow-track">
-                                        <span
-                                          style={`width:${comparisonBarWidth(
-                                            game.analysis.mlbProjection.homeProjectedHits,
-                                            game.analysis.mlbProjection.awayProjectedHits,
-                                            game.analysis.mlbProjection.homeProjectedHits
-                                          )}`}
-                                        ></span>
-                                      </div>
-                                      <small>{game.analysis.mlbProjection.homeHitEfficiencyPct}% efficiency</small>
-                                    </div>
-                                  </div>
-                                </article>
-                              </div>
-
-                              <div class="model-note-row model-note-row--pitchers">
-                                <span>{game.matchup[0].name}: {game.analysis.mlbProjection.awayPitcherType}</span>
-                                <span>{game.matchup[1].name}: {game.analysis.mlbProjection.homePitcherType}</span>
-                                {#if game.analysis.mlbProjection.awayStarterHoldConfidence !== null}
-                                  <span>{game.starterContext.away.fullName}: hold {game.analysis.mlbProjection.awayStarterHoldConfidence}</span>
-                                {/if}
-                                {#if game.analysis.mlbProjection.homeStarterHoldConfidence !== null}
-                                  <span>{game.starterContext.home.fullName}: hold {game.analysis.mlbProjection.homeStarterHoldConfidence}</span>
-                                {/if}
-                                {#if game.analysis.mlbProjection.bridgeEdgeTeam}
-                                  <span>Bridge edge: {game.analysis.mlbProjection.bridgeEdgeTeam} +{game.analysis.mlbProjection.bridgeEdgeScore}</span>
-                                {/if}
-                              </div>
-
-                              <section class="totals-board" aria-label={`Totals board for ${game.title}`}>
-                                <div class="home-run-board-head">
-                                  <div>
-                                    <p class="series-kicker">Totals and flow</p>
-                                    <strong>
-                                      {game.analysis.mlbProjection.totals.fullGame.label} |
-                                      proj {game.analysis.mlbProjection.totals.projectedFullTotalRuns}
-                                    </strong>
-                                  </div>
-                                  <span>Full, first 5, late</span>
-                                </div>
-
-                                <div class="totals-grid">
-                                  <article class="totals-card">
-                                    <div class="totals-card-head">
-                                      <p>Full game</p>
-                                      <strong>{game.analysis.mlbProjection.totals.fullGame.label}</strong>
-                                    </div>
-                                    <span>
-                                      Proj {game.analysis.mlbProjection.totals.projectedFullTotalRuns} vs
-                                      {game.analysis.mlbProjection.postedTotal ?? 'N/A'}
-                                    </span>
-                                    <small>{game.analysis.mlbProjection.totals.fullGame.summary}</small>
-                                  </article>
-
-                                  <article class="totals-card">
-                                    <div class="totals-card-head">
-                                      <p>First 5</p>
-                                      <strong>{game.analysis.mlbProjection.totals.first5.label}</strong>
-                                    </div>
-                                    <span>
-                                      Proj {game.analysis.mlbProjection.totals.projectedFirst5TotalRuns} vs
-                                      {game.analysis.mlbProjection.totals.derivedFirst5TotalLine ?? 'N/A'}
-                                    </span>
-                                    <small>{game.analysis.mlbProjection.totals.first5.summary}</small>
-                                  </article>
-
-                                  <article class="totals-card">
-                                    <div class="totals-card-head">
-                                      <p>Rest of game</p>
-                                      <strong>{game.analysis.mlbProjection.totals.late.label}</strong>
-                                    </div>
-                                    <span>
-                                      Proj {game.analysis.mlbProjection.totals.projectedLateTotalRuns} vs
-                                      {game.analysis.mlbProjection.totals.derivedLateTotalLine ?? 'N/A'}
-                                    </span>
-                                    <small>{game.analysis.mlbProjection.totals.late.summary}</small>
-                                  </article>
-                                </div>
-
-                                <p class="totals-footnote">{game.analysis.mlbProjection.totals.bullpenExhaustionNote}</p>
-                              </section>
-
-                              <div class="reliever-chain-grid">
-                                <article class="reliever-chain-card">
-                                  <div class="reliever-chain-head">
-                                    <div>
-                                      <p>{game.matchup[0].name} bridge chain</p>
-                                      <strong>{game.analysis.mlbProjection.awayBullpenChainScore ?? 'N/A'}</strong>
-                                    </div>
-                                    <span>{game.analysis.mlbProjection.awayBullpenExhaustionLabel} workload</span>
-                                  </div>
-
-                                  <div class="reliever-list">
-                                    {#each game.analysis.mlbProjection.awayLikelyRelievers as reliever}
-                                      <div class="reliever-row">
-                                        <div>
-                                          <strong>{reliever.name}</strong>
-                                          <span>{reliever.role} | First up {Math.round(reliever.firstRelieverLikelihood)}%</span>
-                                        </div>
-                                        <div class="reliever-meta">
-                                          <strong>Availability {Math.round(reliever.availabilityScore)}/100</strong>
-                                          <span>{relieverStatusLabel(reliever)}</span>
-                                        </div>
-                                      </div>
-                                    {/each}
-                                  </div>
-                                </article>
-
-                                <article class="reliever-chain-card">
-                                  <div class="reliever-chain-head">
-                                    <div>
-                                      <p>{game.matchup[1].name} bridge chain</p>
-                                      <strong>{game.analysis.mlbProjection.homeBullpenChainScore ?? 'N/A'}</strong>
-                                    </div>
-                                    <span>{game.analysis.mlbProjection.homeBullpenExhaustionLabel} workload</span>
-                                  </div>
-
-                                  <div class="reliever-list">
-                                    {#each game.analysis.mlbProjection.homeLikelyRelievers as reliever}
-                                      <div class="reliever-row">
-                                        <div>
-                                          <strong>{reliever.name}</strong>
-                                          <span>{reliever.role} | First up {Math.round(reliever.firstRelieverLikelihood)}%</span>
-                                        </div>
-                                        <div class="reliever-meta">
-                                          <strong>Availability {Math.round(reliever.availabilityScore)}/100</strong>
-                                          <span>{relieverStatusLabel(reliever)}</span>
-                                        </div>
-                                      </div>
-                                    {/each}
-                                  </div>
-                                </article>
-                              </div>
-
-                              <div class="team-script-grid">
-                                {#each game.analysis.mlbProjection.teamScripts as script}
-                                  <article class="team-script-card">
-                                    <div class="team-script-head">
-                                      <div>
-                                        <p>{script.teamName}</p>
-                                        <strong>Hitter script</strong>
-                                      </div>
-                                      <span>
-                                        {script.overperformHitters.length ? 'Carry bats live' : script.lineupStatus}
-                                      </span>
-                                    </div>
-
-                                    <div class="team-script-copy">
-                                      <strong>Why the lane works</strong>
-                                      <span>{script.overview}</span>
-                                    </div>
-
-                                    <div class="team-script-copy">
-                                      <strong>Overperform hitters</strong>
-                                      <span>
-                                        {script.overperformHitters.length
-                                          ? script.overperformHitters
-                                              .map((hitter) => `${hitter.name} (${hitter.tag})`)
-                                              .join(' • ')
-                                          : 'No clear carry bat surfaced yet before confirmed lineups.'}
-                                      </span>
-                                    </div>
-
-                                    {#if script.bullpenOverperformHitters?.length}
-                                      <div class="team-script-copy">
-                                        <strong>Bridge hitters</strong>
-                                        <span>
-                                          {script.bullpenOverperformHitters
-                                            .map((hitter) => `${hitter.name} (${hitter.tag})`)
-                                            .join(' • ')}
-                                        </span>
-                                      </div>
-                                    {/if}
-
-                                    {#if script.underperformHitters?.length}
-                                      <div class="team-script-copy">
-                                        <strong>Underperform hitters</strong>
-                                        <span>
-                                          {script.underperformHitters
-                                            .map((hitter) => `${hitter.name} (${hitter.tag})`)
-                                            .join(' • ')}
-                                        </span>
-                                      </div>
-                                    {/if}
-
-                                    <div class="team-script-copy">
-                                      <strong>Underperform watch</strong>
-                                      <span>{script.underperformNote}</span>
-                                    </div>
-                                  </article>
-                                {/each}
-                              </div>
-
-                              {#if game.analysis.mlbProjection.lineupSimulation}
-                                <section class="lineup-simulation-board" aria-label={`Game flow simulation for ${game.title}`}>
-                                  <div class="home-run-board-head">
-                                    <div>
-                                      <p class="series-kicker">Probable game flow</p>
-                                      <strong>{game.analysis.mlbProjection.lineupSimulation.overview}</strong>
-                                    </div>
-                                    <span>Starter, bridge, finish</span>
-                                  </div>
-
-                                  <div class="simulation-phase-grid">
-                                    {#each game.analysis.mlbProjection.lineupSimulation.phases as phase}
-                                      <article class="simulation-phase-card">
-                                        <div class="simulation-phase-head">
-                                          <div>
-                                            <p>{phase.label}</p>
-                                            <strong>{phase.edgeTeam}</strong>
-                                          </div>
-                                          <span>{phase.projection}</span>
-                                        </div>
-                                        <p>{phase.note}</p>
-                                      </article>
-                                    {/each}
-                                  </div>
-                                </section>
-                              {/if}
-
-                              <section class="simulation-board" aria-label={`Quick simulator for ${game.title}`}>
-                                <div class="home-run-board-head">
-                                  <div>
-                                    <p class="series-kicker">Quick simulator</p>
-                                    <strong>Approx box score and inning path at the current temperature index</strong>
-                                  </div>
-
-                                  <div class="simulation-board-actions">
-                                    <span>Temp {gameSimulation?.temperature?.toFixed(2) ?? simulationTemperature.toFixed(2)}</span>
-                                    <button
-                                      type="button"
-                                      class="simulation-run-button"
-                                      on:click|stopPropagation={() => runGameSimulation(game)}
-                                    >
-                                      {gameSimulation ? 'Re-roll sim' : 'Run sim'}
-                                    </button>
-                                  </div>
-                                </div>
-
-                                {#if gameSimulation}
-                                  <div class="simulation-summary-row">
-                                    <div>
-                                      <strong>{gameSimulation.summary}</strong>
-                                      <p>{gameSimulation.overview}</p>
-                                    </div>
-                                    <div class="simulation-summary-meta">
-                                      <span>{gameSimulation.temperatureLabel}</span>
-                                      <small>{gameSimulation.upset ? 'Flip result' : 'Model hold'}</small>
-                                    </div>
-                                  </div>
-
-                                  <div class="simulation-boxscore-grid">
-                                    {#each [gameSimulation.away, gameSimulation.home] as teamLine}
-                                      <article class="simulation-boxscore-card" data-winner={gameSimulation.winner === teamLine.teamName}>
-                                        <div class="simulation-boxscore-head">
-                                          <div>
-                                            <p>{teamLine.teamName}</p>
-                                            <strong>{teamLine.runs} R | {teamLine.hits} H | {teamLine.errors} E</strong>
-                                          </div>
-                                          <span>{gameSimulation.winner === teamLine.teamName ? 'Winner' : 'Chasing'}</span>
-                                        </div>
-
-                                        <div class="simulation-boxscore-splits">
-                                          <span>F5 {teamLine.first5Runs} R / {teamLine.first5Hits} H</span>
-                                          <span>Late {teamLine.lateRuns} R / {teamLine.lateHits} H</span>
-                                        </div>
-
-                                        <p class="simulation-driver-copy">
-                                          {teamLine.drivers?.length
-                                            ? `Likely drivers: ${teamLine.drivers.join(' • ')}`
-                                            : 'No clear driver cluster surfaced beyond the team-level traffic script.'}
-                                        </p>
-                                      </article>
-                                    {/each}
-                                  </div>
-
-                                  <div class="simulation-linescore-wrap">
-                                    <table class="simulation-linescore">
-                                      <thead>
-                                        <tr>
-                                          <th>Team</th>
-                                          {#each gameSimulation.innings as inning}
-                                            <th>{inning}</th>
-                                          {/each}
-                                          <th>R</th>
-                                          <th>H</th>
-                                          <th>E</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        {#each [gameSimulation.away, gameSimulation.home] as teamLine}
-                                          <tr class:winning-row={gameSimulation.winner === teamLine.teamName}>
-                                            <th>{teamLine.teamName}</th>
-                                            {#each teamLine.inningRuns as inningRuns}
-                                              <td>{inningRuns}</td>
-                                            {/each}
-                                            <td>{teamLine.runs}</td>
-                                            <td>{teamLine.hits}</td>
-                                            <td>{teamLine.errors}</td>
-                                          </tr>
-                                        {/each}
-                                      </tbody>
-                                    </table>
-                                  </div>
-
-                                  <div class="simulation-note-grid">
-                                    <p>{gameSimulation.phaseSummary}</p>
-                                    <p>{gameSimulation.lineupNote}</p>
-                                  </div>
-                                {:else}
-                                  <div class="simulation-empty-state">
-                                    <strong>Run a quick sim for this MLB game.</strong>
-                                    <p>
-                                      The temperature slider shifts variance from steadier model-hold scripts
-                                      toward hotter bullpen swings and flip outcomes.
-                                    </p>
-                                  </div>
-                                {/if}
-                              </section>
-
-                              {#if game.lineupBoard}
-                                <section class="lineup-board" aria-label={`Confirmed lineups for ${game.title}`}>
-                                  <div class="home-run-board-head">
-                                    <div>
-                                      <p class="series-kicker">Full batting orders</p>
-                                      <strong>Recent form, split fit, and starter-lane tags</strong>
-                                    </div>
-                                    <span>Official + weather supplement</span>
-                                  </div>
-
-                                  {#if game.lineupBoard.weather || game.lineupBoard.marketWeatherContext?.line || game.lineupBoard.marketWeatherContext?.total}
-                                    <div class="lineup-weather-row">
-                                      {#if game.lineupBoard.weather}
-                                        <span>{game.lineupBoard.weather.label || game.lineupBoard.weather.summary}</span>
-                                      {/if}
-                                      {#if game.lineupBoard.marketWeatherContext?.line}
-                                        <span>Line {game.lineupBoard.marketWeatherContext.line}</span>
-                                      {/if}
-                                      {#if game.lineupBoard.marketWeatherContext?.total}
-                                        <span>O/U {game.lineupBoard.marketWeatherContext.total}</span>
-                                      {/if}
-                                    </div>
-                                  {/if}
-
-                                  <div class="lineup-board-grid">
-                                    {#each [
-                                      {
-                                        board: game.lineupBoard.away,
-                                        status: game.lineupBoard.status?.away
-                                      },
-                                      {
-                                        board: game.lineupBoard.home,
-                                        status: game.lineupBoard.status?.home
-                                      }
-                                    ] as lineupTeam}
-                                      <article class="lineup-team-card">
-                                        <div class="lineup-team-head">
-                                          <div>
-                                            <p>{lineupTeam.board.teamName}</p>
-                                            <strong>{lineupStatusLabel(lineupTeam.status)}</strong>
-                                          </div>
-                                          <span>
-                                            vs {lineupTeam.board.opposingStarter.name}
-                                            ({lineupTeam.board.opposingStarter.hand}HP,
-                                            {lineupTeam.board.opposingStarter.type})
-                                          </span>
-                                        </div>
-
-                                        <div class="lineup-team-summary">
-                                          <span>Top third {lineupTeam.board.summary.topThirdScore}</span>
-                                          <span>Depth {lineupTeam.board.summary.depthScore}</span>
-                                          <span>{lineupTeam.board.summary.pressureLabel}</span>
-                                          {#if lineupTeam.board.lineupSource === 'rotowire-supplement'}
-                                            <span>RotoWire supplement</span>
-                                          {/if}
-                                        </div>
-
-                                        <p class="lineup-team-overview">{lineupTeam.board.summary.overview}</p>
-
-                                        {#if lineupTeam.board.lineup.length}
-                                          <div class="lineup-list">
-                                            {#each lineupTeam.board.lineup as hitter}
-                                              <article class="lineup-row-card">
-                                                <div class="lineup-row-head">
-                                                  <div class="lineup-slot">{hitter.slot}</div>
-                                                  <div class="lineup-player-meta">
-                                                    <strong>{hitter.name}</strong>
-                                                    <span>{hitter.position} | {hitter.bats || '?'}HB</span>
-                                                  </div>
-                                                  <div class="lineup-matchup-grade">
-                                                    <strong>{signedValue(hitter.metrics.matchupGrade, 2)}</strong>
-                                                    <span>{hitter.primaryTag}</span>
-                                                  </div>
-                                                </div>
-
-                                                <p class="lineup-player-summary">{hitter.summary}</p>
-
-                                                {#if hitter.tags?.length}
-                                                  <div class="lineup-tag-row">
-                                                    {#each hitter.tags as tag}
-                                                      <span>{tag}</span>
-                                                    {/each}
-                                                  </div>
-                                                {/if}
-                                              </article>
-                                            {/each}
-                                          </div>
-                                        {:else}
-                                          <p class="lineup-team-overview">Official batting order is still pending for this side.</p>
-                                        {/if}
-                                      </article>
-                                    {/each}
-                                  </div>
-                                </section>
-                              {/if}
-
-                              {#if game.homeRunTargets}
-                                <section class="home-run-board" aria-label={`Home run looks for ${game.title}`}>
-                                  <div class="home-run-board-head">
-                                    <div>
-                                      <p class="series-kicker">Home run looks</p>
-                                      <strong>{game.homeRunTargets.summary}</strong>
-                                    </div>
-                                    <span>Weighted pool, not true odds</span>
-                                  </div>
-
-                                  <div class="home-run-tier-grid">
-                                    <article class="home-run-tier">
-                                      <div class="home-run-tier-head">
-                                        <p>Likely</p>
-                                        <span>Anchor and strongest support</span>
-                                      </div>
-
-                                      <div class="home-run-target-list">
-                                        {#if game.homeRunTargets.likely.length}
-                                          {#each game.homeRunTargets.likely as target}
-                                            <div class="home-run-target-row">
-                                              <div>
-                                                <strong>{target.playerName}</strong>
-                                                <span>{target.teamName} vs {target.opposingPitcher} ({target.opposingPitcherHand}HP)</span>
-                                                {#if target.signalSummary}
-                                                  <span>{target.signalSummary}</span>
-                                                {/if}
-                                                {#if target.modelSharePct != null}
-                                                  <div class="home-run-weight-bar" aria-hidden="true">
-                                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
-                                                  </div>
-                                                {/if}
-                                              </div>
-                                              <div class="home-run-target-meta">
-                                                <strong>{Math.round(target.score)}</strong>
-                                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
-                                                <span>{target.scoreBand} | {target.burstTag}</span>
-                                              </div>
-                                            </div>
-                                          {/each}
-                                        {:else}
-                                          <p class="home-run-empty">No strong likely bat has surfaced yet.</p>
-                                        {/if}
-                                      </div>
-                                    </article>
-
-                                    <article class="home-run-tier">
-                                      <div class="home-run-tier-head">
-                                        <p>Possible</p>
-                                        <span>Secondary lanes with real share</span>
-                                      </div>
-
-                                      <div class="home-run-target-list">
-                                        {#if game.homeRunTargets.possible.length}
-                                          {#each game.homeRunTargets.possible as target}
-                                            <div class="home-run-target-row">
-                                              <div>
-                                                <strong>{target.playerName}</strong>
-                                                <span>{target.signalSummary || `${target.teamName} | ${target.homeRunsLast7Days} HR last 7 days`}</span>
-                                                {#if target.modelSharePct != null}
-                                                  <div class="home-run-weight-bar" aria-hidden="true">
-                                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
-                                                  </div>
-                                                {/if}
-                                              </div>
-                                              <div class="home-run-target-meta">
-                                                <strong>{Math.round(target.score)}</strong>
-                                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
-                                                <span>{target.scoreBand} | {target.burstTag}</span>
-                                              </div>
-                                            </div>
-                                          {/each}
-                                        {:else}
-                                          <p class="home-run-empty">No second-tier lane yet beyond the lead bat.</p>
-                                        {/if}
-                                      </div>
-                                    </article>
-
-                                    <article class="home-run-tier">
-                                      <div class="home-run-tier-head">
-                                        <p>Alternates</p>
-                                        <span>Thin but still live</span>
-                                      </div>
-
-                                      <div class="home-run-target-list">
-                                        {#if game.homeRunTargets.alternates?.length}
-                                          {#each game.homeRunTargets.alternates as target}
-                                            <div class="home-run-target-row">
-                                              <div>
-                                                <strong>{target.playerName}</strong>
-                                                <span>{target.signalSummary || `${target.teamName} matchup lane`}</span>
-                                                {#if target.modelSharePct != null}
-                                                  <div class="home-run-weight-bar" aria-hidden="true">
-                                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
-                                                  </div>
-                                                {/if}
-                                              </div>
-                                              <div class="home-run-target-meta">
-                                                <strong>{Math.round(target.score)}</strong>
-                                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
-                                                <span>{target.scoreBand} | {target.burstTag}</span>
-                                              </div>
-                                            </div>
-                                          {/each}
-                                        {:else}
-                                          <p class="home-run-empty">No alternate lanes worth holding yet.</p>
-                                        {/if}
-                                      </div>
-                                    </article>
-                                  </div>
-                                </section>
-                              {/if}
-
-                              {#if game.playerProps?.available}
-                                <section class="player-prop-board" aria-label={`Player prop builder for ${game.title}`}>
-                                  <div class="home-run-board-head">
-                                    <div>
-                                      <p class="series-kicker">Player props</p>
-                                      <strong>{game.playerProps.summary}</strong>
-                                    </div>
-                                    <span>Hits, TB, RBI, walks, singles, HR</span>
-                                  </div>
-
-                                  <div class="player-prop-grid">
-                                    {#each game.playerProps.featured as prop}
-                                      <article class="player-prop-card">
-                                        <div class="player-prop-head">
-                                          <div>
-                                            <p>{prop.playerName}</p>
-                                            <strong>{prop.marketLabel}</strong>
-                                          </div>
-                                          <div class="player-prop-meta">
-                                            <strong>{prop.confidence}%</strong>
-                                            <span>{prop.recommendationTier}</span>
-                                          </div>
-                                        </div>
-
-                                        <div class="player-prop-chip-row">
-                                          <span>{prop.propLabel}</span>
-                                          <span>{prop.teamName}</span>
-                                          <span>{prop.statValueLabel}</span>
-                                        </div>
-
-                                        <p class="player-prop-copy">{prop.reason || prop.matchupNote}</p>
-
-                                        <div class="player-prop-actions">
-                                          <small>{prop.matchupNote}</small>
-                                          <button
-                                            type="button"
-                                            class="player-prop-toggle"
-                                            class:active={Boolean(selectedProps[prop.id])}
-                                            on:click={() => togglePlayerProp(prop)}
-                                          >
-                                            {selectedProps[prop.id] ? 'Saved' : 'Add prop'}
-                                          </button>
-                                        </div>
-                                      </article>
-                                    {/each}
-                                  </div>
-                                </section>
-                              {/if}
-                            {/if}
-
-                            <ul class="model-input-list">
-                              {#each game.analysis.inputs as input}
-                                <li>{input.summary}</li>
-                              {/each}
-                            </ul>
-
-                            {#if game.analysis.volatilityNotes.length > 0}
-                              <div class="model-note-row">
-                                {#each game.analysis.volatilityNotes.slice(0, 3) as note}
-                                  <span>{note.label}</span>
-                                {/each}
-                              </div>
-                            {/if}
-                          </section>
-                        {/if}
-                      </div>
-                    </div>
-
-                    {#if game.playerAnalysis?.length}
-                      <section class="player-analysis-panel" aria-label={`Player analysis for ${game.title}`}>
-                        <p class="series-kicker">Player analysis</p>
-
-                        <ul class="player-analysis-list">
-                          {#each game.playerAnalysis as note}
-                            <li>{note}</li>
-                          {/each}
-                        </ul>
-                      </section>
-                    {/if}
-
-                    {#if game.seriesBreakdown}
-                      <section class="series-panel" aria-label={`Series breakdown for ${game.title}`}>
-                        <div class="series-heading">
-                          <div>
-                            <p class="series-kicker">{game.seriesBreakdown.kicker}</p>
-                            <h4>{game.seriesBreakdown.title}</h4>
-                          </div>
-                          <span class="series-record">{game.seriesBreakdown.record}</span>
-                        </div>
-
-                        <p class="series-recap">{game.seriesBreakdown.recap}</p>
-
-                        <div class="series-stat-row">
-                          {#each game.seriesBreakdown.seriesStats as stat}
-                            <span>{stat}</span>
-                          {/each}
-                        </div>
-
-                        <div class="boxscore-grid">
-                          {#each game.seriesBreakdown.boxScores as boxScore}
-                            <article class="boxscore-card">
-                              <div class="boxscore-topline">
-                                <div>
-                                  <p class="boxscore-label">{boxScore.label}</p>
-                                  <h5>{boxScore.result}</h5>
-                                </div>
-                                <span>{boxScore.date}</span>
-                              </div>
-
-                              <ul class="boxscore-notes">
-                                {#each boxScore.notes as note}
-                                  <li>{note}</li>
-                                {/each}
-                              </ul>
-
-                              {#if boxScore.leaders?.length}
-                                <div class="boxscore-leaders">
-                                  {#each boxScore.leaders as leaderGroup}
-                                    <div class="leader-group">
-                                      <p class="leader-group-title">{leaderGroup.team}</p>
-
-                                      <ul class="leader-list">
-                                        {#each leaderGroup.lines as line}
-                                          <li>{line}</li>
-                                        {/each}
-                                      </ul>
-                                    </div>
-                                  {/each}
-                                </div>
-                              {/if}
-                            </article>
-                          {/each}
-                        </div>
-
-                        {#if game.seriesBreakdown.playerAnalysis?.length}
-                          <section class="player-analysis-panel">
-                            <p class="series-kicker">Key players</p>
-
-                            <ul class="player-analysis-list">
-                              {#each game.seriesBreakdown.playerAnalysis as note}
-                                <li>{note}</li>
-                              {/each}
-                            </ul>
-                          </section>
-                        {/if}
-
-                        <div class="series-links">
-                          {#each game.seriesBreakdown.sources as source}
-                            <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
-                          {/each}
-                        </div>
-                      </section>
-                    {/if}
-                  {/if}
-                </article>
-              {/each}
+            <div class="placeholder-panel compact">
+              <p class="eyebrow">No markets</p>
+              <h3>No results for this filter yet</h3>
+              <p>Try a different date, sport, or a looser search phrase.</p>
             </div>
+          {:else}
+            {#each visibleGames as game}
+              <button
+                type="button"
+                class="game-rail-row"
+                class:active={selectedGame?.id === game.id}
+                on:click={() => openGame(game.id)}
+              >
+                <div class="game-rail-row-meta">
+                  <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
+                  <span class="mono">{game.start}</span>
+                  <span class="game-rail-stage">{game.stage}</span>
+                </div>
+
+                <div class="game-rail-row-main">
+                  <div class="game-rail-title-wrap">
+                    <div class="game-rail-title">
+                      <span>{game.matchup[0]?.name}</span>
+                      <span class="versus-dot">vs</span>
+                      <span>{game.matchup[1]?.name}</span>
+                    </div>
+                    <small>{game.analysis.participant.name} lean</small>
+                  </div>
+                  <div class="game-rail-score mono">{game.analysis.confidence}</div>
+                </div>
+
+                <div class="game-rail-row-bottom">
+                  <div class="game-rail-chips">
+                    {#each buildGameHighlights(game).slice(0, 3) as chip}
+                      <span class={`game-highlight-chip ${chip.tone}`}>{chip.label}</span>
+                    {/each}
+                  </div>
+                  <div class="game-rail-vol">
+                    <span>{labelForScore(game.analysis.confidence)}</span>
+                    <div class="mini-vol-bar"><span style={`width:${game.analysis.volatility}%`}></span></div>
+                  </div>
+                </div>
+              </button>
+            {/each}
           {/if}
         </div>
       </section>
-    </main>
 
-    <aside class="action-column">
-      <section class="action-rail" aria-label="Action rail">
-        <div class="parlay-sidebar-header">
-          <div>
-            <p class="eyebrow">Action Rail</p>
-            <h2>Execution</h2>
-            <p class="parlay-sidebar-copy">
-              Everything on the right is meant to be edited, opened, pinned, or loaded into the
-              active slip.
-            </p>
+      <section class="detail-canvas">
+        {#if selectedGame}
+          {@const game = selectedGame}
+          {@const gameSimulation = activeSimulations[game.id]}
+          <div class="detail-canvas-header">
+            <div class="detail-canvas-title-block">
+              <div class="detail-canvas-topline">
+                <span class="league-badge league-{game.league.toLowerCase()}">{game.league}</span>
+                <span class="mono">{game.start}</span>
+                <span>{game.stage}</span>
+              </div>
+              <h1>{game.title}</h1>
+            </div>
+
+            <div class="detail-canvas-actions">
+              <button type="button" class="analysis-action-button" on:click={() => togglePinnedSignal(game.id)}>
+                {pinnedSignalIds.includes(game.id) ? 'Pinned' : 'Pin'}
+              </button>
+              {#if game.moneyline.available}
+                <button type="button" class="analysis-action-button active" on:click={() => addAnalystPick(game)}>
+                  {selectedPicks[game.id] === game.analysis.participantId ? 'In ticket' : 'Add analyst pick'}
+                </button>
+              {/if}
+              <button type="button" class="analysis-action-button" on:click={() => (activeDeskTab = 'parlay')}>
+                Open builder
+              </button>
+            </div>
           </div>
 
-          <button
-            type="button"
-            class="clear-parlay-button"
-            disabled={parlay.legCount === 0}
-            on:click={clearParlay}
-          >
+          <div class="detail-kpi-strip">
+            <article class="detail-kpi-card">
+              <span class="eyebrow">Pick</span>
+              <strong>{game.analysis.participant.name}</strong>
+              <small>Analyst read</small>
+            </article>
+            <article class="detail-kpi-card">
+              <span class="eyebrow">Confidence</span>
+              <strong>{game.analysis.confidence}</strong>
+              <small>{labelForScore(game.analysis.confidence)}</small>
+            </article>
+            <article class="detail-kpi-card">
+              <span class="eyebrow">Volatility</span>
+              <strong>{game.analysis.volatility}%</strong>
+              <small>{labelForScore(game.analysis.volatility)}</small>
+            </article>
+            <article class="detail-kpi-card">
+              <span class="eyebrow">Market</span>
+              <strong>{game.moneyline.available ? game.analysis.marketProbabilityLabel : 'Model only'}</strong>
+              <small>{game.moneyline.available ? game.moneyline.provider : 'No moneyline'}</small>
+            </article>
+            <article class="detail-kpi-card">
+              <span class="eyebrow">Inputs</span>
+              <strong>{game.analysis.inputsUsed}</strong>
+              <small>{game.tags.join(' · ')}</small>
+            </article>
+          </div>
+
+          <div class="detail-canvas-scroll no-scrollbar">
+            <div class="detail-canvas-grid">
+              <section class="detail-panel insight-panel">
+                <div class="detail-panel-header">
+                  <p class="eyebrow">Editorial read</p>
+                  <span>{game.tags.join(' | ')}</span>
+                </div>
+
+                <p class="game-summary">{game.summary}</p>
+
+                <div class="closeout">
+                  <p class="lean-line">{game.analysis.lean}</p>
+                  <p class="swing-line">{swingTextFor(game)}</p>
+                </div>
+
+                <div class="meter-grid compact">
+                  <div class="meter-card">
+                    <div class="meter-label">
+                      <span>Confidence</span>
+                      <strong>{labelForScore(game.analysis.confidence)}</strong>
+                    </div>
+                    <div class="meter-track">
+                      <span style={`width:${game.analysis.confidence}%;`}></span>
+                    </div>
+                  </div>
+
+                  <div class="meter-card">
+                    <div class="meter-label">
+                      <span>Volatility</span>
+                      <strong>{labelForScore(game.analysis.volatility)}</strong>
+                    </div>
+                    <div class="meter-track volatility">
+                      <span style={`width:${game.analysis.volatility}%;`}></span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="factor-list compact">
+                  {#each game.factors as factor}
+                    <li>{factor}</li>
+                  {/each}
+                </ul>
+              </section>
+
+              <div class="detail-stack">
+                {#if game.moneyline.available}
+                  <section class="pick-panel" aria-label={`Parlay picks for ${game.title}`}>
+                    <div class="pick-heading">
+                      <div>
+                        <p class="pick-kicker">Ticket</p>
+                        <p class="pick-caption">{game.moneyline.label}</p>
+                      </div>
+
+                      <div class="pick-side-meta">
+                        <span class="pick-source">{game.moneyline.provider}</span>
+                        <strong class="pick-analysis-note">My pick: {game.analysis.participant.name}</strong>
+                      </div>
+                    </div>
+
+                    <div class="pick-grid compact">
+                      {#each game.moneyline.participants as participant}
+                        <button
+                          type="button"
+                          class="pick-button"
+                          class:active={selectedPicks[game.id] === participant.id}
+                          disabled={atParlayLimit && !selectedPicks[game.id]}
+                          on:click|stopPropagation={() => toggleParlayPick(game.id, participant.id)}
+                        >
+                          <div class="pick-button-topline">
+                            <span>{participant.name}</span>
+                            {#if game.analysis.available && game.analysis.participantId === participant.id}
+                              <span class="pick-badge">Analyst</span>
+                            {/if}
+                          </div>
+                          <strong>{participant.americanLabel}</strong>
+                          <small>{participant.impliedProbabilityLabel} implied</small>
+                        </button>
+                      {/each}
+                    </div>
+                  </section>
+                {/if}
+
+                <section class="odds-panel" aria-label={`Odds snapshot for ${game.title}`}>
+                  <div class="odds-heading">
+                    <div>
+                      <p class="odds-kicker">Odds snapshot</p>
+                      <p class="odds-caption">{game.odds.provider || oddsMeta.provider}</p>
+                    </div>
+                    <span class="odds-time">{oddsMeta.snapshot}</span>
+                  </div>
+
+                  <div class="odds-list">
+                    {#each game.odds.markets as market}
+                      <div class="odds-row">
+                        <div class="odds-row-topline">
+                          <span>{market.label}</span>
+                          <small>{market.book}</small>
+                        </div>
+                        <p>{market.value}</p>
+                      </div>
+                    {/each}
+                  </div>
+
+                  {#if game.odds.note}
+                    <p class="odds-note">{game.odds.note}</p>
+                  {/if}
+                </section>
+
+                {#if game.analysis.inputs.length > 0}
+                  <section class="model-panel" aria-label={`Structured input model for ${game.title}`}>
+                    <div class="model-heading">
+                      <div>
+                        <p class="model-kicker">Structured input model</p>
+                        <p class="model-caption">How the current desk is separating this market.</p>
+                      </div>
+                      <span class="model-market-prob">{game.analysis.marketProbabilityLabel}</span>
+                    </div>
+
+                    <ul class="model-input-list">
+                      {#each game.analysis.inputs.slice(0, 8) as input}
+                        <li>{input.summary}</li>
+                      {/each}
+                    </ul>
+
+                    {#if game.analysis.volatilityNotes.length > 0}
+                      <div class="model-note-row">
+                        {#each game.analysis.volatilityNotes.slice(0, 4) as note}
+                          <span>{note.label}</span>
+                        {/each}
+                      </div>
+                    {/if}
+                  </section>
+                {/if}
+              </div>
+            </div>
+
+            {#if game.analysis.mlbProjection}
+              <section class="detail-panel detail-panel--wide">
+                <div class="model-phase-grid">
+                  <article class="model-phase-card">
+                    <div class="model-phase-head">
+                      <div>
+                        <p>First 5</p>
+                        <strong>{game.analysis.mlbProjection.first5EdgeTeam} +{game.analysis.mlbProjection.first5EdgeHits}</strong>
+                      </div>
+                      <span>Starter window</span>
+                    </div>
+
+                    <div class="flow-lane-grid">
+                      <div class="flow-lane">
+                        <div class="flow-lane-label">
+                          <span>{game.matchup[0].name}</span>
+                          <strong>{game.analysis.mlbProjection.awayFirst5ProjectedHits} H</strong>
+                        </div>
+                        <div class="flow-track">
+                          <span style={`width:${comparisonBarWidth(game.analysis.mlbProjection.awayFirst5ProjectedHits, game.analysis.mlbProjection.awayFirst5ProjectedHits, game.analysis.mlbProjection.homeFirst5ProjectedHits)}`}></span>
+                        </div>
+                        <small>{game.analysis.mlbProjection.awayFirst5HitEfficiencyPct}% efficiency</small>
+                      </div>
+                      <div class="flow-lane">
+                        <div class="flow-lane-label">
+                          <span>{game.matchup[1].name}</span>
+                          <strong>{game.analysis.mlbProjection.homeFirst5ProjectedHits} H</strong>
+                        </div>
+                        <div class="flow-track">
+                          <span style={`width:${comparisonBarWidth(game.analysis.mlbProjection.homeFirst5ProjectedHits, game.analysis.mlbProjection.awayFirst5ProjectedHits, game.analysis.mlbProjection.homeFirst5ProjectedHits)}`}></span>
+                        </div>
+                        <small>{game.analysis.mlbProjection.homeFirst5HitEfficiencyPct}% efficiency</small>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="model-phase-card">
+                    <div class="model-phase-head">
+                      <div>
+                        <p>Rest of game</p>
+                        <strong>{game.analysis.mlbProjection.lateEdgeTeam} +{game.analysis.mlbProjection.lateEdgeHits}</strong>
+                      </div>
+                      <span>Bridge and finish</span>
+                    </div>
+
+                    <div class="flow-lane-grid">
+                      <div class="flow-lane">
+                        <div class="flow-lane-label">
+                          <span>{game.matchup[0].name}</span>
+                          <strong>{game.analysis.mlbProjection.awayLateProjectedHits} H</strong>
+                        </div>
+                        <div class="flow-track">
+                          <span style={`width:${comparisonBarWidth(game.analysis.mlbProjection.awayLateProjectedHits, game.analysis.mlbProjection.awayLateProjectedHits, game.analysis.mlbProjection.homeLateProjectedHits)}`}></span>
+                        </div>
+                        <small>{game.analysis.mlbProjection.awayLateHitEfficiencyPct}% efficiency</small>
+                      </div>
+                      <div class="flow-lane">
+                        <div class="flow-lane-label">
+                          <span>{game.matchup[1].name}</span>
+                          <strong>{game.analysis.mlbProjection.homeLateProjectedHits} H</strong>
+                        </div>
+                        <div class="flow-track">
+                          <span style={`width:${comparisonBarWidth(game.analysis.mlbProjection.homeLateProjectedHits, game.analysis.mlbProjection.awayLateProjectedHits, game.analysis.mlbProjection.homeLateProjectedHits)}`}></span>
+                        </div>
+                        <small>{game.analysis.mlbProjection.homeLateHitEfficiencyPct}% efficiency</small>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="model-phase-card model-phase-card--edge">
+                    <div class="model-phase-head">
+                      <div>
+                        <p>Full game</p>
+                        <strong>{game.analysis.mlbProjection.edgeTeam} +{game.analysis.mlbProjection.edgeHits}</strong>
+                      </div>
+                      <span>Total hit edge</span>
+                    </div>
+
+                    <div class="flow-lane-grid">
+                      <div class="flow-lane">
+                        <div class="flow-lane-label">
+                          <span>{game.matchup[0].name}</span>
+                          <strong>{game.analysis.mlbProjection.awayProjectedHits} H</strong>
+                        </div>
+                        <div class="flow-track">
+                          <span style={`width:${comparisonBarWidth(game.analysis.mlbProjection.awayProjectedHits, game.analysis.mlbProjection.awayProjectedHits, game.analysis.mlbProjection.homeProjectedHits)}`}></span>
+                        </div>
+                        <small>{game.analysis.mlbProjection.awayHitEfficiencyPct}% efficiency</small>
+                      </div>
+                      <div class="flow-lane">
+                        <div class="flow-lane-label">
+                          <span>{game.matchup[1].name}</span>
+                          <strong>{game.analysis.mlbProjection.homeProjectedHits} H</strong>
+                        </div>
+                        <div class="flow-track">
+                          <span style={`width:${comparisonBarWidth(game.analysis.mlbProjection.homeProjectedHits, game.analysis.mlbProjection.awayProjectedHits, game.analysis.mlbProjection.homeProjectedHits)}`}></span>
+                        </div>
+                        <small>{game.analysis.mlbProjection.homeHitEfficiencyPct}% efficiency</small>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="model-note-row model-note-row--pitchers">
+                  <span>{game.matchup[0].name}: {game.analysis.mlbProjection.awayPitcherType}</span>
+                  <span>{game.matchup[1].name}: {game.analysis.mlbProjection.homePitcherType}</span>
+                  {#if game.analysis.mlbProjection.awayStarterHoldConfidence !== null}
+                    <span>{game.starterContext.away.fullName}: hold {game.analysis.mlbProjection.awayStarterHoldConfidence}</span>
+                  {/if}
+                  {#if game.analysis.mlbProjection.homeStarterHoldConfidence !== null}
+                    <span>{game.starterContext.home.fullName}: hold {game.analysis.mlbProjection.homeStarterHoldConfidence}</span>
+                  {/if}
+                  {#if game.analysis.mlbProjection.bridgeEdgeTeam}
+                    <span>Bridge edge: {game.analysis.mlbProjection.bridgeEdgeTeam} +{game.analysis.mlbProjection.bridgeEdgeScore}</span>
+                  {/if}
+                </div>
+              </section>
+
+              <section class="totals-board" aria-label={`Totals board for ${game.title}`}>
+                <div class="home-run-board-head">
+                  <div>
+                    <p class="series-kicker">Totals and flow</p>
+                    <strong>{game.analysis.mlbProjection.totals.fullGame.label} | proj {game.analysis.mlbProjection.totals.projectedFullTotalRuns}</strong>
+                  </div>
+                  <span>Full, first 5, late</span>
+                </div>
+
+                <div class="totals-grid">
+                  <article class="totals-card">
+                    <div class="totals-card-head">
+                      <p>Full game</p>
+                      <strong>{game.analysis.mlbProjection.totals.fullGame.label}</strong>
+                    </div>
+                    <span>Proj {game.analysis.mlbProjection.totals.projectedFullTotalRuns} vs {game.analysis.mlbProjection.postedTotal ?? 'N/A'}</span>
+                    <small>{game.analysis.mlbProjection.totals.fullGame.summary}</small>
+                  </article>
+
+                  <article class="totals-card">
+                    <div class="totals-card-head">
+                      <p>First 5</p>
+                      <strong>{game.analysis.mlbProjection.totals.first5.label}</strong>
+                    </div>
+                    <span>Proj {game.analysis.mlbProjection.totals.projectedFirst5TotalRuns} vs {game.analysis.mlbProjection.totals.derivedFirst5TotalLine ?? 'N/A'}</span>
+                    <small>{game.analysis.mlbProjection.totals.first5.summary}</small>
+                  </article>
+
+                  <article class="totals-card">
+                    <div class="totals-card-head">
+                      <p>Rest of game</p>
+                      <strong>{game.analysis.mlbProjection.totals.late.label}</strong>
+                    </div>
+                    <span>Proj {game.analysis.mlbProjection.totals.projectedLateTotalRuns} vs {game.analysis.mlbProjection.totals.derivedLateTotalLine ?? 'N/A'}</span>
+                    <small>{game.analysis.mlbProjection.totals.late.summary}</small>
+                  </article>
+                </div>
+
+                <p class="totals-footnote">{game.analysis.mlbProjection.totals.bullpenExhaustionNote}</p>
+              </section>
+
+              <div class="reliever-chain-grid">
+                <article class="reliever-chain-card">
+                  <div class="reliever-chain-head">
+                    <div>
+                      <p>{game.matchup[0].name} bridge chain</p>
+                      <strong>{game.analysis.mlbProjection.awayBullpenChainScore ?? 'N/A'}</strong>
+                    </div>
+                    <span>{game.analysis.mlbProjection.awayBullpenExhaustionLabel} workload</span>
+                  </div>
+                  <div class="reliever-list">
+                    {#each game.analysis.mlbProjection.awayLikelyRelievers as reliever}
+                      <div class="reliever-row">
+                        <div>
+                          <strong>{reliever.name}</strong>
+                          <span>{reliever.role} | First up {Math.round(reliever.firstRelieverLikelihood)}%</span>
+                        </div>
+                        <div class="reliever-meta">
+                          <strong>Availability {Math.round(reliever.availabilityScore)}/100</strong>
+                          <span>{relieverStatusLabel(reliever)}</span>
+                        </div>
+                      </div>
+                    {/each}
+                  </div>
+                </article>
+
+                <article class="reliever-chain-card">
+                  <div class="reliever-chain-head">
+                    <div>
+                      <p>{game.matchup[1].name} bridge chain</p>
+                      <strong>{game.analysis.mlbProjection.homeBullpenChainScore ?? 'N/A'}</strong>
+                    </div>
+                    <span>{game.analysis.mlbProjection.homeBullpenExhaustionLabel} workload</span>
+                  </div>
+                  <div class="reliever-list">
+                    {#each game.analysis.mlbProjection.homeLikelyRelievers as reliever}
+                      <div class="reliever-row">
+                        <div>
+                          <strong>{reliever.name}</strong>
+                          <span>{reliever.role} | First up {Math.round(reliever.firstRelieverLikelihood)}%</span>
+                        </div>
+                        <div class="reliever-meta">
+                          <strong>Availability {Math.round(reliever.availabilityScore)}/100</strong>
+                          <span>{relieverStatusLabel(reliever)}</span>
+                        </div>
+                      </div>
+                    {/each}
+                  </div>
+                </article>
+              </div>
+
+              <div class="team-script-grid">
+                {#each game.analysis.mlbProjection.teamScripts as script}
+                  <article class="team-script-card">
+                    <div class="team-script-head">
+                      <div>
+                        <p>{script.teamName}</p>
+                        <strong>Hitter script</strong>
+                      </div>
+                      <span>{script.overperformHitters.length ? 'Carry bats live' : script.lineupStatus}</span>
+                    </div>
+                    <div class="team-script-copy">
+                      <strong>Why the lane works</strong>
+                      <span>{script.overview}</span>
+                    </div>
+                    <div class="team-script-copy">
+                      <strong>Overperform hitters</strong>
+                      <span>
+                        {script.overperformHitters.length
+                          ? script.overperformHitters.map((hitter) => `${hitter.name} (${hitter.tag})`).join(' • ')
+                          : 'No clear carry bat surfaced yet before confirmed lineups.'}
+                      </span>
+                    </div>
+                    {#if script.bullpenOverperformHitters?.length}
+                      <div class="team-script-copy">
+                        <strong>Bridge hitters</strong>
+                        <span>{script.bullpenOverperformHitters.map((hitter) => `${hitter.name} (${hitter.tag})`).join(' • ')}</span>
+                      </div>
+                    {/if}
+                    {#if script.underperformHitters?.length}
+                      <div class="team-script-copy">
+                        <strong>Underperform hitters</strong>
+                        <span>{script.underperformHitters.map((hitter) => `${hitter.name} (${hitter.tag})`).join(' • ')}</span>
+                      </div>
+                    {/if}
+                    <div class="team-script-copy">
+                      <strong>Underperform watch</strong>
+                      <span>{script.underperformNote}</span>
+                    </div>
+                  </article>
+                {/each}
+              </div>
+
+              {#if game.analysis.mlbProjection.lineupSimulation}
+                <section class="lineup-simulation-board" aria-label={`Game flow simulation for ${game.title}`}>
+                  <div class="home-run-board-head">
+                    <div>
+                      <p class="series-kicker">Probable game flow</p>
+                      <strong>{game.analysis.mlbProjection.lineupSimulation.overview}</strong>
+                    </div>
+                    <span>Starter, bridge, finish</span>
+                  </div>
+
+                  <div class="simulation-phase-grid">
+                    {#each game.analysis.mlbProjection.lineupSimulation.phases as phase}
+                      <article class="simulation-phase-card">
+                        <div class="simulation-phase-head">
+                          <div>
+                            <p>{phase.label}</p>
+                            <strong>{phase.edgeTeam}</strong>
+                          </div>
+                          <span>{phase.projection}</span>
+                        </div>
+                        <p>{phase.note}</p>
+                      </article>
+                    {/each}
+                  </div>
+                </section>
+              {/if}
+
+              <section class="simulation-board" aria-label={`Quick simulator for ${game.title}`}>
+                <div class="home-run-board-head">
+                  <div>
+                    <p class="series-kicker">Quick simulator</p>
+                    <strong>Approx box score and inning path at the current temperature index</strong>
+                  </div>
+                  <div class="simulation-board-actions">
+                    <span>Temp {gameSimulation?.temperature?.toFixed(2) ?? simulationTemperature.toFixed(2)}</span>
+                    <button type="button" class="simulation-run-button" on:click|stopPropagation={() => runGameSimulation(game)}>
+                      {gameSimulation ? 'Re-roll sim' : 'Run sim'}
+                    </button>
+                  </div>
+                </div>
+
+                {#if gameSimulation}
+                  <div class="simulation-summary-row">
+                    <div>
+                      <strong>{gameSimulation.summary}</strong>
+                      <p>{gameSimulation.overview}</p>
+                    </div>
+                    <div class="simulation-summary-meta">
+                      <span>{gameSimulation.temperatureLabel}</span>
+                      <small>{gameSimulation.upset ? 'Flip result' : 'Model hold'}</small>
+                    </div>
+                  </div>
+
+                  <div class="simulation-boxscore-grid">
+                    {#each [gameSimulation.away, gameSimulation.home] as teamLine}
+                      <article class="simulation-boxscore-card" data-winner={gameSimulation.winner === teamLine.teamName}>
+                        <div class="simulation-boxscore-head">
+                          <div>
+                            <p>{teamLine.teamName}</p>
+                            <strong>{teamLine.runs} R | {teamLine.hits} H | {teamLine.errors} E</strong>
+                          </div>
+                          <span>{gameSimulation.winner === teamLine.teamName ? 'Winner' : 'Chasing'}</span>
+                        </div>
+                        <div class="simulation-boxscore-splits">
+                          <span>F5 {teamLine.first5Runs} R / {teamLine.first5Hits} H</span>
+                          <span>Late {teamLine.lateRuns} R / {teamLine.lateHits} H</span>
+                        </div>
+                        <p class="simulation-driver-copy">
+                          {teamLine.drivers?.length ? `Likely drivers: ${teamLine.drivers.join(' • ')}` : 'No clear driver cluster surfaced beyond the team-level traffic script.'}
+                        </p>
+                      </article>
+                    {/each}
+                  </div>
+
+                  <div class="simulation-linescore-wrap">
+                    <table class="simulation-linescore">
+                      <thead>
+                        <tr>
+                          <th>Team</th>
+                          {#each gameSimulation.innings as inning}
+                            <th>{inning}</th>
+                          {/each}
+                          <th>R</th>
+                          <th>H</th>
+                          <th>E</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {#each [gameSimulation.away, gameSimulation.home] as teamLine}
+                          <tr class:winning-row={gameSimulation.winner === teamLine.teamName}>
+                            <th>{teamLine.teamName}</th>
+                            {#each teamLine.inningRuns as inningRuns}
+                              <td>{inningRuns}</td>
+                            {/each}
+                            <td>{teamLine.runs}</td>
+                            <td>{teamLine.hits}</td>
+                            <td>{teamLine.errors}</td>
+                          </tr>
+                        {/each}
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="simulation-note-grid">
+                    <p>{gameSimulation.phaseSummary}</p>
+                    <p>{gameSimulation.lineupNote}</p>
+                  </div>
+                {:else}
+                  <div class="simulation-empty-state">
+                    <strong>Run a quick sim for this MLB game.</strong>
+                    <p>The temperature slider shifts variance from steadier model-hold scripts toward hotter bullpen swings and flip outcomes.</p>
+                  </div>
+                {/if}
+              </section>
+
+              {#if game.lineupBoard}
+                <section class="lineup-board" aria-label={`Confirmed lineups for ${game.title}`}>
+                  <div class="home-run-board-head">
+                    <div>
+                      <p class="series-kicker">Full batting orders</p>
+                      <strong>Recent form, split fit, and starter-lane tags</strong>
+                    </div>
+                    <span>Official + weather supplement</span>
+                  </div>
+
+                  {#if game.lineupBoard.weather || game.lineupBoard.marketWeatherContext?.line || game.lineupBoard.marketWeatherContext?.total}
+                    <div class="lineup-weather-row">
+                      {#if game.lineupBoard.weather}
+                        <span>{game.lineupBoard.weather.label || game.lineupBoard.weather.summary}</span>
+                      {/if}
+                      {#if game.lineupBoard.marketWeatherContext?.line}
+                        <span>Line {game.lineupBoard.marketWeatherContext.line}</span>
+                      {/if}
+                      {#if game.lineupBoard.marketWeatherContext?.total}
+                        <span>O/U {game.lineupBoard.marketWeatherContext.total}</span>
+                      {/if}
+                    </div>
+                  {/if}
+
+                  <div class="lineup-board-grid">
+                    {#each [{ board: game.lineupBoard.away, status: game.lineupBoard.status?.away }, { board: game.lineupBoard.home, status: game.lineupBoard.status?.home }] as lineupTeam}
+                      <article class="lineup-team-card">
+                        <div class="lineup-team-head">
+                          <div>
+                            <p>{lineupTeam.board.teamName}</p>
+                            <strong>{lineupStatusLabel(lineupTeam.status)}</strong>
+                          </div>
+                          <span>vs {lineupTeam.board.opposingStarter.name} ({lineupTeam.board.opposingStarter.hand}HP, {lineupTeam.board.opposingStarter.type})</span>
+                        </div>
+
+                        <div class="lineup-team-summary">
+                          <span>Top third {lineupTeam.board.summary.topThirdScore}</span>
+                          <span>Depth {lineupTeam.board.summary.depthScore}</span>
+                          <span>{lineupTeam.board.summary.pressureLabel}</span>
+                          {#if lineupTeam.board.lineupSource === 'rotowire-supplement'}
+                            <span>RotoWire supplement</span>
+                          {/if}
+                        </div>
+
+                        <p class="lineup-team-overview">{lineupTeam.board.summary.overview}</p>
+
+                        {#if lineupTeam.board.lineup.length}
+                          <div class="lineup-list">
+                            {#each lineupTeam.board.lineup as hitter}
+                              <article class="lineup-row-card">
+                                <div class="lineup-row-head">
+                                  <div class="lineup-slot">{hitter.slot}</div>
+                                  <div class="lineup-player-meta">
+                                    <strong>{hitter.name}</strong>
+                                    <span>{hitter.position} | {hitter.bats || '?'}HB</span>
+                                  </div>
+                                  <div class="lineup-matchup-grade">
+                                    <strong>{signedValue(hitter.metrics.matchupGrade, 2)}</strong>
+                                    <span>{hitter.primaryTag}</span>
+                                  </div>
+                                </div>
+                                <p class="lineup-player-summary">{hitter.summary}</p>
+                                {#if hitter.tags?.length}
+                                  <div class="lineup-tag-row">
+                                    {#each hitter.tags as tag}
+                                      <span>{tag}</span>
+                                    {/each}
+                                  </div>
+                                {/if}
+                              </article>
+                            {/each}
+                          </div>
+                        {:else}
+                          <p class="lineup-team-overview">Official batting order is still pending for this side.</p>
+                        {/if}
+                      </article>
+                    {/each}
+                  </div>
+                </section>
+              {/if}
+
+              {#if game.homeRunTargets}
+                <section class="home-run-board" aria-label={`Home run looks for ${game.title}`}>
+                  <div class="home-run-board-head">
+                    <div>
+                      <p class="series-kicker">Home run looks</p>
+                      <strong>{game.homeRunTargets.summary}</strong>
+                    </div>
+                    <span>Weighted pool, not true odds</span>
+                  </div>
+
+                  <div class="home-run-tier-grid">
+                    <article class="home-run-tier">
+                      <div class="home-run-tier-head">
+                        <p>Likely</p>
+                        <span>Anchor and strongest support</span>
+                      </div>
+                      <div class="home-run-target-list">
+                        {#if game.homeRunTargets.likely.length}
+                          {#each game.homeRunTargets.likely as target}
+                            <div class="home-run-target-row">
+                              <div>
+                                <strong>{target.playerName}</strong>
+                                <span>{target.teamName} vs {target.opposingPitcher} ({target.opposingPitcherHand}HP)</span>
+                                {#if target.signalSummary}
+                                  <span>{target.signalSummary}</span>
+                                {/if}
+                                {#if target.modelSharePct != null}
+                                  <div class="home-run-weight-bar" aria-hidden="true">
+                                    <span style={`width:${Math.max(12, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
+                                  </div>
+                                {/if}
+                              </div>
+                              <div class="home-run-target-meta">
+                                <strong>{Math.round(target.score)}</strong>
+                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
+                                <span>{target.scoreBand} | {target.burstTag}</span>
+                              </div>
+                            </div>
+                          {/each}
+                        {:else}
+                          <p class="home-run-empty">No likely lane yet on this matchup.</p>
+                        {/if}
+                      </div>
+                    </article>
+
+                    <article class="home-run-tier">
+                      <div class="home-run-tier-head">
+                        <p>Possible</p>
+                        <span>Secondary pressure bats</span>
+                      </div>
+                      <div class="home-run-target-list">
+                        {#if game.homeRunTargets.possible?.length}
+                          {#each game.homeRunTargets.possible as target}
+                            <div class="home-run-target-row">
+                              <div>
+                                <strong>{target.playerName}</strong>
+                                <span>{target.signalSummary || `${target.teamName} matchup lane`}</span>
+                                {#if target.modelSharePct != null}
+                                  <div class="home-run-weight-bar" aria-hidden="true">
+                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
+                                  </div>
+                                {/if}
+                              </div>
+                              <div class="home-run-target-meta">
+                                <strong>{Math.round(target.score)}</strong>
+                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
+                                <span>{target.scoreBand} | {target.burstTag}</span>
+                              </div>
+                            </div>
+                          {/each}
+                        {:else}
+                          <p class="home-run-empty">No second-tier lane yet beyond the lead bat.</p>
+                        {/if}
+                      </div>
+                    </article>
+
+                    <article class="home-run-tier">
+                      <div class="home-run-tier-head">
+                        <p>Alternates</p>
+                        <span>Thin but still live</span>
+                      </div>
+                      <div class="home-run-target-list">
+                        {#if game.homeRunTargets.alternates?.length}
+                          {#each game.homeRunTargets.alternates as target}
+                            <div class="home-run-target-row">
+                              <div>
+                                <strong>{target.playerName}</strong>
+                                <span>{target.signalSummary || `${target.teamName} matchup lane`}</span>
+                                {#if target.modelSharePct != null}
+                                  <div class="home-run-weight-bar" aria-hidden="true">
+                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
+                                  </div>
+                                {/if}
+                              </div>
+                              <div class="home-run-target-meta">
+                                <strong>{Math.round(target.score)}</strong>
+                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
+                                <span>{target.scoreBand} | {target.burstTag}</span>
+                              </div>
+                            </div>
+                          {/each}
+                        {:else}
+                          <p class="home-run-empty">No alternate lanes worth holding yet.</p>
+                        {/if}
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              {/if}
+
+              {#if game.playerProps?.available}
+                <section class="player-prop-board" aria-label={`Player prop builder for ${game.title}`}>
+                  <div class="home-run-board-head">
+                    <div>
+                      <p class="series-kicker">Player props</p>
+                      <strong>{game.playerProps.summary}</strong>
+                    </div>
+                    <span>Hits, TB, RBI, walks, singles, HR</span>
+                  </div>
+
+                  <div class="player-prop-grid">
+                    {#each game.playerProps.featured as prop}
+                      <article class="player-prop-card">
+                        <div class="player-prop-head">
+                          <div>
+                            <p>{prop.playerName}</p>
+                            <strong>{prop.marketLabel}</strong>
+                          </div>
+                          <div class="player-prop-meta">
+                            <strong>{prop.confidence}%</strong>
+                            <span>{prop.recommendationTier}</span>
+                          </div>
+                        </div>
+
+                        <div class="player-prop-chip-row">
+                          <span>{prop.propLabel}</span>
+                          <span>{prop.teamName}</span>
+                          <span>{prop.statValueLabel}</span>
+                        </div>
+
+                        <p class="player-prop-copy">{prop.reason || prop.matchupNote}</p>
+
+                        <div class="player-prop-actions">
+                          <small>{prop.matchupNote}</small>
+                          <button type="button" class="player-prop-toggle" class:active={Boolean(selectedProps[prop.id])} on:click={() => togglePlayerProp(prop)}>
+                            {selectedProps[prop.id] ? 'Saved' : 'Add prop'}
+                          </button>
+                        </div>
+                      </article>
+                    {/each}
+                  </div>
+                </section>
+              {/if}
+            {/if}
+
+            {#if game.playerAnalysis?.length}
+              <section class="player-analysis-panel" aria-label={`Player analysis for ${game.title}`}>
+                <p class="series-kicker">Player analysis</p>
+                <ul class="player-analysis-list">
+                  {#each game.playerAnalysis as note}
+                    <li>{note}</li>
+                  {/each}
+                </ul>
+              </section>
+            {/if}
+
+            {#if game.seriesBreakdown}
+              <section class="series-panel" aria-label={`Series breakdown for ${game.title}`}>
+                <div class="series-heading">
+                  <div>
+                    <p class="series-kicker">{game.seriesBreakdown.kicker}</p>
+                    <h4>{game.seriesBreakdown.title}</h4>
+                  </div>
+                  <span class="series-record">{game.seriesBreakdown.record}</span>
+                </div>
+
+                <p class="series-recap">{game.seriesBreakdown.recap}</p>
+
+                <div class="series-stat-row">
+                  {#each game.seriesBreakdown.seriesStats as stat}
+                    <span>{stat}</span>
+                  {/each}
+                </div>
+
+                <div class="boxscore-grid">
+                  {#each game.seriesBreakdown.boxScores as boxScore}
+                    <article class="boxscore-card">
+                      <div class="boxscore-topline">
+                        <div>
+                          <p class="boxscore-label">{boxScore.label}</p>
+                          <h5>{boxScore.result}</h5>
+                        </div>
+                        <span>{boxScore.date}</span>
+                      </div>
+
+                      <ul class="boxscore-notes">
+                        {#each boxScore.notes as note}
+                          <li>{note}</li>
+                        {/each}
+                      </ul>
+
+                      {#if boxScore.leaders?.length}
+                        <div class="boxscore-leaders">
+                          {#each boxScore.leaders as leaderGroup}
+                            <div class="leader-group">
+                              <p class="leader-group-title">{leaderGroup.team}</p>
+                              <ul class="leader-list">
+                                {#each leaderGroup.lines as line}
+                                  <li>{line}</li>
+                                {/each}
+                              </ul>
+                            </div>
+                          {/each}
+                        </div>
+                      {/if}
+                    </article>
+                  {/each}
+                </div>
+
+                {#if game.seriesBreakdown.playerAnalysis?.length}
+                  <section class="player-analysis-panel">
+                    <p class="series-kicker">Key players</p>
+                    <ul class="player-analysis-list">
+                      {#each game.seriesBreakdown.playerAnalysis as note}
+                        <li>{note}</li>
+                      {/each}
+                    </ul>
+                  </section>
+                {/if}
+
+                <div class="series-links">
+                  {#each game.seriesBreakdown.sources as source}
+                    <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
+                  {/each}
+                </div>
+              </section>
+            {/if}
+          </div>
+        {:else}
+          <div class="placeholder-panel">
+            <p class="eyebrow">Board</p>
+            <h3>No market selected</h3>
+            <p>Select a game from the rail to open the detail canvas.</p>
+          </div>
+        {/if}
+      </section>
+    </div>
+  {:else if activeDeskTab === 'parlay'}
+    <div class="desk-tool-workspace">
+      <section class="builder-shell action-rail" aria-label="Parlay builder">
+        <div class="parlay-sidebar-header">
+          <div>
+            <p class="eyebrow">Parlay builder</p>
+            <h2>Execution</h2>
+            <p class="parlay-sidebar-copy">Build tickets, save props, and move between core, balanced, and flip-risk setups outside the board view.</p>
+          </div>
+          <button type="button" class="clear-parlay-button" disabled={parlay.legCount === 0} on:click={clearParlay}>
             Clear ticket
           </button>
         </div>
 
-        <div class="rail-mini-metrics">
-          <article class="rail-mini-card">
-            <span>Selected</span>
-            <strong>{parlay.legCount}</strong>
-          </article>
-
-          <article class="rail-mini-card">
-            <span>Analyst matches</span>
-            <strong>{parlay.metadata.analystPickCount}</strong>
-          </article>
-
-          <article class="rail-mini-card">
-            <span>Best set</span>
-            <strong>{activeRecommendedLegCount || 0}-leg</strong>
-          </article>
-        </div>
-
-        <div class="sidebar-tab-row" role="tablist" aria-label="Parlay tools">
+        <div class="sidebar-tab-row" role="tablist" aria-label="Builder tools">
           {#each sidebarTabs as tab}
-            <button
-              type="button"
-              role="tab"
-              class="sidebar-tab-button"
-              class:active={activeSidebarTab === tab.id}
-              aria-selected={activeSidebarTab === tab.id}
-              on:click={() => setSidebarTab(tab.id)}
-            >
+            <button type="button" role="tab" class="sidebar-tab-button" class:active={activeSidebarTab === tab.id} aria-selected={activeSidebarTab === tab.id} on:click={() => setSidebarTab(tab.id)}>
               {tab.label}
             </button>
           {/each}
@@ -2222,115 +1944,49 @@
 
         {#if activeSidebarTab === 'ticket'}
           <div class="parlay-stats-grid compact">
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Eligible legs</span>
-              <strong>{filteredMoneylineGames.length}</strong>
-            </article>
-
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Selected</span>
-              <strong>{parlay.legCount}</strong>
-            </article>
-
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Combined odds</span>
-              <strong>{parlay.combinedAmericanLabel}</strong>
-              <small>Decimal {parlay.combinedDecimalLabel}</small>
-            </article>
-
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Implied hit rate</span>
-              <strong>{parlay.impliedProbabilityLabel}</strong>
-            </article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Eligible legs</span><strong>{filteredMoneylineGames.length}</strong></article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Selected</span><strong>{parlay.legCount}</strong></article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Combined odds</span><strong>{parlay.combinedAmericanLabel}</strong><small>Decimal {parlay.combinedDecimalLabel}</small></article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Implied hit rate</span><strong>{parlay.impliedProbabilityLabel}</strong></article>
           </div>
 
           {#if recommendationCounts.length > 0}
             <div class="ticket-autobuild">
               <p class="ticket-autobuild-label">Auto-build ticket</p>
-
               <div class="recommendation-mode-row" role="tablist" aria-label="Recommendation mode">
                 {#each recommendationModes as mode}
-                  <button
-                    type="button"
-                    role="tab"
-                    class="recommendation-mode-button"
-                    class:active={recommendationMode === mode.id}
-                    aria-selected={recommendationMode === mode.id}
-                    on:click={() => (recommendationMode = mode.id)}
-                  >
+                  <button type="button" role="tab" class="recommendation-mode-button" class:active={recommendationMode === mode.id} aria-selected={recommendationMode === mode.id} on:click={() => (recommendationMode = mode.id)}>
                     {mode.label}
                   </button>
                 {/each}
               </div>
-
               <p class="ticket-autobuild-copy">{activeRecommendationMeta.copy}</p>
-
               {#if recommendationMode === 'balanced'}
                 <label class="balance-slider-card" for="balance-weight">
-                  <div class="balance-slider-head">
-                    <span>Flip weight</span>
-                    <strong>{balanceWeight.toFixed(2)}</strong>
-                  </div>
+                  <div class="balance-slider-head"><span>Flip weight</span><strong>{balanceWeight.toFixed(2)}</strong></div>
                   <input id="balance-weight" type="range" min="0" max="1" step="0.05" bind:value={balanceWeight} />
-                  <small>
-                    Targeting about {balancedRecommendation.targetFlipLegs} flip
-                    {balancedRecommendation.targetFlipLegs === 1 ? '' : 's'} in this
-                    {activeRecommendedLegCount}-leg mix from an average live-dog rate of
-                    {Math.round(balancedRecommendation.averageFlipProbability * 100)}%.
-                  </small>
+                  <small>Targeting about {balancedRecommendation.targetFlipLegs} flip{balancedRecommendation.targetFlipLegs === 1 ? '' : 's'} in this {activeRecommendedLegCount}-leg mix from an average live-dog rate of {Math.round(balancedRecommendation.averageFlipProbability * 100)}%.</small>
                 </label>
               {/if}
-
               <div class="recommendation-size-row">
                 {#each recommendationCounts as count}
-                  <button
-                    type="button"
-                    class="size-chip"
-                    class:active={activeRecommendedLegCount === count}
-                    on:click={() => (recommendedLegCount = count)}
-                  >
-                    {count}-leg
-                  </button>
+                  <button type="button" class="size-chip" class:active={activeRecommendedLegCount === count} on:click={() => (recommendedLegCount = count)}>{count}-leg</button>
                 {/each}
               </div>
-
               {#if recommendedParlay.legCount > 0}
-                <p class="ticket-autobuild-preview">
-                  {activeRecommendationMeta.label} set: {recommendedParlay.combinedAmericanLabel} |
-                  {recommendedParlay.impliedProbabilityLabel} implied
-                  {#if recommendationMode === 'balanced'}
-                    | {balancedRecommendation.actualFlipLegs} flip leg
-                    {balancedRecommendation.actualFlipLegs === 1 ? '' : 's'}
-                  {/if}
-                </p>
+                <p class="ticket-autobuild-preview">{activeRecommendationMeta.label} set: {recommendedParlay.combinedAmericanLabel} | {recommendedParlay.impliedProbabilityLabel} implied {#if recommendationMode === 'balanced'}| {balancedRecommendation.actualFlipLegs} flip leg{balancedRecommendation.actualFlipLegs === 1 ? '' : 's'}{/if}</p>
               {/if}
-
-              <button
-                type="button"
-                class="load-recommended-button"
-                on:click={() => loadRecommendedParlay(activeRecommendedLegCount)}
-              >
+              <button type="button" class="load-recommended-button" on:click={() => loadRecommendedParlay(activeRecommendedLegCount)}>
                 Load {activeRecommendedLegCount}-leg {recommendationMode === 'flips' ? 'flip-risk' : recommendationMode} ticket
               </button>
             </div>
           {/if}
 
           <div class="parlay-body stacked">
-            <label class="stake-card" for="parlay-stake">
-              <span class="parlay-stat-label">Stake</span>
-              <input id="parlay-stake" type="number" min="1" step="5" bind:value={parlayStake} />
-            </label>
-
+            <label class="stake-card" for="parlay-stake"><span class="parlay-stat-label">Stake</span><input id="parlay-stake" type="number" min="1" step="5" bind:value={parlayStake} /></label>
             <div class="parlay-return-grid">
-              <article class="parlay-return-card">
-                <span class="parlay-stat-label">Projected return</span>
-                <strong>{parlay.grossReturnLabel}</strong>
-              </article>
-
-              <article class="parlay-return-card">
-                <span class="parlay-stat-label">Projected profit</span>
-                <strong>{parlay.profitLabel}</strong>
-              </article>
+              <article class="parlay-return-card"><span class="parlay-stat-label">Projected return</span><strong>{parlay.grossReturnLabel}</strong></article>
+              <article class="parlay-return-card"><span class="parlay-stat-label">Projected profit</span><strong>{parlay.profitLabel}</strong></article>
             </div>
           </div>
 
@@ -2339,18 +1995,8 @@
             <p class="parlay-status-copy">{parlayStatus}</p>
           </div>
 
-          {#if parlay.legCount > 0}
-            <p class="parlay-meta-line">
-              Leagues in ticket: {parlay.metadata.leagues.join(', ')} | Legs:
-              {parlay.metadata.gameTitles.join(' • ')}
-            </p>
-          {/if}
-
           {#if parlay.legCount === 0}
-            <p class="parlay-empty">
-              Start from any matchup card, or use the core and flip-risk builders to load analyst-backed
-              legs faster.
-            </p>
+            <p class="parlay-empty">Start from the Board tab, then come back here to build around the live card.</p>
           {:else}
             <div class="parlay-leg-list">
               {#each parlay.legs as leg}
@@ -2360,22 +2006,11 @@
                     <p class="parlay-leg-pick">{leg.pickName} over {leg.opponentName}</p>
                     <p class="parlay-leg-game">{leg.gameTitle}</p>
                   </div>
-
                   <div class="parlay-leg-side">
                     <strong>{leg.americanLabel}</strong>
                     <span>{leg.impliedProbabilityLabel} implied</span>
-
-                    {#if leg.isAnalystPick}
-                      <span class="analyst-chip">Analyst match</span>
-                    {/if}
-
-                    <button
-                      type="button"
-                      class="remove-leg-button"
-                      on:click={() => removeParlayPick(leg.gameId)}
-                    >
-                      Remove
-                    </button>
+                    {#if leg.isAnalystPick}<span class="analyst-chip">Analyst match</span>{/if}
+                    <button type="button" class="remove-leg-button" on:click={() => removeParlayPick(leg.gameId)}>Remove</button>
                   </div>
                 </article>
               {/each}
@@ -2383,68 +2018,28 @@
           {/if}
         {:else if activeSidebarTab === 'props'}
           <div class="parlay-stats-grid compact">
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Eligible props</span>
-              <strong>{mlbPlayerProps.length}</strong>
-            </article>
-
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Saved</span>
-              <strong>{selectedPropEntries.length}</strong>
-            </article>
-
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Avg confidence</span>
-              <strong>{selectedPropEntries.length ? `${propConfidenceAverage}%` : 'N/A'}</strong>
-            </article>
-
-            <article class="parlay-stat-card">
-              <span class="parlay-stat-label">Type filter</span>
-              <strong>{propTypeFilters.find((entry) => entry.id === activePropType)?.label ?? 'All'}</strong>
-            </article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Eligible props</span><strong>{mlbPlayerProps.length}</strong></article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Saved</span><strong>{selectedPropEntries.length}</strong></article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Avg confidence</span><strong>{selectedPropEntries.length ? `${propConfidenceAverage}%` : 'N/A'}</strong></article>
+            <article class="parlay-stat-card"><span class="parlay-stat-label">Type filter</span><strong>{propTypeFilters.find((entry) => entry.id === activePropType)?.label ?? 'All'}</strong></article>
           </div>
-
           <div class="ticket-autobuild">
             <div class="action-section-header">
               <div>
                 <p class="ticket-autobuild-label">MLB prop builder</p>
-                <p class="ticket-autobuild-copy">
-                  The stronger edge might be on `hits`, `TB`, or `RBI` instead of forcing a HR
-                  prop when the game script is more traffic than pure carry.
-                </p>
+                <p class="ticket-autobuild-copy">The stronger edge might be on hits, TB, or RBI instead of forcing a HR prop when the game script is more traffic than pure carry.</p>
               </div>
-
-              <button
-                type="button"
-                class="clear-parlay-button"
-                disabled={!selectedPropEntries.length}
-                on:click={clearSelectedProps}
-              >
-                Clear props
-              </button>
+              <button type="button" class="clear-parlay-button" disabled={!selectedPropEntries.length} on:click={clearSelectedProps}>Clear props</button>
             </div>
-
             <div class="recommendation-size-row">
               {#each propTypeFilters as filter}
-                <button
-                  type="button"
-                  class="size-chip"
-                  class:active={activePropType === filter.id}
-                  on:click={() => (activePropType = filter.id)}
-                >
-                  {filter.label}
-                </button>
+                <button type="button" class="size-chip" class:active={activePropType === filter.id} on:click={() => (activePropType = filter.id)}>{filter.label}</button>
               {/each}
             </div>
           </div>
-
           {#if selectedPropEntries.length > 0}
             <div class="action-section">
-              <div class="action-section-header">
-                <h3>Saved Props</h3>
-                <span>{selectedPropEntries.length}</span>
-              </div>
-
+              <div class="action-section-header"><h3>Saved Props</h3><span>{selectedPropEntries.length}</span></div>
               <div class="prop-pick-list">
                 {#each selectedPropEntries as prop}
                   <article class="prop-pick-card">
@@ -2453,26 +2048,18 @@
                       <p class="parlay-leg-pick">{prop.playerName} {prop.marketLabel}</p>
                       <p class="parlay-leg-game">{prop.reason || prop.matchupNote}</p>
                     </div>
-
                     <div class="parlay-leg-side">
                       <strong>{prop.confidence}%</strong>
                       <span>{prop.recommendationTier}</span>
-                      <button type="button" class="remove-leg-button" on:click={() => removeSelectedProp(prop.id)}>
-                        Remove
-                      </button>
+                      <button type="button" class="remove-leg-button" on:click={() => removeSelectedProp(prop.id)}>Remove</button>
                     </div>
                   </article>
                 {/each}
               </div>
             </div>
           {/if}
-
           <div class="action-section">
-            <div class="action-section-header">
-              <h3>Top Props</h3>
-              <span>{filteredMlbPlayerProps.length}</span>
-            </div>
-
+            <div class="action-section-header"><h3>Top Props</h3><span>{filteredMlbPlayerProps.length}</span></div>
             {#if filteredMlbPlayerProps.length > 0}
               <div class="prop-pick-list">
                 {#each filteredMlbPlayerProps.slice(0, 18) as prop}
@@ -2482,18 +2069,10 @@
                       <p class="parlay-leg-pick">{prop.playerName} {prop.marketLabel}</p>
                       <p class="parlay-leg-game">{prop.reason || prop.matchupNote}</p>
                     </div>
-
                     <div class="parlay-leg-side">
                       <strong>{prop.confidence}%</strong>
                       <span>{prop.statValueLabel}</span>
-                      <button
-                        type="button"
-                        class="analysis-action-button"
-                        class:active={Boolean(selectedProps[prop.id])}
-                        on:click={() => togglePlayerProp(prop)}
-                      >
-                        {selectedProps[prop.id] ? 'Saved' : 'Add'}
-                      </button>
+                      <button type="button" class="analysis-action-button" class:active={Boolean(selectedProps[prop.id])} on:click={() => togglePlayerProp(prop)}>{selectedProps[prop.id] ? 'Saved' : 'Add'}</button>
                     </div>
                   </article>
                 {/each}
@@ -2503,100 +2082,27 @@
             {/if}
           </div>
         {:else if activeSidebarTab === 'signals'}
-          <div class="sidebar-section-copy">
-            <p>Open a market, pin it, or send it straight into the slip.</p>
-          </div>
-
-          {#if pinnedSignalPicks.length > 0}
-            <div class="action-section">
-              <div class="action-section-header">
-                <h3>Pinned Signals</h3>
-                <span>{pinnedSignalPicks.length}</span>
-              </div>
-
-              <div class="analysis-pick-list compact">
-                {#each pinnedSignalPicks as pick}
-                  <article class="analysis-pick-card compact">
-                    <div class="analysis-pick-topline">
-                      <span>{pick.league} | {pick.start}</span>
-                      <span>{pick.participant.americanLabel}</span>
-                    </div>
-                    <h3>{pick.participant.name}</h3>
-                    <p class="analysis-pick-game">{pick.gameTitle}</p>
-                    <div class="analysis-action-row">
-                      <button type="button" class="analysis-action-button" on:click={() => openGame(pick.gameId)}>
-                        Open
-                      </button>
-                      <button
-                        type="button"
-                        class="analysis-action-button"
-                        class:active={selectedPicks[pick.gameId] === pick.participantId}
-                        disabled={atParlayLimit && !selectedPicks[pick.gameId]}
-                        on:click={() => toggleParlayPick(pick.gameId, pick.participantId)}
-                      >
-                        {selectedPicks[pick.gameId] === pick.participantId ? 'In ticket' : 'Add to ticket'}
-                      </button>
-                      <button type="button" class="analysis-action-button" on:click={() => togglePinnedSignal(pick.gameId)}>
-                        Unpin
-                      </button>
-                    </div>
-                  </article>
-                {/each}
-              </div>
-            </div>
-          {/if}
-
           <div class="action-section">
-            <div class="action-section-header">
-              <h3>Model Ladder</h3>
-              <span>{signalLadderPicks.length}</span>
-            </div>
-
+            <div class="action-section-header"><h3>Model Ladder</h3><span>{signalLadderPicks.length}</span></div>
             <div class="analysis-pick-list compact">
               {#each signalLadderPicks as pick}
                 <article class="analysis-pick-card compact">
-                  <div class="analysis-pick-topline">
-                    <span>{pick.league} | {pick.start}</span>
-                    <span>{pick.confidence} conf</span>
-                  </div>
+                  <div class="analysis-pick-topline"><span>{pick.league} | {pick.start}</span><span>{pick.confidence} conf</span></div>
                   <h3>{pick.participant.name}</h3>
                   <p class="analysis-pick-game">{pick.gameTitle}</p>
                   <p class="analysis-pick-tone">{recommendationToneFor(pick)}</p>
                   <div class="analysis-action-row">
-                    <button type="button" class="analysis-action-button" on:click={() => openGame(pick.gameId)}>
-                      Open
-                    </button>
-                    <button
-                      type="button"
-                      class="analysis-action-button"
-                      class:active={selectedPicks[pick.gameId] === pick.participantId}
-                      disabled={atParlayLimit && !selectedPicks[pick.gameId]}
-                      on:click={() => toggleParlayPick(pick.gameId, pick.participantId)}
-                    >
-                      {selectedPicks[pick.gameId] === pick.participantId ? 'In ticket' : 'Add'}
-                    </button>
-                    <button
-                      type="button"
-                      class="analysis-action-button"
-                      class:active={pinnedSignalIds.includes(pick.gameId)}
-                      on:click={() => togglePinnedSignal(pick.gameId)}
-                    >
-                      {pinnedSignalIds.includes(pick.gameId) ? 'Pinned' : 'Pin'}
-                    </button>
+                    <button type="button" class="analysis-action-button" on:click={() => { openGame(pick.gameId); activeDeskTab = 'board' }}>Open</button>
+                    <button type="button" class="analysis-action-button" class:active={selectedPicks[pick.gameId] === pick.participantId} disabled={atParlayLimit && !selectedPicks[pick.gameId]} on:click={() => toggleParlayPick(pick.gameId, pick.participantId)}>{selectedPicks[pick.gameId] === pick.participantId ? 'In ticket' : 'Add'}</button>
+                    <button type="button" class="analysis-action-button" class:active={pinnedSignalIds.includes(pick.gameId)} on:click={() => togglePinnedSignal(pick.gameId)}>{pinnedSignalIds.includes(pick.gameId) ? 'Pinned' : 'Pin'}</button>
                   </div>
                 </article>
               {/each}
             </div>
           </div>
-        {/if}
-
-        {#if activeSidebarTab === 'sources'}
+        {:else if activeSidebarTab === 'sources'}
           <div class="action-section">
-            <div class="action-section-header">
-              <h3>Open Sources</h3>
-              <span>{sourceCount}</span>
-            </div>
-
+            <div class="action-section-header"><h3>Open Sources</h3><span>{sourceCount}</span></div>
             {#if allSources.length > 0}
               <div class="sources-list">
                 {#each allSources as source}
@@ -2607,64 +2113,76 @@
               <p class="sources-empty">No sources attached yet for this date.</p>
             {/if}
           </div>
-
           <div class="action-section">
-            <div class="action-section-header">
-              <h3>Add Source</h3>
-              <span>Local</span>
-            </div>
-
+            <div class="action-section-header"><h3>Add Source</h3><span>Local</span></div>
             <div class="source-form">
-              <input
-                type="text"
-                placeholder="Source label"
-                bind:value={customSourceLabel}
-              />
-              <input
-                type="url"
-                placeholder="https://..."
-                bind:value={customSourceUrl}
-              />
-              <button type="button" class="analysis-action-button" on:click={addCustomSource}>
-                Add source
-              </button>
+              <input type="text" placeholder="Source label" bind:value={customSourceLabel} />
+              <input type="url" placeholder="https://..." bind:value={customSourceUrl} />
+              <button type="button" class="analysis-action-button" on:click={addCustomSource}>Add source</button>
             </div>
           </div>
-        {/if}
-
-        {#if activeSidebarTab === 'notes'}
+        {:else if activeSidebarTab === 'notes'}
           <div class="action-section">
-            <div class="action-section-header">
-              <h3>Desk Notes</h3>
-              <span>Edit</span>
-            </div>
-
-            <textarea
-              class="desk-note-input"
-              rows="10"
-              placeholder="Add your trading notes for this date..."
-              value={deskNote}
-              on:input={(event) => saveDeskNoteForDay(activeDay.id, event.currentTarget.value)}
-            ></textarea>
+            <div class="action-section-header"><h3>Desk Notes</h3><span>Edit</span></div>
+            <textarea class="desk-note-input" rows="10" placeholder="Add your trading notes for this date..." value={deskNote} on:input={(event) => saveDeskNoteForDay(activeDay.id, event.currentTarget.value)}></textarea>
           </div>
-
           <div class="action-section">
-            <div class="action-section-header">
-              <h3>Imported Notes</h3>
-              <span>{slateMeta.notes.length + (activeDay.feedNotes?.length ?? 0)}</span>
-            </div>
-
+            <div class="action-section-header"><h3>Imported Notes</h3><span>{slateMeta.notes.length + (activeDay.feedNotes?.length ?? 0)}</span></div>
             <ul class="notes-list">
-              {#each slateMeta.notes as note}
-                <li>{note}</li>
-              {/each}
-              {#each activeDay.feedNotes ?? [] as note}
-                <li>{note}</li>
-              {/each}
+              {#each slateMeta.notes as note}<li>{note}</li>{/each}
+              {#each activeDay.feedNotes ?? [] as note}<li>{note}</li>{/each}
             </ul>
           </div>
         {/if}
       </section>
-    </aside>
-  </div>
+    </div>
+  {:else if activeDeskTab === 'tickets'}
+    <div class="desk-tool-workspace">
+      <section class="placeholder-panel workspace-panel">
+        <p class="eyebrow">Tickets</p>
+        <h3>Saved card snapshot</h3>
+        <p>{parlay.legCount ? `${parlay.legCount} active moneyline legs and ${selectedPropEntries.length} saved props are currently staged.` : 'No active ticket yet. Add picks from the board, then return here for archived and sent slips.'}</p>
+      </section>
+    </div>
+  {:else if activeDeskTab === 'models'}
+    <div class="desk-tool-workspace models-workspace">
+      <section class="workspace-panel action-section">
+        <div class="action-section-header"><h3>Model ladder</h3><span>{analysisPickPool.length}</span></div>
+        <div class="analysis-pick-list compact">
+          {#each analysisPickPool.slice(0, 18) as pick}
+            <article class="analysis-pick-card compact">
+              <div class="analysis-pick-topline"><span>{pick.league} | {pick.start}</span><span>{pick.confidence} conf</span></div>
+              <h3>{pick.participant.name}</h3>
+              <p class="analysis-pick-game">{pick.gameTitle}</p>
+              <p class="analysis-pick-tone">{recommendationToneFor(pick)}</p>
+              <div class="analysis-action-row">
+                <button type="button" class="analysis-action-button" on:click={() => { openGame(pick.gameId); activeDeskTab = 'board' }}>Open on board</button>
+              </div>
+            </article>
+          {/each}
+        </div>
+      </section>
+
+      <section class="workspace-panel action-section">
+        <div class="action-section-header"><h3>Sources</h3><span>{sourceCount}</span></div>
+        {#if allSources.length > 0}
+          <div class="sources-list">
+            {#each allSources as source}
+              <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
+            {/each}
+          </div>
+        {:else}
+          <p class="sources-empty">No sources attached yet for this date.</p>
+        {/if}
+      </section>
+    </div>
+  {:else}
+    <div class="desk-tool-workspace">
+      <section class="placeholder-panel workspace-panel">
+        <p class="eyebrow">History</p>
+        <h3>Historical tracking will live here</h3>
+        <p>We can layer in backtests, archived slates, and model win-quality tracking next without crowding the live board.</p>
+      </section>
+    </div>
+  {/if}
 </div>
