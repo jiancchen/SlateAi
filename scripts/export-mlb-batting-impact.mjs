@@ -236,7 +236,7 @@ const main = async () => {
   const payload = {
     season: options.year,
     generatedAt: new Date().toISOString(),
-    files: options.files,
+    files: options.files.map((filePath) => path.basename(filePath)),
     rowCount: rows.length,
     playerCount: Object.keys(byPlayerName).length,
     rows,

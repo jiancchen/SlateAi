@@ -2,11 +2,11 @@ export const battingImpactMeta = {
   "season": 2026,
   "generatedAt": "2026-05-18T13:35:58.695Z",
   "files": [
-    "/Users/jcchen/Downloads/may14batting leaders.rtf",
-    "/Users/jcchen/Downloads/may14_battingleaders.rtf",
-    "/Users/jcchen/Downloads/may15battingleaders.rtf",
-    "/Users/jcchen/Downloads/may16batting leaders.rtf",
-    "/Users/jcchen/Downloads/may17_batting_leaders.txt.rtf"
+    "may14batting leaders.rtf",
+    "may14_battingleaders.rtf",
+    "may15battingleaders.rtf",
+    "may16batting leaders.rtf",
+    "may17_batting_leaders.txt.rtf"
   ],
   "rowCount": 150,
   "playerCount": 123

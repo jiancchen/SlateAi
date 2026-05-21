@@ -1030,6 +1030,7 @@ h3 {
 .desk-board-workspace,
 .desk-tool-workspace {
   min-height: 0;
+  height: 100%;
   display: grid;
   gap: 0;
   padding-top: 10px;
@@ -1053,6 +1054,7 @@ h3 {
 .builder-shell,
 .workspace-panel {
   min-height: 0;
+  height: 100%;
   overflow: hidden;
   border-radius: 0 0 0 12px;
 }
@@ -1307,7 +1309,7 @@ h3 {
 .builder-shell,
 .workspace-panel {
   padding: 18px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .builder-shell {
@@ -1318,7 +1320,9 @@ h3 {
   min-height: 0;
   height: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 390px;
+  grid-template-columns: minmax(0, 1fr) 336px;
+  align-items: stretch;
+  overflow: hidden;
 }
 
 .builder-catalog,
@@ -1327,8 +1331,9 @@ h3 {
 }
 
 .builder-catalog {
-  display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   border-right: 1px solid var(--line);
   border-radius: 0 0 0 12px;
 }
@@ -1415,6 +1420,8 @@ h3 {
 }
 
 .builder-catalog-list {
+  min-height: 0;
+  flex: 1 1 auto;
   display: grid;
   gap: 10px;
   overflow: auto;
@@ -1470,8 +1477,8 @@ h3 {
 
 .builder-entry-main {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 164px;
-  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 142px;
+  gap: 14px;
 }
 
 .builder-entry-copy {
@@ -1510,6 +1517,7 @@ h3 {
   gap: 6px;
   justify-items: end;
   text-align: right;
+  align-content: start;
 }
 
 .builder-entry-side strong {

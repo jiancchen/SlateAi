@@ -1,5 +1,6 @@
 import { createSportsMatchModel } from './sports-model.js'
 import { tennisClayContext } from './day-2026-05-21-tennis-context.js'
+import { mlbGames, mlbNotes, mlbSources } from './day-2026-05-21-mlb.js'
 
 const oddsProvider = 'Oddschecker + TennisStats clay board'
 
@@ -1122,29 +1123,31 @@ const matches = [
 ]
 
 export const slateMeta = {
-  title: 'Thursday Tennis Desk',
+  title: 'Thursday MLB + Tennis Desk',
   date: 'May 21, 2026',
   isoDate: '2026-05-21',
   timeZone: 'America/Los_Angeles',
   subtitle:
-    'Clay-heavy May 21 tennis board covering WTA Strasbourg, ATP Hamburg, ATP Geneva, and the Roland-Garros qualifying final round, built from official order-of-play pages, Oddschecker lines, TennisStats match pages, and Tennis Abstract player research.',
+    'A combined May 21 desk with the initial MLB slate plus the clay-heavy tennis board, built from official league pages, lineup/odds sources, Oddschecker lines, TennisStats match pages, and Tennis Abstract player research.',
   notes: [
     'Every match on this board is on clay, so the model is leaning more on form, H2H shape, ranking pressure, and weekly workload than it would on a mixed-surface slate.',
     'French Open coverage here is qualifying round three, not the main draw. Those matches carry more fatigue variance because everyone is on a third straight win-or-go-home day.',
-    'No fresh injury flag surfaced from the accessible pre-match sources on this pass, so the risk read is coming mostly from recent match load, surface fit, and the current market shape rather than explicit medical news.'
+    'No fresh injury flag surfaced from the accessible pre-match sources on this pass, so the risk read is coming mostly from recent match load, surface fit, and the current market shape rather than explicit medical news.',
+    ...mlbNotes
   ]
 }
 
-export const filters = ['All', 'Tennis']
+export const filters = ['All', 'MLB', 'Tennis']
 
 export const oddsMeta = {
-  provider: oddsProvider,
-  snapshot: 'May 20, 2026, 8:10 PM PT for the May 21 clay slate',
+  provider: 'Official MLB data + matchup board snapshots + Oddschecker + TennisStats clay board',
+  snapshot: 'May 21, 2026 morning pre-open desk for MLB plus the full May 21 clay tennis slate',
   note:
-    'Main-tour matches use official schedule pages plus Oddschecker and TennisStats boards for ranking, form, Elo, H2H, and accessible moneylines. Roland-Garros qualifying matches use the official order-of-play payload and stay model-only when no clean pre-match price was accessible.'
+    'MLB uses official probable pitchers, lineup context, bullpen-chain context, and matchup-board pricing. Tennis uses official order of play plus Oddschecker and TennisStats boards for ranking, form, surface fit, Elo, H2H, and accessible moneylines.'
 }
 
 export const sources = [
+  ...mlbSources,
   {
     label: 'Oddschecker tennis lines',
     url: 'https://www.oddschecker.com/us/tennis'
@@ -1175,6 +1178,6 @@ export const sources = [
   }
 ]
 
-export const games = matches.sort(
+export const games = [...mlbGames, ...matches].sort(
   (left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title)
 )

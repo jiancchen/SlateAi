@@ -1,0 +1,8 @@
+data/
+scripts/
+dist/
+node_modules/
+*.log
+.DS_Store
+followup_*.md
+tickets/

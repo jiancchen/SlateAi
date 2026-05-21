@@ -363,8 +363,8 @@
       const selectedScript =
         projection.teamScripts?.find((script) => script.teamName === game.analysis?.participant?.name) ??
         projection.teamScripts?.[0]
-      const carryHitter = selectedScript?.overperformHitters?.[0]?.name
-      const bridgeCarry = selectedScript?.bullpenOverperformHitters?.[0]?.name
+      const pressureLabel = selectedScript?.pressureLabel
+      const bridgePressure = selectedScript?.bullpenOverview
       const bothLineupsPosted =
         game.lineupBoard?.status?.away === 'posted' && game.lineupBoard?.status?.home === 'posted'
       const partialLineups =
@@ -379,12 +379,15 @@
         chips.push({ tone: 'danger', label: `Late ${projection.bridgeEdgeTeam}` })
       }
 
-      if (carryHitter) {
-        chips.push({ tone: 'accent', label: `Carry ${carryHitter}` })
+      if (pressureLabel) {
+        chips.push({
+          tone: /traffic-only/i.test(pressureLabel) ? 'neutral' : 'accent',
+          label: pressureLabel
+        })
       }
 
-      if (bridgeCarry && bridgeCarry !== carryHitter) {
-        chips.push({ tone: 'warning', label: `Bridge ${bridgeCarry}` })
+      if (bridgePressure && !/no strong reliever-arsenal edge/i.test(bridgePressure)) {
+        chips.push({ tone: 'warning', label: 'Bridge live' })
       }
 
       if (projection.totals?.fullGame?.lean && projection.totals.fullGame.lean !== 'Pass') {
