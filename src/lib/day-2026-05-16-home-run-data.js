@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
-  "modelName": "statcast-hr-prototype-v2",
+  "modelName": "statcast-hr-prototype-v3",
   "date": "2026-05-16",
-  "generatedAt": "2026-05-16T15:55:59.832Z",
+  "generatedAt": "2026-05-19T19:04:06.158Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -14,36 +14,202 @@ export const homeRunTargetsByGame = {
     "gameTitle": "Blue Jays @ Tigers",
     "likely": [
       {
-        "playerId": 672960,
-        "playerName": "Kazuma Okamoto",
-        "teamAbbrev": "TOR",
-        "teamName": "Blue Jays",
+        "playerId": 669398,
+        "playerName": "Gage Workman",
+        "teamAbbrev": "DET",
+        "teamName": "Tigers",
         "gameTitle": "Blue Jays @ Tigers",
-        "opposingPitcher": "Casey Mize",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.58,
+        "opposingPitcher": "Mason Fluharty",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.6,
         "parkHrIndex": 100,
-        "seasonHr": 10,
-        "seasonXHR": 10.3,
-        "xhrDiff": -0.3,
-        "baseScore": 42.44451612903225,
-        "recentHrSinceMay1": 5,
-        "homeRunsLast7Days": 0,
-        "noDoubterRate": 0.4,
-        "avgExitVelocityOnHomers": 108.8,
-        "score": 61.2,
-        "scoreBand": "thin",
-        "burstTag": "active",
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0.7,
+        "seasonHr": 2,
+        "seasonXHR": 1.4,
+        "xhrDiff": 0.6,
+        "baseScore": 64.915,
+        "lineupContext": {
+          "gameTitle": "Blue Jays @ Tigers",
+          "teamName": "Tigers",
+          "slot": 3,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "powerScore": 92,
+          "contactScore": 23.9,
+          "formScore": 92,
+          "splitScore": 50,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 2,
+          "splitHomeRuns": 0
+        },
+        "lineupPriority": 49.3,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 21.1,
+          "totalBases": 6,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 24.6
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 102.5,
+        "homeRunContext": {
+          "sampleSize": 2,
+          "homeShare": 0,
+          "awayShare": 1,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.5,
+          "lateShare": 0,
+          "highPressureShare": 0.5,
+          "trailingShare": 0,
+          "averageInning": 3.5,
+          "averageGapDays": 4,
+          "topPitchTypes": [
+            "Sweeper",
+            "Slider"
+          ]
+        },
+        "score": 77.2,
+        "scoreBand": "live",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 3 | carry",
+          "better on the road",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | carry | close-game pop | better on the road | 0.6 HR/9 starter",
         "rationale": [
-          "10 HR and 10.3 xHR on the season",
-          "5 HR since May 1 with 0 in the last week",
-          "Casey Mize is allowing roughly 0.58 HR/9",
-          "Park HR index 100"
-        ]
+          "2 HR and 1.4 xHR on the season",
+          "2 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
+          "Mason Fluharty is allowing roughly 0.6 HR/9",
+          "Park HR index 100",
+          "Last HR came 2 days ago",
+          "Home today | historical split 0% on this side",
+          "50% off starters | 50% off relievers | avg inning 3.5",
+          "Most recent damage has skewed toward Sweeper / Slider",
+          "1 recent batting-leader appearances | 21.1 avg impact",
+          "Weather lane not stored yet",
+          "Slot 3 | carry | lineup priority 49.3 | bullpen vulnerability 0.7"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "possible": [],
-    "summary": "Kazuma Okamoto is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+    "possible": [
+      {
+        "playerId": 693307,
+        "playerName": "Dillon Dingler",
+        "teamAbbrev": "DET",
+        "teamName": "Tigers",
+        "gameTitle": "Blue Jays @ Tigers",
+        "opposingPitcher": "Mason Fluharty",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.6,
+        "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0.7,
+        "seasonHr": 8,
+        "seasonXHR": 7.4,
+        "xhrDiff": 0.6,
+        "baseScore": 54.03645,
+        "lineupContext": {
+          "gameTitle": "Blue Jays @ Tigers",
+          "teamName": "Tigers",
+          "slot": 2,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 56.7,
+          "contactScore": 48.1,
+          "formScore": 92,
+          "splitScore": 18,
+          "matchupScore": 83.3,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 8,
+          "splitHomeRuns": 1
+        },
+        "lineupPriority": 30.3,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.33,
+        "avgExitVelocityOnHomers": 104,
+        "homeRunContext": {
+          "sampleSize": 8,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.63,
+          "reliefShare": 0.38,
+          "earlyShare": 0.38,
+          "lateShare": 0.13,
+          "highPressureShare": 0,
+          "trailingShare": 0.13,
+          "averageInning": 3.9,
+          "averageGapDays": 7,
+          "topPitchTypes": [
+            "Slider",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 60.4,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 2 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 2 | carry | neutral bullpen | 0.6 HR/9 starter",
+        "rationale": [
+          "8 HR and 7.4 xHR on the season",
+          "3 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
+          "Mason Fluharty is allowing roughly 0.6 HR/9",
+          "Park HR index 100",
+          "Last HR came 2 days ago",
+          "Home today | historical split 50% on this side",
+          "63% off starters | 38% off relievers | avg inning 3.9",
+          "Most recent damage has skewed toward Slider / Four-Seam Fastball",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 2 | carry | lineup priority 30.3 | bullpen vulnerability 0.7"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "summary": "Gage Workman is the cleanest likely bat here because the posted order still grades carry, the recent HR sample leans close-game pop, and today still profiles as a better on the road look."
   },
   "Royals @ Cardinals": {
     "gameTitle": "Royals @ Cardinals",
@@ -58,56 +224,296 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "L",
         "opposingPitcherHr9": 1.28,
         "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 3,
         "seasonHr": 13,
         "seasonXHR": 10.7,
         "xhrDiff": 2.3,
-        "baseScore": 49.688863636363635,
+        "baseScore": 106.71258181818182,
+        "lineupContext": {
+          "gameTitle": "Royals @ Cardinals",
+          "teamName": "Cardinals",
+          "slot": 3,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 92,
+          "contactScore": 56.3,
+          "formScore": 92,
+          "splitScore": 70.9,
+          "matchupScore": 94,
+          "varianceScore": 90.1,
+          "pitchType": null,
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 13,
+          "splitHomeRuns": 4
+        },
+        "lineupPriority": 56.8,
+        "battingImpactContext": {
+          "recentAppearances": 2,
+          "hrGames": 2,
+          "averageImpactScore": 20.4,
+          "totalBases": 12,
+          "dates": [
+            "2026-05-15",
+            "2026-05-14"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 30.6
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 1,
         "noDoubterRate": 0.25,
         "avgExitVelocityOnHomers": 107,
-        "score": 68.7,
-        "scoreBand": "thin",
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.42,
+          "awayShare": 0.58,
+          "starterShare": 0.58,
+          "reliefShare": 0.42,
+          "earlyShare": 0.25,
+          "lateShare": 0.25,
+          "highPressureShare": 0.25,
+          "trailingShare": 0.5,
+          "averageInning": 4.9,
+          "averageGapDays": 3.7,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Sweeper"
+          ]
+        },
+        "score": 138.7,
+        "scoreBand": "premium",
         "burstTag": "watch",
+        "contextLabels": [
+          "Slot 3 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "bullpen leak live"
+        ],
+        "signalSummary": "Slot 3 | carry | bullpen leak live | 1.28 HR/9 starter",
         "rationale": [
           "13 HR and 10.7 xHR on the season",
-          "4 HR since May 1 with 3 in the last week",
+          "4 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
           "Noah Cameron is allowing roughly 1.28 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 1 day ago",
+          "Home today | historical split 42% on this side",
+          "58% off starters | 42% off relievers | avg inning 4.9",
+          "Most recent damage has skewed toward Four-Seam Fastball / Sweeper",
+          "2 recent batting-leader appearances | 20.4 avg impact",
+          "Weather lane not stored yet",
+          "Slot 3 | carry | lineup priority 56.8 | bullpen vulnerability 3"
+        ],
+        "avoidHrChase": false
       }
     ],
     "possible": [
       {
-        "playerId": 676475,
-        "playerName": "Alec Burleson",
-        "teamAbbrev": "STL",
-        "teamName": "Cardinals",
+        "playerId": 677951,
+        "playerName": "Bobby Witt Jr.",
+        "teamAbbrev": "KC",
+        "teamName": "Royals",
         "gameTitle": "Royals @ Cardinals",
-        "opposingPitcher": "Noah Cameron",
-        "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 1.28,
+        "opposingPitcher": "Kyle Leahy",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.38,
         "parkHrIndex": 100,
-        "seasonHr": 6,
-        "seasonXHR": 8.4,
-        "xhrDiff": -2.4,
-        "baseScore": 42.188863636363635,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 2.8,
+        "seasonHr": 7,
+        "seasonXHR": 5.8,
+        "xhrDiff": 1.2,
+        "baseScore": 74.28044693877551,
+        "lineupContext": {
+          "gameTitle": "Royals @ Cardinals",
+          "teamName": "Royals",
+          "slot": 2,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "powerScore": 63.4,
+          "contactScore": 72.6,
+          "formScore": 92,
+          "splitScore": 47.6,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 7,
+          "splitHomeRuns": 6
+        },
+        "lineupPriority": 44.2,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 17.3,
+          "totalBases": 4,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 20.8
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 3,
+        "noDoubterRate": 0.25,
+        "avgExitVelocityOnHomers": 104.8,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.17,
+          "lateShare": 0.5,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.67,
+          "averageInning": 6.2,
+          "averageGapDays": 3.4,
+          "topPitchTypes": [
+            "Changeup",
+            "Cutter"
+          ]
+        },
+        "score": 100.4,
+        "scoreBand": "premium",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 2 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 2 | carry | neutral bullpen | 1.38 HR/9 starter",
+        "rationale": [
+          "7 HR and 5.8 xHR on the season",
+          "4 HR since May 1 with 2 in the last 7 days and 3 in the last 10",
+          "Kyle Leahy is allowing roughly 1.38 HR/9",
+          "Park HR index 100",
+          "Last HR came 3 days ago",
+          "Road today | historical split 50% on this side",
+          "50% off starters | 50% off relievers | avg inning 6.2",
+          "Most recent damage has skewed toward Changeup / Cutter",
+          "1 recent batting-leader appearances | 17.3 avg impact",
+          "Weather lane not stored yet",
+          "Slot 2 | carry | lineup priority 44.2 | bullpen vulnerability 2.8"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 521692,
+        "playerName": "Salvador Perez",
+        "teamAbbrev": "KC",
+        "teamName": "Royals",
+        "gameTitle": "Royals @ Cardinals",
+        "opposingPitcher": "Kyle Leahy",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.38,
+        "parkHrIndex": 100,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 2.8,
+        "seasonHr": 7,
+        "seasonXHR": 7.5,
+        "xhrDiff": -0.5,
+        "baseScore": 46.22874693877551,
+        "lineupContext": {
+          "gameTitle": "Royals @ Cardinals",
+          "teamName": "Royals",
+          "slot": 4,
+          "primaryTag": "heater",
+          "tags": [
+            "heater",
+            "cold"
+          ],
+          "powerScore": 40.7,
+          "contactScore": 41.2,
+          "formScore": 82.5,
+          "splitScore": 40.8,
+          "matchupScore": 43.9,
+          "varianceScore": 58,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 4
+        },
+        "lineupPriority": 16.2,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 2,
-        "homeRunsLast7Days": 0,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 0,
         "noDoubterRate": 0.5,
-        "avgExitVelocityOnHomers": 108.5,
-        "score": 53,
+        "avgExitVelocityOnHomers": 102.5,
+        "homeRunContext": {
+          "sampleSize": 7,
+          "homeShare": 0.29,
+          "awayShare": 0.71,
+          "starterShare": 0.57,
+          "reliefShare": 0.43,
+          "earlyShare": 0.29,
+          "lateShare": 0.29,
+          "highPressureShare": 0.57,
+          "trailingShare": 0.29,
+          "averageInning": 4.7,
+          "averageGapDays": 8.3,
+          "topPitchTypes": [
+            "Sinker",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 62.1,
         "scoreBand": "thin",
         "burstTag": "watch",
+        "contextLabels": [
+          "Slot 4 | heater",
+          "road-heavy carry",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | heater | close-game pop | road-heavy carry | 1.38 HR/9 starter",
         "rationale": [
-          "6 HR and 8.4 xHR on the season",
-          "2 HR since May 1 with 0 in the last week",
-          "Noah Cameron is allowing roughly 1.28 HR/9",
-          "Park HR index 100"
-        ]
+          "7 HR and 7.5 xHR on the season",
+          "2 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Kyle Leahy is allowing roughly 1.38 HR/9",
+          "Park HR index 100",
+          "Last HR came 0 days ago",
+          "Road today | historical split 71% on this side",
+          "57% off starters | 43% off relievers | avg inning 4.7",
+          "Most recent damage has skewed toward Sinker / Four-Seam Fastball",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 4 | heater | lineup priority 16.2 | bullpen vulnerability 2.8"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Jordan Walker is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+    "summary": "Jordan Walker is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans mixed timing, and today lines up as a neutral venue split matchup into a 1.28 HR/9 starter lane."
   },
   "Diamondbacks @ Rockies": {
     "gameTitle": "Diamondbacks @ Rockies",
@@ -122,26 +528,199 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "L",
         "opposingPitcherHr9": 0.75,
         "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -1.6,
         "seasonHr": 12,
         "seasonXHR": 13.4,
         "xhrDiff": -1.4,
-        "baseScore": 56.089999999999996,
+        "baseScore": 77.716,
+        "lineupContext": {
+          "gameTitle": "Diamondbacks @ Rockies",
+          "teamName": "Rockies",
+          "slot": 5,
+          "primaryTag": "cold",
+          "tags": [
+            "cold"
+          ],
+          "powerScore": 92,
+          "contactScore": 47.8,
+          "formScore": 18,
+          "splitScore": 18,
+          "matchupScore": 18,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 12,
+          "splitHomeRuns": 2
+        },
+        "lineupPriority": 11.5,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 29.6,
+          "totalBases": 9,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 32.6
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 3,
         "noDoubterRate": 0.75,
         "avgExitVelocityOnHomers": 104.3,
-        "score": 73.5,
-        "scoreBand": "live",
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.75,
+          "awayShare": 0.25,
+          "starterShare": 0.58,
+          "reliefShare": 0.42,
+          "earlyShare": 0.42,
+          "lateShare": 0.25,
+          "highPressureShare": 0.25,
+          "trailingShare": 0.25,
+          "averageInning": 4.2,
+          "averageGapDays": 5.4,
+          "topPitchTypes": [
+            "Sweeper",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 87.1,
+        "scoreBand": "strong",
         "burstTag": "carry",
+        "contextLabels": [
+          "Slot 5 | cold",
+          "home-heavy carry",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 5 | cold | home-heavy carry | 0.75 HR/9 starter",
         "rationale": [
           "12 HR and 13.4 xHR on the season",
-          "4 HR since May 1 with 1 in the last week",
+          "4 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
           "Eduardo Rodriguez is allowing roughly 0.75 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 3 days ago",
+          "Home today | historical split 75% on this side",
+          "58% off starters | 42% off relievers | avg inning 4.2",
+          "Most recent damage has skewed toward Sweeper / Four-Seam Fastball",
+          "1 recent batting-leader appearances | 29.6 avg impact",
+          "Weather lane not stored yet",
+          "Slot 5 | cold | lineup priority 11.5 | bullpen vulnerability -1.6"
+        ],
+        "avoidHrChase": false
       }
     ],
     "possible": [
+      {
+        "playerId": 681198,
+        "playerName": "TJ Rumfield",
+        "teamAbbrev": "COL",
+        "teamName": "Rockies",
+        "gameTitle": "Diamondbacks @ Rockies",
+        "opposingPitcher": "Eduardo Rodriguez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.75,
+        "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -1.6,
+        "seasonHr": 6,
+        "seasonXHR": 7.6,
+        "xhrDiff": -1.6,
+        "baseScore": 54.428900000000006,
+        "lineupContext": {
+          "gameTitle": "Diamondbacks @ Rockies",
+          "teamName": "Rockies",
+          "slot": 3,
+          "primaryTag": "heater",
+          "tags": [
+            "heater",
+            "cold"
+          ],
+          "powerScore": 40.5,
+          "contactScore": 57,
+          "formScore": 89.8,
+          "splitScore": 18,
+          "matchupScore": 38.7,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 0
+        },
+        "lineupPriority": 14,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 22.2,
+          "totalBases": 7,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 25.8
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 3,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 102,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.5,
+          "lateShare": 0.33,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.5,
+          "averageInning": 4.7,
+          "averageGapDays": 9.2,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Splitter"
+          ]
+        },
+        "score": 75.7,
+        "scoreBand": "live",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 3 | heater",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | heater | neutral bullpen | 0.75 HR/9 starter",
+        "rationale": [
+          "6 HR and 7.6 xHR on the season",
+          "3 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
+          "Eduardo Rodriguez is allowing roughly 0.75 HR/9",
+          "Park HR index 100",
+          "Last HR came 3 days ago",
+          "Home today | historical split 67% on this side",
+          "50% off starters | 50% off relievers | avg inning 4.7",
+          "Most recent damage has skewed toward Four-Seam Fastball / Splitter",
+          "1 recent batting-leader appearances | 22.2 avg impact",
+          "Weather lane not stored yet",
+          "Slot 3 | heater | lineup priority 14 | bullpen vulnerability -1.6"
+        ],
+        "avoidHrChase": false
+      },
       {
         "playerId": 696100,
         "playerName": "Hunter Goodman",
@@ -152,60 +731,93 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "L",
         "opposingPitcherHr9": 0.75,
         "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -1.6,
         "seasonHr": 11,
         "seasonXHR": 11.6,
         "xhrDiff": -0.6,
-        "baseScore": 48.71,
+        "baseScore": 60.440450000000006,
+        "lineupContext": {
+          "gameTitle": "Diamondbacks @ Rockies",
+          "teamName": "Rockies",
+          "slot": 4,
+          "primaryTag": "split edge",
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "powerScore": 84.9,
+          "contactScore": 36,
+          "formScore": 18,
+          "splitScore": 52.1,
+          "matchupScore": 34.4,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 11,
+          "splitHomeRuns": 3
+        },
+        "lineupPriority": 21.2,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 2,
-        "homeRunsLast7Days": 2,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 1,
         "noDoubterRate": 0,
         "avgExitVelocityOnHomers": 106.5,
-        "score": 58.8,
+        "homeRunContext": {
+          "sampleSize": 11,
+          "homeShare": 0.27,
+          "awayShare": 0.73,
+          "starterShare": 0.45,
+          "reliefShare": 0.55,
+          "earlyShare": 0.27,
+          "lateShare": 0.18,
+          "highPressureShare": 0.09,
+          "trailingShare": 0.36,
+          "averageInning": 4.4,
+          "averageGapDays": 5.6,
+          "topPitchTypes": [
+            "Slider",
+            "Sweeper"
+          ]
+        },
+        "score": 53.5,
         "scoreBand": "thin",
         "burstTag": "watch",
+        "contextLabels": [
+          "Slot 4 | split edge",
+          "better on the road",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | split edge | better on the road | 0.75 HR/9 starter",
         "rationale": [
           "11 HR and 11.6 xHR on the season",
-          "2 HR since May 1 with 2 in the last week",
+          "2 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
           "Eduardo Rodriguez is allowing roughly 0.75 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 1 day ago",
+          "Home today | historical split 27% on this side",
+          "45% off starters | 55% off relievers | avg inning 4.4",
+          "Most recent damage has skewed toward Slider / Sweeper",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 4 | split edge | lineup priority 21.2 | bullpen vulnerability -1.6"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Mickey Moniak is the cleanest likely bat here, driven by 4 recent homers, a 0.75 HR/9 starter matchup, and a live contact-quality signal."
+    "summary": "Mickey Moniak is the cleanest likely bat here because the posted order still grades cold, the recent HR sample leans mixed timing, and today still profiles as a home-heavy carry look."
   },
   "Orioles @ Nationals": {
     "gameTitle": "Orioles @ Nationals",
     "likely": [
-      {
-        "playerId": 695578,
-        "playerName": "James Wood",
-        "teamAbbrev": "WSH",
-        "teamName": "Nationals",
-        "gameTitle": "Orioles @ Nationals",
-        "opposingPitcher": "Chris Bassitt",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.71,
-        "parkHrIndex": 100,
-        "seasonHr": 12,
-        "seasonXHR": 13.1,
-        "xhrDiff": -1.1,
-        "baseScore": 54.433684210526316,
-        "recentHrSinceMay1": 2,
-        "homeRunsLast7Days": 2,
-        "noDoubterRate": 1,
-        "avgExitVelocityOnHomers": 109,
-        "score": 71.7,
-        "scoreBand": "live",
-        "burstTag": "carry",
-        "rationale": [
-          "12 HR and 13.1 xHR on the season",
-          "2 HR since May 1 with 2 in the last week",
-          "Chris Bassitt is allowing roughly 0.71 HR/9",
-          "Park HR index 100"
-        ]
-      }
-    ],
-    "possible": [
       {
         "playerId": 695734,
         "playerName": "Daylen Lile",
@@ -216,26 +828,196 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.71,
         "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0.4,
         "seasonHr": 7,
         "seasonXHR": 7.1,
         "xhrDiff": -0.1,
-        "baseScore": 31.333684210526314,
+        "baseScore": 79.64057894736843,
+        "lineupContext": {
+          "gameTitle": "Orioles @ Nationals",
+          "teamName": "Nationals",
+          "slot": 5,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "traffic"
+          ],
+          "powerScore": 65.4,
+          "contactScore": 65.5,
+          "formScore": 92,
+          "splitScore": 77.5,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 8,
+          "seasonHomeRuns": 7,
+          "splitHomeRuns": 7
+        },
+        "lineupPriority": 45.8,
+        "battingImpactContext": {
+          "recentAppearances": 2,
+          "hrGames": 2,
+          "averageImpactScore": 21.3,
+          "totalBases": 12,
+          "dates": [
+            "2026-05-15",
+            "2026-05-14"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 31.5
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 4,
+        "homeRunsLast10Days": 4,
+        "daysSinceLastHr": 1,
         "noDoubterRate": 1,
         "avgExitVelocityOnHomers": 106,
-        "score": 55.9,
-        "scoreBand": "thin",
+        "homeRunContext": {
+          "sampleSize": 7,
+          "homeShare": 0.57,
+          "awayShare": 0.43,
+          "starterShare": 0.71,
+          "reliefShare": 0.29,
+          "earlyShare": 0.14,
+          "lateShare": 0.14,
+          "highPressureShare": 0.29,
+          "trailingShare": 0.29,
+          "averageInning": 4.9,
+          "averageGapDays": 5.6,
+          "topPitchTypes": [
+            "Sinker",
+            "Slider"
+          ]
+        },
+        "score": 113,
+        "scoreBand": "premium",
         "burstTag": "heater",
+        "contextLabels": [
+          "Slot 5 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 5 | carry | neutral bullpen | 0.71 HR/9 starter",
         "rationale": [
           "7 HR and 7.1 xHR on the season",
-          "4 HR since May 1 with 4 in the last week",
+          "4 HR since May 1 with 4 in the last 7 days and 4 in the last 10",
           "Chris Bassitt is allowing roughly 0.71 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 1 day ago",
+          "Home today | historical split 57% on this side",
+          "71% off starters | 29% off relievers | avg inning 4.9",
+          "Most recent damage has skewed toward Sinker / Slider",
+          "2 recent batting-leader appearances | 21.3 avg impact",
+          "Weather lane not stored yet",
+          "Slot 5 | carry | lineup priority 45.8 | bullpen vulnerability 0.4"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "James Wood is the cleanest likely bat here, driven by 2 recent homers, a 0.71 HR/9 starter matchup, and a live contact-quality signal."
+    "possible": [
+      {
+        "playerId": 695578,
+        "playerName": "James Wood",
+        "teamAbbrev": "WSH",
+        "teamName": "Nationals",
+        "gameTitle": "Orioles @ Nationals",
+        "opposingPitcher": "Chris Bassitt",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.71,
+        "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0.4,
+        "seasonHr": 12,
+        "seasonXHR": 13.3,
+        "xhrDiff": -1.3,
+        "baseScore": 92.58342894736842,
+        "lineupContext": {
+          "gameTitle": "Orioles @ Nationals",
+          "teamName": "Nationals",
+          "slot": 1,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 81.9,
+          "contactScore": 39.7,
+          "formScore": 78.1,
+          "splitScore": 68.4,
+          "matchupScore": 94,
+          "varianceScore": 85.1,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 12,
+          "splitHomeRuns": 9
+        },
+        "lineupPriority": 53.5,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 4,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 109,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.75,
+          "reliefShare": 0.25,
+          "earlyShare": 0.5,
+          "lateShare": 0.17,
+          "highPressureShare": 0,
+          "trailingShare": 0.5,
+          "averageInning": 3.7,
+          "averageGapDays": 4.1,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Slider"
+          ]
+        },
+        "score": 105.7,
+        "scoreBand": "premium",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 1 | carry",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 1 | carry | starter ambush | 0.71 HR/9 starter",
+        "rationale": [
+          "12 HR and 13.3 xHR on the season",
+          "2 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
+          "Chris Bassitt is allowing roughly 0.71 HR/9",
+          "Park HR index 100",
+          "Last HR came 4 days ago",
+          "Home today | historical split 67% on this side",
+          "75% off starters | 25% off relievers | avg inning 3.7",
+          "Most recent damage has skewed toward Four-Seam Fastball / Slider",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 1 | carry | lineup priority 53.5 | bullpen vulnerability 0.4"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "summary": "Daylen Lile is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans mixed timing, and today lines up as a neutral venue split matchup into a 0.71 HR/9 starter lane."
   },
   "Phillies @ Pirates": {
     "gameTitle": "Phillies @ Pirates",
@@ -250,54 +1032,100 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 1.38,
         "parkHrIndex": 80,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 1.4,
         "seasonHr": 20,
         "seasonXHR": 19.2,
         "xhrDiff": 0.8,
-        "baseScore": 78.73230769230769,
+        "baseScore": 145.91258461538462,
+        "lineupContext": {
+          "gameTitle": "Phillies @ Pirates",
+          "teamName": "Phillies",
+          "slot": 2,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 92,
+          "contactScore": 38.4,
+          "formScore": 92,
+          "splitScore": 66.7,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 14,
+          "seasonHomeRuns": 20,
+          "splitHomeRuns": 14
+        },
+        "lineupPriority": 75.8,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 35.4,
+          "totalBases": 9,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 38.5
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 9,
-        "homeRunsLast7Days": 8,
+        "homeRunsLast7Days": 7,
+        "homeRunsLast10Days": 9,
+        "daysSinceLastHr": 1,
         "noDoubterRate": 0.44,
         "avgExitVelocityOnHomers": 108.6,
-        "score": 121.7,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.75,
+          "reliefShare": 0.25,
+          "earlyShare": 0.5,
+          "lateShare": 0.25,
+          "highPressureShare": 0.08,
+          "trailingShare": 0.5,
+          "averageInning": 3.9,
+          "averageGapDays": 2.4,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 212.8,
         "scoreBand": "premium",
         "burstTag": "heater",
+        "contextLabels": [
+          "Slot 2 | carry",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 2 | carry | starter ambush | 1.38 HR/9 starter",
         "rationale": [
           "20 HR and 19.2 xHR on the season",
-          "9 HR since May 1 with 8 in the last week",
+          "9 HR since May 1 with 7 in the last 7 days and 9 in the last 10",
           "Bubba Chandler is allowing roughly 1.38 HR/9",
-          "Park HR index 80"
-        ]
+          "Park HR index 80",
+          "Last HR came 1 day ago",
+          "Road today | historical split 42% on this side",
+          "75% off starters | 25% off relievers | avg inning 3.9",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "1 recent batting-leader appearances | 35.4 avg impact",
+          "Weather lane not stored yet",
+          "Slot 2 | carry | lineup priority 75.8 | bullpen vulnerability 1.4"
+        ],
+        "avoidHrChase": false
       }
     ],
     "possible": [
-      {
-        "playerId": 664040,
-        "playerName": "Brandon Lowe",
-        "teamAbbrev": "PIT",
-        "teamName": "Pirates",
-        "gameTitle": "Phillies @ Pirates",
-        "opposingPitcher": "Cristopher Sánchez",
-        "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.49,
-        "parkHrIndex": 80,
-        "seasonHr": 12,
-        "seasonXHR": 11.8,
-        "xhrDiff": 0.2,
-        "baseScore": 44.790127041742295,
-        "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 2,
-        "noDoubterRate": 0.5,
-        "avgExitVelocityOnHomers": 108,
-        "score": 64.2,
-        "scoreBand": "thin",
-        "burstTag": "watch",
-        "rationale": [
-          "12 HR and 11.8 xHR on the season",
-          "4 HR since May 1 with 2 in the last week",
-          "Cristopher Sánchez is allowing roughly 0.49 HR/9",
-          "Park HR index 80"
-        ]
-      },
       {
         "playerId": 547180,
         "playerName": "Bryce Harper",
@@ -308,26 +1136,294 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 1.38,
         "parkHrIndex": 80,
-        "seasonHr": 10,
-        "seasonXHR": 10.5,
-        "xhrDiff": -0.5,
-        "baseScore": 46.5923076923077,
-        "recentHrSinceMay1": 4,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 1.4,
+        "seasonHr": 12,
+        "seasonXHR": 11.9,
+        "xhrDiff": 0.1,
+        "baseScore": 82.06488461538461,
+        "lineupContext": {
+          "gameTitle": "Phillies @ Pirates",
+          "teamName": "Phillies",
+          "slot": 3,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "powerScore": 81.6,
+          "contactScore": 69.3,
+          "formScore": 23.9,
+          "splitScore": 74.5,
+          "matchupScore": 73.3,
+          "varianceScore": 81,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 10,
+          "splitHomeRuns": 7
+        },
+        "lineupPriority": 34.2,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 15.85,
+          "totalBases": 8,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 20.7
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 1,
-        "noDoubterRate": 0.25,
-        "avgExitVelocityOnHomers": 102.5,
-        "score": 60.9,
-        "scoreBand": "thin",
-        "burstTag": "watch",
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.33,
+        "avgExitVelocityOnHomers": 104.2,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.5,
+          "lateShare": 0.33,
+          "highPressureShare": 0.08,
+          "trailingShare": 0.25,
+          "averageInning": 4.8,
+          "averageGapDays": 4.6,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Sweeper"
+          ]
+        },
+        "score": 105.5,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 3 | carry",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | carry | starter ambush | 1.38 HR/9 starter",
         "rationale": [
-          "10 HR and 10.5 xHR on the season",
-          "4 HR since May 1 with 1 in the last week",
+          "12 HR and 11.9 xHR on the season",
+          "6 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
           "Bubba Chandler is allowing roughly 1.38 HR/9",
-          "Park HR index 80"
-        ]
+          "Park HR index 80",
+          "Last HR came 0 days ago",
+          "Road today | historical split 50% on this side",
+          "67% off starters | 33% off relievers | avg inning 4.8",
+          "Most recent damage has skewed toward Four-Seam Fastball / Sweeper",
+          "1 recent batting-leader appearances | 15.8 avg impact",
+          "Weather lane not stored yet",
+          "Slot 3 | carry | lineup priority 34.2 | bullpen vulnerability 1.4"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 664040,
+        "playerName": "Brandon Lowe",
+        "teamAbbrev": "PIT",
+        "teamName": "Pirates",
+        "gameTitle": "Phillies @ Pirates",
+        "opposingPitcher": "Cristopher Sánchez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.49,
+        "parkHrIndex": 80,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0,
+        "seasonHr": 12,
+        "seasonXHR": 12.7,
+        "xhrDiff": -0.7,
+        "baseScore": 70.86847341197823,
+        "lineupContext": {
+          "gameTitle": "Phillies @ Pirates",
+          "teamName": "Pirates",
+          "slot": 7,
+          "primaryTag": "cold",
+          "tags": [
+            "cold"
+          ],
+          "powerScore": 89.9,
+          "contactScore": 45.9,
+          "formScore": 31.8,
+          "splitScore": 18,
+          "matchupScore": 18,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 12,
+          "splitHomeRuns": 3
+        },
+        "lineupPriority": 14,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 29.8,
+          "totalBases": 8,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 33.5
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 4,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 108,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.42,
+          "awayShare": 0.58,
+          "starterShare": 0.75,
+          "reliefShare": 0.25,
+          "earlyShare": 0.67,
+          "lateShare": 0.08,
+          "highPressureShare": 0.08,
+          "trailingShare": 0.25,
+          "averageInning": 3.2,
+          "averageGapDays": 6.3,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Changeup"
+          ]
+        },
+        "score": 86.4,
+        "scoreBand": "strong",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 7 | cold",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 7 | cold | starter ambush | 0.49 HR/9 starter",
+        "rationale": [
+          "12 HR and 12.7 xHR on the season",
+          "4 HR since May 1 with 2 in the last 7 days and 4 in the last 10",
+          "Cristopher Sánchez is allowing roughly 0.49 HR/9",
+          "Park HR index 80",
+          "Last HR came 1 day ago",
+          "Home today | historical split 42% on this side",
+          "75% off starters | 25% off relievers | avg inning 3.2",
+          "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
+          "1 recent batting-leader appearances | 29.8 avg impact",
+          "Weather lane not stored yet",
+          "Slot 7 | cold | lineup priority 14 | bullpen vulnerability 0"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 665833,
+        "playerName": "Oneil Cruz",
+        "teamAbbrev": "PIT",
+        "teamName": "Pirates",
+        "gameTitle": "Phillies @ Pirates",
+        "opposingPitcher": "Cristopher Sánchez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.49,
+        "parkHrIndex": 80,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0,
+        "seasonHr": 10,
+        "seasonXHR": 10.4,
+        "xhrDiff": -0.4,
+        "baseScore": 74.87287341197822,
+        "lineupContext": {
+          "gameTitle": "Phillies @ Pirates",
+          "teamName": "Pirates",
+          "slot": 1,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "whiff risk"
+          ],
+          "powerScore": 78.5,
+          "contactScore": 48.7,
+          "formScore": 74.2,
+          "splitScore": 88.6,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 10,
+          "splitHomeRuns": 4
+        },
+        "lineupPriority": 48.4,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 1,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 6,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 102,
+        "homeRunContext": {
+          "sampleSize": 10,
+          "homeShare": 0.3,
+          "awayShare": 0.7,
+          "starterShare": 0.6,
+          "reliefShare": 0.4,
+          "earlyShare": 0.2,
+          "lateShare": 0.2,
+          "highPressureShare": 0.2,
+          "trailingShare": 0.2,
+          "averageInning": 5.2,
+          "averageGapDays": 5,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Curveball"
+          ]
+        },
+        "score": 70.9,
+        "scoreBand": "live",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 1 | carry",
+          "better on the road",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 1 | carry | better on the road | 0.49 HR/9 starter",
+        "rationale": [
+          "10 HR and 10.4 xHR on the season",
+          "1 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Cristopher Sánchez is allowing roughly 0.49 HR/9",
+          "Park HR index 80",
+          "Last HR came 6 days ago",
+          "Home today | historical split 30% on this side",
+          "60% off starters | 40% off relievers | avg inning 5.2",
+          "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 1 | carry | lineup priority 48.4 | bullpen vulnerability 0"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Kyle Schwarber is the premium carry bat here, driven by 9 recent homers, a 1.38 HR/9 starter matchup, and elite carry quality."
+    "summary": "Kyle Schwarber is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 1.38 HR/9 starter lane."
   },
   "Marlins @ Rays": {
     "gameTitle": "Marlins @ Rays",
@@ -342,31 +1438,393 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.63,
         "parkHrIndex": 100,
-        "seasonHr": 11,
-        "seasonXHR": 10.3,
-        "xhrDiff": 0.7,
-        "baseScore": 42.86559440559441,
-        "recentHrSinceMay1": 3,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -3.7,
+        "seasonHr": 13,
+        "seasonXHR": 12.4,
+        "xhrDiff": 0.6,
+        "baseScore": 58.94067027972029,
+        "lineupContext": {
+          "gameTitle": "Marlins @ Rays",
+          "teamName": "Rays",
+          "slot": 2,
+          "primaryTag": "cold",
+          "tags": [
+            "cold"
+          ],
+          "powerScore": 75.7,
+          "contactScore": 59.9,
+          "formScore": 18,
+          "splitScore": 49.6,
+          "matchupScore": 29.4,
+          "varianceScore": 73.8,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 11,
+          "splitHomeRuns": 8
+        },
+        "lineupPriority": 19.3,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 1,
-        "noDoubterRate": 1,
-        "avgExitVelocityOnHomers": 110.7,
-        "score": 62.2,
-        "scoreBand": "thin",
-        "burstTag": "carry",
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 108.4,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.5,
+          "lateShare": 0.33,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.17,
+          "averageInning": 4.6,
+          "averageGapDays": 4.2,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Sinker"
+          ]
+        },
+        "score": 76.1,
+        "scoreBand": "live",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 2 | cold",
+          "neutral venue split",
+          "starter ambush",
+          "late lane tighter"
+        ],
+        "signalSummary": "Slot 2 | cold | starter ambush | 0.63 HR/9 starter",
         "rationale": [
-          "11 HR and 10.3 xHR on the season",
-          "3 HR since May 1 with 1 in the last week",
+          "13 HR and 12.4 xHR on the season",
+          "5 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
           "Sandy Alcantara is allowing roughly 0.63 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 0 days ago",
+          "Home today | historical split 58% on this side",
+          "67% off starters | 33% off relievers | avg inning 4.6",
+          "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 2 | cold | lineup priority 19.3 | bullpen vulnerability -3.7"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "possible": [],
-    "summary": "Junior Caminero is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+    "possible": [
+      {
+        "playerId": 666018,
+        "playerName": "Jonathan Aranda",
+        "teamAbbrev": "TB",
+        "teamName": "Rays",
+        "gameTitle": "Marlins @ Rays",
+        "opposingPitcher": "Sandy Alcantara",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.63,
+        "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -3.7,
+        "seasonHr": 8,
+        "seasonXHR": 8.2,
+        "xhrDiff": -0.2,
+        "baseScore": 66.87422027972029,
+        "lineupContext": {
+          "gameTitle": "Marlins @ Rays",
+          "teamName": "Rays",
+          "slot": 3,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 69.2,
+          "contactScore": 58.2,
+          "formScore": 92,
+          "splitScore": 70,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 8,
+          "splitHomeRuns": 7
+        },
+        "lineupPriority": 41.4,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 1,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 5,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 105,
+        "homeRunContext": {
+          "sampleSize": 8,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.75,
+          "reliefShare": 0.25,
+          "earlyShare": 0.13,
+          "lateShare": 0.25,
+          "highPressureShare": 0.38,
+          "trailingShare": 0.38,
+          "averageInning": 5.3,
+          "averageGapDays": 7.7,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Curveball"
+          ]
+        },
+        "score": 64.6,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 3 | carry",
+          "neutral venue split",
+          "close-game pop",
+          "late lane tighter"
+        ],
+        "signalSummary": "Slot 3 | carry | close-game pop | 0.63 HR/9 starter",
+        "rationale": [
+          "8 HR and 8.2 xHR on the season",
+          "1 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Sandy Alcantara is allowing roughly 0.63 HR/9",
+          "Park HR index 100",
+          "Last HR came 5 days ago",
+          "Home today | historical split 50% on this side",
+          "75% off starters | 25% off relievers | avg inning 5.3",
+          "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 3 | carry | lineup priority 41.4 | bullpen vulnerability -3.7"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 805300,
+        "playerName": "Jakob Marsee",
+        "teamAbbrev": "MIA",
+        "teamName": "Marlins",
+        "gameTitle": "Marlins @ Rays",
+        "opposingPitcher": "Nick Martinez",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.57,
+        "parkHrIndex": 100,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": -0.4,
+        "seasonHr": 3,
+        "seasonXHR": 3,
+        "xhrDiff": 0,
+        "baseScore": 47.593030508474584,
+        "lineupContext": {
+          "gameTitle": "Marlins @ Rays",
+          "teamName": "Marlins",
+          "slot": 6,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 25.2,
+          "contactScore": 36.3,
+          "formScore": 92,
+          "splitScore": 42.7,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 3,
+          "splitHomeRuns": 2
+        },
+        "lineupPriority": 24.7,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 16.95,
+          "totalBases": 11,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 22.1
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 100,
+        "homeRunContext": {
+          "sampleSize": 3,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.33,
+          "reliefShare": 0.67,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0.33,
+          "trailingShare": 0.67,
+          "averageInning": 5,
+          "averageGapDays": 12,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Slider"
+          ]
+        },
+        "score": 58.4,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 6 | carry",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 6 | carry | close-game pop | 0.57 HR/9 starter",
+        "rationale": [
+          "3 HR and 3 xHR on the season",
+          "2 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
+          "Nick Martinez is allowing roughly 0.57 HR/9",
+          "Park HR index 100",
+          "Last HR came 1 day ago",
+          "Road today | historical split 33% on this side",
+          "33% off starters | 67% off relievers | avg inning 5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Slider",
+          "1 recent batting-leader appearances | 16.9 avg impact",
+          "Weather lane not stored yet",
+          "Slot 6 | carry | lineup priority 24.7 | bullpen vulnerability -0.4"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "summary": "Junior Caminero is the cleanest likely bat here because the posted order still grades cold, the recent HR sample leans starter ambush, and today still profiles as a neutral venue split look."
   },
   "Reds @ Guardians": {
     "gameTitle": "Reds @ Guardians",
     "likely": [
+      {
+        "playerId": 668709,
+        "playerName": "JJ Bleday",
+        "teamAbbrev": "CIN",
+        "teamName": "Reds",
+        "gameTitle": "Reds @ Guardians",
+        "opposingPitcher": "Joey Cantillo",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 1,
+        "parkHrIndex": 94,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 1.4,
+        "seasonHr": 6,
+        "seasonXHR": 4.8,
+        "xhrDiff": 1.2,
+        "baseScore": 74.9222223946785,
+        "lineupContext": {
+          "gameTitle": "Reds @ Guardians",
+          "teamName": "Reds",
+          "slot": 5,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "powerScore": 92,
+          "contactScore": 64.1,
+          "formScore": 87.6,
+          "splitScore": 18,
+          "matchupScore": 84.4,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 1
+        },
+        "lineupPriority": 39.2,
+        "battingImpactContext": {
+          "recentAppearances": 2,
+          "hrGames": 1,
+          "averageImpactScore": 25.2,
+          "totalBases": 14,
+          "dates": [
+            "2026-05-15",
+            "2026-05-14"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 34
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.4,
+        "avgExitVelocityOnHomers": 103,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.33,
+          "lateShare": 0.17,
+          "highPressureShare": 0,
+          "trailingShare": 0.33,
+          "averageInning": 4.3,
+          "averageGapDays": 4.5,
+          "topPitchTypes": [
+            "Cutter",
+            "Slider"
+          ]
+        },
+        "score": 103.3,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 5 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 5 | carry | neutral bullpen | 1 HR/9 starter",
+        "rationale": [
+          "6 HR and 4.8 xHR on the season",
+          "5 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
+          "Joey Cantillo is allowing roughly 1 HR/9",
+          "Park HR index 94",
+          "Last HR came 2 days ago",
+          "Road today | historical split 50% on this side",
+          "67% off starters | 33% off relievers | avg inning 4.3",
+          "Most recent damage has skewed toward Cutter / Slider",
+          "2 recent batting-leader appearances | 25.2 avg impact",
+          "Weather lane not stored yet",
+          "Slot 5 | carry | lineup priority 39.2 | bullpen vulnerability 1.4"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "possible": [
       {
         "playerId": 682657,
         "playerName": "Angel Martínez",
@@ -377,27 +1835,294 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 1.79,
         "parkHrIndex": 94,
-        "seasonHr": 7,
-        "seasonXHR": 6.4,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 3.2,
+        "seasonHr": 9,
+        "seasonXHR": 8.4,
         "xhrDiff": 0.6,
-        "baseScore": 35.77655629139073,
-        "recentHrSinceMay1": 2,
+        "baseScore": 66.092890397351,
+        "lineupContext": {
+          "gameTitle": "Reds @ Guardians",
+          "teamName": "Guardians",
+          "slot": 7,
+          "primaryTag": "heater",
+          "tags": [
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 69.3,
+          "contactScore": 52.9,
+          "formScore": 92,
+          "splitScore": 59.9,
+          "matchupScore": 75.7,
+          "varianceScore": 64.8,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 7,
+          "splitHomeRuns": 5
+        },
+        "lineupPriority": 32.6,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
-        "noDoubterRate": 0,
-        "avgExitVelocityOnHomers": 103,
-        "score": 44.6,
-        "scoreBand": "thin",
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.25,
+        "avgExitVelocityOnHomers": 104.3,
+        "homeRunContext": {
+          "sampleSize": 9,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.67,
+          "lateShare": 0.33,
+          "highPressureShare": 0.11,
+          "trailingShare": 0,
+          "averageInning": 3.7,
+          "averageGapDays": 5.6,
+          "topPitchTypes": [
+            "Curveball",
+            "Slider"
+          ]
+        },
+        "score": 93.3,
+        "scoreBand": "strong",
         "burstTag": "watch",
+        "contextLabels": [
+          "Slot 7 | heater",
+          "neutral venue split",
+          "starter ambush",
+          "bullpen leak live"
+        ],
+        "signalSummary": "Slot 7 | heater | starter ambush | 1.79 HR/9 starter",
         "rationale": [
-          "7 HR and 6.4 xHR on the season",
-          "2 HR since May 1 with 2 in the last week",
+          "9 HR and 8.4 xHR on the season",
+          "4 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
           "Chris Paddack is allowing roughly 1.79 HR/9",
-          "Park HR index 94"
-        ]
+          "Park HR index 94",
+          "Last HR came 0 days ago",
+          "Home today | historical split 67% on this side",
+          "67% off starters | 33% off relievers | avg inning 3.7",
+          "Most recent damage has skewed toward Curveball / Slider",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 7 | heater | lineup priority 32.6 | bullpen vulnerability 3.2"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 680574,
+        "playerName": "Matt McLain",
+        "teamAbbrev": "CIN",
+        "teamName": "Reds",
+        "gameTitle": "Reds @ Guardians",
+        "opposingPitcher": "Joey Cantillo",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 1,
+        "parkHrIndex": 94,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 1.4,
+        "seasonHr": 5,
+        "seasonXHR": 4.1,
+        "xhrDiff": 0.9,
+        "baseScore": 61.15592239467849,
+        "lineupContext": {
+          "gameTitle": "Reds @ Guardians",
+          "teamName": "Reds",
+          "slot": 6,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 52.4,
+          "contactScore": 48.1,
+          "formScore": 92,
+          "splitScore": 92,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 5,
+          "splitHomeRuns": 2
+        },
+        "lineupPriority": 30.8,
+        "battingImpactContext": {
+          "recentAppearances": 2,
+          "hrGames": 2,
+          "averageImpactScore": 21.25,
+          "totalBases": 11,
+          "dates": [
+            "2026-05-15",
+            "2026-05-14"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 31.3
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 100.7,
+        "homeRunContext": {
+          "sampleSize": 5,
+          "homeShare": 0.6,
+          "awayShare": 0.4,
+          "starterShare": 0.6,
+          "reliefShare": 0.4,
+          "earlyShare": 0.2,
+          "lateShare": 0.4,
+          "highPressureShare": 0.2,
+          "trailingShare": 0.6,
+          "averageInning": 5.4,
+          "averageGapDays": 7,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Slider"
+          ]
+        },
+        "score": 78.8,
+        "scoreBand": "live",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 6 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 6 | carry | neutral bullpen | 1 HR/9 starter",
+        "rationale": [
+          "5 HR and 4.1 xHR on the season",
+          "3 HR since May 1 with 2 in the last 7 days and 3 in the last 10",
+          "Joey Cantillo is allowing roughly 1 HR/9",
+          "Park HR index 94",
+          "Last HR came 1 day ago",
+          "Road today | historical split 40% on this side",
+          "60% off starters | 40% off relievers | avg inning 5.4",
+          "Most recent damage has skewed toward Four-Seam Fastball / Slider",
+          "2 recent batting-leader appearances | 21.3 avg impact",
+          "Weather lane not stored yet",
+          "Slot 6 | carry | lineup priority 30.8 | bullpen vulnerability 1.4"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 668715,
+        "playerName": "Spencer Steer",
+        "teamAbbrev": "CIN",
+        "teamName": "Reds",
+        "gameTitle": "Reds @ Guardians",
+        "opposingPitcher": "Joey Cantillo",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 1,
+        "parkHrIndex": 94,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 1.4,
+        "seasonHr": 7,
+        "seasonXHR": 6.2,
+        "xhrDiff": 0.8,
+        "baseScore": 66.3758223946785,
+        "lineupContext": {
+          "gameTitle": "Reds @ Guardians",
+          "teamName": "Reds",
+          "slot": 4,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 75.6,
+          "contactScore": 60.7,
+          "formScore": 72.2,
+          "splitScore": 92,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 7,
+          "splitHomeRuns": 3
+        },
+        "lineupPriority": 40.1,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 0,
+          "averageImpactScore": 9.35,
+          "totalBases": 5,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 11.9
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 6,
+        "noDoubterRate": 0.5,
+        "avgExitVelocityOnHomers": 104,
+        "homeRunContext": {
+          "sampleSize": 7,
+          "homeShare": 0.57,
+          "awayShare": 0.43,
+          "starterShare": 0.57,
+          "reliefShare": 0.43,
+          "earlyShare": 0.57,
+          "lateShare": 0.14,
+          "highPressureShare": 0.14,
+          "trailingShare": 0.14,
+          "averageInning": 4,
+          "averageGapDays": 6.2,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Sinker"
+          ]
+        },
+        "score": 77.9,
+        "scoreBand": "live",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 4 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | carry | neutral bullpen | 1 HR/9 starter",
+        "rationale": [
+          "7 HR and 6.2 xHR on the season",
+          "2 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
+          "Joey Cantillo is allowing roughly 1 HR/9",
+          "Park HR index 94",
+          "Last HR came 6 days ago",
+          "Road today | historical split 43% on this side",
+          "57% off starters | 43% off relievers | avg inning 4",
+          "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
+          "1 recent batting-leader appearances | 9.3 avg impact",
+          "Weather lane not stored yet",
+          "Slot 4 | carry | lineup priority 40.1 | bullpen vulnerability 1.4"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "possible": [],
-    "summary": "Angel Martínez is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+    "summary": "JJ Bleday is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans mixed timing, and today lines up as a neutral venue split matchup into a 1 HR/9 starter lane."
   },
   "Rangers @ Astros": {
     "gameTitle": "Rangers @ Astros",
@@ -412,26 +2137,202 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 1.22,
         "parkHrIndex": 116,
-        "seasonHr": 14,
-        "seasonXHR": 15.7,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.1,
+        "seasonHr": 15,
+        "seasonXHR": 16.7,
         "xhrDiff": -1.7,
-        "baseScore": 70.09203619909502,
-        "recentHrSinceMay1": 2,
-        "homeRunsLast7Days": 2,
-        "noDoubterRate": 0.5,
-        "avgExitVelocityOnHomers": 113.5,
-        "score": 86.6,
-        "scoreBand": "strong",
+        "baseScore": 108.56939230769231,
+        "lineupContext": {
+          "gameTitle": "Rangers @ Astros",
+          "teamName": "Astros",
+          "slot": 3,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "powerScore": 92,
+          "contactScore": 76.1,
+          "formScore": 18,
+          "splitScore": 40.9,
+          "matchupScore": 81.7,
+          "varianceScore": 55.3,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 14,
+          "splitHomeRuns": 8
+        },
+        "lineupPriority": 36,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 22.7,
+          "totalBases": 7,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 26.2
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.33,
+        "avgExitVelocityOnHomers": 108.3,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.83,
+          "reliefShare": 0.17,
+          "earlyShare": 0.67,
+          "lateShare": 0.17,
+          "highPressureShare": 0.08,
+          "trailingShare": 0.42,
+          "averageInning": 3.7,
+          "averageGapDays": 3.7,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Curveball"
+          ]
+        },
+        "score": 134.3,
+        "scoreBand": "premium",
         "burstTag": "watch",
+        "contextLabels": [
+          "Slot 3 | carry",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | carry | starter ambush | 1.22 HR/9 starter",
         "rationale": [
-          "14 HR and 15.7 xHR on the season",
-          "2 HR since May 1 with 2 in the last week",
+          "15 HR and 16.7 xHR on the season",
+          "3 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
           "Jacob deGrom is allowing roughly 1.22 HR/9",
-          "Park HR index 116"
-        ]
+          "Park HR index 116",
+          "Last HR came 0 days ago",
+          "Home today | historical split 50% on this side",
+          "83% off starters | 17% off relievers | avg inning 3.7",
+          "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
+          "1 recent batting-leader appearances | 22.7 avg impact",
+          "Weather lane not stored yet",
+          "Slot 3 | carry | lineup priority 36 | bullpen vulnerability -0.1"
+        ],
+        "avoidHrChase": false
       }
     ],
     "possible": [
+      {
+        "playerId": 669394,
+        "playerName": "Jake Burger",
+        "teamAbbrev": "TEX",
+        "teamName": "Rangers",
+        "gameTitle": "Rangers @ Astros",
+        "opposingPitcher": "Kai-Wei Teng",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.04,
+        "parkHrIndex": 116,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 5.4,
+        "seasonHr": 8,
+        "seasonXHR": 8,
+        "xhrDiff": 0,
+        "baseScore": 69.94253846153846,
+        "lineupContext": {
+          "gameTitle": "Rangers @ Astros",
+          "teamName": "Rangers",
+          "slot": 7,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "powerScore": 54.8,
+          "contactScore": 41.7,
+          "formScore": 92,
+          "splitScore": 53,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 7,
+          "splitHomeRuns": 6
+        },
+        "lineupPriority": 25.8,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 2,
+          "averageImpactScore": 21.85,
+          "totalBases": 11,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 26.8
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.33,
+        "avgExitVelocityOnHomers": 101,
+        "homeRunContext": {
+          "sampleSize": 8,
+          "homeShare": 0.13,
+          "awayShare": 0.88,
+          "starterShare": 0.75,
+          "reliefShare": 0.25,
+          "earlyShare": 0.38,
+          "lateShare": 0.25,
+          "highPressureShare": 0,
+          "trailingShare": 0.38,
+          "averageInning": 4.8,
+          "averageGapDays": 8.7,
+          "topPitchTypes": [
+            "Sinker",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 82.8,
+        "scoreBand": "strong",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 7 | carry",
+          "road-heavy carry",
+          "mixed timing",
+          "bullpen leak live"
+        ],
+        "signalSummary": "Slot 7 | carry | road-heavy carry | 1.04 HR/9 starter",
+        "rationale": [
+          "8 HR and 8 xHR on the season",
+          "3 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Kai-Wei Teng is allowing roughly 1.04 HR/9",
+          "Park HR index 116",
+          "Last HR came 0 days ago",
+          "Road today | historical split 88% on this side",
+          "75% off starters | 25% off relievers | avg inning 4.8",
+          "Most recent damage has skewed toward Sinker / Four-Seam Fastball",
+          "1 recent batting-leader appearances | 21.9 avg impact",
+          "Weather lane not stored yet",
+          "Slot 7 | carry | lineup priority 25.8 | bullpen vulnerability 5.4"
+        ],
+        "avoidHrChase": false
+      },
       {
         "playerId": 572233,
         "playerName": "Christian Walker",
@@ -442,60 +2343,186 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 1.22,
         "parkHrIndex": 116,
-        "seasonHr": 10,
-        "seasonXHR": 10.6,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.1,
+        "seasonHr": 11,
+        "seasonXHR": 11.6,
         "xhrDiff": -0.6,
-        "baseScore": 50.23203619909502,
-        "recentHrSinceMay1": 3,
+        "baseScore": 61.93334230769231,
+        "lineupContext": {
+          "gameTitle": "Rangers @ Astros",
+          "teamName": "Astros",
+          "slot": 4,
+          "primaryTag": "split edge",
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "powerScore": 76.7,
+          "contactScore": 60.7,
+          "formScore": 18,
+          "splitScore": 58.2,
+          "matchupScore": 19.8,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 10,
+          "splitHomeRuns": 8
+        },
+        "lineupPriority": 17.9,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
-        "noDoubterRate": 0.67,
-        "avgExitVelocityOnHomers": 104,
-        "score": 64.3,
-        "scoreBand": "thin",
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 105.3,
+        "homeRunContext": {
+          "sampleSize": 11,
+          "homeShare": 0.55,
+          "awayShare": 0.45,
+          "starterShare": 0.73,
+          "reliefShare": 0.27,
+          "earlyShare": 0.55,
+          "lateShare": 0.18,
+          "highPressureShare": 0.18,
+          "trailingShare": 0.36,
+          "averageInning": 3.8,
+          "averageGapDays": 4.2,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Slider"
+          ]
+        },
+        "score": 78.1,
+        "scoreBand": "live",
         "burstTag": "carry",
+        "contextLabels": [
+          "Slot 4 | split edge",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | split edge | starter ambush | 1.22 HR/9 starter",
         "rationale": [
-          "10 HR and 10.6 xHR on the season",
-          "3 HR since May 1 with 1 in the last week",
+          "11 HR and 11.6 xHR on the season",
+          "4 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
           "Jacob deGrom is allowing roughly 1.22 HR/9",
-          "Park HR index 116"
-        ]
+          "Park HR index 116",
+          "Last HR came 0 days ago",
+          "Home today | historical split 55% on this side",
+          "73% off starters | 27% off relievers | avg inning 3.8",
+          "Most recent damage has skewed toward Four-Seam Fastball / Slider",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 4 | split edge | lineup priority 17.9 | bullpen vulnerability -0.1"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 669699,
+        "playerName": "Braden Shewmake",
+        "teamAbbrev": "HOU",
+        "teamName": "Astros",
+        "gameTitle": "Rangers @ Astros",
+        "opposingPitcher": "Jacob deGrom",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.22,
+        "parkHrIndex": 116,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.1,
+        "seasonHr": 3,
+        "seasonXHR": 2,
+        "xhrDiff": 1,
+        "baseScore": 49.23709230769231,
+        "lineupContext": {
+          "gameTitle": "Rangers @ Astros",
+          "teamName": "Astros",
+          "slot": 5,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "split edge",
+            "traffic",
+            "cold"
+          ],
+          "powerScore": 92,
+          "contactScore": 84.1,
+          "formScore": 18,
+          "splitScore": 81.8,
+          "matchupScore": 88.9,
+          "varianceScore": 62,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 3,
+          "splitHomeRuns": 3
+        },
+        "lineupPriority": 35.6,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 2,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 7,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 101.5,
+        "homeRunContext": {
+          "sampleSize": 3,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0,
+          "trailingShare": 0.33,
+          "averageInning": 5,
+          "averageGapDays": 7.5,
+          "topPitchTypes": [
+            "Changeup",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 57.2,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 5 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 5 | carry | neutral bullpen | 1.22 HR/9 starter",
+        "rationale": [
+          "3 HR and 2 xHR on the season",
+          "2 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Jacob deGrom is allowing roughly 1.22 HR/9",
+          "Park HR index 116",
+          "Last HR came 7 days ago",
+          "Home today | historical split 67% on this side",
+          "67% off starters | 33% off relievers | avg inning 5",
+          "Most recent damage has skewed toward Changeup / Four-Seam Fastball",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 5 | carry | lineup priority 35.6 | bullpen vulnerability -0.1"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Yordan Alvarez is the cleanest likely bat here, driven by 2 recent homers, a 1.22 HR/9 starter matchup, and a strong contact-quality signal."
+    "summary": "Yordan Alvarez is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 1.22 HR/9 starter lane."
   },
   "Cubs @ White Sox": {
     "gameTitle": "Cubs @ White Sox",
     "likely": [
-      {
-        "playerId": 808959,
-        "playerName": "Munetaka Murakami",
-        "teamAbbrev": "CWS",
-        "teamName": "White Sox",
-        "gameTitle": "Cubs @ White Sox",
-        "opposingPitcher": "Jameson Taillon",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 2.19,
-        "parkHrIndex": 95,
-        "seasonHr": 15,
-        "seasonXHR": 14.3,
-        "xhrDiff": 0.7,
-        "baseScore": 67.99185840707965,
-        "recentHrSinceMay1": 3,
-        "homeRunsLast7Days": 1,
-        "noDoubterRate": 0.33,
-        "avgExitVelocityOnHomers": 108.7,
-        "score": 82.3,
-        "scoreBand": "strong",
-        "burstTag": "watch",
-        "rationale": [
-          "15 HR and 14.3 xHR on the season",
-          "3 HR since May 1 with 1 in the last week",
-          "Jameson Taillon is allowing roughly 2.19 HR/9",
-          "Park HR index 95"
-        ]
-      }
-    ],
-    "possible": [
       {
         "playerId": 695657,
         "playerName": "Colson Montgomery",
@@ -506,24 +2533,101 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 2.19,
         "parkHrIndex": 95,
-        "seasonHr": 12,
-        "seasonXHR": 11.1,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 13,
+        "seasonXHR": 12.1,
         "xhrDiff": 0.9,
-        "baseScore": 56.25185840707964,
-        "recentHrSinceMay1": 4,
+        "baseScore": 110.76590530973453,
+        "lineupContext": {
+          "gameTitle": "Cubs @ White Sox",
+          "teamName": "White Sox",
+          "slot": 4,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 85.4,
+          "contactScore": 41.6,
+          "formScore": 92,
+          "splitScore": 46.6,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 12,
+          "splitHomeRuns": 8
+        },
+        "lineupPriority": 50.5,
+        "battingImpactContext": {
+          "recentAppearances": 2,
+          "hrGames": 2,
+          "averageImpactScore": 18.75,
+          "totalBases": 11,
+          "dates": [
+            "2026-05-15",
+            "2026-05-14"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 28.8
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 3,
-        "noDoubterRate": 0.25,
-        "avgExitVelocityOnHomers": 103.3,
-        "score": 73.8,
-        "scoreBand": "live",
-        "burstTag": "watch",
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.4,
+        "avgExitVelocityOnHomers": 105,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.83,
+          "reliefShare": 0.17,
+          "earlyShare": 0.5,
+          "lateShare": 0.08,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.25,
+          "averageInning": 3.6,
+          "averageGapDays": 3.8,
+          "topPitchTypes": [
+            "Cutter",
+            "Changeup"
+          ]
+        },
+        "score": 156.1,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 4 | carry",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | carry | starter ambush | 2.19 HR/9 starter",
         "rationale": [
-          "12 HR and 11.1 xHR on the season",
-          "4 HR since May 1 with 3 in the last week",
+          "13 HR and 12.1 xHR on the season",
+          "5 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
           "Jameson Taillon is allowing roughly 2.19 HR/9",
-          "Park HR index 95"
-        ]
-      },
+          "Park HR index 95",
+          "Last HR came 0 days ago",
+          "Home today | historical split 50% on this side",
+          "83% off starters | 17% off relievers | avg inning 3.6",
+          "Most recent damage has skewed toward Cutter / Changeup",
+          "2 recent batting-leader appearances | 18.8 avg impact",
+          "Weather lane not stored yet",
+          "Slot 4 | carry | lineup priority 50.5 | bullpen vulnerability -0.6"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "possible": [
       {
         "playerId": 678246,
         "playerName": "Miguel Vargas",
@@ -534,23 +2638,187 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 2.19,
         "parkHrIndex": 95,
-        "seasonHr": 10,
-        "seasonXHR": 8.7,
-        "xhrDiff": 1.3,
-        "baseScore": 47.57185840707964,
-        "recentHrSinceMay1": 4,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 11,
+        "seasonXHR": 10.2,
+        "xhrDiff": 0.8,
+        "baseScore": 91.69225530973452,
+        "lineupContext": {
+          "gameTitle": "Cubs @ White Sox",
+          "teamName": "White Sox",
+          "slot": 3,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater"
+          ],
+          "powerScore": 64.7,
+          "contactScore": 55.1,
+          "formScore": 92,
+          "splitScore": 18,
+          "matchupScore": 93.8,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 10,
+          "splitHomeRuns": 4
+        },
+        "lineupPriority": 38.1,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 2,
+          "averageImpactScore": 17.7,
+          "totalBases": 10,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 24.4
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 3,
-        "noDoubterRate": 0.5,
-        "avgExitVelocityOnHomers": 105.8,
-        "score": 67.4,
-        "scoreBand": "thin",
-        "burstTag": "watch",
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 106.2,
+        "homeRunContext": {
+          "sampleSize": 11,
+          "homeShare": 0.55,
+          "awayShare": 0.45,
+          "starterShare": 0.73,
+          "reliefShare": 0.27,
+          "earlyShare": 0.55,
+          "lateShare": 0.09,
+          "highPressureShare": 0.18,
+          "trailingShare": 0.18,
+          "averageInning": 3.6,
+          "averageGapDays": 5.2,
+          "topPitchTypes": [
+            "Sinker",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 139.2,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 3 | carry",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | carry | starter ambush | 2.19 HR/9 starter",
         "rationale": [
-          "10 HR and 8.7 xHR on the season",
-          "4 HR since May 1 with 3 in the last week",
+          "11 HR and 10.2 xHR on the season",
+          "5 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
           "Jameson Taillon is allowing roughly 2.19 HR/9",
-          "Park HR index 95"
-        ]
+          "Park HR index 95",
+          "Last HR came 0 days ago",
+          "Home today | historical split 55% on this side",
+          "73% off starters | 27% off relievers | avg inning 3.6",
+          "Most recent damage has skewed toward Sinker / Four-Seam Fastball",
+          "1 recent batting-leader appearances | 17.7 avg impact",
+          "Weather lane not stored yet",
+          "Slot 3 | carry | lineup priority 38.1 | bullpen vulnerability -0.6"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 808959,
+        "playerName": "Munetaka Murakami",
+        "teamAbbrev": "CWS",
+        "teamName": "White Sox",
+        "gameTitle": "Cubs @ White Sox",
+        "opposingPitcher": "Jameson Taillon",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 2.19,
+        "parkHrIndex": 95,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 17,
+        "seasonXHR": 15.6,
+        "xhrDiff": 1.4,
+        "baseScore": 86.8421053097345,
+        "lineupContext": {
+          "gameTitle": "Cubs @ White Sox",
+          "teamName": "White Sox",
+          "slot": 2,
+          "primaryTag": "split edge",
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "powerScore": 92,
+          "contactScore": 33.4,
+          "formScore": 18,
+          "splitScore": 54.9,
+          "matchupScore": 18.6,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 0,
+          "seasonHomeRuns": 15,
+          "splitHomeRuns": 11
+        },
+        "lineupPriority": 26.7,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 0,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.4,
+        "avgExitVelocityOnHomers": 108,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.42,
+          "awayShare": 0.58,
+          "starterShare": 0.58,
+          "reliefShare": 0.42,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.25,
+          "averageInning": 4.5,
+          "averageGapDays": 2.9,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Changeup"
+          ]
+        },
+        "score": 103.2,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 2 | split edge",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 2 | split edge | neutral bullpen | 2.19 HR/9 starter",
+        "rationale": [
+          "17 HR and 15.6 xHR on the season",
+          "5 HR since May 1 with 0 in the last 7 days and 1 in the last 10",
+          "Jameson Taillon is allowing roughly 2.19 HR/9",
+          "Park HR index 95",
+          "Last HR came 0 days ago",
+          "Home today | historical split 42% on this side",
+          "58% off starters | 42% off relievers | avg inning 4.5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 2 | split edge | lineup priority 26.7 | bullpen vulnerability -0.6"
+        ],
+        "avoidHrChase": false
       },
       {
         "playerId": 664023,
@@ -562,26 +2830,80 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.36,
         "parkHrIndex": 95,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 3.5,
         "seasonHr": 10,
         "seasonXHR": 11.3,
         "xhrDiff": -1.3,
-        "baseScore": 44.900000000000006,
+        "baseScore": 49.34800000000001,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 18.3,
+          "totalBases": 5,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 21.9
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 2,
         "noDoubterRate": 0.67,
         "avgExitVelocityOnHomers": 108,
-        "score": 60.9,
+        "homeRunContext": {
+          "sampleSize": 10,
+          "homeShare": 0.8,
+          "awayShare": 0.2,
+          "starterShare": 0.6,
+          "reliefShare": 0.4,
+          "earlyShare": 0.4,
+          "lateShare": 0.3,
+          "highPressureShare": 0.2,
+          "trailingShare": 0.3,
+          "averageInning": 4.6,
+          "averageGapDays": 5.2,
+          "topPitchTypes": [
+            "Slider",
+            "Cutter"
+          ]
+        },
+        "score": 68.1,
         "scoreBand": "thin",
         "burstTag": "carry",
+        "contextLabels": [
+          "Lineup pending",
+          "better at home",
+          "mixed timing",
+          "bullpen leak live"
+        ],
+        "signalSummary": "Lineup pending | better at home | 0.36 HR/9 starter",
         "rationale": [
           "10 HR and 11.3 xHR on the season",
-          "3 HR since May 1 with 1 in the last week",
+          "3 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
           "Davis Martin is allowing roughly 0.36 HR/9",
-          "Park HR index 95"
-        ]
+          "Park HR index 95",
+          "Last HR came 2 days ago",
+          "Road today | historical split 20% on this side",
+          "60% off starters | 40% off relievers | avg inning 4.6",
+          "Most recent damage has skewed toward Slider / Cutter",
+          "1 recent batting-leader appearances | 18.3 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Munetaka Murakami is the cleanest likely bat here, driven by 3 recent homers, a 2.19 HR/9 starter matchup, and a strong contact-quality signal."
+    "summary": "Colson Montgomery is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 2.19 HR/9 starter lane."
   },
   "Brewers @ Twins": {
     "gameTitle": "Brewers @ Twins",
@@ -596,31 +2918,383 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.69,
         "parkHrIndex": 98,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -1.9,
         "seasonHr": 15,
         "seasonXHR": 14.7,
         "xhrDiff": 0.3,
-        "baseScore": 59.14615384615384,
+        "baseScore": 66.14269230769231,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 29.1,
+          "totalBases": 8,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 31.8
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 7,
-        "homeRunsLast7Days": 4,
+        "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 4,
+        "daysSinceLastHr": 3,
         "noDoubterRate": 0.57,
         "avgExitVelocityOnHomers": 102.6,
-        "score": 88.6,
-        "scoreBand": "strong",
-        "burstTag": "heater",
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.83,
+          "reliefShare": 0.17,
+          "earlyShare": 0.42,
+          "lateShare": 0.17,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.5,
+          "averageInning": 4.3,
+          "averageGapDays": 2.2,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Slider"
+          ]
+        },
+        "score": 100.1,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Lineup pending | neutral bullpen | 0.69 HR/9 starter",
         "rationale": [
           "15 HR and 14.7 xHR on the season",
-          "7 HR since May 1 with 4 in the last week",
+          "7 HR since May 1 with 3 in the last 7 days and 4 in the last 10",
           "Logan Henderson is allowing roughly 0.69 HR/9",
-          "Park HR index 98"
-        ]
+          "Park HR index 98",
+          "Last HR came 3 days ago",
+          "Home today | historical split 58% on this side",
+          "83% off starters | 17% off relievers | avg inning 4.3",
+          "Most recent damage has skewed toward Four-Seam Fastball / Slider",
+          "1 recent batting-leader appearances | 29.1 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "possible": [],
-    "summary": "Byron Buxton is the cleanest likely bat here, driven by 7 recent homers, a 0.69 HR/9 starter matchup, and a strong contact-quality signal."
+    "possible": [
+      {
+        "playerId": 680777,
+        "playerName": "Ryan Jeffers",
+        "teamAbbrev": "MIN",
+        "teamName": "Twins",
+        "gameTitle": "Brewers @ Twins",
+        "opposingPitcher": "Logan Henderson",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.69,
+        "parkHrIndex": 98,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -1.9,
+        "seasonHr": 7,
+        "seasonXHR": 7,
+        "xhrDiff": 0,
+        "baseScore": 50.9573423076923,
+        "lineupContext": {
+          "gameTitle": "Brewers @ Twins",
+          "teamName": "Twins",
+          "slot": 3,
+          "primaryTag": "split edge",
+          "tags": [
+            "split edge",
+            "traffic"
+          ],
+          "powerScore": 77.1,
+          "contactScore": 64.3,
+          "formScore": 43.4,
+          "splitScore": 68.7,
+          "matchupScore": 65.1,
+          "varianceScore": 52.9,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 5
+        },
+        "lineupPriority": 31.9,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 106,
+        "homeRunContext": {
+          "sampleSize": 7,
+          "homeShare": 0.57,
+          "awayShare": 0.43,
+          "starterShare": 0.57,
+          "reliefShare": 0.43,
+          "earlyShare": 0.14,
+          "lateShare": 0.14,
+          "highPressureShare": 0.14,
+          "trailingShare": 0.43,
+          "averageInning": 4.9,
+          "averageGapDays": 6.2,
+          "topPitchTypes": [
+            "Sinker",
+            "Sweeper"
+          ]
+        },
+        "score": 66,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 3 | split edge",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | split edge | neutral bullpen | 0.69 HR/9 starter",
+        "rationale": [
+          "7 HR and 7 xHR on the season",
+          "3 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
+          "Logan Henderson is allowing roughly 0.69 HR/9",
+          "Park HR index 98",
+          "Last HR came 0 days ago",
+          "Home today | historical split 57% on this side",
+          "57% off starters | 43% off relievers | avg inning 4.9",
+          "Most recent damage has skewed toward Sinker / Sweeper",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 3 | split edge | lineup priority 31.9 | bullpen vulnerability -1.9"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 665019,
+        "playerName": "Kody Clemens",
+        "teamAbbrev": "MIN",
+        "teamName": "Twins",
+        "gameTitle": "Brewers @ Twins",
+        "opposingPitcher": "Logan Henderson",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.69,
+        "parkHrIndex": 98,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -1.9,
+        "seasonHr": 4,
+        "seasonXHR": 4.4,
+        "xhrDiff": -0.4,
+        "baseScore": 49.833792307692306,
+        "lineupContext": {
+          "gameTitle": "Brewers @ Twins",
+          "teamName": "Twins",
+          "slot": 6,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 49.5,
+          "contactScore": 37.5,
+          "formScore": 92,
+          "splitScore": 34.6,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 4,
+          "splitHomeRuns": 3
+        },
+        "lineupPriority": 21,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 15.35,
+          "totalBases": 10,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 19.5
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 1,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 3,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 104,
+        "homeRunContext": {
+          "sampleSize": 4,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.5,
+          "lateShare": 0.5,
+          "highPressureShare": 0.25,
+          "trailingShare": 0.25,
+          "averageInning": 5.8,
+          "averageGapDays": 13.7,
+          "topPitchTypes": [
+            "Slider",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 54.5,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 6 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 6 | carry | neutral bullpen | 0.69 HR/9 starter",
+        "rationale": [
+          "4 HR and 4.4 xHR on the season",
+          "1 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Logan Henderson is allowing roughly 0.69 HR/9",
+          "Park HR index 98",
+          "Last HR came 3 days ago",
+          "Home today | historical split 50% on this side",
+          "50% off starters | 50% off relievers | avg inning 5.8",
+          "Most recent damage has skewed toward Slider / Four-Seam Fastball",
+          "1 recent batting-leader appearances | 15.3 avg impact",
+          "Weather lane not stored yet",
+          "Slot 6 | carry | lineup priority 21 | bullpen vulnerability -1.9"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "summary": "Byron Buxton is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans mixed timing, and today lines up as a neutral venue split matchup into a 0.69 HR/9 starter lane."
   },
   "Padres @ Mariners": {
     "gameTitle": "Padres @ Mariners",
     "likely": [
+      {
+        "playerId": 657757,
+        "playerName": "Gavin Sheets",
+        "teamAbbrev": "SD",
+        "teamName": "Padres",
+        "gameTitle": "Padres @ Mariners",
+        "opposingPitcher": "Logan Gilbert",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.44,
+        "parkHrIndex": 100,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 0.5,
+        "seasonHr": 9,
+        "seasonXHR": 8.4,
+        "xhrDiff": 0.6,
+        "baseScore": 84.40500000000002,
+        "lineupContext": {
+          "gameTitle": "Padres @ Mariners",
+          "teamName": "Padres",
+          "slot": 4,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 67.4,
+          "contactScore": 50.4,
+          "formScore": 89.5,
+          "splitScore": 61.5,
+          "matchupScore": 94,
+          "varianceScore": 84.5,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 6
+        },
+        "lineupPriority": 36.6,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 2,
+          "averageImpactScore": 27.9,
+          "totalBases": 15,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 32.5
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 102.2,
+        "homeRunContext": {
+          "sampleSize": 9,
+          "homeShare": 0.33,
+          "awayShare": 0.67,
+          "starterShare": 0.56,
+          "reliefShare": 0.44,
+          "earlyShare": 0.22,
+          "lateShare": 0.44,
+          "highPressureShare": 0.44,
+          "trailingShare": 0.22,
+          "averageInning": 5.9,
+          "averageGapDays": 6.2,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 119.7,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 4 | carry",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | carry | close-game pop | 1.44 HR/9 starter",
+        "rationale": [
+          "9 HR and 8.4 xHR on the season",
+          "5 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
+          "Logan Gilbert is allowing roughly 1.44 HR/9",
+          "Park HR index 100",
+          "Last HR came 0 days ago",
+          "Road today | historical split 67% on this side",
+          "56% off starters | 44% off relievers | avg inning 5.9",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "1 recent batting-leader appearances | 27.9 avg impact",
+          "Weather lane not stored yet",
+          "Slot 4 | carry | lineup priority 36.6 | bullpen vulnerability 0.5"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "possible": [
       {
         "playerId": 670042,
         "playerName": "Luke Raley",
@@ -631,90 +3305,196 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.75,
         "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -1.6,
         "seasonHr": 10,
         "seasonXHR": 7.4,
         "xhrDiff": 2.6,
-        "baseScore": 33.91545706371191,
-        "recentHrSinceMay1": 5,
-        "homeRunsLast7Days": 4,
-        "noDoubterRate": 0,
-        "avgExitVelocityOnHomers": 105.2,
-        "score": 54.9,
-        "scoreBand": "thin",
-        "burstTag": "heater",
-        "rationale": [
-          "10 HR and 7.4 xHR on the season",
-          "5 HR since May 1 with 4 in the last week",
-          "Walker Buehler is allowing roughly 0.75 HR/9",
-          "Park HR index 100"
-        ]
-      }
-    ],
-    "possible": [
-      {
-        "playerId": 677594,
-        "playerName": "Julio Rodríguez",
-        "teamAbbrev": "SEA",
-        "teamName": "Mariners",
-        "gameTitle": "Padres @ Mariners",
-        "opposingPitcher": "Walker Buehler",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.75,
-        "parkHrIndex": 100,
-        "seasonHr": 7,
-        "seasonXHR": 6.9,
-        "xhrDiff": 0.1,
-        "baseScore": 30.81545706371191,
+        "baseScore": 85.9094725761773,
+        "lineupContext": {
+          "gameTitle": "Padres @ Mariners",
+          "teamName": "Mariners",
+          "slot": 5,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge"
+          ],
+          "powerScore": 92,
+          "contactScore": 37.7,
+          "formScore": 92,
+          "splitScore": 54.6,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 10,
+          "splitHomeRuns": 10
+        },
+        "lineupPriority": 50,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 2,
+          "averageImpactScore": 18.6,
+          "totalBases": 10,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 24
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
-        "noDoubterRate": 0.6,
-        "avgExitVelocityOnHomers": 107,
-        "score": 53.1,
-        "scoreBand": "thin",
+        "homeRunsLast10Days": 4,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 105.2,
+        "homeRunContext": {
+          "sampleSize": 10,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.6,
+          "reliefShare": 0.4,
+          "earlyShare": 0.2,
+          "lateShare": 0.2,
+          "highPressureShare": 0.4,
+          "trailingShare": 0.3,
+          "averageInning": 5.5,
+          "averageGapDays": 6.1,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 105.4,
+        "scoreBand": "premium",
         "burstTag": "active",
+        "contextLabels": [
+          "Slot 5 | carry",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 5 | carry | close-game pop | 0.75 HR/9 starter",
         "rationale": [
-          "7 HR and 6.9 xHR on the season",
-          "5 HR since May 1 with 2 in the last week",
+          "10 HR and 7.4 xHR on the season",
+          "5 HR since May 1 with 2 in the last 7 days and 4 in the last 10",
           "Walker Buehler is allowing roughly 0.75 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 2 days ago",
+          "Home today | historical split 50% on this side",
+          "60% off starters | 40% off relievers | avg inning 5.5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "1 recent batting-leader appearances | 18.6 avg impact",
+          "Weather lane not stored yet",
+          "Slot 5 | carry | lineup priority 50 | bullpen vulnerability -1.6"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 609280,
+        "playerName": "Miguel Andujar",
+        "teamAbbrev": "SD",
+        "teamName": "Padres",
+        "gameTitle": "Padres @ Mariners",
+        "opposingPitcher": "Logan Gilbert",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.44,
+        "parkHrIndex": 100,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 0.5,
+        "seasonHr": 4,
+        "seasonXHR": 5,
+        "xhrDiff": -1,
+        "baseScore": 46.65965,
+        "lineupContext": {
+          "gameTitle": "Padres @ Mariners",
+          "teamName": "Padres",
+          "slot": 6,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "traffic"
+          ],
+          "powerScore": 53.1,
+          "contactScore": 67.8,
+          "formScore": 90.9,
+          "splitScore": 55,
+          "matchupScore": 79.9,
+          "varianceScore": 57.8,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 3,
+          "splitHomeRuns": 2
+        },
+        "lineupPriority": 20.8,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.67,
+        "avgExitVelocityOnHomers": 101.3,
+        "homeRunContext": {
+          "sampleSize": 4,
+          "homeShare": 0.75,
+          "awayShare": 0.25,
+          "starterShare": 1,
+          "reliefShare": 0,
+          "earlyShare": 0.25,
+          "lateShare": 0,
+          "highPressureShare": 0,
+          "trailingShare": 0.75,
+          "averageInning": 4,
+          "averageGapDays": 6.3,
+          "topPitchTypes": [
+            "Splitter",
+            "Curveball"
+          ]
+        },
+        "score": 69.1,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 6 | carry",
+          "better at home",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 6 | carry | better at home | 1.44 HR/9 starter",
+        "rationale": [
+          "4 HR and 5 xHR on the season",
+          "3 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Logan Gilbert is allowing roughly 1.44 HR/9",
+          "Park HR index 100",
+          "Last HR came 0 days ago",
+          "Road today | historical split 25% on this side",
+          "100% off starters | 0% off relievers | avg inning 4",
+          "Most recent damage has skewed toward Splitter / Curveball",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 6 | carry | lineup priority 20.8 | bullpen vulnerability 0.5"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Luke Raley is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+    "summary": "Gavin Sheets is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans close-game pop, and today lines up as a neutral venue split matchup into a 1.44 HR/9 starter lane."
   },
   "Red Sox @ Braves": {
     "gameTitle": "Red Sox @ Braves",
     "likely": [
-      {
-        "playerId": 621566,
-        "playerName": "Matt Olson",
-        "teamAbbrev": "ATL",
-        "teamName": "Braves",
-        "gameTitle": "Red Sox @ Braves",
-        "opposingPitcher": "Payton Tolle",
-        "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.81,
-        "parkHrIndex": 95,
-        "seasonHr": 14,
-        "seasonXHR": 16.1,
-        "xhrDiff": -2.1,
-        "baseScore": 66.53567567567568,
-        "recentHrSinceMay1": 5,
-        "homeRunsLast7Days": 1,
-        "noDoubterRate": 0.6,
-        "avgExitVelocityOnHomers": 107.4,
-        "score": 87.4,
-        "scoreBand": "strong",
-        "burstTag": "active",
-        "rationale": [
-          "14 HR and 16.1 xHR on the season",
-          "5 HR since May 1 with 1 in the last week",
-          "Payton Tolle is allowing roughly 0.81 HR/9",
-          "Park HR index 95"
-        ]
-      }
-    ],
-    "possible": [
       {
         "playerId": 686948,
         "playerName": "Drake Baldwin",
@@ -725,60 +3505,290 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "L",
         "opposingPitcherHr9": 0.81,
         "parkHrIndex": 95,
-        "seasonHr": 12,
-        "seasonXHR": 10.4,
-        "xhrDiff": 1.6,
-        "baseScore": 44.35567567567568,
-        "recentHrSinceMay1": 5,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 13,
+        "seasonXHR": 12.3,
+        "xhrDiff": 0.7,
+        "baseScore": 107.35526351351352,
+        "lineupContext": {
+          "gameTitle": "Red Sox @ Braves",
+          "teamName": "Braves",
+          "slot": 1,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "traffic"
+          ],
+          "powerScore": 88.9,
+          "contactScore": 68.4,
+          "formScore": 92,
+          "splitScore": 86.5,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 12,
+          "splitHomeRuns": 6
+        },
+        "lineupPriority": 62.6,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 2,
+          "averageImpactScore": 17.85,
+          "totalBases": 10,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 24.5
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 0,
         "noDoubterRate": 0,
-        "avgExitVelocityOnHomers": 103.2,
-        "score": 63.2,
-        "scoreBand": "thin",
+        "avgExitVelocityOnHomers": 103.7,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.42,
+          "awayShare": 0.58,
+          "starterShare": 0.92,
+          "reliefShare": 0.08,
+          "earlyShare": 0.75,
+          "lateShare": 0.17,
+          "highPressureShare": 0,
+          "trailingShare": 0.17,
+          "averageInning": 2.6,
+          "averageGapDays": 4.4,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Sinker"
+          ]
+        },
+        "score": 131.6,
+        "scoreBand": "premium",
         "burstTag": "active",
+        "contextLabels": [
+          "Slot 1 | carry",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 1 | carry | starter ambush | 0.81 HR/9 starter",
         "rationale": [
-          "12 HR and 10.4 xHR on the season",
-          "5 HR since May 1 with 3 in the last week",
+          "13 HR and 12.3 xHR on the season",
+          "6 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
           "Payton Tolle is allowing roughly 0.81 HR/9",
-          "Park HR index 95"
-        ]
+          "Park HR index 95",
+          "Last HR came 0 days ago",
+          "Home today | historical split 42% on this side",
+          "92% off starters | 8% off relievers | avg inning 2.6",
+          "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
+          "1 recent batting-leader appearances | 17.9 avg impact",
+          "Weather lane not stored yet",
+          "Slot 1 | carry | lineup priority 62.6 | bullpen vulnerability -0.6"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Matt Olson is the cleanest likely bat here, driven by 5 recent homers, a 0.81 HR/9 starter matchup, and a strong contact-quality signal."
+    "possible": [
+      {
+        "playerId": 621566,
+        "playerName": "Matt Olson",
+        "teamAbbrev": "ATL",
+        "teamName": "Braves",
+        "gameTitle": "Red Sox @ Braves",
+        "opposingPitcher": "Payton Tolle",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.81,
+        "parkHrIndex": 95,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 14,
+        "seasonXHR": 16.1,
+        "xhrDiff": -2.1,
+        "baseScore": 74.37866351351353,
+        "lineupContext": {
+          "gameTitle": "Red Sox @ Braves",
+          "teamName": "Braves",
+          "slot": 3,
+          "primaryTag": "whiff risk",
+          "tags": [
+            "whiff risk",
+            "cold"
+          ],
+          "powerScore": 90.3,
+          "contactScore": 56.2,
+          "formScore": 18,
+          "splitScore": 18,
+          "matchupScore": 18.1,
+          "varianceScore": 92,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 14,
+          "splitHomeRuns": 4
+        },
+        "lineupPriority": 16.1,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 6,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 107.4,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.33,
+          "awayShare": 0.67,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.17,
+          "lateShare": 0.42,
+          "highPressureShare": 0.33,
+          "trailingShare": 0.25,
+          "averageInning": 5.9,
+          "averageGapDays": 2.9,
+          "topPitchTypes": [
+            "Sinker",
+            "Four-Seam Fastball"
+          ]
+        },
+        "score": 82.1,
+        "scoreBand": "strong",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 3 | whiff risk",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | whiff risk | close-game pop | 0.81 HR/9 starter",
+        "rationale": [
+          "14 HR and 16.1 xHR on the season",
+          "5 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Payton Tolle is allowing roughly 0.81 HR/9",
+          "Park HR index 95",
+          "Last HR came 6 days ago",
+          "Home today | historical split 33% on this side",
+          "67% off starters | 33% off relievers | avg inning 5.9",
+          "Most recent damage has skewed toward Sinker / Four-Seam Fastball",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 3 | whiff risk | lineup priority 16.1 | bullpen vulnerability -0.6"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 663586,
+        "playerName": "Austin Riley",
+        "teamAbbrev": "ATL",
+        "teamName": "Braves",
+        "gameTitle": "Red Sox @ Braves",
+        "opposingPitcher": "Payton Tolle",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.81,
+        "parkHrIndex": 95,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 7,
+        "seasonXHR": 7.3,
+        "xhrDiff": -0.3,
+        "baseScore": 46.77921351351351,
+        "lineupContext": {
+          "gameTitle": "Red Sox @ Braves",
+          "teamName": "Braves",
+          "slot": 4,
+          "primaryTag": "heater",
+          "tags": [
+            "heater",
+            "split edge",
+            "whiff risk"
+          ],
+          "powerScore": 38.3,
+          "contactScore": 46.6,
+          "formScore": 81.8,
+          "splitScore": 54.2,
+          "matchupScore": 71.6,
+          "varianceScore": 72.6,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 1
+        },
+        "lineupPriority": 21.4,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 1,
+        "avgExitVelocityOnHomers": 106.5,
+        "homeRunContext": {
+          "sampleSize": 7,
+          "homeShare": 0.43,
+          "awayShare": 0.57,
+          "starterShare": 0.57,
+          "reliefShare": 0.43,
+          "earlyShare": 0.29,
+          "lateShare": 0.14,
+          "highPressureShare": 0.14,
+          "trailingShare": 0.14,
+          "averageInning": 4.9,
+          "averageGapDays": 6.4,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 61.8,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 4 | heater",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | heater | neutral bullpen | 0.81 HR/9 starter",
+        "rationale": [
+          "7 HR and 7.3 xHR on the season",
+          "4 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Payton Tolle is allowing roughly 0.81 HR/9",
+          "Park HR index 95",
+          "Last HR came 0 days ago",
+          "Home today | historical split 43% on this side",
+          "57% off starters | 43% off relievers | avg inning 4.9",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Slot 4 | heater | lineup priority 21.4 | bullpen vulnerability -0.6"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "summary": "Drake Baldwin is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 0.81 HR/9 starter lane."
   },
   "Yankees @ Mets": {
     "gameTitle": "Yankees @ Mets",
     "likely": [
-      {
-        "playerId": 592450,
-        "playerName": "Aaron Judge",
-        "teamAbbrev": "NYY",
-        "teamName": "Yankees",
-        "gameTitle": "Yankees @ Mets",
-        "opposingPitcher": "Huascar Brazobán",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.43,
-        "parkHrIndex": 102,
-        "seasonHr": 16,
-        "seasonXHR": 14.9,
-        "xhrDiff": 1.1,
-        "baseScore": 58.92,
-        "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 1,
-        "noDoubterRate": 0,
-        "avgExitVelocityOnHomers": 108.3,
-        "score": 73.8,
-        "scoreBand": "live",
-        "burstTag": "watch",
-        "rationale": [
-          "16 HR and 14.9 xHR on the season",
-          "4 HR since May 1 with 1 in the last week",
-          "Huascar Brazobán is allowing roughly 0.43 HR/9",
-          "Park HR index 102"
-        ]
-      }
-    ],
-    "possible": [
       {
         "playerId": 700250,
         "playerName": "Ben Rice",
@@ -789,24 +3799,80 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.43,
         "parkHrIndex": 102,
-        "seasonHr": 14,
-        "seasonXHR": 12.5,
-        "xhrDiff": 1.5,
-        "baseScore": 50.24,
-        "recentHrSinceMay1": 4,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 0.4,
+        "seasonHr": 15,
+        "seasonXHR": 13.2,
+        "xhrDiff": 1.8,
+        "baseScore": 57.544285714285714,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 20.5,
+          "totalBases": 6,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 25.2
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 0,
         "noDoubterRate": 0,
-        "avgExitVelocityOnHomers": 106,
-        "score": 65.6,
-        "scoreBand": "thin",
-        "burstTag": "watch",
+        "avgExitVelocityOnHomers": 105.2,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.58,
+          "lateShare": 0.25,
+          "highPressureShare": 0,
+          "trailingShare": 0.17,
+          "averageInning": 4.3,
+          "averageGapDays": 3.4,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Changeup"
+          ]
+        },
+        "score": 75.2,
+        "scoreBand": "live",
+        "burstTag": "active",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Lineup pending | starter ambush | 0.43 HR/9 starter",
         "rationale": [
-          "14 HR and 12.5 xHR on the season",
-          "4 HR since May 1 with 2 in the last week",
+          "15 HR and 13.2 xHR on the season",
+          "5 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
           "Huascar Brazobán is allowing roughly 0.43 HR/9",
-          "Park HR index 102"
-        ]
-      },
+          "Park HR index 102",
+          "Last HR came 0 days ago",
+          "Road today | historical split 50% on this side",
+          "67% off starters | 33% off relievers | avg inning 4.3",
+          "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
+          "1 recent batting-leader appearances | 20.5 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "possible": [
       {
         "playerId": 668901,
         "playerName": "Mark Vientos",
@@ -817,26 +3883,272 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "L",
         "opposingPitcherHr9": 0,
         "parkHrIndex": 102,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.7,
         "seasonHr": 6,
         "seasonXHR": 8.7,
         "xhrDiff": -2.7,
-        "baseScore": 34.86,
+        "baseScore": 49.195150000000005,
+        "lineupContext": {
+          "gameTitle": "Yankees @ Mets",
+          "teamName": "Mets",
+          "slot": 4,
+          "primaryTag": "split edge",
+          "tags": [
+            "split edge",
+            "cold"
+          ],
+          "powerScore": 60.5,
+          "contactScore": 55.1,
+          "formScore": 25.1,
+          "splitScore": 74.8,
+          "matchupScore": 48.1,
+          "varianceScore": 80.2,
+          "pitchType": null,
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 2
+        },
+        "lineupPriority": 16,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 15.5,
+          "totalBases": 4,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 19.3
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 2,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 2,
         "noDoubterRate": 0.75,
         "avgExitVelocityOnHomers": 105.3,
-        "score": 54.4,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.17,
+          "awayShare": 0.83,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.5,
+          "lateShare": 0.17,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.33,
+          "averageInning": 3.8,
+          "averageGapDays": 10.5,
+          "topPitchTypes": [
+            "Slider",
+            "Sinker"
+          ]
+        },
+        "score": 66.9,
         "scoreBand": "thin",
         "burstTag": "carry",
+        "contextLabels": [
+          "Slot 4 | split edge",
+          "better on the road",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 4 | split edge | starter ambush | better on the road | 0 HR/9 starter",
         "rationale": [
           "6 HR and 8.7 xHR on the season",
-          "4 HR since May 1 with 2 in the last week",
+          "4 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
           "Carlos Rodón is allowing roughly 0 HR/9",
-          "Park HR index 102"
-        ]
+          "Park HR index 102",
+          "Last HR came 2 days ago",
+          "Home today | historical split 17% on this side",
+          "67% off starters | 33% off relievers | avg inning 3.8",
+          "Most recent damage has skewed toward Slider / Sinker",
+          "1 recent batting-leader appearances | 15.5 avg impact",
+          "Weather lane not stored yet",
+          "Slot 4 | split edge | lineup priority 16 | bullpen vulnerability -0.7"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 592450,
+        "playerName": "Aaron Judge",
+        "teamAbbrev": "NYY",
+        "teamName": "Yankees",
+        "gameTitle": "Yankees @ Mets",
+        "opposingPitcher": "Huascar Brazobán",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 0.43,
+        "parkHrIndex": 102,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 0.4,
+        "seasonHr": 16,
+        "seasonXHR": 14.9,
+        "xhrDiff": 1.1,
+        "baseScore": 51.3992857142857,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 6,
+        "noDoubterRate": 0,
+        "avgExitVelocityOnHomers": 108.3,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.83,
+          "reliefShare": 0.17,
+          "earlyShare": 0.67,
+          "lateShare": 0.08,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.25,
+          "averageInning": 3.3,
+          "averageGapDays": 2.7,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Splitter"
+          ]
+        },
+        "score": 60.5,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "starter ambush",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Lineup pending | starter ambush | 0.43 HR/9 starter",
+        "rationale": [
+          "16 HR and 14.9 xHR on the season",
+          "4 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
+          "Huascar Brazobán is allowing roughly 0.43 HR/9",
+          "Park HR index 102",
+          "Last HR came 6 days ago",
+          "Road today | historical split 33% on this side",
+          "83% off starters | 17% off relievers | avg inning 3.3",
+          "Most recent damage has skewed toward Four-Seam Fastball / Splitter",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 665742,
+        "playerName": "Juan Soto",
+        "teamAbbrev": "NYM",
+        "teamName": "Mets",
+        "gameTitle": "Yankees @ Mets",
+        "opposingPitcher": "Carlos Rodón",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
+        "parkHrIndex": 102,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.7,
+        "seasonHr": 6,
+        "seasonXHR": 6.7,
+        "xhrDiff": -0.7,
+        "baseScore": 45.666799999999995,
+        "lineupContext": {
+          "gameTitle": "Yankees @ Mets",
+          "teamName": "Mets",
+          "slot": 3,
+          "primaryTag": "heater",
+          "tags": [
+            "heater",
+            "cold"
+          ],
+          "powerScore": 59.8,
+          "contactScore": 55.2,
+          "formScore": 75,
+          "splitScore": 18,
+          "matchupScore": 29.2,
+          "varianceScore": 87.1,
+          "pitchType": null,
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 1
+        },
+        "lineupPriority": 17.4,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 19,
+          "totalBases": 5,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 22.5
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0.33,
+        "avgExitVelocityOnHomers": 104,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.83,
+          "reliefShare": 0.17,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0.17,
+          "trailingShare": 0.33,
+          "averageInning": 4.7,
+          "averageGapDays": 8.8,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Changeup"
+          ]
+        },
+        "score": 58.3,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Slot 3 | heater",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 3 | heater | neutral bullpen | 0 HR/9 starter",
+        "rationale": [
+          "6 HR and 6.7 xHR on the season",
+          "3 HR since May 1 with 2 in the last 7 days and 3 in the last 10",
+          "Carlos Rodón is allowing roughly 0 HR/9",
+          "Park HR index 102",
+          "Last HR came 1 day ago",
+          "Home today | historical split 67% on this side",
+          "83% off starters | 17% off relievers | avg inning 4.7",
+          "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
+          "1 recent batting-leader appearances | 19.0 avg impact",
+          "Weather lane not stored yet",
+          "Slot 3 | heater | lineup priority 17.4 | bullpen vulnerability -0.7"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Aaron Judge is the cleanest likely bat here, driven by 4 recent homers, a 0.43 HR/9 starter matchup, and a live contact-quality signal."
+    "summary": "Ben Rice is the cleanest likely bat here because the posted order still grades live, the recent HR sample leans starter ambush, and today still profiles as a neutral venue split look."
   },
   "Dodgers @ Angels": {
     "gameTitle": "Dodgers @ Angels",
@@ -851,23 +4163,77 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.83,
         "parkHrIndex": 100,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 3.8,
         "seasonHr": 12,
-        "seasonXHR": 12.7,
-        "xhrDiff": -0.7,
-        "baseScore": 53.44255083179297,
+        "seasonXHR": 12.8,
+        "xhrDiff": -0.8,
+        "baseScore": 57.9711922365989,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 18.3,
+          "totalBases": 5,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 23.1
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 1,
         "noDoubterRate": 0.67,
         "avgExitVelocityOnHomers": 107,
-        "score": 72.2,
-        "scoreBand": "live",
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.58,
+          "reliefShare": 0.42,
+          "earlyShare": 0.33,
+          "lateShare": 0.25,
+          "highPressureShare": 0.25,
+          "trailingShare": 0.42,
+          "averageInning": 5,
+          "averageGapDays": 6.4,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 84.2,
+        "scoreBand": "strong",
         "burstTag": "carry",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "mixed timing",
+          "bullpen leak live"
+        ],
+        "signalSummary": "Lineup pending | bullpen leak live | 0.83 HR/9 starter",
         "rationale": [
-          "12 HR and 12.7 xHR on the season",
-          "3 HR since May 1 with 3 in the last week",
+          "12 HR and 12.8 xHR on the season",
+          "3 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
           "José Soriano is allowing roughly 0.83 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 1 day ago",
+          "Road today | historical split 42% on this side",
+          "58% off starters | 42% off relievers | avg inning 5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "1 recent batting-leader appearances | 18.3 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
       }
     ],
     "possible": [
@@ -881,60 +4247,84 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 0.83,
         "parkHrIndex": 100,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": 3.8,
         "seasonHr": 10,
         "seasonXHR": 8.1,
         "xhrDiff": 1.9,
-        "baseScore": 36.74255083179297,
+        "baseScore": 42.07119223659889,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 16.7,
+          "totalBases": 4,
+          "dates": [
+            "2026-05-15"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 21.4
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 5,
+        "daysSinceLastHr": 1,
         "noDoubterRate": 0.4,
         "avgExitVelocityOnHomers": 105.4,
-        "score": 57,
+        "homeRunContext": {
+          "sampleSize": 10,
+          "homeShare": 0.4,
+          "awayShare": 0.6,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.2,
+          "lateShare": 0.3,
+          "highPressureShare": 0.1,
+          "trailingShare": 0.2,
+          "averageInning": 5.5,
+          "averageGapDays": 7.1,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Sinker"
+          ]
+        },
+        "score": 63.4,
         "scoreBand": "thin",
         "burstTag": "active",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "mixed timing",
+          "bullpen leak live"
+        ],
+        "signalSummary": "Lineup pending | bullpen leak live | 0.83 HR/9 starter",
         "rationale": [
           "10 HR and 8.1 xHR on the season",
-          "5 HR since May 1 with 2 in the last week",
+          "5 HR since May 1 with 2 in the last 7 days and 5 in the last 10",
           "José Soriano is allowing roughly 0.83 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 1 day ago",
+          "Road today | historical split 60% on this side",
+          "50% off starters | 50% off relievers | avg inning 5.5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
+          "1 recent batting-leader appearances | 16.7 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Max Muncy is the cleanest likely bat here, driven by 3 recent homers, a 0.83 HR/9 starter matchup, and a live contact-quality signal."
+    "summary": "Max Muncy is the cleanest likely bat here because the posted order still grades live, the recent HR sample leans mixed timing, and today still profiles as a neutral venue split look."
   },
   "Giants @ Athletics": {
     "gameTitle": "Giants @ Athletics",
     "likely": [
-      {
-        "playerId": 669127,
-        "playerName": "Shea Langeliers",
-        "teamAbbrev": "ATH",
-        "teamName": "Athletics",
-        "gameTitle": "Giants @ Athletics",
-        "opposingPitcher": "Trevor McDonald",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.49,
-        "parkHrIndex": 100,
-        "seasonHr": 12,
-        "seasonXHR": 10.8,
-        "xhrDiff": 1.2,
-        "baseScore": 50.97322314049587,
-        "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 1,
-        "noDoubterRate": 0.75,
-        "avgExitVelocityOnHomers": 106.8,
-        "score": 69.6,
-        "scoreBand": "thin",
-        "burstTag": "carry",
-        "rationale": [
-          "12 HR and 10.8 xHR on the season",
-          "4 HR since May 1 with 1 in the last week",
-          "Trevor McDonald is allowing roughly 1.49 HR/9",
-          "Park HR index 100"
-        ]
-      }
-    ],
-    "possible": [
       {
         "playerId": 701762,
         "playerName": "Nick Kurtz",
@@ -945,25 +4335,318 @@ export const homeRunTargetsByGame = {
         "opposingPitcherHand": "R",
         "opposingPitcherHr9": 1.49,
         "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
         "seasonHr": 8,
         "seasonXHR": 8.2,
         "xhrDiff": -0.2,
-        "baseScore": 40.93322314049587,
+        "baseScore": 50.605702479338845,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 2,
+          "hrGames": 3,
+          "averageImpactScore": 19.1,
+          "totalBases": 15,
+          "dates": [
+            "2026-05-15",
+            "2026-05-14"
+          ],
+          "lastSeenAge": 1,
+          "impactWindowScore": 30.8
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 1,
         "noDoubterRate": 0.33,
         "avgExitVelocityOnHomers": 106.7,
-        "score": 57.4,
-        "scoreBand": "thin",
+        "homeRunContext": {
+          "sampleSize": 8,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.75,
+          "reliefShare": 0.25,
+          "earlyShare": 0.38,
+          "lateShare": 0.25,
+          "highPressureShare": 0.38,
+          "trailingShare": 0.63,
+          "averageInning": 4.6,
+          "averageGapDays": 4.7,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Slider"
+          ]
+        },
+        "score": 86.9,
+        "scoreBand": "strong",
         "burstTag": "watch",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Lineup pending | close-game pop | 1.49 HR/9 starter",
         "rationale": [
           "8 HR and 8.2 xHR on the season",
-          "3 HR since May 1 with 3 in the last week",
+          "3 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
           "Trevor McDonald is allowing roughly 1.49 HR/9",
-          "Park HR index 100"
-        ]
+          "Park HR index 100",
+          "Last HR came 1 day ago",
+          "Home today | historical split 50% on this side",
+          "75% off starters | 25% off relievers | avg inning 4.6",
+          "Most recent damage has skewed toward Four-Seam Fastball / Slider",
+          "2 recent batting-leader appearances | 19.1 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 669127,
+        "playerName": "Shea Langeliers",
+        "teamAbbrev": "ATH",
+        "teamName": "Athletics",
+        "gameTitle": "Giants @ Athletics",
+        "opposingPitcher": "Trevor McDonald",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.49,
+        "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 12,
+        "seasonXHR": 10.8,
+        "xhrDiff": 1.2,
+        "baseScore": 51.145702479338844,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 0,
+          "averageImpactScore": 10.5,
+          "totalBases": 3,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 13
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 4,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 106.8,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.33,
+          "awayShare": 0.67,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.17,
+          "lateShare": 0.33,
+          "highPressureShare": 0.42,
+          "trailingShare": 0.42,
+          "averageInning": 5.3,
+          "averageGapDays": 5.1,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Sinker"
+          ]
+        },
+        "score": 80.5,
+        "scoreBand": "live",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Lineup pending | close-game pop | 1.49 HR/9 starter",
+        "rationale": [
+          "12 HR and 10.8 xHR on the season",
+          "4 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
+          "Trevor McDonald is allowing roughly 1.49 HR/9",
+          "Park HR index 100",
+          "Last HR came 4 days ago",
+          "Home today | historical split 33% on this side",
+          "50% off starters | 50% off relievers | avg inning 5.3",
+          "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
+          "1 recent batting-leader appearances | 10.5 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
       }
     ],
-    "summary": "Shea Langeliers is the best available lane here, but this game still grades as a thinner HR script before confirmed lineups arrive."
+    "possible": [
+      {
+        "playerId": 680869,
+        "playerName": "Zack Gelof",
+        "teamAbbrev": "ATH",
+        "teamName": "Athletics",
+        "gameTitle": "Giants @ Athletics",
+        "opposingPitcher": "Trevor McDonald",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.49,
+        "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 5,
+        "seasonXHR": 4.5,
+        "xhrDiff": 0.5,
+        "baseScore": 34.295702479338836,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": {
+          "recentAppearances": 1,
+          "hrGames": 1,
+          "averageImpactScore": 17,
+          "totalBases": 5,
+          "dates": [
+            "2026-05-14"
+          ],
+          "lastSeenAge": 2,
+          "impactWindowScore": 20.9
+        },
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.25,
+        "avgExitVelocityOnHomers": 103.5,
+        "homeRunContext": {
+          "sampleSize": 5,
+          "homeShare": 0.6,
+          "awayShare": 0.4,
+          "starterShare": 0.2,
+          "reliefShare": 0.8,
+          "earlyShare": 0,
+          "lateShare": 0.8,
+          "highPressureShare": 0.2,
+          "trailingShare": 0.2,
+          "averageInning": 7.2,
+          "averageGapDays": 5,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 57.8,
+        "scoreBand": "thin",
+        "burstTag": "watch",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "late bridge damage",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Lineup pending | late bridge damage | 1.49 HR/9 starter",
+        "rationale": [
+          "5 HR and 4.5 xHR on the season",
+          "4 HR since May 1 with 2 in the last 7 days and 3 in the last 10",
+          "Trevor McDonald is allowing roughly 1.49 HR/9",
+          "Park HR index 100",
+          "Last HR came 2 days ago",
+          "Home today | historical split 60% on this side",
+          "20% off starters | 80% off relievers | avg inning 7.2",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "1 recent batting-leader appearances | 17.0 avg impact",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
+      },
+      {
+        "playerId": 667670,
+        "playerName": "Brent Rooker",
+        "teamAbbrev": "ATH",
+        "teamName": "Athletics",
+        "gameTitle": "Giants @ Athletics",
+        "opposingPitcher": "Trevor McDonald",
+        "opposingPitcherHand": "R",
+        "opposingPitcherHr9": 1.49,
+        "parkHrIndex": 100,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 6,
+        "seasonXHR": 5.5,
+        "xhrDiff": 0.5,
+        "baseScore": 28.09070247933884,
+        "lineupContext": null,
+        "lineupPriority": 0,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": null,
+          "total": 0
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 0,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 104.3,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.67,
+          "awayShare": 0.33,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.5,
+          "lateShare": 0.5,
+          "highPressureShare": 0.33,
+          "trailingShare": 0.33,
+          "averageInning": 5,
+          "averageGapDays": 10.3,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Slider"
+          ]
+        },
+        "score": 53.9,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Lineup pending",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Lineup pending | close-game pop | 1.49 HR/9 starter",
+        "rationale": [
+          "6 HR and 5.5 xHR on the season",
+          "4 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
+          "Trevor McDonald is allowing roughly 1.49 HR/9",
+          "Park HR index 100",
+          "Last HR came 0 days ago",
+          "Home today | historical split 67% on this side",
+          "50% off starters | 50% off relievers | avg inning 5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Slider",
+          "No recent batting-leader signal stored yet",
+          "Weather lane not stored yet",
+          "Lineup slot not posted yet"
+        ],
+        "avoidHrChase": false
+      }
+    ],
+    "summary": "Nick Kurtz is the cleanest likely bat here because the posted order still grades live, the recent HR sample leans close-game pop, and today still profiles as a neutral venue split look."
   }
 }

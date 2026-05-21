@@ -247,7 +247,7 @@ const runSqliteJson = (sql) => {
 
 const buildBullpenChainByTeam = ({ date, games }) => {
   const rows = runSqliteJson(
-    `select team_name, pitcher_name, likely_role, first_reliever_likelihood, availability_score, bridge_score, worked_yesterday_flag, back_to_back_flag, last_appearance_date, avg_outs_per_appearance from mlb_bullpen_usage where as_of_date='${date}' order by team_name, first_reliever_likelihood desc;`
+    `select team_name, pitcher_id, pitcher_name, likely_role, first_reliever_likelihood, availability_score, bridge_score, worked_yesterday_flag, back_to_back_flag, last_appearance_date, avg_outs_per_appearance from mlb_bullpen_usage where as_of_date='${date}' order by team_name, first_reliever_likelihood desc;`
   )
 
   const starterNames = new Set(
@@ -280,6 +280,7 @@ const buildBullpenChainByTeam = ({ date, games }) => {
         {
           opponent: opponentByTeam[teamName] || '',
           topRelievers: chosen.map((reliever) => ({
+            pitcherId: Number(reliever.pitcher_id || 0) || null,
             name: reliever.pitcher_name,
             role: reliever.likely_role || 'middle',
             firstRelieverLikelihood: Number(Number(reliever.first_reliever_likelihood || 0).toFixed(2)),

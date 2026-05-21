@@ -32,7 +32,7 @@
     {
       id: 'favorites',
       label: 'Favorites',
-      copy: 'Current model favorites and strongest standard reads.'
+      copy: 'Cleaner core reads only. On messy slates this lane stays intentionally short.'
     },
     {
       id: 'balanced',
@@ -146,6 +146,22 @@
     return 'Lean only'
   }
 
+  const formatOrdinal = (value) => {
+    const numericValue = Number(value)
+    if (!Number.isFinite(numericValue)) return String(value || '')
+    if (numericValue % 100 >= 11 && numericValue % 100 <= 13) return `${numericValue}th`
+    if (numericValue % 10 === 1) return `${numericValue}st`
+    if (numericValue % 10 === 2) return `${numericValue}nd`
+    if (numericValue % 10 === 3) return `${numericValue}rd`
+    return `${numericValue}th`
+  }
+
+  const formatNumber = (value, digits = 1) => {
+    const numericValue = Number(value)
+    if (!Number.isFinite(numericValue)) return 'N/A'
+    return numericValue.toFixed(digits)
+  }
+
   const comparisonBarWidth = (value, ...comparisonValues) => {
     const numericValue = Number(value)
     const maxValue = Math.max(
@@ -214,12 +230,31 @@
     }
   }
 
+  const buildTeamContextSummary = (team = {}) => {
+    if (!team || (!Number.isFinite(Number(team.wins)) && !Number.isFinite(Number(team.losses)))) return ''
+    const record = `${team.wins ?? '-'}-${team.losses ?? '-'}`
+    const rankLabel = team.divisionLeader ? '1st in division' : `${formatOrdinal(team.divisionRank)} in division`
+    const streak = team.streakCode ? ` | ${team.streakCode}` : ''
+    return `${record} | ${rankLabel}${streak}`
+  }
+
   const simulationTemperatureLabel = (value) => {
     if (value <= 0.18) return 'Cold'
     if (value <= 0.42) return 'Stable'
     if (value <= 0.68) return 'Balanced'
     if (value <= 0.86) return 'Volatile'
     return 'Chaos'
+  }
+
+  const formatSnapshotTime = (isoString) => {
+    if (!isoString) return ''
+
+    return new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/Los_Angeles',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    }).format(new Date(isoString))
   }
 
   const buildGameHighlights = (game) => {
@@ -231,8 +266,12 @@
         projection.teamScripts?.find((script) => script.teamName === game.analysis?.participant?.name) ??
         projection.teamScripts?.[0]
       const carryHitter = selectedScript?.overperformHitters?.[0]?.name
+      const bridgeCarry = selectedScript?.bullpenOverperformHitters?.[0]?.name
       const bothLineupsPosted =
         game.lineupBoard?.status?.away === 'posted' && game.lineupBoard?.status?.home === 'posted'
+      const partialLineups =
+        !bothLineupsPosted &&
+        (game.lineupBoard?.status?.away === 'partial' || game.lineupBoard?.status?.home === 'partial')
 
       if (projection.first5EdgeTeam && projection.first5EdgeTeam !== projection.edgeTeam) {
         chips.push({ tone: 'warning', label: `F5 ${projection.first5EdgeTeam}` })
@@ -246,6 +285,10 @@
         chips.push({ tone: 'accent', label: `Carry ${carryHitter}` })
       }
 
+      if (bridgeCarry && bridgeCarry !== carryHitter) {
+        chips.push({ tone: 'warning', label: `Bridge ${bridgeCarry}` })
+      }
+
       if (projection.totals?.fullGame?.lean && projection.totals.fullGame.lean !== 'Pass') {
         chips.push({
           tone: projection.totals.fullGame.lean === 'Over' ? 'warning' : 'neutral',
@@ -257,8 +300,21 @@
         chips.push({ tone: 'danger', label: 'Late risk' })
       }
 
+      if (game.analysis?.indicators?.coinflipPressure >= 64) {
+        chips.push({ tone: 'danger', label: 'Flip live' })
+      }
+
       if (bothLineupsPosted) {
         chips.push({ tone: 'accent', label: 'Lineups in' })
+      } else if (partialLineups) {
+        chips.push({ tone: 'neutral', label: 'Lineups partial' })
+      }
+
+      if (projection.weather?.label && /helps carry|suppresses carry/i.test(projection.weather.label)) {
+        chips.push({
+          tone: /helps carry/i.test(projection.weather.label) ? 'warning' : 'neutral',
+          label: /helps carry/i.test(projection.weather.label) ? 'Weather up' : 'Weather down'
+        })
       }
     } else {
       if (game.analysis?.confidence >= 72) chips.push({ tone: 'accent', label: 'High confidence' })
@@ -457,6 +513,16 @@
     activeFilter === 'All'
       ? analysisPicks
       : analysisPicks.filter((pick) => pick.league === activeFilter)
+  $: coreAnalysisPickPool = analysisPickPool.filter((pick) => pick.coreEligible)
+  $: safeAnalysisPickPool = analysisPickPool.filter(
+    (pick) =>
+      pick.coreEligible ||
+      (pick.confidence >= 58 && pick.tier !== 'Swingy' && pick.safetyScore >= -15)
+  )
+  $: favoriteRecommendationPool =
+    safeAnalysisPickPool.length > 0
+      ? safeAnalysisPickPool
+      : analysisPickPool.filter((pick) => pick.confidence > 0).slice(0, Math.min(4, analysisPickPool.length))
 
   $: flipRiskPickPool =
     activeFilter === 'All'
@@ -464,7 +530,7 @@
       : flipRiskPicks.filter((pick) => pick.league === activeFilter)
 
   $: balancedRecommendation = buildBalancedRecommendationSet(
-    analysisPickPool,
+    favoriteRecommendationPool,
     flipRiskPickPool,
     activeRecommendedLegCount,
     balanceWeight
@@ -474,18 +540,40 @@
       ? flipRiskPickPool
       : recommendationMode === 'balanced'
         ? balancedRecommendation.picks
-        : analysisPickPool
+        : favoriteRecommendationPool
   $: activeRecommendationMeta =
     recommendationModes.find((mode) => mode.id === recommendationMode) ?? recommendationModes[0]
 
   $: analysisRankLookup = new Map(analysisPicks.map((pick) => [pick.gameId, pick.rank]))
-  $: signalLadderPicks = analysisPickPool.slice(0, 6)
+  $: signalLadderPicks = favoriteRecommendationPool.slice(0, 6)
   $: pinnedSignalPicks = analysisPickPool.filter((pick) => pinnedSignalIds.includes(pick.gameId))
   $: modelCount = visibleGames.filter((game) => game.analysis.inputsUsed > 0).length
   $: spotlightCount = visibleGames.filter((game) => game.spotlight).length
   $: sourceCount = allSources.length
   $: hasMlbSlate = games.some((game) => game.league === 'MLB')
   $: activeSimulations = activeDay ? simulatedGamesByDay[activeDay.id] ?? {} : {}
+  $: mlbGames = games.filter((game) => game.league === 'MLB')
+  $: lineupStatusCounts = mlbGames.reduce(
+    (totals, game) => {
+      const awayStatus = game.lineupBoard?.status?.away
+      const homeStatus = game.lineupBoard?.status?.home
+      totals.total += awayStatus ? 1 : 0
+      totals.total += homeStatus ? 1 : 0
+      if (awayStatus === 'posted') totals.posted += 1
+      else if (awayStatus === 'partial') totals.partial += 1
+      if (homeStatus === 'posted') totals.posted += 1
+      else if (homeStatus === 'partial') totals.partial += 1
+      return totals
+    },
+    { posted: 0, partial: 0, total: 0 }
+  )
+  $: latestLineupSnapshot =
+    mlbGames
+      .map((game) => game.lineupBoard?.snapshot)
+      .filter(Boolean)
+      .sort()
+      .at(-1) ?? ''
+  $: lineupRefreshLabel = latestLineupSnapshot ? `Refresh ${formatSnapshotTime(latestLineupSnapshot)}` : ''
 
   $: if (!hasMlbSlate) {
     showDeskSettings = false
@@ -820,6 +908,15 @@
               <div class="browser-toolbar-stats">
                 <span>{visibleGames.length} visible</span>
                 <span>{analysisPickPool.length} signals</span>
+                {#if hasMlbSlate}
+                  <span>{lineupStatusCounts.posted}/{lineupStatusCounts.total} lineups posted</span>
+                  {#if lineupStatusCounts.partial > 0}
+                    <span>{lineupStatusCounts.partial} partial</span>
+                  {/if}
+                  {#if lineupRefreshLabel}
+                    <span>{lineupRefreshLabel}</span>
+                  {/if}
+                {/if}
                 <span>{oddsMeta.snapshot}</span>
               </div>
 
@@ -940,11 +1037,13 @@
                           {#each [
                             {
                               teamName: game.matchup[0].name,
-                              pitcher: game.starterContext.away
+                              pitcher: game.starterContext.away,
+                              context: game.teamContext?.away
                             },
                             {
                               teamName: game.matchup[1].name,
-                              pitcher: game.starterContext.home
+                              pitcher: game.starterContext.home,
+                              context: game.teamContext?.home
                             }
                           ] as pitcherCard}
                             {@const pitcherSummary = buildPitcherSummary(pitcherCard.pitcher)}
@@ -964,6 +1063,9 @@
                                   <strong>{pitcherCard.teamName}</strong>
                                 </div>
                               </div>
+                              {#if buildTeamContextSummary(pitcherCard.context)}
+                                <small class="pitcher-team-context">{buildTeamContextSummary(pitcherCard.context)}</small>
+                              {/if}
                               <span class="pitcher-name">{pitcherCard.pitcher.fullName}</span>
                               <small>{pitcherSummary.primary}</small>
                               {#if pitcherSummary.recent}
@@ -1173,6 +1275,14 @@
                               <span>Confidence {game.analysis.confidence}</span>
                               <span>Volatility {game.analysis.volatility}</span>
                               <span>Market {game.analysis.marketProbabilityLabel}</span>
+                              {#if game.lineupBoard?.status}
+                                <span>
+                                  Lineups {lineupStatusLabel(game.lineupBoard.status.away)}/{lineupStatusLabel(game.lineupBoard.status.home)}
+                                </span>
+                              {/if}
+                              {#if game.analysis.mlbProjection?.weather?.label}
+                                <span>{game.analysis.mlbProjection.weather.label}</span>
+                              {/if}
                             </div>
 
                             {#if game.analysis.pickReasons?.length}
@@ -1513,6 +1623,17 @@
                                       </span>
                                     </div>
 
+                                    {#if script.bullpenOverperformHitters?.length}
+                                      <div class="team-script-copy">
+                                        <strong>Bridge hitters</strong>
+                                        <span>
+                                          {script.bullpenOverperformHitters
+                                            .map((hitter) => `${hitter.name} (${hitter.tag})`)
+                                            .join(' • ')}
+                                        </span>
+                                      </div>
+                                    {/if}
+
                                     {#if script.underperformHitters?.length}
                                       <div class="team-script-copy">
                                         <strong>Underperform hitters</strong>
@@ -1762,14 +1883,14 @@
                                       <p class="series-kicker">Home run looks</p>
                                       <strong>{game.homeRunTargets.summary}</strong>
                                     </div>
-                                    <span>Likely and possible</span>
+                                    <span>Weighted pool, not true odds</span>
                                   </div>
 
                                   <div class="home-run-tier-grid">
                                     <article class="home-run-tier">
                                       <div class="home-run-tier-head">
                                         <p>Likely</p>
-                                        <span>Best current lane</span>
+                                        <span>Anchor and strongest support</span>
                                       </div>
 
                                       <div class="home-run-target-list">
@@ -1782,9 +1903,15 @@
                                                 {#if target.signalSummary}
                                                   <span>{target.signalSummary}</span>
                                                 {/if}
+                                                {#if target.modelSharePct != null}
+                                                  <div class="home-run-weight-bar" aria-hidden="true">
+                                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
+                                                  </div>
+                                                {/if}
                                               </div>
                                               <div class="home-run-target-meta">
                                                 <strong>{Math.round(target.score)}</strong>
+                                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
                                                 <span>{target.scoreBand} | {target.burstTag}</span>
                                               </div>
                                             </div>
@@ -1798,7 +1925,7 @@
                                     <article class="home-run-tier">
                                       <div class="home-run-tier-head">
                                         <p>Possible</p>
-                                        <span>Secondary lanes</span>
+                                        <span>Secondary lanes with real share</span>
                                       </div>
 
                                       <div class="home-run-target-list">
@@ -1808,15 +1935,53 @@
                                               <div>
                                                 <strong>{target.playerName}</strong>
                                                 <span>{target.signalSummary || `${target.teamName} | ${target.homeRunsLast7Days} HR last 7 days`}</span>
+                                                {#if target.modelSharePct != null}
+                                                  <div class="home-run-weight-bar" aria-hidden="true">
+                                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
+                                                  </div>
+                                                {/if}
                                               </div>
                                               <div class="home-run-target-meta">
                                                 <strong>{Math.round(target.score)}</strong>
+                                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
                                                 <span>{target.scoreBand} | {target.burstTag}</span>
                                               </div>
                                             </div>
                                           {/each}
                                         {:else}
                                           <p class="home-run-empty">No second-tier lane yet beyond the lead bat.</p>
+                                        {/if}
+                                      </div>
+                                    </article>
+
+                                    <article class="home-run-tier">
+                                      <div class="home-run-tier-head">
+                                        <p>Alternates</p>
+                                        <span>Thin but still live</span>
+                                      </div>
+
+                                      <div class="home-run-target-list">
+                                        {#if game.homeRunTargets.alternates?.length}
+                                          {#each game.homeRunTargets.alternates as target}
+                                            <div class="home-run-target-row">
+                                              <div>
+                                                <strong>{target.playerName}</strong>
+                                                <span>{target.signalSummary || `${target.teamName} matchup lane`}</span>
+                                                {#if target.modelSharePct != null}
+                                                  <div class="home-run-weight-bar" aria-hidden="true">
+                                                    <span style={`width:${Math.max(10, Math.min(100, target.modelSharePct * 2.6))}%`}></span>
+                                                  </div>
+                                                {/if}
+                                              </div>
+                                              <div class="home-run-target-meta">
+                                                <strong>{Math.round(target.score)}</strong>
+                                                <span>{target.modelSharePct?.toFixed(1)}% share | {target.lane}</span>
+                                                <span>{target.scoreBand} | {target.burstTag}</span>
+                                              </div>
+                                            </div>
+                                          {/each}
+                                        {:else}
+                                          <p class="home-run-empty">No alternate lanes worth holding yet.</p>
                                         {/if}
                                       </div>
                                     </article>

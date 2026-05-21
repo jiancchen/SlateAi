@@ -165,10 +165,187 @@ const fetchText = async (url) => {
   return response.text()
 }
 
-const loadRawGames = async (date) => {
+const statcastPitchTypes = ['FF', 'SI', 'FT', 'FC', 'SL', 'ST', 'SV', 'CU', 'KC', 'CH', 'FS', 'FO', 'SC', 'KN', 'CS', 'EP']
+
+const parseCsvLine = (line = '') => {
+  const cells = []
+  let current = ''
+  let inQuotes = false
+
+  for (let index = 0; index < line.length; index += 1) {
+    const character = line[index]
+
+    if (character === '"') {
+      if (inQuotes && line[index + 1] === '"') {
+        current += '"'
+        index += 1
+      } else {
+        inQuotes = !inQuotes
+      }
+      continue
+    }
+
+    if (character === ',' && !inQuotes) {
+      cells.push(current)
+      current = ''
+      continue
+    }
+
+    current += character
+  }
+
+  cells.push(current)
+  return cells.map((cell) => cell.trim())
+}
+
+const parseCsvTable = (text = '') => {
+  const lines = text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+
+  if (!lines.length) return []
+
+  const headers = parseCsvLine(lines[0]).map((header) => header.replace(/^"|"$/g, ''))
+
+  return lines.slice(1).map((line) => {
+    const values = parseCsvLine(line)
+    return Object.fromEntries(headers.map((header, index) => [header, values[index] ?? '']))
+  })
+}
+
+const parsePitchArsenalNumber = (value, fallback = null) => {
+  if (value === '' || value === null || value === undefined) return fallback
+  const parsed = Number(String(value).replace(/%/g, ''))
+  return Number.isFinite(parsed) ? parsed : fallback
+}
+
+const fetchPitchArsenalRows = async ({ type, pitchType, year }) => {
+  const url =
+    `https://baseballsavant.mlb.com/leaderboard/pitch-arsenal-stats?type=${type}` +
+    `&pitchType=${pitchType}&year=${year}&min=1&minPitches=0&csv=true`
+  const text = await fetchText(url)
+
+  return parseCsvTable(text).map((row) => ({
+    playerId: parsePitchArsenalNumber(row.player_id),
+    teamName: row.team_name_alt || '',
+    pitchType: row.pitch_type || pitchType,
+    pitchName: row.pitch_name || pitchType,
+    runValuePer100: parsePitchArsenalNumber(row.run_value_per_100),
+    runValue: parsePitchArsenalNumber(row.run_value),
+    pitches: parsePitchArsenalNumber(row.pitches),
+    pitchUsage: parsePitchArsenalNumber(row.pitch_usage),
+    plateAppearances: parsePitchArsenalNumber(row.pa),
+    avg: parsePitchArsenalNumber(row.ba),
+    slg: parsePitchArsenalNumber(row.slg),
+    woba: parsePitchArsenalNumber(row.woba),
+    whiffPercent: parsePitchArsenalNumber(row.whiff_percent),
+    kPercent: parsePitchArsenalNumber(row.k_percent),
+    putAwayPercent: parsePitchArsenalNumber(row.put_away),
+    estBa: parsePitchArsenalNumber(row.est_ba),
+    estSlg: parsePitchArsenalNumber(row.est_slg),
+    estWoba: parsePitchArsenalNumber(row.est_woba),
+    hardHitPercent: parsePitchArsenalNumber(row.hard_hit_percent)
+  }))
+}
+
+const buildPitcherPitchQualityScore = (pitch = {}) =>
+  clamp(
+    50 +
+      (Number(pitch.runValuePer100 || 0) * 8) +
+      ((Number(pitch.whiffPercent || 0) - 24) * 0.55) +
+      ((Number(pitch.kPercent || 0) - 22) * 0.48) +
+      ((0.325 - Number(pitch.woba || 0.325)) * 140) +
+      ((0.325 - Number(pitch.estWoba || 0.325)) * 110) +
+      ((38 - Number(pitch.hardHitPercent || 38)) * 0.55),
+    18,
+    94
+  )
+
+const buildBatterPitchFitScore = (pitch = {}) =>
+  clamp(
+    50 +
+      ((Number(pitch.woba || 0.32) - 0.32) * 140) +
+      ((Number(pitch.estWoba || 0.32) - 0.32) * 110) +
+      ((Number(pitch.slg || 0.39) - 0.39) * 90) +
+      ((Number(pitch.hardHitPercent || 38) - 38) * 0.7) -
+      ((Number(pitch.whiffPercent || 24) - 24) * 0.45) -
+      ((Number(pitch.kPercent || 22) - 22) * 0.35),
+    18,
+    94
+  )
+
+const buildPitchArsenalMaps = async ({ batterIds = [], pitcherIds = [], year }) => {
+  const batterIdSet = new Set(batterIds.map((value) => Number(value)).filter(Number.isFinite))
+  const pitcherIdSet = new Set(pitcherIds.map((value) => Number(value)).filter(Number.isFinite))
+  const batterPitchTypeStatsByPlayerId = new Map()
+  const pitcherPitchRowsByPlayerId = new Map()
+
+  await Promise.all(
+    statcastPitchTypes.flatMap((pitchType) => [
+      fetchPitchArsenalRows({ type: 'batter', pitchType, year }).then((rows) => {
+        for (const row of rows) {
+          if (!batterIdSet.has(row.playerId)) continue
+          if (!batterPitchTypeStatsByPlayerId.has(row.playerId)) {
+            batterPitchTypeStatsByPlayerId.set(row.playerId, new Map())
+          }
+          batterPitchTypeStatsByPlayerId.get(row.playerId).set(pitchType, {
+            ...row,
+            fitScore: roundToTenths(buildBatterPitchFitScore(row))
+          })
+        }
+      }),
+      fetchPitchArsenalRows({ type: 'pitcher', pitchType, year }).then((rows) => {
+        for (const row of rows) {
+          if (!pitcherIdSet.has(row.playerId)) continue
+          if (!pitcherPitchRowsByPlayerId.has(row.playerId)) {
+            pitcherPitchRowsByPlayerId.set(row.playerId, [])
+          }
+          pitcherPitchRowsByPlayerId.get(row.playerId).push({
+            ...row,
+            qualityScore: roundToTenths(buildPitcherPitchQualityScore(row))
+          })
+        }
+      })
+    ])
+  )
+
+  const pitcherPitchMixByPlayerId = new Map(
+    [...pitcherPitchRowsByPlayerId.entries()].map(([playerId, rows]) => {
+      const sortedRows = [...rows]
+        .filter((row) => Number.isFinite(row.pitchUsage) && row.pitchUsage >= 4)
+        .sort((left, right) => Number(right.pitchUsage || 0) - Number(left.pitchUsage || 0))
+      const topPitches = (sortedRows.length ? sortedRows : [...rows].sort((left, right) => Number(right.pitchUsage || 0) - Number(left.pitchUsage || 0)))
+        .slice(0, 4)
+        .map((row) => ({
+          pitchType: row.pitchType,
+          pitchName: row.pitchName,
+          pitchUsage: roundToTenths(Number(row.pitchUsage || 0)),
+          pitches: Number(row.pitches || 0),
+          qualityScore: roundToTenths(Number(row.qualityScore || 50)),
+          wobaAllowed: Number.isFinite(row.woba) ? roundToHundredths(row.woba) : null,
+          estWobaAllowed: Number.isFinite(row.estWoba) ? roundToHundredths(row.estWoba) : null,
+          hardHitAllowed: Number.isFinite(row.hardHitPercent) ? roundToTenths(row.hardHitPercent) : null,
+          whiffPercent: Number.isFinite(row.whiffPercent) ? roundToTenths(row.whiffPercent) : null
+        }))
+      const weightedQuality = topPitches.reduce((sum, row) => sum + row.qualityScore * (row.pitchUsage / 100), 0)
+
+      return [
+        playerId,
+        {
+          topPitches,
+          averageQualityScore: roundToTenths(weightedQuality > 0 ? weightedQuality / Math.max(topPitches.reduce((sum, row) => sum + row.pitchUsage / 100, 0), 0.01) : 50)
+        }
+      ]
+    })
+  )
+
+  return { batterPitchTypeStatsByPlayerId, pitcherPitchMixByPlayerId }
+}
+
+const loadDayData = async (date) => {
   const modulePath = pathToFileURL(path.join(rootDir, 'src', 'lib', `day-${date}-data.js`)).href
-  const dayData = await import(modulePath)
-  return dayData.rawGames
+  return import(modulePath)
 }
 
 const normalizePitchHand = (value = '') => {
@@ -196,7 +373,7 @@ const classifyPitcherType = (starter = {}) => {
   return 'Balanced'
 }
 
-const buildPitcherProfile = (starterContext = null) => {
+const buildPitcherProfile = (starterContext = null, pitchMix = null) => {
   if (!starterContext) return null
 
   const handedness = normalizePitchHand(starterContext.pitchHand)
@@ -235,7 +412,8 @@ const buildPitcherProfile = (starterContext = null) => {
       hitsPerNine,
       era,
       whip
-    })
+    }),
+    pitchMix
   }
 }
 
@@ -490,6 +668,28 @@ const buildRosterLookup = (boxscoreSide = {}) => {
   return lookup
 }
 
+const matchesExpectedOfficialTeam = ({
+  expectedOfficialTeam = '',
+  playerRecord = null,
+  playerDetails = null
+}) => {
+  if (!expectedOfficialTeam) return true
+
+  const candidates = [
+    playerRecord?.parentTeamName,
+    playerRecord?.team?.name,
+    playerDetails?.currentTeam?.name,
+    playerDetails?.teams?.[0]?.name
+  ]
+    .filter(Boolean)
+    .map((value) => value.trim())
+
+  if (!candidates.length) return true
+
+  const expected = normalizePersonName(expectedOfficialTeam)
+  return candidates.some((value) => normalizePersonName(value) === expected)
+}
+
 const mapRotoLineupPlayerIds = (rotoSide = null, boxscoreSide = {}) => {
   if (!rotoSide?.players?.length) return []
 
@@ -564,11 +764,169 @@ const buildPitchStyleAdjustment = ({
   }
 }
 
+const buildPitchTypeFit = ({ pitchTypeStatsByType = null, opposingPitcherMix = null }) => {
+  const topPitches = opposingPitcherMix?.topPitches || []
+  if (!pitchTypeStatsByType || !topPitches.length) return null
+
+  const relevant = topPitches
+    .map((pitch) => {
+      const batterPitch = pitchTypeStatsByType.get(pitch.pitchType)
+      if (!batterPitch) return null
+
+      const usageWeight = Math.max(Number(pitch.pitchUsage || 0), 0)
+      const batterFitScore = Number(batterPitch.fitScore || 50)
+      const pitcherQualityScore = Number(pitch.qualityScore || 50)
+      const fitGrade = clamp((batterFitScore - pitcherQualityScore) / 5.5, -8, 10)
+
+      return {
+        ...pitch,
+        batterFitScore: roundToTenths(batterFitScore),
+        batterWoba: Number.isFinite(batterPitch.woba) ? roundToHundredths(batterPitch.woba) : null,
+        batterEstWoba: Number.isFinite(batterPitch.estWoba) ? roundToHundredths(batterPitch.estWoba) : null,
+        batterHardHit: Number.isFinite(batterPitch.hardHitPercent) ? roundToTenths(batterPitch.hardHitPercent) : null,
+        batterWhiff: Number.isFinite(batterPitch.whiffPercent) ? roundToTenths(batterPitch.whiffPercent) : null,
+        fitGrade: roundToHundredths(fitGrade),
+        usageWeight
+      }
+    })
+    .filter(Boolean)
+
+  if (!relevant.length) return null
+
+  const totalUsage = relevant.reduce((sum, pitch) => sum + pitch.usageWeight, 0) || relevant.length
+  const weightedAverageScore = relevant.reduce((sum, pitch) => sum + pitch.batterFitScore * pitch.usageWeight, 0) / totalUsage
+  const weightedPitcherQuality = relevant.reduce((sum, pitch) => sum + pitch.qualityScore * pitch.usageWeight, 0) / totalUsage
+  const weightedFitGrade = relevant.reduce((sum, pitch) => sum + pitch.fitGrade * pitch.usageWeight, 0) / totalUsage
+  const coveragePct = roundToTenths((totalUsage / Math.max(topPitches.reduce((sum, pitch) => sum + Number(pitch.pitchUsage || 0), 0), 1)) * 100)
+
+  return {
+    fitScore: roundToTenths(clamp(weightedAverageScore + (weightedFitGrade * 1.4), 18, 94)),
+    fitGrade: roundToHundredths(clamp(weightedFitGrade, -8, 10)),
+    coveragePct,
+    summary: `${relevant
+      .slice(0, 3)
+      .map((pitch) => `${pitch.pitchName} ${pitch.pitchUsage.toFixed(0)}%`)
+      .join(' / ')} | fit ${formatSigned(weightedFitGrade, 1)}`,
+    topPitches: relevant.slice(0, 3).map((pitch) => ({
+      pitchType: pitch.pitchType,
+      pitchName: pitch.pitchName,
+      pitchUsage: pitch.pitchUsage,
+      fitGrade: pitch.fitGrade,
+      batterFitScore: pitch.batterFitScore,
+      qualityScore: pitch.qualityScore
+    }))
+  }
+}
+
+const buildBullpenPitchTypeSummary = ({
+  lineup = [],
+  pitchTypeStatsLookup = null,
+  opposingRelievers = []
+}) => {
+  if (!lineup.length || !pitchTypeStatsLookup || !Array.isArray(opposingRelievers) || !opposingRelievers.length) {
+    return null
+  }
+
+  const relievers = opposingRelievers
+    .map((reliever) => {
+      if (!reliever?.pitchMix?.topPitches?.length) return null
+
+      const hitterFits = lineup
+        .map((entry) => {
+          const pitchTypeStatsByType = pitchTypeStatsLookup.get(entry.playerId) || null
+          const fit = buildPitchTypeFit({
+            pitchTypeStatsByType,
+            opposingPitcherMix: reliever.pitchMix
+          })
+
+          if (!fit) return null
+
+          const slotWeight = clamp(1.18 - (Math.max(entry.slot, 1) - 1) * 0.07, 0.52, 1.18)
+          return {
+            name: entry.name,
+            slot: entry.slot,
+            primaryTag: entry.primaryTag,
+            fitScore: Number(fit.fitScore || 50),
+            fitGrade: Number(fit.fitGrade || 0),
+            slotWeight
+          }
+        })
+        .filter(Boolean)
+
+      if (!hitterFits.length) return null
+
+      const totalWeight = hitterFits.reduce((sum, hitter) => sum + hitter.slotWeight, 0) || hitterFits.length
+      const fitScore =
+        hitterFits.reduce((sum, hitter) => sum + hitter.fitScore * hitter.slotWeight, 0) / totalWeight
+      const fitGrade =
+        hitterFits.reduce((sum, hitter) => sum + hitter.fitGrade * hitter.slotWeight, 0) / totalWeight
+      const topAttackers = [...hitterFits]
+        .sort((left, right) => right.fitGrade - left.fitGrade)
+        .slice(0, 2)
+        .map((hitter) => ({
+          name: hitter.name,
+          slot: hitter.slot,
+          tag: `${hitter.primaryTag || 'live'} | fit ${formatSigned(hitter.fitGrade, 1)}`
+        }))
+
+      return {
+        pitcherId: reliever.pitcherId || null,
+        name: reliever.name,
+        role: reliever.role || 'middle',
+        availabilityScore: Number(reliever.availabilityScore || 0),
+        firstRelieverLikelihood: Number(reliever.firstRelieverLikelihood || 0),
+        fitScore: roundToTenths(clamp(fitScore, 18, 94)),
+        fitGrade: roundToHundredths(clamp(fitGrade, -8, 10)),
+        pitchMixSummary:
+          reliever.pitchMix?.topPitches
+            ?.slice(0, 3)
+            .map((pitch) => `${pitch.pitchName} ${pitch.pitchUsage.toFixed(0)}%`)
+            .join(' / ') || '',
+        topAttackers
+      }
+    })
+    .filter(Boolean)
+
+  if (!relievers.length) return null
+
+  const averageFitScore = average(relievers.map((reliever) => reliever.fitScore))
+  const averageFitGrade = average(relievers.map((reliever) => reliever.fitGrade))
+  const edgeCount = relievers.reduce(
+    (sum, reliever) => sum + reliever.topAttackers.filter((hitter) => /fit \+/.test(hitter.tag)).length,
+    0
+  )
+  const pressureIndex = clamp(
+    50 +
+      (Number.isFinite(averageFitGrade) ? averageFitGrade * 6.1 : 0) +
+      (Number.isFinite(averageFitScore) ? (averageFitScore - 50) * 0.42 : 0) +
+      (edgeCount - 2) * 2.6,
+    18,
+    94
+  )
+  const firstReliever = relievers[0] || null
+
+  return {
+    pressureIndex: roundToTenths(pressureIndex),
+    averageFitScore: roundToTenths(averageFitScore ?? 50),
+    averageFitGrade: roundToHundredths(averageFitGrade ?? 0),
+    firstReliever,
+    relievers,
+    topAttackers: relievers.flatMap((reliever) => reliever.topAttackers).slice(0, 3),
+    overview: firstReliever
+      ? `${firstReliever.name} is the first bridge look, and this lineup grades ${formatSigned(
+          firstReliever.fitGrade,
+          1
+        )} against that likely first-up arsenal.`
+      : 'No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.'
+  }
+}
+
 const buildPlayerLineupEntry = ({
   lineupPlayer,
   seasonStats,
   recentStats,
   splitStats,
+  pitchTypeStatsByType,
   opposingPitcher
 }) => {
   const seasonOps = Number.isFinite(seasonStats?.ops) ? seasonStats.ops : 0.72
@@ -644,26 +1002,41 @@ const buildPlayerLineupEntry = ({
     splitKRate,
     recentDelta
   })
+  const pitchTypeFit = buildPitchTypeFit({
+    pitchTypeStatsByType,
+    opposingPitcherMix: opposingPitcher?.pitchMix
+  })
   const matchupGrade = clamp(
     (seasonOps - 0.72) * 18 +
       recentDelta * 28 +
       splitDelta * 22 +
       handednessEdge +
       slotBonus +
-      pitchStyleAdjustment.adjustment,
+      pitchStyleAdjustment.adjustment +
+      (Number(pitchTypeFit?.fitGrade || 0) * 0.85),
     -8,
     10
   )
-  const matchupScore = clamp(50 + matchupGrade * 4.2 + (formScore - 50) * 0.12 + (splitScore - 50) * 0.1, 18, 94)
+  const matchupScore = clamp(
+    50 +
+      matchupGrade * 4.2 +
+      (formScore - 50) * 0.12 +
+      (splitScore - 50) * 0.1 +
+      (Number(pitchTypeFit?.fitScore || 50) - 50) * 0.1,
+    18,
+    94
+  )
 
   const tags = []
   if (matchupGrade >= 5 || (powerScore >= 70 && formScore >= 54)) tags.push('carry')
   if (formScore >= 61) tags.push('heater')
   if (splitScore >= 58 || handednessEdge > 0) tags.push('split edge')
+  if (Number(pitchTypeFit?.fitGrade || 0) >= 1.4) tags.push('arsenal edge')
   if (contactScore >= 63) tags.push('traffic')
   if ((opposingPitcher?.profileType === 'Power' || opposingPitcher?.profileType === 'Volatile bat-misser') && varianceScore >= 64 && seasonKRate >= 0.24) {
     tags.push('whiff risk')
   }
+  if (Number(pitchTypeFit?.fitGrade || 0) <= -1.4) tags.push('arsenal risk')
   if (formScore <= 42 || matchupGrade <= -1.4) tags.push('cold')
 
   const primaryTag = tags[0] || (matchupGrade >= 1.5 ? 'live' : matchupGrade <= -1 ? 'suppressed' : 'thin')
@@ -671,6 +1044,7 @@ const buildPlayerLineupEntry = ({
     buildSeasonLine(seasonStats),
     buildRecentLine(recentStats),
     buildSplitLine(splitStats, opposingPitcher?.handedness),
+    pitchTypeFit?.summary ? `arsenal ${pitchTypeFit.summary}` : '',
     `${formatSigned(matchupGrade)} matchup grade in a ${pitchStyleAdjustment.note}`
   ].join(' | ')
 
@@ -755,9 +1129,13 @@ const buildPlayerLineupEntry = ({
       formScore: roundToTenths(formScore),
       splitScore: roundToTenths(splitScore),
       varianceScore: roundToTenths(varianceScore),
+      pitchTypeFitScore: roundToTenths(Number(pitchTypeFit?.fitScore || 50)),
+      pitchTypeGrade: roundToHundredths(Number(pitchTypeFit?.fitGrade || 0)),
+      pitchTypeCoveragePct: roundToTenths(Number(pitchTypeFit?.coveragePct || 0)),
       matchupScore: roundToTenths(matchupScore),
       matchupGrade: roundToHundredths(matchupGrade)
     },
+    pitchType: pitchTypeFit,
     tags,
     primaryTag,
     summary,
@@ -765,10 +1143,17 @@ const buildPlayerLineupEntry = ({
   }
 }
 
-const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
+const buildLineupTeamSummary = ({
+  teamName,
+  lineup,
+  opposingPitcher,
+  opposingRelievers = [],
+  pitchTypeStatsLookup = null
+}) => {
   const sortedDesc = [...lineup].sort((left, right) => right.metrics.matchupGrade - left.metrics.matchupGrade)
   const sortedAsc = [...lineup].sort((left, right) => left.metrics.matchupGrade - right.metrics.matchupGrade)
   const splitEdgeFilter = (entry) => entry.tags.includes('split edge')
+  const arsenalEdgeFilter = (entry) => entry.tags.includes('arsenal edge')
   const sameHandFilter = (entry) =>
     entry.bats && opposingPitcher?.handedness && entry.bats !== 'S' && entry.bats === opposingPitcher.handedness
   const oppositeHandFilter = (entry) =>
@@ -802,11 +1187,21 @@ const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
   const oppositeHandCount = lineup.filter(oppositeHandFilter).length
   const sameHandCount = lineup.filter(sameHandFilter).length
   const topThirdSplitCount = lineup.slice(0, 3).filter(splitEdgeFilter).length
+  const topThirdArsenalCount = lineup.slice(0, 3).filter(arsenalEdgeFilter).length
   const weightedSplitGrade = average(
     lineup
       .filter(splitEdgeFilter)
       .map((entry) => entry.metrics.matchupGrade)
   )
+  const averagePitchTypeGrade = average(lineup.map((entry) => entry.metrics.pitchTypeGrade))
+  const topThirdPitchTypeScore = average(lineup.slice(0, 3).map((entry) => entry.metrics.pitchTypeFitScore))
+  const pitchTypeEdgeCount = lineup.filter((entry) => Number(entry.metrics.pitchTypeGrade) >= 1.2).length
+  const bullpenPitchTypeSummary = buildBullpenPitchTypeSummary({
+    lineup,
+    pitchTypeStatsLookup,
+    opposingRelievers
+  })
+  const bullpenPitchTypePressureIndex = Number(bullpenPitchTypeSummary?.pressureIndex)
   const platoonPressureIndex = clamp(
     50 +
       (platoonCount - 4) * 4 +
@@ -814,6 +1209,15 @@ const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
       (oppositeHandCount - sameHandCount) * 2.2 +
       (switchCount ? switchCount * 1.4 : 0) +
       (Number.isFinite(weightedSplitGrade) ? weightedSplitGrade * 4.4 : 0),
+    18,
+    94
+  )
+  const pitchTypePressureIndex = clamp(
+    50 +
+      (Number.isFinite(averagePitchTypeGrade) ? averagePitchTypeGrade * 5.8 : 0) +
+      (Number(topThirdPitchTypeScore || 50) - 50) * 0.6 +
+      (pitchTypeEdgeCount - 3) * 3.4 +
+      (topThirdArsenalCount - 1) * 4.2,
     18,
     94
   )
@@ -825,7 +1229,14 @@ const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
       (heaterCount - suppressorCount) * 2.4 +
       (powerCount - 2) * 2 +
       (Number(averageMatchupGrade || 0)) * 5.6 +
-      (platoonPressureIndex - 50) * 0.34,
+      (platoonPressureIndex - 50) * 0.24 +
+      (pitchTypePressureIndex - 50) * 0.32,
+    18,
+    94
+  )
+  const overallPressureIndex = clamp(
+    starterPressureIndex +
+      (Number.isFinite(bullpenPitchTypePressureIndex) ? (bullpenPitchTypePressureIndex - 50) * 0.16 : 0),
     18,
     94
   )
@@ -844,6 +1255,10 @@ const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
   const overview = overperformHitters.length
     ? `${teamName} can lean on ${overperformHitters.map((entry) => entry.name).join(', ')} to drive early pressure against ${opposingPitcher?.fullName || 'today’s starter'}.`
     : `${teamName} look more like a chain-traffic lineup than a single-carry lineup on the current posted order.`
+  const bullpenOverperformHitters = bullpenPitchTypeSummary?.topAttackers || []
+  const bullpenOverview =
+    bullpenPitchTypeSummary?.overview ||
+    'No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.'
 
   return {
     aggregate: {
@@ -853,26 +1268,37 @@ const buildLineupTeamSummary = ({ teamName, lineup, opposingPitcher }) => {
       contactCount,
       powerCount,
       platoonCount,
+      pitchTypeEdgeCount,
       oppositeHandCount,
       sameHandCount,
       switchCount,
       topThirdSplitCount,
+      topThirdArsenalCount,
       heaterCount,
       suppressorCount,
       platoonPressureIndex: roundToTenths(platoonPressureIndex),
+      pitchTypePressureIndex: roundToTenths(pitchTypePressureIndex),
+      bullpenPitchTypePressureIndex: Number.isFinite(bullpenPitchTypePressureIndex)
+        ? roundToTenths(bullpenPitchTypePressureIndex)
+        : null,
       starterPressureIndex: roundToTenths(starterPressureIndex),
+      overallPressureIndex: roundToTenths(overallPressureIndex),
       topThirdScore: roundToTenths(topThirdScore ?? 50),
-      depthScore: roundToTenths(depthScore ?? 50)
+      depthScore: roundToTenths(depthScore ?? 50),
+      bullpenOverperformHitters
     },
     summary: {
       pressureLabel,
       overperformHitters,
+      bullpenOverperformHitters,
       underperformHitters,
       underperformNote,
       overview,
+      bullpenOverview,
       topThirdScore: roundToTenths(topThirdScore ?? 50),
       middleScore: roundToTenths(middleScore ?? 50),
-      depthScore: roundToTenths(depthScore ?? 50)
+      depthScore: roundToTenths(depthScore ?? 50),
+      bullpenPitchTypeSummary
     }
   }
 }
@@ -892,6 +1318,7 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
         opposingPitcher?.handedness === 'L'
           ? getStatRecord(playerStatMaps.vsLeft, playerId)
           : getStatRecord(playerStatMaps.vsRight, playerId)
+      const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       const lineupPlayer = {
         playerId,
@@ -906,6 +1333,7 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
         seasonStats,
         recentStats,
         splitStats,
+        pitchTypeStatsByType,
         opposingPitcher
       })
     })
@@ -916,7 +1344,8 @@ const extractSupplementalLineupPlayers = ({
   rotoSide = null,
   boxscoreSide = {},
   playerStatMaps = {},
-  opposingPitcher = null
+  opposingPitcher = null,
+  expectedOfficialTeam = ''
 }) => {
   if (!rotoSide?.players?.length) return []
 
@@ -935,7 +1364,9 @@ const extractSupplementalLineupPlayers = ({
         opposingPitcher?.handedness === 'L'
           ? getStatRecord(playerStatMaps.vsLeft, playerId)
           : getStatRecord(playerStatMaps.vsRight, playerId)
+      const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
+      if (!matchesExpectedOfficialTeam({ expectedOfficialTeam, playerRecord, playerDetails })) return null
       const lineupPlayer = {
         playerId,
         slot: player.slot,
@@ -949,6 +1380,7 @@ const extractSupplementalLineupPlayers = ({
         seasonStats,
         recentStats,
         splitStats,
+        pitchTypeStatsByType,
         opposingPitcher
       })
     })
@@ -993,7 +1425,9 @@ const serializeModule = ({ meta, lineupBoardsByGameId, lineupMatchupContextByGam
 
 const main = async () => {
   const options = parseArgs()
-  const rawGames = await loadRawGames(options.date)
+  const dayData = await loadDayData(options.date)
+  const rawGames = dayData.rawGames
+  const bullpenChainByTeam = dayData.bullpenChainByTeam || {}
   const recentStartDate = shiftDate(options.date, -options.recentWindowDays)
   const recentEndDate = shiftDate(options.date, -1)
   const scheduleUrl = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${options.date}&hydrate=team,probablePitcher`
@@ -1038,6 +1472,25 @@ const main = async () => {
       ])
     )
   ]
+  const starterIds = [
+    ...new Set(
+      rawGames
+        .flatMap((game) => [game.awayPitcher?.id, game.homePitcher?.id])
+        .filter((value) => Number.isFinite(Number(value)))
+        .map((value) => Number(value))
+    )
+  ]
+  const relieverIds = [
+    ...new Set(
+      rawGames
+        .flatMap((game) => [
+          ...(bullpenChainByTeam[game.away]?.topRelievers || []).map((reliever) => reliever.pitcherId),
+          ...(bullpenChainByTeam[game.home]?.topRelievers || []).map((reliever) => reliever.pitcherId)
+        ])
+        .filter((value) => Number.isFinite(Number(value)))
+        .map((value) => Number(value))
+    )
+  ]
 
   const [seasonMap, recentMap, vsRightMap, vsLeftMap] = await Promise.all([
     fetchPlayerHydrateMap(
@@ -1058,11 +1511,18 @@ const main = async () => {
     )
   ])
 
+  const { batterPitchTypeStatsByPlayerId, pitcherPitchMixByPlayerId } = await buildPitchArsenalMaps({
+    batterIds: allPlayerIds,
+    pitcherIds: [...starterIds, ...relieverIds],
+    year: Number(options.date.slice(0, 4))
+  })
+
   const playerStatMaps = {
     season: seasonMap,
     recent: recentMap,
     vsRight: vsRightMap,
-    vsLeft: vsLeftMap
+    vsLeft: vsLeftMap,
+    pitchArsenal: batterPitchTypeStatsByPlayerId
   }
 
   const lineupBoardsByGameId = {}
@@ -1074,8 +1534,14 @@ const main = async () => {
     const homeOfficial = deskToOfficialTeam[rawGame.home] || rawGame.home
     const awayDesk = officialToDeskTeam[awayOfficial] || rawGame.away
     const homeDesk = officialToDeskTeam[homeOfficial] || rawGame.home
-    const awayPitcher = buildPitcherProfile(rawGame.homePitcher)
-    const homePitcher = buildPitcherProfile(rawGame.awayPitcher)
+    const awayPitcher = buildPitcherProfile(
+      rawGame.homePitcher,
+      pitcherPitchMixByPlayerId.get(Number(rawGame.homePitcher?.id)) || null
+    )
+    const homePitcher = buildPitcherProfile(
+      rawGame.awayPitcher,
+      pitcherPitchMixByPlayerId.get(Number(rawGame.awayPitcher?.id)) || null
+    )
     const awayBoxscore = feed.liveData?.boxscore?.teams?.away || {}
     const homeBoxscore = feed.liveData?.boxscore?.teams?.home || {}
     const officialKey = `${awayOfficial} @ ${homeOfficial}`
@@ -1086,13 +1552,15 @@ const main = async () => {
       rotoSide: rotoWireCard?.away,
       boxscoreSide: awayBoxscore,
       playerStatMaps,
-      opposingPitcher: awayPitcher
+      opposingPitcher: awayPitcher,
+      expectedOfficialTeam: awayOfficial
     })
     const homeSupplementalLineup = extractSupplementalLineupPlayers({
       rotoSide: rotoWireCard?.home,
       boxscoreSide: homeBoxscore,
       playerStatMaps,
-      opposingPitcher: homePitcher
+      opposingPitcher: homePitcher,
+      expectedOfficialTeam: homeOfficial
     })
     const awaySelection = choosePreferredLineup({
       officialLineup: awayOfficialLineup,
@@ -1110,11 +1578,25 @@ const main = async () => {
     const homeLineup = homeSelection.lineup
     const awayStatus = awaySelection.status
     const homeStatus = homeSelection.status
+    const awayOpposingRelievers = (bullpenChainByTeam[homeDesk]?.topRelievers || [])
+      .map((reliever) => ({
+        ...reliever,
+        pitchMix: pitcherPitchMixByPlayerId.get(Number(reliever.pitcherId)) || null
+      }))
+      .filter((reliever) => reliever.pitchMix?.topPitches?.length)
+    const homeOpposingRelievers = (bullpenChainByTeam[awayDesk]?.topRelievers || [])
+      .map((reliever) => ({
+        ...reliever,
+        pitchMix: pitcherPitchMixByPlayerId.get(Number(reliever.pitcherId)) || null
+      }))
+      .filter((reliever) => reliever.pitchMix?.topPitches?.length)
     const awaySummary = awayLineup.length
       ? buildLineupTeamSummary({
           teamName: awayDesk,
           lineup: awayLineup,
-          opposingPitcher: awayPitcher
+          opposingPitcher: awayPitcher,
+          opposingRelievers: awayOpposingRelievers,
+          pitchTypeStatsLookup: playerStatMaps.pitchArsenal
         })
       : {
           aggregate: null,
@@ -1133,7 +1615,9 @@ const main = async () => {
       ? buildLineupTeamSummary({
           teamName: homeDesk,
           lineup: homeLineup,
-          opposingPitcher: homePitcher
+          opposingPitcher: homePitcher,
+          opposingRelievers: homeOpposingRelievers,
+          pitchTypeStatsLookup: playerStatMaps.pitchArsenal
         })
       : {
           aggregate: null,
@@ -1169,8 +1653,24 @@ const main = async () => {
         opposingStarter: {
           name: awayPitcher?.fullName || '',
           hand: awayPitcher?.handedness || '',
-          type: awayPitcher?.profileType || 'Unknown sample'
+          type: awayPitcher?.profileType || 'Unknown sample',
+          pitchMixSummary:
+            awayPitcher?.pitchMix?.topPitches
+              ?.slice(0, 3)
+              .map((pitch) => `${pitch.pitchName} ${pitch.pitchUsage.toFixed(0)}%`)
+              .join(' / ') || ''
         },
+        opposingRelievers: awayOpposingRelievers.map((reliever) => ({
+          name: reliever.name,
+          role: reliever.role,
+          availabilityScore: reliever.availabilityScore,
+          firstRelieverLikelihood: reliever.firstRelieverLikelihood,
+          pitchMixSummary:
+            reliever.pitchMix?.topPitches
+              ?.slice(0, 3)
+              .map((pitch) => `${pitch.pitchName} ${pitch.pitchUsage.toFixed(0)}%`)
+              .join(' / ') || ''
+        })),
         lineup: awayLineup,
         ...awaySummary
       },
@@ -1180,8 +1680,24 @@ const main = async () => {
         opposingStarter: {
           name: homePitcher?.fullName || '',
           hand: homePitcher?.handedness || '',
-          type: homePitcher?.profileType || 'Unknown sample'
+          type: homePitcher?.profileType || 'Unknown sample',
+          pitchMixSummary:
+            homePitcher?.pitchMix?.topPitches
+              ?.slice(0, 3)
+              .map((pitch) => `${pitch.pitchName} ${pitch.pitchUsage.toFixed(0)}%`)
+              .join(' / ') || ''
         },
+        opposingRelievers: homeOpposingRelievers.map((reliever) => ({
+          name: reliever.name,
+          role: reliever.role,
+          availabilityScore: reliever.availabilityScore,
+          firstRelieverLikelihood: reliever.firstRelieverLikelihood,
+          pitchMixSummary:
+            reliever.pitchMix?.topPitches
+              ?.slice(0, 3)
+              .map((pitch) => `${pitch.pitchName} ${pitch.pitchUsage.toFixed(0)}%`)
+              .join(' / ') || ''
+        })),
         lineup: homeLineup,
         ...homeSummary
       }
@@ -1204,7 +1720,7 @@ const main = async () => {
       gameCount: Object.keys(lineupBoardsByGameId).length,
       playerCount: allPlayerIds.length,
       sourceLabel:
-        'Official MLB feed/live batting orders plus official player season, recent, and handedness split stats, supplemented by RotoWire daily lineups and weather when the official order is still missing.'
+        'Official MLB feed/live batting orders plus official player season, recent, handedness split, and Statcast pitch-arsenal matchup data, supplemented by RotoWire daily lineups and weather when the official order is still missing.'
     },
     lineupBoardsByGameId,
     lineupMatchupContextByGameId

@@ -814,6 +814,11 @@ h3 {
   line-height: 1.2;
 }
 
+.pitcher-team-context {
+  color: color-mix(in srgb, var(--team-accent) 56%, white 44%);
+  font-size: 0.64rem;
+}
+
 .pitcher-recent-form {
   color: color-mix(in srgb, var(--team-accent) 62%, white 38%);
 }
@@ -1185,7 +1190,7 @@ h3 {
 
 .home-run-tier-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -1225,6 +1230,21 @@ h3 {
 .home-run-target-row span,
 .home-run-empty {
   color: var(--muted);
+}
+
+.home-run-weight-bar {
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.home-run-weight-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(234, 197, 109, 0.65), rgba(248, 113, 113, 0.88));
 }
 
 .home-run-target-meta {

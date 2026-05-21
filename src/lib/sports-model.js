@@ -608,6 +608,7 @@ const buildMlbStandingsSignal = (game, participants) => {
 }
 
 const buildMlbOffenseScore = (profile = {}, role = '') => {
+  if (profile?.staleFeed) return null
   const splitHits = /home/i.test(role) ? Number(profile.homeHitsPerGame) : Number(profile.awayHitsPerGame)
   const baselineHits = Number(profile.hitsPerGame)
   const recentHits = Number(profile.last3HitsPerGame)
@@ -629,6 +630,7 @@ const buildMlbOffenseSignal = (game, participants) => {
   const homeContext = game.offenseContext?.home
 
   if (!awayContext || !homeContext || participants.length < 2) return null
+  if (awayContext.staleFeed || homeContext.staleFeed) return null
 
   const scores = [
     buildMlbOffenseScore(awayContext, participants[0].role),
@@ -655,6 +657,7 @@ const buildMlbOffenseSignal = (game, participants) => {
 }
 
 const buildMlbBullpenScore = (profile = {}) => {
+  if (profile?.staleFeed) return null
   const era = Number(profile.era)
   const whip = Number(profile.whip)
   const strikeouts = Number(profile.strikeouts)
@@ -674,6 +677,7 @@ const buildMlbBullpenSignal = (game, participants) => {
   const homeContext = game.bullpenContext?.home
 
   if (!awayContext || !homeContext || participants.length < 2) return null
+  if (awayContext.staleFeed || homeContext.staleFeed) return null
 
   const scores = [buildMlbBullpenScore(awayContext), buildMlbBullpenScore(homeContext)]
 
@@ -767,6 +771,70 @@ const buildMlbBullpenChainSignal = (game, participants) => {
   )
 }
 
+const buildMlbStoryScore = (profile = {}) => {
+  const offenseSustainability = Number(profile.offenseSustainability)
+  const lineupMomentum = Number(profile.lineupMomentum)
+  const starterTrajectory = Number(profile.starterTrajectory)
+  const bullpenTrust = Number(profile.bullpenTrust)
+  const callupEnergy = Number(profile.callupEnergy)
+  const variance = Number(profile.variance)
+
+  if (
+    ![
+      offenseSustainability,
+      lineupMomentum,
+      starterTrajectory,
+      bullpenTrust,
+      callupEnergy,
+      variance
+    ].every(Number.isFinite)
+  ) {
+    return null
+  }
+
+  return clamp(
+    offenseSustainability * 0.34 +
+      lineupMomentum * 0.24 +
+      starterTrajectory * 0.16 +
+      bullpenTrust * 0.14 +
+      callupEnergy * 0.12 -
+      Math.max(variance - 58, 0) * 0.28,
+    18,
+    92
+  )
+}
+
+const buildMlbStorySignal = (game, participants) => {
+  const awayContext = game.storyContext?.away
+  const homeContext = game.storyContext?.home
+
+  if (!awayContext || !homeContext || participants.length < 2) return null
+
+  const scores = [buildMlbStoryScore(awayContext), buildMlbStoryScore(homeContext)]
+  if (scores.some((score) => !Number.isFinite(score))) return null
+
+  const buildLabel = (context) => {
+    const tags = Array.isArray(context.tags) ? context.tags.slice(0, 2).join(' | ') : ''
+    return `${context.summary}${tags ? ` (${tags})` : ''}`
+  }
+
+  return createSignal(
+    'Team story context',
+    0.1,
+    [
+      {
+        label: buildLabel(awayContext),
+        score: scores[0]
+      },
+      {
+        label: buildLabel(homeContext),
+        score: scores[1]
+      }
+    ],
+    'Daily team-story layer'
+  )
+}
+
 const buildMlbSavantScore = (profile = {}) => {
   const ba = Number(profile.ba)
   const xba = Number(profile.xba)
@@ -816,16 +884,114 @@ const buildMlbSavantSignal = (game, participants) => {
   )
 }
 
+const buildMlbWeatherProfile = (lineupBoard = null) => {
+  const weather = lineupBoard?.weather
+  if (!weather) return null
+
+  const parseWeatherNumber = (value) =>
+    value === null || value === undefined || value === '' ? Number.NaN : Number(value)
+  const summary = `${weather.summary || weather.label || ''}`.toLowerCase()
+  const temperatureF = parseWeatherNumber(weather.temperatureF)
+  const windMph = parseWeatherNumber(weather.windMph)
+  const windDirection = `${weather.windDirection || ''}`.toLowerCase()
+  const precipitationPct = parseWeatherNumber(weather.precipitationPct)
+  const isDome = /dome/i.test(summary)
+
+  let hitBoostFirst5 = 0
+  let hitBoostLate = 0
+  let runBoostFirst5 = 0
+  let runBoostLate = 0
+  let volatilityDelta = 0
+
+  if (Number.isFinite(temperatureF)) {
+    if (temperatureF >= 88) {
+      hitBoostFirst5 += 0.18
+      hitBoostLate += 0.16
+      runBoostFirst5 += 0.01
+      runBoostLate += 0.012
+    } else if (temperatureF >= 80) {
+      hitBoostFirst5 += 0.08
+      hitBoostLate += 0.07
+      runBoostFirst5 += 0.004
+      runBoostLate += 0.005
+    } else if (temperatureF <= 55) {
+      hitBoostFirst5 -= 0.12
+      hitBoostLate -= 0.1
+      runBoostFirst5 -= 0.006
+      runBoostLate -= 0.007
+    }
+  }
+
+  if (Number.isFinite(windMph)) {
+    if (/out/.test(windDirection)) {
+      hitBoostFirst5 += Math.min(0.18, windMph * 0.012)
+      hitBoostLate += Math.min(0.22, windMph * 0.015)
+      runBoostFirst5 += Math.min(0.014, windMph * 0.0009)
+      runBoostLate += Math.min(0.018, windMph * 0.0011)
+    } else if (/in/.test(windDirection)) {
+      hitBoostFirst5 -= Math.min(0.16, windMph * 0.011)
+      hitBoostLate -= Math.min(0.18, windMph * 0.013)
+      runBoostFirst5 -= Math.min(0.012, windMph * 0.0008)
+      runBoostLate -= Math.min(0.014, windMph * 0.001)
+    } else if (/[lr]-[lr]/.test(windDirection) || windDirection === 'r-l' || windDirection === 'l-r') {
+      volatilityDelta += Math.min(4, windMph * 0.18)
+    }
+  }
+
+  if (Number.isFinite(precipitationPct) && precipitationPct >= 35) {
+    hitBoostFirst5 -= 0.05
+    hitBoostLate -= 0.04
+    runBoostFirst5 -= 0.003
+    runBoostLate -= 0.003
+    volatilityDelta += 2
+  }
+
+  if (isDome) {
+    volatilityDelta -= 1
+  }
+
+  const totalRunBoost = roundToTenths((runBoostFirst5 + runBoostLate) * 100)
+  const label =
+    Number.isFinite(totalRunBoost) && Math.abs(totalRunBoost) >= 0.4
+      ? totalRunBoost > 0
+        ? `${weather.label || weather.summary} | weather helps carry`
+        : `${weather.label || weather.summary} | weather suppresses carry`
+      : weather.label || weather.summary || ''
+
+  return {
+    label,
+    temperatureF: Number.isFinite(temperatureF) ? temperatureF : null,
+    windMph: Number.isFinite(windMph) ? windMph : null,
+    windDirection: weather.windDirection || '',
+    precipitationPct: Number.isFinite(precipitationPct) ? precipitationPct : null,
+    isDome,
+    hitBoostFirst5,
+    hitBoostLate,
+    runBoostFirst5,
+    runBoostLate,
+    volatilityDelta: roundToTenths(volatilityDelta)
+  }
+}
+
+const lineupStatusConfidence = (status = '') => {
+  if (status === 'posted') return 1
+  if (status === 'partial') return 0.55
+  return 0.2
+}
+
 const buildProjectedHitProfile = ({
   role = '',
   offenseProfile = {},
   savantProfile = {},
   lineupProfile = null,
+  lineupStatus = 'pending',
   opposingStarter = null,
   opposingBullpen = {},
   opposingBullpenChain = null,
-  parkContext = null
+  parkContext = null,
+  weatherProfile = null
 }) => {
+  const offenseFeedStale = Boolean(offenseProfile?.staleFeed)
   const splitHits = /home/i.test(role)
     ? Number(offenseProfile.homeHitsPerGame)
     : Number(offenseProfile.awayHitsPerGame)
@@ -834,11 +1000,18 @@ const buildProjectedHitProfile = ({
 
   if (![splitHits, baselineHits, recentHits].every(Number.isFinite)) return null
 
-  let starterPhaseProjection = baselineHits * 0.4 + splitHits * 0.35 + recentHits * 0.25
+  let starterPhaseProjection = offenseFeedStale
+    ? 7.9 + (/home/i.test(role) ? 0.05 : 0.15)
+    : baselineHits * 0.4 + splitHits * 0.35 + recentHits * 0.25
   const qualityNotes = []
+  const lineupConfidence = lineupStatusConfidence(lineupStatus)
   const runIndex = Number(parkContext?.indexRuns)
   const wobaIndex = Number(parkContext?.indexWoba)
   let bullpenAdjustment = 0
+
+  if (offenseFeedStale) {
+    qualityNotes.push('team offense feed stale')
+  }
 
   if (
     [Number(savantProfile.ba), Number(savantProfile.xba), Number(savantProfile.hardHitPct), Number(savantProfile.barrelPct), Number(savantProfile.xwoba)].every(
@@ -855,26 +1028,36 @@ const buildProjectedHitProfile = ({
 
   if (lineupProfile) {
     if (Number.isFinite(lineupProfile.averageMatchupGrade)) {
-      starterPhaseProjection += lineupProfile.averageMatchupGrade * 0.14
+      starterPhaseProjection += lineupProfile.averageMatchupGrade * 0.14 * lineupConfidence
     }
 
     if (Number.isFinite(lineupProfile.starterThreatCount)) {
-      starterPhaseProjection += (lineupProfile.starterThreatCount - 3) * 0.08
+      starterPhaseProjection += (lineupProfile.starterThreatCount - 3) * 0.08 * lineupConfidence
     }
 
     if (Number.isFinite(lineupProfile.topThirdScore)) {
-      starterPhaseProjection += (lineupProfile.topThirdScore - 50) * 0.018
+      starterPhaseProjection += (lineupProfile.topThirdScore - 50) * 0.018 * lineupConfidence
     }
 
     if (Number.isFinite(lineupProfile.platoonPressureIndex)) {
-      starterPhaseProjection += (lineupProfile.platoonPressureIndex - 50) * 0.012
+      starterPhaseProjection += (lineupProfile.platoonPressureIndex - 50) * 0.012 * lineupConfidence
+    }
+
+    if (Number.isFinite(lineupProfile.pitchTypePressureIndex)) {
+      starterPhaseProjection += (lineupProfile.pitchTypePressureIndex - 50) * 0.013 * lineupConfidence
     }
 
     if (Number.isFinite(lineupProfile.starterPressureIndex)) {
-      starterPhaseProjection += (lineupProfile.starterPressureIndex - 50) * 0.014
+      starterPhaseProjection += (lineupProfile.starterPressureIndex - 50) * 0.014 * lineupConfidence
     }
 
-    qualityNotes.push('lineup split pressure')
+    qualityNotes.push(
+      lineupConfidence >= 1
+        ? 'lineup split pressure'
+        : lineupConfidence >= 0.5
+          ? 'partial lineup split pressure'
+          : 'projected lineup split pressure'
+    )
   }
 
   if (opposingStarter) {
@@ -935,10 +1118,12 @@ const buildProjectedHitProfile = ({
     }
   }
 
-  if ([Number(opposingBullpen.era), Number(opposingBullpen.whip)].every(Number.isFinite)) {
+  if (!opposingBullpen?.staleFeed && [Number(opposingBullpen.era), Number(opposingBullpen.whip)].every(Number.isFinite)) {
     bullpenAdjustment += (Number(opposingBullpen.era) - 4.1) * 0.14
     bullpenAdjustment += (Number(opposingBullpen.whip) - 1.31) * 0.9
     qualityNotes.push('bullpen shape')
+  } else if (opposingBullpen?.staleFeed) {
+    qualityNotes.push('bullpen stat feed stale')
   }
 
   const opposingBullpenChainScore = buildMlbBullpenChainScore(opposingBullpenChain)
@@ -946,6 +1131,14 @@ const buildProjectedHitProfile = ({
   if (Number.isFinite(opposingBullpenChainScore)) {
     bullpenAdjustment += (56 - opposingBullpenChainScore) * 0.032
     qualityNotes.push('likely bridge chain')
+  }
+
+  if (lineupProfile && Number.isFinite(lineupProfile.bullpenPitchTypePressureIndex)) {
+    bullpenAdjustment +=
+      (lineupProfile.bullpenPitchTypePressureIndex - 50) * 0.014 * lineupConfidence
+    qualityNotes.push(
+      lineupConfidence >= 1 ? 'reliever arsenal fit' : 'projected reliever arsenal fit'
+    )
   }
 
   if (Number.isFinite(runIndex)) {
@@ -956,13 +1149,30 @@ const buildProjectedHitProfile = ({
     starterPhaseProjection += (wobaIndex - 100) * 0.018
   }
 
+  if (weatherProfile) {
+    starterPhaseProjection += Number(weatherProfile.hitBoostFirst5 || 0)
+    bullpenAdjustment += Number(weatherProfile.hitBoostLate || 0)
+    if (
+      Math.abs(Number(weatherProfile.hitBoostFirst5 || 0)) >= 0.04 ||
+      Math.abs(Number(weatherProfile.hitBoostLate || 0)) >= 0.04
+    ) {
+      qualityNotes.push('weather lane')
+    }
+  }
+
   const estimatedAtBats = clamp(
-    34.4 + (Number.isFinite(runIndex) ? (runIndex - 100) * 0.025 : 0) + (/away/i.test(role) ? 0.2 : -0.1),
+    34.4 +
+      (Number.isFinite(runIndex) ? (runIndex - 100) * 0.025 : 0) +
+      (weatherProfile ? Number(weatherProfile.hitBoostFirst5 || 0) * 0.12 + Number(weatherProfile.hitBoostLate || 0) * 0.09 : 0) +
+      (/away/i.test(role) ? 0.2 : -0.1),
     33.6,
     35.8
   )
   const estimatedFirst5AtBats = clamp(
-    19.0 + (Number.isFinite(runIndex) ? (runIndex - 100) * 0.013 : 0) + (/away/i.test(role) ? 0.1 : -0.05),
+    19.0 +
+      (Number.isFinite(runIndex) ? (runIndex - 100) * 0.013 : 0) +
+      (weatherProfile ? Number(weatherProfile.hitBoostFirst5 || 0) * 0.08 : 0) +
+      (/away/i.test(role) ? 0.1 : -0.05),
     18.3,
     19.8
   )
@@ -997,29 +1207,67 @@ const buildProjectedHitProfile = ({
 
   if (lineupProfile) {
     if (Number.isFinite(lineupProfile.starterPressureIndex)) {
-      starterCoverageFirst5 -= (lineupProfile.starterPressureIndex - 50) * 0.0025
+      starterCoverageFirst5 -= (lineupProfile.starterPressureIndex - 50) * 0.0025 * lineupConfidence
     }
 
     if (Number.isFinite(lineupProfile.topThirdScore)) {
-      starterCoverageFirst5 -= Math.max(lineupProfile.topThirdScore - 58, 0) * 0.0016
+      starterCoverageFirst5 -=
+        Math.max(lineupProfile.topThirdScore - 58, 0) * 0.0016 * lineupConfidence
     }
 
     if (Number.isFinite(lineupProfile.oppositeHandCount)) {
-      starterCoverageFirst5 -= Math.max(lineupProfile.oppositeHandCount - 5, 0) * 0.008
+      starterCoverageFirst5 -=
+        Math.max(lineupProfile.oppositeHandCount - 5, 0) * 0.008 * lineupConfidence
+    }
+
+    if (Number.isFinite(lineupProfile.pitchTypePressureIndex)) {
+      starterCoverageFirst5 -=
+        Math.max(lineupProfile.pitchTypePressureIndex - 56, 0) * 0.0016 * lineupConfidence
     }
   }
 
   starterCoverageFirst5 = clamp(starterCoverageFirst5, 0.58, 1)
-  const first5ProjectionFullScale =
+  const rawFirst5ProjectionFullScale =
     starterPhaseProjection + bullpenAdjustment * (1 - starterCoverageFirst5) * 0.45
-  const starterPhaseHits = clamp(
-    first5ProjectionFullScale * (estimatedFirst5AtBats / estimatedAtBats),
+  const rawStarterPhaseHits = clamp(
+    rawFirst5ProjectionFullScale * (estimatedFirst5AtBats / estimatedAtBats),
     3.0,
     7.1
   )
-  const fullGameProjection = clamp(starterPhaseProjection + bullpenAdjustment, 5.6, 11.6)
+  const rawFullGameProjection = clamp(starterPhaseProjection + bullpenAdjustment, 5.6, 11.6)
   const estimatedLateAtBats = clamp(estimatedAtBats - estimatedFirst5AtBats, 14.4, 17.1)
+  const neutralProjection = clamp(
+    offenseFeedStale
+      ? 7.4 + (/home/i.test(role) ? 0.05 : 0.1)
+      : baselineHits * 0.52 + splitHits * 0.28 + recentHits * 0.2,
+    6.2,
+    9.2
+  )
+  const neutralFirst5Hits = clamp(
+    neutralProjection * (estimatedFirst5AtBats / estimatedAtBats),
+    3.3,
+    5.8
+  )
+  const confidenceBlend = lineupProfile ? lineupConfidence : 0.75
+  const fullGameProjection = clamp(
+    neutralProjection + (rawFullGameProjection - neutralProjection) * confidenceBlend,
+    5.6,
+    11.6
+  )
+  const starterPhaseHits = clamp(
+    neutralFirst5Hits + (rawStarterPhaseHits - neutralFirst5Hits) * confidenceBlend,
+    3.0,
+    7.1
+  )
   const lateGameProjection = clamp(fullGameProjection - starterPhaseHits, 2.0, 6.2)
+
+  if (lineupConfidence < 1) {
+    qualityNotes.push(
+      lineupConfidence >= 0.5
+        ? 'partial lineup confidence compresses the hit edge'
+        : 'pending lineup confidence compresses the hit edge'
+    )
+  }
 
   return {
     projectedHits: roundToTenths(fullGameProjection),
@@ -1031,6 +1279,7 @@ const buildProjectedHitProfile = ({
     estimatedAtBats: roundToTenths(estimatedAtBats),
     estimatedFirst5AtBats: roundToTenths(estimatedFirst5AtBats),
     estimatedLateAtBats: roundToTenths(estimatedLateAtBats),
+    lineupConfidence: roundToTenths(confidenceBlend),
     bullpenChainScore: Number.isFinite(opposingBullpenChainScore)
       ? roundToTenths(opposingBullpenChainScore)
       : null,
@@ -1149,6 +1398,8 @@ const buildRunConversionRate = ({
   parkContext,
   opposingStarter,
   opposingBullpenExhaustion,
+  lineupProfile = null,
+  weatherProfile = null,
   phase = 'full'
 }) => {
   const runIndex = Number(parkContext?.indexRuns)
@@ -1186,6 +1437,10 @@ const buildRunConversionRate = ({
         rate -= recent.qualityStartRate * 0.008 * (0.45 + weight)
       }
     }
+
+    if (weatherProfile) {
+      rate += Number(weatherProfile.runBoostFirst5 || 0)
+    }
   }
 
   if (phase === 'late') {
@@ -1194,6 +1449,18 @@ const buildRunConversionRate = ({
     if (Number.isFinite(opposingBullpenExhaustion)) {
       rate += opposingBullpenExhaustion * 0.0012
     }
+
+    if (lineupProfile && Number.isFinite(lineupProfile.bullpenPitchTypePressureIndex)) {
+      rate += Math.max(lineupProfile.bullpenPitchTypePressureIndex - 50, 0) * 0.00065
+    }
+
+    if (weatherProfile) {
+      rate += Number(weatherProfile.runBoostLate || 0)
+    }
+  }
+
+  if (phase === 'full' && weatherProfile) {
+    rate += (Number(weatherProfile.runBoostFirst5 || 0) + Number(weatherProfile.runBoostLate || 0)) * 0.5
   }
 
   return clamp(rate, 0.39, 0.72)
@@ -1282,6 +1549,10 @@ const buildTeamHitterScript = ({
     winPath.push(lineupSummary.overview)
   }
 
+  if (lineupSummary?.bullpenOverview) {
+    winPath.push(lineupSummary.bullpenOverview)
+  }
+
   if (lineupSummary?.topThirdScore >= 58) {
     winPath.push(`${teamName} top third are live enough to pressure the starter before the bridge innings.`)
   }
@@ -1309,6 +1580,7 @@ const buildTeamHitterScript = ({
     topThirdScore: lineupSummary?.topThirdScore ?? null,
     middleScore: lineupSummary?.middleScore ?? null,
     depthScore: lineupSummary?.depthScore ?? null,
+    bullpenOverperformHitters: lineupSummary?.bullpenOverperformHitters || [],
     winPath
   }
 }
@@ -1416,6 +1688,12 @@ const calibrateProjectedHitProfiles = ({
   const lineupGap = safeDiff(lineupScores[0], lineupScores[1])
   const starterGap = safeDiff(starterScores[0], starterScores[1])
   const bullpenGap = safeDiff(bullpenScores[0], bullpenScores[1])
+  const averageLineupConfidence = average(
+    projectedHitProfiles.map((profile) => profile?.lineupConfidence).filter(Number.isFinite)
+  )
+  const confidenceScale = Number.isFinite(averageLineupConfidence)
+    ? clamp(0.25 + averageLineupConfidence * 0.75, 0.35, 1)
+    : 1
   const fullSupportIndex = buildSupportIndex(
     [offenseGap, savantGap, lineupGap, starterGap, bullpenGap],
     [18, 18, 16, 20, 16]
@@ -1429,17 +1707,17 @@ const calibrateProjectedHitProfiles = ({
     projectedHitProfiles[0].first5ProjectedHits - projectedHitProfiles[1].first5ProjectedHits
   const calibratedFullGap = amplifyGap(rawFullGap, {
     supportIndex: fullSupportIndex,
-    multiplierBase: 1.75,
-    multiplierRange: 0.4,
-    intercept: 0.4,
-    cap: 4.8
+    multiplierBase: 1.08 * confidenceScale,
+    multiplierRange: 0.22 * confidenceScale,
+    intercept: 0.18 * confidenceScale,
+    cap: 2.2 + confidenceScale * 2
   })
   const calibratedFirst5Gap = amplifyGap(rawFirst5Gap, {
     supportIndex: first5SupportIndex,
-    multiplierBase: 1.55,
-    multiplierRange: 0.4,
-    intercept: 0.25,
-    cap: 3.4
+    multiplierBase: 1 * confidenceScale,
+    multiplierRange: 0.18 * confidenceScale,
+    intercept: 0.12 * confidenceScale,
+    cap: 1.5 + confidenceScale * 1.4
   })
   const fullMidpoint =
     (projectedHitProfiles[0].projectedHits + projectedHitProfiles[1].projectedHits) / 2
@@ -1475,6 +1753,8 @@ const buildMlbLineupMatchupScore = (profile = {}) => {
   const platoonCount = Number(profile.platoonCount)
   const powerCount = Number(profile.powerCount)
   const contactCount = Number(profile.contactCount)
+  const pitchTypePressureIndex = Number(profile.pitchTypePressureIndex)
+  const bullpenPitchTypePressureIndex = Number(profile.bullpenPitchTypePressureIndex)
 
   if (![grade, platoonCount, powerCount, contactCount].every(Number.isFinite)) return null
 
@@ -1484,6 +1764,14 @@ const buildMlbLineupMatchupScore = (profile = {}) => {
       (platoonCount - 6) * 1.7 +
       (powerCount - 2) * 1.2 +
       (contactCount - 1) * 1.1
+
+  if (Number.isFinite(pitchTypePressureIndex)) {
+    score += (pitchTypePressureIndex - 50) * 0.24
+  }
+
+  if (Number.isFinite(bullpenPitchTypePressureIndex)) {
+    score += (bullpenPitchTypePressureIndex - 50) * 0.12
+  }
 
   if (Number.isFinite(Number(profile.heaterCount))) {
     score += (Number(profile.heaterCount) - 2) * 1
@@ -1515,19 +1803,19 @@ const buildMlbLineupMatchupSignal = (game, participants) => {
   if (scores.some((score) => !Number.isFinite(score))) return null
 
   return createSignal(
-    'Lineup-vs-starter fit',
+    'Lineup-vs-pitching fit',
     0.14,
     [
       {
-        label: `Grade ${awayContext.averageMatchupGrade >= 0 ? '+' : ''}${awayContext.averageMatchupGrade.toFixed(2)} | platoon ${awayContext.platoonCount} | pressure ${Number(awayContext.starterPressureIndex || 50).toFixed(0)}`,
+        label: `Grade ${awayContext.averageMatchupGrade >= 0 ? '+' : ''}${awayContext.averageMatchupGrade.toFixed(2)} | platoon ${awayContext.platoonCount} | starter arsenal ${Number(awayContext.pitchTypePressureIndex || 50).toFixed(0)} | bridge arsenal ${Number(awayContext.bullpenPitchTypePressureIndex || 50).toFixed(0)} | pressure ${Number(awayContext.starterPressureIndex || 50).toFixed(0)}`,
         score: scores[0]
       },
       {
-        label: `Grade ${homeContext.averageMatchupGrade >= 0 ? '+' : ''}${homeContext.averageMatchupGrade.toFixed(2)} | platoon ${homeContext.platoonCount} | pressure ${Number(homeContext.starterPressureIndex || 50).toFixed(0)}`,
+        label: `Grade ${homeContext.averageMatchupGrade >= 0 ? '+' : ''}${homeContext.averageMatchupGrade.toFixed(2)} | platoon ${homeContext.platoonCount} | starter arsenal ${Number(homeContext.pitchTypePressureIndex || 50).toFixed(0)} | bridge arsenal ${Number(homeContext.bullpenPitchTypePressureIndex || 50).toFixed(0)} | pressure ${Number(homeContext.starterPressureIndex || 50).toFixed(0)}`,
         score: scores[1]
       }
     ],
-    'BallparkPal matchup board'
+    'Official lineup + handedness + starter arsenal + likely reliever arsenal fit'
   )
 }
 
@@ -1612,6 +1900,7 @@ const buildMlbAnalysisContext = (game, participants) => {
     findLineupBoardForTeam(game.lineupBoard, participants[0]?.name),
     findLineupBoardForTeam(game.lineupBoard, participants[1]?.name)
   ]
+  const weatherProfile = buildMlbWeatherProfile(game.lineupBoard)
   const offenseScores = offenseProfiles.map((profile, index) =>
     profile ? buildMlbOffenseScore(profile, participants[index]?.role) : null
   )
@@ -1624,6 +1913,8 @@ const buildMlbAnalysisContext = (game, participants) => {
   const savantScores = savantProfiles.map((profile) =>
     profile ? buildMlbSavantScore(profile) : null
   )
+  const storyProfiles = [game.storyContext?.away, game.storyContext?.home]
+  const storyScores = storyProfiles.map((profile) => (profile ? buildMlbStoryScore(profile) : null))
   const lineupScores = lineupProfiles.map((profile) =>
     profile ? buildMlbLineupMatchupScore(profile) : null
   )
@@ -1633,20 +1924,24 @@ const buildMlbAnalysisContext = (game, participants) => {
       offenseProfile: offenseProfiles[0],
       savantProfile: savantProfiles[0],
       lineupProfile: lineupProfiles[0],
+      lineupStatus: game.lineupBoard?.status?.away || 'pending',
       opposingStarter: starters[1],
       opposingBullpen: bullpenProfiles[1],
       opposingBullpenChain: bullpenChainProfiles[1],
-      parkContext: game.parkContext
+      parkContext: game.parkContext,
+      weatherProfile
     }),
     buildProjectedHitProfile({
       role: participants[1]?.role,
       offenseProfile: offenseProfiles[1],
       savantProfile: savantProfiles[1],
       lineupProfile: lineupProfiles[1],
+      lineupStatus: game.lineupBoard?.status?.home || 'pending',
       opposingStarter: starters[0],
       opposingBullpen: bullpenProfiles[0],
       opposingBullpenChain: bullpenChainProfiles[0],
-      parkContext: game.parkContext
+      parkContext: game.parkContext,
+      weatherProfile
     })
   ]
   const starterHoldConfidence = [
@@ -1684,6 +1979,7 @@ const buildMlbAnalysisContext = (game, participants) => {
     buildMlbBullpenSignal(game, participants),
     buildMlbBullpenChainSignal(game, participants),
     buildMlbSavantSignal(game, participants),
+    buildMlbStorySignal(game, participants),
     buildMlbLineupMatchupSignal(game, participants)
   ].filter(Boolean)
   const volatilityModifiers = []
@@ -1694,16 +1990,32 @@ const buildMlbAnalysisContext = (game, participants) => {
 
   if (game.teamContext?.away && game.teamContext?.home) sourceParts.push('standings context')
   if (game.parkContext?.venueName) sourceParts.push('park factors')
-  if (game.offenseContext?.away && game.offenseContext?.home) sourceParts.push('team hit production')
-  if (game.bullpenContext?.away && game.bullpenContext?.home) sourceParts.push('bullpen quality')
+  if (
+    game.offenseContext?.away &&
+    game.offenseContext?.home &&
+    !game.offenseContext.away.staleFeed &&
+    !game.offenseContext.home.staleFeed
+  ) {
+    sourceParts.push('team hit production')
+  }
+  if (
+    game.bullpenContext?.away &&
+    game.bullpenContext?.home &&
+    !game.bullpenContext.away.staleFeed &&
+    !game.bullpenContext.home.staleFeed
+  ) {
+    sourceParts.push('bullpen quality')
+  }
   if (game.bullpenChainContext?.away && game.bullpenChainContext?.home) {
     sourceParts.push('bullpen workload + likely reliever chain')
   }
   if (game.savantContext?.away && game.savantContext?.home) sourceParts.push('Statcast contact quality')
+  if (game.storyContext?.away && game.storyContext?.home) sourceParts.push('daily team story context')
   if (game.lineupContext?.[participants[0]?.name] && game.lineupContext?.[participants[1]?.name]) {
     sourceParts.push('daily lineup matchup context')
   }
   if (starters.some((starter) => starter?.recentForm)) sourceParts.push('recent starter form')
+  if (weatherProfile?.label) sourceParts.push('weather context')
 
   if (starters.every(Boolean)) {
     const starterScores = starters.map((starter) => starterScore(starter))
@@ -1758,7 +2070,7 @@ const buildMlbAnalysisContext = (game, participants) => {
       )
     }
 
-    if (projectedHitProfiles.every(Boolean)) {
+      if (projectedHitProfiles.every(Boolean)) {
       const projectedHitScores = projectedHitProfiles.map((profile) =>
         clamp(24 + profile.projectedHits * 5 + profile.hitEfficiencyPct * 1.2, 18, 96)
       )
@@ -1817,6 +2129,8 @@ const buildMlbAnalysisContext = (game, participants) => {
           parkContext: game.parkContext,
           opposingStarter: starters[index === 0 ? 1 : 0],
           opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
+          lineupProfile: lineupProfiles[index],
+          weatherProfile,
           phase: 'first5'
         })
         const lateConversionRate = buildRunConversionRate({
@@ -1825,6 +2139,8 @@ const buildMlbAnalysisContext = (game, participants) => {
           parkContext: game.parkContext,
           opposingStarter: starters[index === 0 ? 1 : 0],
           opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
+          lineupProfile: lineupProfiles[index],
+          weatherProfile,
           phase: 'late'
         })
         const first5Runs = roundToTenths(profile.first5ProjectedHits * first5ConversionRate)
@@ -1870,6 +2186,9 @@ const buildMlbAnalysisContext = (game, participants) => {
       const bullpenExhaustionNote = exhaustedTeams.length
         ? `${exhaustedTeams.map((team) => `${team.teamName} ${team.label}`).join(' and ')} bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.`
         : 'No major bridge-chain exhaustion flag has surfaced yet.'
+      const weatherNote = weatherProfile?.label
+        ? `${weatherProfile.label}.`
+        : ''
       const teamScripts = participants.map((participant, index) =>
         buildTeamHitterScript({
           teamName: participant.name,
@@ -1956,14 +2275,95 @@ const buildMlbAnalysisContext = (game, participants) => {
           projectedLateTotalRuns,
           derivedFirst5TotalLine,
           derivedLateTotalLine,
-          bullpenExhaustionNote
+          bullpenExhaustionNote: [weatherNote, bullpenExhaustionNote].filter(Boolean).join(' '),
+          weatherNote
         },
         teamScripts,
-        lineupSimulation
+        lineupSimulation,
+        weather: weatherProfile
       }
 
       if (hitEdge <= 0.4) {
         volatilityModifiers.push({ label: 'Projected hit volume is nearly even', delta: 3 })
+      }
+
+      const awayStoryVariance = Number(storyProfiles[0]?.variance)
+      const homeStoryVariance = Number(storyProfiles[1]?.variance)
+      const awayOffenseSustainability = Number(storyProfiles[0]?.offenseSustainability)
+      const homeOffenseSustainability = Number(storyProfiles[1]?.offenseSustainability)
+      const awayBullpenTrust = Number(storyProfiles[0]?.bullpenTrust)
+      const homeBullpenTrust = Number(storyProfiles[1]?.bullpenTrust)
+      const awayStarterTrajectory = Number(storyProfiles[0]?.starterTrajectory)
+      const homeStarterTrajectory = Number(storyProfiles[1]?.starterTrajectory)
+      const awayLineupMomentum = Number(storyProfiles[0]?.lineupMomentum)
+      const homeLineupMomentum = Number(storyProfiles[1]?.lineupMomentum)
+
+      if ([awayStoryVariance, homeStoryVariance].some((value) => Number.isFinite(value) && value >= 68)) {
+        volatilityModifiers.push({
+          label: 'At least one club still carries a shaky day-to-day team-story profile',
+          delta: 4
+        })
+      }
+
+      if (
+        Number.isFinite(awayOffenseSustainability) &&
+        Number.isFinite(homeOffenseSustainability) &&
+        Math.abs(awayOffenseSustainability - homeOffenseSustainability) >= 18
+      ) {
+        volatilityModifiers.push({
+          label: 'Recent offense sustain differs sharply between the two club stories',
+          delta: 3
+        })
+      }
+
+      if (
+        favoriteIndex !== null &&
+        Number.isFinite([awayOffenseSustainability, homeOffenseSustainability][favoriteIndex]) &&
+        [awayOffenseSustainability, homeOffenseSustainability][favoriteIndex] <= 44
+      ) {
+        volatilityModifiers.push({
+          label: 'Favorite still has a weak recent offense-sustain story',
+          delta: 5
+        })
+        confidenceModifier -= 4
+      }
+
+      if (
+        favoriteIndex !== null &&
+        Number.isFinite([awayStarterTrajectory, homeStarterTrajectory][favoriteIndex]) &&
+        [awayStarterTrajectory, homeStarterTrajectory][favoriteIndex] <= 48
+      ) {
+        volatilityModifiers.push({
+          label: 'Favorite starter story is flatter than the reputation/price implies',
+          delta: 3
+        })
+        confidenceModifier -= 2
+      }
+
+      const underdogIndex = favoriteIndex === 0 ? 1 : favoriteIndex === 1 ? 0 : null
+
+      if (
+        underdogIndex !== null &&
+        Number.isFinite([awayLineupMomentum, homeLineupMomentum][underdogIndex]) &&
+        [awayLineupMomentum, homeLineupMomentum][underdogIndex] >= 64
+      ) {
+        volatilityModifiers.push({
+          label: 'Underdog carries a live recent lineup-momentum story',
+          delta: 4
+        })
+      }
+
+      if (
+        underdogIndex !== null &&
+        Number.isFinite([awayBullpenTrust, homeBullpenTrust][underdogIndex]) &&
+        Number.isFinite([awayBullpenTrust, homeBullpenTrust][favoriteIndex]) &&
+        [awayBullpenTrust, homeBullpenTrust][underdogIndex] -
+          [awayBullpenTrust, homeBullpenTrust][favoriteIndex] >= 10
+      ) {
+        volatilityModifiers.push({
+          label: 'Underdog team story trusts the late innings more than the favorite does',
+          delta: 4
+        })
       }
 
       if (
@@ -2095,6 +2495,35 @@ const buildMlbAnalysisContext = (game, participants) => {
       )
     ) {
       volatilityModifiers.push({ label: 'One lineup carries real platoon pressure versus the listed starter hand', delta: 3 })
+    }
+
+    if (
+      lineupProfiles.some(
+        (profile) =>
+          profile &&
+          Number.isFinite(profile.pitchTypePressureIndex) &&
+          profile.pitchTypePressureIndex >= 62
+      )
+    ) {
+      volatilityModifiers.push({ label: 'One lineup specifically fits the listed starter arsenal', delta: 3 })
+    }
+
+    if (
+      lineupProfiles.some(
+        (profile) =>
+          profile &&
+          Number.isFinite(profile.bullpenPitchTypePressureIndex) &&
+          profile.bullpenPitchTypePressureIndex >= 62
+      )
+    ) {
+      volatilityModifiers.push({ label: 'One lineup also fits the likely bridge-reliever arsenal', delta: 3 })
+    }
+
+    if (weatherProfile?.label && Number.isFinite(weatherProfile.volatilityDelta) && weatherProfile.volatilityDelta !== 0) {
+      volatilityModifiers.push({
+        label: weatherProfile.label,
+        delta: Math.round(weatherProfile.volatilityDelta)
+      })
     }
 
     if (Math.abs(starters[0].strikeouts - starters[1].strikeouts) >= 14) {
@@ -2300,6 +2729,7 @@ const buildMlbAnalysisContext = (game, participants) => {
       bullpenScores,
       bullpenChainScores,
       savantScores,
+      weatherProfile,
       lineupProfiles,
       lineupScores,
       projectedHitProfiles
@@ -2566,11 +2996,22 @@ const buildMlbDecisionIndicators = ({
   const opponentStarterHoldConfidence = riskContext.starterHoldConfidence?.[loserIndex]
   const pickLineupPressure = riskContext.lineupProfiles?.[winnerIndex]?.starterPressureIndex
   const opponentLineupPressure = riskContext.lineupProfiles?.[loserIndex]?.starterPressureIndex
+  const pickBullpenPitchPressure = riskContext.lineupProfiles?.[winnerIndex]?.bullpenPitchTypePressureIndex
+  const opponentBullpenPitchPressure = riskContext.lineupProfiles?.[loserIndex]?.bullpenPitchTypePressureIndex
   const pickProjectedHits = riskContext.projectedHitProfiles?.[winnerIndex]?.projectedHits
   const opponentProjectedHits = riskContext.projectedHitProfiles?.[loserIndex]?.projectedHits
-  const projectedHitEdgeForPick =
+  const projectedHitConfidence = average(
+    [riskContext.projectedHitProfiles?.[winnerIndex]?.lineupConfidence, riskContext.projectedHitProfiles?.[loserIndex]?.lineupConfidence].filter(
+      Number.isFinite
+    )
+  )
+  const rawProjectedHitEdgeForPick =
     Number.isFinite(pickProjectedHits) && Number.isFinite(opponentProjectedHits)
-      ? roundToTenths(pickProjectedHits - opponentProjectedHits)
+      ? pickProjectedHits - opponentProjectedHits
+      : null
+  const projectedHitEdgeForPick =
+    Number.isFinite(rawProjectedHitEdgeForPick)
+      ? roundToTenths(rawProjectedHitEdgeForPick * (Number.isFinite(projectedHitConfidence) ? projectedHitConfidence : 1))
       : null
   const hitEdgeAgainstPick =
     Number.isFinite(projectedHitEdgeForPick) && projectedHitEdgeForPick < -0.2
@@ -2601,6 +3042,8 @@ const buildMlbDecisionIndicators = ({
     50 +
       (Number.isFinite(bullpenGap) ? bullpenGap * 1.3 : 0) -
       (Number.isFinite(bullpenChainGap) ? bullpenChainGap * 0.95 : 0) -
+      (Number.isFinite(opponentBullpenPitchPressure) ? Math.max(opponentBullpenPitchPressure - 56, 0) * 0.22 : 0) +
+      (Number.isFinite(pickBullpenPitchPressure) ? Math.max(56 - pickBullpenPitchPressure, 0) * 0.08 : 0) -
       Math.max(baseVolatility - 70, 0) * 0.65 -
       (hitEdgeAgainstPick ? 6 : 0),
     0,
@@ -2650,6 +3093,15 @@ const buildMlbDecisionIndicators = ({
     })
     volatilityDelta += 3
     coinflipPressure += 7
+  }
+
+  if (Number.isFinite(opponentBullpenPitchPressure) && opponentBullpenPitchPressure >= 62) {
+    notes.push({
+      label: 'Opponent lineup also fits the likely bridge-reliever arsenal',
+      delta: 4
+    })
+    volatilityDelta += 2
+    coinflipPressure += 5
   }
 
   if (hitEdgeAgainstPick) {
@@ -2777,6 +3229,18 @@ const buildMlbDecisionIndicators = ({
     volatilityDelta += 4
   }
 
+  if (Number.isFinite(projectedHitConfidence) && projectedHitConfidence < 0.75) {
+    notes.push({
+      label:
+        projectedHitConfidence < 0.4
+          ? 'Projected hit edge is being heavily compressed because both lineups were still unresolved'
+          : 'Projected hit edge is partially compressed because lineup certainty was still incomplete',
+      delta: 2
+    })
+    confidenceDelta -= projectedHitConfidence < 0.4 ? 4 : 2
+    volatilityDelta += projectedHitConfidence < 0.4 ? 5 : 3
+  }
+
   return {
     reliefPitchingRisk: roundToTenths(reliefPitchingRisk),
     coinflipPressure: roundToTenths(coinflipPressure),
@@ -2792,6 +3256,9 @@ const buildMlbDecisionIndicators = ({
       : null,
     pickStarterScore: Number.isFinite(pickStarterScore) ? roundToTenths(pickStarterScore) : null,
     oppStarterScore: Number.isFinite(opponentStarterScore) ? roundToTenths(opponentStarterScore) : null,
+    projectedHitConfidence: Number.isFinite(projectedHitConfidence)
+      ? roundToTenths(projectedHitConfidence)
+      : null,
     projectedHitEdgeForPick,
     hitEdgeAgainstPick,
     confidenceDelta,
@@ -3087,39 +3554,143 @@ export const createSportsMatchModel = (game, fallbackOddsProvider = '') => {
 export const rankAnalysisPicks = (games) =>
   games
     .filter((game) => game.analysis?.available)
-    .sort((left, right) => {
-      if (right.analysis.confidence !== left.analysis.confidence) {
-        return right.analysis.confidence - left.analysis.confidence
+    .map((game) => {
+      const analysis = game.analysis ?? {}
+      const indicatorSet = analysis.indicators ?? {}
+      const confidence = analysis.confidence ?? 50
+      const volatility = analysis.volatility ?? 50
+      const recommendationScore = analysis.recommendationScore ?? 0
+      const modelEdge = Math.abs(analysis.modelEdge ?? 0)
+      const reliefPitchingRisk = indicatorSet.reliefPitchingRisk ?? 42
+      const coinflipPressure = indicatorSet.coinflipPressure ?? 28
+      const starterLeverageIndex = indicatorSet.starterLeverageIndex ?? 50
+      const lateInningStabilityIndex = indicatorSet.lateInningStabilityIndex ?? 50
+      const offenseFeedStale = Boolean(
+        game.offenseContext?.away?.staleFeed || game.offenseContext?.home?.staleFeed
+      )
+      const bullpenFeedStale = Boolean(
+        game.bullpenContext?.away?.staleFeed || game.bullpenContext?.home?.staleFeed
+      )
+      const lineupStatuses = [game.lineupBoard?.status?.away, game.lineupBoard?.status?.home].filter(
+        Boolean
+      )
+      const postedLineupCount = lineupStatuses.filter((status) => status === 'posted').length
+      const partialLineupCount = lineupStatuses.filter((status) => status === 'partial').length
+      const impliedProbability =
+        analysis.participant?.impliedProbability ?? analysis.marketProbability ?? null
+      const americanOdds = analysis.participant?.americanOdds ?? null
+      const pickIsFavorite = Number.isFinite(americanOdds)
+        ? americanOdds < 0
+        : Number.isFinite(impliedProbability)
+          ? impliedProbability >= 0.5
+          : false
+
+      let safetyPenalty = 0
+
+      if (game.league === 'MLB') {
+        safetyPenalty += Math.max(volatility - 60, 0) * 1.7
+        safetyPenalty += Math.max(coinflipPressure - 34, 0) * 1.35
+        safetyPenalty += Math.max(56 - lateInningStabilityIndex, 0) * 1.15
+        safetyPenalty += Math.max(reliefPitchingRisk - 48, 0) * 0.55
+        safetyPenalty += Math.max(6 - modelEdge, 0) * 2.6
+
+        if (analysis.tier === 'Swingy') safetyPenalty += 18
+        if (starterLeverageIndex >= 60 && lateInningStabilityIndex <= 50) safetyPenalty += 10
+        if (offenseFeedStale) safetyPenalty += 16
+        if (bullpenFeedStale) safetyPenalty += 12
+
+        if (lineupStatuses.length && postedLineupCount < 2) {
+          safetyPenalty += partialLineupCount > 0 ? 4 : 8
+        }
+
+        if (
+          pickIsFavorite &&
+          Number.isFinite(impliedProbability) &&
+          impliedProbability >= 0.54 &&
+          impliedProbability <= 0.65 &&
+          volatility >= 70
+        ) {
+          safetyPenalty += 14
+        }
+
+        if (pickIsFavorite && confidence < 70 && volatility >= 74) {
+          safetyPenalty += 10
+        }
+      } else {
+        safetyPenalty += Math.max(volatility - 68, 0) * 0.8
       }
 
-      if (left.analysis.volatility !== right.analysis.volatility) {
-        return left.analysis.volatility - right.analysis.volatility
-      }
+      const safetyScore = Math.round(recommendationScore - safetyPenalty)
+      const coreEligible =
+        game.league === 'MLB'
+          ? !offenseFeedStale &&
+            !bullpenFeedStale &&
+            volatility <= 72 &&
+            coinflipPressure <= 58 &&
+            lateInningStabilityIndex >= 46 &&
+            confidence >= 64 &&
+            modelEdge >= 3.5 &&
+            analysis.tier !== 'Swingy'
+          : volatility <= 74 && confidence >= 64
 
-      return right.analysis.recommendationScore - left.analysis.recommendationScore
+      return {
+        game,
+        safetyScore,
+        coreEligible,
+        safetyPenalty: Math.round(safetyPenalty),
+        pickIsFavorite,
+        offenseFeedStale,
+        bullpenFeedStale
+      }
     })
-    .map((game, index) => ({
-      rank: index + 1,
-      gameId: game.id,
-      league: game.league,
-      gameTitle: game.title,
-      start: game.start,
-      stage: game.stage,
-      confidence: game.analysis.confidence,
-      volatility: game.analysis.volatility,
-      recommendationScore: game.analysis.recommendationScore,
-      tier: game.analysis.tier,
-      participantId: game.analysis.participantId,
-      participant: game.analysis.participant,
-      opponent: game.analysis.opponent,
-      lean: game.analysis.lean,
-      rationale: game.analysis.rationale,
-      modelEdge: game.analysis.modelEdge,
-      modelEdgeLabel: game.analysis.modelEdgeLabel,
-      marketProbabilityLabel: game.analysis.marketProbabilityLabel,
-      inputSummaries: game.analysis.inputs,
-      game
-    }))
+    .sort((left, right) => {
+      if (left.coreEligible !== right.coreEligible) {
+        return Number(right.coreEligible) - Number(left.coreEligible)
+      }
+
+      if (right.safetyScore !== left.safetyScore) {
+        return right.safetyScore - left.safetyScore
+      }
+
+      if (right.game.analysis.confidence !== left.game.analysis.confidence) {
+        return right.game.analysis.confidence - left.game.analysis.confidence
+      }
+
+      if (left.game.analysis.volatility !== right.game.analysis.volatility) {
+        return left.game.analysis.volatility - right.game.analysis.volatility
+      }
+
+      return right.game.analysis.recommendationScore - left.game.analysis.recommendationScore
+    })
+    .map((entry, index) => {
+      const game = entry.game
+
+      return {
+        rank: index + 1,
+        gameId: game.id,
+        league: game.league,
+        gameTitle: game.title,
+        start: game.start,
+        stage: game.stage,
+        confidence: game.analysis.confidence,
+        volatility: game.analysis.volatility,
+        recommendationScore: game.analysis.recommendationScore,
+        tier: game.analysis.tier,
+        participantId: game.analysis.participantId,
+        participant: game.analysis.participant,
+        opponent: game.analysis.opponent,
+        lean: game.analysis.lean,
+        rationale: game.analysis.rationale,
+        modelEdge: game.analysis.modelEdge,
+        modelEdgeLabel: game.analysis.modelEdgeLabel,
+        marketProbabilityLabel: game.analysis.marketProbabilityLabel,
+        inputSummaries: game.analysis.inputs,
+        safetyScore: entry.safetyScore,
+        safetyPenalty: entry.safetyPenalty,
+        coreEligible: entry.coreEligible,
+        game
+      }
+    })
 
 const getFavoriteAndUnderdog = (game) => {
   const participants = game.moneyline?.participants?.filter((participant) =>
@@ -3598,32 +4169,44 @@ const mlbPropTypeConfig = {
   homeRun: {
     label: 'HR',
     marketLabel: 'Over 0.5 HR',
-    bucket: 'power'
+    bucket: 'power',
+    probabilityWeight: 0.72,
+    baseOffset: 11
   },
   rbi: {
     label: 'RBI',
     marketLabel: 'Over 0.5 RBI',
-    bucket: 'production'
+    bucket: 'production',
+    probabilityWeight: 0.8,
+    baseOffset: 12
   },
   totalBases: {
     label: 'TB',
     marketLabel: 'Over 1.5 total bases',
-    bucket: 'power'
+    bucket: 'power',
+    probabilityWeight: 0.84,
+    baseOffset: 13
   },
   hits: {
     label: 'Hits',
     marketLabel: 'Over 1.5 hits',
-    bucket: 'contact'
+    bucket: 'contact',
+    probabilityWeight: 0.88,
+    baseOffset: 14
   },
   walks: {
     label: 'Walks',
     marketLabel: 'Over 0.5 walks',
-    bucket: 'patience'
+    bucket: 'patience',
+    probabilityWeight: 0.8,
+    baseOffset: 11
   },
   singles: {
     label: 'Singles',
     marketLabel: 'Over 0.5 singles',
-    bucket: 'contact'
+    bucket: 'contact',
+    probabilityWeight: 0.85,
+    baseOffset: 12
   }
 }
 
@@ -3729,6 +4312,57 @@ const describeHomeRunPropLane = (target = null) =>
   target?.contextLabels?.[1] ||
   (target?.burstTag ? `${target.burstTag} HR lane` : 'HR lane')
 
+const calibrateMlbPropConfidence = ({
+  config,
+  propType,
+  probability = 0,
+  hitter,
+  teamScript,
+  lineupStatus = 'pending',
+  weatherProfile = null,
+  homeRunBoost = null
+}) => {
+  const probabilityWeight = Number(config?.probabilityWeight || 0.8)
+  const probabilityLift = Math.max(probability - 0.46, 0) * 72 * probabilityWeight
+  let confidence = 34 + probabilityLift + Number(config?.baseOffset || 12) * 0.45
+
+  confidence += Math.max(0, Number(hitter?.metrics?.matchupGrade || 0)) * 1.05
+  confidence += Math.max(0, (Number(hitter?.metrics?.formScore || 50) - 50) * 0.08)
+  confidence += Math.max(0, (Number(hitter?.metrics?.pitchTypeGrade || 0)) * 1.15)
+
+  if (Number.isFinite(teamScript?.topThirdScore)) {
+    confidence += Math.max(Number(teamScript.topThirdScore) - 52, 0) * 0.05
+  }
+
+  if (lineupStatus === 'partial') confidence -= 4
+  if (lineupStatus === 'pending') confidence -= 8
+
+  if (propType === 'homeRun' || propType === 'totalBases' || propType === 'rbi') {
+    if (Number(hitter?.metrics?.pitchTypeCoveragePct || 0) < 45) confidence -= 3
+    if ((teamScript?.bullpenOverperformHitters || []).some((entry) => normalizeText(entry.name) === normalizeText(hitter?.name))) {
+      confidence += 2
+    }
+  }
+
+  if (weatherProfile?.label) {
+    const weatherRunLift = Number(weatherProfile.runBoostFirst5 || 0) + Number(weatherProfile.runBoostLate || 0)
+    if (propType === 'homeRun' || propType === 'totalBases' || propType === 'rbi') {
+      confidence += weatherRunLift * 120
+    } else if (propType === 'hits' || propType === 'singles') {
+      confidence += weatherRunLift * 84
+    } else if (propType === 'walks') {
+      confidence -= weatherRunLift * 22
+    }
+  }
+
+  if (propType === 'homeRun' && homeRunBoost?.target?.lastHomeRunGapDays >= 7) confidence -= 4
+  if (propType === 'homeRun' && Number(homeRunBoost?.target?.homeRunsLast7Days || 0) === 0) confidence -= 3
+  if (propType === 'walks' && Number(hitter?.metrics?.patienceScore || 50) >= 66) confidence += 2
+  if (propType === 'hits' && Number(hitter?.metrics?.contactScore || 50) >= 68) confidence += 2
+
+  return Math.round(clamp(confidence, 18, 82))
+}
+
 const buildMlbPropCandidate = ({
   game,
   teamName,
@@ -3738,6 +4372,8 @@ const buildMlbPropCandidate = ({
   projectedRuns,
   projectedHits,
   opposingStarter,
+  lineupStatus = 'pending',
+  weatherProfile = null,
   propType
 }) => {
   if (!hitter?.name || !hitter?.metrics) return null
@@ -3843,17 +4479,16 @@ const buildMlbPropCandidate = ({
     statValueLabel = `${expectedValue.toFixed(2)} exp RBI`
   }
 
-  const baseConfidence =
-    clamp(
-      32 +
-        probability * 34 +
-        (homeRunBoost.confidenceBoost || 0) * 0.4 +
-        Math.max(0, Number(hitter.metrics.matchupGrade || 0)) * 1.15 +
-        Math.max(0, (Number(hitter.metrics.formScore || 50) - 50) * 0.1),
-      18,
-      82
-    )
-  const confidence = Math.round(baseConfidence)
+  const confidence = calibrateMlbPropConfidence({
+    config,
+    propType,
+    probability,
+    hitter,
+    teamScript,
+    lineupStatus,
+    weatherProfile,
+    homeRunBoost
+  })
   if (confidence < 54) return null
 
   const reasons = []
@@ -3889,6 +4524,7 @@ const buildMlbPropCandidate = ({
     reason: reasons.slice(0, 3).join(' | '),
     matchupNote: hitter.matchupNote,
     teamScriptLabel: teamScript?.pressureLabel || '',
+    lineupStatus,
     playerSummary: hitter.summary,
     game
   }
@@ -3917,7 +4553,8 @@ const buildMlbPlayerProps = (game, analysis) => {
         projectedHits: projection.awayProjectedHits,
         hitEfficiencyPct: projection.awayHitEfficiencyPct
       },
-      opposingStarter: game.starterContext?.home
+      opposingStarter: game.starterContext?.home,
+      lineupStatus: game.lineupBoard?.status?.away || 'pending'
     },
     {
       teamName: game.matchup?.[1]?.name,
@@ -3930,12 +4567,14 @@ const buildMlbPlayerProps = (game, analysis) => {
         projectedHits: projection.homeProjectedHits,
         hitEfficiencyPct: projection.homeHitEfficiencyPct
       },
-      opposingStarter: game.starterContext?.away
+      opposingStarter: game.starterContext?.away,
+      lineupStatus: game.lineupBoard?.status?.home || 'pending'
     }
   ]
 
+  const weatherProfile = analysis.mlbProjection?.weather || null
   const propTypes = ['homeRun', 'rbi', 'totalBases', 'hits', 'walks', 'singles']
-  const targets = teamBoardEntries.flatMap(({ teamName, lineupTeam, teamScript, projectedRuns, projectedHits, projectedProfile, opposingStarter }) =>
+  const targets = teamBoardEntries.flatMap(({ teamName, lineupTeam, teamScript, projectedRuns, projectedHits, projectedProfile, opposingStarter, lineupStatus }) =>
     (lineupTeam?.lineup || []).flatMap((hitter) =>
       propTypes
         .map((propType) =>
@@ -3948,6 +4587,8 @@ const buildMlbPlayerProps = (game, analysis) => {
             projectedRuns,
             projectedHits,
             opposingStarter,
+            lineupStatus,
+            weatherProfile,
             propType
           })
         )

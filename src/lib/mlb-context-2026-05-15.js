@@ -516,14 +516,14 @@ export const teamOffenseContextByTeam = {
 
 export const teamBullpenContextByTeam = {
   "Astros": {
-    "era": 5.86,
+    "era": 6.02,
     "saves": 8,
-    "hits": 190,
-    "earnedRuns": 123,
-    "whip": 1.61,
+    "hits": 186,
+    "earnedRuns": 121,
+    "whip": 1.62,
     "homeRuns": 34,
-    "walks": 112,
-    "strikeouts": 181
+    "walks": 106,
+    "strikeouts": 174
   },
   "Twins": {
     "era": 5.38,
@@ -706,14 +706,14 @@ export const teamBullpenContextByTeam = {
     "strikeouts": 142
   },
   "Giants": {
-    "era": 5.86,
+    "era": 3.55,
     "saves": 8,
-    "hits": 190,
-    "earnedRuns": 123,
-    "whip": 1.61,
-    "homeRuns": 34,
-    "walks": 112,
-    "strikeouts": 181
+    "hits": 120,
+    "earnedRuns": 56,
+    "whip": 1.38,
+    "homeRuns": 11,
+    "walks": 70,
+    "strikeouts": 121
   },
   "Brewers": {
     "era": 3.44,
@@ -786,34 +786,34 @@ export const teamBullpenContextByTeam = {
     "strikeouts": 123
   },
   "Nationals": {
-    "era": 5.86,
-    "saves": 8,
-    "hits": 190,
-    "earnedRuns": 123,
-    "whip": 1.61,
-    "homeRuns": 34,
-    "walks": 112,
-    "strikeouts": 181
+    "era": 4.80,
+    "saves": 10,
+    "hits": 188,
+    "earnedRuns": 103,
+    "whip": 1.44,
+    "homeRuns": 28,
+    "walks": 83,
+    "strikeouts": 149
   },
   "White Sox": {
-    "era": 5.86,
-    "saves": 8,
-    "hits": 190,
-    "earnedRuns": 123,
-    "whip": 1.61,
-    "homeRuns": 34,
-    "walks": 112,
-    "strikeouts": 181
+    "era": 4.55,
+    "saves": 13,
+    "hits": 168,
+    "earnedRuns": 92,
+    "whip": 1.46,
+    "homeRuns": 20,
+    "walks": 90,
+    "strikeouts": 164
   },
   "Diamondbacks": {
-    "era": 5.86,
-    "saves": 8,
-    "hits": 190,
-    "earnedRuns": 123,
-    "whip": 1.61,
-    "homeRuns": 34,
-    "walks": 112,
-    "strikeouts": 181
+    "era": 4.24,
+    "saves": 11,
+    "hits": 119,
+    "earnedRuns": 69,
+    "whip": 1.15,
+    "homeRuns": 17,
+    "walks": 47,
+    "strikeouts": 130
   }
 }
 

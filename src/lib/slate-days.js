@@ -68,6 +68,20 @@ import {
   slateMeta as dayTenSlateMeta,
   sources as dayTenSources
 } from './day-2026-05-18.js'
+import {
+  filters as dayElevenFilters,
+  games as dayElevenGames,
+  oddsMeta as dayElevenOddsMeta,
+  slateMeta as dayElevenSlateMeta,
+  sources as dayElevenSources
+} from './day-2026-05-19.js'
+import {
+  filters as dayTwelveFilters,
+  games as dayTwelveGames,
+  oddsMeta as dayTwelveOddsMeta,
+  slateMeta as dayTwelveSlateMeta,
+  sources as dayTwelveSources
+} from './day-2026-05-20.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -404,7 +418,63 @@ const may18Slate = createSlateDay({
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate, may18Slate]
+const may19Slate = createSlateDay({
+  id: dayElevenSlateMeta.isoDate,
+  label: dayElevenSlateMeta.date,
+  status: 'ready',
+  slateMeta: dayElevenSlateMeta,
+  games: dayElevenGames,
+  filters: dayElevenFilters,
+  oddsMeta: dayElevenOddsMeta,
+  sources: dayElevenSources,
+  intakeChecklist: [
+    'Refresh the MLB lineup board again once more official batting orders post, because the early pass still carries a large projected-lineup share.',
+    'Store the final MLB results and first-five outcomes so the stricter volatility and team-story penalties can be graded after the May 18 miss cluster.',
+    'Backfill the WNBA result so the short one-game board can be compared against the early-season team-shape read.',
+    'Store the NBA Game 1 result and swing moments so the conference-finals volatility tag can be graded against the real late-game script.'
+  ],
+  intakePrompt:
+    'May 19 is now the live desk: refreshed MLB, one WNBA game, and one NBA conference-finals opener all sit on the same board with the updated volatility and team-story logic.',
+  feedNotes: [
+    'This is the first slate after the May 18 postmortem tightened favorite safety rules and compressed exaggerated projected-hit gaps from partial lineups.',
+    'The MLB board now carries more explicit team-story penalties for clubs that look better on paper than in their recent scoring or hold quality.',
+    'WNBA and NBA are both one-game boards tonight, so the desk intentionally treats them as focused volatility reads instead of pretending there is a full multi-game sample to lean on.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['MLB', 'NBA', 'WNBA']
+  }
+})
+
+const may20Slate = createSlateDay({
+  id: dayTwelveSlateMeta.isoDate,
+  label: dayTwelveSlateMeta.date,
+  status: 'ready',
+  slateMeta: dayTwelveSlateMeta,
+  games: dayTwelveGames,
+  filters: dayTwelveFilters,
+  oddsMeta: dayTwelveOddsMeta,
+  sources: dayTwelveSources,
+  intakeChecklist: [
+    'Refresh the MLB lineup board again once more official batting orders post, because this remaining-games pass still leans heavily on projected orders outside the early posted teams.',
+    'Store the final MLB results and first-five outcomes so the remaining-games version of the model can be graded separately from full-day morning boards.',
+    'Backfill the WNBA result so the one-game board can be compared against the expansion-team variance read.',
+    'Store the NBA Game 2 result and swing moments so the Thunder bounceback read can be graded against the actual playoff script.'
+  ],
+  intakePrompt:
+    'May 20 is now the live remaining-games desk: refreshed MLB after the first two early starts, plus the one WNBA game and West finals Game 2.',
+  feedNotes: [
+    'This is another intentionally partial baseball slate, built only from the still-actionable games after the first pitches had already started at 10:13 AM Pacific.',
+    'The May 20 MLB card is materially better than the first raw pull because the warehouse lookback was refreshed first, restoring recent-start packets for 28 of 30 listed starters.',
+    'The WNBA and NBA sides are both one-game volatility reads again, so the desk is better used as a trim card than a broad all-night parlay board.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['MLB', 'NBA', 'WNBA']
+  }
+})
+
+export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate, may18Slate, may19Slate, may20Slate]
 
 const currentLocalIsoDate = () => {
   const now = new Date()

@@ -69,9 +69,9 @@ export const rawGames = [
         "recent3EarnedRunsDelta": 0.11
       }
     },
-    "spread": "+1.5 -220 / +1.5 -175",
-    "total": "o8.5 -105 / u8.5 -112",
-    "moneyline": "Braves -102 / Marlins -113",
+    "spread": "+1.5 -220 / +1.5 -176",
+    "total": "o8.5 -105 / u8.5 -114",
+    "moneyline": "Braves -102 / Marlins -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/braves-vs-marlins"
   },
@@ -145,8 +145,8 @@ export const rawGames = [
         "recent3EarnedRunsDelta": 1
       }
     },
-    "spread": "+1.5 -156 / -1.5 +143",
-    "total": "o8 -107 / u8 -110",
+    "spread": "+1.5 -158 / -1.5 +140",
+    "total": "o8 -110 / u8 -110",
     "moneyline": "Guardians +134 / Tigers -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-tigers"
@@ -221,9 +221,9 @@ export const rawGames = [
         "recent3EarnedRunsDelta": -1.25
       }
     },
-    "spread": "+1.5 -170 / -1.5 +155",
-    "total": "o7.5 -109 / u7.5 -110",
-    "moneyline": "Orioles +120 / Rays -140",
+    "spread": "+1.5 -165 / -1.5 +150",
+    "total": "o7 -125 / u7.5 -110",
+    "moneyline": "Orioles +125 / Rays -142",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/orioles-vs-rays"
   },
@@ -373,9 +373,9 @@ export const rawGames = [
         "recent3EarnedRunsDelta": 0.89
       }
     },
-    "spread": "-1.5 +126 / +1.5 -139",
-    "total": "o10 -115 / u10.5 -115",
-    "moneyline": "Mets -125 / Nationals +112",
+    "spread": "-1.5 +126 / +1.5 -145",
+    "total": "o10 -113 / u10 -105",
+    "moneyline": "Mets -123 / Nationals +108",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-nationals"
   },
@@ -449,7 +449,7 @@ export const rawGames = [
         "recent3EarnedRunsDelta": -0.21
       }
     },
-    "spread": "+1.5 -134 / -1.5 +120",
+    "spread": "+1.5 -133 / -1.5 +120",
     "total": "o8.5 -122 / u9 -114",
     "moneyline": "Blue Jays +150 / Yankees -170",
     "pitcherSourceNote": "",
@@ -526,7 +526,7 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +146 / +1.5 -165",
-    "total": "o9 -115 / u9 even",
+    "total": "o9 -110 / u9 -105",
     "moneyline": "Red Sox -110 / Royals -104",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/red-sox-vs-royals"
@@ -585,9 +585,9 @@ export const rawGames = [
       "gamesStarted": 0,
       "recentForm": null
     },
-    "spread": "+1.5 -195 / +1.5 -175",
-    "total": "o9.5 -100 / u9.5 -114",
-    "moneyline": "Astros even / Twins -116",
+    "spread": "+1.5 -210 / +1.5 -169",
+    "total": "o9.5 even / u9.5 -115",
+    "moneyline": "Astros -105 / Twins -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-twins"
   },
@@ -737,8 +737,8 @@ export const rawGames = [
         "recent3EarnedRunsDelta": -0.48
       }
     },
-    "spread": "-1.5 +106 / +1.5 -123",
-    "total": "o9.5 -105 / u9.5 -110",
+    "spread": "-1.5 +110 / +1.5 -123",
+    "total": "o9.5 -109 / u9.5 -110",
     "moneyline": "Rangers -145 / Rockies +130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-rockies"
@@ -813,9 +813,9 @@ export const rawGames = [
         "recent3EarnedRunsDelta": -0.67
       }
     },
-    "spread": "-1.5 +123 / +1.5 -140",
+    "spread": "-1.5 +125 / +1.5 -140",
     "total": "o9 -110 / u9 -110",
-    "moneyline": "Athletics -130 / Angels +115",
+    "moneyline": "Athletics -129 / Angels +115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-angels"
   },
@@ -889,9 +889,9 @@ export const rawGames = [
         "recent3EarnedRunsDelta": 0.33
       }
     },
-    "spread": "-1.5 +125 / +1.5 -137",
-    "total": "o7 -120 / u7.5 -120",
-    "moneyline": "Dodgers -140 / Padres +125",
+    "spread": "-1.5 +125 / +1.5 -140",
+    "total": "o7 -123 / u7.5 -120",
+    "moneyline": "Dodgers -140 / Padres +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-padres"
   },
@@ -1041,7 +1041,7 @@ export const rawGames = [
         "recent3EarnedRunsDelta": 0.11
       }
     },
-    "spread": "+1.5 -160 / -1.5 +135",
+    "spread": "+1.5 -165 / -1.5 +140",
     "total": "o7 -120 / u7.5 -122",
     "moneyline": "White Sox +140 / Mariners -160",
     "pitcherSourceNote": "",
@@ -1054,6 +1054,7 @@ export const bullpenChainByTeam = {
     "opponent": "Giants",
     "topRelievers": [
       {
+        "pitcherId": 666661,
         "name": "Juan Morillo",
         "role": "middle",
         "firstRelieverLikelihood": 77.68,
@@ -1065,6 +1066,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-17"
       },
       {
+        "pitcherId": 657044,
         "name": "Ryan Thompson",
         "role": "middle",
         "firstRelieverLikelihood": 75.3,
@@ -1081,6 +1083,7 @@ export const bullpenChainByTeam = {
     "opponent": "Angels",
     "topRelievers": [
       {
+        "pitcherId": 686993,
         "name": "Justin Sterner",
         "role": "middle",
         "firstRelieverLikelihood": 79.27,
@@ -1092,6 +1095,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-17"
       },
       {
+        "pitcherId": 605130,
         "name": "Scott Barlow",
         "role": "middle",
         "firstRelieverLikelihood": 78.53,
@@ -1108,6 +1112,7 @@ export const bullpenChainByTeam = {
     "opponent": "Marlins",
     "topRelievers": [
       {
+        "pitcherId": 607481,
         "name": "Aaron Bummer",
         "role": "bridge",
         "firstRelieverLikelihood": 90.5,
@@ -1119,6 +1124,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-14"
       },
       {
+        "pitcherId": 669276,
         "name": "Dylan Lee",
         "role": "middle",
         "firstRelieverLikelihood": 85.45,
@@ -1135,6 +1141,7 @@ export const bullpenChainByTeam = {
     "opponent": "Rays",
     "topRelievers": [
       {
+        "pitcherId": 608650,
         "name": "Dietrich Enns",
         "role": "bridge",
         "firstRelieverLikelihood": 87.84,
@@ -1146,6 +1153,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-16"
       },
       {
+        "pitcherId": 694346,
         "name": "Trey Gibson",
         "role": "bridge",
         "firstRelieverLikelihood": 84.09,
@@ -1162,6 +1170,7 @@ export const bullpenChainByTeam = {
     "opponent": "Royals",
     "topRelievers": [
       {
+        "pitcherId": 686580,
         "name": "Justin Slaten",
         "role": "middle",
         "firstRelieverLikelihood": 89.02,
@@ -1173,6 +1182,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-14"
       },
       {
+        "pitcherId": 676477,
         "name": "Garrett Whitlock",
         "role": "middle",
         "firstRelieverLikelihood": 88.99,
@@ -1189,6 +1199,7 @@ export const bullpenChainByTeam = {
     "opponent": "Brewers",
     "topRelievers": [
       {
+        "pitcherId": 571948,
         "name": "Hoby Milner",
         "role": "bridge",
         "firstRelieverLikelihood": 77.78,
@@ -1200,6 +1211,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-17"
       },
       {
+        "pitcherId": 657097,
         "name": "Jacob Webb",
         "role": "middle",
         "firstRelieverLikelihood": 76.28,
@@ -1216,6 +1228,7 @@ export const bullpenChainByTeam = {
     "opponent": "Mariners",
     "topRelievers": [
       {
+        "pitcherId": 656794,
         "name": "Sean Newcomb",
         "role": "bridge",
         "firstRelieverLikelihood": 78.68,
@@ -1227,6 +1240,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-17"
       },
       {
+        "pitcherId": 685126,
         "name": "Brandon Eisert",
         "role": "bridge",
         "firstRelieverLikelihood": 76.69,
@@ -1243,6 +1257,7 @@ export const bullpenChainByTeam = {
     "opponent": "Phillies",
     "topRelievers": [
       {
+        "pitcherId": 594580,
         "name": "Sam Moll",
         "role": "bridge",
         "firstRelieverLikelihood": 86.65,
@@ -1254,6 +1269,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-16"
       },
       {
+        "pitcherId": 682825,
         "name": "Luis Mey",
         "role": "middle",
         "firstRelieverLikelihood": 82.74,
@@ -1270,6 +1286,7 @@ export const bullpenChainByTeam = {
     "opponent": "Tigers",
     "topRelievers": [
       {
+        "pitcherId": 670036,
         "name": "Matt Festa",
         "role": "middle",
         "firstRelieverLikelihood": 88.41,
@@ -1281,6 +1298,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-15"
       },
       {
+        "pitcherId": 670059,
         "name": "Colin Holderman",
         "role": "middle",
         "firstRelieverLikelihood": 85.85,
@@ -1297,6 +1315,7 @@ export const bullpenChainByTeam = {
     "opponent": "Rangers",
     "topRelievers": [
       {
+        "pitcherId": 657514,
         "name": "Brennan Bernardino",
         "role": "middle",
         "firstRelieverLikelihood": 81.87,
@@ -1308,6 +1327,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-14"
       },
       {
+        "pitcherId": 677955,
         "name": "Jaden Hill",
         "role": "middle",
         "firstRelieverLikelihood": 77.27,
@@ -1324,6 +1344,7 @@ export const bullpenChainByTeam = {
     "opponent": "Guardians",
     "topRelievers": [
       {
+        "pitcherId": 663947,
         "name": "Tyler Holton",
         "role": "bridge",
         "firstRelieverLikelihood": 88.94,
@@ -1335,6 +1356,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-16"
       },
       {
+        "pitcherId": 640448,
         "name": "Kyle Finnegan",
         "role": "middle",
         "firstRelieverLikelihood": 83.76,
@@ -1351,6 +1373,7 @@ export const bullpenChainByTeam = {
     "opponent": "Twins",
     "topRelievers": [
       {
+        "pitcherId": 595345,
         "name": "Steven Okert",
         "role": "bridge",
         "firstRelieverLikelihood": 88.78,
@@ -1362,6 +1385,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-16"
       },
       {
+        "pitcherId": 805123,
         "name": "AJ Blubaugh",
         "role": "middle",
         "firstRelieverLikelihood": 85,
@@ -1378,6 +1402,7 @@ export const bullpenChainByTeam = {
     "opponent": "Red Sox",
     "topRelievers": [
       {
+        "pitcherId": 679883,
         "name": "Luinder Avila",
         "role": "bridge",
         "firstRelieverLikelihood": 93,
@@ -1389,6 +1414,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-14"
       },
       {
+        "pitcherId": 683232,
         "name": "Nick Mears",
         "role": "middle",
         "firstRelieverLikelihood": 79.33,
@@ -1405,6 +1431,7 @@ export const bullpenChainByTeam = {
     "opponent": "Athletics",
     "topRelievers": [
       {
+        "pitcherId": 696147,
         "name": "Sam Bachman",
         "role": "bridge",
         "firstRelieverLikelihood": 90.5,
@@ -1416,6 +1443,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-13"
       },
       {
+        "pitcherId": 681217,
         "name": "Chase Silseth",
         "role": "bridge",
         "firstRelieverLikelihood": 83.87,
@@ -1432,6 +1460,7 @@ export const bullpenChainByTeam = {
     "opponent": "Padres",
     "topRelievers": [
       {
+        "pitcherId": 683618,
         "name": "Edgardo Henriquez",
         "role": "bridge",
         "firstRelieverLikelihood": 87.99,
@@ -1443,6 +1472,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-15"
       },
       {
+        "pitcherId": 595014,
         "name": "Blake Treinen",
         "role": "bridge",
         "firstRelieverLikelihood": 79.68,
@@ -1459,6 +1489,7 @@ export const bullpenChainByTeam = {
     "opponent": "Braves",
     "topRelievers": [
       {
+        "pitcherId": 676534,
         "name": "Calvin Faucher",
         "role": "bridge",
         "firstRelieverLikelihood": 90.5,
@@ -1470,6 +1501,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-14"
       },
       {
+        "pitcherId": 669622,
         "name": "Anthony Bender",
         "role": "middle",
         "firstRelieverLikelihood": 85.05,
@@ -1486,6 +1518,7 @@ export const bullpenChainByTeam = {
     "opponent": "Cubs",
     "topRelievers": [
       {
+        "pitcherId": 675660,
         "name": "Shane Drohan",
         "role": "bridge",
         "firstRelieverLikelihood": 90.5,
@@ -1497,6 +1530,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-12"
       },
       {
+        "pitcherId": 669084,
         "name": "DL Hall",
         "role": "bridge",
         "firstRelieverLikelihood": 79.8,
@@ -1513,6 +1547,7 @@ export const bullpenChainByTeam = {
     "opponent": "Astros",
     "topRelievers": [
       {
+        "pitcherId": 701519,
         "name": "Travis Adams",
         "role": "bridge",
         "firstRelieverLikelihood": 89.45,
@@ -1524,6 +1559,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-13"
       },
       {
+        "pitcherId": 681892,
         "name": "Kody Funderburk",
         "role": "middle",
         "firstRelieverLikelihood": 74.31,
@@ -1540,6 +1576,7 @@ export const bullpenChainByTeam = {
     "opponent": "Nationals",
     "topRelievers": [
       {
+        "pitcherId": 668964,
         "name": "Tobias Myers",
         "role": "middle",
         "firstRelieverLikelihood": 81.92,
@@ -1551,6 +1588,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-15"
       },
       {
+        "pitcherId": 681810,
         "name": "Austin Warren",
         "role": "bridge",
         "firstRelieverLikelihood": 81.85,
@@ -1567,6 +1605,7 @@ export const bullpenChainByTeam = {
     "opponent": "Blue Jays",
     "topRelievers": [
       {
+        "pitcherId": 665645,
         "name": "Kervin Castro",
         "role": "bridge",
         "firstRelieverLikelihood": 84.09,
@@ -1578,6 +1617,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-08"
       },
       {
+        "pitcherId": 687396,
         "name": "Brent Headrick",
         "role": "bridge",
         "firstRelieverLikelihood": 82.96,
@@ -1594,6 +1634,7 @@ export const bullpenChainByTeam = {
     "opponent": "Reds",
     "topRelievers": [
       {
+        "pitcherId": 641835,
         "name": "Tim Mayza",
         "role": "middle",
         "firstRelieverLikelihood": 83.72,
@@ -1605,6 +1646,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-15"
       },
       {
+        "pitcherId": 621383,
         "name": "Tanner Banks",
         "role": "middle",
         "firstRelieverLikelihood": 77.44,
@@ -1621,6 +1663,7 @@ export const bullpenChainByTeam = {
     "opponent": "Dodgers",
     "topRelievers": [
       {
+        "pitcherId": 676760,
         "name": "Ron Marinaccio",
         "role": "middle",
         "firstRelieverLikelihood": 89.02,
@@ -1632,6 +1675,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-14"
       },
       {
+        "pitcherId": 593974,
         "name": "Wandy Peralta",
         "role": "middle",
         "firstRelieverLikelihood": 84.12,
@@ -1648,6 +1692,7 @@ export const bullpenChainByTeam = {
     "opponent": "Diamondbacks",
     "topRelievers": [
       {
+        "pitcherId": 657424,
         "name": "Matt Gage",
         "role": "middle",
         "firstRelieverLikelihood": 85.61,
@@ -1659,6 +1704,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-16"
       },
       {
+        "pitcherId": 676775,
         "name": "Keaton Winn",
         "role": "bridge",
         "firstRelieverLikelihood": 80.84,
@@ -1675,6 +1721,7 @@ export const bullpenChainByTeam = {
     "opponent": "White Sox",
     "topRelievers": [
       {
+        "pitcherId": 689546,
         "name": "Nick Davila",
         "role": "bridge",
         "firstRelieverLikelihood": 87.68,
@@ -1686,6 +1733,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-16"
       },
       {
+        "pitcherId": 678606,
         "name": "José A. Ferrer",
         "role": "bridge",
         "firstRelieverLikelihood": 83.94,
@@ -1702,6 +1750,7 @@ export const bullpenChainByTeam = {
     "opponent": "Orioles",
     "topRelievers": [
       {
+        "pitcherId": 668984,
         "name": "Casey Legumina",
         "role": "bridge",
         "firstRelieverLikelihood": 79.95,
@@ -1713,6 +1762,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-15"
       },
       {
+        "pitcherId": 685801,
         "name": "Hunter Bigge",
         "role": "middle",
         "firstRelieverLikelihood": 73.13,
@@ -1729,6 +1779,7 @@ export const bullpenChainByTeam = {
     "opponent": "Rockies",
     "topRelievers": [
       {
+        "pitcherId": 656222,
         "name": "Jalen Beeks",
         "role": "bridge",
         "firstRelieverLikelihood": 93,
@@ -1740,6 +1791,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-13"
       },
       {
+        "pitcherId": 668390,
         "name": "Cole Winn",
         "role": "middle",
         "firstRelieverLikelihood": 83.26,
@@ -1756,6 +1808,7 @@ export const bullpenChainByTeam = {
     "opponent": "Yankees",
     "topRelievers": [
       {
+        "pitcherId": 689254,
         "name": "Mason Fluharty",
         "role": "middle",
         "firstRelieverLikelihood": 88.25,
@@ -1767,6 +1820,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-13"
       },
       {
+        "pitcherId": 667297,
         "name": "Tommy Nance",
         "role": "middle",
         "firstRelieverLikelihood": 78.84,
@@ -1783,6 +1837,7 @@ export const bullpenChainByTeam = {
     "opponent": "Mets",
     "topRelievers": [
       {
+        "pitcherId": 680730,
         "name": "Mitchell Parker",
         "role": "bridge",
         "firstRelieverLikelihood": 88.3,
@@ -1794,6 +1849,7 @@ export const bullpenChainByTeam = {
         "lastAppearanceDate": "2026-05-13"
       },
       {
+        "pitcherId": 676571,
         "name": "PJ Poulin",
         "role": "middle",
         "firstRelieverLikelihood": 79.25,

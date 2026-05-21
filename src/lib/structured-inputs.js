@@ -1043,5 +1043,75 @@ export const structuredInputOverrides = {
         modifier('Home floor gives Detroit the cleanest control path', -2)
       ]
     }
+  },
+  'fire-fever-2026-05-20': {
+    sourceLabel: 'RotoWire WNBA odds + StatMuse team-shape context',
+    signals: [
+      signal('Offensive ceiling', 0.24, [
+        { label: 'Expansion offense still building reliable secondary scoring', score: 34 },
+        { label: 'Indiana pace and shotmaking still create the cleaner scoring ladder', score: 86 }
+      ]),
+      signal('Lead guard control', 0.22, [
+        { label: 'Portland can stay live if the top creators keep the game loose', score: 46 },
+        { label: 'Caitlin Clark still gives Indiana the strongest control point in the matchup', score: 90 }
+      ]),
+      signal('Support scoring tree', 0.18, [
+        { label: 'Portland still needs more than one scoring branch to trust the full-game path', score: 38 },
+        { label: 'Indiana has the deeper stable scoring tree around the primary creator', score: 76 }
+      ]),
+      signal('Market and venue', 0.14, [
+        { label: 'Road dog around +600 in a steep role gap', score: 20 },
+        { label: 'Home favorite around -900 with the cleaner game-control path', score: 80 }
+      ]),
+      signal('Spread fragility', 0.12, [
+        { label: 'Expansion variance keeps the dog spread alive longer than the moneyline suggests', score: 58 },
+        { label: 'Favorite can still win cleanly without fully covering', score: 60 }
+      ])
+    ],
+    volatility: {
+      base: 62,
+      modifiers: [
+        modifier('Large favorite script lowers outright upset frequency', -8),
+        modifier('Expansion-team variance keeps the spread less stable than the side', 6),
+        modifier('Indiana still carries the cleaner pace and creator structure', -3)
+      ]
+    }
+  },
+  'spurs-thunder-wcf-g2-2026-05-20': {
+    sourceLabel: 'Moneyline + official Game 1 result + current Game 2 market',
+    signals: [
+      signal('Series leverage', 0.18, [
+        { label: 'San Antonio already proved the dog route by stealing Game 1 in 2OT', score: 68 },
+        { label: 'OKC still gets the stronger Game 2 reset spot at home', score: 74 }
+      ]),
+      signal('Top-end control', 0.22, [
+        { label: 'Wembanyama can still distort the entire game shape by himself', score: 86 },
+        { label: 'SGA remains the cleaner late-clock stabilizer on the favorite side', score: 82 }
+      ]),
+      signal('Support creation', 0.18, [
+        { label: 'Spurs still have enough guard help to keep the dog route real', score: 66 },
+        { label: 'Thunder need more support around SGA than they got in Game 1', score: 58 }
+      ]),
+      signal('Defensive base', 0.16, [
+        { label: 'San Antonio can still drag this into a size-and-chaos game', score: 60 },
+        { label: 'OKC still owns the cleaner season-long defensive base', score: 72 }
+      ]),
+      signal('Market and venue', 0.12, [
+        { label: 'Road dog around +200 after already proving the live path', score: 46 },
+        { label: 'Home favorite around -250 and still the fairer side on paper', score: 54 }
+      ]),
+      signal('Bounceback pressure', 0.14, [
+        { label: 'Spurs can play freer after taking Game 1', score: 64 },
+        { label: 'Thunder urgency should be much higher after wasting the opener', score: 70 }
+      ])
+    ],
+    volatility: {
+      base: 76,
+      modifiers: [
+        modifier('Playoff Game 2 after a double-overtime opener is still highly unstable', 10),
+        modifier('Wembanyama distortion keeps the dog route very real', 7),
+        modifier('Home bounceback spot trims some of the chaos for OKC', -3)
+      ]
+    }
   }
 }

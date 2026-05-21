@@ -295,6 +295,7 @@ const buildLineupLookup = (lineupBoardsByGameId = {}) => {
     for (const sideKey of ['away', 'home']) {
       const side = board?.[sideKey]
       if (!side?.lineup?.length) continue
+      if (side.lineupSource !== 'official-feed' && board?.status?.[sideKey] !== 'posted') continue
 
       for (const hitter of side.lineup) {
         if (!hitter?.playerId) continue
@@ -310,6 +311,7 @@ const buildLineupLookup = (lineupBoardsByGameId = {}) => {
           splitScore: Number(hitter.metrics?.splitScore ?? 50),
           matchupScore: Number(hitter.metrics?.matchupScore ?? 50),
           varianceScore: Number(hitter.metrics?.varianceScore ?? 50),
+          pitchType: hitter.pitchType || null,
           recentHomeRuns: Number(hitter.recent?.homeRuns ?? 0),
           seasonHomeRuns: Number(hitter.season?.homeRuns ?? 0),
           splitHomeRuns: Number(hitter.split?.homeRuns ?? 0)
@@ -441,31 +443,80 @@ const describeBullpenLane = (candidate) => {
   return 'neutral bullpen'
 }
 
-const buildSummaryFromLeadCandidate = (leadCandidate) => {
+const hasTopPitchTrap = (candidate = {}) =>
+  (candidate.lineupContext?.pitchType?.topPitches || []).some(
+    (pitch) =>
+      Number(pitch.pitchUsage || 0) >= 28 &&
+      Number(pitch.fitGrade || 0) <= -6 &&
+      Number(pitch.qualityScore || 0) >= 80
+  )
+
+const buildWeightedPool = (candidates = []) => {
+  const scoped = candidates
+    .filter((candidate) => candidate.score >= 40)
+    .slice(0, 7)
+
+  if (!scoped.length) return []
+
+  const weighted = scoped.map((candidate) => ({
+    ...candidate,
+    rawWeight: Math.pow(Math.max(8, candidate.score - 42), 0.92)
+  }))
+  const totalWeight = weighted.reduce((sum, candidate) => sum + candidate.rawWeight, 0) || 1
+
+  return weighted.map((candidate) => {
+    const modelShare = candidate.rawWeight / totalWeight
+    const modelSharePct = Number((modelShare * 100).toFixed(1))
+    const lane =
+      modelSharePct >= 24
+        ? 'anchor'
+        : modelSharePct >= 16
+          ? 'secondary'
+          : modelSharePct >= 10
+            ? 'live'
+            : 'thin'
+
+    return {
+      ...candidate,
+      modelShare: Number(modelShare.toFixed(3)),
+      modelSharePct,
+      lane
+    }
+  })
+}
+
+const buildSummaryFromLeadCandidate = (leadCandidate, weightedPool = []) => {
   if (!leadCandidate) {
     return 'No usable home-run lane has surfaced yet on the pre-lineup board.'
   }
 
   const homeAwayLine = describeHomeAwayBias(leadCandidate)
   const timingLine = describeTimingBias(leadCandidate)
+  const supportNames = weightedPool
+    .slice(1, 4)
+    .filter((candidate) => candidate.modelSharePct >= 10)
+    .map((candidate) => candidate.playerName)
   const matchupLine =
     leadCandidate.lineupContext?.primaryTag === 'carry'
       ? 'posted order still grades like a carry lane'
       : `the posted order still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}`
+  const distributionLine = supportNames.length
+    ? `The better way to read this game is as a weighted cluster through ${leadCandidate.playerName}, ${supportNames.join(', ')} rather than a solo-bat script.`
+    : `This still looks concentrated around ${leadCandidate.playerName} more than the rest of the current board.`
 
   if (leadCandidate.homeRunsLast7Days === 0 && leadCandidate.daysSinceLastHr >= 7) {
-    return `${leadCandidate.playerName} is more matchup-driven than form-driven here: ${matchupLine}, ${homeAwayLine}, ${timingLine}, and ${leadCandidate.opposingPitcherHr9} HR/9 across from him despite the recent cooldown.`
+    return `${leadCandidate.playerName} is more matchup-driven than form-driven here: ${matchupLine}, ${homeAwayLine}, ${timingLine}, and ${leadCandidate.opposingPitcherHr9} HR/9 across from him despite the recent cooldown. ${distributionLine}`
   }
 
   if (leadCandidate.scoreBand === 'premium') {
-    return `${leadCandidate.playerName} is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans ${timingLine}, and today lines up as a ${homeAwayLine} matchup into a ${leadCandidate.opposingPitcherHr9} HR/9 starter lane.`
+    return `${leadCandidate.playerName} is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans ${timingLine}, and today lines up as a ${homeAwayLine} matchup into a ${leadCandidate.opposingPitcherHr9} HR/9 starter lane. ${distributionLine}`
   }
 
   if (leadCandidate.scoreBand === 'strong' || leadCandidate.scoreBand === 'live') {
-    return `${leadCandidate.playerName} is the cleanest likely bat here because the posted order still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}, the recent HR sample leans ${timingLine}, and today still profiles as a ${homeAwayLine} look.`
+    return `${leadCandidate.playerName} is the cleanest likely bat here because the posted order still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}, the recent HR sample leans ${timingLine}, and today still profiles as a ${homeAwayLine} look. ${distributionLine}`
   }
 
-  return `${leadCandidate.playerName} is the best available lane here, but this still looks thinner and more variance-driven than a true carry-bat HR script.`
+  return `${leadCandidate.playerName} is the best available lane here, but this still looks thinner and more variance-driven than a true carry-bat HR script. ${distributionLine}`
 }
 
 const fetchStatcastLeaderboard = async (season) => {
@@ -697,6 +748,20 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
           : 0
       : 0
     : 0
+  const falseCarryoverPenalty =
+    candidate.battingImpactContext?.recentAppearances === 1 &&
+    Number(candidate.battingImpactContext?.hrGames || 0) >= 1 &&
+    candidate.homeRunsLast10Days <= 1
+      ? -8
+      : 0
+  const volatileStarPenalty =
+    Number(candidate.lineupContext?.varianceScore || 0) >= 82 &&
+    Number(candidate.lineupContext?.formScore || 50) < 55
+      ? -6
+      : 0
+  const pitchTrapPenalty = hasTopPitchTrap(candidate) ? -12 : 0
+  const reliefMismatchPenalty =
+    homeRunContext?.reliefShare >= 0.55 && candidate.opposingBullpenVulnerability <= 0 ? -3 : 0
 
   candidate.score = Number(
     (
@@ -714,7 +779,11 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
       starterHunterBoost +
       reliefHunterBoost +
       timingBoost +
-      streakShapeBoost
+      streakShapeBoost +
+      falseCarryoverPenalty +
+      volatileStarPenalty +
+      pitchTrapPenalty +
+      reliefMismatchPenalty
     ).toFixed(1)
   )
   candidate.scoreBand =
@@ -777,6 +846,12 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
       ? `Slot ${candidate.lineupContext.slot} | ${candidate.lineupContext.primaryTag || 'posted lineup'} | lineup priority ${candidate.lineupPriority} | bullpen vulnerability ${candidate.opposingBullpenVulnerability}`
       : 'Lineup slot not posted yet'
   ]
+
+  candidate.avoidHrChase =
+    falseCarryoverPenalty <= -8 &&
+    volatileStarPenalty <= -6 &&
+    pitchTrapPenalty <= -12 &&
+    candidate.score < 95
 
   return candidate
 }
@@ -930,24 +1005,31 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
 
   const gameBoards = games.map((game) => {
     const candidates = scoredCandidates
-      .filter((candidate) => candidate.gameTitle === game.title)
+      .filter((candidate) => candidate.gameTitle === game.title && !candidate.avoidHrChase)
       .sort((left, right) => right.score - left.score)
 
-    const likely = candidates.slice(0, 1)
-    if (candidates[1] && candidates[1].score >= Math.max(68, candidates[0].score - 7)) {
-      likely.push(candidates[1])
-    }
-    const possible = candidates
+    const weightedPool = buildWeightedPool(candidates)
+    const likely = weightedPool.filter((candidate, index) => index === 0 || candidate.modelSharePct >= 18).slice(0, 2)
+    const possible = weightedPool
       .filter((candidate) => !likely.some((likelyCandidate) => likelyCandidate.playerId === candidate.playerId))
+      .filter((candidate) => candidate.modelSharePct >= 10)
       .slice(0, 3)
-      .filter((candidate) => candidate.score >= 53)
+    const alternates = weightedPool
+      .filter(
+        (candidate) =>
+          !likely.some((likelyCandidate) => likelyCandidate.playerId === candidate.playerId) &&
+          !possible.some((possibleCandidate) => possibleCandidate.playerId === candidate.playerId)
+      )
+      .slice(0, 3)
 
-    const leadCandidate = likely[0] ?? possible[0] ?? null
+    const leadCandidate = likely[0] ?? possible[0] ?? alternates[0] ?? null
     return {
       gameTitle: game.title,
       likely,
       possible,
-      summary: buildSummaryFromLeadCandidate(leadCandidate)
+      alternates,
+      weightedPool,
+      summary: buildSummaryFromLeadCandidate(leadCandidate, weightedPool)
     }
   })
 

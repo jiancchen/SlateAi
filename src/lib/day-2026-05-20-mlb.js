@@ -5,23 +5,23 @@ import {
   teamOffenseContextByTeam,
   teamBullpenContextByTeam,
   teamSavantContextByTeam
-} from './mlb-context-2026-05-18.js'
-import { teamStoryContextByTeam } from './mlb-story-context-2026-05-18.js'
-import { homeRunTargetsByGame } from './day-2026-05-18-home-run-data.js'
-import { bullpenChainByTeam, rawGames } from './day-2026-05-18-data.js'
-import { lineupBoardsByGameId, lineupMatchupContextByGameId } from './day-2026-05-18-lineups.js'
+} from './mlb-context-2026-05-20.js'
+import { teamStoryContextByTeam } from './mlb-story-context-2026-05-20.js'
+import { homeRunTargetsByGame } from './day-2026-05-20-home-run-data.js'
+import { bullpenChainByTeam, rawGames } from './day-2026-05-20-data.js'
+import { lineupBoardsByGameId, lineupMatchupContextByGameId } from './day-2026-05-20-lineups.js'
 
 export const mlbNotes = [
-  'The May 18 MLB board is built after grading May 17, where the model improved overall but still dropped several noisy live-dog shots and missed again on a Mariners favorite lane.',
-  'Today’s emphasis is cleaner separation between core sides and volatility boards: if the starter window, projected traffic, and late hold are not aligned, the card should read more like a watchlist than a conviction pick.',
-  'The home-run layer now also uses recent batting-impact history from daily leaderboards, which is how hot bats like Ben Rice, Gavin Sheets, Casey Schmitt, and Salvador Perez can surface even when they are not just the loudest season-long xHR names.'
+  'The May 20 MLB board is a live remaining-games desk built at 10:13 AM Pacific, so the two games that had already started were intentionally removed from the actionable slate.',
+  'Today’s emphasis is still cleaner separation between real baseball control and paper-favorite traps: if the starter window, lineup pressure, bridge chain, and team story do not agree, the card should read as volatile instead of pretending certainty.',
+  'Nine team lineups were officially posted on this pass, with the rest still leaning on projected orders, so the side card is more trustworthy than the HR layer until more batting orders lock.'
 ]
 
 export const mlbSources = [
-  { label: 'MLB probable pitchers', url: 'https://www.mlb.com/probable-pitchers/2026-05-18' },
+  { label: 'MLB probable pitchers', url: 'https://www.mlb.com/probable-pitchers/2026-05-20' },
   {
-    label: 'MLB schedule API for May 18, 2026',
-    url: 'https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-18&hydrate=probablePitcher,team'
+    label: 'MLB schedule API for May 20, 2026',
+    url: 'https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-20&hydrate=probablePitcher,team'
   },
   {
     label: 'MLB standings API for 2026 regular season',
@@ -34,11 +34,11 @@ export const mlbSources = [
   },
   { label: 'Baseball Savant league hitting', url: 'https://baseballsavant.mlb.com/league' },
   {
-    label: 'ESPN MLB daily batting leaders for May 17, 2026',
-    url: 'https://www.espn.com/mlb/stats/dailyleaders/_/date/20260517/type/batting'
+    label: 'ESPN MLB daily batting leaders for May 19, 2026',
+    url: 'https://www.espn.com/mlb/stats/dailyleaders/_/date/20260519/type/batting'
   },
   { label: 'MLB starting lineups', url: 'https://www.mlb.com/starting-lineups' },
-  { label: 'ScoresAndOdds MLB board', url: 'https://www.scoresandodds.com/mlb?date=2026-05-18' }
+  { label: 'ScoresAndOdds MLB board', url: 'https://www.scoresandodds.com/mlb?date=2026-05-20' }
 ]
 
 const oddsProvider = 'Official MLB data + ScoresAndOdds live board'
@@ -255,10 +255,10 @@ const storyContextSummary = (teamName, story = null) => {
 }
 
 const getWindowLabel = (startMinutes) => {
-  if (startMinutes < 720) return 'Monday matinee'
-  if (startMinutes < 960) return 'Monday afternoon board'
-  if (startMinutes < 1110) return 'Monday prime board'
-  return 'Monday night board'
+  if (startMinutes < 720) return 'Wednesday matinee'
+  if (startMinutes < 960) return 'Wednesday afternoon board'
+  if (startMinutes < 1110) return 'Wednesday prime board'
+  return 'Wednesday night board'
 }
 
 const enrichRawGame = (game) => ({
@@ -412,6 +412,8 @@ const buildMlbGame = (raw) => {
   }
 }
 
-export const mlbGames = rawGames.map((game) =>
+const remainingGameCutoffMinutes = 613
+
+export const mlbGames = rawGames.filter((game) => game.startMinutes > remainingGameCutoffMinutes).map((game) =>
   createSportsMatchModel(buildMlbGame(enrichRawGame(game)), oddsProvider)
 )

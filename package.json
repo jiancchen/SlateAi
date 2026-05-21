@@ -14,6 +14,7 @@
     "data:list:probables": "python3 scripts/mlb_warehouse.py list-probable-starters",
     "data:derive:mlb": "python3 scripts/mlb_warehouse.py derive-mlb-features",
     "data:ingest:statcast-hr": "python3 scripts/mlb_warehouse.py ingest-statcast-hr",
+    "data:refresh:mlb-live": "node scripts/refresh-mlb-live-board.mjs",
     "data:import:hr": "python3 scripts/mlb_warehouse.py import-predictions",
     "data:grade:hr": "python3 scripts/mlb_warehouse.py grade-home-run-picks",
     "data:list:hr": "python3 scripts/mlb_warehouse.py list-home-runs",
