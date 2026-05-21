@@ -3272,13 +3272,17 @@ const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
   const opponent = participant ? participants.find((entry) => entry.id !== participant.id) : null
   const confidence = Number(game.confidence) || 0
   const volatility = Number(game.volatility) || 0
+  const allowModelOnlyAnalysis = game.league === 'Tennis'
   const recommendationScore = Math.round(
     confidence * fallbackRecommendationWeight.confidence +
       (100 - volatility) * fallbackRecommendationWeight.stability
   )
 
   return {
-    available: Boolean(hasFullMoneyline && participant && Number.isFinite(participant.americanOdds)),
+    available: Boolean(
+      participant &&
+        (allowModelOnlyAnalysis || (hasFullMoneyline && Number.isFinite(participant.americanOdds)))
+    ),
     participantId: participant?.id ?? null,
     participant,
     opponent,
@@ -3290,9 +3294,10 @@ const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
     tier: getAnalysisTier(confidence, volatility),
     sourceLabel: 'Editorial slate read',
     modelEdge: 0,
-    modelEdgeLabel: 'Editorial read',
+    modelEdgeLabel: allowModelOnlyAnalysis && !hasFullMoneyline ? 'Model-only read' : 'Editorial read',
     marketProbability: participant?.impliedProbability ?? null,
-    marketProbabilityLabel: participant?.impliedProbabilityLabel ?? 'N/A',
+    marketProbabilityLabel:
+      participant?.impliedProbabilityLabel ?? (allowModelOnlyAnalysis && !hasFullMoneyline ? 'Model only' : 'N/A'),
     inputs: [],
     inputsUsed: 0,
     volatilityNotes: []

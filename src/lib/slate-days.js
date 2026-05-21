@@ -82,6 +82,13 @@ import {
   slateMeta as dayTwelveSlateMeta,
   sources as dayTwelveSources
 } from './day-2026-05-20.js'
+import {
+  filters as dayThirteenFilters,
+  games as dayThirteenGames,
+  oddsMeta as dayThirteenOddsMeta,
+  slateMeta as dayThirteenSlateMeta,
+  sources as dayThirteenSources
+} from './day-2026-05-21.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -90,7 +97,7 @@ const deriveFilters = (games, fallbackFilters = ['All']) => {
 }
 
 const buildLeagueSummary = (games) => {
-  const leagueOrder = ['MLB', 'UFC', 'NBA', 'WNBA']
+  const leagueOrder = ['MLB', 'Tennis', 'UFC', 'NBA', 'WNBA']
 
   return leagueOrder.map((league) => {
     const leagueGames = games.filter((game) => game.league === league)
@@ -470,11 +477,39 @@ const may20Slate = createSlateDay({
   ],
   archive: {
     resultsStored: false,
-    leaguesTracked: ['MLB', 'NBA', 'WNBA']
+    leaguesTracked: ['MLB']
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate, may18Slate, may19Slate, may20Slate]
+const may21Slate = createSlateDay({
+  id: dayThirteenSlateMeta.isoDate,
+  label: dayThirteenSlateMeta.date,
+  status: 'ready',
+  slateMeta: dayThirteenSlateMeta,
+  games: dayThirteenGames,
+  filters: dayThirteenFilters,
+  oddsMeta: dayThirteenOddsMeta,
+  sources: dayThirteenSources,
+  intakeChecklist: [
+    'Refresh the main-tour tennis prices once the last overnight market moves settle, because early clay boards can still drift on weather and late withdrawals.',
+    'Backfill the Roland-Garros qualifying results so the model can grade how well rank, seed, and fatigue explained the final-round qualifying board.',
+    'Keep the TennisStats and Tennis Abstract links in the source registry because they are now the fastest way to rebuild tennis match context without wide search.',
+    'If any late player withdrawal or medical timeout news breaks, update the relevant match notes before first ball.'
+  ],
+  intakePrompt:
+    'May 21 is now the live tennis desk: WTA Strasbourg, ATP Hamburg, ATP Geneva, and Roland-Garros qualifying all sit on the same clay-only board.',
+  feedNotes: [
+    'This is the first dedicated tennis daybook entry, and it leans on clay form, ranking pressure, H2H shape, and qualifying fatigue instead of the old all-sports override approach.',
+    'Roland-Garros coverage here is qualifying round three rather than the main draw, so those matches are intentionally treated as more volatile model-only reads when no clean market price was accessible.',
+    'The active desk focus is now MLB plus Tennis; older NBA and WNBA boards stay in the archive, but the live workflow is no longer centered on them.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['Tennis']
+  }
+})
+
+export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate, may18Slate, may19Slate, may20Slate, may21Slate]
 
 const currentLocalIsoDate = () => {
   const now = new Date()

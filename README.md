@@ -1,6 +1,6 @@
 # Sports Trading Board
 
-Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards with structured matchup analysis, series context, and a parlay builder.
+Local Svelte/Vite dashboard for daily `MLB` and `Tennis` boards, plus archived `NBA`, `WNBA`, and `UFC` slates, with structured matchup analysis and a parlay builder.
 
 ## Daily Workflow
 
@@ -17,9 +17,11 @@ Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards wit
 - `src/lib/sports-model.js`
   Analysis engine, ranking logic, and parlay math.
 - `src/lib/structured-inputs.js`
-  Local overrides for playoff series, WNBA reads, and custom signals.
+  Local overrides for archived playoff series, tennis match flags, and custom signals.
 - `src/lib/day-2026-05-14.js`
   Example current-day slate with MLB and WNBA data.
+- `src/lib/day-2026-05-21.js`
+  First dedicated tennis slate with WTA Strasbourg, ATP Hamburg, ATP Geneva, and Roland-Garros qualifying.
 - `daily-games-external.md`
   Known-good source registry for daily ingest.
 - `scripts/mlb_warehouse.py`
@@ -50,6 +52,15 @@ Local Svelte/Vite dashboard for daily `MLB`, `NBA`, `WNBA`, and `UFC` boards wit
 - [Baseball Savant league hitting](https://baseballsavant.mlb.com/league)
 - [MLB starting lineups](https://www.mlb.com/starting-lineups)
 - [ScoresAndOdds MLB board](https://www.scoresandodds.com/mlb)
+
+### Tennis
+
+- [TennisStats match board](https://tennisstats.com/)
+- [Tennis Abstract player page example](https://www.tennisabstract.com/cgi-bin/player.cgi?p=126205/Tommy-Paul)
+- [ATP Hamburg schedule](https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21)
+- [ATP Geneva schedule](https://www.bbc.co.uk/sport/tennis/atp-geneva-open/mens-singles/scores-and-schedule/2026-05-21)
+- [WTA Strasbourg order of play PDF](https://wtafiles.wtatennis.com/pdf/draws/2026/406/OP.pdf)
+- [Roland-Garros order of play](https://www.rolandgarros.com/en-us/order-of-play?annexeCourt=all&competition=all&country=all&date=2026-05-21&favoriteFilter=false&principalCourt=all&year=2026)
 
 ### NBA
 

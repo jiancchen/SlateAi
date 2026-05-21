@@ -11,7 +11,7 @@
 
   const PARLAY_MIN_LEGS = 2
   const PARLAY_MAX_LEGS = 10
-  const leagueOrder = ['MLB', 'UFC', 'NBA', 'WNBA']
+  const leagueOrder = ['MLB', 'Tennis', 'UFC', 'NBA', 'WNBA']
   const sidebarTabs = [
     { id: 'ticket', label: 'Ticket' },
     { id: 'props', label: 'Props' },
@@ -316,6 +316,21 @@
           label: /helps carry/i.test(projection.weather.label) ? 'Weather up' : 'Weather down'
         })
       }
+    } else if (game.league === 'Tennis' && game.tennisContext) {
+      if (game.tennisContext.surface) chips.push({ tone: 'neutral', label: game.tennisContext.surface })
+      if (game.tennisContext.h2hLeader === game.analysis?.participant?.name) {
+        chips.push({ tone: 'accent', label: 'H2H edge' })
+      }
+      if (game.tennisContext.liveDog) {
+        chips.push({ tone: 'warning', label: 'Dog live' })
+      }
+      if (game.tennisContext.fatigueFlag) {
+        chips.push({ tone: 'danger', label: 'Fatigue live' })
+      }
+      if (game.tennisContext.formEdgeName === game.analysis?.participant?.name) {
+        chips.push({ tone: 'accent', label: 'Form edge' })
+      }
+      if (game.analysis?.volatility >= 70) chips.push({ tone: 'danger', label: 'Volatile' })
     } else {
       if (game.analysis?.confidence >= 72) chips.push({ tone: 'accent', label: 'High confidence' })
       if (game.analysis?.volatility >= 68) chips.push({ tone: 'danger', label: 'High variance' })

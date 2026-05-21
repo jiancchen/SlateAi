@@ -74,6 +74,23 @@ This is the cleanest source so far for building projected hit edge and hit-effic
 https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026
 Use this for late-inning stability, bullpen leak risk, and underdog paths that survive once the starters leave.
 
+### Tennis
+- Match board and H2H pages:
+  [https://tennisstats.com/](https://tennisstats.com/)
+  This is the best quick-access board so far for same-day tennis matches, accessible odds, current ranking, form, Elo, and visible H2H context on one page.
+- Player research example:
+  [https://www.tennisabstract.com/cgi-bin/player.cgi?p=126205/Tommy-Paul](https://www.tennisabstract.com/cgi-bin/player.cgi?p=126205/Tommy-Paul)
+  Tennis Abstract player pages are useful for rank, Elo, results history, and surface-aware context when a match needs deeper manual review.
+- ATP Hamburg schedule:
+  [https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21](https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21)
+- ATP Geneva schedule:
+  [https://www.bbc.co.uk/sport/tennis/atp-geneva-open/mens-singles/scores-and-schedule/2026-05-21](https://www.bbc.co.uk/sport/tennis/atp-geneva-open/mens-singles/scores-and-schedule/2026-05-21)
+- WTA Strasbourg order of play:
+  [https://wtafiles.wtatennis.com/pdf/draws/2026/406/OP.pdf](https://wtafiles.wtatennis.com/pdf/draws/2026/406/OP.pdf)
+- Roland-Garros order of play:
+  [https://www.rolandgarros.com/en-us/order-of-play?annexeCourt=all&competition=all&country=all&date=2026-05-21&favoriteFilter=false&principalCourt=all&year=2026](https://www.rolandgarros.com/en-us/order-of-play?annexeCourt=all&competition=all&country=all&date=2026-05-21&favoriteFilter=false&principalCourt=all&year=2026)
+  The Roland-Garros page exposes the qualifying order of play inside the embedded `window.__NUXT__` payload, so it is a workable source for schedule extraction even when the visual page is heavily scripted.
+
 ### NBA
 - Daily playoff schedule:
   [https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true](https://www.nba.com/news/2026-nba-playoffs-schedule?hidenav=true)
