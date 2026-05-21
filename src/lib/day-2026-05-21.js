@@ -1,7 +1,7 @@
 import { createSportsMatchModel } from './sports-model.js'
 import { tennisClayContext } from './day-2026-05-21-tennis-context.js'
 
-const oddsProvider = 'Official order of play + TennisStats H2H board'
+const oddsProvider = 'Oddschecker + TennisStats clay board'
 
 const market = (label, book, value) => ({ label, book, value })
 
@@ -43,6 +43,9 @@ const formatRank = (value) => (Number.isFinite(value) ? `${Math.round(value)}` :
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
 
+const average = (values) =>
+  values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0
+
 const withClayContext = (player) => ({
   ...player,
   recentClay: tennisClayContext[player.name] ?? null
@@ -82,6 +85,322 @@ const buildClayShape = (player) => {
 
   return `${player.name} is ${ctx.wins}-${ctx.losses} over ${ctx.sample} recent clay matches, winning ${formatPct(ctx.spw)} of service points and ${formatPct(ctx.rpw)} of return points against opponents averaging rank ${formatRank(ctx.lastOppRankAvg)}.`
 }
+
+const buildPlayerLabel = (player) => `#${formatRank(player.rank)} ${player.name}`
+
+const formatDecimalOdds = (value) => (Number.isFinite(value) ? value.toFixed(2) : 'n/a')
+
+const normalizedMoneylineProb = (player, opponent) => {
+  if (!Number.isFinite(player.decimalOdds) || !Number.isFinite(opponent.decimalOdds)) return null
+  const own = 1 / player.decimalOdds
+  const other = 1 / opponent.decimalOdds
+  const total = own + other
+  return total > 0 ? own / total : null
+}
+
+const rankingScore = (player) => {
+  if (!Number.isFinite(player.rank)) return 50
+  return clamp(100 - player.rank * 0.4, 18, 94)
+}
+
+const formScore = (player) => clamp(Number(player.form) || 50, 22, 94)
+
+const serveScore = (player) => {
+  const ctx = player.recentClay
+  if (!ctx) return clamp(44 + (Number(player.form) || 50) * 0.25, 30, 88)
+  return clamp((ctx.spw - 46) * 2.1, 24, 92)
+}
+
+const returnScore = (player) => {
+  const ctx = player.recentClay
+  if (!ctx) return clamp(40 + (Number(player.form) || 50) * 0.2, 28, 84)
+  return clamp((ctx.rpw - 28) * 2.6, 22, 92)
+}
+
+const clayCourtScore = (player) => {
+  const composite = clayCompositeScore(player)
+  if (!Number.isFinite(composite)) return clamp(formScore(player) * 0.9, 28, 82)
+  return clamp(30 + (composite - 82) * 2.5, 24, 94)
+}
+
+const comebackScore = (player) => {
+  const ctx = player.recentClay
+  if (!ctx) return clamp(formScore(player) * 0.92, 30, 82)
+  const sampleBonus = clamp(ctx.sample * 1.5, 0, 8)
+  return clamp((ctx.rpw - 31) * 2 + (ctx.dr - 1) * 42 + 42 + sampleBonus, 24, 92)
+}
+
+const fatigueScore = (player, fatigueText = '', round = '') => {
+  const ctx = player.recentClay
+  const sampleStability = clamp((ctx?.sample ?? 0) * 4, 0, 14)
+  const base = 58 + sampleStability
+  const fatiguePenalty = /qualifying|third round/i.test(`${fatigueText} ${round}`) ? 10 : 0
+  return clamp(base - fatiguePenalty, 28, 86)
+}
+
+const marketTrustScore = (player, opponent) => {
+  const probability = normalizedMoneylineProb(player, opponent)
+  if (!Number.isFinite(probability)) return 50
+  return clamp(probability * 100, 18, 92)
+}
+
+const buildComparisonRow = (label, metric, leftScore, rightScore, leftLabel, rightLabel) => {
+  const winner = leftScore === rightScore ? 'Even' : leftScore > rightScore ? leftLabel : rightLabel
+  return {
+    label,
+    metric,
+    leftScore: clamp(Math.round(leftScore), 0, 100),
+    rightScore: clamp(Math.round(rightScore), 0, 100),
+    leftLabel,
+    rightLabel,
+    winner
+  }
+}
+
+const buildTennisComparisonRows = (playerA, playerB, fatigueText = '', round = '') => [
+  buildComparisonRow(
+    'Court advantage',
+    'Clay fit',
+    clayCourtScore(playerA),
+    clayCourtScore(playerB),
+    playerA.name,
+    playerB.name
+  ),
+  buildComparisonRow(
+    'Recent form',
+    'Current rhythm',
+    formScore(playerA),
+    formScore(playerB),
+    playerA.name,
+    playerB.name
+  ),
+  buildComparisonRow(
+    'Serve advantage',
+    'Service pressure',
+    serveScore(playerA),
+    serveScore(playerB),
+    playerA.name,
+    playerB.name
+  ),
+  buildComparisonRow(
+    'Comeback advantage',
+    'Return + grind',
+    comebackScore(playerA),
+    comebackScore(playerB),
+    playerA.name,
+    playerB.name
+  ),
+  buildComparisonRow(
+    'Market trust',
+    'Board price',
+    marketTrustScore(playerA, playerB),
+    marketTrustScore(playerB, playerA),
+    playerA.name,
+    playerB.name
+  ),
+  buildComparisonRow(
+    'Load control',
+    'Recovery / stamina',
+    fatigueScore(playerA, fatigueText, round),
+    fatigueScore(playerB, fatigueText, round),
+    playerA.name,
+    playerB.name
+  )
+]
+
+const buildProjectedScoreline = (winnerName, loserName, winnerSets, loserSets, strengthGap, volatility) => {
+  if (winnerSets === 2 && loserSets === 0) {
+    if (strengthGap >= 14 && volatility <= 54) {
+      return {
+        sets: ['6-3', '6-4'],
+        winnerGames: 12,
+        loserGames: 7
+      }
+    }
+
+    if (strengthGap >= 8) {
+      return {
+        sets: ['6-4', '6-4'],
+        winnerGames: 12,
+        loserGames: 8
+      }
+    }
+
+    return {
+      sets: ['7-5', '6-4'],
+      winnerGames: 13,
+      loserGames: 9
+    }
+  }
+
+  if (strengthGap >= 9 && volatility <= 64) {
+    return {
+      sets: ['6-4', '3-6', '6-3'],
+      winnerGames: 15,
+      loserGames: 13
+    }
+  }
+
+  if (strengthGap >= 4) {
+    return {
+      sets: ['7-5', '4-6', '6-4'],
+      winnerGames: 17,
+      loserGames: 15
+    }
+  }
+
+  return {
+    sets: ['6-4', '5-7', '6-4'],
+    winnerGames: 17,
+    loserGames: 15
+  }
+}
+
+const buildFantasyProjection = ({
+  player,
+  opponent,
+  gamesWon,
+  gamesLost,
+  setsWon,
+  setsLost,
+  volatility,
+  event
+}) => {
+  const ctx = player.recentClay
+  const serve = serveScore(player)
+  const returnPressure = returnScore(player)
+  const aceBase = /WTA/i.test(event) ? 1.1 : 2.1
+  const aceEstimate = clamp(Math.round((serve - 48) / 9 + aceBase), 0, /WTA/i.test(event) ? 5 : 9)
+  const doubleFaultEstimate = clamp(Math.round((volatility - 38) / 20 + (100 - serve) / 55), 0, 5)
+  const fantasyScore =
+    10 +
+    6 * setsWon -
+    3 * setsLost +
+    2.5 * gamesWon -
+    2 * gamesLost +
+    aceEstimate * 0.4 -
+    doubleFaultEstimate
+
+  return {
+    name: player.name,
+    rank: player.rank,
+    projectedFantasyScore: Math.round(fantasyScore * 10) / 10,
+    projectedSetsWon: setsWon,
+    projectedSetsLost: setsLost,
+    projectedGamesWon: gamesWon,
+    projectedGamesLost: gamesLost,
+    projectedAces: aceEstimate,
+    projectedDoubleFaults: doubleFaultEstimate,
+    winPath:
+      ctx && ctx.rpw >= 43
+        ? 'Return-driven grind path'
+        : ctx && ctx.spw >= 62
+          ? 'Serve-led control path'
+          : 'Balanced clay path'
+  }
+}
+
+const buildTennisProjection = ({
+  playerA,
+  playerB,
+  pick,
+  opponent,
+  confidence,
+  volatility,
+  comparisonRows,
+  event
+}) => {
+  const rankingGap = rankingScore(pick) - rankingScore(opponent)
+  const clayGap = clayCourtScore(pick) - clayCourtScore(opponent)
+  const comebackGap = comebackScore(pick) - comebackScore(opponent)
+  const marketGap = marketTrustScore(pick, opponent) - marketTrustScore(opponent, pick)
+  const compositeGap = average([rankingGap, clayGap, comebackGap, marketGap])
+  const pickProb =
+    normalizedMoneylineProb(pick, opponent) ?? clamp(0.45 + (confidence - 50) / 80, 0.42, 0.76)
+
+  const straightSetsProbability = clamp(
+    0.34 + (pickProb - 0.5) * 0.95 + compositeGap / 55 - volatility / 380,
+    0.22,
+    0.82
+  )
+
+  const winnerSets = 2
+  const loserSets = straightSetsProbability >= 0.58 ? 0 : 1
+  const scoreline = buildProjectedScoreline(
+    pick.name,
+    opponent.name,
+    winnerSets,
+    loserSets,
+    compositeGap,
+    volatility
+  )
+
+  const pickFantasy = buildFantasyProjection({
+    player: pick,
+    opponent,
+    gamesWon: scoreline.winnerGames,
+    gamesLost: scoreline.loserGames,
+    setsWon: winnerSets,
+    setsLost: loserSets,
+    volatility,
+    event
+  })
+
+  const opponentFantasy = buildFantasyProjection({
+    player: opponent,
+    opponent: pick,
+    gamesWon: scoreline.loserGames,
+    gamesLost: scoreline.winnerGames,
+    setsWon: loserSets,
+    setsLost: winnerSets,
+    volatility,
+    event
+  })
+
+  return {
+    pickName: pick.name,
+    opponentName: opponent.name,
+    projectedWinner: pick.name,
+    projectedSetLine: `${winnerSets}-${loserSets}`,
+    projectedScoreline: scoreline.sets.join(', '),
+    totalGames: scoreline.winnerGames + scoreline.loserGames,
+    straightSetsProbability: Math.round(straightSetsProbability * 100),
+    upsetRisk: Math.round((1 - pickProb) * 100),
+    overview:
+      loserSets === 0
+        ? `${pick.name} is projected to control this in two sets if the clay edge holds.`
+        : `${pick.name} still gets the nod, but the path looks more like a three-set clay squeeze than a cruise.`,
+    comparisonRows,
+    fantasy: [pickFantasy, opponentFantasy]
+  }
+}
+
+const buildTennisPlayers = (playerA, playerB, opponentA, opponentB) => [
+  {
+    name: playerA.name,
+    rank: playerA.rank,
+    label: buildPlayerLabel(playerA),
+    form: playerA.form ?? null,
+    decimalOdds: playerA.decimalOdds ?? null,
+    marketLabel: Number.isFinite(playerA.decimalOdds) ? formatDecimalOdds(playerA.decimalOdds) : 'Model only',
+    clayLine: buildClayLine(playerA) || 'Clay sample still thin.',
+    record2026: playerA.record2026 || '',
+    notes: buildClayShape(playerA),
+    matchupNote: buildClayDecisionNote(playerA, opponentA)
+  },
+  {
+    name: playerB.name,
+    rank: playerB.rank,
+    label: buildPlayerLabel(playerB),
+    form: playerB.form ?? null,
+    decimalOdds: playerB.decimalOdds ?? null,
+    marketLabel: Number.isFinite(playerB.decimalOdds) ? formatDecimalOdds(playerB.decimalOdds) : 'Model only',
+    clayLine: buildClayLine(playerB) || 'Clay sample still thin.',
+    record2026: playerB.record2026 || '',
+    notes: buildClayShape(playerB),
+    matchupNote: buildClayDecisionNote(playerB, opponentB)
+  }
+]
 
 const buildClayDecisionNote = (pick, opponent) => {
   const delta = clayScoreDelta(pick, opponent)
@@ -217,6 +536,17 @@ const makeTennisMatch = ({
     ? pick.decimalOdds > opponent.decimalOdds
     : false
   const adjusted = adjustConfidenceFromClay(confidence, volatility, pick, opponent)
+  const comparisonRows = buildTennisComparisonRows(enrichedPlayerA, enrichedPlayerB, fatigue, round)
+  const projection = buildTennisProjection({
+    playerA: enrichedPlayerA,
+    playerB: enrichedPlayerB,
+    pick,
+    opponent,
+    confidence: adjusted.confidence,
+    volatility: adjusted.volatility,
+    comparisonRows,
+    event
+  })
 
   return createSportsMatchModel(
     {
@@ -234,11 +564,13 @@ const makeTennisMatch = ({
         {
           side: 'Player 1',
           name: enrichedPlayerA.name,
+          displayName: buildPlayerLabel(enrichedPlayerA),
           detail: playerDetail(enrichedPlayerA)
         },
         {
           side: 'Player 2',
           name: enrichedPlayerB.name,
+          displayName: buildPlayerLabel(enrichedPlayerB),
           detail: playerDetail(enrichedPlayerB)
         }
       ],
@@ -252,6 +584,9 @@ const makeTennisMatch = ({
         h2hLeader: h2h?.leader || '',
         fatigueFlag: Boolean(fatigue),
         liveDog: isDog,
+        players: buildTennisPlayers(enrichedPlayerA, enrichedPlayerB, enrichedPlayerB, enrichedPlayerA),
+        comparisonRows,
+        projection,
         formEdgeName:
           Number.isFinite(playerA.form) && Number.isFinite(playerB.form)
             ? playerA.form === playerB.form
@@ -665,14 +1000,14 @@ const matches = [
     stage: 'Thursday qualifying board',
     start: '4:30 AM PT',
     startMinutes: 270,
-    playerA: { name: 'Alexis Galarneau', rank: 194, record2026: 'Slight rank edge only' },
-    playerB: { name: 'Federico Cina', rank: 216, record2026: 'Live lower-floor dog' },
-    pickName: 'Alexis Galarneau',
-    confidence: 53,
-    volatility: 76,
-    angle: 'Galarneau gets the lean almost entirely on the thin ranking edge, which is exactly why this should stay in the fragile-qualifier bucket',
+    playerA: { name: 'Alexis Galarneau', rank: 194, decimalOdds: 4.1, record2026: 'Slight rank edge only' },
+    playerB: { name: 'Federico Cina', rank: 216, decimalOdds: 1.29, record2026: 'Live lower-floor dog' },
+    pickName: 'Federico Cina',
+    confidence: 61,
+    volatility: 68,
+    angle: 'Cina gets the lean because the live market is backing him much harder than the small rank gap suggests, so this qualifier looks more like a clay-form read than a paper-ranking read',
     swing:
-      'Swing factor: whether Cina can turn this into a one-break match and make the modest ranking edge irrelevant.',
+      'Swing factor: whether Galarneau can turn this into a one-break serve scrap and make the live board overstate Cina’s control.',
     fatigue: 'This is one of the qualifier matches where load and nerve management probably matter more than any clean paper edge.',
     tags: ['Thin edge', 'Volatile', 'Qualifying fatigue']
   }),
@@ -792,7 +1127,7 @@ export const slateMeta = {
   isoDate: '2026-05-21',
   timeZone: 'America/Los_Angeles',
   subtitle:
-    'Clay-heavy May 21 tennis board covering WTA Strasbourg, ATP Hamburg, ATP Geneva, and the Roland-Garros qualifying final round, built from official order-of-play pages, TennisStats match pages, and Tennis Abstract player research.',
+    'Clay-heavy May 21 tennis board covering WTA Strasbourg, ATP Hamburg, ATP Geneva, and the Roland-Garros qualifying final round, built from official order-of-play pages, Oddschecker lines, TennisStats match pages, and Tennis Abstract player research.',
   notes: [
     'Every match on this board is on clay, so the model is leaning more on form, H2H shape, ranking pressure, and weekly workload than it would on a mixed-surface slate.',
     'French Open coverage here is qualifying round three, not the main draw. Those matches carry more fatigue variance because everyone is on a third straight win-or-go-home day.',
@@ -806,10 +1141,14 @@ export const oddsMeta = {
   provider: oddsProvider,
   snapshot: 'May 20, 2026, 8:10 PM PT for the May 21 clay slate',
   note:
-    'Main-tour matches use official schedule pages plus TennisStats match boards for ranking, form, Elo, H2H, and accessible moneylines. Roland-Garros qualifying matches use the official order-of-play payload and stay model-only when no clean pre-match price was accessible.'
+    'Main-tour matches use official schedule pages plus Oddschecker and TennisStats boards for ranking, form, Elo, H2H, and accessible moneylines. Roland-Garros qualifying matches use the official order-of-play payload and stay model-only when no clean pre-match price was accessible.'
 }
 
 export const sources = [
+  {
+    label: 'Oddschecker tennis lines',
+    url: 'https://www.oddschecker.com/us/tennis'
+  },
   {
     label: 'TennisStats match board',
     url: 'https://tennisstats.com/'

@@ -55,6 +55,7 @@ Local Svelte/Vite dashboard for daily `MLB` and `Tennis` boards, plus archived `
 
 ### Tennis
 
+- [Oddschecker tennis lines](https://www.oddschecker.com/us/tennis)
 - [TennisStats match board](https://tennisstats.com/)
 - [Tennis Abstract player page example](https://www.tennisabstract.com/cgi-bin/player.cgi?p=126205/Tommy-Paul)
 - [ATP Hamburg schedule](https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21)

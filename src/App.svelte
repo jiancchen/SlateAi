@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte'
   import {
     buildParlayModel,
     createParlayLeg,
@@ -21,10 +22,26 @@
   ]
   const sidebarTabs = [
     { id: 'ticket', label: 'Ticket' },
-    { id: 'props', label: 'Props' },
-    { id: 'signals', label: 'Signals' },
+    { id: 'markets', label: 'Markets' },
     { id: 'sources', label: 'Sources' },
     { id: 'notes', label: 'Notes' }
+  ]
+  const builderCatalogTabs = [
+    { id: 'all', label: 'All' },
+    { id: 'favorites', label: 'Favorites' },
+    { id: 'totals', label: 'O/U' },
+    { id: 'props', label: 'Props' },
+    { id: 'flips', label: 'Flips' }
+  ]
+  const builderValidityFilters = [
+    { id: 'eligible', label: 'Eligible' },
+    { id: 'all', label: 'All' },
+    { id: 'invalid', label: 'Invalid' }
+  ]
+  const builderSortOptions = [
+    { id: 'confidence', label: 'Confidence' },
+    { id: 'time', label: 'Start time' },
+    { id: 'edge', label: 'Edge' }
   ]
   const propTypeFilters = [
     { id: 'all', label: 'All' },
@@ -125,6 +142,9 @@
   let activeFilter = 'All'
   let activeSidebarTab = 'ticket'
   let marketSearch = ''
+  let builderCatalogTab = 'all'
+  let builderValidityFilter = 'eligible'
+  let builderSort = 'confidence'
   let parlayStake = 25
   let recommendedLegCount = 4
   let recommendationMode = 'favorites'
@@ -135,12 +155,14 @@
   let expandedGameId = ''
   let pinnedSignalsByDay = {}
   let selectedPropsByDay = {}
+  let selectedTotalsByDay = {}
   let customSourcesByDay = {}
   let deskNotesByDay = {}
   let simulatedGamesByDay = {}
   let activePropType = 'all'
   let customSourceLabel = ''
   let customSourceUrl = ''
+  let pacificClock = { isoDate: '', minutes: 0, label: '' }
 
   const labelForScore = (score) => {
     if (score >= 72) return 'High'
@@ -216,6 +238,30 @@
     return mlbTeamAccent[teamName] || '#4fd2a6'
   }
 
+  const getCompetitorDisplayName = (game, side, index) => {
+    if (game?.league === 'Tennis') {
+      return side?.displayName || game.tennisContext?.players?.[index]?.label || side?.name || ''
+    }
+
+    return side?.name || ''
+  }
+
+  const getGameDisplayTitle = (game) => {
+    if (game?.league === 'Tennis') {
+      const left = getCompetitorDisplayName(game, game.matchup?.[0], 0)
+      const right = getCompetitorDisplayName(game, game.matchup?.[1], 1)
+      return `${left} vs ${right}`
+    }
+
+    return game?.title || ''
+  }
+
+  const formatFantasyScore = (value) => {
+    const numericValue = Number(value)
+    if (!Number.isFinite(numericValue)) return 'N/A'
+    return numericValue.toFixed(1)
+  }
+
   const buildPitcherSummary = (pitcher = {}) => {
     const pitchHand = pitcher.pitchHand ? `${pitcher.pitchHand}HP` : '?HP'
     const record = `${pitcher.wins ?? 0}-${pitcher.losses ?? 0}`
@@ -264,6 +310,49 @@
       minute: '2-digit',
       hour12: true
     }).format(new Date(isoString))
+  }
+
+  const getPacificClock = () => {
+    const formatter = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/Los_Angeles',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    })
+    const parts = Object.fromEntries(
+      formatter.formatToParts(new Date()).map((part) => [part.type, part.value])
+    )
+    const isoDate = `${parts.year}-${parts.month}-${parts.day}`
+    const hour = Number(parts.hour) || 0
+    const minute = Number(parts.minute) || 0
+
+    return {
+      isoDate,
+      minutes: hour * 60 + minute,
+      label: `${parts.month}/${parts.day} ${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')} PT`
+    }
+  }
+
+  const getEventState = (game, dayIsoDate) => {
+    if (!game || !dayIsoDate) return { invalid: false, label: 'Open', tone: 'open' }
+    if (!pacificClock.isoDate) return { invalid: false, label: 'Open', tone: 'open' }
+
+    if (dayIsoDate < pacificClock.isoDate) {
+      return { invalid: true, label: 'Final', tone: 'invalid' }
+    }
+
+    if (dayIsoDate > pacificClock.isoDate) {
+      return { invalid: false, label: 'Upcoming', tone: 'open' }
+    }
+
+    if (Number.isFinite(Number(game.startMinutes)) && Number(game.startMinutes) <= pacificClock.minutes) {
+      return { invalid: true, label: 'Started', tone: 'invalid' }
+    }
+
+    return { invalid: false, label: 'Open', tone: 'open' }
   }
 
   const buildGameHighlights = (game) => {
@@ -423,6 +512,7 @@
   const deskNoteForDay = (dayId) => deskNotesByDay[dayId] ?? ''
   const simulationsForDay = (dayId) => simulatedGamesByDay[dayId] ?? {}
   const selectedPropsForDay = (dayId) => selectedPropsByDay[dayId] ?? {}
+  const selectedTotalsForDay = (dayId) => selectedTotalsByDay[dayId] ?? {}
 
   const savePicksForDay = (dayId, nextPicks) => {
     selectedPicksByDay = {
@@ -442,6 +532,13 @@
     selectedPropsByDay = {
       ...selectedPropsByDay,
       [dayId]: nextProps
+    }
+  }
+
+  const saveSelectedTotalsForDay = (dayId, nextTotals) => {
+    selectedTotalsByDay = {
+      ...selectedTotalsByDay,
+      [dayId]: nextTotals
     }
   }
 
@@ -481,6 +578,7 @@
   $: allSources = [...sources, ...customSources]
   $: selectedPicks = activeDay ? selectedPicksByDay[activeDay.id] ?? {} : {}
   $: selectedProps = activeDay ? selectedPropsByDay[activeDay.id] ?? {} : {}
+  $: selectedTotals = activeDay ? selectedTotalsByDay[activeDay.id] ?? {} : {}
   $: pinnedSignalIds = activeDay ? pinnedSignalsByDay[activeDay.id] ?? [] : []
   $: deskNote = activeDay ? deskNotesByDay[activeDay.id] ?? '' : ''
   $: dayIndex = slateDays.findIndex((day) => day.id === activeDay?.id)
@@ -539,6 +637,7 @@
       ? mlbPlayerProps
       : mlbPlayerProps.filter((target) => target.propType === activePropType)
   $: selectedPropEntries = Object.values(selectedProps)
+  $: selectedTotalEntries = Object.values(selectedTotals)
   $: propConfidenceAverage = selectedPropEntries.length
     ? Math.round(
         selectedPropEntries.reduce((total, prop) => total + (Number(prop.confidence) || 0), 0) /
@@ -611,10 +710,219 @@
       .sort()
       .at(-1) ?? ''
   $: lineupRefreshLabel = latestLineupSnapshot ? `Refresh ${formatSnapshotTime(latestLineupSnapshot)}` : ''
+  $: activeDayIsoDate = activeDay?.slateMeta?.isoDate ?? activeDay?.id ?? ''
+
+  $: favoriteCatalogEntries = favoriteRecommendationPool.map((pick) => {
+    const eventState = getEventState(pick.game, activeDayIsoDate)
+
+    return {
+      id: `favorite:${pick.gameId}:${pick.participantId}`,
+      category: 'favorites',
+      actionKind: 'ticket',
+      gameId: pick.gameId,
+      league: pick.league,
+      start: pick.start,
+      startMinutes: Number(pick.game?.startMinutes) || 0,
+      stage: pick.stage,
+      title: `${pick.participant.name} moneyline`,
+      subtitle: pick.gameTitle,
+      confidence: pick.confidence,
+      sortConfidence: pick.confidence,
+      sortEdge: Math.abs(Number(pick.modelEdge) || 0),
+      priceLabel: pick.participant?.americanLabel ?? 'Model only',
+      metaLabel: pick.marketProbabilityLabel,
+      summary: pick.rationale,
+      tags: [pick.tier, ...buildGameHighlights(pick.game).map((chip) => chip.label)].slice(0, 3),
+      invalid: eventState.invalid,
+      statusLabel: eventState.label,
+      tone: eventState.tone,
+      selected: selectedPicks[pick.gameId] === pick.participantId,
+      raw: pick
+    }
+  })
+
+  $: flipCatalogEntries = flipRiskPickPool.map((pick) => {
+    const eventState = getEventState(pick.game, activeDayIsoDate)
+
+    return {
+      id: `flip:${pick.gameId}:${pick.participantId}`,
+      category: 'flips',
+      actionKind: 'ticket',
+      gameId: pick.gameId,
+      league: pick.league,
+      start: pick.start,
+      startMinutes: Number(pick.game?.startMinutes) || 0,
+      stage: pick.stage,
+      title: `${pick.participant.name} upset lane`,
+      subtitle: pick.gameTitle,
+      confidence: pick.flipScore,
+      sortConfidence: pick.flipScore,
+      sortEdge: Math.abs(Number(pick.flipProbability) || 0),
+      priceLabel: pick.participant?.americanLabel ?? 'Dog look',
+      metaLabel: pick.marketProbabilityLabel,
+      summary: pick.flipReason,
+      tags: [pick.tier, ...buildGameHighlights(pick.game).map((chip) => chip.label)].slice(0, 3),
+      invalid: eventState.invalid,
+      statusLabel: eventState.label,
+      tone: eventState.tone,
+      selected: selectedPicks[pick.gameId] === pick.participantId,
+      raw: pick
+    }
+  })
+
+  $: totalCatalogEntries = games
+    .filter((game) => game.league === 'MLB' && game.analysis?.mlbProjection?.totals)
+    .flatMap((game) => {
+      const totals = game.analysis.mlbProjection.totals
+      const eventState = getEventState(game, activeDayIsoDate)
+      const phases = [
+        {
+          id: 'full',
+          label: 'Full game',
+          lean: totals.fullGame,
+          projectedLabel: `Proj ${totals.projectedFullTotalRuns} vs ${game.analysis.mlbProjection.postedTotal ?? 'N/A'}`
+        },
+        {
+          id: 'first5',
+          label: 'First 5',
+          lean: totals.first5,
+          projectedLabel: `Proj ${totals.projectedFirst5TotalRuns} vs ${totals.derivedFirst5TotalLine ?? 'N/A'}`
+        },
+        {
+          id: 'late',
+          label: 'Rest of game',
+          lean: totals.late,
+          projectedLabel: `Proj ${totals.projectedLateTotalRuns} vs ${totals.derivedLateTotalLine ?? 'N/A'}`
+        }
+      ]
+
+      return phases
+        .filter((phase) => phase.lean?.lean && phase.lean.lean !== 'Pass')
+        .map((phase) => {
+          const savedId = `${game.id}:total:${phase.id}`
+
+          return {
+            id: savedId,
+            category: 'totals',
+            actionKind: 'total',
+            gameId: game.id,
+            league: game.league,
+            start: game.start,
+            startMinutes: Number(game.startMinutes) || 0,
+            stage: game.stage,
+            title: phase.lean.label,
+            subtitle: `${game.title} · ${phase.label}`,
+            confidence: Math.round(
+              Math.min(
+                90,
+                54 + Math.abs(Number(phase.lean.edge) || 0) * 18 + Math.max((game.analysis.confidence || 50) - 56, 0) * 0.2
+              )
+            ),
+            sortConfidence: Math.round(
+              Math.min(
+                90,
+                54 + Math.abs(Number(phase.lean.edge) || 0) * 18 + Math.max((game.analysis.confidence || 50) - 56, 0) * 0.2
+              )
+            ),
+            sortEdge: Math.abs(Number(phase.lean.edge) || 0),
+            priceLabel: phase.projectedLabel,
+            metaLabel: phase.lean.strength,
+            summary: phase.lean.summary,
+            tags: [phase.label, totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'].slice(0, 2),
+            invalid: eventState.invalid,
+            statusLabel: eventState.label,
+            tone: eventState.tone,
+            selected: Boolean(selectedTotals[savedId]),
+            raw: {
+              id: savedId,
+              gameId: game.id,
+              gameTitle: game.title,
+              league: game.league,
+              marketLabel: phase.lean.label,
+              phaseLabel: phase.label,
+              summary: phase.lean.summary,
+              strength: phase.lean.strength,
+              projectedLabel: phase.projectedLabel
+            }
+          }
+        })
+    })
+
+  $: propCatalogEntries = mlbPlayerProps.map((prop) => {
+    const eventState = getEventState(prop.game, activeDayIsoDate)
+
+    return {
+      id: prop.id,
+      category: 'props',
+      actionKind: 'prop',
+      gameId: prop.gameId,
+      league: prop.league,
+      start: prop.game?.start ?? prop.start ?? '',
+      startMinutes: Number(prop.game?.startMinutes) || 0,
+      stage: prop.game?.stage ?? '',
+      title: `${prop.playerName} ${prop.marketLabel}`,
+      subtitle: prop.gameTitle,
+      confidence: prop.confidence,
+      sortConfidence: prop.confidence,
+      sortEdge: Number(prop.expectedValue) || Number(prop.probability) || 0,
+      priceLabel: prop.statValueLabel,
+      metaLabel: `${prop.probability}% model`,
+      summary: prop.reason || prop.matchupNote,
+      tags: [prop.recommendationTier, prop.propLabel, prop.lineupStatus].filter(Boolean).slice(0, 3),
+      invalid: eventState.invalid,
+      statusLabel: eventState.label,
+      tone: eventState.tone,
+      selected: Boolean(selectedProps[prop.id]),
+      raw: prop
+    }
+  })
+
+  $: builderCatalogEntries = [
+    ...favoriteCatalogEntries,
+    ...totalCatalogEntries,
+    ...propCatalogEntries,
+    ...flipCatalogEntries
+  ]
+    .filter((entry) => {
+      if (builderCatalogTab !== 'all' && entry.category !== builderCatalogTab) return false
+      if (entry.category === 'props' && activePropType !== 'all' && entry.raw?.propType !== activePropType) return false
+      if (builderValidityFilter === 'eligible') return !entry.invalid
+      if (builderValidityFilter === 'invalid') return entry.invalid
+      return true
+    })
+    .sort((left, right) => {
+      if (builderValidityFilter === 'all' && left.invalid !== right.invalid) {
+        return left.invalid ? 1 : -1
+      }
+
+      if (builderSort === 'time') {
+        if (left.startMinutes !== right.startMinutes) return left.startMinutes - right.startMinutes
+        return right.sortConfidence - left.sortConfidence
+      }
+
+      if (builderSort === 'edge') {
+        if (right.sortEdge !== left.sortEdge) return right.sortEdge - left.sortEdge
+        return right.sortConfidence - left.sortConfidence
+      }
+
+      if (right.sortConfidence !== left.sortConfidence) return right.sortConfidence - left.sortConfidence
+      return left.startMinutes - right.startMinutes
+    })
 
   $: if (!hasMlbSlate) {
     showDeskSettings = false
   }
+
+  onMount(() => {
+    const syncClock = () => {
+      pacificClock = getPacificClock()
+    }
+
+    syncClock()
+    const intervalId = window.setInterval(syncClock, 60000)
+
+    return () => window.clearInterval(intervalId)
+  })
 
   $: if (!visibleGames.some((game) => game.id === expandedGameId)) {
     expandedGameId = visibleGames[0]?.id ?? ''
@@ -818,7 +1126,39 @@
       ...currentProps,
       [prop.id]: prop
     })
-    activeSidebarTab = 'props'
+    activeSidebarTab = 'markets'
+  }
+
+  const toggleSelectedTotal = (entry) => {
+    if (!activeDay || !entry?.id) return
+    const currentTotals = selectedTotalsForDay(activeDay.id)
+
+    if (currentTotals[entry.id]) {
+      const nextTotals = { ...currentTotals }
+      delete nextTotals[entry.id]
+      saveSelectedTotalsForDay(activeDay.id, nextTotals)
+      return
+    }
+
+    saveSelectedTotalsForDay(activeDay.id, {
+      ...currentTotals,
+      [entry.id]: entry
+    })
+    activeSidebarTab = 'markets'
+  }
+
+  const removeSelectedTotal = (entryId) => {
+    if (!activeDay || !entryId) return
+    const currentTotals = selectedTotalsForDay(activeDay.id)
+    if (!currentTotals[entryId]) return
+    const nextTotals = { ...currentTotals }
+    delete nextTotals[entryId]
+    saveSelectedTotalsForDay(activeDay.id, nextTotals)
+  }
+
+  const clearSelectedTotals = () => {
+    if (!activeDay) return
+    saveSelectedTotalsForDay(activeDay.id, {})
   }
 
   const removeSelectedProp = (propId) => {
@@ -874,6 +1214,24 @@
       )
     )
     activeSidebarTab = 'ticket'
+  }
+
+  const applyBuilderEntry = (entry) => {
+    if (!entry || entry.invalid) return
+
+    if (entry.actionKind === 'ticket') {
+      toggleParlayPick(entry.raw.gameId, entry.raw.participantId)
+      return
+    }
+
+    if (entry.actionKind === 'prop') {
+      togglePlayerProp(entry.raw)
+      return
+    }
+
+    if (entry.actionKind === 'total') {
+      toggleSelectedTotal(entry.raw)
+    }
   }
 </script>
 
@@ -1007,9 +1365,9 @@
                 <div class="game-rail-row-main">
                   <div class="game-rail-title-wrap">
                     <div class="game-rail-title">
-                      <span>{game.matchup[0]?.name}</span>
+                      <span>{getCompetitorDisplayName(game, game.matchup[0], 0)}</span>
                       <span class="versus-dot">vs</span>
-                      <span>{game.matchup[1]?.name}</span>
+                      <span>{getCompetitorDisplayName(game, game.matchup[1], 1)}</span>
                     </div>
                     <small>{game.analysis.participant.name} lean</small>
                   </div>
@@ -1044,7 +1402,7 @@
                 <span class="mono">{game.start}</span>
                 <span>{game.stage}</span>
               </div>
-              <h1>{game.title}</h1>
+              <h1>{getGameDisplayTitle(game)}</h1>
             </div>
 
             <div class="detail-canvas-actions">
@@ -1225,6 +1583,90 @@
                 {/if}
               </div>
             </div>
+
+            {#if game.league === 'Tennis' && game.tennisContext}
+              <section class="tennis-overview-board">
+                <div class="home-run-board-head">
+                  <div>
+                    <p class="series-kicker">Tennis matchup board</p>
+                    <strong>{game.tennisContext.projection.overview}</strong>
+                  </div>
+                  <span>{game.tennisContext.surface} | projected {game.tennisContext.projection.projectedSetLine}</span>
+                </div>
+
+                <div class="tennis-player-grid">
+                  {#each game.tennisContext.players as player}
+                    <article class="tennis-player-card" data-picked={player.name === game.analysis.participant.name}>
+                      <div class="tennis-player-head">
+                        <div>
+                          <p>{player.label}</p>
+                          <strong>{player.record2026 || 'Current tour form'}</strong>
+                        </div>
+                        <span>{player.marketLabel}</span>
+                      </div>
+                      <p class="tennis-player-line">{player.clayLine}</p>
+                      <p class="tennis-player-note">{player.matchupNote}</p>
+                    </article>
+                  {/each}
+                </div>
+
+                <div class="tennis-compare-grid">
+                  {#each game.tennisContext.comparisonRows as row}
+                    <article class="tennis-compare-row">
+                      <div class="tennis-compare-head">
+                        <strong>{row.label}</strong>
+                        <span>{row.metric}</span>
+                      </div>
+
+                      <div class="tennis-compare-players">
+                        <span>{game.tennisContext.players[0].label}</span>
+                        <span>{game.tennisContext.players[1].label}</span>
+                      </div>
+
+                      <div class="tennis-compare-bars">
+                        <div class="tennis-compare-bar">
+                          <span style={`width:${comparisonBarWidth(row.leftScore, row.leftScore, row.rightScore)}`}></span>
+                        </div>
+                        <div class="tennis-compare-winner">{row.winner}</div>
+                        <div class="tennis-compare-bar right">
+                          <span style={`width:${comparisonBarWidth(row.rightScore, row.leftScore, row.rightScore)}`}></span>
+                        </div>
+                      </div>
+
+                      <div class="tennis-compare-scores mono">
+                        <span>{row.leftScore}</span>
+                        <span>{row.rightScore}</span>
+                      </div>
+                    </article>
+                  {/each}
+                </div>
+
+                <div class="tennis-projection-grid">
+                  <article class="tennis-projection-card">
+                    <p class="series-kicker">Projected match path</p>
+                    <strong>{game.tennisContext.projection.projectedWinner} {game.tennisContext.projection.projectedSetLine}</strong>
+                    <span>{game.tennisContext.projection.projectedScoreline}</span>
+                    <small>{game.tennisContext.projection.totalGames} total games | straight-sets {game.tennisContext.projection.straightSetsProbability}%</small>
+                  </article>
+
+                  <article class="tennis-projection-card">
+                    <p class="series-kicker">Volatility</p>
+                    <strong>{game.tennisContext.projection.upsetRisk}% upset risk</strong>
+                    <span>{game.analysis.volatility}% overall match volatility</span>
+                    <small>Useful for deciding between straight side, sets, or games props.</small>
+                  </article>
+
+                  {#each game.tennisContext.projection.fantasy as fantasyLine}
+                    <article class="tennis-projection-card">
+                      <p class="series-kicker">PrizePicks fantasy</p>
+                      <strong>{fantasyLine.name} {formatFantasyScore(fantasyLine.projectedFantasyScore)}</strong>
+                      <span>{fantasyLine.projectedSetsWon}-{fantasyLine.projectedSetsLost} sets | {fantasyLine.projectedGamesWon}-{fantasyLine.projectedGamesLost} games</span>
+                      <small>{fantasyLine.projectedAces} aces | {fantasyLine.projectedDoubleFaults} DF | {fantasyLine.winPath}</small>
+                    </article>
+                  {/each}
+                </div>
+              </section>
+            {/if}
 
             {#if game.analysis.mlbProjection}
               <section class="detail-panel detail-panel--wide">
@@ -1922,218 +2364,339 @@
     </div>
   {:else if activeDeskTab === 'parlay'}
     <div class="desk-tool-workspace">
-      <section class="builder-shell action-rail" aria-label="Parlay builder">
-        <div class="parlay-sidebar-header">
-          <div>
-            <p class="eyebrow">Parlay builder</p>
-            <h2>Execution</h2>
-            <p class="parlay-sidebar-copy">Build tickets, save props, and move between core, balanced, and flip-risk setups outside the board view.</p>
-          </div>
-          <button type="button" class="clear-parlay-button" disabled={parlay.legCount === 0} on:click={clearParlay}>
-            Clear ticket
-          </button>
-        </div>
+      <section class="builder-shell" aria-label="Parlay builder">
+        <div class="builder-layout">
+          <section class="builder-catalog">
+            <div class="builder-catalog-header">
+              <div>
+                <p class="eyebrow">Pick catalog</p>
+                <h2>Favorite reads, totals, and props</h2>
+                <p class="parlay-sidebar-copy">Use the left rail to sort live ideas. Started events stay visible but cannot be added.</p>
+              </div>
+              <div class="builder-catalog-meta mono">
+                <span>{builderCatalogEntries.length} showing</span>
+                <span>{pacificClock.label}</span>
+              </div>
+            </div>
 
-        <div class="sidebar-tab-row" role="tablist" aria-label="Builder tools">
-          {#each sidebarTabs as tab}
-            <button type="button" role="tab" class="sidebar-tab-button" class:active={activeSidebarTab === tab.id} aria-selected={activeSidebarTab === tab.id} on:click={() => setSidebarTab(tab.id)}>
-              {tab.label}
-            </button>
-          {/each}
-        </div>
-
-        {#if activeSidebarTab === 'ticket'}
-          <div class="parlay-stats-grid compact">
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Eligible legs</span><strong>{filteredMoneylineGames.length}</strong></article>
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Selected</span><strong>{parlay.legCount}</strong></article>
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Combined odds</span><strong>{parlay.combinedAmericanLabel}</strong><small>Decimal {parlay.combinedDecimalLabel}</small></article>
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Implied hit rate</span><strong>{parlay.impliedProbabilityLabel}</strong></article>
-          </div>
-
-          {#if recommendationCounts.length > 0}
-            <div class="ticket-autobuild">
-              <p class="ticket-autobuild-label">Auto-build ticket</p>
-              <div class="recommendation-mode-row" role="tablist" aria-label="Recommendation mode">
-                {#each recommendationModes as mode}
-                  <button type="button" role="tab" class="recommendation-mode-button" class:active={recommendationMode === mode.id} aria-selected={recommendationMode === mode.id} on:click={() => (recommendationMode = mode.id)}>
-                    {mode.label}
+            <div class="builder-filter-stack">
+              <div class="builder-filter-row">
+                {#each builderCatalogTabs as tab}
+                  <button
+                    type="button"
+                    class="builder-filter-chip"
+                    class:active={builderCatalogTab === tab.id}
+                    on:click={() => (builderCatalogTab = tab.id)}
+                  >
+                    {tab.label}
                   </button>
                 {/each}
               </div>
-              <p class="ticket-autobuild-copy">{activeRecommendationMeta.copy}</p>
-              {#if recommendationMode === 'balanced'}
-                <label class="balance-slider-card" for="balance-weight">
-                  <div class="balance-slider-head"><span>Flip weight</span><strong>{balanceWeight.toFixed(2)}</strong></div>
-                  <input id="balance-weight" type="range" min="0" max="1" step="0.05" bind:value={balanceWeight} />
-                  <small>Targeting about {balancedRecommendation.targetFlipLegs} flip{balancedRecommendation.targetFlipLegs === 1 ? '' : 's'} in this {activeRecommendedLegCount}-leg mix from an average live-dog rate of {Math.round(balancedRecommendation.averageFlipProbability * 100)}%.</small>
-                </label>
-              {/if}
-              <div class="recommendation-size-row">
-                {#each recommendationCounts as count}
-                  <button type="button" class="size-chip" class:active={activeRecommendedLegCount === count} on:click={() => (recommendedLegCount = count)}>{count}-leg</button>
+
+              <div class="builder-filter-row">
+                {#each builderValidityFilters as filter}
+                  <button
+                    type="button"
+                    class="builder-filter-chip subtle"
+                    class:active={builderValidityFilter === filter.id}
+                    on:click={() => (builderValidityFilter = filter.id)}
+                  >
+                    {filter.label}
+                  </button>
                 {/each}
               </div>
-              {#if recommendedParlay.legCount > 0}
-                <p class="ticket-autobuild-preview">{activeRecommendationMeta.label} set: {recommendedParlay.combinedAmericanLabel} | {recommendedParlay.impliedProbabilityLabel} implied {#if recommendationMode === 'balanced'}| {balancedRecommendation.actualFlipLegs} flip leg{balancedRecommendation.actualFlipLegs === 1 ? '' : 's'}{/if}</p>
+
+              <div class="builder-filter-row builder-filter-row--split">
+                <div class="builder-filter-group">
+                  {#each builderSortOptions as option}
+                    <button
+                      type="button"
+                      class="builder-filter-chip subtle"
+                      class:active={builderSort === option.id}
+                      on:click={() => (builderSort = option.id)}
+                    >
+                      {option.label}
+                    </button>
+                  {/each}
+                </div>
+
+                <div class="builder-filter-group">
+                  {#each propTypeFilters as filter}
+                    <button
+                      type="button"
+                      class="builder-filter-chip subtle"
+                      class:active={activePropType === filter.id}
+                      on:click={() => (activePropType = filter.id)}
+                    >
+                      {filter.label}
+                    </button>
+                  {/each}
+                </div>
+              </div>
+            </div>
+
+            <div class="builder-catalog-list no-scrollbar">
+              {#if builderCatalogEntries.length === 0}
+                <div class="placeholder-panel compact">
+                  <p class="eyebrow">No candidates</p>
+                  <h3>Nothing matches this filter set yet</h3>
+                  <p>Try another lane, relax the invalid filter, or reset the prop type.</p>
+                </div>
+              {:else}
+                {#each builderCatalogEntries as entry}
+                  <article class="builder-entry-card" data-invalid={entry.invalid}>
+                    <div class="builder-entry-topline">
+                      <div class="builder-entry-meta">
+                        <span class="league-badge league-{entry.league.toLowerCase()}">{entry.league}</span>
+                        <span class="mono">{entry.start}</span>
+                        <span>{entry.stage}</span>
+                      </div>
+                      <span class={`builder-status-pill ${entry.tone}`}>{entry.statusLabel}</span>
+                    </div>
+
+                    <div class="builder-entry-main">
+                      <div class="builder-entry-copy">
+                        <strong>{entry.title}</strong>
+                        <p>{entry.subtitle}</p>
+                        <small>{entry.summary}</small>
+                        <div class="builder-entry-tags">
+                          {#each entry.tags as tag}
+                            <span>{tag}</span>
+                          {/each}
+                        </div>
+                      </div>
+
+                      <div class="builder-entry-side">
+                        <strong>{entry.confidence}%</strong>
+                        <span>{entry.priceLabel}</span>
+                        {#if entry.metaLabel}
+                          <small>{entry.metaLabel}</small>
+                        {/if}
+                        <button
+                          type="button"
+                          class="analysis-action-button"
+                          class:active={entry.selected}
+                          disabled={entry.invalid || (entry.actionKind === 'ticket' && atParlayLimit && !entry.selected)}
+                          on:click={() => applyBuilderEntry(entry)}
+                        >
+                          {#if entry.actionKind === 'ticket'}
+                            {entry.selected ? 'In ticket' : 'Add side'}
+                          {:else if entry.actionKind === 'prop'}
+                            {entry.selected ? 'Saved' : 'Save prop'}
+                          {:else}
+                            {entry.selected ? 'Saved' : 'Save total'}
+                          {/if}
+                        </button>
+                        <button type="button" class="analysis-action-button ghost" on:click={() => { openGame(entry.gameId); activeDeskTab = 'board' }}>
+                          Open game
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                {/each}
               {/if}
-              <button type="button" class="load-recommended-button" on:click={() => loadRecommendedParlay(activeRecommendedLegCount)}>
-                Load {activeRecommendedLegCount}-leg {recommendationMode === 'flips' ? 'flip-risk' : recommendationMode} ticket
+            </div>
+          </section>
+
+          <section class="builder-execution workspace-panel">
+            <div class="parlay-sidebar-header">
+              <div>
+                <p class="eyebrow">Execution</p>
+                <h2>Slip and saved markets</h2>
+                <p class="parlay-sidebar-copy">Moneyline legs price into the slip. Totals and props save alongside it until you price them manually.</p>
+              </div>
+              <button type="button" class="clear-parlay-button" disabled={parlay.legCount === 0} on:click={clearParlay}>
+                Clear ticket
               </button>
             </div>
-          {/if}
 
-          <div class="parlay-body stacked">
-            <label class="stake-card" for="parlay-stake"><span class="parlay-stat-label">Stake</span><input id="parlay-stake" type="number" min="1" step="5" bind:value={parlayStake} /></label>
-            <div class="parlay-return-grid">
-              <article class="parlay-return-card"><span class="parlay-stat-label">Projected return</span><strong>{parlay.grossReturnLabel}</strong></article>
-              <article class="parlay-return-card"><span class="parlay-stat-label">Projected profit</span><strong>{parlay.profitLabel}</strong></article>
+            <div class="sidebar-tab-row" role="tablist" aria-label="Builder tools">
+              {#each sidebarTabs as tab}
+                <button type="button" role="tab" class="sidebar-tab-button" class:active={activeSidebarTab === tab.id} aria-selected={activeSidebarTab === tab.id} on:click={() => setSidebarTab(tab.id)}>
+                  {tab.label}
+                </button>
+              {/each}
             </div>
-          </div>
 
-          <div class="sidebar-status-card" data-ready={parlayReady}>
-            <p class="parlay-status-title">{parlayReady ? 'Ticket ready' : 'Ticket in progress'}</p>
-            <p class="parlay-status-copy">{parlayStatus}</p>
-          </div>
+            {#if activeSidebarTab === 'ticket'}
+              <div class="parlay-stats-grid compact">
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Eligible sides</span><strong>{filteredMoneylineGames.length}</strong></article>
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Selected</span><strong>{parlay.legCount}</strong></article>
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Combined odds</span><strong>{parlay.combinedAmericanLabel}</strong><small>Decimal {parlay.combinedDecimalLabel}</small></article>
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Implied hit rate</span><strong>{parlay.impliedProbabilityLabel}</strong></article>
+              </div>
 
-          {#if parlay.legCount === 0}
-            <p class="parlay-empty">Start from the Board tab, then come back here to build around the live card.</p>
-          {:else}
-            <div class="parlay-leg-list">
-              {#each parlay.legs as leg}
-                <article class="parlay-leg-card">
+              {#if recommendationCounts.length > 0}
+                <div class="ticket-autobuild">
+                  <p class="ticket-autobuild-label">Auto-build ticket</p>
+                  <div class="recommendation-mode-row" role="tablist" aria-label="Recommendation mode">
+                    {#each recommendationModes as mode}
+                      <button type="button" role="tab" class="recommendation-mode-button" class:active={recommendationMode === mode.id} aria-selected={recommendationMode === mode.id} on:click={() => (recommendationMode = mode.id)}>
+                        {mode.label}
+                      </button>
+                    {/each}
+                  </div>
+                  <p class="ticket-autobuild-copy">{activeRecommendationMeta.copy}</p>
+                  {#if recommendationMode === 'balanced'}
+                    <label class="balance-slider-card" for="balance-weight">
+                      <div class="balance-slider-head"><span>Flip weight</span><strong>{balanceWeight.toFixed(2)}</strong></div>
+                      <input id="balance-weight" type="range" min="0" max="1" step="0.05" bind:value={balanceWeight} />
+                      <small>Targeting about {balancedRecommendation.targetFlipLegs} flip{balancedRecommendation.targetFlipLegs === 1 ? '' : 's'} in this {activeRecommendedLegCount}-leg mix from an average live-dog rate of {Math.round(balancedRecommendation.averageFlipProbability * 100)}%.</small>
+                    </label>
+                  {/if}
+                  <div class="recommendation-size-row">
+                    {#each recommendationCounts as count}
+                      <button type="button" class="size-chip" class:active={activeRecommendedLegCount === count} on:click={() => (recommendedLegCount = count)}>{count}-leg</button>
+                    {/each}
+                  </div>
+                  {#if recommendedParlay.legCount > 0}
+                    <p class="ticket-autobuild-preview">{activeRecommendationMeta.label} set: {recommendedParlay.combinedAmericanLabel} | {recommendedParlay.impliedProbabilityLabel} implied {#if recommendationMode === 'balanced'}| {balancedRecommendation.actualFlipLegs} flip leg{balancedRecommendation.actualFlipLegs === 1 ? '' : 's'}{/if}</p>
+                  {/if}
+                  <button type="button" class="load-recommended-button" on:click={() => loadRecommendedParlay(activeRecommendedLegCount)}>
+                    Load {activeRecommendedLegCount}-leg {recommendationMode === 'flips' ? 'flip-risk' : recommendationMode} ticket
+                  </button>
+                </div>
+              {/if}
+
+              <div class="parlay-body stacked">
+                <label class="stake-card" for="parlay-stake"><span class="parlay-stat-label">Stake</span><input id="parlay-stake" type="number" min="1" step="5" bind:value={parlayStake} /></label>
+                <div class="parlay-return-grid">
+                  <article class="parlay-return-card"><span class="parlay-stat-label">Projected return</span><strong>{parlay.grossReturnLabel}</strong></article>
+                  <article class="parlay-return-card"><span class="parlay-stat-label">Projected profit</span><strong>{parlay.profitLabel}</strong></article>
+                </div>
+              </div>
+
+              <div class="sidebar-status-card" data-ready={parlayReady}>
+                <p class="parlay-status-title">{parlayReady ? 'Ticket ready' : 'Ticket in progress'}</p>
+                <p class="parlay-status-copy">{parlayStatus}</p>
+              </div>
+
+              {#if parlay.legCount === 0}
+                <p class="parlay-empty">Use the catalog on the left to add cleaner sides or save manual markets.</p>
+              {:else}
+                <div class="parlay-leg-list">
+                  {#each parlay.legs as leg}
+                    <article class="parlay-leg-card">
+                      <div>
+                        <p class="parlay-leg-topline">{leg.league} | {leg.start} | {leg.stage}</p>
+                        <p class="parlay-leg-pick">{leg.pickName} over {leg.opponentName}</p>
+                        <p class="parlay-leg-game">{leg.gameTitle}</p>
+                      </div>
+                      <div class="parlay-leg-side">
+                        <strong>{leg.americanLabel}</strong>
+                        <span>{leg.impliedProbabilityLabel} implied</span>
+                        {#if leg.isAnalystPick}<span class="analyst-chip">Analyst match</span>{/if}
+                        <button type="button" class="remove-leg-button" on:click={() => removeParlayPick(leg.gameId)}>Remove</button>
+                      </div>
+                    </article>
+                  {/each}
+                </div>
+              {/if}
+            {:else if activeSidebarTab === 'markets'}
+              <div class="parlay-stats-grid compact">
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Saved props</span><strong>{selectedPropEntries.length}</strong></article>
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Saved totals</span><strong>{selectedTotalEntries.length}</strong></article>
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Avg confidence</span><strong>{selectedPropEntries.length ? `${propConfidenceAverage}%` : 'N/A'}</strong></article>
+                <article class="parlay-stat-card"><span class="parlay-stat-label">Prop filter</span><strong>{propTypeFilters.find((entry) => entry.id === activePropType)?.label ?? 'All'}</strong></article>
+              </div>
+
+              <div class="ticket-autobuild">
+                <div class="action-section-header">
                   <div>
-                    <p class="parlay-leg-topline">{leg.league} | {leg.start} | {leg.stage}</p>
-                    <p class="parlay-leg-pick">{leg.pickName} over {leg.opponentName}</p>
-                    <p class="parlay-leg-game">{leg.gameTitle}</p>
+                    <p class="ticket-autobuild-label">Manual markets</p>
+                    <p class="ticket-autobuild-copy">These are the unpriced adds from the left catalog. Keep them here while you decide whether the edge is stronger in hits, TB, RBI, or totals.</p>
                   </div>
-                  <div class="parlay-leg-side">
-                    <strong>{leg.americanLabel}</strong>
-                    <span>{leg.impliedProbabilityLabel} implied</span>
-                    {#if leg.isAnalystPick}<span class="analyst-chip">Analyst match</span>{/if}
-                    <button type="button" class="remove-leg-button" on:click={() => removeParlayPick(leg.gameId)}>Remove</button>
+                  <div class="builder-clear-group">
+                    <button type="button" class="clear-parlay-button" disabled={!selectedPropEntries.length} on:click={clearSelectedProps}>Clear props</button>
+                    <button type="button" class="clear-parlay-button" disabled={!selectedTotalEntries.length} on:click={clearSelectedTotals}>Clear totals</button>
                   </div>
-                </article>
-              {/each}
-            </div>
-          {/if}
-        {:else if activeSidebarTab === 'props'}
-          <div class="parlay-stats-grid compact">
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Eligible props</span><strong>{mlbPlayerProps.length}</strong></article>
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Saved</span><strong>{selectedPropEntries.length}</strong></article>
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Avg confidence</span><strong>{selectedPropEntries.length ? `${propConfidenceAverage}%` : 'N/A'}</strong></article>
-            <article class="parlay-stat-card"><span class="parlay-stat-label">Type filter</span><strong>{propTypeFilters.find((entry) => entry.id === activePropType)?.label ?? 'All'}</strong></article>
-          </div>
-          <div class="ticket-autobuild">
-            <div class="action-section-header">
-              <div>
-                <p class="ticket-autobuild-label">MLB prop builder</p>
-                <p class="ticket-autobuild-copy">The stronger edge might be on hits, TB, or RBI instead of forcing a HR prop when the game script is more traffic than pure carry.</p>
+                </div>
               </div>
-              <button type="button" class="clear-parlay-button" disabled={!selectedPropEntries.length} on:click={clearSelectedProps}>Clear props</button>
-            </div>
-            <div class="recommendation-size-row">
-              {#each propTypeFilters as filter}
-                <button type="button" class="size-chip" class:active={activePropType === filter.id} on:click={() => (activePropType = filter.id)}>{filter.label}</button>
-              {/each}
-            </div>
-          </div>
-          {#if selectedPropEntries.length > 0}
-            <div class="action-section">
-              <div class="action-section-header"><h3>Saved Props</h3><span>{selectedPropEntries.length}</span></div>
-              <div class="prop-pick-list">
-                {#each selectedPropEntries as prop}
-                  <article class="prop-pick-card">
-                    <div>
-                      <p class="parlay-leg-topline">{prop.teamName} | {prop.gameTitle}</p>
-                      <p class="parlay-leg-pick">{prop.playerName} {prop.marketLabel}</p>
-                      <p class="parlay-leg-game">{prop.reason || prop.matchupNote}</p>
-                    </div>
-                    <div class="parlay-leg-side">
-                      <strong>{prop.confidence}%</strong>
-                      <span>{prop.recommendationTier}</span>
-                      <button type="button" class="remove-leg-button" on:click={() => removeSelectedProp(prop.id)}>Remove</button>
-                    </div>
-                  </article>
-                {/each}
+
+              {#if selectedTotalEntries.length > 0}
+                <div class="action-section">
+                  <div class="action-section-header"><h3>Saved totals</h3><span>{selectedTotalEntries.length}</span></div>
+                  <div class="prop-pick-list">
+                    {#each selectedTotalEntries as total}
+                      <article class="prop-pick-card">
+                        <div>
+                          <p class="parlay-leg-topline">{total.league} | {total.phaseLabel}</p>
+                          <p class="parlay-leg-pick">{total.marketLabel}</p>
+                          <p class="parlay-leg-game">{total.gameTitle}</p>
+                          <p class="parlay-leg-game">{total.projectedLabel}</p>
+                        </div>
+                        <div class="parlay-leg-side">
+                          <strong>{total.strength}</strong>
+                          <span>Manual price</span>
+                          <button type="button" class="remove-leg-button" on:click={() => removeSelectedTotal(total.id)}>Remove</button>
+                        </div>
+                      </article>
+                    {/each}
+                  </div>
+                </div>
+              {/if}
+
+              {#if selectedPropEntries.length > 0}
+                <div class="action-section">
+                  <div class="action-section-header"><h3>Saved props</h3><span>{selectedPropEntries.length}</span></div>
+                  <div class="prop-pick-list">
+                    {#each selectedPropEntries as prop}
+                      <article class="prop-pick-card">
+                        <div>
+                          <p class="parlay-leg-topline">{prop.teamName} | {prop.gameTitle}</p>
+                          <p class="parlay-leg-pick">{prop.playerName} {prop.marketLabel}</p>
+                          <p class="parlay-leg-game">{prop.reason || prop.matchupNote}</p>
+                        </div>
+                        <div class="parlay-leg-side">
+                          <strong>{prop.confidence}%</strong>
+                          <span>{prop.recommendationTier}</span>
+                          <button type="button" class="remove-leg-button" on:click={() => removeSelectedProp(prop.id)}>Remove</button>
+                        </div>
+                      </article>
+                    {/each}
+                  </div>
+                </div>
+              {/if}
+
+              {#if selectedPropEntries.length === 0 && selectedTotalEntries.length === 0}
+                <p class="parlay-empty">No saved prop or total lanes yet. Use the left catalog to stage them here.</p>
+              {/if}
+            {:else if activeSidebarTab === 'sources'}
+              <div class="action-section">
+                <div class="action-section-header"><h3>Open Sources</h3><span>{sourceCount}</span></div>
+                {#if allSources.length > 0}
+                  <div class="sources-list">
+                    {#each allSources as source}
+                      <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
+                    {/each}
+                  </div>
+                {:else}
+                  <p class="sources-empty">No sources attached yet for this date.</p>
+                {/if}
               </div>
-            </div>
-          {/if}
-          <div class="action-section">
-            <div class="action-section-header"><h3>Top Props</h3><span>{filteredMlbPlayerProps.length}</span></div>
-            {#if filteredMlbPlayerProps.length > 0}
-              <div class="prop-pick-list">
-                {#each filteredMlbPlayerProps.slice(0, 18) as prop}
-                  <article class="prop-pick-card">
-                    <div>
-                      <p class="parlay-leg-topline">{prop.gameTitle}</p>
-                      <p class="parlay-leg-pick">{prop.playerName} {prop.marketLabel}</p>
-                      <p class="parlay-leg-game">{prop.reason || prop.matchupNote}</p>
-                    </div>
-                    <div class="parlay-leg-side">
-                      <strong>{prop.confidence}%</strong>
-                      <span>{prop.statValueLabel}</span>
-                      <button type="button" class="analysis-action-button" class:active={Boolean(selectedProps[prop.id])} on:click={() => togglePlayerProp(prop)}>{selectedProps[prop.id] ? 'Saved' : 'Add'}</button>
-                    </div>
-                  </article>
-                {/each}
+              <div class="action-section">
+                <div class="action-section-header"><h3>Add Source</h3><span>Local</span></div>
+                <div class="source-form">
+                  <input type="text" placeholder="Source label" bind:value={customSourceLabel} />
+                  <input type="url" placeholder="https://..." bind:value={customSourceUrl} />
+                  <button type="button" class="analysis-action-button" on:click={addCustomSource}>Add source</button>
+                </div>
               </div>
-            {:else}
-              <p class="panel-empty">No MLB player props are available on this filtered board yet.</p>
+            {:else if activeSidebarTab === 'notes'}
+              <div class="action-section">
+                <div class="action-section-header"><h3>Desk Notes</h3><span>Edit</span></div>
+                <textarea class="desk-note-input" rows="10" placeholder="Add your trading notes for this date..." value={deskNote} on:input={(event) => saveDeskNoteForDay(activeDay.id, event.currentTarget.value)}></textarea>
+              </div>
+              <div class="action-section">
+                <div class="action-section-header"><h3>Imported Notes</h3><span>{slateMeta.notes.length + (activeDay.feedNotes?.length ?? 0)}</span></div>
+                <ul class="notes-list">
+                  {#each slateMeta.notes as note}<li>{note}</li>{/each}
+                  {#each activeDay.feedNotes ?? [] as note}<li>{note}</li>{/each}
+                </ul>
+              </div>
             {/if}
-          </div>
-        {:else if activeSidebarTab === 'signals'}
-          <div class="action-section">
-            <div class="action-section-header"><h3>Model Ladder</h3><span>{signalLadderPicks.length}</span></div>
-            <div class="analysis-pick-list compact">
-              {#each signalLadderPicks as pick}
-                <article class="analysis-pick-card compact">
-                  <div class="analysis-pick-topline"><span>{pick.league} | {pick.start}</span><span>{pick.confidence} conf</span></div>
-                  <h3>{pick.participant.name}</h3>
-                  <p class="analysis-pick-game">{pick.gameTitle}</p>
-                  <p class="analysis-pick-tone">{recommendationToneFor(pick)}</p>
-                  <div class="analysis-action-row">
-                    <button type="button" class="analysis-action-button" on:click={() => { openGame(pick.gameId); activeDeskTab = 'board' }}>Open</button>
-                    <button type="button" class="analysis-action-button" class:active={selectedPicks[pick.gameId] === pick.participantId} disabled={atParlayLimit && !selectedPicks[pick.gameId]} on:click={() => toggleParlayPick(pick.gameId, pick.participantId)}>{selectedPicks[pick.gameId] === pick.participantId ? 'In ticket' : 'Add'}</button>
-                    <button type="button" class="analysis-action-button" class:active={pinnedSignalIds.includes(pick.gameId)} on:click={() => togglePinnedSignal(pick.gameId)}>{pinnedSignalIds.includes(pick.gameId) ? 'Pinned' : 'Pin'}</button>
-                  </div>
-                </article>
-              {/each}
-            </div>
-          </div>
-        {:else if activeSidebarTab === 'sources'}
-          <div class="action-section">
-            <div class="action-section-header"><h3>Open Sources</h3><span>{sourceCount}</span></div>
-            {#if allSources.length > 0}
-              <div class="sources-list">
-                {#each allSources as source}
-                  <a href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
-                {/each}
-              </div>
-            {:else}
-              <p class="sources-empty">No sources attached yet for this date.</p>
-            {/if}
-          </div>
-          <div class="action-section">
-            <div class="action-section-header"><h3>Add Source</h3><span>Local</span></div>
-            <div class="source-form">
-              <input type="text" placeholder="Source label" bind:value={customSourceLabel} />
-              <input type="url" placeholder="https://..." bind:value={customSourceUrl} />
-              <button type="button" class="analysis-action-button" on:click={addCustomSource}>Add source</button>
-            </div>
-          </div>
-        {:else if activeSidebarTab === 'notes'}
-          <div class="action-section">
-            <div class="action-section-header"><h3>Desk Notes</h3><span>Edit</span></div>
-            <textarea class="desk-note-input" rows="10" placeholder="Add your trading notes for this date..." value={deskNote} on:input={(event) => saveDeskNoteForDay(activeDay.id, event.currentTarget.value)}></textarea>
-          </div>
-          <div class="action-section">
-            <div class="action-section-header"><h3>Imported Notes</h3><span>{slateMeta.notes.length + (activeDay.feedNotes?.length ?? 0)}</span></div>
-            <ul class="notes-list">
-              {#each slateMeta.notes as note}<li>{note}</li>{/each}
-              {#each activeDay.feedNotes ?? [] as note}<li>{note}</li>{/each}
-            </ul>
-          </div>
-        {/if}
+          </section>
+        </div>
       </section>
     </div>
   {:else if activeDeskTab === 'tickets'}

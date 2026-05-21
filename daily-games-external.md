@@ -75,6 +75,9 @@ https://www.covers.com/sport/baseball/mlb/statistics/team-bullpenera/2026
 Use this for late-inning stability, bullpen leak risk, and underdog paths that survive once the starters leave.
 
 ### Tennis
+- Odds board:
+  [https://www.oddschecker.com/us/tennis](https://www.oddschecker.com/us/tennis)
+  Use this first for same-day accessible tennis moneylines, set markets, and total sets/games snapshots before dropping into deeper player research.
 - Match board and H2H pages:
   [https://tennisstats.com/](https://tennisstats.com/)
   This is the best quick-access board so far for same-day tennis matches, accessible odds, current ranking, form, Elo, and visible H2H context on one page.
