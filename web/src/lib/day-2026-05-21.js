@@ -275,12 +275,12 @@ const buildFantasyProjection = ({
   const doubleFaultEstimate = clamp(Math.round((volatility - 38) / 20 + (100 - serve) / 55), 0, 5)
   const fantasyScore =
     10 +
-    6 * setsWon -
+    3 * setsWon -
     3 * setsLost +
-    2.5 * gamesWon -
-    2 * gamesLost +
-    aceEstimate * 0.4 -
-    doubleFaultEstimate
+    gamesWon -
+    gamesLost +
+    aceEstimate * 0.5 -
+    doubleFaultEstimate * 0.5
 
   return {
     name: player.name,

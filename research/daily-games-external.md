@@ -105,6 +105,9 @@ Use this for late-inning stability, bullpen leak risk, and underdog paths that s
 - Tennis Explorer:
   [https://www.tennisexplorer.com/](https://www.tennisexplorer.com/)
   Good fallback for recent results, surface-by-surface match logs, visible H2H pages, and player injury/status context that can help catch weekly-form or fitness flags.
+- Tennistonic H2H example:
+  [https://tennistonic.com/head-to-head-compare/Hugo-Dellien-Vs-Roberto-Carballes-Baena/](https://tennistonic.com/head-to-head-compare/Hugo-Dellien-Vs-Roberto-Carballes-Baena/)
+  Useful supplemental source for matchup pages that combine H2H framing, rankings progression, and cross-surface comparison. It is workable with browser-style headers, so treat it as a manual or light-fetch supplement rather than the core automated source.
 - ATP Hamburg schedule:
   [https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21](https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21)
 - ATP Geneva schedule:

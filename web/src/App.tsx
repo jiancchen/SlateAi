@@ -1667,21 +1667,31 @@ function App() {
             </div>
 
             {projection.fantasy?.length ? (
-              <div className="react-prop-grid">
-                {projection.fantasy.map((entry: AnyRecord) => (
-                  <article key={entry.name} className="react-prop-card">
-                    <div className="react-prop-head">
-                      <strong>{entry.name}</strong>
-                      <span>{entry.projectedFantasyScore}</span>
-                    </div>
-                    <p>PrizePicks fantasy</p>
-                    <small>
-                      {entry.projectedSetsWon}-{entry.projectedSetsLost} sets · {entry.projectedGamesWon}-{entry.projectedGamesLost} games
-                    </small>
-                    <small>{entry.winPath}</small>
-                  </article>
-                ))}
-              </div>
+              <>
+                <p className="detail-note">
+                  PrizePicks style: 10 match points + 3/-3 per set won/lost + 1/-1 per game won/lost + 0.5 per ace - 0.5 per double fault.
+                </p>
+                <div className="react-prop-grid">
+                  {projection.fantasy.map((entry: AnyRecord) => (
+                    <article key={entry.name} className="react-prop-card">
+                      <div className="react-prop-head">
+                        <strong>{entry.name}</strong>
+                        <span>{entry.projectedFantasyScore}</span>
+                      </div>
+                      <p>PrizePicks fantasy</p>
+                      <small>
+                        {entry.projectedSetsWon}-{entry.projectedSetsLost} sets · {entry.projectedGamesWon}-{entry.projectedGamesLost} games
+                      </small>
+                      {entry.projectedAces != null || entry.projectedDoubleFaults != null ? (
+                        <small>
+                          {entry.projectedAces ?? 'n/a'} aces · {entry.projectedDoubleFaults ?? 'n/a'} double faults
+                        </small>
+                      ) : null}
+                      <small>{entry.winPath}</small>
+                    </article>
+                  ))}
+                </div>
+              </>
             ) : null}
           </section>
         ) : null}
