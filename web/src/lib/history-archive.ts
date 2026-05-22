@@ -26,6 +26,7 @@ export type HistoryPerformance = {
   mlbFullGame?: HistoryRecord
   mlbFirst5?: HistoryRecord
   hrBoard?: HistoryPropRecord
+  mlbProps?: HistoryPropRecord
   wnba?: HistoryRecord
   nba?: HistoryRecord
   tennis?: HistoryRecord
@@ -36,6 +37,7 @@ export type HistoryJournal = {
   records: number
   sideRows?: number
   hrRows?: number
+  propRows?: number
   note?: string
 }
 

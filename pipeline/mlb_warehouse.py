@@ -137,6 +137,40 @@ CREATE TABLE IF NOT EXISTS mlb_game_team_stats (
   PRIMARY KEY (game_pk, team_role)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_player_game_batting (
+  game_pk INTEGER NOT NULL,
+  game_date TEXT NOT NULL,
+  team_role TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  opponent_name TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  batting_order INTEGER,
+  position_abbrev TEXT,
+  at_bats INTEGER,
+  plate_appearances INTEGER,
+  runs INTEGER,
+  hits INTEGER,
+  singles INTEGER,
+  doubles INTEGER,
+  triples INTEGER,
+  home_runs INTEGER,
+  total_bases INTEGER,
+  rbi INTEGER,
+  walks INTEGER,
+  strikeouts INTEGER,
+  left_on_base INTEGER,
+  hit_by_pitch INTEGER,
+  sac_bunts INTEGER,
+  sac_flies INTEGER,
+  stolen_bases INTEGER,
+  caught_stealing INTEGER,
+  ground_into_double_play INTEGER,
+  summary TEXT,
+  raw_json TEXT,
+  PRIMARY KEY (game_pk, team_role, player_id)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_pitcher_appearances (
   game_pk INTEGER NOT NULL,
   game_date TEXT NOT NULL,
@@ -254,6 +288,56 @@ CREATE TABLE IF NOT EXISTS mlb_home_run_backtests (
   hit_flag INTEGER NOT NULL,
   matched_event_keys TEXT,
   PRIMARY KEY (prediction_date, model_name, player_id)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_prop_predictions (
+  prediction_date TEXT NOT NULL,
+  model_name TEXT NOT NULL,
+  rank INTEGER NOT NULL,
+  game_id TEXT NOT NULL,
+  game_title TEXT,
+  away_team TEXT,
+  home_team TEXT,
+  away_team_full TEXT,
+  home_team_full TEXT,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  team_name_full TEXT,
+  opponent_name TEXT,
+  opponent_name_full TEXT,
+  slot INTEGER,
+  prop_type TEXT NOT NULL,
+  prop_label TEXT,
+  market_label TEXT,
+  line_threshold REAL,
+  confidence INTEGER,
+  probability REAL,
+  expected_value REAL,
+  recommendation_tier TEXT,
+  metadata_json TEXT,
+  raw_json TEXT,
+  PRIMARY KEY (prediction_date, model_name, game_id, player_id, prop_type)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_prop_backtests (
+  prediction_date TEXT NOT NULL,
+  model_name TEXT NOT NULL,
+  game_id TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  team_name_full TEXT,
+  opponent_name TEXT,
+  opponent_name_full TEXT,
+  prop_type TEXT NOT NULL,
+  market_label TEXT,
+  line_threshold REAL,
+  actual_value REAL,
+  hit_flag INTEGER NOT NULL,
+  result_label TEXT,
+  metadata_json TEXT,
+  PRIMARY KEY (prediction_date, model_name, game_id, player_id, prop_type)
 );
 
 CREATE TABLE IF NOT EXISTS mlb_team_rolling_form (
@@ -802,6 +886,113 @@ def build_team_game_stats_rows(
     return rows
 
 
+def extract_player_batting_rows(
+    game: dict[str, Any], feed_game: dict[str, Any], date_text: str
+) -> list[dict[str, Any]]:
+    away_team = game["teams"]["away"]["team"]["name"]
+    home_team = game["teams"]["home"]["team"]["name"]
+    boxscore_teams = (((feed_game.get("liveData") or {}).get("boxscore") or {}).get("teams") or {})
+    rows: list[dict[str, Any]] = []
+
+    for role, team_name, opponent_name in (
+        ("away", away_team, home_team),
+        ("home", home_team, away_team),
+    ):
+        players = ((boxscore_teams.get(role) or {}).get("players") or {}).values()
+        for player in players:
+            person = player.get("person") or {}
+            batting = ((player.get("stats") or {}).get("batting") or {})
+            player_id = to_int(person.get("id"))
+            if player_id is None:
+                continue
+
+            at_bats = to_int(batting.get("atBats")) or 0
+            plate_appearances = to_int(batting.get("plateAppearances")) or 0
+            walks = to_int(batting.get("baseOnBalls")) or 0
+            hit_by_pitch = to_int(batting.get("hitByPitch")) or 0
+            sac_bunts = to_int(batting.get("sacBunts")) or 0
+            sac_flies = to_int(batting.get("sacFlies")) or 0
+            runs = to_int(batting.get("runs")) or 0
+            hits = to_int(batting.get("hits")) or 0
+            doubles = to_int(batting.get("doubles")) or 0
+            triples = to_int(batting.get("triples")) or 0
+            home_runs = to_int(batting.get("homeRuns")) or 0
+            total_bases = to_int(batting.get("totalBases")) or 0
+            rbi = to_int(batting.get("rbi")) or 0
+            strikeouts = to_int(batting.get("strikeOuts")) or 0
+            left_on_base = to_int(batting.get("leftOnBase")) or 0
+            stolen_bases = to_int(batting.get("stolenBases")) or 0
+            caught_stealing = to_int(batting.get("caughtStealing")) or 0
+            gidp = to_int(batting.get("groundIntoDoublePlay")) or 0
+
+            has_appearance = any(
+                value not in (None, 0, 0.0)
+                for value in (
+                    plate_appearances,
+                    at_bats,
+                    walks,
+                    hit_by_pitch,
+                    sac_bunts,
+                    sac_flies,
+                    runs,
+                    hits,
+                    rbi,
+                    strikeouts,
+                )
+            )
+            if not has_appearance:
+                continue
+
+            batting_order_raw = to_int(player.get("battingOrder"))
+            batting_order = int(batting_order_raw / 100) if batting_order_raw else None
+            singles = max(0, hits - doubles - triples - home_runs)
+
+            rows.append(
+                {
+                    "game_pk": game["gamePk"],
+                    "game_date": date_text,
+                    "team_role": role,
+                    "team_name": team_name,
+                    "opponent_name": opponent_name,
+                    "player_id": player_id,
+                    "player_name": person.get("fullName") or "",
+                    "batting_order": batting_order,
+                    "position_abbrev": ((player.get("position") or {}).get("abbreviation")) or "",
+                    "at_bats": at_bats,
+                    "plate_appearances": plate_appearances,
+                    "runs": runs,
+                    "hits": hits,
+                    "singles": singles,
+                    "doubles": doubles,
+                    "triples": triples,
+                    "home_runs": home_runs,
+                    "total_bases": total_bases,
+                    "rbi": rbi,
+                    "walks": walks,
+                    "strikeouts": strikeouts,
+                    "left_on_base": left_on_base,
+                    "hit_by_pitch": hit_by_pitch,
+                    "sac_bunts": sac_bunts,
+                    "sac_flies": sac_flies,
+                    "stolen_bases": stolen_bases,
+                    "caught_stealing": caught_stealing,
+                    "ground_into_double_play": gidp,
+                    "summary": batting.get("summary") or "",
+                    "raw_json": json.dumps(
+                        {
+                            "person": person,
+                            "position": player.get("position") or {},
+                            "battingOrder": player.get("battingOrder"),
+                            "batting": batting,
+                        },
+                        sort_keys=True,
+                    ),
+                }
+            )
+
+    return rows
+
+
 def extract_pitcher_appearance_rows(
     game: dict[str, Any], feed_game: dict[str, Any], date_text: str
 ) -> list[dict[str, Any]]:
@@ -1147,6 +1338,80 @@ def upsert_team_game_stats(conn: sqlite3.Connection, row: dict[str, Any]) -> Non
     )
 
 
+def upsert_player_game_batting(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO mlb_player_game_batting (
+          game_pk, game_date, team_role, team_name, opponent_name, player_id, player_name,
+          batting_order, position_abbrev, at_bats, plate_appearances, runs, hits, singles,
+          doubles, triples, home_runs, total_bases, rbi, walks, strikeouts, left_on_base,
+          hit_by_pitch, sac_bunts, sac_flies, stolen_bases, caught_stealing,
+          ground_into_double_play, summary, raw_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk, team_role, player_id) DO UPDATE SET
+          game_date=excluded.game_date,
+          team_name=excluded.team_name,
+          opponent_name=excluded.opponent_name,
+          player_name=excluded.player_name,
+          batting_order=excluded.batting_order,
+          position_abbrev=excluded.position_abbrev,
+          at_bats=excluded.at_bats,
+          plate_appearances=excluded.plate_appearances,
+          runs=excluded.runs,
+          hits=excluded.hits,
+          singles=excluded.singles,
+          doubles=excluded.doubles,
+          triples=excluded.triples,
+          home_runs=excluded.home_runs,
+          total_bases=excluded.total_bases,
+          rbi=excluded.rbi,
+          walks=excluded.walks,
+          strikeouts=excluded.strikeouts,
+          left_on_base=excluded.left_on_base,
+          hit_by_pitch=excluded.hit_by_pitch,
+          sac_bunts=excluded.sac_bunts,
+          sac_flies=excluded.sac_flies,
+          stolen_bases=excluded.stolen_bases,
+          caught_stealing=excluded.caught_stealing,
+          ground_into_double_play=excluded.ground_into_double_play,
+          summary=excluded.summary,
+          raw_json=excluded.raw_json
+        """,
+        (
+            row["game_pk"],
+            row["game_date"],
+            row["team_role"],
+            row["team_name"],
+            row["opponent_name"],
+            row["player_id"],
+            row["player_name"],
+            row["batting_order"],
+            row["position_abbrev"],
+            row["at_bats"],
+            row["plate_appearances"],
+            row["runs"],
+            row["hits"],
+            row["singles"],
+            row["doubles"],
+            row["triples"],
+            row["home_runs"],
+            row["total_bases"],
+            row["rbi"],
+            row["walks"],
+            row["strikeouts"],
+            row["left_on_base"],
+            row["hit_by_pitch"],
+            row["sac_bunts"],
+            row["sac_flies"],
+            row["stolen_bases"],
+            row["caught_stealing"],
+            row["ground_into_double_play"],
+            row["summary"],
+            row["raw_json"],
+        ),
+    )
+
+
 def upsert_game_outcome(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
     conn.execute(
         """
@@ -1390,6 +1655,10 @@ def ingest_mlb_day(conn: sqlite3.Connection, date_text: str) -> None:
         home_row = next(row for row in team_rows if row["team_role"] == "home")
         for row in team_rows:
             upsert_team_game_stats(conn, row)
+
+        player_batting_rows = extract_player_batting_rows(game, live_payload, date_text)
+        for row in player_batting_rows:
+            upsert_player_game_batting(conn, row)
 
         outcome_row = build_outcome_row(date_text, away_row, home_row)
         upsert_game_outcome(conn, outcome_row)
@@ -2003,6 +2272,89 @@ def import_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     conn.commit()
 
 
+def import_prop_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
+    init_db(conn)
+    payload = json.loads(file_path.read_text(encoding="utf-8"))
+    date_text = payload["date"]
+    model_name = payload["modelName"]
+    picks = payload.get("picks", [])
+
+    for pick in picks:
+        metadata = {
+            "reason": pick.get("reason"),
+            "matchupNote": pick.get("matchupNote"),
+            "teamScriptLabel": pick.get("teamScriptLabel"),
+            "lineupStatus": pick.get("lineupStatus"),
+            "playerSummary": pick.get("playerSummary"),
+            "statValueLabel": pick.get("statValueLabel"),
+            "start": pick.get("start"),
+            "stage": pick.get("stage"),
+        }
+        conn.execute(
+            """
+            INSERT INTO mlb_prop_predictions (
+              prediction_date, model_name, rank, game_id, game_title, away_team, home_team,
+              away_team_full, home_team_full, player_id, player_name, team_name, team_name_full,
+              opponent_name, opponent_name_full, slot, prop_type, prop_label, market_label,
+              line_threshold, confidence, probability, expected_value, recommendation_tier,
+              metadata_json, raw_json
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(prediction_date, model_name, game_id, player_id, prop_type) DO UPDATE SET
+              rank=excluded.rank,
+              game_title=excluded.game_title,
+              away_team=excluded.away_team,
+              home_team=excluded.home_team,
+              away_team_full=excluded.away_team_full,
+              home_team_full=excluded.home_team_full,
+              player_name=excluded.player_name,
+              team_name=excluded.team_name,
+              team_name_full=excluded.team_name_full,
+              opponent_name=excluded.opponent_name,
+              opponent_name_full=excluded.opponent_name_full,
+              slot=excluded.slot,
+              prop_label=excluded.prop_label,
+              market_label=excluded.market_label,
+              line_threshold=excluded.line_threshold,
+              confidence=excluded.confidence,
+              probability=excluded.probability,
+              expected_value=excluded.expected_value,
+              recommendation_tier=excluded.recommendation_tier,
+              metadata_json=excluded.metadata_json,
+              raw_json=excluded.raw_json
+            """,
+            (
+                date_text,
+                model_name,
+                to_int(pick.get("rank")),
+                pick.get("gameId"),
+                pick.get("gameTitle"),
+                pick.get("awayTeam"),
+                pick.get("homeTeam"),
+                pick.get("awayTeamFull"),
+                pick.get("homeTeamFull"),
+                to_int(pick.get("playerId")),
+                pick.get("playerName"),
+                pick.get("teamName"),
+                pick.get("teamNameFull"),
+                pick.get("opponentName"),
+                pick.get("opponentNameFull"),
+                to_int(pick.get("slot")),
+                pick.get("propType"),
+                pick.get("propLabel"),
+                pick.get("marketLabel"),
+                to_float(pick.get("lineThreshold")),
+                to_int(pick.get("confidence")),
+                to_float(pick.get("probability")),
+                to_float(pick.get("expectedValue")),
+                pick.get("recommendationTier"),
+                json.dumps(metadata, sort_keys=True),
+                json.dumps(pick, sort_keys=True),
+            ),
+        )
+
+    conn.commit()
+
+
 def grade_home_run_picks(conn: sqlite3.Connection, date_text: str, model_name: str) -> list[sqlite3.Row]:
     init_db(conn)
     rows = conn.execute(
@@ -2050,6 +2402,130 @@ def grade_home_run_picks(conn: sqlite3.Connection, date_text: str, model_name: s
                 row["actual_home_runs"],
                 1 if row["actual_home_runs"] else 0,
                 row["matched_event_keys"],
+            ),
+        )
+
+    conn.commit()
+    return rows
+
+
+def grade_prop_picks(
+    conn: sqlite3.Connection, date_text: str, model_name: str, prop_type: str | None = None
+) -> list[sqlite3.Row]:
+    init_db(conn)
+    params: list[Any] = [date_text, model_name]
+    prop_type_sql = ""
+    if prop_type:
+        prop_type_sql = " AND p.prop_type = ?"
+        params.append(prop_type)
+
+    rows = conn.execute(
+        f"""
+        SELECT
+          p.prediction_date,
+          p.model_name,
+          p.game_id,
+          p.player_id,
+          p.player_name,
+          p.team_name,
+          p.team_name_full,
+          p.opponent_name,
+          p.opponent_name_full,
+          p.prop_type,
+          p.market_label,
+          p.line_threshold,
+          p.confidence,
+          p.probability,
+          p.expected_value,
+          p.recommendation_tier,
+          p.metadata_json,
+          b.game_pk,
+          b.plate_appearances,
+          b.at_bats,
+          b.hits,
+          b.singles,
+          b.total_bases,
+          b.rbi,
+          b.walks,
+          b.home_runs
+        FROM mlb_prop_predictions p
+        LEFT JOIN mlb_player_game_batting b
+          ON b.game_date = p.prediction_date
+         AND b.player_id = p.player_id
+         AND b.team_name = COALESCE(p.team_name_full, p.team_name)
+         AND b.opponent_name = COALESCE(p.opponent_name_full, p.opponent_name)
+        WHERE p.prediction_date = ?
+          AND p.model_name = ?
+          {prop_type_sql}
+        ORDER BY p.rank ASC, p.prop_type ASC, p.player_name ASC
+        """,
+        params,
+    ).fetchall()
+
+    for row in rows:
+        actual_value = None
+        if row["prop_type"] == "hits":
+            actual_value = to_float(row["hits"])
+        elif row["prop_type"] == "singles":
+            actual_value = to_float(row["singles"])
+        elif row["prop_type"] == "walks":
+            actual_value = to_float(row["walks"])
+        elif row["prop_type"] == "totalBases":
+            actual_value = to_float(row["total_bases"])
+        elif row["prop_type"] == "rbi":
+            actual_value = to_float(row["rbi"])
+
+        line_threshold = to_float(row["line_threshold"])
+        hit_flag = int(actual_value is not None and line_threshold is not None and actual_value > line_threshold)
+        result_label = (
+            f"actual {actual_value:g} > line {line_threshold:g}"
+            if actual_value is not None and line_threshold is not None
+            else "actual stat unavailable"
+        )
+
+        result_metadata = {
+            "plateAppearances": row["plate_appearances"],
+            "atBats": row["at_bats"],
+            "gamePk": row["game_pk"],
+        }
+
+        conn.execute(
+            """
+            INSERT INTO mlb_prop_backtests (
+              prediction_date, model_name, game_id, player_id, player_name, team_name, team_name_full,
+              opponent_name, opponent_name_full, prop_type, market_label, line_threshold, actual_value,
+              hit_flag, result_label, metadata_json
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(prediction_date, model_name, game_id, player_id, prop_type) DO UPDATE SET
+              player_name=excluded.player_name,
+              team_name=excluded.team_name,
+              team_name_full=excluded.team_name_full,
+              opponent_name=excluded.opponent_name,
+              opponent_name_full=excluded.opponent_name_full,
+              market_label=excluded.market_label,
+              line_threshold=excluded.line_threshold,
+              actual_value=excluded.actual_value,
+              hit_flag=excluded.hit_flag,
+              result_label=excluded.result_label,
+              metadata_json=excluded.metadata_json
+            """,
+            (
+                row["prediction_date"],
+                row["model_name"],
+                row["game_id"],
+                row["player_id"],
+                row["player_name"],
+                row["team_name"],
+                row["team_name_full"],
+                row["opponent_name"],
+                row["opponent_name_full"],
+                row["prop_type"],
+                row["market_label"],
+                to_float(row["line_threshold"]),
+                actual_value,
+                hit_flag,
+                result_label,
+                json.dumps(result_metadata, sort_keys=True),
             ),
         )
 
@@ -2159,6 +2635,34 @@ def print_backtest_summary(rows: list[sqlite3.Row]) -> None:
         print("Misses:")
         for row in misses[:10]:
             print(f"- {row['player_name']} ({row['team_abbrev']})")
+
+
+def print_prop_backtest_summary(rows: list[sqlite3.Row]) -> None:
+    print(f"Tracked props: {len(rows)}")
+    if not rows:
+        return
+
+    stat_field_by_prop = {
+        "hits": "hits",
+        "singles": "singles",
+        "walks": "walks",
+        "totalBases": "total_bases",
+        "rbi": "rbi",
+    }
+
+    grouped: dict[str, list[sqlite3.Row]] = {}
+    for row in rows:
+        grouped.setdefault(row["prop_type"], []).append(row)
+
+    for prop_type, prop_rows in sorted(grouped.items()):
+        stat_field = stat_field_by_prop.get(prop_type)
+        hits = 0
+        for row in prop_rows:
+            line_threshold = to_float(row["line_threshold"])
+            actual_value = to_float(row[stat_field]) if stat_field else None
+            if actual_value is not None and line_threshold is not None and actual_value > line_threshold:
+                hits += 1
+        print(f"- {prop_type}: {hits}/{len(prop_rows)}")
 
 
 def print_home_run_list(rows: list[sqlite3.Row]) -> None:
@@ -2302,9 +2806,21 @@ def parse_args() -> argparse.Namespace:
     import_picks = subparsers.add_parser("import-predictions", help="Import a saved HR prediction snapshot JSON file.")
     import_picks.add_argument("--file", required=True, help="Path to the JSON prediction file.")
 
+    import_prop_picks = subparsers.add_parser(
+        "import-prop-predictions", help="Import a saved non-HR player-prop prediction snapshot JSON file."
+    )
+    import_prop_picks.add_argument("--file", required=True, help="Path to the JSON prediction file.")
+
     grade = subparsers.add_parser("grade-home-run-picks", help="Compare stored predictions against actual HR events.")
     grade.add_argument("--date", required=True, help="Prediction date in YYYY-MM-DD format.")
     grade.add_argument("--model-name", required=True, help="Model name stored in the prediction snapshot.")
+
+    grade_props = subparsers.add_parser(
+        "grade-prop-picks", help="Compare stored non-HR player props against actual batting boxscores."
+    )
+    grade_props.add_argument("--date", required=True, help="Prediction date in YYYY-MM-DD format.")
+    grade_props.add_argument("--model-name", required=True, help="Model name stored in the prediction snapshot.")
+    grade_props.add_argument("--prop-type", help="Optional prop type filter, e.g. hits, totalBases, rbi, walks, singles.")
 
     list_events = subparsers.add_parser("list-home-runs", help="Print all actual home runs stored for a date.")
     list_events.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
@@ -2379,9 +2895,19 @@ def main() -> None:
             print(f"Imported predictions from {args.file}")
             return
 
+        if args.command == "import-prop-predictions":
+            import_prop_predictions(conn, Path(args.file))
+            print(f"Imported prop predictions from {args.file}")
+            return
+
         if args.command == "grade-home-run-picks":
             rows = grade_home_run_picks(conn, args.date, args.model_name)
             print_backtest_summary(rows)
+            return
+
+        if args.command == "grade-prop-picks":
+            rows = grade_prop_picks(conn, args.date, args.model_name, args.prop_type)
+            print_prop_backtest_summary(rows)
             return
 
         if args.command == "list-home-runs":

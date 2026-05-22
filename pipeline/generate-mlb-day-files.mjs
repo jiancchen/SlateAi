@@ -46,6 +46,39 @@ const deskToOfficialTeam = Object.fromEntries(
   Object.entries(officialToDeskTeam).map(([official, desk]) => [desk, official])
 )
 
+const deskTeamToRtAbbreviation = {
+  Astros: 'HOU',
+  Cubs: 'CHC',
+  Cardinals: 'STL',
+  Reds: 'CIN',
+  Guardians: 'CLE',
+  Phillies: 'PHI',
+  Rays: 'TB',
+  Yankees: 'NYY',
+  Pirates: 'PIT',
+  'Blue Jays': 'TOR',
+  Twins: 'MIN',
+  'Red Sox': 'BOS',
+  Mets: 'NYM',
+  Marlins: 'MIA',
+  Tigers: 'DET',
+  Orioles: 'BAL',
+  Nationals: 'WSH',
+  Braves: 'ATL',
+  Dodgers: 'LAD',
+  Brewers: 'MIL',
+  Rockies: 'COL',
+  Diamondbacks: 'ARI',
+  Royals: 'KC',
+  Mariners: 'SEA',
+  'White Sox': 'CWS',
+  Rangers: 'TEX',
+  Angels: 'LAA',
+  Athletics: 'ATH',
+  Padres: 'SD',
+  Giants: 'SF'
+}
+
 const customSlugsByDeskTeam = {
   'Blue Jays': 'blue-jays',
   'Red Sox': 'red-sox',
@@ -161,6 +194,45 @@ const formatInningsString = (value) => {
   return `${whole}.0`
 }
 
+const parseXmlAttributes = (text = '') =>
+  Object.fromEntries(
+    [...text.matchAll(/([a-z0-9-]+)="([^"]*)"/gi)].map((match) => [match[1], match[2]])
+  )
+
+const parseStarterRecord = (value = '') => {
+  const match = `${value}`.match(/\((\d+)-(\d+)\)/)
+  if (!match) return null
+  return { wins: Number(match[1]), losses: Number(match[2]) }
+}
+
+const normalizeNameToken = (value = '') =>
+  `${value}`
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+
+const buildPitcherFallbackSummary = ({ fullName = '', record = '' } = {}) => {
+  const parsedRecord = parseStarterRecord(record)
+  return {
+    id: null,
+    fullName,
+    pitchHand: '',
+    wins: parsedRecord?.wins ?? 0,
+    losses: parsedRecord?.losses ?? 0,
+    era: '-',
+    strikeOuts: 0,
+    inningsPitched: '-',
+    hitsAllowed: 0,
+    walks: 0,
+    homeRunsAllowed: 0,
+    whip: null,
+    gamesStarted: 0,
+    probableSource: 'rtsports-fallback'
+  }
+}
+
 const buildPitcherSummary = (person = null) => {
   const stat = person?.stats?.[0]?.splits?.[0]?.stat ?? {}
   const inningsFloat = parseBaseballInnings(stat.inningsPitched ?? 0)
@@ -181,7 +253,49 @@ const buildPitcherSummary = (person = null) => {
     walks: Number.isFinite(walks) ? walks : null,
     homeRunsAllowed: Number.isFinite(homeRunsAllowed) ? homeRunsAllowed : null,
     whip: Number.isFinite(Number(stat.whip)) ? formatDecimalString(Number(stat.whip), 2) : null,
-    gamesStarted: Number(stat.gamesStarted ?? 0) || 0
+    gamesStarted: Number(stat.gamesStarted ?? 0) || 0,
+    probableSource: 'mlb-api'
+  }
+}
+
+const fetchRtSportsProbables = async (date) => {
+  const xml = await fetchText(`https://rtsports.com/baseball/mlb-schedule-provider.php?START=${date}&DAYS=1`)
+  const dateBlock = xml.match(new RegExp(`<mlb-schedule[^>]*date="${date}"[^>]*>([\\s\\S]*?)</mlb-schedule>`, 'i'))
+  if (!dateBlock) return {}
+
+  const byMatchupKey = {}
+  for (const match of dateBlock[1].matchAll(/<game\s+([^>]+?)\/>/gi)) {
+    const attrs = parseXmlAttributes(match[1])
+    const key = `${attrs['away-abbreviation'] || ''}-${attrs['home-abbreviation'] || ''}`
+    if (!byMatchupKey[key]) byMatchupKey[key] = []
+    byMatchupKey[key].push({
+      awayStarter: attrs['away-starter'] || '',
+      awayStarterRecord: attrs['away-starter-record'] || '',
+      homeStarter: attrs['home-starter'] || '',
+      homeStarterRecord: attrs['home-starter-record'] || '',
+      gameTime: attrs['game-time'] || ''
+    })
+  }
+
+  return byMatchupKey
+}
+
+const starterUsageOverridesByPitcherId = {
+  543037: {
+    when: ({ seasonStarts }) => seasonStarts === 0,
+    status: 'return-from-surgery',
+    label: 'Season debut after rehab',
+    note: 'Making his 2026 MLB debut after completing rehab from March 2025 Tommy John surgery, so command, feel, and length should still be treated as comeback-volatile on day one.',
+    expectedInnings: 4.8,
+    workloadLabel: '4-5 inning lane'
+  },
+  680570: {
+    when: ({ seasonStarts, startsLoaded }) => seasonStarts <= 1 || startsLoaded <= 1,
+    status: 'fresh-off-il',
+    label: 'Fresh off IL',
+    note: 'Opened 2026 on the injured list with right shoulder inflammation and only recently returned, so the first few outings should still be treated as short-leash and high-variance.',
+    expectedInnings: 4.2,
+    workloadLabel: 'Short leash'
   }
 }
 
@@ -302,6 +416,14 @@ const roundMaybe = (value, digits = 2) => {
   return Number.isFinite(numeric) ? Number(numeric.toFixed(digits)) : null
 }
 
+const daysBetweenIso = (earlierIsoDate = '', laterIsoDate = '') => {
+  if (!earlierIsoDate || !laterIsoDate) return null
+  const earlier = new Date(`${earlierIsoDate}T12:00:00Z`)
+  const later = new Date(`${laterIsoDate}T12:00:00Z`)
+  const diff = later.getTime() - earlier.getTime()
+  return Number.isFinite(diff) ? Math.round(diff / 86400000) : null
+}
+
 const choosePreferredPitcherForm = (rows = []) => {
   if (!rows.length) return null
 
@@ -365,6 +487,123 @@ const buildRecentStarterFormByPitcherId = ({ date, games }) => {
   )
 }
 
+const buildStarterUsageContextByPitcherId = ({ date, games }) => {
+  const pitcherIds = [
+    ...new Set(
+      games.flatMap((game) => [game.awayPitcher?.id, game.homePitcher?.id]).filter((value) => Number.isFinite(value))
+    )
+  ]
+
+  if (!pitcherIds.length) return {}
+
+  const rows = runSqliteJson(
+    `select pitcher_id, pitcher_name, count(*) as starts_loaded, min(game_date) as first_start_date, max(game_date) as last_start_date, avg(innings_pitched) as avg_innings_per_start, avg(pitches_thrown) as avg_pitches, sum(case when innings_pitched < 4 then 1 else 0 end) as short_starts, sum(case when innings_pitched >= 6 then 1 else 0 end) as durable_starts from mlb_starting_pitcher_game_logs where game_date < '${date}' and pitcher_id in (${pitcherIds.join(',')}) and innings_pitched is not null and outs_recorded is not null group by pitcher_id, pitcher_name;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => [
+      Number(row.pitcher_id),
+      {
+        startsLoaded: Number(row.starts_loaded || 0) || 0,
+        firstStartDate: row.first_start_date || '',
+        lastStartDate: row.last_start_date || '',
+        avgInningsPerStart: roundMaybe(row.avg_innings_per_start),
+        avgPitches: roundMaybe(row.avg_pitches, 0),
+        shortStartRate:
+          Number(row.starts_loaded || 0) > 0 ? roundMaybe(Number(row.short_starts || 0) / Number(row.starts_loaded || 1)) : null,
+        durableStartRate:
+          Number(row.starts_loaded || 0) > 0 ? roundMaybe(Number(row.durable_starts || 0) / Number(row.starts_loaded || 1)) : null
+      }
+    ])
+  )
+}
+
+const buildStarterUsageNote = ({ pitcher = {}, recentForm = null, usage = null, date }) => {
+  const seasonStarts = Number(pitcher.gamesStarted || 0)
+  const startsLoaded = Number(usage?.startsLoaded || 0)
+  const seasonInnings = parseBaseballInnings(pitcher.inningsPitched)
+  const starterOverride = Number.isFinite(Number(pitcher.id)) ? starterUsageOverridesByPitcherId[Number(pitcher.id)] ?? null : null
+  const warehouseSampleConflict = seasonInnings >= 18 && seasonStarts <= 1 && startsLoaded <= 1
+  const seasonDerivedExpectedInnings =
+    seasonStarts > 1 && seasonInnings > 0 ? roundMaybe(seasonInnings / Math.max(seasonStarts, 1)) : null
+  const fallbackExpectedInnings = warehouseSampleConflict ? (seasonInnings >= 24 ? 5.2 : 4.6) : null
+  const expectedInnings =
+    starterOverride?.expectedInnings ??
+    (warehouseSampleConflict
+      ? fallbackExpectedInnings ?? recentForm?.inningsPerStart ?? usage?.avgInningsPerStart ?? seasonDerivedExpectedInnings
+      : recentForm?.inningsPerStart ?? usage?.avgInningsPerStart ?? seasonDerivedExpectedInnings ?? fallbackExpectedInnings)
+  const daysSinceLastStart = usage?.lastStartDate ? daysBetweenIso(usage.lastStartDate, date) : null
+  const shortLeashRisk = recentForm?.shortStartRate ?? usage?.shortStartRate ?? null
+  const durableRate = recentForm?.qualityStartRate ?? usage?.durableStartRate ?? null
+
+  let status = 'loaded'
+  let label = 'Established starter'
+  let note = ''
+
+  if (!pitcher.fullName && !pitcher.id) {
+    status = 'starter-tbd'
+    label = 'Starter TBD'
+    note = 'Official probable pitcher is still unconfirmed on this pass, so innings expectation and matchup shape should stay flexible.'
+  } else if (starterOverride?.when?.({ seasonStarts, startsLoaded, recentForm, pitcher, usage, date }) ?? false) {
+    status = starterOverride.status || 'override'
+    label = starterOverride.label || 'Special starter context'
+    note = starterOverride.note || ''
+  } else if (recentForm?.startsSample > 0 && !warehouseSampleConflict) {
+    status = recentForm.startsSample <= 2 ? 'tiny-sample' : 'loaded'
+    label = recentForm.startsSample <= 2 ? 'Tiny recent sample' : 'Established starter'
+    note =
+      recentForm.startsSample <= 2
+        ? `Only ${recentForm.startsSample} recent MLB start${recentForm.startsSample === 1 ? '' : 's'} are in the rolling sample, so the form read is still fragile.`
+        : `Recent MLB form is loaded across ${recentForm.startsSample} starts.`
+  } else if (warehouseSampleConflict) {
+    status = 'warehouse-gap'
+    label = 'Warehouse sample incomplete'
+    note = `The season line shows ${pitcher.inningsPitched} MLB innings, but only ${Math.max(startsLoaded, seasonStarts)} logged start${Math.max(startsLoaded, seasonStarts) === 1 ? '' : 's'} cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.`
+  } else if (startsLoaded === 0 && seasonStarts === 0) {
+    status = 'debut-window'
+    label = 'Debut / opener watch'
+    note = 'No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.'
+  } else if (startsLoaded <= 1 || seasonStarts <= 1) {
+    status = 'tiny-sample'
+    label = 'Tiny MLB sample'
+    note = `Only ${Math.max(startsLoaded, seasonStarts)} MLB start${Math.max(startsLoaded, seasonStarts) === 1 ? '' : 's'} are loaded, so the board should assume a shorter leash and higher variance.`
+  } else if (Number.isFinite(daysSinceLastStart) && daysSinceLastStart >= 20) {
+    status = 'long-layoff'
+    label = 'Long layoff'
+    note = `Last MLB start on file was ${daysSinceLastStart} days ago, so this probable comes in without a trustworthy current rhythm read.`
+  } else if (seasonStarts <= 3 || startsLoaded <= 3) {
+    status = 'new-look'
+    label = 'New-look starter'
+    note = `This is still a low-sample MLB starter look with only ${Math.max(startsLoaded, seasonStarts)} starts on file, so innings expectation matters more than the raw ERA line.`
+  } else {
+    status = 'season-only'
+    label = 'Season-only form'
+    note = 'Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.'
+  }
+
+  const workloadLabel =
+    starterOverride?.workloadLabel ||
+    (Number.isFinite(expectedInnings)
+      ? expectedInnings >= 5.8
+        ? 'Workhorse lane'
+        : expectedInnings >= 4.8
+          ? '5-inning lane'
+          : 'Short leash'
+      : 'Unknown leash')
+
+  return {
+    status,
+    label,
+    note,
+    expectedInnings: roundMaybe(expectedInnings),
+    daysSinceLastStart,
+    startsLoaded,
+    shortLeashRisk: roundMaybe(shortLeashRisk),
+    durableRate: roundMaybe(durableRate),
+    workloadLabel
+  }
+}
+
 const buildStandingsContext = (records = []) => {
   const context = {}
 
@@ -395,6 +634,65 @@ const writeModuleFile = async (targetPath, contents) => {
   await writeFile(targetPath, contents, 'utf8')
 }
 
+const fetchTeamRoster = async (teamId, rosterCache) => {
+  if (!Number.isFinite(Number(teamId))) return []
+  if (rosterCache.has(teamId)) return rosterCache.get(teamId)
+
+  const response = await fetchJson(`https://statsapi.mlb.com/api/v1/teams/${teamId}/roster?rosterType=40Man`)
+  const roster = response.roster || []
+  rosterCache.set(teamId, roster)
+  return roster
+}
+
+const fetchPitcherPerson = async (pitcherId, pitcherCache) => {
+  if (!Number.isFinite(Number(pitcherId))) return null
+  if (pitcherCache.has(pitcherId)) return pitcherCache.get(pitcherId)
+
+  const personUrl =
+    `https://statsapi.mlb.com/api/v1/people/${pitcherId}` +
+    `?hydrate=stats(group=[pitching],type=[season],season=${season},sportId=1)`
+  const personResponse = await fetchJson(personUrl)
+  const person = personResponse.people?.[0] || null
+  pitcherCache.set(pitcherId, person)
+  return person
+}
+
+const resolveFallbackPitcherPerson = async ({ teamId, starterName, rosterCache, pitcherCache }) => {
+  const normalizedStarter = normalizeNameToken(starterName)
+  if (!normalizedStarter) return null
+
+  const roster = await fetchTeamRoster(teamId, rosterCache)
+  const pitcherRoster = roster.filter((entry) => `${entry.position?.abbreviation || ''}`.toUpperCase() === 'P')
+  const starterTokens = normalizedStarter.split(' ')
+
+  const rosterMatch =
+    pitcherRoster.find((entry) => normalizeNameToken(entry.person?.fullName || '') === normalizedStarter) ||
+    pitcherRoster.find((entry) => starterTokens.every((token) => normalizeNameToken(entry.person?.fullName || '').includes(token))) ||
+    pitcherRoster.find((entry) => {
+      const fullName = normalizeNameToken(entry.person?.fullName || '')
+      const lastName = fullName.split(' ').filter(Boolean).at(-1) || ''
+      return lastName === normalizedStarter
+    })
+
+  if (rosterMatch?.person?.id) {
+    return fetchPitcherPerson(Number(rosterMatch.person.id), pitcherCache)
+  }
+
+  const searchResponse = await fetchJson(
+    `https://statsapi.mlb.com/api/v1/people/search?names=${encodeURIComponent(starterName)}`
+  )
+
+  const rosterIds = new Set(pitcherRoster.map((entry) => Number(entry.person?.id || 0)).filter(Boolean))
+  const candidates = (searchResponse.people || []).filter((person) => `${person.primaryPosition?.abbreviation || ''}`.toUpperCase() === 'P')
+  const chosen =
+    candidates.find((person) => rosterIds.has(Number(person.id))) ||
+    candidates.find((person) => Number(person.currentTeam?.id || 0) === Number(teamId)) ||
+    candidates[0]
+
+  if (!chosen?.id) return null
+  return fetchPitcherPerson(Number(chosen.id), pitcherCache)
+}
+
 const main = async () => {
   const options = parseArgs()
   const scheduleUrl =
@@ -406,6 +704,7 @@ const main = async () => {
 
   const schedule = await fetchJson(scheduleUrl)
   const standings = await fetchJson(standingsUrl)
+  const rtSportsProbablesByMatchup = await fetchRtSportsProbables(options.date)
   const pitcherIds = new Set()
 
   for (const dateEntry of schedule.dates || []) {
@@ -418,6 +717,7 @@ const main = async () => {
   }
 
   const pitcherCache = new Map()
+  const rosterCache = new Map()
   await Promise.all(
     [...pitcherIds].map(async (pitcherId) => {
       const personUrl =
@@ -438,16 +738,47 @@ const main = async () => {
 
       if (!awayDesk || !homeDesk) continue
 
-      const awayPitcher = buildPitcherSummary(
-        pitcherCache.get(game.teams?.away?.probablePitcher?.id) || {
-          fullName: game.teams?.away?.probablePitcher?.fullName || ''
-        }
-      )
-      const homePitcher = buildPitcherSummary(
-        pitcherCache.get(game.teams?.home?.probablePitcher?.id) || {
-          fullName: game.teams?.home?.probablePitcher?.fullName || ''
-        }
-      )
+      const rtMatchupKey = `${deskTeamToRtAbbreviation[awayDesk] || ''}-${deskTeamToRtAbbreviation[homeDesk] || ''}`
+      const rtFallback = rtSportsProbablesByMatchup[rtMatchupKey]?.[0] || null
+
+      const awayProbable = game.teams?.away?.probablePitcher || {}
+      const homeProbable = game.teams?.home?.probablePitcher || {}
+
+      const awayFallbackPerson =
+        !awayProbable?.id && rtFallback?.awayStarter
+          ? await resolveFallbackPitcherPerson({
+              teamId: Number(game.teams?.away?.team?.id || 0),
+              starterName: rtFallback.awayStarter,
+              rosterCache,
+              pitcherCache
+            })
+          : null
+      const homeFallbackPerson =
+        !homeProbable?.id && rtFallback?.homeStarter
+          ? await resolveFallbackPitcherPerson({
+              teamId: Number(game.teams?.home?.team?.id || 0),
+              starterName: rtFallback.homeStarter,
+              rosterCache,
+              pitcherCache
+            })
+          : null
+
+      const awayPitcher = awayProbable?.id
+        ? buildPitcherSummary(pitcherCache.get(awayProbable.id) || { fullName: awayProbable.fullName || '' })
+        : awayFallbackPerson
+          ? { ...buildPitcherSummary(awayFallbackPerson), probableSource: 'rtsports-fallback' }
+          : buildPitcherFallbackSummary({
+              fullName: rtFallback?.awayStarter || awayProbable?.fullName || '',
+              record: rtFallback?.awayStarterRecord || ''
+            })
+      const homePitcher = homeProbable?.id
+        ? buildPitcherSummary(pitcherCache.get(homeProbable.id) || { fullName: homeProbable.fullName || '' })
+        : homeFallbackPerson
+          ? { ...buildPitcherSummary(homeFallbackPerson), probableSource: 'rtsports-fallback' }
+          : buildPitcherFallbackSummary({
+              fullName: rtFallback?.homeStarter || homeProbable?.fullName || '',
+              record: rtFallback?.homeStarterRecord || ''
+            })
       const boardOdds = await parseMatchupOdds(awayDesk, homeDesk)
 
       rawGames.push({
@@ -471,6 +802,7 @@ const main = async () => {
 
   const bullpenChainByTeam = buildBullpenChainByTeam({ date: options.date, games: rawGames })
   const recentStarterFormByPitcherId = buildRecentStarterFormByPitcherId({ date: options.date, games: rawGames })
+  const starterUsageContextByPitcherId = buildStarterUsageContextByPitcherId({ date: options.date, games: rawGames })
   const standingsContextByTeam = buildStandingsContext(standings.records || [])
   const enrichedRawGames = rawGames.map((game) => ({
     ...game,
@@ -478,13 +810,25 @@ const main = async () => {
       ...game.awayPitcher,
       recentForm: Number.isFinite(game.awayPitcher?.id)
         ? recentStarterFormByPitcherId[game.awayPitcher.id] ?? null
-        : null
+        : null,
+      usageContext: buildStarterUsageNote({
+        pitcher: game.awayPitcher,
+        recentForm: Number.isFinite(game.awayPitcher?.id) ? recentStarterFormByPitcherId[game.awayPitcher.id] ?? null : null,
+        usage: Number.isFinite(game.awayPitcher?.id) ? starterUsageContextByPitcherId[game.awayPitcher.id] ?? null : null,
+        date: options.date
+      })
     },
     homePitcher: {
       ...game.homePitcher,
       recentForm: Number.isFinite(game.homePitcher?.id)
         ? recentStarterFormByPitcherId[game.homePitcher.id] ?? null
-        : null
+        : null,
+      usageContext: buildStarterUsageNote({
+        pitcher: game.homePitcher,
+        recentForm: Number.isFinite(game.homePitcher?.id) ? recentStarterFormByPitcherId[game.homePitcher.id] ?? null : null,
+        usage: Number.isFinite(game.homePitcher?.id) ? starterUsageContextByPitcherId[game.homePitcher.id] ?? null : null,
+        date: options.date
+      })
     }
   }))
 

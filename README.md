@@ -48,6 +48,8 @@ npm run build
 npm run data:init
 npm run data:prep:mlb-day -- --date YYYY-MM-DD --lookback-days 3
 npm run data:list:probables -- --date YYYY-MM-DD
+# If MLB leaves a probable blank or TBD, the day generator now falls back to
+# RTSports probable pitchers before exporting the slate.
 npm run data:generate:mlb-day -- --date YYYY-MM-DD
 npm run data:export:mlb-lineups -- --date YYYY-MM-DD
 npm run data:export:mlb-batting-impact

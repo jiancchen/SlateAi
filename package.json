@@ -25,10 +25,13 @@
     "data:export:mlb-batting-impact": "node pipeline/export-mlb-batting-impact.mjs",
     "data:export:mlb-lineups": "node pipeline/export-mlb-lineup-model.mjs",
     "data:export:hr": "node pipeline/export-home-run-predictions.mjs",
+    "data:export:mlb-props": "node pipeline/export-mlb-prop-predictions.mjs",
     "data:export:mlb-sides": "node pipeline/export-mlb-side-predictions.mjs",
     "data:export:history-journal": "node pipeline/export-history-journal.mjs",
     "data:import:mlb-sides": "python3 pipeline/mlb_side_backtest.py import",
     "data:grade:mlb-sides": "python3 pipeline/mlb_side_backtest.py grade",
-    "data:report:mlb-sides": "python3 pipeline/mlb_side_backtest.py report"
+    "data:report:mlb-sides": "python3 pipeline/mlb_side_backtest.py report",
+    "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
+    "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
   }
 }

@@ -8,6 +8,7 @@ import {
   rankMlbPlayerProps
 } from './lib/sports-model.js'
 import type { HistoryEntry, HistoryRecord } from './lib/history-archive'
+import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generated'
 import { defaultSlateDayId, loadSlateDay, slateDayManifest, type LoadedSlateDay } from './lib/slate-manifest'
 
 type AnyRecord = Record<string, any>
@@ -262,24 +263,48 @@ const getEventState = (game: AnyRecord, dayIsoDate: string, pacificClock: Return
   return { invalid: false, label: 'Open', tone: 'open' }
 }
 
-const buildPitcherSummary = (pitcher: AnyRecord = {}) => {
+const buildPitcherSummary = (pitcher: AnyRecord = {}, holdConfidence?: number | null) => {
+  const pitcherName = pitcher.fullName || pitcher.name || 'TBD starter'
   const pitchHand = pitcher.pitchHand ? `${pitcher.pitchHand}HP` : '?HP'
   const record = `${pitcher.wins ?? 0}-${pitcher.losses ?? 0}`
   const era = pitcher.era ? `${pitcher.era} ERA` : 'ERA n/a'
   const whip = pitcher.whip ? `${pitcher.whip} WHIP` : 'WHIP n/a'
-  const extra: string[] = []
-  if (pitcher.strikeOuts !== undefined) extra.push(`${pitcher.strikeOuts} SO`)
-  if (pitcher.inningsPitched) extra.push(`${pitcher.inningsPitched} IP`)
   const recentForm = pitcher.recentForm
+  const usageContext = pitcher.usageContext || {}
+  const detailStats = [
+    pitcher.strikeOuts !== undefined ? { label: 'SO', value: String(pitcher.strikeOuts) } : null,
+    pitcher.inningsPitched ? { label: 'IP', value: String(pitcher.inningsPitched) } : null,
+    pitcher.homeRunsAllowed !== undefined ? { label: 'HR', value: String(pitcher.homeRunsAllowed) } : null,
+    pitcher.walks !== undefined ? { label: 'BB', value: String(pitcher.walks) } : null
+  ].filter(Boolean) as Array<{ label: string; value: string }>
   const recent =
     recentForm && recentForm.startsSample > 0
-      ? `Last ${recentForm.startsSample}: ${formatNumber(recentForm.inningsPerStart, 1)} IP | ${formatNumber(recentForm.earnedRunsPerStart, 1)} ER | ${formatNumber(recentForm.homeRunsAllowedPerStart, 1)} HR`
+      ? `Last ${recentForm.startsSample}: ${formatNumber(recentForm.inningsPerStart, 1)} IP/start | ${formatNumber(recentForm.earnedRunsPerStart, 1)} ER/start | ${formatNumber(recentForm.homeRunsAllowedPerStart, 1)} HR/start`
       : ''
+  const trendStats =
+    recentForm && recentForm.startsSample > 0
+      ? [
+          { label: 'Hold', value: Number.isFinite(Number(holdConfidence)) ? `${Math.round(Number(holdConfidence))}/100` : 'N/A' },
+          { label: 'QS', value: `${Math.round(Number(recentForm.qualityStartRate || 0) * 100)}%` },
+          { label: 'Short', value: `${Math.round(Number(recentForm.shortStartRate || 0) * 100)}%` },
+          { label: 'Vol', value: formatNumber(recentForm.runVolatility, 1) }
+        ]
+      : Number.isFinite(Number(holdConfidence))
+        ? [{ label: 'Hold', value: `${Math.round(Number(holdConfidence))}/100` }]
+        : []
+  if (Number.isFinite(Number(usageContext.expectedInnings)) && Number(usageContext.expectedInnings) > 0) {
+    trendStats.push({ label: 'EXP IP', value: formatNumber(usageContext.expectedInnings, 1) })
+  }
 
   return {
-    primary: `${pitchHand} | ${record} | ${era} | ${whip}`,
+    headline: pitcherName === 'TBD starter' ? pitcherName : `${pitcherName} (${pitchHand})`,
+    primary: `${record} | ${era} | ${whip}`,
+    detailStats,
     recent,
-    hover: extra.join(' | ')
+    trendStats,
+    usageLabel: usageContext.workloadLabel || '',
+    usageNote: usageContext.note || '',
+    usageStatusLabel: usageContext.label || ''
   }
 }
 
@@ -606,6 +631,31 @@ function App() {
   const selectedGame =
     games.find((game: AnyRecord) => game.id === selectedGameId) ?? visibleGames[0] ?? games[0] ?? null
   const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
+  const activeHistoryPropSummary = activeHistoryEntry ? mlbPropPerformanceByDate[activeHistoryEntry.id] ?? null : null
+  const activeHistoryMetrics = useMemo(() => {
+    if (!activeHistoryEntry) return []
+    const metrics = [...activeHistoryEntry.metrics]
+    if (activeHistoryPropSummary?.overall?.total) {
+      metrics.push({
+        label: 'Non-HR props',
+        value: `${activeHistoryPropSummary.overall.hits}/${activeHistoryPropSummary.overall.total}`,
+        note: `${formatPercent(activeHistoryPropSummary.overall.hitRate)} hit rate`,
+        tone:
+          activeHistoryPropSummary.overall.hitRate !== null && activeHistoryPropSummary.overall.hitRate >= 55
+            ? 'positive'
+            : activeHistoryPropSummary.overall.hitRate !== null && activeHistoryPropSummary.overall.hitRate >= 45
+              ? 'warning'
+              : 'negative'
+      })
+    }
+    return metrics
+  }, [activeHistoryEntry, activeHistoryPropSummary])
+  const activeHistoryTrackedMarkets = useMemo(() => {
+    if (!activeHistoryEntry) return []
+    return activeHistoryPropSummary?.overall?.total && !activeHistoryEntry.trackedMarkets.includes('Player props')
+      ? [...activeHistoryEntry.trackedMarkets, 'Player props']
+      : activeHistoryEntry.trackedMarkets
+  }, [activeHistoryEntry, activeHistoryPropSummary])
 
   const gradedHistoryEntries = useMemo(
     () =>
@@ -632,7 +682,8 @@ function App() {
           ? (entry.performance.hrBoard.hits / entry.performance.hrBoard.total) * 100
           : null
         ,
-        tennis: percentageFromRecord(entry.performance?.tennis)
+        tennis: percentageFromRecord(entry.performance?.tennis),
+        props: mlbPropPerformanceByDate[entry.id]?.overall.hitRate ?? null
       })),
     [gradedHistoryEntries]
   )
@@ -648,7 +699,8 @@ function App() {
       fullGame: summarize(historyTrendPoints.map((entry) => entry.fullGame)),
       first5: summarize(historyTrendPoints.map((entry) => entry.first5)),
       hrBoard: summarize(historyTrendPoints.map((entry) => entry.hrBoard)),
-      tennis: summarize(historyTrendPoints.map((entry) => entry.tennis))
+      tennis: summarize(historyTrendPoints.map((entry) => entry.tennis)),
+      props: summarize(historyTrendPoints.map((entry) => entry.props))
     }
   }, [historyTrendPoints])
 
@@ -675,6 +727,12 @@ function App() {
   )
   const tennisTrendSegments = buildTrendSegments(
     historyTrendPoints.map((entry) => entry.tennis),
+    trendChartWidth,
+    trendChartHeight,
+    trendChartPadding
+  )
+  const propTrendSegments = buildTrendSegments(
+    historyTrendPoints.map((entry) => entry.props),
     trendChartWidth,
     trendChartHeight,
     trendChartPadding
@@ -1127,8 +1185,10 @@ function App() {
 
   const renderMlbDetail = (game: AnyRecord) => {
     const projection = game.analysis?.mlbProjection
-    const awayStarter = buildPitcherSummary(game.starterContext?.away)
-    const homeStarter = buildPitcherSummary(game.starterContext?.home)
+    const awayHold = Number(projection?.awayStarterHoldConfidence)
+    const homeHold = Number(projection?.homeStarterHoldConfidence)
+    const awayStarter = buildPitcherSummary(game.starterContext?.away, awayHold)
+    const homeStarter = buildPitcherSummary(game.starterContext?.home, homeHold)
     const awayTeam = game.matchup?.[0]?.name ?? 'Away'
     const homeTeam = game.matchup?.[1]?.name ?? 'Home'
     const awayLineup = game.lineupBoard?.away
@@ -1180,8 +1240,6 @@ function App() {
     const homeBridgeScore = Number.isFinite(Number(projection?.homeBullpenChainScore))
       ? Number(projection?.homeBullpenChainScore)
       : Number(homeSummary?.bullpenPitchTypeSummary?.pressureIndex)
-    const awayHold = Number(projection?.awayStarterHoldConfidence)
-    const homeHold = Number(projection?.homeStarterHoldConfidence)
     const awayStory = game.storyContext?.away?.summary
     const homeStory = game.storyContext?.home?.summary
     const renderBridgeChainCard = (
@@ -1213,7 +1271,7 @@ function App() {
                 <div className="bridge-chain-meta">
                   <span>First up {formatNumber(reliever.firstRelieverLikelihood, 0)}%</span>
                   <small>
-                    {formatNumber(reliever.availabilityScore, 0)}/100 avail
+                    Availability {formatNumber(reliever.availabilityScore, 0)}/100
                     {reliever.backToBack ? ' · B2B' : reliever.workedYesterday ? ' · worked yesterday' : ''}
                   </small>
                   {reliever.topAttackers?.length ? (
@@ -1245,8 +1303,38 @@ function App() {
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.away)}</span>
             </div>
-            <p>{awayStarter.primary}</p>
+            <div className="pitcher-summary-block">
+              <strong className="pitcher-summary-headline">{awayStarter.headline}</strong>
+              <p className="pitcher-summary-line">{awayStarter.primary}</p>
+              {awayStarter.usageStatusLabel ? (
+                <div className="pitcher-summary-kicker-row">
+                  <span className="pitcher-summary-kicker">{awayStarter.usageStatusLabel}</span>
+                  {awayStarter.usageLabel ? <span className="pitcher-summary-kicker muted">{awayStarter.usageLabel}</span> : null}
+                </div>
+              ) : null}
+              {awayStarter.detailStats.length ? (
+                <div className="pitcher-summary-chip-row">
+                  {awayStarter.detailStats.map((stat) => (
+                    <span key={`${awayTeam}-${stat.label}`} className="pitcher-summary-chip">
+                      <small>{stat.label}</small>
+                      <strong>{stat.value}</strong>
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+              {awayStarter.trendStats.length ? (
+                <div className="pitcher-summary-chip-row secondary">
+                  {awayStarter.trendStats.map((stat) => (
+                    <span key={`${awayTeam}-trend-${stat.label}`} className="pitcher-summary-chip muted">
+                      <small>{stat.label}</small>
+                      <strong>{stat.value}</strong>
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+            </div>
             {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
+            {!awayStarter.recent && awayStarter.usageNote ? <small>{awayStarter.usageNote}</small> : null}
             {awayStory ? <p className="react-section-copy">{awayStory}</p> : null}
             {awayScript ? (
               <>
@@ -1273,8 +1361,38 @@ function App() {
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.home)}</span>
             </div>
-            <p>{homeStarter.primary}</p>
+            <div className="pitcher-summary-block">
+              <strong className="pitcher-summary-headline">{homeStarter.headline}</strong>
+              <p className="pitcher-summary-line">{homeStarter.primary}</p>
+              {homeStarter.usageStatusLabel ? (
+                <div className="pitcher-summary-kicker-row">
+                  <span className="pitcher-summary-kicker">{homeStarter.usageStatusLabel}</span>
+                  {homeStarter.usageLabel ? <span className="pitcher-summary-kicker muted">{homeStarter.usageLabel}</span> : null}
+                </div>
+              ) : null}
+              {homeStarter.detailStats.length ? (
+                <div className="pitcher-summary-chip-row">
+                  {homeStarter.detailStats.map((stat) => (
+                    <span key={`${homeTeam}-${stat.label}`} className="pitcher-summary-chip">
+                      <small>{stat.label}</small>
+                      <strong>{stat.value}</strong>
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+              {homeStarter.trendStats.length ? (
+                <div className="pitcher-summary-chip-row secondary">
+                  {homeStarter.trendStats.map((stat) => (
+                    <span key={`${homeTeam}-trend-${stat.label}`} className="pitcher-summary-chip muted">
+                      <small>{stat.label}</small>
+                      <strong>{stat.value}</strong>
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+            </div>
             {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
+            {!homeStarter.recent && homeStarter.usageNote ? <small>{homeStarter.usageNote}</small> : null}
             {homeStory ? <p className="react-section-copy">{homeStory}</p> : null}
             {homeScript ? (
               <>
@@ -2503,6 +2621,11 @@ function App() {
                     <strong>{formatPercent(historyTrendSummary.hrBoard)}</strong>
                     <small>Hit rate on saved HR pool</small>
                   </article>
+                  <article className="parlay-stat-card history-metric-card props">
+                    <span className="parlay-stat-label">Avg non-HR props</span>
+                    <strong>{formatPercent(historyTrendSummary.props)}</strong>
+                    <small>Hits, TB, RBI, walks, singles</small>
+                  </article>
                   <article className="parlay-stat-card history-metric-card info">
                     <span className="parlay-stat-label">Avg tennis main tour</span>
                     <strong>{formatPercent(historyTrendSummary.tennis)}</strong>
@@ -2515,6 +2638,7 @@ function App() {
                     <span><i className="trend-dot positive" />MLB full game</span>
                     <span><i className="trend-dot warning" />MLB first 5</span>
                     <span><i className="trend-dot negative" />HR board</span>
+                    <span><i className="trend-dot props" />Non-HR props</span>
                     <span><i className="trend-dot tennis" />Tennis main tour</span>
                   </div>
 
@@ -2560,6 +2684,16 @@ function App() {
                           className="trend-line negative"
                         />
                       ))}
+                      {propTrendSegments.map((segment, index) => (
+                        <line
+                          key={`props-${index}`}
+                          x1={segment.x1}
+                          y1={segment.y1}
+                          x2={segment.x2}
+                          y2={segment.y2}
+                          className="trend-line props"
+                        />
+                      ))}
                       {tennisTrendSegments.map((segment, index) => (
                         <line
                           key={`tennis-${index}`}
@@ -2602,6 +2736,14 @@ function App() {
                                 cy={trendChartPadding + ((100 - entry.hrBoard) / 100) * (trendChartHeight - trendChartPadding * 2)}
                                 r="4"
                                 className="trend-point negative"
+                              />
+                            ) : null}
+                            {entry.props !== null ? (
+                              <circle
+                                cx={x}
+                                cy={trendChartPadding + ((100 - entry.props) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                                r="4"
+                                className="trend-point props"
                               />
                             ) : null}
                             {entry.tennis !== null ? (
@@ -2707,7 +2849,7 @@ function App() {
                 </div>
 
                 <div className="history-metric-grid">
-                  {activeHistoryEntry.metrics.map((metric) => (
+                  {activeHistoryMetrics.map((metric) => (
                     <article
                       key={`${activeHistoryEntry.id}-${metric.label}`}
                       className={`parlay-stat-card history-metric-card ${getHistoryMetricTone(metric)}`}
@@ -2731,12 +2873,12 @@ function App() {
                         <strong>
                           {activeHistoryEntry.journal
                             ? `${activeHistoryEntry.journal.records} rows`
-                            : `${activeHistoryEntry.trackedMarkets.length} markets`}
+                            : `${activeHistoryTrackedMarkets.length} markets`}
                         </strong>
                         <small>
                           {activeHistoryEntry.journal
-                            ? `${activeHistoryEntry.journal.sideRows ?? 0} sides | ${activeHistoryEntry.journal.hrRows ?? 0} HR props`
-                            : activeHistoryEntry.trackedMarkets.join(' | ')}
+                            ? `${activeHistoryEntry.journal.sideRows ?? 0} sides | ${activeHistoryEntry.journal.hrRows ?? 0} HR props | ${activeHistoryEntry.journal.propRows ?? activeHistoryPropSummary?.overall?.total ?? 0} player props`
+                            : activeHistoryTrackedMarkets.join(' | ')}
                         </small>
                       </article>
                       <article className="history-ledger-card">
@@ -2746,13 +2888,45 @@ function App() {
                       </article>
                     </div>
                     <div className="history-chip-row">
-                      {activeHistoryEntry.trackedMarkets.map((market) => (
+                      {activeHistoryTrackedMarkets.map((market) => (
                         <span key={`${activeHistoryEntry.id}-market-${market}`} className="history-chip">
                           {market}
                         </span>
                       ))}
                     </div>
                   </section>
+
+                  {activeHistoryPropSummary?.overall?.total ? (
+                    <section className="action-section">
+                      <div className="action-section-header">
+                        <h3>Prop breakdown</h3>
+                        <span>{activeHistoryPropSummary.overall.total}</span>
+                      </div>
+                      <div className="history-ledger-grid">
+                        {Object.entries(activeHistoryPropSummary.byType).map(([propType, summary]) => (
+                          <article key={`${activeHistoryEntry.id}-prop-${propType}`} className="history-ledger-card">
+                            <span className="parlay-stat-label">{propType}</span>
+                            <strong>
+                              {summary.hits}/{summary.total}
+                            </strong>
+                            <small>{formatPercent(summary.hitRate)} hit rate</small>
+                          </article>
+                        ))}
+                      </div>
+                      {activeHistoryPropSummary.topHits.length ? (
+                        <div className="history-subsection">
+                          <span className="parlay-stat-label">Best prop hits</span>
+                          <p className="react-section-copy">{activeHistoryPropSummary.topHits.join(' | ')}</p>
+                        </div>
+                      ) : null}
+                      {activeHistoryPropSummary.topMisses.length ? (
+                        <div className="history-subsection">
+                          <span className="parlay-stat-label">Best prop misses to learn from</span>
+                          <p className="react-section-copy">{activeHistoryPropSummary.topMisses.join(' | ')}</p>
+                        </div>
+                      ) : null}
+                    </section>
+                  ) : null}
 
                   <section className="action-section">
                     <div className="action-section-header">

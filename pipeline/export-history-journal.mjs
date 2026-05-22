@@ -55,6 +55,15 @@ const HR_MODEL_NAMES = {
   '2026-05-21': 'statcast-hr-prototype-v3'
 }
 
+const PROP_MODEL_NAMES = {
+  '2026-05-16': 'mlb-player-props-v1',
+  '2026-05-17': 'mlb-player-props-v1',
+  '2026-05-18': 'mlb-player-props-v1',
+  '2026-05-19': 'mlb-player-props-v1',
+  '2026-05-20': 'mlb-player-props-v1',
+  '2026-05-21': 'mlb-player-props-v1'
+}
+
 const readJsonSql = (query) => {
   const escaped = query.replace(/"/g, '\\"')
   const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, {
@@ -311,7 +320,13 @@ const buildHrRecords = (date) => {
 }
 
 const buildDerivedHrRecords = (date, modelName) => {
-  const predictionPath = path.join(ROOT, 'data', 'predictions', 'mlb-home-runs', `${date}-statcast-prototype.json`)
+  const predictionPath = path.join(
+    ROOT,
+    'data-private',
+    'predictions',
+    'mlb-home-runs',
+    `${date}-statcast-prototype.json`
+  )
   if (!fs.existsSync(predictionPath)) return []
 
   const predictionBoard = JSON.parse(fs.readFileSync(predictionPath, 'utf8'))
@@ -373,15 +388,168 @@ const buildDerivedHrRecords = (date, modelName) => {
   })
 }
 
+const buildPropRecords = (date) => {
+  const modelName = PROP_MODEL_NAMES[date]
+  if (!modelName) return []
+
+  const rows = readJsonSql(`
+    select
+      b.prediction_date,
+      b.model_name,
+      b.game_id,
+      b.player_id,
+      b.player_name,
+      b.team_name,
+      b.prop_type,
+      b.market_label,
+      b.line_threshold,
+      b.actual_value,
+      b.hit_flag,
+      b.result_label,
+      b.metadata_json as result_metadata_json,
+      p.rank,
+      p.game_title,
+      p.confidence,
+      p.probability,
+      p.expected_value,
+      p.recommendation_tier,
+      p.metadata_json,
+      p.raw_json
+    from mlb_prop_backtests b
+    join mlb_prop_predictions p
+      on p.prediction_date = b.prediction_date
+     and p.model_name = b.model_name
+     and p.game_id = b.game_id
+     and p.player_id = b.player_id
+     and p.prop_type = b.prop_type
+    where b.prediction_date = '${date}'
+      and b.model_name = '${modelName}'
+    order by p.rank asc, p.prop_type asc, p.player_name asc
+  `)
+
+  return rows.map((row) => {
+    const metadata = JSON.parse(row.metadata_json || '{}')
+    const resultMetadata = JSON.parse(row.result_metadata_json || '{}')
+    const raw = JSON.parse(row.raw_json || '{}')
+    return {
+      date,
+      sport: 'MLB',
+      marketType: 'playerProp',
+      modelName: row.model_name,
+      sourceType: 'saved-prop-backtest',
+      matchup: row.game_title,
+      gameId: row.game_id,
+      playerId: row.player_id,
+      playerName: row.player_name,
+      teamName: row.team_name,
+      predictedPick: `${row.player_name} ${row.market_label}`,
+      propType: row.prop_type,
+      propLabel: raw.propLabel || row.prop_type,
+      marketLabel: row.market_label,
+      lineThreshold: row.line_threshold,
+      confidenceRank: row.rank,
+      confidence: row.confidence,
+      probability: row.probability,
+      expectedValue: row.expected_value,
+      recommendationTier: row.recommendation_tier,
+      meta: {
+        ...metadata,
+        statValueLabel: raw.statValueLabel,
+        slot: raw.slot
+      },
+      pickJustification: metadata.reason || '',
+      result: {
+        hit: Boolean(row.hit_flag),
+        actualValue: row.actual_value,
+        lineThreshold: row.line_threshold,
+        plateAppearances: resultMetadata.plateAppearances,
+        atBats: resultMetadata.atBats,
+        gamePk: resultMetadata.gamePk
+      },
+      resultJustification: row.result_label || `${row.player_name} result not available.`
+    }
+  })
+}
+
+const buildPropSummary = (propRecords) => {
+  const grouped = {}
+  for (const record of propRecords) {
+    const key = record.propType
+    if (!grouped[key]) grouped[key] = { hits: 0, total: 0 }
+    grouped[key].total += 1
+    if (record.result?.hit) grouped[key].hits += 1
+  }
+
+  const overall = {
+    hits: propRecords.filter((record) => record.result?.hit).length,
+    total: propRecords.length
+  }
+
+  const topHits = propRecords
+    .filter((record) => record.result?.hit)
+    .sort((left, right) => (right.confidence ?? 0) - (left.confidence ?? 0))
+    .slice(0, 4)
+    .map((record) => `${record.playerName} ${record.marketLabel}`)
+
+  const topMisses = propRecords
+    .filter((record) => !record.result?.hit)
+    .sort((left, right) => (right.confidence ?? 0) - (left.confidence ?? 0))
+    .slice(0, 4)
+    .map((record) => `${record.playerName} ${record.marketLabel}`)
+
+  return {
+    overall: {
+      ...overall,
+      hitRate: overall.total ? Number(((overall.hits / overall.total) * 100).toFixed(1)) : null
+    },
+    byType: Object.fromEntries(
+      Object.entries(grouped).map(([propType, summary]) => [
+        propType,
+        {
+          ...summary,
+          hitRate: summary.total ? Number(((summary.hits / summary.total) * 100).toFixed(1)) : null
+        }
+      ])
+    ),
+    topHits,
+    topMisses
+  }
+}
+
+const writePropSummaryModule = (propSummaryByDate) => {
+  const target = path.join(ROOT, 'web', 'src', 'lib', 'history-prop-performance.generated.ts')
+  const moduleSource = `export type PropSummary = {
+  hits: number
+  total: number
+  hitRate: number | null
+}
+
+export type DailyPropSummary = {
+  overall: PropSummary
+  byType: Record<string, PropSummary>
+  topHits: string[]
+  topMisses: string[]
+}
+
+export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = ${JSON.stringify(propSummaryByDate, null, 2)}\n`
+  fs.writeFileSync(target, moduleSource, 'utf8')
+  console.log(`Wrote prop performance summary -> ${target}`)
+}
+
 const dates = ['2026-05-16', '2026-05-17', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21']
 ensureDir(HISTORY_DIR)
 
 const allRecords = []
+const propSummaryByDate = {}
 
 for (const date of dates) {
   const sideRecords = SIDE_MODEL_NAMES[date] ? buildSavedSideRecords(date) : buildDerivedSideRecords(date)
   const hrRecords = buildHrRecords(date)
-  const records = [...sideRecords, ...hrRecords]
+  const propRecords = buildPropRecords(date)
+  const records = [...sideRecords, ...hrRecords, ...propRecords]
+  if (propRecords.length) {
+    propSummaryByDate[date] = buildPropSummary(propRecords)
+  }
   allRecords.push(...records)
   const target = path.join(HISTORY_DIR, `mlb-results-${date}.jsonl`)
   fs.writeFileSync(target, records.map((record) => JSON.stringify(record)).join('\n') + '\n', 'utf8')
@@ -391,3 +559,4 @@ for (const date of dates) {
 const combinedTarget = path.join(HISTORY_DIR, 'mlb-results-archive.jsonl')
 fs.writeFileSync(combinedTarget, allRecords.map((record) => JSON.stringify(record)).join('\n') + '\n', 'utf8')
 console.log(`Wrote ${allRecords.length} records -> ${combinedTarget}`)
+writePropSummaryModule(propSummaryByDate)

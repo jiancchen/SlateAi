@@ -239,6 +239,13 @@ const buildMatchupMap = (games) => {
     return Number(clamp(score, -5, 8).toFixed(1))
   }
 
+  const addMatchupEntry = (abbr, payload) => {
+    if (!abbr) return
+    matchupByAbbr[abbr] = payload
+    if (abbr === 'ARI') matchupByAbbr.AZ = payload
+    if (abbr === 'AZ') matchupByAbbr.ARI = payload
+  }
+
   for (const game of games) {
     const awayTeam = game.participants[0].name
     const homeTeam = game.participants[1].name
@@ -262,7 +269,7 @@ const buildMatchupMap = (games) => {
       game.bullpenChainContext?.away
     )
 
-    matchupByAbbr[awayAbbr] = {
+    addMatchupEntry(awayAbbr, {
       teamName: awayTeam,
       gameTitle: game.title,
       opposingPitcher: homePitcher.fullName,
@@ -271,9 +278,9 @@ const buildMatchupMap = (games) => {
       parkHrIndex: homeParkHrIndex,
       isHomeToday: false,
       opposingBullpenVulnerability: awayOpposingBullpenVulnerability
-    }
+    })
 
-    matchupByAbbr[homeAbbr] = {
+    addMatchupEntry(homeAbbr, {
       teamName: homeTeam,
       gameTitle: game.title,
       opposingPitcher: awayPitcher.fullName,
@@ -282,7 +289,7 @@ const buildMatchupMap = (games) => {
       parkHrIndex: homeParkHrIndex,
       isHomeToday: true,
       opposingBullpenVulnerability: homeOpposingBullpenVulnerability
-    }
+    })
   }
 
   return matchupByAbbr
@@ -295,7 +302,14 @@ const buildLineupLookup = (lineupBoardsByGameId = {}) => {
     for (const sideKey of ['away', 'home']) {
       const side = board?.[sideKey]
       if (!side?.lineup?.length) continue
-      if (side.lineupSource !== 'official-feed' && board?.status?.[sideKey] !== 'posted') continue
+      const lineupStatus = board?.status?.[sideKey] || 'pending'
+      const lineupCoverage = Number(side.lineup?.length || 0)
+      const hasUsableProjectedOrder =
+        lineupStatus === 'partial' &&
+        /rotowire|official-feed/i.test(side.lineupSource || '') &&
+        lineupCoverage >= 7
+
+      if (lineupStatus !== 'posted' && !hasUsableProjectedOrder) continue
 
       for (const hitter of side.lineup) {
         if (!hitter?.playerId) continue
@@ -314,7 +328,11 @@ const buildLineupLookup = (lineupBoardsByGameId = {}) => {
           pitchType: hitter.pitchType || null,
           recentHomeRuns: Number(hitter.recent?.homeRuns ?? 0),
           seasonHomeRuns: Number(hitter.season?.homeRuns ?? 0),
-          splitHomeRuns: Number(hitter.split?.homeRuns ?? 0)
+          splitHomeRuns: Number(hitter.split?.homeRuns ?? 0),
+          lineupStatus,
+          lineupCoverage,
+          lineupSource: side.lineupSource || '',
+          lineupStateLabel: lineupStatus === 'posted' ? 'posted order' : 'projected order'
         })
       }
     }
@@ -379,8 +397,10 @@ const buildLineupPriority = (context = null) => {
     (context.tags || []).some((tag) => /carry|heater|split edge/i.test(tag))
       ? 3.2
       : 0
+  const projectedPenalty = context.lineupStatus === 'posted' ? 0 : 2.8
+  const coveragePenalty = Math.max(0, 9 - Number(context.lineupCoverage || 9)) * 0.7
 
-  return slotBonus + powerBoost + matchupBoost + splitBoost + formBoost + recentHrBoost + splitHrBoost + tagBoost
+  return slotBonus + powerBoost + matchupBoost + splitBoost + formBoost + recentHrBoost + splitHrBoost + tagBoost - projectedPenalty - coveragePenalty
 }
 
 const buildGameFeedContextFetcher = () => {
@@ -498,8 +518,8 @@ const buildSummaryFromLeadCandidate = (leadCandidate, weightedPool = []) => {
     .map((candidate) => candidate.playerName)
   const matchupLine =
     leadCandidate.lineupContext?.primaryTag === 'carry'
-      ? 'posted order still grades like a carry lane'
-      : `the posted order still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}`
+      ? `${leadCandidate.lineupContext?.lineupStateLabel || 'current order'} still grades like a carry lane`
+      : `the ${leadCandidate.lineupContext?.lineupStateLabel || 'current order'} still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}`
   const distributionLine = supportNames.length
     ? `The better way to read this game is as a weighted cluster through ${leadCandidate.playerName}, ${supportNames.join(', ')} rather than a solo-bat script.`
     : `This still looks concentrated around ${leadCandidate.playerName} more than the rest of the current board.`
@@ -509,11 +529,11 @@ const buildSummaryFromLeadCandidate = (leadCandidate, weightedPool = []) => {
   }
 
   if (leadCandidate.scoreBand === 'premium') {
-    return `${leadCandidate.playerName} is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans ${timingLine}, and today lines up as a ${homeAwayLine} matchup into a ${leadCandidate.opposingPitcherHr9} HR/9 starter lane. ${distributionLine}`
+    return `${leadCandidate.playerName} is the premium lane here because the ${leadCandidate.lineupContext?.lineupStateLabel || 'current order'} still grades like a carry bat, his recent HR sample leans ${timingLine}, and today lines up as a ${homeAwayLine} matchup into a ${leadCandidate.opposingPitcherHr9} HR/9 starter lane. ${distributionLine}`
   }
 
   if (leadCandidate.scoreBand === 'strong' || leadCandidate.scoreBand === 'live') {
-    return `${leadCandidate.playerName} is the cleanest likely bat here because the posted order still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}, the recent HR sample leans ${timingLine}, and today still profiles as a ${homeAwayLine} look. ${distributionLine}`
+    return `${leadCandidate.playerName} is the cleanest likely bat here because the ${leadCandidate.lineupContext?.lineupStateLabel || 'current order'} still grades ${leadCandidate.lineupContext?.primaryTag || 'live'}, the recent HR sample leans ${timingLine}, and today still profiles as a ${homeAwayLine} look. ${distributionLine}`
   }
 
   return `${leadCandidate.playerName} is the best available lane here, but this still looks thinner and more variance-driven than a true carry-bat HR script. ${distributionLine}`

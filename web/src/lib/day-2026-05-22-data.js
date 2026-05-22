@@ -11,15 +11,43 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 1,
-      "era": "1.50",
-      "strikeOuts": 35,
-      "inningsPitched": "36.0",
-      "hitsAllowed": 22,
-      "walks": 21,
+      "era": "1.42",
+      "strikeOuts": 38,
+      "inningsPitched": "38.0",
+      "hitsAllowed": 24,
+      "walks": 22,
       "homeRunsAllowed": 1,
-      "whip": "1.19",
-      "gamesStarted": 6,
-      "recentForm": null
+      "whip": "1.21",
+      "gamesStarted": 7,
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Spencer Arrighetti",
+        "windowStarts": 10,
+        "startsSample": 6,
+        "inningsPerStart": 6,
+        "earnedRunsPerStart": 1,
+        "hitsAllowedPerStart": 3.67,
+        "homeRunsAllowedPerStart": 0.17,
+        "walksAllowedPerStart": 3.5,
+        "strikeoutsPerStart": 5.83,
+        "whipLike": 1.19,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.5,
+        "runVolatility": 0.94,
+        "homeRunBurstiness": 0.37,
+        "recent3EarnedRunsDelta": -0.33
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 6 starts.",
+        "expectedInnings": 6,
+        "daysSinceLastStart": 7,
+        "startsLoaded": 6,
+        "shortLeashRisk": 0,
+        "durableRate": 0.5,
+        "workloadLabel": "Workhorse lane"
+      }
     },
     "homePitcher": {
       "id": 592791,
@@ -27,19 +55,47 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 3,
-      "era": "4.97",
-      "strikeOuts": 42,
-      "inningsPitched": "50.2",
-      "hitsAllowed": 44,
+      "era": "4.78",
+      "strikeOuts": 45,
+      "inningsPitched": "52.2",
+      "hitsAllowed": 46,
       "walks": 17,
       "homeRunsAllowed": 16,
       "whip": "1.20",
-      "gamesStarted": 9,
-      "recentForm": null
+      "gamesStarted": 10,
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Jameson Taillon",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 5.63,
+        "earnedRunsPerStart": 3.11,
+        "hitsAllowedPerStart": 4.89,
+        "homeRunsAllowedPerStart": 1.78,
+        "walksAllowedPerStart": 1.89,
+        "strikeoutsPerStart": 4.67,
+        "whipLike": 1.2,
+        "shortStartRate": 0.11,
+        "qualityStartRate": 0.33,
+        "runVolatility": 2.44,
+        "homeRunBurstiness": 2.03,
+        "recent3EarnedRunsDelta": 0.56
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 5.63,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.11,
+        "durableRate": 0.33,
+        "workloadLabel": "5-inning lane"
+      }
     },
-    "spread": "+1.5 -185 / -1.5 +160",
-    "total": "o7 -110 / u7 -105",
-    "moneyline": "Astros +126 / Cubs -140",
+    "spread": "+1.5 -165 / -1.5 +135",
+    "total": "o7.5 -115 / u7.5 -105",
+    "moneyline": "Astros +120 / Cubs -145",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs"
   },
@@ -63,7 +119,35 @@ export const rawGames = [
       "homeRunsAllowed": 6,
       "whip": "1.55",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Kyle Leahy",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 5.07,
+        "earnedRunsPerStart": 2.22,
+        "hitsAllowedPerStart": 5.67,
+        "homeRunsAllowedPerStart": 0.67,
+        "walksAllowedPerStart": 2.22,
+        "strikeoutsPerStart": 3.78,
+        "whipLike": 1.55,
+        "shortStartRate": 0.11,
+        "qualityStartRate": 0.11,
+        "runVolatility": 1.31,
+        "homeRunBurstiness": 1.05,
+        "recent3EarnedRunsDelta": -1.56
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 5.07,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.11,
+        "durableRate": 0.11,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 663978,
@@ -79,11 +163,39 @@ export const rawGames = [
       "homeRunsAllowed": 6,
       "whip": "1.63",
       "gamesStarted": 7,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Chris Paddack",
+        "windowStarts": 10,
+        "startsSample": 7,
+        "inningsPerStart": 4.43,
+        "earnedRunsPerStart": 4,
+        "hitsAllowedPerStart": 6.29,
+        "homeRunsAllowedPerStart": 0.86,
+        "walksAllowedPerStart": 1,
+        "strikeoutsPerStart": 3.71,
+        "whipLike": 1.65,
+        "shortStartRate": 0.71,
+        "qualityStartRate": 0.14,
+        "runVolatility": 2.45,
+        "homeRunBurstiness": 0.64,
+        "recent3EarnedRunsDelta": -0.33
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 7 starts.",
+        "expectedInnings": 4.43,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 7,
+        "shortLeashRisk": 0.71,
+        "durableRate": 0.14,
+        "workloadLabel": "Short leash"
+      }
     },
-    "spread": "+1.5 -190 / +1.5 -189",
-    "total": "o9.5 -105 / u9.5 -110",
-    "moneyline": "Cardinals +105 / Reds -118",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-reds"
   },
@@ -107,7 +219,35 @@ export const rawGames = [
       "homeRunsAllowed": 9,
       "whip": "1.19",
       "gamesStarted": 10,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Gavin Williams",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 6.13,
+        "earnedRunsPerStart": 2.5,
+        "hitsAllowedPerStart": 5.1,
+        "homeRunsAllowedPerStart": 0.9,
+        "walksAllowedPerStart": 2.2,
+        "strikeoutsPerStart": 7.3,
+        "whipLike": 1.19,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.4,
+        "runVolatility": 1.96,
+        "homeRunBurstiness": 0.8,
+        "recent3EarnedRunsDelta": 1.5
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 6.13,
+        "daysSinceLastStart": 5,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0,
+        "durableRate": 0.4,
+        "workloadLabel": "Workhorse lane"
+      }
     },
     "homePitcher": {
       "id": 650911,
@@ -123,10 +263,38 @@ export const rawGames = [
       "homeRunsAllowed": 3,
       "whip": "1.20",
       "gamesStarted": 10,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Cristopher Sánchez",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 6.43,
+        "earnedRunsPerStart": 1.3,
+        "hitsAllowedPerStart": 6.3,
+        "homeRunsAllowedPerStart": 0.3,
+        "walksAllowedPerStart": 1.4,
+        "strikeoutsPerStart": 8,
+        "whipLike": 1.2,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.7,
+        "runVolatility": 1.94,
+        "homeRunBurstiness": 0.64,
+        "recent3EarnedRunsDelta": -1.3
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 6.43,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0,
+        "durableRate": 0.7,
+        "workloadLabel": "Workhorse lane"
+      }
     },
     "spread": "+1.5 -150 / -1.5 +135",
-    "total": "o6.5 -115 / u7 -120",
+    "total": "o6.5 -117 / u6.5 +102",
     "moneyline": "Guardians +158 / Phillies -178",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies"
@@ -151,7 +319,35 @@ export const rawGames = [
       "homeRunsAllowed": 3,
       "whip": "1.04",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Nick Martinez",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.37,
+        "earnedRunsPerStart": 0.9,
+        "hitsAllowedPerStart": 4.5,
+        "homeRunsAllowedPerStart": 0.3,
+        "walksAllowedPerStart": 1.1,
+        "strikeoutsPerStart": 3.5,
+        "whipLike": 1.04,
+        "shortStartRate": 0.2,
+        "qualityStartRate": 0.5,
+        "runVolatility": 0.7,
+        "homeRunBurstiness": 0.46,
+        "recent3EarnedRunsDelta": -0.57
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.37,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.2,
+        "durableRate": 0.5,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 543037,
@@ -167,11 +363,23 @@ export const rawGames = [
       "homeRunsAllowed": 0,
       "whip": null,
       "gamesStarted": 0,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": null,
+      "usageContext": {
+        "status": "return-from-surgery",
+        "label": "Season debut after rehab",
+        "note": "Making his 2026 MLB debut after completing rehab from March 2025 Tommy John surgery, so command, feel, and length should still be treated as comeback-volatile on day one.",
+        "expectedInnings": 4.8,
+        "daysSinceLastStart": null,
+        "startsLoaded": 0,
+        "shortLeashRisk": 0,
+        "durableRate": 0,
+        "workloadLabel": "4-5 inning lane"
+      }
     },
     "spread": "+1.5 -164 / -1.5 +145",
-    "total": "o7.5 -120 / u8 -117",
-    "moneyline": "Rays +135 / Yankees -150",
+    "total": "o7.5 -120 / u8 -114",
+    "moneyline": "Rays +130 / Yankees -145",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rays-vs-yankees"
   },
@@ -195,7 +403,35 @@ export const rawGames = [
       "homeRunsAllowed": 7,
       "whip": "1.52",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Bubba Chandler",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 4.67,
+        "earnedRunsPerStart": 2.67,
+        "hitsAllowedPerStart": 3.67,
+        "homeRunsAllowedPerStart": 0.78,
+        "walksAllowedPerStart": 3.44,
+        "strikeoutsPerStart": 4,
+        "whipLike": 1.52,
+        "shortStartRate": 0.44,
+        "qualityStartRate": 0.11,
+        "runVolatility": 1.59,
+        "homeRunBurstiness": 0.79,
+        "recent3EarnedRunsDelta": 0
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 4.67,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.44,
+        "durableRate": 0.11,
+        "workloadLabel": "Short leash"
+      }
     },
     "homePitcher": {
       "id": 592332,
@@ -211,11 +447,39 @@ export const rawGames = [
       "homeRunsAllowed": 6,
       "whip": "1.05",
       "gamesStarted": 10,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Kevin Gausman",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.73,
+        "earnedRunsPerStart": 2.2,
+        "hitsAllowedPerStart": 5.1,
+        "homeRunsAllowedPerStart": 0.6,
+        "walksAllowedPerStart": 0.9,
+        "strikeoutsPerStart": 5.3,
+        "whipLike": 1.05,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.6,
+        "runVolatility": 1.96,
+        "homeRunBurstiness": 0.66,
+        "recent3EarnedRunsDelta": 0.47
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.73,
+        "daysSinceLastStart": 5,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0.1,
+        "durableRate": 0.6,
+        "workloadLabel": "5-inning lane"
+      }
     },
-    "spread": "+1.5 -155 / -1.5 +130",
-    "total": "o8 -110 / u8 -107",
-    "moneyline": "Pirates +140 / Blue Jays -164",
+    "spread": "+1.5 -160 / -1.5 +135",
+    "total": "o8 -110 / u8 -109",
+    "moneyline": "Pirates +135 / Blue Jays -160",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays"
   },
@@ -239,7 +503,35 @@ export const rawGames = [
       "homeRunsAllowed": 5,
       "whip": "1.03",
       "gamesStarted": 1,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Tobias Myers",
+        "windowStarts": 3,
+        "startsSample": 1,
+        "inningsPerStart": 2,
+        "earnedRunsPerStart": 0,
+        "hitsAllowedPerStart": 1,
+        "homeRunsAllowedPerStart": 0,
+        "walksAllowedPerStart": 1,
+        "strikeoutsPerStart": 2,
+        "whipLike": 1,
+        "shortStartRate": 1,
+        "qualityStartRate": 0,
+        "runVolatility": 0,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 0
+      },
+      "usageContext": {
+        "status": "warehouse-gap",
+        "label": "Warehouse sample incomplete",
+        "note": "The season line shows 29.0 MLB innings, but only 1 logged start cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
+        "expectedInnings": 5.2,
+        "daysSinceLastStart": 33,
+        "startsLoaded": 1,
+        "shortLeashRisk": 1,
+        "durableRate": 0,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 691587,
@@ -255,11 +547,39 @@ export const rawGames = [
       "homeRunsAllowed": 10,
       "whip": "1.41",
       "gamesStarted": 10,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Eury Pérez",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.23,
+        "earnedRunsPerStart": 3.1,
+        "hitsAllowedPerStart": 4.6,
+        "homeRunsAllowedPerStart": 1,
+        "walksAllowedPerStart": 2.8,
+        "strikeoutsPerStart": 5.8,
+        "whipLike": 1.41,
+        "shortStartRate": 0.2,
+        "qualityStartRate": 0.3,
+        "runVolatility": 1.2,
+        "homeRunBurstiness": 1.11,
+        "recent3EarnedRunsDelta": 1.23
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.23,
+        "daysSinceLastStart": 5,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0.2,
+        "durableRate": 0.3,
+        "workloadLabel": "5-inning lane"
+      }
     },
-    "spread": "-1.5 +160 / +1.5 -185",
+    "spread": "-1.5 +164 / +1.5 -185",
     "total": "o8 -105 / u8 -110",
-    "moneyline": "Mets -104 / Marlins -110",
+    "moneyline": "Mets -104 / Marlins -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins"
   },
@@ -283,7 +603,35 @@ export const rawGames = [
       "homeRunsAllowed": 4,
       "whip": "0.96",
       "gamesStarted": 5,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Connor Prielipp",
+        "windowStarts": 5,
+        "startsSample": 5,
+        "inningsPerStart": 5,
+        "earnedRunsPerStart": 1.6,
+        "hitsAllowedPerStart": 3,
+        "homeRunsAllowedPerStart": 0.8,
+        "walksAllowedPerStart": 1.8,
+        "strikeoutsPerStart": 5.8,
+        "whipLike": 0.96,
+        "shortStartRate": 0.2,
+        "qualityStartRate": 0.2,
+        "runVolatility": 0.8,
+        "homeRunBurstiness": 1.28,
+        "recent3EarnedRunsDelta": -0.27
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 5 starts.",
+        "expectedInnings": 5,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 5,
+        "shortLeashRisk": 0.2,
+        "durableRate": 0.2,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 801139,
@@ -299,10 +647,38 @@ export const rawGames = [
       "homeRunsAllowed": 3,
       "whip": "0.78",
       "gamesStarted": 5,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Payton Tolle",
+        "windowStarts": 10,
+        "startsSample": 6,
+        "inningsPerStart": 5.11,
+        "earnedRunsPerStart": 1.17,
+        "hitsAllowedPerStart": 2.83,
+        "homeRunsAllowedPerStart": 0.5,
+        "walksAllowedPerStart": 1.17,
+        "strikeoutsPerStart": 5,
+        "whipLike": 0.78,
+        "shortStartRate": 0.33,
+        "qualityStartRate": 0.5,
+        "runVolatility": 1.07,
+        "homeRunBurstiness": 0.67,
+        "recent3EarnedRunsDelta": -0.17
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 6 starts.",
+        "expectedInnings": 5.11,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 5,
+        "shortLeashRisk": 0.33,
+        "durableRate": 0.5,
+        "workloadLabel": "5-inning lane"
+      }
     },
-    "spread": "+1.5 -165 / -1.5 +150",
-    "total": "o7.5 -102 / u7.5 -110",
+    "spread": "+1.5 -165 / -1.5 +146",
+    "total": "o7.5 -102 / u7.5 -115",
     "moneyline": "Twins +130 / Red Sox -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox"
@@ -327,27 +703,67 @@ export const rawGames = [
       "homeRunsAllowed": 11,
       "whip": "1.49",
       "gamesStarted": 6,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Miles Mikolas",
+        "windowStarts": 10,
+        "startsSample": 6,
+        "inningsPerStart": 4.17,
+        "earnedRunsPerStart": 3.83,
+        "hitsAllowedPerStart": 5.17,
+        "homeRunsAllowedPerStart": 1.17,
+        "walksAllowedPerStart": 1.67,
+        "strikeoutsPerStart": 3.17,
+        "whipLike": 1.64,
+        "shortStartRate": 0.67,
+        "qualityStartRate": 0,
+        "runVolatility": 3.3,
+        "homeRunBurstiness": 1.34,
+        "recent3EarnedRunsDelta": -1.83
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 6 starts.",
+        "expectedInnings": 4.17,
+        "daysSinceLastStart": 10,
+        "startsLoaded": 6,
+        "shortLeashRisk": 0.67,
+        "durableRate": 0,
+        "workloadLabel": "Short leash"
+      }
     },
     "homePitcher": {
-      "id": null,
-      "fullName": "",
-      "pitchHand": "",
-      "wins": 0,
-      "losses": 0,
-      "era": "-",
-      "strikeOuts": 0,
-      "inningsPitched": "-",
-      "hitsAllowed": 0,
-      "walks": 0,
-      "homeRunsAllowed": 0,
-      "whip": null,
-      "gamesStarted": 0,
-      "recentForm": null
+      "id": 693821,
+      "fullName": "Bryce Elder",
+      "pitchHand": "R",
+      "wins": 4,
+      "losses": 2,
+      "era": "2.01",
+      "strikeOuts": 56,
+      "inningsPitched": "62.2",
+      "hitsAllowed": 42,
+      "walks": 20,
+      "homeRunsAllowed": 4,
+      "whip": "0.99",
+      "gamesStarted": 10,
+      "probableSource": "rtsports-fallback",
+      "recentForm": null,
+      "usageContext": {
+        "status": "season-only",
+        "label": "Season-only form",
+        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "expectedInnings": 6.27,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0,
+        "durableRate": 0.7,
+        "workloadLabel": "Workhorse lane"
+      }
     },
-    "spread": "+1.5 -115 / -1.5 +102",
-    "total": "o8.5 -124 / u9 -118",
-    "moneyline": "Nationals +180 / Braves -215",
+    "spread": "+1.5 -110 / -1.5 -102",
+    "total": "o8.5 -124 / u9 -109",
+    "moneyline": "Nationals +180 / Braves -210",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves"
   },
@@ -371,7 +787,35 @@ export const rawGames = [
       "homeRunsAllowed": 6,
       "whip": "1.60",
       "gamesStarted": 10,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Jack Flaherty",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 4.37,
+        "earnedRunsPerStart": 2.8,
+        "hitsAllowedPerStart": 4.1,
+        "homeRunsAllowedPerStart": 0.6,
+        "walksAllowedPerStart": 2.9,
+        "strikeoutsPerStart": 4.8,
+        "whipLike": 1.6,
+        "shortStartRate": 0.6,
+        "qualityStartRate": 0.1,
+        "runVolatility": 1.55,
+        "homeRunBurstiness": 0.92,
+        "recent3EarnedRunsDelta": 0.2
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 4.37,
+        "daysSinceLastStart": 5,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0.6,
+        "durableRate": 0.1,
+        "workloadLabel": "Short leash"
+      }
     },
     "homePitcher": {
       "id": 605135,
@@ -387,10 +831,38 @@ export const rawGames = [
       "homeRunsAllowed": 4,
       "whip": "1.70",
       "gamesStarted": 8,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Chris Bassitt",
+        "windowStarts": 10,
+        "startsSample": 8,
+        "inningsPerStart": 4.63,
+        "earnedRunsPerStart": 3.13,
+        "hitsAllowedPerStart": 6.25,
+        "homeRunsAllowedPerStart": 0.5,
+        "walksAllowedPerStart": 2.25,
+        "strikeoutsPerStart": 3,
+        "whipLike": 1.84,
+        "shortStartRate": 0.5,
+        "qualityStartRate": 0.13,
+        "runVolatility": 1.92,
+        "homeRunBurstiness": 0.71,
+        "recent3EarnedRunsDelta": -0.13
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 8 starts.",
+        "expectedInnings": 4.63,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 8,
+        "shortLeashRisk": 0.5,
+        "durableRate": 0.13,
+        "workloadLabel": "Short leash"
+      }
     },
-    "spread": "+1.5 -170 / -1.5 +155",
-    "total": "o8 -121 / u8.5 -106",
+    "spread": "+1.5 -170 / -1.5 +158",
+    "total": "o8.5 -110 / u8.5 -104",
     "moneyline": "Tigers +122 / Orioles -138",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles"
@@ -415,7 +887,35 @@ export const rawGames = [
       "homeRunsAllowed": 2,
       "whip": "1.03",
       "gamesStarted": 7,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Justin Wrobleski",
+        "windowStarts": 10,
+        "startsSample": 7,
+        "inningsPerStart": 6.67,
+        "earnedRunsPerStart": 1.57,
+        "hitsAllowedPerStart": 5.14,
+        "homeRunsAllowedPerStart": 0.29,
+        "walksAllowedPerStart": 1.57,
+        "strikeoutsPerStart": 3.57,
+        "whipLike": 1.01,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.71,
+        "runVolatility": 2.32,
+        "homeRunBurstiness": 1.08,
+        "recent3EarnedRunsDelta": 1.43
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 7 starts.",
+        "expectedInnings": 6.67,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 7,
+        "shortLeashRisk": 0,
+        "durableRate": 0.71,
+        "workloadLabel": "Workhorse lane"
+      }
     },
     "homePitcher": {
       "id": 701656,
@@ -431,11 +931,39 @@ export const rawGames = [
       "homeRunsAllowed": 2,
       "whip": "1.06",
       "gamesStarted": 4,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Logan Henderson",
+        "windowStarts": 5,
+        "startsSample": 4,
+        "inningsPerStart": 4.5,
+        "earnedRunsPerStart": 1.75,
+        "hitsAllowedPerStart": 4,
+        "homeRunsAllowedPerStart": 0.5,
+        "walksAllowedPerStart": 0.75,
+        "strikeoutsPerStart": 5.75,
+        "whipLike": 1.06,
+        "shortStartRate": 0.25,
+        "qualityStartRate": 0.25,
+        "runVolatility": 0.43,
+        "homeRunBurstiness": 0.67,
+        "recent3EarnedRunsDelta": -0.08
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 4 starts.",
+        "expectedInnings": 4.5,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 4,
+        "shortLeashRisk": 0.25,
+        "durableRate": 0.25,
+        "workloadLabel": "Short leash"
+      }
     },
-    "spread": "-1.5 +150 / +1.5 -180",
-    "total": "o8.5 -105 / u8.5 -110",
-    "moneyline": "Dodgers -110 / Brewers -104",
+    "spread": "-1.5 +165 / +1.5 -178",
+    "total": "o8.5 even / u8.5 -109",
+    "moneyline": "Dodgers -104 / Brewers -104",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers"
   },
@@ -459,7 +987,35 @@ export const rawGames = [
       "homeRunsAllowed": 11,
       "whip": "1.15",
       "gamesStarted": 10,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Logan Gilbert",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.67,
+        "earnedRunsPerStart": 2.8,
+        "hitsAllowedPerStart": 5.3,
+        "homeRunsAllowedPerStart": 1.1,
+        "walksAllowedPerStart": 1.2,
+        "strikeoutsPerStart": 5.7,
+        "whipLike": 1.15,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.3,
+        "runVolatility": 1.99,
+        "homeRunBurstiness": 2.53,
+        "recent3EarnedRunsDelta": 0.87
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.67,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0.1,
+        "durableRate": 0.3,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 702070,
@@ -475,10 +1031,38 @@ export const rawGames = [
       "homeRunsAllowed": 5,
       "whip": "1.51",
       "gamesStarted": 8,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Noah Cameron",
+        "windowStarts": 10,
+        "startsSample": 8,
+        "inningsPerStart": 5.21,
+        "earnedRunsPerStart": 3.13,
+        "hitsAllowedPerStart": 6.13,
+        "homeRunsAllowedPerStart": 0.63,
+        "walksAllowedPerStart": 1.75,
+        "strikeoutsPerStart": 4.5,
+        "whipLike": 1.51,
+        "shortStartRate": 0.25,
+        "qualityStartRate": 0.25,
+        "runVolatility": 1.94,
+        "homeRunBurstiness": 1.11,
+        "recent3EarnedRunsDelta": 0.21
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 8 starts.",
+        "expectedInnings": 5.21,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 8,
+        "shortLeashRisk": 0.25,
+        "durableRate": 0.25,
+        "workloadLabel": "5-inning lane"
+      }
     },
-    "spread": "-1.5 +146 / +1.5 -167",
-    "total": "o8 -112 / u8.5 -124",
+    "spread": "-1.5 +146 / +1.5 -170",
+    "total": "o8 -115 / u8.5 -124",
     "moneyline": "Mariners -118 / Royals +102",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals"
@@ -503,7 +1087,35 @@ export const rawGames = [
       "homeRunsAllowed": 10,
       "whip": "0.91",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Jacob deGrom",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 5.63,
+        "earnedRunsPerStart": 1.89,
+        "hitsAllowedPerStart": 4.22,
+        "homeRunsAllowedPerStart": 1.11,
+        "walksAllowedPerStart": 0.89,
+        "strikeoutsPerStart": 6.78,
+        "whipLike": 0.91,
+        "shortStartRate": 0.22,
+        "qualityStartRate": 0.33,
+        "runVolatility": 1.91,
+        "homeRunBurstiness": 2.09,
+        "recent3EarnedRunsDelta": 1.44
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 5.63,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.22,
+        "durableRate": 0.33,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 680570,
@@ -519,11 +1131,39 @@ export const rawGames = [
       "homeRunsAllowed": 0,
       "whip": "3.00",
       "gamesStarted": 1,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Grayson Rodriguez",
+        "windowStarts": 3,
+        "startsSample": 1,
+        "inningsPerStart": 3.67,
+        "earnedRunsPerStart": 7,
+        "hitsAllowedPerStart": 7,
+        "homeRunsAllowedPerStart": 0,
+        "walksAllowedPerStart": 4,
+        "strikeoutsPerStart": 4,
+        "whipLike": 3,
+        "shortStartRate": 1,
+        "qualityStartRate": 0,
+        "runVolatility": 0,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 0
+      },
+      "usageContext": {
+        "status": "fresh-off-il",
+        "label": "Fresh off IL",
+        "note": "Opened 2026 on the injured list with right shoulder inflammation and only recently returned, so the first few outings should still be treated as short-leash and high-variance.",
+        "expectedInnings": 4.2,
+        "daysSinceLastStart": 5,
+        "startsLoaded": 1,
+        "shortLeashRisk": 1,
+        "durableRate": 0,
+        "workloadLabel": "Short leash"
+      }
     },
-    "spread": "-1.5 +115 / +1.5 -130",
+    "spread": "-1.5 +105 / +1.5 -115",
     "total": "o7.5 -110 / u8 -125",
-    "moneyline": "Rangers -148 / Angels +130",
+    "moneyline": "Rangers -162 / Angels +140",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels"
   },
@@ -547,7 +1187,35 @@ export const rawGames = [
       "homeRunsAllowed": 8,
       "whip": "1.20",
       "gamesStarted": 10,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Jeffrey Springs",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.5,
+        "earnedRunsPerStart": 2.4,
+        "hitsAllowedPerStart": 5,
+        "homeRunsAllowedPerStart": 0.8,
+        "walksAllowedPerStart": 1.6,
+        "strikeoutsPerStart": 4.7,
+        "whipLike": 1.2,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.4,
+        "runVolatility": 1.91,
+        "homeRunBurstiness": 1.17,
+        "recent3EarnedRunsDelta": -0.07
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.5,
+        "daysSinceLastStart": 5,
+        "startsLoaded": 10,
+        "shortLeashRisk": 0.1,
+        "durableRate": 0.4,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 621111,
@@ -563,10 +1231,38 @@ export const rawGames = [
       "homeRunsAllowed": 4,
       "whip": "1.35",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Walker Buehler",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 4.59,
+        "earnedRunsPerStart": 2.56,
+        "hitsAllowedPerStart": 4.67,
+        "homeRunsAllowedPerStart": 0.44,
+        "walksAllowedPerStart": 1.56,
+        "strikeoutsPerStart": 4.11,
+        "whipLike": 1.35,
+        "shortStartRate": 0.44,
+        "qualityStartRate": 0.22,
+        "runVolatility": 1.26,
+        "homeRunBurstiness": 1.05,
+        "recent3EarnedRunsDelta": 0.11
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 4.59,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.44,
+        "durableRate": 0.22,
+        "workloadLabel": "Short leash"
+      }
     },
-    "spread": "+1.5 -185 / -1.5 +160",
-    "total": "o8 -110 / u8 -110",
+    "spread": "+1.5 -190 / +1.5 -200",
+    "total": "o7.5 -114 / u8 -118",
     "moneyline": "Athletics +110 / Padres -120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres"
@@ -591,7 +1287,35 @@ export const rawGames = [
       "homeRunsAllowed": 9,
       "whip": "1.26",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Tomoyuki Sugano",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 5.22,
+        "earnedRunsPerStart": 2.33,
+        "hitsAllowedPerStart": 5,
+        "homeRunsAllowedPerStart": 1,
+        "walksAllowedPerStart": 1.56,
+        "strikeoutsPerStart": 2.78,
+        "whipLike": 1.26,
+        "shortStartRate": 0.22,
+        "qualityStartRate": 0.22,
+        "runVolatility": 1.76,
+        "homeRunBurstiness": 1.28,
+        "recent3EarnedRunsDelta": 1.33
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 5.22,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.22,
+        "durableRate": 0.22,
+        "workloadLabel": "5-inning lane"
+      }
     },
     "homePitcher": {
       "id": 647336,
@@ -607,10 +1331,38 @@ export const rawGames = [
       "homeRunsAllowed": 4,
       "whip": "1.33",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Michael Soroka",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 5.44,
+        "earnedRunsPerStart": 2.11,
+        "hitsAllowedPerStart": 5.67,
+        "homeRunsAllowedPerStart": 0.44,
+        "walksAllowedPerStart": 1.56,
+        "strikeoutsPerStart": 6.11,
+        "whipLike": 1.33,
+        "shortStartRate": 0.11,
+        "qualityStartRate": 0.33,
+        "runVolatility": 2.38,
+        "homeRunBurstiness": 0.5,
+        "recent3EarnedRunsDelta": -1.11
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 5.44,
+        "daysSinceLastStart": 5,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0.11,
+        "durableRate": 0.33,
+        "workloadLabel": "5-inning lane"
+      }
     },
-    "spread": "+1.5 -115 / -1.5 +104",
-    "total": "o8.5 -120 / u9 -120",
+    "spread": "+1.5 -115 / -1.5 even",
+    "total": "o9 -105 / u9 -106",
     "moneyline": "Rockies +180 / Diamondbacks -210",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks"
@@ -635,7 +1387,35 @@ export const rawGames = [
       "homeRunsAllowed": 3,
       "whip": "0.98",
       "gamesStarted": 9,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Davis Martin",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 6.22,
+        "earnedRunsPerStart": 1.11,
+        "hitsAllowedPerStart": 5,
+        "homeRunsAllowedPerStart": 0.33,
+        "walksAllowedPerStart": 1.11,
+        "strikeoutsPerStart": 6.56,
+        "whipLike": 0.98,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.78,
+        "runVolatility": 0.87,
+        "homeRunBurstiness": 0.47,
+        "recent3EarnedRunsDelta": -0.44
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 6.22,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 9,
+        "shortLeashRisk": 0,
+        "durableRate": 0.78,
+        "workloadLabel": "Workhorse lane"
+      }
     },
     "homePitcher": {
       "id": 686790,
@@ -651,14 +1431,913 @@ export const rawGames = [
       "homeRunsAllowed": 2,
       "whip": "1.00",
       "gamesStarted": 3,
-      "recentForm": null
+      "probableSource": "mlb-api",
+      "recentForm": {
+        "pitcherName": "Trevor McDonald",
+        "windowStarts": 3,
+        "startsSample": 3,
+        "inningsPerStart": 6.33,
+        "earnedRunsPerStart": 1.67,
+        "hitsAllowedPerStart": 5.33,
+        "homeRunsAllowedPerStart": 0.67,
+        "walksAllowedPerStart": 1,
+        "strikeoutsPerStart": 5.67,
+        "whipLike": 1,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.67,
+        "runVolatility": 0.94,
+        "homeRunBurstiness": 0.47,
+        "recent3EarnedRunsDelta": 0
+      },
+      "usageContext": {
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 3 starts.",
+        "expectedInnings": 6.33,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 3,
+        "shortLeashRisk": 0,
+        "durableRate": 0.67,
+        "workloadLabel": "Workhorse lane"
+      }
     },
-    "spread": "-1.5 +155 / +1.5 -185",
-    "total": "o7 -125 / u7.5 -125",
-    "moneyline": "White Sox -110 / Giants -105",
+    "spread": "-1.5 +158 / +1.5 -180",
+    "total": "o7 -126 / u7.5 -120",
+    "moneyline": "White Sox -112 / Giants -104",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants"
   }
 ]
 
-export const bullpenChainByTeam = {}
+export const bullpenChainByTeam = {
+  "Diamondbacks": {
+    "opponent": "Rockies",
+    "topRelievers": [
+      {
+        "pitcherId": 657044,
+        "name": "Ryan Thompson",
+        "role": "middle",
+        "firstRelieverLikelihood": 90.53,
+        "availabilityScore": 95,
+        "bridgeScore": 90.5,
+        "expectedOuts": 1.67,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 805299,
+        "name": "Brandyn Garcia",
+        "role": "middle",
+        "firstRelieverLikelihood": 73.87,
+        "availabilityScore": 78.75,
+        "bridgeScore": 75.1,
+        "expectedOuts": 1.67,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      }
+    ]
+  },
+  "Athletics": {
+    "opponent": "Padres",
+    "topRelievers": [
+      {
+        "pitcherId": 686993,
+        "name": "Justin Sterner",
+        "role": "middle",
+        "firstRelieverLikelihood": 74.91,
+        "availabilityScore": 38.4,
+        "bridgeScore": 93.6,
+        "expectedOuts": 2.4,
+        "workedYesterday": true,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-21"
+      },
+      {
+        "pitcherId": 621139,
+        "name": "Brooks Kriske",
+        "role": "middle",
+        "firstRelieverLikelihood": 72.44,
+        "availabilityScore": 95,
+        "bridgeScore": 66.7,
+        "expectedOuts": 5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-12"
+      }
+    ]
+  },
+  "Braves": {
+    "opponent": "Nationals",
+    "topRelievers": [
+      {
+        "pitcherId": 527048,
+        "name": "Martín Pérez",
+        "role": "bridge",
+        "firstRelieverLikelihood": 90.5,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 3,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-16"
+      },
+      {
+        "pitcherId": 607481,
+        "name": "Aaron Bummer",
+        "role": "bridge",
+        "firstRelieverLikelihood": 90.5,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 3.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      }
+    ]
+  },
+  "Orioles": {
+    "opponent": "Tigers",
+    "topRelievers": [
+      {
+        "pitcherId": 677020,
+        "name": "Josh Walker",
+        "role": "middle",
+        "firstRelieverLikelihood": 90.45,
+        "availabilityScore": 95,
+        "bridgeScore": 94.9,
+        "expectedOuts": 4,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-16"
+      },
+      {
+        "pitcherId": 608650,
+        "name": "Dietrich Enns",
+        "role": "middle",
+        "firstRelieverLikelihood": 88.99,
+        "availabilityScore": 95,
+        "bridgeScore": 87.7,
+        "expectedOuts": 3,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      }
+    ]
+  },
+  "Red Sox": {
+    "opponent": "Twins",
+    "topRelievers": [
+      {
+        "pitcherId": 686580,
+        "name": "Justin Slaten",
+        "role": "bridge",
+        "firstRelieverLikelihood": 86.28,
+        "availabilityScore": 75.8,
+        "bridgeScore": 95,
+        "expectedOuts": 2.75,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      },
+      {
+        "pitcherId": 669711,
+        "name": "Greg Weissert",
+        "role": "bridge",
+        "firstRelieverLikelihood": 81.8,
+        "availabilityScore": 70.15,
+        "bridgeScore": 95,
+        "expectedOuts": 4,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      }
+    ]
+  },
+  "Cubs": {
+    "opponent": "Astros",
+    "topRelievers": [
+      {
+        "pitcherId": 681799,
+        "name": "Ethan Roberts",
+        "role": "bridge",
+        "firstRelieverLikelihood": 90.5,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 5.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 657097,
+        "name": "Jacob Webb",
+        "role": "middle",
+        "firstRelieverLikelihood": 85.1,
+        "availabilityScore": 74,
+        "bridgeScore": 94,
+        "expectedOuts": 3.25,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      }
+    ]
+  },
+  "White Sox": {
+    "opponent": "Giants",
+    "topRelievers": [
+      {
+        "pitcherId": 670950,
+        "name": "Trevor Richards",
+        "role": "middle",
+        "firstRelieverLikelihood": 84.18,
+        "availabilityScore": 95,
+        "bridgeScore": 83.5,
+        "expectedOuts": 3.67,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 699823,
+        "name": "Tyler Davis",
+        "role": "middle",
+        "firstRelieverLikelihood": 82.27,
+        "availabilityScore": 64.5,
+        "bridgeScore": 94.9,
+        "expectedOuts": 4,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      }
+    ]
+  },
+  "Reds": {
+    "opponent": "Cardinals",
+    "topRelievers": [
+      {
+        "pitcherId": 682825,
+        "name": "Luis Mey",
+        "role": "middle",
+        "firstRelieverLikelihood": 89.75,
+        "availabilityScore": 95,
+        "bridgeScore": 89.1,
+        "expectedOuts": 3.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-16"
+      },
+      {
+        "pitcherId": 622088,
+        "name": "Tejay Antone",
+        "role": "middle",
+        "firstRelieverLikelihood": 86.24,
+        "availabilityScore": 95,
+        "bridgeScore": 87.3,
+        "expectedOuts": 3.25,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      }
+    ]
+  },
+  "Guardians": {
+    "opponent": "Phillies",
+    "topRelievers": [
+      {
+        "pitcherId": 670036,
+        "name": "Matt Festa",
+        "role": "middle",
+        "firstRelieverLikelihood": 80.56,
+        "availabilityScore": 62.15,
+        "bridgeScore": 88.8,
+        "expectedOuts": 1.25,
+        "workedYesterday": true,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-21"
+      },
+      {
+        "pitcherId": 670059,
+        "name": "Colin Holderman",
+        "role": "bridge",
+        "firstRelieverLikelihood": 78.37,
+        "availabilityScore": 53.2,
+        "bridgeScore": 95,
+        "expectedOuts": 3.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      }
+    ]
+  },
+  "Rockies": {
+    "opponent": "Diamondbacks",
+    "topRelievers": [
+      {
+        "pitcherId": 677955,
+        "name": "Jaden Hill",
+        "role": "middle",
+        "firstRelieverLikelihood": 86.52,
+        "availabilityScore": 71.95,
+        "bridgeScore": 93.3,
+        "expectedOuts": 3.2,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      },
+      {
+        "pitcherId": 680767,
+        "name": "Victor Vodnik",
+        "role": "middle",
+        "firstRelieverLikelihood": 77.71,
+        "availabilityScore": 95,
+        "bridgeScore": 67.2,
+        "expectedOuts": 1.75,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      }
+    ]
+  },
+  "Tigers": {
+    "opponent": "Orioles",
+    "topRelievers": [
+      {
+        "pitcherId": 640448,
+        "name": "Kyle Finnegan",
+        "role": "bridge",
+        "firstRelieverLikelihood": 86.28,
+        "availabilityScore": 75.8,
+        "bridgeScore": 95,
+        "expectedOuts": 3.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      },
+      {
+        "pitcherId": 676428,
+        "name": "Brant Hurter",
+        "role": "middle",
+        "firstRelieverLikelihood": 85.59,
+        "availabilityScore": 75.55,
+        "bridgeScore": 93.9,
+        "expectedOuts": 2.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      }
+    ]
+  },
+  "Astros": {
+    "opponent": "Cubs",
+    "topRelievers": [
+      {
+        "pitcherId": 681151,
+        "name": "Jayden Murray",
+        "role": "bridge",
+        "firstRelieverLikelihood": 90.5,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 6.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 595345,
+        "name": "Steven Okert",
+        "role": "bridge",
+        "firstRelieverLikelihood": 85.49,
+        "availabilityScore": 73.55,
+        "bridgeScore": 95,
+        "expectedOuts": 3.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      }
+    ]
+  },
+  "Royals": {
+    "opponent": "Mariners",
+    "topRelievers": [
+      {
+        "pitcherId": 663738,
+        "name": "Daniel Lynch IV",
+        "role": "bridge",
+        "firstRelieverLikelihood": 85.63,
+        "availabilityScore": 66.8,
+        "bridgeScore": 95,
+        "expectedOuts": 3.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      },
+      {
+        "pitcherId": 663559,
+        "name": "Bailey Falter",
+        "role": "bridge",
+        "firstRelieverLikelihood": 84.09,
+        "availabilityScore": 95,
+        "bridgeScore": 87.9,
+        "expectedOuts": 6,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-16"
+      }
+    ]
+  },
+  "Angels": {
+    "opponent": "Rangers",
+    "topRelievers": [
+      {
+        "pitcherId": 696147,
+        "name": "Sam Bachman",
+        "role": "bridge",
+        "firstRelieverLikelihood": 84.84,
+        "availabilityScore": 71.7,
+        "bridgeScore": 95,
+        "expectedOuts": 5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      },
+      {
+        "pitcherId": 815083,
+        "name": "Mitch Farris",
+        "role": "bulk",
+        "firstRelieverLikelihood": 72.88,
+        "availabilityScore": 95,
+        "bridgeScore": 67.5,
+        "expectedOuts": 6,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-17"
+      }
+    ]
+  },
+  "Dodgers": {
+    "opponent": "Brewers",
+    "topRelievers": [
+      {
+        "pitcherId": 683618,
+        "name": "Edgardo Henriquez",
+        "role": "bridge",
+        "firstRelieverLikelihood": 79.44,
+        "availabilityScore": 49.1,
+        "bridgeScore": 95,
+        "expectedOuts": 3.2,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      },
+      {
+        "pitcherId": 681911,
+        "name": "Alex Vesia",
+        "role": "middle",
+        "firstRelieverLikelihood": 78.91,
+        "availabilityScore": 79.65,
+        "bridgeScore": 79.2,
+        "expectedOuts": 2.75,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      }
+    ]
+  },
+  "Marlins": {
+    "opponent": "Mets",
+    "topRelievers": [
+      {
+        "pitcherId": 667463,
+        "name": "John King",
+        "role": "middle",
+        "firstRelieverLikelihood": 86.1,
+        "availabilityScore": 95,
+        "bridgeScore": 82.5,
+        "expectedOuts": 3,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 669622,
+        "name": "Anthony Bender",
+        "role": "middle",
+        "firstRelieverLikelihood": 81.67,
+        "availabilityScore": 69.7,
+        "bridgeScore": 90.5,
+        "expectedOuts": 4.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      }
+    ]
+  },
+  "Brewers": {
+    "opponent": "Dodgers",
+    "topRelievers": [
+      {
+        "pitcherId": 675660,
+        "name": "Shane Drohan",
+        "role": "bridge",
+        "firstRelieverLikelihood": 90.5,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 7.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 681982,
+        "name": "Grant Anderson",
+        "role": "bridge",
+        "firstRelieverLikelihood": 90.5,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 4,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-17"
+      }
+    ]
+  },
+  "Twins": {
+    "opponent": "Red Sox",
+    "topRelievers": [
+      {
+        "pitcherId": 680573,
+        "name": "Simeon Woods Richardson",
+        "role": "bridge",
+        "firstRelieverLikelihood": 86.41,
+        "availabilityScore": 95,
+        "bridgeScore": 92.1,
+        "expectedOuts": 3,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 696070,
+        "name": "Kendry Rojas",
+        "role": "bridge",
+        "firstRelieverLikelihood": 84.09,
+        "availabilityScore": 95,
+        "bridgeScore": 87.9,
+        "expectedOuts": 6,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-14"
+      }
+    ]
+  },
+  "Mets": {
+    "opponent": "Marlins",
+    "topRelievers": [
+      {
+        "pitcherId": 681810,
+        "name": "Austin Warren",
+        "role": "bridge",
+        "firstRelieverLikelihood": 87.21,
+        "availabilityScore": 71.3,
+        "bridgeScore": 95,
+        "expectedOuts": 5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      },
+      {
+        "pitcherId": 548384,
+        "name": "Brooks Raley",
+        "role": "middle",
+        "firstRelieverLikelihood": 76.09,
+        "availabilityScore": 54.9,
+        "bridgeScore": 85.2,
+        "expectedOuts": 2.6,
+        "workedYesterday": true,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-21"
+      }
+    ]
+  },
+  "Yankees": {
+    "opponent": "Rays",
+    "topRelievers": [
+      {
+        "pitcherId": 518585,
+        "name": "Fernando Cruz",
+        "role": "middle",
+        "firstRelieverLikelihood": 91.79,
+        "availabilityScore": 95,
+        "bridgeScore": 92.8,
+        "expectedOuts": 3.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 642232,
+        "name": "Ryan Yarbrough",
+        "role": "bridge",
+        "firstRelieverLikelihood": 88.3,
+        "availabilityScore": 95,
+        "bridgeScore": 91,
+        "expectedOuts": 6,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-17"
+      }
+    ]
+  },
+  "Phillies": {
+    "opponent": "Guardians",
+    "topRelievers": [
+      {
+        "pitcherId": 621383,
+        "name": "Tanner Banks",
+        "role": "middle",
+        "firstRelieverLikelihood": 86.03,
+        "availabilityScore": 79,
+        "bridgeScore": 92.5,
+        "expectedOuts": 2,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      },
+      {
+        "pitcherId": 680742,
+        "name": "Jonathan Bowlan",
+        "role": "middle",
+        "firstRelieverLikelihood": 81.74,
+        "availabilityScore": 76.5,
+        "bridgeScore": 86.3,
+        "expectedOuts": 2.67,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      }
+    ]
+  },
+  "Pirates": {
+    "opponent": "Blue Jays",
+    "topRelievers": [
+      {
+        "pitcherId": 676755,
+        "name": "Isaac Mattson",
+        "role": "bridge",
+        "firstRelieverLikelihood": 90.5,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 3.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-17"
+      },
+      {
+        "pitcherId": 681895,
+        "name": "Evan Sisk",
+        "role": "bridge",
+        "firstRelieverLikelihood": 78.89,
+        "availabilityScore": 47.55,
+        "bridgeScore": 95,
+        "expectedOuts": 3.6,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      }
+    ]
+  },
+  "Padres": {
+    "opponent": "Athletics",
+    "topRelievers": [
+      {
+        "pitcherId": 592094,
+        "name": "Jason Adam",
+        "role": "middle",
+        "firstRelieverLikelihood": 92.7,
+        "availabilityScore": 95,
+        "bridgeScore": 89.9,
+        "expectedOuts": 2.75,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 593974,
+        "name": "Wandy Peralta",
+        "role": "bridge",
+        "firstRelieverLikelihood": 83.43,
+        "availabilityScore": 67.65,
+        "bridgeScore": 95,
+        "expectedOuts": 5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      }
+    ]
+  },
+  "Giants": {
+    "opponent": "White Sox",
+    "topRelievers": [
+      {
+        "pitcherId": 656529,
+        "name": "Sam Hentges",
+        "role": "middle",
+        "firstRelieverLikelihood": 84.54,
+        "availabilityScore": 72.4,
+        "bridgeScore": 94,
+        "expectedOuts": 3.25,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      },
+      {
+        "pitcherId": 621366,
+        "name": "Ryan Borucki",
+        "role": "middle",
+        "firstRelieverLikelihood": 83.38,
+        "availabilityScore": 95,
+        "bridgeScore": 77.5,
+        "expectedOuts": 4.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      }
+    ]
+  },
+  "Mariners": {
+    "opponent": "Royals",
+    "topRelievers": [
+      {
+        "pitcherId": 689546,
+        "name": "Nick Davila",
+        "role": "bridge",
+        "firstRelieverLikelihood": 93,
+        "availabilityScore": 95,
+        "bridgeScore": 95,
+        "expectedOuts": 3.33,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-16"
+      },
+      {
+        "pitcherId": 681867,
+        "name": "Cooper Criswell",
+        "role": "middle",
+        "firstRelieverLikelihood": 86.86,
+        "availabilityScore": 73.55,
+        "bridgeScore": 93,
+        "expectedOuts": 2.25,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-20"
+      }
+    ]
+  },
+  "Cardinals": {
+    "opponent": "Reds",
+    "topRelievers": [
+      {
+        "pitcherId": 592773,
+        "name": "Ryne Stanek",
+        "role": "middle",
+        "firstRelieverLikelihood": 83.22,
+        "availabilityScore": 78.75,
+        "bridgeScore": 87.5,
+        "expectedOuts": 2.25,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      },
+      {
+        "pitcherId": 668941,
+        "name": "JoJo Romero",
+        "role": "middle",
+        "firstRelieverLikelihood": 71.22,
+        "availabilityScore": 66.55,
+        "bridgeScore": 73.5,
+        "expectedOuts": 3.25,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      }
+    ]
+  },
+  "Rays": {
+    "opponent": "Yankees",
+    "topRelievers": [
+      {
+        "pitcherId": 687330,
+        "name": "Kevin Kelly",
+        "role": "middle",
+        "firstRelieverLikelihood": 84.69,
+        "availabilityScore": 76.7,
+        "bridgeScore": 91.5,
+        "expectedOuts": 3.2,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-19"
+      },
+      {
+        "pitcherId": 664076,
+        "name": "Garrett Cleavinger",
+        "role": "middle",
+        "firstRelieverLikelihood": 82.55,
+        "availabilityScore": 95,
+        "bridgeScore": 76,
+        "expectedOuts": 2,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-17"
+      }
+    ]
+  },
+  "Rangers": {
+    "opponent": "Angels",
+    "topRelievers": [
+      {
+        "pitcherId": 686560,
+        "name": "Gavin Collyer",
+        "role": "middle",
+        "firstRelieverLikelihood": 89.78,
+        "availabilityScore": 95,
+        "bridgeScore": 93.7,
+        "expectedOuts": 3,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 668390,
+        "name": "Cole Winn",
+        "role": "middle",
+        "firstRelieverLikelihood": 88.14,
+        "availabilityScore": 95,
+        "bridgeScore": 90.7,
+        "expectedOuts": 3,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      }
+    ]
+  },
+  "Blue Jays": {
+    "opponent": "Pirates",
+    "topRelievers": [
+      {
+        "pitcherId": 680755,
+        "name": "Braydon Fisher",
+        "role": "middle",
+        "firstRelieverLikelihood": 90.55,
+        "availabilityScore": 95,
+        "bridgeScore": 90.5,
+        "expectedOuts": 3.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 667297,
+        "name": "Tommy Nance",
+        "role": "middle",
+        "firstRelieverLikelihood": 80.25,
+        "availabilityScore": 95,
+        "bridgeScore": 80.9,
+        "expectedOuts": 4,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-16"
+      }
+    ]
+  },
+  "Nationals": {
+    "opponent": "Braves",
+    "topRelievers": [
+      {
+        "pitcherId": 676571,
+        "name": "PJ Poulin",
+        "role": "middle",
+        "firstRelieverLikelihood": 85.72,
+        "availabilityScore": 95,
+        "bridgeScore": 86.3,
+        "expectedOuts": 2.67,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-18"
+      },
+      {
+        "pitcherId": 687849,
+        "name": "Zak Kent",
+        "role": "bulk",
+        "firstRelieverLikelihood": 79.53,
+        "availabilityScore": 95,
+        "bridgeScore": 79.6,
+        "expectedOuts": 5.5,
+        "workedYesterday": false,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-14"
+      }
+    ]
+  }
+}

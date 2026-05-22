@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..')
+const playerPropModelName = 'mlb-player-props-v1'
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -33,6 +34,13 @@ const runNodeScript = (scriptName, extraArgs = []) => {
   })
 }
 
+const runPythonWarehouse = (command, extraArgs = []) => {
+  execFileSync('python3', [path.join(rootDir, 'pipeline', 'mlb_warehouse.py'), command, ...extraArgs], {
+    cwd: rootDir,
+    stdio: 'inherit'
+  })
+}
+
 const main = () => {
   const options = parseArgs()
   const generateArgs = ['--date', options.date]
@@ -41,9 +49,22 @@ const main = () => {
     generateArgs.push('--baseline-context-date', options.baselineContextDate)
   }
 
+  // Refresh rolling bullpen and starter-form context before rebuilding the board.
+  runPythonWarehouse('prepare-mlb-day', ['--date', options.date, '--lookback-days', '3'])
   runNodeScript('generate-mlb-day-files.mjs', generateArgs)
   runNodeScript('export-mlb-lineup-model.mjs', ['--date', options.date])
   runNodeScript('export-home-run-predictions.mjs', ['--date', options.date])
+  runNodeScript('export-mlb-prop-predictions.mjs', ['--date', options.date])
+  runPythonWarehouse('import-prop-predictions', [
+    '--file',
+    path.join(rootDir, 'data-private', 'predictions', 'mlb-player-props', `${options.date}-player-props.json`)
+  ])
+  // Prop grading only makes sense once the day has actual batting boxscores stored.
+  try {
+    runPythonWarehouse('grade-prop-picks', ['--date', options.date, '--model-name', playerPropModelName])
+  } catch (error) {
+    console.warn(`Prop grading skipped for ${options.date}:`, error instanceof Error ? error.message : error)
+  }
 }
 
 main()

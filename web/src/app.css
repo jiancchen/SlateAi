@@ -1255,6 +1255,10 @@ h3 {
   background: linear-gradient(180deg, rgba(158, 198, 240, 0.08), rgba(15, 18, 17, 0.98));
 }
 
+.history-metric-card.props {
+  background: linear-gradient(180deg, rgba(142, 124, 255, 0.1), rgba(15, 18, 17, 0.98));
+}
+
 .history-metric-card.positive::before,
 .trend-dot.positive,
 .trend-point.positive {
@@ -1292,6 +1296,17 @@ h3 {
   background: var(--accent-blue);
 }
 
+.history-metric-card.props::before,
+.trend-dot.props,
+.trend-point.props {
+  background: #8e7cff;
+  fill: #8e7cff;
+}
+
+.trend-line.props {
+  stroke: #8e7cff;
+}
+
 .trend-dot.tennis,
 .trend-point.tennis {
   background: var(--accent-blue);
@@ -1300,6 +1315,12 @@ h3 {
 
 .trend-line.tennis {
   stroke: var(--accent-blue);
+}
+
+.history-subsection {
+  display: grid;
+  gap: 6px;
+  padding-top: 8px;
 }
 
 .history-section-grid,
@@ -3336,6 +3357,87 @@ h3 {
 .react-comparison-meta strong,
 .react-comparison-scoreline span {
   color: var(--heading);
+}
+
+.pitcher-summary-block {
+  display: grid;
+  gap: 8px;
+  padding: 10px 11px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.022);
+}
+
+.pitcher-summary-headline {
+  color: var(--heading);
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.pitcher-summary-line {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.pitcher-summary-kicker-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pitcher-summary-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(82, 214, 179, 0.14);
+  background: rgba(82, 214, 179, 0.05);
+  color: var(--accent);
+  font: 600 0.6rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pitcher-summary-kicker.muted {
+  border-color: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+}
+
+.pitcher-summary-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pitcher-summary-chip {
+  display: inline-grid;
+  gap: 2px;
+  min-width: 60px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(82, 214, 179, 0.16);
+  background: rgba(82, 214, 179, 0.06);
+}
+
+.pitcher-summary-chip small {
+  color: var(--muted);
+  font: 600 0.58rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pitcher-summary-chip strong {
+  color: var(--heading);
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.pitcher-summary-chip-row.secondary .pitcher-summary-chip,
+.pitcher-summary-chip.muted {
+  border-color: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.035);
 }
 
 .react-team-logo {

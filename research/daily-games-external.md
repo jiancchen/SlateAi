@@ -21,6 +21,11 @@ The rule:
   [https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-10&hydrate=probablePitcher,team](https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-10&hydrate=probablePitcher,team)
   This was the cleanest structured source for matchup times, teams, and probable pitchers.
   Local shortcut: `npm run data:list:probables -- --date YYYY-MM-DD`
+- RTSports probable pitchers fallback:
+  [https://rtsports.com/baseball/probable-pitchers](https://rtsports.com/baseball/probable-pitchers)
+  Use this when the MLB schedule API still leaves a club at `TBD` or blank. The page is backed by a cleaner XML feed:
+  `https://rtsports.com/baseball/mlb-schedule-provider.php?START=YYYY-MM-DD&DAYS=1`
+  This is a fallback-only source for probable names and records, not the primary source of truth for MLB IDs or season stats.
 - Official game feed pattern:
   `https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live`
   Use this for the trailing 3-day bullpen workload pull, all pitcher appearances, inning-by-inning first-five context, likely first-reliever estimates, and confirmed batting orders once the lineup posts.
