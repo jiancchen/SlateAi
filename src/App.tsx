@@ -171,6 +171,12 @@ const formatNumber = (value: any, digits = 1) => {
   return numericValue.toFixed(digits)
 }
 
+const formatSignedNumber = (value: any, digits = 1) => {
+  const numericValue = Number(value)
+  if (!Number.isFinite(numericValue)) return 'N/A'
+  return `${numericValue >= 0 ? '+' : ''}${numericValue.toFixed(digits)}`
+}
+
 const formatSnapshotTime = (isoString: string) => {
   if (!isoString) return ''
   return new Intl.DateTimeFormat('en-US', {
@@ -247,6 +253,22 @@ const buildTeamContextSummary = (team: AnyRecord = {}) => {
   const streak = team.streakCode ? ` | ${team.streakCode}` : ''
   return `${record} | ${rankLabel}${streak}`
 }
+
+const getMetricTone = (value: number, inverse = false) => {
+  if (!Number.isFinite(value)) return 'neutral'
+  const score = inverse ? -value : value
+  if (score >= 4) return 'accent'
+  if (score >= 1.5) return 'warning'
+  if (score <= -1.5) return 'danger'
+  return 'neutral'
+}
+
+const MetricHelp = ({ label, help }: { label: string; help: string }) => (
+  <span className="metric-help" data-help={help} tabIndex={0}>
+    <span>{label}</span>
+    <span className="metric-help-icon">?</span>
+  </span>
+)
 
 const lineupStatusLabel = (status = '') => {
   if (status === 'posted') return 'Confirmed'
@@ -958,6 +980,99 @@ function App() {
     const homeRunTargets = game.homeRunTargets?.featured ?? game.homeRunTargets?.targets ?? []
     const awayScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === awayTeam)
     const homeScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === homeTeam)
+    const awaySummary = game.lineupBoard?.away?.summary ?? awayScript ?? {}
+    const homeSummary = game.lineupBoard?.home?.summary ?? homeScript ?? {}
+    const mergeBridgeChain = (primary: AnyRecord[] = [], fallback: AnyRecord[] = []) => {
+      const fallbackByName = new Map(fallback.map((reliever: AnyRecord) => [reliever.name, reliever]))
+      if (!primary.length) return fallback
+      return primary.map((reliever: AnyRecord) => ({
+        ...(fallbackByName.get(reliever.name) ?? {}),
+        ...reliever
+      }))
+    }
+    const awayProjectionLead = projection
+      ? projection.edgeTeam === awayTeam
+        ? Number(projection.edgeHits || 0)
+        : -Number(projection.edgeHits || 0)
+      : null
+    const first5Lead = projection
+      ? projection.first5EdgeTeam === awayTeam
+        ? Number(projection.first5EdgeHits || 0)
+        : -Number(projection.first5EdgeHits || 0)
+      : null
+    const lateLead = projection
+      ? projection.lateEdgeTeam === awayTeam
+        ? Number(projection.lateEdgeHits || 0)
+        : -Number(projection.lateEdgeHits || 0)
+      : null
+    const awayBridge = mergeBridgeChain(
+      projection?.awayLikelyRelievers?.length
+        ? projection.awayLikelyRelievers
+        : game.bullpenChainContext?.away?.topRelievers ?? [],
+      awaySummary?.bullpenPitchTypeSummary?.relievers ?? []
+    )
+    const homeBridge = mergeBridgeChain(
+      projection?.homeLikelyRelievers?.length
+        ? projection.homeLikelyRelievers
+        : game.bullpenChainContext?.home?.topRelievers ?? [],
+      homeSummary?.bullpenPitchTypeSummary?.relievers ?? []
+    )
+    const awayBridgeScore = Number.isFinite(Number(projection?.awayBullpenChainScore))
+      ? Number(projection?.awayBullpenChainScore)
+      : Number(awaySummary?.bullpenPitchTypeSummary?.pressureIndex)
+    const homeBridgeScore = Number.isFinite(Number(projection?.homeBullpenChainScore))
+      ? Number(projection?.homeBullpenChainScore)
+      : Number(homeSummary?.bullpenPitchTypeSummary?.pressureIndex)
+    const awayHold = Number(projection?.awayStarterHoldConfidence)
+    const homeHold = Number(projection?.homeStarterHoldConfidence)
+    const awayStory = game.storyContext?.away?.summary
+    const homeStory = game.storyContext?.home?.summary
+    const renderBridgeChainCard = (
+      teamName: string,
+      relievers: AnyRecord[],
+      chainScore: number,
+      workloadLabel: string,
+      advantage: boolean
+    ) => (
+      <article className={`bridge-chain-card-react ${advantage ? 'advantage' : ''}`}>
+        <div className="bridge-chain-card-head">
+          <div>
+            <p className="eyebrow">{teamName} bridge chain</p>
+            <strong>{Number.isFinite(chainScore) ? `${chainScore.toFixed(1)} score` : 'No chain score'}</strong>
+          </div>
+          <span className={`builder-status-pill ${workloadLabel === 'unknown' ? 'invalid' : 'open'}`}>
+            {workloadLabel === 'unknown' ? 'Unknown workload' : workloadLabel}
+          </span>
+        </div>
+        {relievers.length ? (
+          <div className="bridge-chain-list">
+            {relievers.slice(0, 2).map((reliever) => (
+              <div key={`${teamName}-${reliever.pitcherId || reliever.name}`} className="bridge-chain-row">
+                <div>
+                  <strong>{reliever.name}</strong>
+                  <small>{reliever.role || 'middle'} · {formatNumber(reliever.expectedOuts, 2)} outs</small>
+                  {reliever.pitchMixSummary ? <small>{reliever.pitchMixSummary}</small> : null}
+                </div>
+                <div className="bridge-chain-meta">
+                  <span>First up {formatNumber(reliever.firstRelieverLikelihood, 0)}%</span>
+                  <small>
+                    {formatNumber(reliever.availabilityScore, 0)}/100 avail
+                    {reliever.backToBack ? ' · B2B' : reliever.workedYesterday ? ' · worked yesterday' : ''}
+                  </small>
+                  {reliever.topAttackers?.length ? (
+                    <small>
+                      Top attackers: {reliever.topAttackers.slice(0, 2).map((hitter: AnyRecord) => hitter.name).join(', ')}
+                    </small>
+                  ) : null}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="react-section-copy">No likely bridge chain stored yet for this club on the current warehouse pass.</p>
+        )}
+      </article>
+    )
 
     return (
       <>
@@ -975,6 +1090,7 @@ function App() {
             </div>
             <p>{awayStarter.primary}</p>
             {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
+            {awayStory ? <p className="react-section-copy">{awayStory}</p> : null}
             {awayScript ? (
               <>
                 <p className="react-section-copy">{awayScript.overview}</p>
@@ -1002,6 +1118,7 @@ function App() {
             </div>
             <p>{homeStarter.primary}</p>
             {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
+            {homeStory ? <p className="react-section-copy">{homeStory}</p> : null}
             {homeScript ? (
               <>
                 <p className="react-section-copy">{homeScript.overview}</p>
@@ -1023,7 +1140,85 @@ function App() {
               <p className="eyebrow">Game flow</p>
               <span>{projection.weather?.label || 'No weather note'}</span>
             </div>
+            <div className="mlb-signal-grid">
+              <article className={`mlb-signal-card ${getMetricTone(Number(awayProjectionLead))}`}>
+                <div className="mlb-signal-head">
+                  <MetricHelp
+                    label="Point edge"
+                    help="Projected full-game hit and traffic gap. Positive means the away side is expected to create more base traffic; negative means the home side is."
+                  />
+                  <span>{projection.edgeTeam || 'Even'}</span>
+                </div>
+                <strong>{Number.isFinite(awayProjectionLead) ? `${awayTeam} ${formatSignedNumber(awayProjectionLead, 1)} H` : 'Even board'}</strong>
+                <small>
+                  {awayTeam} {projection.awayProjectedHits} H at {projection.awayHitEfficiencyPct}% vs {homeTeam} {projection.homeProjectedHits} H at {projection.homeHitEfficiencyPct}%
+                </small>
+              </article>
+
+              <article className={`mlb-signal-card ${getMetricTone(Number(first5Lead))}`}>
+                <div className="mlb-signal-head">
+                  <MetricHelp
+                    label="First 5 edge"
+                    help="Projected first-five hit edge after folding in lineup fit, starter form, and starter hold confidence."
+                  />
+                  <span>{projection.first5EdgeTeam || 'Even'}</span>
+                </div>
+                <strong>{Number.isFinite(first5Lead) ? `${awayTeam} ${formatSignedNumber(first5Lead, 1)} H` : 'Even first 5'}</strong>
+                <small>
+                  {awayTeam} {projection.awayFirst5ProjectedHits} H vs {homeTeam} {projection.homeFirst5ProjectedHits} H
+                </small>
+              </article>
+
+              <article className={`mlb-signal-card ${getMetricTone(Number(lateLead))}`}>
+                <div className="mlb-signal-head">
+                  <MetricHelp
+                    label="Late edge"
+                    help="Projected rest-of-game hit edge once the starters hand the game to the likely bridge relievers."
+                  />
+                  <span>{projection.lateEdgeTeam || 'Even'}</span>
+                </div>
+                <strong>{Number.isFinite(lateLead) ? `${awayTeam} ${formatSignedNumber(lateLead, 1)} H` : 'Even late'}</strong>
+                <small>
+                  {awayTeam} {projection.awayLateProjectedHits} H vs {homeTeam} {projection.homeLateProjectedHits} H
+                </small>
+              </article>
+
+              <article className={`mlb-signal-card ${awayHold >= homeHold ? 'accent' : 'warning'}`}>
+                <div className="mlb-signal-head">
+                  <MetricHelp
+                    label="Starter hold"
+                    help="Estimated ability for each starter to hold their lane before handing the game to the bullpen. Higher means the starter is likelier to survive cleanly."
+                  />
+                  <span>{awayHold >= homeHold ? awayTeam : homeTeam}</span>
+                </div>
+                <strong>{awayTeam} {formatNumber(awayHold, 1)} vs {homeTeam} {formatNumber(homeHold, 1)}</strong>
+                <small>{awayTeam}: {projection.awayPitcherType} · {homeTeam}: {projection.homePitcherType}</small>
+              </article>
+
+              <article className={`mlb-signal-card ${projection.bridgeEdgeTeam ? 'warning' : 'neutral'}`}>
+                <div className="mlb-signal-head">
+                  <MetricHelp
+                    label="Bridge chain"
+                    help="Likely first two relievers plus their workload and bridge quality. This is the cleanest read on who is likelier to control the middle innings."
+                  />
+                  <span>{projection.bridgeEdgeTeam || 'Even'}</span>
+                </div>
+                <strong>{projection.bridgeEdgeTeam ? `${projection.bridgeEdgeTeam} +${formatNumber(projection.bridgeEdgeScore, 1)}` : 'No bridge split'}</strong>
+                <small>
+                  {awayTeam} {Number.isFinite(awayBridgeScore) ? awayBridgeScore.toFixed(1) : 'n/a'} vs {homeTeam} {Number.isFinite(homeBridgeScore) ? homeBridgeScore.toFixed(1) : 'n/a'}
+                </small>
+              </article>
+            </div>
             <div className="react-card-grid">
+              <article className="react-mini-panel">
+                <span className="eyebrow">Model edge</span>
+                <strong>{game.analysis?.modelEdgeLabel || 'No edge stored'}</strong>
+                <small>
+                  {game.analysis?.indicators?.projectedHitEdgeForPick !== undefined
+                    ? `${game.analysis?.participant?.name || projection.edgeTeam} carry ${formatNumber(game.analysis.indicators.projectedHitEdgeForPick, 1)} projected-hit edge for the side pick.`
+                    : 'Use together with hit edge, bridge chain, and lineup pressure.'}
+                </small>
+              </article>
               <article className="react-mini-panel">
                 <span className="eyebrow">First 5</span>
                 <strong>{projection.first5EdgeTeam || 'Even'}</strong>
@@ -1039,6 +1234,31 @@ function App() {
                 <strong>{projection.edgeTeam || game.analysis?.participant?.name}</strong>
                 <small>{projection.totals?.fullGame?.summary}</small>
               </article>
+            </div>
+          </section>
+        ) : null}
+
+        {projection ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Bridge chains</p>
+              <span>{projection.bridgeEdgeTeam ? `${projection.bridgeEdgeTeam} hold the cleaner middle-innings lane` : 'Bridge lanes are close on this pass'}</span>
+            </div>
+            <div className="bridge-chain-grid-react">
+              {renderBridgeChainCard(
+                awayTeam,
+                awayBridge,
+                awayBridgeScore,
+                projection.awayBullpenExhaustionLabel || 'unknown',
+                projection.bridgeEdgeTeam === awayTeam
+              )}
+              {renderBridgeChainCard(
+                homeTeam,
+                homeBridge,
+                homeBridgeScore,
+                projection.homeBullpenExhaustionLabel || 'unknown',
+                projection.bridgeEdgeTeam === homeTeam
+              )}
             </div>
           </section>
         ) : null}
@@ -1059,7 +1279,75 @@ function App() {
                       <strong>{teamName}</strong>
                       <small>{lineupStatusLabel(index === 0 ? game.lineupBoard?.status?.away : game.lineupBoard?.status?.home)}</small>
                     </div>
-                    <p className="react-section-copy">{lineupTeam.summary?.overview || lineupTeam.summary?.bullpenOverview || lineupTeam.opposingStarter?.pitchMixSummary}</p>
+                    <div className="react-pill-row">
+                      <span className="game-highlight-chip neutral">
+                        <MetricHelp
+                          label={`Top third ${formatNumber(lineupTeam.summary?.topThirdScore, 1)}`}
+                          help="How strong the top of the order looks against today's starter lane. Higher means more early scoring pressure."
+                        />
+                      </span>
+                      <span className="game-highlight-chip neutral">
+                        <MetricHelp
+                          label={`Depth ${formatNumber(lineupTeam.summary?.depthScore, 0)}`}
+                          help="Bottom-half lineup quality after the stars. Higher depth matters more once the lineup turns over and the game gets into middle innings."
+                        />
+                      </span>
+                      <span className="game-highlight-chip accent">
+                        <MetricHelp
+                          label={lineupTeam.summary?.pressureLabel || 'Lineup pressure'}
+                          help="Short read on how this batting order is expected to apply pressure today based on form, split fit, and pitch-type matchup."
+                        />
+                      </span>
+                    </div>
+                    <div className="lineup-matchup-board">
+                      <div className="lineup-matchup-head">
+                        <strong>
+                          Vs {lineupTeam.opposingStarter?.name} ({lineupTeam.opposingStarter?.hand}HP, {lineupTeam.opposingStarter?.type?.toLowerCase() || 'unknown lane'})
+                        </strong>
+                        <small>{lineupTeam.opposingStarter?.pitchMixSummary || 'Pitch mix not stored'}</small>
+                      </div>
+                      <p className="react-section-copy">{lineupTeam.summary?.overview || lineupTeam.summary?.bullpenOverview || lineupTeam.opposingStarter?.pitchMixSummary}</p>
+                      <div className="react-pill-row">
+                        {(lineupTeam.summary?.overperformHitters || []).slice(0, 3).map((hitter: AnyRecord) => (
+                          <span key={`${teamName}-carry-${hitter.name}`} className="game-highlight-chip accent">
+                            {hitter.name} {hitter.tag}
+                          </span>
+                        ))}
+                        {(lineupTeam.summary?.underperformHitters || []).slice(0, 2).map((hitter: AnyRecord) => (
+                          <span key={`${teamName}-fade-${hitter.name}`} className="game-highlight-chip danger">
+                            {hitter.name} {hitter.tag}
+                          </span>
+                        ))}
+                      </div>
+                      {lineupTeam.summary?.bullpenOverview ? <small>{lineupTeam.summary.bullpenOverview}</small> : null}
+                      {lineupTeam.summary?.bullpenOverperformHitters?.length ? (
+                        <div className="react-pill-row">
+                          {lineupTeam.summary.bullpenOverperformHitters.slice(0, 3).map((hitter: AnyRecord) => (
+                            <span key={`${teamName}-bridge-${hitter.name}-${hitter.slot ?? 'x'}`} className="game-highlight-chip warning">
+                              Bridge: {hitter.name}
+                            </span>
+                          ))}
+                        </div>
+                      ) : null}
+                      {lineupTeam.bvpHistory ? (
+                        <div className="lineup-bvp-block">
+                          <small>{lineupTeam.bvpHistory.summary}</small>
+                          <div className="react-pill-row">
+                            {(lineupTeam.bvpHistory.hot || []).slice(0, 2).map((entry: AnyRecord) => (
+                              <span key={`${teamName}-bvp-hot-${entry.name}`} className="game-highlight-chip accent">
+                                BvP hot: {entry.name} {entry.sample}
+                                {entry.homeRuns ? `, ${entry.homeRuns} HR` : ''}
+                              </span>
+                            ))}
+                            {(lineupTeam.bvpHistory.cold || []).slice(0, 2).map((entry: AnyRecord) => (
+                              <span key={`${teamName}-bvp-cold-${entry.name}`} className="game-highlight-chip danger">
+                                BvP cold: {entry.name} {entry.sample}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
                     <div className="react-lineup-list">
                       {(lineupTeam.lineup ?? []).slice(0, 9).map((player: AnyRecord) => (
                         <div key={`${teamName}-${player.playerId}-${player.slot}`} className="react-lineup-player">
@@ -1067,7 +1355,15 @@ function App() {
                             <strong>{player.slot}. {player.name}</strong>
                             <small>{player.position} · {player.bats} · {player.primaryTag}</small>
                           </div>
-                          <span>{player.matchupNote}</span>
+                          <div className="react-lineup-player-metrics">
+                            <span className={`game-highlight-chip ${getMetricTone(Number(player.metrics?.matchupGrade))}`}>
+                              Matchup {formatSignedNumber(player.metrics?.matchupGrade, 1)}
+                            </span>
+                            <span className={`game-highlight-chip ${getMetricTone(Number(player.metrics?.pitchTypeGrade))}`}>
+                              Pitch fit {formatSignedNumber(player.metrics?.pitchTypeGrade, 1)}
+                            </span>
+                          </div>
+                          <span>{player.matchupNote} · {player.pitchType?.summary || player.summary}</span>
                         </div>
                       ))}
                     </div>
@@ -1519,10 +1815,10 @@ function App() {
                         <p className="react-section-copy">{selectedGame.odds?.note || selectedGame.summary}</p>
                         <div className="react-prop-grid">
                           {(selectedGame.odds?.markets ?? []).map((market: AnyRecord) => (
-                            <article key={`${selectedGame.id}-${market.label}`} className="react-prop-card">
-                              <div className="react-prop-head">
+                            <article key={`${selectedGame.id}-${market.label}`} className="react-prop-card odds-market-card">
+                              <div className="odds-market-head">
                                 <strong>{market.label}</strong>
-                                <span>{market.book || selectedGame.odds?.provider}</span>
+                                <small>{market.book || selectedGame.odds?.provider}</small>
                               </div>
                               <p>{market.value}</p>
                             </article>

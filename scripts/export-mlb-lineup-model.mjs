@@ -143,7 +143,7 @@ const shiftDate = (isoDate, deltaDays) => {
 
 const fetchJson = async (url) => {
   const response = await fetch(url, {
-    headers: { 'User-Agent': 'Mozilla/5.0' }
+    headers: { 'User-Agent': 'Mozilla/5.0', 'X-Requested-With': 'XMLHttpRequest' }
   })
 
   if (!response.ok) {
@@ -151,6 +151,98 @@ const fetchJson = async (url) => {
   }
 
   return response.json()
+}
+
+const fetchRotoWireBvpRows = async ({ date, type }) => {
+  const url =
+    'https://www.rotowire.com/baseball/tables/matchup.php?' +
+    new URLSearchParams({
+      type,
+      start: date,
+      end: date,
+      bab: '10',
+      bhotavg: '400',
+      bhotops: '850',
+      bhothr: '3',
+      bcoldavg: '200',
+      bcoldops: '500',
+      bcoldhr: '0.15',
+      pab: '60',
+      photavg: '225',
+      photops: '600',
+      photkbb: '6',
+      pcoldavg: '300',
+      pcoldops: '850',
+      pcoldkbb: '1'
+    }).toString()
+
+  try {
+    const rows = await fetchJson(url)
+    return Array.isArray(rows) ? rows : []
+  } catch (error) {
+    console.warn(`Unable to load RotoWire ${type} BvP rows for ${date}:`, error.message)
+    return []
+  }
+}
+
+const buildBvpHistory = ({ lineup = [], opposingPitcherId = null, opposingPitcherName = '', hotRows = [], coldRows = [] }) => {
+  const normalizedPitcherId = Number(opposingPitcherId)
+  const normalizedPitcherName = normalizePersonName(opposingPitcherName)
+  if ((!Number.isFinite(normalizedPitcherId) && !normalizedPitcherName) || !lineup.length) {
+    return {
+      hot: [],
+      cold: [],
+      summary: 'No meaningful batter-vs-pitcher sample has surfaced for this lineup yet.'
+    }
+  }
+
+  const lineupNames = new Set(lineup.map((player) => normalizePersonName(player.name)))
+  const mapRow = (row, tone) => ({
+    name: `${row.playerfirstname} ${row.playerlastname}`.trim(),
+    sample: `${row.hits}/${row.atbats}`,
+    atBats: Number(row.atbats) || 0,
+    avg: row.avg,
+    ops: row.ops,
+    homeRuns: Number(row.hr) || 0,
+    rbi: Number(row.rbi) || 0,
+    tone,
+    summary: `${row.hits}/${row.atbats}, ${row.hr} HR, ${row.rbi} RBI, ${row.ops} OPS vs ${row.pitcherfirstname} ${row.pitcherlastname}`
+  })
+
+  const hot = hotRows
+    .filter(
+      (row) =>
+        ((Number.isFinite(normalizedPitcherId) && Number(row.pitcherID) === normalizedPitcherId) ||
+          normalizePersonName(`${row.pitcherfirstname} ${row.pitcherlastname}`) === normalizedPitcherName) &&
+        lineupNames.has(normalizePersonName(`${row.playerfirstname} ${row.playerlastname}`))
+    )
+    .map((row) => mapRow(row, 'hot'))
+    .sort((left, right) => right.homeRuns - left.homeRuns || right.atBats - left.atBats)
+
+  const cold = coldRows
+    .filter(
+      (row) =>
+        ((Number.isFinite(normalizedPitcherId) && Number(row.pitcherID) === normalizedPitcherId) ||
+          normalizePersonName(`${row.pitcherfirstname} ${row.pitcherlastname}`) === normalizedPitcherName) &&
+        lineupNames.has(normalizePersonName(`${row.playerfirstname} ${row.playerlastname}`))
+    )
+    .map((row) => mapRow(row, 'cold'))
+    .sort((left, right) => right.atBats - left.atBats)
+
+  let summary = 'No meaningful batter-vs-pitcher sample has surfaced for this lineup yet.'
+  if (hot.length && cold.length) {
+    summary = `BvP sample is mixed: ${hot[0].name} owns the cleanest history, but ${cold[0].name} shows the coldest prior lane.`
+  } else if (hot.length) {
+    summary = `${hot[0].name} carries the cleanest visible BvP lane against this starter.`
+  } else if (cold.length) {
+    summary = `${cold[0].name} carries the weakest visible BvP lane against this starter.`
+  }
+
+  return {
+    hot,
+    cold,
+    summary
+  }
 }
 
 const fetchText = async (url) => {
@@ -1456,6 +1548,11 @@ const main = async () => {
     })
   }
 
+  const [hotBatterBvpRows, coldBatterBvpRows] = await Promise.all([
+    fetchRotoWireBvpRows({ date: options.date, type: 'hotbatter' }),
+    fetchRotoWireBvpRows({ date: options.date, type: 'coldbatter' })
+  ])
+
   const allPlayerIds = [
     ...new Set(
       feedRecords.flatMap((record) => [
@@ -1632,6 +1729,20 @@ const main = async () => {
             depthScore: 50
           }
         }
+    const awayBvpHistory = buildBvpHistory({
+      lineup: awayLineup,
+      opposingPitcherId: rawGame.homePitcher?.id,
+      opposingPitcherName: rawGame.homePitcher?.fullName,
+      hotRows: hotBatterBvpRows,
+      coldRows: coldBatterBvpRows
+    })
+    const homeBvpHistory = buildBvpHistory({
+      lineup: homeLineup,
+      opposingPitcherId: rawGame.awayPitcher?.id,
+      opposingPitcherName: rawGame.awayPitcher?.fullName,
+      hotRows: hotBatterBvpRows,
+      coldRows: coldBatterBvpRows
+    })
 
     lineupBoardsByGameId[rawGame.id] = {
       gameId: rawGame.id,
@@ -1651,6 +1762,7 @@ const main = async () => {
         teamName: awayDesk,
         lineupSource: awaySelection.source,
         opposingStarter: {
+          id: rawGame.homePitcher?.id || null,
           name: awayPitcher?.fullName || '',
           hand: awayPitcher?.handedness || '',
           type: awayPitcher?.profileType || 'Unknown sample',
@@ -1672,12 +1784,14 @@ const main = async () => {
               .join(' / ') || ''
         })),
         lineup: awayLineup,
+        bvpHistory: awayBvpHistory,
         ...awaySummary
       },
       home: {
         teamName: homeDesk,
         lineupSource: homeSelection.source,
         opposingStarter: {
+          id: rawGame.awayPitcher?.id || null,
           name: homePitcher?.fullName || '',
           hand: homePitcher?.handedness || '',
           type: homePitcher?.profileType || 'Unknown sample',
@@ -1699,6 +1813,7 @@ const main = async () => {
               .join(' / ') || ''
         })),
         lineup: homeLineup,
+        bvpHistory: homeBvpHistory,
         ...homeSummary
       }
     }

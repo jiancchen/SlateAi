@@ -1,20 +1,20 @@
 {
   "meta": {
     "date": "2026-05-21",
-    "snapshot": "2026-05-21T15:07:28.626Z",
+    "snapshot": "2026-05-21T16:49:56.224Z",
     "recentWindow": {
       "start": "2026-05-14",
       "end": "2026-05-20"
     },
     "gameCount": 7,
-    "playerCount": 122,
+    "playerCount": 121,
     "sourceLabel": "Official MLB feed/live batting orders plus official player season, recent, handedness split, and Statcast pitch-arsenal matchup data, supplemented by RotoWire daily lineups and weather when the official order is still missing."
   },
   "lineupBoardsByGameId": {
     "guardians-tigers": {
       "gameId": "guardians-tigers",
       "title": "Guardians @ Tigers",
-      "snapshot": "2026-05-21T15:07:28.619Z",
+      "snapshot": "2026-05-21T16:49:56.219Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -29,7 +29,7 @@
         "label": "53°F | Wind 13 mph L-R | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "DET -119",
+        "line": "DET -121",
         "total": "7.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -37,12 +37,28 @@
         "teamName": "Guardians",
         "lineupSource": "official-feed",
         "opposingStarter": {
+          "id": 663554,
           "name": "Casey Mize",
           "hand": "R",
           "type": "Contact suppressor",
           "pitchMixSummary": "4-Seam Fastball 32% / Split-Finger 29% / Slider 24%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Kyle Finnegan",
+            "role": "bridge",
+            "availabilityScore": 55.8,
+            "firstRelieverLikelihood": 79.28,
+            "pitchMixSummary": "4-Seam Fastball 56% / Split-Finger 32% / Slider 12%"
+          },
+          {
+            "name": "Burch Smith",
+            "role": "middle",
+            "availabilityScore": 76.25,
+            "firstRelieverLikelihood": 75.99,
+            "pitchMixSummary": "4-Seam Fastball 42% / Curveball 25% / Cutter 23%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 682177,
@@ -1145,6 +1161,23 @@
             "matchupNote": "+6.58 vs Casey Mize"
           }
         ],
+        "bvpHistory": {
+          "hot": [
+            {
+              "name": "Jose Ramirez",
+              "sample": "5/10",
+              "atBats": 10,
+              "avg": ".500",
+              "ops": "1.645",
+              "homeRuns": 2,
+              "rbi": 4,
+              "tone": "hot",
+              "summary": "5/10, 2 HR, 4 RBI, 1.645 OPS vs Casey Mize"
+            }
+          ],
+          "cold": [],
+          "summary": "Jose Ramirez carries the cleanest visible BvP lane against this starter."
+        },
         "aggregate": {
           "averageMatchupGrade": 2.1,
           "trackedBatters": 9,
@@ -1162,12 +1195,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 94,
           "pitchTypePressureIndex": 52.3,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 65.4,
           "starterPressureIndex": 85.6,
-          "overallPressureIndex": 85.6,
+          "overallPressureIndex": 88.1,
           "topThirdScore": 48.5,
           "depthScore": 48.7,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "José Ramírez",
+              "slot": 2,
+              "tag": "carry | fit +6.5"
+            },
+            {
+              "name": "Brayan Rocchio",
+              "slot": 9,
+              "tag": "carry | fit +5.0"
+            },
+            {
+              "name": "Angel Martínez",
+              "slot": 6,
+              "tag": "carry | fit +2.0"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -1185,7 +1234,23 @@
               "tag": "carry | +7.85 vs Casey Mize"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "José Ramírez",
+              "slot": 2,
+              "tag": "carry | fit +6.5"
+            },
+            {
+              "name": "Brayan Rocchio",
+              "slot": 9,
+              "tag": "carry | fit +5.0"
+            },
+            {
+              "name": "Angel Martínez",
+              "slot": 6,
+              "tag": "carry | fit +2.0"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Daniel Schneemann",
@@ -1198,23 +1263,129 @@
           ],
           "underperformNote": "Daniel Schneemann and Patrick Bailey carry the softer form or split fit into a contact suppressor lane.",
           "overview": "Guardians can lean on José Ramírez, Travis Bazzana, Rhys Hoskins to drive early pressure against Casey Mize.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Kyle Finnegan is the first bridge look, and this lineup grades +3.0 against that likely first-up arsenal.",
           "topThirdScore": 48.5,
           "middleScore": 89.6,
           "depthScore": 48.7,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 65.4,
+            "averageFitScore": 61.3,
+            "averageFitGrade": 0.9,
+            "firstReliever": {
+              "pitcherId": 640448,
+              "name": "Kyle Finnegan",
+              "role": "bridge",
+              "availabilityScore": 55.8,
+              "firstRelieverLikelihood": 79.28,
+              "fitScore": 67.2,
+              "fitGrade": 2.95,
+              "pitchMixSummary": "4-Seam Fastball 56% / Split-Finger 32% / Slider 12%",
+              "topAttackers": [
+                {
+                  "name": "José Ramírez",
+                  "slot": 2,
+                  "tag": "carry | fit +6.5"
+                },
+                {
+                  "name": "Brayan Rocchio",
+                  "slot": 9,
+                  "tag": "carry | fit +5.0"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 640448,
+                "name": "Kyle Finnegan",
+                "role": "bridge",
+                "availabilityScore": 55.8,
+                "firstRelieverLikelihood": 79.28,
+                "fitScore": 67.2,
+                "fitGrade": 2.95,
+                "pitchMixSummary": "4-Seam Fastball 56% / Split-Finger 32% / Slider 12%",
+                "topAttackers": [
+                  {
+                    "name": "José Ramírez",
+                    "slot": 2,
+                    "tag": "carry | fit +6.5"
+                  },
+                  {
+                    "name": "Brayan Rocchio",
+                    "slot": 9,
+                    "tag": "carry | fit +5.0"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 572143,
+                "name": "Burch Smith",
+                "role": "middle",
+                "availabilityScore": 76.25,
+                "firstRelieverLikelihood": 75.99,
+                "fitScore": 55.3,
+                "fitGrade": -1.15,
+                "pitchMixSummary": "4-Seam Fastball 42% / Curveball 25% / Cutter 23%",
+                "topAttackers": [
+                  {
+                    "name": "Angel Martínez",
+                    "slot": 6,
+                    "tag": "carry | fit +2.0"
+                  },
+                  {
+                    "name": "José Ramírez",
+                    "slot": 2,
+                    "tag": "carry | fit +1.2"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "José Ramírez",
+                "slot": 2,
+                "tag": "carry | fit +6.5"
+              },
+              {
+                "name": "Brayan Rocchio",
+                "slot": 9,
+                "tag": "carry | fit +5.0"
+              },
+              {
+                "name": "Angel Martínez",
+                "slot": 6,
+                "tag": "carry | fit +2.0"
+              }
+            ],
+            "overview": "Kyle Finnegan is the first bridge look, and this lineup grades +3.0 against that likely first-up arsenal."
+          }
         }
       },
       "home": {
         "teamName": "Tigers",
         "lineupSource": "official-feed",
         "opposingStarter": {
+          "id": 676282,
           "name": "Joey Cantillo",
           "hand": "L",
           "type": "Balanced",
           "pitchMixSummary": "4-Seam Fastball 45% / Changeup 27% / Curveball 17%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Matt Festa",
+            "role": "middle",
+            "availabilityScore": 80.1,
+            "firstRelieverLikelihood": 88,
+            "pitchMixSummary": "Sweeper 47% / 4-Seam Fastball 40% / Sinker 7%"
+          },
+          {
+            "name": "Tim Herrin",
+            "role": "middle",
+            "availabilityScore": 79,
+            "firstRelieverLikelihood": 74.06,
+            "pitchMixSummary": "Slider 30% / Curveball 28% / Sinker 22%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 663837,
@@ -2314,6 +2485,11 @@
             "matchupNote": "-8.00 vs Joey Cantillo"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [],
+          "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        },
         "aggregate": {
           "averageMatchupGrade": -0.41,
           "trackedBatters": 9,
@@ -2331,12 +2507,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 85.7,
           "pitchTypePressureIndex": 73.1,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 60.1,
           "starterPressureIndex": 49.7,
-          "overallPressureIndex": 49.7,
+          "overallPressureIndex": 51.3,
           "topThirdScore": 48.8,
           "depthScore": 30.6,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Dillon Dingler",
+              "slot": 3,
+              "tag": "split edge | fit +6.3"
+            },
+            {
+              "name": "Riley Greene",
+              "slot": 4,
+              "tag": "carry | fit +5.6"
+            },
+            {
+              "name": "Riley Greene",
+              "slot": 4,
+              "tag": "carry | fit +3.9"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -2354,7 +2546,23 @@
               "tag": "split edge | +4.50 vs Joey Cantillo"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Dillon Dingler",
+              "slot": 3,
+              "tag": "split edge | fit +6.3"
+            },
+            {
+              "name": "Riley Greene",
+              "slot": 4,
+              "tag": "carry | fit +5.6"
+            },
+            {
+              "name": "Riley Greene",
+              "slot": 4,
+              "tag": "carry | fit +3.9"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Kevin McGonigle",
@@ -2367,18 +2575,108 @@
           ],
           "underperformNote": "Kevin McGonigle and Zack Short carry the softer form or split fit into a balanced lane.",
           "overview": "Tigers can lean on Riley Greene, Matt Vierling, Jahmai Jones to drive early pressure against Joey Cantillo.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Matt Festa is the first bridge look, and this lineup grades +1.8 against that likely first-up arsenal.",
           "topThirdScore": 48.8,
           "middleScore": 66,
           "depthScore": 30.6,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 60.1,
+            "averageFitScore": 57.7,
+            "averageFitGrade": 0.27,
+            "firstReliever": {
+              "pitcherId": 670036,
+              "name": "Matt Festa",
+              "role": "middle",
+              "availabilityScore": 80.1,
+              "firstRelieverLikelihood": 88,
+              "fitScore": 61.1,
+              "fitGrade": 1.81,
+              "pitchMixSummary": "Sweeper 47% / 4-Seam Fastball 40% / Sinker 7%",
+              "topAttackers": [
+                {
+                  "name": "Dillon Dingler",
+                  "slot": 3,
+                  "tag": "split edge | fit +6.3"
+                },
+                {
+                  "name": "Riley Greene",
+                  "slot": 4,
+                  "tag": "carry | fit +5.6"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 670036,
+                "name": "Matt Festa",
+                "role": "middle",
+                "availabilityScore": 80.1,
+                "firstRelieverLikelihood": 88,
+                "fitScore": 61.1,
+                "fitGrade": 1.81,
+                "pitchMixSummary": "Sweeper 47% / 4-Seam Fastball 40% / Sinker 7%",
+                "topAttackers": [
+                  {
+                    "name": "Dillon Dingler",
+                    "slot": 3,
+                    "tag": "split edge | fit +6.3"
+                  },
+                  {
+                    "name": "Riley Greene",
+                    "slot": 4,
+                    "tag": "carry | fit +5.6"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 682120,
+                "name": "Tim Herrin",
+                "role": "middle",
+                "availabilityScore": 79,
+                "firstRelieverLikelihood": 74.06,
+                "fitScore": 54.2,
+                "fitGrade": -1.27,
+                "pitchMixSummary": "Slider 30% / Curveball 28% / Sinker 22%",
+                "topAttackers": [
+                  {
+                    "name": "Riley Greene",
+                    "slot": 4,
+                    "tag": "carry | fit +3.9"
+                  },
+                  {
+                    "name": "Jahmai Jones",
+                    "slot": 5,
+                    "tag": "split edge | fit +2.0"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Dillon Dingler",
+                "slot": 3,
+                "tag": "split edge | fit +6.3"
+              },
+              {
+                "name": "Riley Greene",
+                "slot": 4,
+                "tag": "carry | fit +5.6"
+              },
+              {
+                "name": "Riley Greene",
+                "slot": 4,
+                "tag": "carry | fit +3.9"
+              }
+            ],
+            "overview": "Matt Festa is the first bridge look, and this lineup grades +1.8 against that likely first-up arsenal."
+          }
         }
       }
     },
     "pirates-cardinals": {
       "gameId": "pirates-cardinals",
       "title": "Pirates @ Cardinals",
-      "snapshot": "2026-05-21T15:07:28.621Z",
+      "snapshot": "2026-05-21T16:49:56.220Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -2393,20 +2691,36 @@
         "label": "68°F | Wind 8 mph In | 1% precip"
       },
       "marketWeatherContext": {
-        "line": "PIT -123",
-        "total": "7.5 Runs",
+        "line": "PIT -122",
+        "total": "7.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
         "teamName": "Pirates",
         "lineupSource": "official-feed",
         "opposingStarter": {
+          "id": 669160,
           "name": "Dustin May",
           "hand": "R",
           "type": "Traffic-risk",
           "pitchMixSummary": "4-Seam Fastball 27% / Cutter 22% / Sweeper 18%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Ryne Stanek",
+            "role": "middle",
+            "availabilityScore": 78.75,
+            "firstRelieverLikelihood": 83.22,
+            "pitchMixSummary": "4-Seam Fastball 52% / Slider 25% / Split-Finger 12%"
+          },
+          {
+            "name": "Gordon Graceffo",
+            "role": "middle",
+            "availabilityScore": 70.6,
+            "firstRelieverLikelihood": 78.85,
+            "pitchMixSummary": "4-Seam Fastball 43% / Slider 24% / Curveball 17%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 665833,
@@ -2606,15 +2920,15 @@
               "formScore": 43,
               "splitScore": 73.3,
               "varianceScore": 92,
-              "pitchTypeFitScore": 76.5,
-              "pitchTypeGrade": 5.33,
+              "pitchTypeFitScore": 76.2,
+              "pitchTypeGrade": 5.28,
               "pitchTypeCoveragePct": 100,
               "matchupScore": 94,
               "matchupGrade": 10
             },
             "pitchType": {
-              "fitScore": 76.5,
-              "fitGrade": 5.33,
+              "fitScore": 76.2,
+              "fitGrade": 5.28,
               "coveragePct": 100,
               "summary": "4-Seam Fastball 27% / Cutter 22% / Sweeper 18% | fit +5.3",
               "topPitches": [
@@ -2638,8 +2952,8 @@
                   "pitchType": "ST",
                   "pitchName": "Sweeper",
                   "pitchUsage": 18.3,
-                  "fitGrade": 1.15,
-                  "batterFitScore": 34.3,
+                  "fitGrade": 0.91,
+                  "batterFitScore": 33,
                   "qualityScore": 28
                 }
               ]
@@ -2728,14 +3042,14 @@
               "formScore": 21.4,
               "splitScore": 40.3,
               "varianceScore": 60.2,
-              "pitchTypeFitScore": 78.2,
+              "pitchTypeFitScore": 78.8,
               "pitchTypeGrade": 5.02,
               "pitchTypeCoveragePct": 100,
               "matchupScore": 71,
               "matchupGrade": 5.37
             },
             "pitchType": {
-              "fitScore": 78.2,
+              "fitScore": 78.8,
               "fitGrade": 5.02,
               "coveragePct": 100,
               "summary": "4-Seam Fastball 27% / Cutter 22% / Sweeper 18% | fit +5.0",
@@ -2761,7 +3075,7 @@
                   "pitchName": "Sweeper",
                   "pitchUsage": 18.3,
                   "fitGrade": 10,
-                  "batterFitScore": 91,
+                  "batterFitScore": 94,
                   "qualityScore": 28
                 }
               ]
@@ -3217,14 +3531,14 @@
               "formScore": 44.4,
               "splitScore": 35.2,
               "varianceScore": 56.4,
-              "pitchTypeFitScore": 53.2,
+              "pitchTypeFitScore": 54,
               "pitchTypeGrade": 2.07,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 37.3,
+              "matchupScore": 37.4,
               "matchupGrade": -2.58
             },
             "pitchType": {
-              "fitScore": 53.2,
+              "fitScore": 54,
               "fitGrade": 2.07,
               "coveragePct": 100,
               "summary": "4-Seam Fastball 27% / Cutter 22% / Sweeper 18% | fit +2.1",
@@ -3250,7 +3564,7 @@
                   "pitchName": "Sweeper",
                   "pitchUsage": 18.3,
                   "fitGrade": 10,
-                  "batterFitScore": 90.1,
+                  "batterFitScore": 94,
                   "qualityScore": 28
                 }
               ]
@@ -3507,6 +3821,11 @@
             "matchupNote": "-8.00 vs Dustin May"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [],
+          "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        },
         "aggregate": {
           "averageMatchupGrade": 3.06,
           "trackedBatters": 9,
@@ -3524,12 +3843,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 87.7,
           "pitchTypePressureIndex": 94,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 61.6,
           "starterPressureIndex": 94,
           "overallPressureIndex": 94,
           "topThirdScore": 78.7,
           "depthScore": 40.4,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Spencer Horwitz",
+              "slot": 4,
+              "tag": "carry | fit +5.0"
+            },
+            {
+              "name": "Bryan Reynolds",
+              "slot": 3,
+              "tag": "carry | fit +4.3"
+            },
+            {
+              "name": "Brandon Lowe",
+              "slot": 2,
+              "tag": "carry | fit +3.2"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -3547,7 +3882,23 @@
               "tag": "carry | +7.77 vs Dustin May"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Spencer Horwitz",
+              "slot": 4,
+              "tag": "carry | fit +5.0"
+            },
+            {
+              "name": "Bryan Reynolds",
+              "slot": 3,
+              "tag": "carry | fit +4.3"
+            },
+            {
+              "name": "Brandon Lowe",
+              "slot": 2,
+              "tag": "carry | fit +3.2"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Henry Davis",
@@ -3560,23 +3911,129 @@
           ],
           "underperformNote": "Henry Davis and Marcell Ozuna carry the softer form or split fit into a traffic-risk lane.",
           "overview": "Pirates can lean on Brandon Lowe, Spencer Horwitz, Konnor Griffin to drive early pressure against Dustin May.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Ryne Stanek is the first bridge look, and this lineup grades +2.7 against that likely first-up arsenal.",
           "topThirdScore": 78.7,
           "middleScore": 72.7,
           "depthScore": 40.4,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 61.6,
+            "averageFitScore": 53.2,
+            "averageFitGrade": 0.84,
+            "firstReliever": {
+              "pitcherId": 592773,
+              "name": "Ryne Stanek",
+              "role": "middle",
+              "availabilityScore": 78.75,
+              "firstRelieverLikelihood": 83.22,
+              "fitScore": 58.6,
+              "fitGrade": 2.73,
+              "pitchMixSummary": "4-Seam Fastball 52% / Slider 25% / Split-Finger 12%",
+              "topAttackers": [
+                {
+                  "name": "Spencer Horwitz",
+                  "slot": 4,
+                  "tag": "carry | fit +5.0"
+                },
+                {
+                  "name": "Bryan Reynolds",
+                  "slot": 3,
+                  "tag": "carry | fit +4.3"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 592773,
+                "name": "Ryne Stanek",
+                "role": "middle",
+                "availabilityScore": 78.75,
+                "firstRelieverLikelihood": 83.22,
+                "fitScore": 58.6,
+                "fitGrade": 2.73,
+                "pitchMixSummary": "4-Seam Fastball 52% / Slider 25% / Split-Finger 12%",
+                "topAttackers": [
+                  {
+                    "name": "Spencer Horwitz",
+                    "slot": 4,
+                    "tag": "carry | fit +5.0"
+                  },
+                  {
+                    "name": "Bryan Reynolds",
+                    "slot": 3,
+                    "tag": "carry | fit +4.3"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 700669,
+                "name": "Gordon Graceffo",
+                "role": "middle",
+                "availabilityScore": 70.6,
+                "firstRelieverLikelihood": 78.85,
+                "fitScore": 47.7,
+                "fitGrade": -1.05,
+                "pitchMixSummary": "4-Seam Fastball 43% / Slider 24% / Curveball 17%",
+                "topAttackers": [
+                  {
+                    "name": "Brandon Lowe",
+                    "slot": 2,
+                    "tag": "carry | fit +3.2"
+                  },
+                  {
+                    "name": "Oneil Cruz",
+                    "slot": 1,
+                    "tag": "carry | fit +0.5"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Spencer Horwitz",
+                "slot": 4,
+                "tag": "carry | fit +5.0"
+              },
+              {
+                "name": "Bryan Reynolds",
+                "slot": 3,
+                "tag": "carry | fit +4.3"
+              },
+              {
+                "name": "Brandon Lowe",
+                "slot": 2,
+                "tag": "carry | fit +3.2"
+              }
+            ],
+            "overview": "Ryne Stanek is the first bridge look, and this lineup grades +2.7 against that likely first-up arsenal."
+          }
         }
       },
       "home": {
         "teamName": "Cardinals",
         "lineupSource": "official-feed",
         "opposingStarter": {
+          "id": 677952,
           "name": "Braxton Ashcraft",
           "hand": "R",
           "type": "Contact suppressor",
           "pitchMixSummary": "4-Seam Fastball 32% / Curveball 26% / Slider 21%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Isaac Mattson",
+            "role": "bridge",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 90.5,
+            "pitchMixSummary": "4-Seam Fastball 81% / Changeup 9% / Curveball 6%"
+          },
+          {
+            "name": "Gregory Soto",
+            "role": "middle",
+            "availabilityScore": 75.35,
+            "firstRelieverLikelihood": 75.76,
+            "pitchMixSummary": "Sinker 37% / Sweeper 26% / 4-Seam Fastball 19%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 802139,
@@ -4677,6 +5134,11 @@
             "matchupNote": "-5.79 vs Braxton Ashcraft"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [],
+          "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        },
         "aggregate": {
           "averageMatchupGrade": 0.03,
           "trackedBatters": 9,
@@ -4694,12 +5156,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 67.7,
           "pitchTypePressureIndex": 76.6,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 62.8,
           "starterPressureIndex": 73.4,
-          "overallPressureIndex": 73.4,
+          "overallPressureIndex": 75.4,
           "topThirdScore": 64,
           "depthScore": 33.6,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Alec Burleson",
+              "slot": 3,
+              "tag": "carry | fit +8.4"
+            },
+            {
+              "name": "Jordan Walker",
+              "slot": 4,
+              "tag": "carry | fit +8.3"
+            },
+            {
+              "name": "Alec Burleson",
+              "slot": 3,
+              "tag": "carry | fit -0.1"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -4717,7 +5195,23 @@
               "tag": "carry | +6.03 vs Braxton Ashcraft"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Alec Burleson",
+              "slot": 3,
+              "tag": "carry | fit +8.4"
+            },
+            {
+              "name": "Jordan Walker",
+              "slot": 4,
+              "tag": "carry | fit +8.3"
+            },
+            {
+              "name": "Alec Burleson",
+              "slot": 3,
+              "tag": "carry | fit -0.1"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Masyn Winn",
@@ -4730,18 +5224,108 @@
           ],
           "underperformNote": "Masyn Winn and José Fermín carry the softer form or split fit into a contact suppressor lane.",
           "overview": "Cardinals can lean on Alec Burleson, Jordan Walker, Nolan Gorman to drive early pressure against Braxton Ashcraft.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Isaac Mattson is the first bridge look, and this lineup grades +4.3 against that likely first-up arsenal.",
           "topThirdScore": 64,
           "middleScore": 61.9,
           "depthScore": 33.6,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 62.8,
+            "averageFitScore": 63.7,
+            "averageFitGrade": 1.15,
+            "firstReliever": {
+              "pitcherId": 676755,
+              "name": "Isaac Mattson",
+              "role": "bridge",
+              "availabilityScore": 95,
+              "firstRelieverLikelihood": 90.5,
+              "fitScore": 70.7,
+              "fitGrade": 4.25,
+              "pitchMixSummary": "4-Seam Fastball 81% / Changeup 9% / Curveball 6%",
+              "topAttackers": [
+                {
+                  "name": "Alec Burleson",
+                  "slot": 3,
+                  "tag": "carry | fit +8.4"
+                },
+                {
+                  "name": "Jordan Walker",
+                  "slot": 4,
+                  "tag": "carry | fit +8.3"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 676755,
+                "name": "Isaac Mattson",
+                "role": "bridge",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 90.5,
+                "fitScore": 70.7,
+                "fitGrade": 4.25,
+                "pitchMixSummary": "4-Seam Fastball 81% / Changeup 9% / Curveball 6%",
+                "topAttackers": [
+                  {
+                    "name": "Alec Burleson",
+                    "slot": 3,
+                    "tag": "carry | fit +8.4"
+                  },
+                  {
+                    "name": "Jordan Walker",
+                    "slot": 4,
+                    "tag": "carry | fit +8.3"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 642397,
+                "name": "Gregory Soto",
+                "role": "middle",
+                "availabilityScore": 75.35,
+                "firstRelieverLikelihood": 75.76,
+                "fitScore": 56.7,
+                "fitGrade": -1.95,
+                "pitchMixSummary": "Sinker 37% / Sweeper 26% / 4-Seam Fastball 19%",
+                "topAttackers": [
+                  {
+                    "name": "Alec Burleson",
+                    "slot": 3,
+                    "tag": "carry | fit -0.1"
+                  },
+                  {
+                    "name": "Jordan Walker",
+                    "slot": 4,
+                    "tag": "carry | fit -0.4"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Alec Burleson",
+                "slot": 3,
+                "tag": "carry | fit +8.4"
+              },
+              {
+                "name": "Jordan Walker",
+                "slot": 4,
+                "tag": "carry | fit +8.3"
+              },
+              {
+                "name": "Alec Burleson",
+                "slot": 3,
+                "tag": "carry | fit -0.1"
+              }
+            ],
+            "overview": "Isaac Mattson is the first bridge look, and this lineup grades +4.3 against that likely first-up arsenal."
+          }
         }
       }
     },
     "mets-nationals": {
       "gameId": "mets-nationals",
       "title": "Mets @ Nationals",
-      "snapshot": "2026-05-21T15:07:28.622Z",
+      "snapshot": "2026-05-21T16:49:56.221Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -4757,19 +5341,35 @@
       },
       "marketWeatherContext": {
         "line": "NYM -114",
-        "total": "8.0 Runs",
+        "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
         "teamName": "Mets",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 676917,
           "name": "Cade Cavalli",
           "hand": "R",
           "type": "Volatile bat-misser",
           "pitchMixSummary": "4-Seam Fastball 33% / Curveball 24% / Sinker 17%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Zak Kent",
+            "role": "bulk",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 79.53,
+            "pitchMixSummary": "4-Seam Fastball 43% / Slider 43% / Curveball 14%"
+          },
+          {
+            "name": "Brad Lord",
+            "role": "bridge",
+            "availabilityScore": 53.6,
+            "firstRelieverLikelihood": 78.51,
+            "pitchMixSummary": "4-Seam Fastball 36% / Slider 24% / Sinker 23%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 701807,
@@ -5873,6 +6473,11 @@
             "matchupNote": "-8.00 vs Cade Cavalli"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [],
+          "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        },
         "aggregate": {
           "averageMatchupGrade": 3.62,
           "trackedBatters": 9,
@@ -5890,12 +6495,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 89.4,
           "pitchTypePressureIndex": 94,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 69.2,
           "starterPressureIndex": 94,
           "overallPressureIndex": 94,
           "topThirdScore": 90.6,
           "depthScore": 59.6,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Juan Soto",
+              "slot": 3,
+              "tag": "carry | fit +5.9"
+            },
+            {
+              "name": "A.J. Ewing",
+              "slot": 8,
+              "tag": "carry | fit +5.1"
+            },
+            {
+              "name": "Juan Soto",
+              "slot": 3,
+              "tag": "carry | fit +3.4"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -5913,7 +6534,23 @@
               "tag": "carry | +10.00 vs Cade Cavalli"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Juan Soto",
+              "slot": 3,
+              "tag": "carry | fit +5.9"
+            },
+            {
+              "name": "A.J. Ewing",
+              "slot": 8,
+              "tag": "carry | fit +5.1"
+            },
+            {
+              "name": "Juan Soto",
+              "slot": 3,
+              "tag": "carry | fit +3.4"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "MJ Melendez",
@@ -5926,23 +6563,129 @@
           ],
           "underperformNote": "MJ Melendez and Luis Torrens carry the softer form or split fit into a volatile bat-misser lane.",
           "overview": "Mets can lean on Carson Benge, Juan Soto, Brett Baty to drive early pressure against Cade Cavalli.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Zak Kent is the first bridge look, and this lineup grades +3.5 against that likely first-up arsenal.",
           "topThirdScore": 90.6,
           "middleScore": 51.3,
           "depthScore": 59.6,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 69.2,
+            "averageFitScore": 56.9,
+            "averageFitGrade": 1.83,
+            "firstReliever": {
+              "pitcherId": 687849,
+              "name": "Zak Kent",
+              "role": "bulk",
+              "availabilityScore": 95,
+              "firstRelieverLikelihood": 79.53,
+              "fitScore": 56.5,
+              "fitGrade": 3.52,
+              "pitchMixSummary": "4-Seam Fastball 43% / Slider 43% / Curveball 14%",
+              "topAttackers": [
+                {
+                  "name": "Juan Soto",
+                  "slot": 3,
+                  "tag": "carry | fit +5.9"
+                },
+                {
+                  "name": "A.J. Ewing",
+                  "slot": 8,
+                  "tag": "carry | fit +5.1"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 687849,
+                "name": "Zak Kent",
+                "role": "bulk",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 79.53,
+                "fitScore": 56.5,
+                "fitGrade": 3.52,
+                "pitchMixSummary": "4-Seam Fastball 43% / Slider 43% / Curveball 14%",
+                "topAttackers": [
+                  {
+                    "name": "Juan Soto",
+                    "slot": 3,
+                    "tag": "carry | fit +5.9"
+                  },
+                  {
+                    "name": "A.J. Ewing",
+                    "slot": 8,
+                    "tag": "carry | fit +5.1"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 695418,
+                "name": "Brad Lord",
+                "role": "bridge",
+                "availabilityScore": 53.6,
+                "firstRelieverLikelihood": 78.51,
+                "fitScore": 57.2,
+                "fitGrade": 0.14,
+                "pitchMixSummary": "4-Seam Fastball 36% / Slider 24% / Sinker 23%",
+                "topAttackers": [
+                  {
+                    "name": "Juan Soto",
+                    "slot": 3,
+                    "tag": "carry | fit +3.4"
+                  },
+                  {
+                    "name": "A.J. Ewing",
+                    "slot": 8,
+                    "tag": "carry | fit +2.0"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Juan Soto",
+                "slot": 3,
+                "tag": "carry | fit +5.9"
+              },
+              {
+                "name": "A.J. Ewing",
+                "slot": 8,
+                "tag": "carry | fit +5.1"
+              },
+              {
+                "name": "Juan Soto",
+                "slot": 3,
+                "tag": "carry | fit +3.4"
+              }
+            ],
+            "overview": "Zak Kent is the first bridge look, and this lineup grades +3.5 against that likely first-up arsenal."
+          }
         }
       },
       "home": {
         "teamName": "Nationals",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 656849,
           "name": "David Peterson",
           "hand": "L",
           "type": "Traffic-risk",
           "pitchMixSummary": "Sinker 32% / Slider 23% / 4-Seam Fastball 21%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Brooks Raley",
+            "role": "middle",
+            "availabilityScore": 72.45,
+            "firstRelieverLikelihood": 77.05,
+            "pitchMixSummary": "Sweeper 45% / Sinker 23% / Cutter 19%"
+          },
+          {
+            "name": "Tobias Myers",
+            "role": "middle",
+            "availabilityScore": 68.35,
+            "firstRelieverLikelihood": 74.85,
+            "pitchMixSummary": "4-Seam Fastball 50% / Split-Finger 21% / Slider 17%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 695578,
@@ -7029,6 +7772,34 @@
             "matchupNote": "+10.00 vs David Peterson"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [
+            {
+              "name": "CJ Abrams",
+              "sample": "4/22",
+              "atBats": 22,
+              "avg": ".182",
+              "ops": ".462",
+              "homeRuns": 0,
+              "rbi": 1,
+              "tone": "cold",
+              "summary": "4/22, 0 HR, 1 RBI, .462 OPS vs David Peterson"
+            },
+            {
+              "name": "James Wood",
+              "sample": "4/15",
+              "atBats": 15,
+              "avg": ".267",
+              "ops": ".579",
+              "homeRuns": 0,
+              "rbi": 1,
+              "tone": "cold",
+              "summary": "4/15, 0 HR, 1 RBI, .579 OPS vs David Peterson"
+            }
+          ],
+          "summary": "CJ Abrams carries the weakest visible BvP lane against this starter."
+        },
         "aggregate": {
           "averageMatchupGrade": 4.55,
           "trackedBatters": 9,
@@ -7046,12 +7817,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 92.6,
           "pitchTypePressureIndex": 94,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 63.7,
           "starterPressureIndex": 94,
           "overallPressureIndex": 94,
           "topThirdScore": 85.5,
           "depthScore": 68.7,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Andres Chaparro",
+              "slot": 3,
+              "tag": "carry | fit +5.9"
+            },
+            {
+              "name": "Dylan Crews",
+              "slot": 5,
+              "tag": "split edge | fit +0.8"
+            },
+            {
+              "name": "James Wood",
+              "slot": 1,
+              "tag": "carry | fit +4.8"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -7069,7 +7856,23 @@
               "tag": "carry | +10.00 vs David Peterson"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Andres Chaparro",
+              "slot": 3,
+              "tag": "carry | fit +5.9"
+            },
+            {
+              "name": "Dylan Crews",
+              "slot": 5,
+              "tag": "split edge | fit +0.8"
+            },
+            {
+              "name": "James Wood",
+              "slot": 1,
+              "tag": "carry | fit +4.8"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Nasim Nunez",
@@ -7082,18 +7885,108 @@
           ],
           "underperformNote": "Nasim Nunez and Daylen Lile carry the softer form or split fit into a traffic-risk lane.",
           "overview": "Nationals can lean on James Wood, Curtis Mead, Jacob Young to drive early pressure against David Peterson.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Brooks Raley is the first bridge look, and this lineup grades +0.4 against that likely first-up arsenal.",
           "topThirdScore": 85.5,
           "middleScore": 51.5,
           "depthScore": 68.7,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 63.7,
+            "averageFitScore": 58.8,
+            "averageFitGrade": 0.79,
+            "firstReliever": {
+              "pitcherId": 548384,
+              "name": "Brooks Raley",
+              "role": "middle",
+              "availabilityScore": 72.45,
+              "firstRelieverLikelihood": 77.05,
+              "fitScore": 55.9,
+              "fitGrade": 0.43,
+              "pitchMixSummary": "Sweeper 45% / Sinker 23% / Cutter 19%",
+              "topAttackers": [
+                {
+                  "name": "Andres Chaparro",
+                  "slot": 3,
+                  "tag": "carry | fit +5.9"
+                },
+                {
+                  "name": "Dylan Crews",
+                  "slot": 5,
+                  "tag": "split edge | fit +0.8"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 548384,
+                "name": "Brooks Raley",
+                "role": "middle",
+                "availabilityScore": 72.45,
+                "firstRelieverLikelihood": 77.05,
+                "fitScore": 55.9,
+                "fitGrade": 0.43,
+                "pitchMixSummary": "Sweeper 45% / Sinker 23% / Cutter 19%",
+                "topAttackers": [
+                  {
+                    "name": "Andres Chaparro",
+                    "slot": 3,
+                    "tag": "carry | fit +5.9"
+                  },
+                  {
+                    "name": "Dylan Crews",
+                    "slot": 5,
+                    "tag": "split edge | fit +0.8"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 668964,
+                "name": "Tobias Myers",
+                "role": "middle",
+                "availabilityScore": 68.35,
+                "firstRelieverLikelihood": 74.85,
+                "fitScore": 61.6,
+                "fitGrade": 1.15,
+                "pitchMixSummary": "4-Seam Fastball 50% / Split-Finger 21% / Slider 17%",
+                "topAttackers": [
+                  {
+                    "name": "James Wood",
+                    "slot": 1,
+                    "tag": "carry | fit +4.8"
+                  },
+                  {
+                    "name": "CJ Abrams",
+                    "slot": 4,
+                    "tag": "carry | fit +4.3"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Andres Chaparro",
+                "slot": 3,
+                "tag": "carry | fit +5.9"
+              },
+              {
+                "name": "Dylan Crews",
+                "slot": 5,
+                "tag": "split edge | fit +0.8"
+              },
+              {
+                "name": "James Wood",
+                "slot": 1,
+                "tag": "carry | fit +4.8"
+              }
+            ],
+            "overview": "Brooks Raley is the first bridge look, and this lineup grades +0.4 against that likely first-up arsenal."
+          }
         }
       }
     },
     "braves-marlins": {
       "gameId": "braves-marlins",
       "title": "Braves @ Marlins",
-      "snapshot": "2026-05-21T15:07:28.623Z",
+      "snapshot": "2026-05-21T16:49:56.222Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -7116,12 +8009,28 @@
         "teamName": "Braves",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 645261,
           "name": "Sandy Alcantara",
           "hand": "R",
           "type": "Balanced",
           "pitchMixSummary": "Changeup 24% / Sinker 23% / 4-Seam Fastball 20%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Anthony Bender",
+            "role": "middle",
+            "availabilityScore": 69.7,
+            "firstRelieverLikelihood": 81.67,
+            "pitchMixSummary": "Sweeper 46% / Sinker 32% / Slider 17%"
+          },
+          {
+            "name": "Andrew Nardi",
+            "role": "middle",
+            "availabilityScore": 70.6,
+            "firstRelieverLikelihood": 81.22,
+            "pitchMixSummary": "4-Seam Fastball 50% / Sweeper 26% / Slider 13%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 621566,
@@ -7977,6 +8886,68 @@
             "matchupNote": "-8.00 vs Sandy Alcantara"
           }
         ],
+        "bvpHistory": {
+          "hot": [
+            {
+              "name": "Ozzie Albies",
+              "sample": "15/45",
+              "atBats": 45,
+              "avg": ".333",
+              "ops": ".999",
+              "homeRuns": 3,
+              "rbi": 10,
+              "tone": "hot",
+              "summary": "15/45, 3 HR, 10 RBI, .999 OPS vs Sandy Alcantara"
+            }
+          ],
+          "cold": [
+            {
+              "name": "Austin Riley",
+              "sample": "5/32",
+              "atBats": 32,
+              "avg": ".156",
+              "ops": ".393",
+              "homeRuns": 0,
+              "rbi": 1,
+              "tone": "cold",
+              "summary": "5/32, 0 HR, 1 RBI, .393 OPS vs Sandy Alcantara"
+            },
+            {
+              "name": "Matt Olson",
+              "sample": "2/25",
+              "atBats": 25,
+              "avg": ".080",
+              "ops": ".259",
+              "homeRuns": 0,
+              "rbi": 0,
+              "tone": "cold",
+              "summary": "2/25, 0 HR, 0 RBI, .259 OPS vs Sandy Alcantara"
+            },
+            {
+              "name": "Dominic Smith",
+              "sample": "5/23",
+              "atBats": 23,
+              "avg": ".217",
+              "ops": ".478",
+              "homeRuns": 0,
+              "rbi": 2,
+              "tone": "cold",
+              "summary": "5/23, 0 HR, 2 RBI, .478 OPS vs Sandy Alcantara"
+            },
+            {
+              "name": "Ha-Seong Kim",
+              "sample": "1/12",
+              "atBats": 12,
+              "avg": ".083",
+              "ops": ".479",
+              "homeRuns": 0,
+              "rbi": 0,
+              "tone": "cold",
+              "summary": "1/12, 0 HR, 0 RBI, .479 OPS vs Sandy Alcantara"
+            }
+          ],
+          "summary": "BvP sample is mixed: Ozzie Albies owns the cleanest history, but Austin Riley shows the coldest prior lane."
+        },
         "aggregate": {
           "averageMatchupGrade": -3.76,
           "trackedBatters": 7,
@@ -7994,12 +8965,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 64.9,
           "pitchTypePressureIndex": 42.4,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 49.7,
           "starterPressureIndex": 18,
           "overallPressureIndex": 18,
           "topThirdScore": 35.9,
           "depthScore": 18,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Matt Olson",
+              "slot": 3,
+              "tag": "split edge | fit +2.2"
+            },
+            {
+              "name": "Dominic Smith",
+              "slot": 6,
+              "tag": "split edge | fit -0.9"
+            },
+            {
+              "name": "Matt Olson",
+              "slot": 3,
+              "tag": "split edge | fit +5.9"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "traffic-only lane",
@@ -8013,7 +9000,23 @@
               "tag": "heater | +2.34 vs Sandy Alcantara"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Matt Olson",
+              "slot": 3,
+              "tag": "split edge | fit +2.2"
+            },
+            {
+              "name": "Dominic Smith",
+              "slot": 6,
+              "tag": "split edge | fit -0.9"
+            },
+            {
+              "name": "Matt Olson",
+              "slot": 3,
+              "tag": "split edge | fit +5.9"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Ozzie Albies",
@@ -8026,23 +9029,129 @@
           ],
           "underperformNote": "Ozzie Albies and Ha-Seong Kim carry the softer form or split fit into a balanced lane.",
           "overview": "Braves can lean on Austin Riley, Mike Yastrzemski to drive early pressure against Sandy Alcantara.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Anthony Bender is the first bridge look, and this lineup grades -2.0 against that likely first-up arsenal.",
           "topThirdScore": 35.9,
           "middleScore": 42.6,
           "depthScore": 18,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 49.7,
+            "averageFitScore": 49.5,
+            "averageFitGrade": -0.43,
+            "firstReliever": {
+              "pitcherId": 669622,
+              "name": "Anthony Bender",
+              "role": "middle",
+              "availabilityScore": 69.7,
+              "firstRelieverLikelihood": 81.67,
+              "fitScore": 45.1,
+              "fitGrade": -1.97,
+              "pitchMixSummary": "Sweeper 46% / Sinker 32% / Slider 17%",
+              "topAttackers": [
+                {
+                  "name": "Matt Olson",
+                  "slot": 3,
+                  "tag": "split edge | fit +2.2"
+                },
+                {
+                  "name": "Dominic Smith",
+                  "slot": 6,
+                  "tag": "split edge | fit -0.9"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 669622,
+                "name": "Anthony Bender",
+                "role": "middle",
+                "availabilityScore": 69.7,
+                "firstRelieverLikelihood": 81.67,
+                "fitScore": 45.1,
+                "fitGrade": -1.97,
+                "pitchMixSummary": "Sweeper 46% / Sinker 32% / Slider 17%",
+                "topAttackers": [
+                  {
+                    "name": "Matt Olson",
+                    "slot": 3,
+                    "tag": "split edge | fit +2.2"
+                  },
+                  {
+                    "name": "Dominic Smith",
+                    "slot": 6,
+                    "tag": "split edge | fit -0.9"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 677053,
+                "name": "Andrew Nardi",
+                "role": "middle",
+                "availabilityScore": 70.6,
+                "firstRelieverLikelihood": 81.22,
+                "fitScore": 53.8,
+                "fitGrade": 1.11,
+                "pitchMixSummary": "4-Seam Fastball 50% / Sweeper 26% / Slider 13%",
+                "topAttackers": [
+                  {
+                    "name": "Matt Olson",
+                    "slot": 3,
+                    "tag": "split edge | fit +5.9"
+                  },
+                  {
+                    "name": "Dominic Smith",
+                    "slot": 6,
+                    "tag": "split edge | fit +5.2"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Matt Olson",
+                "slot": 3,
+                "tag": "split edge | fit +2.2"
+              },
+              {
+                "name": "Dominic Smith",
+                "slot": 6,
+                "tag": "split edge | fit -0.9"
+              },
+              {
+                "name": "Matt Olson",
+                "slot": 3,
+                "tag": "split edge | fit +5.9"
+              }
+            ],
+            "overview": "Anthony Bender is the first bridge look, and this lineup grades -2.0 against that likely first-up arsenal."
+          }
         }
       },
       "home": {
         "teamName": "Marlins",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 675911,
           "name": "Spencer Strider",
           "hand": "R",
           "type": "Unknown sample",
           "pitchMixSummary": "4-Seam Fastball 49% / Slider 28% / Curveball 17%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Martín Pérez",
+            "role": "bridge",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 90.5,
+            "pitchMixSummary": "Changeup 32% / Sinker 28% / Cutter 21%"
+          },
+          {
+            "name": "Reynaldo López",
+            "role": "bridge",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 90.5,
+            "pitchMixSummary": "4-Seam Fastball 53% / Slider 33% / Curveball 10%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 669364,
@@ -9144,6 +10253,11 @@
             "matchupNote": "-8.00 vs Spencer Strider"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [],
+          "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        },
         "aggregate": {
           "averageMatchupGrade": -0.28,
           "trackedBatters": 9,
@@ -9161,12 +10275,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 74.5,
           "pitchTypePressureIndex": 78.5,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 69,
           "starterPressureIndex": 65.1,
-          "overallPressureIndex": 65.1,
+          "overallPressureIndex": 68.1,
           "topThirdScore": 69,
           "depthScore": 31.6,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Liam Hicks",
+              "slot": 2,
+              "tag": "split edge | fit +3.2"
+            },
+            {
+              "name": "Xavier Edwards",
+              "slot": 1,
+              "tag": "heater | fit +1.3"
+            },
+            {
+              "name": "Otto Lopez",
+              "slot": 3,
+              "tag": "carry | fit +7.7"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -9184,7 +10314,23 @@
               "tag": "heater | +4.78 vs Spencer Strider"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Liam Hicks",
+              "slot": 2,
+              "tag": "split edge | fit +3.2"
+            },
+            {
+              "name": "Xavier Edwards",
+              "slot": 1,
+              "tag": "heater | fit +1.3"
+            },
+            {
+              "name": "Otto Lopez",
+              "slot": 3,
+              "tag": "carry | fit +7.7"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Christopher Morel",
@@ -9197,18 +10343,108 @@
           ],
           "underperformNote": "Christopher Morel and Owen Caissie carry the softer form or split fit into a unknown sample lane.",
           "overview": "Marlins can lean on Jakob Marsee, Otto Lopez, Xavier Edwards to drive early pressure against Spencer Strider.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Martín Pérez is the first bridge look, and this lineup grades +0.7 against that likely first-up arsenal.",
           "topThirdScore": 69,
           "middleScore": 46.6,
           "depthScore": 31.6,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 69,
+            "averageFitScore": 59,
+            "averageFitGrade": 1.64,
+            "firstReliever": {
+              "pitcherId": 527048,
+              "name": "Martín Pérez",
+              "role": "bridge",
+              "availabilityScore": 95,
+              "firstRelieverLikelihood": 90.5,
+              "fitScore": 59.4,
+              "fitGrade": 0.67,
+              "pitchMixSummary": "Changeup 32% / Sinker 28% / Cutter 21%",
+              "topAttackers": [
+                {
+                  "name": "Liam Hicks",
+                  "slot": 2,
+                  "tag": "split edge | fit +3.2"
+                },
+                {
+                  "name": "Xavier Edwards",
+                  "slot": 1,
+                  "tag": "heater | fit +1.3"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 527048,
+                "name": "Martín Pérez",
+                "role": "bridge",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 90.5,
+                "fitScore": 59.4,
+                "fitGrade": 0.67,
+                "pitchMixSummary": "Changeup 32% / Sinker 28% / Cutter 21%",
+                "topAttackers": [
+                  {
+                    "name": "Liam Hicks",
+                    "slot": 2,
+                    "tag": "split edge | fit +3.2"
+                  },
+                  {
+                    "name": "Xavier Edwards",
+                    "slot": 1,
+                    "tag": "heater | fit +1.3"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 625643,
+                "name": "Reynaldo López",
+                "role": "bridge",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 90.5,
+                "fitScore": 58.5,
+                "fitGrade": 2.61,
+                "pitchMixSummary": "4-Seam Fastball 53% / Slider 33% / Curveball 10%",
+                "topAttackers": [
+                  {
+                    "name": "Otto Lopez",
+                    "slot": 3,
+                    "tag": "carry | fit +7.7"
+                  },
+                  {
+                    "name": "Xavier Edwards",
+                    "slot": 1,
+                    "tag": "heater | fit +6.9"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Liam Hicks",
+                "slot": 2,
+                "tag": "split edge | fit +3.2"
+              },
+              {
+                "name": "Xavier Edwards",
+                "slot": 1,
+                "tag": "heater | fit +1.3"
+              },
+              {
+                "name": "Otto Lopez",
+                "slot": 3,
+                "tag": "carry | fit +7.7"
+              }
+            ],
+            "overview": "Martín Pérez is the first bridge look, and this lineup grades +0.7 against that likely first-up arsenal."
+          }
         }
       }
     },
     "blue-jays-yankees": {
       "gameId": "blue-jays-yankees",
       "title": "Blue Jays @ Yankees",
-      "snapshot": "2026-05-21T15:07:28.624Z",
+      "snapshot": "2026-05-21T16:49:56.223Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -9223,20 +10459,36 @@
         "label": "62°F | Wind 5 mph R-L | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "NYY -150",
-        "total": "8.0 Runs",
+        "line": "NYY -149",
+        "total": "8.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
         "teamName": "Blue Jays",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 607074,
           "name": "Carlos Rodón",
           "hand": "L",
           "type": "Unknown sample",
           "pitchMixSummary": "4-Seam Fastball 40% / Slider 29% / Sinker 21%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Ryan Yarbrough",
+            "role": "bridge",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 88.3,
+            "pitchMixSummary": "Cutter 30% / Sweeper 21% / 4-Seam Fastball 21%"
+          },
+          {
+            "name": "Fernando Cruz",
+            "role": "middle",
+            "availabilityScore": 71.75,
+            "firstRelieverLikelihood": 83.65,
+            "pitchMixSummary": "Split-Finger 52% / 4-Seam Fastball 32% / Slider 13%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 543807,
@@ -10210,6 +11462,56 @@
             "matchupNote": "-8.00 vs Carlos Rodón"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [
+            {
+              "name": "George Springer",
+              "sample": "5/26",
+              "atBats": 26,
+              "avg": ".192",
+              "ops": ".784",
+              "homeRuns": 2,
+              "rbi": 6,
+              "tone": "cold",
+              "summary": "5/26, 2 HR, 6 RBI, .784 OPS vs Carlos Rodon"
+            },
+            {
+              "name": "Ernie Clement",
+              "sample": "3/13",
+              "atBats": 13,
+              "avg": ".231",
+              "ops": ".462",
+              "homeRuns": 0,
+              "rbi": 0,
+              "tone": "cold",
+              "summary": "3/13, 0 HR, 0 RBI, .462 OPS vs Carlos Rodon"
+            },
+            {
+              "name": "Myles Straw",
+              "sample": "1/11",
+              "atBats": 11,
+              "avg": ".091",
+              "ops": ".322",
+              "homeRuns": 0,
+              "rbi": 0,
+              "tone": "cold",
+              "summary": "1/11, 0 HR, 0 RBI, .322 OPS vs Carlos Rodon"
+            },
+            {
+              "name": "Davis Schneider",
+              "sample": "2/11",
+              "atBats": 11,
+              "avg": ".182",
+              "ops": ".580",
+              "homeRuns": 0,
+              "rbi": 0,
+              "tone": "cold",
+              "summary": "2/11, 0 HR, 0 RBI, .580 OPS vs Carlos Rodon"
+            }
+          ],
+          "summary": "George Springer carries the weakest visible BvP lane against this starter."
+        },
         "aggregate": {
           "averageMatchupGrade": -1.83,
           "trackedBatters": 8,
@@ -10227,12 +11529,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 71.1,
           "pitchTypePressureIndex": 43.5,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 40.6,
           "starterPressureIndex": 28.8,
-          "overallPressureIndex": 28.8,
+          "overallPressureIndex": 27.3,
           "topThirdScore": 34.9,
           "depthScore": 37,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "George Springer",
+              "slot": 1,
+              "tag": "heater | fit -0.8"
+            },
+            {
+              "name": "Lenyn Sosa",
+              "slot": 4,
+              "tag": "split edge | fit -2.8"
+            },
+            {
+              "name": "Myles Straw",
+              "slot": 7,
+              "tag": "split edge | fit +5.8"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -10250,7 +11568,23 @@
               "tag": "heater | +2.04 vs Carlos Rodón"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "George Springer",
+              "slot": 1,
+              "tag": "heater | fit -0.8"
+            },
+            {
+              "name": "Lenyn Sosa",
+              "slot": 4,
+              "tag": "split edge | fit -2.8"
+            },
+            {
+              "name": "Myles Straw",
+              "slot": 7,
+              "tag": "split edge | fit +5.8"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Kazuma Okamoto",
@@ -10263,23 +11597,129 @@
           ],
           "underperformNote": "Kazuma Okamoto and Myles Straw carry the softer form or split fit into a unknown sample lane.",
           "overview": "Blue Jays can lean on Daulton Varsho, George Springer, Ernie Clement to drive early pressure against Carlos Rodón.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Ryan Yarbrough is the first bridge look, and this lineup grades -3.5 against that likely first-up arsenal.",
           "topThirdScore": 34.9,
           "middleScore": 59.4,
           "depthScore": 37,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 40.6,
+            "averageFitScore": 48.5,
+            "averageFitGrade": -1.43,
+            "firstReliever": {
+              "pitcherId": 642232,
+              "name": "Ryan Yarbrough",
+              "role": "bridge",
+              "availabilityScore": 95,
+              "firstRelieverLikelihood": 88.3,
+              "fitScore": 39.3,
+              "fitGrade": -3.47,
+              "pitchMixSummary": "Cutter 30% / Sweeper 21% / 4-Seam Fastball 21%",
+              "topAttackers": [
+                {
+                  "name": "George Springer",
+                  "slot": 1,
+                  "tag": "heater | fit -0.8"
+                },
+                {
+                  "name": "Lenyn Sosa",
+                  "slot": 4,
+                  "tag": "split edge | fit -2.8"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 642232,
+                "name": "Ryan Yarbrough",
+                "role": "bridge",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 88.3,
+                "fitScore": 39.3,
+                "fitGrade": -3.47,
+                "pitchMixSummary": "Cutter 30% / Sweeper 21% / 4-Seam Fastball 21%",
+                "topAttackers": [
+                  {
+                    "name": "George Springer",
+                    "slot": 1,
+                    "tag": "heater | fit -0.8"
+                  },
+                  {
+                    "name": "Lenyn Sosa",
+                    "slot": 4,
+                    "tag": "split edge | fit -2.8"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 518585,
+                "name": "Fernando Cruz",
+                "role": "middle",
+                "availabilityScore": 71.75,
+                "firstRelieverLikelihood": 83.65,
+                "fitScore": 57.7,
+                "fitGrade": 0.61,
+                "pitchMixSummary": "Split-Finger 52% / 4-Seam Fastball 32% / Slider 13%",
+                "topAttackers": [
+                  {
+                    "name": "Myles Straw",
+                    "slot": 7,
+                    "tag": "split edge | fit +5.8"
+                  },
+                  {
+                    "name": "Kazuma Okamoto",
+                    "slot": 3,
+                    "tag": "split edge | fit +4.5"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "George Springer",
+                "slot": 1,
+                "tag": "heater | fit -0.8"
+              },
+              {
+                "name": "Lenyn Sosa",
+                "slot": 4,
+                "tag": "split edge | fit -2.8"
+              },
+              {
+                "name": "Myles Straw",
+                "slot": 7,
+                "tag": "split edge | fit +5.8"
+              }
+            ],
+            "overview": "Ryan Yarbrough is the first bridge look, and this lineup grades -3.5 against that likely first-up arsenal."
+          }
         }
       },
       "home": {
         "teamName": "Yankees",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 680755,
           "name": "Braydon Fisher",
           "hand": "R",
           "type": "Contact suppressor",
           "pitchMixSummary": "Slider 48% / Curveball 26% / 4-Seam Fastball 18%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Tommy Nance",
+            "role": "middle",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 80.25,
+            "pitchMixSummary": "Curveball 36% / Slider 34% / Sinker 30%"
+          },
+          {
+            "name": "Joe Mantiply",
+            "role": "middle",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 75.48,
+            "pitchMixSummary": "Sinker 46% / Curveball 28% / Changeup 27%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 700250,
@@ -11258,6 +12698,11 @@
             "matchupNote": "-8.00 vs Braydon Fisher"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [],
+          "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        },
         "aggregate": {
           "averageMatchupGrade": -3.02,
           "trackedBatters": 8,
@@ -11275,12 +12720,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 52.7,
           "pitchTypePressureIndex": 59.7,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 69.2,
           "starterPressureIndex": 39.4,
-          "overallPressureIndex": 39.4,
+          "overallPressureIndex": 42.5,
           "topThirdScore": 58.2,
           "depthScore": 18,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Cody Bellinger",
+              "slot": 2,
+              "tag": "carry | fit +5.4"
+            },
+            {
+              "name": "Aaron Judge",
+              "slot": 3,
+              "tag": "cold | fit +1.9"
+            },
+            {
+              "name": "Paul Goldschmidt",
+              "slot": 5,
+              "tag": "carry | fit +5.0"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -11298,7 +12759,23 @@
               "tag": "carry | +4.01 vs Braydon Fisher"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Cody Bellinger",
+              "slot": 2,
+              "tag": "carry | fit +5.4"
+            },
+            {
+              "name": "Aaron Judge",
+              "slot": 3,
+              "tag": "cold | fit +1.9"
+            },
+            {
+              "name": "Paul Goldschmidt",
+              "slot": 5,
+              "tag": "carry | fit +5.0"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Aaron Judge",
@@ -11311,18 +12788,108 @@
           ],
           "underperformNote": "Aaron Judge and Spencer Jones carry the softer form or split fit into a contact suppressor lane.",
           "overview": "Yankees can lean on Cody Bellinger, Ben Rice, Paul Goldschmidt to drive early pressure against Braydon Fisher.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Tommy Nance is the first bridge look, and this lineup grades +0.4 against that likely first-up arsenal.",
           "topThirdScore": 58.2,
           "middleScore": 35.2,
           "depthScore": 18,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 69.2,
+            "averageFitScore": 65.7,
+            "averageFitGrade": 1.21,
+            "firstReliever": {
+              "pitcherId": 667297,
+              "name": "Tommy Nance",
+              "role": "middle",
+              "availabilityScore": 95,
+              "firstRelieverLikelihood": 80.25,
+              "fitScore": 61,
+              "fitGrade": 0.43,
+              "pitchMixSummary": "Curveball 36% / Slider 34% / Sinker 30%",
+              "topAttackers": [
+                {
+                  "name": "Cody Bellinger",
+                  "slot": 2,
+                  "tag": "carry | fit +5.4"
+                },
+                {
+                  "name": "Aaron Judge",
+                  "slot": 3,
+                  "tag": "cold | fit +1.9"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 667297,
+                "name": "Tommy Nance",
+                "role": "middle",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 80.25,
+                "fitScore": 61,
+                "fitGrade": 0.43,
+                "pitchMixSummary": "Curveball 36% / Slider 34% / Sinker 30%",
+                "topAttackers": [
+                  {
+                    "name": "Cody Bellinger",
+                    "slot": 2,
+                    "tag": "carry | fit +5.4"
+                  },
+                  {
+                    "name": "Aaron Judge",
+                    "slot": 3,
+                    "tag": "cold | fit +1.9"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 573009,
+                "name": "Joe Mantiply",
+                "role": "middle",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 75.48,
+                "fitScore": 70.4,
+                "fitGrade": 1.99,
+                "pitchMixSummary": "Sinker 46% / Curveball 28% / Changeup 27%",
+                "topAttackers": [
+                  {
+                    "name": "Paul Goldschmidt",
+                    "slot": 5,
+                    "tag": "carry | fit +5.0"
+                  },
+                  {
+                    "name": "Ben Rice",
+                    "slot": 1,
+                    "tag": "split edge | fit +3.3"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Cody Bellinger",
+                "slot": 2,
+                "tag": "carry | fit +5.4"
+              },
+              {
+                "name": "Aaron Judge",
+                "slot": 3,
+                "tag": "cold | fit +1.9"
+              },
+              {
+                "name": "Paul Goldschmidt",
+                "slot": 5,
+                "tag": "carry | fit +5.0"
+              }
+            ],
+            "overview": "Tommy Nance is the first bridge look, and this lineup grades +0.4 against that likely first-up arsenal."
+          }
         }
       }
     },
     "athletics-angels": {
       "gameId": "athletics-angels",
       "title": "Athletics @ Angels",
-      "snapshot": "2026-05-21T15:07:28.625Z",
+      "snapshot": "2026-05-21T16:49:56.224Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -11337,7 +12904,7 @@
         "label": "76°F | Wind 8 mph Out | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "-",
+        "line": "LAA -117",
         "total": "8.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -11345,12 +12912,28 @@
         "teamName": "Athletics",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 667755,
           "name": "José Soriano",
           "hand": "R",
           "type": "Volatile bat-misser",
           "pitchMixSummary": "Sinker 28% / Curveball 25% / 4-Seam Fastball 23%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "José Fermin",
+            "role": "middle",
+            "availabilityScore": 77.65,
+            "firstRelieverLikelihood": 86.73,
+            "pitchMixSummary": "Slider 58% / Sinker 18% / 4-Seam Fastball 14%"
+          },
+          {
+            "name": "Mitch Farris",
+            "role": "bulk",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 72.88,
+            "pitchMixSummary": "4-Seam Fastball 41% / Changeup 29% / Cutter 17%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 701762,
@@ -12453,6 +14036,56 @@
             "matchupNote": "+3.82 vs José Soriano"
           }
         ],
+        "bvpHistory": {
+          "hot": [
+            {
+              "name": "Lawrence Butler",
+              "sample": "5/16",
+              "atBats": 16,
+              "avg": ".313",
+              "ops": "1.103",
+              "homeRuns": 2,
+              "rbi": 5,
+              "tone": "hot",
+              "summary": "5/16, 2 HR, 5 RBI, 1.103 OPS vs Jose Soriano"
+            },
+            {
+              "name": "Shea Langeliers",
+              "sample": "6/11",
+              "atBats": 11,
+              "avg": ".545",
+              "ops": "1.765",
+              "homeRuns": 2,
+              "rbi": 7,
+              "tone": "hot",
+              "summary": "6/11, 2 HR, 7 RBI, 1.765 OPS vs Jose Soriano"
+            },
+            {
+              "name": "Brent Rooker",
+              "sample": "6/13",
+              "atBats": 13,
+              "avg": ".462",
+              "ops": "1.511",
+              "homeRuns": 1,
+              "rbi": 6,
+              "tone": "hot",
+              "summary": "6/13, 1 HR, 6 RBI, 1.511 OPS vs Jose Soriano"
+            },
+            {
+              "name": "Nick Kurtz",
+              "sample": "2/10",
+              "atBats": 10,
+              "avg": ".200",
+              "ops": ".873",
+              "homeRuns": 1,
+              "rbi": 1,
+              "tone": "hot",
+              "summary": "2/10, 1 HR, 1 RBI, .873 OPS vs Jose Soriano"
+            }
+          ],
+          "cold": [],
+          "summary": "Lawrence Butler carries the cleanest visible BvP lane against this starter."
+        },
         "aggregate": {
           "averageMatchupGrade": 1.21,
           "trackedBatters": 9,
@@ -12470,12 +14103,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 76.7,
           "pitchTypePressureIndex": 50.7,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 69.8,
           "starterPressureIndex": 75.9,
-          "overallPressureIndex": 75.9,
+          "overallPressureIndex": 79.1,
           "topThirdScore": 59.6,
           "depthScore": 41.9,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Carlos Cortes",
+              "slot": 5,
+              "tag": "carry | fit +3.0"
+            },
+            {
+              "name": "Nick Kurtz",
+              "slot": 1,
+              "tag": "carry | fit +1.2"
+            },
+            {
+              "name": "Zack Gelof",
+              "slot": 6,
+              "tag": "carry | fit +6.5"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -12493,7 +14142,23 @@
               "tag": "heater | +3.82 vs José Soriano"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Carlos Cortes",
+              "slot": 5,
+              "tag": "carry | fit +3.0"
+            },
+            {
+              "name": "Nick Kurtz",
+              "slot": 1,
+              "tag": "carry | fit +1.2"
+            },
+            {
+              "name": "Zack Gelof",
+              "slot": 6,
+              "tag": "carry | fit +6.5"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Lawrence Butler",
@@ -12506,23 +14171,129 @@
           ],
           "underperformNote": "Lawrence Butler and Tyler Soderstrom carry the softer form or split fit into a volatile bat-misser lane.",
           "overview": "Athletics can lean on Nick Kurtz, Carlos Cortes, Jeff McNeil to drive early pressure against José Soriano.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "José Fermin is the first bridge look, and this lineup grades -0.5 against that likely first-up arsenal.",
           "topThirdScore": 59.6,
           "middleScore": 67.6,
           "depthScore": 41.9,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 69.8,
+            "averageFitScore": 66.3,
+            "averageFitGrade": 1.27,
+            "firstReliever": {
+              "pitcherId": 820862,
+              "name": "José Fermin",
+              "role": "middle",
+              "availabilityScore": 77.65,
+              "firstRelieverLikelihood": 86.73,
+              "fitScore": 65.1,
+              "fitGrade": -0.53,
+              "pitchMixSummary": "Slider 58% / Sinker 18% / 4-Seam Fastball 14%",
+              "topAttackers": [
+                {
+                  "name": "Carlos Cortes",
+                  "slot": 5,
+                  "tag": "carry | fit +3.0"
+                },
+                {
+                  "name": "Nick Kurtz",
+                  "slot": 1,
+                  "tag": "carry | fit +1.2"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 820862,
+                "name": "José Fermin",
+                "role": "middle",
+                "availabilityScore": 77.65,
+                "firstRelieverLikelihood": 86.73,
+                "fitScore": 65.1,
+                "fitGrade": -0.53,
+                "pitchMixSummary": "Slider 58% / Sinker 18% / 4-Seam Fastball 14%",
+                "topAttackers": [
+                  {
+                    "name": "Carlos Cortes",
+                    "slot": 5,
+                    "tag": "carry | fit +3.0"
+                  },
+                  {
+                    "name": "Nick Kurtz",
+                    "slot": 1,
+                    "tag": "carry | fit +1.2"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 815083,
+                "name": "Mitch Farris",
+                "role": "bulk",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 72.88,
+                "fitScore": 67.5,
+                "fitGrade": 3.07,
+                "pitchMixSummary": "4-Seam Fastball 41% / Changeup 29% / Cutter 17%",
+                "topAttackers": [
+                  {
+                    "name": "Zack Gelof",
+                    "slot": 6,
+                    "tag": "carry | fit +6.5"
+                  },
+                  {
+                    "name": "Nick Kurtz",
+                    "slot": 1,
+                    "tag": "carry | fit +4.1"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Carlos Cortes",
+                "slot": 5,
+                "tag": "carry | fit +3.0"
+              },
+              {
+                "name": "Nick Kurtz",
+                "slot": 1,
+                "tag": "carry | fit +1.2"
+              },
+              {
+                "name": "Zack Gelof",
+                "slot": 6,
+                "tag": "carry | fit +6.5"
+              }
+            ],
+            "overview": "José Fermin is the first bridge look, and this lineup grades -0.5 against that likely first-up arsenal."
+          }
         }
       },
       "home": {
         "teamName": "Angels",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 622663,
           "name": "Luis Severino",
           "hand": "R",
           "type": "Traffic-risk",
           "pitchMixSummary": "Sinker 25% / Sweeper 24% / 4-Seam Fastball 21%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Justin Sterner",
+            "role": "middle",
+            "availabilityScore": 82.6,
+            "firstRelieverLikelihood": 90.03,
+            "pitchMixSummary": "4-Seam Fastball 41% / Cutter 30% / Sweeper 29%"
+          },
+          {
+            "name": "Brooks Kriske",
+            "role": "middle",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 72.44,
+            "pitchMixSummary": "Split-Finger 50% / 4-Seam Fastball 32% / Cutter 18%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 687093,
@@ -12599,17 +14370,17 @@
               "formScore": 18,
               "splitScore": 72.4,
               "varianceScore": 92,
-              "pitchTypeFitScore": 66.2,
-              "pitchTypeGrade": 5.1,
+              "pitchTypeFitScore": 69.5,
+              "pitchTypeGrade": 5.57,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 30,
-              "matchupGrade": -4.77
+              "matchupScore": 32,
+              "matchupGrade": -4.37
             },
             "pitchType": {
-              "fitScore": 66.2,
-              "fitGrade": 5.1,
+              "fitScore": 69.5,
+              "fitGrade": 5.57,
               "coveragePct": 100,
-              "summary": "Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +5.1",
+              "summary": "Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +5.6",
               "topPitches": [
                 {
                   "pitchType": "SI",
@@ -12623,8 +14394,8 @@
                   "pitchType": "ST",
                   "pitchName": "Sweeper",
                   "pitchUsage": 23.8,
-                  "fitGrade": 5.11,
-                  "batterFitScore": 74.9,
+                  "fitGrade": 6.91,
+                  "batterFitScore": 84.8,
                   "qualityScore": 46.8
                 },
                 {
@@ -12643,8 +14414,8 @@
               "cold"
             ],
             "primaryTag": "split edge",
-            "summary": ".236 AVG | .691 OPS | 21 H | 2 HR | 8g: .118 AVG | .284 OPS | 4 H | 0 HR | vs RHP: .234 AVG | .725 OPS | 2 HR | arsenal Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +5.1 | -4.8 matchup grade in a traffic-risk lane",
-            "matchupNote": "-4.77 vs Luis Severino"
+            "summary": ".236 AVG | .691 OPS | 21 H | 2 HR | 8g: .118 AVG | .284 OPS | 4 H | 0 HR | vs RHP: .234 AVG | .725 OPS | 2 HR | arsenal Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +5.6 | -4.4 matchup grade in a traffic-risk lane",
+            "matchupNote": "-4.37 vs Luis Severino"
           },
           {
             "playerId": 545361,
@@ -13574,17 +15345,17 @@
               "formScore": 18,
               "splitScore": 31.9,
               "varianceScore": 84.6,
-              "pitchTypeFitScore": 41.3,
-              "pitchTypeGrade": 1.49,
+              "pitchTypeFitScore": 40.2,
+              "pitchTypeGrade": 1.33,
               "pitchTypeCoveragePct": 100,
               "matchupScore": 18,
               "matchupGrade": -8
             },
             "pitchType": {
-              "fitScore": 41.3,
-              "fitGrade": 1.49,
+              "fitScore": 40.2,
+              "fitGrade": 1.33,
               "coveragePct": 100,
-              "summary": "Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +1.5",
+              "summary": "Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +1.3",
               "topPitches": [
                 {
                   "pitchType": "SI",
@@ -13598,8 +15369,8 @@
                   "pitchType": "ST",
                   "pitchName": "Sweeper",
                   "pitchUsage": 23.8,
-                  "fitGrade": -3.05,
-                  "batterFitScore": 30,
+                  "fitGrade": -3.65,
+                  "batterFitScore": 26.7,
                   "qualityScore": 46.8
                 },
                 {
@@ -13613,16 +15384,44 @@
               ]
             },
             "tags": [
-              "arsenal edge",
               "cold"
             ],
-            "primaryTag": "arsenal edge",
-            "summary": ".194 AVG | .543 OPS | 19 H | 1 HR | 12g: .150 AVG | .390 OPS | 6 H | 0 HR | vs RHP: .138 AVG | .444 OPS | 1 HR | arsenal Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +1.5 | -8.0 matchup grade in a traffic-risk lane",
+            "primaryTag": "cold",
+            "summary": ".194 AVG | .543 OPS | 19 H | 1 HR | 12g: .150 AVG | .390 OPS | 6 H | 0 HR | vs RHP: .138 AVG | .444 OPS | 1 HR | arsenal Sinker 25% / Sweeper 24% / 4-Seam Fastball 21% | fit +1.3 | -8.0 matchup grade in a traffic-risk lane",
             "matchupNote": "-8.00 vs Luis Severino"
           }
         ],
+        "bvpHistory": {
+          "hot": [
+            {
+              "name": "Yoan Moncada",
+              "sample": "5/14",
+              "atBats": 14,
+              "avg": ".357",
+              "ops": "1.152",
+              "homeRuns": 1,
+              "rbi": 2,
+              "tone": "hot",
+              "summary": "5/14, 1 HR, 2 RBI, 1.152 OPS vs Luis Severino"
+            }
+          ],
+          "cold": [
+            {
+              "name": "Jorge Soler",
+              "sample": "2/11",
+              "atBats": 11,
+              "avg": ".182",
+              "ops": ".364",
+              "homeRuns": 0,
+              "rbi": 1,
+              "tone": "cold",
+              "summary": "2/11, 0 HR, 1 RBI, .364 OPS vs Luis Severino"
+            }
+          ],
+          "summary": "BvP sample is mixed: Yoan Moncada owns the cleanest history, but Jorge Soler shows the coldest prior lane."
+        },
         "aggregate": {
-          "averageMatchupGrade": 1,
+          "averageMatchupGrade": 1.04,
           "trackedBatters": 9,
           "starterThreatCount": 4,
           "contactCount": 2,
@@ -13636,14 +15435,30 @@
           "topThirdArsenalCount": 3,
           "heaterCount": 1,
           "suppressorCount": 2,
-          "platoonPressureIndex": 59.4,
+          "platoonPressureIndex": 59.8,
           "pitchTypePressureIndex": 94,
-          "bullpenPitchTypePressureIndex": null,
-          "starterPressureIndex": 71.9,
-          "overallPressureIndex": 71.9,
-          "topThirdScore": 53.5,
+          "bullpenPitchTypePressureIndex": 54.7,
+          "starterPressureIndex": 72.6,
+          "overallPressureIndex": 73.4,
+          "topThirdScore": 54.1,
           "depthScore": 53.2,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Mike Trout",
+              "slot": 2,
+              "tag": "carry | fit +6.6"
+            },
+            {
+              "name": "Vaughn Grissom",
+              "slot": 1,
+              "tag": "split edge | fit +3.5"
+            },
+            {
+              "name": "Vaughn Grissom",
+              "slot": 1,
+              "tag": "split edge | fit +0.0"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -13661,31 +15476,137 @@
               "tag": "arsenal edge | +4.59 vs Luis Severino"
             }
           ],
-          "bullpenOverperformHitters": [],
-          "underperformHitters": [
+          "bullpenOverperformHitters": [
             {
-              "name": "Logan O'Hoppe",
-              "tag": "arsenal edge | -8.00 vs Luis Severino"
+              "name": "Mike Trout",
+              "slot": 2,
+              "tag": "carry | fit +6.6"
             },
             {
               "name": "Vaughn Grissom",
-              "tag": "split edge | -4.77 vs Luis Severino"
+              "slot": 1,
+              "tag": "split edge | fit +3.5"
+            },
+            {
+              "name": "Vaughn Grissom",
+              "slot": 1,
+              "tag": "split edge | fit +0.0"
+            }
+          ],
+          "underperformHitters": [
+            {
+              "name": "Logan O'Hoppe",
+              "tag": "cold | -8.00 vs Luis Severino"
+            },
+            {
+              "name": "Vaughn Grissom",
+              "tag": "split edge | -4.37 vs Luis Severino"
             }
           ],
           "underperformNote": "Logan O'Hoppe and Vaughn Grissom carry the softer form or split fit into a traffic-risk lane.",
           "overview": "Angels can lean on Josh Lowe, Mike Trout, Zach Neto to drive early pressure against Luis Severino.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-          "topThirdScore": 53.5,
+          "bullpenOverview": "Justin Sterner is the first bridge look, and this lineup grades +2.1 against that likely first-up arsenal.",
+          "topThirdScore": 54.1,
           "middleScore": 54.7,
           "depthScore": 53.2,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 54.7,
+            "averageFitScore": 57.9,
+            "averageFitGrade": -0.21,
+            "firstReliever": {
+              "pitcherId": 686993,
+              "name": "Justin Sterner",
+              "role": "middle",
+              "availabilityScore": 82.6,
+              "firstRelieverLikelihood": 90.03,
+              "fitScore": 61.6,
+              "fitGrade": 2.06,
+              "pitchMixSummary": "4-Seam Fastball 41% / Cutter 30% / Sweeper 29%",
+              "topAttackers": [
+                {
+                  "name": "Mike Trout",
+                  "slot": 2,
+                  "tag": "carry | fit +6.6"
+                },
+                {
+                  "name": "Vaughn Grissom",
+                  "slot": 1,
+                  "tag": "split edge | fit +3.5"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 686993,
+                "name": "Justin Sterner",
+                "role": "middle",
+                "availabilityScore": 82.6,
+                "firstRelieverLikelihood": 90.03,
+                "fitScore": 61.6,
+                "fitGrade": 2.06,
+                "pitchMixSummary": "4-Seam Fastball 41% / Cutter 30% / Sweeper 29%",
+                "topAttackers": [
+                  {
+                    "name": "Mike Trout",
+                    "slot": 2,
+                    "tag": "carry | fit +6.6"
+                  },
+                  {
+                    "name": "Vaughn Grissom",
+                    "slot": 1,
+                    "tag": "split edge | fit +3.5"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 621139,
+                "name": "Brooks Kriske",
+                "role": "middle",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 72.44,
+                "fitScore": 54.2,
+                "fitGrade": -2.47,
+                "pitchMixSummary": "Split-Finger 50% / 4-Seam Fastball 32% / Cutter 18%",
+                "topAttackers": [
+                  {
+                    "name": "Vaughn Grissom",
+                    "slot": 1,
+                    "tag": "split edge | fit +0.0"
+                  },
+                  {
+                    "name": "Yoan Moncada",
+                    "slot": 7,
+                    "tag": "split edge | fit -1.4"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Mike Trout",
+                "slot": 2,
+                "tag": "carry | fit +6.6"
+              },
+              {
+                "name": "Vaughn Grissom",
+                "slot": 1,
+                "tag": "split edge | fit +3.5"
+              },
+              {
+                "name": "Vaughn Grissom",
+                "slot": 1,
+                "tag": "split edge | fit +0.0"
+              }
+            ],
+            "overview": "Justin Sterner is the first bridge look, and this lineup grades +2.1 against that likely first-up arsenal."
+          }
         }
       }
     },
     "rockies-diamondbacks": {
       "gameId": "rockies-diamondbacks",
       "title": "Rockies @ Diamondbacks",
-      "snapshot": "2026-05-21T15:07:28.626Z",
+      "snapshot": "2026-05-21T16:49:56.224Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -13708,12 +15629,28 @@
         "teamName": "Rockies",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 593958,
           "name": "Eduardo Rodriguez",
           "hand": "L",
           "type": "Balanced",
           "pitchMixSummary": "4-Seam Fastball 38% / Changeup 29% / Cutter 16%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Ryan Thompson",
+            "role": "middle",
+            "availabilityScore": 73.1,
+            "firstRelieverLikelihood": 82.86,
+            "pitchMixSummary": "Sinker 70% / Slider 24% / 4-Seam Fastball 6%"
+          },
+          {
+            "name": "Kevin Ginkel",
+            "role": "middle",
+            "availabilityScore": 72.65,
+            "firstRelieverLikelihood": 80.31,
+            "pitchMixSummary": "Slider 52% / 4-Seam Fastball 44% / Sinker 4%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 650489,
@@ -14811,6 +16748,35 @@
             "matchupNote": "-5.85 vs Eduardo Rodriguez"
           }
         ],
+        "bvpHistory": {
+          "hot": [
+            {
+              "name": "Brenton Doyle",
+              "sample": "5/15",
+              "atBats": 15,
+              "avg": ".333",
+              "ops": ".933",
+              "homeRuns": 1,
+              "rbi": 3,
+              "tone": "hot",
+              "summary": "5/15, 1 HR, 3 RBI, .933 OPS vs Eduardo Rodriguez"
+            }
+          ],
+          "cold": [
+            {
+              "name": "Hunter Goodman",
+              "sample": "1/13",
+              "atBats": 13,
+              "avg": ".077",
+              "ops": ".220",
+              "homeRuns": 0,
+              "rbi": 0,
+              "tone": "cold",
+              "summary": "1/13, 0 HR, 0 RBI, .220 OPS vs Eduardo Rodriguez"
+            }
+          ],
+          "summary": "BvP sample is mixed: Brenton Doyle owns the cleanest history, but Hunter Goodman shows the coldest prior lane."
+        },
         "aggregate": {
           "averageMatchupGrade": -1.86,
           "trackedBatters": 9,
@@ -14828,12 +16794,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 72.9,
           "pitchTypePressureIndex": 25.5,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 50.2,
           "starterPressureIndex": 29.4,
-          "overallPressureIndex": 29.4,
+          "overallPressureIndex": 29.5,
           "topThirdScore": 54.9,
           "depthScore": 30.7,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Hunter Goodman",
+              "slot": 4,
+              "tag": "split edge | fit +4.3"
+            },
+            {
+              "name": "Jake McCarthy",
+              "slot": 9,
+              "tag": "traffic | fit +4.0"
+            },
+            {
+              "name": "Troy Johnston",
+              "slot": 6,
+              "tag": "arsenal risk | fit +3.9"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -14851,7 +16833,23 @@
               "tag": "split edge | +1.50 vs Eduardo Rodriguez"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Hunter Goodman",
+              "slot": 4,
+              "tag": "split edge | fit +4.3"
+            },
+            {
+              "name": "Jake McCarthy",
+              "slot": 9,
+              "tag": "traffic | fit +4.0"
+            },
+            {
+              "name": "Troy Johnston",
+              "slot": 6,
+              "tag": "arsenal risk | fit +3.9"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Hunter Goodman",
@@ -14864,23 +16862,129 @@
           ],
           "underperformNote": "Hunter Goodman and Troy Johnston carry the softer form or split fit into a balanced lane.",
           "overview": "Rockies can lean on Tyler Freeman, Ezequiel Tovar, Willi Castro to drive early pressure against Eduardo Rodriguez.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Ryan Thompson is the first bridge look, and this lineup grades -1.0 against that likely first-up arsenal.",
           "topThirdScore": 54.9,
           "middleScore": 40.3,
           "depthScore": 30.7,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 50.2,
+            "averageFitScore": 51.1,
+            "averageFitGrade": -0.9,
+            "firstReliever": {
+              "pitcherId": 657044,
+              "name": "Ryan Thompson",
+              "role": "middle",
+              "availabilityScore": 73.1,
+              "firstRelieverLikelihood": 82.86,
+              "fitScore": 49.7,
+              "fitGrade": -1.03,
+              "pitchMixSummary": "Sinker 70% / Slider 24% / 4-Seam Fastball 6%",
+              "topAttackers": [
+                {
+                  "name": "Hunter Goodman",
+                  "slot": 4,
+                  "tag": "split edge | fit +4.3"
+                },
+                {
+                  "name": "Jake McCarthy",
+                  "slot": 9,
+                  "tag": "traffic | fit +4.0"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 657044,
+                "name": "Ryan Thompson",
+                "role": "middle",
+                "availabilityScore": 73.1,
+                "firstRelieverLikelihood": 82.86,
+                "fitScore": 49.7,
+                "fitGrade": -1.03,
+                "pitchMixSummary": "Sinker 70% / Slider 24% / 4-Seam Fastball 6%",
+                "topAttackers": [
+                  {
+                    "name": "Hunter Goodman",
+                    "slot": 4,
+                    "tag": "split edge | fit +4.3"
+                  },
+                  {
+                    "name": "Jake McCarthy",
+                    "slot": 9,
+                    "tag": "traffic | fit +4.0"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 656464,
+                "name": "Kevin Ginkel",
+                "role": "middle",
+                "availabilityScore": 72.65,
+                "firstRelieverLikelihood": 80.31,
+                "fitScore": 52.5,
+                "fitGrade": -0.77,
+                "pitchMixSummary": "Slider 52% / 4-Seam Fastball 44% / Sinker 4%",
+                "topAttackers": [
+                  {
+                    "name": "Troy Johnston",
+                    "slot": 6,
+                    "tag": "arsenal risk | fit +3.9"
+                  },
+                  {
+                    "name": "Tyler Freeman",
+                    "slot": 2,
+                    "tag": "carry | fit +3.6"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Hunter Goodman",
+                "slot": 4,
+                "tag": "split edge | fit +4.3"
+              },
+              {
+                "name": "Jake McCarthy",
+                "slot": 9,
+                "tag": "traffic | fit +4.0"
+              },
+              {
+                "name": "Troy Johnston",
+                "slot": 6,
+                "tag": "arsenal risk | fit +3.9"
+              }
+            ],
+            "overview": "Ryan Thompson is the first bridge look, and this lineup grades -1.0 against that likely first-up arsenal."
+          }
         }
       },
       "home": {
         "teamName": "Diamondbacks",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
+          "id": 688642,
           "name": "Zach Agnos",
           "hand": "R",
           "type": "Traffic-risk",
           "pitchMixSummary": "4-Seam Fastball 26% / Cutter 24% / Slider 16%"
         },
-        "opposingRelievers": [],
+        "opposingRelievers": [
+          {
+            "name": "Seth Halvorsen",
+            "role": "middle",
+            "availabilityScore": 69.95,
+            "firstRelieverLikelihood": 84.51,
+            "pitchMixSummary": "4-Seam Fastball 61% / Slider 31% / Split-Finger 8%"
+          },
+          {
+            "name": "Blas Castaño",
+            "role": "bridge",
+            "availabilityScore": 95,
+            "firstRelieverLikelihood": 81.78,
+            "pitchMixSummary": "Sinker 40% / Cutter 20% / Sweeper 18%"
+          }
+        ],
         "lineup": [
           {
             "playerId": 606466,
@@ -15858,6 +17962,11 @@
             "matchupNote": "+4.85 vs Zach Agnos"
           }
         ],
+        "bvpHistory": {
+          "hot": [],
+          "cold": [],
+          "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        },
         "aggregate": {
           "averageMatchupGrade": 4.71,
           "trackedBatters": 8,
@@ -15875,12 +17984,28 @@
           "suppressorCount": 2,
           "platoonPressureIndex": 83.9,
           "pitchTypePressureIndex": 87.6,
-          "bullpenPitchTypePressureIndex": null,
+          "bullpenPitchTypePressureIndex": 93.7,
           "starterPressureIndex": 94,
           "overallPressureIndex": 94,
           "topThirdScore": 81.1,
           "depthScore": 84,
-          "bullpenOverperformHitters": []
+          "bullpenOverperformHitters": [
+            {
+              "name": "Ryan Waldschmidt",
+              "slot": 9,
+              "tag": "heater | fit +6.1"
+            },
+            {
+              "name": "Corbin Carroll",
+              "slot": 2,
+              "tag": "carry | fit +6.0"
+            },
+            {
+              "name": "Corbin Carroll",
+              "slot": 2,
+              "tag": "carry | fit +6.5"
+            }
+          ]
         },
         "summary": {
           "pressureLabel": "carry bats live",
@@ -15898,7 +18023,23 @@
               "tag": "carry | +10.00 vs Zach Agnos"
             }
           ],
-          "bullpenOverperformHitters": [],
+          "bullpenOverperformHitters": [
+            {
+              "name": "Ryan Waldschmidt",
+              "slot": 9,
+              "tag": "heater | fit +6.1"
+            },
+            {
+              "name": "Corbin Carroll",
+              "slot": 2,
+              "tag": "carry | fit +6.0"
+            },
+            {
+              "name": "Corbin Carroll",
+              "slot": 2,
+              "tag": "carry | fit +6.5"
+            }
+          ],
           "underperformHitters": [
             {
               "name": "Adrian Del Castillo",
@@ -15911,11 +18052,101 @@
           ],
           "underperformNote": "Adrian Del Castillo and Ildemaro Vargas carry the softer form or split fit into a traffic-risk lane.",
           "overview": "Diamondbacks can lean on Ketel Marte, Corbin Carroll, Nolan Arenado to drive early pressure against Zach Agnos.",
-          "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
+          "bullpenOverview": "Seth Halvorsen is the first bridge look, and this lineup grades +3.9 against that likely first-up arsenal.",
           "topThirdScore": 81.1,
           "middleScore": 51.1,
           "depthScore": 84,
-          "bullpenPitchTypeSummary": null
+          "bullpenPitchTypeSummary": {
+            "pressureIndex": 93.7,
+            "averageFitScore": 74.1,
+            "averageFitGrade": 4.65,
+            "firstReliever": {
+              "pitcherId": 678020,
+              "name": "Seth Halvorsen",
+              "role": "middle",
+              "availabilityScore": 69.95,
+              "firstRelieverLikelihood": 84.51,
+              "fitScore": 70.5,
+              "fitGrade": 3.85,
+              "pitchMixSummary": "4-Seam Fastball 61% / Slider 31% / Split-Finger 8%",
+              "topAttackers": [
+                {
+                  "name": "Ryan Waldschmidt",
+                  "slot": 9,
+                  "tag": "heater | fit +6.1"
+                },
+                {
+                  "name": "Corbin Carroll",
+                  "slot": 2,
+                  "tag": "carry | fit +6.0"
+                }
+              ]
+            },
+            "relievers": [
+              {
+                "pitcherId": 678020,
+                "name": "Seth Halvorsen",
+                "role": "middle",
+                "availabilityScore": 69.95,
+                "firstRelieverLikelihood": 84.51,
+                "fitScore": 70.5,
+                "fitGrade": 3.85,
+                "pitchMixSummary": "4-Seam Fastball 61% / Slider 31% / Split-Finger 8%",
+                "topAttackers": [
+                  {
+                    "name": "Ryan Waldschmidt",
+                    "slot": 9,
+                    "tag": "heater | fit +6.1"
+                  },
+                  {
+                    "name": "Corbin Carroll",
+                    "slot": 2,
+                    "tag": "carry | fit +6.0"
+                  }
+                ]
+              },
+              {
+                "pitcherId": 680604,
+                "name": "Blas Castaño",
+                "role": "bridge",
+                "availabilityScore": 95,
+                "firstRelieverLikelihood": 81.78,
+                "fitScore": 77.7,
+                "fitGrade": 5.45,
+                "pitchMixSummary": "Sinker 40% / Cutter 20% / Sweeper 18%",
+                "topAttackers": [
+                  {
+                    "name": "Corbin Carroll",
+                    "slot": 2,
+                    "tag": "carry | fit +6.5"
+                  },
+                  {
+                    "name": "Nolan Arenado",
+                    "slot": 4,
+                    "tag": "carry | fit +6.5"
+                  }
+                ]
+              }
+            ],
+            "topAttackers": [
+              {
+                "name": "Ryan Waldschmidt",
+                "slot": 9,
+                "tag": "heater | fit +6.1"
+              },
+              {
+                "name": "Corbin Carroll",
+                "slot": 2,
+                "tag": "carry | fit +6.0"
+              },
+              {
+                "name": "Corbin Carroll",
+                "slot": 2,
+                "tag": "carry | fit +6.5"
+              }
+            ],
+            "overview": "Seth Halvorsen is the first bridge look, and this lineup grades +3.9 against that likely first-up arsenal."
+          }
         }
       }
     }
@@ -15939,12 +18170,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 94,
         "pitchTypePressureIndex": 52.3,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 65.4,
         "starterPressureIndex": 85.6,
-        "overallPressureIndex": 85.6,
+        "overallPressureIndex": 88.1,
         "topThirdScore": 48.5,
         "depthScore": 48.7,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "José Ramírez",
+            "slot": 2,
+            "tag": "carry | fit +6.5"
+          },
+          {
+            "name": "Brayan Rocchio",
+            "slot": 9,
+            "tag": "carry | fit +5.0"
+          },
+          {
+            "name": "Angel Martínez",
+            "slot": 6,
+            "tag": "carry | fit +2.0"
+          }
+        ]
       },
       "Tigers": {
         "averageMatchupGrade": -0.41,
@@ -15963,12 +18210,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 85.7,
         "pitchTypePressureIndex": 73.1,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 60.1,
         "starterPressureIndex": 49.7,
-        "overallPressureIndex": 49.7,
+        "overallPressureIndex": 51.3,
         "topThirdScore": 48.8,
         "depthScore": 30.6,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Dillon Dingler",
+            "slot": 3,
+            "tag": "split edge | fit +6.3"
+          },
+          {
+            "name": "Riley Greene",
+            "slot": 4,
+            "tag": "carry | fit +5.6"
+          },
+          {
+            "name": "Riley Greene",
+            "slot": 4,
+            "tag": "carry | fit +3.9"
+          }
+        ]
       }
     },
     "pirates-cardinals": {
@@ -15989,12 +18252,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 87.7,
         "pitchTypePressureIndex": 94,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 61.6,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 78.7,
         "depthScore": 40.4,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Spencer Horwitz",
+            "slot": 4,
+            "tag": "carry | fit +5.0"
+          },
+          {
+            "name": "Bryan Reynolds",
+            "slot": 3,
+            "tag": "carry | fit +4.3"
+          },
+          {
+            "name": "Brandon Lowe",
+            "slot": 2,
+            "tag": "carry | fit +3.2"
+          }
+        ]
       },
       "Cardinals": {
         "averageMatchupGrade": 0.03,
@@ -16013,12 +18292,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 67.7,
         "pitchTypePressureIndex": 76.6,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 62.8,
         "starterPressureIndex": 73.4,
-        "overallPressureIndex": 73.4,
+        "overallPressureIndex": 75.4,
         "topThirdScore": 64,
         "depthScore": 33.6,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Alec Burleson",
+            "slot": 3,
+            "tag": "carry | fit +8.4"
+          },
+          {
+            "name": "Jordan Walker",
+            "slot": 4,
+            "tag": "carry | fit +8.3"
+          },
+          {
+            "name": "Alec Burleson",
+            "slot": 3,
+            "tag": "carry | fit -0.1"
+          }
+        ]
       }
     },
     "mets-nationals": {
@@ -16039,12 +18334,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 89.4,
         "pitchTypePressureIndex": 94,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 69.2,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 90.6,
         "depthScore": 59.6,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Juan Soto",
+            "slot": 3,
+            "tag": "carry | fit +5.9"
+          },
+          {
+            "name": "A.J. Ewing",
+            "slot": 8,
+            "tag": "carry | fit +5.1"
+          },
+          {
+            "name": "Juan Soto",
+            "slot": 3,
+            "tag": "carry | fit +3.4"
+          }
+        ]
       },
       "Nationals": {
         "averageMatchupGrade": 4.55,
@@ -16063,12 +18374,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 92.6,
         "pitchTypePressureIndex": 94,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 63.7,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 85.5,
         "depthScore": 68.7,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Andres Chaparro",
+            "slot": 3,
+            "tag": "carry | fit +5.9"
+          },
+          {
+            "name": "Dylan Crews",
+            "slot": 5,
+            "tag": "split edge | fit +0.8"
+          },
+          {
+            "name": "James Wood",
+            "slot": 1,
+            "tag": "carry | fit +4.8"
+          }
+        ]
       }
     },
     "braves-marlins": {
@@ -16089,12 +18416,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 64.9,
         "pitchTypePressureIndex": 42.4,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 49.7,
         "starterPressureIndex": 18,
         "overallPressureIndex": 18,
         "topThirdScore": 35.9,
         "depthScore": 18,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Matt Olson",
+            "slot": 3,
+            "tag": "split edge | fit +2.2"
+          },
+          {
+            "name": "Dominic Smith",
+            "slot": 6,
+            "tag": "split edge | fit -0.9"
+          },
+          {
+            "name": "Matt Olson",
+            "slot": 3,
+            "tag": "split edge | fit +5.9"
+          }
+        ]
       },
       "Marlins": {
         "averageMatchupGrade": -0.28,
@@ -16113,12 +18456,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 74.5,
         "pitchTypePressureIndex": 78.5,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 69,
         "starterPressureIndex": 65.1,
-        "overallPressureIndex": 65.1,
+        "overallPressureIndex": 68.1,
         "topThirdScore": 69,
         "depthScore": 31.6,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Liam Hicks",
+            "slot": 2,
+            "tag": "split edge | fit +3.2"
+          },
+          {
+            "name": "Xavier Edwards",
+            "slot": 1,
+            "tag": "heater | fit +1.3"
+          },
+          {
+            "name": "Otto Lopez",
+            "slot": 3,
+            "tag": "carry | fit +7.7"
+          }
+        ]
       }
     },
     "blue-jays-yankees": {
@@ -16139,12 +18498,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 71.1,
         "pitchTypePressureIndex": 43.5,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 40.6,
         "starterPressureIndex": 28.8,
-        "overallPressureIndex": 28.8,
+        "overallPressureIndex": 27.3,
         "topThirdScore": 34.9,
         "depthScore": 37,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "George Springer",
+            "slot": 1,
+            "tag": "heater | fit -0.8"
+          },
+          {
+            "name": "Lenyn Sosa",
+            "slot": 4,
+            "tag": "split edge | fit -2.8"
+          },
+          {
+            "name": "Myles Straw",
+            "slot": 7,
+            "tag": "split edge | fit +5.8"
+          }
+        ]
       },
       "Yankees": {
         "averageMatchupGrade": -3.02,
@@ -16163,12 +18538,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 52.7,
         "pitchTypePressureIndex": 59.7,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 69.2,
         "starterPressureIndex": 39.4,
-        "overallPressureIndex": 39.4,
+        "overallPressureIndex": 42.5,
         "topThirdScore": 58.2,
         "depthScore": 18,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Cody Bellinger",
+            "slot": 2,
+            "tag": "carry | fit +5.4"
+          },
+          {
+            "name": "Aaron Judge",
+            "slot": 3,
+            "tag": "cold | fit +1.9"
+          },
+          {
+            "name": "Paul Goldschmidt",
+            "slot": 5,
+            "tag": "carry | fit +5.0"
+          }
+        ]
       }
     },
     "athletics-angels": {
@@ -16189,15 +18580,31 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 76.7,
         "pitchTypePressureIndex": 50.7,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 69.8,
         "starterPressureIndex": 75.9,
-        "overallPressureIndex": 75.9,
+        "overallPressureIndex": 79.1,
         "topThirdScore": 59.6,
         "depthScore": 41.9,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Carlos Cortes",
+            "slot": 5,
+            "tag": "carry | fit +3.0"
+          },
+          {
+            "name": "Nick Kurtz",
+            "slot": 1,
+            "tag": "carry | fit +1.2"
+          },
+          {
+            "name": "Zack Gelof",
+            "slot": 6,
+            "tag": "carry | fit +6.5"
+          }
+        ]
       },
       "Angels": {
-        "averageMatchupGrade": 1,
+        "averageMatchupGrade": 1.04,
         "trackedBatters": 9,
         "starterThreatCount": 4,
         "contactCount": 2,
@@ -16211,14 +18618,30 @@
         "topThirdArsenalCount": 3,
         "heaterCount": 1,
         "suppressorCount": 2,
-        "platoonPressureIndex": 59.4,
+        "platoonPressureIndex": 59.8,
         "pitchTypePressureIndex": 94,
-        "bullpenPitchTypePressureIndex": null,
-        "starterPressureIndex": 71.9,
-        "overallPressureIndex": 71.9,
-        "topThirdScore": 53.5,
+        "bullpenPitchTypePressureIndex": 54.7,
+        "starterPressureIndex": 72.6,
+        "overallPressureIndex": 73.4,
+        "topThirdScore": 54.1,
         "depthScore": 53.2,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Mike Trout",
+            "slot": 2,
+            "tag": "carry | fit +6.6"
+          },
+          {
+            "name": "Vaughn Grissom",
+            "slot": 1,
+            "tag": "split edge | fit +3.5"
+          },
+          {
+            "name": "Vaughn Grissom",
+            "slot": 1,
+            "tag": "split edge | fit +0.0"
+          }
+        ]
       }
     },
     "rockies-diamondbacks": {
@@ -16239,12 +18662,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 72.9,
         "pitchTypePressureIndex": 25.5,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 50.2,
         "starterPressureIndex": 29.4,
-        "overallPressureIndex": 29.4,
+        "overallPressureIndex": 29.5,
         "topThirdScore": 54.9,
         "depthScore": 30.7,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Hunter Goodman",
+            "slot": 4,
+            "tag": "split edge | fit +4.3"
+          },
+          {
+            "name": "Jake McCarthy",
+            "slot": 9,
+            "tag": "traffic | fit +4.0"
+          },
+          {
+            "name": "Troy Johnston",
+            "slot": 6,
+            "tag": "arsenal risk | fit +3.9"
+          }
+        ]
       },
       "Diamondbacks": {
         "averageMatchupGrade": 4.71,
@@ -16263,12 +18702,28 @@
         "suppressorCount": 2,
         "platoonPressureIndex": 83.9,
         "pitchTypePressureIndex": 87.6,
-        "bullpenPitchTypePressureIndex": null,
+        "bullpenPitchTypePressureIndex": 93.7,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 81.1,
         "depthScore": 84,
-        "bullpenOverperformHitters": []
+        "bullpenOverperformHitters": [
+          {
+            "name": "Ryan Waldschmidt",
+            "slot": 9,
+            "tag": "heater | fit +6.1"
+          },
+          {
+            "name": "Corbin Carroll",
+            "slot": 2,
+            "tag": "carry | fit +6.0"
+          },
+          {
+            "name": "Corbin Carroll",
+            "slot": 2,
+            "tag": "carry | fit +6.5"
+          }
+        ]
       }
     }
   }

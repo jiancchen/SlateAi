@@ -2,7 +2,7 @@ import {
   teamOffenseContextByTeam,
   teamBullpenContextByTeam,
   teamSavantContextByTeam
-} from './mlb-context-2026-05-20.js'
+} from './mlb-context-2026-05-15.js'
 
 export const standingsContextByTeam = {
   "Rays": {
