@@ -523,28 +523,22 @@ function App() {
   const isActiveDayLoading = Boolean(activeDayShell?.id && loadingSlateIds[activeDayShell.id] && !activeDay)
 
   useEffect(() => {
-    if (!activeDayShell?.id || loadedSlates[activeDayShell.id] || loadingSlateIds[activeDayShell.id]) return
+    const slateId = activeDayShell?.id
+    if (!slateId || loadedSlates[slateId] || loadingSlateIds[slateId]) return
 
-    let cancelled = false
-    setLoadingSlateIds((current) => ({ ...current, [activeDayShell.id]: true }))
+    setLoadingSlateIds((current) => ({ ...current, [slateId]: true }))
 
-    loadSlateDay(activeDayShell.id)
+    loadSlateDay(slateId)
       .then((day) => {
-        if (cancelled) return
         setLoadedSlates((current) => ({ ...current, [day.id]: day }))
       })
       .catch((error) => {
-        console.error(`Failed to load slate ${activeDayShell.id}`, error)
+        console.error(`Failed to load slate ${slateId}`, error)
       })
       .finally(() => {
-        if (cancelled) return
-        setLoadingSlateIds((current) => ({ ...current, [activeDayShell.id]: false }))
+        setLoadingSlateIds((current) => ({ ...current, [slateId]: false }))
       })
-
-    return () => {
-      cancelled = true
-    }
-  }, [activeDayShell, loadedSlates, loadingSlateIds])
+  }, [activeDayShell?.id, loadedSlates, loadingSlateIds])
 
   useEffect(() => {
     if (historyLoaded || (activeDeskTab !== 'history' && activeDeskTab !== 'models')) return
