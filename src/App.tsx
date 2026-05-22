@@ -7,6 +7,7 @@ import {
   rankFlipRiskPicks,
   rankMlbPlayerProps
 } from './lib/sports-model.js'
+import { historyArchive } from './lib/history-archive'
 import { defaultSlateDayId, slateDays } from './lib/slate-days.js'
 
 type AnyRecord = Record<string, any>
@@ -443,6 +444,7 @@ const buildBalancedRecommendationSet = (
 function App() {
   const [activeDayId, setActiveDayId] = useState(defaultSlateDayId)
   const [activeDeskTab, setActiveDeskTab] = useState<DeskTabId>('board')
+  const [activeHistoryId, setActiveHistoryId] = useState(historyArchive[0]?.id ?? '')
   const [activeFilter, setActiveFilter] = useState('All')
   const [activeSidebarTab, setActiveSidebarTab] = useState<SidebarTabId>('ticket')
   const [marketSearch, setMarketSearch] = useState('')
@@ -522,6 +524,7 @@ function App() {
   const selectedGameId = selectedGameIdByDay[activeDayId] ?? visibleGames[0]?.id ?? games[0]?.id ?? ''
   const selectedGame =
     games.find((game: AnyRecord) => game.id === selectedGameId) ?? visibleGames[0] ?? games[0] ?? null
+  const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
 
   const selectedPicks = selectedPicksByDay[activeDayId] ?? {}
   const selectedProps = selectedPropsByDay[activeDayId] ?? {}
@@ -2325,13 +2328,137 @@ function App() {
       ) : null}
 
       {activeDeskTab === 'history' ? (
-        <div className="desk-tool-workspace">
-          <section className="workspace-panel placeholder-panel">
-            <p className="eyebrow">History</p>
-            <h3>Archive follow-ups stay intact</h3>
-            <p>
-              The markdown postmortems and warehouse reports are still on disk. This tab is reserved for the future in-app history view after the React migration settles.
-            </p>
+        <div className="desk-tool-workspace history-workspace">
+          <section className="workspace-panel history-rail">
+            <div className="history-rail-header">
+              <div>
+                <p className="eyebrow">History</p>
+                <h3>Archive through May 20</h3>
+                <p className="react-section-copy">
+                  Daily grading blocks, combined backtests, and the saved board artifacts that fed them.
+                </p>
+              </div>
+              <span className="mono history-archive-count">{historyArchive.length} blocks</span>
+            </div>
+
+            <div className="history-rail-list no-scrollbar">
+              {historyArchive.map((entry) => (
+                <button
+                  key={entry.id}
+                  type="button"
+                  className={`history-row ${activeHistoryEntry?.id === entry.id ? 'active' : ''}`}
+                  onClick={() => setActiveHistoryId(entry.id)}
+                >
+                  <div className="history-row-topline">
+                    <span className="mono">{entry.date}</span>
+                    <span className={`history-status-pill ${entry.status}`}>{entry.status}</span>
+                  </div>
+                  <strong>{entry.label}</strong>
+                  <p>{entry.summary}</p>
+                  <div className="history-row-tags">
+                    {entry.trackedMarkets.map((market) => (
+                      <span key={`${entry.id}-${market}`}>{market}</span>
+                    ))}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          <section className="workspace-panel history-detail">
+            {activeHistoryEntry ? (
+              <>
+                <div className="history-detail-header">
+                  <div>
+                    <p className="eyebrow">Archive detail</p>
+                    <h2>{activeHistoryEntry.label}</h2>
+                    <p className="react-section-copy">{activeHistoryEntry.summary}</p>
+                  </div>
+                  <div className="history-sports mono">
+                    {activeHistoryEntry.sports.map((sport) => (
+                      <span key={`${activeHistoryEntry.id}-${sport}`}>{sport}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="history-metric-grid">
+                  {activeHistoryEntry.metrics.map((metric) => (
+                    <article key={`${activeHistoryEntry.id}-${metric.label}`} className="parlay-stat-card">
+                      <span className="parlay-stat-label">{metric.label}</span>
+                      <strong>{metric.value}</strong>
+                      {metric.note ? <small>{metric.note}</small> : null}
+                    </article>
+                  ))}
+                </div>
+
+                <div className="history-section-grid">
+                  <section className="action-section">
+                    <div className="action-section-header">
+                      <h3>Tracked markets</h3>
+                      <span>{activeHistoryEntry.trackedMarkets.length}</span>
+                    </div>
+                    <div className="history-chip-row">
+                      {activeHistoryEntry.trackedMarkets.map((market) => (
+                        <span key={`${activeHistoryEntry.id}-market-${market}`} className="history-chip">
+                          {market}
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+
+                  <section className="action-section">
+                    <div className="action-section-header">
+                      <h3>What worked</h3>
+                      <span>{activeHistoryEntry.whatWorked.length}</span>
+                    </div>
+                    <ul className="factor-list compact">
+                      {activeHistoryEntry.whatWorked.map((item) => (
+                        <li key={`${activeHistoryEntry.id}-worked-${item}`}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+
+                  <section className="action-section">
+                    <div className="action-section-header">
+                      <h3>What missed</h3>
+                      <span>{activeHistoryEntry.whatMissed.length}</span>
+                    </div>
+                    <ul className="factor-list compact">
+                      {activeHistoryEntry.whatMissed.map((item) => (
+                        <li key={`${activeHistoryEntry.id}-missed-${item}`}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+
+                  <section className="action-section">
+                    <div className="action-section-header">
+                      <h3>Takeaways</h3>
+                      <span>{activeHistoryEntry.takeaways.length}</span>
+                    </div>
+                    <ul className="factor-list compact">
+                      {activeHistoryEntry.takeaways.map((item) => (
+                        <li key={`${activeHistoryEntry.id}-takeaway-${item}`}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+                </div>
+
+                <section className="action-section">
+                  <div className="action-section-header">
+                    <h3>Archive artifacts</h3>
+                    <span>{activeHistoryEntry.artifacts.length}</span>
+                  </div>
+                  <div className="history-artifact-list">
+                    {activeHistoryEntry.artifacts.map((artifact) => (
+                      <article key={`${activeHistoryEntry.id}-${artifact.path}`} className="history-artifact-card">
+                        <strong>{artifact.label}</strong>
+                        <code>{artifact.path}</code>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              </>
+            ) : null}
           </section>
         </div>
       ) : null}
