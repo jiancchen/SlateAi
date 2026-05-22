@@ -34,6 +34,6 @@ The main lesson is that the archive needs to keep flagging:
 It also confirms that the HR board still works better as a weighted idea pool than as a narrow top-bat list.
 
 ## Artifacts
-- Saved HR board: [data/predictions/mlb-home-runs/2026-05-20-statcast-prototype.json](/Users/jcchen/Documents/New%20project/data/predictions/mlb-home-runs/2026-05-20-statcast-prototype.json:1)
-- Stored live slate: [src/lib/day-2026-05-20.js](/Users/jcchen/Documents/New%20project/src/lib/day-2026-05-20.js:1)
-- Stored MLB board: [src/lib/day-2026-05-20-mlb.js](/Users/jcchen/Documents/New%20project/src/lib/day-2026-05-20-mlb.js:1)
+- Saved HR board: [data-private/predictions/mlb-home-runs/2026-05-20-statcast-prototype.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-home-runs/2026-05-20-statcast-prototype.json:1)
+- Stored live slate: [web/src/lib/day-2026-05-20.js](/Users/jcchen/Documents/New%20project/web/src/lib/day-2026-05-20.js:1)
+- Stored MLB board: [web/src/lib/day-2026-05-20-mlb.js](/Users/jcchen/Documents/New%20project/web/src/lib/day-2026-05-20-mlb.js:1)

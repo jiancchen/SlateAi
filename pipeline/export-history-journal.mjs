@@ -1,10 +1,10 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { execSync } from 'node:child_process'
-import { slateDays } from '../src/lib/slate-days.js'
+import { slateDays } from '../web/src/lib/slate-days.js'
 
 const ROOT = process.cwd()
-const HISTORY_DIR = path.join(ROOT, 'data', 'history')
+const HISTORY_DIR = path.join(ROOT, 'data-private', 'history')
 
 const FULL_NAMES = {
   Braves: 'Atlanta Braves',
@@ -57,7 +57,7 @@ const HR_MODEL_NAMES = {
 
 const readJsonSql = (query) => {
   const escaped = query.replace(/"/g, '\\"')
-  const output = execSync(`sqlite3 -json data/warehouse/sports.db "${escaped}"`, {
+  const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, {
     cwd: ROOT,
     encoding: 'utf8'
   }).trim()

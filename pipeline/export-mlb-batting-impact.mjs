@@ -54,8 +54,8 @@ const parseArgs = () => {
   const options = {
     year: 2026,
     files: [],
-    out: path.join(rootDir, 'data', 'reference', 'mlb-batting-impact-history.json'),
-    moduleOut: path.join(rootDir, 'src', 'lib', 'mlb-batting-impact-history.js')
+    out: path.join(rootDir, 'data-private', 'reference', 'mlb-batting-impact-history.json'),
+    moduleOut: path.join(rootDir, 'web', 'src', 'lib', 'mlb-batting-impact-history.js')
   }
 
   for (let index = 0; index < args.length; index += 1) {

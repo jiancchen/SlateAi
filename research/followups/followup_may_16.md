@@ -2,8 +2,8 @@
 
 ## Snapshot
 - This follow-up is specifically about the `player-level batting read`, not just the side board.
-- Saved HR board source: [data/predictions/mlb-home-runs/2026-05-16-statcast-prototype.json](/Users/jcchen/Documents/New%20project/data/predictions/mlb-home-runs/2026-05-16-statcast-prototype.json:1)
-- Saved side board source: [data/predictions/mlb-sides/2026-05-16-board-v2.json](/Users/jcchen/Documents/New%20project/data/predictions/mlb-sides/2026-05-16-board-v2.json:1)
+- Saved HR board source: [data-private/predictions/mlb-home-runs/2026-05-16-statcast-prototype.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-home-runs/2026-05-16-statcast-prototype.json:1)
+- Saved side board source: [data-private/predictions/mlb-sides/2026-05-16-board-v2.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-sides/2026-05-16-board-v2.json:1)
 - Actual comparison set below comes from the May 16 NL batting leaders the user saved.
 
 ## What The HR Board Elevated

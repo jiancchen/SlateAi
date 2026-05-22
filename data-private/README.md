@@ -1,22 +1,22 @@
 # Data Warehouse
 
-This project now keeps the sports dashboard logic separate from the local event warehouse.
+This project now keeps the deployable web app separate from the local event warehouse.
 
 ## Storage Shape
 
-- `data/raw/`
+- `data-private/raw/`
   Local source snapshots fetched from official APIs or known-good pages. This directory is ignored by git so we can store full schedule and game-feed payloads without bloating the repo.
-- `data/warehouse/sports.db`
+- `data-private/warehouse/sports.db`
   Local SQLite warehouse for normalized MLB games, starting pitchers, starter and reliever appearance logs, per-team game stats, first-5/full-game outcomes, rolling form tables, bullpen workload and likely-reliever tables, Statcast leaderboard snapshots, prediction snapshots, backtests, and reserved park/weather tables.
-- `data/predictions/mlb-home-runs/`
+- `data-private/predictions/mlb-home-runs/`
   Saved home-run model outputs that can be imported and graded later.
-- `data/predictions/mlb-sides/`
+- `data-private/predictions/mlb-sides/`
   Saved MLB side-pick snapshots with model indicators for retrospective grading and train/verify reports.
 
 ## Why This Shape
 
 - Raw snapshots preserve the source of truth.
-- SQLite keeps the event layer queryable without forcing the Svelte app or an LLM to recompute history.
+- SQLite keeps the event layer queryable without forcing the web app or an LLM to recompute history.
 - Prediction files stay lightweight and human-readable.
 
 ## Current Commands
@@ -35,14 +35,14 @@ npm run data:list:relievers -- --date 2026-05-16
 npm run data:export:hr -- --date 2026-05-15
 npm run data:ingest:mlb-day -- --date 2026-05-15
 npm run data:ingest:statcast-hr -- --date 2026-05-15 --season 2026
-npm run data:import:hr -- --file data/predictions/mlb-home-runs/2026-05-15-statcast-prototype.json
+npm run data:import:hr -- --file data-private/predictions/mlb-home-runs/2026-05-15-statcast-prototype.json
 npm run data:grade:hr -- --date 2026-05-15 --model-name statcast-hr-prototype-v1
 npm run data:list:hr -- --date 2026-05-15
 npm run data:list:first5 -- --date 2026-05-15
 npm run data:export:mlb-sides -- --start-date 2026-05-10 --end-date 2026-05-15
-npm run data:import:mlb-sides -- --file data/predictions/mlb-sides/2026-05-10-to-2026-05-15-board-v2.json
+npm run data:import:mlb-sides -- --file data-private/predictions/mlb-sides/2026-05-10-to-2026-05-15-board-v2.json
 npm run data:grade:mlb-sides -- --model-name board-moneyline-v2
-npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 2026-05-12 --verify-start 2026-05-13 --verify-end 2026-05-15 --out data/reports/mlb-side-backtest-2026-05-10-to-2026-05-15.md
+npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 2026-05-12 --verify-start 2026-05-13 --verify-end 2026-05-15 --out data-private/reports/mlb-side-backtest-2026-05-10-to-2026-05-15.md
 ```
 
 ## Notes

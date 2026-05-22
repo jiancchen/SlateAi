@@ -75,7 +75,7 @@ export const historyArchive: HistoryEntry[] = [
       tennis: { wins: 7, losses: 5 }
     },
     journal: {
-      path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-21.jsonl',
+      path: 'data-private/history/mlb-results-2026-05-21.jsonl',
       records: 19,
       sideRows: 7,
       hrRows: 12,
@@ -115,27 +115,27 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Daily results journal',
-        path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-21.jsonl'
+        path: 'data-private/history/mlb-results-2026-05-21.jsonl'
       },
       {
         label: 'Combined follow-up doc',
-        path: '/Users/jcchen/Documents/New project/followup_may_21.md'
+        path: 'research/followups/followup_may_21.md'
       },
       {
         label: 'Tennis follow-up doc',
-        path: '/Users/jcchen/Documents/New project/followup_may_21_tennis.md'
+        path: 'research/followups/followup_may_21_tennis.md'
       },
       {
         label: 'Saved HR board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-home-runs/2026-05-21-statcast-prototype.json'
+        path: 'data-private/predictions/mlb-home-runs/2026-05-21-statcast-prototype.json'
       },
       {
         label: 'Stored combined slate',
-        path: '/Users/jcchen/Documents/New project/src/lib/day-2026-05-21.js'
+        path: 'web/src/lib/day-2026-05-21.js'
       },
       {
         label: 'Stored MLB board',
-        path: '/Users/jcchen/Documents/New project/src/lib/day-2026-05-21-mlb.js'
+        path: 'web/src/lib/day-2026-05-21-mlb.js'
       }
     ]
   },
@@ -154,7 +154,7 @@ export const historyArchive: HistoryEntry[] = [
       hrBoard: { hits: 2, total: 12 }
     },
     journal: {
-      path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-20.jsonl',
+      path: 'data-private/history/mlb-results-2026-05-20.jsonl',
       records: 25,
       sideRows: 13,
       hrRows: 12,
@@ -195,23 +195,23 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Daily results journal',
-        path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-20.jsonl'
+        path: 'data-private/history/mlb-results-2026-05-20.jsonl'
       },
       {
         label: 'Follow-up doc',
-        path: '/Users/jcchen/Documents/New project/followup_may_20.md'
+        path: 'research/followups/followup_may_20.md'
       },
       {
         label: 'Saved HR board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-home-runs/2026-05-20-statcast-prototype.json'
+        path: 'data-private/predictions/mlb-home-runs/2026-05-20-statcast-prototype.json'
       },
       {
         label: 'Stored live slate',
-        path: '/Users/jcchen/Documents/New project/src/lib/day-2026-05-20.js'
+        path: 'web/src/lib/day-2026-05-20.js'
       },
       {
         label: 'Stored MLB board',
-        path: '/Users/jcchen/Documents/New project/src/lib/day-2026-05-20-mlb.js'
+        path: 'web/src/lib/day-2026-05-20-mlb.js'
       }
     ]
   },
@@ -230,7 +230,7 @@ export const historyArchive: HistoryEntry[] = [
       hrBoard: { hits: 0, total: 12 }
     },
     journal: {
-      path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-19.jsonl',
+      path: 'data-private/history/mlb-results-2026-05-19.jsonl',
       records: 27,
       sideRows: 15,
       hrRows: 12,
@@ -270,23 +270,23 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Daily results journal',
-        path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-19.jsonl'
+        path: 'data-private/history/mlb-results-2026-05-19.jsonl'
       },
       {
         label: 'Follow-up doc',
-        path: '/Users/jcchen/Documents/New project/followup_may_19.md'
+        path: 'research/followups/followup_may_19.md'
       },
       {
         label: 'Saved HR board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-home-runs/2026-05-19-statcast-prototype.json'
+        path: 'data-private/predictions/mlb-home-runs/2026-05-19-statcast-prototype.json'
       },
       {
         label: 'Stored live slate',
-        path: '/Users/jcchen/Documents/New project/src/lib/day-2026-05-19.js'
+        path: 'web/src/lib/day-2026-05-19.js'
       },
       {
         label: 'Stored MLB board',
-        path: '/Users/jcchen/Documents/New project/src/lib/day-2026-05-19-mlb.js'
+        path: 'web/src/lib/day-2026-05-19-mlb.js'
       }
     ]
   },
@@ -307,7 +307,7 @@ export const historyArchive: HistoryEntry[] = [
       nba: { wins: 0, losses: 1 }
     },
     journal: {
-      path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-18.jsonl',
+      path: 'data-private/history/mlb-results-2026-05-18.jsonl',
       records: 27,
       sideRows: 15,
       hrRows: 12,
@@ -348,23 +348,23 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Daily results journal',
-        path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-18.jsonl'
+        path: 'data-private/history/mlb-results-2026-05-18.jsonl'
       },
       {
         label: 'Follow-up doc',
-        path: '/Users/jcchen/Documents/New project/followup_may_18.md'
+        path: 'research/followups/followup_may_18.md'
       },
       {
         label: 'Saved HR board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-home-runs/2026-05-18-statcast-prototype.json'
+        path: 'data-private/predictions/mlb-home-runs/2026-05-18-statcast-prototype.json'
       },
       {
         label: 'Saved side board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-sides/2026-05-18-board-v2.json'
+        path: 'data-private/predictions/mlb-sides/2026-05-18-board-v2.json'
       },
       {
         label: 'Current retro report',
-        path: '/Users/jcchen/Documents/New project/data/reports/current-model-retro-may16-may18.md'
+        path: 'data-private/reports/current-model-retro-may16-may18.md'
       }
     ]
   },
@@ -383,7 +383,7 @@ export const historyArchive: HistoryEntry[] = [
       hrBoard: { hits: 3, total: 12 }
     },
     journal: {
-      path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-17.jsonl',
+      path: 'data-private/history/mlb-results-2026-05-17.jsonl',
       records: 27,
       sideRows: 15,
       hrRows: 12,
@@ -423,19 +423,19 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Daily results journal',
-        path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-17.jsonl'
+        path: 'data-private/history/mlb-results-2026-05-17.jsonl'
       },
       {
         label: 'Follow-up doc',
-        path: '/Users/jcchen/Documents/New project/followup_may_17.md'
+        path: 'research/followups/followup_may_17.md'
       },
       {
         label: 'Saved HR board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-home-runs/2026-05-17-statcast-prototype.json'
+        path: 'data-private/predictions/mlb-home-runs/2026-05-17-statcast-prototype.json'
       },
       {
         label: 'Saved side board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-sides/2026-05-17-board-v2.json'
+        path: 'data-private/predictions/mlb-sides/2026-05-17-board-v2.json'
       }
     ]
   },
@@ -454,7 +454,7 @@ export const historyArchive: HistoryEntry[] = [
       hrBoard: { hits: 6, total: 12 }
     },
     journal: {
-      path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-16.jsonl',
+      path: 'data-private/history/mlb-results-2026-05-16.jsonl',
       records: 27,
       sideRows: 15,
       hrRows: 12,
@@ -494,23 +494,23 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Daily results journal',
-        path: '/Users/jcchen/Documents/New project/data/history/mlb-results-2026-05-16.jsonl'
+        path: 'data-private/history/mlb-results-2026-05-16.jsonl'
       },
       {
         label: 'Follow-up doc',
-        path: '/Users/jcchen/Documents/New project/followup_may_16.md'
+        path: 'research/followups/followup_may_16.md'
       },
       {
         label: 'Saved HR board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-home-runs/2026-05-16-statcast-prototype.json'
+        path: 'data-private/predictions/mlb-home-runs/2026-05-16-statcast-prototype.json'
       },
       {
         label: 'Saved side board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-sides/2026-05-16-board-v2.json'
+        path: 'data-private/predictions/mlb-sides/2026-05-16-board-v2.json'
       },
       {
         label: 'Daily side report',
-        path: '/Users/jcchen/Documents/New project/data/reports/mlb-side-backtest-2026-05-16.md'
+        path: 'data-private/reports/mlb-side-backtest-2026-05-16.md'
       }
     ]
   },
@@ -555,15 +555,15 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Combined side backtest',
-        path: '/Users/jcchen/Documents/New project/data/reports/mlb-side-backtest-2026-05-10-to-2026-05-15.md'
+        path: 'data-private/reports/mlb-side-backtest-2026-05-10-to-2026-05-15.md'
       },
       {
         label: 'Combined saved side board',
-        path: '/Users/jcchen/Documents/New project/data/predictions/mlb-sides/2026-05-10-to-2026-05-15-board-v2.json'
+        path: 'data-private/predictions/mlb-sides/2026-05-10-to-2026-05-15-board-v2.json'
       },
       {
         label: 'Archive JSONL ledger',
-        path: '/Users/jcchen/Documents/New project/data/history/mlb-results-archive.jsonl'
+        path: 'data-private/history/mlb-results-archive.jsonl'
       }
     ]
   },
@@ -603,7 +603,7 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'Stored day file',
-        path: '/Users/jcchen/Documents/New project/src/lib/slate.js'
+        path: 'web/src/lib/slate.js'
       }
     ]
   }

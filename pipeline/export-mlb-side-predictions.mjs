@@ -2,15 +2,15 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import { games as may10 } from '../src/lib/day-2026-05-10.js'
-import { games as may11 } from '../src/lib/day-2026-05-11.js'
-import { games as may12 } from '../src/lib/day-2026-05-12.js'
-import { games as may13 } from '../src/lib/day-2026-05-13.js'
-import { games as may14 } from '../src/lib/day-2026-05-14.js'
-import { games as may15 } from '../src/lib/day-2026-05-15.js'
-import { games as may16 } from '../src/lib/day-2026-05-16.js'
-import { games as may17 } from '../src/lib/day-2026-05-17.js'
-import { games as may18 } from '../src/lib/day-2026-05-18.js'
+import { games as may10 } from '../web/src/lib/day-2026-05-10.js'
+import { games as may11 } from '../web/src/lib/day-2026-05-11.js'
+import { games as may12 } from '../web/src/lib/day-2026-05-12.js'
+import { games as may13 } from '../web/src/lib/day-2026-05-13.js'
+import { games as may14 } from '../web/src/lib/day-2026-05-14.js'
+import { games as may15 } from '../web/src/lib/day-2026-05-15.js'
+import { games as may16 } from '../web/src/lib/day-2026-05-16.js'
+import { games as may17 } from '../web/src/lib/day-2026-05-17.js'
+import { games as may18 } from '../web/src/lib/day-2026-05-18.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -179,7 +179,7 @@ const parseArgs = () => {
   const options = {
     startDate: '2026-05-10',
     endDate: '2026-05-15',
-    out: path.join(rootDir, 'data', 'predictions', 'mlb-sides', '2026-05-10-to-2026-05-15-board-v2.json'),
+    out: path.join(rootDir, 'data-private', 'predictions', 'mlb-sides', '2026-05-10-to-2026-05-15-board-v2.json'),
     modelName: 'board-moneyline-v2'
   }
 

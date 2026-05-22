@@ -31,6 +31,6 @@ The archive should treat May 19 as:
 Those are different things and need to stay separated.
 
 ## Artifacts
-- Saved HR board: [data/predictions/mlb-home-runs/2026-05-19-statcast-prototype.json](/Users/jcchen/Documents/New%20project/data/predictions/mlb-home-runs/2026-05-19-statcast-prototype.json:1)
-- Stored live slate: [src/lib/day-2026-05-19.js](/Users/jcchen/Documents/New%20project/src/lib/day-2026-05-19.js:1)
-- Stored MLB board: [src/lib/day-2026-05-19-mlb.js](/Users/jcchen/Documents/New%20project/src/lib/day-2026-05-19-mlb.js:1)
+- Saved HR board: [data-private/predictions/mlb-home-runs/2026-05-19-statcast-prototype.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-home-runs/2026-05-19-statcast-prototype.json:1)
+- Stored live slate: [web/src/lib/day-2026-05-19.js](/Users/jcchen/Documents/New%20project/web/src/lib/day-2026-05-19.js:1)
+- Stored MLB board: [web/src/lib/day-2026-05-19-mlb.js](/Users/jcchen/Documents/New%20project/web/src/lib/day-2026-05-19-mlb.js:1)

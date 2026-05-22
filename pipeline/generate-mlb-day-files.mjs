@@ -240,7 +240,7 @@ const parseMatchupOdds = async (awayDeskTeam, homeDeskTeam) => {
 }
 
 const runSqliteJson = (sql) => {
-  const command = `sqlite3 -json "${path.join(rootDir, 'data', 'warehouse', 'sports.db')}" ${JSON.stringify(sql)}`
+  const command = `sqlite3 -json "${path.join(rootDir, 'data-private', 'warehouse', 'sports.db')}" ${JSON.stringify(sql)}`
   const output = execSync(command, { encoding: 'utf8', cwd: rootDir })
   return JSON.parse(output || '[]')
 }
@@ -492,11 +492,11 @@ const main = async () => {
   const dayContextModule = `import {\n  teamOffenseContextByTeam,\n  teamBullpenContextByTeam,\n  teamSavantContextByTeam\n} from './mlb-context-${options.baselineContextDate}.js'\n\nexport const standingsContextByTeam = ${JSON.stringify(standingsContextByTeam, null, 2)}\n\nexport { teamOffenseContextByTeam, teamBullpenContextByTeam, teamSavantContextByTeam }\n`
 
   await writeModuleFile(
-    path.join(rootDir, 'src', 'lib', `day-${options.date}-data.js`),
+    path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}-data.js`),
     dayDataModule
   )
   await writeModuleFile(
-    path.join(rootDir, 'src', 'lib', `mlb-context-${options.date}.js`),
+    path.join(rootDir, 'web', 'src', 'lib', `mlb-context-${options.date}.js`),
     dayContextModule
   )
 

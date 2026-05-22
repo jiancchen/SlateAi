@@ -2,6 +2,9 @@
 
 This file is the known-good starting list for daily web pulls.
 
+Operator note:
+- Run all `npm run data:*` commands from the repository root, not from `web/`.
+
 The rule:
 1. Start here before doing a wide web search.
 2. Prefer links that already worked for schedule, pitchers, odds, box scores, and event cards.

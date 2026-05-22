@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "data" / "warehouse" / "sports.db"
+DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS mlb_side_predictions (

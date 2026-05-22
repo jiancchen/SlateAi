@@ -8,7 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+web/node_modules
 dist
+web/dist
 dist-ssr
 *.local
 
@@ -24,5 +26,5 @@ dist-ssr
 *.sw?
 
 # Local warehouse artifacts
-data/raw/
-data/warehouse/
+data-private/raw/
+data-private/warehouse/

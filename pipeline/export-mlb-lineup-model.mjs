@@ -130,8 +130,8 @@ const parseArgs = () => {
     throw new Error('Missing required --date argument, expected YYYY-MM-DD.')
   }
 
-  options.out ||= path.join(rootDir, 'data', 'lineups', 'mlb', `${options.date}-lineup-board.json`)
-  options.moduleOut ||= path.join(rootDir, 'src', 'lib', `day-${options.date}-lineups.js`)
+  options.out ||= path.join(rootDir, 'data-private', 'lineups', 'mlb', `${options.date}-lineup-board.json`)
+  options.moduleOut ||= path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}-lineups.js`)
   return options
 }
 
@@ -436,7 +436,7 @@ const buildPitchArsenalMaps = async ({ batterIds = [], pitcherIds = [], year }) 
 }
 
 const loadDayData = async (date) => {
-  const modulePath = pathToFileURL(path.join(rootDir, 'src', 'lib', `day-${date}-data.js`)).href
+  const modulePath = pathToFileURL(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`)).href
   return import(modulePath)
 }
 

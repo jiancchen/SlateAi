@@ -27,7 +27,7 @@ const parseArgs = () => {
 }
 
 const runNodeScript = (scriptName, extraArgs = []) => {
-  execFileSync('node', [path.join(rootDir, 'scripts', scriptName), ...extraArgs], {
+  execFileSync('node', [path.join(rootDir, 'pipeline', scriptName), ...extraArgs], {
     cwd: rootDir,
     stdio: 'inherit'
   })

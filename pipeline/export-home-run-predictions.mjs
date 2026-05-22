@@ -2,7 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
-import { parkContextByHomeTeam } from '../src/lib/day-2026-05-13-mlb-data.js'
+import { parkContextByHomeTeam } from '../web/src/lib/day-2026-05-13-mlb-data.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -73,8 +73,8 @@ const parseArgs = () => {
     throw new Error('Missing required --date argument, expected YYYY-MM-DD.')
   }
 
-  options.out ||= path.join(rootDir, 'data', 'predictions', 'mlb-home-runs', `${options.date}-statcast-prototype.json`)
-  options.moduleOut ||= path.join(rootDir, 'src', 'lib', `day-${options.date}-home-run-data.js`)
+  options.out ||= path.join(rootDir, 'data-private', 'predictions', 'mlb-home-runs', `${options.date}-statcast-prototype.json`)
+  options.moduleOut ||= path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}-home-run-data.js`)
   return options
 }
 
@@ -150,14 +150,14 @@ const parseCsv = (text) => {
 }
 
 const loadDayGames = async (date) => {
-  const dayModulePath = path.join(rootDir, 'src', 'lib', `day-${date}.js`)
+  const dayModulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}.js`)
   const dayModule = await import(pathToFileURL(dayModulePath).href)
   return dayModule.games.filter((game) => game.league === 'MLB')
 }
 
 const loadLineupBoards = async (date) => {
   try {
-    const lineupModulePath = path.join(rootDir, 'src', 'lib', `day-${date}-lineups.js`)
+    const lineupModulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}-lineups.js`)
     const lineupModule = await import(pathToFileURL(lineupModulePath).href)
     return lineupModule.lineupBoardsByGameId || {}
   } catch {
@@ -167,7 +167,7 @@ const loadLineupBoards = async (date) => {
 
 const loadBattingImpactHistory = async () => {
   try {
-    const modulePath = path.join(rootDir, 'src', 'lib', 'mlb-batting-impact-history.js')
+    const modulePath = path.join(rootDir, 'web', 'src', 'lib', 'mlb-batting-impact-history.js')
     const impactModule = await import(pathToFileURL(modulePath).href)
     return impactModule.battingImpactByPlayerName || {}
   } catch {

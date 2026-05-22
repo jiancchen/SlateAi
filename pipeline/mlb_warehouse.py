@@ -17,7 +17,7 @@ from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT / "data-private"
 RAW_DIR = DATA_DIR / "raw"
 WAREHOUSE_DIR = DATA_DIR / "warehouse"
 PREDICTIONS_DIR = DATA_DIR / "predictions" / "mlb-home-runs"

@@ -189,7 +189,7 @@ const may10Slate = createSlateDay({
   intakeChecklist: [
     'Backfill final scores and winning starters after the games close.',
     'Decide whether you want the automated ingest to persist opening odds, latest odds, or both.',
-    'Keep the NBA series links and WNBA board links in daily-games-external.md if they stay stable.',
+    'Keep the NBA series links and WNBA board links in research/daily-games-external.md if they stay stable.',
     'Add run line and total parsing as the next MLB ingest pass.',
     'Store postgame MLB, NBA, and WNBA results so this day can become a real archive reference.'
   ],

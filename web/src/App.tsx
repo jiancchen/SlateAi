@@ -7,8 +7,8 @@ import {
   rankFlipRiskPicks,
   rankMlbPlayerProps
 } from './lib/sports-model.js'
-import { historyArchive, type HistoryEntry, type HistoryRecord } from './lib/history-archive'
-import { defaultSlateDayId, slateDays } from './lib/slate-days.js'
+import type { HistoryEntry, HistoryRecord } from './lib/history-archive'
+import { defaultSlateDayId, loadSlateDay, slateDayManifest, type LoadedSlateDay } from './lib/slate-manifest'
 
 type AnyRecord = Record<string, any>
 type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history'
@@ -480,7 +480,7 @@ const buildBalancedRecommendationSet = (
 function App() {
   const [activeDayId, setActiveDayId] = useState(defaultSlateDayId)
   const [activeDeskTab, setActiveDeskTab] = useState<DeskTabId>('board')
-  const [activeHistoryId, setActiveHistoryId] = useState(historyArchive[0]?.id ?? '')
+  const [activeHistoryId, setActiveHistoryId] = useState('')
   const [activeFilter, setActiveFilter] = useState('All')
   const [activeSidebarTab, setActiveSidebarTab] = useState<SidebarTabId>('ticket')
   const [marketSearch, setMarketSearch] = useState('')
@@ -497,6 +497,10 @@ function App() {
   const [selectedPicksByDay, setSelectedPicksByDay] = useState<Record<string, Record<string, string>>>({})
   const [selectedPropsByDay, setSelectedPropsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [selectedTotalsByDay, setSelectedTotalsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
+  const [loadedSlates, setLoadedSlates] = useState<Record<string, LoadedSlateDay>>({})
+  const [loadingSlateIds, setLoadingSlateIds] = useState<Record<string, boolean>>({})
+  const [historyArchive, setHistoryArchive] = useState<HistoryEntry[]>([])
+  const [historyLoaded, setHistoryLoaded] = useState(false)
 
   useEffect(() => {
     const updateClock = () => setPacificClock(getPacificClock())
@@ -506,21 +510,68 @@ function App() {
   }, [])
 
   const orderedSlateDays = useMemo(
-    () => [...slateDays].sort((left, right) => right.id.localeCompare(left.id)),
+    () => [...slateDayManifest].sort((left, right) => right.id.localeCompare(left.id)),
     []
   )
 
-  const activeDay = useMemo(
+  const activeDayShell = useMemo(
     () => orderedSlateDays.find((day) => day.id === activeDayId) ?? orderedSlateDays[0],
     [activeDayId, orderedSlateDays]
   )
 
-  const activeDayIndex = orderedSlateDays.findIndex((day) => day.id === activeDay?.id)
-  const slateMeta = activeDay?.slateMeta ?? { date: 'Slate', isoDate: '' }
+  const activeDay = activeDayShell ? loadedSlates[activeDayShell.id] ?? null : null
+  const isActiveDayLoading = Boolean(activeDayShell?.id && loadingSlateIds[activeDayShell.id] && !activeDay)
+
+  useEffect(() => {
+    if (!activeDayShell?.id || loadedSlates[activeDayShell.id] || loadingSlateIds[activeDayShell.id]) return
+
+    let cancelled = false
+    setLoadingSlateIds((current) => ({ ...current, [activeDayShell.id]: true }))
+
+    loadSlateDay(activeDayShell.id)
+      .then((day) => {
+        if (cancelled) return
+        setLoadedSlates((current) => ({ ...current, [day.id]: day }))
+      })
+      .catch((error) => {
+        console.error(`Failed to load slate ${activeDayShell.id}`, error)
+      })
+      .finally(() => {
+        if (cancelled) return
+        setLoadingSlateIds((current) => ({ ...current, [activeDayShell.id]: false }))
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [activeDayShell, loadedSlates, loadingSlateIds])
+
+  useEffect(() => {
+    if (historyLoaded || (activeDeskTab !== 'history' && activeDeskTab !== 'models')) return
+
+    let cancelled = false
+    import('./lib/history-archive')
+      .then((module) => {
+        if (cancelled) return
+        setHistoryArchive(module.historyArchive)
+        setActiveHistoryId((current) => current || module.historyArchive[0]?.id || '')
+        setHistoryLoaded(true)
+      })
+      .catch((error) => {
+        console.error('Failed to load history archive', error)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [activeDeskTab, historyLoaded])
+
+  const activeDayIndex = orderedSlateDays.findIndex((day) => day.id === activeDayShell?.id)
+  const slateMeta = activeDay?.slateMeta ?? activeDayShell?.slateMeta ?? { date: 'Slate', isoDate: '' }
   const oddsMeta = activeDay?.oddsMeta ?? { snapshot: pacificClock.label }
   const games = activeDay?.games ?? []
   const filterOptions = activeDay?.filters?.length ? activeDay.filters : ['All']
-  const activeDayIsoDate = activeDay?.slateMeta?.isoDate ?? activeDay?.id ?? ''
+  const activeDayIsoDate = activeDay?.slateMeta?.isoDate ?? activeDayShell?.id ?? ''
 
   useEffect(() => {
     if (!filterOptions.includes(activeFilter)) setActiveFilter('All')
@@ -573,7 +624,7 @@ function App() {
             Boolean(entry.performance?.hrBoard)
         )
         .sort((left, right) => left.id.localeCompare(right.id)),
-    []
+    [historyArchive]
   )
 
   const historyTrendPoints = useMemo(
@@ -1769,7 +1820,13 @@ function App() {
             </div>
 
             <div className="games-rail-list no-scrollbar">
-              {visibleGames.length === 0 ? (
+              {isActiveDayLoading ? (
+                <div className="placeholder-panel compact">
+                  <p className="eyebrow">Loading slate</p>
+                  <h3>Pulling board data for {slateMeta.date}</h3>
+                  <p>The day module is loading on demand so the initial app bundle can stay lighter.</p>
+                </div>
+              ) : visibleGames.length === 0 ? (
                 <div className="placeholder-panel compact">
                   <p className="eyebrow">No markets</p>
                   <h3>No results for this filter yet</h3>
@@ -1825,7 +1882,13 @@ function App() {
           </section>
 
           <section className="detail-canvas">
-            {selectedGame ? (
+            {isActiveDayLoading && !selectedGame ? (
+              <div className="placeholder-panel compact">
+                <p className="eyebrow">Loading detail</p>
+                <h3>Preparing the selected slate</h3>
+                <p>Once the board loads, matchup analysis and props will appear here.</p>
+              </div>
+            ) : selectedGame ? (
               <>
                 <div className="detail-canvas-header">
                   <div className="detail-canvas-title-block">
@@ -2418,138 +2481,144 @@ function App() {
               <span>{historyTrendPoints.length} graded days</span>
             </div>
 
-            <div className="history-metric-grid models-metric-grid">
-              <article className="parlay-stat-card history-metric-card positive">
-                <span className="parlay-stat-label">Avg MLB full game</span>
-                <strong>{formatPercent(historyTrendSummary.fullGame)}</strong>
-                <small>Daily graded archive</small>
-              </article>
-              <article className="parlay-stat-card history-metric-card warning">
-                <span className="parlay-stat-label">Avg MLB first 5</span>
-                <strong>{formatPercent(historyTrendSummary.first5)}</strong>
-                <small>Starter-window hit rate</small>
-              </article>
-              <article className="parlay-stat-card history-metric-card negative">
-                <span className="parlay-stat-label">Avg HR board</span>
-                <strong>{formatPercent(historyTrendSummary.hrBoard)}</strong>
-                <small>Hit rate on saved HR pool</small>
-              </article>
-              <article className="parlay-stat-card history-metric-card info">
-                <span className="parlay-stat-label">Avg tennis main tour</span>
-                <strong>{formatPercent(historyTrendSummary.tennis)}</strong>
-                <small>Graded main-tour tennis picks</small>
-              </article>
-            </div>
+            {historyLoaded ? (
+              <>
+                <div className="history-metric-grid models-metric-grid">
+                  <article className="parlay-stat-card history-metric-card positive">
+                    <span className="parlay-stat-label">Avg MLB full game</span>
+                    <strong>{formatPercent(historyTrendSummary.fullGame)}</strong>
+                    <small>Daily graded archive</small>
+                  </article>
+                  <article className="parlay-stat-card history-metric-card warning">
+                    <span className="parlay-stat-label">Avg MLB first 5</span>
+                    <strong>{formatPercent(historyTrendSummary.first5)}</strong>
+                    <small>Starter-window hit rate</small>
+                  </article>
+                  <article className="parlay-stat-card history-metric-card negative">
+                    <span className="parlay-stat-label">Avg HR board</span>
+                    <strong>{formatPercent(historyTrendSummary.hrBoard)}</strong>
+                    <small>Hit rate on saved HR pool</small>
+                  </article>
+                  <article className="parlay-stat-card history-metric-card info">
+                    <span className="parlay-stat-label">Avg tennis main tour</span>
+                    <strong>{formatPercent(historyTrendSummary.tennis)}</strong>
+                    <small>Graded main-tour tennis picks</small>
+                  </article>
+                </div>
 
-            <div className="trend-chart-shell">
-              <div className="trend-chart-legend">
-                <span><i className="trend-dot positive" />MLB full game</span>
-                <span><i className="trend-dot warning" />MLB first 5</span>
-                <span><i className="trend-dot negative" />HR board</span>
-                <span><i className="trend-dot tennis" />Tennis main tour</span>
-              </div>
+                <div className="trend-chart-shell">
+                  <div className="trend-chart-legend">
+                    <span><i className="trend-dot positive" />MLB full game</span>
+                    <span><i className="trend-dot warning" />MLB first 5</span>
+                    <span><i className="trend-dot negative" />HR board</span>
+                    <span><i className="trend-dot tennis" />Tennis main tour</span>
+                  </div>
 
-              <div className="trend-chart-frame">
-                <svg viewBox={`0 0 ${trendChartWidth} ${trendChartHeight}`} className="trend-chart" role="img" aria-label="Model accuracy trend">
-                  {[0, 25, 50, 75, 100].map((tick) => {
-                    const y = trendChartPadding + ((100 - tick) / 100) * (trendChartHeight - trendChartPadding * 2)
-                    return (
-                      <g key={`tick-${tick}`}>
-                        <line x1={trendChartPadding} y1={y} x2={trendChartWidth - trendChartPadding} y2={y} className="trend-grid-line" />
-                        <text x={6} y={y + 4} className="trend-axis-label">{tick}</text>
-                      </g>
-                    )
-                  })}
+                  <div className="trend-chart-frame">
+                    <svg viewBox={`0 0 ${trendChartWidth} ${trendChartHeight}`} className="trend-chart" role="img" aria-label="Model accuracy trend">
+                      {[0, 25, 50, 75, 100].map((tick) => {
+                        const y = trendChartPadding + ((100 - tick) / 100) * (trendChartHeight - trendChartPadding * 2)
+                        return (
+                          <g key={`tick-${tick}`}>
+                            <line x1={trendChartPadding} y1={y} x2={trendChartWidth - trendChartPadding} y2={y} className="trend-grid-line" />
+                            <text x={6} y={y + 4} className="trend-axis-label">{tick}</text>
+                          </g>
+                        )
+                      })}
 
-                  {fullGameTrendSegments.map((segment, index) => (
-                    <line
-                      key={`full-${index}`}
-                      x1={segment.x1}
-                      y1={segment.y1}
-                      x2={segment.x2}
-                      y2={segment.y2}
-                      className="trend-line positive"
-                    />
-                  ))}
-                  {first5TrendSegments.map((segment, index) => (
-                    <line
-                      key={`first5-${index}`}
-                      x1={segment.x1}
-                      y1={segment.y1}
-                      x2={segment.x2}
-                      y2={segment.y2}
-                      className="trend-line warning"
-                    />
-                  ))}
-                  {hrTrendSegments.map((segment, index) => (
-                    <line
-                      key={`hr-${index}`}
-                      x1={segment.x1}
-                      y1={segment.y1}
-                      x2={segment.x2}
-                      y2={segment.y2}
-                      className="trend-line negative"
-                    />
-                  ))}
-                  {tennisTrendSegments.map((segment, index) => (
-                    <line
-                      key={`tennis-${index}`}
-                      x1={segment.x1}
-                      y1={segment.y1}
-                      x2={segment.x2}
-                      y2={segment.y2}
-                      className="trend-line tennis"
-                    />
-                  ))}
+                      {fullGameTrendSegments.map((segment, index) => (
+                        <line
+                          key={`full-${index}`}
+                          x1={segment.x1}
+                          y1={segment.y1}
+                          x2={segment.x2}
+                          y2={segment.y2}
+                          className="trend-line positive"
+                        />
+                      ))}
+                      {first5TrendSegments.map((segment, index) => (
+                        <line
+                          key={`first5-${index}`}
+                          x1={segment.x1}
+                          y1={segment.y1}
+                          x2={segment.x2}
+                          y2={segment.y2}
+                          className="trend-line warning"
+                        />
+                      ))}
+                      {hrTrendSegments.map((segment, index) => (
+                        <line
+                          key={`hr-${index}`}
+                          x1={segment.x1}
+                          y1={segment.y1}
+                          x2={segment.x2}
+                          y2={segment.y2}
+                          className="trend-line negative"
+                        />
+                      ))}
+                      {tennisTrendSegments.map((segment, index) => (
+                        <line
+                          key={`tennis-${index}`}
+                          x1={segment.x1}
+                          y1={segment.y1}
+                          x2={segment.x2}
+                          y2={segment.y2}
+                          className="trend-line tennis"
+                        />
+                      ))}
 
-                  {historyTrendPoints.map((entry, index) => {
-                    const x =
-                      historyTrendPoints.length === 1
-                        ? trendChartWidth / 2
-                        : trendChartPadding +
-                          ((trendChartWidth - trendChartPadding * 2) * index) / (historyTrendPoints.length - 1)
+                      {historyTrendPoints.map((entry, index) => {
+                        const x =
+                          historyTrendPoints.length === 1
+                            ? trendChartWidth / 2
+                            : trendChartPadding +
+                              ((trendChartWidth - trendChartPadding * 2) * index) / (historyTrendPoints.length - 1)
 
-                    return (
-                      <g key={entry.id}>
-                        {entry.fullGame !== null ? (
-                          <circle
-                            cx={x}
-                            cy={trendChartPadding + ((100 - entry.fullGame) / 100) * (trendChartHeight - trendChartPadding * 2)}
-                            r="4"
-                            className="trend-point positive"
-                          />
-                        ) : null}
-                        {entry.first5 !== null ? (
-                          <circle
-                            cx={x}
-                            cy={trendChartPadding + ((100 - entry.first5) / 100) * (trendChartHeight - trendChartPadding * 2)}
-                            r="4"
-                            className="trend-point warning"
-                          />
-                        ) : null}
-                        {entry.hrBoard !== null ? (
-                          <circle
-                            cx={x}
-                            cy={trendChartPadding + ((100 - entry.hrBoard) / 100) * (trendChartHeight - trendChartPadding * 2)}
-                            r="4"
-                            className="trend-point negative"
-                          />
-                        ) : null}
-                        {entry.tennis !== null ? (
-                          <circle
-                            cx={x}
-                            cy={trendChartPadding + ((100 - entry.tennis) / 100) * (trendChartHeight - trendChartPadding * 2)}
-                            r="4"
-                            className="trend-point tennis"
-                          />
-                        ) : null}
-                        <text x={x} y={trendChartHeight - 6} textAnchor="middle" className="trend-axis-label">{entry.id.slice(5)}</text>
-                      </g>
-                    )
-                  })}
-                </svg>
-              </div>
-            </div>
+                        return (
+                          <g key={entry.id}>
+                            {entry.fullGame !== null ? (
+                              <circle
+                                cx={x}
+                                cy={trendChartPadding + ((100 - entry.fullGame) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                                r="4"
+                                className="trend-point positive"
+                              />
+                            ) : null}
+                            {entry.first5 !== null ? (
+                              <circle
+                                cx={x}
+                                cy={trendChartPadding + ((100 - entry.first5) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                                r="4"
+                                className="trend-point warning"
+                              />
+                            ) : null}
+                            {entry.hrBoard !== null ? (
+                              <circle
+                                cx={x}
+                                cy={trendChartPadding + ((100 - entry.hrBoard) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                                r="4"
+                                className="trend-point negative"
+                              />
+                            ) : null}
+                            {entry.tennis !== null ? (
+                              <circle
+                                cx={x}
+                                cy={trendChartPadding + ((100 - entry.tennis) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                                r="4"
+                                className="trend-point tennis"
+                              />
+                            ) : null}
+                            <text x={x} y={trendChartHeight - 6} textAnchor="middle" className="trend-axis-label">{entry.id.slice(5)}</text>
+                          </g>
+                        )
+                      })}
+                    </svg>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <p className="react-section-copy">Loading graded archive…</p>
+            )}
           </section>
 
           <section className="workspace-panel action-section">
@@ -2570,7 +2639,7 @@ function App() {
               <span>JSONL ready</span>
             </div>
             <p className="react-section-copy">
-              Daily hit and miss ledgers now export to JSONL under <code>/Users/jcchen/Documents/New project/data/history</code>, so the archive can train against individual picks instead of only summary docs.
+              Daily hit and miss ledgers now export to structured JSONL under <code>data-private/history</code>, so the archive can train against individual picks instead of only summary docs.
             </p>
           </section>
         </div>
@@ -2591,6 +2660,7 @@ function App() {
             </div>
 
             <div className="history-rail-list no-scrollbar">
+              {!historyLoaded ? <p className="react-section-copy">Loading archive…</p> : null}
               {historyArchive.map((entry) => (
                 <button
                   key={entry.id}
@@ -2615,7 +2685,9 @@ function App() {
           </section>
 
           <section className="workspace-panel history-detail">
-            {activeHistoryEntry ? (
+            {!historyLoaded ? (
+              <p className="react-section-copy">Loading archive detail…</p>
+            ) : activeHistoryEntry ? (
               <>
                 <div className="history-detail-header">
                   <div>
