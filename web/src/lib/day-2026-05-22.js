@@ -2,6 +2,7 @@ import { createSportsMatchModel } from './sports-model.js'
 import { tennisClayContext } from './day-2026-05-21-tennis-context.js'
 import { buildTennistonicH2HUrl } from './tennis-source-mapping.js'
 import qualifierTennistonicContext from './day-2026-05-22-qualifier-context.generated.json' with { type: 'json' }
+import { mlbGames, mlbNotes, mlbSources } from './day-2026-05-22-mlb.js'
 
 const oddsProvider = 'Oddschecker + TennisStats clay board'
 
@@ -971,13 +972,14 @@ const matches = [
 ]
 
 export const slateMeta = {
-  title: 'Friday Tennis Desk',
+  title: 'Friday MLB + Tennis Desk',
   date: 'May 22, 2026',
   isoDate: '2026-05-22',
   timeZone: 'America/Los_Angeles',
   subtitle:
-    'A focused May 22 clay semifinal board built from official ATP/WTA schedules, Oddschecker lines, TennisStats form context, official ATP/WTA stat pages, and Tennis Abstract player research.',
+    'A live May 22 board combining the rebuilt MLB slate with the clay tennis semifinal and Roland-Garros qualifying desk, using official league pages, matchup-board pricing, lineup context, and current tennis surface form.',
   notes: [
+    ...mlbNotes,
     'Every match on this board is on clay, and the field is down to semifinals, so the model is leaning more on surface-specific point winning and tournament rhythm than on broad ranking alone.',
     'The Friday board now mixes the ATP/WTA semifinals with the official Roland-Garros qualifying singles matches that are on the May 22 order of play.',
     'May 21 was a useful reminder that ATP clay-point reads held much better than the WTA Strasbourg quarterfinals, so this semifinal board intentionally compresses WTA confidence and leans harder on current-week rhythm than on stable-name value.',
@@ -986,16 +988,17 @@ export const slateMeta = {
   ]
 }
 
-export const filters = ['All', 'Tennis']
+export const filters = ['All', 'MLB', 'Tennis']
 
 export const oddsMeta = {
-  provider: 'Official ATP/WTA schedules + Oddschecker + TennisStats + ATP/WTA stats',
-  snapshot: 'May 22, 2026 pre-open semifinal clay desk',
+  provider: 'Official league data + matchup board snapshots',
+  snapshot: 'May 22, 2026 live MLB + tennis desk',
   note:
-    'Tennis uses official semifinal schedules plus Oddschecker, TennisStats, ATP/WTA stats pages, and player research sources for ranking, form, surface fit, H2H, and accessible moneylines.'
+    'MLB pricing comes from official game data plus ScoresAndOdds and the rebuilt lineup / bullpen-chain model. Tennis uses official schedules, Oddschecker, TennisStats, ATP/WTA stats pages, and matchup-page research.'
 }
 
 export const sources = [
+  ...mlbSources,
   {
     label: 'Oddschecker tennis lines',
     url: 'https://www.oddschecker.com/us/tennis'
@@ -1054,6 +1057,6 @@ export const sources = [
   }
 ]
 
-export const games = [...matches].sort(
+export const games = [...mlbGames, ...matches].sort(
   (left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title)
 )
