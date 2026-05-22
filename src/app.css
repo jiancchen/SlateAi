@@ -1042,6 +1042,7 @@ h3 {
 
 .desk-tool-workspace {
   grid-template-columns: minmax(0, 1fr);
+  overflow: auto;
 }
 
 .models-workspace {
@@ -1314,38 +1315,46 @@ h3 {
 
 .builder-shell {
   padding: 0;
+  overflow: visible;
 }
 
 .builder-layout {
-  min-height: 0;
-  height: 100%;
+  min-height: 100%;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 336px;
-  align-items: stretch;
-  overflow: hidden;
+  align-items: start;
+  overflow: visible;
 }
 
 .builder-catalog,
 .builder-execution {
   min-height: 0;
+  min-width: 0;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .builder-catalog {
+  height: auto;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   border-right: 1px solid var(--line);
   border-radius: 0 0 0 12px;
 }
 
 .builder-execution {
+  width: 336px;
   display: grid;
   align-content: start;
   gap: 14px;
-  overflow: auto;
+  overflow: visible;
   padding: 18px;
   border-left: 0;
   border-radius: 0 0 12px 0;
+  position: sticky;
+  top: 0;
+  align-self: start;
 }
 
 .builder-catalog-header,
@@ -1421,15 +1430,17 @@ h3 {
 
 .builder-catalog-list {
   min-height: 0;
-  flex: 1 1 auto;
-  display: grid;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  overflow: auto;
-  align-content: start;
-  grid-auto-rows: max-content;
+  overflow: visible;
+  align-content: flex-start;
+  contain: none;
 }
 
 .builder-entry-card {
+  flex: 0 0 auto;
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 12px;
@@ -1598,7 +1609,9 @@ h3 {
   }
 
   .builder-execution {
+    width: auto;
     border-radius: 0 0 12px 12px;
+    position: static;
   }
 }
 

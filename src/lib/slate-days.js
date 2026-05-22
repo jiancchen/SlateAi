@@ -89,6 +89,13 @@ import {
   slateMeta as dayThirteenSlateMeta,
   sources as dayThirteenSources
 } from './day-2026-05-21.js'
+import {
+  filters as dayFourteenFilters,
+  games as dayFourteenGames,
+  oddsMeta as dayFourteenOddsMeta,
+  slateMeta as dayFourteenSlateMeta,
+  sources as dayFourteenSources
+} from './day-2026-05-22.js'
 
 const deriveFilters = (games, fallbackFilters = ['All']) => {
   const derivedLeagues = [...new Set(games.map((game) => game.league))]
@@ -509,7 +516,50 @@ const may21Slate = createSlateDay({
   }
 })
 
-export const slateDays = [may9Slate, may10Slate, may11Slate, may12Slate, may13Slate, may14Slate, may15Slate, may16Slate, may17Slate, may18Slate, may19Slate, may20Slate, may21Slate]
+const may22Slate = createSlateDay({
+  id: dayFourteenSlateMeta.isoDate,
+  label: dayFourteenSlateMeta.date,
+  status: 'ready',
+  slateMeta: dayFourteenSlateMeta,
+  games: dayFourteenGames,
+  filters: dayFourteenFilters,
+  oddsMeta: dayFourteenOddsMeta,
+  sources: dayFourteenSources,
+  intakeChecklist: [
+    'Backfill the semifinal results so the main-tour clay model can be graded one level deeper on match-finishing pressure.',
+    'Keep the Oddschecker and TennisStats links current because this smaller semifinal board will move faster than the wider quarterfinal slate.',
+    'Watch for late withdrawals or schedule changes before first ball because a six-match tennis board can shift quickly.',
+    'If a player shows visible physical limitation in the semifinal, note it so the French Open carryover board can inherit the right fatigue story.'
+  ],
+  intakePrompt:
+    'May 22 is now the live tennis semifinal desk. It is tighter than May 21 and intentionally focused on ATP Hamburg, ATP Geneva, and WTA Strasbourg semifinal reads.',
+  feedNotes: [
+    'This is the first follow-up tennis slate after grading the May 21 main-tour clay board.',
+    'ATP confidence remains more trustworthy than the WTA side right now, so the semifinal card should be read with smaller core sizing on Strasbourg matches.',
+    'The board is intentionally compact: it is trying to be sharper on six matches instead of pretending a wide clay slate always creates more edge.'
+  ],
+  archive: {
+    resultsStored: false,
+    leaguesTracked: ['Tennis']
+  }
+})
+
+export const slateDays = [
+  may9Slate,
+  may10Slate,
+  may11Slate,
+  may12Slate,
+  may13Slate,
+  may14Slate,
+  may15Slate,
+  may16Slate,
+  may17Slate,
+  may18Slate,
+  may19Slate,
+  may20Slate,
+  may21Slate,
+  may22Slate
+]
 
 const currentLocalIsoDate = () => {
   const now = new Date()
