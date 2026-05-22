@@ -479,10 +479,11 @@ export const slateMeta = {
   isoDate: '2026-05-22',
   timeZone: 'America/Los_Angeles',
   subtitle:
-    'A focused May 22 clay semifinal board built from official ATP/WTA schedules, Oddschecker lines, TennisStats form context, and Tennis Abstract player research.',
+    'A focused May 22 clay semifinal board built from official ATP/WTA schedules, Oddschecker lines, TennisStats form context, official ATP/WTA stat pages, and Tennis Abstract player research.',
   notes: [
     'Every match on this board is on clay, and the field is down to semifinals, so the model is leaning more on surface-specific point winning and tournament rhythm than on broad ranking alone.',
     'The Friday board is intentionally tighter than May 21 because only the official ATP and WTA semifinal matches had clean schedule-plus-price coverage on this pass.',
+    'May 21 was a useful reminder that ATP clay-point reads held much better than the WTA Strasbourg quarterfinals, so this semifinal board intentionally compresses WTA confidence and leans harder on current-week rhythm than on stable-name value.',
     'No explicit injury note surfaced from the accessible pre-match sources this morning, so volatility is being driven more by semifinal pressure, recent clay load, and market-vs-surface mismatch than by medical news.'
   ]
 }
@@ -490,10 +491,10 @@ export const slateMeta = {
 export const filters = ['All', 'Tennis']
 
 export const oddsMeta = {
-  provider: 'Official ATP/WTA schedules + Oddschecker + TennisStats clay board',
+  provider: 'Official ATP/WTA schedules + Oddschecker + TennisStats + ATP/WTA stats',
   snapshot: 'May 22, 2026 pre-open semifinal clay desk',
   note:
-    'Tennis uses official semifinal schedules plus Oddschecker and TennisStats boards for ranking, form, surface fit, and accessible moneylines.'
+    'Tennis uses official semifinal schedules plus Oddschecker, TennisStats, ATP/WTA stats pages, and player research sources for ranking, form, surface fit, H2H, and accessible moneylines.'
 }
 
 export const sources = [
@@ -508,6 +509,30 @@ export const sources = [
   {
     label: 'Tennis Abstract player research example',
     url: 'https://www.tennisabstract.com/cgi-bin/player.cgi?p=126205/Tommy-Paul'
+  },
+  {
+    label: 'ATP official stats',
+    url: 'https://www.atptour.com/stats/'
+  },
+  {
+    label: 'ATP official H2H',
+    url: 'https://www.atptour.com/en/h2h'
+  },
+  {
+    label: 'WTA official player stats example',
+    url: 'https://www.wtatennis.com/players/331006/victoria-mboko/stats'
+  },
+  {
+    label: 'WTA By The Numbers',
+    url: 'https://wtafiles.wtatennis.com/pdf/matchnotes/2026/2026WTA_ByTheNumbers.pdf'
+  },
+  {
+    label: 'Ultimate Tennis Statistics',
+    url: 'https://www.ultimatetennisstatistics.com/'
+  },
+  {
+    label: 'Tennis Explorer',
+    url: 'https://www.tennisexplorer.com/'
   },
   {
     label: 'ATP Hamburg schedule',

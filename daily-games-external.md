@@ -84,6 +84,24 @@ Use this for late-inning stability, bullpen leak risk, and underdog paths that s
 - Player research example:
   [https://www.tennisabstract.com/cgi-bin/player.cgi?p=126205/Tommy-Paul](https://www.tennisabstract.com/cgi-bin/player.cgi?p=126205/Tommy-Paul)
   Tennis Abstract player pages are useful for rank, Elo, results history, and surface-aware context when a match needs deeper manual review.
+- Official ATP stats:
+  [https://www.atptour.com/stats/](https://www.atptour.com/stats/)
+  Use this for official serve, return, and pressure leaderboards, plus player stat pages with surface filters when the board needs cleaner first/second-serve and return context.
+- Official ATP H2H:
+  [https://www.atptour.com/en/h2h](https://www.atptour.com/en/h2h)
+  Use this when a match needs official head-to-head framing or rivalry context without relying only on third-party matchup pages.
+- WTA official stats example:
+  [https://www.wtatennis.com/players/331006/victoria-mboko/stats](https://www.wtatennis.com/players/331006/victoria-mboko/stats)
+  WTA player stat pages are useful for official ranking and per-player stat context, especially when a women’s match needs a cleaner service/return check than the broader odds boards provide.
+- WTA By The Numbers:
+  [https://wtafiles.wtatennis.com/pdf/matchnotes/2026/2026WTA_ByTheNumbers.pdf](https://wtafiles.wtatennis.com/pdf/matchnotes/2026/2026WTA_ByTheNumbers.pdf)
+  This is a good fast reference for match-stat leaders like serve points won, return points won, return games won, and break-point conversion on the WTA side.
+- Ultimate Tennis Statistics:
+  [https://www.ultimatetennisstatistics.com/](https://www.ultimatetennisstatistics.com/)
+  Useful for Elo, statistics charts, mental-toughness profile, and timeline context when a tennis match needs a deeper model-quality check instead of just the surface form snapshot.
+- Tennis Explorer:
+  [https://www.tennisexplorer.com/](https://www.tennisexplorer.com/)
+  Good fallback for recent results, surface-by-surface match logs, visible H2H pages, and player injury/status context that can help catch weekly-form or fitness flags.
 - ATP Hamburg schedule:
   [https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21](https://www.bbc.co.uk/sport/tennis/hamburg-european-open/scores-and-schedule/2026-05-21)
 - ATP Geneva schedule:

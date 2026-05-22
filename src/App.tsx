@@ -7,7 +7,7 @@ import {
   rankFlipRiskPicks,
   rankMlbPlayerProps
 } from './lib/sports-model.js'
-import { historyArchive } from './lib/history-archive'
+import { historyArchive, type HistoryEntry, type HistoryRecord } from './lib/history-archive'
 import { defaultSlateDayId, slateDays } from './lib/slate-days.js'
 
 type AnyRecord = Record<string, any>
@@ -177,6 +177,42 @@ const formatSignedNumber = (value: any, digits = 1) => {
   if (!Number.isFinite(numericValue)) return 'N/A'
   return `${numericValue >= 0 ? '+' : ''}${numericValue.toFixed(digits)}`
 }
+
+const percentageFromRecord = (record?: HistoryRecord | null) => {
+  if (!record) return null
+  const total = record.wins + record.losses
+  if (!total) return null
+  return (record.wins / total) * 100
+}
+
+const formatPercent = (value?: number | null, digits = 1) => {
+  if (!Number.isFinite(Number(value))) return 'N/A'
+  return `${Number(value).toFixed(digits)}%`
+}
+
+const buildTrendSegments = (values: Array<number | null>, width: number, height: number, padding: number) => {
+  if (!values.length) return []
+  const usableHeight = height - padding * 2
+  const usableWidth = width - padding * 2
+  const points = values.map((value, index) => {
+    if (!Number.isFinite(Number(value))) return null
+    const x = values.length === 1 ? width / 2 : padding + (usableWidth * index) / (values.length - 1)
+    const y = padding + ((100 - Number(value)) / 100) * usableHeight
+    return { x, y }
+  })
+
+  const segments: Array<{ x1: number; y1: number; x2: number; y2: number }> = []
+  for (let index = 1; index < points.length; index += 1) {
+    const previous = points[index - 1]
+    const current = points[index]
+    if (!previous || !current) continue
+    segments.push({ x1: previous.x, y1: previous.y, x2: current.x, y2: current.y })
+  }
+
+  return segments
+}
+
+const getHistoryMetricTone = (metric: { tone?: string }) => metric.tone || 'neutral'
 
 const formatSnapshotTime = (isoString: string) => {
   if (!isoString) return ''
@@ -525,6 +561,79 @@ function App() {
   const selectedGame =
     games.find((game: AnyRecord) => game.id === selectedGameId) ?? visibleGames[0] ?? games[0] ?? null
   const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
+
+  const gradedHistoryEntries = useMemo(
+    () =>
+      [...historyArchive]
+        .filter(
+          (entry): entry is HistoryEntry =>
+            entry.status === 'graded' &&
+            Boolean(entry.performance?.mlbFullGame) &&
+            Boolean(entry.performance?.mlbFirst5) &&
+            Boolean(entry.performance?.hrBoard)
+        )
+        .sort((left, right) => left.id.localeCompare(right.id)),
+    []
+  )
+
+  const historyTrendPoints = useMemo(
+    () =>
+      gradedHistoryEntries.map((entry) => ({
+        id: entry.id,
+        label: entry.label.replace(', 2026', '').replace('May ', 'May '),
+        fullGame: percentageFromRecord(entry.performance?.mlbFullGame),
+        first5: percentageFromRecord(entry.performance?.mlbFirst5),
+        hrBoard: entry.performance?.hrBoard
+          ? (entry.performance.hrBoard.hits / entry.performance.hrBoard.total) * 100
+          : null
+        ,
+        tennis: percentageFromRecord(entry.performance?.tennis)
+      })),
+    [gradedHistoryEntries]
+  )
+
+  const historyTrendSummary = useMemo(() => {
+    const summarize = (values: Array<number | null>) => {
+      const cleanValues = values.filter((value): value is number => Number.isFinite(Number(value)))
+      if (!cleanValues.length) return null
+      return cleanValues.reduce((total, value) => total + value, 0) / cleanValues.length
+    }
+
+    return {
+      fullGame: summarize(historyTrendPoints.map((entry) => entry.fullGame)),
+      first5: summarize(historyTrendPoints.map((entry) => entry.first5)),
+      hrBoard: summarize(historyTrendPoints.map((entry) => entry.hrBoard)),
+      tennis: summarize(historyTrendPoints.map((entry) => entry.tennis))
+    }
+  }, [historyTrendPoints])
+
+  const trendChartWidth = 760
+  const trendChartHeight = 220
+  const trendChartPadding = 24
+  const fullGameTrendSegments = buildTrendSegments(
+    historyTrendPoints.map((entry) => entry.fullGame),
+    trendChartWidth,
+    trendChartHeight,
+    trendChartPadding
+  )
+  const first5TrendSegments = buildTrendSegments(
+    historyTrendPoints.map((entry) => entry.first5),
+    trendChartWidth,
+    trendChartHeight,
+    trendChartPadding
+  )
+  const hrTrendSegments = buildTrendSegments(
+    historyTrendPoints.map((entry) => entry.hrBoard),
+    trendChartWidth,
+    trendChartHeight,
+    trendChartPadding
+  )
+  const tennisTrendSegments = buildTrendSegments(
+    historyTrendPoints.map((entry) => entry.tennis),
+    trendChartWidth,
+    trendChartHeight,
+    trendChartPadding
+  )
 
   const selectedPicks = selectedPicksByDay[activeDayId] ?? {}
   const selectedProps = selectedPropsByDay[activeDayId] ?? {}
@@ -2303,6 +2412,146 @@ function App() {
 
       {activeDeskTab === 'models' ? (
         <div className="desk-tool-workspace models-workspace">
+          <section className="workspace-panel action-section models-chart-panel">
+            <div className="action-section-header">
+              <h3>Accuracy trend through May 21</h3>
+              <span>{historyTrendPoints.length} graded days</span>
+            </div>
+
+            <div className="history-metric-grid models-metric-grid">
+              <article className="parlay-stat-card history-metric-card positive">
+                <span className="parlay-stat-label">Avg MLB full game</span>
+                <strong>{formatPercent(historyTrendSummary.fullGame)}</strong>
+                <small>Daily graded archive</small>
+              </article>
+              <article className="parlay-stat-card history-metric-card warning">
+                <span className="parlay-stat-label">Avg MLB first 5</span>
+                <strong>{formatPercent(historyTrendSummary.first5)}</strong>
+                <small>Starter-window hit rate</small>
+              </article>
+              <article className="parlay-stat-card history-metric-card negative">
+                <span className="parlay-stat-label">Avg HR board</span>
+                <strong>{formatPercent(historyTrendSummary.hrBoard)}</strong>
+                <small>Hit rate on saved HR pool</small>
+              </article>
+              <article className="parlay-stat-card history-metric-card info">
+                <span className="parlay-stat-label">Avg tennis main tour</span>
+                <strong>{formatPercent(historyTrendSummary.tennis)}</strong>
+                <small>Graded main-tour tennis picks</small>
+              </article>
+            </div>
+
+            <div className="trend-chart-shell">
+              <div className="trend-chart-legend">
+                <span><i className="trend-dot positive" />MLB full game</span>
+                <span><i className="trend-dot warning" />MLB first 5</span>
+                <span><i className="trend-dot negative" />HR board</span>
+                <span><i className="trend-dot tennis" />Tennis main tour</span>
+              </div>
+
+              <div className="trend-chart-frame">
+                <svg viewBox={`0 0 ${trendChartWidth} ${trendChartHeight}`} className="trend-chart" role="img" aria-label="Model accuracy trend">
+                  {[0, 25, 50, 75, 100].map((tick) => {
+                    const y = trendChartPadding + ((100 - tick) / 100) * (trendChartHeight - trendChartPadding * 2)
+                    return (
+                      <g key={`tick-${tick}`}>
+                        <line x1={trendChartPadding} y1={y} x2={trendChartWidth - trendChartPadding} y2={y} className="trend-grid-line" />
+                        <text x={6} y={y + 4} className="trend-axis-label">{tick}</text>
+                      </g>
+                    )
+                  })}
+
+                  {fullGameTrendSegments.map((segment, index) => (
+                    <line
+                      key={`full-${index}`}
+                      x1={segment.x1}
+                      y1={segment.y1}
+                      x2={segment.x2}
+                      y2={segment.y2}
+                      className="trend-line positive"
+                    />
+                  ))}
+                  {first5TrendSegments.map((segment, index) => (
+                    <line
+                      key={`first5-${index}`}
+                      x1={segment.x1}
+                      y1={segment.y1}
+                      x2={segment.x2}
+                      y2={segment.y2}
+                      className="trend-line warning"
+                    />
+                  ))}
+                  {hrTrendSegments.map((segment, index) => (
+                    <line
+                      key={`hr-${index}`}
+                      x1={segment.x1}
+                      y1={segment.y1}
+                      x2={segment.x2}
+                      y2={segment.y2}
+                      className="trend-line negative"
+                    />
+                  ))}
+                  {tennisTrendSegments.map((segment, index) => (
+                    <line
+                      key={`tennis-${index}`}
+                      x1={segment.x1}
+                      y1={segment.y1}
+                      x2={segment.x2}
+                      y2={segment.y2}
+                      className="trend-line tennis"
+                    />
+                  ))}
+
+                  {historyTrendPoints.map((entry, index) => {
+                    const x =
+                      historyTrendPoints.length === 1
+                        ? trendChartWidth / 2
+                        : trendChartPadding +
+                          ((trendChartWidth - trendChartPadding * 2) * index) / (historyTrendPoints.length - 1)
+
+                    return (
+                      <g key={entry.id}>
+                        {entry.fullGame !== null ? (
+                          <circle
+                            cx={x}
+                            cy={trendChartPadding + ((100 - entry.fullGame) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                            r="4"
+                            className="trend-point positive"
+                          />
+                        ) : null}
+                        {entry.first5 !== null ? (
+                          <circle
+                            cx={x}
+                            cy={trendChartPadding + ((100 - entry.first5) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                            r="4"
+                            className="trend-point warning"
+                          />
+                        ) : null}
+                        {entry.hrBoard !== null ? (
+                          <circle
+                            cx={x}
+                            cy={trendChartPadding + ((100 - entry.hrBoard) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                            r="4"
+                            className="trend-point negative"
+                          />
+                        ) : null}
+                        {entry.tennis !== null ? (
+                          <circle
+                            cx={x}
+                            cy={trendChartPadding + ((100 - entry.tennis) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                            r="4"
+                            className="trend-point tennis"
+                          />
+                        ) : null}
+                        <text x={x} y={trendChartHeight - 6} textAnchor="middle" className="trend-axis-label">{entry.id.slice(5)}</text>
+                      </g>
+                    )
+                  })}
+                </svg>
+              </div>
+            </div>
+          </section>
+
           <section className="workspace-panel action-section">
             <div className="action-section-header">
               <h3>Current slate diagnostics</h3>
@@ -2317,11 +2566,11 @@ function App() {
           </section>
           <section className="workspace-panel action-section">
             <div className="action-section-header">
-              <h3>Retrofit note</h3>
-              <span>React TS</span>
+              <h3>Archive note</h3>
+              <span>JSONL ready</span>
             </div>
             <p className="react-section-copy">
-              The model layer remains the same JS engine for now. This tab is the staging area for future typed diagnostics and calibration views.
+              Daily hit and miss ledgers now export to JSONL under <code>/Users/jcchen/Documents/New project/data/history</code>, so the archive can train against individual picks instead of only summary docs.
             </p>
           </section>
         </div>
@@ -2333,7 +2582,7 @@ function App() {
             <div className="history-rail-header">
               <div>
                 <p className="eyebrow">History</p>
-                <h3>Archive through May 20</h3>
+                <h3>Archive through May 21</h3>
                 <p className="react-section-copy">
                   Daily grading blocks, combined backtests, and the saved board artifacts that fed them.
                 </p>
@@ -2383,7 +2632,10 @@ function App() {
 
                 <div className="history-metric-grid">
                   {activeHistoryEntry.metrics.map((metric) => (
-                    <article key={`${activeHistoryEntry.id}-${metric.label}`} className="parlay-stat-card">
+                    <article
+                      key={`${activeHistoryEntry.id}-${metric.label}`}
+                      className={`parlay-stat-card history-metric-card ${getHistoryMetricTone(metric)}`}
+                    >
                       <span className="parlay-stat-label">{metric.label}</span>
                       <strong>{metric.value}</strong>
                       {metric.note ? <small>{metric.note}</small> : null}
@@ -2394,8 +2646,28 @@ function App() {
                 <div className="history-section-grid">
                   <section className="action-section">
                     <div className="action-section-header">
-                      <h3>Tracked markets</h3>
-                      <span>{activeHistoryEntry.trackedMarkets.length}</span>
+                      <h3>Result ledger</h3>
+                      <span>{activeHistoryEntry.journal?.records ?? activeHistoryEntry.trackedMarkets.length}</span>
+                    </div>
+                    <div className="history-ledger-grid">
+                      <article className="history-ledger-card">
+                        <span className="parlay-stat-label">Coverage</span>
+                        <strong>
+                          {activeHistoryEntry.journal
+                            ? `${activeHistoryEntry.journal.records} rows`
+                            : `${activeHistoryEntry.trackedMarkets.length} markets`}
+                        </strong>
+                        <small>
+                          {activeHistoryEntry.journal
+                            ? `${activeHistoryEntry.journal.sideRows ?? 0} sides | ${activeHistoryEntry.journal.hrRows ?? 0} HR props`
+                            : activeHistoryEntry.trackedMarkets.join(' | ')}
+                        </small>
+                      </article>
+                      <article className="history-ledger-card">
+                        <span className="parlay-stat-label">Training asset</span>
+                        <strong>{activeHistoryEntry.journal ? 'JSONL ready' : 'Summary only'}</strong>
+                        <small>{activeHistoryEntry.journal?.note ?? 'Older archive blocks only preserve summary-level grading.'}</small>
+                      </article>
                     </div>
                     <div className="history-chip-row">
                       {activeHistoryEntry.trackedMarkets.map((market) => (
@@ -2404,6 +2676,30 @@ function App() {
                         </span>
                       ))}
                     </div>
+                  </section>
+
+                  <section className="action-section">
+                    <div className="action-section-header">
+                      <h3>Notable hits</h3>
+                      <span>{activeHistoryEntry.notableHits.length}</span>
+                    </div>
+                    <ul className="factor-list compact">
+                      {activeHistoryEntry.notableHits.map((item) => (
+                        <li key={`${activeHistoryEntry.id}-hit-${item}`}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+
+                  <section className="action-section">
+                    <div className="action-section-header">
+                      <h3>Notable misses</h3>
+                      <span>{activeHistoryEntry.notableMisses.length}</span>
+                    </div>
+                    <ul className="factor-list compact">
+                      {activeHistoryEntry.notableMisses.map((item) => (
+                        <li key={`${activeHistoryEntry.id}-key-miss-${item}`}>{item}</li>
+                      ))}
+                    </ul>
                   </section>
 
                   <section className="action-section">

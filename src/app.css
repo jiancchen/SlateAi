@@ -1136,11 +1136,20 @@ h3 {
   gap: 8px;
   text-align: left;
   cursor: pointer;
+  color: var(--text);
 }
 
 .history-row.active {
   border-color: rgba(56, 211, 153, 0.28);
   box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.history-row strong {
+  color: var(--heading);
+}
+
+.history-row .mono {
+  color: var(--muted);
 }
 
 .history-row-topline,
@@ -1188,7 +1197,16 @@ h3 {
 }
 
 .history-detail {
-  grid-template-rows: auto auto auto minmax(0, auto) auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+.history-detail > * {
+  flex: 0 0 auto;
 }
 
 .history-metric-grid {
@@ -1197,6 +1215,91 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   border-bottom: 1px solid var(--line);
+}
+
+.models-metric-grid {
+  padding: 0 0 14px;
+  border-bottom: 0;
+}
+
+.history-metric-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.history-metric-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--line-strong);
+}
+
+.history-metric-card strong {
+  color: var(--heading);
+}
+
+.history-metric-card.positive {
+  background: linear-gradient(180deg, rgba(56, 211, 153, 0.09), rgba(15, 18, 17, 0.98));
+}
+
+.history-metric-card.warning {
+  background: linear-gradient(180deg, rgba(240, 177, 90, 0.09), rgba(15, 18, 17, 0.98));
+}
+
+.history-metric-card.negative {
+  background: linear-gradient(180deg, rgba(224, 122, 95, 0.09), rgba(15, 18, 17, 0.98));
+}
+
+.history-metric-card.info {
+  background: linear-gradient(180deg, rgba(158, 198, 240, 0.08), rgba(15, 18, 17, 0.98));
+}
+
+.history-metric-card.positive::before,
+.trend-dot.positive,
+.trend-point.positive {
+  background: var(--accent);
+  fill: var(--accent);
+}
+
+.trend-line.positive {
+  stroke: var(--accent);
+}
+
+.history-metric-card.warning::before,
+.trend-dot.warning,
+.trend-point.warning {
+  background: var(--warning);
+  fill: var(--warning);
+}
+
+.trend-line.warning {
+  stroke: var(--warning);
+}
+
+.history-metric-card.negative::before,
+.trend-dot.negative,
+.trend-point.negative {
+  background: var(--danger);
+  fill: var(--danger);
+}
+
+.trend-line.negative {
+  stroke: var(--danger);
+}
+
+.history-metric-card.info::before {
+  background: var(--accent-blue);
+}
+
+.trend-dot.tennis,
+.trend-point.tennis {
+  background: var(--accent-blue);
+  fill: var(--accent-blue);
+}
+
+.trend-line.tennis {
+  stroke: var(--accent-blue);
 }
 
 .history-section-grid,
@@ -1208,6 +1311,29 @@ h3 {
 
 .history-section-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.history-ledger-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.history-ledger-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.history-ledger-card strong {
+  color: var(--heading);
+}
+
+.history-ledger-card small {
+  color: var(--muted);
 }
 
 .history-artifact-card {
@@ -1224,6 +1350,66 @@ h3 {
   font: 500 11px/1.45 var(--mono);
   white-space: pre-wrap;
   word-break: break-word;
+}
+
+.models-chart-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.trend-chart-shell {
+  display: grid;
+  gap: 12px;
+}
+
+.trend-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font: 500 0.76rem/1.3 var(--sans);
+}
+
+.trend-chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.trend-chart-frame {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 10px;
+}
+
+.trend-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trend-grid-line {
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1;
+}
+
+.trend-axis-label {
+  fill: var(--muted);
+  font: 500 10px/1 var(--mono);
+}
+
+.trend-line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .games-rail-header h2 {
@@ -1742,6 +1928,11 @@ h3 {
   }
 
   .builder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .history-ledger-grid,
+  .history-section-grid {
     grid-template-columns: 1fr;
   }
 

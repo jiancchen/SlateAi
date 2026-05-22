@@ -1,0 +1,393 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import { execSync } from 'node:child_process'
+import { slateDays } from '../src/lib/slate-days.js'
+
+const ROOT = process.cwd()
+const HISTORY_DIR = path.join(ROOT, 'data', 'history')
+
+const FULL_NAMES = {
+  Braves: 'Atlanta Braves',
+  Orioles: 'Baltimore Orioles',
+  'Red Sox': 'Boston Red Sox',
+  Cubs: 'Chicago Cubs',
+  Reds: 'Cincinnati Reds',
+  Guardians: 'Cleveland Guardians',
+  Rockies: 'Colorado Rockies',
+  'White Sox': 'Chicago White Sox',
+  Tigers: 'Detroit Tigers',
+  Astros: 'Houston Astros',
+  Royals: 'Kansas City Royals',
+  Angels: 'Los Angeles Angels',
+  Dodgers: 'Los Angeles Dodgers',
+  Marlins: 'Miami Marlins',
+  Brewers: 'Milwaukee Brewers',
+  Twins: 'Minnesota Twins',
+  Mets: 'New York Mets',
+  Yankees: 'New York Yankees',
+  Athletics: 'Athletics',
+  Phillies: 'Philadelphia Phillies',
+  Pirates: 'Pittsburgh Pirates',
+  Padres: 'San Diego Padres',
+  Mariners: 'Seattle Mariners',
+  Giants: 'San Francisco Giants',
+  Cardinals: 'St. Louis Cardinals',
+  Rays: 'Tampa Bay Rays',
+  Rangers: 'Texas Rangers',
+  'Blue Jays': 'Toronto Blue Jays',
+  Nationals: 'Washington Nationals',
+  'D-backs': 'Arizona Diamondbacks',
+  Diamondbacks: 'Arizona Diamondbacks'
+}
+
+const SIDE_MODEL_NAMES = {
+  '2026-05-16': 'board-moneyline-v2-may16',
+  '2026-05-17': 'board-moneyline-v2-may17',
+  '2026-05-18': 'board-moneyline-v2-may18'
+}
+
+const HR_MODEL_NAMES = {
+  '2026-05-16': 'statcast-hr-prototype-v3',
+  '2026-05-17': 'statcast-hr-prototype-v3',
+  '2026-05-18': 'statcast-hr-prototype-v3',
+  '2026-05-19': 'statcast-hr-prototype-v3',
+  '2026-05-20': 'statcast-hr-prototype-v3',
+  '2026-05-21': 'statcast-hr-prototype-v3'
+}
+
+const readJsonSql = (query) => {
+  const escaped = query.replace(/"/g, '\\"')
+  const output = execSync(`sqlite3 -json data/warehouse/sports.db "${escaped}"`, {
+    cwd: ROOT,
+    encoding: 'utf8'
+  }).trim()
+  return output ? JSON.parse(output) : []
+}
+
+const ensureDir = (dir) => {
+  fs.mkdirSync(dir, { recursive: true })
+}
+
+const fetchJson = (url) => JSON.parse(execSync(`curl -sL "${url}"`, { cwd: ROOT, encoding: 'utf8' }))
+
+const makeSideResultJustification = (row) => {
+  const parts = []
+  if (row.hit_full_game) parts.push(`Full game hit: picked ${row.predicted_team} and got ${row.actual_winner}.`)
+  else parts.push(`Full game miss: picked ${row.predicted_team}, actual winner was ${row.actual_winner}.`)
+  if (row.hit_first5) parts.push(`First 5 also landed on ${row.actual_first5_winner}.`)
+  else parts.push(`First 5 did not land; winner after five was ${row.actual_first5_winner}.`)
+  if (row.bullpen_flip_loss) parts.push('This graded as a bullpen-flip loss.')
+  if (row.starter_rescue_win) parts.push('This graded as a starter-rescue win.')
+  return parts.join(' ')
+}
+
+const buildSavedSideRecords = (date) => {
+  const modelName = SIDE_MODEL_NAMES[date]
+  const rows = readJsonSql(`
+    select
+      b.prediction_date,
+      b.model_name,
+      b.game_id,
+      b.game_title,
+      b.away_team,
+      b.home_team,
+      b.predicted_team,
+      b.predicted_side,
+      b.actual_winner,
+      b.actual_first5_winner,
+      b.hit_full_game,
+      b.hit_first5,
+      b.bullpen_flip_loss,
+      b.starter_rescue_win,
+      b.thin_edge_flag,
+      b.high_volatility_flag,
+      b.hit_edge_against_pick_flag,
+      b.predicted_runs_final,
+      b.opponent_runs_final,
+      b.predicted_runs_first5,
+      b.opponent_runs_first5,
+      b.predicted_bullpen_runs,
+      b.opponent_bullpen_runs,
+      b.bullpen_net_diff,
+      b.relief_pitching_risk,
+      b.coinflip_pressure,
+      p.confidence,
+      p.volatility,
+      p.model_edge,
+      p.source_label,
+      p.input_labels_json,
+      p.metadata_json,
+      p.projection_json
+    from mlb_side_backtests b
+    join mlb_side_predictions p
+      on p.prediction_date = b.prediction_date
+     and p.model_name = b.model_name
+     and p.game_id = b.game_id
+    where b.prediction_date = '${date}'
+      and b.model_name = '${modelName}'
+    order by b.game_title
+  `)
+
+  return rows.map((row) => {
+    const inputLabels = JSON.parse(row.input_labels_json || '[]')
+    const indicators = JSON.parse(row.metadata_json || '{}')
+    const projection = JSON.parse(row.projection_json || 'null')
+    return {
+      date,
+      sport: 'MLB',
+      marketType: 'moneyline',
+      modelName: row.model_name,
+      sourceType: 'saved-side-backtest',
+      matchup: row.game_title,
+      awayTeam: row.away_team,
+      homeTeam: row.home_team,
+      predictedPick: row.predicted_team,
+      predictedSide: row.predicted_side,
+      confidence: row.confidence,
+      volatility: row.volatility,
+      pointEdge: row.model_edge,
+      sourceLabel: row.source_label,
+      inputLabels,
+      indicators,
+      projection,
+      meta: {
+        thinEdge: Boolean(row.thin_edge_flag),
+        highVolatility: Boolean(row.high_volatility_flag),
+        hitEdgeAgainstPick: Boolean(row.hit_edge_against_pick_flag)
+      },
+      pickJustification: inputLabels.join(', '),
+      result: {
+        fullGameHit: Boolean(row.hit_full_game),
+        first5Hit: Boolean(row.hit_first5),
+        actualWinner: row.actual_winner,
+        actualFirst5Winner: row.actual_first5_winner,
+        bullpenFlipLoss: Boolean(row.bullpen_flip_loss),
+        starterRescueWin: Boolean(row.starter_rescue_win),
+        predictedRunsFinal: row.predicted_runs_final,
+        opponentRunsFinal: row.opponent_runs_final,
+        predictedRunsFirst5: row.predicted_runs_first5,
+        opponentRunsFirst5: row.opponent_runs_first5,
+        predictedBullpenRuns: row.predicted_bullpen_runs,
+        opponentBullpenRuns: row.opponent_bullpen_runs,
+        bullpenNetDiff: row.bullpen_net_diff
+      },
+      resultJustification: makeSideResultJustification(row)
+    }
+  })
+}
+
+const buildDerivedSideRecords = (date) => {
+  const day = slateDays.find((entry) => entry.id === date)
+  if (!day) return []
+
+  const outcomes = readJsonSql(`
+    select
+      away_team,
+      home_team,
+      away_runs_final,
+      home_runs_final,
+      away_runs_first5,
+      home_runs_first5,
+      home_full_game_result,
+      home_first5_result
+    from mlb_game_outcomes
+    where game_date = '${date}'
+  `)
+
+  const outcomeMap = new Map(outcomes.map((row) => [`${row.away_team} @ ${row.home_team}`, row]))
+
+  return day.games
+    .filter((game) => game.league === 'MLB')
+    .map((game) => {
+      const awayName = FULL_NAMES[game.matchup?.[0]?.name] || game.matchup?.[0]?.name
+      const homeName = FULL_NAMES[game.matchup?.[1]?.name] || game.matchup?.[1]?.name
+      const row = outcomeMap.get(`${awayName} @ ${homeName}`)
+      if (!row) return null
+      const actualWinner = row.home_full_game_result === 'win' ? homeName : awayName
+      const actualFirst5Winner = row.home_first5_result === 'win' ? homeName : row.home_first5_result === 'loss' ? awayName : 'tie'
+      const predictedPick = FULL_NAMES[game.analysis?.participant?.name] || game.analysis?.participant?.name
+      const projected = game.analysis?.mlbProjection ?? null
+      return {
+        date,
+        sport: 'MLB',
+        marketType: 'moneyline',
+        modelName: 'day-file-live-board',
+        sourceType: 'derived-from-day-file',
+        matchup: game.title,
+        awayTeam: awayName,
+        homeTeam: homeName,
+        predictedPick,
+        predictedSide: predictedPick === awayName ? 'away' : 'home',
+        confidence: game.analysis?.confidence ?? null,
+        volatility: game.analysis?.volatility ?? null,
+        pointEdge: game.analysis?.modelEdge ?? null,
+        sourceLabel: game.analysis?.sourceLabel ?? '',
+        inputLabels: (game.analysis?.inputs ?? []).map((item) => item.label),
+        indicators: game.analysis?.indicators ?? {},
+        projection: projected,
+        meta: {
+          stage: game.stage,
+          tags: game.tags ?? []
+        },
+        pickJustification: game.analysis?.rationale ?? game.summary,
+        result: {
+          fullGameHit: actualWinner === predictedPick,
+          first5Hit: actualFirst5Winner === predictedPick,
+          actualWinner,
+          actualFirst5Winner,
+          awayRunsFinal: row.away_runs_final,
+          homeRunsFinal: row.home_runs_final,
+          awayRunsFirst5: row.away_runs_first5,
+          homeRunsFirst5: row.home_runs_first5
+        },
+        resultJustification:
+          actualWinner === predictedPick
+            ? `Full game hit: picked ${predictedPick} and got ${actualWinner}.`
+            : `Full game miss: picked ${predictedPick}, actual winner was ${actualWinner}.`
+      }
+    })
+    .filter(Boolean)
+}
+
+const buildHrRecords = (date) => {
+  const modelName = HR_MODEL_NAMES[date]
+  const rows = readJsonSql(`
+    select
+      b.prediction_date,
+      b.model_name,
+      b.player_id,
+      b.player_name,
+      b.team_abbrev,
+      b.actual_home_runs,
+      b.hit_flag,
+      b.matched_event_keys,
+      p.rank,
+      p.game_title,
+      p.opposing_pitcher,
+      p.score,
+      p.metadata_json
+    from mlb_home_run_backtests b
+    join mlb_home_run_predictions p
+      on p.prediction_date = b.prediction_date
+     and p.model_name = b.model_name
+     and p.player_id = b.player_id
+    where b.prediction_date = '${date}'
+      and b.model_name = '${modelName}'
+    order by p.rank asc
+  `)
+
+  if (!rows.length) {
+    return buildDerivedHrRecords(date, modelName)
+  }
+
+  return rows.map((row) => {
+    const metadata = JSON.parse(row.metadata_json || '{}')
+    return {
+      date,
+      sport: 'MLB',
+      marketType: 'homeRun',
+      modelName: row.model_name,
+      sourceType: 'saved-hr-backtest',
+      matchup: row.game_title,
+      playerId: row.player_id,
+      playerName: row.player_name,
+      teamAbbrev: row.team_abbrev,
+      predictedPick: row.player_name,
+      confidenceRank: row.rank,
+      rawScore: row.score,
+      opposingPitcher: row.opposing_pitcher,
+      meta: metadata,
+      pickJustification: Array.isArray(metadata.rationale) ? metadata.rationale.join(' | ') : '',
+      result: {
+        hit: Boolean(row.hit_flag),
+        actualHomeRuns: row.actual_home_runs,
+        matchedEventKeys: row.matched_event_keys ? String(row.matched_event_keys).split(',') : []
+      },
+      resultJustification: row.hit_flag
+        ? `${row.player_name} homered ${row.actual_home_runs} time(s).`
+        : `${row.player_name} did not homer on this slate.`
+    }
+  })
+}
+
+const buildDerivedHrRecords = (date, modelName) => {
+  const predictionPath = path.join(ROOT, 'data', 'predictions', 'mlb-home-runs', `${date}-statcast-prototype.json`)
+  if (!fs.existsSync(predictionPath)) return []
+
+  const predictionBoard = JSON.parse(fs.readFileSync(predictionPath, 'utf8'))
+  const picks = predictionBoard.picks ?? []
+  const schedule = fetchJson(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${date}`)
+  const actualEvents = []
+
+  for (const day of schedule.dates ?? []) {
+    for (const game of day.games ?? []) {
+      const feed = fetchJson(`https://statsapi.mlb.com/api/v1.1/game/${game.gamePk}/feed/live`)
+      for (const play of feed.liveData?.plays?.allPlays ?? []) {
+        if (play?.result?.event !== 'Home Run') continue
+        actualEvents.push({
+          playerName: play.matchup?.batter?.fullName,
+          gameTitle: `${feed.gameData?.teams?.away?.name} @ ${feed.gameData?.teams?.home?.name}`,
+          inning: play.about?.inning,
+          half: play.about?.halfInning
+        })
+      }
+    }
+  }
+
+  const eventsByPlayer = actualEvents.reduce((map, event) => {
+    const existing = map.get(event.playerName) ?? []
+    existing.push(event)
+    map.set(event.playerName, existing)
+    return map
+  }, new Map())
+
+  return picks.map((pick) => {
+    const matchedEvents = eventsByPlayer.get(pick.playerName) ?? []
+    const hit = matchedEvents.length > 0
+
+    return {
+      date,
+      sport: 'MLB',
+      marketType: 'homeRun',
+      modelName,
+      sourceType: 'derived-from-saved-hr-board',
+      matchup: pick.gameTitle,
+      playerId: pick.playerId,
+      playerName: pick.playerName,
+      teamAbbrev: pick.teamAbbrev,
+      predictedPick: pick.playerName,
+      confidenceRank: pick.rank,
+      rawScore: pick.score,
+      opposingPitcher: pick.opposingPitcher,
+      meta: pick,
+      pickJustification: Array.isArray(pick.rationale) ? pick.rationale.join(' | ') : '',
+      result: {
+        hit,
+        actualHomeRuns: matchedEvents.length,
+        matchedEventKeys: matchedEvents.map((event) => `${event.gameTitle}|${event.inning}|${event.half}`)
+      },
+      resultJustification: hit
+        ? `${pick.playerName} homered ${matchedEvents.length} time(s).`
+        : `${pick.playerName} did not homer on this slate.`
+    }
+  })
+}
+
+const dates = ['2026-05-16', '2026-05-17', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21']
+ensureDir(HISTORY_DIR)
+
+const allRecords = []
+
+for (const date of dates) {
+  const sideRecords = SIDE_MODEL_NAMES[date] ? buildSavedSideRecords(date) : buildDerivedSideRecords(date)
+  const hrRecords = buildHrRecords(date)
+  const records = [...sideRecords, ...hrRecords]
+  allRecords.push(...records)
+  const target = path.join(HISTORY_DIR, `mlb-results-${date}.jsonl`)
+  fs.writeFileSync(target, records.map((record) => JSON.stringify(record)).join('\n') + '\n', 'utf8')
+  console.log(`Wrote ${records.length} records -> ${target}`)
+}
+
+const combinedTarget = path.join(HISTORY_DIR, 'mlb-results-archive.jsonl')
+fs.writeFileSync(combinedTarget, allRecords.map((record) => JSON.stringify(record)).join('\n') + '\n', 'utf8')
+console.log(`Wrote ${allRecords.length} records -> ${combinedTarget}`)
