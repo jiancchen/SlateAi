@@ -501,6 +501,115 @@ const renderRecentGamesStrip = (teamName: string, games: AnyRecord[] = []) => {
   )
 }
 
+const buildMlbGameStory = ({
+  game,
+  projection,
+  awayTeam,
+  homeTeam
+}: {
+  game: AnyRecord
+  projection: AnyRecord
+  awayTeam: string
+  homeTeam: string
+}) => {
+  const analysis = game.analysis ?? {}
+  const indicators = analysis.indicators ?? {}
+  const participant = analysis.participant ?? {}
+  const pickName = participant.name || projection?.edgeTeam || awayTeam
+  const pickIsAway = pickName === awayTeam
+  const opponentName = pickIsAway ? homeTeam : awayTeam
+  const pickState = pickIsAway ? game.stateContext?.teamState?.away ?? null : game.stateContext?.teamState?.home ?? null
+  const oppState = pickIsAway ? game.stateContext?.teamState?.home ?? null : game.stateContext?.teamState?.away ?? null
+  const starterLeverage = Number(indicators.starterLeverageIndex || 0)
+  const lateStability = Number(indicators.lateInningStabilityIndex || 0)
+  const reliefRisk = Number(indicators.reliefPitchingRisk || 0)
+  const coinflipPressure = Number(indicators.coinflipPressure || 0)
+  const tierOneRiskPoints = Number(indicators.tierOneRiskPoints || 0)
+  const tierOnePassFlag = Boolean(indicators.tierOnePassFlag || analysis.tier === 'Pass')
+  const opponentSnapback = Number(indicators.oppSnapbackPressure || 0)
+  const pickSnapback = Number(indicators.pickSnapbackPressure || 0)
+  const pickTop6Cold = Number(indicators.pickTop6Cold || 0)
+  const opponentTop6Heat = Number(indicators.oppTop6Heat || 0)
+  const impliedProbabilityPct = Number.isFinite(Number(participant.impliedProbability))
+    ? Number(participant.impliedProbability) * 100
+    : null
+  const isUnderdog = Number.isFinite(Number(participant.americanOdds)) ? Number(participant.americanOdds) > 0 : impliedProbabilityPct !== null ? impliedProbabilityPct < 50 : false
+  const firstInning = projection?.firstInning ?? null
+
+  let headline = `${pickName} are the paper side, but the real question is how much of that edge survives the shape of this game.`
+  if (tierOnePassFlag) {
+    headline = `${pickName} may still rate best on paper, but the risk stack is louder than the edge here.`
+  } else if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
+    headline = `${pickName} look much cleaner through five than over the full nine innings.`
+  } else if (isUnderdog) {
+    headline = `${pickName} only work here if the market is smoothing over a live state edge.`
+  } else if (reliefRisk <= 40 && lateStability >= 55 && coinflipPressure <= 30) {
+    headline = `${pickName} have one of the cleaner full-game shapes on the board.`
+  }
+
+  let marketText = 'This price is close enough that state and inning shape matter more than raw roster strength.'
+  if (isUnderdog) {
+    marketText = `${pickName} are priced as the dog${participant.americanLabel ? ` at ${participant.americanLabel}` : ''}, so this only works if the market is too smooth about current form.`
+  } else if (impliedProbabilityPct !== null && impliedProbabilityPct >= 58) {
+    marketText = `${pickName} are carrying a real favorite price${participant.americanLabel ? ` at ${participant.americanLabel}` : ''}, which means the story has to beat the cost, not just beat the opponent.`
+  } else if (impliedProbabilityPct !== null) {
+    marketText = `${pickName} are only around a ${formatPercent(impliedProbabilityPct, 0)} market favorite, so this is a price-sensitive edge, not a runaway side.`
+  }
+
+  let stateText = 'Neither club brings a truly stretched streak state, so this game is more about execution than snapback.'
+  if (opponentSnapback >= 50 && opponentSnapback >= pickSnapback + 10) {
+    stateText = `${opponentName} come in with real snapback pressure, so fading them casually is more dangerous than the paper form makes it look.`
+  } else if (pickState?.streakDirection === 'L' && Number(pickState?.streakLength || 0) >= 3) {
+    stateText = `${pickName} are carrying bounceback pressure from a stretched skid, which can cut both ways: urgency is real, but so is fragility.`
+  } else if (pickTop6Cold >= 45) {
+    stateText = `${pickName}'s top order is carrying real cold-bat pressure, so this side needs cleaner sequencing than the headline number suggests.`
+  } else if (opponentTop6Heat >= 40 || Number(oppState?.heatRegressionIndex || 0) >= 65) {
+    stateText = `${opponentName} are running hot enough that regression is part of the story, but not guaranteed on this one game.`
+  }
+
+  let shapeText = 'This game does not separate cleanly by phase, so one crooked inning can rewrite the read.'
+  if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
+    shapeText = `The starter phase is the cleanest part of the story. Once the bridge innings begin, the edge softens quickly.`
+  } else if (starterLeverage >= 70 && lateStability >= 55 && reliefRisk <= 40) {
+    shapeText = `The board likes both the starter lane and the late-game hold, which is the cleanest full-game shape we can get in baseball.`
+  } else if (coinflipPressure >= 65 || reliefRisk >= 70) {
+    shapeText = 'This is a swingy game shape. The favorite can still be right on paper and lose the script in one inning.'
+  } else if (firstInning && Number(firstInning.yesProbabilityPct || 0) >= 70) {
+    shapeText = 'The early innings project louder than the later pace, so a first-inning or first-five burst matters more than a long slow grind.'
+  }
+
+  let expressionText = 'Best expression: watch the early innings and avoid forcing the full-game side if the story turns immediately.'
+  if (tierOnePassFlag) {
+    expressionText = 'Best expression: pass. Too many stacked risk buckets are fighting the paper edge.'
+  } else if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
+    expressionText = 'Best expression: first five or nothing. The story is cleaner early than late.'
+  } else if (reliefRisk <= 40 && lateStability >= 55 && coinflipPressure <= 30) {
+    expressionText = 'Best expression: full-game side is cleaner than the phase props here.'
+  } else if ((analysis.modelEdge ?? 0) < 4 && projection?.totals?.fullGame?.label) {
+    expressionText = `Best expression: the total may be cleaner than the side. Current totals lean is ${projection.totals.fullGame.label}.`
+  }
+
+  const chips = [
+    tierOnePassFlag ? { label: 'Pass first', tone: 'danger' } : null,
+    opponentSnapback >= 50 && opponentSnapback >= pickSnapback + 10 ? { label: `${opponentName} snapback live`, tone: 'warning' } : null,
+    starterLeverage >= 70 && lateStability + 10 < starterLeverage ? { label: 'Early better than late', tone: 'accent' } : null,
+    coinflipPressure >= 65 ? { label: 'Coin-flip pressure', tone: 'warning' } : null,
+    reliefRisk >= 70 ? { label: 'Bullpen chaos', tone: 'danger' } : null,
+    pickTop6Cold >= 45 ? { label: `${pickName} top-order cold`, tone: 'danger' } : null
+  ].filter(Boolean) as Array<{ label: string; tone: string }>
+
+  return {
+    headline,
+    cards: [
+      { label: 'Market', body: marketText, tone: tierOnePassFlag || isUnderdog ? 'warning' : 'neutral' },
+      { label: 'State', body: stateText, tone: opponentSnapback >= 50 || pickTop6Cold >= 45 ? 'warning' : 'neutral' },
+      { label: 'Shape', body: shapeText, tone: starterLeverage >= 70 && lateStability + 10 < starterLeverage ? 'accent' : coinflipPressure >= 65 || reliefRisk >= 70 ? 'danger' : 'neutral' },
+      { label: 'Best expression', body: expressionText, tone: tierOnePassFlag ? 'danger' : starterLeverage >= 70 && lateStability + 10 < starterLeverage ? 'accent' : 'neutral' }
+    ],
+    chips
+  }
+}
+
 const getMetricTone = (value: number, inverse = false) => {
   if (!Number.isFinite(value)) return 'neutral'
   const score = inverse ? -value : value
@@ -1723,6 +1832,7 @@ function App() {
     const homeStory = game.storyContext?.home?.summary
     const awayRecentGames = game.stateContext?.recentGames?.away ?? []
     const homeRecentGames = game.stateContext?.recentGames?.home ?? []
+    const gameStory = buildMlbGameStory({ game, projection, awayTeam, homeTeam })
     const totals = projection?.totals
     const totalsCards = totals
       ? [
@@ -1813,6 +1923,30 @@ function App() {
 
     return (
       <>
+        <section className="detail-panel game-story-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">Game story</p>
+            <span>{gameStory.headline}</span>
+          </div>
+          {gameStory.chips.length ? (
+            <div className="react-pill-row game-story-chip-row">
+              {gameStory.chips.map((chip) => (
+                <span key={`${game.id}-${chip.label}`} className={`game-highlight-chip ${chip.tone}`}>
+                  {chip.label}
+                </span>
+              ))}
+            </div>
+          ) : null}
+          <div className="game-story-grid">
+            {gameStory.cards.map((card) => (
+              <article key={`${game.id}-${card.label}`} className={`game-story-card ${card.tone}`}>
+                <small>{card.label}</small>
+                <p>{card.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="detail-panel react-card-grid">
           <article className="react-team-card" style={{ borderColor: `${getTeamAccent('MLB', awayTeam)}55` }}>
             <div className="react-team-card-top">

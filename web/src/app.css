@@ -2356,6 +2356,59 @@ h3 {
   font-size: 0.74rem;
 }
 
+.game-story-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.game-story-chip-row {
+  margin-top: -2px;
+}
+
+.game-story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.game-story-card {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.game-story-card small {
+  color: var(--muted);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.game-story-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.83rem;
+  line-height: 1.5;
+}
+
+.game-story-card.accent {
+  border-color: rgba(82, 214, 179, 0.22);
+  background: rgba(82, 214, 179, 0.06);
+}
+
+.game-story-card.warning {
+  border-color: rgba(244, 184, 96, 0.24);
+  background: rgba(244, 184, 96, 0.07);
+}
+
+.game-story-card.danger {
+  border-color: rgba(255, 106, 122, 0.24);
+  background: rgba(255, 106, 122, 0.06);
+}
+
 .closeout {
   margin-top: 10px;
   display: grid;
