@@ -205,6 +205,10 @@ const parseStarterRecord = (value = '') => {
   return { wins: Number(match[1]), losses: Number(match[2]) }
 }
 
+const isPostponedScheduleGame = (game = {}) =>
+  `${game?.status?.detailedState || ''}`.toLowerCase() === 'postponed' ||
+  `${game?.status?.statusCode || ''}`.toUpperCase() === 'DR'
+
 const normalizeNameToken = (value = '') =>
   `${value}`
     .toLowerCase()
@@ -709,6 +713,7 @@ const main = async () => {
 
   for (const dateEntry of schedule.dates || []) {
     for (const game of dateEntry.games || []) {
+      if (isPostponedScheduleGame(game)) continue
       const awayPitcherId = game.teams?.away?.probablePitcher?.id
       const homePitcherId = game.teams?.home?.probablePitcher?.id
       if (awayPitcherId) pitcherIds.add(awayPitcherId)
@@ -731,6 +736,7 @@ const main = async () => {
   const rawGames = []
   for (const dateEntry of schedule.dates || []) {
     for (const game of dateEntry.games || []) {
+      if (isPostponedScheduleGame(game)) continue
       const awayOfficial = game.teams?.away?.team?.name
       const homeOfficial = game.teams?.home?.team?.name
       const awayDesk = officialToDeskTeam[awayOfficial]

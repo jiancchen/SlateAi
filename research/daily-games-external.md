@@ -4,6 +4,7 @@ This file is the known-good starting list for daily web pulls.
 
 Operator note:
 - Run all `npm run data:*` commands from the repository root, not from `web/`.
+- For the MLB day routine, use [research/mlb-daily-run-checklist.md](/Users/jcchen/Documents/New%20project/research/mlb-daily-run-checklist.md:1) after the source pulls.
 
 The rule:
 1. Start here before doing a wide web search.

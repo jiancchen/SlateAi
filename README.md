@@ -60,6 +60,7 @@ npm run data:export:hr -- --date YYYY-MM-DD
 
 ```bash
 npm run data:refresh:mlb-live -- --date YYYY-MM-DD
+npm run data:verify:mlb-refresh -- --date YYYY-MM-DD
 ```
 
 ### Backtesting / History
@@ -92,6 +93,8 @@ npm run data:export:history-journal
   JSONL training ledger export.
 - `research/daily-games-external.md`
   Daily source registry and operator shortcuts.
+- `research/mlb-daily-run-checklist.md`
+  Daily MLB operator checklist and refresh verification routine.
 - `data-private/README.md`
   Warehouse layout and local data notes.
 

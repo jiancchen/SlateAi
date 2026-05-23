@@ -80,6 +80,8 @@ const recommendationModes = [
   }
 ] as const
 
+const builderLeagueOrder = ['MLB', 'Tennis', 'WNBA', 'NBA', 'UFC'] as const
+
 const mlbLogoBase = 'https://raw.githubusercontent.com/MLBAMGames/mlb_teams_logo_svg/main/light'
 const mlbTeamLogoCode: Record<string, string> = {
   'D-backs': 'ari',
@@ -513,6 +515,7 @@ function App() {
   const [builderValidityFilter, setBuilderValidityFilter] = useState<(typeof builderValidityFilters)[number]['id']>('eligible')
   const [builderSort, setBuilderSort] = useState<(typeof builderSortOptions)[number]['id']>('confidence')
   const [activePropType, setActivePropType] = useState<(typeof propTypeFilters)[number]['id']>('all')
+  const [builderLeagueFilter, setBuilderLeagueFilter] = useState<string>('all')
   const [parlayStake, setParlayStake] = useState(25)
   const [recommendedLegCount, setRecommendedLegCount] = useState(4)
   const [recommendationMode, setRecommendationMode] = useState<(typeof recommendationModes)[number]['id']>('favorites')
@@ -788,9 +791,22 @@ function App() {
     [analysisPicks]
   )
 
+  const scopedFavoriteRecommendationPool = useMemo(
+    () =>
+      favoriteRecommendationPool.filter(
+        (pick: AnyRecord) => builderLeagueFilter === 'all' || pick.league === builderLeagueFilter
+      ),
+    [builderLeagueFilter, favoriteRecommendationPool]
+  )
+
+  const scopedFlipRiskPicks = useMemo(
+    () => flipRiskPicks.filter((pick: AnyRecord) => builderLeagueFilter === 'all' || pick.league === builderLeagueFilter),
+    [builderLeagueFilter, flipRiskPicks]
+  )
+
   const filteredMoneylineGames = useMemo(
-    () => favoriteRecommendationPool.filter((pick: AnyRecord) => !getEventState(pick.game, activeDayIsoDate, pacificClock).invalid),
-    [activeDayIsoDate, favoriteRecommendationPool, pacificClock]
+    () => scopedFavoriteRecommendationPool.filter((pick: AnyRecord) => !getEventState(pick.game, activeDayIsoDate, pacificClock).invalid),
+    [activeDayIsoDate, pacificClock, scopedFavoriteRecommendationPool]
   )
 
   const favoriteCatalogEntries = useMemo(
@@ -967,11 +983,25 @@ function App() {
     [activeDayIsoDate, mlbPlayerProps, pacificClock, selectedProps]
   )
 
+  const allBuilderEntries = useMemo(
+    () => [...favoriteCatalogEntries, ...totalCatalogEntries, ...propCatalogEntries, ...flipCatalogEntries],
+    [favoriteCatalogEntries, totalCatalogEntries, propCatalogEntries, flipCatalogEntries]
+  )
+
+  const builderLeagueFilters = useMemo(() => {
+    const availableLeagues = new Set(allBuilderEntries.map((entry) => entry.league).filter(Boolean))
+    return [
+      { id: 'all', label: 'All sports' },
+      ...builderLeagueOrder.filter((league) => availableLeagues.has(league)).map((league) => ({ id: league, label: league }))
+    ]
+  }, [allBuilderEntries])
+
   const builderCatalogEntries = useMemo(() => {
-    const allEntries = [...favoriteCatalogEntries, ...totalCatalogEntries, ...propCatalogEntries, ...flipCatalogEntries]
+    const allEntries = allBuilderEntries
     return allEntries
       .filter((entry) => {
         if (builderCatalogTab !== 'all' && entry.category !== builderCatalogTab) return false
+        if (builderLeagueFilter !== 'all' && entry.league !== builderLeagueFilter) return false
         if (entry.category === 'props' && activePropType !== 'all' && entry.raw?.propType !== activePropType) return false
         if (builderValidityFilter === 'eligible') return !entry.invalid
         if (builderValidityFilter === 'invalid') return entry.invalid
@@ -992,13 +1022,11 @@ function App() {
       })
   }, [
     activePropType,
+    allBuilderEntries,
     builderCatalogTab,
+    builderLeagueFilter,
     builderSort,
-    builderValidityFilter,
-    favoriteCatalogEntries,
-    flipCatalogEntries,
-    propCatalogEntries,
-    totalCatalogEntries
+    builderValidityFilter
   ])
 
   const parlayLegs = useMemo(() => {
@@ -1025,15 +1053,15 @@ function App() {
   const recommendedLegTarget = clamp(recommendedLegCount, 2, Math.max(2, recommendationCounts.at(-1) ?? 2))
 
   const balancedRecommendation = useMemo(
-    () => buildBalancedRecommendationSet(favoriteRecommendationPool, flipRiskPicks, recommendedLegTarget, balanceWeight),
-    [balanceWeight, favoriteRecommendationPool, flipRiskPicks, recommendedLegTarget]
+    () => buildBalancedRecommendationSet(scopedFavoriteRecommendationPool, scopedFlipRiskPicks, recommendedLegTarget, balanceWeight),
+    [balanceWeight, recommendedLegTarget, scopedFavoriteRecommendationPool, scopedFlipRiskPicks]
   )
 
   const recommendedPicks = useMemo(() => {
     if (recommendationMode === 'balanced') return balancedRecommendation.picks
-    if (recommendationMode === 'flips') return flipRiskPicks.slice(0, recommendedLegTarget)
-    return favoriteRecommendationPool.slice(0, recommendedLegTarget)
-  }, [balancedRecommendation.picks, favoriteRecommendationPool, flipRiskPicks, recommendationMode, recommendedLegTarget])
+    if (recommendationMode === 'flips') return scopedFlipRiskPicks.slice(0, recommendedLegTarget)
+    return scopedFavoriteRecommendationPool.slice(0, recommendedLegTarget)
+  }, [balancedRecommendation.picks, recommendationMode, recommendedLegTarget, scopedFavoriteRecommendationPool, scopedFlipRiskPicks])
 
   const recommendedParlay = useMemo(() => {
     const legs = recommendedPicks
@@ -1242,6 +1270,35 @@ function App() {
       : Number(homeSummary?.bullpenPitchTypeSummary?.pressureIndex)
     const awayStory = game.storyContext?.away?.summary
     const homeStory = game.storyContext?.home?.summary
+    const totals = projection?.totals
+    const totalsCards = totals
+      ? [
+          {
+            id: 'full',
+            title: 'Full game',
+            lean: totals.fullGame,
+            lineLabel: projection?.postedTotal != null ? `${projection.postedTotal}` : 'N/A',
+            projectedLabel: `${formatNumber(totals.projectedFullTotalRuns, 1)} projected runs`,
+            splitLabel: `${awayTeam} ${formatNumber(projection?.awayProjectedRuns, 1)} + ${homeTeam} ${formatNumber(projection?.homeProjectedRuns, 1)}`
+          },
+          {
+            id: 'first5',
+            title: 'First 5 innings',
+            lean: totals.first5,
+            lineLabel: totals.derivedFirst5TotalLine != null ? `${totals.derivedFirst5TotalLine}` : 'N/A',
+            projectedLabel: `${formatNumber(totals.projectedFirst5TotalRuns, 1)} projected runs`,
+            splitLabel: `${awayTeam} ${formatNumber(projection?.awayFirst5ProjectedRuns, 1)} + ${homeTeam} ${formatNumber(projection?.homeFirst5ProjectedRuns, 1)}`
+          },
+          {
+            id: 'late',
+            title: 'Rest of game',
+            lean: totals.late,
+            lineLabel: totals.derivedLateTotalLine != null ? `${totals.derivedLateTotalLine}` : 'N/A',
+            projectedLabel: `${formatNumber(totals.projectedLateTotalRuns, 1)} projected runs`,
+            splitLabel: `${awayTeam} ${formatNumber(projection?.awayLateProjectedRuns, 1)} + ${homeTeam} ${formatNumber(projection?.homeLateProjectedRuns, 1)}`
+          }
+        ]
+      : []
     const renderBridgeChainCard = (
       teamName: string,
       relievers: AnyRecord[],
@@ -1510,6 +1567,35 @@ function App() {
                 <small>{projection.totals?.fullGame?.summary}</small>
               </article>
             </div>
+          </section>
+        ) : null}
+
+        {projection ? (
+          <section className="detail-panel totals-board">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Over / under board</p>
+              <span>{totals?.weatherNote || 'Full game plus inning splits'}</span>
+            </div>
+            <div className="totals-grid">
+              {totalsCards.map((card) => (
+                <article key={`${game.id}-${card.id}`} className="totals-card">
+                  <div className="totals-card-head">
+                    <div>
+                      <p className="eyebrow">{card.title}</p>
+                      <strong>{card.lean?.label || 'Pass'}</strong>
+                    </div>
+                    <span>{card.lean?.strength || 'Pass'}</span>
+                  </div>
+                  <small>{card.lean?.summary || 'No totals edge stored for this phase.'}</small>
+                  <span>{card.projectedLabel}</span>
+                  <small>Line: {card.lineLabel}</small>
+                  <small>{card.splitLabel}</small>
+                </article>
+              ))}
+            </div>
+            <small className="totals-footnote">
+              {totals?.bullpenExhaustionNote || 'No bullpen or weather totals note stored yet.'}
+            </small>
           </section>
         ) : null}
 
@@ -2178,6 +2264,19 @@ function App() {
                         type="button"
                         className={`builder-filter-chip subtle ${builderValidityFilter === filter.id ? 'active' : ''}`}
                         onClick={() => setBuilderValidityFilter(filter.id)}
+                      >
+                        {filter.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="builder-filter-row">
+                    {builderLeagueFilters.map((filter) => (
+                      <button
+                        key={filter.id}
+                        type="button"
+                        className={`builder-filter-chip subtle ${builderLeagueFilter === filter.id ? 'active' : ''}`}
+                        onClick={() => setBuilderLeagueFilter(filter.id)}
                       >
                         {filter.label}
                       </button>

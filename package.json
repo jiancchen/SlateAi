@@ -15,6 +15,7 @@
     "data:derive:mlb": "python3 pipeline/mlb_warehouse.py derive-mlb-features",
     "data:ingest:statcast-hr": "python3 pipeline/mlb_warehouse.py ingest-statcast-hr",
     "data:refresh:mlb-live": "node pipeline/refresh-mlb-live-board.mjs",
+    "data:verify:mlb-refresh": "node pipeline/verify-mlb-refresh.mjs",
     "data:import:hr": "python3 pipeline/mlb_warehouse.py import-predictions",
     "data:grade:hr": "python3 pipeline/mlb_warehouse.py grade-home-run-picks",
     "data:list:hr": "python3 pipeline/mlb_warehouse.py list-home-runs",

@@ -522,6 +522,9 @@ const buildScheduleMap = (scheduleDates = []) => {
 
   for (const dateEntry of scheduleDates) {
     for (const game of dateEntry.games || []) {
+      const detailedState = `${game?.status?.detailedState || ''}`.toLowerCase()
+      const statusCode = `${game?.status?.statusCode || ''}`.toUpperCase()
+      if (detailedState === 'postponed' || statusCode === 'DR') continue
       const awayOfficial = game.teams?.away?.team?.name
       const homeOfficial = game.teams?.home?.team?.name
       if (!awayOfficial || !homeOfficial) continue
