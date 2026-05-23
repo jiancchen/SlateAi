@@ -454,6 +454,7 @@ const buildPropRecords = (date) => {
       recommendationTier: row.recommendation_tier,
       meta: {
         ...metadata,
+        scriptTags: Array.isArray(metadata.scriptTags) ? metadata.scriptTags : [],
         statValueLabel: raw.statValueLabel,
         slot: raw.slot
       },
@@ -464,7 +465,9 @@ const buildPropRecords = (date) => {
         lineThreshold: row.line_threshold,
         plateAppearances: resultMetadata.plateAppearances,
         atBats: resultMetadata.atBats,
-        gamePk: resultMetadata.gamePk
+        gamePk: resultMetadata.gamePk,
+        storyTags: Array.isArray(resultMetadata.storyTags) ? resultMetadata.storyTags : [],
+        storySummary: resultMetadata.storySummary ?? {}
       },
       resultJustification: row.result_label || `${row.player_name} result not available.`
     }
@@ -536,6 +539,97 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = ${JSON
   console.log(`Wrote prop performance summary -> ${target}`)
 }
 
+const buildPropCalibration = (propRecords) => {
+  const overallByType = {}
+  const byTeamAndType = {}
+  const byReasonTagAndType = {}
+  const byScriptTagAndType = {}
+  const byStoryTagAndType = {}
+
+  const touchBucket = (store, key) => {
+    if (!store[key]) store[key] = { hits: 0, total: 0 }
+    return store[key]
+  }
+
+  const reasonTagsFor = (record) => {
+    const raw = record?.meta?.reason || record?.pickJustification || ''
+    return raw
+      .split('|')
+      .map((part) => part.trim().toLowerCase())
+      .filter(Boolean)
+  }
+
+  const scriptTagsFor = (record) =>
+    (record?.meta?.scriptTags ?? []).map((tag) => String(tag).trim().toLowerCase()).filter(Boolean)
+
+  const storyTagsFor = (record) =>
+    (record?.result?.storyTags ?? []).map((tag) => String(tag).trim().toLowerCase()).filter(Boolean)
+
+  for (const record of propRecords) {
+    const propType = record.propType
+    const hit = Boolean(record.result?.hit)
+    if (!propType) continue
+
+    const overall = touchBucket(overallByType, propType)
+    overall.total += 1
+    if (hit) overall.hits += 1
+
+    if (record.teamName) {
+      const teamBucket = touchBucket(byTeamAndType, `${propType}::${record.teamName}`)
+      teamBucket.total += 1
+      if (hit) teamBucket.hits += 1
+    }
+
+    for (const tag of reasonTagsFor(record)) {
+      const tagBucket = touchBucket(byReasonTagAndType, `${propType}::${tag}`)
+      tagBucket.total += 1
+      if (hit) tagBucket.hits += 1
+    }
+
+    for (const tag of scriptTagsFor(record)) {
+      const tagBucket = touchBucket(byScriptTagAndType, `${propType}::${tag}`)
+      tagBucket.total += 1
+      if (hit) tagBucket.hits += 1
+    }
+
+    for (const tag of storyTagsFor(record)) {
+      const tagBucket = touchBucket(byStoryTagAndType, `${propType}::${tag}`)
+      tagBucket.total += 1
+      if (hit) tagBucket.hits += 1
+    }
+  }
+
+  const finalize = (store, minSample) =>
+    Object.fromEntries(
+      Object.entries(store)
+        .filter(([, summary]) => summary.total >= minSample)
+        .map(([key, summary]) => [
+          key,
+          {
+            hits: summary.hits,
+            total: summary.total,
+            hitRate: summary.total ? Number(((summary.hits / summary.total) * 100).toFixed(1)) : null
+          }
+        ])
+    )
+
+  return {
+    overallByType: finalize(overallByType, 1),
+    byTeamAndType: finalize(byTeamAndType, 4),
+    byReasonTagAndType: finalize(byReasonTagAndType, 6),
+    byScriptTagAndType: finalize(byScriptTagAndType, 6),
+    byStoryTagAndType: finalize(byStoryTagAndType, 6)
+  }
+}
+
+const writePropCalibrationModule = (propRecords) => {
+  const target = path.join(ROOT, 'web', 'src', 'lib', 'mlb-prop-calibration.generated.js')
+  const calibration = buildPropCalibration(propRecords)
+  const moduleSource = `export const mlbPropCalibration = ${JSON.stringify(calibration, null, 2)}\n`
+  fs.writeFileSync(target, moduleSource, 'utf8')
+  console.log(`Wrote prop calibration -> ${target}`)
+}
+
 const dates = ['2026-05-16', '2026-05-17', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21']
 ensureDir(HISTORY_DIR)
 
@@ -560,3 +654,4 @@ const combinedTarget = path.join(HISTORY_DIR, 'mlb-results-archive.jsonl')
 fs.writeFileSync(combinedTarget, allRecords.map((record) => JSON.stringify(record)).join('\n') + '\n', 'utf8')
 console.log(`Wrote ${allRecords.length} records -> ${combinedTarget}`)
 writePropSummaryModule(propSummaryByDate)
+writePropCalibrationModule(allRecords.filter((record) => record.marketType === 'playerProp'))

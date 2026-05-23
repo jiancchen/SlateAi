@@ -1,6 +1,10 @@
 import type { HistoryEntry } from './history-archive'
-import type { StoryArchiveDay } from './story-archive.generated'
 import { fetchJsonWithTimeout, getApiBaseUrl } from './api-client'
+import type {
+  StoryArchiveDaySummary,
+  StoryArchiveGame,
+  StoryArchiveIndexEntry
+} from './story-types'
 
 export const loadHistoryArchiveData = async (): Promise<HistoryEntry[]> => {
   const apiBase = getApiBaseUrl()
@@ -18,30 +22,43 @@ export const loadHistoryArchiveData = async (): Promise<HistoryEntry[]> => {
   return module.historyArchive
 }
 
-export const loadStoryArchiveData = async (): Promise<StoryArchiveDay[]> => {
+export const loadStoryArchiveIndexData = async (): Promise<StoryArchiveIndexEntry[]> => {
   const apiBase = getApiBaseUrl()
 
-  if (apiBase) {
-    try {
-      const payload = await fetchJsonWithTimeout<{ stories: Array<Omit<StoryArchiveDay, 'games'> & { games: number }> }>(
-        `${apiBase}/api/stories`
-      )
-      const daySummaries = payload.stories
+  if (!apiBase) return []
 
-      if (Array.isArray(daySummaries) && daySummaries.length) {
-        const days = await Promise.all(
-          daySummaries.map(async (summary) => {
-            const dayPayload = await fetchJsonWithTimeout<{ day: StoryArchiveDay }>(`${apiBase}/api/stories/${summary.id}`)
-            return dayPayload.day
-          })
-        )
-        return days
-      }
-    } catch (error) {
-      console.warn('Story API unavailable, falling back to bundled story archive.', error)
-    }
+  try {
+    const payload = await fetchJsonWithTimeout<{ stories: StoryArchiveIndexEntry[] }>(`${apiBase}/api/stories`)
+    if (Array.isArray(payload.stories)) return payload.stories
+  } catch (error) {
+    console.warn('Story API unavailable.', error)
   }
 
-  const module = await import('./story-archive.generated')
-  return module.storyArchive
+  return []
+}
+
+export const loadStoryDayData = async (date: string): Promise<StoryArchiveDaySummary | null> => {
+  const apiBase = getApiBaseUrl()
+  if (!apiBase) return null
+
+  try {
+    const payload = await fetchJsonWithTimeout<{ day: StoryArchiveDaySummary }>(`${apiBase}/api/stories/${date}`)
+    return payload.day ?? null
+  } catch (error) {
+    console.warn(`Story day API unavailable for ${date}.`, error)
+    return null
+  }
+}
+
+export const loadStoryGameData = async (date: string, gamePk: number): Promise<StoryArchiveGame | null> => {
+  const apiBase = getApiBaseUrl()
+  if (!apiBase) return null
+
+  try {
+    const payload = await fetchJsonWithTimeout<{ game: StoryArchiveGame }>(`${apiBase}/api/stories/${date}/games/${gamePk}`)
+    return payload.game ?? null
+  } catch (error) {
+    console.warn(`Story game API unavailable for ${date}/${gamePk}.`, error)
+    return null
+  }
 }

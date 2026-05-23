@@ -8,13 +8,25 @@ import {
   rankMlbPlayerProps
 } from './lib/sports-model.js'
 import type { HistoryEntry, HistoryRecord } from './lib/history-archive'
-import type { StoryArchiveDay, StoryArchiveGame, StoryTimelineEvent } from './lib/story-archive.generated'
+import type {
+  StoryArchiveDaySummary,
+  StoryArchiveGame,
+  StoryArchiveIndexEntry,
+  StoryTimelineEvent
+} from './lib/story-types'
 import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generated'
-import { loadHistoryArchiveData, loadStoryArchiveData } from './lib/archive-loaders'
+import {
+  loadHistoryArchiveData,
+  loadStoryDayData,
+  loadStoryGameData,
+  loadStoryArchiveIndexData
+} from './lib/archive-loaders'
 import {
   defaultSlateDayId,
   fallbackSlateDayManifest,
+  loadMlbPropBoardData,
   loadSlateDayData,
+  loadSlateGameDetailData,
   loadSlateManifestData,
   type LoadedSlateDay,
   type SlateManifestEntry
@@ -276,6 +288,41 @@ const buildStoryTimelineGroups = (timeline: StoryTimelineEvent[]) => {
     existing.events.push(event)
   })
   return groups
+}
+
+const buildTrackedPropBoardByGame = (payload: AnyRecord | null) => {
+  if (!payload?.picks || !Array.isArray(payload.picks)) return {}
+
+  const grouped = payload.picks.reduce((acc: Record<string, AnyRecord[]>, pick: AnyRecord) => {
+    if (!pick?.gameId) return acc
+    if (!acc[pick.gameId]) acc[pick.gameId] = []
+    acc[pick.gameId].push(pick)
+    return acc
+  }, {})
+
+  return Object.fromEntries(
+    Object.entries(grouped).map(([gameId, picks]) => {
+      const sorted = [...picks].sort((left, right) => (right.confidence ?? 0) - (left.confidence ?? 0))
+      const byType = sorted.reduce((acc: Record<string, AnyRecord[]>, pick: AnyRecord) => {
+        if (!acc[pick.propType]) acc[pick.propType] = []
+        acc[pick.propType].push(pick)
+        return acc
+      }, {})
+      const leader = sorted[0]
+      return [
+        gameId,
+        {
+          available: sorted.length > 0,
+          targets: sorted,
+          featured: sorted.slice(0, 6),
+          byType,
+          summary: leader
+            ? `${leader.playerName} leads the tracked prop board for this game, with ${sorted.length} narrower lanes surviving the current filters.`
+            : 'No tracked prop lanes survived the current filters.'
+        }
+      ]
+    })
+  )
 }
 
 const getPacificClock = () => {
@@ -578,11 +625,18 @@ function App() {
   const [selectedTotalsByDay, setSelectedTotalsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [slateManifest, setSlateManifest] = useState<SlateManifestEntry[]>(fallbackSlateDayManifest)
   const [loadedSlates, setLoadedSlates] = useState<Record<string, LoadedSlateDay>>({})
+  const [loadedGameDetailsByDay, setLoadedGameDetailsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
+  const [loadingGameDetailsByDay, setLoadingGameDetailsByDay] = useState<Record<string, Record<string, boolean>>>({})
+  const [loadedPropBoardsByDay, setLoadedPropBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
   const [loadingSlateIds, setLoadingSlateIds] = useState<Record<string, boolean>>({})
   const [historyArchive, setHistoryArchive] = useState<HistoryEntry[]>([])
   const [historyLoaded, setHistoryLoaded] = useState(false)
-  const [storyArchive, setStoryArchive] = useState<StoryArchiveDay[]>([])
+  const [storyArchive, setStoryArchive] = useState<StoryArchiveIndexEntry[]>([])
   const [storiesLoaded, setStoriesLoaded] = useState(false)
+  const [loadedStoryDaysById, setLoadedStoryDaysById] = useState<Record<string, StoryArchiveDaySummary>>({})
+  const [loadingStoryDaysById, setLoadingStoryDaysById] = useState<Record<string, boolean>>({})
+  const [loadedStoryGamesByDay, setLoadedStoryGamesByDay] = useState<Record<string, Record<number, StoryArchiveGame>>>({})
+  const [loadingStoryGamesByDay, setLoadingStoryGamesByDay] = useState<Record<string, Record<number, boolean>>>({})
   const [activeStoryId, setActiveStoryId] = useState('')
   const [selectedStoryGamePk, setSelectedStoryGamePk] = useState<number | null>(null)
 
@@ -668,7 +722,7 @@ function App() {
     if (storiesLoaded || activeDeskTab !== 'stories') return
 
     let cancelled = false
-    loadStoryArchiveData()
+    loadStoryArchiveIndexData()
       .then((archive) => {
         if (cancelled) return
         setStoryArchive(archive)
@@ -684,6 +738,23 @@ function App() {
     }
   }, [activeDeskTab, storiesLoaded])
 
+  useEffect(() => {
+    if (!storiesLoaded || !activeStoryId || loadedStoryDaysById[activeStoryId] || loadingStoryDaysById[activeStoryId]) return
+
+    setLoadingStoryDaysById((current) => ({ ...current, [activeStoryId]: true }))
+    loadStoryDayData(activeStoryId)
+      .then((day) => {
+        if (!day) return
+        setLoadedStoryDaysById((current) => ({ ...current, [activeStoryId]: day }))
+      })
+      .catch((error) => {
+        console.error(`Failed to load story day ${activeStoryId}`, error)
+      })
+      .finally(() => {
+        setLoadingStoryDaysById((current) => ({ ...current, [activeStoryId]: false }))
+      })
+  }, [activeStoryId, storiesLoaded, loadedStoryDaysById, loadingStoryDaysById])
+
   const activeDayIndex = orderedSlateDays.findIndex((day) => day.id === activeDayShell?.id)
   const slateMeta = activeDay?.slateMeta ?? activeDayShell?.slateMeta ?? { date: 'Slate', isoDate: '' }
   const oddsMeta = activeDay?.oddsMeta ?? { snapshot: pacificClock.label }
@@ -698,6 +769,43 @@ function App() {
   useEffect(() => {
     document.title = `${slateMeta.date} Sports Desk`
   }, [slateMeta.date])
+
+  useEffect(() => {
+    if (!activeStoryDay?.games?.length) return
+    const currentSelected = activeStoryDay.games.find((game) => game.gamePk === selectedStoryGamePk)
+    if (!currentSelected) {
+      setSelectedStoryGamePk(activeStoryDay.games[0]?.gamePk ?? null)
+    }
+  }, [activeStoryDay, selectedStoryGamePk])
+
+  useEffect(() => {
+    if (!activeStoryId || !activeStoryGameSummary) return
+    if (loadedStoryGamesByDay[activeStoryId]?.[activeStoryGameSummary.gamePk]) return
+    if (loadingStoryGamesByDay[activeStoryId]?.[activeStoryGameSummary.gamePk]) return
+
+    setLoadingStoryGamesByDay((current) => ({
+      ...current,
+      [activeStoryId]: { ...(current[activeStoryId] || {}), [activeStoryGameSummary.gamePk]: true }
+    }))
+
+    loadStoryGameData(activeStoryId, activeStoryGameSummary.gamePk)
+      .then((game) => {
+        if (!game) return
+        setLoadedStoryGamesByDay((current) => ({
+          ...current,
+          [activeStoryId]: { ...(current[activeStoryId] || {}), [activeStoryGameSummary.gamePk]: game }
+        }))
+      })
+      .catch((error) => {
+        console.error(`Failed to load story game ${activeStoryId}/${activeStoryGameSummary.gamePk}`, error)
+      })
+      .finally(() => {
+        setLoadingStoryGamesByDay((current) => ({
+          ...current,
+          [activeStoryId]: { ...(current[activeStoryId] || {}), [activeStoryGameSummary.gamePk]: false }
+        }))
+      })
+  }, [activeStoryDay, activeStoryGameSummary, activeStoryId, loadedStoryGamesByDay, loadingStoryGamesByDay])
 
   const visibleGames = useMemo(() => {
     const search = marketSearch.trim().toLowerCase()
@@ -727,12 +835,84 @@ function App() {
   }, [activeDayId, selectedGameIdByDay, visibleGames])
 
   const selectedGameId = selectedGameIdByDay[activeDayId] ?? visibleGames[0]?.id ?? games[0]?.id ?? ''
-  const selectedGame =
+  const selectedGameSummary =
     games.find((game: AnyRecord) => game.id === selectedGameId) ?? visibleGames[0] ?? games[0] ?? null
+
+  useEffect(() => {
+    if (!activeDayId || !selectedGameId || !selectedGameSummary) return
+    if (selectedGameSummary.detailLevel === 'full') return
+    if (loadedGameDetailsByDay[activeDayId]?.[selectedGameId]) return
+    if (loadingGameDetailsByDay[activeDayId]?.[selectedGameId]) return
+
+    setLoadingGameDetailsByDay((current) => ({
+      ...current,
+      [activeDayId]: { ...(current[activeDayId] || {}), [selectedGameId]: true }
+    }))
+
+    loadSlateGameDetailData(activeDayId, selectedGameId)
+      .then((gameDetail) => {
+        setLoadedGameDetailsByDay((current) => ({
+          ...current,
+          [activeDayId]: { ...(current[activeDayId] || {}), [selectedGameId]: gameDetail as AnyRecord }
+        }))
+      })
+      .catch((error) => {
+        console.error(`Failed to load game detail ${activeDayId}/${selectedGameId}`, error)
+      })
+      .finally(() => {
+        setLoadingGameDetailsByDay((current) => ({
+          ...current,
+          [activeDayId]: { ...(current[activeDayId] || {}), [selectedGameId]: false }
+        }))
+      })
+  }, [activeDayId, selectedGameId, selectedGameSummary, loadedGameDetailsByDay, loadingGameDetailsByDay])
+
+  useEffect(() => {
+    if (!activeDayId) return
+    if (!games.some((game: AnyRecord) => game.league === 'MLB')) return
+    if (loadedPropBoardsByDay[activeDayId] !== undefined) return
+
+    loadMlbPropBoardData(activeDayId)
+      .then((propsPayload) => {
+        setLoadedPropBoardsByDay((current) => ({ ...current, [activeDayId]: propsPayload }))
+      })
+      .catch((error) => {
+        console.error(`Failed to load MLB prop board for ${activeDayId}`, error)
+        setLoadedPropBoardsByDay((current) => ({ ...current, [activeDayId]: null }))
+      })
+  }, [activeDayId, games, loadedPropBoardsByDay])
+
+  const activePropBoardByGame = useMemo(
+    () => buildTrackedPropBoardByGame(loadedPropBoardsByDay[activeDayId] ?? null),
+    [activeDayId, loadedPropBoardsByDay]
+  )
+
+  const selectedGameDetail = loadedGameDetailsByDay[activeDayId]?.[selectedGameId] ?? null
+  const selectedGame =
+    selectedGameSummary
+      ? {
+          ...selectedGameSummary,
+          ...(selectedGameDetail || {}),
+          playerProps:
+            activePropBoardByGame[selectedGameId] ??
+            selectedGameDetail?.playerProps ??
+            selectedGameSummary.playerProps ??
+            null
+        }
+      : null
+  const isSelectedGameDetailLoading =
+    Boolean(selectedGameSummary) &&
+    selectedGameSummary?.detailLevel !== 'full' &&
+    !selectedGameDetail &&
+    Boolean(loadingGameDetailsByDay[activeDayId]?.[selectedGameId])
   const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
-  const activeStoryDay = storyArchive.find((entry) => entry.id === activeStoryId) ?? storyArchive[storyArchive.length - 1] ?? null
-  const activeStoryGame =
+  const activeStoryDay = activeStoryId ? loadedStoryDaysById[activeStoryId] ?? null : null
+  const activeStoryGameSummary =
     activeStoryDay?.games.find((game) => game.gamePk === selectedStoryGamePk) ?? activeStoryDay?.games[0] ?? null
+  const activeStoryGame =
+    (activeStoryId && activeStoryGameSummary
+      ? loadedStoryGamesByDay[activeStoryId]?.[activeStoryGameSummary.gamePk] ?? null
+      : null) || null
   const activeStoryTimeline = activeStoryGame?.timeline ?? []
   const activeStoryTimelineGroups = useMemo(() => buildStoryTimelineGroups(activeStoryTimeline), [activeStoryTimeline])
   const activeHistoryPropSummary = activeHistoryEntry ? mlbPropPerformanceByDate[activeHistoryEntry.id] ?? null : null
@@ -946,7 +1126,24 @@ function App() {
 
   const analysisPicks = useMemo(() => rankAnalysisPicks(games), [games])
   const flipRiskPicks = useMemo(() => rankFlipRiskPicks(games), [games])
-  const mlbPlayerProps = useMemo(() => rankMlbPlayerProps(games), [games])
+  const mlbPlayerProps = useMemo(() => {
+    const fromApi = Object.values(activePropBoardByGame).flatMap((board: AnyRecord) => board?.targets ?? [])
+    if (fromApi.length) {
+      return [...fromApi]
+        .sort((left, right) => {
+          if ((right.confidence ?? 0) !== (left.confidence ?? 0)) return (right.confidence ?? 0) - (left.confidence ?? 0)
+          return (right.expectedValue ?? 0) - (left.expectedValue ?? 0)
+        })
+        .map((prop: AnyRecord, index: number) => ({
+          ...prop,
+          rank: index + 1,
+          game:
+            games.find((game: AnyRecord) => game.id === prop.gameId) ??
+            ({ id: prop.gameId, league: 'MLB', start: prop.start, stage: prop.stage, startMinutes: 0 } as AnyRecord)
+        }))
+    }
+    return rankMlbPlayerProps(games)
+  }, [activePropBoardByGame, games])
 
   const favoriteRecommendationPool = useMemo(
     () => analysisPicks.filter((pick: AnyRecord) => pick.game?.moneyline?.available),
@@ -2373,7 +2570,14 @@ function App() {
                     </div>
                   </div>
 
-                  {selectedGame.league === 'MLB' ? renderMlbDetail(selectedGame) : null}
+                  {selectedGame.league === 'MLB' && isSelectedGameDetailLoading ? (
+                    <section className="placeholder-panel compact">
+                      <p className="eyebrow">Loading matchup detail</p>
+                      <h3>Pulling lineup, starter, bridge, and story context</h3>
+                      <p>The board summary is already loaded; the heavier MLB game detail is being fetched on demand.</p>
+                    </section>
+                  ) : null}
+                  {selectedGame.league === 'MLB' && !isSelectedGameDetailLoading ? renderMlbDetail(selectedGame) : null}
                   {selectedGame.league === 'Tennis' ? renderTennisDetail(selectedGame) : null}
                 </div>
               </>
@@ -3290,7 +3494,7 @@ function App() {
                 <button
                   key={day.id}
                   type="button"
-                  className={`history-row ${activeStoryDay?.id === day.id ? 'active' : ''}`}
+                  className={`history-row ${activeStoryId === day.id ? 'active' : ''}`}
                   onClick={() => setActiveStoryId(day.id)}
                 >
                   <div className="history-row-topline">
@@ -3313,6 +3517,8 @@ function App() {
           <section className="workspace-panel history-detail">
             {!storiesLoaded ? (
               <p className="react-section-copy">Loading story detail…</p>
+            ) : loadingStoryDaysById[activeStoryId] && !activeStoryDay ? (
+              <p className="react-section-copy">Loading story day…</p>
             ) : activeStoryDay ? (
               <>
                 <div className="history-detail-header">
@@ -3341,7 +3547,13 @@ function App() {
                   <section className="action-section story-section-span">
                     <div className="action-section-header">
                       <h3>Game event log</h3>
-                      <span>{activeStoryGame ? `${activeStoryGame.title} · ${activeStoryTimeline.length} events` : 'No game selected'}</span>
+                      <span>
+                        {activeStoryGame
+                          ? `${activeStoryGame.title} · ${activeStoryTimeline.length} events`
+                          : activeStoryGameSummary
+                            ? `${activeStoryGameSummary.title} · loading`
+                            : 'No game selected'}
+                      </span>
                     </div>
 
                     {activeStoryGame ? (
@@ -3351,7 +3563,7 @@ function App() {
                             <button
                               key={`${activeStoryDay.id}-pick-${game.gamePk}`}
                               type="button"
-                              className={`history-chip ${activeStoryGame.gamePk === game.gamePk ? 'active' : ''}`}
+                              className={`history-chip ${activeStoryGameSummary?.gamePk === game.gamePk ? 'active' : ''}`}
                               onClick={() => setSelectedStoryGamePk(game.gamePk)}
                             >
                               {game.awayTeam.split(' ').slice(-1)[0]} @ {game.homeTeam.split(' ').slice(-1)[0]}
@@ -3424,6 +3636,8 @@ function App() {
                           ))}
                         </div>
                       </div>
+                    ) : activeStoryGameSummary ? (
+                      <p className="react-section-copy">Loading selected game log…</p>
                     ) : (
                       <p className="react-section-copy">No game story is available on this day.</p>
                     )}
@@ -3436,7 +3650,7 @@ function App() {
                     </div>
                     <div className="story-game-grid">
                       {activeStoryDay.games.map((game) => (
-                        <article key={`${activeStoryDay.id}-${game.gamePk}`} className={`story-game-card ${activeStoryGame?.gamePk === game.gamePk ? 'active' : ''}`}>
+                        <article key={`${activeStoryDay.id}-${game.gamePk}`} className={`story-game-card ${activeStoryGameSummary?.gamePk === game.gamePk ? 'active' : ''}`}>
                           <div className="story-game-head">
                             <div>
                               <strong>{game.title}</strong>
@@ -3451,10 +3665,10 @@ function App() {
                           <div className="history-chip-row">
                             <button
                               type="button"
-                              className={`history-chip ${activeStoryGame?.gamePk === game.gamePk ? 'active' : ''}`}
+                              className={`history-chip ${activeStoryGameSummary?.gamePk === game.gamePk ? 'active' : ''}`}
                               onClick={() => setSelectedStoryGamePk(game.gamePk)}
                             >
-                              Load playback
+                              Load game log
                             </button>
                           </div>
                           <div className="story-summary-grid">
@@ -3507,7 +3721,9 @@ function App() {
                   </section>
                 </div>
               </>
-            ) : null}
+            ) : (
+              <p className="react-section-copy">No story day is available yet.</p>
+            )}
           </section>
         </div>
       ) : null}

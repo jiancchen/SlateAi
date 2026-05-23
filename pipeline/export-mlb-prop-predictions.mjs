@@ -139,6 +139,7 @@ const serializePropPick = (target) => {
     statValueLabel: target.statValueLabel,
     recommendationTier: target.recommendationTier,
     reason: target.reason,
+    scriptTags: Array.isArray(target.scriptTags) ? target.scriptTags : [],
     matchupNote: target.matchupNote,
     teamScriptLabel: target.teamScriptLabel,
     lineupStatus: target.lineupStatus,

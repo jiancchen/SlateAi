@@ -3,11 +3,12 @@ import cors from '@fastify/cors'
 import {
   loadHistoryArchive,
   loadHistoryEntry,
-  loadStoryArchiveFromModules,
+  loadStoryDayWithFallback,
+  loadStoryGameWithFallback,
   loadStoryDay,
   loadStoryIndex
 } from './lib/archive-loader.js'
-import { listSlateManifest, loadSlateDay } from './lib/day-loader.js'
+import { listSlateManifest, loadSlateDay, loadSlateGameDetail } from './lib/day-loader.js'
 import { loadMlbHomeRunBoard, loadMlbLineupBoard, loadMlbPlayerProps } from './lib/file-loader.js'
 import { warehousePath } from './lib/paths.js'
 import { runSqliteJson } from './lib/sqlite.js'
@@ -83,6 +84,21 @@ app.get('/api/slates/:date', async (request, reply) => {
   }
 })
 
+app.get('/api/slates/:date/games/:gameId', async (request, reply) => {
+  const { date, gameId } = request.params as { date: string; gameId: string }
+
+  try {
+    const game = await loadSlateGameDetail(date, gameId)
+    return { game }
+  } catch (error) {
+    request.log.warn({ err: error, date, gameId }, 'Failed to load slate game detail')
+    return reply.code(404).send({
+      error: 'slate_game_not_found',
+      message: `No game detail is available for ${date}/${gameId}`
+    })
+  }
+})
+
 app.get('/api/history', async () => {
   const history = await loadHistoryArchive()
   return { history }
@@ -113,9 +129,7 @@ app.get('/api/stories', async () => {
 
 app.get('/api/stories/:date', async (request, reply) => {
   const { date } = request.params as { date: string }
-  const directDay = await loadStoryDay(date)
-  const archive = directDay ? null : await loadStoryArchiveFromModules()
-  const day = (directDay as Record<string, unknown> | null) ?? archive?.find((item) => item.id === date) ?? null
+  const day = (await loadStoryDayWithFallback(date)) as Record<string, unknown> | null
 
   if (!day) {
     return reply.code(404).send({
@@ -125,6 +139,20 @@ app.get('/api/stories/:date', async (request, reply) => {
   }
 
   return { day }
+})
+
+app.get('/api/stories/:date/games/:gamePk', async (request, reply) => {
+  const { date, gamePk } = request.params as { date: string; gamePk: string }
+  const game = (await loadStoryGameWithFallback(date, gamePk)) as Record<string, unknown> | null
+
+  if (!game) {
+    return reply.code(404).send({
+      error: 'story_game_not_found',
+      message: `No story archive game is available for ${date}/${gamePk}`
+    })
+  }
+
+  return { game }
 })
 
 app.get('/api/published/status', async () => {

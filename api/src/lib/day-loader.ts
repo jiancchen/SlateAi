@@ -26,6 +26,8 @@ export type LoadedSlateDay = SlateManifestEntry & {
 const mainDayPattern = /^day-(\d{4}-\d{2}-\d{2})\.js$/
 const slatesRoot = path.join(publishedDataRoot, 'slates')
 const slateIndexPath = path.join(slatesRoot, 'index.json')
+const slateSummaryPath = (id: string) => path.join(slatesRoot, id, 'summary.json')
+const slateGamePath = (id: string, gameId: string) => path.join(slatesRoot, id, 'games', `${gameId}.json`)
 
 const formatDateLabel = (isoDate: string) => {
   const [year, month, day] = isoDate.split('-').map(Number)
@@ -116,7 +118,21 @@ export const listSlateManifest = async (): Promise<SlateManifestEntry[]> => {
 }
 
 export const loadSlateDay = async (id: string): Promise<LoadedSlateDay> => {
-  const published = readJsonIfPresent<LoadedSlateDay>(path.join(slatesRoot, `${id}.json`))
+  const published =
+    readJsonIfPresent<LoadedSlateDay>(slateSummaryPath(id)) ??
+    readJsonIfPresent<LoadedSlateDay>(path.join(slatesRoot, `${id}.json`))
   if (published) return published
   return loadSlateDayFromModules(id)
+}
+
+export const loadSlateGameDetail = async (id: string, gameId: string): Promise<Record<string, unknown>> => {
+  const published = readJsonIfPresent<Record<string, unknown>>(slateGamePath(id, gameId))
+  if (published) return published
+
+  const day = await loadSlateDayFromModules(id)
+  const game = day.games.find((entry) => entry?.id === gameId)
+  if (!game) {
+    throw new Error(`No game detail found for ${id}/${gameId}`)
+  }
+  return game
 }

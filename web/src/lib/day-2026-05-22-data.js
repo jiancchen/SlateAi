@@ -93,8 +93,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +145",
-    "total": "o7.5 -105 / u8.5 -115",
+    "spread": "+1.5 -170 / -1.5 +160",
+    "total": "o7.5 -105 / u7.5 -110",
     "moneyline": "Astros +130 / Cubs -142",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs"
@@ -379,7 +379,7 @@ export const rawGames = [
     },
     "spread": "-1.5 +120 / +1.5 -134",
     "total": "o7.5 -105 / u7.5 -110",
-    "moneyline": "Pirates -149 / Blue Jays +130",
+    "moneyline": "Pirates -150 / Blue Jays +130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays"
   },
@@ -477,8 +477,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -188",
-    "total": "o7.5 -115 / u8 -118",
+    "spread": "+1.5 -220 / +1.5 -184",
+    "total": "o7.5 -115 / u8 -119",
     "moneyline": "Mets -105 / Marlins -108",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins"
@@ -577,9 +577,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "",
-    "total": "",
-    "moneyline": "",
+    "spread": "-1.5 +155 / +1.5 -188",
+    "total": "o8.5 -110 / u8.5 -110",
+    "moneyline": "Twins -108 / Red Sox -108",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox"
   },
@@ -677,7 +677,7 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -130 / -1.5 +122",
+    "spread": "+1.5 -125 / -1.5 +110",
     "total": "o9 -110 / u9 -105",
     "moneyline": "Nationals +165 / Braves -178",
     "pitcherSourceNote": "",
@@ -977,7 +977,7 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +120 / +1.5 -130",
+    "spread": "-1.5 +120 / +1.5 -136",
     "total": "o8.5 -105 / u8.5 -100",
     "moneyline": "Mariners -140 / Royals +120",
     "pitcherSourceNote": "",
@@ -1078,7 +1078,7 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +130 / +1.5 -150",
-    "total": "o8 -110 / u8 -102",
+    "total": "o8 -110 / u8 -105",
     "moneyline": "Rangers -130 / Angels +115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels"
@@ -1094,7 +1094,7 @@ export const rawGames = [
       "fullName": "Jeffrey Springs",
       "pitchHand": "L",
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "era": "4.11",
       "strikeOuts": 50,
       "inningsPitched": "61.1",
@@ -1198,10 +1198,10 @@ export const rawGames = [
       "era": "3.86",
       "strikeOuts": 28,
       "inningsPitched": "53.2",
-      "hitsAllowed": 50,
+      "hitsAllowed": 51,
       "walks": 15,
       "homeRunsAllowed": 9,
-      "whip": "1.21",
+      "whip": "1.23",
       "gamesStarted": 10,
       "probableSource": "mlb-api",
       "recentForm": {
@@ -1277,9 +1277,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -145 / -1.5 +125",
+    "spread": "+1.5 -144 / -1.5 +125",
     "total": "o9 -120 / u9.5 -120",
-    "moneyline": "Rockies +150 / Diamondbacks -166",
+    "moneyline": "Rockies +150 / Diamondbacks -162",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks"
   },
@@ -1295,13 +1295,13 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 6,
       "losses": 1,
-      "era": "1.50",
-      "strikeOuts": 65,
-      "inningsPitched": "60.0",
-      "hitsAllowed": 48,
-      "walks": 10,
+      "era": "2.04",
+      "strikeOuts": 66,
+      "inningsPitched": "61.2",
+      "hitsAllowed": 51,
+      "walks": 12,
       "homeRunsAllowed": 3,
-      "whip": "0.97",
+      "whip": "1.02",
       "gamesStarted": 10,
       "probableSource": "mlb-api",
       "recentForm": {
@@ -1377,8 +1377,8 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -195 / -1.5 +168",
-    "total": "o8.5 even / u8.5 -115",
+    "spread": "+1.5 -195 / -1.5 +172",
+    "total": "o8.5 -102 / u8.5 -115",
     "moneyline": "White Sox +106 / Giants -124",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants"

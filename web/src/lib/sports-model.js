@@ -1,4 +1,5 @@
 import { structuredInputOverrides } from './structured-inputs.js'
+import { mlbPropCalibration } from './mlb-prop-calibration.generated.js'
 
 const americanPattern = /[+-]\d+(?:\.\d+)?/g
 
@@ -4240,6 +4241,45 @@ const trackedMlbPropTypeConfig = {
   homeRun: { disabled: true }
 }
 
+const lookupPropCalibration = (target) => {
+  const propType = target?.propType || ''
+  const teamName = target?.teamName || ''
+  const teamKey = `${propType}::${teamName}`
+  const reasonTags = String(target?.reason || '')
+    .split('|')
+    .map((part) => part.trim().toLowerCase())
+    .filter(Boolean)
+  const scriptTags = Array.isArray(target?.scriptTags)
+    ? target.scriptTags.map((tag) => String(tag).trim().toLowerCase()).filter(Boolean)
+    : []
+  const storyTags = Array.isArray(target?.storyTags)
+    ? target.storyTags.map((tag) => String(tag).trim().toLowerCase()).filter(Boolean)
+    : []
+
+  return {
+    overall: mlbPropCalibration?.overallByType?.[propType] || null,
+    team: mlbPropCalibration?.byTeamAndType?.[teamKey] || null,
+    reasonTags: reasonTags
+      .map((tag) => ({
+        tag,
+        summary: mlbPropCalibration?.byReasonTagAndType?.[`${propType}::${tag}`] || null
+      }))
+      .filter((entry) => entry.summary),
+    scriptTags: scriptTags
+      .map((tag) => ({
+        tag,
+        summary: mlbPropCalibration?.byScriptTagAndType?.[`${propType}::${tag}`] || null
+      }))
+      .filter((entry) => entry.summary),
+    storyTags: storyTags
+      .map((tag) => ({
+        tag,
+        summary: mlbPropCalibration?.byStoryTagAndType?.[`${propType}::${tag}`] || null
+      }))
+      .filter((entry) => entry.summary)
+  }
+}
+
 const poissonProbabilityAtLeast = (lambda, threshold) => {
   if (!Number.isFinite(lambda) || lambda <= 0) return 0
 
@@ -4393,6 +4433,54 @@ const calibrateMlbPropConfidence = ({
   return Math.round(clamp(confidence, 18, 82))
 }
 
+const buildPropScriptTags = ({
+  propType,
+  hitter,
+  teamScript,
+  projectedRuns,
+  projectedHits,
+  projectedProfile,
+  lineupStatus,
+  weatherProfile,
+  homeRunBoost,
+  starterWalkPressure
+}) => {
+  const tags = []
+  const topThirdScore = Number(teamScript?.topThirdScore || 50)
+  const middleScore = Number(teamScript?.middleScore || 50)
+  const depthScore = Number(teamScript?.depthScore || 50)
+  const hitEfficiencyPct = Number(projectedProfile?.hitEfficiencyPct || 0)
+  const first5HitEfficiencyPct = Number(projectedProfile?.first5HitEfficiencyPct || 0)
+  const projectedLateHits = Number(projectedProfile?.lateProjectedHits || 0)
+
+  if (lineupStatus === 'posted') tags.push('posted-lineup')
+  if (topThirdScore >= 58) tags.push('top-third-pressure')
+  if (middleScore >= 56) tags.push('middle-order-traffic')
+  if (depthScore >= 56) tags.push('deep-lineup')
+  if (Number(projectedRuns || 0) >= 4.8) tags.push('run-ceiling-live')
+  if (Number(projectedHits || 0) >= 8.8) tags.push('traffic-lane-live')
+  if (projectedLateHits >= 3.2) tags.push('late-bullpen-lane')
+  if (hitEfficiencyPct >= 25.4) tags.push('clean-conversion-lane')
+  if (hitEfficiencyPct <= 23.2 && Number(projectedHits || 0) >= 8.2) tags.push('traffic-no-conversion-risk')
+  if (first5HitEfficiencyPct >= 25.1) tags.push('first-five-jolt-live')
+  if ((teamScript?.bullpenOverperformHitters || []).some((entry) => normalizeText(entry.name) === normalizeText(hitter?.name))) {
+    tags.push('bullpen-carry-bat')
+  }
+  if ((teamScript?.overperformHitters || []).some((entry) => normalizeText(entry.name) === normalizeText(hitter?.name))) {
+    tags.push('carry-bat-live')
+  }
+  if (propType === 'walks' && starterWalkPressure > 0.05) tags.push('starter-wildness-lane')
+  if (propType === 'totalBases' && Number(hitter?.metrics?.powerScore || 50) >= 68) tags.push('power-lane')
+  if (propType === 'singles' && Number(hitter?.metrics?.contactScore || 50) >= 66) tags.push('contact-lane')
+  if (propType === 'rbi' && Number(hitter?.slot || 9) <= 5) tags.push('run-production-slot')
+  if (weatherProfile?.label && Number(weatherProfile.runBoostLate || 0) + Number(weatherProfile.runBoostFirst5 || 0) >= 0.08) {
+    tags.push('weather-run-lift')
+  }
+  if (propType === 'homeRun' && homeRunBoost?.target?.scoreBand) tags.push(`hr-${homeRunBoost.target.scoreBand}-lane`)
+
+  return [...new Set(tags)]
+}
+
 const buildMlbPropCandidate = ({
   game,
   teamName,
@@ -4432,6 +4520,18 @@ const buildMlbPropCandidate = ({
   const seasonWalkRate = weightedRate(hitter, 'walkRate', 0.085)
   const seasonHrRate = weightedRate(hitter, 'hrRate', 0.03)
   const starterWalkPressure = buildStarterWalkPressure(opposingStarter)
+  const scriptTags = buildPropScriptTags({
+    propType,
+    hitter,
+    teamScript,
+    projectedRuns,
+    projectedHits,
+    projectedProfile,
+    lineupStatus,
+    weatherProfile,
+    homeRunBoost,
+    starterWalkPressure
+  })
 
   let expectedValue = 0
   let probability = 0
@@ -4552,6 +4652,7 @@ const buildMlbPropCandidate = ({
     statValueLabel,
     recommendationTier: confidence >= 79 ? 'Core' : confidence >= 68 ? 'Strong' : 'Lean',
     reason: reasons.slice(0, 3).join(' | '),
+    scriptTags,
     matchupNote: hitter.matchupNote,
     teamScriptLabel: teamScript?.pressureLabel || '',
     lineupStatus,
@@ -4686,6 +4787,7 @@ const buildTrackedPropSelection = (game, target) => {
   if (!config || config.disabled) return null
 
   const context = buildTrackedPropContext(game, target)
+  const calibration = lookupPropCalibration(target)
   let supportCount = 0
   let trackingScore = Number(target.confidence || 0)
 
@@ -4717,24 +4819,65 @@ const buildTrackedPropSelection = (game, target) => {
     if (context.projectedHits >= 8.6) supportCount += 1
     if (Number(target.slot || 9) <= 5) supportCount += 1
     if ((target.reason || '').includes('power lane')) supportCount += 1
+    if (Number(context.teamScript?.topThirdScore || 0) >= 58) supportCount += 1
     if (Number(target.expectedValue || 0) >= 2.2) trackingScore += 4
   } else if (target.propType === 'singles') {
     if (context.projectedHits >= 8.4) supportCount += 1
     if (context.hitEfficiencyPct >= 24.8) supportCount += 1
     if ((target.reason || '').includes('clean traffic lane')) supportCount += 1
     if (Number(target.slot || 9) <= 6) supportCount += 1
+    if (Number(context.teamScript?.middleScore || 0) >= 56) supportCount += 1
     if (Number(target.expectedValue || 0) >= 0.82) trackingScore += 3
   } else if (target.propType === 'walks') {
     if ((target.reason || '').includes('starter walk pressure')) supportCount += 2
     if ((target.playerSummary || '').includes(' BB')) supportCount += 1
     if (context.teamScript?.pressureLabel) supportCount += 1
+    if (Number(context.teamScript?.topThirdScore || 0) <= 54) supportCount += 1
     if (Number(target.expectedValue || 0) >= 0.62) trackingScore += 3
   } else if (target.propType === 'rbi') {
     if (context.projectedRuns >= 4.8) supportCount += 1
     if (context.projectedHits >= 8.6) supportCount += 1
     if (Number(target.slot || 9) <= 5) supportCount += 1
     if ((target.reason || '').includes('run-production slot')) supportCount += 1
+    if (Number(context.teamScript?.topThirdScore || 0) >= 60) supportCount += 1
     if (Number(target.expectedValue || 0) >= 0.9) trackingScore += 4
+  }
+
+  if (calibration.overall?.hitRate !== null && calibration.overall?.hitRate !== undefined) {
+    trackingScore += (Number(calibration.overall.hitRate) - 35) * 0.08
+  }
+
+  if (calibration.team?.hitRate !== null && calibration.team?.hitRate !== undefined) {
+    trackingScore += (Number(calibration.team.hitRate) - 35) * 0.12
+    if (Number(calibration.team.total || 0) >= 6 && Number(calibration.team.hitRate) >= 45) supportCount += 1
+  }
+
+  const strongReasonTags = calibration.reasonTags.filter(
+    (entry) => Number(entry.summary?.total || 0) >= 6 && Number(entry.summary?.hitRate || 0) >= 42
+  )
+  const weakReasonTags = calibration.reasonTags.filter(
+    (entry) => Number(entry.summary?.total || 0) >= 6 && Number(entry.summary?.hitRate || 0) <= 28
+  )
+  if (strongReasonTags.length) {
+    supportCount += 1
+    trackingScore += Math.min(6, strongReasonTags.length * 2)
+  }
+  if (weakReasonTags.length) {
+    trackingScore -= Math.min(7, weakReasonTags.length * 2.5)
+  }
+
+  const strongScriptTags = calibration.scriptTags.filter(
+    (entry) => Number(entry.summary?.total || 0) >= 6 && Number(entry.summary?.hitRate || 0) >= 43
+  )
+  const weakScriptTags = calibration.scriptTags.filter(
+    (entry) => Number(entry.summary?.total || 0) >= 6 && Number(entry.summary?.hitRate || 0) <= 27
+  )
+  if (strongScriptTags.length) {
+    supportCount += 1
+    trackingScore += Math.min(7, strongScriptTags.length * 2.25)
+  }
+  if (weakScriptTags.length) {
+    trackingScore -= Math.min(8, weakScriptTags.length * 2.75)
   }
 
   if (supportCount < config.minSupport) return null

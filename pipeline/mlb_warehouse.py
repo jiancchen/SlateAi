@@ -3023,6 +3023,7 @@ def import_prop_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     for pick in picks:
         metadata = {
             "reason": pick.get("reason"),
+            "scriptTags": pick.get("scriptTags"),
             "matchupNote": pick.get("matchupNote"),
             "teamScriptLabel": pick.get("teamScriptLabel"),
             "lineupStatus": pick.get("lineupStatus"),
@@ -3188,13 +3189,17 @@ def grade_prop_picks(
           b.total_bases,
           b.rbi,
           b.walks,
-          b.home_runs
+          b.home_runs,
+          s.story_tags_json,
+          s.summary_json
         FROM mlb_prop_predictions p
         LEFT JOIN mlb_player_game_batting b
           ON b.game_date = p.prediction_date
          AND b.player_id = p.player_id
          AND b.team_name = COALESCE(p.team_name_full, p.team_name)
          AND b.opponent_name = COALESCE(p.opponent_name_full, p.opponent_name)
+        LEFT JOIN mlb_game_story_signals s
+          ON s.game_pk = b.game_pk
         WHERE p.prediction_date = ?
           AND p.model_name = ?
           {prop_type_sql}
@@ -3228,6 +3233,8 @@ def grade_prop_picks(
             "plateAppearances": row["plate_appearances"],
             "atBats": row["at_bats"],
             "gamePk": row["game_pk"],
+            "storyTags": json.loads(row["story_tags_json"] or "[]"),
+            "storySummary": json.loads(row["summary_json"] or "{}"),
         }
 
         conn.execute(
