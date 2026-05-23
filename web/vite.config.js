@@ -5,10 +5,22 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
-    allowedHosts: ['.ngrok-free.app']
+    allowedHosts: ['.ngrok-free.app'],
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:8787',
+        changeOrigin: true
+      }
+    }
   },
   preview: {
     host: '0.0.0.0',
-    allowedHosts: ['.ngrok-free.app']
+    allowedHosts: ['.ngrok-free.app'],
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:8787',
+        changeOrigin: true
+      }
+    }
   }
 })

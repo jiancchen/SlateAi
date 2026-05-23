@@ -9,6 +9,8 @@ export const getApiBaseUrl = () => {
     if (hostname === '127.0.0.1' || hostname === 'localhost') {
       return 'http://127.0.0.1:8787'
     }
+
+    return window.location.origin
   }
 
   return null
