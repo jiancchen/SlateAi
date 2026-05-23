@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "tsx src/server.ts",
-    "build": "tsc -p tsconfig.json --noEmit"
+    "build": "tsc -p tsconfig.json --noEmit",
+    "export:published": "tsx src/scripts/export-published-data.ts"
   },
   "dependencies": {
     "@fastify/cors": "^11.1.0",

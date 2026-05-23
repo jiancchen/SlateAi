@@ -3823,11 +3823,27 @@ export const rankFlipRiskPicks = (games) =>
       rank: index + 1
     }))
 
+export const rankMlbPlayerPropCandidatesLegacy = (games) =>
+  games
+    .filter((game) => game.league === 'MLB' && game.analysis?.mlbProjection && game.lineupBoard)
+    .flatMap((game) => buildLegacyMlbPlayerProps(game, game.analysis).targets.map((target) => ({ ...target, game })))
+    .sort((left, right) => {
+      if (right.confidence !== left.confidence) return right.confidence - left.confidence
+      return right.expectedValue - left.expectedValue
+    })
+    .map((target, index) => ({
+      ...target,
+      rank: index + 1
+    }))
+
 export const rankMlbPlayerProps = (games) =>
   games
     .filter((game) => game.playerProps?.available)
     .flatMap((game) => game.playerProps.targets.map((target) => ({ ...target, game })))
     .sort((left, right) => {
+      const rightScore = Number.isFinite(right.trackingScore) ? right.trackingScore : right.confidence
+      const leftScore = Number.isFinite(left.trackingScore) ? left.trackingScore : left.confidence
+      if (rightScore !== leftScore) return rightScore - leftScore
       if (right.confidence !== left.confidence) return right.confidence - left.confidence
       return right.expectedValue - left.expectedValue
     })
@@ -4215,6 +4231,15 @@ const mlbPropTypeConfig = {
   }
 }
 
+const trackedMlbPropTypeConfig = {
+  totalBases: { minConfidence: 68, minSupport: 3, maxPerTeam: 2, maxPerGame: 4, priority: 6, minTrackingScore: 74 },
+  singles: { minConfidence: 66, minSupport: 3, maxPerTeam: 1, maxPerGame: 3, priority: 5, minTrackingScore: 72 },
+  walks: { minConfidence: 66, minSupport: 3, maxPerTeam: 1, maxPerGame: 2, priority: 4, minTrackingScore: 71 },
+  rbi: { minConfidence: 71, minSupport: 4, maxPerTeam: 1, maxPerGame: 2, priority: 3, minTrackingScore: 76 },
+  hits: { disabled: true },
+  homeRun: { disabled: true }
+}
+
 const poissonProbabilityAtLeast = (lambda, threshold) => {
   if (!Number.isFinite(lambda) || lambda <= 0) return 0
 
@@ -4530,12 +4555,11 @@ const buildMlbPropCandidate = ({
     matchupNote: hitter.matchupNote,
     teamScriptLabel: teamScript?.pressureLabel || '',
     lineupStatus,
-    playerSummary: hitter.summary,
-    game
+    playerSummary: hitter.summary
   }
 }
 
-const buildMlbPlayerProps = (game, analysis) => {
+const buildLegacyMlbPlayerProps = (game, analysis) => {
   if (game?.league !== 'MLB' || !analysis?.mlbProjection || !game?.lineupBoard) {
     return {
       available: false,
@@ -4637,6 +4661,155 @@ const buildMlbPlayerProps = (game, analysis) => {
     summary: sortedTargets.length
       ? `${sortedTargets[0].playerName} leads the prop board, but the cleaner edges spread across hits, total bases, and RBI instead of stacking only HR swings.`
       : 'No reliable prop lanes surfaced yet before lineups and matchup data settled.'
+  }
+}
+
+const buildTrackedPropContext = (game, target) => {
+  const projection = game?.analysis?.mlbProjection || {}
+  const isAway = teamNamesMatch(target.teamName, game?.matchup?.[0]?.name)
+  const teamScript =
+    projection.teamScripts?.find((entry) => teamNamesMatch(entry.teamName, target.teamName)) || null
+
+  return {
+    projectedRuns: isAway ? Number(projection.awayProjectedRuns || 0) : Number(projection.homeProjectedRuns || 0),
+    projectedHits: isAway ? Number(projection.awayProjectedHits || 0) : Number(projection.homeProjectedHits || 0),
+    hitEfficiencyPct: isAway ? Number(projection.awayHitEfficiencyPct || 0) : Number(projection.homeHitEfficiencyPct || 0),
+    lineupStatus: isAway ? game?.lineupBoard?.status?.away || 'pending' : game?.lineupBoard?.status?.home || 'pending',
+    gameConfidence: Number(game?.analysis?.confidence || 50),
+    volatility: Number(game?.analysis?.volatility || 50),
+    teamScript
+  }
+}
+
+const buildTrackedPropSelection = (game, target) => {
+  const config = trackedMlbPropTypeConfig[target.propType]
+  if (!config || config.disabled) return null
+
+  const context = buildTrackedPropContext(game, target)
+  let supportCount = 0
+  let trackingScore = Number(target.confidence || 0)
+
+  if (context.lineupStatus === 'posted') {
+    supportCount += 1
+    trackingScore += 5
+  } else if (context.lineupStatus === 'partial') {
+    trackingScore -= 2
+  } else {
+    trackingScore -= 9
+  }
+
+  if (context.gameConfidence >= 64) {
+    supportCount += 1
+    trackingScore += Math.min(6, (context.gameConfidence - 64) * 0.35)
+  }
+
+  if (context.volatility <= 72) {
+    supportCount += 1
+    trackingScore += 5
+  } else if (context.volatility >= 84) {
+    trackingScore -= 7
+  } else if (context.volatility >= 78) {
+    trackingScore -= 3
+  }
+
+  if (target.propType === 'totalBases') {
+    if (context.projectedRuns >= 4.6) supportCount += 1
+    if (context.projectedHits >= 8.6) supportCount += 1
+    if (Number(target.slot || 9) <= 5) supportCount += 1
+    if ((target.reason || '').includes('power lane')) supportCount += 1
+    if (Number(target.expectedValue || 0) >= 2.2) trackingScore += 4
+  } else if (target.propType === 'singles') {
+    if (context.projectedHits >= 8.4) supportCount += 1
+    if (context.hitEfficiencyPct >= 24.8) supportCount += 1
+    if ((target.reason || '').includes('clean traffic lane')) supportCount += 1
+    if (Number(target.slot || 9) <= 6) supportCount += 1
+    if (Number(target.expectedValue || 0) >= 0.82) trackingScore += 3
+  } else if (target.propType === 'walks') {
+    if ((target.reason || '').includes('starter walk pressure')) supportCount += 2
+    if ((target.playerSummary || '').includes(' BB')) supportCount += 1
+    if (context.teamScript?.pressureLabel) supportCount += 1
+    if (Number(target.expectedValue || 0) >= 0.62) trackingScore += 3
+  } else if (target.propType === 'rbi') {
+    if (context.projectedRuns >= 4.8) supportCount += 1
+    if (context.projectedHits >= 8.6) supportCount += 1
+    if (Number(target.slot || 9) <= 5) supportCount += 1
+    if ((target.reason || '').includes('run-production slot')) supportCount += 1
+    if (Number(target.expectedValue || 0) >= 0.9) trackingScore += 4
+  }
+
+  if (supportCount < config.minSupport) return null
+  if (Number(target.confidence || 0) < config.minConfidence) return null
+  if (trackingScore < config.minTrackingScore) return null
+
+  return {
+    ...target,
+    trackingScore: Math.round(clamp(trackingScore, 0, 99)),
+    supportCount,
+    trackingLabel: `${supportCount} script supports`
+  }
+}
+
+const selectTrackedMlbPropTargets = (game, legacyTargets = []) => {
+  const maxTrackedPerGame = 4
+  const selected = []
+  const selectedPlayerIds = new Set()
+  const perTeam = new Map()
+  const perType = new Map()
+
+  const scoredTargets = legacyTargets
+    .map((target) => buildTrackedPropSelection(game, target))
+    .filter(Boolean)
+    .sort((left, right) => {
+      if (right.trackingScore !== left.trackingScore) return right.trackingScore - left.trackingScore
+      if (right.supportCount !== left.supportCount) return right.supportCount - left.supportCount
+      if (right.confidence !== left.confidence) return right.confidence - left.confidence
+      const rightPriority = trackedMlbPropTypeConfig[right.propType]?.priority || 0
+      const leftPriority = trackedMlbPropTypeConfig[left.propType]?.priority || 0
+      if (rightPriority !== leftPriority) return rightPriority - leftPriority
+      return right.expectedValue - left.expectedValue
+    })
+
+  for (const target of scoredTargets) {
+    const config = trackedMlbPropTypeConfig[target.propType]
+    const teamCount = perTeam.get(target.teamName) || 0
+    const typeCount = perType.get(target.propType) || 0
+    if (!config) continue
+    if (selected.length >= maxTrackedPerGame) break
+    if (selectedPlayerIds.has(target.playerId)) continue
+    if (teamCount >= config.maxPerTeam) continue
+    if (typeCount >= 2) continue
+
+    selected.push(target)
+    selectedPlayerIds.add(target.playerId)
+    perTeam.set(target.teamName, teamCount + 1)
+    perType.set(target.propType, typeCount + 1)
+  }
+
+  return selected
+}
+
+const buildMlbPlayerProps = (game, analysis) => {
+  const legacyBoard = buildLegacyMlbPlayerProps(game, analysis)
+  if (!legacyBoard.available) return legacyBoard
+
+  const trackedTargets = selectTrackedMlbPropTargets(game, legacyBoard.targets)
+  const byType = Object.fromEntries(
+    Object.keys(trackedMlbPropTypeConfig)
+      .filter((propType) => !trackedMlbPropTypeConfig[propType].disabled)
+      .map((propType) => [propType, trackedTargets.filter((target) => target.propType === propType).slice(0, 4)])
+  )
+
+  const featured = trackedTargets.slice(0, 6)
+
+  return {
+    available: trackedTargets.length > 0,
+    targets: trackedTargets,
+    featured,
+    byType,
+    candidateCount: legacyBoard.targets.length,
+    summary: trackedTargets.length
+      ? `${trackedTargets[0].playerName} leads the tracked prop board, with ${trackedTargets.length} narrower lanes surviving script and volatility filters out of ${legacyBoard.targets.length} raw candidates.`
+      : 'The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass.'
   }
 }
 

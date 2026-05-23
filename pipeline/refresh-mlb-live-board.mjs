@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..')
-const playerPropModelName = 'mlb-player-props-v1'
+const playerPropModelName = 'mlb-player-props-v2'
 
 const parseArgs = () => {
   const args = process.argv.slice(2)

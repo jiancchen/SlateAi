@@ -2,7 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
-import { rankMlbPlayerProps } from '../web/src/lib/sports-model.js'
+import { rankMlbPlayerProps, rankMlbPlayerPropCandidatesLegacy } from '../web/src/lib/sports-model.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -54,13 +54,15 @@ const parseArgs = () => {
   const args = process.argv.slice(2)
   const options = {
     date: null,
-    out: null
+    out: null,
+    legacyOut: null
   }
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') options.date = args[++index]
     else if (arg === '--out') options.out = args[++index]
+    else if (arg === '--legacy-out') options.legacyOut = args[++index]
   }
 
   if (!options.date) {
@@ -73,6 +75,13 @@ const parseArgs = () => {
     'predictions',
     'mlb-player-props',
     `${options.date}-player-props.json`
+  )
+  options.legacyOut ||= path.join(
+    rootDir,
+    'data-private',
+    'predictions',
+    'mlb-player-props-legacy',
+    `${options.date}-player-props-legacy.json`
   )
 
   return options
@@ -144,14 +153,17 @@ const summarizeByType = (picks) =>
   }, {})
 
 const main = async () => {
-  const { date, out } = parseArgs()
+  const { date, out, legacyOut } = parseArgs()
   const games = await loadDayGames(date)
   const rankedProps = rankMlbPlayerProps(games)
     .filter((target) => target.propType !== 'homeRun')
     .map(serializePropPick)
+  const legacyProps = rankMlbPlayerPropCandidatesLegacy(games)
+    .filter((target) => target.propType !== 'homeRun')
+    .map(serializePropPick)
 
   const payload = {
-    modelName: 'mlb-player-props-v1',
+    modelName: 'mlb-player-props-v2',
     date,
     generatedAt: new Date().toISOString(),
     sources: ['day-file-live-board', 'web/src/lib/sports-model.js'],
@@ -163,9 +175,25 @@ const main = async () => {
     picks: rankedProps
   }
 
+  const legacyPayload = {
+    modelName: 'mlb-player-props-v1-legacy',
+    date,
+    generatedAt: payload.generatedAt,
+    sources: payload.sources,
+    summary: {
+      totalGames: games.length,
+      totalPicks: legacyProps.length,
+      byType: summarizeByType(legacyProps)
+    },
+    picks: legacyProps
+  }
+
   await mkdir(path.dirname(out), { recursive: true })
+  await mkdir(path.dirname(legacyOut), { recursive: true })
   await writeFile(out, JSON.stringify(payload, null, 2), 'utf8')
-  console.log(`Saved ${rankedProps.length} player props to ${out}`)
+  await writeFile(legacyOut, JSON.stringify(legacyPayload, null, 2), 'utf8')
+  console.log(`Saved ${rankedProps.length} tracked player props to ${out}`)
+  console.log(`Saved ${legacyProps.length} legacy player props to ${legacyOut}`)
 }
 
 main().catch((error) => {

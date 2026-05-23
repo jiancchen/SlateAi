@@ -1,6 +1,12 @@
 import Fastify from 'fastify'
 import cors from '@fastify/cors'
-import { loadHistoryArchive, loadStoryArchive } from './lib/archive-loader.js'
+import {
+  loadHistoryArchive,
+  loadHistoryEntry,
+  loadStoryArchiveFromModules,
+  loadStoryDay,
+  loadStoryIndex
+} from './lib/archive-loader.js'
 import { listSlateManifest, loadSlateDay } from './lib/day-loader.js'
 import { loadMlbHomeRunBoard, loadMlbLineupBoard, loadMlbPlayerProps } from './lib/file-loader.js'
 import { warehousePath } from './lib/paths.js'
@@ -84,8 +90,9 @@ app.get('/api/history', async () => {
 
 app.get('/api/history/:date', async (request, reply) => {
   const { date } = request.params as { date: string }
-  const history = await loadHistoryArchive()
-  const entry = history.find((item) => item.id === date) ?? null
+  const directEntry = await loadHistoryEntry(date)
+  const history = directEntry ? null : await loadHistoryArchive()
+  const entry = (directEntry as Record<string, unknown> | null) ?? history?.find((item) => item.id === date) ?? null
 
   if (!entry) {
     return reply.code(404).send({
@@ -98,22 +105,17 @@ app.get('/api/history/:date', async (request, reply) => {
 })
 
 app.get('/api/stories', async () => {
-  const stories = await loadStoryArchive()
+  const stories = await loadStoryIndex()
   return {
-    stories: stories.map((day) => ({
-      id: day.id,
-      date: day.date,
-      headline: day.headline,
-      metrics: day.metrics,
-      games: Array.isArray(day.games) ? day.games.length : 0
-    }))
+    stories
   }
 })
 
 app.get('/api/stories/:date', async (request, reply) => {
   const { date } = request.params as { date: string }
-  const stories = await loadStoryArchive()
-  const day = stories.find((item) => item.id === date) ?? null
+  const directDay = await loadStoryDay(date)
+  const archive = directDay ? null : await loadStoryArchiveFromModules()
+  const day = (directDay as Record<string, unknown> | null) ?? archive?.find((item) => item.id === date) ?? null
 
   if (!day) {
     return reply.code(404).send({
@@ -123,6 +125,18 @@ app.get('/api/stories/:date', async (request, reply) => {
   }
 
   return { day }
+})
+
+app.get('/api/published/status', async () => {
+  const slates = await listSlateManifest()
+  const stories = await loadStoryIndex()
+  const history = await loadHistoryArchive()
+
+  return {
+    slates: slates.length,
+    stories: stories.length,
+    history: history.length
+  }
 })
 
 app.get('/api/mlb/:date/lineups', async (request, reply) => {

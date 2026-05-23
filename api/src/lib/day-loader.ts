@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { webLibRoot } from './paths.js'
+import { publishedDataRoot, webLibRoot } from './paths.js'
 
 export type SlateManifestEntry = {
   id: string
@@ -24,6 +24,8 @@ export type LoadedSlateDay = SlateManifestEntry & {
 }
 
 const mainDayPattern = /^day-(\d{4}-\d{2}-\d{2})\.js$/
+const slatesRoot = path.join(publishedDataRoot, 'slates')
+const slateIndexPath = path.join(slatesRoot, 'index.json')
 
 const formatDateLabel = (isoDate: string) => {
   const [year, month, day] = isoDate.split('-').map(Number)
@@ -36,6 +38,11 @@ const formatDateLabel = (isoDate: string) => {
   return label
 }
 
+const readJsonIfPresent = <T>(filePath: string): T | null => {
+  if (!fs.existsSync(filePath)) return null
+  return JSON.parse(fs.readFileSync(filePath, 'utf8')) as T
+}
+
 const listMainDayFiles = () =>
   fs
     .readdirSync(webLibRoot)
@@ -46,7 +53,7 @@ const listMainDayFiles = () =>
     .filter((entry): entry is { fileName: string; id: string } => Boolean(entry))
     .sort((left, right) => left.id.localeCompare(right.id))
 
-export const listSlateManifest = async (): Promise<SlateManifestEntry[]> => {
+export const listSlateManifestFromModules = async (): Promise<SlateManifestEntry[]> => {
   const entries = listMainDayFiles()
 
   const results = await Promise.all(
@@ -73,7 +80,7 @@ export const listSlateManifest = async (): Promise<SlateManifestEntry[]> => {
   return results
 }
 
-export const loadSlateDay = async (id: string): Promise<LoadedSlateDay> => {
+export const loadSlateDayFromModules = async (id: string): Promise<LoadedSlateDay> => {
   const modulePath = path.join(webLibRoot, `day-${id}.js`)
 
   if (!fs.existsSync(modulePath)) {
@@ -100,4 +107,16 @@ export const loadSlateDay = async (id: string): Promise<LoadedSlateDay> => {
     games,
     sources: Array.isArray(module.sources) ? module.sources : []
   }
+}
+
+export const listSlateManifest = async (): Promise<SlateManifestEntry[]> => {
+  const published = readJsonIfPresent<SlateManifestEntry[]>(slateIndexPath)
+  if (published?.length) return published
+  return listSlateManifestFromModules()
+}
+
+export const loadSlateDay = async (id: string): Promise<LoadedSlateDay> => {
+  const published = readJsonIfPresent<LoadedSlateDay>(path.join(slatesRoot, `${id}.json`))
+  if (published) return published
+  return loadSlateDayFromModules(id)
 }
