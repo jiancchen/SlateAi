@@ -708,6 +708,75 @@ CREATE TABLE IF NOT EXISTS mlb_starter_third_time_penalty_profiles (
   PRIMARY KEY (as_of_date, pitcher_id, window_starts)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_team_whiff_persistence_profiles (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  window_games INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  early_two_inning_pa_per_game REAL,
+  early_two_inning_strikeout_rate REAL,
+  early_two_inning_whiff_rate REAL,
+  games_with_early_whiff_flag INTEGER NOT NULL,
+  early_whiff_flag_rate REAL,
+  early_whiff_persist_rate REAL,
+  early_whiff_rebound_rate REAL,
+  avg_rest_of_game_runs_after_whiff REAL,
+  avg_rest_of_game_hits_after_whiff REAL,
+  avg_rest_of_game_strikeout_rate_after_whiff REAL,
+  avg_rest_of_game_runs_without_whiff REAL,
+  avg_rest_of_game_hits_without_whiff REAL,
+  whiff_persistence_index REAL,
+  whiff_rebound_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_team_lead_surrender_profiles (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  window_games INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  led_after5_rate REAL,
+  led_after7_rate REAL,
+  trailed_after5_rate REAL,
+  trailed_after7_rate REAL,
+  lead_after5_conversion_rate REAL,
+  lead_after7_conversion_rate REAL,
+  blew_lead_after5_rate REAL,
+  blew_lead_after7_rate REAL,
+  comeback_after5_rate REAL,
+  comeback_after7_rate REAL,
+  one_run_lead_hold_rate REAL,
+  avg_runs_allowed_after_leading5 REAL,
+  avg_runs_scored_when_trailing5 REAL,
+  lead_surrender_index REAL,
+  comeback_resilience_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_team_form_carryover_profiles (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  window_games INTEGER NOT NULL,
+  transitions_sample INTEGER NOT NULL,
+  after_win_next_win_rate REAL,
+  after_loss_bounce_rate REAL,
+  after_blowout_win_next_win_rate REAL,
+  after_blowout_loss_bounce_rate REAL,
+  after_comeback_win_next_win_rate REAL,
+  after_bullpen_flip_loss_bounce_rate REAL,
+  series_game2_win_rate REAL,
+  series_game3plus_win_rate REAL,
+  hot_streak_hold_rate REAL,
+  hot_streak_break_rate REAL,
+  cold_streak_continue_rate REAL,
+  cold_streak_bounce_rate REAL,
+  avg_next_game_run_diff_after_win REAL,
+  avg_next_game_run_diff_after_loss REAL,
+  carryover_instability_index REAL,
+  bounceback_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
 CREATE TABLE IF NOT EXISTS park_factor_snapshots (
   snapshot_date TEXT NOT NULL,
   team_name TEXT NOT NULL,
@@ -917,6 +986,11 @@ def play_counts_as_at_bat(play: dict[str, Any]) -> bool:
     if event_type.startswith("sac_"):
         return False
     return True
+
+
+HIT_EVENT_TYPES = {"single", "double", "triple", "home_run"}
+EARLY_WHIFF_STRIKEOUT_RATE_THRESHOLD = 0.28
+EARLY_WHIFF_PITCH_RATE_THRESHOLD = 0.16
 
 
 def extract_first5_batting_counts(
@@ -3231,6 +3305,456 @@ def build_starter_third_time_penalty_profile_row(
     }
 
 
+def conditional_rate(values: list[int]) -> float | None:
+    if not values:
+        return None
+    return safe_mean(values)
+
+
+def is_hit_event(event_type: Any) -> bool:
+    return str(event_type or "").lower() in HIT_EVENT_TYPES
+
+
+def safe_score_after_inning(
+    score_rows: list[sqlite3.Row],
+    team_role: str,
+    inning_cutoff: int,
+) -> tuple[int, int]:
+    last_row = None
+    for row in score_rows:
+        inning = to_int(row["inning"]) or 0
+        if inning <= inning_cutoff:
+            last_row = row
+        else:
+            break
+
+    if not last_row:
+        return 0, 0
+
+    away_score = to_int(last_row["away_score_after"]) or 0
+    home_score = to_int(last_row["home_score_after"]) or 0
+    if team_role == "away":
+        return away_score, home_score
+    return home_score, away_score
+
+
+def build_team_hidden_edge_game_packet(
+    conn: sqlite3.Connection,
+    game_row: sqlite3.Row,
+    team_name: str,
+) -> dict[str, Any]:
+    team_role = "away" if game_row["away_team"] == team_name else "home"
+    opponent_team = game_row["home_team"] if team_role == "away" else game_row["away_team"]
+    team_runs_final = (game_row["away_runs_final"] or 0) if team_role == "away" else (game_row["home_runs_final"] or 0)
+    opponent_runs_final = (game_row["home_runs_final"] or 0) if team_role == "away" else (game_row["away_runs_final"] or 0)
+    run_diff = team_runs_final - opponent_runs_final
+    won_flag = 1 if run_diff > 0 else 0
+
+    batting_rows = conn.execute(
+        """
+        SELECT inning, event_type, run_delta
+        FROM mlb_plate_appearances
+        WHERE game_pk = ?
+          AND batting_team = ?
+        ORDER BY at_bat_index
+        """,
+        (game_row["game_pk"], team_name),
+    ).fetchall()
+    early_batting_rows = [row for row in batting_rows if (to_int(row["inning"]) or 0) <= 2]
+    rest_batting_rows = [row for row in batting_rows if (to_int(row["inning"]) or 0) > 2]
+
+    pitch_rows = conn.execute(
+        """
+        SELECT inning, lower(COALESCE(call_description, '')) AS call_description
+        FROM mlb_pitch_events
+        WHERE game_pk = ?
+          AND batting_team = ?
+          AND is_pitch = 1
+        ORDER BY at_bat_index, event_index
+        """,
+        (game_row["game_pk"], team_name),
+    ).fetchall()
+    early_pitch_rows = [row for row in pitch_rows if (to_int(row["inning"]) or 0) <= 2]
+
+    score_rows = conn.execute(
+        """
+        SELECT inning, away_score_after, home_score_after
+        FROM mlb_plate_appearances
+        WHERE game_pk = ?
+        ORDER BY at_bat_index
+        """,
+        (game_row["game_pk"],),
+    ).fetchall()
+
+    early_pa_count = len(early_batting_rows)
+    rest_pa_count = len(rest_batting_rows)
+    early_strikeouts = sum(1 for row in early_batting_rows if str(row["event_type"] or "").lower() == "strikeout")
+    rest_strikeouts = sum(1 for row in rest_batting_rows if str(row["event_type"] or "").lower() == "strikeout")
+    early_hits = sum(1 for row in early_batting_rows if is_hit_event(row["event_type"]))
+    rest_hits = sum(1 for row in rest_batting_rows if is_hit_event(row["event_type"]))
+    early_runs = sum(to_int(row["run_delta"]) or 0 for row in early_batting_rows)
+    rest_runs = sum(to_int(row["run_delta"]) or 0 for row in rest_batting_rows)
+    early_whiff_pitches = sum(1 for row in early_pitch_rows if "swinging strike" in str(row["call_description"] or ""))
+    early_pitch_count = len(early_pitch_rows)
+
+    early_strikeout_rate = (early_strikeouts / early_pa_count) if early_pa_count else 0.0
+    early_whiff_rate = (early_whiff_pitches / early_pitch_count) if early_pitch_count else 0.0
+    rest_strikeout_rate = (rest_strikeouts / rest_pa_count) if rest_pa_count else 0.0
+    early_whiff_flag = int(
+        early_pa_count >= 6
+        and (
+            early_strikeout_rate >= EARLY_WHIFF_STRIKEOUT_RATE_THRESHOLD
+            or early_whiff_rate >= EARLY_WHIFF_PITCH_RATE_THRESHOLD
+        )
+    )
+    early_whiff_rebound_flag = int(
+        bool(early_whiff_flag) and (rest_runs >= 4 or rest_hits >= 6)
+    )
+    early_whiff_persist_flag = int(
+        bool(early_whiff_flag)
+        and not early_whiff_rebound_flag
+        and (rest_runs <= 2 or (rest_hits <= 5 and rest_strikeout_rate >= 0.24))
+    )
+
+    team_score_after5, opp_score_after5 = safe_score_after_inning(score_rows, team_role, 5)
+    team_score_after7, opp_score_after7 = safe_score_after_inning(score_rows, team_role, 7)
+    lead_after5_flag = int(team_score_after5 > opp_score_after5)
+    trail_after5_flag = int(team_score_after5 < opp_score_after5)
+    lead_after7_flag = int(team_score_after7 > opp_score_after7)
+    trail_after7_flag = int(team_score_after7 < opp_score_after7)
+    blew_lead_after5_flag = int(lead_after5_flag and not won_flag)
+    blew_lead_after7_flag = int(lead_after7_flag and not won_flag)
+    comeback_after5_flag = int(trail_after5_flag and won_flag)
+    comeback_after7_flag = int(trail_after7_flag and won_flag)
+    one_run_lead_hold_flag = int(lead_after7_flag and (team_score_after7 - opp_score_after7) <= 2 and won_flag)
+    runs_allowed_after_leading5 = (opponent_runs_final - opp_score_after5) if lead_after5_flag else None
+    runs_scored_when_trailing5 = (team_runs_final - team_score_after5) if trail_after5_flag else None
+
+    return {
+        "game_pk": game_row["game_pk"],
+        "game_date": game_row["game_date"],
+        "team_name": team_name,
+        "team_role": team_role,
+        "opponent_team": opponent_team,
+        "won_flag": won_flag,
+        "run_diff": run_diff,
+        "series_game_number": to_int(game_row["series_game_number"]),
+        "comeback_win_flag": to_int(game_row["comeback_win_flag"]) or 0,
+        "bullpen_flip_flag": to_int(game_row["bullpen_flip_flag"]) or 0,
+        "early_pa_count": early_pa_count,
+        "early_strikeout_rate": early_strikeout_rate,
+        "early_whiff_rate": early_whiff_rate,
+        "rest_runs": rest_runs,
+        "rest_hits": rest_hits,
+        "rest_strikeout_rate": rest_strikeout_rate,
+        "early_whiff_flag": early_whiff_flag,
+        "early_whiff_persist_flag": early_whiff_persist_flag,
+        "early_whiff_rebound_flag": early_whiff_rebound_flag,
+        "lead_after5_flag": lead_after5_flag,
+        "lead_after7_flag": lead_after7_flag,
+        "trail_after5_flag": trail_after5_flag,
+        "trail_after7_flag": trail_after7_flag,
+        "blew_lead_after5_flag": blew_lead_after5_flag,
+        "blew_lead_after7_flag": blew_lead_after7_flag,
+        "comeback_after5_flag": comeback_after5_flag,
+        "comeback_after7_flag": comeback_after7_flag,
+        "one_run_lead_hold_flag": one_run_lead_hold_flag,
+        "runs_allowed_after_leading5": runs_allowed_after_leading5,
+        "runs_scored_when_trailing5": runs_scored_when_trailing5,
+    }
+
+
+def build_recent_team_hidden_edge_packets(
+    conn: sqlite3.Connection,
+    team_name: str,
+    as_of_date: str,
+    window_games: int,
+) -> list[dict[str, Any]]:
+    recent_games = conn.execute(
+        """
+        SELECT
+          g.game_pk,
+          g.game_date,
+          g.away_team,
+          g.home_team,
+          o.away_runs_final,
+          o.home_runs_final,
+          s.comeback_win_flag,
+          s.bullpen_flip_flag,
+          sx.series_game_number
+        FROM mlb_games g
+        JOIN mlb_game_outcomes o
+          USING (game_pk)
+        LEFT JOIN mlb_game_story_signals s
+          USING (game_pk)
+        LEFT JOIN mlb_series_context_snapshots sx
+          ON sx.game_pk = g.game_pk
+         AND sx.as_of_date = g.game_date
+        WHERE g.game_date < ?
+          AND (g.away_team = ? OR g.home_team = ?)
+        ORDER BY g.game_date DESC, g.game_pk DESC
+        LIMIT ?
+        """,
+        (as_of_date, team_name, team_name, window_games),
+    ).fetchall()
+
+    return [build_team_hidden_edge_game_packet(conn, row, team_name) for row in recent_games]
+
+
+def build_whiff_persistence_row(
+    as_of_date: str,
+    team_name: str,
+    window_games: int,
+    packets: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    early_flags = [packet["early_whiff_flag"] for packet in packets]
+    flagged_packets = [packet for packet in packets if packet["early_whiff_flag"]]
+    non_flagged_packets = [packet for packet in packets if not packet["early_whiff_flag"]]
+    early_whiff_flag_rate = safe_mean(early_flags)
+    early_whiff_persist_rate = conditional_rate([packet["early_whiff_persist_flag"] for packet in flagged_packets])
+    early_whiff_rebound_rate = conditional_rate([packet["early_whiff_rebound_flag"] for packet in flagged_packets])
+    avg_rest_runs_after_whiff = safe_mean([packet["rest_runs"] for packet in flagged_packets]) if flagged_packets else None
+    avg_rest_hits_after_whiff = safe_mean([packet["rest_hits"] for packet in flagged_packets]) if flagged_packets else None
+    avg_rest_k_rate_after_whiff = (
+        safe_mean([packet["rest_strikeout_rate"] for packet in flagged_packets]) if flagged_packets else None
+    )
+    avg_rest_runs_without_whiff = (
+        safe_mean([packet["rest_runs"] for packet in non_flagged_packets]) if non_flagged_packets else None
+    )
+    avg_rest_hits_without_whiff = (
+        safe_mean([packet["rest_hits"] for packet in non_flagged_packets]) if non_flagged_packets else None
+    )
+    persistence_index = clamp_value(
+        18
+        + early_whiff_flag_rate * 26
+        + (early_whiff_persist_rate if early_whiff_persist_rate is not None else 0.5) * 38
+        + max(0.0, (avg_rest_k_rate_after_whiff or 0.0) - 0.22) * 70
+        - (early_whiff_rebound_rate or 0.0) * 12,
+        0,
+        100,
+    )
+    rebound_index = clamp_value(
+        16
+        + early_whiff_flag_rate * 14
+        + (early_whiff_rebound_rate if early_whiff_rebound_rate is not None else 0.0) * 44
+        + max(0.0, (avg_rest_runs_after_whiff or 0.0) - 3.0) * 8
+        + max(0.0, (avg_rest_hits_after_whiff or 0.0) - 5.0) * 5
+        - (early_whiff_persist_rate or 0.0) * 10,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "window_games": window_games,
+        "games_sample": len(packets),
+        "early_two_inning_pa_per_game": safe_mean([packet["early_pa_count"] for packet in packets]),
+        "early_two_inning_strikeout_rate": safe_mean([packet["early_strikeout_rate"] for packet in packets]),
+        "early_two_inning_whiff_rate": safe_mean([packet["early_whiff_rate"] for packet in packets]),
+        "games_with_early_whiff_flag": sum(early_flags),
+        "early_whiff_flag_rate": early_whiff_flag_rate,
+        "early_whiff_persist_rate": early_whiff_persist_rate,
+        "early_whiff_rebound_rate": early_whiff_rebound_rate,
+        "avg_rest_of_game_runs_after_whiff": avg_rest_runs_after_whiff,
+        "avg_rest_of_game_hits_after_whiff": avg_rest_hits_after_whiff,
+        "avg_rest_of_game_strikeout_rate_after_whiff": avg_rest_k_rate_after_whiff,
+        "avg_rest_of_game_runs_without_whiff": avg_rest_runs_without_whiff,
+        "avg_rest_of_game_hits_without_whiff": avg_rest_hits_without_whiff,
+        "whiff_persistence_index": persistence_index,
+        "whiff_rebound_index": rebound_index,
+    }
+
+
+def build_lead_surrender_row(
+    as_of_date: str,
+    team_name: str,
+    window_games: int,
+    packets: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    led_after5_packets = [packet for packet in packets if packet["lead_after5_flag"]]
+    led_after7_packets = [packet for packet in packets if packet["lead_after7_flag"]]
+    trailed_after5_packets = [packet for packet in packets if packet["trail_after5_flag"]]
+    trailed_after7_packets = [packet for packet in packets if packet["trail_after7_flag"]]
+    lead_after5_conversion_rate = conditional_rate([packet["won_flag"] for packet in led_after5_packets])
+    lead_after7_conversion_rate = conditional_rate([packet["won_flag"] for packet in led_after7_packets])
+    blew_lead_after5_rate = conditional_rate([packet["blew_lead_after5_flag"] for packet in led_after5_packets])
+    blew_lead_after7_rate = conditional_rate([packet["blew_lead_after7_flag"] for packet in led_after7_packets])
+    comeback_after5_rate = conditional_rate([packet["comeback_after5_flag"] for packet in trailed_after5_packets])
+    comeback_after7_rate = conditional_rate([packet["comeback_after7_flag"] for packet in trailed_after7_packets])
+    one_run_lead_hold_rate = conditional_rate([packet["one_run_lead_hold_flag"] for packet in led_after7_packets])
+    avg_runs_allowed_after_leading5 = (
+        safe_mean([packet["runs_allowed_after_leading5"] for packet in led_after5_packets if packet["runs_allowed_after_leading5"] is not None])
+        if led_after5_packets
+        else None
+    )
+    avg_runs_scored_when_trailing5 = (
+        safe_mean([packet["runs_scored_when_trailing5"] for packet in trailed_after5_packets if packet["runs_scored_when_trailing5"] is not None])
+        if trailed_after5_packets
+        else None
+    )
+    surrender_index = clamp_value(
+        18
+        + (blew_lead_after5_rate or 0.0) * 24
+        + (blew_lead_after7_rate or 0.0) * 32
+        + max(0.0, 0.72 - (lead_after7_conversion_rate if lead_after7_conversion_rate is not None else 0.72)) * 38
+        + max(0.0, 0.62 - (one_run_lead_hold_rate if one_run_lead_hold_rate is not None else 0.62)) * 18
+        + max(0.0, (avg_runs_allowed_after_leading5 or 0.0) - 1.6) * 10,
+        0,
+        100,
+    )
+    comeback_resilience_index = clamp_value(
+        18
+        + (comeback_after5_rate or 0.0) * 30
+        + (comeback_after7_rate or 0.0) * 34
+        + max(0.0, (avg_runs_scored_when_trailing5 or 0.0) - 1.5) * 10,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "window_games": window_games,
+        "games_sample": len(packets),
+        "led_after5_rate": safe_mean([packet["lead_after5_flag"] for packet in packets]),
+        "led_after7_rate": safe_mean([packet["lead_after7_flag"] for packet in packets]),
+        "trailed_after5_rate": safe_mean([packet["trail_after5_flag"] for packet in packets]),
+        "trailed_after7_rate": safe_mean([packet["trail_after7_flag"] for packet in packets]),
+        "lead_after5_conversion_rate": lead_after5_conversion_rate,
+        "lead_after7_conversion_rate": lead_after7_conversion_rate,
+        "blew_lead_after5_rate": blew_lead_after5_rate,
+        "blew_lead_after7_rate": blew_lead_after7_rate,
+        "comeback_after5_rate": comeback_after5_rate,
+        "comeback_after7_rate": comeback_after7_rate,
+        "one_run_lead_hold_rate": one_run_lead_hold_rate,
+        "avg_runs_allowed_after_leading5": avg_runs_allowed_after_leading5,
+        "avg_runs_scored_when_trailing5": avg_runs_scored_when_trailing5,
+        "lead_surrender_index": surrender_index,
+        "comeback_resilience_index": comeback_resilience_index,
+    }
+
+
+def build_form_carryover_row(
+    as_of_date: str,
+    team_name: str,
+    window_games: int,
+    packets: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if len(packets) < 2:
+        return None
+
+    asc_packets = sorted(packets, key=lambda packet: (packet["game_date"], packet["game_pk"]))
+    transitions: list[dict[str, Any]] = []
+
+    for index in range(1, len(asc_packets)):
+        current_packet = asc_packets[index]
+        previous_packet = asc_packets[index - 1]
+
+        streak_length = 1
+        cursor = index - 1
+        while cursor - 1 >= 0 and asc_packets[cursor - 1]["won_flag"] == previous_packet["won_flag"]:
+            streak_length += 1
+            cursor -= 1
+
+        transitions.append(
+            {
+                "prev_won": previous_packet["won_flag"],
+                "curr_won": current_packet["won_flag"],
+                "prev_run_diff": previous_packet["run_diff"],
+                "curr_run_diff": current_packet["run_diff"],
+                "prev_comeback_win": previous_packet["comeback_win_flag"] if previous_packet["won_flag"] else 0,
+                "prev_bullpen_flip_loss": previous_packet["bullpen_flip_flag"] if not previous_packet["won_flag"] else 0,
+                "curr_series_game_number": current_packet["series_game_number"],
+                "streak_length": streak_length,
+                "prev_streak_won": previous_packet["won_flag"],
+            }
+        )
+
+    after_win = [transition for transition in transitions if transition["prev_won"]]
+    after_loss = [transition for transition in transitions if not transition["prev_won"]]
+    after_blowout_win = [transition for transition in transitions if transition["prev_run_diff"] >= 5]
+    after_blowout_loss = [transition for transition in transitions if transition["prev_run_diff"] <= -5]
+    after_comeback_win = [transition for transition in transitions if transition["prev_comeback_win"]]
+    after_bullpen_flip_loss = [transition for transition in transitions if transition["prev_bullpen_flip_loss"]]
+    series_game2 = [transition for transition in transitions if transition["curr_series_game_number"] == 2]
+    series_game3plus = [transition for transition in transitions if (transition["curr_series_game_number"] or 0) >= 3]
+    hot_streak_transitions = [
+        transition
+        for transition in transitions
+        if transition["prev_streak_won"] and transition["streak_length"] >= 2
+    ]
+    cold_streak_transitions = [
+        transition
+        for transition in transitions
+        if not transition["prev_streak_won"] and transition["streak_length"] >= 2
+    ]
+
+    after_win_next_win_rate = conditional_rate([transition["curr_won"] for transition in after_win])
+    after_loss_bounce_rate = conditional_rate([transition["curr_won"] for transition in after_loss])
+    after_blowout_win_next_win_rate = conditional_rate([transition["curr_won"] for transition in after_blowout_win])
+    after_blowout_loss_bounce_rate = conditional_rate([transition["curr_won"] for transition in after_blowout_loss])
+    after_comeback_win_next_win_rate = conditional_rate([transition["curr_won"] for transition in after_comeback_win])
+    after_bullpen_flip_loss_bounce_rate = conditional_rate([transition["curr_won"] for transition in after_bullpen_flip_loss])
+    series_game2_win_rate = conditional_rate([transition["curr_won"] for transition in series_game2])
+    series_game3plus_win_rate = conditional_rate([transition["curr_won"] for transition in series_game3plus])
+    hot_streak_hold_rate = conditional_rate([transition["curr_won"] for transition in hot_streak_transitions])
+    hot_streak_break_rate = conditional_rate([1 - transition["curr_won"] for transition in hot_streak_transitions])
+    cold_streak_continue_rate = conditional_rate([1 - transition["curr_won"] for transition in cold_streak_transitions])
+    cold_streak_bounce_rate = conditional_rate([transition["curr_won"] for transition in cold_streak_transitions])
+    avg_next_game_run_diff_after_win = safe_mean([transition["curr_run_diff"] for transition in after_win]) if after_win else None
+    avg_next_game_run_diff_after_loss = safe_mean([transition["curr_run_diff"] for transition in after_loss]) if after_loss else None
+    carryover_instability_index = clamp_value(
+        24
+        + max(0.0, 0.58 - (after_win_next_win_rate if after_win_next_win_rate is not None else 0.58)) * 26
+        + (after_loss_bounce_rate or 0.0) * 12
+        + max(0.0, 0.6 - (after_blowout_win_next_win_rate if after_blowout_win_next_win_rate is not None else 0.6)) * 20
+        + (after_blowout_loss_bounce_rate or 0.0) * 14
+        + (hot_streak_break_rate or 0.0) * 18
+        + (cold_streak_bounce_rate or 0.0) * 10,
+        0,
+        100,
+    )
+    bounceback_index = clamp_value(
+        18
+        + (after_loss_bounce_rate or 0.0) * 22
+        + (after_blowout_loss_bounce_rate or 0.0) * 18
+        + (cold_streak_bounce_rate or 0.0) * 18
+        + max(0.0, (avg_next_game_run_diff_after_loss or 0.0) + 1.0) * 6,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "window_games": window_games,
+        "transitions_sample": len(transitions),
+        "after_win_next_win_rate": after_win_next_win_rate,
+        "after_loss_bounce_rate": after_loss_bounce_rate,
+        "after_blowout_win_next_win_rate": after_blowout_win_next_win_rate,
+        "after_blowout_loss_bounce_rate": after_blowout_loss_bounce_rate,
+        "after_comeback_win_next_win_rate": after_comeback_win_next_win_rate,
+        "after_bullpen_flip_loss_bounce_rate": after_bullpen_flip_loss_bounce_rate,
+        "series_game2_win_rate": series_game2_win_rate,
+        "series_game3plus_win_rate": series_game3plus_win_rate,
+        "hot_streak_hold_rate": hot_streak_hold_rate,
+        "hot_streak_break_rate": hot_streak_break_rate,
+        "cold_streak_continue_rate": cold_streak_continue_rate,
+        "cold_streak_bounce_rate": cold_streak_bounce_rate,
+        "avg_next_game_run_diff_after_win": avg_next_game_run_diff_after_win,
+        "avg_next_game_run_diff_after_loss": avg_next_game_run_diff_after_loss,
+        "carryover_instability_index": carryover_instability_index,
+        "bounceback_index": bounceback_index,
+    }
+
+
 def build_series_context_row(conn: sqlite3.Connection, as_of_date: str, game_row: sqlite3.Row) -> dict[str, Any]:
     as_of = datetime.strptime(as_of_date, "%Y-%m-%d").date()
     away_team = game_row["away_team"]
@@ -4111,6 +4635,180 @@ def refresh_tier3_profiles(
     conn.commit()
 
 
+def refresh_hidden_edge_profiles(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+    team_windows = (5, 10)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_team_whiff_persistence_profiles WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_team_lead_surrender_profiles WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_team_form_carryover_profiles WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_team_whiff_persistence_profiles WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_team_lead_surrender_profiles WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_team_form_carryover_profiles WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_team_whiff_persistence_profiles")
+            conn.execute("DELETE FROM mlb_team_lead_surrender_profiles")
+            conn.execute("DELETE FROM mlb_team_form_carryover_profiles")
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+
+        for team_name in teams:
+            for window_games in team_windows:
+                packets = build_recent_team_hidden_edge_packets(conn, team_name, current_date, window_games)
+                whiff_row = build_whiff_persistence_row(current_date, team_name, window_games, packets)
+                if whiff_row:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_team_whiff_persistence_profiles (
+                          as_of_date, team_name, window_games, games_sample,
+                          early_two_inning_pa_per_game, early_two_inning_strikeout_rate,
+                          early_two_inning_whiff_rate, games_with_early_whiff_flag,
+                          early_whiff_flag_rate, early_whiff_persist_rate, early_whiff_rebound_rate,
+                          avg_rest_of_game_runs_after_whiff, avg_rest_of_game_hits_after_whiff,
+                          avg_rest_of_game_strikeout_rate_after_whiff, avg_rest_of_game_runs_without_whiff,
+                          avg_rest_of_game_hits_without_whiff, whiff_persistence_index, whiff_rebound_index
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            whiff_row["as_of_date"],
+                            whiff_row["team_name"],
+                            whiff_row["window_games"],
+                            whiff_row["games_sample"],
+                            whiff_row["early_two_inning_pa_per_game"],
+                            whiff_row["early_two_inning_strikeout_rate"],
+                            whiff_row["early_two_inning_whiff_rate"],
+                            whiff_row["games_with_early_whiff_flag"],
+                            whiff_row["early_whiff_flag_rate"],
+                            whiff_row["early_whiff_persist_rate"],
+                            whiff_row["early_whiff_rebound_rate"],
+                            whiff_row["avg_rest_of_game_runs_after_whiff"],
+                            whiff_row["avg_rest_of_game_hits_after_whiff"],
+                            whiff_row["avg_rest_of_game_strikeout_rate_after_whiff"],
+                            whiff_row["avg_rest_of_game_runs_without_whiff"],
+                            whiff_row["avg_rest_of_game_hits_without_whiff"],
+                            whiff_row["whiff_persistence_index"],
+                            whiff_row["whiff_rebound_index"],
+                        ),
+                    )
+
+                lead_row = build_lead_surrender_row(current_date, team_name, window_games, packets)
+                if lead_row:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_team_lead_surrender_profiles (
+                          as_of_date, team_name, window_games, games_sample, led_after5_rate,
+                          led_after7_rate, trailed_after5_rate, trailed_after7_rate,
+                          lead_after5_conversion_rate, lead_after7_conversion_rate,
+                          blew_lead_after5_rate, blew_lead_after7_rate, comeback_after5_rate,
+                          comeback_after7_rate, one_run_lead_hold_rate,
+                          avg_runs_allowed_after_leading5, avg_runs_scored_when_trailing5,
+                          lead_surrender_index, comeback_resilience_index
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            lead_row["as_of_date"],
+                            lead_row["team_name"],
+                            lead_row["window_games"],
+                            lead_row["games_sample"],
+                            lead_row["led_after5_rate"],
+                            lead_row["led_after7_rate"],
+                            lead_row["trailed_after5_rate"],
+                            lead_row["trailed_after7_rate"],
+                            lead_row["lead_after5_conversion_rate"],
+                            lead_row["lead_after7_conversion_rate"],
+                            lead_row["blew_lead_after5_rate"],
+                            lead_row["blew_lead_after7_rate"],
+                            lead_row["comeback_after5_rate"],
+                            lead_row["comeback_after7_rate"],
+                            lead_row["one_run_lead_hold_rate"],
+                            lead_row["avg_runs_allowed_after_leading5"],
+                            lead_row["avg_runs_scored_when_trailing5"],
+                            lead_row["lead_surrender_index"],
+                            lead_row["comeback_resilience_index"],
+                        ),
+                    )
+
+                carryover_row = build_form_carryover_row(current_date, team_name, window_games, packets)
+                if carryover_row:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_team_form_carryover_profiles (
+                          as_of_date, team_name, window_games, transitions_sample,
+                          after_win_next_win_rate, after_loss_bounce_rate,
+                          after_blowout_win_next_win_rate, after_blowout_loss_bounce_rate,
+                          after_comeback_win_next_win_rate, after_bullpen_flip_loss_bounce_rate,
+                          series_game2_win_rate, series_game3plus_win_rate,
+                          hot_streak_hold_rate, hot_streak_break_rate,
+                          cold_streak_continue_rate, cold_streak_bounce_rate,
+                          avg_next_game_run_diff_after_win, avg_next_game_run_diff_after_loss,
+                          carryover_instability_index, bounceback_index
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            carryover_row["as_of_date"],
+                            carryover_row["team_name"],
+                            carryover_row["window_games"],
+                            carryover_row["transitions_sample"],
+                            carryover_row["after_win_next_win_rate"],
+                            carryover_row["after_loss_bounce_rate"],
+                            carryover_row["after_blowout_win_next_win_rate"],
+                            carryover_row["after_blowout_loss_bounce_rate"],
+                            carryover_row["after_comeback_win_next_win_rate"],
+                            carryover_row["after_bullpen_flip_loss_bounce_rate"],
+                            carryover_row["series_game2_win_rate"],
+                            carryover_row["series_game3plus_win_rate"],
+                            carryover_row["hot_streak_hold_rate"],
+                            carryover_row["hot_streak_break_rate"],
+                            carryover_row["cold_streak_continue_rate"],
+                            carryover_row["cold_streak_bounce_rate"],
+                            carryover_row["avg_next_game_run_diff_after_win"],
+                            carryover_row["avg_next_game_run_diff_after_loss"],
+                            carryover_row["carryover_instability_index"],
+                            carryover_row["bounceback_index"],
+                        ),
+                    )
+
+    conn.commit()
+
+
 def import_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     init_db(conn)
     payload = json.loads(file_path.read_text(encoding="utf-8"))
@@ -4713,6 +5411,16 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier Tier 3 rows.",
     )
 
+    derive_hidden = subparsers.add_parser(
+        "derive-hidden-edge-features",
+        help="Refresh hidden-edge whiff persistence, lead/surrender, and form carryover profile tables.",
+    )
+    derive_hidden.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
+    derive_hidden.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier hidden-edge rows.",
+    )
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -4829,6 +5537,16 @@ def main() -> None:
                 print(f"Refreshed MLB Tier 3 feature tables through {args.through_date}")
             else:
                 print("Refreshed MLB Tier 3 feature tables for all loaded dates")
+            return
+
+        if args.command == "derive-hidden-edge-features":
+            refresh_hidden_edge_profiles(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB hidden-edge feature tables for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed MLB hidden-edge feature tables through {args.through_date}")
+            else:
+                print("Refreshed MLB hidden-edge feature tables for all loaded dates")
             return
 
         if args.command == "ingest-statcast-hr":

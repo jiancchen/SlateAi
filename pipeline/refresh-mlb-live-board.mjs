@@ -51,6 +51,8 @@ const main = () => {
 
   // Refresh rolling bullpen and starter-form context before rebuilding the board.
   runPythonWarehouse('prepare-mlb-day', ['--date', options.date, '--lookback-days', '3'])
+  // Keep hidden behavioral profiles collecting automatically for offline research.
+  runPythonWarehouse('derive-hidden-edge-features', ['--as-of-date', options.date])
   // Keep Tier 3 research tables collecting automatically even while the live model ignores them.
   runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
   runNodeScript('generate-mlb-day-files.mjs', generateArgs)

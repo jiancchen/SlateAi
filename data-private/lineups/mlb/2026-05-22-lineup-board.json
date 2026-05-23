@@ -1,20 +1,20 @@
 {
   "meta": {
     "date": "2026-05-22",
-    "snapshot": "2026-05-23T15:07:53.110Z",
+    "snapshot": "2026-05-23T15:54:48.091Z",
     "recentWindow": {
       "start": "2026-05-15",
       "end": "2026-05-21"
     },
     "gameCount": 14,
-    "playerCount": 301,
+    "playerCount": 308,
     "sourceLabel": "Official MLB feed/live batting orders plus official player season, recent, handedness split, and Statcast pitch-arsenal matchup data, supplemented by RotoWire daily lineups and weather when the official order is still missing."
   },
   "lineupBoardsByGameId": {
     "astros-cubs": {
       "gameId": "astros-cubs",
       "title": "Astros @ Cubs",
-      "snapshot": "2026-05-23T15:07:53.098Z",
+      "snapshot": "2026-05-23T15:54:48.081Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -29,7 +29,7 @@
         "label": "57°F | Wind 9 mph In | 2% precip"
       },
       "marketWeatherContext": {
-        "line": "CHC -153",
+        "line": "CHC -151",
         "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -2666,7 +2666,7 @@
     "guardians-phillies": {
       "gameId": "guardians-phillies",
       "title": "Guardians @ Phillies",
-      "snapshot": "2026-05-23T15:07:53.099Z",
+      "snapshot": "2026-05-23T15:54:48.082Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -2681,7 +2681,7 @@
         "label": "53°F | Wind 13 mph In | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "PHI -189",
+        "line": "PHI -190",
         "total": "7.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -5316,7 +5316,7 @@
     "rays-yankees": {
       "gameId": "rays-yankees",
       "title": "Rays @ Yankees",
-      "snapshot": "2026-05-23T15:07:53.100Z",
+      "snapshot": "2026-05-23T15:54:48.083Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -7961,7 +7961,7 @@
     "pirates-blue-jays": {
       "gameId": "pirates-blue-jays",
       "title": "Pirates @ Blue Jays",
-      "snapshot": "2026-05-23T15:07:53.101Z",
+      "snapshot": "2026-05-23T15:54:48.084Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -7976,7 +7976,7 @@
         "label": "Dome In Domed Stadium"
       },
       "marketWeatherContext": {
-        "line": "PIT -153",
+        "line": "PIT -154",
         "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -10578,7 +10578,7 @@
     "mets-marlins": {
       "gameId": "mets-marlins",
       "title": "Mets @ Marlins",
-      "snapshot": "2026-05-23T15:07:53.102Z",
+      "snapshot": "2026-05-23T15:54:48.084Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -10593,7 +10593,7 @@
         "label": "Dome In Domed Stadium"
       },
       "marketWeatherContext": {
-        "line": "MIA -114",
+        "line": "MIA -115",
         "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -13200,7 +13200,7 @@
     "twins-red-sox": {
       "gameId": "twins-red-sox",
       "title": "Twins @ Red Sox",
-      "snapshot": "2026-05-23T15:07:53.102Z",
+      "snapshot": "2026-05-23T15:54:48.085Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -13215,7 +13215,7 @@
         "label": "61°F | Wind 9 mph R-L | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "BOS -122",
+        "line": "BOS -124",
         "total": "8.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -15815,7 +15815,7 @@
     "nationals-braves": {
       "gameId": "nationals-braves",
       "title": "Nationals @ Braves",
-      "snapshot": "2026-05-23T15:07:53.104Z",
+      "snapshot": "2026-05-23T15:54:48.086Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -15830,7 +15830,7 @@
         "label": "78°F | Wind 6 mph R-L | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "ATL -172",
+        "line": "ATL -171",
         "total": "8.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -18411,7 +18411,7 @@
     "tigers-orioles": {
       "gameId": "tigers-orioles",
       "title": "Tigers @ Orioles",
-      "snapshot": "2026-05-23T15:07:53.105Z",
+      "snapshot": "2026-05-23T15:54:48.087Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -18426,8 +18426,8 @@
         "label": "55°F | Wind 16 mph R-L | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "BAL -117",
-        "total": "7.5 Runs",
+        "line": "BAL -119",
+        "total": "8.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
@@ -21053,7 +21053,7 @@
     "dodgers-brewers": {
       "gameId": "dodgers-brewers",
       "title": "Dodgers @ Brewers",
-      "snapshot": "2026-05-23T15:07:53.106Z",
+      "snapshot": "2026-05-23T15:54:48.087Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -21068,7 +21068,7 @@
         "label": "Dome In Domed Stadium"
       },
       "marketWeatherContext": {
-        "line": "LAD -122",
+        "line": "LAD -121",
         "total": "9.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -23697,7 +23697,7 @@
     "mariners-royals": {
       "gameId": "mariners-royals",
       "title": "Mariners @ Royals",
-      "snapshot": "2026-05-23T15:07:53.107Z",
+      "snapshot": "2026-05-23T15:54:48.088Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -23712,7 +23712,7 @@
         "label": "77°F | Wind 6 mph L-R | 5% precip"
       },
       "marketWeatherContext": {
-        "line": "SEA -131",
+        "line": "SEA -130",
         "total": "8.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -26396,7 +26396,7 @@
     "rangers-angels": {
       "gameId": "rangers-angels",
       "title": "Rangers @ Angels",
-      "snapshot": "2026-05-23T15:07:53.108Z",
+      "snapshot": "2026-05-23T15:54:48.089Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -26412,7 +26412,7 @@
       },
       "marketWeatherContext": {
         "line": "TEX -139",
-        "total": "8.0 Runs",
+        "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
@@ -29021,7 +29021,7 @@
     "athletics-padres": {
       "gameId": "athletics-padres",
       "title": "Athletics @ Padres",
-      "snapshot": "2026-05-23T15:07:53.109Z",
+      "snapshot": "2026-05-23T15:54:48.089Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -29036,7 +29036,7 @@
         "label": "65°F | Wind 9 mph L-R | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "ATH -112",
+        "line": "ATH -116",
         "total": "8.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -31712,7 +31712,7 @@
     "rockies-diamondbacks": {
       "gameId": "rockies-diamondbacks",
       "title": "Rockies @ Diamondbacks",
-      "snapshot": "2026-05-23T15:07:53.110Z",
+      "snapshot": "2026-05-23T15:54:48.090Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -31727,7 +31727,7 @@
         "label": "Dome In Domed Stadium"
       },
       "marketWeatherContext": {
-        "line": "ARI -182",
+        "line": "ARI -183",
         "total": "9.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -34370,7 +34370,7 @@
     "white-sox-giants": {
       "gameId": "white-sox-giants",
       "title": "White Sox @ Giants",
-      "snapshot": "2026-05-23T15:07:53.110Z",
+      "snapshot": "2026-05-23T15:54:48.091Z",
       "status": {
         "away": "posted",
         "home": "posted"
@@ -34385,7 +34385,7 @@
         "label": "61°F | Wind 10 mph Out | 1% precip"
       },
       "marketWeatherContext": {
-        "line": "SF -121",
+        "line": "SF -117",
         "total": "8.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -34405,7 +34405,7 @@
             "role": "middle",
             "availabilityScore": 72.4,
             "firstRelieverLikelihood": 84.54,
-            "pitchMixSummary": "Sinker 30% / 4-Seam Fastball 30% / Slider 24%"
+            "pitchMixSummary": "4-Seam Fastball 30% / Sinker 30% / Slider 24%"
           },
           {
             "name": "Ryan Borucki",
@@ -35617,7 +35617,7 @@
               "firstRelieverLikelihood": 84.54,
               "fitScore": 61,
               "fitGrade": -1.03,
-              "pitchMixSummary": "Sinker 30% / 4-Seam Fastball 30% / Slider 24%",
+              "pitchMixSummary": "4-Seam Fastball 30% / Sinker 30% / Slider 24%",
               "topAttackers": [
                 {
                   "name": "Sam Antonacci",
@@ -35640,7 +35640,7 @@
                 "firstRelieverLikelihood": 84.54,
                 "fitScore": 61,
                 "fitGrade": -1.03,
-                "pitchMixSummary": "Sinker 30% / 4-Seam Fastball 30% / Slider 24%",
+                "pitchMixSummary": "4-Seam Fastball 30% / Sinker 30% / Slider 24%",
                 "topAttackers": [
                   {
                     "name": "Sam Antonacci",

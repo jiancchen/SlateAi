@@ -22,6 +22,7 @@
     "data:derive:mlb": "python3 pipeline/mlb_warehouse.py derive-mlb-features",
     "data:derive:tier2-mlb": "python3 pipeline/mlb_warehouse.py derive-tier2-features",
     "data:derive:tier3-mlb": "python3 pipeline/mlb_warehouse.py derive-tier3-features",
+    "data:derive:hidden-edges": "python3 pipeline/mlb_warehouse.py derive-hidden-edge-features",
     "data:ingest:statcast-hr": "python3 pipeline/mlb_warehouse.py ingest-statcast-hr",
     "data:refresh:mlb-live": "node pipeline/refresh-mlb-live-board.mjs",
     "data:verify:mlb-refresh": "node pipeline/verify-mlb-refresh.mjs",
@@ -47,6 +48,7 @@
     "data:research:mlb-tier2-features": "python3 pipeline/research_mlb_tier2_features.py",
     "data:research:mlb-tier3-features": "python3 pipeline/research_mlb_tier3_features.py",
     "data:research:mlb-tier3-overlays": "python3 pipeline/research_mlb_tier3_overlays.py",
+    "data:research:mlb-hidden-edges": "python3 pipeline/research_mlb_hidden_edges.py",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
   }
