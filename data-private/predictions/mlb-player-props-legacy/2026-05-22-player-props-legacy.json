@@ -1,17 +1,17 @@
 {
   "modelName": "mlb-player-props-v1-legacy",
   "date": "2026-05-22",
-  "generatedAt": "2026-05-23T15:54:52.766Z",
+  "generatedAt": "2026-05-23T17:11:29.245Z",
   "sources": [
     "day-file-live-board",
     "web/src/lib/sports-model.js"
   ],
   "summary": {
     "totalGames": 14,
-    "totalPicks": 267,
+    "totalPicks": 269,
     "byType": {
-      "totalBases": 52,
-      "singles": 48,
+      "totalBases": 53,
+      "singles": 49,
       "hits": 52,
       "rbi": 61,
       "walks": 54
@@ -126,9 +126,9 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 82,
-      "probability": 89.2,
-      "expectedValue": 3.8,
-      "statValueLabel": "3.79 exp TB",
+      "probability": 90.1,
+      "expectedValue": 3.9,
+      "statValueLabel": "3.90 exp TB",
       "recommendationTier": "Core",
       "reason": "slot 5 carry | recent form up | split fit live",
       "scriptTags": [
@@ -189,6 +189,48 @@
     },
     {
       "rank": 5,
+      "id": "tigers-orioles:683002:totalBases",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 2,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 82,
+      "probability": 85.4,
+      "expectedValue": 3.4,
+      "statValueLabel": "3.41 exp TB",
+      "recommendationTier": "Core",
+      "reason": "slot 2 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 6,
       "id": "rockies-diamondbacks:606466:totalBases",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -231,7 +273,7 @@
       "playerSummary": ".241 AVG | .713 OPS | 45 H | 7 HR | 12g: .400 AVG | 1.168 OPS | 20 H | 4 HR | vs RHP: .233 AVG | .732 OPS | 6 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "mets-marlins:660644:singles",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -270,7 +312,7 @@
       "playerSummary": ".250 AVG | .650 OPS | 1 H | 0 HR | 2g: 1.000 AVG | 2.000 OPS | 2 H | 0 HR | vs RHP: .500 AVG | 1.167 OPS | 0 HR | arsenal 4-Seam Fastball 48% / Changeup 10% | fit +7.3 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "mets-marlins:660644:hits",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -308,7 +350,7 @@
       "playerSummary": ".250 AVG | .650 OPS | 1 H | 0 HR | 2g: 1.000 AVG | 2.000 OPS | 2 H | 0 HR | vs RHP: .500 AVG | 1.167 OPS | 0 HR | arsenal 4-Seam Fastball 48% / Changeup 10% | fit +7.3 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "mariners-royals:668227:totalBases",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -350,7 +392,7 @@
       "playerSummary": ".299 AVG | .856 OPS | 55 H | 5 HR | 12g: .316 AVG | .996 OPS | 12 H | 2 HR | vs LHP: .271 AVG | .830 OPS | 2 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +5.8 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "tigers-orioles:694212:rbi",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
@@ -372,9 +414,9 @@
       "marketLabel": "Over 0.5 RBI",
       "lineThreshold": 0.5,
       "confidence": 82,
-      "probability": 86.5,
-      "expectedValue": 2,
-      "statValueLabel": "2.00 exp RBI",
+      "probability": 87.5,
+      "expectedValue": 2.1,
+      "statValueLabel": "2.08 exp RBI",
       "recommendationTier": "Core",
       "reason": "slot 5 carry | recent form up | split fit live",
       "scriptTags": [
@@ -394,7 +436,7 @@
       "playerSummary": ".268 AVG | .804 OPS | 38 H | 7 HR | 10g: .278 AVG | .927 OPS | 10 H | 4 HR | vs RHP: .270 AVG | .839 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +6.4 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "id": "rockies-diamondbacks:682998:rbi",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -439,7 +481,7 @@
       "playerSummary": ".287 AVG | .943 OPS | 48 H | 7 HR | 12g: .375 AVG | 1.298 OPS | 18 H | 4 HR | vs RHP: .200 AVG | .808 OPS | 6 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +5.0 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "mets-marlins:665742:rbi",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -479,7 +521,7 @@
       "playerSummary": ".301 AVG | .965 OPS | 40 H | 10 HR | 14g: .385 AVG | 1.346 OPS | 20 H | 8 HR | vs RHP: .350 AVG | 1.135 OPS | 8 HR | arsenal 4-Seam Fastball 48% / Sweeper 15% / Slider 15% | fit +7.6 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "mariners-royals:668227:rbi",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -522,7 +564,7 @@
       "playerSummary": ".299 AVG | .856 OPS | 55 H | 5 HR | 12g: .316 AVG | .996 OPS | 12 H | 2 HR | vs LHP: .271 AVG | .830 OPS | 2 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +5.8 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "athletics-padres:667670:rbi",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -564,7 +606,7 @@
       "playerSummary": ".203 AVG | .661 OPS | 27 H | 7 HR | 14g: .276 AVG | .805 OPS | 16 H | 4 HR | vs RHP: .210 AVG | .706 OPS | 6 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +7.4 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "id": "rangers-angels:669394:totalBases",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -605,7 +647,7 @@
       "playerSummary": ".245 AVG | .728 OPS | 45 H | 9 HR | 12g: .364 AVG | 1.189 OPS | 16 H | 4 HR | vs RHP: .248 AVG | .734 OPS | 7 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +1.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "id": "white-sox-giants:808959:rbi",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -645,7 +687,7 @@
       "playerSummary": ".246 AVG | .941 OPS | 43 H | 17 HR | 12g: .364 AVG | 1.143 OPS | 16 H | 4 HR | vs RHP: .250 AVG | .969 OPS | 13 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit +2.0 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "id": "guardians-phillies:656941:totalBases",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -684,7 +726,7 @@
       "playerSummary": ".225 AVG | .960 OPS | 41 H | 20 HR | 6g: .286 AVG | 1.161 OPS | 8 H | 4 HR | vs RHP: .217 AVG | .960 OPS | 14 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +1.6 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "id": "twins-red-sox:575929:totalBases",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -723,48 +765,6 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".269 AVG | .869 OPS | 46 H | 10 HR | 12g: .375 AVG | 1.125 OPS | 18 H | 4 HR | vs LHP: .311 AVG | 1.093 OPS | 4 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -0.0 | +10.0 matchup grade in a contact-suppressor lane"
-    },
-    {
-      "rank": 18,
-      "id": "tigers-orioles:683002:totalBases",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 683002,
-      "playerName": "Gunnar Henderson",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 2,
-      "propType": "totalBases",
-      "propLabel": "TB",
-      "marketLabel": "Over 1.5 total bases",
-      "lineThreshold": 1.5,
-      "confidence": 80,
-      "probability": 84.4,
-      "expectedValue": 3.3,
-      "statValueLabel": "3.32 exp TB",
-      "recommendationTier": "Core",
-      "reason": "slot 2 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
       "rank": 19,
@@ -808,6 +808,49 @@
     },
     {
       "rank": 20,
+      "id": "tigers-orioles:683002:rbi",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 2,
+      "propType": "rbi",
+      "propLabel": "RBI",
+      "marketLabel": "Over 0.5 RBI",
+      "lineThreshold": 0.5,
+      "confidence": 80,
+      "probability": 83.8,
+      "expectedValue": 1.8,
+      "statValueLabel": "1.82 exp RBI",
+      "recommendationTier": "Core",
+      "reason": "slot 2 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live",
+        "run-production-slot"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 21,
       "id": "athletics-padres:701762:walks",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -848,49 +891,6 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".281 AVG | .932 OPS | 50 H | 8 HR | 14g: .304 AVG | 1.022 OPS | 14 H | 2 HR | vs RHP: .302 AVG | 1.050 OPS | 7 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +7.6 | +10.0 matchup grade in a traffic-risk lane"
-    },
-    {
-      "rank": 21,
-      "id": "tigers-orioles:683002:rbi",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 683002,
-      "playerName": "Gunnar Henderson",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 2,
-      "propType": "rbi",
-      "propLabel": "RBI",
-      "marketLabel": "Over 0.5 RBI",
-      "lineThreshold": 0.5,
-      "confidence": 78,
-      "probability": 82.7,
-      "expectedValue": 1.8,
-      "statValueLabel": "1.75 exp RBI",
-      "recommendationTier": "Strong",
-      "reason": "slot 2 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live",
-        "run-production-slot"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
       "rank": 22,
@@ -1188,6 +1188,49 @@
     },
     {
       "rank": 29,
+      "id": "tigers-orioles:624413:rbi",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 4,
+      "propType": "rbi",
+      "propLabel": "RBI",
+      "marketLabel": "Over 0.5 RBI",
+      "lineThreshold": 0.5,
+      "confidence": 75,
+      "probability": 76.7,
+      "expectedValue": 1.5,
+      "statValueLabel": "1.46 exp RBI",
+      "recommendationTier": "Strong",
+      "reason": "slot 4 carry | split fit live | run-production slot",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat",
+        "run-production-slot"
+      ],
+      "matchupNote": "+7.91 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 30,
       "id": "guardians-phillies:547180:totalBases",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -1227,7 +1270,7 @@
       "playerSummary": ".266 AVG | .884 OPS | 49 H | 12 HR | 12g: .273 AVG | .892 OPS | 12 H | 4 HR | vs RHP: .293 AVG | .992 OPS | 9 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +3.2 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 30,
+      "rank": 31,
       "id": "rays-yankees:691406:totalBases",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -1268,7 +1311,7 @@
       "playerSummary": ".267 AVG | .861 OPS | 50 H | 13 HR | 12g: .364 AVG | 1.209 OPS | 16 H | 4 HR | vs RHP: .266 AVG | .851 OPS | 10 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit +0.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 31,
+      "rank": 32,
       "id": "pirates-blue-jays:664040:totalBases",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -1308,7 +1351,7 @@
       "playerSummary": ".263 AVG | .916 OPS | 46 H | 13 HR | 12g: .308 AVG | 1.064 OPS | 16 H | 6 HR | vs RHP: .290 AVG | 1.030 OPS | 10 HR | arsenal 4-Seam Fastball 53% / Split-Finger 39% / Slider 8% | fit -0.3 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 32,
+      "rank": 33,
       "id": "mets-marlins:665742:singles",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -1348,7 +1391,7 @@
       "playerSummary": ".301 AVG | .965 OPS | 40 H | 10 HR | 14g: .385 AVG | 1.346 OPS | 20 H | 8 HR | vs RHP: .350 AVG | 1.135 OPS | 8 HR | arsenal 4-Seam Fastball 48% / Sweeper 15% / Slider 15% | fit +7.6 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 33,
+      "rank": 34,
       "id": "mets-marlins:660644:walks",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -1387,7 +1430,7 @@
       "playerSummary": ".250 AVG | .650 OPS | 1 H | 0 HR | 2g: 1.000 AVG | 2.000 OPS | 2 H | 0 HR | vs RHP: .500 AVG | 1.167 OPS | 0 HR | arsenal 4-Seam Fastball 48% / Changeup 10% | fit +7.3 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 34,
+      "rank": 35,
       "id": "tigers-orioles:621493:walks",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
@@ -1409,9 +1452,9 @@
       "marketLabel": "Over 0.5 walks",
       "lineThreshold": 0.5,
       "confidence": 73,
-      "probability": 75.2,
+      "probability": 75.3,
       "expectedValue": 1.4,
-      "statValueLabel": "1.39 exp walks",
+      "statValueLabel": "1.40 exp walks",
       "recommendationTier": "Strong",
       "reason": "slot 1 carry | recent form up | starter walk pressure",
       "scriptTags": [
@@ -1427,49 +1470,6 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".256 AVG | .783 OPS | 46 H | 2 HR | 12g: .208 AVG | .720 OPS | 10 H | 2 HR | vs RHP: .254 AVG | .763 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.2 | +6.1 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 35,
-      "id": "tigers-orioles:624413:rbi",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 624413,
-      "playerName": "Pete Alonso",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 4,
-      "propType": "rbi",
-      "propLabel": "RBI",
-      "marketLabel": "Over 0.5 RBI",
-      "lineThreshold": 0.5,
-      "confidence": 73,
-      "probability": 75.4,
-      "expectedValue": 1.4,
-      "statValueLabel": "1.40 exp RBI",
-      "recommendationTier": "Strong",
-      "reason": "slot 4 carry | split fit live | run-production slot",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "bullpen-carry-bat",
-        "run-production-slot"
-      ],
-      "matchupNote": "+7.91 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
     },
     {
       "rank": 36,
@@ -1642,6 +1642,48 @@
     },
     {
       "rank": 40,
+      "id": "tigers-orioles:624413:totalBases",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 4,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 72,
+      "probability": 70,
+      "expectedValue": 2.4,
+      "statValueLabel": "2.44 exp TB",
+      "recommendationTier": "Strong",
+      "reason": "slot 4 carry | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat"
+      ],
+      "matchupNote": "+7.91 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 41,
       "id": "rangers-angels:679822:totalBases",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -1684,7 +1726,7 @@
       "playerSummary": ".351 AVG | .985 OPS | 13 H | 2 HR | 12g: .391 AVG | 1.075 OPS | 18 H | 2 HR | vs RHP: .259 AVG | .707 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +6.5 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 41,
+      "rank": 42,
       "id": "twins-red-sox:575929:rbi",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -1725,7 +1767,7 @@
       "playerSummary": ".269 AVG | .869 OPS | 46 H | 10 HR | 12g: .375 AVG | 1.125 OPS | 18 H | 4 HR | vs LHP: .311 AVG | 1.093 OPS | 4 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -0.0 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 42,
+      "rank": 43,
       "id": "rangers-angels:679822:rbi",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -1767,7 +1809,7 @@
       "playerSummary": ".351 AVG | .985 OPS | 13 H | 2 HR | 12g: .391 AVG | 1.075 OPS | 18 H | 2 HR | vs RHP: .259 AVG | .707 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +6.5 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 43,
+      "rank": 44,
       "id": "mariners-royals:668227:singles",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -1809,7 +1851,7 @@
       "playerSummary": ".299 AVG | .856 OPS | 55 H | 5 HR | 12g: .316 AVG | .996 OPS | 12 H | 2 HR | vs LHP: .271 AVG | .830 OPS | 2 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +5.8 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 45,
+      "rank": 46,
       "id": "rangers-angels:677649:totalBases",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -1851,7 +1893,7 @@
       "playerSummary": ".286 AVG | .816 OPS | 38 H | 4 HR | 12g: .333 AVG | .889 OPS | 18 H | 2 HR | vs RHP: .283 AVG | .796 OPS | 3 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +3.0 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 46,
+      "rank": 47,
       "id": "athletics-padres:701762:totalBases",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -1893,7 +1935,7 @@
       "playerSummary": ".281 AVG | .932 OPS | 50 H | 8 HR | 14g: .304 AVG | 1.022 OPS | 14 H | 2 HR | vs RHP: .302 AVG | 1.050 OPS | 7 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +7.6 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 47,
+      "rank": 48,
       "id": "guardians-phillies:656941:rbi",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -1932,7 +1974,7 @@
       "playerSummary": ".225 AVG | .960 OPS | 41 H | 20 HR | 6g: .286 AVG | 1.161 OPS | 8 H | 4 HR | vs RHP: .217 AVG | .960 OPS | 14 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +1.6 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 48,
+      "rank": 49,
       "id": "guardians-phillies:547180:rbi",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -1972,7 +2014,45 @@
       "playerSummary": ".266 AVG | .884 OPS | 49 H | 12 HR | 12g: .273 AVG | .892 OPS | 12 H | 4 HR | vs RHP: .293 AVG | .992 OPS | 9 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +3.2 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 49,
+      "rank": 50,
+      "id": "astros-cubs:683737:walks",
+      "gameId": "astros-cubs",
+      "gameTitle": "Astros @ Cubs",
+      "start": "11:20 AM PT",
+      "stage": "Friday matinee",
+      "awayTeam": "Astros",
+      "homeTeam": "Cubs",
+      "awayTeamFull": "Houston Astros",
+      "homeTeamFull": "Chicago Cubs",
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "teamName": "Cubs",
+      "teamNameFull": "Chicago Cubs",
+      "opponentName": "Astros",
+      "opponentNameFull": "Houston Astros",
+      "slot": 2,
+      "propType": "walks",
+      "propLabel": "Walks",
+      "marketLabel": "Over 0.5 walks",
+      "lineThreshold": 0.5,
+      "confidence": 71,
+      "probability": 72.2,
+      "expectedValue": 1.3,
+      "statValueLabel": "1.28 exp walks",
+      "recommendationTier": "Strong",
+      "reason": "slot 2 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "carry-bat-live",
+        "starter-wildness-lane"
+      ],
+      "matchupNote": "+10.00 vs Spencer Arrighetti",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .729 OPS | 41 H | 4 HR | 12g: .250 AVG | .994 OPS | 10 H | 2 HR | vs RHP: .242 AVG | .766 OPS | 3 HR | arsenal Curveball 32% / 4-Seam Fastball 30% / Sweeper 15% | fit -1.5 | +10.0 matchup grade in a neutral lane"
+    },
+    {
+      "rank": 51,
       "id": "white-sox-giants:669477:rbi",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -2012,45 +2092,49 @@
       "playerSummary": ".286 AVG | .845 OPS | 46 H | 9 HR | 12g: .391 AVG | 1.174 OPS | 18 H | 6 HR | vs RHP: .254 AVG | .833 OPS | 8 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit +0.4 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 50,
-      "id": "astros-cubs:683737:walks",
-      "gameId": "astros-cubs",
-      "gameTitle": "Astros @ Cubs",
-      "start": "11:20 AM PT",
-      "stage": "Friday matinee",
-      "awayTeam": "Astros",
-      "homeTeam": "Cubs",
-      "awayTeamFull": "Houston Astros",
-      "homeTeamFull": "Chicago Cubs",
-      "playerId": 683737,
-      "playerName": "Michael Busch",
-      "teamName": "Cubs",
-      "teamNameFull": "Chicago Cubs",
-      "opponentName": "Astros",
-      "opponentNameFull": "Houston Astros",
+      "rank": 52,
+      "id": "tigers-orioles:683002:singles",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
       "slot": 2,
-      "propType": "walks",
-      "propLabel": "Walks",
-      "marketLabel": "Over 0.5 walks",
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
       "lineThreshold": 0.5,
       "confidence": 70,
-      "probability": 72.2,
-      "expectedValue": 1.3,
-      "statValueLabel": "1.28 exp walks",
+      "probability": 66.4,
+      "expectedValue": 1.1,
+      "statValueLabel": "1.09 exp singles",
       "recommendationTier": "Strong",
       "reason": "slot 2 carry | recent form up | split fit live",
       "scriptTags": [
         "posted-lineup",
-        "carry-bat-live",
-        "starter-wildness-lane"
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live"
       ],
-      "matchupNote": "+10.00 vs Spencer Arrighetti",
+      "matchupNote": "+10.00 vs Jack Flaherty",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .729 OPS | 41 H | 4 HR | 12g: .250 AVG | .994 OPS | 10 H | 2 HR | vs RHP: .242 AVG | .766 OPS | 3 HR | arsenal Curveball 32% / 4-Seam Fastball 30% / Sweeper 15% | fit -1.5 | +10.0 matchup grade in a neutral lane"
+      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 51,
+      "rank": 53,
       "id": "white-sox-giants:650333:singles",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -2089,7 +2173,7 @@
       "playerSummary": ".321 AVG | .780 OPS | 61 H | 2 HR | 12g: .435 AVG | 1.264 OPS | 20 H | 4 HR | vs RHP: .331 AVG | .790 OPS | 1 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -3.5 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 52,
+      "rank": 54,
       "id": "rockies-diamondbacks:672515:rbi",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -2131,7 +2215,7 @@
       "playerSummary": ".245 AVG | .680 OPS | 24 H | 2 HR | 10g: .400 AVG | 1.078 OPS | 16 H | 2 HR | vs RHP: .250 AVG | .672 OPS | 0 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.5 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 53,
+      "rank": 55,
       "id": "rockies-diamondbacks:672515:singles",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -2173,49 +2257,7 @@
       "playerSummary": ".245 AVG | .680 OPS | 24 H | 2 HR | 10g: .400 AVG | 1.078 OPS | 16 H | 2 HR | vs RHP: .250 AVG | .672 OPS | 0 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.5 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 54,
-      "id": "tigers-orioles:624413:totalBases",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 624413,
-      "playerName": "Pete Alonso",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 4,
-      "propType": "totalBases",
-      "propLabel": "TB",
-      "marketLabel": "Over 1.5 total bases",
-      "lineThreshold": 1.5,
-      "confidence": 69,
-      "probability": 67.5,
-      "expectedValue": 2.3,
-      "statValueLabel": "2.33 exp TB",
-      "recommendationTier": "Strong",
-      "reason": "slot 4 carry | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "bullpen-carry-bat"
-      ],
-      "matchupNote": "+7.91 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 55,
+      "rank": 56,
       "id": "mariners-royals:677594:totalBases",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -2257,7 +2299,7 @@
       "playerSummary": ".261 AVG | .753 OPS | 54 H | 8 HR | 12g: .217 AVG | .671 OPS | 10 H | 2 HR | vs LHP: .315 AVG | 1.079 OPS | 6 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 56,
+      "rank": 57,
       "id": "mets-marlins:665742:hits",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -2296,7 +2338,7 @@
       "playerSummary": ".301 AVG | .965 OPS | 40 H | 10 HR | 14g: .385 AVG | 1.346 OPS | 20 H | 8 HR | vs RHP: .350 AVG | 1.135 OPS | 8 HR | arsenal 4-Seam Fastball 48% / Sweeper 15% / Slider 15% | fit +7.6 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 57,
+      "rank": 58,
       "id": "rays-yankees:691406:rbi",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -2337,7 +2379,7 @@
       "playerSummary": ".267 AVG | .861 OPS | 50 H | 13 HR | 12g: .364 AVG | 1.209 OPS | 16 H | 4 HR | vs RHP: .266 AVG | .851 OPS | 10 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit +0.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 58,
+      "rank": 59,
       "id": "mariners-royals:677594:rbi",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -2379,7 +2421,7 @@
       "playerSummary": ".261 AVG | .753 OPS | 54 H | 8 HR | 12g: .217 AVG | .671 OPS | 10 H | 2 HR | vs LHP: .315 AVG | 1.079 OPS | 6 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 59,
+      "rank": 60,
       "id": "pirates-blue-jays:662139:rbi",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -2418,48 +2460,6 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".272 AVG | .777 OPS | 47 H | 5 HR | 14g: .423 AVG | 1.118 OPS | 22 H | 0 HR | vs RHP: .276 AVG | .792 OPS | 4 HR | arsenal 4-Seam Fastball 53% / Changeup 20% / Slider 13% | fit +3.2 | +10.0 matchup grade in a traffic-risk lane"
-    },
-    {
-      "rank": 60,
-      "id": "tigers-orioles:683002:singles",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 683002,
-      "playerName": "Gunnar Henderson",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 2,
-      "propType": "singles",
-      "propLabel": "Singles",
-      "marketLabel": "Over 0.5 singles",
-      "lineThreshold": 0.5,
-      "confidence": 69,
-      "probability": 65.4,
-      "expectedValue": 1.1,
-      "statValueLabel": "1.06 exp singles",
-      "recommendationTier": "Strong",
-      "reason": "slot 2 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
       "rank": 61,
@@ -2583,6 +2583,49 @@
     },
     {
       "rank": 64,
+      "id": "tigers-orioles:694212:singles",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 5,
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
+      "lineThreshold": 0.5,
+      "confidence": 69,
+      "probability": 58,
+      "expectedValue": 0.9,
+      "statValueLabel": "0.87 exp singles",
+      "recommendationTier": "Strong",
+      "reason": "slot 5 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".268 AVG | .804 OPS | 38 H | 7 HR | 10g: .278 AVG | .927 OPS | 10 H | 4 HR | vs RHP: .270 AVG | .839 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +6.4 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 65,
       "id": "rockies-diamondbacks:682998:walks",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -2626,7 +2669,7 @@
       "playerSummary": ".287 AVG | .943 OPS | 48 H | 7 HR | 12g: .375 AVG | 1.298 OPS | 18 H | 4 HR | vs RHP: .200 AVG | .808 OPS | 6 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +5.0 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 65,
+      "rank": 66,
       "id": "pirates-blue-jays:662139:totalBases",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -2666,7 +2709,7 @@
       "playerSummary": ".272 AVG | .777 OPS | 47 H | 5 HR | 14g: .423 AVG | 1.118 OPS | 22 H | 0 HR | vs RHP: .276 AVG | .792 OPS | 4 HR | arsenal 4-Seam Fastball 53% / Changeup 20% / Slider 13% | fit +3.2 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 66,
+      "rank": 67,
       "id": "dodgers-brewers:660271:totalBases",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -2705,7 +2748,7 @@
       "playerSummary": ".273 AVG | .882 OPS | 48 H | 8 HR | 12g: .478 AVG | 1.456 OPS | 22 H | 2 HR | vs RHP: .266 AVG | .865 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 67,
+      "rank": 68,
       "id": "dodgers-brewers:660271:walks",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -2744,7 +2787,7 @@
       "playerSummary": ".273 AVG | .882 OPS | 48 H | 8 HR | 12g: .478 AVG | 1.456 OPS | 22 H | 2 HR | vs RHP: .266 AVG | .865 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 68,
+      "rank": 69,
       "id": "white-sox-giants:643217:rbi",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -2780,49 +2823,6 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".238 AVG | .667 OPS | 35 H | 3 HR | 12g: .389 AVG | 1.117 OPS | 14 H | 2 HR | vs RHP: .240 AVG | .698 OPS | 3 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit -0.2 | +10.0 matchup grade in a in-zone lane"
-    },
-    {
-      "rank": 69,
-      "id": "tigers-orioles:694212:singles",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 694212,
-      "playerName": "Samuel Basallo",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 5,
-      "propType": "singles",
-      "propLabel": "Singles",
-      "marketLabel": "Over 0.5 singles",
-      "lineThreshold": 0.5,
-      "confidence": 67,
-      "probability": 57,
-      "expectedValue": 0.8,
-      "statValueLabel": "0.84 exp singles",
-      "recommendationTier": "Lean",
-      "reason": "slot 5 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "bullpen-carry-bat",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".268 AVG | .804 OPS | 38 H | 7 HR | 10g: .278 AVG | .927 OPS | 10 H | 4 HR | vs RHP: .270 AVG | .839 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +6.4 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
       "rank": 70,
@@ -2988,6 +2988,48 @@
     },
     {
       "rank": 74,
+      "id": "tigers-orioles:665750:rbi",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 665750,
+      "playerName": "Leody Taveras",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 6,
+      "propType": "rbi",
+      "propLabel": "RBI",
+      "marketLabel": "Over 0.5 RBI",
+      "lineThreshold": 0.5,
+      "confidence": 66,
+      "probability": 62.3,
+      "expectedValue": 1,
+      "statValueLabel": "0.98 exp RBI",
+      "recommendationTier": "Lean",
+      "reason": "slot 6 carry | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 75,
       "id": "pirates-blue-jays:662139:singles",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -3027,7 +3069,7 @@
       "playerSummary": ".272 AVG | .777 OPS | 47 H | 5 HR | 14g: .423 AVG | 1.118 OPS | 22 H | 0 HR | vs RHP: .276 AVG | .792 OPS | 4 HR | arsenal 4-Seam Fastball 53% / Changeup 20% / Slider 13% | fit +3.2 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 75,
+      "rank": 76,
       "id": "dodgers-brewers:660271:rbi",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -3067,7 +3109,7 @@
       "playerSummary": ".273 AVG | .882 OPS | 48 H | 8 HR | 12g: .478 AVG | 1.456 OPS | 22 H | 2 HR | vs RHP: .266 AVG | .865 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 76,
+      "rank": 77,
       "id": "dodgers-brewers:518692:rbi",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -3107,7 +3149,7 @@
       "playerSummary": ".261 AVG | .786 OPS | 48 H | 6 HR | 10g: .211 AVG | .979 OPS | 8 H | 4 HR | vs RHP: .279 AVG | .830 OPS | 4 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 77,
+      "rank": 78,
       "id": "athletics-padres:643446:rbi",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -3148,7 +3190,7 @@
       "playerSummary": ".277 AVG | .715 OPS | 43 H | 2 HR | 14g: .250 AVG | .724 OPS | 12 H | 2 HR | vs RHP: .289 AVG | .739 OPS | 2 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.8 | +7.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 78,
+      "rank": 79,
       "id": "athletics-padres:643446:singles",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -3190,7 +3232,7 @@
       "playerSummary": ".277 AVG | .715 OPS | 43 H | 2 HR | 14g: .250 AVG | .724 OPS | 12 H | 2 HR | vs RHP: .289 AVG | .739 OPS | 2 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.8 | +7.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 79,
+      "rank": 80,
       "id": "mets-marlins:660644:rbi",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -3228,7 +3270,7 @@
       "playerSummary": ".250 AVG | .650 OPS | 1 H | 0 HR | 2g: 1.000 AVG | 2.000 OPS | 2 H | 0 HR | vs RHP: .500 AVG | 1.167 OPS | 0 HR | arsenal 4-Seam Fastball 48% / Changeup 10% | fit +7.3 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 80,
+      "rank": 81,
       "id": "pirates-blue-jays:676391:hits",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -3268,7 +3310,7 @@
       "playerSummary": ".297 AVG | .756 OPS | 57 H | 3 HR | 14g: .316 AVG | 1.013 OPS | 12 H | 2 HR | vs RHP: .305 AVG | .747 OPS | 1 HR | arsenal 4-Seam Fastball 53% / Changeup 20% / Slider 13% | fit +4.9 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 81,
+      "rank": 82,
       "id": "mariners-royals:668227:hits",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -3310,7 +3352,7 @@
       "playerSummary": ".299 AVG | .856 OPS | 55 H | 5 HR | 12g: .316 AVG | .996 OPS | 12 H | 2 HR | vs LHP: .271 AVG | .830 OPS | 2 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +5.8 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 82,
+      "rank": 83,
       "id": "astros-cubs:669397:singles",
       "gameId": "astros-cubs",
       "gameTitle": "Astros @ Cubs",
@@ -3347,7 +3389,7 @@
       "playerSummary": ".235 AVG | .562 OPS | 8 H | 0 HR | 8g: .500 AVG | 1.167 OPS | 2 H | 0 HR | vs RHP: .250 AVG | .598 OPS | 0 HR | arsenal 4-Seam Fastball 29% / Cutter 21% / Sweeper 15% | fit +1.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 83,
+      "rank": 84,
       "id": "guardians-phillies:656941:walks",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -3385,7 +3427,7 @@
       "playerSummary": ".225 AVG | .960 OPS | 41 H | 20 HR | 6g: .286 AVG | 1.161 OPS | 8 H | 4 HR | vs RHP: .217 AVG | .960 OPS | 14 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +1.6 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 84,
+      "rank": 85,
       "id": "mariners-royals:695506:rbi",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -3424,7 +3466,7 @@
       "playerSummary": ".247 AVG | .731 OPS | 37 H | 5 HR | 10g: .389 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .261 AVG | .789 OPS | 4 HR | arsenal 4-Seam Fastball 32% / Slider 22% / Split-Finger 15% | fit +3.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 85,
+      "rank": 86,
       "id": "athletics-padres:657757:totalBases",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -3464,7 +3506,7 @@
       "playerSummary": ".254 AVG | .857 OPS | 35 H | 9 HR | 12g: .438 AVG | 1.671 OPS | 14 H | 6 HR | vs LHP: .133 AVG | .321 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +4.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 86,
+      "rank": 87,
       "id": "mets-marlins:660644:totalBases",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -3502,7 +3544,7 @@
       "playerSummary": ".250 AVG | .650 OPS | 1 H | 0 HR | 2g: 1.000 AVG | 2.000 OPS | 2 H | 0 HR | vs RHP: .500 AVG | 1.167 OPS | 0 HR | arsenal 4-Seam Fastball 48% / Changeup 10% | fit +7.3 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 87,
+      "rank": 88,
       "id": "nationals-braves:642201:rbi",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -3538,48 +3580,6 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".242 AVG | .676 OPS | 15 H | 2 HR | 4g: .500 AVG | 1.667 OPS | 2 H | 0 HR | vs LHP: .281 AVG | .802 OPS | 1 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +2.3 | +10.0 matchup grade in a traffic-risk lane"
-    },
-    {
-      "rank": 88,
-      "id": "tigers-orioles:665750:rbi",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 665750,
-      "playerName": "Leody Taveras",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 6,
-      "propType": "rbi",
-      "propLabel": "RBI",
-      "marketLabel": "Over 0.5 RBI",
-      "lineThreshold": 0.5,
-      "confidence": 64,
-      "probability": 61,
-      "expectedValue": 0.9,
-      "statValueLabel": "0.94 exp RBI",
-      "recommendationTier": "Lean",
-      "reason": "slot 6 carry | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
       "rank": 89,
@@ -3741,6 +3741,49 @@
     },
     {
       "rank": 93,
+      "id": "tigers-orioles:694212:hits",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 5,
+      "propType": "hits",
+      "propLabel": "Hits",
+      "marketLabel": "Over 1.5 hits",
+      "lineThreshold": 1.5,
+      "confidence": 63,
+      "probability": 46.6,
+      "expectedValue": 1.6,
+      "statValueLabel": "1.57 exp hits",
+      "recommendationTier": "Lean",
+      "reason": "slot 5 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".268 AVG | .804 OPS | 38 H | 7 HR | 10g: .278 AVG | .927 OPS | 10 H | 4 HR | vs RHP: .270 AVG | .839 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +6.4 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 94,
       "id": "rockies-diamondbacks:682998:hits",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -3784,7 +3827,7 @@
       "playerSummary": ".287 AVG | .943 OPS | 48 H | 7 HR | 12g: .375 AVG | 1.298 OPS | 18 H | 4 HR | vs RHP: .200 AVG | .808 OPS | 6 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +5.0 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 94,
+      "rank": 95,
       "id": "guardians-phillies:608070:walks",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -3823,7 +3866,7 @@
       "playerSummary": ".236 AVG | .774 OPS | 46 H | 8 HR | 14g: .407 AVG | 1.226 OPS | 22 H | 4 HR | vs LHP: .321 AVG | 1.061 OPS | 5 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit -2.8 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 95,
+      "rank": 96,
       "id": "athletics-padres:657757:walks",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -3863,7 +3906,7 @@
       "playerSummary": ".254 AVG | .857 OPS | 35 H | 9 HR | 12g: .438 AVG | 1.671 OPS | 14 H | 6 HR | vs LHP: .133 AVG | .321 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +4.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 96,
+      "rank": 97,
       "id": "athletics-padres:657757:rbi",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -3904,7 +3947,7 @@
       "playerSummary": ".254 AVG | .857 OPS | 35 H | 9 HR | 12g: .438 AVG | 1.671 OPS | 14 H | 6 HR | vs LHP: .133 AVG | .321 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +4.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 97,
+      "rank": 98,
       "id": "rockies-diamondbacks:682998:singles",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -3948,7 +3991,7 @@
       "playerSummary": ".287 AVG | .943 OPS | 48 H | 7 HR | 12g: .375 AVG | 1.298 OPS | 18 H | 4 HR | vs RHP: .200 AVG | .808 OPS | 6 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +5.0 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 99,
+      "rank": 100,
       "id": "athletics-padres:667670:singles",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -3989,7 +4032,7 @@
       "playerSummary": ".203 AVG | .661 OPS | 27 H | 7 HR | 14g: .276 AVG | .805 OPS | 16 H | 4 HR | vs RHP: .210 AVG | .706 OPS | 6 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +7.4 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 100,
+      "rank": 102,
       "id": "athletics-padres:667670:walks",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -4031,50 +4074,7 @@
       "playerSummary": ".203 AVG | .661 OPS | 27 H | 7 HR | 14g: .276 AVG | .805 OPS | 16 H | 4 HR | vs RHP: .210 AVG | .706 OPS | 6 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +7.4 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 101,
-      "id": "tigers-orioles:694212:hits",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 694212,
-      "playerName": "Samuel Basallo",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 5,
-      "propType": "hits",
-      "propLabel": "Hits",
-      "marketLabel": "Over 1.5 hits",
-      "lineThreshold": 1.5,
-      "confidence": 62,
-      "probability": 45.2,
-      "expectedValue": 1.5,
-      "statValueLabel": "1.53 exp hits",
-      "recommendationTier": "Lean",
-      "reason": "slot 5 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "bullpen-carry-bat",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".268 AVG | .804 OPS | 38 H | 7 HR | 10g: .278 AVG | .927 OPS | 10 H | 4 HR | vs RHP: .270 AVG | .839 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +6.4 | +10.0 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 102,
+      "rank": 103,
       "id": "athletics-padres:701762:hits",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -4116,7 +4116,7 @@
       "playerSummary": ".281 AVG | .932 OPS | 50 H | 8 HR | 14g: .304 AVG | 1.022 OPS | 14 H | 2 HR | vs RHP: .302 AVG | 1.050 OPS | 7 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +7.6 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 103,
+      "rank": 104,
       "id": "rangers-angels:677649:singles",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -4158,51 +4158,7 @@
       "playerSummary": ".286 AVG | .816 OPS | 38 H | 4 HR | 12g: .333 AVG | .889 OPS | 18 H | 2 HR | vs RHP: .283 AVG | .796 OPS | 3 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +3.0 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 105,
-      "id": "tigers-orioles:694212:walks",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 694212,
-      "playerName": "Samuel Basallo",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 5,
-      "propType": "walks",
-      "propLabel": "Walks",
-      "marketLabel": "Over 0.5 walks",
-      "lineThreshold": 0.5,
-      "confidence": 62,
-      "probability": 30.6,
-      "expectedValue": 0.4,
-      "statValueLabel": "0.37 exp walks",
-      "recommendationTier": "Lean",
-      "reason": "slot 5 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "bullpen-carry-bat",
-        "carry-bat-live",
-        "starter-wildness-lane"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".268 AVG | .804 OPS | 38 H | 7 HR | 10g: .278 AVG | .927 OPS | 10 H | 4 HR | vs RHP: .270 AVG | .839 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +6.4 | +10.0 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 107,
+      "rank": 106,
       "id": "nationals-braves:642201:totalBases",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -4238,6 +4194,48 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".242 AVG | .676 OPS | 15 H | 2 HR | 4g: .500 AVG | 1.667 OPS | 2 H | 0 HR | vs LHP: .281 AVG | .802 OPS | 1 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +2.3 | +10.0 matchup grade in a traffic-risk lane"
+    },
+    {
+      "rank": 107,
+      "id": "tigers-orioles:683002:hits",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 2,
+      "propType": "hits",
+      "propLabel": "Hits",
+      "marketLabel": "Over 1.5 hits",
+      "lineThreshold": 1.5,
+      "confidence": 61,
+      "probability": 49.4,
+      "expectedValue": 1.7,
+      "statValueLabel": "1.66 exp hits",
+      "recommendationTier": "Lean",
+      "reason": "slot 2 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
       "rank": 108,
@@ -4486,6 +4484,50 @@
     },
     {
       "rank": 114,
+      "id": "tigers-orioles:694212:walks",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 5,
+      "propType": "walks",
+      "propLabel": "Walks",
+      "marketLabel": "Over 0.5 walks",
+      "lineThreshold": 0.5,
+      "confidence": 61,
+      "probability": 30.7,
+      "expectedValue": 0.4,
+      "statValueLabel": "0.37 exp walks",
+      "recommendationTier": "Lean",
+      "reason": "slot 5 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat",
+        "carry-bat-live",
+        "starter-wildness-lane"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".268 AVG | .804 OPS | 38 H | 7 HR | 10g: .278 AVG | .927 OPS | 10 H | 4 HR | vs RHP: .270 AVG | .839 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +6.4 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 115,
       "id": "dodgers-brewers:518692:totalBases",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -4524,7 +4566,7 @@
       "playerSummary": ".261 AVG | .786 OPS | 48 H | 6 HR | 10g: .211 AVG | .979 OPS | 8 H | 4 HR | vs RHP: .279 AVG | .830 OPS | 4 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 115,
+      "rank": 116,
       "id": "mariners-royals:695506:totalBases",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -4563,7 +4605,7 @@
       "playerSummary": ".247 AVG | .731 OPS | 37 H | 5 HR | 10g: .389 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .261 AVG | .789 OPS | 4 HR | arsenal 4-Seam Fastball 32% / Slider 22% / Split-Finger 15% | fit +3.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 116,
+      "rank": 117,
       "id": "rockies-diamondbacks:672515:hits",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -4605,7 +4647,7 @@
       "playerSummary": ".245 AVG | .680 OPS | 24 H | 2 HR | 10g: .400 AVG | 1.078 OPS | 16 H | 2 HR | vs RHP: .250 AVG | .672 OPS | 0 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.5 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 117,
+      "rank": 118,
       "id": "white-sox-giants:650333:hits",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -4643,7 +4685,45 @@
       "playerSummary": ".321 AVG | .780 OPS | 61 H | 2 HR | 12g: .435 AVG | 1.264 OPS | 20 H | 4 HR | vs RHP: .331 AVG | .790 OPS | 1 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -3.5 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 118,
+      "rank": 119,
+      "id": "tigers-orioles:693307:totalBases",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 693307,
+      "playerName": "Dillon Dingler",
+      "teamName": "Tigers",
+      "teamNameFull": "Detroit Tigers",
+      "opponentName": "Orioles",
+      "opponentNameFull": "Baltimore Orioles",
+      "slot": 2,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 60,
+      "probability": 21.6,
+      "expectedValue": 0.9,
+      "statValueLabel": "0.87 exp TB",
+      "recommendationTier": "Lean",
+      "reason": "slot 2 carry | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "bullpen-carry-bat",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+7.67 vs Keegan Akin",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
+    },
+    {
+      "rank": 120,
       "id": "rockies-diamondbacks:699912:singles",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -4685,7 +4765,7 @@
       "playerSummary": ".281 AVG | .696 OPS | 36 H | 3 HR | 14g: .368 AVG | .789 OPS | 14 H | 0 HR | vs RHP: .292 AVG | .738 OPS | 3 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.2 | +6.8 matchup grade in a neutral lane"
     },
     {
-      "rank": 119,
+      "rank": 121,
       "id": "guardians-phillies:700932:rbi",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -4726,7 +4806,49 @@
       "playerSummary": ".228 AVG | .690 OPS | 31 H | 5 HR | 10g: .353 AVG | 1.245 OPS | 12 H | 4 HR | vs LHP: .333 AVG | .840 OPS | 1 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit +1.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 120,
+      "rank": 122,
+      "id": "tigers-orioles:665750:singles",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 665750,
+      "playerName": "Leody Taveras",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 6,
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
+      "lineThreshold": 0.5,
+      "confidence": 60,
+      "probability": 50.4,
+      "expectedValue": 0.7,
+      "statValueLabel": "0.70 exp singles",
+      "recommendationTier": "Lean",
+      "reason": "slot 6 carry | split fit live | clean traffic lane",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 123,
       "id": "athletics-padres:657757:hits",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -4766,49 +4888,7 @@
       "playerSummary": ".254 AVG | .857 OPS | 35 H | 9 HR | 12g: .438 AVG | 1.671 OPS | 14 H | 6 HR | vs LHP: .133 AVG | .321 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +4.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 126,
-      "id": "tigers-orioles:683002:hits",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 683002,
-      "playerName": "Gunnar Henderson",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 2,
-      "propType": "hits",
-      "propLabel": "Hits",
-      "marketLabel": "Over 1.5 hits",
-      "lineThreshold": 1.5,
-      "confidence": 59,
-      "probability": 47.9,
-      "expectedValue": 1.6,
-      "statValueLabel": "1.61 exp hits",
-      "recommendationTier": "Lean",
-      "reason": "slot 2 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 127,
+      "rank": 129,
       "id": "mets-marlins:669364:hits",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -4847,7 +4927,7 @@
       "playerSummary": ".309 AVG | .862 OPS | 60 H | 6 HR | 14g: .333 AVG | .888 OPS | 20 H | 4 HR | vs RHP: .303 AVG | .822 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit +3.8 | +7.9 matchup grade in a craft lane"
     },
     {
-      "rank": 128,
+      "rank": 130,
       "id": "dodgers-brewers:669289:singles",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -4884,7 +4964,7 @@
       "playerSummary": ".216 AVG | .568 OPS | 8 H | 1 HR | 4g: 1.000 AVG | 2.000 OPS | 2 H | 0 HR | vs RHP: .308 AVG | .769 OPS | 0 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit -2.5 | +0.7 matchup grade in a power-arm lane"
     },
     {
-      "rank": 129,
+      "rank": 131,
       "id": "athletics-padres:643446:hits",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -4925,7 +5005,7 @@
       "playerSummary": ".277 AVG | .715 OPS | 43 H | 2 HR | 14g: .250 AVG | .724 OPS | 12 H | 2 HR | vs RHP: .289 AVG | .739 OPS | 2 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.8 | +7.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 130,
+      "rank": 132,
       "id": "nationals-braves:671739:hits",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -4964,7 +5044,7 @@
       "playerSummary": ".295 AVG | .835 OPS | 51 H | 11 HR | 14g: .241 AVG | .922 OPS | 14 H | 8 HR | vs LHP: .245 AVG | .720 OPS | 3 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +5.8 | +7.9 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 131,
+      "rank": 133,
       "id": "athletics-padres:643446:totalBases",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -5005,7 +5085,7 @@
       "playerSummary": ".277 AVG | .715 OPS | 43 H | 2 HR | 14g: .250 AVG | .724 OPS | 12 H | 2 HR | vs RHP: .289 AVG | .739 OPS | 2 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.8 | +7.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 132,
+      "rank": 134,
       "id": "white-sox-giants:808959:hits",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -5044,7 +5124,7 @@
       "playerSummary": ".246 AVG | .941 OPS | 43 H | 17 HR | 12g: .364 AVG | 1.143 OPS | 16 H | 4 HR | vs RHP: .250 AVG | .969 OPS | 13 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit +2.0 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 133,
+      "rank": 135,
       "id": "guardians-phillies:608070:rbi",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -5084,7 +5164,7 @@
       "playerSummary": ".236 AVG | .774 OPS | 46 H | 8 HR | 14g: .407 AVG | 1.226 OPS | 22 H | 4 HR | vs LHP: .321 AVG | 1.061 OPS | 5 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit -2.8 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 135,
+      "rank": 137,
       "id": "rays-yankees:668723:walks",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -5124,7 +5204,7 @@
       "playerSummary": ".306 AVG | .859 OPS | 19 H | 2 HR | 4g: .600 AVG | 1.667 OPS | 6 H | 0 HR | vs RHP: .222 AVG | .737 OPS | 1 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit -3.7 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 136,
+      "rank": 138,
       "id": "mets-marlins:701807:singles",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -5162,7 +5242,7 @@
       "playerSummary": ".257 AVG | .668 OPS | 43 H | 3 HR | 14g: .364 AVG | .824 OPS | 24 H | 0 HR | vs RHP: .246 AVG | .652 OPS | 3 HR | arsenal 4-Seam Fastball 48% / Sweeper 15% / Slider 15% | fit +1.5 | +7.3 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 137,
+      "rank": 139,
       "id": "rockies-diamondbacks:699912:rbi",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -5204,46 +5284,49 @@
       "playerSummary": ".281 AVG | .696 OPS | 36 H | 3 HR | 14g: .368 AVG | .789 OPS | 14 H | 0 HR | vs RHP: .292 AVG | .738 OPS | 3 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.2 | +6.8 matchup grade in a neutral lane"
     },
     {
-      "rank": 138,
-      "id": "astros-cubs:670623:rbi",
-      "gameId": "astros-cubs",
-      "gameTitle": "Astros @ Cubs",
-      "start": "11:20 AM PT",
-      "stage": "Friday matinee",
-      "awayTeam": "Astros",
-      "homeTeam": "Cubs",
-      "awayTeamFull": "Houston Astros",
-      "homeTeamFull": "Chicago Cubs",
-      "playerId": 670623,
-      "playerName": "Isaac Paredes",
-      "teamName": "Astros",
-      "teamNameFull": "Houston Astros",
-      "opponentName": "Cubs",
-      "opponentNameFull": "Chicago Cubs",
-      "slot": 2,
+      "rank": 140,
+      "id": "tigers-orioles:621493:rbi",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 1,
       "propType": "rbi",
       "propLabel": "RBI",
       "marketLabel": "Over 0.5 RBI",
       "lineThreshold": 0.5,
       "confidence": 59,
-      "probability": 55.8,
+      "probability": 54.8,
       "expectedValue": 0.8,
-      "statValueLabel": "0.82 exp RBI",
+      "statValueLabel": "0.79 exp RBI",
       "recommendationTier": "Lean",
-      "reason": "slot 2 heater | recent form up | run-production slot",
+      "reason": "slot 1 carry | recent form up | run-production slot",
       "scriptTags": [
         "posted-lineup",
-        "bullpen-carry-bat",
-        "carry-bat-live",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
         "run-production-slot"
       ],
-      "matchupNote": "+4.35 vs Jameson Taillon",
+      "matchupNote": "+6.11 vs Jack Flaherty",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".244 AVG | .710 OPS | 41 H | 5 HR | 10g: .158 AVG | .712 OPS | 6 H | 4 HR | vs RHP: .224 AVG | .677 OPS | 5 HR | arsenal 4-Seam Fastball 29% / Cutter 21% / Sweeper 15% | fit +4.7 | +4.3 matchup grade in a neutral lane"
+      "playerSummary": ".256 AVG | .783 OPS | 46 H | 2 HR | 12g: .208 AVG | .720 OPS | 10 H | 2 HR | vs RHP: .254 AVG | .763 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.2 | +6.1 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 139,
+      "rank": 141,
       "id": "mariners-royals:695506:hits",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -5282,7 +5365,7 @@
       "playerSummary": ".247 AVG | .731 OPS | 37 H | 5 HR | 10g: .389 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .261 AVG | .789 OPS | 4 HR | arsenal 4-Seam Fastball 32% / Slider 22% / Split-Finger 15% | fit +3.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 140,
+      "rank": 142,
       "id": "white-sox-giants:642715:rbi",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -5321,7 +5404,7 @@
       "playerSummary": ".234 AVG | .648 OPS | 47 H | 5 HR | 12g: .364 AVG | 1.144 OPS | 16 H | 4 HR | vs RHP: .265 AVG | .741 OPS | 5 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -4.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 141,
+      "rank": 143,
       "id": "nationals-braves:671739:singles",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -5360,8 +5443,8 @@
       "playerSummary": ".295 AVG | .835 OPS | 51 H | 11 HR | 14g: .241 AVG | .922 OPS | 14 H | 8 HR | vs LHP: .245 AVG | .720 OPS | 3 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +5.8 | +7.9 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 143,
-      "id": "tigers-orioles:665750:walks",
+      "rank": 145,
+      "id": "tigers-orioles:693307:rbi",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
       "start": "4:15 PM PT",
@@ -5370,40 +5453,36 @@
       "homeTeam": "Orioles",
       "awayTeamFull": "Detroit Tigers",
       "homeTeamFull": "Baltimore Orioles",
-      "playerId": 665750,
-      "playerName": "Leody Taveras",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 6,
-      "propType": "walks",
-      "propLabel": "Walks",
-      "marketLabel": "Over 0.5 walks",
+      "playerId": 693307,
+      "playerName": "Dillon Dingler",
+      "teamName": "Tigers",
+      "teamNameFull": "Detroit Tigers",
+      "opponentName": "Orioles",
+      "opponentNameFull": "Baltimore Orioles",
+      "slot": 2,
+      "propType": "rbi",
+      "propLabel": "RBI",
+      "marketLabel": "Over 0.5 RBI",
       "lineThreshold": 0.5,
       "confidence": 59,
-      "probability": 37.4,
+      "probability": 36.4,
       "expectedValue": 0.5,
-      "statValueLabel": "0.47 exp walks",
+      "statValueLabel": "0.45 exp RBI",
       "recommendationTier": "Lean",
-      "reason": "slot 6 carry | split fit live | starter walk pressure",
+      "reason": "slot 2 carry | split fit live | run-production slot",
       "scriptTags": [
         "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
+        "bullpen-carry-bat",
         "carry-bat-live",
-        "starter-wildness-lane"
+        "run-production-slot"
       ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
+      "matchupNote": "+7.67 vs Keegan Akin",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
+      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
     },
     {
-      "rank": 144,
+      "rank": 146,
       "id": "white-sox-giants:808959:singles",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -5442,7 +5521,7 @@
       "playerSummary": ".246 AVG | .941 OPS | 43 H | 17 HR | 12g: .364 AVG | 1.143 OPS | 16 H | 4 HR | vs RHP: .250 AVG | .969 OPS | 13 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit +2.0 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 145,
+      "rank": 147,
       "id": "athletics-padres:657757:singles",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -5482,7 +5561,7 @@
       "playerSummary": ".254 AVG | .857 OPS | 35 H | 9 HR | 12g: .438 AVG | 1.671 OPS | 14 H | 6 HR | vs LHP: .133 AVG | .321 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +4.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 146,
+      "rank": 148,
       "id": "pirates-blue-jays:676391:walks",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -5523,7 +5602,7 @@
       "playerSummary": ".297 AVG | .756 OPS | 57 H | 3 HR | 14g: .316 AVG | 1.013 OPS | 12 H | 2 HR | vs RHP: .305 AVG | .747 OPS | 1 HR | arsenal 4-Seam Fastball 53% / Changeup 20% / Slider 13% | fit +4.9 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 149,
+      "rank": 152,
       "id": "rays-yankees:668723:totalBases",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -5563,7 +5642,7 @@
       "playerSummary": ".306 AVG | .859 OPS | 19 H | 2 HR | 4g: .600 AVG | 1.667 OPS | 6 H | 0 HR | vs RHP: .222 AVG | .737 OPS | 1 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit -3.7 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 150,
+      "rank": 153,
       "id": "pirates-blue-jays:662139:hits",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -5603,7 +5682,7 @@
       "playerSummary": ".272 AVG | .777 OPS | 47 H | 5 HR | 14g: .423 AVG | 1.118 OPS | 22 H | 0 HR | vs RHP: .276 AVG | .792 OPS | 4 HR | arsenal 4-Seam Fastball 53% / Changeup 20% / Slider 13% | fit +3.2 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 151,
+      "rank": 154,
       "id": "rangers-angels:669394:hits",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -5644,7 +5723,7 @@
       "playerSummary": ".245 AVG | .728 OPS | 45 H | 9 HR | 12g: .364 AVG | 1.189 OPS | 16 H | 4 HR | vs RHP: .248 AVG | .734 OPS | 7 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +1.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 152,
+      "rank": 155,
       "id": "white-sox-giants:642715:totalBases",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -5682,7 +5761,7 @@
       "playerSummary": ".234 AVG | .648 OPS | 47 H | 5 HR | 12g: .364 AVG | 1.144 OPS | 16 H | 4 HR | vs RHP: .265 AVG | .741 OPS | 5 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -4.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 153,
+      "rank": 156,
       "id": "white-sox-giants:650333:totalBases",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -5720,7 +5799,49 @@
       "playerSummary": ".321 AVG | .780 OPS | 61 H | 2 HR | 12g: .435 AVG | 1.264 OPS | 20 H | 4 HR | vs RHP: .331 AVG | .790 OPS | 1 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -3.5 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 154,
+      "rank": 157,
+      "id": "tigers-orioles:665750:hits",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 665750,
+      "playerName": "Leody Taveras",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 6,
+      "propType": "hits",
+      "propLabel": "Hits",
+      "marketLabel": "Over 1.5 hits",
+      "lineThreshold": 1.5,
+      "confidence": 58,
+      "probability": 27.2,
+      "expectedValue": 1,
+      "statValueLabel": "1.02 exp hits",
+      "recommendationTier": "Lean",
+      "reason": "slot 6 carry | split fit live | clean traffic lane",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 158,
       "id": "white-sox-giants:669477:hits",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -5759,45 +5880,46 @@
       "playerSummary": ".286 AVG | .845 OPS | 46 H | 9 HR | 12g: .391 AVG | 1.174 OPS | 18 H | 6 HR | vs RHP: .254 AVG | .833 OPS | 8 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit +0.4 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 155,
-      "id": "tigers-orioles:693307:totalBases",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 693307,
-      "playerName": "Dillon Dingler",
-      "teamName": "Tigers",
-      "teamNameFull": "Detroit Tigers",
-      "opponentName": "Orioles",
-      "opponentNameFull": "Baltimore Orioles",
+      "rank": 159,
+      "id": "astros-cubs:670623:rbi",
+      "gameId": "astros-cubs",
+      "gameTitle": "Astros @ Cubs",
+      "start": "11:20 AM PT",
+      "stage": "Friday matinee",
+      "awayTeam": "Astros",
+      "homeTeam": "Cubs",
+      "awayTeamFull": "Houston Astros",
+      "homeTeamFull": "Chicago Cubs",
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "teamName": "Astros",
+      "teamNameFull": "Houston Astros",
+      "opponentName": "Cubs",
+      "opponentNameFull": "Chicago Cubs",
       "slot": 2,
-      "propType": "totalBases",
-      "propLabel": "TB",
-      "marketLabel": "Over 1.5 total bases",
-      "lineThreshold": 1.5,
+      "propType": "rbi",
+      "propLabel": "RBI",
+      "marketLabel": "Over 0.5 RBI",
+      "lineThreshold": 0.5,
       "confidence": 58,
-      "probability": 21,
-      "expectedValue": 0.9,
-      "statValueLabel": "0.85 exp TB",
+      "probability": 55.8,
+      "expectedValue": 0.8,
+      "statValueLabel": "0.82 exp RBI",
       "recommendationTier": "Lean",
-      "reason": "slot 2 carry | split fit live",
+      "reason": "slot 2 heater | recent form up | run-production slot",
       "scriptTags": [
         "posted-lineup",
         "bullpen-carry-bat",
-        "carry-bat-live"
+        "carry-bat-live",
+        "run-production-slot"
       ],
-      "matchupNote": "+7.67 vs Keegan Akin",
+      "matchupNote": "+4.35 vs Jameson Taillon",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
+      "playerSummary": ".244 AVG | .710 OPS | 41 H | 5 HR | 10g: .158 AVG | .712 OPS | 6 H | 4 HR | vs RHP: .224 AVG | .677 OPS | 5 HR | arsenal 4-Seam Fastball 29% / Cutter 21% / Sweeper 15% | fit +4.7 | +4.3 matchup grade in a neutral lane"
     },
     {
-      "rank": 156,
+      "rank": 160,
       "id": "guardians-phillies:677587:rbi",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -5837,7 +5959,7 @@
       "playerSummary": ".291 AVG | .794 OPS | 48 H | 4 HR | 14g: .400 AVG | 1.288 OPS | 16 H | 2 HR | vs LHP: .269 AVG | .831 OPS | 2 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit -1.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 157,
+      "rank": 161,
       "id": "rays-yankees:691406:walks",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -5877,7 +5999,7 @@
       "playerSummary": ".267 AVG | .861 OPS | 50 H | 13 HR | 12g: .364 AVG | 1.209 OPS | 16 H | 4 HR | vs RHP: .266 AVG | .851 OPS | 10 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit +0.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 158,
+      "rank": 162,
       "id": "white-sox-giants:642715:hits",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -5915,7 +6037,7 @@
       "playerSummary": ".234 AVG | .648 OPS | 47 H | 5 HR | 12g: .364 AVG | 1.144 OPS | 16 H | 4 HR | vs RHP: .265 AVG | .741 OPS | 5 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -4.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 159,
+      "rank": 163,
       "id": "mets-marlins:669364:rbi",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -5955,7 +6077,7 @@
       "playerSummary": ".309 AVG | .862 OPS | 60 H | 6 HR | 14g: .333 AVG | .888 OPS | 20 H | 4 HR | vs RHP: .303 AVG | .822 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit +3.8 | +7.9 matchup grade in a craft lane"
     },
     {
-      "rank": 160,
+      "rank": 164,
       "id": "mets-marlins:669065:rbi",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -5996,49 +6118,7 @@
       "playerSummary": ".221 AVG | .675 OPS | 23 H | 3 HR | 12g: .273 AVG | .951 OPS | 12 H | 4 HR | vs RHP: .218 AVG | .694 OPS | 3 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit -1.4 | +8.4 matchup grade in a craft lane"
     },
     {
-      "rank": 161,
-      "id": "tigers-orioles:665750:singles",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 665750,
-      "playerName": "Leody Taveras",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 6,
-      "propType": "singles",
-      "propLabel": "Singles",
-      "marketLabel": "Over 0.5 singles",
-      "lineThreshold": 0.5,
-      "confidence": 58,
-      "probability": 49.5,
-      "expectedValue": 0.7,
-      "statValueLabel": "0.68 exp singles",
-      "recommendationTier": "Lean",
-      "reason": "slot 6 carry | split fit live | clean traffic lane",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 162,
+      "rank": 165,
       "id": "rangers-angels:679822:singles",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -6080,7 +6160,7 @@
       "playerSummary": ".351 AVG | .985 OPS | 13 H | 2 HR | 12g: .391 AVG | 1.075 OPS | 18 H | 2 HR | vs RHP: .259 AVG | .707 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +6.5 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 163,
+      "rank": 166,
       "id": "guardians-phillies:547180:walks",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -6119,7 +6199,7 @@
       "playerSummary": ".266 AVG | .884 OPS | 49 H | 12 HR | 12g: .273 AVG | .892 OPS | 12 H | 4 HR | vs RHP: .293 AVG | .992 OPS | 9 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +3.2 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 164,
+      "rank": 167,
       "id": "athletics-padres:660710:totalBases",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -6158,7 +6238,7 @@
       "playerSummary": ".133 AVG | .611 OPS | 2 H | 1 HR | 4g: .167 AVG | .952 OPS | 2 H | 2 HR | vs LHP: .000 AVG | .333 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +3.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 165,
+      "rank": 168,
       "id": "white-sox-giants:650333:rbi",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -6197,7 +6277,7 @@
       "playerSummary": ".321 AVG | .780 OPS | 61 H | 2 HR | 12g: .435 AVG | 1.264 OPS | 20 H | 4 HR | vs RHP: .331 AVG | .790 OPS | 1 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -3.5 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 166,
+      "rank": 169,
       "id": "white-sox-giants:669477:singles",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -6236,8 +6316,8 @@
       "playerSummary": ".286 AVG | .845 OPS | 46 H | 9 HR | 12g: .391 AVG | 1.174 OPS | 18 H | 6 HR | vs RHP: .254 AVG | .833 OPS | 8 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit +0.4 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 167,
-      "id": "tigers-orioles:693307:rbi",
+      "rank": 170,
+      "id": "tigers-orioles:665750:walks",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
       "start": "4:15 PM PT",
@@ -6246,36 +6326,40 @@
       "homeTeam": "Orioles",
       "awayTeamFull": "Detroit Tigers",
       "homeTeamFull": "Baltimore Orioles",
-      "playerId": 693307,
-      "playerName": "Dillon Dingler",
-      "teamName": "Tigers",
-      "teamNameFull": "Detroit Tigers",
-      "opponentName": "Orioles",
-      "opponentNameFull": "Baltimore Orioles",
-      "slot": 2,
-      "propType": "rbi",
-      "propLabel": "RBI",
-      "marketLabel": "Over 0.5 RBI",
+      "playerId": 665750,
+      "playerName": "Leody Taveras",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 6,
+      "propType": "walks",
+      "propLabel": "Walks",
+      "marketLabel": "Over 0.5 walks",
       "lineThreshold": 0.5,
       "confidence": 58,
-      "probability": 36.4,
+      "probability": 37.6,
       "expectedValue": 0.5,
-      "statValueLabel": "0.45 exp RBI",
+      "statValueLabel": "0.47 exp walks",
       "recommendationTier": "Lean",
-      "reason": "slot 2 carry | split fit live | run-production slot",
+      "reason": "slot 6 carry | split fit live | starter walk pressure",
       "scriptTags": [
         "posted-lineup",
-        "bullpen-carry-bat",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
         "carry-bat-live",
-        "run-production-slot"
+        "starter-wildness-lane"
       ],
-      "matchupNote": "+7.67 vs Keegan Akin",
+      "matchupNote": "+10.00 vs Jack Flaherty",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
+      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 168,
+      "rank": 171,
       "id": "mariners-royals:695506:singles",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -6314,7 +6398,45 @@
       "playerSummary": ".247 AVG | .731 OPS | 37 H | 5 HR | 10g: .389 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .261 AVG | .789 OPS | 4 HR | arsenal 4-Seam Fastball 32% / Slider 22% / Split-Finger 15% | fit +3.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 169,
+      "rank": 172,
+      "id": "tigers-orioles:693307:hits",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 693307,
+      "playerName": "Dillon Dingler",
+      "teamName": "Tigers",
+      "teamNameFull": "Detroit Tigers",
+      "opponentName": "Orioles",
+      "opponentNameFull": "Baltimore Orioles",
+      "slot": 2,
+      "propType": "hits",
+      "propLabel": "Hits",
+      "marketLabel": "Over 1.5 hits",
+      "lineThreshold": 1.5,
+      "confidence": 58,
+      "probability": 5.6,
+      "expectedValue": 0.4,
+      "statValueLabel": "0.38 exp hits",
+      "recommendationTier": "Lean",
+      "reason": "slot 2 carry | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "bullpen-carry-bat",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+7.67 vs Keegan Akin",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
+    },
+    {
+      "rank": 173,
       "id": "rockies-diamondbacks:606466:walks",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -6357,7 +6479,7 @@
       "playerSummary": ".241 AVG | .713 OPS | 45 H | 7 HR | 12g: .400 AVG | 1.168 OPS | 20 H | 4 HR | vs RHP: .233 AVG | .732 OPS | 6 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 170,
+      "rank": 175,
       "id": "tigers-orioles:683002:walks",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
@@ -6379,7 +6501,7 @@
       "marketLabel": "Over 0.5 walks",
       "lineThreshold": 0.5,
       "confidence": 58,
-      "probability": 25.4,
+      "probability": 25.5,
       "expectedValue": 0.3,
       "statValueLabel": "0.29 exp walks",
       "recommendationTier": "Lean",
@@ -6400,7 +6522,7 @@
       "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 12g: .385 AVG | .984 OPS | 20 H | 2 HR | vs RHP: .232 AVG | .686 OPS | 6 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 172,
+      "rank": 177,
       "id": "rockies-diamondbacks:672515:walks",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -6442,7 +6564,7 @@
       "playerSummary": ".245 AVG | .680 OPS | 24 H | 2 HR | 10g: .400 AVG | 1.078 OPS | 16 H | 2 HR | vs RHP: .250 AVG | .672 OPS | 0 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +3.5 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 173,
+      "rank": 178,
       "id": "athletics-padres:643446:walks",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -6484,7 +6606,7 @@
       "playerSummary": ".277 AVG | .715 OPS | 43 H | 2 HR | 14g: .250 AVG | .724 OPS | 12 H | 2 HR | vs RHP: .289 AVG | .739 OPS | 2 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.8 | +7.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 174,
+      "rank": 179,
       "id": "athletics-padres:660710:hits",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -6523,7 +6645,7 @@
       "playerSummary": ".133 AVG | .611 OPS | 2 H | 1 HR | 4g: .167 AVG | .952 OPS | 2 H | 2 HR | vs LHP: .000 AVG | .333 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +3.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 175,
+      "rank": 180,
       "id": "guardians-phillies:608070:totalBases",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -6563,7 +6685,7 @@
       "playerSummary": ".236 AVG | .774 OPS | 46 H | 8 HR | 14g: .407 AVG | 1.226 OPS | 22 H | 4 HR | vs LHP: .321 AVG | 1.061 OPS | 5 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit -2.8 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 176,
+      "rank": 181,
       "id": "white-sox-giants:643217:totalBases",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -6601,7 +6723,7 @@
       "playerSummary": ".238 AVG | .667 OPS | 35 H | 3 HR | 12g: .389 AVG | 1.117 OPS | 14 H | 2 HR | vs RHP: .240 AVG | .698 OPS | 3 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit -0.2 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 177,
+      "rank": 182,
       "id": "rockies-diamondbacks:571448:hits",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -6644,7 +6766,49 @@
       "playerSummary": ".274 AVG | .823 OPS | 43 H | 7 HR | 12g: .263 AVG | 1.040 OPS | 10 H | 2 HR | vs RHP: .286 AVG | .842 OPS | 5 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +2.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 178,
+      "rank": 183,
+      "id": "tigers-orioles:665750:totalBases",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 665750,
+      "playerName": "Leody Taveras",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 6,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 57,
+      "probability": 33.8,
+      "expectedValue": 1.2,
+      "statValueLabel": "1.20 exp TB",
+      "recommendationTier": "Lean",
+      "reason": "slot 6 carry | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+10.00 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 184,
       "id": "nationals-braves:642201:hits",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -6682,7 +6846,7 @@
       "playerSummary": ".242 AVG | .676 OPS | 15 H | 2 HR | 4g: .500 AVG | 1.667 OPS | 2 H | 0 HR | vs LHP: .281 AVG | .802 OPS | 1 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +2.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 179,
+      "rank": 185,
       "id": "rangers-angels:679822:hits",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -6724,49 +6888,7 @@
       "playerSummary": ".351 AVG | .985 OPS | 13 H | 2 HR | 12g: .391 AVG | 1.075 OPS | 18 H | 2 HR | vs RHP: .259 AVG | .707 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +6.5 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 180,
-      "id": "tigers-orioles:665750:hits",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 665750,
-      "playerName": "Leody Taveras",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 6,
-      "propType": "hits",
-      "propLabel": "Hits",
-      "marketLabel": "Over 1.5 hits",
-      "lineThreshold": 1.5,
-      "confidence": 57,
-      "probability": 26.2,
-      "expectedValue": 1,
-      "statValueLabel": "0.99 exp hits",
-      "recommendationTier": "Lean",
-      "reason": "slot 6 carry | split fit live | clean traffic lane",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 181,
+      "rank": 186,
       "id": "white-sox-giants:643217:hits",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -6804,7 +6926,7 @@
       "playerSummary": ".238 AVG | .667 OPS | 35 H | 3 HR | 12g: .389 AVG | 1.117 OPS | 14 H | 2 HR | vs RHP: .240 AVG | .698 OPS | 3 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit -0.2 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 182,
+      "rank": 187,
       "id": "guardians-phillies:664761:rbi",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -6843,7 +6965,7 @@
       "playerSummary": ".216 AVG | .620 OPS | 37 H | 5 HR | 12g: .375 AVG | 1.173 OPS | 18 H | 4 HR | vs RHP: .202 AVG | .526 OPS | 1 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit -3.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 183,
+      "rank": 188,
       "id": "astros-cubs:669397:rbi",
       "gameId": "astros-cubs",
       "gameTitle": "Astros @ Cubs",
@@ -6880,49 +7002,7 @@
       "playerSummary": ".235 AVG | .562 OPS | 8 H | 0 HR | 8g: .500 AVG | 1.167 OPS | 2 H | 0 HR | vs RHP: .250 AVG | .598 OPS | 0 HR | arsenal 4-Seam Fastball 29% / Cutter 21% / Sweeper 15% | fit +1.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 184,
-      "id": "tigers-orioles:621493:rbi",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 621493,
-      "playerName": "Taylor Ward",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 1,
-      "propType": "rbi",
-      "propLabel": "RBI",
-      "marketLabel": "Over 0.5 RBI",
-      "lineThreshold": 0.5,
-      "confidence": 57,
-      "probability": 53.4,
-      "expectedValue": 0.8,
-      "statValueLabel": "0.76 exp RBI",
-      "recommendationTier": "Lean",
-      "reason": "slot 1 carry | recent form up | run-production slot",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "run-production-slot"
-      ],
-      "matchupNote": "+6.11 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".256 AVG | .783 OPS | 46 H | 2 HR | 12g: .208 AVG | .720 OPS | 10 H | 2 HR | vs RHP: .254 AVG | .763 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.2 | +6.1 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 185,
+      "rank": 189,
       "id": "mariners-royals:641487:walks",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -6963,7 +7043,7 @@
       "playerSummary": ".204 AVG | .704 OPS | 30 H | 6 HR | 10g: .154 AVG | .697 OPS | 4 H | 2 HR | vs LHP: .159 AVG | .555 OPS | 1 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +3.6 | +2.5 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 186,
+      "rank": 190,
       "id": "astros-cubs:669397:walks",
       "gameId": "astros-cubs",
       "gameTitle": "Astros @ Cubs",
@@ -7000,7 +7080,7 @@
       "playerSummary": ".235 AVG | .562 OPS | 8 H | 0 HR | 8g: .500 AVG | 1.167 OPS | 2 H | 0 HR | vs RHP: .250 AVG | .598 OPS | 0 HR | arsenal 4-Seam Fastball 29% / Cutter 21% / Sweeper 15% | fit +1.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 188,
+      "rank": 192,
       "id": "pirates-blue-jays:662139:walks",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -7041,7 +7121,7 @@
       "playerSummary": ".272 AVG | .777 OPS | 47 H | 5 HR | 14g: .423 AVG | 1.118 OPS | 22 H | 0 HR | vs RHP: .276 AVG | .792 OPS | 4 HR | arsenal 4-Seam Fastball 53% / Changeup 20% / Slider 13% | fit +3.2 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 189,
+      "rank": 193,
       "id": "athletics-padres:660710:rbi",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -7080,7 +7160,7 @@
       "playerSummary": ".133 AVG | .611 OPS | 2 H | 1 HR | 4g: .167 AVG | .952 OPS | 2 H | 2 HR | vs LHP: .000 AVG | .333 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +3.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 190,
+      "rank": 194,
       "id": "white-sox-giants:642715:singles",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -7118,45 +7198,7 @@
       "playerSummary": ".234 AVG | .648 OPS | 47 H | 5 HR | 12g: .364 AVG | 1.144 OPS | 16 H | 4 HR | vs RHP: .265 AVG | .741 OPS | 5 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -4.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 191,
-      "id": "tigers-orioles:693307:hits",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 693307,
-      "playerName": "Dillon Dingler",
-      "teamName": "Tigers",
-      "teamNameFull": "Detroit Tigers",
-      "opponentName": "Orioles",
-      "opponentNameFull": "Baltimore Orioles",
-      "slot": 2,
-      "propType": "hits",
-      "propLabel": "Hits",
-      "marketLabel": "Over 1.5 hits",
-      "lineThreshold": 1.5,
-      "confidence": 57,
-      "probability": 5.4,
-      "expectedValue": 0.4,
-      "statValueLabel": "0.37 exp hits",
-      "recommendationTier": "Lean",
-      "reason": "slot 2 carry | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "bullpen-carry-bat",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+7.67 vs Keegan Akin",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
-    },
-    {
-      "rank": 192,
+      "rank": 195,
       "id": "tigers-orioles:693307:walks",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
@@ -7194,7 +7236,7 @@
       "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
     },
     {
-      "rank": 194,
+      "rank": 197,
       "id": "nationals-braves:671739:walks",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -7234,7 +7276,45 @@
       "playerSummary": ".295 AVG | .835 OPS | 51 H | 11 HR | 14g: .241 AVG | .922 OPS | 14 H | 8 HR | vs LHP: .245 AVG | .720 OPS | 3 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +5.8 | +7.9 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 195,
+      "rank": 198,
+      "id": "tigers-orioles:693307:singles",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 693307,
+      "playerName": "Dillon Dingler",
+      "teamName": "Tigers",
+      "teamNameFull": "Detroit Tigers",
+      "opponentName": "Orioles",
+      "opponentNameFull": "Baltimore Orioles",
+      "slot": 2,
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
+      "lineThreshold": 0.5,
+      "confidence": 57,
+      "probability": 17.6,
+      "expectedValue": 0.2,
+      "statValueLabel": "0.19 exp singles",
+      "recommendationTier": "Lean",
+      "reason": "slot 2 carry | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "bullpen-carry-bat",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+7.67 vs Keegan Akin",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
+    },
+    {
+      "rank": 200,
       "id": "mariners-royals:695506:walks",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -7273,7 +7353,7 @@
       "playerSummary": ".247 AVG | .731 OPS | 37 H | 5 HR | 10g: .389 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .261 AVG | .789 OPS | 4 HR | arsenal 4-Seam Fastball 32% / Slider 22% / Split-Finger 15% | fit +3.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 197,
+      "rank": 201,
       "id": "athletics-padres:660710:singles",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -7312,7 +7392,7 @@
       "playerSummary": ".133 AVG | .611 OPS | 2 H | 1 HR | 4g: .167 AVG | .952 OPS | 2 H | 2 HR | vs LHP: .000 AVG | .333 OPS | 0 HR | arsenal 4-Seam Fastball 44% / Slider 24% / Changeup 23% | fit +3.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 198,
+      "rank": 202,
       "id": "guardians-phillies:700932:totalBases",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -7352,7 +7432,7 @@
       "playerSummary": ".228 AVG | .690 OPS | 31 H | 5 HR | 10g: .353 AVG | 1.245 OPS | 12 H | 4 HR | vs LHP: .333 AVG | .840 OPS | 1 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit +1.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 199,
+      "rank": 203,
       "id": "mets-marlins:669364:totalBases",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -7391,49 +7471,7 @@
       "playerSummary": ".309 AVG | .862 OPS | 60 H | 6 HR | 14g: .333 AVG | .888 OPS | 20 H | 4 HR | vs RHP: .303 AVG | .822 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit +3.8 | +7.9 matchup grade in a craft lane"
     },
     {
-      "rank": 200,
-      "id": "tigers-orioles:665750:totalBases",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 665750,
-      "playerName": "Leody Taveras",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 6,
-      "propType": "totalBases",
-      "propLabel": "TB",
-      "marketLabel": "Over 1.5 total bases",
-      "lineThreshold": 1.5,
-      "confidence": 56,
-      "probability": 32.6,
-      "expectedValue": 1.2,
-      "statValueLabel": "1.17 exp TB",
-      "recommendationTier": "Lean",
-      "reason": "slot 6 carry | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+10.00 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".263 AVG | .763 OPS | 30 H | 2 HR | 8g: .300 AVG | .817 OPS | 6 H | 0 HR | vs RHP: .309 AVG | .879 OPS | 2 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.1 | +10.0 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 201,
+      "rank": 204,
       "id": "dodgers-brewers:660271:hits",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -7472,7 +7510,49 @@
       "playerSummary": ".273 AVG | .882 OPS | 48 H | 8 HR | 12g: .478 AVG | 1.456 OPS | 22 H | 2 HR | vs RHP: .266 AVG | .865 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 202,
+      "rank": 205,
+      "id": "tigers-orioles:624413:hits",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 4,
+      "propType": "hits",
+      "propLabel": "Hits",
+      "marketLabel": "Over 1.5 hits",
+      "lineThreshold": 1.5,
+      "confidence": 56,
+      "probability": 25.7,
+      "expectedValue": 1,
+      "statValueLabel": "0.98 exp hits",
+      "recommendationTier": "Lean",
+      "reason": "slot 4 carry | split fit live | clean traffic lane",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat"
+      ],
+      "matchupNote": "+7.91 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 206,
       "id": "dodgers-brewers:518692:hits",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -7511,7 +7591,7 @@
       "playerSummary": ".261 AVG | .786 OPS | 48 H | 6 HR | 10g: .211 AVG | .979 OPS | 8 H | 4 HR | vs RHP: .279 AVG | .830 OPS | 4 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 203,
+      "rank": 207,
       "id": "mariners-royals:677594:hits",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -7552,7 +7632,7 @@
       "playerSummary": ".261 AVG | .753 OPS | 54 H | 8 HR | 12g: .217 AVG | .671 OPS | 10 H | 2 HR | vs LHP: .315 AVG | 1.079 OPS | 6 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 204,
+      "rank": 208,
       "id": "dodgers-brewers:683734:hits",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -7591,7 +7671,7 @@
       "playerSummary": ".333 AVG | .960 OPS | 13 H | 1 HR | 8g: .364 AVG | .916 OPS | 8 H | 0 HR | vs LHP: .533 AVG | 1.400 OPS | 0 HR | arsenal 4-Seam Fastball 51% / Slider 33% / Curveball 6% | fit +2.8 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 205,
+      "rank": 209,
       "id": "mets-marlins:805300:walks",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -7630,7 +7710,7 @@
       "playerSummary": ".200 AVG | .634 OPS | 36 H | 3 HR | 12g: .444 AVG | 1.343 OPS | 16 H | 2 HR | vs RHP: .204 AVG | .611 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit -2.4 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 207,
+      "rank": 211,
       "id": "dodgers-brewers:660271:singles",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -7669,7 +7749,7 @@
       "playerSummary": ".273 AVG | .882 OPS | 48 H | 8 HR | 12g: .478 AVG | 1.456 OPS | 22 H | 2 HR | vs RHP: .266 AVG | .865 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 208,
+      "rank": 212,
       "id": "dodgers-brewers:518692:walks",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -7708,7 +7788,7 @@
       "playerSummary": ".261 AVG | .786 OPS | 48 H | 6 HR | 10g: .211 AVG | .979 OPS | 8 H | 4 HR | vs RHP: .279 AVG | .830 OPS | 4 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 209,
+      "rank": 213,
       "id": "dodgers-brewers:683734:totalBases",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -7747,7 +7827,7 @@
       "playerSummary": ".333 AVG | .960 OPS | 13 H | 1 HR | 8g: .364 AVG | .916 OPS | 8 H | 0 HR | vs LHP: .533 AVG | 1.400 OPS | 0 HR | arsenal 4-Seam Fastball 51% / Slider 33% / Curveball 6% | fit +2.8 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 210,
+      "rank": 214,
       "id": "rockies-diamondbacks:571448:singles",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -7790,7 +7870,7 @@
       "playerSummary": ".274 AVG | .823 OPS | 43 H | 7 HR | 12g: .263 AVG | 1.040 OPS | 10 H | 2 HR | vs RHP: .286 AVG | .842 OPS | 5 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +2.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 211,
+      "rank": 215,
       "id": "white-sox-giants:643217:singles",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -7828,7 +7908,7 @@
       "playerSummary": ".238 AVG | .667 OPS | 35 H | 3 HR | 12g: .389 AVG | 1.117 OPS | 14 H | 2 HR | vs RHP: .240 AVG | .698 OPS | 3 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit -0.2 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 212,
+      "rank": 216,
       "id": "rockies-diamondbacks:571448:walks",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -7871,7 +7951,7 @@
       "playerSummary": ".274 AVG | .823 OPS | 43 H | 7 HR | 12g: .263 AVG | 1.040 OPS | 10 H | 2 HR | vs RHP: .286 AVG | .842 OPS | 5 HR | arsenal 4-Seam Fastball 21% / Split-Finger 21% / Sinker 18% | fit +2.6 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 213,
+      "rank": 217,
       "id": "guardians-phillies:700932:walks",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -7911,7 +7991,7 @@
       "playerSummary": ".228 AVG | .690 OPS | 31 H | 5 HR | 10g: .353 AVG | 1.245 OPS | 12 H | 4 HR | vs LHP: .333 AVG | .840 OPS | 1 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit +1.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 214,
+      "rank": 218,
       "id": "mets-marlins:669364:walks",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -7950,7 +8030,7 @@
       "playerSummary": ".309 AVG | .862 OPS | 60 H | 6 HR | 14g: .333 AVG | .888 OPS | 20 H | 4 HR | vs RHP: .303 AVG | .822 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit +3.8 | +7.9 matchup grade in a craft lane"
     },
     {
-      "rank": 215,
+      "rank": 219,
       "id": "nationals-braves:642201:singles",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -7988,45 +8068,7 @@
       "playerSummary": ".242 AVG | .676 OPS | 15 H | 2 HR | 4g: .500 AVG | 1.667 OPS | 2 H | 0 HR | vs LHP: .281 AVG | .802 OPS | 1 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +2.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 217,
-      "id": "tigers-orioles:693307:singles",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 693307,
-      "playerName": "Dillon Dingler",
-      "teamName": "Tigers",
-      "teamNameFull": "Detroit Tigers",
-      "opponentName": "Orioles",
-      "opponentNameFull": "Baltimore Orioles",
-      "slot": 2,
-      "propType": "singles",
-      "propLabel": "Singles",
-      "marketLabel": "Over 0.5 singles",
-      "lineThreshold": 0.5,
-      "confidence": 56,
-      "probability": 17.3,
-      "expectedValue": 0.2,
-      "statValueLabel": "0.19 exp singles",
-      "recommendationTier": "Lean",
-      "reason": "slot 2 carry | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "bullpen-carry-bat",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+7.67 vs Keegan Akin",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".235 AVG | .768 OPS | 39 H | 9 HR | 14g: .240 AVG | .767 OPS | 12 H | 2 HR | vs LHP: .185 AVG | .649 OPS | 2 HR | arsenal 4-Seam Fastball 52% / Changeup 24% / Slider 24% | fit +8.4 | +7.7 matchup grade in a neutral lane"
-    },
-    {
-      "rank": 221,
+      "rank": 223,
       "id": "rangers-angels:677649:hits",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -8068,7 +8110,7 @@
       "playerSummary": ".286 AVG | .816 OPS | 38 H | 4 HR | 12g: .333 AVG | .889 OPS | 18 H | 2 HR | vs RHP: .283 AVG | .796 OPS | 3 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +3.0 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 222,
+      "rank": 224,
       "id": "twins-red-sox:680776:totalBases",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -8107,7 +8149,7 @@
       "playerSummary": ".191 AVG | .618 OPS | 34 H | 6 HR | 12g: .318 AVG | 1.266 OPS | 14 H | 4 HR | vs LHP: .211 AVG | .592 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -3.2 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 223,
+      "rank": 225,
       "id": "twins-red-sox:575929:hits",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -8147,7 +8189,7 @@
       "playerSummary": ".269 AVG | .869 OPS | 46 H | 10 HR | 12g: .375 AVG | 1.125 OPS | 18 H | 4 HR | vs LHP: .311 AVG | 1.093 OPS | 4 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -0.0 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 224,
+      "rank": 226,
       "id": "guardians-phillies:547180:hits",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -8186,7 +8228,7 @@
       "playerSummary": ".266 AVG | .884 OPS | 49 H | 12 HR | 12g: .273 AVG | .892 OPS | 12 H | 4 HR | vs RHP: .293 AVG | .992 OPS | 9 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +3.2 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 225,
+      "rank": 227,
       "id": "rays-yankees:691406:hits",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -8226,7 +8268,7 @@
       "playerSummary": ".267 AVG | .861 OPS | 50 H | 13 HR | 12g: .364 AVG | 1.209 OPS | 16 H | 4 HR | vs RHP: .266 AVG | .851 OPS | 10 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit +0.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 226,
+      "rank": 228,
       "id": "mets-marlins:669065:totalBases",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -8266,7 +8308,48 @@
       "playerSummary": ".221 AVG | .675 OPS | 23 H | 3 HR | 12g: .273 AVG | .951 OPS | 12 H | 4 HR | vs RHP: .218 AVG | .694 OPS | 3 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit -1.4 | +8.4 matchup grade in a craft lane"
     },
     {
-      "rank": 227,
+      "rank": 229,
+      "id": "tigers-orioles:621493:totalBases",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 1,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 55,
+      "probability": 28.6,
+      "expectedValue": 1.1,
+      "statValueLabel": "1.06 exp TB",
+      "recommendationTier": "Lean",
+      "reason": "slot 1 carry | recent form up",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane"
+      ],
+      "matchupNote": "+6.11 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".256 AVG | .783 OPS | 46 H | 2 HR | 12g: .208 AVG | .720 OPS | 10 H | 2 HR | vs RHP: .254 AVG | .763 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.2 | +6.1 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 230,
       "id": "twins-red-sox:643396:hits",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -8304,8 +8387,8 @@
       "playerSummary": ".255 AVG | .590 OPS | 12 H | 0 HR | 8g: .571 AVG | 1.339 OPS | 8 H | 0 HR | vs LHP: .182 AVG | .399 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -1.6 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 228,
-      "id": "tigers-orioles:624413:hits",
+      "rank": 231,
+      "id": "tigers-orioles:621493:hits",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
       "start": "4:15 PM PT",
@@ -8314,39 +8397,38 @@
       "homeTeam": "Orioles",
       "awayTeamFull": "Detroit Tigers",
       "homeTeamFull": "Baltimore Orioles",
-      "playerId": 624413,
-      "playerName": "Pete Alonso",
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
       "teamName": "Orioles",
       "teamNameFull": "Baltimore Orioles",
       "opponentName": "Tigers",
       "opponentNameFull": "Detroit Tigers",
-      "slot": 4,
+      "slot": 1,
       "propType": "hits",
       "propLabel": "Hits",
       "marketLabel": "Over 1.5 hits",
       "lineThreshold": 1.5,
       "confidence": 55,
-      "probability": 24.8,
+      "probability": 25.5,
       "expectedValue": 1,
-      "statValueLabel": "0.95 exp hits",
+      "statValueLabel": "0.98 exp hits",
       "recommendationTier": "Lean",
-      "reason": "slot 4 carry | split fit live | clean traffic lane",
+      "reason": "slot 1 carry | recent form up | clean traffic lane",
       "scriptTags": [
         "posted-lineup",
         "top-third-pressure",
         "middle-order-traffic",
         "run-ceiling-live",
         "traffic-lane-live",
-        "clean-conversion-lane",
-        "bullpen-carry-bat"
+        "clean-conversion-lane"
       ],
-      "matchupNote": "+7.91 vs Jack Flaherty",
+      "matchupNote": "+6.11 vs Jack Flaherty",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
+      "playerSummary": ".256 AVG | .783 OPS | 46 H | 2 HR | 12g: .208 AVG | .720 OPS | 10 H | 2 HR | vs RHP: .254 AVG | .763 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.2 | +6.1 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 229,
+      "rank": 232,
       "id": "guardians-phillies:677587:hits",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -8386,7 +8468,7 @@
       "playerSummary": ".291 AVG | .794 OPS | 48 H | 4 HR | 14g: .400 AVG | 1.288 OPS | 16 H | 2 HR | vs LHP: .269 AVG | .831 OPS | 2 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit -1.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 230,
+      "rank": 233,
       "id": "nationals-braves:660670:walks",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -8424,7 +8506,7 @@
       "playerSummary": ".254 AVG | .738 OPS | 36 H | 2 HR | 6g: .364 AVG | .916 OPS | 8 H | 0 HR | vs LHP: .196 AVG | .606 OPS | 0 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit -1.8 | +4.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 231,
+      "rank": 234,
       "id": "guardians-phillies:656941:hits",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -8462,7 +8544,7 @@
       "playerSummary": ".225 AVG | .960 OPS | 41 H | 20 HR | 6g: .286 AVG | 1.161 OPS | 8 H | 4 HR | vs RHP: .217 AVG | .960 OPS | 14 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +1.6 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 232,
+      "rank": 235,
       "id": "twins-red-sox:643396:totalBases",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -8500,7 +8582,7 @@
       "playerSummary": ".255 AVG | .590 OPS | 12 H | 0 HR | 8g: .571 AVG | 1.339 OPS | 8 H | 0 HR | vs LHP: .182 AVG | .399 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -1.6 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 233,
+      "rank": 236,
       "id": "dodgers-brewers:606192:rbi",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -8538,7 +8620,7 @@
       "playerSummary": ".265 AVG | .759 OPS | 44 H | 6 HR | 12g: .286 AVG | .979 OPS | 12 H | 4 HR | vs RHP: .271 AVG | .764 OPS | 6 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit -1.1 | +5.1 matchup grade in a power-arm lane"
     },
     {
-      "rank": 234,
+      "rank": 237,
       "id": "athletics-padres:687515:totalBases",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -8578,7 +8660,7 @@
       "playerSummary": ".324 AVG | .832 OPS | 11 H | 1 HR | 8g: .250 AVG | .750 OPS | 2 H | 0 HR | vs RHP: .167 AVG | .333 OPS | 0 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.6 | +6.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 235,
+      "rank": 238,
       "id": "rockies-diamondbacks:671289:singles",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -8616,7 +8698,7 @@
       "playerSummary": ".257 AVG | .667 OPS | 26 H | 2 HR | 6g: .400 AVG | .855 OPS | 8 H | 0 HR | vs RHP: .282 AVG | .664 OPS | 0 HR | arsenal Slurve 33% / 4-Seam Fastball 33% / Cutter 12% | fit -0.1 | +6.4 matchup grade in a neutral lane"
     },
     {
-      "rank": 236,
+      "rank": 239,
       "id": "rays-yankees:680700:walks",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -8654,7 +8736,7 @@
       "playerSummary": ".271 AVG | .730 OPS | 23 H | 1 HR | 12g: .400 AVG | .978 OPS | 16 H | 0 HR | vs RHP: .267 AVG | .738 OPS | 1 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit -4.2 | +7.1 matchup grade in a neutral lane"
     },
     {
-      "rank": 237,
+      "rank": 240,
       "id": "twins-red-sox:680776:hits",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -8693,7 +8775,7 @@
       "playerSummary": ".191 AVG | .618 OPS | 34 H | 6 HR | 12g: .318 AVG | 1.266 OPS | 14 H | 4 HR | vs LHP: .211 AVG | .592 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -3.2 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 238,
+      "rank": 241,
       "id": "mets-marlins:805300:hits",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -8732,7 +8814,7 @@
       "playerSummary": ".200 AVG | .634 OPS | 36 H | 3 HR | 12g: .444 AVG | 1.343 OPS | 16 H | 2 HR | vs RHP: .204 AVG | .611 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit -2.4 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 239,
+      "rank": 242,
       "id": "twins-red-sox:680776:rbi",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -8772,7 +8854,7 @@
       "playerSummary": ".191 AVG | .618 OPS | 34 H | 6 HR | 12g: .318 AVG | 1.266 OPS | 14 H | 4 HR | vs LHP: .211 AVG | .592 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -3.2 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 240,
+      "rank": 243,
       "id": "twins-red-sox:575929:singles",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -8812,7 +8894,48 @@
       "playerSummary": ".269 AVG | .869 OPS | 46 H | 10 HR | 12g: .375 AVG | 1.125 OPS | 18 H | 4 HR | vs LHP: .311 AVG | 1.093 OPS | 4 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -0.0 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 241,
+      "rank": 244,
+      "id": "tigers-orioles:621493:singles",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 1,
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
+      "lineThreshold": 0.5,
+      "confidence": 55,
+      "probability": 46.8,
+      "expectedValue": 0.6,
+      "statValueLabel": "0.63 exp singles",
+      "recommendationTier": "Lean",
+      "reason": "slot 1 carry | recent form up | clean traffic lane",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane"
+      ],
+      "matchupNote": "+6.11 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".256 AVG | .783 OPS | 46 H | 2 HR | 12g: .208 AVG | .720 OPS | 10 H | 2 HR | vs RHP: .254 AVG | .763 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.2 | +6.1 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 245,
       "id": "mariners-royals:677594:singles",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -8853,7 +8976,7 @@
       "playerSummary": ".261 AVG | .753 OPS | 54 H | 8 HR | 12g: .217 AVG | .671 OPS | 10 H | 2 HR | vs LHP: .315 AVG | 1.079 OPS | 6 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 242,
+      "rank": 246,
       "id": "guardians-phillies:677587:walks",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -8893,7 +9016,49 @@
       "playerSummary": ".291 AVG | .794 OPS | 48 H | 4 HR | 14g: .400 AVG | 1.288 OPS | 16 H | 2 HR | vs LHP: .269 AVG | .831 OPS | 2 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit -1.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 245,
+      "rank": 249,
+      "id": "tigers-orioles:624413:singles",
+      "gameId": "tigers-orioles",
+      "gameTitle": "Tigers @ Orioles",
+      "start": "4:15 PM PT",
+      "stage": "Friday prime board",
+      "awayTeam": "Tigers",
+      "homeTeam": "Orioles",
+      "awayTeamFull": "Detroit Tigers",
+      "homeTeamFull": "Baltimore Orioles",
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "teamName": "Orioles",
+      "teamNameFull": "Baltimore Orioles",
+      "opponentName": "Tigers",
+      "opponentNameFull": "Detroit Tigers",
+      "slot": 4,
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
+      "lineThreshold": 0.5,
+      "confidence": 55,
+      "probability": 37.9,
+      "expectedValue": 0.5,
+      "statValueLabel": "0.48 exp singles",
+      "recommendationTier": "Lean",
+      "reason": "slot 4 carry | split fit live | clean traffic lane",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat"
+      ],
+      "matchupNote": "+7.91 vs Jack Flaherty",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
+    },
+    {
+      "rank": 250,
       "id": "athletics-padres:687515:hits",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -8933,7 +9098,7 @@
       "playerSummary": ".324 AVG | .832 OPS | 11 H | 1 HR | 8g: .250 AVG | .750 OPS | 2 H | 0 HR | vs RHP: .167 AVG | .333 OPS | 0 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.6 | +6.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 246,
+      "rank": 251,
       "id": "tigers-orioles:624413:walks",
       "gameId": "tigers-orioles",
       "gameTitle": "Tigers @ Orioles",
@@ -8955,7 +9120,7 @@
       "marketLabel": "Over 0.5 walks",
       "lineThreshold": 0.5,
       "confidence": 55,
-      "probability": 35.4,
+      "probability": 35.6,
       "expectedValue": 0.4,
       "statValueLabel": "0.44 exp walks",
       "recommendationTier": "Lean",
@@ -8976,7 +9141,7 @@
       "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 247,
+      "rank": 252,
       "id": "dodgers-brewers:518692:singles",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -9015,7 +9180,7 @@
       "playerSummary": ".261 AVG | .786 OPS | 48 H | 6 HR | 10g: .211 AVG | .979 OPS | 8 H | 4 HR | vs RHP: .279 AVG | .830 OPS | 4 HR | arsenal 4-Seam Fastball 45% / Changeup 31% / Cutter 20% | fit +0.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 248,
+      "rank": 253,
       "id": "dodgers-brewers:683734:rbi",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -9055,7 +9220,7 @@
       "playerSummary": ".333 AVG | .960 OPS | 13 H | 1 HR | 8g: .364 AVG | .916 OPS | 8 H | 0 HR | vs LHP: .533 AVG | 1.400 OPS | 0 HR | arsenal 4-Seam Fastball 51% / Slider 33% / Curveball 6% | fit +2.8 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 249,
+      "rank": 254,
       "id": "dodgers-brewers:683734:walks",
       "gameId": "dodgers-brewers",
       "gameTitle": "Dodgers @ Brewers",
@@ -9094,7 +9259,7 @@
       "playerSummary": ".333 AVG | .960 OPS | 13 H | 1 HR | 8g: .364 AVG | .916 OPS | 8 H | 0 HR | vs LHP: .533 AVG | 1.400 OPS | 0 HR | arsenal 4-Seam Fastball 51% / Slider 33% / Curveball 6% | fit +2.8 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 250,
+      "rank": 255,
       "id": "rangers-angels:669394:walks",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -9136,7 +9301,7 @@
       "playerSummary": ".245 AVG | .728 OPS | 45 H | 9 HR | 12g: .364 AVG | 1.189 OPS | 16 H | 4 HR | vs RHP: .248 AVG | .734 OPS | 7 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +1.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 251,
+      "rank": 256,
       "id": "athletics-padres:687515:rbi",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -9177,7 +9342,7 @@
       "playerSummary": ".324 AVG | .832 OPS | 11 H | 1 HR | 8g: .250 AVG | .750 OPS | 2 H | 0 HR | vs RHP: .167 AVG | .333 OPS | 0 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.6 | +6.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 252,
+      "rank": 257,
       "id": "guardians-phillies:664761:walks",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -9215,7 +9380,7 @@
       "playerSummary": ".216 AVG | .620 OPS | 37 H | 5 HR | 12g: .375 AVG | 1.173 OPS | 18 H | 4 HR | vs RHP: .202 AVG | .526 OPS | 1 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit -3.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 253,
+      "rank": 258,
       "id": "mariners-royals:677594:walks",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -9256,7 +9421,7 @@
       "playerSummary": ".261 AVG | .753 OPS | 54 H | 8 HR | 12g: .217 AVG | .671 OPS | 10 H | 2 HR | vs LHP: .315 AVG | 1.079 OPS | 6 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 254,
+      "rank": 259,
       "id": "athletics-padres:687515:singles",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",
@@ -9296,7 +9461,7 @@
       "playerSummary": ".324 AVG | .832 OPS | 11 H | 1 HR | 8g: .250 AVG | .750 OPS | 2 H | 0 HR | vs RHP: .167 AVG | .333 OPS | 0 HR | arsenal Cutter 24% / 4-Seam Fastball 19% / Sinker 16% | fit +6.6 | +6.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 257,
+      "rank": 261,
       "id": "nationals-braves:642201:walks",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -9335,7 +9500,7 @@
       "playerSummary": ".242 AVG | .676 OPS | 15 H | 2 HR | 4g: .500 AVG | 1.667 OPS | 2 H | 0 HR | vs LHP: .281 AVG | .802 OPS | 1 HR | arsenal Sweeper 44% / Sinker 29% / 4-Seam Fastball 20% | fit +2.3 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 260,
+      "rank": 264,
       "id": "white-sox-giants:669477:walks",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -9374,7 +9539,7 @@
       "playerSummary": ".286 AVG | .845 OPS | 46 H | 9 HR | 12g: .391 AVG | 1.174 OPS | 18 H | 6 HR | vs RHP: .254 AVG | .833 OPS | 8 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit +0.4 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 261,
+      "rank": 265,
       "id": "astros-cubs:669397:hits",
       "gameId": "astros-cubs",
       "gameTitle": "Astros @ Cubs",
@@ -9411,7 +9576,7 @@
       "playerSummary": ".235 AVG | .562 OPS | 8 H | 0 HR | 8g: .500 AVG | 1.167 OPS | 2 H | 0 HR | vs RHP: .250 AVG | .598 OPS | 0 HR | arsenal 4-Seam Fastball 29% / Cutter 21% / Sweeper 15% | fit +1.1 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 262,
+      "rank": 266,
       "id": "rays-yankees:668723:hits",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -9451,7 +9616,7 @@
       "playerSummary": ".306 AVG | .859 OPS | 19 H | 2 HR | 4g: .600 AVG | 1.667 OPS | 6 H | 0 HR | vs RHP: .222 AVG | .737 OPS | 1 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit -3.7 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 263,
+      "rank": 267,
       "id": "rays-yankees:665862:totalBases",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -9489,7 +9654,7 @@
       "playerSummary": ".245 AVG | .706 OPS | 45 H | 5 HR | 14g: .444 AVG | 1.146 OPS | 24 H | 2 HR | vs RHP: .244 AVG | .729 OPS | 4 HR | arsenal Sinker 30% / Changeup 29% / Cutter 19% | fit -2.8 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 264,
+      "rank": 268,
       "id": "nationals-braves:682928:totalBases",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -9528,7 +9693,7 @@
       "playerSummary": ".299 AVG | .947 OPS | 56 H | 11 HR | 14g: .321 AVG | .930 OPS | 18 H | 2 HR | vs RHP: .294 AVG | 1.008 OPS | 10 HR | arsenal Slider 29% / Sinker 25% / 4-Seam Fastball 24% | fit +2.6 | +8.4 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 265,
+      "rank": 269,
       "id": "pirates-blue-jays:664040:hits",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -9567,48 +9732,7 @@
       "playerSummary": ".263 AVG | .916 OPS | 46 H | 13 HR | 12g: .308 AVG | 1.064 OPS | 16 H | 6 HR | vs RHP: .290 AVG | 1.030 OPS | 10 HR | arsenal 4-Seam Fastball 53% / Split-Finger 39% / Slider 8% | fit -0.3 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 266,
-      "id": "tigers-orioles:621493:hits",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 621493,
-      "playerName": "Taylor Ward",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 1,
-      "propType": "hits",
-      "propLabel": "Hits",
-      "marketLabel": "Over 1.5 hits",
-      "lineThreshold": 1.5,
-      "confidence": 54,
-      "probability": 24.5,
-      "expectedValue": 0.9,
-      "statValueLabel": "0.95 exp hits",
-      "recommendationTier": "Lean",
-      "reason": "slot 1 carry | recent form up | clean traffic lane",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane"
-      ],
-      "matchupNote": "+6.11 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".256 AVG | .783 OPS | 46 H | 2 HR | 12g: .208 AVG | .720 OPS | 10 H | 2 HR | vs RHP: .254 AVG | .763 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.2 | +6.1 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 267,
+      "rank": 270,
       "id": "guardians-phillies:700932:hits",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -9648,7 +9772,7 @@
       "playerSummary": ".228 AVG | .690 OPS | 31 H | 5 HR | 10g: .353 AVG | 1.245 OPS | 12 H | 4 HR | vs LHP: .333 AVG | .840 OPS | 1 HR | arsenal Sinker 43% / Changeup 37% / Slider 19% | fit +1.0 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 268,
+      "rank": 271,
       "id": "rays-yankees:656775:totalBases",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -9687,7 +9811,7 @@
       "playerSummary": ".189 AVG | .532 OPS | 28 H | 3 HR | 10g: .412 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .175 AVG | .523 OPS | 3 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit -4.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 269,
+      "rank": 272,
       "id": "mets-marlins:805300:totalBases",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -9726,7 +9850,7 @@
       "playerSummary": ".200 AVG | .634 OPS | 36 H | 3 HR | 12g: .444 AVG | 1.343 OPS | 16 H | 2 HR | vs RHP: .204 AVG | .611 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit -2.4 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 270,
+      "rank": 273,
       "id": "mariners-royals:641487:rbi",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -9768,7 +9892,7 @@
       "playerSummary": ".204 AVG | .704 OPS | 30 H | 6 HR | 10g: .154 AVG | .697 OPS | 4 H | 2 HR | vs LHP: .159 AVG | .555 OPS | 1 HR | arsenal 4-Seam Fastball 32% / Changeup 21% / Cutter 19% | fit +3.6 | +2.5 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 271,
+      "rank": 274,
       "id": "rays-yankees:656775:hits",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -9807,7 +9931,7 @@
       "playerSummary": ".189 AVG | .532 OPS | 28 H | 3 HR | 10g: .412 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .175 AVG | .523 OPS | 3 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit -4.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 272,
+      "rank": 275,
       "id": "rays-yankees:665862:hits",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -9845,7 +9969,7 @@
       "playerSummary": ".245 AVG | .706 OPS | 45 H | 5 HR | 14g: .444 AVG | 1.146 OPS | 24 H | 2 HR | vs RHP: .244 AVG | .729 OPS | 4 HR | arsenal Sinker 30% / Changeup 29% / Cutter 19% | fit -2.8 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 273,
+      "rank": 276,
       "id": "twins-red-sox:678882:rbi",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -9885,7 +10009,7 @@
       "playerSummary": ".280 AVG | .777 OPS | 45 H | 4 HR | 12g: .368 AVG | 1.008 OPS | 14 H | 0 HR | vs LHP: .333 AVG | .971 OPS | 1 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -2.3 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 274,
+      "rank": 277,
       "id": "nationals-braves:695578:rbi",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -9923,7 +10047,7 @@
       "playerSummary": ".254 AVG | .908 OPS | 51 H | 13 HR | 14g: .367 AVG | 1.008 OPS | 22 H | 2 HR | vs RHP: .276 AVG | .968 OPS | 10 HR | arsenal Slider 29% / Sinker 25% / 4-Seam Fastball 24% | fit +1.8 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 275,
+      "rank": 278,
       "id": "mariners-royals:521692:rbi",
       "gameId": "mariners-royals",
       "gameTitle": "Mariners @ Royals",
@@ -9962,7 +10086,7 @@
       "playerSummary": ".206 AVG | .613 OPS | 39 H | 8 HR | 12g: .300 AVG | 1.000 OPS | 12 H | 4 HR | vs RHP: .190 AVG | .537 OPS | 5 HR | arsenal 4-Seam Fastball 32% / Slider 22% / Split-Finger 15% | fit -0.3 | +7.5 matchup grade in a in-zone lane"
     },
     {
-      "rank": 276,
+      "rank": 279,
       "id": "white-sox-giants:678246:hits",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -10000,7 +10124,7 @@
       "playerSummary": ".237 AVG | .848 OPS | 41 H | 11 HR | 12g: .211 AVG | .950 OPS | 8 H | 4 HR | vs RHP: .198 AVG | .695 OPS | 5 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit +2.0 | +4.8 matchup grade in a in-zone lane"
     },
     {
-      "rank": 277,
+      "rank": 280,
       "id": "guardians-phillies:547180:singles",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -10039,7 +10163,7 @@
       "playerSummary": ".266 AVG | .884 OPS | 49 H | 12 HR | 12g: .273 AVG | .892 OPS | 12 H | 4 HR | vs RHP: .293 AVG | .992 OPS | 9 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +3.2 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 278,
+      "rank": 281,
       "id": "rays-yankees:691406:singles",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -10079,7 +10203,7 @@
       "playerSummary": ".267 AVG | .861 OPS | 50 H | 13 HR | 12g: .364 AVG | 1.209 OPS | 16 H | 4 HR | vs RHP: .266 AVG | .851 OPS | 10 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit +0.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 279,
+      "rank": 282,
       "id": "rays-yankees:656775:rbi",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",
@@ -10118,7 +10242,7 @@
       "playerSummary": ".189 AVG | .532 OPS | 28 H | 3 HR | 10g: .412 AVG | 1.088 OPS | 14 H | 2 HR | vs RHP: .175 AVG | .523 OPS | 3 HR | arsenal 4-Seam Fastball 51% / Sinker 15% / Slider 14% | fit -4.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 280,
+      "rank": 283,
       "id": "mets-marlins:805300:rbi",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -10158,7 +10282,7 @@
       "playerSummary": ".200 AVG | .634 OPS | 36 H | 3 HR | 12g: .444 AVG | 1.343 OPS | 16 H | 2 HR | vs RHP: .204 AVG | .611 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit -2.4 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 281,
+      "rank": 284,
       "id": "twins-red-sox:680776:walks",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -10197,7 +10321,7 @@
       "playerSummary": ".191 AVG | .618 OPS | 34 H | 6 HR | 12g: .318 AVG | 1.266 OPS | 14 H | 4 HR | vs LHP: .211 AVG | .592 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -3.2 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 282,
+      "rank": 285,
       "id": "twins-red-sox:643396:rbi",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -10235,7 +10359,7 @@
       "playerSummary": ".255 AVG | .590 OPS | 12 H | 0 HR | 8g: .571 AVG | 1.339 OPS | 8 H | 0 HR | vs LHP: .182 AVG | .399 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -1.6 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 283,
+      "rank": 286,
       "id": "nationals-braves:695578:walks",
       "gameId": "nationals-braves",
       "gameTitle": "Nationals @ Braves",
@@ -10272,49 +10396,7 @@
       "playerSummary": ".254 AVG | .908 OPS | 51 H | 13 HR | 14g: .367 AVG | 1.008 OPS | 22 H | 2 HR | vs RHP: .276 AVG | .968 OPS | 10 HR | arsenal Slider 29% / Sinker 25% / 4-Seam Fastball 24% | fit +1.8 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 284,
-      "id": "tigers-orioles:624413:singles",
-      "gameId": "tigers-orioles",
-      "gameTitle": "Tigers @ Orioles",
-      "start": "4:15 PM PT",
-      "stage": "Friday prime board",
-      "awayTeam": "Tigers",
-      "homeTeam": "Orioles",
-      "awayTeamFull": "Detroit Tigers",
-      "homeTeamFull": "Baltimore Orioles",
-      "playerId": 624413,
-      "playerName": "Pete Alonso",
-      "teamName": "Orioles",
-      "teamNameFull": "Baltimore Orioles",
-      "opponentName": "Tigers",
-      "opponentNameFull": "Detroit Tigers",
-      "slot": 4,
-      "propType": "singles",
-      "propLabel": "Singles",
-      "marketLabel": "Over 0.5 singles",
-      "lineThreshold": 0.5,
-      "confidence": 54,
-      "probability": 37.1,
-      "expectedValue": 0.5,
-      "statValueLabel": "0.46 exp singles",
-      "recommendationTier": "Lean",
-      "reason": "slot 4 carry | split fit live | clean traffic lane",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "run-ceiling-live",
-        "traffic-lane-live",
-        "clean-conversion-lane",
-        "bullpen-carry-bat"
-      ],
-      "matchupNote": "+7.91 vs Jack Flaherty",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".229 AVG | .760 OPS | 44 H | 10 HR | 12g: .292 AVG | .808 OPS | 14 H | 2 HR | vs RHP: .230 AVG | .795 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.8 | +7.9 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 285,
+      "rank": 287,
       "id": "mets-marlins:805300:singles",
       "gameId": "mets-marlins",
       "gameTitle": "Mets @ Marlins",
@@ -10353,7 +10435,7 @@
       "playerSummary": ".200 AVG | .634 OPS | 36 H | 3 HR | 12g: .444 AVG | 1.343 OPS | 16 H | 2 HR | vs RHP: .204 AVG | .611 OPS | 2 HR | arsenal 4-Seam Fastball 51% / Split-Finger 22% / Slider 17% | fit -2.4 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 286,
+      "rank": 288,
       "id": "twins-red-sox:575929:walks",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -10393,7 +10475,7 @@
       "playerSummary": ".269 AVG | .869 OPS | 46 H | 10 HR | 12g: .375 AVG | 1.125 OPS | 18 H | 4 HR | vs LHP: .311 AVG | 1.093 OPS | 4 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -0.0 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 287,
+      "rank": 289,
       "id": "pirates-blue-jays:664040:singles",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -10432,7 +10514,7 @@
       "playerSummary": ".263 AVG | .916 OPS | 46 H | 13 HR | 12g: .308 AVG | 1.064 OPS | 16 H | 6 HR | vs RHP: .290 AVG | 1.030 OPS | 10 HR | arsenal 4-Seam Fastball 53% / Split-Finger 39% / Slider 8% | fit -0.3 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 288,
+      "rank": 290,
       "id": "twins-red-sox:680776:singles",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -10471,7 +10553,7 @@
       "playerSummary": ".191 AVG | .618 OPS | 34 H | 6 HR | 12g: .318 AVG | 1.266 OPS | 14 H | 4 HR | vs LHP: .211 AVG | .592 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -3.2 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 289,
+      "rank": 291,
       "id": "twins-red-sox:643396:walks",
       "gameId": "twins-red-sox",
       "gameTitle": "Twins @ Red Sox",
@@ -10509,7 +10591,7 @@
       "playerSummary": ".255 AVG | .590 OPS | 12 H | 0 HR | 8g: .571 AVG | 1.339 OPS | 8 H | 0 HR | vs LHP: .182 AVG | .399 OPS | 0 HR | arsenal Slider 35% / 4-Seam Fastball 31% / Curveball 15% | fit -1.6 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 291,
+      "rank": 293,
       "id": "white-sox-giants:643217:walks",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -10547,7 +10629,7 @@
       "playerSummary": ".238 AVG | .667 OPS | 35 H | 3 HR | 12g: .389 AVG | 1.117 OPS | 14 H | 2 HR | vs RHP: .240 AVG | .698 OPS | 3 HR | arsenal Sinker 60% / Slider 28% / Changeup 12% | fit -0.2 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 292,
+      "rank": 294,
       "id": "white-sox-giants:650333:walks",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -10585,7 +10667,7 @@
       "playerSummary": ".321 AVG | .780 OPS | 61 H | 2 HR | 12g: .435 AVG | 1.264 OPS | 20 H | 4 HR | vs RHP: .331 AVG | .790 OPS | 1 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -3.5 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 293,
+      "rank": 295,
       "id": "guardians-phillies:656941:singles",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -10623,7 +10705,7 @@
       "playerSummary": ".225 AVG | .960 OPS | 41 H | 20 HR | 6g: .286 AVG | 1.161 OPS | 8 H | 4 HR | vs RHP: .217 AVG | .960 OPS | 14 HR | arsenal 4-Seam Fastball 27% / Sweeper 27% / Curveball 22% | fit +1.6 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 296,
+      "rank": 298,
       "id": "rangers-angels:679822:walks",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -10666,7 +10748,7 @@
       "playerSummary": ".351 AVG | .985 OPS | 13 H | 2 HR | 12g: .391 AVG | 1.075 OPS | 18 H | 2 HR | vs RHP: .259 AVG | .707 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 22% / Changeup 15% | fit +6.5 | +7.2 matchup grade in a neutral lane"
     },
     {
-      "rank": 299,
+      "rank": 301,
       "id": "white-sox-giants:642715:walks",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -10704,7 +10786,7 @@
       "playerSummary": ".234 AVG | .648 OPS | 47 H | 5 HR | 12g: .364 AVG | 1.144 OPS | 16 H | 4 HR | vs RHP: .265 AVG | .741 OPS | 5 HR | arsenal 4-Seam Fastball 26% / Changeup 17% / Sinker 16% | fit -4.9 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 301,
+      "rank": 303,
       "id": "athletics-padres:687515:walks",
       "gameId": "athletics-padres",
       "gameTitle": "Athletics @ Padres",

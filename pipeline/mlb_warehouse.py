@@ -777,6 +777,58 @@ CREATE TABLE IF NOT EXISTS mlb_team_form_carryover_profiles (
   PRIMARY KEY (as_of_date, team_name, window_games)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_team_state_snapshots (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  scheduled_series_game_number INTEGER,
+  division_matchup_flag INTEGER,
+  games_sample INTEGER NOT NULL,
+  previous_result TEXT,
+  streak_direction TEXT,
+  streak_length INTEGER,
+  win_pct_last3 REAL,
+  win_pct_last5 REAL,
+  run_diff_last3 REAL,
+  run_diff_last5 REAL,
+  close_loss_count_last5 INTEGER,
+  blowout_win_count_last5 INTEGER,
+  blowout_loss_count_last5 INTEGER,
+  comeback_win_count_last5 INTEGER,
+  bullpen_flip_loss_count_last5 INTEGER,
+  quiet_first5_count_last5 INTEGER,
+  first_inning_jolt_count_last5 INTEGER,
+  opponent_win_pct_last5 REAL,
+  snapback_pressure_index REAL,
+  heat_regression_index REAL,
+  form_pressure_index REAL,
+  PRIMARY KEY (as_of_date, team_name)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_hitter_state_snapshots (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  games_sample INTEGER NOT NULL,
+  days_since_last_game INTEGER,
+  batting_order_avg_last5 REAL,
+  hit_streak_games INTEGER,
+  hitless_streak_games INTEGER,
+  multi_hit_games_last5 INTEGER,
+  multi_tb_games_last5 INTEGER,
+  home_run_streak_games INTEGER,
+  hits_per_pa_last5 REAL,
+  total_bases_per_pa_last5 REAL,
+  strikeout_rate_last5 REAL,
+  walk_rate_last5 REAL,
+  whiff_rate_last5 REAL,
+  pressure_plate_index REAL,
+  cold_streak_index REAL,
+  heat_regression_index REAL,
+  PRIMARY KEY (as_of_date, player_id)
+);
+
 CREATE TABLE IF NOT EXISTS park_factor_snapshots (
   snapshot_date TEXT NOT NULL,
   team_name TEXT NOT NULL,
@@ -3755,6 +3807,309 @@ def build_form_carryover_row(
     }
 
 
+def build_team_schedule_context(conn: sqlite3.Connection, as_of_date: str, team_name: str) -> dict[str, Any]:
+    row = conn.execute(
+        """
+        SELECT
+          g.away_team,
+          g.home_team,
+          sx.series_game_number
+        FROM mlb_games g
+        LEFT JOIN mlb_series_context_snapshots sx
+          ON sx.game_pk = g.game_pk
+         AND sx.as_of_date = g.game_date
+        WHERE g.game_date = ?
+          AND (g.away_team = ? OR g.home_team = ?)
+        ORDER BY g.game_pk
+        LIMIT 1
+        """,
+        (as_of_date, team_name, team_name),
+    ).fetchone()
+
+    if not row:
+        return {
+            "scheduled_opponent": None,
+            "scheduled_series_game_number": None,
+            "division_matchup_flag": 0,
+        }
+
+    opponent = row["home_team"] if row["away_team"] == team_name else row["away_team"]
+    return {
+        "scheduled_opponent": opponent,
+        "scheduled_series_game_number": to_int(row["series_game_number"]),
+        "division_matchup_flag": 1 if TEAM_DIVISIONS.get(opponent) == TEAM_DIVISIONS.get(team_name) else 0,
+    }
+
+
+def build_recent_team_state_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    packets: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    schedule_context = build_team_schedule_context(conn, as_of_date, team_name)
+    last3 = packets[:3]
+    last5 = packets[:5]
+    previous_packet = packets[0]
+    previous_result = "win" if previous_packet["won_flag"] else "loss"
+    streak_direction = "W" if previous_packet["won_flag"] else "L"
+    streak_length = 0
+    for packet in packets:
+        if packet["won_flag"] == previous_packet["won_flag"]:
+            streak_length += 1
+        else:
+            break
+
+    opponent_records = []
+    for packet in last5:
+        opponent_record = conn.execute(
+            """
+            SELECT
+              AVG(CASE
+                WHEN winner_team = ? THEN 1.0
+                WHEN loser_team = ? THEN 0.0
+                ELSE NULL
+              END) AS opp_win_pct
+            FROM mlb_game_story_signals
+            WHERE game_date < ?
+              AND (winner_team = ? OR loser_team = ?)
+            """,
+            (
+                packet["opponent_team"],
+                packet["opponent_team"],
+                packet["game_date"],
+                packet["opponent_team"],
+                packet["opponent_team"],
+            ),
+        ).fetchone()
+        opponent_records.append(to_float(opponent_record["opp_win_pct"]) if opponent_record else None)
+
+    win_pct_last3 = safe_mean([packet["won_flag"] for packet in last3])
+    win_pct_last5 = safe_mean([packet["won_flag"] for packet in last5])
+    run_diff_last3 = safe_mean([packet["run_diff"] for packet in last3])
+    run_diff_last5 = safe_mean([packet["run_diff"] for packet in last5])
+    close_loss_count_last5 = sum(1 for packet in last5 if not packet["won_flag"] and (packet["run_diff"] or 0) >= -2)
+    blowout_win_count_last5 = sum(1 for packet in last5 if packet["won_flag"] and (packet["run_diff"] or 0) >= 5)
+    blowout_loss_count_last5 = sum(1 for packet in last5 if not packet["won_flag"] and (packet["run_diff"] or 0) <= -5)
+    comeback_win_count_last5 = sum(packet["comeback_win_flag"] for packet in last5)
+    bullpen_flip_loss_count_last5 = sum(packet["bullpen_flip_flag"] for packet in last5 if not packet["won_flag"])
+    quiet_first5_count_last5 = sum(packet.get("quiet_first5_flag", 0) or 0 for packet in last5)
+    first_inning_jolt_count_last5 = sum(packet.get("first_inning_jolt_flag", 0) or 0 for packet in last5)
+    opponent_win_pct_last5 = safe_mean([value for value in opponent_records if value is not None]) if any(
+        value is not None for value in opponent_records
+    ) else None
+
+    snapback_pressure_index = clamp_value(
+        14
+        + (streak_length * 10 if streak_direction == "L" else 0)
+        + close_loss_count_last5 * 4
+        + blowout_loss_count_last5 * 3
+        + (6 if previous_result == "loss" else 0)
+        + max(0.0, 0.48 - win_pct_last5) * 48
+        + (schedule_context["scheduled_series_game_number"] == 2) * 5,
+        0,
+        100,
+    )
+    heat_regression_index = clamp_value(
+        14
+        + (streak_length * 9 if streak_direction == "W" else 0)
+        + blowout_win_count_last5 * 6
+        + max(0.0, run_diff_last5 - 1.5) * 6
+        + max(0.0, win_pct_last5 - 0.62) * 36
+        + (schedule_context["scheduled_series_game_number"] == 2) * 3,
+        0,
+        100,
+    )
+    form_pressure_index = clamp_value(
+        18
+        + max(snapback_pressure_index, heat_regression_index) * 0.45
+        + (quiet_first5_count_last5 * 2)
+        + (first_inning_jolt_count_last5 * 2)
+        + (bullpen_flip_loss_count_last5 * 3),
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": schedule_context["scheduled_opponent"],
+        "scheduled_series_game_number": schedule_context["scheduled_series_game_number"],
+        "division_matchup_flag": schedule_context["division_matchup_flag"],
+        "games_sample": len(last5),
+        "previous_result": previous_result,
+        "streak_direction": streak_direction,
+        "streak_length": streak_length,
+        "win_pct_last3": win_pct_last3,
+        "win_pct_last5": win_pct_last5,
+        "run_diff_last3": run_diff_last3,
+        "run_diff_last5": run_diff_last5,
+        "close_loss_count_last5": close_loss_count_last5,
+        "blowout_win_count_last5": blowout_win_count_last5,
+        "blowout_loss_count_last5": blowout_loss_count_last5,
+        "comeback_win_count_last5": comeback_win_count_last5,
+        "bullpen_flip_loss_count_last5": bullpen_flip_loss_count_last5,
+        "quiet_first5_count_last5": quiet_first5_count_last5,
+        "first_inning_jolt_count_last5": first_inning_jolt_count_last5,
+        "opponent_win_pct_last5": opponent_win_pct_last5,
+        "snapback_pressure_index": snapback_pressure_index,
+        "heat_regression_index": heat_regression_index,
+        "form_pressure_index": form_pressure_index,
+    }
+
+
+def compute_recent_hitter_whiff_rate(
+    conn: sqlite3.Connection,
+    player_id: int,
+    recent_game_pks: list[int],
+) -> float | None:
+    if not recent_game_pks:
+        return None
+
+    placeholders = ",".join("?" for _ in recent_game_pks)
+    rows = conn.execute(
+        f"""
+        SELECT lower(COALESCE(call_description, '')) AS call_description, is_pitch
+        FROM mlb_pitch_events
+        WHERE batter_id = ?
+          AND game_pk IN ({placeholders})
+        ORDER BY game_date DESC, at_bat_index DESC, event_index DESC
+        """,
+        (player_id, *recent_game_pks),
+    ).fetchall()
+
+    pitch_rows = [row for row in rows if to_int(row["is_pitch"]) == 1]
+    if not pitch_rows:
+        return None
+
+    swinging_whiffs = sum(1 for row in pitch_rows if "swinging strike" in str(row["call_description"] or ""))
+    return safe_mean([swinging_whiffs / len(pitch_rows)])
+
+
+def build_recent_hitter_state_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    player_id: int,
+    player_name: str,
+) -> dict[str, Any] | None:
+    recent_rows = conn.execute(
+        """
+        SELECT
+          game_pk,
+          game_date,
+          batting_order,
+          plate_appearances,
+          hits,
+          total_bases,
+          home_runs,
+          walks,
+          strikeouts,
+          left_on_base
+        FROM mlb_player_game_batting
+        WHERE team_name = ?
+          AND player_id = ?
+          AND game_date < ?
+        ORDER BY game_date DESC, game_pk DESC
+        LIMIT 5
+        """,
+        (team_name, player_id, as_of_date),
+    ).fetchall()
+
+    if not recent_rows:
+        return None
+
+    recent_game_pks = [to_int(row["game_pk"]) or 0 for row in recent_rows if to_int(row["game_pk"]) is not None]
+    last_game_date = recent_rows[0]["game_date"]
+    days_since_last_game = (datetime.strptime(as_of_date, "%Y-%m-%d").date() - datetime.strptime(last_game_date, "%Y-%m-%d").date()).days
+
+    hit_streak_games = 0
+    hitless_streak_games = 0
+    home_run_streak_games = 0
+    for row in recent_rows:
+        hits = to_int(row["hits"]) or 0
+        home_runs = to_int(row["home_runs"]) or 0
+        if hits > 0 and hitless_streak_games == 0:
+            hit_streak_games += 1
+        elif hits == 0 and hit_streak_games == 0:
+            hitless_streak_games += 1
+        else:
+            break
+        if home_runs > 0:
+            home_run_streak_games += 1
+        elif home_run_streak_games > 0:
+            break
+
+    total_pa = sum(to_int(row["plate_appearances"]) or 0 for row in recent_rows)
+    total_hits = sum(to_int(row["hits"]) or 0 for row in recent_rows)
+    total_tb = sum(to_int(row["total_bases"]) or 0 for row in recent_rows)
+    total_walks = sum(to_int(row["walks"]) or 0 for row in recent_rows)
+    total_strikeouts = sum(to_int(row["strikeouts"]) or 0 for row in recent_rows)
+    batting_orders = [to_int(row["batting_order"]) for row in recent_rows if to_int(row["batting_order"]) is not None]
+    multi_hit_games_last5 = sum(1 for row in recent_rows if (to_int(row["hits"]) or 0) >= 2)
+    multi_tb_games_last5 = sum(1 for row in recent_rows if (to_int(row["total_bases"]) or 0) >= 2)
+    hits_per_pa_last5 = (total_hits / total_pa) if total_pa else None
+    tb_per_pa_last5 = (total_tb / total_pa) if total_pa else None
+    strikeout_rate_last5 = (total_strikeouts / total_pa) if total_pa else None
+    walk_rate_last5 = (total_walks / total_pa) if total_pa else None
+    whiff_rate_last5 = compute_recent_hitter_whiff_rate(conn, player_id, recent_game_pks)
+
+    pressure_plate_index = clamp_value(
+        18
+        + hitless_streak_games * 10
+        + max(0.0, (whiff_rate_last5 or 0.0) - 0.11) * 150
+        + max(0.0, (strikeout_rate_last5 or 0.0) - 0.24) * 60
+        + max(0.0, 0.08 - (walk_rate_last5 or 0.08)) * 50,
+        0,
+        100,
+    )
+    cold_streak_index = clamp_value(
+        16
+        + hitless_streak_games * 12
+        + max(0.0, 0.22 - (hits_per_pa_last5 or 0.22)) * 120
+        + max(0.0, 0.38 - (tb_per_pa_last5 or 0.38)) * 70
+        + pressure_plate_index * 0.35
+        - hit_streak_games * 5,
+        0,
+        100,
+    )
+    heat_regression_index = clamp_value(
+        18
+        + hit_streak_games * 10
+        + home_run_streak_games * 8
+        + max(0.0, (hits_per_pa_last5 or 0.0) - 0.34) * 90
+        + max(0.0, (tb_per_pa_last5 or 0.0) - 0.55) * 70
+        + max(0, multi_hit_games_last5 - 2) * 6,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "player_id": player_id,
+        "player_name": player_name,
+        "games_sample": len(recent_rows),
+        "days_since_last_game": days_since_last_game,
+        "batting_order_avg_last5": safe_mean(batting_orders) if batting_orders else None,
+        "hit_streak_games": hit_streak_games,
+        "hitless_streak_games": hitless_streak_games,
+        "multi_hit_games_last5": multi_hit_games_last5,
+        "multi_tb_games_last5": multi_tb_games_last5,
+        "home_run_streak_games": home_run_streak_games,
+        "hits_per_pa_last5": hits_per_pa_last5,
+        "total_bases_per_pa_last5": tb_per_pa_last5,
+        "strikeout_rate_last5": strikeout_rate_last5,
+        "walk_rate_last5": walk_rate_last5,
+        "whiff_rate_last5": whiff_rate_last5,
+        "pressure_plate_index": pressure_plate_index,
+        "cold_streak_index": cold_streak_index,
+        "heat_regression_index": heat_regression_index,
+    }
+
 def build_series_context_row(conn: sqlite3.Connection, as_of_date: str, game_row: sqlite3.Row) -> dict[str, Any]:
     as_of = datetime.strptime(as_of_date, "%Y-%m-%d").date()
     away_team = game_row["away_team"]
@@ -4809,6 +5164,166 @@ def refresh_hidden_edge_profiles(
     conn.commit()
 
 
+def refresh_state_snapshots(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_team_state_snapshots WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_hitter_state_snapshots WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_team_state_snapshots WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_hitter_state_snapshots WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_team_state_snapshots")
+            conn.execute("DELETE FROM mlb_hitter_state_snapshots")
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+
+        for team_name in teams:
+            packets = build_recent_team_hidden_edge_packets(conn, team_name, current_date, 5)
+            team_row = build_recent_team_state_row(conn, current_date, team_name, packets)
+            if team_row:
+                conn.execute(
+                    """
+                    INSERT INTO mlb_team_state_snapshots (
+                      as_of_date, team_name, scheduled_opponent, scheduled_series_game_number,
+                      division_matchup_flag, games_sample, previous_result, streak_direction,
+                      streak_length, win_pct_last3, win_pct_last5, run_diff_last3, run_diff_last5,
+                      close_loss_count_last5, blowout_win_count_last5, blowout_loss_count_last5,
+                      comeback_win_count_last5, bullpen_flip_loss_count_last5,
+                      quiet_first5_count_last5, first_inning_jolt_count_last5,
+                      opponent_win_pct_last5, snapback_pressure_index,
+                      heat_regression_index, form_pressure_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        team_row["as_of_date"],
+                        team_row["team_name"],
+                        team_row["scheduled_opponent"],
+                        team_row["scheduled_series_game_number"],
+                        team_row["division_matchup_flag"],
+                        team_row["games_sample"],
+                        team_row["previous_result"],
+                        team_row["streak_direction"],
+                        team_row["streak_length"],
+                        team_row["win_pct_last3"],
+                        team_row["win_pct_last5"],
+                        team_row["run_diff_last3"],
+                        team_row["run_diff_last5"],
+                        team_row["close_loss_count_last5"],
+                        team_row["blowout_win_count_last5"],
+                        team_row["blowout_loss_count_last5"],
+                        team_row["comeback_win_count_last5"],
+                        team_row["bullpen_flip_loss_count_last5"],
+                        team_row["quiet_first5_count_last5"],
+                        team_row["first_inning_jolt_count_last5"],
+                        team_row["opponent_win_pct_last5"],
+                        team_row["snapback_pressure_index"],
+                        team_row["heat_regression_index"],
+                        team_row["form_pressure_index"],
+                    ),
+                )
+
+            player_rows = conn.execute(
+                """
+                SELECT
+                  player_id,
+                  player_name,
+                  MAX(game_date) AS last_game_date
+                FROM mlb_player_game_batting
+                WHERE team_name = ?
+                  AND game_date < ?
+                GROUP BY player_id, player_name
+                HAVING julianday(?) - julianday(MAX(game_date)) <= 14
+                ORDER BY last_game_date DESC, player_name ASC
+                """,
+                (team_name, current_date, current_date),
+            ).fetchall()
+
+            for player_row in player_rows:
+                hitter_row = build_recent_hitter_state_row(
+                    conn,
+                    current_date,
+                    team_name,
+                    to_int(player_row["player_id"]) or 0,
+                    player_row["player_name"],
+                )
+                if not hitter_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_hitter_state_snapshots (
+                      as_of_date, team_name, player_id, player_name, games_sample,
+                      days_since_last_game, batting_order_avg_last5, hit_streak_games,
+                      hitless_streak_games, multi_hit_games_last5, multi_tb_games_last5,
+                      home_run_streak_games, hits_per_pa_last5, total_bases_per_pa_last5,
+                      strikeout_rate_last5, walk_rate_last5, whiff_rate_last5,
+                      pressure_plate_index, cold_streak_index, heat_regression_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        hitter_row["as_of_date"],
+                        hitter_row["team_name"],
+                        hitter_row["player_id"],
+                        hitter_row["player_name"],
+                        hitter_row["games_sample"],
+                        hitter_row["days_since_last_game"],
+                        hitter_row["batting_order_avg_last5"],
+                        hitter_row["hit_streak_games"],
+                        hitter_row["hitless_streak_games"],
+                        hitter_row["multi_hit_games_last5"],
+                        hitter_row["multi_tb_games_last5"],
+                        hitter_row["home_run_streak_games"],
+                        hitter_row["hits_per_pa_last5"],
+                        hitter_row["total_bases_per_pa_last5"],
+                        hitter_row["strikeout_rate_last5"],
+                        hitter_row["walk_rate_last5"],
+                        hitter_row["whiff_rate_last5"],
+                        hitter_row["pressure_plate_index"],
+                        hitter_row["cold_streak_index"],
+                        hitter_row["heat_regression_index"],
+                    ),
+                )
+
+    conn.commit()
+
+
 def import_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     init_db(conn)
     payload = json.loads(file_path.read_text(encoding="utf-8"))
@@ -5421,6 +5936,16 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier hidden-edge rows.",
     )
 
+    derive_state = subparsers.add_parser(
+        "derive-state-snapshots",
+        help="Refresh rolling team and hitter state snapshot tables for scheduled teams.",
+    )
+    derive_state.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
+    derive_state.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier snapshot rows.",
+    )
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -5547,6 +6072,16 @@ def main() -> None:
                 print(f"Refreshed MLB hidden-edge feature tables through {args.through_date}")
             else:
                 print("Refreshed MLB hidden-edge feature tables for all loaded dates")
+            return
+
+        if args.command == "derive-state-snapshots":
+            refresh_state_snapshots(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB rolling state snapshots for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed MLB rolling state snapshots through {args.through_date}")
+            else:
+                print("Refreshed MLB rolling state snapshots for all loaded dates")
             return
 
         if args.command == "ingest-statcast-hr":

@@ -106,6 +106,19 @@ npm run data:report:mlb-sides -- --model-name <model-name> --train-end YYYY-MM-D
 npm run data:export:history-journal
 ```
 
+### MLB Postgame Close
+
+```bash
+npm run data:close:mlb-day -- --date YYYY-MM-DD
+```
+
+This postgame command:
+- re-ingests the finished MLB day
+- refreshes story signals and hidden-edge profiles
+- grades HR and tracked non-HR props
+- exports history and published API data
+- reruns the hidden-edge haircut research grid
+
 ## Key Files
 
 - `web/src/App.tsx`

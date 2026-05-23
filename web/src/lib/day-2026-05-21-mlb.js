@@ -275,7 +275,8 @@ const enrichRawGame = (game) => ({
   },
   bullpenChainContext: { away: bullpenChainByTeam[game.away] ?? null, home: bullpenChainByTeam[game.home] ?? null },
   savantContext: { away: teamSavantContextByTeam[game.away], home: teamSavantContextByTeam[game.home] },
-  storyContext: { away: teamStoryContextByTeam[game.away] ?? null, home: teamStoryContextByTeam[game.home] ?? null }
+  storyContext: { away: teamStoryContextByTeam[game.away] ?? null, home: teamStoryContextByTeam[game.home] ?? null },
+  stateContext: game.stateContext ?? null
 })
 
 const buildMlbGame = (raw) => {
@@ -405,6 +406,7 @@ const buildMlbGame = (raw) => {
     storyContext: raw.storyContext,
     tierTwoContext: raw.tierTwoContext ?? null,
     tierThreeContext: raw.tierThreeContext ?? null,
+    stateContext: raw.stateContext ?? null,
     lineupContext: lineupMatchupContextByGameId[raw.id] ?? null,
     lineupBoard: lineupBoardsByGameId[raw.id] ?? null,
     homeRunTargets: homeRunTargetsByGame[`${raw.away} @ ${raw.home}`] ?? null,

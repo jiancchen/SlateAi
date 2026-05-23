@@ -2957,6 +2957,8 @@ const buildMlbAnalysisContext = (game, participants) => {
       projectedHitProfiles,
       starterLeashScores,
       storyPriors: [game.tierTwoContext?.storyPriors?.away ?? null, game.tierTwoContext?.storyPriors?.home ?? null],
+      teamStateSnapshots: [game.stateContext?.teamState?.away ?? null, game.stateContext?.teamState?.home ?? null],
+      hitterStateSnapshots: [game.stateContext?.hitterState?.away ?? null, game.stateContext?.hitterState?.home ?? null],
       tierThreeBullpenProfiles: [game.tierThreeContext?.bullpenCommand?.away ?? null, game.tierThreeContext?.bullpenCommand?.home ?? null],
       starterThirdTimeProfiles: [game.tierThreeContext?.starterThirdTime?.away ?? null, game.tierThreeContext?.starterThirdTime?.home ?? null]
     }
@@ -3224,6 +3226,22 @@ const buildMlbDecisionIndicators = ({
   const opponentStarterLeashScore = riskContext.starterLeashScores?.[loserIndex]
   const pickStoryInstability = Number(riskContext.storyPriors?.[winnerIndex]?.storyInstabilityIndex)
   const opponentStoryInstability = Number(riskContext.storyPriors?.[loserIndex]?.storyInstabilityIndex)
+  const pickTeamState = riskContext.teamStateSnapshots?.[winnerIndex] ?? null
+  const opponentTeamState = riskContext.teamStateSnapshots?.[loserIndex] ?? null
+  const pickHitterState = riskContext.hitterStateSnapshots?.[winnerIndex] ?? null
+  const opponentHitterState = riskContext.hitterStateSnapshots?.[loserIndex] ?? null
+  const pickSnapbackPressure = Number(pickTeamState?.snapbackPressureIndex)
+  const opponentSnapbackPressure = Number(opponentTeamState?.snapbackPressureIndex)
+  const pickHeatRegression = Number(pickTeamState?.heatRegressionIndex)
+  const opponentHeatRegression = Number(opponentTeamState?.heatRegressionIndex)
+  const pickFormPressure = Number(pickTeamState?.formPressureIndex)
+  const opponentFormPressure = Number(opponentTeamState?.formPressureIndex)
+  const pickTop6Pressure = Number(pickHitterState?.top6PressureIndex)
+  const opponentTop6Pressure = Number(opponentHitterState?.top6PressureIndex)
+  const pickTop6Cold = Number(pickHitterState?.top6ColdIndex)
+  const opponentTop6Cold = Number(opponentHitterState?.top6ColdIndex)
+  const pickTop6Heat = Number(pickHitterState?.top6HeatIndex)
+  const opponentTop6Heat = Number(opponentHitterState?.top6HeatIndex)
   const pickRelieverCommandRisk = Number(riskContext.tierThreeBullpenProfiles?.[winnerIndex]?.commandRiskIndex)
   const opponentRelieverCommandRisk = Number(riskContext.tierThreeBullpenProfiles?.[loserIndex]?.commandRiskIndex)
   const pickThirdTimePenalty = Number(riskContext.starterThirdTimeProfiles?.[winnerIndex]?.thirdTimePenaltyIndex)
@@ -3292,6 +3310,31 @@ const buildMlbDecisionIndicators = ({
     relieverCommandGap >= 6 &&
     modelEdge >= 8 &&
     lateInningStabilityIndex <= 55
+  const opponentSnapbackTrapFlag =
+    modelEdge >= 8 &&
+    Number.isFinite(opponentSnapbackPressure) &&
+    opponentSnapbackPressure >= 50 &&
+    opponentTeamState?.streakDirection === 'L' &&
+    Number(opponentTeamState?.streakLength || 0) >= 2
+  const pickHeatRegressionTrapFlag =
+    modelEdge >= 8 &&
+    Number.isFinite(pickHeatRegression) &&
+    pickHeatRegression >= 45 &&
+    pickTeamState?.streakDirection === 'W' &&
+    Number(pickTeamState?.streakLength || 0) >= 2
+  const pickTopOrderPressureTrapFlag =
+    modelEdge >= 8 &&
+    Number.isFinite(pickTop6Pressure) &&
+    Number.isFinite(pickTop6Cold) &&
+    pickTop6Pressure >= 40 &&
+    pickTop6Cold >= 45
+  const seriesCarryoverTrapFlag =
+    modelEdge >= 10 &&
+    Number(pickTeamState?.scheduledSeriesGameNumber || 0) === 2 &&
+    Number.isFinite(pickFormPressure) &&
+    pickFormPressure >= 55
+  const stateSuggestedEdgeHaircut = opponentSnapbackTrapFlag ? 4 : 0
+  const stateSuggestedConfidenceHaircut = opponentSnapbackTrapFlag ? 8 : 0
 
   let reliefPitchingRisk = 36
   let coinflipPressure = 18
@@ -3542,6 +3585,48 @@ const buildMlbDecisionIndicators = ({
     oppStoryInstability: Number.isFinite(opponentStoryInstability)
       ? roundToTenths(opponentStoryInstability)
       : null,
+    pickSnapbackPressure: Number.isFinite(pickSnapbackPressure)
+      ? roundToTenths(pickSnapbackPressure)
+      : null,
+    oppSnapbackPressure: Number.isFinite(opponentSnapbackPressure)
+      ? roundToTenths(opponentSnapbackPressure)
+      : null,
+    pickHeatRegression: Number.isFinite(pickHeatRegression)
+      ? roundToTenths(pickHeatRegression)
+      : null,
+    oppHeatRegression: Number.isFinite(opponentHeatRegression)
+      ? roundToTenths(opponentHeatRegression)
+      : null,
+    pickFormPressure: Number.isFinite(pickFormPressure)
+      ? roundToTenths(pickFormPressure)
+      : null,
+    oppFormPressure: Number.isFinite(opponentFormPressure)
+      ? roundToTenths(opponentFormPressure)
+      : null,
+    pickTop6Pressure: Number.isFinite(pickTop6Pressure)
+      ? roundToTenths(pickTop6Pressure)
+      : null,
+    oppTop6Pressure: Number.isFinite(opponentTop6Pressure)
+      ? roundToTenths(opponentTop6Pressure)
+      : null,
+    pickTop6Cold: Number.isFinite(pickTop6Cold)
+      ? roundToTenths(pickTop6Cold)
+      : null,
+    oppTop6Cold: Number.isFinite(opponentTop6Cold)
+      ? roundToTenths(opponentTop6Cold)
+      : null,
+    pickTop6Heat: Number.isFinite(pickTop6Heat)
+      ? roundToTenths(pickTop6Heat)
+      : null,
+    oppTop6Heat: Number.isFinite(opponentTop6Heat)
+      ? roundToTenths(opponentTop6Heat)
+      : null,
+    pickStateSeriesGameNumber: Number(pickTeamState?.scheduledSeriesGameNumber || 0) || null,
+    oppStateSeriesGameNumber: Number(opponentTeamState?.scheduledSeriesGameNumber || 0) || null,
+    pickStreakDirection: pickTeamState?.streakDirection || null,
+    oppStreakDirection: opponentTeamState?.streakDirection || null,
+    pickStreakLength: Number(pickTeamState?.streakLength || 0) || 0,
+    oppStreakLength: Number(opponentTeamState?.streakLength || 0) || 0,
     pickRelieverCommandRisk: Number.isFinite(pickRelieverCommandRisk)
       ? roundToTenths(pickRelieverCommandRisk)
       : null,
@@ -3557,6 +3642,12 @@ const buildMlbDecisionIndicators = ({
     oppThirdTimePenalty: Number.isFinite(opponentThirdTimePenalty)
       ? roundToTenths(opponentThirdTimePenalty)
       : null,
+    statefulOpponentSnapbackTrapFlag: opponentSnapbackTrapFlag,
+    statefulHeatRegressionTrapFlag: pickHeatRegressionTrapFlag,
+    statefulTopOrderPressureTrapFlag: pickTopOrderPressureTrapFlag,
+    statefulSeriesCarryoverTrapFlag: seriesCarryoverTrapFlag,
+    statefulSuggestedEdgeHaircut: stateSuggestedEdgeHaircut,
+    statefulSuggestedConfidenceHaircut: stateSuggestedConfidenceHaircut,
     tierThreeBullpenCommandMismatchFlag: bullpenCommandMismatchFlag,
     tierThreeSuggestedEdgeHaircut: bullpenCommandMismatchFlag ? 3 : 0,
     tierThreeSuggestedConfidenceHaircut: bullpenCommandMismatchFlag ? 6 : 0,
@@ -3817,11 +3908,35 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           oppStarterLeashScore: mlbIndicators.oppStarterLeashScore,
           pickStoryInstability: mlbIndicators.pickStoryInstability,
           oppStoryInstability: mlbIndicators.oppStoryInstability,
+          pickSnapbackPressure: mlbIndicators.pickSnapbackPressure,
+          oppSnapbackPressure: mlbIndicators.oppSnapbackPressure,
+          pickHeatRegression: mlbIndicators.pickHeatRegression,
+          oppHeatRegression: mlbIndicators.oppHeatRegression,
+          pickFormPressure: mlbIndicators.pickFormPressure,
+          oppFormPressure: mlbIndicators.oppFormPressure,
+          pickTop6Pressure: mlbIndicators.pickTop6Pressure,
+          oppTop6Pressure: mlbIndicators.oppTop6Pressure,
+          pickTop6Cold: mlbIndicators.pickTop6Cold,
+          oppTop6Cold: mlbIndicators.oppTop6Cold,
+          pickTop6Heat: mlbIndicators.pickTop6Heat,
+          oppTop6Heat: mlbIndicators.oppTop6Heat,
+          pickStateSeriesGameNumber: mlbIndicators.pickStateSeriesGameNumber,
+          oppStateSeriesGameNumber: mlbIndicators.oppStateSeriesGameNumber,
+          pickStreakDirection: mlbIndicators.pickStreakDirection,
+          oppStreakDirection: mlbIndicators.oppStreakDirection,
+          pickStreakLength: mlbIndicators.pickStreakLength,
+          oppStreakLength: mlbIndicators.oppStreakLength,
           pickRelieverCommandRisk: mlbIndicators.pickRelieverCommandRisk,
           oppRelieverCommandRisk: mlbIndicators.oppRelieverCommandRisk,
           relieverCommandGap: mlbIndicators.relieverCommandGap,
           pickThirdTimePenalty: mlbIndicators.pickThirdTimePenalty,
           oppThirdTimePenalty: mlbIndicators.oppThirdTimePenalty,
+          statefulOpponentSnapbackTrapFlag: Boolean(mlbIndicators.statefulOpponentSnapbackTrapFlag),
+          statefulHeatRegressionTrapFlag: Boolean(mlbIndicators.statefulHeatRegressionTrapFlag),
+          statefulTopOrderPressureTrapFlag: Boolean(mlbIndicators.statefulTopOrderPressureTrapFlag),
+          statefulSeriesCarryoverTrapFlag: Boolean(mlbIndicators.statefulSeriesCarryoverTrapFlag),
+          statefulSuggestedEdgeHaircut: mlbIndicators.statefulSuggestedEdgeHaircut ?? 0,
+          statefulSuggestedConfidenceHaircut: mlbIndicators.statefulSuggestedConfidenceHaircut ?? 0,
           tierThreeBullpenCommandMismatchFlag: Boolean(mlbIndicators.tierThreeBullpenCommandMismatchFlag),
           tierThreeSuggestedEdgeHaircut: mlbIndicators.tierThreeSuggestedEdgeHaircut ?? 0,
           tierThreeSuggestedConfidenceHaircut: mlbIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,

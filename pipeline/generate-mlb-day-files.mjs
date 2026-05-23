@@ -601,6 +601,155 @@ const buildTeamStoryPriorsByTeam = ({ date, games, windowGames = 10 }) => {
   )
 }
 
+const buildTeamStateByTeam = ({ date, games }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `select team_name, scheduled_opponent, scheduled_series_game_number, division_matchup_flag, games_sample, previous_result, streak_direction, streak_length, win_pct_last3, win_pct_last5, run_diff_last3, run_diff_last5, close_loss_count_last5, blowout_win_count_last5, blowout_loss_count_last5, comeback_win_count_last5, bullpen_flip_loss_count_last5, quiet_first5_count_last5, first_inning_jolt_count_last5, opponent_win_pct_last5, snapback_pressure_index, heat_regression_index, form_pressure_index from mlb_team_state_snapshots where as_of_date='${date}' and team_name in (${quotedTeams}) order by team_name;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+      return [
+        deskTeam,
+        {
+          scheduledOpponent: officialToDeskTeam[row.scheduled_opponent] || row.scheduled_opponent || '',
+          scheduledSeriesGameNumber: Number(row.scheduled_series_game_number || 0) || null,
+          divisionMatchupFlag: Boolean(row.division_matchup_flag),
+          gamesSample: Number(row.games_sample || 0) || 0,
+          previousResult: row.previous_result || null,
+          streakDirection: row.streak_direction || null,
+          streakLength: Number(row.streak_length || 0) || 0,
+          winPctLast3: roundMaybe(row.win_pct_last3),
+          winPctLast5: roundMaybe(row.win_pct_last5),
+          runDiffLast3: roundMaybe(row.run_diff_last3),
+          runDiffLast5: roundMaybe(row.run_diff_last5),
+          closeLossCountLast5: Number(row.close_loss_count_last5 || 0) || 0,
+          blowoutWinCountLast5: Number(row.blowout_win_count_last5 || 0) || 0,
+          blowoutLossCountLast5: Number(row.blowout_loss_count_last5 || 0) || 0,
+          comebackWinCountLast5: Number(row.comeback_win_count_last5 || 0) || 0,
+          bullpenFlipLossCountLast5: Number(row.bullpen_flip_loss_count_last5 || 0) || 0,
+          quietFirst5CountLast5: Number(row.quiet_first5_count_last5 || 0) || 0,
+          firstInningJoltCountLast5: Number(row.first_inning_jolt_count_last5 || 0) || 0,
+          opponentWinPctLast5: roundMaybe(row.opponent_win_pct_last5),
+          snapbackPressureIndex: roundMaybe(row.snapback_pressure_index),
+          heatRegressionIndex: roundMaybe(row.heat_regression_index),
+          formPressureIndex: roundMaybe(row.form_pressure_index)
+        }
+      ]
+    })
+  )
+}
+
+const buildHitterStateByTeam = ({ date, games, topSlots = 6 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `with ranked as (
+      select
+        team_name,
+        player_id,
+        player_name,
+        batting_order_avg_last5,
+        hit_streak_games,
+        hitless_streak_games,
+        home_run_streak_games,
+        hits_per_pa_last5,
+        total_bases_per_pa_last5,
+        strikeout_rate_last5,
+        walk_rate_last5,
+        whiff_rate_last5,
+        pressure_plate_index,
+        cold_streak_index,
+        heat_regression_index,
+        row_number() over (
+          partition by team_name
+          order by coalesce(batting_order_avg_last5, 99), player_name asc
+        ) as rn
+      from mlb_hitter_state_snapshots
+      where as_of_date='${date}'
+        and team_name in (${quotedTeams})
+    )
+    select *
+    from ranked
+    where rn <= ${Math.max(1, topSlots)}
+    order by team_name, rn;`
+  )
+
+  const grouped = rows.reduce((map, row) => {
+    const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+    if (!map.has(deskTeam)) map.set(deskTeam, [])
+    map.get(deskTeam).push(row)
+    return map
+  }, new Map())
+
+  return Object.fromEntries(
+    [...grouped.entries()].map(([deskTeam, playerRows]) => {
+      const topRows = playerRows.slice(0, topSlots)
+      const hottest = [...topRows].sort((left, right) => Number(right.heat_regression_index || 0) - Number(left.heat_regression_index || 0))[0]
+      const coldest = [...topRows].sort((left, right) => Number(right.cold_streak_index || 0) - Number(left.cold_streak_index || 0))[0]
+      const mostPressured = [...topRows].sort((left, right) => Number(right.pressure_plate_index || 0) - Number(left.pressure_plate_index || 0))[0]
+
+      return [
+        deskTeam,
+        {
+          topSlots,
+          hittersTracked: topRows.length,
+          top6PressureIndex: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.pressure_plate_index || 0), 0) / Math.max(topRows.length, 1)),
+          top6ColdIndex: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.cold_streak_index || 0), 0) / Math.max(topRows.length, 1)),
+          top6HeatIndex: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.heat_regression_index || 0), 0) / Math.max(topRows.length, 1)),
+          top6WhiffRate: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.whiff_rate_last5 || 0), 0) / Math.max(topRows.length, 1)),
+          top6StrikeoutRate: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.strikeout_rate_last5 || 0), 0) / Math.max(topRows.length, 1)),
+          top6WalkRate: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.walk_rate_last5 || 0), 0) / Math.max(topRows.length, 1)),
+          hottestHitter:
+            hottest
+              ? {
+                  playerId: Number(hottest.player_id || 0) || null,
+                  playerName: hottest.player_name || '',
+                  heatRegressionIndex: roundMaybe(hottest.heat_regression_index),
+                  hitStreakGames: Number(hottest.hit_streak_games || 0) || 0,
+                  homeRunStreakGames: Number(hottest.home_run_streak_games || 0) || 0,
+                  hitsPerPaLast5: roundMaybe(hottest.hits_per_pa_last5),
+                  totalBasesPerPaLast5: roundMaybe(hottest.total_bases_per_pa_last5)
+                }
+              : null,
+          coldestHitter:
+            coldest
+              ? {
+                  playerId: Number(coldest.player_id || 0) || null,
+                  playerName: coldest.player_name || '',
+                  coldStreakIndex: roundMaybe(coldest.cold_streak_index),
+                  hitlessStreakGames: Number(coldest.hitless_streak_games || 0) || 0,
+                  whiffRateLast5: roundMaybe(coldest.whiff_rate_last5),
+                  strikeoutRateLast5: roundMaybe(coldest.strikeout_rate_last5)
+                }
+              : null,
+          pressureHitter:
+            mostPressured
+              ? {
+                  playerId: Number(mostPressured.player_id || 0) || null,
+                  playerName: mostPressured.player_name || '',
+                  pressurePlateIndex: roundMaybe(mostPressured.pressure_plate_index),
+                  hitlessStreakGames: Number(mostPressured.hitless_streak_games || 0) || 0,
+                  whiffRateLast5: roundMaybe(mostPressured.whiff_rate_last5),
+                  walkRateLast5: roundMaybe(mostPressured.walk_rate_last5)
+                }
+              : null
+        }
+      ]
+    })
+  )
+}
+
 const buildSeriesContextByGamePk = ({ date, games }) => {
   const gamePks = [...new Set(games.map((game) => game.gamePk).filter((value) => Number.isFinite(value)))]
 
@@ -1026,6 +1175,8 @@ const main = async () => {
   const starterUsageContextByPitcherId = buildStarterUsageContextByPitcherId({ date: options.date, games: rawGames })
   const starterLeashByPitcherId = buildStarterLeashByPitcherId({ date: options.date, games: rawGames })
   const teamStoryPriorsByTeam = buildTeamStoryPriorsByTeam({ date: options.date, games: rawGames })
+  const teamStateByTeam = buildTeamStateByTeam({ date: options.date, games: rawGames })
+  const hitterStateByTeam = buildHitterStateByTeam({ date: options.date, games: rawGames })
   const seriesContextByGamePk = buildSeriesContextByGamePk({ date: options.date, games: rawGames })
   const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
   const starterThirdTimePenaltyByPitcherId = buildStarterThirdTimePenaltyByPitcherId({ date: options.date, games: rawGames })
@@ -1074,6 +1225,16 @@ const main = async () => {
         home: teamStoryPriorsByTeam[game.home] ?? null
       },
       series: Number.isFinite(game.gamePk) ? seriesContextByGamePk[game.gamePk] ?? null : null
+    },
+    stateContext: {
+      teamState: {
+        away: teamStateByTeam[game.away] ?? null,
+        home: teamStateByTeam[game.home] ?? null
+      },
+      hitterState: {
+        away: hitterStateByTeam[game.away] ?? null,
+        home: hitterStateByTeam[game.home] ?? null
+      }
     },
     tierThreeContext: {
       bullpenCommand: {

@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v3",
   "date": "2026-05-22",
-  "generatedAt": "2026-05-23T15:54:52.624Z",
+  "generatedAt": "2026-05-23T17:11:29.109Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -28,7 +28,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 16.7,
         "xhrDiff": -1.7,
-        "baseScore": 92.88688266787659,
+        "baseScore": 90.88688266787659,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -91,16 +91,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -124,7 +124,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 112.2,
+        "score": 110.2,
         "scoreBand": "premium",
         "burstTag": "watch",
         "contextLabels": [
@@ -144,13 +144,13 @@ export const homeRunTargetsByGame = {
           "83% off starters | 17% off relievers | avg inning 3.7",
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 3 | split edge | lineup priority 27.7 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 49.96088734203667,
-        "modelShare": 0.397,
-        "modelSharePct": 39.7,
+        "rawWeight": 48.64986334377464,
+        "modelShare": 0.404,
+        "modelSharePct": 40.4,
         "lane": "anchor"
       },
       {
@@ -168,7 +168,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 11,
         "seasonXHR": 12.2,
         "xhrDiff": -1.2,
-        "baseScore": 70.50353266787658,
+        "baseScore": 68.50353266787658,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -230,16 +230,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -263,7 +263,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 96.6,
+        "score": 94.6,
         "scoreBand": "strong",
         "burstTag": "carry",
         "contextLabels": [
@@ -283,13 +283,13 @@ export const homeRunTargetsByGame = {
           "73% off starters | 27% off relievers | avg inning 3.8",
           "Most recent damage has skewed toward Four-Seam Fastball / Slider",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 4 | split edge | lineup priority 20.7 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 39.64762995441644,
-        "modelShare": 0.315,
-        "modelSharePct": 31.5,
+        "rawWeight": 38.30953535812903,
+        "modelShare": 0.319,
+        "modelSharePct": 31.9,
         "lane": "anchor"
       }
     ],
@@ -309,7 +309,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 5,
         "seasonXHR": 4.7,
         "xhrDiff": 0.3,
-        "baseScore": 56.31383266787659,
+        "baseScore": 54.31383266787659,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -370,16 +370,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -403,7 +403,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 79.3,
+        "score": 77.3,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -423,13 +423,13 @@ export const homeRunTargetsByGame = {
           "80% off starters | 20% off relievers | avg inning 4",
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 2 | heater | lineup priority 32.6 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 27.923646104905167,
-        "modelShare": 0.222,
-        "modelSharePct": 22.2,
+        "rawWeight": 26.543166355664184,
+        "modelShare": 0.221,
+        "modelSharePct": 22.1,
         "lane": "secondary"
       }
     ],
@@ -449,7 +449,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 3,
         "seasonXHR": 2.9,
         "xhrDiff": 0.1,
-        "baseScore": 30.97028266787659,
+        "baseScore": 28.97028266787659,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -511,16 +511,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -544,7 +544,7 @@ export const homeRunTargetsByGame = {
             "Slurve"
           ]
         },
-        "score": 51.8,
+        "score": 49.8,
         "scoreBand": "thin",
         "burstTag": "carry",
         "contextLabels": [
@@ -564,13 +564,13 @@ export const homeRunTargetsByGame = {
           "67% off starters | 33% off relievers | avg inning 6",
           "Most recent damage has skewed toward Four-Seam Fastball / Slurve",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 8 | split edge | lineup priority 10.3 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 8.164469850697708,
-        "modelShare": 0.065,
-        "modelSharePct": 6.5,
+        "rawWeight": 6.773962498900218,
+        "modelShare": 0.056,
+        "modelSharePct": 5.6,
         "lane": "thin"
       }
     ],
@@ -590,7 +590,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 16.7,
         "xhrDiff": -1.7,
-        "baseScore": 92.88688266787659,
+        "baseScore": 90.88688266787659,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -653,16 +653,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -686,7 +686,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 112.2,
+        "score": 110.2,
         "scoreBand": "premium",
         "burstTag": "watch",
         "contextLabels": [
@@ -706,13 +706,13 @@ export const homeRunTargetsByGame = {
           "83% off starters | 17% off relievers | avg inning 3.7",
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 3 | split edge | lineup priority 27.7 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 49.96088734203667,
-        "modelShare": 0.397,
-        "modelSharePct": 39.7,
+        "rawWeight": 48.64986334377464,
+        "modelShare": 0.404,
+        "modelSharePct": 40.4,
         "lane": "anchor"
       },
       {
@@ -730,7 +730,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 11,
         "seasonXHR": 12.2,
         "xhrDiff": -1.2,
-        "baseScore": 70.50353266787658,
+        "baseScore": 68.50353266787658,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -792,16 +792,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -825,7 +825,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 96.6,
+        "score": 94.6,
         "scoreBand": "strong",
         "burstTag": "carry",
         "contextLabels": [
@@ -845,13 +845,13 @@ export const homeRunTargetsByGame = {
           "73% off starters | 27% off relievers | avg inning 3.8",
           "Most recent damage has skewed toward Four-Seam Fastball / Slider",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 4 | split edge | lineup priority 20.7 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 39.64762995441644,
-        "modelShare": 0.315,
-        "modelSharePct": 31.5,
+        "rawWeight": 38.30953535812903,
+        "modelShare": 0.319,
+        "modelSharePct": 31.9,
         "lane": "anchor"
       },
       {
@@ -869,7 +869,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 5,
         "seasonXHR": 4.7,
         "xhrDiff": 0.3,
-        "baseScore": 56.31383266787659,
+        "baseScore": 54.31383266787659,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -930,16 +930,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -963,7 +963,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 79.3,
+        "score": 77.3,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -983,13 +983,13 @@ export const homeRunTargetsByGame = {
           "80% off starters | 20% off relievers | avg inning 4",
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 2 | heater | lineup priority 32.6 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 27.923646104905167,
-        "modelShare": 0.222,
-        "modelSharePct": 22.2,
+        "rawWeight": 26.543166355664184,
+        "modelShare": 0.221,
+        "modelSharePct": 22.1,
         "lane": "secondary"
       },
       {
@@ -1007,7 +1007,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 3,
         "seasonXHR": 2.9,
         "xhrDiff": 0.1,
-        "baseScore": 30.97028266787659,
+        "baseScore": 28.97028266787659,
         "lineupContext": {
           "gameTitle": "Astros @ Cubs",
           "teamName": "Astros",
@@ -1069,16 +1069,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "2% Precipitation 57° Wind 9 mph In",
-            "precipitationPct": 2,
+            "summary": "6% Precipitation 57° Wind 10 mph In",
+            "precipitationPct": 6,
             "temperatureF": 57,
-            "windMph": 9,
+            "windMph": 10,
             "windDirection": "In",
-            "label": "57°F | Wind 9 mph In | 2% precip"
+            "label": "57°F | Wind 10 mph In | 6% precip"
           },
-          "total": 7.5
+          "total": 7
         },
-        "weatherBoost": -3.6,
+        "weatherBoost": -5.6,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -1102,7 +1102,7 @@ export const homeRunTargetsByGame = {
             "Slurve"
           ]
         },
-        "score": 51.8,
+        "score": 49.8,
         "scoreBand": "thin",
         "burstTag": "carry",
         "contextLabels": [
@@ -1122,13 +1122,13 @@ export const homeRunTargetsByGame = {
           "67% off starters | 33% off relievers | avg inning 6",
           "Most recent damage has skewed toward Four-Seam Fastball / Slurve",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 57°F | Wind 9 mph In | 2% precip",
+          "Weather lane: 57°F | Wind 10 mph In | 6% precip",
           "Slot 8 | split edge | lineup priority 10.3 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 8.164469850697708,
-        "modelShare": 0.065,
-        "modelSharePct": 6.5,
+        "rawWeight": 6.773962498900218,
+        "modelShare": 0.056,
+        "modelSharePct": 5.6,
         "lane": "thin"
       }
     ],
@@ -5395,7 +5395,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 10.1,
         "xhrDiff": -0.1,
-        "baseScore": 82.65112931034484,
+        "baseScore": 81.85112931034485,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Red Sox",
@@ -5464,9 +5464,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -5490,7 +5490,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 107.3,
+        "score": 106.5,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -5514,9 +5514,9 @@ export const homeRunTargetsByGame = {
           "Slot 4 | carry | lineup priority 49.8 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 46.74338149345129,
-        "modelShare": 0.407,
-        "modelSharePct": 40.7,
+        "rawWeight": 46.21627486671652,
+        "modelShare": 0.41,
+        "modelSharePct": 41,
         "lane": "anchor"
       },
       {
@@ -5534,7 +5534,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 16,
         "seasonXHR": 15.7,
         "xhrDiff": 0.3,
-        "baseScore": 67.18827320441989,
+        "baseScore": 66.38827320441989,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Twins",
@@ -5603,9 +5603,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 8,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 2,
@@ -5629,7 +5629,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 77.8,
+        "score": 77,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -5653,7 +5653,7 @@ export const homeRunTargetsByGame = {
           "Slot 1 | split edge | lineup priority 16.6 | bullpen vulnerability -3.1"
         ],
         "avoidHrChase": false,
-        "rawWeight": 26.888859663738614,
+        "rawWeight": 26.335562617335057,
         "modelShare": 0.234,
         "modelSharePct": 23.4,
         "lane": "secondary"
@@ -5675,7 +5675,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 6,
         "seasonXHR": 5.6,
         "xhrDiff": 0.4,
-        "baseScore": 52.63247931034483,
+        "baseScore": 51.83247931034483,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Red Sox",
@@ -5744,9 +5744,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -5770,7 +5770,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 73.2,
+        "score": 72.4,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -5794,9 +5794,9 @@ export const homeRunTargetsByGame = {
           "Slot 1 | carry | lineup priority 31.8 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 23.693118497657697,
-        "modelShare": 0.206,
-        "modelSharePct": 20.6,
+        "rawWeight": 23.133625298536423,
+        "modelShare": 0.205,
+        "modelSharePct": 20.5,
         "lane": "secondary"
       }
     ],
@@ -5816,7 +5816,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 7,
         "xhrDiff": 0,
-        "baseScore": 34.776823204419884,
+        "baseScore": 33.97682320441989,
         "lineupContext": null,
         "lineupPriority": 0,
         "battingImpactContext": {
@@ -5840,9 +5840,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -5866,7 +5866,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 55.3,
+        "score": 54.5,
         "scoreBand": "thin",
         "burstTag": "carry",
         "contextLabels": [
@@ -5890,9 +5890,9 @@ export const homeRunTargetsByGame = {
           "Lineup slot not posted yet"
         ],
         "avoidHrChase": false,
-        "rawWeight": 10.812932942805515,
-        "modelShare": 0.094,
-        "modelSharePct": 9.4,
+        "rawWeight": 10.213091245061637,
+        "modelShare": 0.091,
+        "modelSharePct": 9.1,
         "lane": "thin"
       },
       {
@@ -5910,7 +5910,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 4,
         "seasonXHR": 2.2,
         "xhrDiff": 1.8,
-        "baseScore": 37.82707931034483,
+        "baseScore": 37.027079310344824,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Red Sox",
@@ -5980,9 +5980,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 1,
@@ -6006,7 +6006,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 42,
+        "score": 41.2,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -6031,8 +6031,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.059,
-        "modelSharePct": 5.9,
+        "modelShare": 0.06,
+        "modelSharePct": 6,
         "lane": "thin"
       }
     ],
@@ -6052,7 +6052,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 10.1,
         "xhrDiff": -0.1,
-        "baseScore": 82.65112931034484,
+        "baseScore": 81.85112931034485,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Red Sox",
@@ -6121,9 +6121,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -6147,7 +6147,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 107.3,
+        "score": 106.5,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -6171,9 +6171,9 @@ export const homeRunTargetsByGame = {
           "Slot 4 | carry | lineup priority 49.8 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 46.74338149345129,
-        "modelShare": 0.407,
-        "modelSharePct": 40.7,
+        "rawWeight": 46.21627486671652,
+        "modelShare": 0.41,
+        "modelSharePct": 41,
         "lane": "anchor"
       },
       {
@@ -6191,7 +6191,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 16,
         "seasonXHR": 15.7,
         "xhrDiff": 0.3,
-        "baseScore": 67.18827320441989,
+        "baseScore": 66.38827320441989,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Twins",
@@ -6260,9 +6260,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 8,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 2,
@@ -6286,7 +6286,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 77.8,
+        "score": 77,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -6310,7 +6310,7 @@ export const homeRunTargetsByGame = {
           "Slot 1 | split edge | lineup priority 16.6 | bullpen vulnerability -3.1"
         ],
         "avoidHrChase": false,
-        "rawWeight": 26.888859663738614,
+        "rawWeight": 26.335562617335057,
         "modelShare": 0.234,
         "modelSharePct": 23.4,
         "lane": "secondary"
@@ -6330,7 +6330,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 6,
         "seasonXHR": 5.6,
         "xhrDiff": 0.4,
-        "baseScore": 52.63247931034483,
+        "baseScore": 51.83247931034483,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Red Sox",
@@ -6399,9 +6399,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -6425,7 +6425,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 73.2,
+        "score": 72.4,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -6449,9 +6449,9 @@ export const homeRunTargetsByGame = {
           "Slot 1 | carry | lineup priority 31.8 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 23.693118497657697,
-        "modelShare": 0.206,
-        "modelSharePct": 20.6,
+        "rawWeight": 23.133625298536423,
+        "modelShare": 0.205,
+        "modelSharePct": 20.5,
         "lane": "secondary"
       },
       {
@@ -6469,7 +6469,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 7,
         "xhrDiff": 0,
-        "baseScore": 34.776823204419884,
+        "baseScore": 33.97682320441989,
         "lineupContext": null,
         "lineupPriority": 0,
         "battingImpactContext": {
@@ -6493,9 +6493,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -6519,7 +6519,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 55.3,
+        "score": 54.5,
         "scoreBand": "thin",
         "burstTag": "carry",
         "contextLabels": [
@@ -6543,9 +6543,9 @@ export const homeRunTargetsByGame = {
           "Lineup slot not posted yet"
         ],
         "avoidHrChase": false,
-        "rawWeight": 10.812932942805515,
-        "modelShare": 0.094,
-        "modelSharePct": 9.4,
+        "rawWeight": 10.213091245061637,
+        "modelShare": 0.091,
+        "modelSharePct": 9.1,
         "lane": "thin"
       },
       {
@@ -6563,7 +6563,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 4,
         "seasonXHR": 2.2,
         "xhrDiff": 1.8,
-        "baseScore": 37.82707931034483,
+        "baseScore": 37.027079310344824,
         "lineupContext": {
           "gameTitle": "Twins @ Red Sox",
           "teamName": "Red Sox",
@@ -6633,9 +6633,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "R-L",
             "label": "61°F | Wind 9 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 1,
@@ -6659,7 +6659,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 42,
+        "score": 41.2,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -6684,8 +6684,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.059,
-        "modelSharePct": 5.9,
+        "modelShare": 0.06,
+        "modelSharePct": 6,
         "lane": "thin"
       }
     ],
@@ -8471,7 +8471,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 9.2,
         "xhrDiff": 0.8,
-        "baseScore": 82.48422127659573,
+        "baseScore": 83.28422127659573,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -8543,18 +8543,10 @@ export const homeRunTargetsByGame = {
           "impactWindowScore": 27
         },
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 1,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -8578,7 +8570,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 100.9,
+        "score": 101.7,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -8598,13 +8590,13 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 5.2",
           "Most recent damage has skewed toward Cutter / Sweeper",
           "1 recent batting-leader appearances | 25.9 avg impact",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 2 | carry | lineup priority 34.1 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 42.51146496380745,
-        "modelShare": 0.243,
-        "modelSharePct": 24.3,
+        "rawWeight": 43.042390633372435,
+        "modelShare": 0.241,
+        "modelSharePct": 24.1,
         "lane": "anchor"
       },
       {
@@ -8622,7 +8614,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 11.1,
         "xhrDiff": -1.1,
-        "baseScore": 73.27307127659574,
+        "baseScore": 74.07307127659574,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -8683,18 +8675,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 31.3,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -8718,8 +8702,8 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 99.6,
-        "scoreBand": "strong",
+        "score": 100.4,
+        "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
           "Slot 4 | carry",
@@ -8738,13 +8722,13 @@ export const homeRunTargetsByGame = {
           "70% off starters | 30% off relievers | avg inning 3.7",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 4 | carry | lineup priority 31.3 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 41.64747582296537,
-        "modelShare": 0.238,
-        "modelSharePct": 23.8,
+        "rawWeight": 42.179343836017594,
+        "modelShare": 0.236,
+        "modelSharePct": 23.6,
         "lane": "secondary"
       }
     ],
@@ -8764,7 +8748,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.8,
         "xhrDiff": 0.2,
-        "baseScore": 67.23492127659576,
+        "baseScore": 68.03492127659575,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -8826,18 +8810,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 38.4,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -8861,7 +8837,7 @@ export const homeRunTargetsByGame = {
             "Splitter"
           ]
         },
-        "score": 89.1,
+        "score": 89.9,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -8881,13 +8857,13 @@ export const homeRunTargetsByGame = {
           "86% off starters | 14% off relievers | avg inning 4.1",
           "Most recent damage has skewed toward Four-Seam Fastball / Splitter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 5 | carry | lineup priority 38.4 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 34.60821774487266,
-        "modelShare": 0.198,
-        "modelSharePct": 19.8,
+        "rawWeight": 35.14865187596392,
+        "modelShare": 0.197,
+        "modelSharePct": 19.7,
         "lane": "secondary"
       },
       {
@@ -8905,7 +8881,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 9,
         "seasonXHR": 8.1,
         "xhrDiff": 0.9,
-        "baseScore": 63.463971739130436,
+        "baseScore": 64.26397173913044,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Tigers",
@@ -8966,18 +8942,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 20.5,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 3,
@@ -9001,7 +8969,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 84.8,
+        "score": 85.6,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -9021,11 +8989,11 @@ export const homeRunTargetsByGame = {
           "56% off starters | 44% off relievers | avg inning 4.3",
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 2 | carry | lineup priority 20.5 | bullpen vulnerability -2.8"
         ],
         "avoidHrChase": false,
-        "rawWeight": 31.690439881735628,
+        "rawWeight": 32.23499224954667,
         "modelShare": 0.181,
         "modelSharePct": 18.1,
         "lane": "secondary"
@@ -9047,7 +9015,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.3,
         "xhrDiff": 0.7,
-        "baseScore": 46.076521739130435,
+        "baseScore": 46.87652173913043,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Tigers",
@@ -9107,18 +9075,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 8,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -9142,7 +9102,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 54.3,
+        "score": 55.1,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
@@ -9162,13 +9122,13 @@ export const homeRunTargetsByGame = {
           "43% off starters | 57% off relievers | avg inning 5.6",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 5 | split edge | lineup priority 8 | bullpen vulnerability -2.8"
         ],
         "avoidHrChase": false,
-        "rawWeight": 10.062657767586204,
-        "modelShare": 0.057,
-        "modelSharePct": 5.7,
+        "rawWeight": 10.663250015674198,
+        "modelShare": 0.06,
+        "modelSharePct": 6,
         "lane": "thin"
       },
       {
@@ -9186,7 +9146,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 5.9,
         "xhrDiff": 1.1,
-        "baseScore": 46.59362127659574,
+        "baseScore": 47.39362127659574,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -9247,18 +9207,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 22,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -9282,7 +9234,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 51.4,
+        "score": 52.2,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
@@ -9302,13 +9254,13 @@ export const homeRunTargetsByGame = {
           "43% off starters | 57% off relievers | avg inning 5.1",
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 3 | split edge | lineup priority 22 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 7.857377616024157,
-        "modelShare": 0.045,
-        "modelSharePct": 4.5,
+        "rawWeight": 8.47056068176247,
+        "modelShare": 0.047,
+        "modelSharePct": 4.7,
         "lane": "thin"
       },
       {
@@ -9326,7 +9278,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 4,
         "seasonXHR": 5.5,
         "xhrDiff": -1.5,
-        "baseScore": 43.91482173913043,
+        "baseScore": 44.71482173913043,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Tigers",
@@ -9386,18 +9338,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 4.8,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 0,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 0,
@@ -9421,7 +9365,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 42.1,
+        "score": 42.9,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -9441,13 +9385,13 @@ export const homeRunTargetsByGame = {
           "100% off starters | 0% off relievers | avg inning 2.3",
           "Most recent damage has skewed toward Changeup / Sweeper",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 4 | arsenal edge | lineup priority 4.8 | bullpen vulnerability -2.8"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.039,
-        "modelSharePct": 3.9,
+        "modelShare": 0.038,
+        "modelSharePct": 3.8,
         "lane": "thin"
       }
     ],
@@ -9467,7 +9411,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 9.2,
         "xhrDiff": 0.8,
-        "baseScore": 82.48422127659573,
+        "baseScore": 83.28422127659573,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -9539,18 +9483,10 @@ export const homeRunTargetsByGame = {
           "impactWindowScore": 27
         },
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 1,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -9574,7 +9510,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 100.9,
+        "score": 101.7,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -9594,13 +9530,13 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 5.2",
           "Most recent damage has skewed toward Cutter / Sweeper",
           "1 recent batting-leader appearances | 25.9 avg impact",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 2 | carry | lineup priority 34.1 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 42.51146496380745,
-        "modelShare": 0.243,
-        "modelSharePct": 24.3,
+        "rawWeight": 43.042390633372435,
+        "modelShare": 0.241,
+        "modelSharePct": 24.1,
         "lane": "anchor"
       },
       {
@@ -9618,7 +9554,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 11.1,
         "xhrDiff": -1.1,
-        "baseScore": 73.27307127659574,
+        "baseScore": 74.07307127659574,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -9679,18 +9615,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 31.3,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -9714,8 +9642,8 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 99.6,
-        "scoreBand": "strong",
+        "score": 100.4,
+        "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
           "Slot 4 | carry",
@@ -9734,13 +9662,13 @@ export const homeRunTargetsByGame = {
           "70% off starters | 30% off relievers | avg inning 3.7",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 4 | carry | lineup priority 31.3 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 41.64747582296537,
-        "modelShare": 0.238,
-        "modelSharePct": 23.8,
+        "rawWeight": 42.179343836017594,
+        "modelShare": 0.236,
+        "modelSharePct": 23.6,
         "lane": "secondary"
       },
       {
@@ -9758,7 +9686,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.8,
         "xhrDiff": 0.2,
-        "baseScore": 67.23492127659576,
+        "baseScore": 68.03492127659575,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -9820,18 +9748,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 38.4,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -9855,7 +9775,7 @@ export const homeRunTargetsByGame = {
             "Splitter"
           ]
         },
-        "score": 89.1,
+        "score": 89.9,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -9875,13 +9795,13 @@ export const homeRunTargetsByGame = {
           "86% off starters | 14% off relievers | avg inning 4.1",
           "Most recent damage has skewed toward Four-Seam Fastball / Splitter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 5 | carry | lineup priority 38.4 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 34.60821774487266,
-        "modelShare": 0.198,
-        "modelSharePct": 19.8,
+        "rawWeight": 35.14865187596392,
+        "modelShare": 0.197,
+        "modelSharePct": 19.7,
         "lane": "secondary"
       },
       {
@@ -9899,7 +9819,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 9,
         "seasonXHR": 8.1,
         "xhrDiff": 0.9,
-        "baseScore": 63.463971739130436,
+        "baseScore": 64.26397173913044,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Tigers",
@@ -9960,18 +9880,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 20.5,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 3,
@@ -9995,7 +9907,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 84.8,
+        "score": 85.6,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -10015,11 +9927,11 @@ export const homeRunTargetsByGame = {
           "56% off starters | 44% off relievers | avg inning 4.3",
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 2 | carry | lineup priority 20.5 | bullpen vulnerability -2.8"
         ],
         "avoidHrChase": false,
-        "rawWeight": 31.690439881735628,
+        "rawWeight": 32.23499224954667,
         "modelShare": 0.181,
         "modelSharePct": 18.1,
         "lane": "secondary"
@@ -10039,7 +9951,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.3,
         "xhrDiff": 0.7,
-        "baseScore": 46.076521739130435,
+        "baseScore": 46.87652173913043,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Tigers",
@@ -10099,18 +10011,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 8,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -10134,7 +10038,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 54.3,
+        "score": 55.1,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
@@ -10154,13 +10058,13 @@ export const homeRunTargetsByGame = {
           "43% off starters | 57% off relievers | avg inning 5.6",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 5 | split edge | lineup priority 8 | bullpen vulnerability -2.8"
         ],
         "avoidHrChase": false,
-        "rawWeight": 10.062657767586204,
-        "modelShare": 0.057,
-        "modelSharePct": 5.7,
+        "rawWeight": 10.663250015674198,
+        "modelShare": 0.06,
+        "modelSharePct": 6,
         "lane": "thin"
       },
       {
@@ -10178,7 +10082,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 5.9,
         "xhrDiff": 1.1,
-        "baseScore": 46.59362127659574,
+        "baseScore": 47.39362127659574,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Orioles",
@@ -10239,18 +10143,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 22,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -10274,7 +10170,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 51.4,
+        "score": 52.2,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
@@ -10294,13 +10190,13 @@ export const homeRunTargetsByGame = {
           "43% off starters | 57% off relievers | avg inning 5.1",
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 3 | split edge | lineup priority 22 | bullpen vulnerability -0.9"
         ],
         "avoidHrChase": false,
-        "rawWeight": 7.857377616024157,
-        "modelShare": 0.045,
-        "modelSharePct": 4.5,
+        "rawWeight": 8.47056068176247,
+        "modelShare": 0.047,
+        "modelSharePct": 4.7,
         "lane": "thin"
       },
       {
@@ -10318,7 +10214,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 4,
         "seasonXHR": 5.5,
         "xhrDiff": -1.5,
-        "baseScore": 43.91482173913043,
+        "baseScore": 44.71482173913043,
         "lineupContext": {
           "gameTitle": "Tigers @ Orioles",
           "teamName": "Tigers",
@@ -10378,18 +10274,10 @@ export const homeRunTargetsByGame = {
         "lineupPriority": 4.8,
         "battingImpactContext": null,
         "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "93% Rain 55° Wind 16 mph R-L",
-            "precipitationPct": 0,
-            "temperatureF": 55,
-            "windMph": 16,
-            "windDirection": "R-L",
-            "label": "55°F | Wind 16 mph R-L | 0% precip"
-          },
-          "total": 8
+          "weather": null,
+          "total": 0
         },
-        "weatherBoost": -0.8,
+        "weatherBoost": 0,
         "recentHrSinceMay1": 0,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 0,
@@ -10413,7 +10301,7 @@ export const homeRunTargetsByGame = {
             "Sweeper"
           ]
         },
-        "score": 42.1,
+        "score": 42.9,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -10433,13 +10321,13 @@ export const homeRunTargetsByGame = {
           "100% off starters | 0% off relievers | avg inning 2.3",
           "Most recent damage has skewed toward Changeup / Sweeper",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 55°F | Wind 16 mph R-L | 0% precip",
+          "Weather lane not stored yet",
           "Slot 4 | arsenal edge | lineup priority 4.8 | bullpen vulnerability -2.8"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.039,
-        "modelSharePct": 3.9,
+        "modelShare": 0.038,
+        "modelSharePct": 3.8,
         "lane": "thin"
       }
     ],

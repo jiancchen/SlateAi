@@ -423,6 +423,186 @@ def format_candidate_rules(rows: list[HiddenEdgeRow]) -> str:
     return "\n\n".join(sections)
 
 
+def opponent_comeback_pressure(row: HiddenEdgeRow) -> bool:
+    return (
+        (row.opp_comeback_resilience or -1) >= 55
+        and row.point_edge >= 8
+        and row.late_inning_stability_index <= 55
+    )
+
+
+def hidden_chaos_stack(row: HiddenEdgeRow) -> bool:
+    return (
+        (row.lead_surrender_gap or -999) >= 8
+        and (row.pick_carryover_instability or -1) >= 60
+        and row.point_edge >= 10
+    )
+
+
+def combined_hidden_edge_flag(row: HiddenEdgeRow) -> bool:
+    return opponent_comeback_pressure(row) or hidden_chaos_stack(row)
+
+
+def evaluate_haircut_combo(
+    rows: list[HiddenEdgeRow],
+    predicate: Callable[[HiddenEdgeRow], bool],
+    edge_cut: float,
+    confidence_cut: int,
+    edge_threshold: float = 10.0,
+    confidence_threshold: int = 60,
+) -> dict[str, dict[str, float | int]]:
+    result: dict[str, dict[str, float | int]] = {}
+    reserve = [row for row in rows if row.split == "reserve"]
+    current = [row for row in rows if row.split == "current"]
+    for split_key, subset in (("reserve", reserve), ("current", current), ("combined", rows)):
+        baseline_edge_rows = [row for row in subset if row.point_edge >= edge_threshold]
+        baseline_conf_rows = [row for row in subset if row.confidence >= confidence_threshold]
+        kept_edge_rows = [
+            row
+            for row in subset
+            if (row.point_edge - (edge_cut if predicate(row) else 0.0)) >= edge_threshold
+        ]
+        removed_edge_rows = [
+            row
+            for row in baseline_edge_rows
+            if (row.point_edge - (edge_cut if predicate(row) else 0.0)) < edge_threshold
+        ]
+        kept_conf_rows = [
+            row
+            for row in subset
+            if (row.confidence - (confidence_cut if predicate(row) else 0)) >= confidence_threshold
+        ]
+        removed_conf_rows = [
+            row
+            for row in baseline_conf_rows
+            if (row.confidence - (confidence_cut if predicate(row) else 0)) < confidence_threshold
+        ]
+        result[split_key] = {
+            "baseline_edge_count": len(baseline_edge_rows),
+            "baseline_edge_rate": hit_rate(baseline_edge_rows),
+            "kept_edge_count": len(kept_edge_rows),
+            "kept_edge_rate": hit_rate(kept_edge_rows),
+            "removed_edge_count": len(removed_edge_rows),
+            "removed_edge_rate": hit_rate(removed_edge_rows),
+            "edge_delta": round(hit_rate(kept_edge_rows) - hit_rate(baseline_edge_rows), 3),
+            "baseline_conf_count": len(baseline_conf_rows),
+            "baseline_conf_rate": hit_rate(baseline_conf_rows),
+            "kept_conf_count": len(kept_conf_rows),
+            "kept_conf_rate": hit_rate(kept_conf_rows),
+            "removed_conf_count": len(removed_conf_rows),
+            "removed_conf_rate": hit_rate(removed_conf_rows),
+            "conf_delta": round(hit_rate(kept_conf_rows) - hit_rate(baseline_conf_rows), 3),
+        }
+    return result
+
+
+def haircut_combo_score(metrics: dict[str, dict[str, float | int]]) -> float:
+    reserve = metrics["reserve"]
+    current = metrics["current"]
+    combined = metrics["combined"]
+    score = 0.0
+    score += float(current["edge_delta"]) * 2.0
+    score += float(current["conf_delta"]) * 2.5
+    score += float(combined["edge_delta"]) * 1.0
+    score += float(combined["conf_delta"]) * 1.5
+    score += float(reserve["edge_delta"]) * 1.25
+    score += float(reserve["conf_delta"]) * 1.5
+    score += max(0, float(current["removed_edge_count"])) * 0.02
+    score += max(0, float(current["removed_conf_count"])) * 0.03
+    if float(reserve["edge_delta"]) < -0.02:
+        score -= 0.25
+    if float(reserve["conf_delta"]) < -0.02:
+        score -= 0.35
+    return round(score, 3)
+
+
+def format_haircut_grid_for_rule(
+    rows: list[HiddenEdgeRow],
+    title: str,
+    predicate: Callable[[HiddenEdgeRow], bool],
+) -> str:
+    combos = [
+        (1.5, 4),
+        (2.0, 4),
+        (2.0, 6),
+        (3.0, 4),
+        (3.0, 6),
+        (4.0, 6),
+        (4.0, 8),
+    ]
+    evaluations = []
+    for edge_cut, confidence_cut in combos:
+        metrics = evaluate_haircut_combo(rows, predicate, edge_cut, confidence_cut)
+        evaluations.append(
+            {
+                "edge_cut": edge_cut,
+                "confidence_cut": confidence_cut,
+                "metrics": metrics,
+                "score": haircut_combo_score(metrics),
+            }
+        )
+    evaluations.sort(key=lambda item: item["score"], reverse=True)
+
+    summary_rows: list[list[str]] = []
+    for item in evaluations:
+        reserve = item["metrics"]["reserve"]
+        current = item["metrics"]["current"]
+        combined = item["metrics"]["combined"]
+        summary_rows.append(
+            [
+                f"`-{item['edge_cut']:.1f} / -{item['confidence_cut']}`",
+                f"{item['score']:.3f}",
+                f"{reserve['edge_delta']:+.3f}",
+                f"{reserve['conf_delta']:+.3f}",
+                f"{current['edge_delta']:+.3f}",
+                f"{current['conf_delta']:+.3f}",
+                f"{combined['edge_delta']:+.3f}",
+                f"{combined['conf_delta']:+.3f}",
+                f"{int(current['removed_edge_count'])}/{int(current['removed_conf_count'])}",
+            ]
+        )
+
+    best = evaluations[0]
+    reserve = best["metrics"]["reserve"]
+    current = best["metrics"]["current"]
+    combined = best["metrics"]["combined"]
+    return "\n\n".join(
+        [
+            f"### {title}\n"
+            + markdown_table(
+                [
+                    "Haircut",
+                    "Score",
+                    "Reserve 10+ Δ",
+                    "Reserve 60+ Δ",
+                    "Current 10+ Δ",
+                    "Current 60+ Δ",
+                    "Combined 10+ Δ",
+                    "Combined 60+ Δ",
+                    "Current removed (edge/conf)",
+                ],
+                summary_rows,
+            ),
+            (
+                f"Best current combo: `-{best['edge_cut']:.1f}` edge / `-{best['confidence_cut']}` confidence. "
+                f"Reserve deltas were `{reserve['edge_delta']:+.3f}` and `{reserve['conf_delta']:+.3f}`. "
+                f"Current deltas were `{current['edge_delta']:+.3f}` and `{current['conf_delta']:+.3f}`. "
+                f"Combined deltas were `{combined['edge_delta']:+.3f}` and `{combined['conf_delta']:+.3f}`."
+            ),
+        ]
+    )
+
+
+def format_hidden_edge_haircuts(rows: list[HiddenEdgeRow]) -> str:
+    return "\n\n".join(
+        [
+            format_haircut_grid_for_rule(rows, "Opponent comeback pressure haircut", opponent_comeback_pressure),
+            format_haircut_grid_for_rule(rows, "Hidden chaos stack haircut", hidden_chaos_stack),
+            format_haircut_grid_for_rule(rows, "Combined hidden-edge haircut", combined_hidden_edge_flag),
+        ]
+    )
+
+
 def write_report(out_path: Path) -> None:
     conn = get_connection()
     try:
@@ -472,16 +652,23 @@ Current research uses `window_games = {WINDOW_GAMES}`.
 
 {format_candidate_rules(rows)}
 
+## Soft Haircut Grids
+
+These use the two strongest hidden-edge traps as offline `-edge / -confidence` haircuts on the same `10+ edge` and `60+ confidence` buckets we use elsewhere.
+
+{format_hidden_edge_haircuts(rows)}
+
 ## Early Read
 1. These tables are finally measuring the behaviors we were missing: whether bad early swing quality persists, how often advantages actually hold, and how quickly recent form breaks or carries.
 2. The next question is not just which bucket is \"good\" or \"bad,\" but which hidden behaviors combine with existing live features like `starter leverage`, `late stability`, and `point edge`.
-3. This is the first pass. The real upside comes once we let these profiles accumulate more dates and then scan for nonlinear combinations, especially after pandas/ML tooling is added on top.
+3. The haircut grids matter more than the raw pass buckets because they tell us whether these hidden edges can improve stronger conviction lanes without wrecking reserve performance.
+4. This is still an early pass. The real upside comes once we let these profiles accumulate more dates and then scan for nonlinear combinations, especially after pandas/ML tooling is added on top.
 
 ## Recommended Next Move
 1. keep these tables offline for now
 2. keep collecting them every graded day
-3. watch for one or two hidden-edge rules that improve both reserve and current windows
-4. only then decide whether any of them deserve a soft live penalty
+3. rerun these haircut grids after each graded slate
+4. only promote a hidden-edge haircut if reserve and current both stop wobbling
 """
     out_path.write_text(report, encoding="utf-8")
     print(f"Wrote {out_path}")

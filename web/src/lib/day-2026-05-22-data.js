@@ -106,8 +106,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +150",
-    "total": "o7.5 even / u7.5 -115",
+    "spread": "+1.5 -170 / -1.5 +155",
+    "total": "o7 -115 / u7.5 -125",
     "moneyline": "Astros +135 / Cubs -148",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs",
@@ -160,6 +160,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Cubs",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 1,
+          "winPctLast3": 0.33,
+          "winPctLast5": 0.4,
+          "runDiffLast3": -1.67,
+          "runDiffLast5": -2,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.46,
+          "snapbackPressureIndex": 36.84,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 34.58
+        },
+        "home": {
+          "scheduledOpponent": "Astros",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 5,
+          "winPctLast3": 0,
+          "winPctLast5": 0,
+          "runDiffLast3": -4.67,
+          "runDiffLast5": -4,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 3,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.56,
+          "snapbackPressureIndex": 100,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 63
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 41.88,
+          "top6ColdIndex": 51.28,
+          "top6HeatIndex": 24.33,
+          "top6WhiffRate": 0.17,
+          "top6StrikeoutRate": 0.18,
+          "top6WalkRate": 0.04,
+          "hottestHitter": {
+            "playerId": 665161,
+            "playerName": "Jeremy Peña",
+            "heatRegressionIndex": 38,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.23,
+            "totalBasesPerPaLast5": 0.23
+          },
+          "coldestHitter": {
+            "playerId": 670541,
+            "playerName": "Yordan Alvarez",
+            "coldStreakIndex": 75.73,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.07,
+            "strikeoutRateLast5": 0.26
+          },
+          "pressureHitter": {
+            "playerId": 694376,
+            "playerName": "Shay Whitcomb",
+            "pressurePlateIndex": 81.5,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.4,
+            "walkRateLast5": 0
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 52.76,
+          "top6ColdIndex": 58.7,
+          "top6HeatIndex": 23,
+          "top6WhiffRate": 0.2,
+          "top6StrikeoutRate": 0.25,
+          "top6WalkRate": 0.09,
+          "hottestHitter": {
+            "playerId": 663538,
+            "playerName": "Nico Hoerner",
+            "heatRegressionIndex": 38,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.21,
+            "totalBasesPerPaLast5": 0.25
+          },
+          "coldestHitter": {
+            "playerId": 664023,
+            "playerName": "Ian Happ",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 5,
+            "whiffRateLast5": 0.19,
+            "strikeoutRateLast5": 0.57
+          },
+          "pressureHitter": {
+            "playerId": 664023,
+            "playerName": "Ian Happ",
+            "pressurePlateIndex": 100,
+            "hitlessStreakGames": 5,
+            "whiffRateLast5": 0.19,
+            "walkRateLast5": 0.1
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -327,7 +451,7 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -135 / -1.5 +120",
-    "total": "o7 -110 / u7 -105",
+    "total": "o7 -110 / u7.5 -125",
     "moneyline": "Guardians +160 / Phillies -185",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
@@ -380,6 +504,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Phillies",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 5,
+          "winPctLast3": 1,
+          "winPctLast5": 1,
+          "runDiffLast3": 1.33,
+          "runDiffLast5": 3.4,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 2,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.43,
+          "snapbackPressureIndex": 14,
+          "heatRegressionIndex": 96.08,
+          "formPressureIndex": 61.24
+        },
+        "home": {
+          "scheduledOpponent": "Guardians",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 2,
+          "winPctLast3": 0.33,
+          "winPctLast5": 0.6,
+          "runDiffLast3": -2.33,
+          "runDiffLast5": 1,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 2,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.52,
+          "snapbackPressureIndex": 43,
+          "heatRegressionIndex": 26,
+          "formPressureIndex": 37.35
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 32.14,
+          "top6ColdIndex": 46.81,
+          "top6HeatIndex": 25.35,
+          "top6WhiffRate": 0.08,
+          "top6StrikeoutRate": 0.23,
+          "top6WalkRate": 0.07,
+          "hottestHitter": {
+            "playerId": 608070,
+            "playerName": "José Ramírez",
+            "heatRegressionIndex": 42.11,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.26,
+            "totalBasesPerPaLast5": 0.61
+          },
+          "coldestHitter": {
+            "playerId": 690984,
+            "playerName": "Petey Halpin",
+            "coldStreakIndex": 86.26,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0,
+            "strikeoutRateLast5": 0.33
+          },
+          "pressureHitter": {
+            "playerId": 690984,
+            "playerName": "Petey Halpin",
+            "pressurePlateIndex": 63.6,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0,
+            "walkRateLast5": 0
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 41.85,
+          "top6ColdIndex": 49.64,
+          "top6HeatIndex": 35.89,
+          "top6WhiffRate": 0.12,
+          "top6StrikeoutRate": 0.29,
+          "top6WalkRate": 0.11,
+          "hottestHitter": {
+            "playerId": 664761,
+            "playerName": "Alec Bohm",
+            "heatRegressionIndex": 73.85,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.38,
+            "totalBasesPerPaLast5": 0.81
+          },
+          "coldestHitter": {
+            "playerId": 666969,
+            "playerName": "Adolis García",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.17,
+            "strikeoutRateLast5": 0.4
+          },
+          "pressureHitter": {
+            "playerId": 666969,
+            "playerName": "Adolis García",
+            "pressurePlateIndex": 76.36,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.17,
+            "walkRateLast5": 0.1
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -586,6 +834,130 @@ export const rawGames = [
         "playedYesterdayFlag": false
       }
     },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Yankees",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 4,
+          "winPctLast3": 1,
+          "winPctLast5": 0.8,
+          "runDiffLast3": 5,
+          "runDiffLast5": 2.6,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 4,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.44,
+          "snapbackPressureIndex": 17,
+          "heatRegressionIndex": 69.08,
+          "formPressureIndex": 52.09
+        },
+        "home": {
+          "scheduledOpponent": "Rays",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 2,
+          "winPctLast3": 0.33,
+          "winPctLast5": 0.4,
+          "runDiffLast3": -0.67,
+          "runDiffLast5": -0.4,
+          "closeLossCountLast5": 3,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.44,
+          "snapbackPressureIndex": 55.84,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 43.13
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 23.21,
+          "top6ColdIndex": 31.77,
+          "top6HeatIndex": 43.76,
+          "top6WhiffRate": 0.04,
+          "top6StrikeoutRate": 0.13,
+          "top6WalkRate": 0.13,
+          "hottestHitter": {
+            "playerId": 691406,
+            "playerName": "Junior Caminero",
+            "heatRegressionIndex": 100,
+            "hitStreakGames": 5,
+            "homeRunStreakGames": 2,
+            "hitsPerPaLast5": 0.35,
+            "totalBasesPerPaLast5": 0.7
+          },
+          "coldestHitter": {
+            "playerId": 802415,
+            "playerName": "Chandler Simpson",
+            "coldStreakIndex": 61.71,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.03,
+            "strikeoutRateLast5": 0.14
+          },
+          "pressureHitter": {
+            "playerId": 802415,
+            "playerName": "Chandler Simpson",
+            "pressurePlateIndex": 28,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.03,
+            "walkRateLast5": 0.09
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 35.43,
+          "top6ColdIndex": 45.58,
+          "top6HeatIndex": 24,
+          "top6WhiffRate": 0.11,
+          "top6StrikeoutRate": 0.28,
+          "top6WalkRate": 0.13,
+          "hottestHitter": {
+            "playerId": 663757,
+            "playerName": "Trent Grisham",
+            "heatRegressionIndex": 38,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.2,
+            "totalBasesPerPaLast5": 0.27
+          },
+          "coldestHitter": {
+            "playerId": 592450,
+            "playerName": "Aaron Judge",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.11,
+            "strikeoutRateLast5": 0.43
+          },
+          "pressureHitter": {
+            "playerId": 592450,
+            "playerName": "Aaron Judge",
+            "pressurePlateIndex": 59.31,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.11,
+            "walkRateLast5": 0.1
+          }
+        }
+      }
+    },
     "tierThreeContext": {
       "bullpenCommand": {
         "away": {
@@ -739,9 +1111,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +115 / +1.5 -130",
-    "total": "o7.5 -105 / u7.5 -114",
-    "moneyline": "Pirates -152 / Blue Jays +130",
+    "spread": "-1.5 +115 / +1.5 -125",
+    "total": "o7.5 +102 / u7.5 -115",
+    "moneyline": "Pirates -154 / Blue Jays +135",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays",
     "tierTwoContext": {
@@ -793,6 +1165,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Blue Jays",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 2,
+          "winPctLast3": 0.67,
+          "winPctLast5": 0.4,
+          "runDiffLast3": 2.67,
+          "runDiffLast5": -0.8,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 2,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.55,
+          "snapbackPressureIndex": 23.84,
+          "heatRegressionIndex": 38,
+          "formPressureIndex": 38.1
+        },
+        "home": {
+          "scheduledOpponent": "Pirates",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 2,
+          "winPctLast3": 0.67,
+          "winPctLast5": 0.6,
+          "runDiffLast3": 0.67,
+          "runDiffLast5": 0.8,
+          "closeLossCountLast5": 2,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.56,
+          "snapbackPressureIndex": 22,
+          "heatRegressionIndex": 32,
+          "formPressureIndex": 35.4
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 27.56,
+          "top6ColdIndex": 27.47,
+          "top6HeatIndex": 42.02,
+          "top6WhiffRate": 0.11,
+          "top6StrikeoutRate": 0.21,
+          "top6WalkRate": 0.04,
+          "hottestHitter": {
+            "playerId": 804606,
+            "playerName": "Konnor Griffin",
+            "heatRegressionIndex": 75.97,
+            "hitStreakGames": 5,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.43,
+            "totalBasesPerPaLast5": 0.52
+          },
+          "coldestHitter": {
+            "playerId": 656811,
+            "playerName": "Ryan O'Hearn",
+            "coldStreakIndex": 53.73,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.06,
+            "strikeoutRateLast5": 0.17
+          },
+          "pressureHitter": {
+            "playerId": 665833,
+            "playerName": "Oneil Cruz",
+            "pressurePlateIndex": 40.25,
+            "hitlessStreakGames": 0,
+            "whiffRateLast5": 0.16,
+            "walkRateLast5": 0.09
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 36.93,
+          "top6ColdIndex": 40.66,
+          "top6HeatIndex": 37.02,
+          "top6WhiffRate": 0.12,
+          "top6StrikeoutRate": 0.25,
+          "top6WalkRate": 0.11,
+          "hottestHitter": {
+            "playerId": 662139,
+            "playerName": "Daulton Varsho",
+            "heatRegressionIndex": 84.14,
+            "hitStreakGames": 5,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.43,
+            "totalBasesPerPaLast5": 0.67
+          },
+          "coldestHitter": {
+            "playerId": 672960,
+            "playerName": "Kazuma Okamoto",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.24,
+            "strikeoutRateLast5": 0.48
+          },
+          "pressureHitter": {
+            "playerId": 672960,
+            "playerName": "Kazuma Okamoto",
+            "pressurePlateIndex": 82.92,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.24,
+            "walkRateLast5": 0.05
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -959,9 +1455,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -186",
-    "total": "o7.5 -119 / u8 -120",
-    "moneyline": "Mets -102 / Marlins -107",
+    "spread": "+1.5 -210 / +1.5 -190",
+    "total": "o7.5 -115 / u8 -120",
+    "moneyline": "Mets even / Marlins -112",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins",
     "tierTwoContext": {
@@ -1013,6 +1509,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Marlins",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast3": 0.33,
+          "winPctLast5": 0.6,
+          "runDiffLast3": -2,
+          "runDiffLast5": 0.8,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.51,
+          "snapbackPressureIndex": 14,
+          "heatRegressionIndex": 29,
+          "formPressureIndex": 31.05
+        },
+        "home": {
+          "scheduledOpponent": "Mets",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 3,
+          "winPctLast3": 0,
+          "winPctLast5": 0.2,
+          "runDiffLast3": -6,
+          "runDiffLast5": -1.8,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 2,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.67,
+          "snapbackPressureIndex": 69.44,
+          "heatRegressionIndex": 20,
+          "formPressureIndex": 52.25
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 31.28,
+          "top6ColdIndex": 29.17,
+          "top6HeatIndex": 55.69,
+          "top6WhiffRate": 0.07,
+          "top6StrikeoutRate": 0.17,
+          "top6WalkRate": 0.05,
+          "hottestHitter": {
+            "playerId": 660644,
+            "playerName": "Vidal Bruján",
+            "heatRegressionIndex": 100,
+            "hitStreakGames": 1,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 1,
+            "totalBasesPerPaLast5": 1
+          },
+          "coldestHitter": {
+            "playerId": 596103,
+            "playerName": "Austin Slater",
+            "coldStreakIndex": 70.76,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.03,
+            "strikeoutRateLast5": 0.33
+          },
+          "pressureHitter": {
+            "playerId": 596103,
+            "playerName": "Austin Slater",
+            "pressurePlateIndex": 53.6,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.03,
+            "walkRateLast5": 0.11
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 45,
+          "top6ColdIndex": 49.69,
+          "top6HeatIndex": 35.95,
+          "top6WhiffRate": 0.13,
+          "top6StrikeoutRate": 0.24,
+          "top6WalkRate": 0.09,
+          "hottestHitter": {
+            "playerId": 669364,
+            "playerName": "Xavier Edwards",
+            "heatRegressionIndex": 86.86,
+            "hitStreakGames": 5,
+            "homeRunStreakGames": 2,
+            "hitsPerPaLast5": 0.32,
+            "totalBasesPerPaLast5": 0.59
+          },
+          "coldestHitter": {
+            "playerId": 665923,
+            "playerName": "Esteury Ruiz",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.28,
+            "strikeoutRateLast5": 0.5
+          },
+          "pressureHitter": {
+            "playerId": 665923,
+            "playerName": "Esteury Ruiz",
+            "pressurePlateIndex": 98.96,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.28,
+            "walkRateLast5": 0.1
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -1168,9 +1788,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -200 / +1.5 -202",
-    "total": "o8 -105 / u8.5 -120",
-    "moneyline": "Twins +110 / Red Sox -120",
+    "spread": "+1.5 -195 / +1.5 -205",
+    "total": "o7.5 -115 / u8 -120",
+    "moneyline": "Twins +110 / Red Sox -121",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
     "tierTwoContext": {
@@ -1222,6 +1842,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Red Sox",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast3": 0.67,
+          "winPctLast5": 0.6,
+          "runDiffLast3": 1.67,
+          "runDiffLast5": 1,
+          "closeLossCountLast5": 2,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.48,
+          "snapbackPressureIndex": 22,
+          "heatRegressionIndex": 23,
+          "formPressureIndex": 28.35
+        },
+        "home": {
+          "scheduledOpponent": "Twins",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 3,
+          "winPctLast3": 1,
+          "winPctLast5": 0.8,
+          "runDiffLast3": 3,
+          "runDiffLast5": 0.6,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.52,
+          "snapbackPressureIndex": 17,
+          "heatRegressionIndex": 53.48,
+          "formPressureIndex": 42.07
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 34.29,
+          "top6ColdIndex": 48.26,
+          "top6HeatIndex": 29.16,
+          "top6WhiffRate": 0.11,
+          "top6StrikeoutRate": 0.14,
+          "top6WalkRate": 0.08,
+          "hottestHitter": {
+            "playerId": 680777,
+            "playerName": "Ryan Jeffers",
+            "heatRegressionIndex": 56,
+            "hitStreakGames": 3,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.21,
+            "totalBasesPerPaLast5": 0.42
+          },
+          "coldestHitter": {
+            "playerId": 668885,
+            "playerName": "Austin Martin",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.09,
+            "strikeoutRateLast5": 0.2
+          },
+          "pressureHitter": {
+            "playerId": 668885,
+            "playerName": "Austin Martin",
+            "pressurePlateIndex": 59.5,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.09,
+            "walkRateLast5": 0.05
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 21.62,
+          "top6ColdIndex": 16.64,
+          "top6HeatIndex": 57.67,
+          "top6WhiffRate": 0.09,
+          "top6StrikeoutRate": 0.19,
+          "top6WalkRate": 0.04,
+          "hottestHitter": {
+            "playerId": 575929,
+            "playerName": "Willson Contreras",
+            "heatRegressionIndex": 100,
+            "hitStreakGames": 4,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.45,
+            "totalBasesPerPaLast5": 0.9
+          },
+          "coldestHitter": {
+            "playerId": 681508,
+            "playerName": "Mickey Gasper",
+            "coldStreakIndex": 46.29,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.07,
+            "strikeoutRateLast5": 0.27
+          },
+          "pressureHitter": {
+            "playerId": 681508,
+            "playerName": "Mickey Gasper",
+            "pressurePlateIndex": 29.6,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.07,
+            "walkRateLast5": 0
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -1388,9 +2132,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -134 / -1.5 +120",
-    "total": "o8.5 -110 / u9 -122",
-    "moneyline": "Nationals +150 / Braves -170",
+    "spread": "+1.5 -137 / -1.5 +123",
+    "total": "o8.5 -110 / u9 -118",
+    "moneyline": "Nationals +145 / Braves -165",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves",
     "tierTwoContext": {
@@ -1442,6 +2186,130 @@ export const rawGames = [
         "previousMatchups30d": 2,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Braves",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 1,
+          "winPctLast3": 0.67,
+          "winPctLast5": 0.4,
+          "runDiffLast3": 2,
+          "runDiffLast5": -1.4,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.44,
+          "snapbackPressureIndex": 40.84,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 36.38
+        },
+        "home": {
+          "scheduledOpponent": "Nationals",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 3,
+          "winPctLast3": 1,
+          "winPctLast5": 0.8,
+          "runDiffLast3": 6,
+          "runDiffLast5": 2.6,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 3,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.44,
+          "snapbackPressureIndex": 17,
+          "heatRegressionIndex": 72.08,
+          "formPressureIndex": 50.44
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 30.12,
+          "top6ColdIndex": 38.76,
+          "top6HeatIndex": 27.42,
+          "top6WhiffRate": 0.11,
+          "top6StrikeoutRate": 0.17,
+          "top6WalkRate": 0.15,
+          "hottestHitter": {
+            "playerId": 691781,
+            "playerName": "Brady House",
+            "heatRegressionIndex": 56,
+            "hitStreakGames": 3,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.21,
+            "totalBasesPerPaLast5": 0.42
+          },
+          "coldestHitter": {
+            "playerId": 678554,
+            "playerName": "Curtis Mead",
+            "coldStreakIndex": 55.24,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.01,
+            "strikeoutRateLast5": 0.11
+          },
+          "pressureHitter": {
+            "playerId": 671277,
+            "playerName": "Luis García Jr.",
+            "pressurePlateIndex": 38.77,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.18,
+            "walkRateLast5": 0
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 22.86,
+          "top6ColdIndex": 25.83,
+          "top6HeatIndex": 36.31,
+          "top6WhiffRate": 0.09,
+          "top6StrikeoutRate": 0.18,
+          "top6WalkRate": 0.1,
+          "hottestHitter": {
+            "playerId": 671739,
+            "playerName": "Michael Harris II",
+            "heatRegressionIndex": 61.23,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.27,
+            "totalBasesPerPaLast5": 0.68
+          },
+          "coldestHitter": {
+            "playerId": 621566,
+            "playerName": "Matt Olson",
+            "coldStreakIndex": 53.07,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.04,
+            "strikeoutRateLast5": 0.18
+          },
+          "pressureHitter": {
+            "playerId": 642201,
+            "playerName": "Eli White",
+            "pressurePlateIndex": 32.79,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.14,
+            "walkRateLast5": 0
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -1597,9 +2465,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -194",
-    "total": "o8 -105 / u8 -113",
-    "moneyline": "Tigers +105 / Orioles -110",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
     "tierTwoContext": {
@@ -1651,6 +2519,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Orioles",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 5,
+          "winPctLast3": 0,
+          "winPctLast5": 0,
+          "runDiffLast3": -1.33,
+          "runDiffLast5": -2.6,
+          "closeLossCountLast5": 3,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.53,
+          "snapbackPressureIndex": 100,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 63
+        },
+        "home": {
+          "scheduledOpponent": "Tigers",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 3,
+          "winPctLast3": 0,
+          "winPctLast5": 0.2,
+          "runDiffLast3": -5,
+          "runDiffLast5": -4.2,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 2,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.6,
+          "snapbackPressureIndex": 73.44,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 51.05
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 36.59,
+          "top6ColdIndex": 63.33,
+          "top6HeatIndex": 22.67,
+          "top6WhiffRate": 0.1,
+          "top6StrikeoutRate": 0.24,
+          "top6WalkRate": 0.15,
+          "hottestHitter": {
+            "playerId": 693307,
+            "playerName": "Dillon Dingler",
+            "heatRegressionIndex": 36,
+            "hitStreakGames": 1,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.19,
+            "totalBasesPerPaLast5": 0.38
+          },
+          "coldestHitter": {
+            "playerId": 663330,
+            "playerName": "Jahmai Jones",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.17,
+            "strikeoutRateLast5": 0.27
+          },
+          "pressureHitter": {
+            "playerId": 663330,
+            "playerName": "Jahmai Jones",
+            "pressurePlateIndex": 59.07,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.17,
+            "walkRateLast5": 0.27
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 40.16,
+          "top6ColdIndex": 37.51,
+          "top6HeatIndex": 29.03,
+          "top6WhiffRate": 0.17,
+          "top6StrikeoutRate": 0.42,
+          "top6WalkRate": 0.07,
+          "hottestHitter": {
+            "playerId": 624413,
+            "playerName": "Pete Alonso",
+            "heatRegressionIndex": 42,
+            "hitStreakGames": 1,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.32,
+            "totalBasesPerPaLast5": 0.55
+          },
+          "coldestHitter": {
+            "playerId": 668974,
+            "playerName": "Maverick Handley",
+            "coldStreakIndex": 63,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.5,
+            "strikeoutRateLast5": 1
+          },
+          "pressureHitter": {
+            "playerId": 668974,
+            "playerName": "Maverick Handley",
+            "pressurePlateIndex": 100,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.5,
+            "walkRateLast5": 0
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -1806,9 +2798,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +136 / +1.5 -160",
-    "total": "o9 -105 / u9 -115",
-    "moneyline": "Dodgers -120 / Brewers even",
+    "spread": "-1.5 +136 / +1.5 -155",
+    "total": "o9 -105 / u9 -114",
+    "moneyline": "Dodgers -118 / Brewers even",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers",
     "tierTwoContext": {
@@ -1860,6 +2852,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Brewers",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 2,
+          "winPctLast3": 0.67,
+          "winPctLast5": 0.8,
+          "runDiffLast3": 1.33,
+          "runDiffLast5": 5.2,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 2,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.51,
+          "snapbackPressureIndex": 18,
+          "heatRegressionIndex": 72.68,
+          "formPressureIndex": 50.71
+        },
+        "home": {
+          "scheduledOpponent": "Dodgers",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 3,
+          "winPctLast3": 1,
+          "winPctLast5": 0.8,
+          "runDiffLast3": 4.67,
+          "runDiffLast5": 2.8,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 2,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.54,
+          "snapbackPressureIndex": 18,
+          "heatRegressionIndex": 67.28,
+          "formPressureIndex": 48.28
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 23.11,
+          "top6ColdIndex": 34.3,
+          "top6HeatIndex": 37.82,
+          "top6WhiffRate": 0.08,
+          "top6StrikeoutRate": 0.18,
+          "top6WalkRate": 0.13,
+          "hottestHitter": {
+            "playerId": 660271,
+            "playerName": "Shohei Ohtani",
+            "heatRegressionIndex": 78.9,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.42,
+            "totalBasesPerPaLast5": 0.75
+          },
+          "coldestHitter": {
+            "playerId": 681624,
+            "playerName": "Andy Pages",
+            "coldStreakIndex": 81.3,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.12,
+            "strikeoutRateLast5": 0.23
+          },
+          "pressureHitter": {
+            "playerId": 681624,
+            "playerName": "Andy Pages",
+            "pressurePlateIndex": 40.6,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.12,
+            "walkRateLast5": 0.05
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 40.56,
+          "top6ColdIndex": 31.71,
+          "top6HeatIndex": 34.39,
+          "top6WhiffRate": 0.14,
+          "top6StrikeoutRate": 0.34,
+          "top6WalkRate": 0.08,
+          "hottestHitter": {
+            "playerId": 661388,
+            "playerName": "William Contreras",
+            "heatRegressionIndex": 77.15,
+            "hitStreakGames": 5,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.38,
+            "totalBasesPerPaLast5": 0.38
+          },
+          "coldestHitter": {
+            "playerId": 672012,
+            "playerName": "Tyler Black",
+            "coldStreakIndex": 61.11,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.25,
+            "strikeoutRateLast5": 1
+          },
+          "pressureHitter": {
+            "playerId": 672012,
+            "playerName": "Tyler Black",
+            "pressurePlateIndex": 94.6,
+            "hitlessStreakGames": 1,
+            "whiffRateLast5": 0.25,
+            "walkRateLast5": 0
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -2026,9 +3142,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +130 / +1.5 -145",
-    "total": "o8.5 even / u8.5 -109",
-    "moneyline": "Mariners -130 / Royals +110",
+    "spread": "-1.5 +132 / +1.5 -150",
+    "total": "o8.5 +105 / u8.5 -114",
+    "moneyline": "Mariners -125 / Royals +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals",
     "tierTwoContext": {
@@ -2080,6 +3196,130 @@ export const rawGames = [
         "previousMatchups30d": 3,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Royals",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast3": 0.67,
+          "winPctLast5": 0.4,
+          "runDiffLast3": 1.67,
+          "runDiffLast5": -0.6,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.55,
+          "snapbackPressureIndex": 24.84,
+          "heatRegressionIndex": 29,
+          "formPressureIndex": 34.05
+        },
+        "home": {
+          "scheduledOpponent": "Mariners",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 3,
+          "winPctLast3": 0,
+          "winPctLast5": 0.2,
+          "runDiffLast3": -3,
+          "runDiffLast5": -1.8,
+          "closeLossCountLast5": 3,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.49,
+          "snapbackPressureIndex": 78.44,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 56.3
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 30.52,
+          "top6ColdIndex": 44.24,
+          "top6HeatIndex": 30.67,
+          "top6WhiffRate": 0.09,
+          "top6StrikeoutRate": 0.2,
+          "top6WalkRate": 0.09,
+          "hottestHitter": {
+            "playerId": 677594,
+            "playerName": "Julio Rodríguez",
+            "heatRegressionIndex": 56,
+            "hitStreakGames": 3,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.24,
+            "totalBasesPerPaLast5": 0.43
+          },
+          "coldestHitter": {
+            "playerId": 641487,
+            "playerName": "J.P. Crawford",
+            "coldStreakIndex": 85.44,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.08,
+            "strikeoutRateLast5": 0.25
+          },
+          "pressureHitter": {
+            "playerId": 641487,
+            "playerName": "J.P. Crawford",
+            "pressurePlateIndex": 49.48,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.08,
+            "walkRateLast5": 0.06
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 28.89,
+          "top6ColdIndex": 41.44,
+          "top6HeatIndex": 30.04,
+          "top6WhiffRate": 0.11,
+          "top6StrikeoutRate": 0.2,
+          "top6WalkRate": 0.09,
+          "hottestHitter": {
+            "playerId": 677951,
+            "playerName": "Bobby Witt Jr.",
+            "heatRegressionIndex": 48,
+            "hitStreakGames": 3,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.2,
+            "totalBasesPerPaLast5": 0.25
+          },
+          "coldestHitter": {
+            "playerId": 686469,
+            "playerName": "Vinnie Pasquantino",
+            "coldStreakIndex": 89.16,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.11,
+            "strikeoutRateLast5": 0.29
+          },
+          "pressureHitter": {
+            "playerId": 686469,
+            "playerName": "Vinnie Pasquantino",
+            "pressurePlateIndex": 40.74,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.11,
+            "walkRateLast5": 0.14
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -2246,9 +3486,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +130 / +1.5 -145",
-    "total": "o7.5 -114 / u8 -108",
-    "moneyline": "Rangers -140 / Angels +120",
+    "spread": "-1.5 +130 / +1.5 -140",
+    "total": "o7.5 -110 / u8 -117",
+    "moneyline": "Rangers -136 / Angels +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels",
     "tierTwoContext": {
@@ -2300,6 +3540,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Angels",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 2,
+          "winPctLast3": 0.67,
+          "winPctLast5": 0.6,
+          "runDiffLast3": 3.33,
+          "runDiffLast5": 3,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 2,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.39,
+          "snapbackPressureIndex": 18,
+          "heatRegressionIndex": 53,
+          "formPressureIndex": 41.85
+        },
+        "home": {
+          "scheduledOpponent": "Rangers",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 3,
+          "winPctLast3": 0,
+          "winPctLast5": 0.2,
+          "runDiffLast3": -3.33,
+          "runDiffLast5": -3.6,
+          "closeLossCountLast5": 2,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 2,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 2,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.52,
+          "snapbackPressureIndex": 77.44,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 58.85
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 34.02,
+          "top6ColdIndex": 41.59,
+          "top6HeatIndex": 34.29,
+          "top6WhiffRate": 0.09,
+          "top6StrikeoutRate": 0.17,
+          "top6WalkRate": 0.12,
+          "hottestHitter": {
+            "playerId": 677649,
+            "playerName": "Ezequiel Duran",
+            "heatRegressionIndex": 57.77,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.39,
+            "totalBasesPerPaLast5": 0.65
+          },
+          "coldestHitter": {
+            "playerId": 608369,
+            "playerName": "Corey Seager",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 5,
+            "whiffRateLast5": 0.15,
+            "strikeoutRateLast5": 0.35
+          },
+          "pressureHitter": {
+            "playerId": 608369,
+            "playerName": "Corey Seager",
+            "pressurePlateIndex": 82.2,
+            "hitlessStreakGames": 5,
+            "whiffRateLast5": 0.15,
+            "walkRateLast5": 0.05
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 32.2,
+          "top6ColdIndex": 49.73,
+          "top6HeatIndex": 29,
+          "top6WhiffRate": 0.11,
+          "top6StrikeoutRate": 0.21,
+          "top6WalkRate": 0.06,
+          "hottestHitter": {
+            "playerId": 694384,
+            "playerName": "Nolan Schanuel",
+            "heatRegressionIndex": 46,
+            "hitStreakGames": 2,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.24,
+            "totalBasesPerPaLast5": 0.43
+          },
+          "coldestHitter": {
+            "playerId": 687093,
+            "playerName": "Vaughn Grissom",
+            "coldStreakIndex": 89.03,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.09,
+            "strikeoutRateLast5": 0.09
+          },
+          "pressureHitter": {
+            "playerId": 687263,
+            "playerName": "Zach Neto",
+            "pressurePlateIndex": 51.27,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.14,
+            "walkRateLast5": 0.05
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -2455,8 +3819,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +150 / +1.5 -170",
-    "total": "o7.5 -118 / u8 -110",
+    "spread": "-1.5 +146 / +1.5 -170",
+    "total": "o8 -105 / u8 -110",
     "moneyline": "Athletics -115 / Padres even",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
@@ -2509,6 +3873,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Padres",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 3,
+          "winPctLast3": 1,
+          "winPctLast5": 0.6,
+          "runDiffLast3": 3.33,
+          "runDiffLast5": 0,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 3,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.36,
+          "snapbackPressureIndex": 21,
+          "heatRegressionIndex": 47,
+          "formPressureIndex": 39.15
+        },
+        "home": {
+          "scheduledOpponent": "Athletics",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 2,
+          "winPctLast3": 0.33,
+          "winPctLast5": 0.6,
+          "runDiffLast3": -1.33,
+          "runDiffLast5": 0.8,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.56,
+          "snapbackPressureIndex": 44,
+          "heatRegressionIndex": 20,
+          "formPressureIndex": 40.8
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 22.54,
+          "top6ColdIndex": 24.78,
+          "top6HeatIndex": 42.67,
+          "top6WhiffRate": 0.09,
+          "top6StrikeoutRate": 0.16,
+          "top6WalkRate": 0.15,
+          "hottestHitter": {
+            "playerId": 666126,
+            "playerName": "Carlos Cortes",
+            "heatRegressionIndex": 58,
+            "hitStreakGames": 4,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.25,
+            "totalBasesPerPaLast5": 0.3
+          },
+          "coldestHitter": {
+            "playerId": 669127,
+            "playerName": "Shea Langeliers",
+            "coldStreakIndex": 46.33,
+            "hitlessStreakGames": 0,
+            "whiffRateLast5": 0.14,
+            "strikeoutRateLast5": 0.16
+          },
+          "pressureHitter": {
+            "playerId": 667670,
+            "playerName": "Brent Rooker",
+            "pressurePlateIndex": 30.6,
+            "hitlessStreakGames": 0,
+            "whiffRateLast5": 0.18,
+            "walkRateLast5": 0.04
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 31.27,
+          "top6ColdIndex": 47.54,
+          "top6HeatIndex": 29.38,
+          "top6WhiffRate": 0.11,
+          "top6StrikeoutRate": 0.21,
+          "top6WalkRate": 0.11,
+          "hottestHitter": {
+            "playerId": 665487,
+            "playerName": "Fernando Tatis Jr.",
+            "heatRegressionIndex": 58,
+            "hitStreakGames": 4,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.23,
+            "totalBasesPerPaLast5": 0.23
+          },
+          "coldestHitter": {
+            "playerId": 593428,
+            "playerName": "Xander Bogaerts",
+            "coldStreakIndex": 91.11,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.16,
+            "strikeoutRateLast5": 0.32
+          },
+          "pressureHitter": {
+            "playerId": 593428,
+            "playerName": "Xander Bogaerts",
+            "pressurePlateIndex": 51.74,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.16,
+            "walkRateLast5": 0.05
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -2676,8 +4164,8 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -130 / -1.5 +116",
-    "total": "o9 -115 / u9.5 -120",
-    "moneyline": "Rockies +158 / Diamondbacks -174",
+    "total": "o9 -115 / u9 -105",
+    "moneyline": "Rockies +160 / Diamondbacks -178",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks",
     "tierTwoContext": {
@@ -2729,6 +4217,130 @@ export const rawGames = [
         "previousMatchups30d": 4,
         "seriesGameNumber": 2,
         "playedYesterdayFlag": true
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Diamondbacks",
+          "scheduledSeriesGameNumber": 2,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 3,
+          "winPctLast3": 0,
+          "winPctLast5": 0.2,
+          "runDiffLast3": -4,
+          "runDiffLast5": -2.6,
+          "closeLossCountLast5": 3,
+          "blowoutWinCountLast5": 0,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 1,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.48,
+          "snapbackPressureIndex": 83.44,
+          "heatRegressionIndex": 17,
+          "formPressureIndex": 58.55
+        },
+        "home": {
+          "scheduledOpponent": "Rockies",
+          "scheduledSeriesGameNumber": 2,
+          "divisionMatchupFlag": true,
+          "gamesSample": 5,
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 5,
+          "winPctLast3": 1,
+          "winPctLast5": 1,
+          "runDiffLast3": 2,
+          "runDiffLast5": 3.6,
+          "closeLossCountLast5": 0,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 0,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.41,
+          "snapbackPressureIndex": 19,
+          "heatRegressionIndex": 94.28,
+          "formPressureIndex": 60.43
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 41.06,
+          "top6ColdIndex": 44.61,
+          "top6HeatIndex": 34.4,
+          "top6WhiffRate": 0.12,
+          "top6StrikeoutRate": 0.23,
+          "top6WalkRate": 0.06,
+          "hottestHitter": {
+            "playerId": 687597,
+            "playerName": "Jordan Beck",
+            "heatRegressionIndex": 56.4,
+            "hitStreakGames": 3,
+            "homeRunStreakGames": 0,
+            "hitsPerPaLast5": 0.38,
+            "totalBasesPerPaLast5": 0.63
+          },
+          "coldestHitter": {
+            "playerId": 696100,
+            "playerName": "Hunter Goodman",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.19,
+            "strikeoutRateLast5": 0.47
+          },
+          "pressureHitter": {
+            "playerId": 696100,
+            "playerName": "Hunter Goodman",
+            "pressurePlateIndex": 85.24,
+            "hitlessStreakGames": 4,
+            "whiffRateLast5": 0.19,
+            "walkRateLast5": 0.06
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 30.39,
+          "top6ColdIndex": 35.86,
+          "top6HeatIndex": 45.05,
+          "top6WhiffRate": 0.08,
+          "top6StrikeoutRate": 0.12,
+          "top6WalkRate": 0.1,
+          "hottestHitter": {
+            "playerId": 606466,
+            "playerName": "Ketel Marte",
+            "heatRegressionIndex": 100,
+            "hitStreakGames": 4,
+            "homeRunStreakGames": 2,
+            "hitsPerPaLast5": 0.42,
+            "totalBasesPerPaLast5": 0.75
+          },
+          "coldestHitter": {
+            "playerId": 545121,
+            "playerName": "Ildemaro Vargas",
+            "coldStreakIndex": 64.6,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.05,
+            "strikeoutRateLast5": 0
+          },
+          "pressureHitter": {
+            "playerId": 666971,
+            "playerName": "Lourdes Gurriel Jr.",
+            "pressurePlateIndex": 47.03,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0.15,
+            "walkRateLast5": 0
+          }
+        }
       }
     },
     "tierThreeContext": {
@@ -2895,9 +4507,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -184",
+    "spread": "+1.5 -205 / +1.5 -177",
     "total": "o8.5 -120 / u9 -120",
-    "moneyline": "White Sox +104 / Giants -115",
+    "moneyline": "White Sox -102 / Giants -114",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants",
     "tierTwoContext": {
@@ -2949,6 +4561,130 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "stateContext": {
+      "teamState": {
+        "away": {
+          "scheduledOpponent": "Giants",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 1,
+          "winPctLast3": 0.33,
+          "winPctLast5": 0.6,
+          "runDiffLast3": -1.67,
+          "runDiffLast5": 0.2,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 0,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.53,
+          "snapbackPressureIndex": 37,
+          "heatRegressionIndex": 20,
+          "formPressureIndex": 34.65
+        },
+        "home": {
+          "scheduledOpponent": "White Sox",
+          "scheduledSeriesGameNumber": 1,
+          "divisionMatchupFlag": false,
+          "gamesSample": 5,
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 3,
+          "winPctLast3": 0,
+          "winPctLast5": 0.4,
+          "runDiffLast3": -5,
+          "runDiffLast5": -0.8,
+          "closeLossCountLast5": 1,
+          "blowoutWinCountLast5": 1,
+          "blowoutLossCountLast5": 1,
+          "comebackWinCountLast5": 2,
+          "bullpenFlipLossCountLast5": 1,
+          "quietFirst5CountLast5": 0,
+          "firstInningJoltCountLast5": 0,
+          "opponentWinPctLast5": 0.51,
+          "snapbackPressureIndex": 60.84,
+          "heatRegressionIndex": 20,
+          "formPressureIndex": 48.38
+        }
+      },
+      "hitterState": {
+        "away": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 35.68,
+          "top6ColdIndex": 42.23,
+          "top6HeatIndex": 36.09,
+          "top6WhiffRate": 0.14,
+          "top6StrikeoutRate": 0.22,
+          "top6WalkRate": 0.07,
+          "hottestHitter": {
+            "playerId": 545341,
+            "playerName": "Randal Grichuk",
+            "heatRegressionIndex": 55.83,
+            "hitStreakGames": 1,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.33,
+            "totalBasesPerPaLast5": 0.83
+          },
+          "coldestHitter": {
+            "playerId": 695657,
+            "playerName": "Colson Montgomery",
+            "coldStreakIndex": 100,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.27,
+            "strikeoutRateLast5": 0.41
+          },
+          "pressureHitter": {
+            "playerId": 695657,
+            "playerName": "Colson Montgomery",
+            "pressurePlateIndex": 82.55,
+            "hitlessStreakGames": 3,
+            "whiffRateLast5": 0.27,
+            "walkRateLast5": 0.14
+          }
+        },
+        "home": {
+          "topSlots": 6,
+          "hittersTracked": 6,
+          "top6PressureIndex": 26.33,
+          "top6ColdIndex": 33.48,
+          "top6HeatIndex": 39.83,
+          "top6WhiffRate": 0.02,
+          "top6StrikeoutRate": 0.02,
+          "top6WalkRate": 0.02,
+          "hottestHitter": {
+            "playerId": 808982,
+            "playerName": "Jung Hoo Lee",
+            "heatRegressionIndex": 76,
+            "hitStreakGames": 5,
+            "homeRunStreakGames": 1,
+            "hitsPerPaLast5": 0.28,
+            "totalBasesPerPaLast5": 0.44
+          },
+          "coldestHitter": {
+            "playerId": 686823,
+            "playerName": "Will Brennan",
+            "coldStreakIndex": 85.19,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0,
+            "strikeoutRateLast5": 0
+          },
+          "pressureHitter": {
+            "playerId": 686823,
+            "playerName": "Will Brennan",
+            "pressurePlateIndex": 38,
+            "hitlessStreakGames": 2,
+            "whiffRateLast5": 0,
+            "walkRateLast5": 0
+          }
+        }
       }
     },
     "tierThreeContext": {

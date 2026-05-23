@@ -73,7 +73,11 @@ const buildSlateGameSummary = (game: any) => ({
 })
 
 const buildSlateGameDetail = (game: any) => {
-  const detail = { ...game, detailLevel: 'full' }
+  const detail = {
+    ...game,
+    detailLevel: 'full',
+    stateContext: game.stateContext ?? null
+  }
   delete detail.playerProps
   return detail
 }

@@ -290,15 +290,15 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
   },
   "2026-05-22": {
     "overall": {
-      "hits": 15,
-      "total": 27,
-      "hitRate": 55.6
+      "hits": 17,
+      "total": 29,
+      "hitRate": 58.6
     },
     "byType": {
       "totalBases": {
-        "hits": 11,
-        "total": 21,
-        "hitRate": 52.4
+        "hits": 13,
+        "total": 23,
+        "hitRate": 56.5
       },
       "singles": {
         "hits": 2,
@@ -312,15 +312,15 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       }
     },
     "topHits": [
-      "Ketel Marte Over 1.5 total bases",
-      "Juan Soto Over 1.5 total bases",
       "Corbin Carroll Over 1.5 total bases",
-      "Munetaka Murakami Over 1.5 total bases"
+      "Juan Soto Over 1.5 total bases",
+      "Munetaka Murakami Over 1.5 total bases",
+      "Ketel Marte Over 1.5 total bases"
     ],
     "topMisses": [
-      "Kyle Schwarber Over 1.5 total bases",
       "Samuel Basallo Over 1.5 total bases",
       "Randy Arozarena Over 1.5 total bases",
+      "Kyle Schwarber Over 1.5 total bases",
       "Michael Harris II Over 1.5 total bases"
     ]
   }

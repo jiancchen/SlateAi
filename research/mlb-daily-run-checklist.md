@@ -129,8 +129,18 @@ If any of those fail, rerun or patch before trusting the board.
 After games finish:
 
 ```bash
-npm run data:export:history-journal
+npm run data:close:mlb-day -- --date YYYY-MM-DD
 ```
+
+This now handles:
+- MLB final ingest
+- story-signal refresh
+- hidden-edge profile refresh
+- HR grading
+- tracked prop grading
+- history export
+- published history refresh
+- hidden-edge haircut-grid rerun
 
 Then update:
 - follow-up notes
