@@ -1824,6 +1824,145 @@ const buildTotalLean = (projectedRuns, line) => {
   }
 }
 
+const buildFirstInningRunProfile = ({
+  projectedRunProfile = null,
+  teamScript = null,
+  lineupProfile = null,
+  hitterState = null,
+  teamState = null,
+  opposingStarter = null,
+  opposingStarterHoldConfidence = null,
+  weatherProfile = null
+}) => {
+  if (!projectedRunProfile || !Number.isFinite(projectedRunProfile.first5Runs)) {
+    return {
+      projectedRuns: null,
+      runProbability: null,
+      firstInningShare: null
+    }
+  }
+
+  const topThirdScore = Number(lineupProfile?.topThirdScore ?? teamScript?.topThirdScore ?? 50)
+  const starterPressureIndex = Number(lineupProfile?.starterPressureIndex ?? 50)
+  const overallPressureIndex = Number(lineupProfile?.overallPressureIndex ?? 50)
+  const pitchTypePressureIndex = Number(lineupProfile?.pitchTypePressureIndex ?? 50)
+  const platoonPressureIndex = Number(lineupProfile?.platoonPressureIndex ?? 50)
+  const top6HeatIndex = Number(hitterState?.top6HeatIndex ?? 50)
+  const top6PressureIndex = Number(hitterState?.top6PressureIndex ?? 50)
+  const top6ColdIndex = Number(hitterState?.top6ColdIndex ?? 50)
+  const firstInningJoltCountLast5 = Number(teamState?.firstInningJoltCountLast5 ?? 0)
+  const quietFirst5CountLast5 = Number(teamState?.quietFirst5CountLast5 ?? 0)
+  const snapbackPressureIndex = Number(teamState?.snapbackPressureIndex ?? 50)
+  const starterHoldConfidence = Number(opposingStarterHoldConfidence)
+  const starterWhip = Number(opposingStarter?.whip)
+  const starterBbPerNine = Number(opposingStarter?.bbPerNine)
+  const starterHrPerNine = Number(opposingStarter?.hrPerNine)
+
+  let share = 0.205
+  share += Math.max(topThirdScore - 50, 0) * 0.0018
+  share += Math.max(starterPressureIndex - 50, 0) * 0.0014
+  share += Math.max(overallPressureIndex - 50, 0) * 0.0008
+  share += Math.max(pitchTypePressureIndex - 50, 0) * 0.00045
+  share += Math.max(platoonPressureIndex - 50, 0) * 0.00045
+  share += Math.max(top6HeatIndex - 50, 0) * 0.0005
+  share += Math.max(top6PressureIndex - 50, 0) * 0.00055
+  share -= Math.max(top6ColdIndex - 50, 0) * 0.0007
+  share += firstInningJoltCountLast5 * 0.008
+  share -= quietFirst5CountLast5 * 0.006
+  share += Math.max(snapbackPressureIndex - 55, 0) * 0.00035
+
+  if (Number.isFinite(starterHoldConfidence)) {
+    share -= Math.max(starterHoldConfidence - 58, 0) * 0.0015
+    share += Math.max(58 - starterHoldConfidence, 0) * 0.0011
+  }
+
+  if (Number.isFinite(starterWhip)) {
+    share += (starterWhip - 1.22) * 0.055
+  }
+
+  if (Number.isFinite(starterBbPerNine)) {
+    share += (starterBbPerNine - 3.0) * 0.008
+  }
+
+  if (Number.isFinite(starterHrPerNine)) {
+    share += (starterHrPerNine - 1.0) * 0.01
+  }
+
+  share = clamp(share, 0.12, 0.34)
+
+  let projectedRuns = projectedRunProfile.first5Runs * share
+  if (weatherProfile) {
+    projectedRuns *= 1 + (Number(weatherProfile.runBoostFirst5 || 0) * 1.8)
+  }
+  projectedRuns = clamp(projectedRuns, 0.05, 1.35)
+
+  let runProbability = 1 - Math.exp(-projectedRuns)
+  runProbability += Math.max(topThirdScore - 60, 0) * 0.002
+  runProbability += Math.max(top6PressureIndex - 60, 0) * 0.0015
+  runProbability -= Math.max(top6ColdIndex - 62, 0) * 0.0018
+  runProbability = clamp(runProbability, 0.06, 0.76)
+
+  return {
+    projectedRuns: roundToTenths(projectedRuns),
+    runProbability: roundToTenths(runProbability * 100),
+    firstInningShare: roundToTenths(share * 100)
+  }
+}
+
+const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) => {
+  const awayProbability = Number.isFinite(awayProfile?.runProbability)
+    ? awayProfile.runProbability / 100
+    : null
+  const homeProbability = Number.isFinite(homeProfile?.runProbability)
+    ? homeProfile.runProbability / 100
+    : null
+
+  if (!Number.isFinite(awayProbability) || !Number.isFinite(homeProbability)) {
+    return {
+      pick: 'Pass',
+      strength: 'No model',
+      label: 'No model',
+      edge: null,
+      yesProbabilityPct: null,
+      noProbabilityPct: null,
+      summary: 'No first-inning run model is available yet for this game.'
+    }
+  }
+
+  const yrfiProbability = clamp(
+    1 - (1 - awayProbability) * (1 - homeProbability),
+    0.08,
+    0.92
+  )
+  const nrfiProbability = 1 - yrfiProbability
+  const pick = yrfiProbability >= 0.5 ? 'YRFI' : 'NRFI'
+  const pickedProbability = pick === 'YRFI' ? yrfiProbability : nrfiProbability
+  const edge = roundToTenths(Math.abs(yrfiProbability - 0.5) * 100)
+  const strength =
+    edge >= 12 ? 'Strong' : edge >= 8 ? 'Clear' : edge >= 4 ? 'Lean' : 'Thin'
+
+  return {
+    pick,
+    strength,
+    label: pick,
+    edge,
+    yesProbabilityPct: roundToTenths(yrfiProbability * 100),
+    noProbabilityPct: roundToTenths(nrfiProbability * 100),
+    awayRunProbabilityPct: awayProfile.runProbability,
+    homeRunProbabilityPct: homeProfile.runProbability,
+    awayProjectedRuns: awayProfile.projectedRuns,
+    homeProjectedRuns: homeProfile.projectedRuns,
+    projectedRuns: roundToTenths(
+      (Number(awayProfile.projectedRuns) || 0) + (Number(homeProfile.projectedRuns) || 0)
+    ),
+    line: 0.5,
+    summary:
+      pick === 'YRFI'
+        ? `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance of at least one first-inning run. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this setup.`
+        : `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance that the first inning stays scoreless. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this setup.`
+  }
+}
+
 const buildTeamHitterScript = ({
   teamName,
   projectedHitProfile,
@@ -2551,6 +2690,26 @@ const buildMlbAnalysisContext = (game, participants) => {
         hitEdgeIndex,
         bridgeEdgeIndex: bullpenChainEdgeIndex
       })
+      const firstInningProfiles = participants.map((participant, index) =>
+        buildFirstInningRunProfile({
+          projectedRunProfile: projectedRunProfiles[index],
+          teamScript: teamScripts[index],
+          lineupProfile: lineupProfiles[index],
+          hitterState:
+            index === 0 ? game.stateContext?.hitterState?.away : game.stateContext?.hitterState?.home,
+          teamState:
+            index === 0 ? game.stateContext?.teamState?.away : game.stateContext?.teamState?.home,
+          opposingStarter: starters[index === 0 ? 1 : 0],
+          opposingStarterHoldConfidence: starterHoldConfidence[index === 0 ? 1 : 0],
+          weatherProfile
+        })
+      )
+      const firstInningLean = buildFirstInningLean({
+        awayTeam: participants[0]?.name || 'Away team',
+        homeTeam: participants[1]?.name || 'Home team',
+        awayProfile: firstInningProfiles[0],
+        homeProfile: firstInningProfiles[1]
+      })
 
       mlbProjection = {
         awayProjectedHits: projectedHitProfiles[0].projectedHits,
@@ -2609,6 +2768,7 @@ const buildMlbAnalysisContext = (game, participants) => {
           bullpenExhaustionNote: [weatherNote, bullpenExhaustionNote].filter(Boolean).join(' '),
           weatherNote
         },
+        firstInning: firstInningLean,
         teamScripts,
         lineupSimulation,
         weather: weatherProfile

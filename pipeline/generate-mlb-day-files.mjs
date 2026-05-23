@@ -217,6 +217,36 @@ const normalizeNameToken = (value = '') =>
     .replace(/[^a-z0-9]+/g, ' ')
     .trim()
 
+const slugifyPlayerName = (value = '') =>
+  `${value}`
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
+const buildBaseballSavantLinks = ({ playerId, fullName, seasonYear = season, type = 'pitching' } = {}) => {
+  if (!Number.isFinite(Number(playerId))) return null
+
+  const normalizedType = type === 'hitting' ? 'hitting' : 'pitching'
+  const statsSuffix = normalizedType === 'hitting' ? 'r-hitting-mlb' : 'r-pitching-mlb'
+  const playerSlug = slugifyPlayerName(fullName || `player-${playerId}`) || `player-${playerId}`
+  const playerUrl = `https://baseballsavant.mlb.com/savant-player/${playerSlug}-${Number(playerId)}`
+  const buildStatsUrl = (statsKey) => `${playerUrl}?stats=${statsKey}-${statsSuffix}&season=${seasonYear}`
+
+  return {
+    playerId: Number(playerId),
+    playerUrl,
+    statsSuffix,
+    season: seasonYear,
+    statsUrls: {
+      statcast: buildStatsUrl('statcast'),
+      splits: buildStatsUrl('splits'),
+      gamelogs: buildStatsUrl('gamelogs')
+    }
+  }
+}
+
 const buildPitcherFallbackSummary = ({ fullName = '', record = '' } = {}) => {
   const parsedRecord = parseStarterRecord(record)
   return {
@@ -233,7 +263,8 @@ const buildPitcherFallbackSummary = ({ fullName = '', record = '' } = {}) => {
     homeRunsAllowed: 0,
     whip: null,
     gamesStarted: 0,
-    probableSource: 'rtsports-fallback'
+    probableSource: 'rtsports-fallback',
+    savant: null
   }
 }
 
@@ -258,7 +289,13 @@ const buildPitcherSummary = (person = null) => {
     homeRunsAllowed: Number.isFinite(homeRunsAllowed) ? homeRunsAllowed : null,
     whip: Number.isFinite(Number(stat.whip)) ? formatDecimalString(Number(stat.whip), 2) : null,
     gamesStarted: Number(stat.gamesStarted ?? 0) || 0,
-    probableSource: 'mlb-api'
+    probableSource: 'mlb-api',
+    savant: buildBaseballSavantLinks({
+      playerId: Number(person?.id ?? 0) || null,
+      fullName: person?.fullName || '',
+      seasonYear: season,
+      type: 'pitching'
+    })
   }
 }
 
@@ -642,6 +679,106 @@ const buildTeamStateByTeam = ({ date, games }) => {
           formPressureIndex: roundMaybe(row.form_pressure_index)
         }
       ]
+    })
+  )
+}
+
+const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `with recent_team_games as (
+      select
+        o.game_pk,
+        o.game_date,
+        g.game_datetime,
+        o.away_team as team_name,
+        o.home_team as opponent_name,
+        'road' as venue_role,
+        o.away_runs_final as runs_for,
+        o.home_runs_final as runs_against,
+        case
+          when o.away_runs_final > o.home_runs_final then 'W'
+          when o.away_runs_final < o.home_runs_final then 'L'
+          else 'T'
+        end as result
+      from mlb_game_outcomes o
+      join mlb_games g on g.game_pk = o.game_pk
+      where o.away_team in (${quotedTeams})
+        and o.game_date < '${date}'
+
+      union all
+
+      select
+        o.game_pk,
+        o.game_date,
+        g.game_datetime,
+        o.home_team as team_name,
+        o.away_team as opponent_name,
+        'home' as venue_role,
+        o.home_runs_final as runs_for,
+        o.away_runs_final as runs_against,
+        case
+          when o.home_runs_final > o.away_runs_final then 'W'
+          when o.home_runs_final < o.away_runs_final then 'L'
+          else 'T'
+        end as result
+      from mlb_game_outcomes o
+      join mlb_games g on g.game_pk = o.game_pk
+      where o.home_team in (${quotedTeams})
+        and o.game_date < '${date}'
+    ),
+    ranked as (
+      select
+        *,
+        row_number() over (
+          partition by team_name
+          order by coalesce(game_datetime, game_date) desc, game_pk desc
+        ) as rn
+      from recent_team_games
+    )
+    select *
+    from ranked
+    where rn <= ${Math.max(1, limit)}
+    order by team_name, coalesce(game_datetime, game_date) asc, game_pk asc;`
+  )
+
+  const grouped = rows.reduce((map, row) => {
+    const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+    if (!map.has(deskTeam)) map.set(deskTeam, [])
+    map.get(deskTeam).push({
+      gamePk: Number(row.game_pk || 0) || null,
+      date: row.game_date || '',
+      opponent: officialToDeskTeam[row.opponent_name] || row.opponent_name || '',
+      venueRole: row.venue_role || '',
+      result: row.result || 'T',
+      runsFor: Number(row.runs_for || 0) || 0,
+      runsAgainst: Number(row.runs_against || 0) || 0
+    })
+    return map
+  }, new Map())
+
+  return Object.fromEntries(
+    [...grouped.entries()].map(([deskTeam, gameRows]) => {
+      let lastOpponent = null
+      let seriesSlot = -1
+      const recentGames = gameRows.map((row) => {
+        if (row.opponent !== lastOpponent) {
+          seriesSlot += 1
+          lastOpponent = row.opponent
+        }
+
+        return {
+          ...row,
+          seriesSlot
+        }
+      })
+
+      return [deskTeam, recentGames]
     })
   )
 }
@@ -1177,6 +1314,7 @@ const main = async () => {
   const teamStoryPriorsByTeam = buildTeamStoryPriorsByTeam({ date: options.date, games: rawGames })
   const teamStateByTeam = buildTeamStateByTeam({ date: options.date, games: rawGames })
   const hitterStateByTeam = buildHitterStateByTeam({ date: options.date, games: rawGames })
+  const recentGamesByTeam = buildRecentGamesByTeam({ date: options.date, games: rawGames })
   const seriesContextByGamePk = buildSeriesContextByGamePk({ date: options.date, games: rawGames })
   const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
   const starterThirdTimePenaltyByPitcherId = buildStarterThirdTimePenaltyByPitcherId({ date: options.date, games: rawGames })
@@ -1234,6 +1372,10 @@ const main = async () => {
       hitterState: {
         away: hitterStateByTeam[game.away] ?? null,
         home: hitterStateByTeam[game.home] ?? null
+      },
+      recentGames: {
+        away: recentGamesByTeam[game.away] ?? [],
+        home: recentGamesByTeam[game.home] ?? []
       }
     },
     tierThreeContext: {

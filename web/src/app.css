@@ -3529,6 +3529,56 @@ h3 {
   gap: 3px;
 }
 
+.recent-games-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.recent-games-series {
+  display: grid;
+  gap: 4px;
+  align-content: start;
+}
+
+.recent-games-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.recent-game-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.16);
+}
+
+.recent-game-dot.win {
+  background: #52d6b3;
+}
+
+.recent-game-dot.loss {
+  background: #ff7f66;
+}
+
+.recent-game-dot.tie {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.recent-game-dot.road {
+  border-color: rgba(255, 255, 255, 0.92);
+}
+
+.recent-games-series-bar {
+  display: block;
+  height: 2px;
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
 .react-team-id strong,
 .react-mini-panel strong,
 .react-lineup-card strong,
@@ -3617,6 +3667,28 @@ h3 {
 .pitcher-summary-chip.muted {
   border-color: rgba(255, 255, 255, 0.07);
   background: rgba(255, 255, 255, 0.035);
+}
+
+.pitcher-summary-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pitcher-summary-link-row a {
+  color: var(--accent);
+  font: 600 0.64rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(82, 214, 179, 0.3);
+}
+
+.pitcher-summary-link-row a:hover,
+.pitcher-summary-link-row a:focus-visible {
+  color: var(--heading);
+  border-bottom-color: rgba(255, 255, 255, 0.65);
 }
 
 .react-team-logo {

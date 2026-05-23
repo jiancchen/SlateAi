@@ -404,7 +404,8 @@ const buildPitcherSummary = (pitcher: AnyRecord = {}, holdConfidence?: number | 
     trendStats,
     usageLabel: usageContext.workloadLabel || '',
     usageNote: usageContext.note || '',
-    usageStatusLabel: usageContext.label || ''
+    usageStatusLabel: usageContext.label || '',
+    savant: pitcher.savant || null
   }
 }
 
@@ -414,6 +415,70 @@ const buildTeamContextSummary = (team: AnyRecord = {}) => {
   const rankLabel = team.divisionLeader ? '1st in division' : `${formatOrdinal(team.divisionRank)} in division`
   const streak = team.streakCode ? ` | ${team.streakCode}` : ''
   return `${record} | ${rankLabel}${streak}`
+}
+
+const recentGamesSeriesPalette = ['#52d6b3', '#f4b860', '#5f8dff', '#e77df5', '#ff7f66', '#7be3ff']
+
+const groupRecentGamesBySeries = (games: AnyRecord[] = []) => {
+  const groups: AnyRecord[] = []
+  for (const game of games) {
+    const slot = Number.isFinite(Number(game.seriesSlot)) ? Number(game.seriesSlot) : groups.length
+    const current = groups.at(-1)
+    if (!current || current.seriesSlot !== slot) {
+      groups.push({
+        seriesSlot: slot,
+        games: [game]
+      })
+      continue
+    }
+    current.games.push(game)
+  }
+  return groups
+}
+
+const formatRecentGameTooltip = (teamName: string, game: AnyRecord = {}) => {
+  const opponent = game.opponent || 'Opponent'
+  const venuePreposition = game.venueRole === 'road' ? 'at' : 'vs'
+  const dateLabel = game.date
+    ? new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${game.date}T12:00:00Z`))
+    : 'Recent'
+  const resultLabel = game.result || '?'
+  const scoreLabel =
+    Number.isFinite(Number(game.runsFor)) && Number.isFinite(Number(game.runsAgainst))
+      ? `${game.runsFor}-${game.runsAgainst}`
+      : 'n/a'
+  return `${teamName} ${resultLabel} ${scoreLabel} ${venuePreposition} ${opponent} on ${dateLabel}`
+}
+
+const renderRecentGamesStrip = (teamName: string, games: AnyRecord[] = []) => {
+  if (!games.length) return null
+  const seriesGroups = groupRecentGamesBySeries(games)
+  return (
+    <div className="recent-games-strip" aria-label={`${teamName} last ${games.length} games`}>
+      {seriesGroups.map((group, index) => {
+        const barColor = recentGamesSeriesPalette[index % recentGamesSeriesPalette.length]
+        return (
+          <div key={`${teamName}-${group.seriesSlot}-${index}`} className="recent-games-series">
+            <div className="recent-games-dots">
+              {group.games.map((game: AnyRecord, gameIndex: number) => {
+                const resultTone = game.result === 'W' ? 'win' : game.result === 'L' ? 'loss' : 'tie'
+                const roadClass = game.venueRole === 'road' ? 'road' : 'home'
+                return (
+                  <span
+                    key={`${teamName}-${group.seriesSlot}-${game.gamePk || `${game.date}-${gameIndex}`}`}
+                    className={`recent-game-dot ${resultTone} ${roadClass}`}
+                    title={formatRecentGameTooltip(teamName, game)}
+                    aria-label={formatRecentGameTooltip(teamName, game)}
+                  />
+                )
+              })}
+            </div>
+            <span className="recent-games-series-bar" style={{ backgroundColor: barColor }} />
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 const getMetricTone = (value: number, inverse = false) => {
@@ -502,6 +567,12 @@ const buildGameHighlights = (game: AnyRecord) => {
       chips.push({
         tone: projection.totals.fullGame.lean === 'Over' ? 'warning' : 'neutral',
         label: projection.totals.fullGame.label
+      })
+    }
+    if (projection.firstInning?.pick && projection.firstInning.pick !== 'Pass') {
+      chips.push({
+        tone: projection.firstInning.pick === 'YRFI' ? 'warning' : 'neutral',
+        label: projection.firstInning.pick
       })
     }
     if ((game.analysis?.indicators?.reliefPitchingRisk ?? 0) >= 68) {
@@ -1630,6 +1701,8 @@ function App() {
       : Number(homeSummary?.bullpenPitchTypeSummary?.pressureIndex)
     const awayStory = game.storyContext?.away?.summary
     const homeStory = game.storyContext?.home?.summary
+    const awayRecentGames = game.stateContext?.recentGames?.away ?? []
+    const homeRecentGames = game.stateContext?.recentGames?.home ?? []
     const totals = projection?.totals
     const totalsCards = totals
       ? [
@@ -1656,7 +1729,19 @@ function App() {
             lineLabel: totals.derivedLateTotalLine != null ? `${totals.derivedLateTotalLine}` : 'N/A',
             projectedLabel: `${formatNumber(totals.projectedLateTotalRuns, 1)} projected runs`,
             splitLabel: `${awayTeam} ${formatNumber(projection?.awayLateProjectedRuns, 1)} + ${homeTeam} ${formatNumber(projection?.homeLateProjectedRuns, 1)}`
-          }
+          },
+          ...(projection?.firstInning
+            ? [
+                {
+                  id: 'first-inning',
+                  title: 'Run in 1st',
+                  lean: projection.firstInning,
+                  lineLabel: '0.5 run',
+                  projectedLabel: `${formatPercent(projection.firstInning.yesProbabilityPct, 0)} YRFI / ${formatPercent(projection.firstInning.noProbabilityPct, 0)} NRFI`,
+                  splitLabel: `${awayTeam} ${formatPercent(projection.firstInning.awayRunProbabilityPct, 0)} score · ${homeTeam} ${formatPercent(projection.firstInning.homeRunProbabilityPct, 0)} score`
+                }
+              ]
+            : [])
         ]
       : []
     const renderBridgeChainCard = (
@@ -1716,6 +1801,7 @@ function App() {
                 <div>
                   <strong>{awayTeam}</strong>
                   <small>{buildTeamContextSummary(game.teamContext?.away)}</small>
+                  {renderRecentGamesStrip(awayTeam, awayRecentGames)}
                 </div>
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.away)}</span>
@@ -1749,6 +1835,20 @@ function App() {
                   ))}
                 </div>
               ) : null}
+              {awayStarter.savant?.playerUrl ? (
+                <div className="pitcher-summary-link-row">
+                  <a href={awayStarter.savant.playerUrl} target="_blank" rel="noreferrer">Savant</a>
+                  {awayStarter.savant?.statsUrls?.splits ? (
+                    <a href={awayStarter.savant.statsUrls.splits} target="_blank" rel="noreferrer">Splits</a>
+                  ) : null}
+                  {awayStarter.savant?.statsUrls?.gamelogs ? (
+                    <a href={awayStarter.savant.statsUrls.gamelogs} target="_blank" rel="noreferrer">Logs</a>
+                  ) : null}
+                  {awayStarter.savant?.statsUrls?.statcast ? (
+                    <a href={awayStarter.savant.statsUrls.statcast} target="_blank" rel="noreferrer">Statcast</a>
+                  ) : null}
+                </div>
+              ) : null}
             </div>
             {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
             {!awayStarter.recent && awayStarter.usageNote ? <small>{awayStarter.usageNote}</small> : null}
@@ -1774,6 +1874,7 @@ function App() {
                 <div>
                   <strong>{homeTeam}</strong>
                   <small>{buildTeamContextSummary(game.teamContext?.home)}</small>
+                  {renderRecentGamesStrip(homeTeam, homeRecentGames)}
                 </div>
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.home)}</span>
@@ -1805,6 +1906,20 @@ function App() {
                       <strong>{stat.value}</strong>
                     </span>
                   ))}
+                </div>
+              ) : null}
+              {homeStarter.savant?.playerUrl ? (
+                <div className="pitcher-summary-link-row">
+                  <a href={homeStarter.savant.playerUrl} target="_blank" rel="noreferrer">Savant</a>
+                  {homeStarter.savant?.statsUrls?.splits ? (
+                    <a href={homeStarter.savant.statsUrls.splits} target="_blank" rel="noreferrer">Splits</a>
+                  ) : null}
+                  {homeStarter.savant?.statsUrls?.gamelogs ? (
+                    <a href={homeStarter.savant.statsUrls.gamelogs} target="_blank" rel="noreferrer">Logs</a>
+                  ) : null}
+                  {homeStarter.savant?.statsUrls?.statcast ? (
+                    <a href={homeStarter.savant.statsUrls.statcast} target="_blank" rel="noreferrer">Statcast</a>
+                  ) : null}
                 </div>
               ) : null}
             </div>

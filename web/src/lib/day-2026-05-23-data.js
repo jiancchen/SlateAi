@@ -10,27 +10,54 @@ export const rawGames = [
       "id": 669467,
       "fullName": "Andre Pallante",
       "pitchHand": "R",
-      "wins": 4,
+      "wins": 5,
       "losses": 4,
-      "era": "3.88",
-      "strikeOuts": 41,
-      "inningsPitched": "53.1",
+      "era": "3.76",
+      "strikeOuts": 43,
+      "inningsPitched": "55.0",
       "hitsAllowed": 49,
       "walks": 20,
       "homeRunsAllowed": 7,
-      "whip": "1.29",
+      "whip": "1.25",
       "gamesStarted": 10,
       "probableSource": "mlb-api",
-      "recentForm": null,
+      "savant": {
+        "playerId": 669467,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/andre-pallante-669467",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/andre-pallante-669467?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/andre-pallante-669467?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/andre-pallante-669467?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
+      "recentForm": {
+        "pitcherName": "Andre Pallante",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 4.9,
+        "earnedRunsPerStart": 2.2,
+        "hitsAllowedPerStart": 4.7,
+        "homeRunsAllowedPerStart": 0.6,
+        "walksAllowedPerStart": 1.9,
+        "strikeoutsPerStart": 4,
+        "whipLike": 1.35,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.2,
+        "runVolatility": 2.11,
+        "homeRunBurstiness": 0.56,
+        "recent3EarnedRunsDelta": 0.8
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.44,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 4.9,
         "daysSinceLastStart": 6,
         "startsLoaded": 9,
-        "shortLeashRisk": 0,
-        "durableRate": 0.33,
+        "shortLeashRisk": 0.1,
+        "durableRate": 0.2,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -45,7 +72,7 @@ export const rawGames = [
       "fullName": "Chris Paddack",
       "pitchHand": "R",
       "wins": 0,
-      "losses": 5,
+      "losses": 6,
       "era": "6.86",
       "strikeOuts": 35,
       "inningsPitched": "40.2",
@@ -55,15 +82,42 @@ export const rawGames = [
       "whip": "1.67",
       "gamesStarted": 8,
       "probableSource": "mlb-api",
-      "recentForm": null,
+      "savant": {
+        "playerId": 663978,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/chris-paddack-663978",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/chris-paddack-663978?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/chris-paddack-663978?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/chris-paddack-663978?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
+      "recentForm": {
+        "pitcherName": "Chris Paddack",
+        "windowStarts": 10,
+        "startsSample": 7,
+        "inningsPerStart": 4.43,
+        "earnedRunsPerStart": 4,
+        "hitsAllowedPerStart": 6.29,
+        "homeRunsAllowedPerStart": 0.86,
+        "walksAllowedPerStart": 1,
+        "strikeoutsPerStart": 3.71,
+        "whipLike": 1.65,
+        "shortStartRate": 0.71,
+        "qualityStartRate": 0.14,
+        "runVolatility": 2.45,
+        "homeRunBurstiness": 0.64,
+        "recent3EarnedRunsDelta": -0.33
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 7 starts.",
         "expectedInnings": 4.43,
         "daysSinceLastStart": 7,
         "startsLoaded": 7,
-        "shortLeashRisk": 0.14,
+        "shortLeashRisk": 0.71,
         "durableRate": 0.14,
         "leashScore": null,
         "leashVolatility": null,
@@ -74,9 +128,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -163",
-    "total": "o9.5 -114 / u10 -115",
-    "moneyline": "Cardinals -110 / Reds -106",
+    "spread": "+1.5 -210 / +1.5 -164",
+    "total": "o9.5 -120 / u10 -113",
+    "moneyline": "Cardinals -106 / Reds -106",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-reds",
     "tierTwoContext": {
@@ -208,6 +262,172 @@ export const rawGames = [
             "walkRateLast5": 0.09
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 825010,
+            "date": "2026-05-13",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 825008,
+            "date": "2026-05-14",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823061,
+            "date": "2026-05-15",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823060,
+            "date": "2026-05-16",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823058,
+            "date": "2026-05-17",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823059,
+            "date": "2026-05-19",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823057,
+            "date": "2026-05-20",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 7,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823056,
+            "date": "2026-05-21",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824519,
+            "date": "2026-05-13",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 7,
+            "runsAgainst": 8,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824517,
+            "date": "2026-05-14",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 15,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824439,
+            "date": "2026-05-15",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824435,
+            "date": "2026-05-16",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824436,
+            "date": "2026-05-17",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 10,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823465,
+            "date": "2026-05-18",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823464,
+            "date": "2026-05-19",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823462,
+            "date": "2026-05-20",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -240,7 +460,18 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
+        "away": {
+          "pitcherName": "Andre Pallante",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.08,
+          "thirdTripScoringDelta": -0.11,
+          "thirdTripRunDeltaDelta": -0.14,
+          "thirdTripHrDelta": -0.03,
+          "thirdTimePenaltyIndex": 24
+        },
         "home": {
           "pitcherName": "Chris Paddack",
           "windowStarts": 5,
@@ -267,22 +498,49 @@ export const rawGames = [
       "id": 678906,
       "fullName": "Kai-Wei Teng",
       "pitchHand": "R",
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
-      "era": "2.53",
-      "strikeOuts": 32,
-      "inningsPitched": "32.0",
-      "hitsAllowed": 22,
-      "walks": 12,
+      "era": "2.19",
+      "strikeOuts": 36,
+      "inningsPitched": "37.0",
+      "hitsAllowed": 24,
+      "walks": 15,
       "homeRunsAllowed": 3,
-      "whip": "1.06",
+      "whip": "1.05",
       "gamesStarted": 4,
       "probableSource": "mlb-api",
-      "recentForm": null,
+      "savant": {
+        "playerId": 678906,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/kai-wei-teng-678906",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/kai-wei-teng-678906?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/kai-wei-teng-678906?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/kai-wei-teng-678906?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
+      "recentForm": {
+        "pitcherName": "Kai-Wei Teng",
+        "windowStarts": 3,
+        "startsSample": 3,
+        "inningsPerStart": 3.67,
+        "earnedRunsPerStart": 1.67,
+        "hitsAllowedPerStart": 4,
+        "homeRunsAllowedPerStart": 0,
+        "walksAllowedPerStart": 1.67,
+        "strikeoutsPerStart": 3.33,
+        "whipLike": 1.55,
+        "shortStartRate": 0.67,
+        "qualityStartRate": 0,
+        "runVolatility": 1.25,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 0
+      },
       "usageContext": {
-        "status": "new-look",
-        "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 4 starts on file, so innings expectation matters more than the raw ERA line.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 3 starts.",
         "expectedInnings": 3.67,
         "daysSinceLastStart": 7,
         "startsLoaded": 3,
@@ -302,25 +560,52 @@ export const rawGames = [
       "fullName": "Colin Rea",
       "pitchHand": "R",
       "wins": 4,
-      "losses": 2,
-      "era": "5.25",
-      "strikeOuts": 40,
-      "inningsPitched": "48.0",
-      "hitsAllowed": 54,
-      "walks": 15,
-      "homeRunsAllowed": 7,
-      "whip": "1.44",
+      "losses": 3,
+      "era": "4.83",
+      "strikeOuts": 44,
+      "inningsPitched": "54.0",
+      "hitsAllowed": 57,
+      "walks": 17,
+      "homeRunsAllowed": 8,
+      "whip": "1.37",
       "gamesStarted": 8,
       "probableSource": "mlb-api",
-      "recentForm": null,
+      "savant": {
+        "playerId": 607067,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/colin-rea-607067",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/colin-rea-607067?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/colin-rea-607067?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/colin-rea-607067?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
+      "recentForm": {
+        "pitcherName": "Colin Rea",
+        "windowStarts": 10,
+        "startsSample": 7,
+        "inningsPerStart": 4.95,
+        "earnedRunsPerStart": 2.86,
+        "hitsAllowedPerStart": 5.86,
+        "homeRunsAllowedPerStart": 0.57,
+        "walksAllowedPerStart": 1.86,
+        "strikeoutsPerStart": 3.86,
+        "whipLike": 1.56,
+        "shortStartRate": 0.43,
+        "qualityStartRate": 0.14,
+        "runVolatility": 1.85,
+        "homeRunBurstiness": 1.16,
+        "recent3EarnedRunsDelta": 0.48
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 7 starts.",
         "expectedInnings": 4.95,
         "daysSinceLastStart": 6,
         "startsLoaded": 7,
-        "shortLeashRisk": 0.14,
+        "shortLeashRisk": 0.43,
         "durableRate": 0.14,
         "leashScore": null,
         "leashVolatility": null,
@@ -331,9 +616,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "",
-    "total": "",
-    "moneyline": "",
+    "spread": "+1.5 -145 / -1.5 +130",
+    "total": "o7.5 -120 / u8 -110",
+    "moneyline": "Astros +140 / Cubs -162",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs",
     "tierTwoContext": {
@@ -465,6 +750,172 @@ export const rawGames = [
             "walkRateLast5": 0
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 824196,
+            "date": "2026-05-14",
+            "opponent": "Mariners",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 8,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824194,
+            "date": "2026-05-15",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824193,
+            "date": "2026-05-16",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824192,
+            "date": "2026-05-17",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 8,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823705,
+            "date": "2026-05-18",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823704,
+            "date": "2026-05-19",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823703,
+            "date": "2026-05-20",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "seriesSlot": 3
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824926,
+            "date": "2026-05-14",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824601,
+            "date": "2026-05-15",
+            "opponent": "White Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 5,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824600,
+            "date": "2026-05-16",
+            "opponent": "White Sox",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 8,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824599,
+            "date": "2026-05-17",
+            "opponent": "White Sox",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 8,
+            "runsAgainst": 9,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824680,
+            "date": "2026-05-18",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 9,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824677,
+            "date": "2026-05-19",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824678,
+            "date": "2026-05-20",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "seriesSlot": 3
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -497,8 +948,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Kai-Wei Teng",
+          "windowStarts": 5,
+          "startsSample": 3,
+          "startsWithThirdTrip": 1,
+          "thirdTripExposureRate": 0.33,
+          "thirdTripReachedDelta": -0.16,
+          "thirdTripScoringDelta": -0.07,
+          "thirdTripRunDeltaDelta": -0.1,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 22.67
+        },
+        "home": {
+          "pitcherName": "Colin Rea",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.49,
+          "thirdTripScoringDelta": 0.06,
+          "thirdTripRunDeltaDelta": 0.23,
+          "thirdTripHrDelta": -0.06,
+          "thirdTimePenaltyIndex": 98.75
+        }
       }
     }
   },
@@ -515,15 +988,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 6,
       "losses": 3,
-      "era": "2.62",
-      "strikeOuts": 63,
-      "inningsPitched": "55.0",
-      "hitsAllowed": 31,
-      "walks": 8,
-      "homeRunsAllowed": 5,
-      "whip": "0.71",
-      "gamesStarted": 10,
+      "era": "3.00",
+      "strikeOuts": 65,
+      "inningsPitched": "60.0",
+      "hitsAllowed": 40,
+      "walks": 9,
+      "homeRunsAllowed": 6,
+      "whip": "0.82",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 694973,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/paul-skenes-694973",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/paul-skenes-694973?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/paul-skenes-694973?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/paul-skenes-694973?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -549,15 +1033,26 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 1,
       "losses": 1,
-      "era": "4.23",
-      "strikeOuts": 25,
-      "inningsPitched": "38.1",
-      "hitsAllowed": 44,
+      "era": "3.86",
+      "strikeOuts": 32,
+      "inningsPitched": "44.1",
+      "hitsAllowed": 49,
       "walks": 13,
       "homeRunsAllowed": 4,
-      "whip": "1.49",
-      "gamesStarted": 8,
+      "whip": "1.40",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 571578,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/patrick-corbin-571578",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/patrick-corbin-571578?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/patrick-corbin-571578?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/patrick-corbin-571578?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -577,9 +1072,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +115 / +1.5 -130",
-    "total": "o7.5 +105 / u7.5 -117",
-    "moneyline": "Pirates -149 / Blue Jays +130",
+    "spread": "+1.5 -155 / -1.5 +140",
+    "total": "o7.5 -110 / u7.5 -108",
+    "moneyline": "Pirates +136 / Blue Jays -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays",
     "tierTwoContext": {
@@ -711,6 +1206,172 @@ export const rawGames = [
             "walkRateLast5": 0.05
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 823383,
+            "date": "2026-05-14",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 2,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823384,
+            "date": "2026-05-15",
+            "opponent": "Phillies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 9,
+            "runsAgainst": 11,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823382,
+            "date": "2026-05-16",
+            "opponent": "Phillies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823381,
+            "date": "2026-05-17",
+            "opponent": "Phillies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823059,
+            "date": "2026-05-19",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823057,
+            "date": "2026-05-20",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 0,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823056,
+            "date": "2026-05-21",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Blue Jays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "seriesSlot": 3
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824280,
+            "date": "2026-05-15",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824278,
+            "date": "2026-05-16",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824279,
+            "date": "2026-05-17",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823549,
+            "date": "2026-05-18",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823548,
+            "date": "2026-05-19",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823547,
+            "date": "2026-05-20",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823545,
+            "date": "2026-05-21",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -770,6 +1431,17 @@ export const rawGames = [
       "whip": "1.49",
       "gamesStarted": 10,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 677944,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/slade-cecconi-677944",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/slade-cecconi-677944?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/slade-cecconi-677944?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/slade-cecconi-677944?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -804,6 +1476,17 @@ export const rawGames = [
       "whip": "0.88",
       "gamesStarted": 5,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 554430,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/zack-wheeler-554430",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/zack-wheeler-554430?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/zack-wheeler-554430?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/zack-wheeler-554430?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -823,9 +1506,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +125",
-    "total": "o7 -110 / u7 -105",
-    "moneyline": "Guardians +160 / Phillies -180",
+    "spread": "-1.5 +135 / +1.5 -155",
+    "total": "o7.5 -115 / u8 -115",
+    "moneyline": "Guardians -124 / Phillies +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
     "tierTwoContext": {
@@ -957,6 +1640,172 @@ export const rawGames = [
             "walkRateLast5": 0.11
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 824439,
+            "date": "2026-05-15",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824435,
+            "date": "2026-05-16",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 4,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824436,
+            "date": "2026-05-17",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 3,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824277,
+            "date": "2026-05-18",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824276,
+            "date": "2026-05-19",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824273,
+            "date": "2026-05-20",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824274,
+            "date": "2026-05-21",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 1,
+            "runsAgainst": 0,
+            "seriesSlot": 2
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824762,
+            "date": "2026-05-14",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823384,
+            "date": "2026-05-15",
+            "opponent": "Pirates",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 11,
+            "runsAgainst": 9,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823382,
+            "date": "2026-05-16",
+            "opponent": "Pirates",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823381,
+            "date": "2026-05-17",
+            "opponent": "Pirates",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823465,
+            "date": "2026-05-18",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823464,
+            "date": "2026-05-19",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823462,
+            "date": "2026-05-20",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 9,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 1,
+            "seriesSlot": 3
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -1007,15 +1856,26 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 1,
-      "era": "1.57",
-      "strikeOuts": 23,
-      "inningsPitched": "23.0",
+      "era": "1.48",
+      "strikeOuts": 24,
+      "inningsPitched": "24.1",
       "hitsAllowed": 21,
       "walks": 10,
       "homeRunsAllowed": 0,
-      "whip": "1.35",
-      "gamesStarted": 2,
+      "whip": "1.27",
+      "gamesStarted": 3,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 663542,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/bryan-hudson-663542",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/bryan-hudson-663542?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/bryan-hudson-663542?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/bryan-hudson-663542?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "long-layoff",
@@ -1041,15 +1901,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 4,
-      "era": "5.25",
-      "strikeOuts": 26,
-      "inningsPitched": "48.0",
-      "hitsAllowed": 52,
+      "era": "4.85",
+      "strikeOuts": 30,
+      "inningsPitched": "52.0",
+      "hitsAllowed": 55,
       "walks": 19,
       "homeRunsAllowed": 8,
-      "whip": "1.48",
-      "gamesStarted": 9,
+      "whip": "1.42",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 605288,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/adrian-houser-605288",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/adrian-houser-605288?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/adrian-houser-605288?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/adrian-houser-605288?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -1069,9 +1940,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -177",
-    "total": "o8.5 -118 / u9 -120",
-    "moneyline": "White Sox even / Giants -110",
+    "spread": "+1.5 -190 / +1.5 -186",
+    "total": "o8 -108 / u8.5 -125",
+    "moneyline": "White Sox -104 / Giants -105",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants",
     "tierTwoContext": {
@@ -1203,6 +2074,172 @@ export const rawGames = [
             "walkRateLast5": 0
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 824602,
+            "date": "2026-05-14",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824601,
+            "date": "2026-05-15",
+            "opponent": "Cubs",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 5,
+            "runsAgainst": 10,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824600,
+            "date": "2026-05-16",
+            "opponent": "Cubs",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824599,
+            "date": "2026-05-17",
+            "opponent": "Cubs",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 8,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823137,
+            "date": "2026-05-18",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823136,
+            "date": "2026-05-19",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823134,
+            "date": "2026-05-20",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "Giants",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "seriesSlot": 3
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823950,
+            "date": "2026-05-14",
+            "opponent": "Dodgers",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 825009,
+            "date": "2026-05-15",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 825007,
+            "date": "2026-05-16",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 825006,
+            "date": "2026-05-17",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 825087,
+            "date": "2026-05-18",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 12,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 825086,
+            "date": "2026-05-19",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 825084,
+            "date": "2026-05-20",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 9,
+            "seriesSlot": 3
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -1253,15 +2290,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 3,
-      "era": "3.45",
-      "strikeOuts": 52,
-      "inningsPitched": "62.2",
-      "hitsAllowed": 58,
+      "era": "3.65",
+      "strikeOuts": 54,
+      "inningsPitched": "66.2",
+      "hitsAllowed": 64,
       "walks": 16,
       "homeRunsAllowed": 6,
-      "whip": "1.18",
-      "gamesStarted": 10,
+      "whip": "1.20",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 669923,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/george-kirby-669923",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/george-kirby-669923?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/george-kirby-669923?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/george-kirby-669923?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -1287,20 +2335,31 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 0,
-      "era": "4.24",
+      "era": "3.43",
       "strikeOuts": 12,
-      "inningsPitched": "17.0",
-      "hitsAllowed": 13,
+      "inningsPitched": "21.0",
+      "hitsAllowed": 16,
       "walks": 4,
       "homeRunsAllowed": 3,
-      "whip": "1.00",
-      "gamesStarted": 3,
+      "whip": "0.95",
+      "gamesStarted": 4,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 663568,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/stephen-kolek-663568",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/stephen-kolek-663568?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/stephen-kolek-663568?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/stephen-kolek-663568?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "new-look",
         "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line.",
+        "note": "This is still a low-sample MLB starter look with only 4 starts on file, so innings expectation matters more than the raw ERA line.",
         "expectedInnings": 5.67,
         "daysSinceLastStart": 6,
         "startsLoaded": 3,
@@ -1315,9 +2374,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +132 / +1.5 -150",
-    "total": "o8.5 +105 / u8.5 -114",
-    "moneyline": "Mariners -125 / Royals +112",
+    "spread": "-1.5 +125 / +1.5 -143",
+    "total": "o8.5 -105 / u8.5 -105",
+    "moneyline": "Mariners -135 / Royals +118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals",
     "tierTwoContext": {
@@ -1449,6 +2508,172 @@ export const rawGames = [
             "walkRateLast5": 0
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 824196,
+            "date": "2026-05-14",
+            "opponent": "Astros",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 3,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823140,
+            "date": "2026-05-15",
+            "opponent": "Padres",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823139,
+            "date": "2026-05-16",
+            "opponent": "Padres",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823138,
+            "date": "2026-05-17",
+            "opponent": "Padres",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 8,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823137,
+            "date": "2026-05-18",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823136,
+            "date": "2026-05-19",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823134,
+            "date": "2026-05-20",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "seriesSlot": 3
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824602,
+            "date": "2026-05-14",
+            "opponent": "White Sox",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823061,
+            "date": "2026-05-15",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823060,
+            "date": "2026-05-16",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823058,
+            "date": "2026-05-17",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824114,
+            "date": "2026-05-18",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 3,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824112,
+            "date": "2026-05-19",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 7,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824111,
+            "date": "2026-05-20",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Mariners",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "seriesSlot": 3
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -1499,15 +2724,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 3,
-      "era": "3.31",
-      "strikeOuts": 54,
-      "inningsPitched": "54.1",
-      "hitsAllowed": 43,
-      "walks": 25,
-      "homeRunsAllowed": 6,
-      "whip": "1.25",
-      "gamesStarted": 10,
+      "era": "3.59",
+      "strikeOuts": 58,
+      "inningsPitched": "57.2",
+      "hitsAllowed": 47,
+      "walks": 26,
+      "homeRunsAllowed": 7,
+      "whip": "1.27",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 642547,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/freddy-peralta-642547",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/freddy-peralta-642547?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/freddy-peralta-642547?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/freddy-peralta-642547?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -1533,15 +2769,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 0,
-      "era": "2.85",
-      "strikeOuts": 60,
-      "inningsPitched": "53.2",
-      "hitsAllowed": 41,
-      "walks": 19,
+      "era": "2.65",
+      "strikeOuts": 65,
+      "inningsPitched": "57.2",
+      "hitsAllowed": 42,
+      "walks": 22,
       "homeRunsAllowed": 4,
-      "whip": "1.12",
-      "gamesStarted": 10,
+      "whip": "1.11",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 676974,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/max-meyer-676974",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/max-meyer-676974?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/max-meyer-676974?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/max-meyer-676974?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -1561,9 +2808,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -184",
-    "total": "o7.5 -115 / u7.5 even",
-    "moneyline": "Mets -104 / Marlins -112",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins",
     "tierTwoContext": {
@@ -1695,6 +2942,172 @@ export const rawGames = [
             "walkRateLast5": 0
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 823629,
+            "date": "2026-05-15",
+            "opponent": "Yankees",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823627,
+            "date": "2026-05-16",
+            "opponent": "Yankees",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823628,
+            "date": "2026-05-17",
+            "opponent": "Yankees",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 822734,
+            "date": "2026-05-18",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 16,
+            "runsAgainst": 7,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 822736,
+            "date": "2026-05-19",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 822735,
+            "date": "2026-05-20",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 8,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 822733,
+            "date": "2026-05-21",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 822983,
+            "date": "2026-05-15",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 7,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 822981,
+            "date": "2026-05-16",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 5,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 822982,
+            "date": "2026-05-17",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823867,
+            "date": "2026-05-18",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 12,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823865,
+            "date": "2026-05-19",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 8,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823866,
+            "date": "2026-05-20",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 9,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823864,
+            "date": "2026-05-21",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 9,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -1745,15 +3158,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 4,
-      "era": "5.79",
-      "strikeOuts": 51,
-      "inningsPitched": "46.2",
+      "era": "5.66",
+      "strikeOuts": 53,
+      "inningsPitched": "47.2",
       "hitsAllowed": 48,
-      "walks": 21,
+      "walks": 22,
       "homeRunsAllowed": 7,
-      "whip": "1.48",
-      "gamesStarted": 10,
+      "whip": "1.47",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 663623,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/jake-irvin-663623",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/jake-irvin-663623?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/jake-irvin-663623?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/jake-irvin-663623?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -1779,15 +3203,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 1,
-      "era": "3.80",
-      "strikeOuts": 38,
-      "inningsPitched": "47.1",
-      "hitsAllowed": 38,
+      "era": "3.65",
+      "strikeOuts": 43,
+      "inningsPitched": "49.1",
+      "hitsAllowed": 39,
       "walks": 22,
       "homeRunsAllowed": 7,
-      "whip": "1.27",
-      "gamesStarted": 9,
+      "whip": "1.24",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 656550,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/grant-holmes-656550",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/grant-holmes-656550?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/grant-holmes-656550?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/grant-holmes-656550?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -1807,9 +3242,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -137 / -1.5 +125",
-    "total": "o8.5 -110 / u8.5 -103",
-    "moneyline": "Nationals +145 / Braves -165",
+    "spread": "+1.5 -155 / -1.5 +135",
+    "total": "o8.5 -110 / u8.5 -108",
+    "moneyline": "Nationals +145 / Braves -162",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves",
     "tierTwoContext": {
@@ -1941,6 +3376,172 @@ export const rawGames = [
             "walkRateLast5": 0
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 822739,
+            "date": "2026-05-15",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 822737,
+            "date": "2026-05-16",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 13,
+            "runsAgainst": 3,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 822738,
+            "date": "2026-05-17",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 7,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 822734,
+            "date": "2026-05-18",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 7,
+            "runsAgainst": 16,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 822736,
+            "date": "2026-05-19",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 822735,
+            "date": "2026-05-20",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 822733,
+            "date": "2026-05-21",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824925,
+            "date": "2026-05-15",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824924,
+            "date": "2026-05-16",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824923,
+            "date": "2026-05-17",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823867,
+            "date": "2026-05-18",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 12,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823865,
+            "date": "2026-05-19",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823866,
+            "date": "2026-05-20",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823864,
+            "date": "2026-05-21",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -1991,15 +3592,26 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 1,
-      "era": "2.87",
-      "strikeOuts": 52,
-      "inningsPitched": "47.0",
+      "era": "2.68",
+      "strikeOuts": 57,
+      "inningsPitched": "50.1",
       "hitsAllowed": 39,
-      "walks": 17,
+      "walks": 18,
       "homeRunsAllowed": 5,
-      "whip": "1.19",
-      "gamesStarted": 8,
+      "whip": "1.13",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 671737,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/taj-bradley-671737",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/taj-bradley-671737?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/taj-bradley-671737?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/taj-bradley-671737?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -2025,20 +3637,31 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 0,
       "losses": 1,
-      "era": "2.81",
-      "strikeOuts": 29,
-      "inningsPitched": "25.2",
-      "hitsAllowed": 15,
+      "era": "3.38",
+      "strikeOuts": 30,
+      "inningsPitched": "26.2",
+      "hitsAllowed": 18,
       "walks": 14,
       "homeRunsAllowed": 4,
-      "whip": "1.13",
-      "gamesStarted": 2,
+      "whip": "1.20",
+      "gamesStarted": 3,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 663558,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/jovani-moran-663558",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/jovani-moran-663558?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/jovani-moran-663558?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/jovani-moran-663558?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "new-look",
         "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 2 starts on file, so innings expectation matters more than the raw ERA line.",
+        "note": "This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line.",
         "expectedInnings": 1,
         "daysSinceLastStart": 11,
         "startsLoaded": 2,
@@ -2053,9 +3676,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -200 / +1.5 -203",
-    "total": "o7.5 -115 / u7.5 even",
-    "moneyline": "Twins +110 / Red Sox -124",
+    "spread": "+1.5 -155 / -1.5 +141",
+    "total": "o7.5 -120 / u8 -115",
+    "moneyline": "Twins +138 / Red Sox -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
     "tierTwoContext": {
@@ -2187,6 +3810,172 @@ export const rawGames = [
             "walkRateLast5": 0.07
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 823709,
+            "date": "2026-05-14",
+            "opponent": "Marlins",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823707,
+            "date": "2026-05-15",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823706,
+            "date": "2026-05-16",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823708,
+            "date": "2026-05-17",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823705,
+            "date": "2026-05-18",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823704,
+            "date": "2026-05-19",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823703,
+            "date": "2026-05-20",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 6,
+            "seriesSlot": 3
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824762,
+            "date": "2026-05-14",
+            "opponent": "Phillies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 3,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824925,
+            "date": "2026-05-15",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824924,
+            "date": "2026-05-16",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824923,
+            "date": "2026-05-17",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 8,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824114,
+            "date": "2026-05-18",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824112,
+            "date": "2026-05-19",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824111,
+            "date": "2026-05-20",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 3,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Twins",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 8,
+            "seriesSlot": 3
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -2246,6 +4035,17 @@ export const rawGames = [
       "whip": "1.55",
       "gamesStarted": 9,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 681517,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/kyle-leahy-681517",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/kyle-leahy-681517?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/kyle-leahy-681517?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/kyle-leahy-681517?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -2280,6 +4080,17 @@ export const rawGames = [
       "whip": "1.06",
       "gamesStarted": 1,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 695534,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/chase-petty-695534",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/chase-petty-695534?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/chase-petty-695534?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/chase-petty-695534?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "tiny-sample",
@@ -2299,9 +4110,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -163",
-    "total": "o9.5 -114 / u10 -115",
-    "moneyline": "Cardinals -110 / Reds -106",
+    "spread": "+1.5 -210 / +1.5 -164",
+    "total": "o9.5 -120 / u10 -113",
+    "moneyline": "Cardinals -106 / Reds -106",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-reds",
     "tierTwoContext": {
@@ -2433,6 +4244,172 @@ export const rawGames = [
             "walkRateLast5": 0.09
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 825010,
+            "date": "2026-05-13",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 825008,
+            "date": "2026-05-14",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823061,
+            "date": "2026-05-15",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823060,
+            "date": "2026-05-16",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823058,
+            "date": "2026-05-17",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823059,
+            "date": "2026-05-19",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823057,
+            "date": "2026-05-20",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 7,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823056,
+            "date": "2026-05-21",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824519,
+            "date": "2026-05-13",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 7,
+            "runsAgainst": 8,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824517,
+            "date": "2026-05-14",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 15,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824439,
+            "date": "2026-05-15",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824435,
+            "date": "2026-05-16",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824436,
+            "date": "2026-05-17",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 10,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823465,
+            "date": "2026-05-18",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823464,
+            "date": "2026-05-19",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823462,
+            "date": "2026-05-20",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -2465,18 +4442,7 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": {
-          "pitcherName": "Kyle Leahy",
-          "windowStarts": 5,
-          "startsSample": 5,
-          "startsWithThirdTrip": 2,
-          "thirdTripExposureRate": 0.4,
-          "thirdTripReachedDelta": -0.01,
-          "thirdTripScoringDelta": 0.1,
-          "thirdTripRunDeltaDelta": 0.1,
-          "thirdTripHrDelta": 0,
-          "thirdTimePenaltyIndex": 45.5
-        },
+        "away": null,
         "home": null
       }
     }
@@ -2503,6 +4469,17 @@ export const rawGames = [
       "whip": "1.45",
       "gamesStarted": 8,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 808963,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/roki-sasaki-808963",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/roki-sasaki-808963?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/roki-sasaki-808963?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/roki-sasaki-808963?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -2537,6 +4514,17 @@ export const rawGames = [
       "whip": "1.25",
       "gamesStarted": 1,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 688107,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/robert-gasser-688107",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/robert-gasser-688107?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/robert-gasser-688107?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/robert-gasser-688107?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "tiny-sample",
@@ -2556,8 +4544,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +136 / +1.5 -160",
-    "total": "o9 -105 / u9 -115",
+    "spread": "-1.5 +142 / +1.5 -160",
+    "total": "o8.5 -110 / u9 -122",
     "moneyline": "Dodgers -118 / Brewers even",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers",
@@ -2690,6 +4678,172 @@ export const rawGames = [
             "walkRateLast5": 0
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 823950,
+            "date": "2026-05-14",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824037,
+            "date": "2026-05-15",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824038,
+            "date": "2026-05-16",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 15,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824034,
+            "date": "2026-05-17",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823301,
+            "date": "2026-05-18",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823302,
+            "date": "2026-05-19",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823299,
+            "date": "2026-05-20",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 0,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Brewers",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 5,
+            "seriesSlot": 3
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823789,
+            "date": "2026-05-14",
+            "opponent": "Padres",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823707,
+            "date": "2026-05-15",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823706,
+            "date": "2026-05-16",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823708,
+            "date": "2026-05-17",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824680,
+            "date": "2026-05-18",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 3,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824677,
+            "date": "2026-05-19",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824678,
+            "date": "2026-05-20",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 0,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 1,
+            "seriesSlot": 3
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -2749,6 +4903,17 @@ export const rawGames = [
       "whip": "1.07",
       "gamesStarted": 8,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 669372,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/j-t-ginn-669372",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/j-t-ginn-669372?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/j-t-ginn-669372?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/j-t-ginn-669372?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -2783,6 +4948,17 @@ export const rawGames = [
       "whip": "0.80",
       "gamesStarted": 1,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 608337,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/lucas-giolito-608337",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/lucas-giolito-608337?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/lucas-giolito-608337?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/lucas-giolito-608337?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "tiny-sample",
@@ -2802,9 +4978,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +146 / +1.5 -170",
-    "total": "o8 -105 / u8 -110",
-    "moneyline": "Athletics -115 / Padres even",
+    "spread": "-1.5 +150 / +1.5 -170",
+    "total": "o8 -110 / u8 -110",
+    "moneyline": "Athletics -120 / Padres even",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
     "tierTwoContext": {
@@ -2936,6 +5112,172 @@ export const rawGames = [
             "walkRateLast5": 0.05
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 825009,
+            "date": "2026-05-15",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 825007,
+            "date": "2026-05-16",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 825006,
+            "date": "2026-05-17",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 10,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824035,
+            "date": "2026-05-18",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824033,
+            "date": "2026-05-19",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 14,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824032,
+            "date": "2026-05-20",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 5,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824031,
+            "date": "2026-05-21",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 7,
+            "seriesSlot": 2
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823789,
+            "date": "2026-05-14",
+            "opponent": "Brewers",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 7,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 823140,
+            "date": "2026-05-15",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823139,
+            "date": "2026-05-16",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823138,
+            "date": "2026-05-17",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 823301,
+            "date": "2026-05-18",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 1,
+            "runsAgainst": 0,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823302,
+            "date": "2026-05-19",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823299,
+            "date": "2026-05-20",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 3,
+            "seriesSlot": 3
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -2995,6 +5337,17 @@ export const rawGames = [
       "whip": "1.15",
       "gamesStarted": 9,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 543135,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/nathan-eovaldi-543135",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/nathan-eovaldi-543135?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/nathan-eovaldi-543135?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/nathan-eovaldi-543135?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -3029,6 +5382,17 @@ export const rawGames = [
       "whip": "1.35",
       "gamesStarted": 6,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 700712,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/walbert-urena-700712",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/walbert-urena-700712?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/walbert-urena-700712?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/walbert-urena-700712?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -3048,9 +5412,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +130 / +1.5 -140",
-    "total": "o7.5 -110 / u8 -117",
-    "moneyline": "Rangers -136 / Angels +125",
+    "spread": "-1.5 +126 / +1.5 -140",
+    "total": "o7.5 -110 / u7.5 -105",
+    "moneyline": "Rangers -137 / Angels +125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels",
     "tierTwoContext": {
@@ -3182,6 +5546,172 @@ export const rawGames = [
             "walkRateLast5": 0
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 822900,
+            "date": "2026-05-13",
+            "opponent": "Diamondbacks",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 5,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824194,
+            "date": "2026-05-15",
+            "opponent": "Astros",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824193,
+            "date": "2026-05-16",
+            "opponent": "Astros",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824192,
+            "date": "2026-05-17",
+            "opponent": "Astros",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 0,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824357,
+            "date": "2026-05-18",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824356,
+            "date": "2026-05-19",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 0,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824355,
+            "date": "2026-05-20",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "seriesSlot": 3
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824037,
+            "date": "2026-05-15",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824038,
+            "date": "2026-05-16",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 15,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824034,
+            "date": "2026-05-17",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 10,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824035,
+            "date": "2026-05-18",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824033,
+            "date": "2026-05-19",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 14,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824032,
+            "date": "2026-05-20",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 5,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824031,
+            "date": "2026-05-21",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "seriesSlot": 2
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -3241,6 +5771,17 @@ export const rawGames = [
       "whip": "1.91",
       "gamesStarted": 10,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 547179,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/michael-lorenzen-547179",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/michael-lorenzen-547179?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/michael-lorenzen-547179?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/michael-lorenzen-547179?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -3275,6 +5816,17 @@ export const rawGames = [
       "whip": "1.43",
       "gamesStarted": 10,
       "probableSource": "mlb-api",
+      "savant": {
+        "playerId": 668678,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/zac-gallen-668678",
+        "statsSuffix": "r-pitching-mlb",
+        "season": 2026,
+        "statsUrls": {
+          "statcast": "https://baseballsavant.mlb.com/savant-player/zac-gallen-668678?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/zac-gallen-668678?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/zac-gallen-668678?stats=gamelogs-r-pitching-mlb&season=2026"
+        }
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -3294,7 +5846,7 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -130 / -1.5 +110",
+    "spread": "+1.5 -130 / -1.5 +114",
     "total": "o9 -115 / u9.5 -120",
     "moneyline": "Rockies +160 / Diamondbacks -184",
     "pitcherSourceNote": "",
@@ -3428,6 +5980,172 @@ export const rawGames = [
             "walkRateLast5": 0.05
           }
         }
+      },
+      "recentGames": {
+        "away": [
+          {
+            "gamePk": 824360,
+            "date": "2026-05-15",
+            "opponent": "Diamondbacks",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 9,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824359,
+            "date": "2026-05-16",
+            "opponent": "Diamondbacks",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824358,
+            "date": "2026-05-17",
+            "opponent": "Diamondbacks",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 8,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824357,
+            "date": "2026-05-18",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824356,
+            "date": "2026-05-19",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 10,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 824355,
+            "date": "2026-05-20",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "seriesSlot": 2
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824360,
+            "date": "2026-05-15",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 1,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824359,
+            "date": "2026-05-16",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 824358,
+            "date": "2026-05-17",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 6,
+            "seriesSlot": 0
+          },
+          {
+            "gamePk": 825087,
+            "date": "2026-05-18",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 12,
+            "runsAgainst": 2,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 825086,
+            "date": "2026-05-19",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 825084,
+            "date": "2026-05-20",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "seriesSlot": 1
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "seriesSlot": 2
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "seriesSlot": 2
+          }
+        ]
       }
     },
     "tierThreeContext": {
