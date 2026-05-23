@@ -59,6 +59,7 @@ const main = () => {
   runPythonWarehouse('ingest-mlb-day', ['--date', options.date])
   runPythonWarehouse('derive-story-signals', ['--through-date', options.date])
   runPythonWarehouse('derive-hidden-edge-features', ['--through-date', options.date])
+  runPythonWarehouse('derive-mistake-shapes', ['--through-date', options.date])
   runPythonWarehouse('derive-state-snapshots', ['--through-date', options.date])
 
   if (fs.existsSync(hrPredictionPath)) {

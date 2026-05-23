@@ -53,6 +53,8 @@ const main = () => {
   runPythonWarehouse('prepare-mlb-day', ['--date', options.date, '--lookback-days', '3'])
   // Keep hidden behavioral profiles collecting automatically for offline research.
   runPythonWarehouse('derive-hidden-edge-features', ['--as-of-date', options.date])
+  // Track mistake-shape vectors so the model stops flattening chaos into averages.
+  runPythonWarehouse('derive-mistake-shapes', ['--as-of-date', options.date])
   // Keep rolling team and hitter pressure/state snapshots collecting automatically for regime research.
   runPythonWarehouse('derive-state-snapshots', ['--as-of-date', options.date])
   // Keep Tier 3 research tables collecting automatically even while the live model ignores them.

@@ -829,6 +829,100 @@ CREATE TABLE IF NOT EXISTS mlb_hitter_state_snapshots (
   PRIMARY KEY (as_of_date, player_id)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_team_mistake_shape_daily (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  scheduled_series_game_number INTEGER,
+  division_matchup_flag INTEGER,
+  window_games INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  road_games_sample INTEGER NOT NULL,
+  low_scoring_game_rate REAL,
+  high_scoring_game_rate REAL,
+  scoreless_first3_rate REAL,
+  first_inning_run_allowed_rate REAL,
+  early_multi_run_allowed_rate REAL,
+  one_big_inning_rate REAL,
+  one_bad_inning_allowed_rate REAL,
+  traffic_game_rate REAL,
+  dead_bat_traffic_rate REAL,
+  traffic_no_conversion_rate REAL,
+  base_runner_conversion_rate REAL,
+  stranded_traffic_rate REAL,
+  top_order_pressure_no_conversion_rate REAL,
+  bullpen_meltdown_rate REAL,
+  run_clustering_index REAL,
+  mistake_chaos_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_pitcher_mistake_shape_daily (
+  as_of_date TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  window_starts INTEGER NOT NULL,
+  starts_sample INTEGER NOT NULL,
+  starts_reaching_sixth INTEGER NOT NULL,
+  starts_with_damage INTEGER NOT NULL,
+  first_batter_reach_rate REAL,
+  first_inning_run_allowed_rate REAL,
+  first_three_runs_allowed_per_start REAL,
+  early_clean_start_rate REAL,
+  meltdown_start_rate REAL,
+  walk_burst_start_rate REAL,
+  home_run_start_rate REAL,
+  sixth_inning_damage_rate REAL,
+  post_damage_recovery_rate REAL,
+  command_break_index REAL,
+  PRIMARY KEY (as_of_date, pitcher_id, window_starts)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_bullpen_mistake_shape_daily (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  window_days INTEGER NOT NULL,
+  appearances_sample INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  first_batter_reach_rate REAL,
+  first_batter_walk_rate REAL,
+  meltdown_appearance_rate REAL,
+  home_run_appearance_rate REAL,
+  inherited_traffic_entry_rate REAL,
+  inherited_traffic_score_rate REAL,
+  bullpen_meltdown_game_rate REAL,
+  lead_loss_after_entry_rate REAL,
+  bridge_clean_game_rate REAL,
+  bullpen_chaos_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_days)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_lineup_conversion_shape_daily (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  scheduled_series_game_number INTEGER,
+  division_matchup_flag INTEGER,
+  window_games INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  baserunners_per_game REAL,
+  runs_per_baserunner REAL,
+  stranded_traffic_rate REAL,
+  early_baserunners_per_game REAL,
+  early_conversion_rate REAL,
+  top_order_baserunners_first3_per_game REAL,
+  top_order_conversion_share REAL,
+  traffic_no_conversion_rate REAL,
+  dead_bat_traffic_rate REAL,
+  quiet_first5_rate REAL,
+  conversion_volatility REAL,
+  lineup_conversion_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
 CREATE TABLE IF NOT EXISTS park_factor_snapshots (
   snapshot_date TEXT NOT NULL,
   team_name TEXT NOT NULL,
@@ -1043,6 +1137,18 @@ def play_counts_as_at_bat(play: dict[str, Any]) -> bool:
 HIT_EVENT_TYPES = {"single", "double", "triple", "home_run"}
 EARLY_WHIFF_STRIKEOUT_RATE_THRESHOLD = 0.28
 EARLY_WHIFF_PITCH_RATE_THRESHOLD = 0.16
+MISTAKE_TEAM_WINDOWS = (8, 15, 30)
+MISTAKE_PITCHER_WINDOWS = (3, 5)
+MISTAKE_BULLPEN_WINDOWS = (7, 14)
+
+
+def is_on_base_event(event_type: Any) -> bool:
+    event = str(event_type or "").lower()
+    if event in HIT_EVENT_TYPES:
+        return True
+    if event in {"walk", "intent_walk", "hit_by_pitch", "catcher_interference"}:
+        return True
+    return "error" in event
 
 
 def extract_first5_batting_counts(
@@ -4110,6 +4216,866 @@ def build_recent_hitter_state_row(
         "heat_regression_index": heat_regression_index,
     }
 
+
+def build_team_mistake_shape_game_packet(
+    conn: sqlite3.Connection,
+    game_row: sqlite3.Row,
+    team_name: str,
+) -> dict[str, Any] | None:
+    team_role = "away" if game_row["away_team"] == team_name else "home"
+    opponent_team = game_row["home_team"] if team_role == "away" else game_row["away_team"]
+    stats_row = conn.execute(
+        """
+        SELECT
+          runs_scored,
+          runs_allowed,
+          hits,
+          walks,
+          left_on_base,
+          bullpen_runs_allowed
+        FROM mlb_game_team_stats
+        WHERE game_pk = ?
+          AND team_name = ?
+        LIMIT 1
+        """,
+        (game_row["game_pk"], team_name),
+    ).fetchone()
+    if not stats_row:
+        return None
+
+    batting_rows = conn.execute(
+        """
+        SELECT
+          pa.inning,
+          lower(COALESCE(pa.event_type, '')) AS event_type,
+          pa.run_delta,
+          pgb.batting_order
+        FROM mlb_plate_appearances pa
+        LEFT JOIN mlb_player_game_batting pgb
+          ON pgb.game_pk = pa.game_pk
+         AND pgb.player_id = pa.batter_id
+         AND pgb.team_name = pa.batting_team
+        WHERE pa.game_pk = ?
+          AND pa.batting_team = ?
+        ORDER BY pa.at_bat_index
+        """,
+        (game_row["game_pk"], team_name),
+    ).fetchall()
+    fielding_rows = conn.execute(
+        """
+        SELECT
+          inning,
+          lower(COALESCE(event_type, '')) AS event_type,
+          run_delta
+        FROM mlb_plate_appearances
+        WHERE game_pk = ?
+          AND batting_team = ?
+        ORDER BY at_bat_index
+        """,
+        (game_row["game_pk"], opponent_team),
+    ).fetchall()
+
+    runs_by_inning: dict[int, int] = {}
+    runs_allowed_by_inning: dict[int, int] = {}
+    baserunners = 0
+    early_baserunners = 0
+    top_order_baserunners_first3 = 0
+
+    for row in batting_rows:
+        inning = to_int(row["inning"]) or 0
+        event_type = row["event_type"]
+        run_delta = to_int(row["run_delta"]) or 0
+        runs_by_inning[inning] = runs_by_inning.get(inning, 0) + run_delta
+        if is_on_base_event(event_type):
+            baserunners += 1
+            if inning <= 3:
+                early_baserunners += 1
+                batting_order = to_int(row["batting_order"])
+                if batting_order is not None and batting_order <= 4:
+                    top_order_baserunners_first3 += 1
+
+    for row in fielding_rows:
+        inning = to_int(row["inning"]) or 0
+        run_delta = to_int(row["run_delta"]) or 0
+        runs_allowed_by_inning[inning] = runs_allowed_by_inning.get(inning, 0) + run_delta
+
+    team_runs_final = to_int(stats_row["runs_scored"]) or 0
+    first3_runs = sum(runs for inning, runs in runs_by_inning.items() if inning <= 3)
+    first3_runs_allowed = sum(runs for inning, runs in runs_allowed_by_inning.items() if inning <= 3)
+    first_inning_runs_allowed = runs_allowed_by_inning.get(1, 0)
+    max_runs_in_inning = max(runs_by_inning.values(), default=0)
+    max_runs_allowed_in_inning = max(runs_allowed_by_inning.values(), default=0)
+    left_on_base = to_int(stats_row["left_on_base"]) or 0
+    baserunner_conversion_rate = (team_runs_final / baserunners) if baserunners else None
+    stranded_traffic_rate = (left_on_base / baserunners) if baserunners else None
+    run_clustering_share = (max_runs_in_inning / team_runs_final) if team_runs_final > 0 else 0.0
+    traffic_no_conversion_flag = (
+        to_int(game_row["away_traffic_no_conversion_flag"]) or 0
+        if team_role == "away"
+        else to_int(game_row["home_traffic_no_conversion_flag"]) or 0
+    )
+
+    return {
+        "game_pk": game_row["game_pk"],
+        "game_date": game_row["game_date"],
+        "team_name": team_name,
+        "team_role": team_role,
+        "opponent_team": opponent_team,
+        "road_game_flag": 1 if team_role == "away" else 0,
+        "series_game_number": to_int(game_row["series_game_number"]),
+        "team_runs_final": team_runs_final,
+        "team_runs_allowed_final": to_int(stats_row["runs_allowed"]) or 0,
+        "batter_baserunners": baserunners,
+        "early_baserunners": early_baserunners,
+        "top_order_baserunners_first3": top_order_baserunners_first3,
+        "left_on_base": left_on_base,
+        "runs_per_baserunner": baserunner_conversion_rate,
+        "stranded_traffic_rate": stranded_traffic_rate,
+        "first3_runs": first3_runs,
+        "first3_runs_allowed": first3_runs_allowed,
+        "first_inning_runs_allowed": first_inning_runs_allowed,
+        "max_runs_in_inning": max_runs_in_inning,
+        "max_runs_allowed_in_inning": max_runs_allowed_in_inning,
+        "low_scoring_flag": 1 if team_runs_final <= 2 else 0,
+        "high_scoring_flag": 1 if team_runs_final >= 7 else 0,
+        "scoreless_first3_flag": 1 if first3_runs == 0 else 0,
+        "first_inning_run_allowed_flag": 1 if first_inning_runs_allowed > 0 else 0,
+        "early_multi_run_allowed_flag": 1 if first3_runs_allowed >= 2 else 0,
+        "one_big_inning_flag": 1 if max_runs_in_inning >= 3 else 0,
+        "one_bad_inning_allowed_flag": 1 if max_runs_allowed_in_inning >= 3 else 0,
+        "traffic_game_flag": 1 if baserunners >= 10 else 0,
+        "dead_bat_traffic_flag": 1 if baserunners >= 8 and team_runs_final <= 2 else 0,
+        "traffic_no_conversion_flag": traffic_no_conversion_flag,
+        "top_order_pressure_no_conversion_flag": 1 if top_order_baserunners_first3 >= 3 and first3_runs == 0 else 0,
+        "quiet_first5_flag": to_int(game_row["quiet_first5_flag"]) or 0,
+        "bullpen_meltdown_flag": 1 if (to_int(stats_row["bullpen_runs_allowed"]) or 0) >= 3 else 0,
+        "run_clustering_share": run_clustering_share,
+    }
+
+
+def build_recent_team_mistake_shape_packets(
+    conn: sqlite3.Connection,
+    team_name: str,
+    as_of_date: str,
+    window_games: int,
+) -> list[dict[str, Any]]:
+    recent_games = conn.execute(
+        """
+        SELECT
+          g.game_pk,
+          g.game_date,
+          g.away_team,
+          g.home_team,
+          s.quiet_first5_flag,
+          s.away_traffic_no_conversion_flag,
+          s.home_traffic_no_conversion_flag,
+          sx.series_game_number
+        FROM mlb_games g
+        LEFT JOIN mlb_game_story_signals s
+          USING (game_pk)
+        LEFT JOIN mlb_series_context_snapshots sx
+          ON sx.game_pk = g.game_pk
+         AND sx.as_of_date = g.game_date
+        WHERE g.game_date < ?
+          AND (g.away_team = ? OR g.home_team = ?)
+        ORDER BY g.game_date DESC, g.game_pk DESC
+        LIMIT ?
+        """,
+        (as_of_date, team_name, team_name, window_games),
+    ).fetchall()
+
+    packets: list[dict[str, Any]] = []
+    for row in recent_games:
+        packet = build_team_mistake_shape_game_packet(conn, row, team_name)
+        if packet:
+            packets.append(packet)
+    return packets
+
+
+def build_team_mistake_shape_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    window_games: int,
+    packets: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    schedule_context = build_team_schedule_context(conn, as_of_date, team_name)
+    baserunner_total = sum(packet["batter_baserunners"] for packet in packets)
+    run_total = sum(packet["team_runs_final"] for packet in packets)
+    lob_total = sum(packet["left_on_base"] for packet in packets)
+    low_scoring_rate = safe_mean([packet["low_scoring_flag"] for packet in packets])
+    high_scoring_rate = safe_mean([packet["high_scoring_flag"] for packet in packets])
+    scoreless_first3_rate = safe_mean([packet["scoreless_first3_flag"] for packet in packets])
+    first_inning_run_allowed_rate = safe_mean([packet["first_inning_run_allowed_flag"] for packet in packets])
+    early_multi_run_allowed_rate = safe_mean([packet["early_multi_run_allowed_flag"] for packet in packets])
+    one_big_inning_rate = safe_mean([packet["one_big_inning_flag"] for packet in packets])
+    one_bad_inning_allowed_rate = safe_mean([packet["one_bad_inning_allowed_flag"] for packet in packets])
+    traffic_game_rate = safe_mean([packet["traffic_game_flag"] for packet in packets])
+    dead_bat_traffic_rate = safe_mean([packet["dead_bat_traffic_flag"] for packet in packets])
+    traffic_no_conversion_rate = safe_mean([packet["traffic_no_conversion_flag"] for packet in packets])
+    top_order_pressure_no_conversion_rate = safe_mean([packet["top_order_pressure_no_conversion_flag"] for packet in packets])
+    bullpen_meltdown_rate = safe_mean([packet["bullpen_meltdown_flag"] for packet in packets])
+    base_runner_conversion_rate = (run_total / baserunner_total) if baserunner_total else None
+    stranded_traffic_rate = (lob_total / baserunner_total) if baserunner_total else None
+    run_clustering_index = clamp_value(
+        14
+        + safe_mean([packet["run_clustering_share"] for packet in packets]) * 52
+        + safe_pstdev([packet["team_runs_final"] for packet in packets]) * 6
+        + one_big_inning_rate * 16
+        + one_bad_inning_allowed_rate * 8,
+        0,
+        100,
+    )
+    mistake_chaos_index = clamp_value(
+        12
+        + low_scoring_rate * 12
+        + high_scoring_rate * 10
+        + scoreless_first3_rate * 10
+        + early_multi_run_allowed_rate * 14
+        + one_bad_inning_allowed_rate * 18
+        + traffic_no_conversion_rate * 18
+        + bullpen_meltdown_rate * 16
+        + run_clustering_index * 0.26,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": schedule_context["scheduled_opponent"],
+        "scheduled_series_game_number": schedule_context["scheduled_series_game_number"],
+        "division_matchup_flag": schedule_context["division_matchup_flag"],
+        "window_games": window_games,
+        "games_sample": len(packets),
+        "road_games_sample": sum(packet["road_game_flag"] for packet in packets),
+        "low_scoring_game_rate": low_scoring_rate,
+        "high_scoring_game_rate": high_scoring_rate,
+        "scoreless_first3_rate": scoreless_first3_rate,
+        "first_inning_run_allowed_rate": first_inning_run_allowed_rate,
+        "early_multi_run_allowed_rate": early_multi_run_allowed_rate,
+        "one_big_inning_rate": one_big_inning_rate,
+        "one_bad_inning_allowed_rate": one_bad_inning_allowed_rate,
+        "traffic_game_rate": traffic_game_rate,
+        "dead_bat_traffic_rate": dead_bat_traffic_rate,
+        "traffic_no_conversion_rate": traffic_no_conversion_rate,
+        "base_runner_conversion_rate": base_runner_conversion_rate,
+        "stranded_traffic_rate": stranded_traffic_rate,
+        "top_order_pressure_no_conversion_rate": top_order_pressure_no_conversion_rate,
+        "bullpen_meltdown_rate": bullpen_meltdown_rate,
+        "run_clustering_index": run_clustering_index,
+        "mistake_chaos_index": mistake_chaos_index,
+    }
+
+
+def build_lineup_conversion_shape_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    window_games: int,
+    packets: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    schedule_context = build_team_schedule_context(conn, as_of_date, team_name)
+    baserunner_total = sum(packet["batter_baserunners"] for packet in packets)
+    early_baserunner_total = sum(packet["early_baserunners"] for packet in packets)
+    top_order_baserunner_total = sum(packet["top_order_baserunners_first3"] for packet in packets)
+    run_total = sum(packet["team_runs_final"] for packet in packets)
+    first3_run_total = sum(packet["first3_runs"] for packet in packets)
+    lob_total = sum(packet["left_on_base"] for packet in packets)
+    runs_per_baserunner = (run_total / baserunner_total) if baserunner_total else None
+    early_conversion_rate = (first3_run_total / early_baserunner_total) if early_baserunner_total else None
+    top_order_conversion_share = (
+        first3_run_total / top_order_baserunner_total if top_order_baserunner_total else None
+    )
+    stranded_traffic_rate = (lob_total / baserunner_total) if baserunner_total else None
+    conversion_values = [packet["runs_per_baserunner"] for packet in packets if packet["runs_per_baserunner"] is not None]
+    conversion_volatility = safe_pstdev(conversion_values) if conversion_values else 0.0
+    lineup_conversion_index = clamp_value(
+        24
+        + (runs_per_baserunner or 0.0) * 120
+        + (early_conversion_rate or 0.0) * 34
+        + (top_order_conversion_share or 0.0) * 18
+        - (stranded_traffic_rate or 0.0) * 32
+        - safe_mean([packet["dead_bat_traffic_flag"] for packet in packets]) * 18
+        - safe_mean([packet["traffic_no_conversion_flag"] for packet in packets]) * 18
+        - safe_mean([packet["quiet_first5_flag"] for packet in packets]) * 10
+        - conversion_volatility * 26,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": schedule_context["scheduled_opponent"],
+        "scheduled_series_game_number": schedule_context["scheduled_series_game_number"],
+        "division_matchup_flag": schedule_context["division_matchup_flag"],
+        "window_games": window_games,
+        "games_sample": len(packets),
+        "baserunners_per_game": (baserunner_total / len(packets)) if packets else None,
+        "runs_per_baserunner": runs_per_baserunner,
+        "stranded_traffic_rate": stranded_traffic_rate,
+        "early_baserunners_per_game": (early_baserunner_total / len(packets)) if packets else None,
+        "early_conversion_rate": early_conversion_rate,
+        "top_order_baserunners_first3_per_game": (top_order_baserunner_total / len(packets)) if packets else None,
+        "top_order_conversion_share": top_order_conversion_share,
+        "traffic_no_conversion_rate": safe_mean([packet["traffic_no_conversion_flag"] for packet in packets]),
+        "dead_bat_traffic_rate": safe_mean([packet["dead_bat_traffic_flag"] for packet in packets]),
+        "quiet_first5_rate": safe_mean([packet["quiet_first5_flag"] for packet in packets]),
+        "conversion_volatility": conversion_volatility,
+        "lineup_conversion_index": lineup_conversion_index,
+    }
+
+
+def build_pitcher_mistake_shape_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    scheduled_opponent: str | None,
+    pitcher_id: int,
+    pitcher_name: str,
+    window_starts: int,
+    start_rows: list[sqlite3.Row],
+) -> dict[str, Any] | None:
+    if not start_rows:
+        return None
+
+    start_packets: list[dict[str, Any]] = []
+    for start_row in start_rows:
+        log_row = conn.execute(
+            """
+            SELECT outs_recorded, runs_allowed, home_runs_allowed, walks_allowed
+            FROM mlb_starting_pitcher_game_logs
+            WHERE game_pk = ?
+              AND pitcher_id = ?
+            LIMIT 1
+            """,
+            (start_row["game_pk"], pitcher_id),
+        ).fetchone()
+        if not log_row:
+            continue
+
+        pa_rows = conn.execute(
+            """
+            SELECT inning, lower(COALESCE(event_type, '')) AS event_type, run_delta
+            FROM mlb_plate_appearances
+            WHERE game_pk = ?
+              AND pitcher_id = ?
+            ORDER BY at_bat_index
+            """,
+            (start_row["game_pk"], pitcher_id),
+        ).fetchall()
+        if not pa_rows:
+            continue
+
+        first_pa = pa_rows[0]
+        runs_by_inning: dict[int, int] = {}
+        walks_by_inning: dict[int, int] = {}
+        total_runs_allowed = 0
+        first_damage_seen = False
+        additional_runs_after_damage = 0
+
+        for row in pa_rows:
+            inning = to_int(row["inning"]) or 0
+            event_type = row["event_type"]
+            run_delta = to_int(row["run_delta"]) or 0
+            runs_by_inning[inning] = runs_by_inning.get(inning, 0) + run_delta
+            total_runs_allowed += run_delta
+            if event_type in {"walk", "intent_walk", "hit_by_pitch"}:
+                walks_by_inning[inning] = walks_by_inning.get(inning, 0) + 1
+            if run_delta > 0:
+                if first_damage_seen:
+                    additional_runs_after_damage += run_delta
+                else:
+                    first_damage_seen = True
+
+        first_inning_runs = runs_by_inning.get(1, 0)
+        first_three_runs = sum(runs for inning, runs in runs_by_inning.items() if inning <= 3)
+        max_runs_inning = max(runs_by_inning.values(), default=0)
+        reached_sixth_flag = int(any(inning >= 6 for inning in runs_by_inning) or (to_int(log_row["outs_recorded"]) or 0) >= 16)
+        sixth_plus_runs = sum(runs for inning, runs in runs_by_inning.items() if inning >= 6)
+        start_packets.append(
+            {
+                "first_batter_reach_flag": 1 if is_on_base_event(first_pa["event_type"]) else 0,
+                "first_inning_run_allowed_flag": 1 if first_inning_runs > 0 else 0,
+                "first_three_runs": first_three_runs,
+                "early_clean_start_flag": 1 if first_three_runs <= 1 else 0,
+                "meltdown_start_flag": 1 if max_runs_inning >= 3 or (to_int(log_row["runs_allowed"]) or 0) >= 4 else 0,
+                "walk_burst_start_flag": 1 if max(walks_by_inning.values(), default=0) >= 2 or (to_int(log_row["walks_allowed"]) or 0) >= 4 else 0,
+                "home_run_start_flag": 1 if (to_int(log_row["home_runs_allowed"]) or 0) > 0 else 0,
+                "reached_sixth_flag": reached_sixth_flag,
+                "sixth_inning_damage_flag": 1 if reached_sixth_flag and sixth_plus_runs > 0 else 0,
+                "damage_allowed_flag": 1 if total_runs_allowed > 0 else 0,
+                "post_damage_recovery_flag": 1 if total_runs_allowed > 0 and additional_runs_after_damage <= 1 else 0,
+            }
+        )
+
+    if not start_packets:
+        return None
+
+    starts_reaching_sixth = sum(packet["reached_sixth_flag"] for packet in start_packets)
+    starts_with_damage = sum(packet["damage_allowed_flag"] for packet in start_packets)
+    first_batter_reach_rate = safe_mean([packet["first_batter_reach_flag"] for packet in start_packets])
+    first_inning_run_allowed_rate = safe_mean([packet["first_inning_run_allowed_flag"] for packet in start_packets])
+    first_three_runs_allowed_per_start = safe_mean([packet["first_three_runs"] for packet in start_packets])
+    early_clean_start_rate = safe_mean([packet["early_clean_start_flag"] for packet in start_packets])
+    meltdown_start_rate = safe_mean([packet["meltdown_start_flag"] for packet in start_packets])
+    walk_burst_start_rate = safe_mean([packet["walk_burst_start_flag"] for packet in start_packets])
+    home_run_start_rate = safe_mean([packet["home_run_start_flag"] for packet in start_packets])
+    sixth_inning_damage_rate = (
+        sum(packet["sixth_inning_damage_flag"] for packet in start_packets if packet["reached_sixth_flag"]) / starts_reaching_sixth
+        if starts_reaching_sixth
+        else None
+    )
+    post_damage_recovery_rate = (
+        sum(packet["post_damage_recovery_flag"] for packet in start_packets if packet["damage_allowed_flag"]) / starts_with_damage
+        if starts_with_damage
+        else None
+    )
+    command_break_index = clamp_value(
+        16
+        + first_batter_reach_rate * 18
+        + first_inning_run_allowed_rate * 24
+        + walk_burst_start_rate * 18
+        + meltdown_start_rate * 18
+        + home_run_start_rate * 10
+        + (sixth_inning_damage_rate or 0.0) * 14
+        + max(0.0, 0.6 - (post_damage_recovery_rate if post_damage_recovery_rate is not None else 0.6)) * 22,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "pitcher_id": pitcher_id,
+        "pitcher_name": pitcher_name,
+        "team_name": team_name,
+        "scheduled_opponent": scheduled_opponent,
+        "window_starts": window_starts,
+        "starts_sample": len(start_packets),
+        "starts_reaching_sixth": starts_reaching_sixth,
+        "starts_with_damage": starts_with_damage,
+        "first_batter_reach_rate": first_batter_reach_rate,
+        "first_inning_run_allowed_rate": first_inning_run_allowed_rate,
+        "first_three_runs_allowed_per_start": first_three_runs_allowed_per_start,
+        "early_clean_start_rate": early_clean_start_rate,
+        "meltdown_start_rate": meltdown_start_rate,
+        "walk_burst_start_rate": walk_burst_start_rate,
+        "home_run_start_rate": home_run_start_rate,
+        "sixth_inning_damage_rate": sixth_inning_damage_rate,
+        "post_damage_recovery_rate": post_damage_recovery_rate,
+        "command_break_index": command_break_index,
+    }
+
+
+def build_bullpen_mistake_shape_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    window_days: int,
+) -> dict[str, Any] | None:
+    schedule_context = build_team_schedule_context(conn, as_of_date, team_name)
+    cutoff_date = (datetime.strptime(as_of_date, "%Y-%m-%d").date() - timedelta(days=window_days)).isoformat()
+    appearance_rows = conn.execute(
+        """
+        SELECT
+          game_pk,
+          pitcher_id,
+          runs_allowed,
+          home_runs_allowed,
+          walks_allowed
+        FROM mlb_pitcher_appearances
+        WHERE team_name = ?
+          AND pitcher_role = 'reliever'
+          AND game_date < ?
+          AND game_date >= ?
+        ORDER BY game_date DESC, game_pk DESC, entry_order ASC
+        """,
+        (team_name, as_of_date, cutoff_date),
+    ).fetchall()
+    game_rows = conn.execute(
+        """
+        SELECT
+          g.game_pk,
+          g.game_date,
+          g.away_team,
+          g.home_team,
+          s.quiet_first5_flag,
+          s.away_traffic_no_conversion_flag,
+          s.home_traffic_no_conversion_flag,
+          sx.series_game_number
+        FROM mlb_games g
+        LEFT JOIN mlb_game_story_signals s USING (game_pk)
+        LEFT JOIN mlb_series_context_snapshots sx
+          ON sx.game_pk = g.game_pk
+         AND sx.as_of_date = g.game_date
+        WHERE g.game_date < ?
+          AND g.game_date >= ?
+          AND (g.away_team = ? OR g.home_team = ?)
+        ORDER BY g.game_date DESC, g.game_pk DESC
+        """,
+        (as_of_date, cutoff_date, team_name, team_name),
+    ).fetchall()
+
+    appearance_packets: list[dict[str, Any]] = []
+    for appearance_row in appearance_rows:
+        pa_rows = conn.execute(
+            """
+            SELECT
+              lower(COALESCE(event_type, '')) AS event_type,
+              run_delta,
+              base_state_start
+            FROM mlb_plate_appearances
+            WHERE game_pk = ?
+              AND pitcher_id = ?
+            ORDER BY at_bat_index
+            """,
+            (appearance_row["game_pk"], appearance_row["pitcher_id"]),
+        ).fetchall()
+        if not pa_rows:
+            continue
+        first_pa = pa_rows[0]
+        inherited_state = str(first_pa["base_state_start"] or "").strip().lower()
+        inherited_traffic_flag = int(bool(inherited_state) and inherited_state not in {"empty", "bases empty"})
+        appearance_packets.append(
+            {
+                "first_batter_reach_flag": 1 if is_on_base_event(first_pa["event_type"]) else 0,
+                "first_batter_walk_flag": 1 if first_pa["event_type"] in {"walk", "intent_walk", "hit_by_pitch"} else 0,
+                "meltdown_appearance_flag": 1 if (to_int(appearance_row["runs_allowed"]) or 0) >= 2 else 0,
+                "home_run_appearance_flag": 1 if (to_int(appearance_row["home_runs_allowed"]) or 0) > 0 else 0,
+                "inherited_traffic_entry_flag": inherited_traffic_flag,
+                "inherited_traffic_score_flag": 1
+                if inherited_traffic_flag and sum(to_int(row["run_delta"]) or 0 for row in pa_rows) > 0
+                else 0,
+            }
+        )
+
+    if not appearance_packets:
+        return None
+
+    game_packets: list[dict[str, Any]] = []
+    for row in game_rows:
+        packet = build_team_mistake_shape_game_packet(conn, row, team_name)
+        if packet:
+            game_packets.append(packet)
+    lead_after5_loss_rate = 0.0
+    lead_after5_packets = [packet for packet in build_recent_team_hidden_edge_packets(conn, team_name, as_of_date, 30) if packet["game_date"] >= cutoff_date and packet["lead_after5_flag"]]
+    if lead_after5_packets:
+        lead_after5_loss_rate = safe_mean([1 - packet["won_flag"] for packet in lead_after5_packets])
+
+    first_batter_reach_rate = safe_mean([packet["first_batter_reach_flag"] for packet in appearance_packets])
+    first_batter_walk_rate = safe_mean([packet["first_batter_walk_flag"] for packet in appearance_packets])
+    meltdown_appearance_rate = safe_mean([packet["meltdown_appearance_flag"] for packet in appearance_packets])
+    home_run_appearance_rate = safe_mean([packet["home_run_appearance_flag"] for packet in appearance_packets])
+    inherited_traffic_entry_rate = safe_mean([packet["inherited_traffic_entry_flag"] for packet in appearance_packets])
+    inherited_traffic_score_rate = (
+        sum(packet["inherited_traffic_score_flag"] for packet in appearance_packets if packet["inherited_traffic_entry_flag"])
+        / sum(packet["inherited_traffic_entry_flag"] for packet in appearance_packets)
+        if any(packet["inherited_traffic_entry_flag"] for packet in appearance_packets)
+        else None
+    )
+    bullpen_meltdown_game_rate = (
+        safe_mean([packet["bullpen_meltdown_flag"] for packet in game_packets]) if game_packets else None
+    )
+    bridge_clean_game_rate = (
+        safe_mean([1 if not packet["bullpen_meltdown_flag"] and packet["team_runs_allowed_final"] <= 4 else 0 for packet in game_packets])
+        if game_packets
+        else None
+    )
+    bullpen_chaos_index = clamp_value(
+        18
+        + first_batter_reach_rate * 18
+        + first_batter_walk_rate * 18
+        + meltdown_appearance_rate * 16
+        + home_run_appearance_rate * 12
+        + (inherited_traffic_score_rate or 0.0) * 18
+        + (bullpen_meltdown_game_rate or 0.0) * 18
+        + lead_after5_loss_rate * 14,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": schedule_context["scheduled_opponent"],
+        "window_days": window_days,
+        "appearances_sample": len(appearance_packets),
+        "games_sample": len(game_packets),
+        "first_batter_reach_rate": first_batter_reach_rate,
+        "first_batter_walk_rate": first_batter_walk_rate,
+        "meltdown_appearance_rate": meltdown_appearance_rate,
+        "home_run_appearance_rate": home_run_appearance_rate,
+        "inherited_traffic_entry_rate": inherited_traffic_entry_rate,
+        "inherited_traffic_score_rate": inherited_traffic_score_rate,
+        "bullpen_meltdown_game_rate": bullpen_meltdown_game_rate,
+        "lead_loss_after_entry_rate": lead_after5_loss_rate,
+        "bridge_clean_game_rate": bridge_clean_game_rate,
+        "bullpen_chaos_index": bullpen_chaos_index,
+    }
+
+
+def refresh_mistake_shape_profiles(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_team_mistake_shape_daily WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_pitcher_mistake_shape_daily WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_bullpen_mistake_shape_daily WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_lineup_conversion_shape_daily WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_team_mistake_shape_daily WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_pitcher_mistake_shape_daily WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_bullpen_mistake_shape_daily WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_lineup_conversion_shape_daily WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_team_mistake_shape_daily")
+            conn.execute("DELETE FROM mlb_pitcher_mistake_shape_daily")
+            conn.execute("DELETE FROM mlb_bullpen_mistake_shape_daily")
+            conn.execute("DELETE FROM mlb_lineup_conversion_shape_daily")
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+        for team_name in teams:
+            for window_games in MISTAKE_TEAM_WINDOWS:
+                packets = build_recent_team_mistake_shape_packets(conn, team_name, current_date, window_games)
+                team_row = build_team_mistake_shape_row(conn, current_date, team_name, window_games, packets)
+                if team_row:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_team_mistake_shape_daily (
+                          as_of_date, team_name, scheduled_opponent, scheduled_series_game_number,
+                          division_matchup_flag, window_games, games_sample, road_games_sample,
+                          low_scoring_game_rate, high_scoring_game_rate, scoreless_first3_rate,
+                          first_inning_run_allowed_rate, early_multi_run_allowed_rate, one_big_inning_rate,
+                          one_bad_inning_allowed_rate, traffic_game_rate, dead_bat_traffic_rate,
+                          traffic_no_conversion_rate, base_runner_conversion_rate, stranded_traffic_rate,
+                          top_order_pressure_no_conversion_rate, bullpen_meltdown_rate,
+                          run_clustering_index, mistake_chaos_index
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            team_row["as_of_date"],
+                            team_row["team_name"],
+                            team_row["scheduled_opponent"],
+                            team_row["scheduled_series_game_number"],
+                            team_row["division_matchup_flag"],
+                            team_row["window_games"],
+                            team_row["games_sample"],
+                            team_row["road_games_sample"],
+                            team_row["low_scoring_game_rate"],
+                            team_row["high_scoring_game_rate"],
+                            team_row["scoreless_first3_rate"],
+                            team_row["first_inning_run_allowed_rate"],
+                            team_row["early_multi_run_allowed_rate"],
+                            team_row["one_big_inning_rate"],
+                            team_row["one_bad_inning_allowed_rate"],
+                            team_row["traffic_game_rate"],
+                            team_row["dead_bat_traffic_rate"],
+                            team_row["traffic_no_conversion_rate"],
+                            team_row["base_runner_conversion_rate"],
+                            team_row["stranded_traffic_rate"],
+                            team_row["top_order_pressure_no_conversion_rate"],
+                            team_row["bullpen_meltdown_rate"],
+                            team_row["run_clustering_index"],
+                            team_row["mistake_chaos_index"],
+                        ),
+                    )
+
+                lineup_row = build_lineup_conversion_shape_row(conn, current_date, team_name, window_games, packets)
+                if lineup_row:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_lineup_conversion_shape_daily (
+                          as_of_date, team_name, scheduled_opponent, scheduled_series_game_number,
+                          division_matchup_flag, window_games, games_sample, baserunners_per_game,
+                          runs_per_baserunner, stranded_traffic_rate, early_baserunners_per_game,
+                          early_conversion_rate, top_order_baserunners_first3_per_game,
+                          top_order_conversion_share, traffic_no_conversion_rate,
+                          dead_bat_traffic_rate, quiet_first5_rate, conversion_volatility,
+                          lineup_conversion_index
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            lineup_row["as_of_date"],
+                            lineup_row["team_name"],
+                            lineup_row["scheduled_opponent"],
+                            lineup_row["scheduled_series_game_number"],
+                            lineup_row["division_matchup_flag"],
+                            lineup_row["window_games"],
+                            lineup_row["games_sample"],
+                            lineup_row["baserunners_per_game"],
+                            lineup_row["runs_per_baserunner"],
+                            lineup_row["stranded_traffic_rate"],
+                            lineup_row["early_baserunners_per_game"],
+                            lineup_row["early_conversion_rate"],
+                            lineup_row["top_order_baserunners_first3_per_game"],
+                            lineup_row["top_order_conversion_share"],
+                            lineup_row["traffic_no_conversion_rate"],
+                            lineup_row["dead_bat_traffic_rate"],
+                            lineup_row["quiet_first5_rate"],
+                            lineup_row["conversion_volatility"],
+                            lineup_row["lineup_conversion_index"],
+                        ),
+                    )
+
+            for window_days in MISTAKE_BULLPEN_WINDOWS:
+                bullpen_row = build_bullpen_mistake_shape_row(conn, current_date, team_name, window_days)
+                if not bullpen_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_bullpen_mistake_shape_daily (
+                      as_of_date, team_name, scheduled_opponent, window_days,
+                      appearances_sample, games_sample, first_batter_reach_rate,
+                      first_batter_walk_rate, meltdown_appearance_rate, home_run_appearance_rate,
+                      inherited_traffic_entry_rate, inherited_traffic_score_rate,
+                      bullpen_meltdown_game_rate, lead_loss_after_entry_rate,
+                      bridge_clean_game_rate, bullpen_chaos_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        bullpen_row["as_of_date"],
+                        bullpen_row["team_name"],
+                        bullpen_row["scheduled_opponent"],
+                        bullpen_row["window_days"],
+                        bullpen_row["appearances_sample"],
+                        bullpen_row["games_sample"],
+                        bullpen_row["first_batter_reach_rate"],
+                        bullpen_row["first_batter_walk_rate"],
+                        bullpen_row["meltdown_appearance_rate"],
+                        bullpen_row["home_run_appearance_rate"],
+                        bullpen_row["inherited_traffic_entry_rate"],
+                        bullpen_row["inherited_traffic_score_rate"],
+                        bullpen_row["bullpen_meltdown_game_rate"],
+                        bullpen_row["lead_loss_after_entry_rate"],
+                        bullpen_row["bridge_clean_game_rate"],
+                        bullpen_row["bullpen_chaos_index"],
+                    ),
+                )
+
+        starters = conn.execute(
+            """
+            SELECT
+              sp.pitcher_id,
+              sp.pitcher_name,
+              sp.team_role,
+              g.away_team,
+              g.home_team
+            FROM mlb_games g
+            JOIN mlb_starting_pitchers sp
+              ON sp.game_pk = g.game_pk
+            WHERE g.game_date = ?
+              AND sp.pitcher_id IS NOT NULL
+            ORDER BY sp.pitcher_name
+            """,
+            (current_date,),
+        ).fetchall()
+        for starter in starters:
+            team_name = starter["away_team"] if starter["team_role"] == "away" else starter["home_team"]
+            scheduled_opponent = starter["home_team"] if starter["team_role"] == "away" else starter["away_team"]
+            for window_starts in MISTAKE_PITCHER_WINDOWS:
+                start_rows = conn.execute(
+                    """
+                    SELECT game_pk, game_date
+                    FROM mlb_starting_pitcher_game_logs
+                    WHERE pitcher_id = ?
+                      AND game_date < ?
+                    ORDER BY game_date DESC, game_pk DESC
+                    LIMIT ?
+                    """,
+                    (starter["pitcher_id"], current_date, window_starts),
+                ).fetchall()
+                pitcher_row = build_pitcher_mistake_shape_row(
+                    conn,
+                    current_date,
+                    team_name,
+                    scheduled_opponent,
+                    to_int(starter["pitcher_id"]) or 0,
+                    starter["pitcher_name"],
+                    window_starts,
+                    start_rows,
+                )
+                if not pitcher_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_pitcher_mistake_shape_daily (
+                      as_of_date, pitcher_id, pitcher_name, team_name, scheduled_opponent,
+                      window_starts, starts_sample, starts_reaching_sixth, starts_with_damage,
+                      first_batter_reach_rate, first_inning_run_allowed_rate,
+                      first_three_runs_allowed_per_start, early_clean_start_rate,
+                      meltdown_start_rate, walk_burst_start_rate, home_run_start_rate,
+                      sixth_inning_damage_rate, post_damage_recovery_rate, command_break_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        pitcher_row["as_of_date"],
+                        pitcher_row["pitcher_id"],
+                        pitcher_row["pitcher_name"],
+                        pitcher_row["team_name"],
+                        pitcher_row["scheduled_opponent"],
+                        pitcher_row["window_starts"],
+                        pitcher_row["starts_sample"],
+                        pitcher_row["starts_reaching_sixth"],
+                        pitcher_row["starts_with_damage"],
+                        pitcher_row["first_batter_reach_rate"],
+                        pitcher_row["first_inning_run_allowed_rate"],
+                        pitcher_row["first_three_runs_allowed_per_start"],
+                        pitcher_row["early_clean_start_rate"],
+                        pitcher_row["meltdown_start_rate"],
+                        pitcher_row["walk_burst_start_rate"],
+                        pitcher_row["home_run_start_rate"],
+                        pitcher_row["sixth_inning_damage_rate"],
+                        pitcher_row["post_damage_recovery_rate"],
+                        pitcher_row["command_break_index"],
+                    ),
+                )
+
+    conn.commit()
+
+
 def build_series_context_row(conn: sqlite3.Connection, as_of_date: str, game_row: sqlite3.Row) -> dict[str, Any]:
     as_of = datetime.strptime(as_of_date, "%Y-%m-%d").date()
     away_team = game_row["away_team"]
@@ -5946,6 +6912,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier snapshot rows.",
     )
 
+    derive_mistake_shapes = subparsers.add_parser(
+        "derive-mistake-shapes",
+        help="Refresh daily team, starter, bullpen, and lineup mistake-shape profile tables.",
+    )
+    derive_mistake_shapes.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_mistake_shapes.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier mistake-shape rows.",
+    )
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -6082,6 +7060,16 @@ def main() -> None:
                 print(f"Refreshed MLB rolling state snapshots through {args.through_date}")
             else:
                 print("Refreshed MLB rolling state snapshots for all loaded dates")
+            return
+
+        if args.command == "derive-mistake-shapes":
+            refresh_mistake_shape_profiles(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB mistake-shape profile tables for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed MLB mistake-shape profile tables through {args.through_date}")
+            else:
+                print("Refreshed MLB mistake-shape profile tables for all loaded dates")
             return
 
         if args.command == "ingest-statcast-hr":
