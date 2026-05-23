@@ -6,6 +6,8 @@ This repo is now split into a deployable frontend and a private prediction works
 
 - `web/`
   Public React/Vite app. This is the only folder that should be deployed to Vercel.
+- `api/`
+  Read-only Fastify service that can serve compact slate, story, history, and prediction payloads from the private workspace.
 - `pipeline/`
   Daily generators, exporters, graders, and warehouse utilities.
 - `data-private/`
@@ -20,6 +22,8 @@ This repo is now split into a deployable frontend and a private prediction works
 - `web/index.html`
 - `web/vite.config.js`
 - `web/vercel.json`
+
+The `api/` service is intended for private/local or protected deployment, not direct public static hosting.
 
 ## What Stays Private
 
@@ -40,6 +44,14 @@ Run all operator commands from the repository root.
 npm run setup:web
 npm run dev
 npm run build
+```
+
+### API
+
+```bash
+npm run setup:api
+npm run dev:api
+npm run build:api
 ```
 
 ### MLB Preflight
@@ -102,5 +114,7 @@ npm run data:export:history-journal
 
 - The current prediction engine is still an operator-assisted system.
 - The website renders precomputed outputs; it should not become the home of the private pipeline.
+- The new API layer is the first step away from large generated frontend data modules, but the web app is still reading `web/src/lib/day-*.js` directly until the next migration pass.
+- What is still intentionally deferred before full rewiring: auth, write endpoints, moving generated day payloads into compact JSON, and a shared type/contract package between `web/` and `api/`.
 - If you deploy on Vercel, deploy from `web/`, not the repo root.
 - See [web/DEPLOY_VERCEL.md](/Users/jcchen/Documents/New%20project/web/DEPLOY_VERCEL.md:1) for the exact Vercel setup checklist.

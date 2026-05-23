@@ -4,9 +4,13 @@
   "version": "1.0.0",
   "scripts": {
     "setup:web": "npm --prefix web install",
+    "setup:api": "npm --prefix api install",
     "dev": "npm --prefix web run dev",
+    "dev:api": "npm --prefix api run dev",
     "build": "npm --prefix web run build",
+    "build:api": "npm --prefix api run build",
     "preview": "npm --prefix web run preview",
+    "start:api": "npm --prefix api run start",
     "data:init": "python3 pipeline/mlb_warehouse.py init-db",
     "data:ingest:mlb-day": "python3 pipeline/mlb_warehouse.py ingest-mlb-day",
     "data:ingest:mlb-range": "python3 pipeline/mlb_warehouse.py ingest-mlb-range",
