@@ -10,6 +10,7 @@ import {
 import type { HistoryEntry, HistoryRecord } from './lib/history-archive'
 import type { StoryArchiveDay, StoryArchiveGame, StoryTimelineEvent } from './lib/story-archive.generated'
 import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generated'
+import { loadHistoryArchiveData, loadStoryArchiveData } from './lib/archive-loaders'
 import { defaultSlateDayId, loadSlateDay, slateDayManifest, type LoadedSlateDay } from './lib/slate-manifest'
 
 type AnyRecord = Record<string, any>
@@ -619,11 +620,11 @@ function App() {
     if (historyLoaded || (activeDeskTab !== 'history' && activeDeskTab !== 'models')) return
 
     let cancelled = false
-    import('./lib/history-archive')
-      .then((module) => {
+    loadHistoryArchiveData()
+      .then((archive) => {
         if (cancelled) return
-        setHistoryArchive(module.historyArchive)
-        setActiveHistoryId((current) => current || module.historyArchive[0]?.id || '')
+        setHistoryArchive(archive)
+        setActiveHistoryId((current) => current || archive[0]?.id || '')
         setHistoryLoaded(true)
       })
       .catch((error) => {
@@ -639,11 +640,11 @@ function App() {
     if (storiesLoaded || activeDeskTab !== 'stories') return
 
     let cancelled = false
-    import('./lib/story-archive.generated')
-      .then((module) => {
+    loadStoryArchiveData()
+      .then((archive) => {
         if (cancelled) return
-        setStoryArchive(module.storyArchive)
-        setActiveStoryId((current) => current || module.storyArchive[module.storyArchive.length - 1]?.id || '')
+        setStoryArchive(archive)
+        setActiveStoryId((current) => current || archive[archive.length - 1]?.id || '')
         setStoriesLoaded(true)
       })
       .catch((error) => {
