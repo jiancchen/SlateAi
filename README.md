@@ -44,9 +44,11 @@ Run all operator commands from the repository root.
 
 ```bash
 npm run setup:web
-npm run dev
+npm run dev:web
 npm run build
 ```
+
+If the generated prop calibration/history files have not been refreshed yet, the web app now seeds safe empty stubs automatically so local Vite startup does not fail. Run `npm run data:export:history-journal` when you want the real calibration/history data regenerated.
 
 ### API
 
@@ -55,6 +57,17 @@ npm run setup:api
 npm run dev:api
 npm run build:api
 ```
+
+### Full local stack
+
+```bash
+npm run setup
+npm run dev
+```
+
+That starts both:
+- the API at `http://127.0.0.1:8787`
+- the web app through Vite in `web/`
 
 ### Published JSON snapshots
 

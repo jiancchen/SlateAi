@@ -770,6 +770,16 @@ function App() {
     document.title = `${slateMeta.date} Sports Desk`
   }, [slateMeta.date])
 
+  const activeStoryDay = activeStoryId ? loadedStoryDaysById[activeStoryId] ?? null : null
+  const activeStoryGameSummary =
+    activeStoryDay?.games.find((game) => game.gamePk === selectedStoryGamePk) ?? activeStoryDay?.games[0] ?? null
+  const activeStoryGame =
+    (activeStoryId && activeStoryGameSummary
+      ? loadedStoryGamesByDay[activeStoryId]?.[activeStoryGameSummary.gamePk] ?? null
+      : null) || null
+  const activeStoryTimeline = activeStoryGame?.timeline ?? []
+  const activeStoryTimelineGroups = useMemo(() => buildStoryTimelineGroups(activeStoryTimeline), [activeStoryTimeline])
+
   useEffect(() => {
     if (!activeStoryDay?.games?.length) return
     const currentSelected = activeStoryDay.games.find((game) => game.gamePk === selectedStoryGamePk)
@@ -906,15 +916,6 @@ function App() {
     !selectedGameDetail &&
     Boolean(loadingGameDetailsByDay[activeDayId]?.[selectedGameId])
   const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
-  const activeStoryDay = activeStoryId ? loadedStoryDaysById[activeStoryId] ?? null : null
-  const activeStoryGameSummary =
-    activeStoryDay?.games.find((game) => game.gamePk === selectedStoryGamePk) ?? activeStoryDay?.games[0] ?? null
-  const activeStoryGame =
-    (activeStoryId && activeStoryGameSummary
-      ? loadedStoryGamesByDay[activeStoryId]?.[activeStoryGameSummary.gamePk] ?? null
-      : null) || null
-  const activeStoryTimeline = activeStoryGame?.timeline ?? []
-  const activeStoryTimelineGroups = useMemo(() => buildStoryTimelineGroups(activeStoryTimeline), [activeStoryTimeline])
   const activeHistoryPropSummary = activeHistoryEntry ? mlbPropPerformanceByDate[activeHistoryEntry.id] ?? null : null
   const activeHistoryMetrics = useMemo(() => {
     if (!activeHistoryEntry) return []
