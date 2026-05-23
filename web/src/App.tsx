@@ -11,7 +11,14 @@ import type { HistoryEntry, HistoryRecord } from './lib/history-archive'
 import type { StoryArchiveDay, StoryArchiveGame, StoryTimelineEvent } from './lib/story-archive.generated'
 import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generated'
 import { loadHistoryArchiveData, loadStoryArchiveData } from './lib/archive-loaders'
-import { defaultSlateDayId, loadSlateDay, slateDayManifest, type LoadedSlateDay } from './lib/slate-manifest'
+import {
+  defaultSlateDayId,
+  fallbackSlateDayManifest,
+  loadSlateDayData,
+  loadSlateManifestData,
+  type LoadedSlateDay,
+  type SlateManifestEntry
+} from './lib/slate-loaders'
 
 type AnyRecord = Record<string, any>
 type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history' | 'stories'
@@ -569,6 +576,7 @@ function App() {
   const [selectedPicksByDay, setSelectedPicksByDay] = useState<Record<string, Record<string, string>>>({})
   const [selectedPropsByDay, setSelectedPropsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [selectedTotalsByDay, setSelectedTotalsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
+  const [slateManifest, setSlateManifest] = useState<SlateManifestEntry[]>(fallbackSlateDayManifest)
   const [loadedSlates, setLoadedSlates] = useState<Record<string, LoadedSlateDay>>({})
   const [loadingSlateIds, setLoadingSlateIds] = useState<Record<string, boolean>>({})
   const [historyArchive, setHistoryArchive] = useState<HistoryEntry[]>([])
@@ -585,9 +593,29 @@ function App() {
     return () => window.clearInterval(timer)
   }, [])
 
+  useEffect(() => {
+    let cancelled = false
+
+    loadSlateManifestData()
+      .then((manifest) => {
+        if (cancelled || !manifest.length) return
+        setSlateManifest(manifest)
+        setActiveDayId((current) =>
+          manifest.some((entry) => entry.id === current) ? current : manifest.at(-1)?.id || current
+        )
+      })
+      .catch((error) => {
+        console.error('Failed to load slate manifest', error)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
   const orderedSlateDays = useMemo(
-    () => [...slateDayManifest].sort((left, right) => right.id.localeCompare(left.id)),
-    []
+    () => [...slateManifest].sort((left, right) => right.id.localeCompare(left.id)),
+    [slateManifest]
   )
 
   const activeDayShell = useMemo(
@@ -604,7 +632,7 @@ function App() {
 
     setLoadingSlateIds((current) => ({ ...current, [slateId]: true }))
 
-    loadSlateDay(slateId)
+    loadSlateDayData(slateId)
       .then((day) => {
         setLoadedSlates((current) => ({ ...current, [day.id]: day }))
       })
