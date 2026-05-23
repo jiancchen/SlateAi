@@ -7,7 +7,7 @@ import {
   rankFlipRiskPicks,
   rankMlbPlayerProps
 } from './lib/sports-model.js'
-import type { HistoryEntry, HistoryRecord } from './lib/history-archive'
+import type { HistoryEntry, HistoryRecord } from './lib/history-types'
 import type {
   StoryArchiveDaySummary,
   StoryArchiveGame,

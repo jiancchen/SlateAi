@@ -1,4 +1,4 @@
-import type { HistoryEntry } from './history-archive'
+import type { HistoryEntry } from './history-types'
 import { fetchJsonWithTimeout, getApiBaseUrl } from './api-client'
 import type {
   StoryArchiveDaySummary,
@@ -9,17 +9,16 @@ import type {
 export const loadHistoryArchiveData = async (): Promise<HistoryEntry[]> => {
   const apiBase = getApiBaseUrl()
 
-  if (apiBase) {
-    try {
-      const payload = await fetchJsonWithTimeout<{ history: HistoryEntry[] }>(`${apiBase}/api/history`)
-      if (Array.isArray(payload.history)) return payload.history
-    } catch (error) {
-      console.warn('History API unavailable, falling back to bundled archive.', error)
-    }
+  if (!apiBase) return []
+
+  try {
+    const payload = await fetchJsonWithTimeout<{ history: HistoryEntry[] }>(`${apiBase}/api/history`)
+    if (Array.isArray(payload.history)) return payload.history
+  } catch (error) {
+    console.warn('History API unavailable.', error)
   }
 
-  const module = await import('./history-archive')
-  return module.historyArchive
+  return []
 }
 
 export const loadStoryArchiveIndexData = async (): Promise<StoryArchiveIndexEntry[]> => {
