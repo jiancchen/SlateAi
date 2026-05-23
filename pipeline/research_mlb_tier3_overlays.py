@@ -78,6 +78,22 @@ def _read_float(payload: dict[str, object] | None, key: str) -> float | None:
     return float(value) if value is not None else None
 
 
+def phase_key(row: TierThreeOverlayRow) -> str:
+    if row.date <= "2026-05-15":
+        return "reserve"
+    if row.date <= "2026-05-18":
+        return "bridge"
+    return "live"
+
+
+def phase_filter(rows: list[TierThreeOverlayRow], phase: str) -> list[TierThreeOverlayRow]:
+    if phase == "combined":
+        return rows
+    if phase == "expanded_reserve":
+        return [row for row in rows if phase_key(row) in {"reserve", "bridge"}]
+    return [row for row in rows if phase_key(row) == phase]
+
+
 def load_table_lookup(
     conn: sqlite3.Connection,
     table_name: str,
@@ -157,6 +173,10 @@ def load_first_reliever_lookup(conn: sqlite3.Connection) -> dict[tuple[str, str]
             "first_reliever_likelihood": row["first_reliever_likelihood"],
         }
     return lookup
+
+
+def bullpen_command_mismatch(row: TierThreeOverlayRow) -> bool:
+    return (row.reliever_command_gap or -999) >= 6 and row.point_edge >= 8 and row.late_inning_stability_index <= 55
 
 
 def load_reserve_rows(
@@ -313,8 +333,11 @@ def load_current_rows(
 
 
 def format_dataset_summary(rows: list[TierThreeOverlayRow]) -> str:
-    reserve = [row for row in rows if row.split == "reserve"]
-    current = [row for row in rows if row.split == "current"]
+    reserve = phase_filter(rows, "reserve")
+    bridge = phase_filter(rows, "bridge")
+    expanded_reserve = phase_filter(rows, "expanded_reserve")
+    live = phase_filter(rows, "live")
+    original_current = [*bridge, *live]
     covered_reliever = [row for row in rows if row.pick_reliever_command_risk is not None]
     covered_third = [row for row in rows if row.pick_third_time_penalty is not None]
     return markdown_table(
@@ -328,11 +351,32 @@ def format_dataset_summary(rows: list[TierThreeOverlayRow]) -> str:
                 str(sum(1 for row in reserve if row.pick_third_time_penalty is not None)),
             ],
             [
-                "Current (`05-16` to `05-22`)",
-                str(len(current)),
-                f"{hit_rate(current):.3f}",
-                str(sum(1 for row in current if row.pick_reliever_command_risk is not None)),
-                str(sum(1 for row in current if row.pick_third_time_penalty is not None)),
+                "Bridge (`05-16` to `05-18`)",
+                str(len(bridge)),
+                f"{hit_rate(bridge):.3f}",
+                str(sum(1 for row in bridge if row.pick_reliever_command_risk is not None)),
+                str(sum(1 for row in bridge if row.pick_third_time_penalty is not None)),
+            ],
+            [
+                "Expanded reserve (`05-10` to `05-18`)",
+                str(len(expanded_reserve)),
+                f"{hit_rate(expanded_reserve):.3f}",
+                str(sum(1 for row in expanded_reserve if row.pick_reliever_command_risk is not None)),
+                str(sum(1 for row in expanded_reserve if row.pick_third_time_penalty is not None)),
+            ],
+            [
+                "Live current (`05-19` to `05-22`)",
+                str(len(live)),
+                f"{hit_rate(live):.3f}",
+                str(sum(1 for row in live if row.pick_reliever_command_risk is not None)),
+                str(sum(1 for row in live if row.pick_third_time_penalty is not None)),
+            ],
+            [
+                "Original current (`05-16` to `05-22`)",
+                str(len(original_current)),
+                f"{hit_rate(original_current):.3f}",
+                str(sum(1 for row in original_current if row.pick_reliever_command_risk is not None)),
+                str(sum(1 for row in original_current if row.pick_third_time_penalty is not None)),
             ],
             [
                 "Combined",
@@ -385,8 +429,8 @@ def format_bucket_analysis(rows: list[TierThreeOverlayRow]) -> str:
 
 def evaluate_rule(rows: list[TierThreeOverlayRow], predicate: Callable[[TierThreeOverlayRow], bool]) -> dict[str, tuple[int, float, int, float]]:
     result: dict[str, tuple[int, float, int, float]] = {}
-    for split in ("reserve", "current", "combined"):
-        subset = rows if split == "combined" else [row for row in rows if row.split == split]
+    for split in ("reserve", "bridge", "expanded_reserve", "live", "combined"):
+        subset = phase_filter(rows, split)
         kept = [row for row in subset if not predicate(row)]
         passed = [row for row in subset if predicate(row)]
         result[split] = (len(kept), hit_rate(kept), len(passed), hit_rate(passed))
@@ -404,7 +448,7 @@ def format_overlay_rules(rows: list[TierThreeOverlayRow]) -> str:
         (
             "Bullpen command mismatch",
             "Pass if `reliever command gap >= 6 && point edge >= 8 && late stability <= 55`",
-            lambda row: (row.reliever_command_gap or -999) >= 6 and row.point_edge >= 8 and row.late_inning_stability_index <= 55,
+            bullpen_command_mismatch,
             "This catches paper edges whose late-game path relies on the worse command handoff.",
         ),
         (
@@ -425,7 +469,13 @@ def format_overlay_rules(rows: list[TierThreeOverlayRow]) -> str:
     for name, description, predicate, note in rules:
         evaluated = evaluate_rule(rows, predicate)
         table_rows: list[list[str]] = []
-        for split_key, label in (("reserve", "Reserve"), ("current", "Current"), ("combined", "Combined")):
+        for split_key, label in (
+            ("reserve", "Reserve"),
+            ("bridge", "Bridge"),
+            ("expanded_reserve", "Expanded reserve"),
+            ("live", "Live current"),
+            ("combined", "Combined"),
+        ):
             kept_count, kept_rate, passed_count, passed_rate = evaluated[split_key]
             table_rows.append([label, str(kept_count), f"{kept_rate:.3f}", str(passed_count), f"{passed_rate:.3f}"])
         sections.append(
@@ -433,6 +483,69 @@ def format_overlay_rules(rows: list[TierThreeOverlayRow]) -> str:
             f"{description}\n\n"
             f"{markdown_table(['Window', 'Kept', 'Kept hit rate', 'Passed', 'Passed hit rate'], table_rows)}\n\n"
             f"Note: {note}"
+        )
+    return "\n\n".join(sections)
+
+
+def format_haircut_analysis(rows: list[TierThreeOverlayRow]) -> str:
+    edge_cut = 3.0
+    confidence_cut = 6
+    strong_edge_threshold = 10.0
+    high_conf_threshold = 60
+
+    sections: list[str] = []
+    for split_key, label in (
+        ("expanded_reserve", "Expanded reserve (`05-10` to `05-18`)"),
+        ("live", "Live current (`05-19` to `05-22`)"),
+        ("combined", "Combined"),
+    ):
+        subset = phase_filter(rows, split_key)
+        baseline_edge_rows = [row for row in subset if row.point_edge >= strong_edge_threshold]
+        baseline_conf_rows = [row for row in subset if row.confidence >= high_conf_threshold]
+        kept_edge_rows = [
+            row for row in subset
+            if (row.point_edge - (edge_cut if bullpen_command_mismatch(row) else 0.0)) >= strong_edge_threshold
+        ]
+        removed_edge_rows = [
+            row for row in baseline_edge_rows
+            if (row.point_edge - (edge_cut if bullpen_command_mismatch(row) else 0.0)) < strong_edge_threshold
+        ]
+        kept_conf_rows = [
+            row for row in subset
+            if (row.confidence - (confidence_cut if bullpen_command_mismatch(row) else 0)) >= high_conf_threshold
+        ]
+        removed_conf_rows = [
+            row for row in baseline_conf_rows
+            if (row.confidence - (confidence_cut if bullpen_command_mismatch(row) else 0)) < high_conf_threshold
+        ]
+
+        sections.append(
+            f"### {label}\n\n"
+            + markdown_table(
+                ["Bucket", "Baseline games", "Baseline hit rate", "After haircut games", "After haircut hit rate", "Removed", "Removed hit rate"],
+                [
+                    [
+                        "`10+ edge`",
+                        str(len(baseline_edge_rows)),
+                        f"{hit_rate(baseline_edge_rows):.3f}",
+                        str(len(kept_edge_rows)),
+                        f"{hit_rate(kept_edge_rows):.3f}",
+                        str(len(removed_edge_rows)),
+                        f"{hit_rate(removed_edge_rows):.3f}",
+                    ],
+                    [
+                        "`60+ confidence`",
+                        str(len(baseline_conf_rows)),
+                        f"{hit_rate(baseline_conf_rows):.3f}",
+                        str(len(kept_conf_rows)),
+                        f"{hit_rate(kept_conf_rows):.3f}",
+                        str(len(removed_conf_rows)),
+                        f"{hit_rate(removed_conf_rows):.3f}",
+                    ],
+                ],
+            )
+            + "\n\n"
+            + f"Haircut used: `-{edge_cut:.1f}` edge and `-{confidence_cut}` confidence when `bullpen command mismatch` is present."
         )
     return "\n\n".join(sections)
 
@@ -479,6 +592,11 @@ The model question is simple: do these features isolate the same kinds of fake c
 
 {format_dataset_summary(rows)}
 
+Note: the raw MLB warehouse already reaches back to `2026-03-26`. The practical limit here was prediction coverage, not game backfill, so the widened reserve lane uses:
+- original reserve: `2026-05-10` through `2026-05-15`
+- bridge reserve: `2026-05-16` through `2026-05-18`
+- live current: `2026-05-19` through `2026-05-22`
+
 ## Lookup Table Shape
 - `mlb_reliever_first_batter_command_profiles`
   - one row per pitcher / team / day
@@ -495,25 +613,30 @@ The model question is simple: do these features isolate the same kinds of fake c
 
 {format_overlay_rules(rows)}
 
+## Soft Haircut Trial: Bullpen Command Mismatch
+
+{format_haircut_analysis(rows)}
+
 ## Early Read
-1. `Starter third-time trap` is the most directly aligned with the side-model failure mode we care about: a big starter-backed edge that weakens once the game moves beyond the clean early script.
-2. `Bullpen command mismatch` is the better late-game partner feature. It is less about raw bullpen quality and more about which side is more likely to lose the strike zone first when the bridge begins.
-3. `Pick bullpen first-entry danger` is useful, but it should probably stay a soft penalty or classifier input unless the passed bucket clearly separates over a larger sample.
+1. `Bullpen command mismatch` is the leading candidate. It is the only Tier 3 lane so far that actually separated a bad passed bucket in the current sample, and it still makes conceptual sense as a late-game script penalty.
+2. `Starter third-time trap` still looks like a real baseball concept, but it is not yet producing a clean enough reserve/current separation to trust.
+3. The best near-term use of Tier 3 is a **soft haircut**, not a hard pass. This is where the model can respect late-game fragility without pretending it can perfectly predict every script break.
 
 ## Recommended Next Move
 1. Keep these features offline for now.
-2. If one overlay separates both reserve and current windows cleanly, promote it first as:
-   - confidence haircut
+2. Continue using `bullpen command mismatch` as the main Tier 3 candidate.
+3. If the haircut continues to help as the sample grows, promote it first as:
    - edge haircut
+   - confidence haircut
    - volatility bump
-3. Do **not** turn either into a hard pass rule until we have more dates and a stronger gap between kept and passed buckets.
+4. Do **not** turn either Tier 3 lane into a hard pass rule until we have a larger and cleaner reserve/current separation.
 """
     out_path.write_text(report, encoding="utf-8")
     print(f"Wrote {out_path}")
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Backtest Tier 3 late-script overlays against reserve and current windows.")
+    parser = argparse.ArgumentParser(description="Backtest Tier 3 late-script overlays against widened reserve and live-current windows.")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT, help="Path to write the markdown report.")
     args = parser.parse_args()
     write_report(args.out)
