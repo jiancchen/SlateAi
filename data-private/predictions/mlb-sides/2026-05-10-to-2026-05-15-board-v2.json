@@ -1,6 +1,6 @@
 {
   "modelName": "board-moneyline-v2",
-  "generatedAt": "2026-05-23T17:10:28.301Z",
+  "generatedAt": "2026-05-23T17:57:49.441Z",
   "startDate": "2026-05-10",
   "endDate": "2026-05-15",
   "picks": [
@@ -16,6 +16,9 @@
       "confidence": 60,
       "volatility": 72,
       "modelEdge": 5.4,
+      "marketAmericanOdds": -132,
+      "marketProbability": 0.5689655172413793,
+      "marketProbabilityLabel": "56.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Market price",
@@ -71,7 +74,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -132,
+        "marketProbability": 0.5689655172413793,
+        "marketProbabilityLabel": "56.9%",
+        "opponentMarketAmericanOdds": 120,
+        "opponentMarketProbability": 0.45454545454545453,
+        "opponentMarketProbabilityLabel": "45.5%",
+        "marketFavoriteTeam": "Miami Marlins",
+        "marketFavoriteProbability": 0.5689655172413793,
+        "marketFavoriteProbabilityLabel": "56.9%",
+        "marketFavoriteAmericanOdds": -132,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.114
       }
     },
     {
@@ -86,6 +102,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 14.7,
+      "marketAmericanOdds": -103,
+      "marketProbability": 0.5073891625615764,
+      "marketProbabilityLabel": "50.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter ERA",
@@ -145,7 +164,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -103,
+        "marketProbability": 0.5073891625615764,
+        "marketProbabilityLabel": "50.7%",
+        "opponentMarketAmericanOdds": -108,
+        "opponentMarketProbability": 0.5192307692307693,
+        "opponentMarketProbabilityLabel": "51.9%",
+        "marketFavoriteTeam": "Baltimore Orioles",
+        "marketFavoriteProbability": 0.5192307692307693,
+        "marketFavoriteProbabilityLabel": "51.9%",
+        "marketFavoriteAmericanOdds": -108,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.012
       }
     },
     {
@@ -160,6 +192,9 @@
       "confidence": 53,
       "volatility": 71,
       "modelEdge": 7,
+      "marketAmericanOdds": 105,
+      "marketProbability": 0.4878048780487805,
+      "marketProbabilityLabel": "48.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Standings profile",
@@ -215,7 +250,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 105,
+        "marketProbability": 0.4878048780487805,
+        "marketProbabilityLabel": "48.8%",
+        "opponentMarketAmericanOdds": -127,
+        "opponentMarketProbability": 0.5594713656387665,
+        "opponentMarketProbabilityLabel": "55.9%",
+        "marketFavoriteTeam": "Boston Red Sox",
+        "marketFavoriteProbability": 0.5594713656387665,
+        "marketFavoriteProbabilityLabel": "55.9%",
+        "marketFavoriteAmericanOdds": -127,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.072
       }
     },
     {
@@ -230,6 +278,9 @@
       "confidence": 71,
       "volatility": 76,
       "modelEdge": 18.3,
+      "marketAmericanOdds": -282,
+      "marketProbability": 0.7382198952879581,
+      "marketProbabilityLabel": "73.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Market price",
@@ -285,7 +336,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -282,
+        "marketProbability": 0.7382198952879581,
+        "marketProbabilityLabel": "73.8%",
+        "opponentMarketAmericanOdds": 244,
+        "opponentMarketProbability": 0.29069767441860467,
+        "opponentMarketProbabilityLabel": "29.1%",
+        "marketFavoriteTeam": "Philadelphia Phillies",
+        "marketFavoriteProbability": 0.7382198952879581,
+        "marketFavoriteProbabilityLabel": "73.8%",
+        "marketFavoriteAmericanOdds": -282,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.448
       }
     },
     {
@@ -300,6 +364,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 4,
+      "marketAmericanOdds": -115,
+      "marketProbability": 0.5348837209302325,
+      "marketProbabilityLabel": "53.5%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter ERA",
@@ -357,7 +424,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -115,
+        "marketProbability": 0.5348837209302325,
+        "marketProbabilityLabel": "53.5%",
+        "opponentMarketAmericanOdds": 105,
+        "opponentMarketProbability": 0.4878048780487805,
+        "opponentMarketProbabilityLabel": "48.8%",
+        "marketFavoriteTeam": "Los Angeles Angels",
+        "marketFavoriteProbability": 0.5348837209302325,
+        "marketFavoriteProbabilityLabel": "53.5%",
+        "marketFavoriteAmericanOdds": -115,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.047
       }
     },
     {
@@ -372,6 +452,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 2.3,
+      "marketAmericanOdds": 101,
+      "marketProbability": 0.4975124378109453,
+      "marketProbabilityLabel": "49.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter ERA"
@@ -427,7 +510,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 101,
+        "marketProbability": 0.4975124378109453,
+        "marketProbabilityLabel": "49.8%",
+        "opponentMarketAmericanOdds": -120,
+        "opponentMarketProbability": 0.5454545454545454,
+        "opponentMarketProbabilityLabel": "54.5%",
+        "marketFavoriteTeam": "Cincinnati Reds",
+        "marketFavoriteProbability": 0.5454545454545454,
+        "marketFavoriteProbabilityLabel": "54.5%",
+        "marketFavoriteAmericanOdds": -120,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.048
       }
     },
     {
@@ -442,6 +538,9 @@
       "confidence": 69,
       "volatility": 73,
       "modelEdge": 18,
+      "marketAmericanOdds": -154,
+      "marketProbability": 0.6062992125984252,
+      "marketProbabilityLabel": "60.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Standings profile",
@@ -497,7 +596,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -154,
+        "marketProbability": 0.6062992125984252,
+        "marketProbabilityLabel": "60.6%",
+        "opponentMarketAmericanOdds": 114,
+        "opponentMarketProbability": 0.4672897196261682,
+        "opponentMarketProbabilityLabel": "46.7%",
+        "marketFavoriteTeam": "Cleveland Guardians",
+        "marketFavoriteProbability": 0.6062992125984252,
+        "marketFavoriteProbabilityLabel": "60.6%",
+        "marketFavoriteAmericanOdds": -154,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.139
       }
     },
     {
@@ -512,6 +624,9 @@
       "confidence": 52,
       "volatility": 76,
       "modelEdge": 7.3,
+      "marketAmericanOdds": 110,
+      "marketProbability": 0.47619047619047616,
+      "marketProbabilityLabel": "47.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter ERA",
@@ -567,7 +682,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 110,
+        "marketProbability": 0.47619047619047616,
+        "marketProbabilityLabel": "47.6%",
+        "opponentMarketAmericanOdds": -122,
+        "opponentMarketProbability": 0.5495495495495496,
+        "opponentMarketProbabilityLabel": "55.0%",
+        "marketFavoriteTeam": "Seattle Mariners",
+        "marketFavoriteProbability": 0.5495495495495496,
+        "marketFavoriteProbabilityLabel": "55.0%",
+        "marketFavoriteAmericanOdds": -122,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.073
       }
     },
     {
@@ -582,6 +710,9 @@
       "confidence": 65,
       "volatility": 78,
       "modelEdge": 14.3,
+      "marketAmericanOdds": -119,
+      "marketProbability": 0.54337899543379,
+      "marketProbabilityLabel": "54.3%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter ERA",
@@ -637,7 +768,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -119,
+        "marketProbability": 0.54337899543379,
+        "marketProbabilityLabel": "54.3%",
+        "opponentMarketAmericanOdds": 108,
+        "opponentMarketProbability": 0.4807692307692308,
+        "opponentMarketProbabilityLabel": "48.1%",
+        "marketFavoriteTeam": "New York Yankees",
+        "marketFavoriteProbability": 0.54337899543379,
+        "marketFavoriteProbabilityLabel": "54.3%",
+        "marketFavoriteAmericanOdds": -119,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.063
       }
     },
     {
@@ -652,6 +796,9 @@
       "confidence": 55,
       "volatility": 71,
       "modelEdge": 0.1,
+      "marketAmericanOdds": -124,
+      "marketProbability": 0.5535714285714286,
+      "marketProbabilityLabel": "55.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter ERA",
@@ -707,7 +854,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -124,
+        "marketProbability": 0.5535714285714286,
+        "marketProbabilityLabel": "55.4%",
+        "opponentMarketAmericanOdds": 113,
+        "opponentMarketProbability": 0.4694835680751174,
+        "opponentMarketProbabilityLabel": "46.9%",
+        "marketFavoriteTeam": "Texas Rangers",
+        "marketFavoriteProbability": 0.5535714285714286,
+        "marketFavoriteProbabilityLabel": "55.4%",
+        "marketFavoriteAmericanOdds": -124,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.084
       }
     },
     {
@@ -722,6 +882,9 @@
       "confidence": 52,
       "volatility": 76,
       "modelEdge": 3.4,
+      "marketAmericanOdds": 106,
+      "marketProbability": 0.4854368932038835,
+      "marketProbabilityLabel": "48.5%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Standings profile",
@@ -776,7 +939,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 106,
+        "marketProbability": 0.4854368932038835,
+        "marketProbabilityLabel": "48.5%",
+        "opponentMarketAmericanOdds": -117,
+        "opponentMarketProbability": 0.5391705069124424,
+        "opponentMarketProbabilityLabel": "53.9%",
+        "marketFavoriteTeam": "San Francisco Giants",
+        "marketFavoriteProbability": 0.5391705069124424,
+        "marketFavoriteProbabilityLabel": "53.9%",
+        "marketFavoriteAmericanOdds": -117,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.054
       }
     },
     {
@@ -791,6 +967,9 @@
       "confidence": 57,
       "volatility": 83,
       "modelEdge": 3.2,
+      "marketAmericanOdds": -121,
+      "marketProbability": 0.5475113122171946,
+      "marketProbabilityLabel": "54.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter record",
@@ -846,7 +1025,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -121,
+        "marketProbability": 0.5475113122171946,
+        "marketProbabilityLabel": "54.8%",
+        "opponentMarketAmericanOdds": 109,
+        "opponentMarketProbability": 0.4784688995215311,
+        "opponentMarketProbabilityLabel": "47.8%",
+        "marketFavoriteTeam": "Los Angeles Dodgers",
+        "marketFavoriteProbability": 0.5475113122171946,
+        "marketFavoriteProbabilityLabel": "54.8%",
+        "marketFavoriteAmericanOdds": -121,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.069
       }
     },
     {
@@ -861,6 +1053,9 @@
       "confidence": 55,
       "volatility": 75,
       "modelEdge": 1,
+      "marketAmericanOdds": -127,
+      "marketProbability": 0.5594713656387665,
+      "marketProbabilityLabel": "55.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Market price",
@@ -916,7 +1111,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -127,
+        "marketProbability": 0.5594713656387665,
+        "marketProbabilityLabel": "55.9%",
+        "opponentMarketAmericanOdds": 115,
+        "opponentMarketProbability": 0.46511627906976744,
+        "opponentMarketProbabilityLabel": "46.5%",
+        "marketFavoriteTeam": "San Diego Padres",
+        "marketFavoriteProbability": 0.5594713656387665,
+        "marketFavoriteProbabilityLabel": "55.9%",
+        "marketFavoriteAmericanOdds": -127,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.094
       }
     },
     {
@@ -931,6 +1139,9 @@
       "confidence": 57,
       "volatility": 84,
       "modelEdge": 3.1,
+      "marketAmericanOdds": -111,
+      "marketProbability": 0.5260663507109005,
+      "marketProbabilityLabel": "52.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Standings profile",
@@ -986,7 +1197,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -111,
+        "marketProbability": 0.5260663507109005,
+        "marketProbabilityLabel": "52.6%",
+        "opponentMarketAmericanOdds": -108,
+        "opponentMarketProbability": 0.5192307692307693,
+        "opponentMarketProbabilityLabel": "51.9%",
+        "marketFavoriteTeam": "Arizona Diamondbacks",
+        "marketFavoriteProbability": 0.5260663507109005,
+        "marketFavoriteProbabilityLabel": "52.6%",
+        "marketFavoriteAmericanOdds": -111,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.007
       }
     },
     {
@@ -1001,6 +1225,9 @@
       "confidence": 52,
       "volatility": 85,
       "modelEdge": 2.8,
+      "marketAmericanOdds": 105,
+      "marketProbability": 0.4878048780487805,
+      "marketProbabilityLabel": "48.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors",
       "inputLabels": [
         "Starter ERA"
@@ -1054,7 +1281,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 105,
+        "marketProbability": 0.4878048780487805,
+        "marketProbabilityLabel": "48.8%",
+        "opponentMarketAmericanOdds": -132,
+        "opponentMarketProbability": 0.5689655172413793,
+        "opponentMarketProbabilityLabel": "56.9%",
+        "marketFavoriteTeam": "Kansas City Royals",
+        "marketFavoriteProbability": 0.5689655172413793,
+        "marketFavoriteProbabilityLabel": "56.9%",
+        "marketFavoriteAmericanOdds": -132,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.081
       }
     },
     {
@@ -1069,6 +1309,9 @@
       "confidence": 59,
       "volatility": 92,
       "modelEdge": 10.1,
+      "marketAmericanOdds": -175,
+      "marketProbability": 0.6363636363636364,
+      "marketProbabilityLabel": "63.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + daily lineup matchup context",
       "inputLabels": [
         "Market price",
@@ -1253,7 +1496,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -175,
+        "marketProbability": 0.6363636363636364,
+        "marketProbabilityLabel": "63.6%",
+        "opponentMarketAmericanOdds": 144,
+        "opponentMarketProbability": 0.4098360655737705,
+        "opponentMarketProbabilityLabel": "41.0%",
+        "marketFavoriteTeam": "Cleveland Guardians",
+        "marketFavoriteProbability": 0.6363636363636364,
+        "marketFavoriteProbabilityLabel": "63.6%",
+        "marketFavoriteAmericanOdds": -175,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.227
       }
     },
     {
@@ -1268,6 +1524,9 @@
       "confidence": 54,
       "volatility": 92,
       "modelEdge": 8.8,
+      "marketAmericanOdds": -156,
+      "marketProbability": 0.609375,
+      "marketProbabilityLabel": "60.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + daily lineup matchup context",
       "inputLabels": [
         "Standings profile",
@@ -1452,7 +1711,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -156,
+        "marketProbability": 0.609375,
+        "marketProbabilityLabel": "60.9%",
+        "opponentMarketAmericanOdds": 129,
+        "opponentMarketProbability": 0.4366812227074236,
+        "opponentMarketProbabilityLabel": "43.7%",
+        "marketFavoriteTeam": "New York Yankees",
+        "marketFavoriteProbability": 0.609375,
+        "marketFavoriteProbabilityLabel": "60.9%",
+        "marketFavoriteAmericanOdds": -156,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.173
       }
     },
     {
@@ -1467,6 +1739,9 @@
       "confidence": 52,
       "volatility": 82,
       "modelEdge": 1.5,
+      "marketAmericanOdds": 109,
+      "marketProbability": 0.4784688995215311,
+      "marketProbabilityLabel": "47.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + daily lineup matchup context",
       "inputLabels": [
         "Standings profile",
@@ -1651,7 +1926,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 109,
+        "marketProbability": 0.4784688995215311,
+        "marketProbabilityLabel": "47.8%",
+        "opponentMarketAmericanOdds": -131,
+        "opponentMarketProbability": 0.5670995670995671,
+        "opponentMarketProbabilityLabel": "56.7%",
+        "marketFavoriteTeam": "Toronto Blue Jays",
+        "marketFavoriteProbability": 0.5670995670995671,
+        "marketFavoriteProbabilityLabel": "56.7%",
+        "marketFavoriteAmericanOdds": -131,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.089
       }
     },
     {
@@ -1666,6 +1954,9 @@
       "confidence": 56,
       "volatility": 81,
       "modelEdge": 1.9,
+      "marketAmericanOdds": -131,
+      "marketProbability": 0.5670995670995671,
+      "marketProbabilityLabel": "56.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + daily lineup matchup context",
       "inputLabels": [
         "Market price",
@@ -1850,7 +2141,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -131,
+        "marketProbability": 0.5670995670995671,
+        "marketProbabilityLabel": "56.7%",
+        "opponentMarketAmericanOdds": 109,
+        "opponentMarketProbability": 0.4784688995215311,
+        "opponentMarketProbabilityLabel": "47.8%",
+        "marketFavoriteTeam": "Texas Rangers",
+        "marketFavoriteProbability": 0.5670995670995671,
+        "marketFavoriteProbabilityLabel": "56.7%",
+        "marketFavoriteAmericanOdds": -131,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.089
       }
     },
     {
@@ -1865,6 +2169,9 @@
       "confidence": 58,
       "volatility": 92,
       "modelEdge": 10,
+      "marketAmericanOdds": -143,
+      "marketProbability": 0.588477366255144,
+      "marketProbabilityLabel": "58.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + daily lineup matchup context",
       "inputLabels": [
         "Lineup-vs-pitching fit",
@@ -2049,7 +2356,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -143,
+        "marketProbability": 0.588477366255144,
+        "marketProbabilityLabel": "58.8%",
+        "opponentMarketAmericanOdds": 119,
+        "opponentMarketProbability": 0.45662100456621,
+        "opponentMarketProbabilityLabel": "45.7%",
+        "marketFavoriteTeam": "Seattle Mariners",
+        "marketFavoriteProbability": 0.588477366255144,
+        "marketFavoriteProbabilityLabel": "58.8%",
+        "marketFavoriteAmericanOdds": -143,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.132
       }
     },
     {
@@ -2064,6 +2384,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 2,
+      "marketAmericanOdds": 159,
+      "marketProbability": 0.3861003861003861,
+      "marketProbabilityLabel": "38.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + daily lineup matchup context",
       "inputLabels": [
         "Starter ERA",
@@ -2251,7 +2574,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 159,
+        "marketProbability": 0.3861003861003861,
+        "marketProbabilityLabel": "38.6%",
+        "opponentMarketAmericanOdds": -194,
+        "opponentMarketProbability": 0.6598639455782312,
+        "opponentMarketProbabilityLabel": "66.0%",
+        "marketFavoriteTeam": "Los Angeles Dodgers",
+        "marketFavoriteProbability": 0.6598639455782312,
+        "marketFavoriteProbabilityLabel": "66.0%",
+        "marketFavoriteAmericanOdds": -194,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.274
       }
     },
     {
@@ -2266,6 +2602,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0,
+      "marketAmericanOdds": -143,
+      "marketProbability": 0.588477366255144,
+      "marketProbabilityLabel": "58.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Standings profile",
@@ -2450,7 +2789,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -143,
+        "marketProbability": 0.588477366255144,
+        "marketProbabilityLabel": "58.8%",
+        "opponentMarketAmericanOdds": 119,
+        "opponentMarketProbability": 0.45662100456621,
+        "opponentMarketProbabilityLabel": "45.7%",
+        "marketFavoriteTeam": "Cleveland Guardians",
+        "marketFavoriteProbability": 0.588477366255144,
+        "marketFavoriteProbabilityLabel": "58.8%",
+        "marketFavoriteAmericanOdds": -143,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.132
       }
     },
     {
@@ -2465,6 +2817,9 @@
       "confidence": 56,
       "volatility": 92,
       "modelEdge": 8.5,
+      "marketAmericanOdds": -149,
+      "marketProbability": 0.5983935742971888,
+      "marketProbabilityLabel": "59.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Standings profile",
@@ -2651,7 +3006,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -149,
+        "marketProbability": 0.5983935742971888,
+        "marketProbabilityLabel": "59.8%",
+        "opponentMarketAmericanOdds": 123,
+        "opponentMarketProbability": 0.4484304932735426,
+        "opponentMarketProbabilityLabel": "44.8%",
+        "marketFavoriteTeam": "New York Yankees",
+        "marketFavoriteProbability": 0.5983935742971888,
+        "marketFavoriteProbabilityLabel": "59.8%",
+        "marketFavoriteAmericanOdds": -149,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.15
       }
     },
     {
@@ -2666,6 +3034,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0,
+      "marketAmericanOdds": 119,
+      "marketProbability": 0.45662100456621,
+      "marketProbabilityLabel": "45.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -2851,7 +3222,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 119,
+        "marketProbability": 0.45662100456621,
+        "marketProbabilityLabel": "45.7%",
+        "opponentMarketAmericanOdds": -143,
+        "opponentMarketProbability": 0.588477366255144,
+        "opponentMarketProbabilityLabel": "58.8%",
+        "marketFavoriteTeam": "Cincinnati Reds",
+        "marketFavoriteProbability": 0.588477366255144,
+        "marketFavoriteProbabilityLabel": "58.8%",
+        "marketFavoriteAmericanOdds": -143,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.132
       }
     },
     {
@@ -2866,6 +3250,9 @@
       "confidence": 82,
       "volatility": 57,
       "modelEdge": 25.1,
+      "marketAmericanOdds": -349,
+      "marketProbability": 0.77728285077951,
+      "marketProbabilityLabel": "77.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Market price",
@@ -3050,7 +3437,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -349,
+        "marketProbability": 0.77728285077951,
+        "marketProbabilityLabel": "77.7%",
+        "opponentMarketAmericanOdds": 273,
+        "opponentMarketProbability": 0.2680965147453083,
+        "opponentMarketProbabilityLabel": "26.8%",
+        "marketFavoriteTeam": "Pittsburgh Pirates",
+        "marketFavoriteProbability": 0.77728285077951,
+        "marketFavoriteProbabilityLabel": "77.7%",
+        "marketFavoriteAmericanOdds": -349,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.509
       }
     },
     {
@@ -3065,6 +3465,9 @@
       "confidence": 70,
       "volatility": 74,
       "modelEdge": 15.4,
+      "marketAmericanOdds": -143,
+      "marketProbability": 0.588477366255144,
+      "marketProbabilityLabel": "58.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -3251,7 +3654,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -143,
+        "marketProbability": 0.588477366255144,
+        "marketProbabilityLabel": "58.8%",
+        "opponentMarketAmericanOdds": 119,
+        "opponentMarketProbability": 0.45662100456621,
+        "opponentMarketProbabilityLabel": "45.7%",
+        "marketFavoriteTeam": "Philadelphia Phillies",
+        "marketFavoriteProbability": 0.588477366255144,
+        "marketFavoriteProbabilityLabel": "58.8%",
+        "marketFavoriteAmericanOdds": -143,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.132
       }
     },
     {
@@ -3266,6 +3682,9 @@
       "confidence": 62,
       "volatility": 87,
       "modelEdge": 7.6,
+      "marketAmericanOdds": -115,
+      "marketProbability": 0.5348837209302325,
+      "marketProbabilityLabel": "53.5%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Standings profile",
@@ -3450,7 +3869,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -115,
+        "marketProbability": 0.5348837209302325,
+        "marketProbabilityLabel": "53.5%",
+        "opponentMarketAmericanOdds": -105,
+        "opponentMarketProbability": 0.5121951219512195,
+        "opponentMarketProbabilityLabel": "51.2%",
+        "marketFavoriteTeam": "Tampa Bay Rays",
+        "marketFavoriteProbability": 0.5348837209302325,
+        "marketFavoriteProbabilityLabel": "53.5%",
+        "marketFavoriteAmericanOdds": -115,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.023
       }
     },
     {
@@ -3465,6 +3897,9 @@
       "confidence": 52,
       "volatility": 91,
       "modelEdge": 0,
+      "marketAmericanOdds": 123,
+      "marketProbability": 0.4484304932735426,
+      "marketProbabilityLabel": "44.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Standings profile",
@@ -3651,7 +4086,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 123,
+        "marketProbability": 0.4484304932735426,
+        "marketProbabilityLabel": "44.8%",
+        "opponentMarketAmericanOdds": -149,
+        "opponentMarketProbability": 0.5983935742971888,
+        "opponentMarketProbabilityLabel": "59.8%",
+        "marketFavoriteTeam": "New York Mets",
+        "marketFavoriteProbability": 0.5983935742971888,
+        "marketFavoriteProbabilityLabel": "59.8%",
+        "marketFavoriteAmericanOdds": -149,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.15
       }
     },
     {
@@ -3666,6 +4114,9 @@
       "confidence": 64,
       "volatility": 70,
       "modelEdge": 6.2,
+      "marketAmericanOdds": -122,
+      "marketProbability": 0.5495495495495496,
+      "marketProbabilityLabel": "55.0%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -3850,7 +4301,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -122,
+        "marketProbability": 0.5495495495495496,
+        "marketProbabilityLabel": "55.0%",
+        "opponentMarketAmericanOdds": 102,
+        "opponentMarketProbability": 0.49504950495049505,
+        "opponentMarketProbabilityLabel": "49.5%",
+        "marketFavoriteTeam": "Atlanta Braves",
+        "marketFavoriteProbability": 0.5495495495495496,
+        "marketFavoriteProbabilityLabel": "55.0%",
+        "marketFavoriteAmericanOdds": -122,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.055
       }
     },
     {
@@ -3865,6 +4329,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0.7,
+      "marketAmericanOdds": -112,
+      "marketProbability": 0.5283018867924528,
+      "marketProbabilityLabel": "52.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -4051,7 +4518,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -112,
+        "marketProbability": 0.5283018867924528,
+        "marketProbabilityLabel": "52.8%",
+        "opponentMarketAmericanOdds": -108,
+        "opponentMarketProbability": 0.5192307692307693,
+        "opponentMarketProbabilityLabel": "51.9%",
+        "marketFavoriteTeam": "Minnesota Twins",
+        "marketFavoriteProbability": 0.5283018867924528,
+        "marketFavoriteProbabilityLabel": "52.8%",
+        "marketFavoriteAmericanOdds": -112,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.009
       }
     },
     {
@@ -4066,6 +4546,9 @@
       "confidence": 52,
       "volatility": 72,
       "modelEdge": 0.7,
+      "marketAmericanOdds": 109,
+      "marketProbability": 0.4784688995215311,
+      "marketProbabilityLabel": "47.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -4250,7 +4733,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 109,
+        "marketProbability": 0.4784688995215311,
+        "marketProbabilityLabel": "47.8%",
+        "opponentMarketAmericanOdds": -131,
+        "opponentMarketProbability": 0.5670995670995671,
+        "opponentMarketProbabilityLabel": "56.7%",
+        "marketFavoriteTeam": "Milwaukee Brewers",
+        "marketFavoriteProbability": 0.5670995670995671,
+        "marketFavoriteProbabilityLabel": "56.7%",
+        "marketFavoriteAmericanOdds": -131,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.089
       }
     },
     {
@@ -4265,6 +4761,9 @@
       "confidence": 54,
       "volatility": 92,
       "modelEdge": 0,
+      "marketAmericanOdds": -126,
+      "marketProbability": 0.5575221238938053,
+      "marketProbabilityLabel": "55.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter record",
@@ -4450,7 +4949,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -126,
+        "marketProbability": 0.5575221238938053,
+        "marketProbabilityLabel": "55.8%",
+        "opponentMarketAmericanOdds": 104,
+        "opponentMarketProbability": 0.49019607843137253,
+        "opponentMarketProbabilityLabel": "49.0%",
+        "marketFavoriteTeam": "Kansas City Royals",
+        "marketFavoriteProbability": 0.5575221238938053,
+        "marketFavoriteProbabilityLabel": "55.8%",
+        "marketFavoriteAmericanOdds": -126,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.067
       }
     },
     {
@@ -4465,6 +4977,9 @@
       "confidence": 58,
       "volatility": 89,
       "modelEdge": 3,
+      "marketAmericanOdds": -126,
+      "marketProbability": 0.5575221238938053,
+      "marketProbabilityLabel": "55.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Strikeout ceiling",
@@ -4649,7 +5164,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -126,
+        "marketProbability": 0.5575221238938053,
+        "marketProbabilityLabel": "55.8%",
+        "opponentMarketAmericanOdds": 104,
+        "opponentMarketProbability": 0.49019607843137253,
+        "opponentMarketProbabilityLabel": "49.0%",
+        "marketFavoriteTeam": "Texas Rangers",
+        "marketFavoriteProbability": 0.5575221238938053,
+        "marketFavoriteProbabilityLabel": "55.8%",
+        "marketFavoriteAmericanOdds": -126,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.067
       }
     },
     {
@@ -4664,6 +5192,9 @@
       "confidence": 72,
       "volatility": 78,
       "modelEdge": 13.3,
+      "marketAmericanOdds": -175,
+      "marketProbability": 0.6363636363636364,
+      "marketProbabilityLabel": "63.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -4848,7 +5379,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -175,
+        "marketProbability": 0.6363636363636364,
+        "marketProbabilityLabel": "63.6%",
+        "opponentMarketAmericanOdds": 144,
+        "opponentMarketProbability": 0.4098360655737705,
+        "opponentMarketProbabilityLabel": "41.0%",
+        "marketFavoriteTeam": "Seattle Mariners",
+        "marketFavoriteProbability": 0.6363636363636364,
+        "marketFavoriteProbabilityLabel": "63.6%",
+        "marketFavoriteAmericanOdds": -175,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.227
       }
     },
     {
@@ -4863,6 +5407,9 @@
       "confidence": 64,
       "volatility": 86,
       "modelEdge": 8.6,
+      "marketAmericanOdds": -156,
+      "marketProbability": 0.609375,
+      "marketProbabilityLabel": "60.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + team hit production + bullpen quality",
       "inputLabels": [
         "Market price",
@@ -5047,7 +5594,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -156,
+        "marketProbability": 0.609375,
+        "marketProbabilityLabel": "60.9%",
+        "opponentMarketAmericanOdds": 129,
+        "opponentMarketProbability": 0.4366812227074236,
+        "opponentMarketProbabilityLabel": "43.7%",
+        "marketFavoriteTeam": "Athletics",
+        "marketFavoriteProbability": 0.609375,
+        "marketFavoriteProbabilityLabel": "60.9%",
+        "marketFavoriteAmericanOdds": -156,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.173
       }
     },
     {
@@ -5062,6 +5622,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 9.8,
+      "marketAmericanOdds": -328,
+      "marketProbability": 0.7663551401869159,
+      "marketProbabilityLabel": "76.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Market price",
@@ -5249,7 +5812,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -328,
+        "marketProbability": 0.7663551401869159,
+        "marketProbabilityLabel": "76.6%",
+        "opponentMarketAmericanOdds": 258,
+        "opponentMarketProbability": 0.27932960893854747,
+        "opponentMarketProbabilityLabel": "27.9%",
+        "marketFavoriteTeam": "Los Angeles Dodgers",
+        "marketFavoriteProbability": 0.7663551401869159,
+        "marketFavoriteProbabilityLabel": "76.6%",
+        "marketFavoriteAmericanOdds": -328,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.487
       }
     },
     {
@@ -5264,6 +5840,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 7.8,
+      "marketAmericanOdds": 140,
+      "marketProbability": 0.4166666666666667,
+      "marketProbabilityLabel": "41.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -5452,7 +6031,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 140,
+        "marketProbability": 0.4166666666666667,
+        "marketProbabilityLabel": "41.7%",
+        "opponentMarketAmericanOdds": -165,
+        "opponentMarketProbability": 0.6226415094339622,
+        "opponentMarketProbabilityLabel": "62.3%",
+        "marketFavoriteTeam": "Cincinnati Reds",
+        "marketFavoriteProbability": 0.6226415094339622,
+        "marketFavoriteProbabilityLabel": "62.3%",
+        "marketFavoriteAmericanOdds": -165,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.206
       }
     },
     {
@@ -5467,6 +6059,9 @@
       "confidence": 77,
       "volatility": 67,
       "modelEdge": 21.1,
+      "marketAmericanOdds": -185,
+      "marketProbability": 0.6491228070175439,
+      "marketProbabilityLabel": "64.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -5651,7 +6246,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -185,
+        "marketProbability": 0.6491228070175439,
+        "marketProbabilityLabel": "64.9%",
+        "opponentMarketAmericanOdds": 155,
+        "opponentMarketProbability": 0.39215686274509803,
+        "opponentMarketProbabilityLabel": "39.2%",
+        "marketFavoriteTeam": "Pittsburgh Pirates",
+        "marketFavoriteProbability": 0.6491228070175439,
+        "marketFavoriteProbabilityLabel": "64.9%",
+        "marketFavoriteAmericanOdds": -185,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.257
       }
     },
     {
@@ -5666,6 +6274,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 2.6,
+      "marketAmericanOdds": -130,
+      "marketProbability": 0.5652173913043478,
+      "marketProbabilityLabel": "56.5%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -5852,7 +6463,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -130,
+        "marketProbability": 0.5652173913043478,
+        "marketProbabilityLabel": "56.5%",
+        "opponentMarketAmericanOdds": 110,
+        "opponentMarketProbability": 0.47619047619047616,
+        "opponentMarketProbabilityLabel": "47.6%",
+        "marketFavoriteTeam": "Boston Red Sox",
+        "marketFavoriteProbability": 0.5652173913043478,
+        "marketFavoriteProbabilityLabel": "56.5%",
+        "marketFavoriteAmericanOdds": -130,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.089
       }
     },
     {
@@ -5867,6 +6491,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 4.4,
+      "marketAmericanOdds": 125,
+      "marketProbability": 0.4444444444444444,
+      "marketProbabilityLabel": "44.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Standings profile",
@@ -6053,7 +6680,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 125,
+        "marketProbability": 0.4444444444444444,
+        "marketProbabilityLabel": "44.4%",
+        "opponentMarketAmericanOdds": -150,
+        "opponentMarketProbability": 0.6,
+        "opponentMarketProbabilityLabel": "60.0%",
+        "marketFavoriteTeam": "Toronto Blue Jays",
+        "marketFavoriteProbability": 0.6,
+        "marketFavoriteProbabilityLabel": "60.0%",
+        "marketFavoriteAmericanOdds": -150,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.156
       }
     },
     {
@@ -6068,6 +6708,9 @@
       "confidence": 61,
       "volatility": 82,
       "modelEdge": 2.7,
+      "marketAmericanOdds": -110,
+      "marketProbability": 0.5238095238095238,
+      "marketProbabilityLabel": "52.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Strikeout ceiling",
@@ -6252,7 +6895,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -110,
+        "marketProbability": 0.5238095238095238,
+        "marketProbabilityLabel": "52.4%",
+        "opponentMarketAmericanOdds": -110,
+        "opponentMarketProbability": 0.5238095238095238,
+        "opponentMarketProbabilityLabel": "52.4%",
+        "marketFavoriteTeam": "Detroit Tigers",
+        "marketFavoriteProbability": 0.5238095238095238,
+        "marketFavoriteProbabilityLabel": "52.4%",
+        "marketFavoriteAmericanOdds": -110,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0
       }
     },
     {
@@ -6267,6 +6923,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 7.7,
+      "marketAmericanOdds": 115,
+      "marketProbability": 0.46511627906976744,
+      "marketProbabilityLabel": "46.5%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -6453,7 +7112,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 115,
+        "marketProbability": 0.46511627906976744,
+        "marketProbabilityLabel": "46.5%",
+        "opponentMarketAmericanOdds": -135,
+        "opponentMarketProbability": 0.574468085106383,
+        "opponentMarketProbabilityLabel": "57.4%",
+        "marketFavoriteTeam": "Chicago Cubs",
+        "marketFavoriteProbability": 0.574468085106383,
+        "marketFavoriteProbabilityLabel": "57.4%",
+        "marketFavoriteAmericanOdds": -135,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.109
       }
     },
     {
@@ -6468,6 +7140,9 @@
       "confidence": 72,
       "volatility": 81,
       "modelEdge": 14.2,
+      "marketAmericanOdds": -125,
+      "marketProbability": 0.5555555555555556,
+      "marketProbabilityLabel": "55.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -6652,7 +7327,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -125,
+        "marketProbability": 0.5555555555555556,
+        "marketProbabilityLabel": "55.6%",
+        "opponentMarketAmericanOdds": 105,
+        "opponentMarketProbability": 0.4878048780487805,
+        "opponentMarketProbabilityLabel": "48.8%",
+        "marketFavoriteTeam": "Miami Marlins",
+        "marketFavoriteProbability": 0.5555555555555556,
+        "marketFavoriteProbabilityLabel": "55.6%",
+        "marketFavoriteAmericanOdds": -125,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.068
       }
     },
     {
@@ -6667,6 +7355,9 @@
       "confidence": 66,
       "volatility": 63,
       "modelEdge": 7.5,
+      "marketAmericanOdds": -150,
+      "marketProbability": 0.6,
+      "marketProbabilityLabel": "60.0%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Market price",
@@ -6851,7 +7542,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -150,
+        "marketProbability": 0.6,
+        "marketProbabilityLabel": "60.0%",
+        "opponentMarketAmericanOdds": 125,
+        "opponentMarketProbability": 0.4444444444444444,
+        "opponentMarketProbabilityLabel": "44.4%",
+        "marketFavoriteTeam": "Milwaukee Brewers",
+        "marketFavoriteProbability": 0.6,
+        "marketFavoriteProbabilityLabel": "60.0%",
+        "marketFavoriteAmericanOdds": -150,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.156
       }
     },
     {
@@ -6866,6 +7570,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 1.8,
+      "marketAmericanOdds": -115,
+      "marketProbability": 0.5348837209302325,
+      "marketProbabilityLabel": "53.5%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -7052,7 +7759,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -115,
+        "marketProbability": 0.5348837209302325,
+        "marketProbabilityLabel": "53.5%",
+        "opponentMarketAmericanOdds": -105,
+        "opponentMarketProbability": 0.5121951219512195,
+        "opponentMarketProbabilityLabel": "51.2%",
+        "marketFavoriteTeam": "Kansas City Royals",
+        "marketFavoriteProbability": 0.5348837209302325,
+        "marketFavoriteProbabilityLabel": "53.5%",
+        "marketFavoriteAmericanOdds": -115,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.023
       }
     },
     {
@@ -7067,6 +7787,9 @@
       "confidence": 52,
       "volatility": 89,
       "modelEdge": 3.4,
+      "marketAmericanOdds": -110,
+      "marketProbability": 0.5238095238095238,
+      "marketProbabilityLabel": "52.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -7251,7 +7974,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -110,
+        "marketProbability": 0.5238095238095238,
+        "marketProbabilityLabel": "52.4%",
+        "opponentMarketAmericanOdds": -110,
+        "opponentMarketProbability": 0.5238095238095238,
+        "opponentMarketProbabilityLabel": "52.4%",
+        "marketFavoriteTeam": "Arizona Diamondbacks",
+        "marketFavoriteProbability": 0.5238095238095238,
+        "marketFavoriteProbabilityLabel": "52.4%",
+        "marketFavoriteAmericanOdds": -110,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0
       }
     },
     {
@@ -7266,6 +8002,9 @@
       "confidence": 75,
       "volatility": 76,
       "modelEdge": 17.6,
+      "marketAmericanOdds": -135,
+      "marketProbability": 0.574468085106383,
+      "marketProbabilityLabel": "57.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Starter ERA",
@@ -7450,7 +8189,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -135,
+        "marketProbability": 0.574468085106383,
+        "marketProbabilityLabel": "57.4%",
+        "opponentMarketAmericanOdds": 115,
+        "opponentMarketProbability": 0.46511627906976744,
+        "opponentMarketProbabilityLabel": "46.5%",
+        "marketFavoriteTeam": "Seattle Mariners",
+        "marketFavoriteProbability": 0.574468085106383,
+        "marketFavoriteProbabilityLabel": "57.4%",
+        "marketFavoriteAmericanOdds": -135,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.109
       }
     },
     {
@@ -7465,6 +8217,9 @@
       "confidence": 61,
       "volatility": 92,
       "modelEdge": 5.1,
+      "marketAmericanOdds": -150,
+      "marketProbability": 0.6,
+      "marketProbabilityLabel": "60.0%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Market price",
@@ -7649,7 +8404,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -150,
+        "marketProbability": 0.6,
+        "marketProbabilityLabel": "60.0%",
+        "opponentMarketAmericanOdds": 125,
+        "opponentMarketProbability": 0.4444444444444444,
+        "opponentMarketProbabilityLabel": "44.4%",
+        "marketFavoriteTeam": "Athletics",
+        "marketFavoriteProbability": 0.6,
+        "marketFavoriteProbabilityLabel": "60.0%",
+        "marketFavoriteAmericanOdds": -150,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.156
       }
     },
     {
@@ -7664,6 +8432,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0,
+      "marketAmericanOdds": -250,
+      "marketProbability": 0.7142857142857143,
+      "marketProbabilityLabel": "71.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality",
       "inputLabels": [
         "Market price",
@@ -7850,7 +8621,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -250,
+        "marketProbability": 0.7142857142857143,
+        "marketProbabilityLabel": "71.4%",
+        "opponentMarketAmericanOdds": 205,
+        "opponentMarketProbability": 0.32786885245901637,
+        "opponentMarketProbabilityLabel": "32.8%",
+        "marketFavoriteTeam": "Los Angeles Dodgers",
+        "marketFavoriteProbability": 0.7142857142857143,
+        "marketFavoriteProbabilityLabel": "71.4%",
+        "marketFavoriteAmericanOdds": -250,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.386
       }
     },
     {
@@ -7865,6 +8649,9 @@
       "confidence": 68,
       "volatility": 65,
       "modelEdge": 9.2,
+      "marketAmericanOdds": -180,
+      "marketProbability": 0.6428571428571429,
+      "marketProbabilityLabel": "64.3%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Market price",
@@ -8049,7 +8836,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -180,
+        "marketProbability": 0.6428571428571429,
+        "marketProbabilityLabel": "64.3%",
+        "opponentMarketAmericanOdds": 148,
+        "opponentMarketProbability": 0.4032258064516129,
+        "opponentMarketProbabilityLabel": "40.3%",
+        "marketFavoriteTeam": "Pittsburgh Pirates",
+        "marketFavoriteProbability": 0.6428571428571429,
+        "marketFavoriteProbabilityLabel": "64.3%",
+        "marketFavoriteAmericanOdds": -180,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.24
       }
     },
     {
@@ -8064,6 +8864,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 5.7,
+      "marketAmericanOdds": 134,
+      "marketProbability": 0.42735042735042733,
+      "marketProbabilityLabel": "42.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -8248,7 +9051,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 134,
+        "marketProbability": 0.42735042735042733,
+        "marketProbabilityLabel": "42.7%",
+        "opponentMarketAmericanOdds": -162,
+        "opponentMarketProbability": 0.6183206106870229,
+        "opponentMarketProbabilityLabel": "61.8%",
+        "marketFavoriteTeam": "Cincinnati Reds",
+        "marketFavoriteProbability": 0.6183206106870229,
+        "marketFavoriteProbabilityLabel": "61.8%",
+        "marketFavoriteAmericanOdds": -162,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.191
       }
     },
     {
@@ -8263,6 +9079,9 @@
       "confidence": 64,
       "volatility": 79,
       "modelEdge": 1.8,
+      "marketAmericanOdds": -157,
+      "marketProbability": 0.6108949416342413,
+      "marketProbabilityLabel": "61.1%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Market price",
@@ -8447,7 +9266,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -157,
+        "marketProbability": 0.6108949416342413,
+        "marketProbabilityLabel": "61.1%",
+        "opponentMarketAmericanOdds": 130,
+        "opponentMarketProbability": 0.43478260869565216,
+        "opponentMarketProbabilityLabel": "43.5%",
+        "marketFavoriteTeam": "New York Mets",
+        "marketFavoriteProbability": 0.6108949416342413,
+        "marketFavoriteProbabilityLabel": "61.1%",
+        "marketFavoriteAmericanOdds": -157,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.176
       }
     },
     {
@@ -8462,6 +9294,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0,
+      "marketAmericanOdds": -109,
+      "marketProbability": 0.5215311004784688,
+      "marketProbabilityLabel": "52.2%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -8648,7 +9483,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -109,
+        "marketProbability": 0.5215311004784688,
+        "marketProbabilityLabel": "52.2%",
+        "opponentMarketAmericanOdds": -110,
+        "opponentMarketProbability": 0.5238095238095238,
+        "opponentMarketProbabilityLabel": "52.4%",
+        "marketFavoriteTeam": "Miami Marlins",
+        "marketFavoriteProbability": 0.5238095238095238,
+        "marketFavoriteProbabilityLabel": "52.4%",
+        "marketFavoriteAmericanOdds": -110,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.002
       }
     },
     {
@@ -8663,6 +9511,9 @@
       "confidence": 68,
       "volatility": 76,
       "modelEdge": 17,
+      "marketAmericanOdds": -142,
+      "marketProbability": 0.5867768595041323,
+      "marketProbabilityLabel": "58.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -8849,7 +9700,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -142,
+        "marketProbability": 0.5867768595041323,
+        "marketProbabilityLabel": "58.7%",
+        "opponentMarketAmericanOdds": 118,
+        "opponentMarketProbability": 0.45871559633027525,
+        "opponentMarketProbabilityLabel": "45.9%",
+        "marketFavoriteTeam": "Milwaukee Brewers",
+        "marketFavoriteProbability": 0.5867768595041323,
+        "marketFavoriteProbabilityLabel": "58.7%",
+        "marketFavoriteAmericanOdds": -142,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.128
       }
     },
     {
@@ -8864,6 +9728,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0.7,
+      "marketAmericanOdds": -102,
+      "marketProbability": 0.504950495049505,
+      "marketProbabilityLabel": "50.5%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -9050,7 +9917,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -102,
+        "marketProbability": 0.504950495049505,
+        "marketProbabilityLabel": "50.5%",
+        "opponentMarketAmericanOdds": -118,
+        "opponentMarketProbability": 0.5412844036697247,
+        "opponentMarketProbabilityLabel": "54.1%",
+        "marketFavoriteTeam": "Seattle Mariners",
+        "marketFavoriteProbability": 0.5412844036697247,
+        "marketFavoriteProbabilityLabel": "54.1%",
+        "marketFavoriteAmericanOdds": -118,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.036
       }
     },
     {
@@ -9065,6 +9945,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 3.4,
+      "marketAmericanOdds": 101,
+      "marketProbability": 0.4975124378109453,
+      "marketProbabilityLabel": "49.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -9252,7 +10135,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 101,
+        "marketProbability": 0.4975124378109453,
+        "marketProbabilityLabel": "49.8%",
+        "opponentMarketAmericanOdds": -122,
+        "opponentMarketProbability": 0.5495495495495496,
+        "opponentMarketProbabilityLabel": "55.0%",
+        "marketFavoriteTeam": "Athletics",
+        "marketFavoriteProbability": 0.5495495495495496,
+        "marketFavoriteProbabilityLabel": "55.0%",
+        "marketFavoriteAmericanOdds": -122,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.052
       }
     },
     {
@@ -9267,6 +10163,9 @@
       "confidence": 67,
       "volatility": 57,
       "modelEdge": 6,
+      "marketAmericanOdds": -112,
+      "marketProbability": 0.5283018867924528,
+      "marketProbabilityLabel": "52.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -9451,7 +10350,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -112,
+        "marketProbability": 0.5283018867924528,
+        "marketProbabilityLabel": "52.8%",
+        "opponentMarketAmericanOdds": -108,
+        "opponentMarketProbability": 0.5192307692307693,
+        "opponentMarketProbabilityLabel": "51.9%",
+        "marketFavoriteTeam": "Boston Red Sox",
+        "marketFavoriteProbability": 0.5283018867924528,
+        "marketFavoriteProbabilityLabel": "52.8%",
+        "marketFavoriteAmericanOdds": -112,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.009
       }
     },
     {
@@ -9466,6 +10378,9 @@
       "confidence": 76,
       "volatility": 58,
       "modelEdge": 15.8,
+      "marketAmericanOdds": -181,
+      "marketProbability": 0.6441281138790036,
+      "marketProbabilityLabel": "64.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -9652,7 +10567,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -181,
+        "marketProbability": 0.6441281138790036,
+        "marketProbabilityLabel": "64.4%",
+        "opponentMarketAmericanOdds": 149,
+        "opponentMarketProbability": 0.40160642570281124,
+        "opponentMarketProbabilityLabel": "40.2%",
+        "marketFavoriteTeam": "Atlanta Braves",
+        "marketFavoriteProbability": 0.6441281138790036,
+        "marketFavoriteProbabilityLabel": "64.4%",
+        "marketFavoriteAmericanOdds": -181,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.243
       }
     },
     {
@@ -9667,6 +10595,9 @@
       "confidence": 54,
       "volatility": 92,
       "modelEdge": 3.3,
+      "marketAmericanOdds": -137,
+      "marketProbability": 0.5780590717299579,
+      "marketProbabilityLabel": "57.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -9854,7 +10785,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -137,
+        "marketProbability": 0.5780590717299579,
+        "marketProbabilityLabel": "57.8%",
+        "opponentMarketAmericanOdds": 114,
+        "opponentMarketProbability": 0.4672897196261682,
+        "opponentMarketProbabilityLabel": "46.7%",
+        "marketFavoriteTeam": "Kansas City Royals",
+        "marketFavoriteProbability": 0.5780590717299579,
+        "marketFavoriteProbabilityLabel": "57.8%",
+        "marketFavoriteAmericanOdds": -137,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.111
       }
     },
     {
@@ -9869,6 +10813,9 @@
       "confidence": 63,
       "volatility": 81,
       "modelEdge": 5.2,
+      "marketAmericanOdds": -181,
+      "marketProbability": 0.6441281138790036,
+      "marketProbabilityLabel": "64.4%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Standings profile",
@@ -10053,7 +11000,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -181,
+        "marketProbability": 0.6441281138790036,
+        "marketProbabilityLabel": "64.4%",
+        "opponentMarketAmericanOdds": 149,
+        "opponentMarketProbability": 0.40160642570281124,
+        "opponentMarketProbabilityLabel": "40.2%",
+        "marketFavoriteTeam": "Los Angeles Dodgers",
+        "marketFavoriteProbability": 0.6441281138790036,
+        "marketFavoriteProbabilityLabel": "64.4%",
+        "marketFavoriteAmericanOdds": -181,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.243
       }
     },
     {
@@ -10068,6 +11028,9 @@
       "confidence": 69,
       "volatility": 71,
       "modelEdge": 11.9,
+      "marketAmericanOdds": -137,
+      "marketProbability": 0.5780590717299579,
+      "marketProbabilityLabel": "57.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -10254,7 +11217,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -137,
+        "marketProbability": 0.5780590717299579,
+        "marketProbabilityLabel": "57.8%",
+        "opponentMarketAmericanOdds": 114,
+        "opponentMarketProbability": 0.4672897196261682,
+        "opponentMarketProbabilityLabel": "46.7%",
+        "marketFavoriteTeam": "Pittsburgh Pirates",
+        "marketFavoriteProbability": 0.5780590717299579,
+        "marketFavoriteProbabilityLabel": "57.8%",
+        "marketFavoriteAmericanOdds": -137,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.111
       }
     },
     {
@@ -10269,6 +11245,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0,
+      "marketAmericanOdds": -126,
+      "marketProbability": 0.5575221238938053,
+      "marketProbabilityLabel": "55.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Market price",
@@ -10455,7 +11434,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -126,
+        "marketProbability": 0.5575221238938053,
+        "marketProbabilityLabel": "55.8%",
+        "opponentMarketAmericanOdds": 105,
+        "opponentMarketProbability": 0.4878048780487805,
+        "opponentMarketProbabilityLabel": "48.8%",
+        "marketFavoriteTeam": "Toronto Blue Jays",
+        "marketFavoriteProbability": 0.5575221238938053,
+        "marketFavoriteProbabilityLabel": "55.8%",
+        "marketFavoriteAmericanOdds": -126,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.07
       }
     },
     {
@@ -10470,6 +11462,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0.9,
+      "marketAmericanOdds": 118,
+      "marketProbability": 0.45871559633027525,
+      "marketProbabilityLabel": "45.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -10656,7 +11651,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 118,
+        "marketProbability": 0.45871559633027525,
+        "marketProbabilityLabel": "45.9%",
+        "opponentMarketAmericanOdds": -142,
+        "opponentMarketProbability": 0.5867768595041323,
+        "opponentMarketProbabilityLabel": "58.7%",
+        "marketFavoriteTeam": "Baltimore Orioles",
+        "marketFavoriteProbability": 0.5867768595041323,
+        "marketFavoriteProbabilityLabel": "58.7%",
+        "marketFavoriteAmericanOdds": -142,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.128
       }
     },
     {
@@ -10671,6 +11679,9 @@
       "confidence": 62,
       "volatility": 92,
       "modelEdge": 4.5,
+      "marketAmericanOdds": -112,
+      "marketProbability": 0.5283018867924528,
+      "marketProbabilityLabel": "52.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -10855,7 +11866,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -112,
+        "marketProbability": 0.5283018867924528,
+        "marketProbabilityLabel": "52.8%",
+        "opponentMarketAmericanOdds": -107,
+        "opponentMarketProbability": 0.5169082125603864,
+        "opponentMarketProbabilityLabel": "51.7%",
+        "marketFavoriteTeam": "Milwaukee Brewers",
+        "marketFavoriteProbability": 0.5283018867924528,
+        "marketFavoriteProbabilityLabel": "52.8%",
+        "marketFavoriteAmericanOdds": -112,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.011
       }
     },
     {
@@ -10870,6 +11894,9 @@
       "confidence": 68,
       "volatility": 66,
       "modelEdge": 10.6,
+      "marketAmericanOdds": -123,
+      "marketProbability": 0.5515695067264574,
+      "marketProbabilityLabel": "55.2%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -11054,7 +12081,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -123,
+        "marketProbability": 0.5515695067264574,
+        "marketProbabilityLabel": "55.2%",
+        "opponentMarketAmericanOdds": 102,
+        "opponentMarketProbability": 0.49504950495049505,
+        "opponentMarketProbabilityLabel": "49.5%",
+        "marketFavoriteTeam": "Tampa Bay Rays",
+        "marketFavoriteProbability": 0.5515695067264574,
+        "marketFavoriteProbabilityLabel": "55.2%",
+        "marketFavoriteAmericanOdds": -123,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.057
       }
     },
     {
@@ -11069,6 +12109,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 1.7,
+      "marketAmericanOdds": 118,
+      "marketProbability": 0.45871559633027525,
+      "marketProbabilityLabel": "45.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -11255,7 +12298,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 118,
+        "marketProbability": 0.45871559633027525,
+        "marketProbabilityLabel": "45.9%",
+        "opponentMarketAmericanOdds": -142,
+        "opponentMarketProbability": 0.5867768595041323,
+        "opponentMarketProbabilityLabel": "58.7%",
+        "marketFavoriteTeam": "Cleveland Guardians",
+        "marketFavoriteProbability": 0.5867768595041323,
+        "marketFavoriteProbabilityLabel": "58.7%",
+        "marketFavoriteAmericanOdds": -142,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.128
       }
     },
     {
@@ -11270,6 +12326,9 @@
       "confidence": 67,
       "volatility": 77,
       "modelEdge": 8.8,
+      "marketAmericanOdds": -156,
+      "marketProbability": 0.609375,
+      "marketProbabilityLabel": "60.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Standings profile",
@@ -11454,7 +12513,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -156,
+        "marketProbability": 0.609375,
+        "marketProbabilityLabel": "60.9%",
+        "opponentMarketAmericanOdds": 129,
+        "opponentMarketProbability": 0.4366812227074236,
+        "opponentMarketProbabilityLabel": "43.7%",
+        "marketFavoriteTeam": "Atlanta Braves",
+        "marketFavoriteProbability": 0.609375,
+        "marketFavoriteProbabilityLabel": "60.9%",
+        "marketFavoriteAmericanOdds": -156,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.173
       }
     },
     {
@@ -11469,6 +12541,9 @@
       "confidence": 59,
       "volatility": 85,
       "modelEdge": 3.9,
+      "marketAmericanOdds": -157,
+      "marketProbability": 0.6108949416342413,
+      "marketProbabilityLabel": "61.1%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Standings profile",
@@ -11653,7 +12728,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -157,
+        "marketProbability": 0.6108949416342413,
+        "marketProbabilityLabel": "61.1%",
+        "opponentMarketAmericanOdds": 130,
+        "opponentMarketProbability": 0.43478260869565216,
+        "opponentMarketProbabilityLabel": "43.5%",
+        "marketFavoriteTeam": "New York Yankees",
+        "marketFavoriteProbability": 0.6108949416342413,
+        "marketFavoriteProbabilityLabel": "61.1%",
+        "marketFavoriteAmericanOdds": -157,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.176
       }
     },
     {
@@ -11668,6 +12756,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 4.5,
+      "marketAmericanOdds": 123,
+      "marketProbability": 0.4484304932735426,
+      "marketProbabilityLabel": "44.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -11852,7 +12943,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 123,
+        "marketProbability": 0.4484304932735426,
+        "marketProbabilityLabel": "44.8%",
+        "opponentMarketAmericanOdds": -149,
+        "opponentMarketProbability": 0.5983935742971888,
+        "opponentMarketProbabilityLabel": "59.8%",
+        "marketFavoriteTeam": "Chicago Cubs",
+        "marketFavoriteProbability": 0.5983935742971888,
+        "marketFavoriteProbabilityLabel": "59.8%",
+        "marketFavoriteAmericanOdds": -149,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.15
       }
     },
     {
@@ -11867,6 +12971,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 1.1,
+      "marketAmericanOdds": -108,
+      "marketProbability": 0.5192307692307693,
+      "marketProbabilityLabel": "51.9%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -12053,7 +13160,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -108,
+        "marketProbability": 0.5192307692307693,
+        "marketProbabilityLabel": "51.9%",
+        "opponentMarketAmericanOdds": -112,
+        "opponentMarketProbability": 0.5283018867924528,
+        "opponentMarketProbabilityLabel": "52.8%",
+        "marketFavoriteTeam": "Texas Rangers",
+        "marketFavoriteProbability": 0.5283018867924528,
+        "marketFavoriteProbabilityLabel": "52.8%",
+        "marketFavoriteAmericanOdds": -112,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.009
       }
     },
     {
@@ -12068,6 +13188,9 @@
       "confidence": 58,
       "volatility": 92,
       "modelEdge": 1.3,
+      "marketAmericanOdds": -114,
+      "marketProbability": 0.5327102803738317,
+      "marketProbabilityLabel": "53.3%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Hit-production baseline",
@@ -12254,7 +13377,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -114,
+        "marketProbability": 0.5327102803738317,
+        "marketProbabilityLabel": "53.3%",
+        "opponentMarketAmericanOdds": -105,
+        "opponentMarketProbability": 0.5121951219512195,
+        "opponentMarketProbabilityLabel": "51.2%",
+        "marketFavoriteTeam": "St. Louis Cardinals",
+        "marketFavoriteProbability": 0.5327102803738317,
+        "marketFavoriteProbabilityLabel": "53.3%",
+        "marketFavoriteAmericanOdds": -114,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.021
       }
     },
     {
@@ -12269,6 +13405,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 5,
+      "marketAmericanOdds": 104,
+      "marketProbability": 0.49019607843137253,
+      "marketProbabilityLabel": "49.0%",
       "sourceLabel": "Moneyline + listed starter data + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -12455,7 +13594,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 104,
+        "marketProbability": 0.49019607843137253,
+        "marketProbabilityLabel": "49.0%",
+        "opponentMarketAmericanOdds": -125,
+        "opponentMarketProbability": 0.5555555555555556,
+        "opponentMarketProbabilityLabel": "55.6%",
+        "marketFavoriteTeam": "Arizona Diamondbacks",
+        "marketFavoriteProbability": 0.5555555555555556,
+        "marketFavoriteProbabilityLabel": "55.6%",
+        "marketFavoriteAmericanOdds": -125,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.065
       }
     },
     {
@@ -12470,6 +13622,9 @@
       "confidence": 52,
       "volatility": 92,
       "modelEdge": 0,
+      "marketAmericanOdds": -231,
+      "marketProbability": 0.6978851963746223,
+      "marketProbabilityLabel": "69.8%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Market price",
@@ -12656,7 +13811,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -231,
+        "marketProbability": 0.6978851963746223,
+        "marketProbabilityLabel": "69.8%",
+        "opponentMarketAmericanOdds": 187,
+        "opponentMarketProbability": 0.34843205574912894,
+        "opponentMarketProbabilityLabel": "34.8%",
+        "marketFavoriteTeam": "Los Angeles Dodgers",
+        "marketFavoriteProbability": 0.6978851963746223,
+        "marketFavoriteProbabilityLabel": "69.8%",
+        "marketFavoriteAmericanOdds": -231,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.349
       }
     },
     {
@@ -12671,6 +13839,9 @@
       "confidence": 53,
       "volatility": 92,
       "modelEdge": 7.6,
+      "marketAmericanOdds": -136,
+      "marketProbability": 0.576271186440678,
+      "marketProbabilityLabel": "57.6%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Starter ERA",
@@ -12858,7 +14029,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -136,
+        "marketProbability": 0.576271186440678,
+        "marketProbabilityLabel": "57.6%",
+        "opponentMarketAmericanOdds": 113,
+        "opponentMarketProbability": 0.4694835680751174,
+        "opponentMarketProbabilityLabel": "46.9%",
+        "marketFavoriteTeam": "Athletics",
+        "marketFavoriteProbability": 0.576271186440678,
+        "marketFavoriteProbabilityLabel": "57.6%",
+        "marketFavoriteAmericanOdds": -136,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.107
       }
     },
     {
@@ -12873,6 +14057,9 @@
       "confidence": 66,
       "volatility": 63,
       "modelEdge": 8.2,
+      "marketAmericanOdds": -131,
+      "marketProbability": 0.5670995670995671,
+      "marketProbabilityLabel": "56.7%",
       "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality",
       "inputLabels": [
         "Projected hit volume",
@@ -13057,7 +14244,20 @@
         "oppThirdTimePenalty": null,
         "tierThreeBullpenCommandMismatchFlag": false,
         "tierThreeSuggestedEdgeHaircut": 0,
-        "tierThreeSuggestedConfidenceHaircut": 0
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -131,
+        "marketProbability": 0.5670995670995671,
+        "marketProbabilityLabel": "56.7%",
+        "opponentMarketAmericanOdds": 109,
+        "opponentMarketProbability": 0.4784688995215311,
+        "opponentMarketProbabilityLabel": "47.8%",
+        "marketFavoriteTeam": "Seattle Mariners",
+        "marketFavoriteProbability": 0.5670995670995671,
+        "marketFavoriteProbabilityLabel": "56.7%",
+        "marketFavoriteAmericanOdds": -131,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.089
       }
     }
   ]

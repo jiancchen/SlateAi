@@ -2,6 +2,8 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { loadMlbDayGames } from './lib/load-mlb-day-games.mjs'
+
 import { games as may10 } from '../web/src/lib/day-2026-05-10.js'
 import { games as may11 } from '../web/src/lib/day-2026-05-11.js'
 import { games as may12 } from '../web/src/lib/day-2026-05-12.js'
@@ -205,7 +207,76 @@ const parseArgs = () => {
 const datesInRange = (startDate, endDate) =>
   Object.keys(slates).filter((date) => date >= startDate && date <= endDate).sort()
 
+const buildDateSequence = (startDate, endDate) => {
+  const dates = []
+  const cursor = new Date(`${startDate}T12:00:00Z`)
+  const end = new Date(`${endDate}T12:00:00Z`)
+  while (cursor <= end) {
+    dates.push(cursor.toISOString().slice(0, 10))
+    cursor.setUTCDate(cursor.getUTCDate() + 1)
+  }
+  return dates
+}
+
 const toOfficialTeam = (name) => teamAliasToOfficial[name] || name
+
+const formatProbabilityLabel = (value) =>
+  Number.isFinite(value) ? `${(value * 100).toFixed(1)}%` : 'N/A'
+
+const buildMarketContext = (game, predictedTeam) => {
+  const participants = Array.isArray(game.participants) ? game.participants : []
+  const pickParticipant =
+    participants.find((participant) => participant.name === predictedTeam) ?? game.analysis?.participant ?? null
+  const opponentParticipant =
+    participants.find((participant) => participant.name !== predictedTeam) ?? game.analysis?.opponent ?? null
+  const pickMarketProbability =
+    Number.isFinite(pickParticipant?.impliedProbability) ? pickParticipant.impliedProbability : null
+  const opponentMarketProbability =
+    Number.isFinite(opponentParticipant?.impliedProbability) ? opponentParticipant.impliedProbability : null
+  const marketFavoriteParticipant =
+    participants.length === 2
+      ? [...participants].sort(
+          (left, right) => (Number(right.impliedProbability) || 0) - (Number(left.impliedProbability) || 0)
+        )[0]
+      : null
+  const marketFavoriteProbability =
+    Number.isFinite(marketFavoriteParticipant?.impliedProbability)
+      ? marketFavoriteParticipant.impliedProbability
+      : null
+
+  return {
+    marketAmericanOdds: Number.isFinite(Number(pickParticipant?.americanOdds))
+      ? Number(pickParticipant.americanOdds)
+      : null,
+    marketProbability: pickMarketProbability,
+    marketProbabilityLabel:
+      pickParticipant?.impliedProbabilityLabel ?? formatProbabilityLabel(pickMarketProbability),
+    opponentMarketAmericanOdds: Number.isFinite(Number(opponentParticipant?.americanOdds))
+      ? Number(opponentParticipant.americanOdds)
+      : null,
+    opponentMarketProbability,
+    opponentMarketProbabilityLabel:
+      opponentParticipant?.impliedProbabilityLabel ?? formatProbabilityLabel(opponentMarketProbability),
+    marketFavoriteTeam: marketFavoriteParticipant ? toOfficialTeam(marketFavoriteParticipant.name) : null,
+    marketFavoriteProbability,
+    marketFavoriteProbabilityLabel: formatProbabilityLabel(marketFavoriteProbability),
+    marketFavoriteAmericanOdds: Number.isFinite(Number(marketFavoriteParticipant?.americanOdds))
+      ? Number(marketFavoriteParticipant.americanOdds)
+      : null,
+    pickIsMarketFavorite:
+      Number.isFinite(pickMarketProbability) &&
+      Number.isFinite(opponentMarketProbability) &&
+      pickMarketProbability >= opponentMarketProbability,
+    pickIsMarketUnderdog:
+      Number.isFinite(pickMarketProbability) &&
+      Number.isFinite(opponentMarketProbability) &&
+      pickMarketProbability < opponentMarketProbability,
+    marketPriceGap:
+      Number.isFinite(pickMarketProbability) && Number.isFinite(opponentMarketProbability)
+        ? Number((pickMarketProbability - opponentMarketProbability).toFixed(3))
+        : null
+  }
+}
 
 const buildIndicators = (game, predictedSide) => {
   const analysisIndicators = game.analysis?.indicators || {}
@@ -281,6 +352,8 @@ const buildIndicators = (game, predictedSide) => {
   const coinflipPressure = Number.isFinite(analysisIndicators.coinflipPressure)
     ? analysisIndicators.coinflipPressure
     : computedCoinflipPressure
+  const predictedTeam = predictedSide === 'away' ? game.participants?.[0]?.name : game.participants?.[1]?.name
+  const marketContext = buildMarketContext(game, predictedTeam)
 
   return {
     starterLeverageIndex: Number(starterLeverageIndex.toFixed(1)),
@@ -330,15 +403,30 @@ const buildIndicators = (game, predictedSide) => {
     oppThirdTimePenalty: analysisIndicators.oppThirdTimePenalty ?? null,
     tierThreeBullpenCommandMismatchFlag: Boolean(analysisIndicators.tierThreeBullpenCommandMismatchFlag),
     tierThreeSuggestedEdgeHaircut: analysisIndicators.tierThreeSuggestedEdgeHaircut ?? 0,
-    tierThreeSuggestedConfidenceHaircut: analysisIndicators.tierThreeSuggestedConfidenceHaircut ?? 0
+    tierThreeSuggestedConfidenceHaircut: analysisIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,
+    marketAmericanOdds: marketContext.marketAmericanOdds,
+    marketProbability: marketContext.marketProbability,
+    marketProbabilityLabel: marketContext.marketProbabilityLabel,
+    opponentMarketAmericanOdds: marketContext.opponentMarketAmericanOdds,
+    opponentMarketProbability: marketContext.opponentMarketProbability,
+    opponentMarketProbabilityLabel: marketContext.opponentMarketProbabilityLabel,
+    marketFavoriteTeam: marketContext.marketFavoriteTeam,
+    marketFavoriteProbability: marketContext.marketFavoriteProbability,
+    marketFavoriteProbabilityLabel: marketContext.marketFavoriteProbabilityLabel,
+    marketFavoriteAmericanOdds: marketContext.marketFavoriteAmericanOdds,
+    pickIsMarketFavorite: marketContext.pickIsMarketFavorite,
+    pickIsMarketUnderdog: marketContext.pickIsMarketUnderdog,
+    marketPriceGap: marketContext.marketPriceGap
   }
 }
 
-const exportPredictions = ({ startDate, endDate, out, modelName }) => {
+const exportPredictions = async ({ startDate, endDate, out, modelName }) => {
   const picks = []
+  const dates = buildDateSequence(startDate, endDate)
 
-  for (const date of datesInRange(startDate, endDate)) {
-    for (const game of slates[date].filter((entry) => entry.league === 'MLB' && entry.analysis?.participant?.name)) {
+  for (const date of dates) {
+    const slateGames = slates[date] ?? (await loadMlbDayGames(date))
+    for (const game of slateGames.filter((entry) => entry.league === 'MLB' && entry.analysis?.participant?.name)) {
       const predictedTeam = game.analysis.participant.name
       const predictedSide = predictedTeam === game.participants[0].name ? 'away' : 'home'
       const indicators = buildIndicators(game, predictedSide)
@@ -355,6 +443,10 @@ const exportPredictions = ({ startDate, endDate, out, modelName }) => {
         confidence: game.analysis.confidence,
         volatility: game.analysis.volatility,
         modelEdge: game.analysis.modelEdge,
+        modelDesignation: game.analysis.modelDesignation ?? null,
+        marketAmericanOdds: indicators.marketAmericanOdds,
+        marketProbability: indicators.marketProbability,
+        marketProbabilityLabel: indicators.marketProbabilityLabel,
         sourceLabel: game.analysis.sourceLabel,
         inputLabels: (game.analysis.inputs || []).map((input) => input.label),
         projection: game.analysis.mlbProjection || null,
@@ -374,7 +466,7 @@ const exportPredictions = ({ startDate, endDate, out, modelName }) => {
 
 const main = async () => {
   const options = parseArgs()
-  const payload = exportPredictions(options)
+  const payload = await exportPredictions(options)
   await mkdir(path.dirname(options.out), { recursive: true })
   await writeFile(options.out, JSON.stringify(payload, null, 2))
   console.log(`Saved ${payload.picks.length} MLB side predictions to ${options.out}`)

@@ -53,6 +53,7 @@
     "data:research:mlb-hidden-edges": "python3 pipeline/research_mlb_hidden_edges.py",
     "data:research:mlb-stateful-edges": "python3 pipeline/research_mlb_stateful_edges.py",
     "data:research:mlb-first5-state-model": "python3 pipeline/research_mlb_first5_state_model.py",
+    "data:research:mlb-market-divergence": "python3 pipeline/research_mlb_market_divergence.py",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
   }

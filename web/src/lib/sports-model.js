@@ -26,6 +26,8 @@ const structuredRecommendationWeight = {
   edge: 0.18
 }
 
+const MLB_SIDE_MODEL_DESIGNATION = 'board-moneyline-v1.1'
+
 const sportMarketWeights = {
   MLB: 0.26,
   UFC: 0.32,
@@ -150,13 +152,22 @@ const applyMlbTierOneControls = ({
   coinflipPressure,
   favoredSignalCount,
   pickStarterLeashScore,
-  oppStarterLeashScore
+  oppStarterLeashScore,
+  marketProbability,
+  pickIsMarketFavorite,
+  statefulSuggestedEdgeHaircut,
+  statefulSuggestedConfidenceHaircut,
+  statefulOpponentSnapbackTrapFlag,
+  tierThreeSuggestedEdgeHaircut,
+  tierThreeSuggestedConfidenceHaircut,
+  tierThreeBullpenCommandMismatchFlag
 }) => {
   const starterLateGap = roundToTenths(starterLeverageIndex - lateInningStabilityIndex)
   const starterLeashGap =
     Number.isFinite(pickStarterLeashScore) && Number.isFinite(oppStarterLeashScore)
       ? roundToTenths(pickStarterLeashScore - oppStarterLeashScore)
       : null
+  const marketFavoriteProbability = Number.isFinite(marketProbability) ? marketProbability : null
   const highVolatilityEdgePass =
     volatility >= 86 &&
     modelEdge >= 10 &&
@@ -168,6 +179,35 @@ const applyMlbTierOneControls = ({
     Number.isFinite(starterLeashGap) && starterLeashGap <= -8 && modelEdge >= 10
   const severeNegativeLeashGap =
     Number.isFinite(starterLeashGap) && starterLeashGap <= -16 && modelEdge >= 12
+  const expensiveFavoriteDanger =
+    pickIsMarketFavorite === true &&
+    Number.isFinite(marketFavoriteProbability) &&
+    marketFavoriteProbability >= 0.6 &&
+    (volatility >= 84 ||
+      lateInningStabilityIndex <= 50 ||
+      statefulOpponentSnapbackTrapFlag ||
+      tierThreeBullpenCommandMismatchFlag)
+  const heavyFavoriteDanger =
+    expensiveFavoriteDanger &&
+    Number.isFinite(marketFavoriteProbability) &&
+    marketFavoriteProbability >= 0.65
+  const underdogNeedsProof =
+    pickIsMarketFavorite === false &&
+    (starterLeverageIndex < 82 ||
+      lateInningStabilityIndex < 52 ||
+      favoredSignalCount < 5 ||
+      volatility >= 82 ||
+      statefulOpponentSnapbackTrapFlag)
+  const moderateFavoriteClean =
+    pickIsMarketFavorite === true &&
+    Number.isFinite(marketFavoriteProbability) &&
+    marketFavoriteProbability >= 0.54 &&
+    marketFavoriteProbability < 0.63 &&
+    !highVolatilityEdgePass &&
+    !statefulOpponentSnapbackTrapFlag &&
+    !tierThreeBullpenCommandMismatchFlag &&
+    lateInningStabilityIndex >= 45 &&
+    favoredSignalCount >= 4
   const riskPoints = getMlbTierOneRiskPoints({
     volatility,
     modelEdge,
@@ -183,6 +223,8 @@ const applyMlbTierOneControls = ({
   let edgeHaircut = 0
   let confidencePenalty = 0
   let volatilityBump = 0
+  let confidenceBonus = 0
+  let volatilityRelief = 0
 
   if (highVolatilityEdgePass) {
     riskFlags.push('highVolatilityEdgePass')
@@ -244,10 +286,73 @@ const applyMlbTierOneControls = ({
     })
   }
 
+  if (statefulOpponentSnapbackTrapFlag) {
+    riskFlags.push('statefulOpponentSnapback')
+    edgeHaircut += statefulSuggestedEdgeHaircut || 4
+    confidencePenalty += statefulSuggestedConfidenceHaircut || 8
+    volatilityBump += 2
+    tierOneNotes.push({
+      label:
+        'v1.1 state check: the opponent is carrying real snapback pressure, so the edge should be treated as much thinner than the broad baseline numbers suggest.',
+      delta: 8
+    })
+  }
+
+  if (tierThreeBullpenCommandMismatchFlag) {
+    riskFlags.push('tierThreeBullpenMismatch')
+    edgeHaircut += Math.min(tierThreeSuggestedEdgeHaircut || 2, 2)
+    confidencePenalty += Math.min(tierThreeSuggestedConfidenceHaircut || 4, 4)
+    volatilityBump += 2
+    tierOneNotes.push({
+      label:
+        'v1.1 bullpen command check: the likely relief handoff still carries first-entry command risk against this side, so the full-game edge needs to be capped.',
+      delta: 4
+    })
+  }
+
+  if (expensiveFavoriteDanger) {
+    riskFlags.push('expensiveFavoriteDanger')
+    edgeHaircut += heavyFavoriteDanger ? 2.2 : 1.6
+    confidencePenalty += heavyFavoriteDanger ? 4 : 3
+    volatilityBump += heavyFavoriteDanger ? 2 : 1
+    tierOneNotes.push({
+      label:
+        'v1.1 market budget: this favorite is already expensive on the board, so the model only gets a small disagreement budget unless the state and late-game profile stay clean.',
+      delta: heavyFavoriteDanger ? 6 : 4
+    })
+  }
+
+  if (underdogNeedsProof) {
+    riskFlags.push('underdogNeedsProof')
+    edgeHaircut += 2.1
+    confidencePenalty += 4
+    volatilityBump += 1
+    tierOneNotes.push({
+      label:
+        'v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.',
+      delta: 5
+    })
+  }
+
+  if (moderateFavoriteClean) {
+    riskFlags.push('moderateFavoriteClean')
+    confidenceBonus += 1
+    volatilityRelief += 1
+    tierOneNotes.push({
+      label:
+        'v1.1 market lane: this sits in the healthier moderate-favorite range with a cleaner state/risk profile than the average board favorite.',
+      delta: -2
+    })
+  }
+
   edgeHaircut = clamp(roundToTenths(edgeHaircut), 0, 5.5)
   const adjustedModelEdge = roundToTenths(clamp(modelEdge - edgeHaircut, 0, 100))
-  const adjustedConfidence = Math.round(clamp(confidence - confidencePenalty, 52, 89))
-  const adjustedVolatility = Math.round(clamp(volatility + volatilityBump, 30, 92))
+  const adjustedConfidence = Math.round(
+    clamp(confidence - confidencePenalty + confidenceBonus, 52, 89)
+  )
+  const adjustedVolatility = Math.round(
+    clamp(volatility + volatilityBump - volatilityRelief, 30, 92)
+  )
 
   let selectionTier = getAnalysisTier(adjustedConfidence, adjustedVolatility)
 
@@ -255,6 +360,10 @@ const applyMlbTierOneControls = ({
     selectionTier = 'Pass'
   } else if (riskPoints >= 4) {
     selectionTier = 'Pass'
+  } else if (expensiveFavoriteDanger && heavyFavoriteDanger && selectionTier === 'Core') {
+    selectionTier = 'Strong'
+  } else if (underdogNeedsProof && (selectionTier === 'Core' || selectionTier === 'Strong')) {
+    selectionTier = 'Lean'
   } else if (riskPoints >= 3) {
     if (selectionTier === 'Core' || selectionTier === 'Strong') {
       selectionTier = 'Lean'
@@ -3855,7 +3964,18 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           coinflipPressure: mlbIndicators.coinflipPressure,
           favoredSignalCount,
           pickStarterLeashScore: mlbIndicators.pickStarterLeashScore,
-          oppStarterLeashScore: mlbIndicators.oppStarterLeashScore
+          oppStarterLeashScore: mlbIndicators.oppStarterLeashScore,
+          marketProbability: marketSupport,
+          pickIsMarketFavorite:
+            marketProbabilities.length === participants.length
+              ? winnerIndex === marketWinnerIndex
+              : participant.impliedProbability >= (opponent?.impliedProbability ?? 0),
+          statefulSuggestedEdgeHaircut: mlbIndicators.statefulSuggestedEdgeHaircut ?? 0,
+          statefulSuggestedConfidenceHaircut: mlbIndicators.statefulSuggestedConfidenceHaircut ?? 0,
+          statefulOpponentSnapbackTrapFlag: Boolean(mlbIndicators.statefulOpponentSnapbackTrapFlag),
+          tierThreeSuggestedEdgeHaircut: mlbIndicators.tierThreeSuggestedEdgeHaircut ?? 0,
+          tierThreeSuggestedConfidenceHaircut: mlbIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,
+          tierThreeBullpenCommandMismatchFlag: Boolean(mlbIndicators.tierThreeBullpenCommandMismatchFlag)
         })
       : null
   const finalConfidence = tierOneControls?.adjustedConfidence ?? confidence
@@ -3880,6 +4000,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     recommendationScore: finalRecommendationScore,
     tier: finalTier,
     sourceLabel: context.sourceLabel,
+    modelDesignation: game.league === 'MLB' ? MLB_SIDE_MODEL_DESIGNATION : null,
     modelEdge: roundToTenths(finalModelEdge),
     modelEdgeLabel: `${roundToTenths(finalModelEdge)}-point model edge`,
     marketProbability: marketSupport,

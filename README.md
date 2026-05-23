@@ -115,9 +115,13 @@ npm run data:close:mlb-day -- --date YYYY-MM-DD
 This postgame command:
 - re-ingests the finished MLB day
 - refreshes story signals and hidden-edge profiles
+- refreshes rolling team/hitter state snapshots
 - grades HR and tracked non-HR props
 - exports history and published API data
 - reruns the hidden-edge haircut research grid
+- reruns the stateful snapback haircut grid
+- reruns the offline first-five state-model report
+- reruns the market-divergence / price-aware research report
 
 ## Key Files
 

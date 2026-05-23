@@ -1,0 +1,152 @@
+import path from 'node:path'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+
+import { createSportsMatchModel } from '../../web/src/lib/sports-model.js'
+import { parkContextByHomeTeam } from '../../web/src/lib/day-2026-05-13-mlb-data.js'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const rootDir = path.resolve(__dirname, '..', '..')
+
+const importFresh = async (absolutePath) =>
+  import(`${pathToFileURL(absolutePath).href}?t=${Date.now()}`)
+
+const importMaybeFresh = async (absolutePath) => {
+  try {
+    return await importFresh(absolutePath)
+  } catch {
+    return null
+  }
+}
+
+const oddsProvider = 'Official MLB data + ScoresAndOdds live board'
+const market = (label, book, value) => ({ label, book, value })
+
+const makeBoardOdds = ({ spread = '', total = '', moneyline = '', provider = oddsProvider }) => ({
+  participantOrder: [0, 1],
+  markets: [
+    ...(spread ? [market('Spread', provider, spread)] : []),
+    ...(total ? [market('Total', provider, total)] : []),
+    ...(moneyline ? [market('Moneyline', provider, moneyline)] : [])
+  ],
+  note: 'Board snapshot plus model context.',
+  provider
+})
+
+const formatPitcherMetric = (value, suffix = '') => {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? `${parsed.toFixed(2)}${suffix}` : `${value || '-'}${suffix}`
+}
+
+const pitcherDetail = (pitcher) =>
+  `${pitcher.fullName} (${pitcher.pitchHand || '?'}HP) | ${pitcher.wins}-${pitcher.losses} | ${pitcher.era} ERA | ${pitcher.strikeOuts} SO | ${formatPitcherMetric(pitcher.whip, ' WHIP')} | ${pitcher.inningsPitched} IP`
+
+const getWindowLabel = (startMinutes = 0) => {
+  if (startMinutes < 720) return 'Morning MLB Board'
+  if (startMinutes < 900) return 'Afternoon MLB Board'
+  return 'Evening MLB Board'
+}
+
+const buildGenericMlbGame = (
+  raw,
+  {
+    standingsContextByTeam,
+    teamOffenseContextByTeam,
+    teamBullpenContextByTeam,
+    teamSavantContextByTeam,
+    teamStoryContextByTeam,
+    bullpenChainByTeam,
+    lineupBoardsByGameId,
+    lineupMatchupContextByGameId
+  }
+) => {
+  const factors = [
+    `Current board: ${raw.moneyline} | ${raw.total} | ${raw.spread}.`,
+    `${raw.awayPitcher.fullName} vs ${raw.homePitcher.fullName}.`
+  ]
+
+  return {
+    id: raw.id,
+    league: 'MLB',
+    title: `${raw.away} @ ${raw.home}`,
+    start: raw.start,
+    startMinutes: raw.startMinutes,
+    stage: getWindowLabel(raw.startMinutes),
+    spotlight: false,
+    tags: ['MLB'],
+    matchup: [
+      { side: 'Away', name: raw.away, detail: pitcherDetail(raw.awayPitcher) },
+      { side: 'Home', name: raw.home, detail: pitcherDetail(raw.homePitcher) }
+    ],
+    summary: `${raw.away} @ ${raw.home} with ${raw.awayPitcher.fullName} against ${raw.homePitcher.fullName}.`,
+    lean: `Lean on the modeled side, but respect the split between starter phase and late-game hold.`,
+    factors,
+    swingFactor: 'Swing factor: whether the starter edge survives the bridge innings.',
+    teamContext: {
+      away: standingsContextByTeam[raw.away] ?? null,
+      home: standingsContextByTeam[raw.home] ?? null
+    },
+    parkContext: parkContextByHomeTeam[raw.home] ?? null,
+    offenseContext: {
+      away: teamOffenseContextByTeam[raw.away] ?? null,
+      home: teamOffenseContextByTeam[raw.home] ?? null
+    },
+    bullpenContext: {
+      away: teamBullpenContextByTeam[raw.away] ?? null,
+      home: teamBullpenContextByTeam[raw.home] ?? null
+    },
+    bullpenChainContext: {
+      away: bullpenChainByTeam[raw.away] ?? null,
+      home: bullpenChainByTeam[raw.home] ?? null
+    },
+    savantContext: {
+      away: teamSavantContextByTeam[raw.away] ?? null,
+      home: teamSavantContextByTeam[raw.home] ?? null
+    },
+    storyContext: {
+      away: teamStoryContextByTeam[raw.away] ?? null,
+      home: teamStoryContextByTeam[raw.home] ?? null
+    },
+    tierTwoContext: raw.tierTwoContext ?? null,
+    tierThreeContext: raw.tierThreeContext ?? null,
+    stateContext: raw.stateContext ?? null,
+    lineupContext: lineupMatchupContextByGameId[raw.id] ?? null,
+    lineupBoard: lineupBoardsByGameId[raw.id] ?? null,
+    starterContext: { away: raw.awayPitcher, home: raw.homePitcher },
+    pitcherSourceNote: raw.pitcherSourceNote || '',
+    odds: makeBoardOdds({
+      spread: raw.spread,
+      total: raw.total,
+      moneyline: raw.moneyline,
+      provider: oddsProvider
+    })
+  }
+}
+
+export const loadMlbDayGames = async (date) => {
+  const dayWrapperPath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}.js`)
+  const wrappedDay = await importMaybeFresh(dayWrapperPath)
+  if (wrappedDay?.games) {
+    return wrappedDay.games.filter((game) => game.league === 'MLB')
+  }
+
+  const dataModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`))
+  const contextModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-context-${date}.js`))
+  const lineupModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-lineups.js`))
+  const storyModule =
+    (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-story-context-${date}.js`))) ?? {}
+
+  const rawGames = dataModule.rawGames ?? []
+  const dependencies = {
+    standingsContextByTeam: contextModule.standingsContextByTeam ?? {},
+    teamOffenseContextByTeam: contextModule.teamOffenseContextByTeam ?? {},
+    teamBullpenContextByTeam: contextModule.teamBullpenContextByTeam ?? {},
+    teamSavantContextByTeam: contextModule.teamSavantContextByTeam ?? {},
+    teamStoryContextByTeam: storyModule.teamStoryContextByTeam ?? {},
+    bullpenChainByTeam: dataModule.bullpenChainByTeam ?? {},
+    lineupBoardsByGameId: lineupModule.lineupBoardsByGameId ?? {},
+    lineupMatchupContextByGameId: lineupModule.lineupMatchupContextByGameId ?? {}
+  }
+
+  return rawGames.map((raw) => createSportsMatchModel(buildGenericMlbGame(raw, dependencies), oddsProvider))
+}

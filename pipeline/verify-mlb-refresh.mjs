@@ -2,6 +2,8 @@ import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
+import { loadMlbDayGames } from './lib/load-mlb-day-games.mjs'
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..')
@@ -89,11 +91,15 @@ const main = async () => {
   const activeOfficialGames = officialGames.filter((game) => !isPostponedScheduleGame(game))
   const postponedGames = officialGames.filter((game) => isPostponedScheduleGame(game))
 
-  const dayModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}.js`))
+  const wrappedDay = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}.js`)).catch(
+    () => null
+  )
   const lineupModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}-lineups.js`))
   const hrModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}-home-run-data.js`))
 
-  const games = Array.isArray(dayModule.games) ? dayModule.games.filter((game) => game.league === 'MLB') : []
+  const games = wrappedDay?.games
+    ? wrappedDay.games.filter((game) => game.league === 'MLB')
+    : await loadMlbDayGames(options.date)
   const lineupBoardsByGameId = lineupModule.lineupBoardsByGameId || {}
   const lineupBoards = Object.values(lineupBoardsByGameId)
   const homeRunTargetsByGame = hrModule.homeRunTargetsByGame || {}

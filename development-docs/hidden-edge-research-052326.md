@@ -14,9 +14,9 @@ This pass uses standard Python and SQLite because `pandas` is not bundled in the
 
 | Window | Games | Hit rate | Avg edge | Avg volatility |
 | --- | --- | --- | --- | --- |
-| Reserve (`05-10` to `05-15`) | 75 | 0.653 | 7.0 | 79.9 |
-| Current (`05-16` to `05-22`) | 93 | 0.581 | 7.6 | 87.3 |
-| Combined | 168 | 0.613 | 7.4 | 84.0 |
+| Reserve (`05-10` to `05-15`) | 75 | 0.653 | 6.3 | 83.2 |
+| Current (`05-16` to `05-22`) | 93 | 0.570 | 7.0 | 88.7 |
+| Combined | 168 | 0.607 | 6.7 | 86.3 |
 
 ## Hidden Edge Inventory
 
@@ -36,32 +36,32 @@ Current research uses `window_games = 10`.
 ### Pick Whiff Persistence Index
 | Bucket | Games | Hit rate |
 | --- | --- | --- |
-| `<30` | 59 | 0.627 |
-| `30-44` | 67 | 0.642 |
-| `45-59` | 23 | 0.478 |
-| `60+` | 19 | 0.632 |
+| `<30` | 56 | 0.625 |
+| `30-44` | 70 | 0.629 |
+| `45-59` | 24 | 0.5 |
+| `60+` | 18 | 0.611 |
 
 ### Pick Lead Surrender Index
 | Bucket | Games | Hit rate |
 | --- | --- | --- |
-| `<30` | 79 | 0.62 |
-| `30-44` | 48 | 0.562 |
+| `<30` | 75 | 0.627 |
+| `30-44` | 49 | 0.571 |
 | `45-59` | 20 | 0.6 |
-| `60+` | 21 | 0.714 |
+| `60+` | 24 | 0.625 |
 
 ### Pick Carryover Instability Index
 | Bucket | Games | Hit rate |
 | --- | --- | --- |
-| `<40` | 15 | 0.6 |
-| `40-54` | 53 | 0.623 |
-| `55-69` | 69 | 0.609 |
-| `70+` | 31 | 0.613 |
+| `<40` | 13 | 0.615 |
+| `40-54` | 55 | 0.618 |
+| `55-69` | 70 | 0.6 |
+| `70+` | 30 | 0.6 |
 
 ### Hidden Edge Gaps
 | Gap bucket | Games | Hit rate |
 | --- | --- | --- |
-| `lead surrender gap >= 8` | 76 | 0.605 |
-| `carryover gap >= 10` | 42 | 0.643 |
+| `lead surrender gap >= 8` | 82 | 0.598 |
+| `carryover gap >= 10` | 42 | 0.619 |
 | `opponent comeback resilience >= 55` | 28 | 0.429 |
 
 ## Candidate Hidden-Edge Rules
@@ -72,9 +72,9 @@ Pass if `pointEdge >= 10 && pick lead surrender >= 45 && late stability <= 55`
 
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
-| Reserve | 67 | 0.672 | 8 | 0.500 |
-| Current | 88 | 0.568 | 5 | 0.800 |
-| Combined | 155 | 0.613 | 13 | 0.615 |
+| Reserve | 70 | 0.657 | 5 | 0.600 |
+| Current | 89 | 0.551 | 4 | 1.000 |
+| Combined | 159 | 0.597 | 9 | 0.778 |
 
 Note: This is the direct "good starter, bad hold" hidden-edge fade.
 
@@ -84,9 +84,9 @@ Pass if `pointEdge >= 8 && pick whiff persistence >= 55 && starter leverage <= 7
 
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
-| Reserve | 72 | 0.653 | 3 | 0.667 |
-| Current | 92 | 0.576 | 1 | 1.000 |
-| Combined | 164 | 0.610 | 4 | 0.750 |
+| Reserve | 71 | 0.662 | 4 | 0.500 |
+| Current | 92 | 0.565 | 1 | 1.000 |
+| Combined | 163 | 0.607 | 5 | 0.600 |
 
 Note: This looks for teams whose bats tend to stay dead after early whiff trouble when the side is not being carried by a major starter edge.
 
@@ -97,8 +97,8 @@ Pass if `pointEdge >= 10 && pick carryover instability >= 60`
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 69 | 0.667 | 6 | 0.500 |
-| Current | 80 | 0.575 | 13 | 0.615 |
-| Combined | 149 | 0.617 | 19 | 0.579 |
+| Current | 83 | 0.554 | 10 | 0.700 |
+| Combined | 152 | 0.605 | 16 | 0.625 |
 
 Note: This is the "recent form may be lying" lane.
 
@@ -108,9 +108,9 @@ Pass if `pointEdge >= 8 && opponent comeback resilience >= 55 && late stability 
 
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
-| Reserve | 70 | 0.686 | 5 | 0.200 |
-| Current | 88 | 0.591 | 5 | 0.400 |
-| Combined | 158 | 0.633 | 10 | 0.300 |
+| Reserve | 71 | 0.676 | 4 | 0.250 |
+| Current | 90 | 0.567 | 3 | 0.667 |
+| Combined | 161 | 0.615 | 7 | 0.429 |
 
 Note: This tests whether the opposing team’s comeback habit matters once the game gets into a weaker hold lane.
 
@@ -121,8 +121,8 @@ Pass if `pointEdge >= 10 && lead surrender gap >= 8 && carryover instability >= 
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 69 | 0.667 | 6 | 0.500 |
-| Current | 85 | 0.588 | 8 | 0.500 |
-| Combined | 154 | 0.623 | 14 | 0.500 |
+| Current | 88 | 0.568 | 5 | 0.600 |
+| Combined | 157 | 0.611 | 11 | 0.545 |
 
 Note: This is the first real multi-behavior trap: shaky lead behavior plus a form profile that breaks quickly.
 
@@ -133,41 +133,41 @@ These use the two strongest hidden-edge traps as offline `-edge / -confidence` h
 ### Opponent comeback pressure haircut
 | Haircut | Score | Reserve 10+ Δ | Reserve 60+ Δ | Current 10+ Δ | Current 60+ Δ | Combined 10+ Δ | Combined 60+ Δ | Current removed (edge/conf) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `-4.0 / -8` | 0.354 | +0.029 | +0.069 | -0.013 | +0.032 | +0.005 | +0.050 | 1/2 |
-| `-3.0 / -6` | 0.249 | +0.029 | +0.016 | +0.000 | +0.032 | +0.013 | +0.024 | 0/2 |
-| `-4.0 / -6` | 0.235 | +0.029 | +0.016 | -0.013 | +0.032 | +0.005 | +0.024 | 1/2 |
-| `-2.0 / -6` | 0.200 | +0.000 | +0.016 | +0.000 | +0.032 | +0.000 | +0.024 | 0/2 |
-| `-3.0 / -4` | 0.049 | +0.029 | +0.000 | +0.000 | +0.000 | +0.013 | +0.000 | 0/0 |
-| `-1.5 / -4` | 0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | 0/0 |
-| `-2.0 / -4` | 0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | 0/0 |
+| `-4.0 / -8` | 0.209 | +0.000 | +0.047 | +0.027 | +0.000 | +0.010 | +0.023 | 2/0 |
+| `-2.0 / -6` | 0.164 | +0.000 | +0.022 | +0.038 | +0.000 | +0.018 | +0.011 | 1/0 |
+| `-3.0 / -6` | 0.164 | +0.000 | +0.022 | +0.038 | +0.000 | +0.018 | +0.011 | 1/0 |
+| `-4.0 / -6` | 0.153 | +0.000 | +0.022 | +0.027 | +0.000 | +0.010 | +0.011 | 2/0 |
+| `-1.5 / -4` | 0.114 | +0.000 | +0.000 | +0.038 | +0.000 | +0.018 | +0.000 | 1/0 |
+| `-2.0 / -4` | 0.114 | +0.000 | +0.000 | +0.038 | +0.000 | +0.018 | +0.000 | 1/0 |
+| `-3.0 / -4` | 0.114 | +0.000 | +0.000 | +0.038 | +0.000 | +0.018 | +0.000 | 1/0 |
 
-Best current combo: `-4.0` edge / `-8` confidence. Reserve deltas were `+0.029` and `+0.069`. Current deltas were `-0.013` and `+0.032`. Combined deltas were `+0.005` and `+0.050`.
+Best current combo: `-4.0` edge / `-8` confidence. Reserve deltas were `+0.000` and `+0.047`. Current deltas were `+0.027` and `+0.000`. Combined deltas were `+0.010` and `+0.023`.
 
 ### Hidden chaos stack haircut
 | Haircut | Score | Reserve 10+ Δ | Reserve 60+ Δ | Current 10+ Δ | Current 60+ Δ | Combined 10+ Δ | Combined 60+ Δ | Current removed (edge/conf) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `-4.0 / -6` | 0.401 | +0.006 | +0.000 | +0.053 | +0.021 | +0.030 | +0.010 | 5/3 |
-| `-4.0 / -8` | 0.401 | +0.006 | +0.000 | +0.053 | +0.021 | +0.030 | +0.010 | 5/3 |
-| `-3.0 / -6` | 0.099 | -0.024 | +0.000 | +0.053 | +0.021 | +0.015 | +0.010 | 5/3 |
-| `-3.0 / -4` | 0.017 | -0.024 | +0.000 | +0.053 | +0.005 | +0.015 | +0.002 | 5/2 |
-| `-2.0 / -6` | -0.081 | -0.024 | +0.000 | -0.003 | +0.021 | -0.013 | +0.010 | 3/3 |
-| `-2.0 / -4` | -0.164 | -0.024 | +0.000 | -0.003 | +0.005 | -0.013 | +0.002 | 3/2 |
-| `-1.5 / -4` | -0.246 | -0.024 | +0.000 | -0.028 | +0.005 | -0.026 | +0.002 | 2/2 |
+| `-3.0 / -4` | 0.256 | +0.009 | +0.000 | +0.071 | +0.000 | +0.043 | +0.000 | 3/0 |
+| `-3.0 / -6` | 0.256 | +0.009 | +0.000 | +0.071 | +0.000 | +0.043 | +0.000 | 3/0 |
+| `-2.0 / -4` | 0.137 | +0.009 | +0.000 | +0.038 | +0.000 | +0.030 | +0.000 | 1/0 |
+| `-2.0 / -6` | 0.137 | +0.009 | +0.000 | +0.038 | +0.000 | +0.030 | +0.000 | 1/0 |
+| `-4.0 / -6` | -0.044 | -0.024 | +0.000 | +0.071 | +0.000 | +0.034 | +0.000 | 3/0 |
+| `-4.0 / -8` | -0.044 | -0.024 | +0.000 | +0.071 | +0.000 | +0.034 | +0.000 | 3/0 |
+| `-1.5 / -4` | -0.180 | -0.029 | +0.000 | +0.038 | +0.000 | +0.010 | +0.000 | 1/0 |
 
-Best current combo: `-4.0` edge / `-6` confidence. Reserve deltas were `+0.006` and `+0.000`. Current deltas were `+0.053` and `+0.021`. Combined deltas were `+0.030` and `+0.010`.
+Best current combo: `-3.0` edge / `-4` confidence. Reserve deltas were `+0.009` and `+0.000`. Current deltas were `+0.071` and `+0.000`. Combined deltas were `+0.043` and `+0.000`.
 
 ### Combined hidden-edge haircut
 | Haircut | Score | Reserve 10+ Δ | Reserve 60+ Δ | Current 10+ Δ | Current 60+ Δ | Combined 10+ Δ | Combined 60+ Δ | Current removed (edge/conf) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `-4.0 / -8` | 0.684 | +0.038 | +0.069 | +0.039 | +0.039 | +0.037 | +0.054 | 6/4 |
-| `-4.0 / -6` | 0.565 | +0.038 | +0.016 | +0.039 | +0.039 | +0.037 | +0.027 | 6/4 |
-| `-3.0 / -6` | 0.526 | +0.006 | +0.016 | +0.053 | +0.039 | +0.030 | +0.027 | 5/4 |
-| `-3.0 / -4` | 0.319 | +0.006 | +0.000 | +0.053 | +0.005 | +0.030 | +0.002 | 5/2 |
-| `-2.0 / -6` | 0.043 | -0.024 | +0.016 | -0.003 | +0.039 | -0.013 | +0.027 | 3/4 |
-| `-2.0 / -4` | -0.164 | -0.024 | +0.000 | -0.003 | +0.005 | -0.013 | +0.002 | 3/2 |
-| `-1.5 / -4` | -0.246 | -0.024 | +0.000 | -0.028 | +0.005 | -0.026 | +0.002 | 2/2 |
+| `-3.0 / -6` | 0.306 | +0.009 | +0.022 | +0.071 | +0.000 | +0.043 | +0.011 | 3/0 |
+| `-3.0 / -4` | 0.256 | +0.009 | +0.000 | +0.071 | +0.000 | +0.043 | +0.000 | 3/0 |
+| `-2.0 / -6` | 0.187 | +0.009 | +0.022 | +0.038 | +0.000 | +0.030 | +0.011 | 1/0 |
+| `-2.0 / -4` | 0.137 | +0.009 | +0.000 | +0.038 | +0.000 | +0.030 | +0.000 | 1/0 |
+| `-4.0 / -8` | 0.053 | -0.024 | +0.047 | +0.062 | +0.000 | +0.024 | +0.023 | 4/0 |
+| `-4.0 / -6` | -0.003 | -0.024 | +0.022 | +0.062 | +0.000 | +0.024 | +0.011 | 4/0 |
+| `-1.5 / -4` | -0.180 | -0.029 | +0.000 | +0.038 | +0.000 | +0.010 | +0.000 | 1/0 |
 
-Best current combo: `-4.0` edge / `-8` confidence. Reserve deltas were `+0.038` and `+0.069`. Current deltas were `+0.039` and `+0.039`. Combined deltas were `+0.037` and `+0.054`.
+Best current combo: `-3.0` edge / `-6` confidence. Reserve deltas were `+0.009` and `+0.022`. Current deltas were `+0.071` and `+0.000`. Combined deltas were `+0.043` and `+0.011`.
 
 ## Early Read
 1. These tables are finally measuring the behaviors we were missing: whether bad early swing quality persists, how often advantages actually hold, and how quickly recent form breaks or carries.

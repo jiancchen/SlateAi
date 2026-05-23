@@ -1,7 +1,8 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { fileURLToPath, pathToFileURL } from 'node:url'
+import { fileURLToPath } from 'node:url'
 
+import { loadMlbDayGames } from './lib/load-mlb-day-games.mjs'
 import { rankMlbPlayerProps, rankMlbPlayerPropCandidatesLegacy } from '../web/src/lib/sports-model.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -87,11 +88,7 @@ const parseArgs = () => {
   return options
 }
 
-const loadDayGames = async (date) => {
-  const modulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}.js`)
-  const dayModule = await import(pathToFileURL(modulePath).href)
-  return dayModule.games?.filter((game) => game.league === 'MLB') ?? []
-}
+const loadDayGames = async (date) => loadMlbDayGames(date)
 
 const fullNameForTeam = (name = '') => fullTeamNames[name] || name
 

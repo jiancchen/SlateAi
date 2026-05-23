@@ -411,6 +411,27 @@ def first5_series_carryover_trap(row: FirstFiveRow) -> bool:
     return row.point_edge >= 8 and row.pick_series_game_number == 2 and row.pick_form_pressure >= 55
 
 
+def first5_provisional_lean_lane(row: FirstFiveRow) -> bool:
+    return (
+        row.point_edge >= 8
+        and row.opp_snapback_pressure < 50
+        and row.pick_top6_pressure < 40
+        and not first5_series_carryover_trap(row)
+    )
+
+
+def first5_watch_lane(row: FirstFiveRow) -> bool:
+    return row.point_edge < 8 and row.starter_leverage_index < 72
+
+
+def first5_pass_lane(row: FirstFiveRow) -> bool:
+    return (
+        first5_opponent_snapback_trap(row)
+        or first5_top_order_pressure_trap(row)
+        or first5_series_carryover_trap(row)
+    )
+
+
 def format_lane_rows(evaluated: dict[str, tuple[int, float, float, float, int]]) -> list[list[str]]:
     return [
         [
@@ -495,6 +516,62 @@ def format_lane_research(rows: list[FirstFiveRow]) -> str:
     return "\n\n".join(sections)
 
 
+def classify_first5_lane(row: FirstFiveRow) -> str:
+    if first5_pass_lane(row):
+        return "pass"
+    if first5_watch_lane(row):
+        return "watch"
+    if first5_provisional_lean_lane(row):
+        return "lean"
+    return "watch"
+
+
+def format_classifier_summary(rows: list[FirstFiveRow]) -> str:
+    sections: list[str] = []
+    for split, label in (
+        ("reserve", "Reserve (`05-10` to `05-15`)"),
+        ("current", "Current (`05-16` to `05-22`)"),
+        ("combined", "Combined"),
+    ):
+        subset = rows_for_split(rows, split)
+        bucket_rows = []
+        for bucket in ("lean", "watch", "pass"):
+            bucket_subset = [row for row in subset if classify_first5_lane(row) == bucket]
+            bucket_rows.append(
+                [
+                    bucket.title(),
+                    str(len(bucket_subset)),
+                    f"{strict_hit_rate(bucket_subset):.3f}",
+                    f"{decision_hit_rate(bucket_subset):.3f}",
+                    f"{push_rate(bucket_subset):.3f}",
+                ]
+            )
+        sections.append(
+            "\n".join(
+                [
+                    f"### {label}",
+                    "",
+                    markdown_table(
+                        ["Lane", "Picks", "Strict hit rate", "Decision-only hit rate", "Push rate"],
+                        bucket_rows,
+                    ),
+                ]
+            )
+        )
+    sections.append(
+        "\n".join(
+            [
+                "### Current classifier read",
+                "",
+                "- `Lean` is only provisional. It is cleaner than the raw board in structure, but it is not strong enough yet to promote into live scoring.",
+                "- `Watch` is mostly the tie/push lane: not necessarily terrible at decision-only hit rate, but too capital-inefficient to treat as a real edge.",
+                "- `Pass` is the real value today. The state layer is better at telling us what early scripts are fragile than at handing us a trustworthy all-green first-five play bucket.",
+            ]
+        )
+    )
+    return "\n\n".join(sections)
+
+
 def render_report(rows: list[FirstFiveRow]) -> str:
     return "\n".join(
         [
@@ -513,6 +590,10 @@ def render_report(rows: list[FirstFiveRow]) -> str:
             "## Candidate First-Five Lanes",
             "",
             format_lane_research(rows),
+            "",
+            "## Offline First-Five Classifier Sketch",
+            "",
+            format_classifier_summary(rows),
             "",
             "## Takeaways",
             "",

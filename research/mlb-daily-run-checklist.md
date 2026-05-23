@@ -136,11 +136,15 @@ This now handles:
 - MLB final ingest
 - story-signal refresh
 - hidden-edge profile refresh
+- rolling state-snapshot refresh
 - HR grading
 - tracked prop grading
 - history export
 - published history refresh
 - hidden-edge haircut-grid rerun
+- stateful edge haircut-grid rerun
+- first-five state-model rerun
+- market-divergence / price-aware research rerun
 
 Then update:
 - follow-up notes

@@ -315,7 +315,7 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Corbin Carroll Over 1.5 total bases",
       "Juan Soto Over 1.5 total bases",
       "Munetaka Murakami Over 1.5 total bases",
-      "Ketel Marte Over 1.5 total bases"
+      "Gunnar Henderson Over 1.5 total bases"
     ],
     "topMisses": [
       "Samuel Basallo Over 1.5 total bases",

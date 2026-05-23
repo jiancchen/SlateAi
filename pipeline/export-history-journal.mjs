@@ -157,6 +157,19 @@ const buildSavedSideRecords = (date) => {
       confidence: row.confidence,
       volatility: row.volatility,
       pointEdge: row.model_edge,
+      marketAmericanOdds: indicators.marketAmericanOdds ?? null,
+      marketProbability: indicators.marketProbability ?? null,
+      marketProbabilityLabel: indicators.marketProbabilityLabel ?? null,
+      opponentMarketAmericanOdds: indicators.opponentMarketAmericanOdds ?? null,
+      opponentMarketProbability: indicators.opponentMarketProbability ?? null,
+      opponentMarketProbabilityLabel: indicators.opponentMarketProbabilityLabel ?? null,
+      marketFavoriteTeam: indicators.marketFavoriteTeam ?? null,
+      marketFavoriteProbability: indicators.marketFavoriteProbability ?? null,
+      marketFavoriteProbabilityLabel: indicators.marketFavoriteProbabilityLabel ?? null,
+      marketFavoriteAmericanOdds: indicators.marketFavoriteAmericanOdds ?? null,
+      pickIsMarketFavorite: Boolean(indicators.pickIsMarketFavorite),
+      pickIsMarketUnderdog: Boolean(indicators.pickIsMarketUnderdog),
+      marketPriceGap: indicators.marketPriceGap ?? null,
       sourceLabel: row.source_label,
       inputLabels,
       indicators,
@@ -218,6 +231,20 @@ const buildDerivedSideRecords = (date) => {
       const actualFirst5Winner = row.home_first5_result === 'win' ? homeName : row.home_first5_result === 'loss' ? awayName : 'tie'
       const predictedPick = FULL_NAMES[game.analysis?.participant?.name] || game.analysis?.participant?.name
       const projected = game.analysis?.mlbProjection ?? null
+      const pickParticipant =
+        game.participants?.find((participant) => participant.name === game.analysis?.participant?.name) ??
+        game.analysis?.participant ??
+        null
+      const opponentParticipant =
+        game.participants?.find((participant) => participant.name !== game.analysis?.participant?.name) ??
+        game.analysis?.opponent ??
+        null
+      const marketFavoriteParticipant =
+        Array.isArray(game.participants) && game.participants.length === 2
+          ? [...game.participants].sort(
+              (left, right) => (Number(right.impliedProbability) || 0) - (Number(left.impliedProbability) || 0)
+            )[0]
+          : null
       return {
         date,
         sport: 'MLB',
@@ -232,6 +259,44 @@ const buildDerivedSideRecords = (date) => {
         confidence: game.analysis?.confidence ?? null,
         volatility: game.analysis?.volatility ?? null,
         pointEdge: game.analysis?.modelEdge ?? null,
+        marketAmericanOdds: Number.isFinite(Number(pickParticipant?.americanOdds))
+          ? Number(pickParticipant.americanOdds)
+          : null,
+        marketProbability: Number.isFinite(pickParticipant?.impliedProbability)
+          ? pickParticipant.impliedProbability
+          : game.analysis?.marketProbability ?? null,
+        marketProbabilityLabel:
+          pickParticipant?.impliedProbabilityLabel ?? game.analysis?.marketProbabilityLabel ?? null,
+        opponentMarketAmericanOdds: Number.isFinite(Number(opponentParticipant?.americanOdds))
+          ? Number(opponentParticipant.americanOdds)
+          : null,
+        opponentMarketProbability: Number.isFinite(opponentParticipant?.impliedProbability)
+          ? opponentParticipant.impliedProbability
+          : null,
+        opponentMarketProbabilityLabel: opponentParticipant?.impliedProbabilityLabel ?? null,
+        marketFavoriteTeam: marketFavoriteParticipant ? (FULL_NAMES[marketFavoriteParticipant.name] || marketFavoriteParticipant.name) : null,
+        marketFavoriteProbability: Number.isFinite(marketFavoriteParticipant?.impliedProbability)
+          ? marketFavoriteParticipant.impliedProbability
+          : null,
+        marketFavoriteProbabilityLabel: marketFavoriteParticipant?.impliedProbabilityLabel ?? null,
+        marketFavoriteAmericanOdds: Number.isFinite(Number(marketFavoriteParticipant?.americanOdds))
+          ? Number(marketFavoriteParticipant.americanOdds)
+          : null,
+        pickIsMarketFavorite:
+          Number.isFinite(pickParticipant?.impliedProbability) &&
+          Number.isFinite(opponentParticipant?.impliedProbability)
+            ? pickParticipant.impliedProbability >= opponentParticipant.impliedProbability
+            : null,
+        pickIsMarketUnderdog:
+          Number.isFinite(pickParticipant?.impliedProbability) &&
+          Number.isFinite(opponentParticipant?.impliedProbability)
+            ? pickParticipant.impliedProbability < opponentParticipant.impliedProbability
+            : null,
+        marketPriceGap:
+          Number.isFinite(pickParticipant?.impliedProbability) &&
+          Number.isFinite(opponentParticipant?.impliedProbability)
+            ? Number((pickParticipant.impliedProbability - opponentParticipant.impliedProbability).toFixed(3))
+            : null,
         sourceLabel: game.analysis?.sourceLabel ?? '',
         inputLabels: (game.analysis?.inputs ?? []).map((item) => item.label),
         indicators: game.analysis?.indicators ?? {},
