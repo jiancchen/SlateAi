@@ -298,7 +298,15 @@ const buildIndicators = (game, predictedSide) => {
     tierOneRiskFlags: analysisIndicators.tierOneRiskFlags ?? [],
     favoredSignalCount: analysisIndicators.favoredSignalCount ?? game.analysis?.inputs?.length ?? 0,
     starterLateGap: analysisIndicators.starterLateGap ?? null,
-    edgeHaircutApplied: analysisIndicators.edgeHaircutApplied ?? 0
+    edgeHaircutApplied: analysisIndicators.edgeHaircutApplied ?? 0,
+    pickRelieverCommandRisk: analysisIndicators.pickRelieverCommandRisk ?? null,
+    oppRelieverCommandRisk: analysisIndicators.oppRelieverCommandRisk ?? null,
+    relieverCommandGap: analysisIndicators.relieverCommandGap ?? null,
+    pickThirdTimePenalty: analysisIndicators.pickThirdTimePenalty ?? null,
+    oppThirdTimePenalty: analysisIndicators.oppThirdTimePenalty ?? null,
+    tierThreeBullpenCommandMismatchFlag: Boolean(analysisIndicators.tierThreeBullpenCommandMismatchFlag),
+    tierThreeSuggestedEdgeHaircut: analysisIndicators.tierThreeSuggestedEdgeHaircut ?? 0,
+    tierThreeSuggestedConfidenceHaircut: analysisIndicators.tierThreeSuggestedConfidenceHaircut ?? 0
   }
 }
 

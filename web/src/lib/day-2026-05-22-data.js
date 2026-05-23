@@ -106,9 +106,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +155",
+    "spread": "+1.5 -170 / -1.5 +150",
     "total": "o7.5 even / u7.5 -115",
-    "moneyline": "Astros +130 / Cubs -148",
+    "moneyline": "Astros +140 / Cubs -148",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs",
     "tierTwoContext": {
@@ -160,6 +160,62 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 681151,
+          "pitcherName": "Jayden Murray",
+          "firstRelieverLikelihood": 90.5,
+          "entriesSample": 3,
+          "firstPitchBallRate": 0,
+          "firstPitchStrikeRate": 0.67,
+          "ballRate": 0,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 0
+        },
+        "home": {
+          "pitcherId": 681799,
+          "pitcherName": "Ethan Roberts",
+          "firstRelieverLikelihood": 90.5,
+          "entriesSample": 3,
+          "firstPitchBallRate": 0,
+          "firstPitchStrikeRate": 0.67,
+          "ballRate": 0.24,
+          "reachedRate": 0.33,
+          "freePassRate": 0.33,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 18.49
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Spencer Arrighetti",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.15,
+          "thirdTripScoringDelta": 0.13,
+          "thirdTripRunDeltaDelta": 0.19,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 70.7
+        },
+        "home": {
+          "pitcherName": "Jameson Taillon",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.04,
+          "thirdTripScoringDelta": 0.09,
+          "thirdTripRunDeltaDelta": 0.13,
+          "thirdTripHrDelta": 0.12,
+          "thirdTimePenaltyIndex": 64.58
+        }
       }
     }
   },
@@ -270,9 +326,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -134 / -1.5 +118",
+    "spread": "+1.5 -135 / -1.5 +120",
     "total": "o7 -110 / u7 -105",
-    "moneyline": "Guardians +166 / Phillies -190",
+    "moneyline": "Guardians +160 / Phillies -185",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
     "tierTwoContext": {
@@ -324,6 +380,62 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 670036,
+          "pitcherName": "Matt Festa",
+          "firstRelieverLikelihood": 80.56,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0.2,
+          "firstPitchStrikeRate": 0.8,
+          "ballRate": 0.37,
+          "reachedRate": 0.6,
+          "freePassRate": 0.4,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 33.95
+        },
+        "home": {
+          "pitcherId": 621383,
+          "pitcherName": "Tanner Banks",
+          "firstRelieverLikelihood": 86.03,
+          "entriesSample": 4,
+          "firstPitchBallRate": 0.25,
+          "firstPitchStrikeRate": 0.5,
+          "ballRate": 0.21,
+          "reachedRate": 0.25,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 18.17
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Gavin Williams",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.08,
+          "thirdTripScoringDelta": 0.01,
+          "thirdTripRunDeltaDelta": -0.01,
+          "thirdTripHrDelta": -0.03,
+          "thirdTimePenaltyIndex": 25.81
+        },
+        "home": {
+          "pitcherName": "Cristopher Sánchez",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.17,
+          "thirdTripScoringDelta": 0,
+          "thirdTripRunDeltaDelta": 0,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 39.72
+        }
       }
     }
   },
@@ -473,6 +585,51 @@ export const rawGames = [
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
       }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 687330,
+          "pitcherName": "Kevin Kelly",
+          "firstRelieverLikelihood": 84.69,
+          "entriesSample": 6,
+          "firstPitchBallRate": 0.5,
+          "firstPitchStrikeRate": 0.5,
+          "ballRate": 0.22,
+          "reachedRate": 0.33,
+          "freePassRate": 0,
+          "scoringPlayRate": 0.17,
+          "commandRiskIndex": 29.69
+        },
+        "home": {
+          "pitcherId": 518585,
+          "pitcherName": "Fernando Cruz",
+          "firstRelieverLikelihood": 91.79,
+          "entriesSample": 6,
+          "firstPitchBallRate": 0.67,
+          "firstPitchStrikeRate": 0.17,
+          "ballRate": 0.48,
+          "reachedRate": 0.5,
+          "freePassRate": 0.33,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 47.62
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Nick Martinez",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.14,
+          "thirdTripScoringDelta": 0.08,
+          "thirdTripRunDeltaDelta": 0.08,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 55.11
+        },
+        "home": null
+      }
     }
   },
   {
@@ -583,8 +740,8 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +115 / +1.5 -134",
-    "total": "o7.5 -105 / u7.5 -113",
-    "moneyline": "Pirates -148 / Blue Jays +135",
+    "total": "o7.5 -105 / u7.5 -109",
+    "moneyline": "Pirates -152 / Blue Jays +135",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays",
     "tierTwoContext": {
@@ -636,6 +793,62 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 676755,
+          "pitcherName": "Isaac Mattson",
+          "firstRelieverLikelihood": 90.5,
+          "entriesSample": 3,
+          "firstPitchBallRate": 0.67,
+          "firstPitchStrikeRate": 0.33,
+          "ballRate": 0.53,
+          "reachedRate": 0.67,
+          "freePassRate": 0.33,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 52.4
+        },
+        "home": {
+          "pitcherId": 680755,
+          "pitcherName": "Braydon Fisher",
+          "firstRelieverLikelihood": 90.55,
+          "entriesSample": 6,
+          "firstPitchBallRate": 0.33,
+          "firstPitchStrikeRate": 0.67,
+          "ballRate": 0.2,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 15.62
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Bubba Chandler",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 1,
+          "thirdTripExposureRate": 0.2,
+          "thirdTripReachedDelta": 0.34,
+          "thirdTripScoringDelta": -0.12,
+          "thirdTripRunDeltaDelta": -0.21,
+          "thirdTripHrDelta": -0.06,
+          "thirdTimePenaltyIndex": 52.33
+        },
+        "home": {
+          "pitcherName": "Kevin Gausman",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.12,
+          "thirdTripScoringDelta": -0.01,
+          "thirdTripRunDeltaDelta": 0.06,
+          "thirdTripHrDelta": 0.1,
+          "thirdTimePenaltyIndex": 52.81
+        }
       }
     }
   },
@@ -747,7 +960,7 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -210 / +1.5 -186",
-    "total": "o7.5 -120 / u8 -117",
+    "total": "o7.5 -119 / u8 -120",
     "moneyline": "Mets -102 / Marlins -107",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins",
@@ -800,6 +1013,51 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 681810,
+          "pitcherName": "Austin Warren",
+          "firstRelieverLikelihood": 87.21,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0.4,
+          "firstPitchStrikeRate": 0.2,
+          "ballRate": 0.18,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 16.96
+        },
+        "home": {
+          "pitcherId": 667463,
+          "pitcherName": "John King",
+          "firstRelieverLikelihood": 86.1,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0,
+          "firstPitchStrikeRate": 0.6,
+          "ballRate": 0.1,
+          "reachedRate": 0.2,
+          "freePassRate": 0,
+          "scoringPlayRate": 0.2,
+          "commandRiskIndex": 10
+        }
+      },
+      "starterThirdTime": {
+        "away": null,
+        "home": {
+          "pitcherName": "Eury Pérez",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.19,
+          "thirdTripScoringDelta": 0.11,
+          "thirdTripRunDeltaDelta": 0.22,
+          "thirdTripHrDelta": 0.14,
+          "thirdTimePenaltyIndex": 92.47
+        }
       }
     }
   },
@@ -910,9 +1168,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -195",
-    "total": "o8 -105 / u8.5 -120",
-    "moneyline": "Twins even / Red Sox -120",
+    "spread": "+1.5 -200 / -1.5 +170",
+    "total": "o8 -112 / u8.5 -120",
+    "moneyline": "Twins +105 / Red Sox -118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
     "tierTwoContext": {
@@ -964,6 +1222,62 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 680573,
+          "pitcherName": "Simeon Woods Richardson",
+          "firstRelieverLikelihood": 86.41,
+          "entriesSample": 0,
+          "firstPitchBallRate": 0,
+          "firstPitchStrikeRate": 0,
+          "ballRate": 0,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 0
+        },
+        "home": {
+          "pitcherId": 686580,
+          "pitcherName": "Justin Slaten",
+          "firstRelieverLikelihood": 86.28,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0.2,
+          "firstPitchStrikeRate": 0.8,
+          "ballRate": 0.27,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 14.35
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Connor Prielipp",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 1,
+          "thirdTripExposureRate": 0.2,
+          "thirdTripReachedDelta": 0.18,
+          "thirdTripScoringDelta": 0.14,
+          "thirdTripRunDeltaDelta": 0.14,
+          "thirdTripHrDelta": 0.2,
+          "thirdTimePenaltyIndex": 91.94
+        },
+        "home": {
+          "pitcherName": "Payton Tolle",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.28,
+          "thirdTripScoringDelta": -0.03,
+          "thirdTripRunDeltaDelta": -0.03,
+          "thirdTripHrDelta": -0.06,
+          "thirdTimePenaltyIndex": 24
+        }
       }
     }
   },
@@ -1074,9 +1388,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -130 / -1.5 +116",
-    "total": "o8.5 -115 / u9 -122",
-    "moneyline": "Nationals +160 / Braves -188",
+    "spread": "+1.5 -134 / -1.5 +120",
+    "total": "o8.5 -110 / u9 -122",
+    "moneyline": "Nationals +150 / Braves -170",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves",
     "tierTwoContext": {
@@ -1128,6 +1442,51 @@ export const rawGames = [
         "previousMatchups30d": 2,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 676571,
+          "pitcherName": "PJ Poulin",
+          "firstRelieverLikelihood": 85.72,
+          "entriesSample": 4,
+          "firstPitchBallRate": 0.5,
+          "firstPitchStrikeRate": 0.5,
+          "ballRate": 0.48,
+          "reachedRate": 0.25,
+          "freePassRate": 0.25,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 37.24
+        },
+        "home": {
+          "pitcherId": 607481,
+          "pitcherName": "Aaron Bummer",
+          "firstRelieverLikelihood": 90.5,
+          "entriesSample": 0,
+          "firstPitchBallRate": 0,
+          "firstPitchStrikeRate": 0,
+          "ballRate": 0,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 0
+        }
+      },
+      "starterThirdTime": {
+        "away": null,
+        "home": {
+          "pitcherName": "Bryce Elder",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.22,
+          "thirdTripScoringDelta": 0.03,
+          "thirdTripRunDeltaDelta": 0.08,
+          "thirdTripHrDelta": 0.06,
+          "thirdTimePenaltyIndex": 62.47
+        }
       }
     }
   },
@@ -1238,9 +1597,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -192",
-    "total": "o7.5 -114 / u8 -110",
-    "moneyline": "Tigers even / Orioles -114",
+    "spread": "+1.5 -210 / +1.5 -188",
+    "total": "o7.5 -114 / u8 -120",
+    "moneyline": "Tigers even / Orioles -112",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
     "tierTwoContext": {
@@ -1292,6 +1651,51 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 640448,
+          "pitcherName": "Kyle Finnegan",
+          "firstRelieverLikelihood": 86.28,
+          "entriesSample": 4,
+          "firstPitchBallRate": 0.25,
+          "firstPitchStrikeRate": 0.25,
+          "ballRate": 0.25,
+          "reachedRate": 0.75,
+          "freePassRate": 0.25,
+          "scoringPlayRate": 0.5,
+          "commandRiskIndex": 40
+        },
+        "home": {
+          "pitcherId": 677020,
+          "pitcherName": "Josh Walker",
+          "firstRelieverLikelihood": 90.45,
+          "entriesSample": 3,
+          "firstPitchBallRate": 0.33,
+          "firstPitchStrikeRate": 0.67,
+          "ballRate": 0.52,
+          "reachedRate": 0.33,
+          "freePassRate": 0.33,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 36.53
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Jack Flaherty",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.11,
+          "thirdTripScoringDelta": -0.01,
+          "thirdTripRunDeltaDelta": -0.04,
+          "thirdTripHrDelta": -0.03,
+          "thirdTimePenaltyIndex": 24
+        },
+        "home": null
       }
     }
   },
@@ -1402,9 +1806,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -155",
+    "spread": "-1.5 +135 / +1.5 -160",
     "total": "o9 -105 / u9 -115",
-    "moneyline": "Dodgers -120 / Brewers +108",
+    "moneyline": "Dodgers -120 / Brewers +106",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers",
     "tierTwoContext": {
@@ -1456,6 +1860,62 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 683618,
+          "pitcherName": "Edgardo Henriquez",
+          "firstRelieverLikelihood": 79.44,
+          "entriesSample": 6,
+          "firstPitchBallRate": 0.5,
+          "firstPitchStrikeRate": 0.5,
+          "ballRate": 0.28,
+          "reachedRate": 0.17,
+          "freePassRate": 0.17,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 28.17
+        },
+        "home": {
+          "pitcherId": 681982,
+          "pitcherName": "Grant Anderson",
+          "firstRelieverLikelihood": 90.5,
+          "entriesSample": 0,
+          "firstPitchBallRate": 0,
+          "firstPitchStrikeRate": 0,
+          "ballRate": 0,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 0
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Justin Wrobleski",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.01,
+          "thirdTripScoringDelta": 0.07,
+          "thirdTripRunDeltaDelta": 0.06,
+          "thirdTripHrDelta": 0.08,
+          "thirdTimePenaltyIndex": 49.07
+        },
+        "home": {
+          "pitcherName": "Logan Henderson",
+          "windowStarts": 5,
+          "startsSample": 4,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.5,
+          "thirdTripReachedDelta": -0.31,
+          "thirdTripScoringDelta": -0.08,
+          "thirdTripRunDeltaDelta": -0.08,
+          "thirdTripHrDelta": -0.06,
+          "thirdTimePenaltyIndex": 26
+        }
       }
     }
   },
@@ -1566,9 +2026,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +122 / +1.5 -139",
-    "total": "o8.5 even / u8.5 -105",
-    "moneyline": "Mariners -137 / Royals +120",
+    "spread": "-1.5 +130 / +1.5 -145",
+    "total": "o8.5 even / u8.5 -109",
+    "moneyline": "Mariners -130 / Royals +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals",
     "tierTwoContext": {
@@ -1620,6 +2080,62 @@ export const rawGames = [
         "previousMatchups30d": 3,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 689546,
+          "pitcherName": "Nick Davila",
+          "firstRelieverLikelihood": 93,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0.2,
+          "firstPitchStrikeRate": 0.8,
+          "ballRate": 0.2,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 12
+        },
+        "home": {
+          "pitcherId": 663738,
+          "pitcherName": "Daniel Lynch IV",
+          "firstRelieverLikelihood": 85.63,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0.6,
+          "firstPitchStrikeRate": 0.4,
+          "ballRate": 0.39,
+          "reachedRate": 0.6,
+          "freePassRate": 0.2,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 42.77
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Logan Gilbert",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.03,
+          "thirdTripScoringDelta": 0.02,
+          "thirdTripRunDeltaDelta": 0.06,
+          "thirdTripHrDelta": 0.04,
+          "thirdTimePenaltyIndex": 39.86
+        },
+        "home": {
+          "pitcherName": "Noah Cameron",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.22,
+          "thirdTripScoringDelta": 0.03,
+          "thirdTripRunDeltaDelta": 0,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 28.46
+        }
       }
     }
   },
@@ -1730,9 +2246,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +126 / +1.5 -145",
-    "total": "o8 -110 / u8 -110",
-    "moneyline": "Rangers -134 / Angels +120",
+    "spread": "-1.5 +126 / +1.5 -144",
+    "total": "o8 -110 / u8 -108",
+    "moneyline": "Rangers -140 / Angels +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels",
     "tierTwoContext": {
@@ -1784,6 +2300,51 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 686560,
+          "pitcherName": "Gavin Collyer",
+          "firstRelieverLikelihood": 89.78,
+          "entriesSample": 4,
+          "firstPitchBallRate": 0.5,
+          "firstPitchStrikeRate": 0.25,
+          "ballRate": 0.33,
+          "reachedRate": 0.25,
+          "freePassRate": 0.25,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 32.4
+        },
+        "home": {
+          "pitcherId": 696147,
+          "pitcherName": "Sam Bachman",
+          "firstRelieverLikelihood": 84.84,
+          "entriesSample": 4,
+          "firstPitchBallRate": 0.25,
+          "firstPitchStrikeRate": 0.5,
+          "ballRate": 0.31,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 16.87
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Jacob deGrom",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.02,
+          "thirdTripScoringDelta": -0.11,
+          "thirdTripRunDeltaDelta": -0.11,
+          "thirdTripHrDelta": -0.11,
+          "thirdTimePenaltyIndex": 25.44
+        },
+        "home": null
       }
     }
   },
@@ -1894,9 +2455,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +160 / +1.5 -178",
-    "total": "o7.5 -117 / u8 -110",
-    "moneyline": "Athletics -108 / Padres -108",
+    "spread": "-1.5 +150 / +1.5 -170",
+    "total": "o7.5 -118 / u8 -110",
+    "moneyline": "Athletics -108 / Padres -105",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
     "tierTwoContext": {
@@ -1948,6 +2509,62 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 686993,
+          "pitcherName": "Justin Sterner",
+          "firstRelieverLikelihood": 74.91,
+          "entriesSample": 6,
+          "firstPitchBallRate": 0.67,
+          "firstPitchStrikeRate": 0.33,
+          "ballRate": 0.5,
+          "reachedRate": 0.33,
+          "freePassRate": 0.17,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 42.89
+        },
+        "home": {
+          "pitcherId": 592094,
+          "pitcherName": "Jason Adam",
+          "firstRelieverLikelihood": 92.7,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0.2,
+          "firstPitchStrikeRate": 0.4,
+          "ballRate": 0.18,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 11.47
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Jeffrey Springs",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.08,
+          "thirdTripScoringDelta": -0.14,
+          "thirdTripRunDeltaDelta": -0.17,
+          "thirdTripHrDelta": -0.03,
+          "thirdTimePenaltyIndex": 24
+        },
+        "home": {
+          "pitcherName": "Walker Buehler",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.23,
+          "thirdTripScoringDelta": 0.09,
+          "thirdTripRunDeltaDelta": 0.06,
+          "thirdTripHrDelta": 0.12,
+          "thirdTimePenaltyIndex": 76.46
+        }
       }
     }
   },
@@ -2059,8 +2676,8 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -130 / -1.5 +116",
-    "total": "o9 -112 / u9 even",
-    "moneyline": "Rockies +155 / Diamondbacks -174",
+    "total": "o9 -115 / u9 -105",
+    "moneyline": "Rockies +158 / Diamondbacks -174",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks",
     "tierTwoContext": {
@@ -2112,6 +2729,62 @@ export const rawGames = [
         "previousMatchups30d": 4,
         "seriesGameNumber": 2,
         "playedYesterdayFlag": true
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 677955,
+          "pitcherName": "Jaden Hill",
+          "firstRelieverLikelihood": 86.52,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0,
+          "firstPitchStrikeRate": 1,
+          "ballRate": 0.1,
+          "reachedRate": 0,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 3.2
+        },
+        "home": {
+          "pitcherId": 657044,
+          "pitcherName": "Ryan Thompson",
+          "firstRelieverLikelihood": 90.53,
+          "entriesSample": 3,
+          "firstPitchBallRate": 0.33,
+          "firstPitchStrikeRate": 0.67,
+          "ballRate": 0.42,
+          "reachedRate": 0.33,
+          "freePassRate": 0,
+          "scoringPlayRate": 0.33,
+          "commandRiskIndex": 34.18
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Tomoyuki Sugano",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.04,
+          "thirdTripScoringDelta": 0.01,
+          "thirdTripRunDeltaDelta": -0.04,
+          "thirdTripHrDelta": -0.08,
+          "thirdTimePenaltyIndex": 25.81
+        },
+        "home": {
+          "pitcherName": "Michael Soroka",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.02,
+          "thirdTripScoringDelta": -0.06,
+          "thirdTripRunDeltaDelta": -0.06,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 26.16
+        }
       }
     }
   },
@@ -2222,8 +2895,8 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -195 / +1.5 -188",
-    "total": "o8.5 -120 / u8.5 +101",
+    "spread": "+1.5 -205 / +1.5 -193",
+    "total": "o8.5 -118 / u8.5 +101",
     "moneyline": "White Sox +104 / Giants -120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants",
@@ -2276,6 +2949,62 @@ export const rawGames = [
         "previousMatchups30d": 0,
         "seriesGameNumber": 1,
         "playedYesterdayFlag": false
+      }
+    },
+    "tierThreeContext": {
+      "bullpenCommand": {
+        "away": {
+          "pitcherId": 670950,
+          "pitcherName": "Trevor Richards",
+          "firstRelieverLikelihood": 84.18,
+          "entriesSample": 3,
+          "firstPitchBallRate": 0.33,
+          "firstPitchStrikeRate": 0.67,
+          "ballRate": 0.41,
+          "reachedRate": 0.33,
+          "freePassRate": 0,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 28.49
+        },
+        "home": {
+          "pitcherId": 656529,
+          "pitcherName": "Sam Hentges",
+          "firstRelieverLikelihood": 84.54,
+          "entriesSample": 5,
+          "firstPitchBallRate": 0.6,
+          "firstPitchStrikeRate": 0.4,
+          "ballRate": 0.52,
+          "reachedRate": 0.2,
+          "freePassRate": 0.2,
+          "scoringPlayRate": 0,
+          "commandRiskIndex": 39.68
+        }
+      },
+      "starterThirdTime": {
+        "away": {
+          "pitcherName": "Davis Martin",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.08,
+          "thirdTripScoringDelta": -0.06,
+          "thirdTripRunDeltaDelta": -0.06,
+          "thirdTripHrDelta": -0.03,
+          "thirdTimePenaltyIndex": 31.39
+        },
+        "home": {
+          "pitcherName": "Trevor McDonald",
+          "windowStarts": 5,
+          "startsSample": 3,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.67,
+          "thirdTripReachedDelta": 0.04,
+          "thirdTripScoringDelta": -0.02,
+          "thirdTripRunDeltaDelta": -0.02,
+          "thirdTripHrDelta": 0.06,
+          "thirdTimePenaltyIndex": 40.79
+        }
       }
     }
   }

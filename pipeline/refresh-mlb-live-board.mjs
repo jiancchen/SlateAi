@@ -51,6 +51,8 @@ const main = () => {
 
   // Refresh rolling bullpen and starter-form context before rebuilding the board.
   runPythonWarehouse('prepare-mlb-day', ['--date', options.date, '--lookback-days', '3'])
+  // Keep Tier 3 research tables collecting automatically even while the live model ignores them.
+  runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
   runNodeScript('generate-mlb-day-files.mjs', generateArgs)
   runNodeScript('export-mlb-lineup-model.mjs', ['--date', options.date])
   runNodeScript('export-home-run-predictions.mjs', ['--date', options.date])

@@ -1,4 +1,4 @@
-import { execSync } from 'node:child_process'
+import { execFileSync, execSync } from 'node:child_process'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -358,8 +358,11 @@ const parseMatchupOdds = async (awayDeskTeam, homeDeskTeam) => {
 }
 
 const runSqliteJson = (sql) => {
-  const command = `sqlite3 -json "${path.join(rootDir, 'data-private', 'warehouse', 'sports.db')}" ${JSON.stringify(sql)}`
-  const output = execSync(command, { encoding: 'utf8', cwd: rootDir })
+  const output = execFileSync(
+    'sqlite3',
+    ['-json', path.join(rootDir, 'data-private', 'warehouse', 'sports.db'), sql],
+    { encoding: 'utf8', cwd: rootDir }
+  )
   return JSON.parse(output || '[]')
 }
 
@@ -616,6 +619,112 @@ const buildSeriesContextByGamePk = ({ date, games }) => {
         previousMatchups30d: Number(row.previous_matchups_30d || 0) || 0,
         seriesGameNumber: Number(row.series_game_number || 0) || null,
         playedYesterdayFlag: Boolean(row.played_yesterday_flag)
+      }
+    ])
+  )
+}
+
+const buildTierThreeBullpenProfilesByTeam = ({ date, games, appearanceWindow = 8 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `with ranked as (
+      select
+        usage.team_name,
+        usage.pitcher_id,
+        usage.pitcher_name,
+        usage.first_reliever_likelihood,
+        usage.availability_score,
+        usage.bridge_score,
+        row_number() over (
+          partition by usage.team_name
+          order by usage.first_reliever_likelihood desc, usage.availability_score desc, usage.bridge_score desc, usage.pitcher_name asc
+        ) as rn
+      from mlb_bullpen_usage usage
+      where usage.as_of_date='${date}'
+        and usage.team_name in (${quotedTeams})
+    )
+    select
+      ranked.team_name,
+      ranked.pitcher_id,
+      ranked.pitcher_name,
+      ranked.first_reliever_likelihood,
+      profile.entries_sample,
+      profile.first_pitch_ball_rate,
+      profile.first_pitch_strike_rate,
+      profile.ball_rate,
+      profile.reached_rate,
+      profile.free_pass_rate,
+      profile.scoring_play_rate,
+      profile.command_risk_index
+    from ranked
+    left join mlb_reliever_first_batter_command_profiles profile
+      on profile.as_of_date='${date}'
+     and profile.team_name=ranked.team_name
+     and profile.pitcher_id=ranked.pitcher_id
+     and profile.appearance_window=${appearanceWindow}
+    where ranked.rn = 1
+    order by ranked.team_name;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+      return [
+        deskTeam,
+        {
+          pitcherId: Number(row.pitcher_id || 0) || null,
+          pitcherName: row.pitcher_name || '',
+          firstRelieverLikelihood: roundMaybe(row.first_reliever_likelihood),
+          entriesSample: Number(row.entries_sample || 0) || 0,
+          firstPitchBallRate: roundMaybe(row.first_pitch_ball_rate),
+          firstPitchStrikeRate: roundMaybe(row.first_pitch_strike_rate),
+          ballRate: roundMaybe(row.ball_rate),
+          reachedRate: roundMaybe(row.reached_rate),
+          freePassRate: roundMaybe(row.free_pass_rate),
+          scoringPlayRate: roundMaybe(row.scoring_play_rate),
+          commandRiskIndex: roundMaybe(row.command_risk_index)
+        }
+      ]
+    })
+  )
+}
+
+const buildStarterThirdTimePenaltyByPitcherId = ({ date, games, windowStarts = 5 }) => {
+  const pitcherIds = [
+    ...new Set(
+      games.flatMap((game) => [game.awayPitcher?.id, game.homePitcher?.id]).filter((value) => Number.isFinite(value))
+    )
+  ]
+
+  if (!pitcherIds.length) return {}
+
+  const rows = runSqliteJson(
+    `select pitcher_id, pitcher_name, window_starts, starts_sample, starts_with_third_trip, third_trip_exposure_rate, third_trip_reached_delta, third_trip_scoring_delta, third_trip_run_delta_delta, third_trip_hr_delta, third_time_penalty_index
+     from mlb_starter_third_time_penalty_profiles
+     where as_of_date='${date}'
+       and window_starts=${windowStarts}
+       and pitcher_id in (${pitcherIds.join(',')})
+     order by pitcher_id;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => [
+      Number(row.pitcher_id),
+      {
+        pitcherName: row.pitcher_name || '',
+        windowStarts: Number(row.window_starts || 0) || null,
+        startsSample: Number(row.starts_sample || 0) || 0,
+        startsWithThirdTrip: Number(row.starts_with_third_trip || 0) || 0,
+        thirdTripExposureRate: roundMaybe(row.third_trip_exposure_rate),
+        thirdTripReachedDelta: roundMaybe(row.third_trip_reached_delta),
+        thirdTripScoringDelta: roundMaybe(row.third_trip_scoring_delta),
+        thirdTripRunDeltaDelta: roundMaybe(row.third_trip_run_delta_delta),
+        thirdTripHrDelta: roundMaybe(row.third_trip_hr_delta),
+        thirdTimePenaltyIndex: roundMaybe(row.third_time_penalty_index)
       }
     ])
   )
@@ -918,6 +1027,8 @@ const main = async () => {
   const starterLeashByPitcherId = buildStarterLeashByPitcherId({ date: options.date, games: rawGames })
   const teamStoryPriorsByTeam = buildTeamStoryPriorsByTeam({ date: options.date, games: rawGames })
   const seriesContextByGamePk = buildSeriesContextByGamePk({ date: options.date, games: rawGames })
+  const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
+  const starterThirdTimePenaltyByPitcherId = buildStarterThirdTimePenaltyByPitcherId({ date: options.date, games: rawGames })
   const standingsContextByTeam = buildStandingsContext(standings.records || [])
   const enrichedRawGames = rawGames.map((game) => ({
     ...game,
@@ -963,6 +1074,16 @@ const main = async () => {
         home: teamStoryPriorsByTeam[game.home] ?? null
       },
       series: Number.isFinite(game.gamePk) ? seriesContextByGamePk[game.gamePk] ?? null : null
+    },
+    tierThreeContext: {
+      bullpenCommand: {
+        away: tierThreeBullpenProfilesByTeam[game.away] ?? null,
+        home: tierThreeBullpenProfilesByTeam[game.home] ?? null
+      },
+      starterThirdTime: {
+        away: Number.isFinite(game.awayPitcher?.id) ? starterThirdTimePenaltyByPitcherId[game.awayPitcher.id] ?? null : null,
+        home: Number.isFinite(game.homePitcher?.id) ? starterThirdTimePenaltyByPitcherId[game.homePitcher.id] ?? null : null
+      }
     }
   }))
 

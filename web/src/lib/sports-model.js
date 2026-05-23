@@ -2956,7 +2956,9 @@ const buildMlbAnalysisContext = (game, participants) => {
       lineupScores,
       projectedHitProfiles,
       starterLeashScores,
-      storyPriors: [game.tierTwoContext?.storyPriors?.away ?? null, game.tierTwoContext?.storyPriors?.home ?? null]
+      storyPriors: [game.tierTwoContext?.storyPriors?.away ?? null, game.tierTwoContext?.storyPriors?.home ?? null],
+      tierThreeBullpenProfiles: [game.tierThreeContext?.bullpenCommand?.away ?? null, game.tierThreeContext?.bullpenCommand?.home ?? null],
+      starterThirdTimeProfiles: [game.tierThreeContext?.starterThirdTime?.away ?? null, game.tierThreeContext?.starterThirdTime?.home ?? null]
     }
   }
 }
@@ -3222,6 +3224,10 @@ const buildMlbDecisionIndicators = ({
   const opponentStarterLeashScore = riskContext.starterLeashScores?.[loserIndex]
   const pickStoryInstability = Number(riskContext.storyPriors?.[winnerIndex]?.storyInstabilityIndex)
   const opponentStoryInstability = Number(riskContext.storyPriors?.[loserIndex]?.storyInstabilityIndex)
+  const pickRelieverCommandRisk = Number(riskContext.tierThreeBullpenProfiles?.[winnerIndex]?.commandRiskIndex)
+  const opponentRelieverCommandRisk = Number(riskContext.tierThreeBullpenProfiles?.[loserIndex]?.commandRiskIndex)
+  const pickThirdTimePenalty = Number(riskContext.starterThirdTimeProfiles?.[winnerIndex]?.thirdTimePenaltyIndex)
+  const opponentThirdTimePenalty = Number(riskContext.starterThirdTimeProfiles?.[loserIndex]?.thirdTimePenaltyIndex)
   const pickLineupPressure = riskContext.lineupProfiles?.[winnerIndex]?.starterPressureIndex
   const opponentLineupPressure = riskContext.lineupProfiles?.[loserIndex]?.starterPressureIndex
   const pickBullpenPitchPressure = riskContext.lineupProfiles?.[winnerIndex]?.bullpenPitchTypePressureIndex
@@ -3255,6 +3261,10 @@ const buildMlbDecisionIndicators = ({
     Number.isFinite(pickBullpenChainScore) && Number.isFinite(opponentBullpenChainScore)
       ? pickBullpenChainScore - opponentBullpenChainScore
       : null
+  const relieverCommandGap =
+    Number.isFinite(pickRelieverCommandRisk) && Number.isFinite(opponentRelieverCommandRisk)
+      ? pickRelieverCommandRisk - opponentRelieverCommandRisk
+      : null
   const starterLeverageIndex = clamp(
     50 +
       (Number.isFinite(starterGap) ? starterGap * 1.15 : 0) +
@@ -3277,6 +3287,11 @@ const buildMlbDecisionIndicators = ({
     0,
     100
   )
+  const bullpenCommandMismatchFlag =
+    Number.isFinite(relieverCommandGap) &&
+    relieverCommandGap >= 6 &&
+    modelEdge >= 8 &&
+    lateInningStabilityIndex <= 55
 
   let reliefPitchingRisk = 36
   let coinflipPressure = 18
@@ -3527,6 +3542,24 @@ const buildMlbDecisionIndicators = ({
     oppStoryInstability: Number.isFinite(opponentStoryInstability)
       ? roundToTenths(opponentStoryInstability)
       : null,
+    pickRelieverCommandRisk: Number.isFinite(pickRelieverCommandRisk)
+      ? roundToTenths(pickRelieverCommandRisk)
+      : null,
+    oppRelieverCommandRisk: Number.isFinite(opponentRelieverCommandRisk)
+      ? roundToTenths(opponentRelieverCommandRisk)
+      : null,
+    relieverCommandGap: Number.isFinite(relieverCommandGap)
+      ? roundToTenths(relieverCommandGap)
+      : null,
+    pickThirdTimePenalty: Number.isFinite(pickThirdTimePenalty)
+      ? roundToTenths(pickThirdTimePenalty)
+      : null,
+    oppThirdTimePenalty: Number.isFinite(opponentThirdTimePenalty)
+      ? roundToTenths(opponentThirdTimePenalty)
+      : null,
+    tierThreeBullpenCommandMismatchFlag: bullpenCommandMismatchFlag,
+    tierThreeSuggestedEdgeHaircut: bullpenCommandMismatchFlag ? 3 : 0,
+    tierThreeSuggestedConfidenceHaircut: bullpenCommandMismatchFlag ? 6 : 0,
     projectedHitConfidence: Number.isFinite(projectedHitConfidence)
       ? roundToTenths(projectedHitConfidence)
       : null,
@@ -3784,6 +3817,14 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           oppStarterLeashScore: mlbIndicators.oppStarterLeashScore,
           pickStoryInstability: mlbIndicators.pickStoryInstability,
           oppStoryInstability: mlbIndicators.oppStoryInstability,
+          pickRelieverCommandRisk: mlbIndicators.pickRelieverCommandRisk,
+          oppRelieverCommandRisk: mlbIndicators.oppRelieverCommandRisk,
+          relieverCommandGap: mlbIndicators.relieverCommandGap,
+          pickThirdTimePenalty: mlbIndicators.pickThirdTimePenalty,
+          oppThirdTimePenalty: mlbIndicators.oppThirdTimePenalty,
+          tierThreeBullpenCommandMismatchFlag: Boolean(mlbIndicators.tierThreeBullpenCommandMismatchFlag),
+          tierThreeSuggestedEdgeHaircut: mlbIndicators.tierThreeSuggestedEdgeHaircut ?? 0,
+          tierThreeSuggestedConfidenceHaircut: mlbIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,
           projectedHitEdgeForPick: mlbIndicators.projectedHitEdgeForPick,
           hitEdgeAgainstPick: mlbIndicators.hitEdgeAgainstPick,
           tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,

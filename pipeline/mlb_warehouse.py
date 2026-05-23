@@ -3913,21 +3913,38 @@ def refresh_tier2_profiles(conn: sqlite3.Connection, through_date: str | None = 
     conn.commit()
 
 
-def refresh_tier3_profiles(conn: sqlite3.Connection, through_date: str | None = None) -> None:
+def refresh_tier3_profiles(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
     init_db(conn)
-    params: tuple[Any, ...] = (through_date,) if through_date else ()
-    date_filter = "WHERE game_date <= ?" if through_date else ""
-    dates = [
-        row["game_date"]
-        for row in conn.execute(f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params).fetchall()
-    ]
-
-    if through_date:
-        conn.execute("DELETE FROM mlb_reliever_first_batter_command_profiles WHERE as_of_date <= ?", (through_date,))
-        conn.execute("DELETE FROM mlb_starter_third_time_penalty_profiles WHERE as_of_date <= ?", (through_date,))
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_reliever_first_batter_command_profiles WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_starter_third_time_penalty_profiles WHERE as_of_date = ?", (as_of_date,))
     else:
-        conn.execute("DELETE FROM mlb_reliever_first_batter_command_profiles")
-        conn.execute("DELETE FROM mlb_starter_third_time_penalty_profiles")
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+
+        if through_date:
+            conn.execute("DELETE FROM mlb_reliever_first_batter_command_profiles WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_starter_third_time_penalty_profiles WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_reliever_first_batter_command_profiles")
+            conn.execute("DELETE FROM mlb_starter_third_time_penalty_profiles")
 
     for as_of_date in dates:
         scheduled_teams = [
@@ -4691,6 +4708,10 @@ def parse_args() -> argparse.Namespace:
         help="Refresh Tier 3 reliever first-batter command and starter third-time-through profile tables.",
     )
     derive_tier3.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
+    derive_tier3.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier Tier 3 rows.",
+    )
 
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
@@ -4801,8 +4822,10 @@ def main() -> None:
             return
 
         if args.command == "derive-tier3-features":
-            refresh_tier3_profiles(conn, args.through_date)
-            if args.through_date:
+            refresh_tier3_profiles(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB Tier 3 feature tables for {args.as_of_date}")
+            elif args.through_date:
                 print(f"Refreshed MLB Tier 3 feature tables through {args.through_date}")
             else:
                 print("Refreshed MLB Tier 3 feature tables for all loaded dates")
