@@ -5,6 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..')
+const season = 2026
 
 const deskToOfficialTeam = {
   Nationals: 'Washington Nationals',
@@ -103,9 +104,33 @@ const formatRate = (value, digits = 3) => {
 
 const toSlug = (value = '') =>
   value
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
+
+const buildBaseballSavantLinks = ({ playerId, fullName, seasonYear, type = 'hitting' } = {}) => {
+  if (!Number.isFinite(Number(playerId))) return null
+
+  const normalizedType = type === 'pitching' ? 'pitching' : 'hitting'
+  const statsSuffix = normalizedType === 'pitching' ? 'r-pitching-mlb' : 'r-hitting-mlb'
+  const playerSlug = toSlug(fullName || `player-${playerId}`) || `player-${playerId}`
+  const playerUrl = `https://baseballsavant.mlb.com/savant-player/${playerSlug}-${Number(playerId)}`
+  const buildStatsUrl = (statsKey) => `${playerUrl}?stats=${statsKey}-${statsSuffix}&season=${seasonYear}`
+
+  return {
+    playerId: Number(playerId),
+    playerUrl,
+    statsSuffix,
+    season: seasonYear,
+    statsUrls: {
+      statcast: buildStatsUrl('statcast'),
+      splits: buildStatsUrl('splits'),
+      gamelogs: buildStatsUrl('gamelogs')
+    }
+  }
+}
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -1149,6 +1174,12 @@ const buildPlayerLineupEntry = ({
     name: lineupPlayer.name,
     position: lineupPlayer.position,
     bats: lineupPlayer.bats,
+    savant: buildBaseballSavantLinks({
+      playerId: lineupPlayer.playerId,
+      fullName: lineupPlayer.name,
+      seasonYear: season,
+      type: 'hitting'
+    }),
     season: seasonStats
       ? {
           gamesPlayed: seasonStats.gamesPlayed,

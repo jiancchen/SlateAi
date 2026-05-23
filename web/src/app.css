@@ -3968,6 +3968,34 @@ h3 {
   line-height: 1.45;
 }
 
+.react-lineup-player-inspection {
+  color: var(--text);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.react-lineup-player-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.react-lineup-player-links a {
+  color: var(--accent);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(82, 214, 179, 0.28);
+}
+
+.react-lineup-player-links a:hover,
+.react-lineup-player-links a:focus-visible {
+  color: var(--heading);
+  border-bottom-color: rgba(255, 255, 255, 0.65);
+}
+
 .react-prop-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));

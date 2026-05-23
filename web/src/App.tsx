@@ -409,6 +409,26 @@ const buildPitcherSummary = (pitcher: AnyRecord = {}, holdConfidence?: number | 
   }
 }
 
+const formatSlashMetric = (value: number | null | undefined, digits = 3) => {
+  if (!Number.isFinite(Number(value))) return 'n/a'
+  return Number(value).toFixed(digits).replace(/^0/, '.')
+}
+
+const buildLineupPlayerInspectionLine = (player: AnyRecord = {}, opposingHand = '') => {
+  const notes = []
+  if (Number.isFinite(Number(player.recent?.ops))) {
+    notes.push(`Recent OPS ${formatSlashMetric(player.recent.ops)}`)
+  }
+  if (Number.isFinite(Number(player.split?.ops))) {
+    const handLabel = opposingHand ? ` vs ${opposingHand}HP` : ''
+    notes.push(`Split OPS ${formatSlashMetric(player.split.ops)}${handLabel}`)
+  }
+  if (Number.isFinite(Number(player.season?.ops))) {
+    notes.push(`Season OPS ${formatSlashMetric(player.season.ops)}`)
+  }
+  return notes.join(' · ')
+}
+
 const buildTeamContextSummary = (team: AnyRecord = {}) => {
   if (!team || (!Number.isFinite(Number(team.wins)) && !Number.isFinite(Number(team.losses)))) return ''
   const record = `${team.wins ?? '-'}-${team.losses ?? '-'}`
@@ -2200,6 +2220,25 @@ function App() {
                             </span>
                           </div>
                           <span>{player.matchupNote} · {player.pitchType?.summary || player.summary}</span>
+                          {buildLineupPlayerInspectionLine(player, lineupTeam.opposingStarter?.hand) ? (
+                            <small className="react-lineup-player-inspection">
+                              {buildLineupPlayerInspectionLine(player, lineupTeam.opposingStarter?.hand)}
+                            </small>
+                          ) : null}
+                          {player.savant?.playerUrl ? (
+                            <div className="react-lineup-player-links">
+                              <a href={player.savant.playerUrl} target="_blank" rel="noreferrer">Savant</a>
+                              {player.savant?.statsUrls?.splits ? (
+                                <a href={player.savant.statsUrls.splits} target="_blank" rel="noreferrer">Splits</a>
+                              ) : null}
+                              {player.savant?.statsUrls?.gamelogs ? (
+                                <a href={player.savant.statsUrls.gamelogs} target="_blank" rel="noreferrer">Logs</a>
+                              ) : null}
+                              {player.savant?.statsUrls?.statcast ? (
+                                <a href={player.savant.statsUrls.statcast} target="_blank" rel="noreferrer">Statcast</a>
+                              ) : null}
+                            </div>
+                          ) : null}
                         </div>
                       ))}
                     </div>
