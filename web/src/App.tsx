@@ -8,11 +8,12 @@ import {
   rankMlbPlayerProps
 } from './lib/sports-model.js'
 import type { HistoryEntry, HistoryRecord } from './lib/history-archive'
+import type { StoryArchiveDay, StoryArchiveGame, StoryTimelineEvent } from './lib/story-archive.generated'
 import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generated'
 import { defaultSlateDayId, loadSlateDay, slateDayManifest, type LoadedSlateDay } from './lib/slate-manifest'
 
 type AnyRecord = Record<string, any>
-type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history'
+type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history' | 'stories'
 type SidebarTabId = 'ticket' | 'markets' | 'sources'
 
 const PARLAY_MIN_LEGS = 2
@@ -23,7 +24,8 @@ const deskTabs: Array<{ id: DeskTabId; label: string }> = [
   { id: 'parlay', label: 'Parlay builder' },
   { id: 'tickets', label: 'Tickets' },
   { id: 'models', label: 'Models' },
-  { id: 'history', label: 'History' }
+  { id: 'history', label: 'History' },
+  { id: 'stories', label: 'Stories' }
 ]
 
 const sidebarTabs: Array<{ id: SidebarTabId; label: string }> = [
@@ -81,7 +83,6 @@ const recommendationModes = [
 ] as const
 
 const builderLeagueOrder = ['MLB', 'Tennis', 'WNBA', 'NBA', 'UFC'] as const
-
 const mlbLogoBase = 'https://raw.githubusercontent.com/MLBAMGames/mlb_teams_logo_svg/main/light'
 const mlbTeamLogoCode: Record<string, string> = {
   'D-backs': 'ari',
@@ -225,6 +226,48 @@ const formatSnapshotTime = (isoString: string) => {
     minute: '2-digit',
     hour12: true
   }).format(new Date(isoString))
+}
+
+const formatStoryFrame = (event?: StoryTimelineEvent | null) => {
+  if (!event) return 'No event loaded'
+  return `${event.half === 'top' ? 'Top' : 'Bot'} ${event.inning}`
+}
+
+const classifyStoryEventTone = (event?: StoryTimelineEvent | null) => {
+  if (!event) return 'neutral'
+  const eventType = (event.eventType || '').toLowerCase()
+  const eventLabel = (event.event || '').toLowerCase()
+  if (event.runDelta > 0 || eventLabel.includes('home run')) return 'scoring'
+  if (eventType.includes('walk') || eventType.includes('hit_by_pitch')) return 'patient'
+  if (
+    eventType.includes('single') ||
+    eventType.includes('double') ||
+    eventType.includes('triple') ||
+    eventType.includes('home_run') ||
+    eventLabel.includes('single') ||
+    eventLabel.includes('double') ||
+    eventLabel.includes('triple')
+  ) {
+    return 'contact'
+  }
+  if (eventType.includes('strikeout')) return 'whiff'
+  if (eventType.includes('field_out') || eventType.includes('double_play') || eventType.includes('force_out')) return 'out'
+  return 'neutral'
+}
+
+const buildStoryTimelineGroups = (timeline: StoryTimelineEvent[]) => {
+  const groups: Array<{ key: string; label: string; events: StoryTimelineEvent[] }> = []
+  timeline.forEach((event) => {
+    const key = `${event.half}-${event.inning}`
+    const label = `${event.half === 'top' ? 'Top' : 'Bottom'} ${event.inning}`
+    const existing = groups[groups.length - 1]
+    if (!existing || existing.key !== key) {
+      groups.push({ key, label, events: [event] })
+      return
+    }
+    existing.events.push(event)
+  })
+  return groups
 }
 
 const getPacificClock = () => {
@@ -529,6 +572,10 @@ function App() {
   const [loadingSlateIds, setLoadingSlateIds] = useState<Record<string, boolean>>({})
   const [historyArchive, setHistoryArchive] = useState<HistoryEntry[]>([])
   const [historyLoaded, setHistoryLoaded] = useState(false)
+  const [storyArchive, setStoryArchive] = useState<StoryArchiveDay[]>([])
+  const [storiesLoaded, setStoriesLoaded] = useState(false)
+  const [activeStoryId, setActiveStoryId] = useState('')
+  const [selectedStoryGamePk, setSelectedStoryGamePk] = useState<number | null>(null)
 
   useEffect(() => {
     const updateClock = () => setPacificClock(getPacificClock())
@@ -588,6 +635,26 @@ function App() {
     }
   }, [activeDeskTab, historyLoaded])
 
+  useEffect(() => {
+    if (storiesLoaded || activeDeskTab !== 'stories') return
+
+    let cancelled = false
+    import('./lib/story-archive.generated')
+      .then((module) => {
+        if (cancelled) return
+        setStoryArchive(module.storyArchive)
+        setActiveStoryId((current) => current || module.storyArchive[module.storyArchive.length - 1]?.id || '')
+        setStoriesLoaded(true)
+      })
+      .catch((error) => {
+        console.error('Failed to load story archive', error)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [activeDeskTab, storiesLoaded])
+
   const activeDayIndex = orderedSlateDays.findIndex((day) => day.id === activeDayShell?.id)
   const slateMeta = activeDay?.slateMeta ?? activeDayShell?.slateMeta ?? { date: 'Slate', isoDate: '' }
   const oddsMeta = activeDay?.oddsMeta ?? { snapshot: pacificClock.label }
@@ -634,6 +701,11 @@ function App() {
   const selectedGame =
     games.find((game: AnyRecord) => game.id === selectedGameId) ?? visibleGames[0] ?? games[0] ?? null
   const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
+  const activeStoryDay = storyArchive.find((entry) => entry.id === activeStoryId) ?? storyArchive[storyArchive.length - 1] ?? null
+  const activeStoryGame =
+    activeStoryDay?.games.find((game) => game.gamePk === selectedStoryGamePk) ?? activeStoryDay?.games[0] ?? null
+  const activeStoryTimeline = activeStoryGame?.timeline ?? []
+  const activeStoryTimelineGroups = useMemo(() => buildStoryTimelineGroups(activeStoryTimeline), [activeStoryTimeline])
   const activeHistoryPropSummary = activeHistoryEntry ? mlbPropPerformanceByDate[activeHistoryEntry.id] ?? null : null
   const activeHistoryMetrics = useMemo(() => {
     if (!activeHistoryEntry) return []
@@ -706,6 +778,67 @@ function App() {
       props: summarize(historyTrendPoints.map((entry) => entry.props))
     }
   }, [historyTrendPoints])
+
+  const storyRailDays = useMemo(() => [...storyArchive].sort((left, right) => right.id.localeCompare(left.id)), [storyArchive])
+
+  const activeStoryMetrics = useMemo(() => {
+    if (!activeStoryDay) return []
+    const games = Number(activeStoryDay.metrics.games || 0)
+    const toneForRate = (count: number, high = 0.45, mid = 0.25) => {
+      if (!games) return 'info'
+      const rate = count / games
+      if (rate >= high) return 'warning'
+      if (rate >= mid) return 'positive'
+      return 'info'
+    }
+
+    return [
+      {
+        label: 'First-inning jolts',
+        value: String(activeStoryDay.metrics.firstInningJolts || 0),
+        note: games ? `${formatPercent(((activeStoryDay.metrics.firstInningJolts || 0) / games) * 100, 0)} of games scored in the 1st` : '',
+        tone: toneForRate(activeStoryDay.metrics.firstInningJolts || 0, 0.35, 0.15)
+      },
+      {
+        label: 'Quiet first 5',
+        value: String(activeStoryDay.metrics.quietFirst5 || 0),
+        note: games ? `${formatPercent(((activeStoryDay.metrics.quietFirst5 || 0) / games) * 100, 0)} stayed muted through five` : '',
+        tone: toneForRate(activeStoryDay.metrics.quietFirst5 || 0, 0.45, 0.25)
+      },
+      {
+        label: 'Bullpen flips',
+        value: String(activeStoryDay.metrics.bullpenFlips || 0),
+        note: games ? `${formatPercent(((activeStoryDay.metrics.bullpenFlips || 0) / games) * 100, 0)} changed after the starter window` : '',
+        tone: toneForRate(activeStoryDay.metrics.bullpenFlips || 0, 0.25, 0.1)
+      },
+      {
+        label: 'Comeback wins',
+        value: String(activeStoryDay.metrics.comebackWins || 0),
+        note: games ? `${formatPercent(((activeStoryDay.metrics.comebackWins || 0) / games) * 100, 0)} required a comeback` : '',
+        tone: toneForRate(activeStoryDay.metrics.comebackWins || 0, 0.35, 0.15)
+      },
+      {
+        label: 'Runs: first 5 / final',
+        value: `${activeStoryDay.metrics.totalRunsFirst5 || 0} / ${activeStoryDay.metrics.totalRunsFinal || 0}`,
+        note: 'Quick read on early suppression vs full-game release',
+        tone: 'positive'
+      },
+      {
+        label: 'Captured events',
+        value: `${activeStoryDay.metrics.plateAppearances || 0} PA`,
+        note: `${activeStoryDay.metrics.pitchEvents || 0} pitch events warehoused`,
+        tone: 'info'
+      }
+    ]
+  }, [activeStoryDay])
+
+  useEffect(() => {
+    if (!activeStoryDay?.games?.length) return
+    setSelectedStoryGamePk((current) => {
+      if (current && activeStoryDay.games.some((game) => game.gamePk === current)) return current
+      return activeStoryDay.games[0]?.gamePk ?? null
+    })
+  }, [activeStoryDay?.id, activeStoryDay?.games])
 
   const trendChartWidth = 760
   const trendChartHeight = 220
@@ -3102,6 +3235,248 @@ function App() {
                     ))}
                   </div>
                 </section>
+              </>
+            ) : null}
+          </section>
+        </div>
+      ) : null}
+
+      {activeDeskTab === 'stories' ? (
+        <div className="desk-tool-workspace history-workspace stories-workspace">
+          <section className="workspace-panel history-rail">
+            <div className="history-rail-header">
+              <div>
+                <p className="eyebrow">Stories</p>
+                <h3>MLB script archive through May 21</h3>
+                <p className="react-section-copy">
+                  Derived from warehoused plate appearances and pitch events so we can study how games actually broke, not just who won.
+                </p>
+              </div>
+              <span className="mono history-archive-count">{storyArchive.length} days</span>
+            </div>
+
+            <div className="history-rail-list no-scrollbar">
+              {!storiesLoaded ? <p className="react-section-copy">Loading story archive…</p> : null}
+              {storyRailDays.map((day) => (
+                <button
+                  key={day.id}
+                  type="button"
+                  className={`history-row ${activeStoryDay?.id === day.id ? 'active' : ''}`}
+                  onClick={() => setActiveStoryId(day.id)}
+                >
+                  <div className="history-row-topline">
+                    <span className="mono">{day.date}</span>
+                    <span className="history-status-pill graded">{day.metrics.games} games</span>
+                  </div>
+                  <strong>{day.headline}</strong>
+                  <p>
+                    {day.metrics.quietFirst5} quiet first-5 scripts | {day.metrics.bullpenFlips} bullpen flips | {day.metrics.comebackWins} comeback wins
+                  </p>
+                  <div className="history-row-tags">
+                    <span>PA {day.metrics.plateAppearances}</span>
+                    <span>Pitches {day.metrics.pitchEvents}</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          <section className="workspace-panel history-detail">
+            {!storiesLoaded ? (
+              <p className="react-section-copy">Loading story detail…</p>
+            ) : activeStoryDay ? (
+              <>
+                <div className="history-detail-header">
+                  <div>
+                    <p className="eyebrow">Story detail</p>
+                    <h2>{activeStoryDay.date}</h2>
+                    <p className="react-section-copy">{activeStoryDay.headline}</p>
+                  </div>
+                  <div className="history-sports mono">
+                    <span>MLB</span>
+                    <span>{activeStoryDay.metrics.games} games</span>
+                  </div>
+                </div>
+
+                <div className="history-metric-grid">
+                  {activeStoryMetrics.map((metric) => (
+                    <article key={`${activeStoryDay.id}-${metric.label}`} className={`parlay-stat-card history-metric-card ${getHistoryMetricTone(metric)}`}>
+                      <span className="parlay-stat-label">{metric.label}</span>
+                      <strong>{metric.value}</strong>
+                      {metric.note ? <small>{metric.note}</small> : null}
+                    </article>
+                  ))}
+                </div>
+
+                <div className="history-section-grid story-section-grid">
+                  <section className="action-section story-section-span">
+                    <div className="action-section-header">
+                      <h3>Game event log</h3>
+                      <span>{activeStoryGame ? `${activeStoryGame.title} · ${activeStoryTimeline.length} events` : 'No game selected'}</span>
+                    </div>
+
+                    {activeStoryGame ? (
+                      <div className="story-log-shell">
+                        <div className="story-log-picker">
+                          {activeStoryDay.games.map((game) => (
+                            <button
+                              key={`${activeStoryDay.id}-pick-${game.gamePk}`}
+                              type="button"
+                              className={`history-chip ${activeStoryGame.gamePk === game.gamePk ? 'active' : ''}`}
+                              onClick={() => setSelectedStoryGamePk(game.gamePk)}
+                            >
+                              {game.awayTeam.split(' ').slice(-1)[0]} @ {game.homeTeam.split(' ').slice(-1)[0]}
+                            </button>
+                          ))}
+                        </div>
+
+                        <div className="story-log-summary">
+                          <article className="history-ledger-card">
+                            <span className="parlay-stat-label">Final score</span>
+                            <strong>
+                              {activeStoryGame.awayTeam} {activeStoryGame.summary?.awayRuns ?? 0} - {activeStoryGame.summary?.homeRuns ?? 0} {activeStoryGame.homeTeam}
+                            </strong>
+                            <small>{activeStoryGame.winnerTeam ? `${activeStoryGame.winnerTeam} won the game` : 'Final result unavailable'}</small>
+                          </article>
+                          <article className="history-ledger-card">
+                            <span className="parlay-stat-label">Story tags</span>
+                            <strong>{activeStoryGame.tags.length ? activeStoryGame.tags.join(' · ') : 'No script tags'}</strong>
+                            <small>
+                              First scoring inning {activeStoryGame.firstScoringInning || '—'} · lead changes {activeStoryGame.leadChanges || 0}
+                            </small>
+                          </article>
+                          <article className="history-ledger-card">
+                            <span className="parlay-stat-label">Run split</span>
+                            <strong>{activeStoryGame.totalRunsFirst5} first 5 · {activeStoryGame.totalRunsFinal} final</strong>
+                            <small>
+                              HR starter / relief: {activeStoryGame.hrOffStarters} / {activeStoryGame.hrOffRelievers}
+                            </small>
+                          </article>
+                        </div>
+
+                        <div className="story-log-groups">
+                          {activeStoryTimelineGroups.map((group) => (
+                            <section key={`${activeStoryGame.gamePk}-${group.key}`} className="story-log-group">
+                              <div className="story-log-group-head">
+                                <h4>{group.label}</h4>
+                                <span className="history-status-pill graded">{group.events.length} plays</span>
+                              </div>
+                              <div className="story-log-events">
+                                {group.events.map((event) => (
+                                  <article
+                                    key={`${activeStoryGame.gamePk}-${group.key}-${event.atBatIndex}`}
+                                    className={`story-log-event tone-${classifyStoryEventTone(event)}`}
+                                  >
+                                    <div className="story-log-event-topline">
+                                      <span className="mono">
+                                        {event.half === 'top' ? 'T' : 'B'}
+                                        {event.inning}
+                                      </span>
+                                      <strong>{event.event}</strong>
+                                      <span className="mono">
+                                        {event.awayScore}-{event.homeScore}
+                                      </span>
+                                    </div>
+                                    <p>{event.description}</p>
+                                    <div className="story-log-tags">
+                                      <span>{event.battingTeam}</span>
+                                      <span>
+                                        {event.batterName} vs {event.pitcherName}
+                                      </span>
+                                      <span>{event.outs} outs</span>
+                                      <span>{event.baseState || 'Empty'}</span>
+                                      {event.runDelta > 0 ? <span>+{event.runDelta} run</span> : null}
+                                      {event.isScoringPlay ? <span>Scoring play</span> : null}
+                                    </div>
+                                  </article>
+                                ))}
+                              </div>
+                            </section>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <p className="react-section-copy">No game story is available on this day.</p>
+                    )}
+                  </section>
+
+                  <section className="action-section story-section-span">
+                    <div className="action-section-header">
+                      <h3>Game stories</h3>
+                      <span>{activeStoryDay.games.length}</span>
+                    </div>
+                    <div className="story-game-grid">
+                      {activeStoryDay.games.map((game) => (
+                        <article key={`${activeStoryDay.id}-${game.gamePk}`} className={`story-game-card ${activeStoryGame?.gamePk === game.gamePk ? 'active' : ''}`}>
+                          <div className="story-game-head">
+                            <div>
+                              <strong>{game.title}</strong>
+                              <p className="react-section-copy">
+                                {game.winnerTeam} over {game.loserTeam}
+                              </p>
+                            </div>
+                            <span className="history-status-pill graded">
+                              {game.totalRunsFinal} runs
+                            </span>
+                          </div>
+                          <div className="history-chip-row">
+                            <button
+                              type="button"
+                              className={`history-chip ${activeStoryGame?.gamePk === game.gamePk ? 'active' : ''}`}
+                              onClick={() => setSelectedStoryGamePk(game.gamePk)}
+                            >
+                              Load playback
+                            </button>
+                          </div>
+                          <div className="story-summary-grid">
+                            <div>
+                              <span className="parlay-stat-label">Lead after 5</span>
+                              <strong>{game.leadAfter5Team || 'Tied / none'}</strong>
+                            </div>
+                            <div>
+                              <span className="parlay-stat-label">First scoring inning</span>
+                              <strong>{game.firstScoringInning || 'No scoring'}</strong>
+                            </div>
+                            <div>
+                              <span className="parlay-stat-label">Lead changes</span>
+                              <strong>{game.leadChanges}</strong>
+                            </div>
+                            <div>
+                              <span className="parlay-stat-label">Max comeback</span>
+                              <strong>{game.maxComebackRuns}</strong>
+                            </div>
+                            <div>
+                              <span className="parlay-stat-label">Runs first 5</span>
+                              <strong>{game.totalRunsFirst5}</strong>
+                            </div>
+                            <div>
+                              <span className="parlay-stat-label">HR starter / relief</span>
+                              <strong>
+                                {game.hrOffStarters} / {game.hrOffRelievers}
+                              </strong>
+                            </div>
+                          </div>
+                          {game.tags?.length ? (
+                            <div className="history-chip-row">
+                              {game.tags.map((tag: string) => (
+                                <span key={`${game.gamePk}-${tag}`} className="history-chip">
+                                  {tag}
+                                </span>
+                              ))}
+                            </div>
+                          ) : null}
+                          <p className="react-section-copy">
+                            {game.summary?.headline || 'Story summary unavailable'}.
+                            {game.summary?.firstInningRuns !== undefined ? ` First inning runs: ${game.summary.firstInningRuns}.` : ''}
+                            {game.summary?.awayRunsFirst5 !== undefined && game.summary?.homeRunsFirst5 !== undefined
+                              ? ` First 5 split: ${game.title.split(' @ ')[0]} ${game.summary.awayRunsFirst5}, ${game.title.split(' @ ')[1]} ${game.summary.homeRunsFirst5}.`
+                              : ''}
+                          </p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+                </div>
               </>
             ) : null}
           </section>

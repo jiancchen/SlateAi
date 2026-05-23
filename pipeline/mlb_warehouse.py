@@ -198,6 +198,81 @@ CREATE TABLE IF NOT EXISTS mlb_pitcher_appearances (
   PRIMARY KEY (game_pk, team_role, pitcher_id)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_plate_appearances (
+  game_pk INTEGER NOT NULL,
+  at_bat_index INTEGER NOT NULL,
+  game_date TEXT NOT NULL,
+  inning INTEGER,
+  half_inning TEXT,
+  batting_team TEXT,
+  fielding_team TEXT,
+  batting_team_role TEXT,
+  fielding_team_role TEXT,
+  outs_before INTEGER,
+  outs_after INTEGER,
+  balls_final INTEGER,
+  strikes_final INTEGER,
+  batter_id INTEGER,
+  batter_name TEXT,
+  pitcher_id INTEGER,
+  pitcher_name TEXT,
+  batter_side TEXT,
+  pitch_hand TEXT,
+  men_on_base TEXT,
+  base_state_start TEXT,
+  base_state_end TEXT,
+  event TEXT,
+  event_type TEXT,
+  description TEXT,
+  rbi INTEGER,
+  is_scoring_play INTEGER,
+  is_out INTEGER,
+  is_at_bat INTEGER,
+  away_score_before INTEGER,
+  home_score_before INTEGER,
+  away_score_after INTEGER,
+  home_score_after INTEGER,
+  run_delta INTEGER,
+  start_time TEXT,
+  end_time TEXT,
+  raw_json TEXT,
+  PRIMARY KEY (game_pk, at_bat_index)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_pitch_events (
+  game_pk INTEGER NOT NULL,
+  at_bat_index INTEGER NOT NULL,
+  event_index INTEGER NOT NULL,
+  game_date TEXT NOT NULL,
+  inning INTEGER,
+  half_inning TEXT,
+  batting_team TEXT,
+  fielding_team TEXT,
+  batter_id INTEGER,
+  pitcher_id INTEGER,
+  pitch_number INTEGER,
+  balls INTEGER,
+  strikes INTEGER,
+  outs INTEGER,
+  is_pitch INTEGER,
+  event_type TEXT,
+  call_code TEXT,
+  call_description TEXT,
+  pitch_type_code TEXT,
+  pitch_type_description TEXT,
+  is_in_play INTEGER,
+  is_strike INTEGER,
+  is_ball INTEGER,
+  start_speed REAL,
+  end_speed REAL,
+  zone INTEGER,
+  play_id TEXT,
+  start_time TEXT,
+  end_time TEXT,
+  raw_json TEXT,
+  PRIMARY KEY (game_pk, at_bat_index, event_index)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_game_outcomes (
   game_pk INTEGER PRIMARY KEY,
   game_date TEXT NOT NULL,
@@ -223,6 +298,36 @@ CREATE TABLE IF NOT EXISTS mlb_game_outcomes (
   total_runs_final INTEGER,
   total_runs_first5 INTEGER,
   raw_json TEXT
+);
+
+CREATE TABLE IF NOT EXISTS mlb_game_story_signals (
+  game_pk INTEGER PRIMARY KEY,
+  game_date TEXT NOT NULL,
+  away_team TEXT NOT NULL,
+  home_team TEXT NOT NULL,
+  winner_team TEXT,
+  loser_team TEXT,
+  lead_after5_team TEXT,
+  comeback_win_flag INTEGER,
+  bullpen_flip_flag INTEGER,
+  first_inning_jolt_flag INTEGER,
+  quiet_first5_flag INTEGER,
+  late_break_flag INTEGER,
+  first_scoring_inning INTEGER,
+  lead_changes INTEGER,
+  max_comeback_runs INTEGER,
+  hr_off_starters INTEGER,
+  hr_off_relievers INTEGER,
+  away_starter_cracked_flag INTEGER,
+  home_starter_cracked_flag INTEGER,
+  away_traffic_no_conversion_flag INTEGER,
+  home_traffic_no_conversion_flag INTEGER,
+  away_plate_appearances INTEGER,
+  home_plate_appearances INTEGER,
+  total_runs_first5 INTEGER,
+  total_runs_final INTEGER,
+  story_tags_json TEXT,
+  summary_json TEXT
 );
 
 CREATE TABLE IF NOT EXISTS statcast_hr_leaderboard_snapshots (
@@ -1057,6 +1162,166 @@ def extract_pitcher_appearance_rows(
     return rows
 
 
+def _encode_base_state(bases: set[str]) -> str:
+    if not bases:
+        return "Empty"
+    order = ["1B", "2B", "3B"]
+    return "-".join(base for base in order if base in bases)
+
+
+def _starting_bases_from_runners(play: dict[str, Any]) -> set[str]:
+    bases: set[str] = set()
+    for runner in play.get("runners") or []:
+        movement = runner.get("movement") or {}
+        start = movement.get("start") or movement.get("originBase")
+        if start in {"1B", "2B", "3B"}:
+            bases.add(start)
+    return bases
+
+
+def _ending_bases_from_matchup(play: dict[str, Any]) -> set[str]:
+    matchup = play.get("matchup") or {}
+    bases: set[str] = set()
+    if matchup.get("postOnFirst"):
+        bases.add("1B")
+    if matchup.get("postOnSecond"):
+        bases.add("2B")
+    if matchup.get("postOnThird"):
+        bases.add("3B")
+    return bases
+
+
+def extract_plate_appearance_rows(
+    game: dict[str, Any], feed_game: dict[str, Any], date_text: str
+) -> list[dict[str, Any]]:
+    away_team = game["teams"]["away"]["team"]["name"]
+    home_team = game["teams"]["home"]["team"]["name"]
+    rows: list[dict[str, Any]] = []
+    away_score_before = 0
+    home_score_before = 0
+
+    for play in ((feed_game.get("liveData") or {}).get("plays") or {}).get("allPlays", []):
+        about = play.get("about") or {}
+        result = play.get("result") or {}
+        count = play.get("count") or {}
+        matchup = play.get("matchup") or {}
+        is_top = bool(about.get("isTopInning"))
+        away_score_after = to_int(result.get("awayScore"))
+        home_score_after = to_int(result.get("homeScore"))
+        if away_score_after is None:
+            away_score_after = away_score_before
+        if home_score_after is None:
+            home_score_after = home_score_before
+        start_bases = _starting_bases_from_runners(play)
+        end_bases = _ending_bases_from_matchup(play)
+
+        rows.append(
+            {
+                "game_pk": game["gamePk"],
+                "at_bat_index": to_int(about.get("atBatIndex")),
+                "game_date": date_text,
+                "inning": to_int(about.get("inning")),
+                "half_inning": about.get("halfInning"),
+                "batting_team": away_team if is_top else home_team,
+                "fielding_team": home_team if is_top else away_team,
+                "batting_team_role": "away" if is_top else "home",
+                "fielding_team_role": "home" if is_top else "away",
+                "outs_before": max((to_int(count.get("outs")) or 0) - (1 if result.get("isOut") else 0), 0),
+                "outs_after": to_int(count.get("outs")),
+                "balls_final": to_int(count.get("balls")),
+                "strikes_final": to_int(count.get("strikes")),
+                "batter_id": to_int((matchup.get("batter") or {}).get("id")),
+                "batter_name": (matchup.get("batter") or {}).get("fullName"),
+                "pitcher_id": to_int((matchup.get("pitcher") or {}).get("id")),
+                "pitcher_name": (matchup.get("pitcher") or {}).get("fullName"),
+                "batter_side": ((matchup.get("batSide") or {}).get("code")) or "",
+                "pitch_hand": ((matchup.get("pitchHand") or {}).get("code")) or "",
+                "men_on_base": (((matchup.get("splits") or {}).get("menOnBase")) or ""),
+                "base_state_start": _encode_base_state(start_bases),
+                "base_state_end": _encode_base_state(end_bases),
+                "event": result.get("event"),
+                "event_type": result.get("eventType"),
+                "description": result.get("description"),
+                "rbi": to_int(result.get("rbi")) or 0,
+                "is_scoring_play": 1 if about.get("isScoringPlay") else 0,
+                "is_out": 1 if result.get("isOut") else 0,
+                "is_at_bat": 1 if play_counts_as_at_bat(play) else 0,
+                "away_score_before": away_score_before,
+                "home_score_before": home_score_before,
+                "away_score_after": away_score_after,
+                "home_score_after": home_score_after,
+                "run_delta": max(away_score_after - away_score_before, 0) + max(home_score_after - home_score_before, 0),
+                "start_time": about.get("startTime"),
+                "end_time": about.get("endTime"),
+                "raw_json": json.dumps(play, sort_keys=True),
+            }
+        )
+
+        away_score_before = away_score_after
+        home_score_before = home_score_after
+
+    return rows
+
+
+def extract_pitch_event_rows(
+    game: dict[str, Any], feed_game: dict[str, Any], date_text: str
+) -> list[dict[str, Any]]:
+    away_team = game["teams"]["away"]["team"]["name"]
+    home_team = game["teams"]["home"]["team"]["name"]
+    rows: list[dict[str, Any]] = []
+
+    for play in ((feed_game.get("liveData") or {}).get("plays") or {}).get("allPlays", []):
+        about = play.get("about") or {}
+        matchup = play.get("matchup") or {}
+        is_top = bool(about.get("isTopInning"))
+        at_bat_index = to_int(about.get("atBatIndex"))
+        if at_bat_index is None:
+            continue
+
+        for event in play.get("playEvents") or []:
+            details = event.get("details") or {}
+            pitch_data = event.get("pitchData") or {}
+            count = event.get("count") or {}
+            pitch_type = details.get("type") or {}
+            call = details.get("call") or {}
+            rows.append(
+                {
+                    "game_pk": game["gamePk"],
+                    "at_bat_index": at_bat_index,
+                    "event_index": to_int(event.get("index")) or 0,
+                    "game_date": date_text,
+                    "inning": to_int(about.get("inning")),
+                    "half_inning": about.get("halfInning"),
+                    "batting_team": away_team if is_top else home_team,
+                    "fielding_team": home_team if is_top else away_team,
+                    "batter_id": to_int((matchup.get("batter") or {}).get("id")),
+                    "pitcher_id": to_int((matchup.get("pitcher") or {}).get("id")),
+                    "pitch_number": to_int(event.get("pitchNumber")),
+                    "balls": to_int(count.get("balls")),
+                    "strikes": to_int(count.get("strikes")),
+                    "outs": to_int(count.get("outs")),
+                    "is_pitch": 1 if event.get("isPitch") else 0,
+                    "event_type": details.get("eventType") or event.get("type"),
+                    "call_code": call.get("code") or details.get("code"),
+                    "call_description": call.get("description") or details.get("description"),
+                    "pitch_type_code": pitch_type.get("code"),
+                    "pitch_type_description": pitch_type.get("description"),
+                    "is_in_play": 1 if details.get("isInPlay") else 0,
+                    "is_strike": 1 if details.get("isStrike") else 0,
+                    "is_ball": 1 if details.get("isBall") else 0,
+                    "start_speed": to_float(pitch_data.get("startSpeed")),
+                    "end_speed": to_float(pitch_data.get("endSpeed")),
+                    "zone": to_int(pitch_data.get("zone")),
+                    "play_id": event.get("playId"),
+                    "start_time": event.get("startTime"),
+                    "end_time": event.get("endTime"),
+                    "raw_json": json.dumps(event, sort_keys=True),
+                }
+            )
+
+    return rows
+
+
 def build_outcome_row(date_text: str, away_row: dict[str, Any], home_row: dict[str, Any]) -> dict[str, Any]:
     return {
         "game_pk": away_row["game_pk"],
@@ -1338,6 +1603,169 @@ def upsert_team_game_stats(conn: sqlite3.Connection, row: dict[str, Any]) -> Non
     )
 
 
+def upsert_plate_appearance(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO mlb_plate_appearances (
+          game_pk, at_bat_index, game_date, inning, half_inning, batting_team, fielding_team,
+          batting_team_role, fielding_team_role, outs_before, outs_after, balls_final, strikes_final,
+          batter_id, batter_name, pitcher_id, pitcher_name, batter_side, pitch_hand, men_on_base,
+          base_state_start, base_state_end, event, event_type, description, rbi, is_scoring_play,
+          is_out, is_at_bat, away_score_before, home_score_before, away_score_after, home_score_after,
+          run_delta, start_time, end_time, raw_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk, at_bat_index) DO UPDATE SET
+          game_date=excluded.game_date,
+          inning=excluded.inning,
+          half_inning=excluded.half_inning,
+          batting_team=excluded.batting_team,
+          fielding_team=excluded.fielding_team,
+          batting_team_role=excluded.batting_team_role,
+          fielding_team_role=excluded.fielding_team_role,
+          outs_before=excluded.outs_before,
+          outs_after=excluded.outs_after,
+          balls_final=excluded.balls_final,
+          strikes_final=excluded.strikes_final,
+          batter_id=excluded.batter_id,
+          batter_name=excluded.batter_name,
+          pitcher_id=excluded.pitcher_id,
+          pitcher_name=excluded.pitcher_name,
+          batter_side=excluded.batter_side,
+          pitch_hand=excluded.pitch_hand,
+          men_on_base=excluded.men_on_base,
+          base_state_start=excluded.base_state_start,
+          base_state_end=excluded.base_state_end,
+          event=excluded.event,
+          event_type=excluded.event_type,
+          description=excluded.description,
+          rbi=excluded.rbi,
+          is_scoring_play=excluded.is_scoring_play,
+          is_out=excluded.is_out,
+          is_at_bat=excluded.is_at_bat,
+          away_score_before=excluded.away_score_before,
+          home_score_before=excluded.home_score_before,
+          away_score_after=excluded.away_score_after,
+          home_score_after=excluded.home_score_after,
+          run_delta=excluded.run_delta,
+          start_time=excluded.start_time,
+          end_time=excluded.end_time,
+          raw_json=excluded.raw_json
+        """,
+        (
+            row["game_pk"],
+            row["at_bat_index"],
+            row["game_date"],
+            row["inning"],
+            row["half_inning"],
+            row["batting_team"],
+            row["fielding_team"],
+            row["batting_team_role"],
+            row["fielding_team_role"],
+            row["outs_before"],
+            row["outs_after"],
+            row["balls_final"],
+            row["strikes_final"],
+            row["batter_id"],
+            row["batter_name"],
+            row["pitcher_id"],
+            row["pitcher_name"],
+            row["batter_side"],
+            row["pitch_hand"],
+            row["men_on_base"],
+            row["base_state_start"],
+            row["base_state_end"],
+            row["event"],
+            row["event_type"],
+            row["description"],
+            row["rbi"],
+            row["is_scoring_play"],
+            row["is_out"],
+            row["is_at_bat"],
+            row["away_score_before"],
+            row["home_score_before"],
+            row["away_score_after"],
+            row["home_score_after"],
+            row["run_delta"],
+            row["start_time"],
+            row["end_time"],
+            row["raw_json"],
+        ),
+    )
+
+
+def upsert_pitch_event(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO mlb_pitch_events (
+          game_pk, at_bat_index, event_index, game_date, inning, half_inning, batting_team, fielding_team,
+          batter_id, pitcher_id, pitch_number, balls, strikes, outs, is_pitch, event_type, call_code,
+          call_description, pitch_type_code, pitch_type_description, is_in_play, is_strike, is_ball,
+          start_speed, end_speed, zone, play_id, start_time, end_time, raw_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk, at_bat_index, event_index) DO UPDATE SET
+          game_date=excluded.game_date,
+          inning=excluded.inning,
+          half_inning=excluded.half_inning,
+          batting_team=excluded.batting_team,
+          fielding_team=excluded.fielding_team,
+          batter_id=excluded.batter_id,
+          pitcher_id=excluded.pitcher_id,
+          pitch_number=excluded.pitch_number,
+          balls=excluded.balls,
+          strikes=excluded.strikes,
+          outs=excluded.outs,
+          is_pitch=excluded.is_pitch,
+          event_type=excluded.event_type,
+          call_code=excluded.call_code,
+          call_description=excluded.call_description,
+          pitch_type_code=excluded.pitch_type_code,
+          pitch_type_description=excluded.pitch_type_description,
+          is_in_play=excluded.is_in_play,
+          is_strike=excluded.is_strike,
+          is_ball=excluded.is_ball,
+          start_speed=excluded.start_speed,
+          end_speed=excluded.end_speed,
+          zone=excluded.zone,
+          play_id=excluded.play_id,
+          start_time=excluded.start_time,
+          end_time=excluded.end_time,
+          raw_json=excluded.raw_json
+        """,
+        (
+            row["game_pk"],
+            row["at_bat_index"],
+            row["event_index"],
+            row["game_date"],
+            row["inning"],
+            row["half_inning"],
+            row["batting_team"],
+            row["fielding_team"],
+            row["batter_id"],
+            row["pitcher_id"],
+            row["pitch_number"],
+            row["balls"],
+            row["strikes"],
+            row["outs"],
+            row["is_pitch"],
+            row["event_type"],
+            row["call_code"],
+            row["call_description"],
+            row["pitch_type_code"],
+            row["pitch_type_description"],
+            row["is_in_play"],
+            row["is_strike"],
+            row["is_ball"],
+            row["start_speed"],
+            row["end_speed"],
+            row["zone"],
+            row["play_id"],
+            row["start_time"],
+            row["end_time"],
+            row["raw_json"],
+        ),
+    )
+
+
 def upsert_player_game_batting(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
     conn.execute(
         """
@@ -1477,6 +1905,311 @@ def upsert_game_outcome(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
     )
 
 
+def upsert_game_story_signal(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO mlb_game_story_signals (
+          game_pk, game_date, away_team, home_team, winner_team, loser_team, lead_after5_team,
+          comeback_win_flag, bullpen_flip_flag, first_inning_jolt_flag, quiet_first5_flag, late_break_flag,
+          first_scoring_inning, lead_changes, max_comeback_runs, hr_off_starters, hr_off_relievers,
+          away_starter_cracked_flag, home_starter_cracked_flag, away_traffic_no_conversion_flag,
+          home_traffic_no_conversion_flag, away_plate_appearances, home_plate_appearances,
+          total_runs_first5, total_runs_final, story_tags_json, summary_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk) DO UPDATE SET
+          game_date=excluded.game_date,
+          away_team=excluded.away_team,
+          home_team=excluded.home_team,
+          winner_team=excluded.winner_team,
+          loser_team=excluded.loser_team,
+          lead_after5_team=excluded.lead_after5_team,
+          comeback_win_flag=excluded.comeback_win_flag,
+          bullpen_flip_flag=excluded.bullpen_flip_flag,
+          first_inning_jolt_flag=excluded.first_inning_jolt_flag,
+          quiet_first5_flag=excluded.quiet_first5_flag,
+          late_break_flag=excluded.late_break_flag,
+          first_scoring_inning=excluded.first_scoring_inning,
+          lead_changes=excluded.lead_changes,
+          max_comeback_runs=excluded.max_comeback_runs,
+          hr_off_starters=excluded.hr_off_starters,
+          hr_off_relievers=excluded.hr_off_relievers,
+          away_starter_cracked_flag=excluded.away_starter_cracked_flag,
+          home_starter_cracked_flag=excluded.home_starter_cracked_flag,
+          away_traffic_no_conversion_flag=excluded.away_traffic_no_conversion_flag,
+          home_traffic_no_conversion_flag=excluded.home_traffic_no_conversion_flag,
+          away_plate_appearances=excluded.away_plate_appearances,
+          home_plate_appearances=excluded.home_plate_appearances,
+          total_runs_first5=excluded.total_runs_first5,
+          total_runs_final=excluded.total_runs_final,
+          story_tags_json=excluded.story_tags_json,
+          summary_json=excluded.summary_json
+        """,
+        (
+            row["game_pk"],
+            row["game_date"],
+            row["away_team"],
+            row["home_team"],
+            row["winner_team"],
+            row["loser_team"],
+            row["lead_after5_team"],
+            row["comeback_win_flag"],
+            row["bullpen_flip_flag"],
+            row["first_inning_jolt_flag"],
+            row["quiet_first5_flag"],
+            row["late_break_flag"],
+            row["first_scoring_inning"],
+            row["lead_changes"],
+            row["max_comeback_runs"],
+            row["hr_off_starters"],
+            row["hr_off_relievers"],
+            row["away_starter_cracked_flag"],
+            row["home_starter_cracked_flag"],
+            row["away_traffic_no_conversion_flag"],
+            row["home_traffic_no_conversion_flag"],
+            row["away_plate_appearances"],
+            row["home_plate_appearances"],
+            row["total_runs_first5"],
+            row["total_runs_final"],
+            row["story_tags_json"],
+            row["summary_json"],
+        ),
+    )
+
+
+def _winner_and_loser_from_outcome(outcome: sqlite3.Row) -> tuple[str | None, str | None]:
+    away_runs = outcome["away_runs_final"] or 0
+    home_runs = outcome["home_runs_final"] or 0
+    if away_runs > home_runs:
+        return outcome["away_team"], outcome["home_team"]
+    if home_runs > away_runs:
+        return outcome["home_team"], outcome["away_team"]
+    return None, None
+
+
+def _lead_after_five(team_rows: dict[str, sqlite3.Row], away_team: str, home_team: str) -> str | None:
+    away_first5 = team_rows["away"]["runs_scored_first5"] or 0
+    home_first5 = team_rows["home"]["runs_scored_first5"] or 0
+    if away_first5 > home_first5:
+        return away_team
+    if home_first5 > away_first5:
+        return home_team
+    return None
+
+
+def _starter_cracked_flag(starter_row: sqlite3.Row | None) -> int:
+    if not starter_row:
+        return 0
+    innings = starter_row["innings_pitched"] or 0.0
+    earned_runs = starter_row["earned_runs"] or 0
+    outs = starter_row["outs_recorded"] or 0
+    if innings < 4.5 and earned_runs >= 3:
+        return 1
+    if outs < 12 and (starter_row["runs_allowed"] or 0) >= 3:
+        return 1
+    return 0
+
+
+def build_game_story_signal_row(
+    game_row: sqlite3.Row,
+    outcome: sqlite3.Row,
+    team_rows: dict[str, sqlite3.Row],
+    plate_rows: list[sqlite3.Row],
+    starter_rows: dict[str, sqlite3.Row],
+    hr_role_counts: dict[str, int],
+) -> dict[str, Any]:
+    away_team = game_row["away_team"]
+    home_team = game_row["home_team"]
+    winner_team, loser_team = _winner_and_loser_from_outcome(outcome)
+    lead_after5_team = _lead_after_five(team_rows, away_team, home_team)
+    first_inning_runs = sum((row["run_delta"] or 0) for row in plate_rows if (row["inning"] or 0) == 1)
+    first_scoring_play = next((row for row in plate_rows if (row["run_delta"] or 0) > 0), None)
+    first_scoring_inning = first_scoring_play["inning"] if first_scoring_play else None
+
+    last_non_tie_leader = None
+    lead_changes = 0
+    max_comeback_runs = 0
+    for row in plate_rows:
+        away_score = row["away_score_after"] or 0
+        home_score = row["home_score_after"] or 0
+        leader = None
+        if away_score > home_score:
+            leader = away_team
+        elif home_score > away_score:
+            leader = home_team
+        if leader and last_non_tie_leader and leader != last_non_tie_leader:
+            lead_changes += 1
+        if leader:
+            last_non_tie_leader = leader
+
+        if winner_team == away_team:
+            max_comeback_runs = max(max_comeback_runs, home_score - away_score)
+        elif winner_team == home_team:
+            max_comeback_runs = max(max_comeback_runs, away_score - home_score)
+
+    total_runs_first5 = outcome["total_runs_first5"] or 0
+    total_runs_final = outcome["total_runs_final"] or 0
+    comeback_win_flag = 1 if winner_team and max_comeback_runs >= 1 else 0
+    bullpen_flip_flag = 1 if lead_after5_team and winner_team and lead_after5_team != winner_team else 0
+    first_inning_jolt_flag = 1 if first_inning_runs >= 2 else 0
+    quiet_first5_flag = 1 if total_runs_first5 <= 3 else 0
+    late_break_flag = 1 if total_runs_first5 <= 3 and total_runs_final >= 8 else 0
+    away_traffic_no_conversion_flag = 1 if (team_rows["away"]["hits"] or 0) >= 9 and (team_rows["away"]["runs_scored"] or 0) <= 3 else 0
+    home_traffic_no_conversion_flag = 1 if (team_rows["home"]["hits"] or 0) >= 9 and (team_rows["home"]["runs_scored"] or 0) <= 3 else 0
+
+    tags: list[str] = []
+    if first_inning_jolt_flag:
+        tags.append("first-inning jolt")
+    if quiet_first5_flag:
+        tags.append("quiet through five")
+    if late_break_flag:
+        tags.append("late break")
+    if bullpen_flip_flag:
+        tags.append("bullpen flip")
+    if comeback_win_flag:
+        tags.append("comeback win")
+    if _starter_cracked_flag(starter_rows.get("away")):
+        tags.append(f"{away_team} starter cracked")
+    if _starter_cracked_flag(starter_rows.get("home")):
+        tags.append(f"{home_team} starter cracked")
+    if away_traffic_no_conversion_flag:
+        tags.append(f"{away_team} traffic no conversion")
+    if home_traffic_no_conversion_flag:
+        tags.append(f"{home_team} traffic no conversion")
+    if (hr_role_counts.get("reliever") or 0) >= 2:
+        tags.append("relief homer damage")
+
+    summary = {
+        "headline": f"{winner_team or 'Tie game'} story on {game_row['game_date']}",
+        "winnerTeam": winner_team,
+        "loserTeam": loser_team,
+        "leadAfter5Team": lead_after5_team,
+        "firstInningRuns": first_inning_runs,
+        "firstScoringInning": first_scoring_inning,
+        "leadChanges": lead_changes,
+        "maxComebackRuns": max_comeback_runs,
+        "homeRunsOffStarters": hr_role_counts.get("starter", 0),
+        "homeRunsOffRelievers": hr_role_counts.get("reliever", 0),
+        "awayStarterCracked": bool(_starter_cracked_flag(starter_rows.get("away"))),
+        "homeStarterCracked": bool(_starter_cracked_flag(starter_rows.get("home"))),
+        "awayTrafficNoConversion": bool(away_traffic_no_conversion_flag),
+        "homeTrafficNoConversion": bool(home_traffic_no_conversion_flag),
+        "awayRuns": outcome["away_runs_final"],
+        "homeRuns": outcome["home_runs_final"],
+        "awayRunsFirst5": team_rows["away"]["runs_scored_first5"],
+        "homeRunsFirst5": team_rows["home"]["runs_scored_first5"],
+        "tags": tags,
+    }
+
+    return {
+        "game_pk": game_row["game_pk"],
+        "game_date": game_row["game_date"],
+        "away_team": away_team,
+        "home_team": home_team,
+        "winner_team": winner_team,
+        "loser_team": loser_team,
+        "lead_after5_team": lead_after5_team,
+        "comeback_win_flag": comeback_win_flag,
+        "bullpen_flip_flag": bullpen_flip_flag,
+        "first_inning_jolt_flag": first_inning_jolt_flag,
+        "quiet_first5_flag": quiet_first5_flag,
+        "late_break_flag": late_break_flag,
+        "first_scoring_inning": first_scoring_inning,
+        "lead_changes": lead_changes,
+        "max_comeback_runs": max_comeback_runs,
+        "hr_off_starters": hr_role_counts.get("starter", 0),
+        "hr_off_relievers": hr_role_counts.get("reliever", 0),
+        "away_starter_cracked_flag": _starter_cracked_flag(starter_rows.get("away")),
+        "home_starter_cracked_flag": _starter_cracked_flag(starter_rows.get("home")),
+        "away_traffic_no_conversion_flag": away_traffic_no_conversion_flag,
+        "home_traffic_no_conversion_flag": home_traffic_no_conversion_flag,
+        "away_plate_appearances": team_rows["away"]["plate_appearances"] or 0,
+        "home_plate_appearances": team_rows["home"]["plate_appearances"] or 0,
+        "total_runs_first5": total_runs_first5,
+        "total_runs_final": total_runs_final,
+        "story_tags_json": json.dumps(tags, sort_keys=True),
+        "summary_json": json.dumps(summary, sort_keys=True),
+    }
+
+
+def refresh_story_signals(conn: sqlite3.Connection, through_date: str | None = None) -> None:
+    params: list[Any] = []
+    query = "SELECT game_pk, game_date, away_team, home_team FROM mlb_games"
+    if through_date:
+        query += " WHERE game_date <= ?"
+        params.append(through_date)
+    query += " ORDER BY game_date, game_pk"
+    games = conn.execute(query, params).fetchall()
+
+    for game_row in games:
+        outcome = conn.execute("SELECT * FROM mlb_game_outcomes WHERE game_pk = ?", (game_row["game_pk"],)).fetchone()
+        if not outcome:
+            continue
+        team_rows = {
+            row["team_role"]: row
+            for row in conn.execute(
+                "SELECT * FROM mlb_game_team_stats WHERE game_pk = ? ORDER BY team_role", (game_row["game_pk"],)
+            ).fetchall()
+        }
+        if "away" not in team_rows or "home" not in team_rows:
+            continue
+        plate_rows = conn.execute(
+            "SELECT * FROM mlb_plate_appearances WHERE game_pk = ? ORDER BY at_bat_index",
+            (game_row["game_pk"],),
+        ).fetchall()
+        starter_rows = {
+            row["team_role"]: row
+            for row in conn.execute(
+                "SELECT * FROM mlb_starting_pitcher_game_logs WHERE game_pk = ? ORDER BY team_role",
+                (game_row["game_pk"],),
+            ).fetchall()
+        }
+        starter_ids = {
+            row["pitcher_id"]: row["team_role"]
+            for row in conn.execute(
+                "SELECT team_role, pitcher_id FROM mlb_starting_pitchers WHERE game_pk = ?",
+                (game_row["game_pk"],),
+            ).fetchall()
+            if row["pitcher_id"] is not None
+        }
+        hr_role_counts = {"starter": 0, "reliever": 0}
+        for hr_row in conn.execute(
+            "SELECT pitcher_id FROM mlb_home_run_events WHERE game_pk = ?",
+            (game_row["game_pk"],),
+        ).fetchall():
+            if hr_row["pitcher_id"] in starter_ids:
+                hr_role_counts["starter"] += 1
+            else:
+                hr_role_counts["reliever"] += 1
+
+        story_row = build_game_story_signal_row(game_row, outcome, team_rows, plate_rows, starter_rows, hr_role_counts)
+        upsert_game_story_signal(conn, story_row)
+
+    conn.commit()
+
+
+def list_story_signals(conn: sqlite3.Connection, date_text: str) -> list[sqlite3.Row]:
+    return conn.execute(
+        """
+        SELECT game_date, away_team, home_team, winner_team, lead_after5_team, total_runs_first5, total_runs_final,
+               lead_changes, max_comeback_runs, story_tags_json
+        FROM mlb_game_story_signals
+        WHERE game_date = ?
+        ORDER BY game_pk
+        """,
+        (date_text,),
+    ).fetchall()
+
+
+def print_story_signals(rows: list[sqlite3.Row]) -> None:
+    for row in rows:
+        tags = ", ".join(json.loads(row["story_tags_json"] or "[]"))
+        print(
+            f"- {row['away_team']} @ {row['home_team']} | winner {row['winner_team'] or 'TBD'} | "
+            f"after5 {row['lead_after5_team'] or 'tied'} | F5 {row['total_runs_first5']} | final {row['total_runs_final']} | "
+            f"lead changes {row['lead_changes']} | comeback {row['max_comeback_runs']} | {tags}"
+        )
+
+
 def ingest_mlb_day(conn: sqlite3.Connection, date_text: str) -> None:
     init_db(conn)
     schedule_url = MLB_SCHEDULE_URL.format(date=date_text)
@@ -1597,6 +2330,14 @@ def ingest_mlb_day(conn: sqlite3.Connection, date_text: str) -> None:
         pitcher_appearance_rows = extract_pitcher_appearance_rows(game, live_payload, date_text)
         for row in pitcher_appearance_rows:
             upsert_pitcher_appearance(conn, row)
+
+        plate_appearance_rows = extract_plate_appearance_rows(game, live_payload, date_text)
+        for row in plate_appearance_rows:
+            upsert_plate_appearance(conn, row)
+
+        pitch_event_rows = extract_pitch_event_rows(game, live_payload, date_text)
+        for row in pitch_event_rows:
+            upsert_pitch_event(conn, row)
 
         home_run_rows = extract_home_run_rows(
             live_payload,
@@ -2796,6 +3537,12 @@ def parse_args() -> argparse.Namespace:
     )
     derive.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
 
+    derive_stories = subparsers.add_parser(
+        "derive-story-signals",
+        help="Refresh experimental MLB story-signal rows from stored plate-appearance and pitch-event data.",
+    )
+    derive_stories.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -2846,6 +3593,9 @@ def parse_args() -> argparse.Namespace:
     )
     list_probables.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
 
+    list_stories = subparsers.add_parser("list-story-signals", help="Print derived story signals for a date.")
+    list_stories.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
+
     return parser.parse_args()
 
 
@@ -2883,6 +3633,14 @@ def main() -> None:
                 print(f"Refreshed rolling MLB team/starter form through {args.through_date}")
             else:
                 print("Refreshed rolling MLB team/starter form for all loaded dates")
+            return
+
+        if args.command == "derive-story-signals":
+            refresh_story_signals(conn, args.through_date)
+            if args.through_date:
+                print(f"Refreshed MLB story signals through {args.through_date}")
+            else:
+                print("Refreshed MLB story signals for all loaded dates")
             return
 
         if args.command == "ingest-statcast-hr":
@@ -2933,6 +3691,11 @@ def main() -> None:
         if args.command == "list-probable-starters":
             rows = list_probable_starters_snapshot(args.date)
             print_probable_starters(rows)
+            return
+
+        if args.command == "list-story-signals":
+            rows = list_story_signals(conn, args.date)
+            print_story_signals(rows)
             return
 
 

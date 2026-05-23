@@ -1055,6 +1055,15 @@ h3 {
   gap: 10px;
 }
 
+.stories-workspace {
+  min-height: 0;
+}
+
+.stories-workspace .history-detail {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .games-rail,
 .detail-canvas,
 .builder-shell,
@@ -1179,6 +1188,12 @@ h3 {
   font: 600 0.62rem/1 var(--mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.history-chip.active {
+  color: var(--accent);
+  border-color: rgba(56, 211, 153, 0.24);
+  background: rgba(56, 211, 153, 0.08);
 }
 
 .history-status-pill.graded {
@@ -1371,6 +1386,170 @@ h3 {
   font: 500 11px/1.45 var(--mono);
   white-space: pre-wrap;
   word-break: break-word;
+}
+
+.story-section-grid {
+  grid-template-columns: 1fr;
+}
+
+.story-section-span {
+  grid-column: 1 / -1;
+}
+
+.story-log-shell {
+  display: grid;
+  gap: 14px;
+}
+
+.story-log-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.story-log-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.story-log-groups {
+  display: grid;
+  gap: 12px;
+}
+
+.story-log-group {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.story-log-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.story-log-group-head h4 {
+  margin: 0;
+  color: var(--heading);
+  font-size: 1rem;
+}
+
+.story-log-events {
+  display: grid;
+  gap: 8px;
+}
+
+.story-log-event {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 10px 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.story-log-event.tone-scoring {
+  border-color: rgba(56, 211, 153, 0.24);
+  background: rgba(56, 211, 153, 0.05);
+}
+
+.story-log-event.tone-contact {
+  border-color: rgba(123, 182, 255, 0.22);
+  background: rgba(123, 182, 255, 0.04);
+}
+
+.story-log-event.tone-whiff,
+.story-log-event.tone-out {
+  border-color: rgba(224, 122, 95, 0.18);
+}
+
+.story-log-event-topline {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.story-log-event-topline strong {
+  color: var(--heading);
+}
+
+.story-log-event p {
+  margin: 0;
+  color: var(--text);
+}
+
+.story-log-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.story-log-tags span {
+  padding: 4px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--muted);
+  font: 600 0.62rem/1 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.story-game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.story-game-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.022);
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.story-game-card.active {
+  border-color: rgba(56, 211, 153, 0.24);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.story-game-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.story-game-head strong {
+  color: var(--heading);
+}
+
+.story-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.story-summary-grid div {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 10px;
+  display: grid;
+  gap: 4px;
+}
+
+.story-summary-grid strong {
+  color: var(--heading);
 }
 
 .models-chart-panel {
@@ -4080,6 +4259,9 @@ h3 {
   .lineup-board-grid,
   .tennis-player-grid,
   .tennis-projection-grid,
+  .story-game-grid,
+  .story-summary-grid,
+  .story-log-summary,
   .pick-grid.compact,
   .parlay-stats-grid.compact,
   .parlay-return-grid,
