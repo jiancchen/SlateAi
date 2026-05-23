@@ -52,7 +52,8 @@ const HR_MODEL_NAMES = {
   '2026-05-18': 'statcast-hr-prototype-v3',
   '2026-05-19': 'statcast-hr-prototype-v3',
   '2026-05-20': 'statcast-hr-prototype-v3',
-  '2026-05-21': 'statcast-hr-prototype-v3'
+  '2026-05-21': 'statcast-hr-prototype-v3',
+  '2026-05-22': 'statcast-hr-prototype-v3'
 }
 
 const PROP_MODEL_NAMES = {
@@ -61,7 +62,8 @@ const PROP_MODEL_NAMES = {
   '2026-05-18': 'mlb-player-props-v1',
   '2026-05-19': 'mlb-player-props-v1',
   '2026-05-20': 'mlb-player-props-v1',
-  '2026-05-21': 'mlb-player-props-v1'
+  '2026-05-21': 'mlb-player-props-v1',
+  '2026-05-22': 'mlb-player-props-v2'
 }
 
 const readJsonSql = (query) => {
@@ -630,7 +632,7 @@ const writePropCalibrationModule = (propRecords) => {
   console.log(`Wrote prop calibration -> ${target}`)
 }
 
-const dates = ['2026-05-16', '2026-05-17', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21']
+const dates = ['2026-05-16', '2026-05-17', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21', '2026-05-22']
 ensureDir(HISTORY_DIR)
 
 const allRecords = []

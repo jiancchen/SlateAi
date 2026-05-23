@@ -1410,6 +1410,21 @@ def build_slim_game_summary(
     }
 
 
+def is_completed_mlb_game(game: dict[str, Any]) -> bool:
+    status = game.get("status") or {}
+    detailed_state = (status.get("detailedState") or "").strip().lower()
+    abstract_state = (status.get("abstractGameState") or "").strip().lower()
+    coded_state = (status.get("codedGameState") or "").strip().upper()
+
+    if detailed_state in {"postponed", "postponed: rain", "cancelled", "canceled", "suspended"}:
+        return False
+    if abstract_state == "final":
+        return True
+    if coded_state == "F":
+        return True
+    return detailed_state in {"final", "game over", "completed early"}
+
+
 def upsert_starting_pitcher_game_log(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
     conn.execute(
         """
@@ -2245,6 +2260,7 @@ def ingest_mlb_day(conn: sqlite3.Connection, date_text: str) -> None:
 
         away_team = game["teams"]["away"]["team"]["name"]
         home_team = game["teams"]["home"]["team"]["name"]
+        game_is_completed = is_completed_mlb_game(game)
         linescore = (live_payload.get("liveData") or {}).get("linescore") or {}
         conn.execute(
             """
@@ -2276,6 +2292,11 @@ def ingest_mlb_day(conn: sqlite3.Connection, date_text: str) -> None:
                 str(live_path.relative_to(ROOT)),
             ),
         )
+
+        if not game_is_completed:
+            conn.execute("DELETE FROM mlb_game_outcomes WHERE game_pk = ?", (game_pk,))
+            conn.execute("DELETE FROM mlb_game_story_signals WHERE game_pk = ?", (game_pk,))
+            continue
 
         starters = {}
         starter_game_logs = []
