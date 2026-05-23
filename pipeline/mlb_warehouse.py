@@ -35,6 +35,39 @@ STATCAST_HOME_RUNS_CSV_URL = (
     "?year={season}&player_type=Batter&cat=xhr&team=&min=0&csv=true"
 )
 
+TEAM_DIVISIONS = {
+    "Baltimore Orioles": "AL East",
+    "Boston Red Sox": "AL East",
+    "New York Yankees": "AL East",
+    "Tampa Bay Rays": "AL East",
+    "Toronto Blue Jays": "AL East",
+    "Chicago White Sox": "AL Central",
+    "Cleveland Guardians": "AL Central",
+    "Detroit Tigers": "AL Central",
+    "Kansas City Royals": "AL Central",
+    "Minnesota Twins": "AL Central",
+    "Athletics": "AL West",
+    "Houston Astros": "AL West",
+    "Los Angeles Angels": "AL West",
+    "Seattle Mariners": "AL West",
+    "Texas Rangers": "AL West",
+    "Atlanta Braves": "NL East",
+    "Miami Marlins": "NL East",
+    "New York Mets": "NL East",
+    "Philadelphia Phillies": "NL East",
+    "Washington Nationals": "NL East",
+    "Chicago Cubs": "NL Central",
+    "Cincinnati Reds": "NL Central",
+    "Milwaukee Brewers": "NL Central",
+    "Pittsburgh Pirates": "NL Central",
+    "St. Louis Cardinals": "NL Central",
+    "Arizona Diamondbacks": "NL West",
+    "Colorado Rockies": "NL West",
+    "Los Angeles Dodgers": "NL West",
+    "San Diego Padres": "NL West",
+    "San Francisco Giants": "NL West",
+}
+
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS source_snapshots (
@@ -472,6 +505,51 @@ CREATE TABLE IF NOT EXISTS mlb_team_rolling_form (
   PRIMARY KEY (as_of_date, team_name, window_games)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_team_story_priors (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  window_games INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  win_rate REAL,
+  quiet_first5_rate REAL,
+  first_inning_jolt_rate REAL,
+  comeback_win_rate REAL,
+  blew_lead_loss_rate REAL,
+  bullpen_flip_win_rate REAL,
+  bullpen_flip_loss_rate REAL,
+  late_break_rate REAL,
+  starter_cracked_rate REAL,
+  traffic_no_conversion_rate REAL,
+  low_total_game_rate REAL,
+  high_total_game_rate REAL,
+  avg_first_scoring_inning REAL,
+  avg_total_runs_first5 REAL,
+  avg_total_runs_final REAL,
+  story_instability_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_lineup_dependency_profiles (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  window_games INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  avg_players_with_hit REAL,
+  avg_players_with_multi_hit REAL,
+  avg_players_with_two_plus_tb REAL,
+  top2_hit_share REAL,
+  top3_hit_share REAL,
+  top2_total_bases_share REAL,
+  top3_total_bases_share REAL,
+  top2_rbi_share REAL,
+  top3_rbi_share REAL,
+  hit_concentration_index REAL,
+  total_bases_concentration_index REAL,
+  rbi_concentration_index REAL,
+  dependency_score REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_starting_pitcher_rolling_form (
   as_of_date TEXT NOT NULL,
   pitcher_id INTEGER NOT NULL,
@@ -495,6 +573,27 @@ CREATE TABLE IF NOT EXISTS mlb_starting_pitcher_rolling_form (
   run_volatility REAL,
   home_run_burstiness REAL,
   recent_3_earned_runs_delta REAL,
+  PRIMARY KEY (as_of_date, pitcher_id, window_starts)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_starter_leash_profiles (
+  as_of_date TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  window_starts INTEGER NOT NULL,
+  starts_sample INTEGER NOT NULL,
+  innings_per_start REAL,
+  outs_per_start REAL,
+  pitches_per_start REAL,
+  batters_faced_per_start REAL,
+  short_start_rate REAL,
+  five_plus_inning_rate REAL,
+  six_plus_inning_rate REAL,
+  ninety_pitch_rate REAL,
+  leash_volatility REAL,
+  recent_3_outs_delta REAL,
+  recent_3_pitches_delta REAL,
+  leash_score REAL,
   PRIMARY KEY (as_of_date, pitcher_id, window_starts)
 );
 
@@ -541,6 +640,19 @@ CREATE TABLE IF NOT EXISTS mlb_likely_relief_chains (
   last_appearance_date TEXT,
   raw_json TEXT,
   PRIMARY KEY (as_of_date, team_name, predicted_rank)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_series_context_snapshots (
+  as_of_date TEXT NOT NULL,
+  game_pk INTEGER NOT NULL,
+  away_team TEXT NOT NULL,
+  home_team TEXT NOT NULL,
+  same_division_flag INTEGER NOT NULL,
+  previous_matchups_14d INTEGER NOT NULL,
+  previous_matchups_30d INTEGER NOT NULL,
+  series_game_number INTEGER NOT NULL,
+  played_yesterday_flag INTEGER NOT NULL,
+  PRIMARY KEY (as_of_date, game_pk)
 );
 
 CREATE TABLE IF NOT EXISTS park_factor_snapshots (
@@ -2593,6 +2705,289 @@ def build_pitcher_form_row(
     }
 
 
+def share_top(values: list[float | int], top_count: int) -> float:
+    total = sum(values)
+    if total <= 0:
+        return 0.0
+    return sum(sorted(values, reverse=True)[:top_count]) / total
+
+
+def concentration_index(values: list[float | int]) -> float:
+    total = sum(values)
+    if total <= 0:
+        return 0.0
+    return sum((value / total) ** 2 for value in values if value > 0)
+
+
+def build_team_story_prior_row(
+    as_of_date: str, team_name: str, window_games: int, rows: list[sqlite3.Row]
+) -> dict[str, Any] | None:
+    if not rows:
+        return None
+
+    games_sample = len(rows)
+    win_rate = safe_mean([1 if row["winner_team"] == team_name else 0 for row in rows])
+    quiet_first5_rate = safe_mean([row["quiet_first5_flag"] or 0 for row in rows])
+    first_inning_jolt_rate = safe_mean([row["first_inning_jolt_flag"] or 0 for row in rows])
+    comeback_win_rate = safe_mean(
+        [1 if row["winner_team"] == team_name and row["comeback_win_flag"] else 0 for row in rows]
+    )
+    blew_lead_loss_rate = safe_mean(
+        [1 if row["loser_team"] == team_name and row["comeback_win_flag"] else 0 for row in rows]
+    )
+    bullpen_flip_win_rate = safe_mean(
+        [1 if row["winner_team"] == team_name and row["bullpen_flip_flag"] else 0 for row in rows]
+    )
+    bullpen_flip_loss_rate = safe_mean(
+        [1 if row["loser_team"] == team_name and row["bullpen_flip_flag"] else 0 for row in rows]
+    )
+    late_break_rate = safe_mean([row["late_break_flag"] or 0 for row in rows])
+    starter_cracked_rate = safe_mean(
+        [
+            (row["away_starter_cracked_flag"] or 0) if row["away_team"] == team_name else (row["home_starter_cracked_flag"] or 0)
+            for row in rows
+        ]
+    )
+    traffic_no_conversion_rate = safe_mean(
+        [
+            (row["away_traffic_no_conversion_flag"] or 0)
+            if row["away_team"] == team_name
+            else (row["home_traffic_no_conversion_flag"] or 0)
+            for row in rows
+        ]
+    )
+    low_total_game_rate = safe_mean([1 if (row["total_runs_final"] or 0) <= 7 else 0 for row in rows])
+    high_total_game_rate = safe_mean([1 if (row["total_runs_final"] or 0) >= 10 else 0 for row in rows])
+    avg_first_scoring_inning = safe_mean(
+        [row["first_scoring_inning"] if row["first_scoring_inning"] is not None else 9 for row in rows]
+    )
+    avg_total_runs_first5 = safe_mean([row["total_runs_first5"] or 0 for row in rows])
+    avg_total_runs_final = safe_mean([row["total_runs_final"] or 0 for row in rows])
+    story_instability_index = clamp_value(
+        first_inning_jolt_rate * 16
+        + comeback_win_rate * 8
+        + blew_lead_loss_rate * 18
+        + bullpen_flip_win_rate * 8
+        + bullpen_flip_loss_rate * 18
+        + late_break_rate * 12
+        + starter_cracked_rate * 18
+        + traffic_no_conversion_rate * 10
+        + high_total_game_rate * 8
+        - quiet_first5_rate * 6
+        - low_total_game_rate * 4,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "window_games": window_games,
+        "games_sample": games_sample,
+        "win_rate": win_rate,
+        "quiet_first5_rate": quiet_first5_rate,
+        "first_inning_jolt_rate": first_inning_jolt_rate,
+        "comeback_win_rate": comeback_win_rate,
+        "blew_lead_loss_rate": blew_lead_loss_rate,
+        "bullpen_flip_win_rate": bullpen_flip_win_rate,
+        "bullpen_flip_loss_rate": bullpen_flip_loss_rate,
+        "late_break_rate": late_break_rate,
+        "starter_cracked_rate": starter_cracked_rate,
+        "traffic_no_conversion_rate": traffic_no_conversion_rate,
+        "low_total_game_rate": low_total_game_rate,
+        "high_total_game_rate": high_total_game_rate,
+        "avg_first_scoring_inning": avg_first_scoring_inning,
+        "avg_total_runs_first5": avg_total_runs_first5,
+        "avg_total_runs_final": avg_total_runs_final,
+        "story_instability_index": story_instability_index,
+    }
+
+
+def build_lineup_dependency_row(
+    as_of_date: str, team_name: str, window_games: int, rows: list[sqlite3.Row]
+) -> dict[str, Any] | None:
+    if not rows:
+        return None
+
+    by_game: dict[int, list[sqlite3.Row]] = {}
+    for row in rows:
+        by_game.setdefault(row["game_pk"], []).append(row)
+    if not by_game:
+        return None
+
+    players_with_hit: list[float] = []
+    players_with_multi_hit: list[float] = []
+    players_with_two_plus_tb: list[float] = []
+    top2_hit_share: list[float] = []
+    top3_hit_share: list[float] = []
+    top2_total_bases_share: list[float] = []
+    top3_total_bases_share: list[float] = []
+    top2_rbi_share: list[float] = []
+    top3_rbi_share: list[float] = []
+    hit_concentration: list[float] = []
+    total_bases_concentration: list[float] = []
+    rbi_concentration: list[float] = []
+
+    for game_rows in by_game.values():
+        hit_values = [row["hits"] or 0 for row in game_rows]
+        total_bases_values = [row["total_bases"] or 0 for row in game_rows]
+        rbi_values = [row["rbi"] or 0 for row in game_rows]
+        players_with_hit.append(sum(1 for value in hit_values if value > 0))
+        players_with_multi_hit.append(sum(1 for value in hit_values if value >= 2))
+        players_with_two_plus_tb.append(sum(1 for value in total_bases_values if value >= 2))
+        top2_hit_share.append(share_top(hit_values, 2))
+        top3_hit_share.append(share_top(hit_values, 3))
+        top2_total_bases_share.append(share_top(total_bases_values, 2))
+        top3_total_bases_share.append(share_top(total_bases_values, 3))
+        top2_rbi_share.append(share_top(rbi_values, 2))
+        top3_rbi_share.append(share_top(rbi_values, 3))
+        hit_concentration.append(concentration_index(hit_values))
+        total_bases_concentration.append(concentration_index(total_bases_values))
+        rbi_concentration.append(concentration_index(rbi_values))
+
+    dependency_score = clamp_value(
+        safe_mean(top3_total_bases_share) * 60
+        + safe_mean(top2_rbi_share) * 18
+        + safe_mean(total_bases_concentration) * 22
+        + max(0.0, 4.8 - safe_mean(players_with_hit)) * 6
+        + max(0.0, 2.2 - safe_mean(players_with_two_plus_tb)) * 10,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "window_games": window_games,
+        "games_sample": len(by_game),
+        "avg_players_with_hit": safe_mean(players_with_hit),
+        "avg_players_with_multi_hit": safe_mean(players_with_multi_hit),
+        "avg_players_with_two_plus_tb": safe_mean(players_with_two_plus_tb),
+        "top2_hit_share": safe_mean(top2_hit_share),
+        "top3_hit_share": safe_mean(top3_hit_share),
+        "top2_total_bases_share": safe_mean(top2_total_bases_share),
+        "top3_total_bases_share": safe_mean(top3_total_bases_share),
+        "top2_rbi_share": safe_mean(top2_rbi_share),
+        "top3_rbi_share": safe_mean(top3_rbi_share),
+        "hit_concentration_index": safe_mean(hit_concentration),
+        "total_bases_concentration_index": safe_mean(total_bases_concentration),
+        "rbi_concentration_index": safe_mean(rbi_concentration),
+        "dependency_score": dependency_score,
+    }
+
+
+def build_starter_leash_profile_row(
+    as_of_date: str, pitcher_id: int, pitcher_name: str, window_starts: int, rows: list[sqlite3.Row]
+) -> dict[str, Any] | None:
+    if not rows:
+        return None
+
+    starts_sample = len(rows)
+    innings = [row["innings_pitched"] or 0.0 for row in rows]
+    outs = [row["outs_recorded"] or 0 for row in rows]
+    pitches = [row["pitches_thrown"] or 0 for row in rows]
+    batters_faced = [row["batters_faced"] or 0 for row in rows]
+    recent_outs, all_outs = split_recent(outs)
+    recent_pitches, all_pitches = split_recent(pitches)
+    five_plus_inning_rate = sum(1 for value in outs if value >= 15) / starts_sample
+    six_plus_inning_rate = sum(1 for value in outs if value >= 18) / starts_sample
+    ninety_pitch_rate = sum(1 for value in pitches if value >= 90) / starts_sample
+    short_start_rate = sum(1 for value in outs if value < 15) / starts_sample
+    leash_volatility = safe_pstdev(outs)
+    outs_anchor = clamp_value(safe_mean(outs) / 18 * 40, 0, 40)
+    leash_score = clamp_value(
+        outs_anchor
+        + five_plus_inning_rate * 22
+        + six_plus_inning_rate * 18
+        + ninety_pitch_rate * 8
+        - short_start_rate * 20
+        - leash_volatility * 1.75
+        + max(0.0, safe_mean(recent_outs) - safe_mean(all_outs)) * 1.5,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "pitcher_id": pitcher_id,
+        "pitcher_name": pitcher_name,
+        "window_starts": window_starts,
+        "starts_sample": starts_sample,
+        "innings_per_start": safe_mean(innings),
+        "outs_per_start": safe_mean(outs),
+        "pitches_per_start": safe_mean(pitches),
+        "batters_faced_per_start": safe_mean(batters_faced),
+        "short_start_rate": short_start_rate,
+        "five_plus_inning_rate": five_plus_inning_rate,
+        "six_plus_inning_rate": six_plus_inning_rate,
+        "ninety_pitch_rate": ninety_pitch_rate,
+        "leash_volatility": leash_volatility,
+        "recent_3_outs_delta": safe_mean(recent_outs) - safe_mean(all_outs),
+        "recent_3_pitches_delta": safe_mean(recent_pitches) - safe_mean(all_pitches),
+        "leash_score": leash_score,
+    }
+
+
+def build_series_context_row(conn: sqlite3.Connection, as_of_date: str, game_row: sqlite3.Row) -> dict[str, Any]:
+    as_of = datetime.strptime(as_of_date, "%Y-%m-%d").date()
+    away_team = game_row["away_team"]
+    home_team = game_row["home_team"]
+    same_division_flag = int(TEAM_DIVISIONS.get(away_team) == TEAM_DIVISIONS.get(home_team))
+    pair14_cutoff = (as_of - timedelta(days=14)).isoformat()
+    pair30_cutoff = (as_of - timedelta(days=30)).isoformat()
+    previous_matchups_14d = conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM mlb_games
+        WHERE game_date < ?
+          AND game_date >= ?
+          AND ((away_team = ? AND home_team = ?) OR (away_team = ? AND home_team = ?))
+        """,
+        (as_of_date, pair14_cutoff, away_team, home_team, home_team, away_team),
+    ).fetchone()[0]
+    previous_matchups_30d = conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM mlb_games
+        WHERE game_date < ?
+          AND game_date >= ?
+          AND ((away_team = ? AND home_team = ?) OR (away_team = ? AND home_team = ?))
+        """,
+        (as_of_date, pair30_cutoff, away_team, home_team, home_team, away_team),
+    ).fetchone()[0]
+    series_game_number = 1
+    cursor = as_of - timedelta(days=1)
+    while True:
+        prior = conn.execute(
+            """
+            SELECT 1
+            FROM mlb_games
+            WHERE game_date = ?
+              AND away_team = ?
+              AND home_team = ?
+            LIMIT 1
+            """,
+            (cursor.isoformat(), away_team, home_team),
+        ).fetchone()
+        if not prior:
+            break
+        series_game_number += 1
+        cursor -= timedelta(days=1)
+    played_yesterday_flag = 1 if series_game_number > 1 else 0
+
+    return {
+        "as_of_date": as_of_date,
+        "game_pk": game_row["game_pk"],
+        "away_team": away_team,
+        "home_team": home_team,
+        "same_division_flag": same_division_flag,
+        "previous_matchups_14d": previous_matchups_14d,
+        "previous_matchups_30d": previous_matchups_30d,
+        "series_game_number": series_game_number,
+        "played_yesterday_flag": played_yesterday_flag,
+    }
+
+
 def classify_reliever_role(avg_entry_order: float, avg_outs_per_appearance: float) -> str:
     if avg_entry_order <= 2.6 and avg_outs_per_appearance >= 2.5:
         return "bridge"
@@ -2981,6 +3376,236 @@ def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = No
                             likely_row["raw_json"],
                         ),
                     )
+
+    conn.commit()
+
+
+def refresh_tier2_profiles(conn: sqlite3.Connection, through_date: str | None = None) -> None:
+    init_db(conn)
+    params: tuple[Any, ...] = (through_date,) if through_date else ()
+    date_filter = "WHERE game_date <= ?" if through_date else ""
+    dates = [
+        row["game_date"]
+        for row in conn.execute(f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params).fetchall()
+    ]
+    team_windows = (5, 10)
+    pitcher_windows = (3, 5, 10)
+
+    if through_date:
+        conn.execute("DELETE FROM mlb_team_story_priors WHERE as_of_date <= ?", (through_date,))
+        conn.execute("DELETE FROM mlb_lineup_dependency_profiles WHERE as_of_date <= ?", (through_date,))
+        conn.execute("DELETE FROM mlb_starter_leash_profiles WHERE as_of_date <= ?", (through_date,))
+        conn.execute("DELETE FROM mlb_series_context_snapshots WHERE as_of_date <= ?", (through_date,))
+    else:
+        conn.execute("DELETE FROM mlb_team_story_priors")
+        conn.execute("DELETE FROM mlb_lineup_dependency_profiles")
+        conn.execute("DELETE FROM mlb_starter_leash_profiles")
+        conn.execute("DELETE FROM mlb_series_context_snapshots")
+
+    for as_of_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                "SELECT DISTINCT team_name FROM mlb_game_team_stats WHERE game_date = ? ORDER BY team_name",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        for team_name in teams:
+            for window_games in team_windows:
+                story_rows = conn.execute(
+                    """
+                    SELECT *
+                    FROM mlb_game_story_signals
+                    WHERE game_date < ?
+                      AND (away_team = ? OR home_team = ?)
+                    ORDER BY game_date DESC, game_pk DESC
+                    LIMIT ?
+                    """,
+                    (as_of_date, team_name, team_name, window_games),
+                ).fetchall()
+                story_prior_row = build_team_story_prior_row(as_of_date, team_name, window_games, story_rows)
+                if story_prior_row:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_team_story_priors (
+                          as_of_date, team_name, window_games, games_sample, win_rate,
+                          quiet_first5_rate, first_inning_jolt_rate, comeback_win_rate,
+                          blew_lead_loss_rate, bullpen_flip_win_rate, bullpen_flip_loss_rate,
+                          late_break_rate, starter_cracked_rate, traffic_no_conversion_rate,
+                          low_total_game_rate, high_total_game_rate, avg_first_scoring_inning,
+                          avg_total_runs_first5, avg_total_runs_final, story_instability_index
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            story_prior_row["as_of_date"],
+                            story_prior_row["team_name"],
+                            story_prior_row["window_games"],
+                            story_prior_row["games_sample"],
+                            story_prior_row["win_rate"],
+                            story_prior_row["quiet_first5_rate"],
+                            story_prior_row["first_inning_jolt_rate"],
+                            story_prior_row["comeback_win_rate"],
+                            story_prior_row["blew_lead_loss_rate"],
+                            story_prior_row["bullpen_flip_win_rate"],
+                            story_prior_row["bullpen_flip_loss_rate"],
+                            story_prior_row["late_break_rate"],
+                            story_prior_row["starter_cracked_rate"],
+                            story_prior_row["traffic_no_conversion_rate"],
+                            story_prior_row["low_total_game_rate"],
+                            story_prior_row["high_total_game_rate"],
+                            story_prior_row["avg_first_scoring_inning"],
+                            story_prior_row["avg_total_runs_first5"],
+                            story_prior_row["avg_total_runs_final"],
+                            story_prior_row["story_instability_index"],
+                        ),
+                    )
+
+                recent_game_ids = [
+                    row["game_pk"]
+                    for row in conn.execute(
+                        """
+                        SELECT game_pk
+                        FROM mlb_game_team_stats
+                        WHERE team_name = ?
+                          AND game_date < ?
+                        ORDER BY game_date DESC, game_pk DESC
+                        LIMIT ?
+                        """,
+                        (team_name, as_of_date, window_games),
+                    ).fetchall()
+                ]
+                if recent_game_ids:
+                    placeholders = ",".join("?" for _ in recent_game_ids)
+                    lineup_rows = conn.execute(
+                        f"""
+                        SELECT *
+                        FROM mlb_player_game_batting
+                        WHERE team_name = ?
+                          AND game_pk IN ({placeholders})
+                        ORDER BY game_date DESC, game_pk DESC, batting_order ASC, player_name ASC
+                        """,
+                        (team_name, *recent_game_ids),
+                    ).fetchall()
+                    dependency_row = build_lineup_dependency_row(as_of_date, team_name, window_games, lineup_rows)
+                    if dependency_row:
+                        conn.execute(
+                            """
+                            INSERT INTO mlb_lineup_dependency_profiles (
+                              as_of_date, team_name, window_games, games_sample, avg_players_with_hit,
+                              avg_players_with_multi_hit, avg_players_with_two_plus_tb, top2_hit_share,
+                              top3_hit_share, top2_total_bases_share, top3_total_bases_share,
+                              top2_rbi_share, top3_rbi_share, hit_concentration_index,
+                              total_bases_concentration_index, rbi_concentration_index, dependency_score
+                            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                            """,
+                            (
+                                dependency_row["as_of_date"],
+                                dependency_row["team_name"],
+                                dependency_row["window_games"],
+                                dependency_row["games_sample"],
+                                dependency_row["avg_players_with_hit"],
+                                dependency_row["avg_players_with_multi_hit"],
+                                dependency_row["avg_players_with_two_plus_tb"],
+                                dependency_row["top2_hit_share"],
+                                dependency_row["top3_hit_share"],
+                                dependency_row["top2_total_bases_share"],
+                                dependency_row["top3_total_bases_share"],
+                                dependency_row["top2_rbi_share"],
+                                dependency_row["top3_rbi_share"],
+                                dependency_row["hit_concentration_index"],
+                                dependency_row["total_bases_concentration_index"],
+                                dependency_row["rbi_concentration_index"],
+                                dependency_row["dependency_score"],
+                            ),
+                        )
+
+        pitchers = conn.execute(
+            """
+            SELECT DISTINCT pitcher_id, pitcher_name
+            FROM mlb_starting_pitcher_game_logs
+            WHERE game_date = ? AND pitcher_id IS NOT NULL
+            ORDER BY pitcher_name
+            """,
+            (as_of_date,),
+        ).fetchall()
+        for pitcher in pitchers:
+            for window_starts in pitcher_windows:
+                rows = conn.execute(
+                    """
+                    SELECT *
+                    FROM mlb_starting_pitcher_game_logs
+                    WHERE pitcher_id = ? AND game_date < ?
+                    ORDER BY game_date DESC, game_pk DESC
+                    LIMIT ?
+                    """,
+                    (pitcher["pitcher_id"], as_of_date, window_starts),
+                ).fetchall()
+                leash_row = build_starter_leash_profile_row(
+                    as_of_date, pitcher["pitcher_id"], pitcher["pitcher_name"], window_starts, rows
+                )
+                if not leash_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_starter_leash_profiles (
+                      as_of_date, pitcher_id, pitcher_name, window_starts, starts_sample,
+                      innings_per_start, outs_per_start, pitches_per_start, batters_faced_per_start,
+                      short_start_rate, five_plus_inning_rate, six_plus_inning_rate, ninety_pitch_rate,
+                      leash_volatility, recent_3_outs_delta, recent_3_pitches_delta, leash_score
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        leash_row["as_of_date"],
+                        leash_row["pitcher_id"],
+                        leash_row["pitcher_name"],
+                        leash_row["window_starts"],
+                        leash_row["starts_sample"],
+                        leash_row["innings_per_start"],
+                        leash_row["outs_per_start"],
+                        leash_row["pitches_per_start"],
+                        leash_row["batters_faced_per_start"],
+                        leash_row["short_start_rate"],
+                        leash_row["five_plus_inning_rate"],
+                        leash_row["six_plus_inning_rate"],
+                        leash_row["ninety_pitch_rate"],
+                        leash_row["leash_volatility"],
+                        leash_row["recent_3_outs_delta"],
+                        leash_row["recent_3_pitches_delta"],
+                        leash_row["leash_score"],
+                    ),
+                )
+
+        scheduled_games = conn.execute(
+            """
+            SELECT game_pk, away_team, home_team
+            FROM mlb_games
+            WHERE game_date = ?
+            ORDER BY game_pk
+            """,
+            (as_of_date,),
+        ).fetchall()
+        for game_row in scheduled_games:
+            series_row = build_series_context_row(conn, as_of_date, game_row)
+            conn.execute(
+                """
+                INSERT INTO mlb_series_context_snapshots (
+                  as_of_date, game_pk, away_team, home_team, same_division_flag,
+                  previous_matchups_14d, previous_matchups_30d, series_game_number,
+                  played_yesterday_flag
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    series_row["as_of_date"],
+                    series_row["game_pk"],
+                    series_row["away_team"],
+                    series_row["home_team"],
+                    series_row["same_division_flag"],
+                    series_row["previous_matchups_14d"],
+                    series_row["previous_matchups_30d"],
+                    series_row["series_game_number"],
+                    series_row["played_yesterday_flag"],
+                ),
+            )
 
     conn.commit()
 
@@ -3571,6 +4196,12 @@ def parse_args() -> argparse.Namespace:
     )
     derive_stories.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
 
+    derive_tier2 = subparsers.add_parser(
+        "derive-tier2-features",
+        help="Refresh Tier 2 team-story, lineup-dependency, starter-leash, and series-context tables.",
+    )
+    derive_tier2.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -3669,6 +4300,14 @@ def main() -> None:
                 print(f"Refreshed MLB story signals through {args.through_date}")
             else:
                 print("Refreshed MLB story signals for all loaded dates")
+            return
+
+        if args.command == "derive-tier2-features":
+            refresh_tier2_profiles(conn, args.through_date)
+            if args.through_date:
+                print(f"Refreshed MLB Tier 2 feature tables through {args.through_date}")
+            else:
+                print("Refreshed MLB Tier 2 feature tables for all loaded dates")
             return
 
         if args.command == "ingest-statcast-hr":

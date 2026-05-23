@@ -20,6 +20,7 @@
     "data:prep:mlb-day": "python3 pipeline/mlb_warehouse.py prepare-mlb-day",
     "data:list:probables": "python3 pipeline/mlb_warehouse.py list-probable-starters",
     "data:derive:mlb": "python3 pipeline/mlb_warehouse.py derive-mlb-features",
+    "data:derive:tier2-mlb": "python3 pipeline/mlb_warehouse.py derive-tier2-features",
     "data:ingest:statcast-hr": "python3 pipeline/mlb_warehouse.py ingest-statcast-hr",
     "data:refresh:mlb-live": "node pipeline/refresh-mlb-live-board.mjs",
     "data:verify:mlb-refresh": "node pipeline/verify-mlb-refresh.mjs",
@@ -42,6 +43,7 @@
     "data:grade:mlb-sides": "python3 pipeline/mlb_side_backtest.py grade",
     "data:report:mlb-sides": "python3 pipeline/mlb_side_backtest.py report",
     "data:research:mlb-side-features": "python3 pipeline/research_mlb_side_features.py",
+    "data:research:mlb-tier2-features": "python3 pipeline/research_mlb_tier2_features.py",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
   }
