@@ -406,10 +406,10 @@ def format_bucket_analysis(rows: list[TierTwoRow]) -> str:
             rows,
             "Pick-Team Story Instability",
             [
-                ("`<8`", lambda row: has_story(row) and (row.pick_story_instability or 0) < 8),
-                ("`8-14`", lambda row: has_story(row) and 8 <= (row.pick_story_instability or 0) < 15),
-                ("`15-19`", lambda row: has_story(row) and 15 <= (row.pick_story_instability or 0) < 20),
-                ("`20+`", lambda row: has_story(row) and (row.pick_story_instability or 0) >= 20),
+                ("`<45`", lambda row: has_story(row) and (row.pick_story_instability or 0) < 45),
+                ("`45-54`", lambda row: has_story(row) and 45 <= (row.pick_story_instability or 0) < 55),
+                ("`55-64`", lambda row: has_story(row) and 55 <= (row.pick_story_instability or 0) < 65),
+                ("`65+`", lambda row: has_story(row) and (row.pick_story_instability or 0) >= 65),
             ],
         ),
         bucket_markdown(
@@ -562,7 +562,7 @@ def build_markdown(conn: sqlite3.Connection, rows: list[TierTwoRow]) -> str:
             "",
             "## Early Read",
             "",
-            "- `Story instability` still looks like the right concept, but the first scoring scale is too compressed. It needs either a stronger formula or quantile-style thresholds before it becomes a live rule.",
+            "- `Story instability` now sits on a more usable scale, but it still looks better as a soft volatility/context feature than a pure pass trigger.",
             "- `Starter leash` is the best first Tier 2 lane. The strongest early warning signal is not just a short leash, but a **negative leash gap** where the picked side clearly owns the worse starter length outlook.",
             "- `Lineup dependency` is not behaving like a pure pass feature yet. Concentrated offenses can still be genuinely dangerous, so this probably belongs in combination with leash, pitch mix, or opponent-quality filters.",
             "- `Series / divisional context` is useful as supporting context, but it does not look like the first standalone win condition.",

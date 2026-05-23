@@ -148,9 +148,15 @@ const applyMlbTierOneControls = ({
   lateInningStabilityIndex,
   reliefPitchingRisk,
   coinflipPressure,
-  favoredSignalCount
+  favoredSignalCount,
+  pickStarterLeashScore,
+  oppStarterLeashScore
 }) => {
   const starterLateGap = roundToTenths(starterLeverageIndex - lateInningStabilityIndex)
+  const starterLeashGap =
+    Number.isFinite(pickStarterLeashScore) && Number.isFinite(oppStarterLeashScore)
+      ? roundToTenths(pickStarterLeashScore - oppStarterLeashScore)
+      : null
   const highVolatilityEdgePass =
     volatility >= 86 &&
     modelEdge >= 10 &&
@@ -158,6 +164,10 @@ const applyMlbTierOneControls = ({
   const thinSupportHighEdge = modelEdge >= 12 && favoredSignalCount <= 3
   const starterLateFragility =
     starterLeverageIndex >= 75 && lateInningStabilityIndex <= 48
+  const negativeLeashGapBigEdge =
+    Number.isFinite(starterLeashGap) && starterLeashGap <= -8 && modelEdge >= 10
+  const severeNegativeLeashGap =
+    Number.isFinite(starterLeashGap) && starterLeashGap <= -16 && modelEdge >= 12
   const riskPoints = getMlbTierOneRiskPoints({
     volatility,
     modelEdge,
@@ -210,6 +220,18 @@ const applyMlbTierOneControls = ({
     })
   }
 
+  if (negativeLeashGapBigEdge) {
+    riskFlags.push('negativeLeashGapBigEdge')
+    edgeHaircut += severeNegativeLeashGap ? 1.8 : 1.1
+    confidencePenalty += severeNegativeLeashGap ? 3 : 2
+    volatilityBump += severeNegativeLeashGap ? 2 : 1
+    tierOneNotes.push({
+      label:
+        'Tier 1 leash gap: the pick still carries the shorter expected starter runway, so the paper edge needs more bullpen support before it can grade as clean.',
+      delta: severeNegativeLeashGap ? 5 : 3
+    })
+  }
+
   if (riskPoints >= 3) {
     riskFlags.push('highRiskPoints')
     edgeHaircut += 0.8
@@ -250,6 +272,7 @@ const applyMlbTierOneControls = ({
     riskFlags,
     favoredSignalCount,
     starterLateGap,
+    starterLeashGap,
     edgeHaircut,
     passFlag: selectionTier === 'Pass',
     notes: tierOneNotes
@@ -559,6 +582,7 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
   const hitsAllowed = Number(starterContext?.hitsAllowed)
   const homeRunsAllowed = Number(starterContext?.homeRunsAllowed)
   const gamesStarted = Number(starterContext?.gamesStarted)
+  const usageContext = starterContext?.usageContext ?? null
   const recentFormRaw = starterContext?.recentForm ?? null
   const kPerNine = inningsFloat > 0 ? (strikeouts / inningsFloat) * 9 : null
   const bbPerNine = inningsFloat > 0 && Number.isFinite(walks) ? (walks / inningsFloat) * 9 : null
@@ -608,6 +632,10 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
       }
     : null
   const recentFormWeight = getRecentStarterFormReliability(recentForm?.startsSample || 0)
+  const expectedInningsValue = Number(usageContext?.expectedInnings)
+  const expectedInnings = Number.isFinite(expectedInningsValue) ? expectedInningsValue : null
+  const leashScoreValue = Number(usageContext?.leashScore)
+  const leashScore = Number.isFinite(leashScoreValue) ? leashScoreValue : null
   const starter = {
     name: starterContext?.fullName || parsed?.name || '',
     handedness,
@@ -623,6 +651,23 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
     homeRunsAllowed: Number.isFinite(homeRunsAllowed) ? homeRunsAllowed : null,
     whip,
     gamesStarted: Number.isFinite(gamesStarted) ? gamesStarted : null,
+    expectedInnings,
+    leashScore,
+    usageShortLeashRisk: Number.isFinite(Number(usageContext?.shortLeashRisk))
+      ? Number(usageContext.shortLeashRisk)
+      : null,
+    usageDurableRate: Number.isFinite(Number(usageContext?.durableRate))
+      ? Number(usageContext.durableRate)
+      : null,
+    leashVolatility: Number.isFinite(Number(usageContext?.leashVolatility))
+      ? Number(usageContext.leashVolatility)
+      : null,
+    fivePlusInningRate: Number.isFinite(Number(usageContext?.fivePlusInningRate))
+      ? Number(usageContext.fivePlusInningRate)
+      : null,
+    sixPlusInningRate: Number.isFinite(Number(usageContext?.sixPlusInningRate))
+      ? Number(usageContext.sixPlusInningRate)
+      : null,
     kPerNine,
     bbPerNine,
     hitsPerNine,
@@ -646,6 +691,42 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
     recentFormLabel: buildStarterRecentFormLabel(starter),
     recentFormScore: buildStarterRecentFormScore(starter)
   }
+}
+
+const deriveStarterLeashScore = (starter = null) => {
+  if (!starter) return null
+  if (Number.isFinite(starter.leashScore)) return roundToTenths(starter.leashScore)
+
+  let score = 48
+  const inningsAnchor = Number.isFinite(starter.expectedInnings)
+    ? starter.expectedInnings
+    : starter.avgInningsPerStart
+
+  if (Number.isFinite(inningsAnchor)) {
+    score += (inningsAnchor - 5) * 11
+  }
+
+  if (Number.isFinite(starter.usageShortLeashRisk)) {
+    score -= starter.usageShortLeashRisk * 18
+  }
+
+  if (Number.isFinite(starter.usageDurableRate)) {
+    score += starter.usageDurableRate * 12
+  }
+
+  if (Number.isFinite(starter.recentForm?.shortStartRate)) {
+    score -= starter.recentForm.shortStartRate * 11
+  }
+
+  if (Number.isFinite(starter.recentForm?.qualityStartRate)) {
+    score += starter.recentForm.qualityStartRate * 9
+  }
+
+  if (Number.isFinite(starter.leashVolatility)) {
+    score -= clamp(starter.leashVolatility - 1.6, 0, 8) * 1.2
+  }
+
+  return roundToTenths(clamp(score, 0, 100))
 }
 
 const buildHomeFieldSignal = (participants, weight = 0.08) => {
@@ -1428,8 +1509,12 @@ const buildStarterHoldConfidence = ({ starter = null, lineupProfile = null }) =>
 
   let score = 56
 
-  if (Number.isFinite(starter.avgInningsPerStart)) {
-    score += (starter.avgInningsPerStart - 5.2) * 7
+  const inningsAnchor = Number.isFinite(starter.expectedInnings)
+    ? starter.expectedInnings
+    : starter.avgInningsPerStart
+
+  if (Number.isFinite(inningsAnchor)) {
+    score += (inningsAnchor - 5.2) * 7
   }
 
   if (starter.profileType === 'Power' || starter.profileType === 'Contact suppressor') score += 4
@@ -2090,6 +2175,7 @@ const buildMlbAnalysisContext = (game, participants) => {
       lineupProfile: lineupProfiles[0]
     })
   ]
+  const starterLeashScores = starters.map((starter) => deriveStarterLeashScore(starter))
   const starterScores = starters.every(Boolean) ? starters.map((starter) => starterScore(starter)) : []
   const projectedHitProfiles = calibrateProjectedHitProfiles({
     projectedHitProfiles: baseProjectedHitProfiles,
@@ -2868,7 +2954,9 @@ const buildMlbAnalysisContext = (game, participants) => {
       weatherProfile,
       lineupProfiles,
       lineupScores,
-      projectedHitProfiles
+      projectedHitProfiles,
+      starterLeashScores,
+      storyPriors: [game.tierTwoContext?.storyPriors?.away ?? null, game.tierTwoContext?.storyPriors?.home ?? null]
     }
   }
 }
@@ -3130,6 +3218,10 @@ const buildMlbDecisionIndicators = ({
   const opponentStarterScore = riskContext.starterScores?.[loserIndex]
   const pickStarterHoldConfidence = riskContext.starterHoldConfidence?.[winnerIndex]
   const opponentStarterHoldConfidence = riskContext.starterHoldConfidence?.[loserIndex]
+  const pickStarterLeashScore = riskContext.starterLeashScores?.[winnerIndex]
+  const opponentStarterLeashScore = riskContext.starterLeashScores?.[loserIndex]
+  const pickStoryInstability = Number(riskContext.storyPriors?.[winnerIndex]?.storyInstabilityIndex)
+  const opponentStoryInstability = Number(riskContext.storyPriors?.[loserIndex]?.storyInstabilityIndex)
   const pickLineupPressure = riskContext.lineupProfiles?.[winnerIndex]?.starterPressureIndex
   const opponentLineupPressure = riskContext.lineupProfiles?.[loserIndex]?.starterPressureIndex
   const pickBullpenPitchPressure = riskContext.lineupProfiles?.[winnerIndex]?.bullpenPitchTypePressureIndex
@@ -3205,6 +3297,15 @@ const buildMlbDecisionIndicators = ({
     if (starterGap >= 14) reliefPitchingRisk += 4
   }
 
+  if (
+    Number.isFinite(pickStarterLeashScore) &&
+    Number.isFinite(opponentStarterLeashScore) &&
+    opponentStarterLeashScore - pickStarterLeashScore >= 8
+  ) {
+    reliefPitchingRisk += 4
+    coinflipPressure += 6
+  }
+
   if (Number.isFinite(opponentStarterHoldConfidence) && opponentStarterHoldConfidence <= 46) {
     notes.push({
       label: 'Opposing starter hold is shakier than the season line alone suggests',
@@ -3275,6 +3376,28 @@ const buildMlbDecisionIndicators = ({
     })
     confidenceDelta -= 3
     volatilityDelta += 3
+  }
+
+  if (Number.isFinite(pickStoryInstability) && pickStoryInstability >= 68) {
+    notes.push({
+      label: `${participants[winnerIndex].name} have been living in a noisier recent team-story lane than the market line alone shows`,
+      delta: 3
+    })
+    confidenceDelta -= 2
+    volatilityDelta += 3
+  }
+
+  if (
+    Number.isFinite(pickStoryInstability) &&
+    Number.isFinite(opponentStoryInstability) &&
+    pickStoryInstability - opponentStoryInstability >= 10
+  ) {
+    notes.push({
+      label: `${participants[winnerIndex].name} carry the less stable recent game-story profile in this matchup`,
+      delta: 3
+    })
+    confidenceDelta -= 1
+    volatilityDelta += 2
   }
 
   if (baseVolatility >= 88 && modelEdge >= 8) {
@@ -3392,6 +3515,18 @@ const buildMlbDecisionIndicators = ({
       : null,
     pickStarterScore: Number.isFinite(pickStarterScore) ? roundToTenths(pickStarterScore) : null,
     oppStarterScore: Number.isFinite(opponentStarterScore) ? roundToTenths(opponentStarterScore) : null,
+    pickStarterLeashScore: Number.isFinite(pickStarterLeashScore)
+      ? roundToTenths(pickStarterLeashScore)
+      : null,
+    oppStarterLeashScore: Number.isFinite(opponentStarterLeashScore)
+      ? roundToTenths(opponentStarterLeashScore)
+      : null,
+    pickStoryInstability: Number.isFinite(pickStoryInstability)
+      ? roundToTenths(pickStoryInstability)
+      : null,
+    oppStoryInstability: Number.isFinite(opponentStoryInstability)
+      ? roundToTenths(opponentStoryInstability)
+      : null,
     projectedHitConfidence: Number.isFinite(projectedHitConfidence)
       ? roundToTenths(projectedHitConfidence)
       : null,
@@ -3586,7 +3721,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
   )
   const tierOneControls =
     game.league === 'MLB' && mlbIndicators
-      ? applyMlbTierOneControls({
+        ? applyMlbTierOneControls({
           confidence,
           volatility,
           modelEdge,
@@ -3594,7 +3729,9 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           lateInningStabilityIndex: mlbIndicators.lateInningStabilityIndex,
           reliefPitchingRisk: mlbIndicators.reliefPitchingRisk,
           coinflipPressure: mlbIndicators.coinflipPressure,
-          favoredSignalCount
+          favoredSignalCount,
+          pickStarterLeashScore: mlbIndicators.pickStarterLeashScore,
+          oppStarterLeashScore: mlbIndicators.oppStarterLeashScore
         })
       : null
   const finalConfidence = tierOneControls?.adjustedConfidence ?? confidence
@@ -3643,6 +3780,10 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           oppBullpenChainScore: mlbIndicators.oppBullpenChainScore,
           pickStarterScore: mlbIndicators.pickStarterScore,
           oppStarterScore: mlbIndicators.oppStarterScore,
+          pickStarterLeashScore: mlbIndicators.pickStarterLeashScore,
+          oppStarterLeashScore: mlbIndicators.oppStarterLeashScore,
+          pickStoryInstability: mlbIndicators.pickStoryInstability,
+          oppStoryInstability: mlbIndicators.oppStoryInstability,
           projectedHitEdgeForPick: mlbIndicators.projectedHitEdgeForPick,
           hitEdgeAgainstPick: mlbIndicators.hitEdgeAgainstPick,
           tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,
@@ -3650,6 +3791,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           tierOneRiskFlags: tierOneControls?.riskFlags ?? [],
           favoredSignalCount,
           starterLateGap: tierOneControls?.starterLateGap ?? null,
+          starterLeashGap: tierOneControls?.starterLeashGap ?? null,
           edgeHaircutApplied: tierOneControls?.edgeHaircut ?? 0
         }
       : null,

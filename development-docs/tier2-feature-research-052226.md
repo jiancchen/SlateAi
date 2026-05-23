@@ -34,10 +34,10 @@ This pass focuses on four medium-lift additions:
 ### Pick-Team Story Instability
 | Bucket | Games | Hit rate |
 | --- | --- | --- |
-| `<8` | 65 | 0.692 |
-| `8-14` | 73 | 0.589 |
-| `15-19` | 24 | 0.583 |
-| `20+` | 6 | 0.167 |
+| `<45` | 142 | 0.641 |
+| `45-54` | 24 | 0.458 |
+| `55-64` | 2 | 0.500 |
+| `65+` | 0 | 0.000 |
 
 ### Pick-Team Lineup Dependency
 | Bucket | Games | Hit rate |
@@ -58,9 +58,9 @@ This pass focuses on four medium-lift additions:
 ### Story Gap (Pick - Opponent)
 | Bucket | Games | Hit rate |
 | --- | --- | --- |
-| `<= -5` | 49 | 0.653 |
-| `-4 to 4` | 88 | 0.602 |
-| `5+` | 31 | 0.581 |
+| `<= -5` | 51 | 0.627 |
+| `-4 to 4` | 74 | 0.608 |
+| `5+` | 43 | 0.605 |
 
 ### Leash Gap (Pick - Opponent)
 | Bucket | Games | Hit rate |
@@ -110,9 +110,9 @@ Pass if `pointEdge >= 10 && story gap >= 5`
 
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
-| Reserve | 73 | 0.658 | 2 | 0.500 |
-| Current | 89 | 0.573 | 4 | 0.750 |
-| Combined | 162 | 0.611 | 6 | 0.667 |
+| Reserve | 72 | 0.653 | 3 | 0.667 |
+| Current | 85 | 0.565 | 8 | 0.750 |
+| Combined | 157 | 0.605 | 11 | 0.727 |
 
 Note: Useful as a monitoring lane, but it is not a clean pass trigger yet because the early sample is mixed and small.
 
@@ -130,7 +130,7 @@ Note: Important negative result: this is not behaving like a pass rule yet, whic
 
 ## Early Read
 
-- `Story instability` still looks like the right concept, but the first scoring scale is too compressed. It needs either a stronger formula or quantile-style thresholds before it becomes a live rule.
+- `Story instability` now sits on a more usable scale, but it still looks better as a soft volatility/context feature than a pure pass trigger.
 - `Starter leash` is the best first Tier 2 lane. The strongest early warning signal is not just a short leash, but a **negative leash gap** where the picked side clearly owns the worse starter length outlook.
 - `Lineup dependency` is not behaving like a pure pass feature yet. Concentrated offenses can still be genuinely dangerous, so this probably belongs in combination with leash, pitch mix, or opponent-quality filters.
 - `Series / divisional context` is useful as supporting context, but it does not look like the first standalone win condition.

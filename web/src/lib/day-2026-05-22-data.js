@@ -1,5 +1,6 @@
 export const rawGames = [
   {
+    "gamePk": 824679,
     "id": "astros-cubs",
     "away": "Astros",
     "home": "Cubs",
@@ -46,6 +47,12 @@ export const rawGames = [
         "startsLoaded": 6,
         "shortLeashRisk": 0,
         "durableRate": 0.5,
+        "leashScore": 70.41,
+        "leashVolatility": 2.97,
+        "recent3OutsDelta": 0,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.4,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "Workhorse lane"
       }
     },
@@ -90,16 +97,74 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0.11,
         "durableRate": 0.33,
+        "leashScore": 65.44,
+        "leashVolatility": 2.23,
+        "recent3OutsDelta": -0.8,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.2,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +160",
-    "total": "o7.5 -105 / u7.5 -110",
-    "moneyline": "Astros +130 / Cubs -142",
+    "spread": "+1.5 -170 / -1.5 +155",
+    "total": "o7.5 even / u7.5 -115",
+    "moneyline": "Astros +130 / Cubs -148",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs"
+    "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.4,
+          "quietFirst5Rate": 0.5,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.1,
+          "blewLeadLossRate": 0.1,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.2,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.6,
+          "highTotalGameRate": 0.2,
+          "avgFirstScoringInning": 2,
+          "avgTotalRunsFirst5": 3.7,
+          "avgTotalRunsFinal": 6.6,
+          "storyInstabilityIndex": 37
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.2,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0.3,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.6,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 2.5,
+          "avgTotalRunsFirst5": 5,
+          "avgTotalRunsFinal": 8.4,
+          "storyInstabilityIndex": 37.4
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 823461,
     "id": "guardians-phillies",
     "away": "Guardians",
     "home": "Phillies",
@@ -146,6 +211,12 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0,
         "durableRate": 0.4,
+        "leashScore": 84.5,
+        "leashVolatility": 2,
+        "recent3OutsDelta": -1,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 1,
+        "ninetyPitchRate": 1,
         "workloadLabel": "Workhorse lane"
       }
     },
@@ -190,16 +261,74 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0,
         "durableRate": 0.7,
+        "leashScore": 79.89,
+        "leashVolatility": 3.72,
+        "recent3OutsDelta": 2.4,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.8,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -130 / -1.5 +115",
-    "total": "o7 -122 / u7.5 -120",
-    "moneyline": "Guardians +172 / Phillies -195",
+    "spread": "+1.5 -134 / -1.5 +118",
+    "total": "o7 -110 / u7 -105",
+    "moneyline": "Guardians +166 / Phillies -190",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies"
+    "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.9,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0.4,
+          "blewLeadLossRate": 0,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 2.4,
+          "avgTotalRunsFirst5": 4.4,
+          "avgTotalRunsFinal": 8.3,
+          "storyInstabilityIndex": 34
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.7,
+          "quietFirst5Rate": 0.5,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.7,
+          "highTotalGameRate": 0.2,
+          "avgFirstScoringInning": 2.6,
+          "avgTotalRunsFirst5": 3.8,
+          "avgTotalRunsFinal": 7.6,
+          "storyInstabilityIndex": 36.6
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 823546,
     "id": "rays-yankees",
     "away": "Rays",
     "home": "Yankees",
@@ -246,6 +375,12 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0.2,
         "durableRate": 0.5,
+        "leashScore": 39.48,
+        "leashVolatility": 7.36,
+        "recent3OutsDelta": -2.53,
+        "fivePlusInningRate": 0.8,
+        "sixPlusInningRate": 0.4,
+        "ninetyPitchRate": 0,
         "workloadLabel": "5-inning lane"
       }
     },
@@ -274,16 +409,74 @@ export const rawGames = [
         "startsLoaded": 0,
         "shortLeashRisk": 0,
         "durableRate": 0,
+        "leashScore": null,
+        "leashVolatility": null,
+        "recent3OutsDelta": null,
+        "fivePlusInningRate": null,
+        "sixPlusInningRate": null,
+        "ninetyPitchRate": null,
         "workloadLabel": "4-5 inning lane"
       }
     },
-    "spread": "+1.5 -182 / -1.5 +165",
-    "total": "o7 -110 / u7 -105",
-    "moneyline": "Rays +122 / Yankees -140",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/rays-vs-yankees"
+    "oddsPage": "https://www.scoresandodds.com/mlb/rays-vs-yankees",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.8,
+          "quietFirst5Rate": 0.6,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.3,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0.4,
+          "starterCrackedRate": 0,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.2,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 1.9,
+          "avgTotalRunsFirst5": 5.1,
+          "avgTotalRunsFinal": 10.7,
+          "storyInstabilityIndex": 47
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.4,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.3,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.2,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.2,
+          "avgFirstScoringInning": 2.7,
+          "avgTotalRunsFirst5": 4.2,
+          "avgTotalRunsFinal": 7.6,
+          "storyInstabilityIndex": 41
+        }
+      },
+      "series": {
+        "sameDivisionFlag": true,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 822816,
     "id": "pirates-blue-jays",
     "away": "Pirates",
     "home": "Blue Jays",
@@ -330,6 +523,12 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0.44,
         "durableRate": 0.11,
+        "leashScore": 31.93,
+        "leashVolatility": 2.4,
+        "recent3OutsDelta": -0.2,
+        "fivePlusInningRate": 0.6,
+        "sixPlusInningRate": 0,
+        "ninetyPitchRate": 0.2,
         "workloadLabel": "Short leash"
       }
     },
@@ -374,16 +573,74 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0.1,
         "durableRate": 0.6,
+        "leashScore": 67.64,
+        "leashVolatility": 1.96,
+        "recent3OutsDelta": -0.73,
+        "fivePlusInningRate": 0.8,
+        "sixPlusInningRate": 0.6,
+        "ninetyPitchRate": 1,
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +120 / +1.5 -134",
-    "total": "o7.5 -105 / u7.5 -110",
-    "moneyline": "Pirates -150 / Blue Jays +130",
+    "spread": "-1.5 +115 / +1.5 -134",
+    "total": "o7.5 -105 / u7.5 -113",
+    "moneyline": "Pirates -148 / Blue Jays +135",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays"
+    "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.4,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0,
+          "blewLeadLossRate": 0.4,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.3,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.4,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 2,
+          "avgTotalRunsFirst5": 5.4,
+          "avgTotalRunsFinal": 10.2,
+          "storyInstabilityIndex": 49.6
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.5,
+          "quietFirst5Rate": 0.6,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.3,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.2,
+          "lateBreakRate": 0.2,
+          "starterCrackedRate": 0.2,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.3,
+          "avgFirstScoringInning": 3.1,
+          "avgTotalRunsFirst5": 3.6,
+          "avgTotalRunsFinal": 7.4,
+          "storyInstabilityIndex": 46.6
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 823863,
     "id": "mets-marlins",
     "away": "Mets",
     "home": "Marlins",
@@ -430,6 +687,12 @@ export const rawGames = [
         "startsLoaded": 1,
         "shortLeashRisk": 1,
         "durableRate": 0,
+        "leashScore": 0,
+        "leashVolatility": 0,
+        "recent3OutsDelta": 0,
+        "fivePlusInningRate": 0,
+        "sixPlusInningRate": 0,
+        "ninetyPitchRate": 0,
         "workloadLabel": "Short leash"
       }
     },
@@ -474,16 +737,74 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0.2,
         "durableRate": 0.3,
+        "leashScore": 65.37,
+        "leashVolatility": 1.17,
+        "recent3OutsDelta": 0.2,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.2,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -184",
-    "total": "o7.5 -115 / u8 -119",
-    "moneyline": "Mets -105 / Marlins -108",
+    "spread": "+1.5 -210 / +1.5 -186",
+    "total": "o7.5 -120 / u8 -117",
+    "moneyline": "Mets -102 / Marlins -107",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins"
+    "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.7,
+          "quietFirst5Rate": 0.3,
+          "firstInningJoltRate": 0.4,
+          "comebackWinRate": 0.6,
+          "blewLeadLossRate": 0.1,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.3,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.3,
+          "highTotalGameRate": 0.6,
+          "avgFirstScoringInning": 1.9,
+          "avgTotalRunsFirst5": 6,
+          "avgTotalRunsFinal": 11.2,
+          "storyInstabilityIndex": 54
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.3,
+          "quietFirst5Rate": 0.2,
+          "firstInningJoltRate": 0.4,
+          "comebackWinRate": 0.1,
+          "blewLeadLossRate": 0.3,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.1,
+          "highTotalGameRate": 0.7,
+          "avgFirstScoringInning": 1.8,
+          "avgTotalRunsFirst5": 6.6,
+          "avgTotalRunsFinal": 10.6,
+          "storyInstabilityIndex": 55.4
+        }
+      },
+      "series": {
+        "sameDivisionFlag": true,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 824761,
     "id": "twins-red-sox",
     "away": "Twins",
     "home": "Red Sox",
@@ -530,6 +851,12 @@ export const rawGames = [
         "startsLoaded": 5,
         "shortLeashRisk": 0.2,
         "durableRate": 0.2,
+        "leashScore": 51.91,
+        "leashVolatility": 1.9,
+        "recent3OutsDelta": 1,
+        "fivePlusInningRate": 0.8,
+        "sixPlusInningRate": 0.2,
+        "ninetyPitchRate": 0.4,
         "workloadLabel": "5-inning lane"
       }
     },
@@ -574,16 +901,74 @@ export const rawGames = [
         "startsLoaded": 5,
         "shortLeashRisk": 0.33,
         "durableRate": 0.5,
+        "leashScore": 30.8,
+        "leashVolatility": 8.28,
+        "recent3OutsDelta": -1.8,
+        "fivePlusInningRate": 0.6,
+        "sixPlusInningRate": 0.4,
+        "ninetyPitchRate": 0,
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +155 / +1.5 -188",
-    "total": "o8.5 -110 / u8.5 -110",
-    "moneyline": "Twins -108 / Red Sox -108",
+    "spread": "+1.5 -205 / +1.5 -195",
+    "total": "o8 -105 / u8.5 -120",
+    "moneyline": "Twins even / Red Sox -120",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox"
+    "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.6,
+          "quietFirst5Rate": 0.5,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0.1,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.2,
+          "avgFirstScoringInning": 2.1,
+          "avgTotalRunsFirst5": 4.8,
+          "avgTotalRunsFinal": 7,
+          "storyInstabilityIndex": 33.8
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.5,
+          "quietFirst5Rate": 0.8,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0,
+          "bullpenFlipWinRate": 0.2,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0,
+          "trafficNoConversionRate": 0.2,
+          "lowTotalGameRate": 0.8,
+          "highTotalGameRate": 0,
+          "avgFirstScoringInning": 2.3,
+          "avgTotalRunsFirst5": 2.7,
+          "avgTotalRunsFinal": 5.4,
+          "storyInstabilityIndex": 26.2
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 824922,
     "id": "nationals-braves",
     "away": "Nationals",
     "home": "Braves",
@@ -630,6 +1015,12 @@ export const rawGames = [
         "startsLoaded": 2,
         "shortLeashRisk": 1,
         "durableRate": 0,
+        "leashScore": 0,
+        "leashVolatility": 1,
+        "recent3OutsDelta": 0,
+        "fivePlusInningRate": 0,
+        "sixPlusInningRate": 0,
+        "ninetyPitchRate": 0,
         "workloadLabel": "Short leash"
       }
     },
@@ -674,16 +1065,74 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0.1,
         "durableRate": 0.7,
+        "leashScore": 78.39,
+        "leashVolatility": 2.58,
+        "recent3OutsDelta": 0.07,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.8,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -125 / -1.5 +110",
-    "total": "o9 -110 / u9 -105",
-    "moneyline": "Nationals +165 / Braves -178",
+    "spread": "+1.5 -130 / -1.5 +116",
+    "total": "o8.5 -115 / u9 -122",
+    "moneyline": "Nationals +160 / Braves -188",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves"
+    "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.6,
+          "quietFirst5Rate": 0.2,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.1,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0.2,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.2,
+          "highTotalGameRate": 0.8,
+          "avgFirstScoringInning": 2,
+          "avgTotalRunsFirst5": 7.3,
+          "avgTotalRunsFinal": 12.9,
+          "storyInstabilityIndex": 46.4
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.7,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.3,
+          "blewLeadLossRate": 0.1,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 2.1,
+          "avgTotalRunsFirst5": 5.1,
+          "avgTotalRunsFinal": 7.9,
+          "storyInstabilityIndex": 40.4
+        }
+      },
+      "series": {
+        "sameDivisionFlag": true,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 2,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 824842,
     "id": "tigers-orioles",
     "away": "Tigers",
     "home": "Orioles",
@@ -730,6 +1179,12 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0.6,
         "durableRate": 0.1,
+        "leashScore": 30.49,
+        "leashVolatility": 4.07,
+        "recent3OutsDelta": 2.47,
+        "fivePlusInningRate": 0.4,
+        "sixPlusInningRate": 0.2,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "Short leash"
       }
     },
@@ -774,16 +1229,74 @@ export const rawGames = [
         "startsLoaded": 1,
         "shortLeashRisk": 1,
         "durableRate": 0,
+        "leashScore": 0,
+        "leashVolatility": 0,
+        "recent3OutsDelta": 0,
+        "fivePlusInningRate": 0,
+        "sixPlusInningRate": 0,
+        "ninetyPitchRate": 0,
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -188",
-    "total": "o8 -115 / u8 -105",
-    "moneyline": "Tigers even / Orioles -120",
+    "spread": "+1.5 -210 / +1.5 -192",
+    "total": "o7.5 -114 / u8 -110",
+    "moneyline": "Tigers even / Orioles -114",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles"
+    "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.1,
+          "quietFirst5Rate": 0.5,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.1,
+          "blewLeadLossRate": 0.7,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.7,
+          "highTotalGameRate": 0.3,
+          "avgFirstScoringInning": 2.6,
+          "avgTotalRunsFirst5": 3.7,
+          "avgTotalRunsFinal": 6.9,
+          "storyInstabilityIndex": 51.8
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.4,
+          "quietFirst5Rate": 0.5,
+          "firstInningJoltRate": 0.1,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.2,
+          "trafficNoConversionRate": 0.2,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.3,
+          "avgFirstScoringInning": 1.9,
+          "avgTotalRunsFirst5": 4.8,
+          "avgTotalRunsFinal": 8.9,
+          "storyInstabilityIndex": 39.6
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 823788,
     "id": "dodgers-brewers",
     "away": "Dodgers",
     "home": "Brewers",
@@ -830,6 +1343,12 @@ export const rawGames = [
         "startsLoaded": 7,
         "shortLeashRisk": 0,
         "durableRate": 0.71,
+        "leashScore": 81.63,
+        "leashVolatility": 3.12,
+        "recent3OutsDelta": 0.47,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 1,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "Workhorse lane"
       }
     },
@@ -874,16 +1393,74 @@ export const rawGames = [
         "startsLoaded": 4,
         "shortLeashRisk": 0.25,
         "durableRate": 0.25,
+        "leashScore": 41.88,
+        "leashVolatility": 4.5,
+        "recent3OutsDelta": 2.5,
+        "fivePlusInningRate": 0.75,
+        "sixPlusInningRate": 0.25,
+        "ninetyPitchRate": 0,
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +134 / +1.5 -150",
+    "spread": "-1.5 +135 / +1.5 -155",
     "total": "o9 -105 / u9 -115",
-    "moneyline": "Dodgers -125 / Brewers +108",
+    "moneyline": "Dodgers -120 / Brewers +108",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers"
+    "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.7,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.1,
+          "comebackWinRate": 0.1,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0.2,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.3,
+          "avgFirstScoringInning": 1.7,
+          "avgTotalRunsFirst5": 4,
+          "avgTotalRunsFinal": 7.9,
+          "storyInstabilityIndex": 40
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.8,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.1,
+          "comebackWinRate": 0.4,
+          "blewLeadLossRate": 0.1,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0,
+          "trafficNoConversionRate": 0.2,
+          "lowTotalGameRate": 0.6,
+          "highTotalGameRate": 0.2,
+          "avgFirstScoringInning": 2,
+          "avgTotalRunsFirst5": 4.9,
+          "avgTotalRunsFinal": 7,
+          "storyInstabilityIndex": 33.6
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 824110,
     "id": "mariners-royals",
     "away": "Mariners",
     "home": "Royals",
@@ -930,6 +1507,12 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0.1,
         "durableRate": 0.3,
+        "leashScore": 62.69,
+        "leashVolatility": 2.8,
+        "recent3OutsDelta": 2.07,
+        "fivePlusInningRate": 0.8,
+        "sixPlusInningRate": 0.6,
+        "ninetyPitchRate": 0.4,
         "workloadLabel": "5-inning lane"
       }
     },
@@ -974,16 +1557,74 @@ export const rawGames = [
         "startsLoaded": 8,
         "shortLeashRisk": 0.25,
         "durableRate": 0.25,
+        "leashScore": 44.68,
+        "leashVolatility": 2.94,
+        "recent3OutsDelta": -0.07,
+        "fivePlusInningRate": 0.6,
+        "sixPlusInningRate": 0.4,
+        "ninetyPitchRate": 0.4,
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +120 / +1.5 -136",
-    "total": "o8.5 -105 / u8.5 -100",
-    "moneyline": "Mariners -140 / Royals +120",
+    "spread": "-1.5 +122 / +1.5 -139",
+    "total": "o8.5 even / u8.5 -105",
+    "moneyline": "Mariners -137 / Royals +120",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals"
+    "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.5,
+          "quietFirst5Rate": 0.5,
+          "firstInningJoltRate": 0.1,
+          "comebackWinRate": 0,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.2,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 1.7,
+          "avgTotalRunsFirst5": 3.7,
+          "avgTotalRunsFinal": 7.7,
+          "storyInstabilityIndex": 35
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.1,
+          "quietFirst5Rate": 0.3,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0,
+          "blewLeadLossRate": 0.4,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.2,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.4,
+          "highTotalGameRate": 0.2,
+          "avgFirstScoringInning": 2,
+          "avgTotalRunsFirst5": 4.6,
+          "avgTotalRunsFinal": 7.5,
+          "storyInstabilityIndex": 48
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 3,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 824029,
     "id": "rangers-angels",
     "away": "Rangers",
     "home": "Angels",
@@ -994,7 +1635,7 @@ export const rawGames = [
       "fullName": "Jacob deGrom",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 3,
+      "losses": 4,
       "era": "3.86",
       "strikeOuts": 64,
       "inningsPitched": "53.2",
@@ -1030,6 +1671,12 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0.22,
         "durableRate": 0.33,
+        "leashScore": 81.53,
+        "leashVolatility": 1.36,
+        "recent3OutsDelta": 0.73,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.8,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "5-inning lane"
       }
     },
@@ -1037,7 +1684,7 @@ export const rawGames = [
       "id": 680570,
       "fullName": "Grayson Rodriguez",
       "pitchHand": "R",
-      "wins": 0,
+      "wins": 1,
       "losses": 1,
       "era": "10.61",
       "strikeOuts": 9,
@@ -1074,16 +1721,74 @@ export const rawGames = [
         "startsLoaded": 1,
         "shortLeashRisk": 1,
         "durableRate": 0,
+        "leashScore": 4.44,
+        "leashVolatility": 0,
+        "recent3OutsDelta": 0,
+        "fivePlusInningRate": 0,
+        "sixPlusInningRate": 0,
+        "ninetyPitchRate": 0,
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +130 / +1.5 -150",
-    "total": "o8 -110 / u8 -105",
-    "moneyline": "Rangers -130 / Angels +115",
+    "spread": "-1.5 +126 / +1.5 -145",
+    "total": "o8 -110 / u8 -110",
+    "moneyline": "Rangers -134 / Angels +120",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels"
+    "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.6,
+          "quietFirst5Rate": 0.5,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.2,
+          "starterCrackedRate": 0,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.4,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 2.3,
+          "avgTotalRunsFirst5": 4.3,
+          "avgTotalRunsFinal": 7.3,
+          "storyInstabilityIndex": 35.4
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.1,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.1,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.2,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 2.7,
+          "avgTotalRunsFirst5": 4.7,
+          "avgTotalRunsFinal": 9.3,
+          "storyInstabilityIndex": 44.8
+        }
+      },
+      "series": {
+        "sameDivisionFlag": true,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 823298,
     "id": "athletics-padres",
     "away": "Athletics",
     "home": "Padres",
@@ -1130,6 +1835,12 @@ export const rawGames = [
         "startsLoaded": 10,
         "shortLeashRisk": 0.1,
         "durableRate": 0.4,
+        "leashScore": 55.28,
+        "leashVolatility": 3.31,
+        "recent3OutsDelta": 1.13,
+        "fivePlusInningRate": 0.8,
+        "sixPlusInningRate": 0.4,
+        "ninetyPitchRate": 0.6,
         "workloadLabel": "5-inning lane"
       }
     },
@@ -1174,16 +1885,74 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0.44,
         "durableRate": 0.22,
+        "leashScore": 40.86,
+        "leashVolatility": 3.37,
+        "recent3OutsDelta": 2.13,
+        "fivePlusInningRate": 0.6,
+        "sixPlusInningRate": 0.2,
+        "ninetyPitchRate": 0.4,
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +150 / +1.5 -178",
-    "total": "o8 -105 / u8 -110",
+    "spread": "-1.5 +160 / +1.5 -178",
+    "total": "o7.5 -117 / u8 -110",
     "moneyline": "Athletics -108 / Padres -108",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres"
+    "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.5,
+          "quietFirst5Rate": 0.4,
+          "firstInningJoltRate": 0.3,
+          "comebackWinRate": 0.4,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0.2,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.2,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.3,
+          "highTotalGameRate": 0.5,
+          "avgFirstScoringInning": 2.6,
+          "avgTotalRunsFirst5": 5,
+          "avgTotalRunsFinal": 9.4,
+          "storyInstabilityIndex": 48.8
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.6,
+          "quietFirst5Rate": 0.6,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.2,
+          "bullpenFlipWinRate": 0.2,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0.2,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.5,
+          "highTotalGameRate": 0.3,
+          "avgFirstScoringInning": 2.3,
+          "avgTotalRunsFirst5": 3.9,
+          "avgTotalRunsFinal": 6.5,
+          "storyInstabilityIndex": 43.4
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   },
   {
+    "gamePk": 825082,
     "id": "rockies-diamondbacks",
     "away": "Rockies",
     "home": "Diamondbacks",
@@ -1230,6 +1999,12 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0.22,
         "durableRate": 0.22,
+        "leashScore": 59,
+        "leashVolatility": 0.75,
+        "recent3OutsDelta": -0.47,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0,
+        "ninetyPitchRate": 0.4,
         "workloadLabel": "5-inning lane"
       }
     },
@@ -1274,16 +2049,74 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0.11,
         "durableRate": 0.33,
+        "leashScore": 58.02,
+        "leashVolatility": 3.71,
+        "recent3OutsDelta": 2.53,
+        "fivePlusInningRate": 0.8,
+        "sixPlusInningRate": 0.4,
+        "ninetyPitchRate": 0.6,
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -144 / -1.5 +125",
-    "total": "o9 -120 / u9.5 -120",
-    "moneyline": "Rockies +150 / Diamondbacks -162",
+    "spread": "+1.5 -130 / -1.5 +116",
+    "total": "o9 -112 / u9 even",
+    "moneyline": "Rockies +155 / Diamondbacks -174",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks"
+    "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.3,
+          "quietFirst5Rate": 0.2,
+          "firstInningJoltRate": 0.5,
+          "comebackWinRate": 0.1,
+          "blewLeadLossRate": 0.1,
+          "bullpenFlipWinRate": 0,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0.2,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.3,
+          "highTotalGameRate": 0.5,
+          "avgFirstScoringInning": 1.8,
+          "avgTotalRunsFirst5": 6.5,
+          "avgTotalRunsFinal": 9.2,
+          "storyInstabilityIndex": 47.2
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.7,
+          "quietFirst5Rate": 0.3,
+          "firstInningJoltRate": 0.4,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.1,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0.1,
+          "starterCrackedRate": 0,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.3,
+          "highTotalGameRate": 0.5,
+          "avgFirstScoringInning": 2.1,
+          "avgTotalRunsFirst5": 6.1,
+          "avgTotalRunsFinal": 8.7,
+          "storyInstabilityIndex": 42.8
+        }
+      },
+      "series": {
+        "sameDivisionFlag": true,
+        "previousMatchups14d": 4,
+        "previousMatchups30d": 4,
+        "seriesGameNumber": 2,
+        "playedYesterdayFlag": true
+      }
+    }
   },
   {
+    "gamePk": 823223,
     "id": "white-sox-giants",
     "away": "White Sox",
     "home": "Giants",
@@ -1293,7 +2126,7 @@ export const rawGames = [
       "id": 663436,
       "fullName": "Davis Martin",
       "pitchHand": "R",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
       "era": "2.04",
       "strikeOuts": 66,
@@ -1330,6 +2163,12 @@ export const rawGames = [
         "startsLoaded": 9,
         "shortLeashRisk": 0,
         "durableRate": 0.78,
+        "leashScore": 81.03,
+        "leashVolatility": 1.36,
+        "recent3OutsDelta": 0.4,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.8,
+        "ninetyPitchRate": 0.8,
         "workloadLabel": "Workhorse lane"
       }
     },
@@ -1338,7 +2177,7 @@ export const rawGames = [
       "fullName": "Trevor McDonald",
       "pitchHand": "R",
       "wins": 2,
-      "losses": 0,
+      "losses": 1,
       "era": "4.76",
       "strikeOuts": 21,
       "inningsPitched": "22.2",
@@ -1374,14 +2213,71 @@ export const rawGames = [
         "startsLoaded": 3,
         "shortLeashRisk": 0,
         "durableRate": 0.67,
+        "leashScore": 75.55,
+        "leashVolatility": 2.16,
+        "recent3OutsDelta": 0,
+        "fivePlusInningRate": 1,
+        "sixPlusInningRate": 0.67,
+        "ninetyPitchRate": 0.67,
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -195 / -1.5 +172",
-    "total": "o8.5 -102 / u8.5 -115",
-    "moneyline": "White Sox +106 / Giants -124",
+    "spread": "+1.5 -195 / +1.5 -188",
+    "total": "o8.5 -120 / u8.5 +101",
+    "moneyline": "White Sox +104 / Giants -120",
     "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants"
+    "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants",
+    "tierTwoContext": {
+      "storyPriors": {
+        "away": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.7,
+          "quietFirst5Rate": 0.3,
+          "firstInningJoltRate": 0.4,
+          "comebackWinRate": 0.5,
+          "blewLeadLossRate": 0,
+          "bullpenFlipWinRate": 0.2,
+          "bullpenFlipLossRate": 0,
+          "lateBreakRate": 0,
+          "starterCrackedRate": 0.3,
+          "trafficNoConversionRate": 0,
+          "lowTotalGameRate": 0.3,
+          "highTotalGameRate": 0.5,
+          "avgFirstScoringInning": 1.2,
+          "avgTotalRunsFirst5": 5.1,
+          "avgTotalRunsFinal": 9.5,
+          "storyInstabilityIndex": 48.6
+        },
+        "home": {
+          "windowGames": 10,
+          "gamesSample": 10,
+          "winRate": 0.4,
+          "quietFirst5Rate": 0.2,
+          "firstInningJoltRate": 0.2,
+          "comebackWinRate": 0.2,
+          "blewLeadLossRate": 0.3,
+          "bullpenFlipWinRate": 0.1,
+          "bullpenFlipLossRate": 0.1,
+          "lateBreakRate": 0.2,
+          "starterCrackedRate": 0.1,
+          "trafficNoConversionRate": 0.1,
+          "lowTotalGameRate": 0.3,
+          "highTotalGameRate": 0.4,
+          "avgFirstScoringInning": 1.6,
+          "avgTotalRunsFirst5": 5.9,
+          "avgTotalRunsFinal": 9,
+          "storyInstabilityIndex": 49.8
+        }
+      },
+      "series": {
+        "sameDivisionFlag": false,
+        "previousMatchups14d": 0,
+        "previousMatchups30d": 0,
+        "seriesGameNumber": 1,
+        "playedYesterdayFlag": false
+      }
+    }
   }
 ]
 

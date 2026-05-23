@@ -23,6 +23,8 @@ WAREHOUSE_DIR = DATA_DIR / "warehouse"
 PREDICTIONS_DIR = DATA_DIR / "predictions" / "mlb-home-runs"
 DB_PATH = WAREHOUSE_DIR / "sports.db"
 USER_AGENT = "SportsTradingBoardBot/1.0 (+https://baseballsavant.mlb.com)"
+TIER3_RELIEF_WINDOW = 8
+TIER3_STARTER_WINDOW = 5
 
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={date}&hydrate=probablePitcher,team"
 MLB_FEED_URL = "https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live"
@@ -653,6 +655,57 @@ CREATE TABLE IF NOT EXISTS mlb_series_context_snapshots (
   series_game_number INTEGER NOT NULL,
   played_yesterday_flag INTEGER NOT NULL,
   PRIMARY KEY (as_of_date, game_pk)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_reliever_first_batter_command_profiles (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  appearance_window INTEGER NOT NULL,
+  entries_sample INTEGER NOT NULL,
+  avg_entry_order REAL,
+  first_pitch_ball_rate REAL,
+  first_pitch_strike_rate REAL,
+  ball_rate REAL,
+  reached_rate REAL,
+  free_pass_rate REAL,
+  scoring_play_rate REAL,
+  run_delta_per_entry REAL,
+  strikeout_rate REAL,
+  command_risk_index REAL,
+  PRIMARY KEY (as_of_date, team_name, pitcher_id, appearance_window)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_starter_third_time_penalty_profiles (
+  as_of_date TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  window_starts INTEGER NOT NULL,
+  starts_sample INTEGER NOT NULL,
+  starts_with_third_trip INTEGER NOT NULL,
+  third_trip_exposure_rate REAL,
+  first_trip_pa INTEGER,
+  second_trip_pa INTEGER,
+  third_trip_pa INTEGER,
+  first_trip_reached_rate REAL,
+  second_trip_reached_rate REAL,
+  third_trip_reached_rate REAL,
+  first_trip_scoring_play_rate REAL,
+  second_trip_scoring_play_rate REAL,
+  third_trip_scoring_play_rate REAL,
+  first_trip_run_delta REAL,
+  second_trip_run_delta REAL,
+  third_trip_run_delta REAL,
+  first_trip_hr_rate REAL,
+  second_trip_hr_rate REAL,
+  third_trip_hr_rate REAL,
+  third_trip_reached_delta REAL,
+  third_trip_scoring_delta REAL,
+  third_trip_run_delta_delta REAL,
+  third_trip_hr_delta REAL,
+  third_time_penalty_index REAL,
+  PRIMARY KEY (as_of_date, pitcher_id, window_starts)
 );
 
 CREATE TABLE IF NOT EXISTS park_factor_snapshots (
@@ -2764,19 +2817,20 @@ def build_team_story_prior_row(
     avg_total_runs_first5 = safe_mean([row["total_runs_first5"] or 0 for row in rows])
     avg_total_runs_final = safe_mean([row["total_runs_final"] or 0 for row in rows])
     story_instability_index = clamp_value(
-        first_inning_jolt_rate * 16
-        + comeback_win_rate * 8
-        + blew_lead_loss_rate * 18
-        + bullpen_flip_win_rate * 8
-        + bullpen_flip_loss_rate * 18
-        + late_break_rate * 12
-        + starter_cracked_rate * 18
-        + traffic_no_conversion_rate * 10
-        + high_total_game_rate * 8
-        - quiet_first5_rate * 6
-        - low_total_game_rate * 4,
-        0,
-        100,
+        24
+        + first_inning_jolt_rate * 22
+        + comeback_win_rate * 12
+        + blew_lead_loss_rate * 26
+        + bullpen_flip_win_rate * 12
+        + bullpen_flip_loss_rate * 24
+        + late_break_rate * 18
+        + starter_cracked_rate * 22
+        + traffic_no_conversion_rate * 12
+        + high_total_game_rate * 10
+        - quiet_first5_rate * 8
+        - low_total_game_rate * 6,
+        18,
+        92,
     )
 
     return {
@@ -2925,6 +2979,255 @@ def build_starter_leash_profile_row(
         "recent_3_outs_delta": safe_mean(recent_outs) - safe_mean(all_outs),
         "recent_3_pitches_delta": safe_mean(recent_pitches) - safe_mean(all_pitches),
         "leash_score": leash_score,
+    }
+
+
+def build_reliever_first_batter_command_profile_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    pitcher_id: int,
+    pitcher_name: str,
+    appearance_window: int,
+    rows: list[sqlite3.Row],
+) -> dict[str, Any] | None:
+    if not rows:
+        return None
+
+    selected_rows = rows[:appearance_window]
+    game_pks = [row["game_pk"] for row in selected_rows if row["game_pk"] is not None]
+    if not game_pks:
+        return None
+
+    placeholders = ",".join("?" for _ in game_pks)
+    first_pa_rows = conn.execute(
+        f"""
+        WITH first_pa AS (
+          SELECT
+            pa.game_pk,
+            MIN(pa.at_bat_index) AS at_bat_index
+          FROM mlb_plate_appearances pa
+          WHERE pa.game_pk IN ({placeholders})
+            AND pa.pitcher_id = ?
+          GROUP BY pa.game_pk
+        ),
+        pitch_rollup AS (
+          SELECT
+            game_pk,
+            at_bat_index,
+            AVG(CASE WHEN is_pitch = 1 THEN CASE WHEN is_ball = 1 THEN 1.0 ELSE 0 END END) AS ball_rate,
+            MAX(CASE WHEN pitch_number = 1 AND is_ball = 1 THEN 1 ELSE 0 END) AS first_pitch_ball_flag,
+            MAX(CASE WHEN pitch_number = 1 AND is_strike = 1 THEN 1 ELSE 0 END) AS first_pitch_strike_flag
+          FROM mlb_pitch_events
+          GROUP BY game_pk, at_bat_index
+        )
+        SELECT
+          fp.game_pk,
+          pa.event_type,
+          pa.is_out,
+          pa.is_scoring_play,
+          pa.run_delta,
+          pr.ball_rate,
+          pr.first_pitch_ball_flag,
+          pr.first_pitch_strike_flag,
+          CASE
+            WHEN lower(COALESCE(pa.event_type, '')) IN ('walk', 'intent_walk', 'hit_by_pitch') THEN 1
+            ELSE 0
+          END AS free_pass_flag
+        FROM first_pa fp
+        JOIN mlb_plate_appearances pa
+          ON pa.game_pk = fp.game_pk
+         AND pa.at_bat_index = fp.at_bat_index
+        LEFT JOIN pitch_rollup pr
+          ON pr.game_pk = fp.game_pk
+         AND pr.at_bat_index = fp.at_bat_index
+        ORDER BY fp.game_pk
+        """,
+        (*game_pks, pitcher_id),
+    ).fetchall()
+    if not first_pa_rows:
+        return None
+
+    avg_entry_order = safe_mean([row["entry_order"] or 5 for row in selected_rows])
+    entries_sample = len(first_pa_rows)
+    first_pitch_ball_rate = safe_mean([row["first_pitch_ball_flag"] or 0 for row in first_pa_rows])
+    first_pitch_strike_rate = safe_mean([row["first_pitch_strike_flag"] or 0 for row in first_pa_rows])
+    ball_rate = safe_mean([row["ball_rate"] or 0.0 for row in first_pa_rows])
+    reached_rate = safe_mean([0 if row["is_out"] else 1 for row in first_pa_rows])
+    free_pass_rate = safe_mean([row["free_pass_flag"] or 0 for row in first_pa_rows])
+    scoring_play_rate = safe_mean([row["is_scoring_play"] or 0 for row in first_pa_rows])
+    run_delta_per_entry = safe_mean([row["run_delta"] or 0 for row in first_pa_rows])
+    strikeout_rate = safe_mean(
+        [1 if str(row["event_type"] or "").lower() == "strikeout" else 0 for row in first_pa_rows]
+    )
+    command_risk_index = clamp_value(
+        first_pitch_ball_rate * 28
+        + ball_rate * 32
+        + reached_rate * 18
+        + free_pass_rate * 14
+        + scoring_play_rate * 10
+        + run_delta_per_entry * 6,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "pitcher_id": pitcher_id,
+        "pitcher_name": pitcher_name,
+        "appearance_window": appearance_window,
+        "entries_sample": entries_sample,
+        "avg_entry_order": avg_entry_order,
+        "first_pitch_ball_rate": first_pitch_ball_rate,
+        "first_pitch_strike_rate": first_pitch_strike_rate,
+        "ball_rate": ball_rate,
+        "reached_rate": reached_rate,
+        "free_pass_rate": free_pass_rate,
+        "scoring_play_rate": scoring_play_rate,
+        "run_delta_per_entry": run_delta_per_entry,
+        "strikeout_rate": strikeout_rate,
+        "command_risk_index": command_risk_index,
+    }
+
+
+def build_starter_third_time_penalty_profile_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    pitcher_id: int,
+    pitcher_name: str,
+    window_starts: int,
+    rows: list[sqlite3.Row],
+) -> dict[str, Any] | None:
+    if not rows:
+        return None
+
+    selected_rows = rows[:window_starts]
+    starts_sample = len(selected_rows)
+    game_pks = [row["game_pk"] for row in selected_rows if row["game_pk"] is not None]
+    if not game_pks:
+        return None
+
+    placeholders = ",".join("?" for _ in game_pks)
+    trip_rows = conn.execute(
+        f"""
+        WITH starter_pas AS (
+          SELECT
+            pa.game_pk,
+            pa.at_bat_index,
+            pa.event_type,
+            pa.is_out,
+            pa.is_scoring_play,
+            pa.run_delta,
+            ROW_NUMBER() OVER (
+              PARTITION BY pa.game_pk, pa.pitcher_id
+              ORDER BY pa.at_bat_index
+            ) AS batter_seq
+          FROM mlb_plate_appearances pa
+          WHERE pa.game_pk IN ({placeholders})
+            AND pa.pitcher_id = ?
+        ),
+        bucketed AS (
+          SELECT
+            game_pk,
+            CASE
+              WHEN batter_seq <= 9 THEN 'first'
+              WHEN batter_seq <= 18 THEN 'second'
+              ELSE 'third'
+            END AS trip_bucket,
+            CASE WHEN is_out = 0 THEN 1 ELSE 0 END AS reached_flag,
+            CASE WHEN lower(COALESCE(event_type, '')) = 'home_run' THEN 1 ELSE 0 END AS hr_flag,
+            is_scoring_play,
+            run_delta
+          FROM starter_pas
+        )
+        SELECT
+          trip_bucket,
+          COUNT(*) AS pa_count,
+          COUNT(DISTINCT game_pk) AS starts_covered,
+          AVG(reached_flag * 1.0) AS reached_rate,
+          AVG(is_scoring_play * 1.0) AS scoring_play_rate,
+          AVG(run_delta * 1.0) AS run_delta,
+          AVG(hr_flag * 1.0) AS hr_rate
+        FROM bucketed
+        GROUP BY trip_bucket
+        ORDER BY CASE trip_bucket WHEN 'first' THEN 1 WHEN 'second' THEN 2 ELSE 3 END
+        """,
+        (*game_pks, pitcher_id),
+    ).fetchall()
+    if not trip_rows:
+        return None
+
+    by_bucket = {row["trip_bucket"]: row for row in trip_rows}
+    first_row = by_bucket.get("first")
+    second_row = by_bucket.get("second")
+    third_row = by_bucket.get("third")
+    starts_with_third_trip = int(third_row["starts_covered"]) if third_row else 0
+    third_trip_exposure_rate = (starts_with_third_trip / starts_sample) if starts_sample else 0.0
+
+    def bucket_float(row: sqlite3.Row | None, key: str) -> float:
+        return float(row[key]) if row and row[key] is not None else 0.0
+
+    first_reached_rate = bucket_float(first_row, "reached_rate")
+    second_reached_rate = bucket_float(second_row, "reached_rate")
+    third_reached_rate = bucket_float(third_row, "reached_rate")
+    first_scoring_rate = bucket_float(first_row, "scoring_play_rate")
+    second_scoring_rate = bucket_float(second_row, "scoring_play_rate")
+    third_scoring_rate = bucket_float(third_row, "scoring_play_rate")
+    first_run_delta = bucket_float(first_row, "run_delta")
+    second_run_delta = bucket_float(second_row, "run_delta")
+    third_run_delta = bucket_float(third_row, "run_delta")
+    first_hr_rate = bucket_float(first_row, "hr_rate")
+    second_hr_rate = bucket_float(second_row, "hr_rate")
+    third_hr_rate = bucket_float(third_row, "hr_rate")
+
+    prior_reached_rate = safe_mean([first_reached_rate, second_reached_rate])
+    prior_scoring_rate = safe_mean([first_scoring_rate, second_scoring_rate])
+    prior_run_delta = safe_mean([first_run_delta, second_run_delta])
+    prior_hr_rate = safe_mean([first_hr_rate, second_hr_rate])
+    third_trip_reached_delta = third_reached_rate - prior_reached_rate
+    third_trip_scoring_delta = third_scoring_rate - prior_scoring_rate
+    third_trip_run_delta_delta = third_run_delta - prior_run_delta
+    third_trip_hr_delta = third_hr_rate - prior_hr_rate
+    third_time_penalty_index = clamp_value(
+        16
+        + third_trip_exposure_rate * 20
+        + max(0.0, third_trip_reached_delta) * 95
+        + max(0.0, third_trip_scoring_delta) * 130
+        + max(0.0, third_trip_run_delta_delta) * 85
+        + max(0.0, third_trip_hr_delta) * 120,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "pitcher_id": pitcher_id,
+        "pitcher_name": pitcher_name,
+        "window_starts": window_starts,
+        "starts_sample": starts_sample,
+        "starts_with_third_trip": starts_with_third_trip,
+        "third_trip_exposure_rate": third_trip_exposure_rate,
+        "first_trip_pa": int(first_row["pa_count"]) if first_row else 0,
+        "second_trip_pa": int(second_row["pa_count"]) if second_row else 0,
+        "third_trip_pa": int(third_row["pa_count"]) if third_row else 0,
+        "first_trip_reached_rate": first_reached_rate,
+        "second_trip_reached_rate": second_reached_rate,
+        "third_trip_reached_rate": third_reached_rate,
+        "first_trip_scoring_play_rate": first_scoring_rate,
+        "second_trip_scoring_play_rate": second_scoring_rate,
+        "third_trip_scoring_play_rate": third_scoring_rate,
+        "first_trip_run_delta": first_run_delta,
+        "second_trip_run_delta": second_run_delta,
+        "third_trip_run_delta": third_run_delta,
+        "first_trip_hr_rate": first_hr_rate,
+        "second_trip_hr_rate": second_hr_rate,
+        "third_trip_hr_rate": third_hr_rate,
+        "third_trip_reached_delta": third_trip_reached_delta,
+        "third_trip_scoring_delta": third_trip_scoring_delta,
+        "third_trip_run_delta_delta": third_trip_run_delta_delta,
+        "third_trip_hr_delta": third_trip_hr_delta,
+        "third_time_penalty_index": third_time_penalty_index,
     }
 
 
@@ -3610,6 +3913,187 @@ def refresh_tier2_profiles(conn: sqlite3.Connection, through_date: str | None = 
     conn.commit()
 
 
+def refresh_tier3_profiles(conn: sqlite3.Connection, through_date: str | None = None) -> None:
+    init_db(conn)
+    params: tuple[Any, ...] = (through_date,) if through_date else ()
+    date_filter = "WHERE game_date <= ?" if through_date else ""
+    dates = [
+        row["game_date"]
+        for row in conn.execute(f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params).fetchall()
+    ]
+
+    if through_date:
+        conn.execute("DELETE FROM mlb_reliever_first_batter_command_profiles WHERE as_of_date <= ?", (through_date,))
+        conn.execute("DELETE FROM mlb_starter_third_time_penalty_profiles WHERE as_of_date <= ?", (through_date,))
+    else:
+        conn.execute("DELETE FROM mlb_reliever_first_batter_command_profiles")
+        conn.execute("DELETE FROM mlb_starter_third_time_penalty_profiles")
+
+    for as_of_date in dates:
+        scheduled_teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (as_of_date, as_of_date),
+            ).fetchall()
+        ]
+        for team_name in scheduled_teams:
+            relievers = conn.execute(
+                """
+                SELECT DISTINCT pitcher_id, pitcher_name
+                FROM mlb_pitcher_appearances
+                WHERE team_name = ?
+                  AND pitcher_role = 'reliever'
+                  AND pitcher_id IS NOT NULL
+                  AND game_date < ?
+                ORDER BY pitcher_name
+                """,
+                (team_name, as_of_date),
+            ).fetchall()
+            for reliever in relievers:
+                appearance_rows = conn.execute(
+                    """
+                    SELECT game_pk, entry_order
+                    FROM mlb_pitcher_appearances
+                    WHERE team_name = ?
+                      AND pitcher_role = 'reliever'
+                      AND pitcher_id = ?
+                      AND game_date < ?
+                    ORDER BY game_date DESC, game_pk DESC, entry_order ASC
+                    LIMIT ?
+                    """,
+                    (team_name, reliever["pitcher_id"], as_of_date, TIER3_RELIEF_WINDOW),
+                ).fetchall()
+                profile_row = build_reliever_first_batter_command_profile_row(
+                    conn,
+                    as_of_date,
+                    team_name,
+                    reliever["pitcher_id"],
+                    reliever["pitcher_name"],
+                    TIER3_RELIEF_WINDOW,
+                    appearance_rows,
+                )
+                if not profile_row or profile_row["entries_sample"] < 3:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_reliever_first_batter_command_profiles (
+                      as_of_date, team_name, pitcher_id, pitcher_name, appearance_window,
+                      entries_sample, avg_entry_order, first_pitch_ball_rate,
+                      first_pitch_strike_rate, ball_rate, reached_rate, free_pass_rate,
+                      scoring_play_rate, run_delta_per_entry, strikeout_rate, command_risk_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        profile_row["as_of_date"],
+                        profile_row["team_name"],
+                        profile_row["pitcher_id"],
+                        profile_row["pitcher_name"],
+                        profile_row["appearance_window"],
+                        profile_row["entries_sample"],
+                        profile_row["avg_entry_order"],
+                        profile_row["first_pitch_ball_rate"],
+                        profile_row["first_pitch_strike_rate"],
+                        profile_row["ball_rate"],
+                        profile_row["reached_rate"],
+                        profile_row["free_pass_rate"],
+                        profile_row["scoring_play_rate"],
+                        profile_row["run_delta_per_entry"],
+                        profile_row["strikeout_rate"],
+                        profile_row["command_risk_index"],
+                    ),
+                )
+
+        starters = conn.execute(
+            """
+            SELECT DISTINCT sp.pitcher_id, sp.pitcher_name
+            FROM mlb_games g
+            JOIN mlb_starting_pitchers sp
+              ON sp.game_pk = g.game_pk
+            WHERE g.game_date = ?
+              AND sp.pitcher_id IS NOT NULL
+            ORDER BY sp.pitcher_name
+            """,
+            (as_of_date,),
+        ).fetchall()
+        for starter in starters:
+            start_rows = conn.execute(
+                """
+                SELECT game_pk
+                FROM mlb_starting_pitcher_game_logs
+                WHERE pitcher_id = ?
+                  AND game_date < ?
+                ORDER BY game_date DESC, game_pk DESC
+                LIMIT ?
+                """,
+                (starter["pitcher_id"], as_of_date, TIER3_STARTER_WINDOW),
+            ).fetchall()
+            profile_row = build_starter_third_time_penalty_profile_row(
+                conn,
+                as_of_date,
+                starter["pitcher_id"],
+                starter["pitcher_name"],
+                TIER3_STARTER_WINDOW,
+                start_rows,
+            )
+            if not profile_row or profile_row["starts_sample"] < 3:
+                continue
+            conn.execute(
+                """
+                INSERT INTO mlb_starter_third_time_penalty_profiles (
+                  as_of_date, pitcher_id, pitcher_name, window_starts, starts_sample,
+                  starts_with_third_trip, third_trip_exposure_rate, first_trip_pa, second_trip_pa,
+                  third_trip_pa, first_trip_reached_rate, second_trip_reached_rate,
+                  third_trip_reached_rate, first_trip_scoring_play_rate, second_trip_scoring_play_rate,
+                  third_trip_scoring_play_rate, first_trip_run_delta, second_trip_run_delta,
+                  third_trip_run_delta, first_trip_hr_rate, second_trip_hr_rate, third_trip_hr_rate,
+                  third_trip_reached_delta, third_trip_scoring_delta, third_trip_run_delta_delta,
+                  third_trip_hr_delta, third_time_penalty_index
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    profile_row["as_of_date"],
+                    profile_row["pitcher_id"],
+                    profile_row["pitcher_name"],
+                    profile_row["window_starts"],
+                    profile_row["starts_sample"],
+                    profile_row["starts_with_third_trip"],
+                    profile_row["third_trip_exposure_rate"],
+                    profile_row["first_trip_pa"],
+                    profile_row["second_trip_pa"],
+                    profile_row["third_trip_pa"],
+                    profile_row["first_trip_reached_rate"],
+                    profile_row["second_trip_reached_rate"],
+                    profile_row["third_trip_reached_rate"],
+                    profile_row["first_trip_scoring_play_rate"],
+                    profile_row["second_trip_scoring_play_rate"],
+                    profile_row["third_trip_scoring_play_rate"],
+                    profile_row["first_trip_run_delta"],
+                    profile_row["second_trip_run_delta"],
+                    profile_row["third_trip_run_delta"],
+                    profile_row["first_trip_hr_rate"],
+                    profile_row["second_trip_hr_rate"],
+                    profile_row["third_trip_hr_rate"],
+                    profile_row["third_trip_reached_delta"],
+                    profile_row["third_trip_scoring_delta"],
+                    profile_row["third_trip_run_delta_delta"],
+                    profile_row["third_trip_hr_delta"],
+                    profile_row["third_time_penalty_index"],
+                ),
+            )
+
+    conn.commit()
+
+
 def import_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     init_db(conn)
     payload = json.loads(file_path.read_text(encoding="utf-8"))
@@ -4202,6 +4686,12 @@ def parse_args() -> argparse.Namespace:
     )
     derive_tier2.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
 
+    derive_tier3 = subparsers.add_parser(
+        "derive-tier3-features",
+        help="Refresh Tier 3 reliever first-batter command and starter third-time-through profile tables.",
+    )
+    derive_tier3.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -4308,6 +4798,14 @@ def main() -> None:
                 print(f"Refreshed MLB Tier 2 feature tables through {args.through_date}")
             else:
                 print("Refreshed MLB Tier 2 feature tables for all loaded dates")
+            return
+
+        if args.command == "derive-tier3-features":
+            refresh_tier3_profiles(conn, args.through_date)
+            if args.through_date:
+                print(f"Refreshed MLB Tier 3 feature tables through {args.through_date}")
+            else:
+                print("Refreshed MLB Tier 3 feature tables for all loaded dates")
             return
 
         if args.command == "ingest-statcast-hr":

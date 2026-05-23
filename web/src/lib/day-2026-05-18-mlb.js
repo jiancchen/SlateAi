@@ -403,6 +403,7 @@ const buildMlbGame = (raw) => {
     bullpenChainContext: raw.bullpenChainContext,
     savantContext: raw.savantContext,
     storyContext: raw.storyContext,
+    tierTwoContext: raw.tierTwoContext ?? null,
     lineupContext: lineupMatchupContextByGameId[raw.id] ?? null,
     lineupBoard: lineupBoardsByGameId[raw.id] ?? null,
     homeRunTargets: homeRunTargetsByGame[`${raw.away} @ ${raw.home}`] ?? null,
