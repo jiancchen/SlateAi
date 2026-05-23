@@ -550,6 +550,153 @@ def format_haircut_analysis(rows: list[TierThreeOverlayRow]) -> str:
     return "\n\n".join(sections)
 
 
+def evaluate_haircut_combo(
+    rows: list[TierThreeOverlayRow],
+    edge_cut: float,
+    confidence_cut: int,
+    edge_threshold: float = 10.0,
+    confidence_threshold: int = 60,
+) -> dict[str, dict[str, float | int]]:
+    result: dict[str, dict[str, float | int]] = {}
+    for split_key in ("expanded_reserve", "live", "combined"):
+        subset = phase_filter(rows, split_key)
+        baseline_edge_rows = [row for row in subset if row.point_edge >= edge_threshold]
+        baseline_conf_rows = [row for row in subset if row.confidence >= confidence_threshold]
+        kept_edge_rows = [
+            row
+            for row in subset
+            if (row.point_edge - (edge_cut if bullpen_command_mismatch(row) else 0.0)) >= edge_threshold
+        ]
+        removed_edge_rows = [
+            row
+            for row in baseline_edge_rows
+            if (row.point_edge - (edge_cut if bullpen_command_mismatch(row) else 0.0)) < edge_threshold
+        ]
+        kept_conf_rows = [
+            row
+            for row in subset
+            if (row.confidence - (confidence_cut if bullpen_command_mismatch(row) else 0)) >= confidence_threshold
+        ]
+        removed_conf_rows = [
+            row
+            for row in baseline_conf_rows
+            if (row.confidence - (confidence_cut if bullpen_command_mismatch(row) else 0)) < confidence_threshold
+        ]
+        result[split_key] = {
+            "baseline_edge_count": len(baseline_edge_rows),
+            "baseline_edge_rate": hit_rate(baseline_edge_rows),
+            "kept_edge_count": len(kept_edge_rows),
+            "kept_edge_rate": hit_rate(kept_edge_rows),
+            "removed_edge_count": len(removed_edge_rows),
+            "removed_edge_rate": hit_rate(removed_edge_rows),
+            "edge_delta": round(hit_rate(kept_edge_rows) - hit_rate(baseline_edge_rows), 3),
+            "baseline_conf_count": len(baseline_conf_rows),
+            "baseline_conf_rate": hit_rate(baseline_conf_rows),
+            "kept_conf_count": len(kept_conf_rows),
+            "kept_conf_rate": hit_rate(kept_conf_rows),
+            "removed_conf_count": len(removed_conf_rows),
+            "removed_conf_rate": hit_rate(removed_conf_rows),
+            "conf_delta": round(hit_rate(kept_conf_rows) - hit_rate(baseline_conf_rows), 3),
+        }
+    return result
+
+
+def haircut_combo_score(metrics: dict[str, dict[str, float | int]]) -> float:
+    live = metrics["live"]
+    reserve = metrics["expanded_reserve"]
+    combined = metrics["combined"]
+    score = 0.0
+    score += float(live["edge_delta"]) * 2.0
+    score += float(live["conf_delta"]) * 2.5
+    score += float(combined["edge_delta"]) * 1.0
+    score += float(combined["conf_delta"]) * 1.5
+    score += float(reserve["edge_delta"]) * 0.75
+    score += float(reserve["conf_delta"]) * 1.0
+    score += max(0, float(live["removed_edge_count"])) * 0.02
+    score += max(0, float(live["removed_conf_count"])) * 0.03
+    if float(reserve["edge_delta"]) < -0.02:
+        score -= 0.1
+    if float(reserve["conf_delta"]) < -0.02:
+        score -= 0.15
+    return round(score, 3)
+
+
+def format_haircut_grid(rows: list[TierThreeOverlayRow]) -> str:
+    combos = [
+        (2.0, 4),
+        (2.0, 6),
+        (3.0, 4),
+        (3.0, 6),
+        (3.0, 8),
+        (4.0, 6),
+        (4.0, 8),
+    ]
+    evaluations = []
+    for edge_cut, confidence_cut in combos:
+        metrics = evaluate_haircut_combo(rows, edge_cut, confidence_cut)
+        evaluations.append(
+            {
+                "edge_cut": edge_cut,
+                "confidence_cut": confidence_cut,
+                "metrics": metrics,
+                "score": haircut_combo_score(metrics),
+            }
+        )
+
+    evaluations.sort(key=lambda item: item["score"], reverse=True)
+
+    summary_rows: list[list[str]] = []
+    for item in evaluations:
+        live = item["metrics"]["live"]
+        reserve = item["metrics"]["expanded_reserve"]
+        combined = item["metrics"]["combined"]
+        summary_rows.append(
+            [
+                f"`-{item['edge_cut']:.1f} / -{item['confidence_cut']}`",
+                f"{item['score']:.3f}",
+                f"{live['edge_delta']:+.3f}",
+                f"{live['conf_delta']:+.3f}",
+                f"{reserve['edge_delta']:+.3f}",
+                f"{reserve['conf_delta']:+.3f}",
+                f"{combined['edge_delta']:+.3f}",
+                f"{combined['conf_delta']:+.3f}",
+                f"{int(live['removed_edge_count'])}/{int(live['removed_conf_count'])}",
+            ]
+        )
+
+    best = evaluations[0]
+    best_live = best["metrics"]["live"]
+    best_reserve = best["metrics"]["expanded_reserve"]
+    best_combined = best["metrics"]["combined"]
+
+    return "\n\n".join(
+        [
+            markdown_table(
+                [
+                    "Haircut",
+                    "Score",
+                    "Live 10+ edge Δ",
+                    "Live 60+ conf Δ",
+                    "Reserve 10+ edge Δ",
+                    "Reserve 60+ conf Δ",
+                    "Combined 10+ edge Δ",
+                    "Combined 60+ conf Δ",
+                    "Live removed (edge/conf)",
+                ],
+                summary_rows,
+            ),
+            (
+                f"Best balanced combo right now: `-{best['edge_cut']:.1f}` edge and `-{best['confidence_cut']}` confidence. "
+                f"It moved the live `10+ edge` bucket by `{best_live['edge_delta']:+.3f}` and the live `60+ confidence` "
+                f"bucket by `{best_live['conf_delta']:+.3f}`, while the expanded-reserve changes stayed at "
+                f"`{best_reserve['edge_delta']:+.3f}` and `{best_reserve['conf_delta']:+.3f}`. Combined deltas were "
+                f"`{best_combined['edge_delta']:+.3f}` for `10+ edge` and `{best_combined['conf_delta']:+.3f}` for "
+                f"`60+ confidence`."
+            ),
+        ]
+    )
+
+
 def write_report(out_path: Path) -> None:
     conn = get_connection()
     try:
@@ -617,10 +764,15 @@ Note: the raw MLB warehouse already reaches back to `2026-03-26`. The practical 
 
 {format_haircut_analysis(rows)}
 
+## Haircut Grid Search
+
+{format_haircut_grid(rows)}
+
 ## Early Read
 1. `Bullpen command mismatch` is the leading candidate. It is the only Tier 3 lane so far that actually separated a bad passed bucket in the current sample, and it still makes conceptual sense as a late-game script penalty.
 2. `Starter third-time trap` still looks like a real baseball concept, but it is not yet producing a clean enough reserve/current separation to trust.
 3. The best near-term use of Tier 3 is a **soft haircut**, not a hard pass. This is where the model can respect late-game fragility without pretending it can perfectly predict every script break.
+4. The haircut we carry forward should be the one that improves the live `10+ edge` and `60+ confidence` buckets without clearly degrading the expanded-reserve sample.
 
 ## Recommended Next Move
 1. Keep these features offline for now.

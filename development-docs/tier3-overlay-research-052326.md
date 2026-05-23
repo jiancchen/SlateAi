@@ -146,10 +146,25 @@ Haircut used: `-3.0` edge and `-6` confidence when `bullpen command mismatch` is
 
 Haircut used: `-3.0` edge and `-6` confidence when `bullpen command mismatch` is present.
 
+## Haircut Grid Search
+
+| Haircut | Score | Live 10+ edge Δ | Live 60+ conf Δ | Reserve 10+ edge Δ | Reserve 60+ conf Δ | Combined 10+ edge Δ | Combined 60+ conf Δ | Live removed (edge/conf) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `-2.0 / -6` | 0.390 | +0.038 | +0.087 | -0.014 | +0.000 | +0.004 | +0.015 | 1/2 |
+| `-3.0 / -6` | 0.390 | +0.038 | +0.087 | -0.014 | +0.000 | +0.004 | +0.015 | 1/2 |
+| `-3.0 / -8` | 0.390 | +0.038 | +0.087 | -0.014 | +0.000 | +0.004 | +0.015 | 1/2 |
+| `-4.0 / -6` | 0.390 | +0.038 | +0.087 | -0.014 | +0.000 | +0.004 | +0.015 | 1/2 |
+| `-4.0 / -8` | 0.390 | +0.038 | +0.087 | -0.014 | +0.000 | +0.004 | +0.015 | 1/2 |
+| `-2.0 / -4` | 0.232 | +0.038 | +0.041 | -0.014 | +0.000 | +0.004 | +0.007 | 1/1 |
+| `-3.0 / -4` | 0.232 | +0.038 | +0.041 | -0.014 | +0.000 | +0.004 | +0.007 | 1/1 |
+
+Best balanced combo right now: `-2.0` edge and `-6` confidence. It moved the live `10+ edge` bucket by `+0.038` and the live `60+ confidence` bucket by `+0.087`, while the expanded-reserve changes stayed at `-0.014` and `+0.000`. Combined deltas were `+0.004` for `10+ edge` and `+0.015` for `60+ confidence`.
+
 ## Early Read
 1. `Bullpen command mismatch` is the leading candidate. It is the only Tier 3 lane so far that actually separated a bad passed bucket in the current sample, and it still makes conceptual sense as a late-game script penalty.
 2. `Starter third-time trap` still looks like a real baseball concept, but it is not yet producing a clean enough reserve/current separation to trust.
 3. The best near-term use of Tier 3 is a **soft haircut**, not a hard pass. This is where the model can respect late-game fragility without pretending it can perfectly predict every script break.
+4. The haircut we carry forward should be the one that improves the live `10+ edge` and `60+ confidence` buckets without clearly degrading the expanded-reserve sample.
 
 ## Recommended Next Move
 1. Keep these features offline for now.
