@@ -121,6 +121,141 @@ const getAnalysisTier = (confidence, volatility) => {
   return 'Swingy'
 }
 
+const getMlbTierOneRiskPoints = ({
+  volatility,
+  modelEdge,
+  lateInningStabilityIndex,
+  starterLeverageIndex,
+  coinflipPressure,
+  reliefPitchingRisk,
+  favoredSignalCount
+}) =>
+  [
+    volatility >= 88,
+    modelEdge >= 12,
+    lateInningStabilityIndex <= 45,
+    starterLeverageIndex >= 85,
+    coinflipPressure >= 50,
+    reliefPitchingRisk >= 65,
+    favoredSignalCount <= 3
+  ].filter(Boolean).length
+
+const applyMlbTierOneControls = ({
+  confidence,
+  volatility,
+  modelEdge,
+  starterLeverageIndex,
+  lateInningStabilityIndex,
+  reliefPitchingRisk,
+  coinflipPressure,
+  favoredSignalCount
+}) => {
+  const starterLateGap = roundToTenths(starterLeverageIndex - lateInningStabilityIndex)
+  const highVolatilityEdgePass =
+    volatility >= 86 &&
+    modelEdge >= 10 &&
+    (lateInningStabilityIndex <= 48 || starterLeverageIndex >= 75)
+  const thinSupportHighEdge = modelEdge >= 12 && favoredSignalCount <= 3
+  const starterLateFragility =
+    starterLeverageIndex >= 75 && lateInningStabilityIndex <= 48
+  const riskPoints = getMlbTierOneRiskPoints({
+    volatility,
+    modelEdge,
+    lateInningStabilityIndex,
+    starterLeverageIndex,
+    coinflipPressure,
+    reliefPitchingRisk,
+    favoredSignalCount
+  })
+
+  const tierOneNotes = []
+  const riskFlags = []
+  let edgeHaircut = 0
+  let confidencePenalty = 0
+  let volatilityBump = 0
+
+  if (highVolatilityEdgePass) {
+    riskFlags.push('highVolatilityEdgePass')
+    edgeHaircut += 3
+    confidencePenalty += 5
+    volatilityBump += 2
+    tierOneNotes.push({
+      label:
+        'Tier 1 edge control: a double-digit edge is still sitting in a high-volatility baseball script, so this should grade as a pass until the game proves cleaner.',
+      delta: 6
+    })
+  }
+
+  if (starterLateFragility) {
+    riskFlags.push('starterLateFragility')
+    edgeHaircut += 1.2
+    confidencePenalty += 2
+    volatilityBump += 2
+    tierOneNotes.push({
+      label:
+        'Tier 1 starter-vs-late split: the starter edge is outrunning the late-inning hold profile, which makes the full-game side less trustworthy than the first-five read.',
+      delta: 4
+    })
+  }
+
+  if (thinSupportHighEdge) {
+    riskFlags.push('thinSupportHighEdge')
+    edgeHaircut += 1.8
+    confidencePenalty += 3
+    volatilityBump += 1
+    tierOneNotes.push({
+      label:
+        'Tier 1 support check: the large edge is still being built from a thin evidence stack, so the side should be capped until more signals agree.',
+      delta: 4
+    })
+  }
+
+  if (riskPoints >= 3) {
+    riskFlags.push('highRiskPoints')
+    edgeHaircut += 0.8
+    confidencePenalty += 2
+    volatilityBump += 1
+    tierOneNotes.push({
+      label:
+        'Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.',
+      delta: 3
+    })
+  }
+
+  edgeHaircut = clamp(roundToTenths(edgeHaircut), 0, 5.5)
+  const adjustedModelEdge = roundToTenths(clamp(modelEdge - edgeHaircut, 0, 100))
+  const adjustedConfidence = Math.round(clamp(confidence - confidencePenalty, 52, 89))
+  const adjustedVolatility = Math.round(clamp(volatility + volatilityBump, 30, 92))
+
+  let selectionTier = getAnalysisTier(adjustedConfidence, adjustedVolatility)
+
+  if (highVolatilityEdgePass) {
+    selectionTier = 'Pass'
+  } else if (riskPoints >= 4) {
+    selectionTier = 'Pass'
+  } else if (riskPoints >= 3) {
+    if (selectionTier === 'Core' || selectionTier === 'Strong') {
+      selectionTier = 'Lean'
+    }
+  } else if (riskPoints >= 2 && selectionTier === 'Core') {
+    selectionTier = 'Strong'
+  }
+
+  return {
+    adjustedConfidence,
+    adjustedVolatility,
+    adjustedModelEdge,
+    selectionTier,
+    riskPoints,
+    riskFlags,
+    favoredSignalCount,
+    starterLateGap,
+    edgeHaircut,
+    passFlag: selectionTier === 'Pass',
+    notes: tierOneNotes
+  }
+}
+
 const findAnalysisParticipant = (leanText, participants) => {
   const normalizedLean = normalizeText(leanText).replace(/^lean\s+/, '')
   let bestMatch = null
@@ -3428,15 +3563,10 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
   const volatility = Math.round(
     clamp(baseVolatility + (mlbIndicators?.volatilityDelta ?? 0), 30, 92)
   )
-  const recommendationScore = Math.round(
-    confidence * structuredRecommendationWeight.confidence +
-      (100 - volatility) * structuredRecommendationWeight.stability +
-      modelEdge * structuredRecommendationWeight.edge
-  )
-
   const inputCandidates = normalizedSignals
     .filter((signal) => signal.favoredParticipantId === participant.id && signal.margin > 0)
     .sort((left, right) => right.margin * right.weight - left.margin * left.weight)
+  const favoredSignalCount = inputCandidates.length
 
   const inputs = inputCandidates.slice(0, 3).map((signal) => ({
     label: signal.label,
@@ -3454,6 +3584,28 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
   const pickScript = context.mlbProjection?.teamScripts?.find((script) =>
     teamNamesMatch(script.teamName, participant.name)
   )
+  const tierOneControls =
+    game.league === 'MLB' && mlbIndicators
+      ? applyMlbTierOneControls({
+          confidence,
+          volatility,
+          modelEdge,
+          starterLeverageIndex: mlbIndicators.starterLeverageIndex,
+          lateInningStabilityIndex: mlbIndicators.lateInningStabilityIndex,
+          reliefPitchingRisk: mlbIndicators.reliefPitchingRisk,
+          coinflipPressure: mlbIndicators.coinflipPressure,
+          favoredSignalCount
+        })
+      : null
+  const finalConfidence = tierOneControls?.adjustedConfidence ?? confidence
+  const finalVolatility = tierOneControls?.adjustedVolatility ?? volatility
+  const finalModelEdge = tierOneControls?.adjustedModelEdge ?? modelEdge
+  const finalTier = tierOneControls?.selectionTier ?? getAnalysisTier(finalConfidence, finalVolatility)
+  const finalRecommendationScore = Math.round(
+    finalConfidence * structuredRecommendationWeight.confidence +
+      (100 - finalVolatility) * structuredRecommendationWeight.stability +
+      finalModelEdge * structuredRecommendationWeight.edge
+  )
 
   return {
     available: Boolean(hasFullMoneyline && participant && Number.isFinite(participant.americanOdds)),
@@ -3462,18 +3614,22 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     opponent,
     lean,
     rationale: inputs[0]?.summary || game.factors?.[0] || game.summary,
-    confidence,
-    volatility,
-    recommendationScore,
-    tier: getAnalysisTier(confidence, volatility),
+    confidence: finalConfidence,
+    volatility: finalVolatility,
+    recommendationScore: finalRecommendationScore,
+    tier: finalTier,
     sourceLabel: context.sourceLabel,
-    modelEdge: roundToTenths(modelEdge),
-    modelEdgeLabel: `${roundToTenths(modelEdge)}-point model edge`,
+    modelEdge: roundToTenths(finalModelEdge),
+    modelEdgeLabel: `${roundToTenths(finalModelEdge)}-point model edge`,
     marketProbability: marketSupport,
     marketProbabilityLabel: formatProbability(marketSupport),
     inputs,
     inputsUsed: normalizedSignals.length,
-    volatilityNotes: [...(context.volatilityModifiers || []), ...(mlbIndicators?.notes || [])],
+    volatilityNotes: [
+      ...(context.volatilityModifiers || []),
+      ...(mlbIndicators?.notes || []),
+      ...(tierOneControls?.notes || [])
+    ],
     pickReasons: pickScript?.winPath?.slice(0, 4) ?? [],
     indicators: mlbIndicators
       ? {
@@ -3488,7 +3644,13 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           pickStarterScore: mlbIndicators.pickStarterScore,
           oppStarterScore: mlbIndicators.oppStarterScore,
           projectedHitEdgeForPick: mlbIndicators.projectedHitEdgeForPick,
-          hitEdgeAgainstPick: mlbIndicators.hitEdgeAgainstPick
+          hitEdgeAgainstPick: mlbIndicators.hitEdgeAgainstPick,
+          tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,
+          tierOnePassFlag: Boolean(tierOneControls?.passFlag),
+          tierOneRiskFlags: tierOneControls?.riskFlags ?? [],
+          favoredSignalCount,
+          starterLateGap: tierOneControls?.starterLateGap ?? null,
+          edgeHaircutApplied: tierOneControls?.edgeHaircut ?? 0
         }
       : null,
     mlbProjection: context.mlbProjection ?? null
@@ -3571,6 +3733,8 @@ export const rankAnalysisPicks = (games) =>
       const coinflipPressure = indicatorSet.coinflipPressure ?? 28
       const starterLeverageIndex = indicatorSet.starterLeverageIndex ?? 50
       const lateInningStabilityIndex = indicatorSet.lateInningStabilityIndex ?? 50
+      const tierOneRiskPoints = indicatorSet.tierOneRiskPoints ?? 0
+      const tierOnePassFlag = Boolean(indicatorSet.tierOnePassFlag)
       const offenseFeedStale = Boolean(
         game.offenseContext?.away?.staleFeed || game.offenseContext?.home?.staleFeed
       )
@@ -3601,6 +3765,8 @@ export const rankAnalysisPicks = (games) =>
         safetyPenalty += Math.max(6 - modelEdge, 0) * 2.6
 
         if (analysis.tier === 'Swingy') safetyPenalty += 18
+        if (tierOnePassFlag || analysis.tier === 'Pass') safetyPenalty += 26
+        if (tierOneRiskPoints >= 3) safetyPenalty += 8
         if (starterLeverageIndex >= 60 && lateInningStabilityIndex <= 50) safetyPenalty += 10
         if (offenseFeedStale) safetyPenalty += 16
         if (bullpenFeedStale) safetyPenalty += 12
@@ -3631,12 +3797,15 @@ export const rankAnalysisPicks = (games) =>
         game.league === 'MLB'
           ? !offenseFeedStale &&
             !bullpenFeedStale &&
+            !tierOnePassFlag &&
             volatility <= 72 &&
             coinflipPressure <= 58 &&
             lateInningStabilityIndex >= 46 &&
             confidence >= 64 &&
             modelEdge >= 3.5 &&
-            analysis.tier !== 'Swingy'
+            analysis.tier !== 'Swingy' &&
+            analysis.tier !== 'Pass' &&
+            tierOneRiskPoints <= 2
           : volatility <= 74 && confidence >= 64
 
       return {

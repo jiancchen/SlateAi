@@ -11,6 +11,10 @@ import { games as may15 } from '../web/src/lib/day-2026-05-15.js'
 import { games as may16 } from '../web/src/lib/day-2026-05-16.js'
 import { games as may17 } from '../web/src/lib/day-2026-05-17.js'
 import { games as may18 } from '../web/src/lib/day-2026-05-18.js'
+import { games as may19 } from '../web/src/lib/day-2026-05-19.js'
+import { games as may20 } from '../web/src/lib/day-2026-05-20.js'
+import { games as may21 } from '../web/src/lib/day-2026-05-21.js'
+import { games as may22 } from '../web/src/lib/day-2026-05-22.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -25,7 +29,11 @@ const slates = {
   '2026-05-15': may15,
   '2026-05-16': may16,
   '2026-05-17': may17,
-  '2026-05-18': may18
+  '2026-05-18': may18,
+  '2026-05-19': may19,
+  '2026-05-20': may20,
+  '2026-05-21': may21,
+  '2026-05-22': may22
 }
 
 const teamAliasToOfficial = {
@@ -284,7 +292,13 @@ const buildIndicators = (game, predictedSide) => {
     pickStarterScore: Number.isFinite(pickStarterScore) ? Number(pickStarterScore.toFixed(1)) : null,
     oppStarterScore: Number.isFinite(oppStarterScore) ? Number(oppStarterScore.toFixed(1)) : null,
     projectedHitEdgeForPick: Number.isFinite(pickProjectedHitEdge) ? Number(pickProjectedHitEdge.toFixed(1)) : null,
-    hitEdgeAgainstPick: Number.isFinite(pickProjectedHitEdge) ? pickProjectedHitEdge < -0.2 : false
+    hitEdgeAgainstPick: Number.isFinite(pickProjectedHitEdge) ? pickProjectedHitEdge < -0.2 : false,
+    tierOneRiskPoints: analysisIndicators.tierOneRiskPoints ?? 0,
+    tierOnePassFlag: Boolean(analysisIndicators.tierOnePassFlag),
+    tierOneRiskFlags: analysisIndicators.tierOneRiskFlags ?? [],
+    favoredSignalCount: analysisIndicators.favoredSignalCount ?? game.analysis?.inputs?.length ?? 0,
+    starterLateGap: analysisIndicators.starterLateGap ?? null,
+    edgeHaircutApplied: analysisIndicators.edgeHaircutApplied ?? 0
   }
 }
 
