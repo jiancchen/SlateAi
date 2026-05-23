@@ -41,6 +41,7 @@
     "data:import:mlb-sides": "python3 pipeline/mlb_side_backtest.py import",
     "data:grade:mlb-sides": "python3 pipeline/mlb_side_backtest.py grade",
     "data:report:mlb-sides": "python3 pipeline/mlb_side_backtest.py report",
+    "data:research:mlb-side-features": "python3 pipeline/research_mlb_side_features.py",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
   }
