@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data-private"
 RAW_DIR = DATA_DIR / "raw"
 WAREHOUSE_DIR = DATA_DIR / "warehouse"
+HISTORY_DIR = DATA_DIR / "history"
 PREDICTIONS_DIR = DATA_DIR / "predictions" / "mlb-home-runs"
 DB_PATH = WAREHOUSE_DIR / "sports.db"
 USER_AGENT = "SportsTradingBoardBot/1.0 (+https://baseballsavant.mlb.com)"
@@ -921,6 +922,93 @@ CREATE TABLE IF NOT EXISTS mlb_lineup_conversion_shape_daily (
   conversion_volatility REAL,
   lineup_conversion_index REAL,
   PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_game_story_labels (
+  game_pk INTEGER PRIMARY KEY,
+  game_date TEXT NOT NULL,
+  away_team TEXT NOT NULL,
+  home_team TEXT NOT NULL,
+  winner_team TEXT,
+  primary_story_label TEXT,
+  early_phase_label TEXT,
+  late_phase_label TEXT,
+  scoring_shape_label TEXT,
+  winner_path_label TEXT,
+  story_tags_json TEXT,
+  label_flags_json TEXT,
+  summary_json TEXT
+);
+
+CREATE TABLE IF NOT EXISTS mlb_phase_outcomes_daily (
+  game_pk INTEGER NOT NULL,
+  game_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  opponent_team TEXT NOT NULL,
+  team_role TEXT NOT NULL,
+  result TEXT,
+  runs_first1 INTEGER,
+  runs_first3 INTEGER,
+  runs_first5 INTEGER,
+  runs_late INTEGER,
+  hits_first5 INTEGER,
+  hits_late INTEGER,
+  scoreless_first3_flag INTEGER,
+  scored_first_inning_flag INTEGER,
+  allowed_first_inning_flag INTEGER,
+  led_after3_flag INTEGER,
+  trailed_after3_flag INTEGER,
+  tied_after3_flag INTEGER,
+  led_after5_flag INTEGER,
+  trailed_after5_flag INTEGER,
+  tied_after5_flag INTEGER,
+  won_full_game_flag INTEGER,
+  won_first5_flag INTEGER,
+  first5_push_flag INTEGER,
+  starter_survived5_flag INTEGER,
+  starter_cracked_flag INTEGER,
+  traffic_no_conversion_flag INTEGER,
+  comeback_win_flag INTEGER,
+  blew_lead_after5_flag INTEGER,
+  bullpen_flip_game_flag INTEGER,
+  phase_path_label TEXT,
+  phase_flags_json TEXT,
+  PRIMARY KEY (game_pk, team_name)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_market_mispricing_labels (
+  prediction_date TEXT NOT NULL,
+  market_type TEXT NOT NULL,
+  model_name TEXT NOT NULL,
+  matchup TEXT NOT NULL,
+  predicted_pick TEXT NOT NULL,
+  opponent_team TEXT,
+  confidence INTEGER,
+  volatility INTEGER,
+  point_edge REAL,
+  market_american_odds INTEGER,
+  market_probability REAL,
+  opponent_market_american_odds INTEGER,
+  opponent_market_probability REAL,
+  market_favorite_team TEXT,
+  market_favorite_probability REAL,
+  market_price_gap REAL,
+  pick_is_market_favorite INTEGER,
+  pick_is_market_underdog INTEGER,
+  hit_full_game INTEGER,
+  hit_first5 INTEGER,
+  first5_push_flag INTEGER,
+  price_bucket_label TEXT,
+  market_side_label TEXT,
+  market_disagreement_win_flag INTEGER,
+  expensive_favorite_failure_flag INTEGER,
+  underdog_value_win_flag INTEGER,
+  first5_cleaner_than_full_flag INTEGER,
+  full_game_cleaner_than_first5_flag INTEGER,
+  market_mispricing_label TEXT,
+  market_phase_preference_label TEXT,
+  summary_json TEXT,
+  PRIMARY KEY (prediction_date, model_name, matchup, predicted_pick)
 );
 
 CREATE TABLE IF NOT EXISTS park_factor_snapshots (
@@ -5076,6 +5164,603 @@ def refresh_mistake_shape_profiles(
     conn.commit()
 
 
+def load_team_inning_runs(conn: sqlite3.Connection, game_pk: int) -> dict[str, dict[int, int]]:
+    inning_runs: dict[str, dict[int, int]] = {}
+    for row in conn.execute(
+        """
+        SELECT batting_team, inning, run_delta
+        FROM mlb_plate_appearances
+        WHERE game_pk = ?
+        ORDER BY at_bat_index
+        """,
+        (game_pk,),
+    ).fetchall():
+        team_name = row["batting_team"]
+        inning = to_int(row["inning"]) or 0
+        if not team_name or inning <= 0:
+            continue
+        inning_runs.setdefault(team_name, {})
+        inning_runs[team_name][inning] = inning_runs[team_name].get(inning, 0) + (to_int(row["run_delta"]) or 0)
+    return inning_runs
+
+
+def _primary_story_label(story_row: sqlite3.Row, outcome_row: sqlite3.Row) -> str:
+    total_runs_final = to_int(outcome_row["total_runs_final"]) or 0
+    total_runs_first5 = to_int(outcome_row["total_runs_first5"]) or 0
+    if to_int(story_row["comeback_win_flag"]):
+        return "comeback_win"
+    if to_int(story_row["bullpen_flip_flag"]):
+        return "bullpen_flip"
+    if to_int(story_row["late_break_flag"]) and to_int(story_row["quiet_first5_flag"]):
+        return "quiet_then_break"
+    if to_int(story_row["first_inning_jolt_flag"]) and total_runs_final >= 8:
+        return "early_jolt"
+    if to_int(story_row["away_starter_cracked_flag"]) or to_int(story_row["home_starter_cracked_flag"]):
+        return "starter_crack"
+    if total_runs_final <= 5:
+        return "dead_bat_grind"
+    if total_runs_first5 >= 6 and total_runs_final >= 9:
+        return "first5_firefight"
+    if total_runs_final >= 10:
+        return "crooked_inning_chaos"
+    return "balanced_game"
+
+
+def _early_phase_label(story_row: sqlite3.Row, outcome_row: sqlite3.Row) -> str:
+    total_runs_first5 = to_int(outcome_row["total_runs_first5"]) or 0
+    if to_int(story_row["first_inning_jolt_flag"]):
+        return "first_inning_jolt"
+    if to_int(story_row["quiet_first5_flag"]):
+        return "quiet_first5"
+    if to_int(story_row["away_starter_cracked_flag"]) or to_int(story_row["home_starter_cracked_flag"]):
+        return "starter_crack"
+    if total_runs_first5 >= 6:
+        return "first5_firefight"
+    return "balanced_first5"
+
+
+def _late_phase_label(story_row: sqlite3.Row, outcome_row: sqlite3.Row) -> str:
+    total_runs_first5 = to_int(outcome_row["total_runs_first5"]) or 0
+    total_runs_final = to_int(outcome_row["total_runs_final"]) or 0
+    late_runs = total_runs_final - total_runs_first5
+    if to_int(story_row["bullpen_flip_flag"]):
+        return "bullpen_flip"
+    if to_int(story_row["comeback_win_flag"]):
+        return "comeback_finish"
+    if to_int(story_row["late_break_flag"]):
+        return "late_break"
+    if late_runs <= 1:
+        return "quiet_finish"
+    return "steady_finish"
+
+
+def _scoring_shape_label(story_row: sqlite3.Row, outcome_row: sqlite3.Row) -> str:
+    total_runs_first5 = to_int(outcome_row["total_runs_first5"]) or 0
+    total_runs_final = to_int(outcome_row["total_runs_final"]) or 0
+    late_runs = total_runs_final - total_runs_first5
+    if total_runs_final <= 5:
+        return "low_total"
+    if total_runs_first5 <= 2 and late_runs >= 4:
+        return "late_clustered"
+    if total_runs_first5 >= 6 and late_runs <= 2:
+        return "front_loaded"
+    if total_runs_first5 >= total_runs_final * 0.65:
+        return "early_loaded"
+    if total_runs_final >= 10 and to_int(story_row["max_comeback_runs"]) >= 3:
+        return "swingy_high_total"
+    return "balanced_total"
+
+
+def _winner_path_label(story_row: sqlite3.Row) -> str:
+    winner_team = story_row["winner_team"]
+    lead_after5_team = story_row["lead_after5_team"]
+    if to_int(story_row["comeback_win_flag"]):
+        return "came_back"
+    if to_int(story_row["bullpen_flip_flag"]) and winner_team and lead_after5_team and winner_team != lead_after5_team:
+        return "flipped_late"
+    if to_int(story_row["first_inning_jolt_flag"]) and winner_team and winner_team == lead_after5_team:
+        return "jumped_early"
+    if to_int(story_row["quiet_first5_flag"]) and to_int(story_row["late_break_flag"]):
+        return "won_late"
+    if winner_team and lead_after5_team and winner_team == lead_after5_team:
+        return "held_control"
+    return "outlasted"
+
+
+def build_game_story_label_row(
+    game_row: sqlite3.Row,
+    outcome_row: sqlite3.Row,
+    story_row: sqlite3.Row,
+) -> dict[str, Any]:
+    story_tags = json.loads(story_row["story_tags_json"] or "[]")
+    label_flags = {
+        "comebackWin": bool(to_int(story_row["comeback_win_flag"])),
+        "bullpenFlip": bool(to_int(story_row["bullpen_flip_flag"])),
+        "firstInningJolt": bool(to_int(story_row["first_inning_jolt_flag"])),
+        "quietFirst5": bool(to_int(story_row["quiet_first5_flag"])),
+        "lateBreak": bool(to_int(story_row["late_break_flag"])),
+        "awayStarterCracked": bool(to_int(story_row["away_starter_cracked_flag"])),
+        "homeStarterCracked": bool(to_int(story_row["home_starter_cracked_flag"])),
+    }
+    primary_story_label = _primary_story_label(story_row, outcome_row)
+    early_phase_label = _early_phase_label(story_row, outcome_row)
+    late_phase_label = _late_phase_label(story_row, outcome_row)
+    scoring_shape_label = _scoring_shape_label(story_row, outcome_row)
+    winner_path_label = _winner_path_label(story_row)
+    summary = {
+        "winnerTeam": story_row["winner_team"],
+        "leadAfter5Team": story_row["lead_after5_team"],
+        "totalRunsFirst5": to_int(outcome_row["total_runs_first5"]) or 0,
+        "totalRunsFinal": to_int(outcome_row["total_runs_final"]) or 0,
+        "firstScoringInning": to_int(story_row["first_scoring_inning"]) or 0,
+        "leadChanges": to_int(story_row["lead_changes"]) or 0,
+        "maxComebackRuns": to_int(story_row["max_comeback_runs"]) or 0,
+        "primaryStoryLabel": primary_story_label,
+        "earlyPhaseLabel": early_phase_label,
+        "latePhaseLabel": late_phase_label,
+        "scoringShapeLabel": scoring_shape_label,
+        "winnerPathLabel": winner_path_label,
+    }
+    return {
+        "game_pk": to_int(game_row["game_pk"]) or 0,
+        "game_date": game_row["game_date"],
+        "away_team": game_row["away_team"],
+        "home_team": game_row["home_team"],
+        "winner_team": story_row["winner_team"],
+        "primary_story_label": primary_story_label,
+        "early_phase_label": early_phase_label,
+        "late_phase_label": late_phase_label,
+        "scoring_shape_label": scoring_shape_label,
+        "winner_path_label": winner_path_label,
+        "story_tags_json": json.dumps(story_tags, sort_keys=True),
+        "label_flags_json": json.dumps(label_flags, sort_keys=True),
+        "summary_json": json.dumps(summary, sort_keys=True),
+    }
+
+
+def build_phase_outcome_rows(
+    conn: sqlite3.Connection,
+    game_row: sqlite3.Row,
+    outcome_row: sqlite3.Row,
+    story_row: sqlite3.Row,
+) -> list[dict[str, Any]]:
+    inning_runs = load_team_inning_runs(conn, to_int(game_row["game_pk"]) or 0)
+    team_rows = {
+        row["team_role"]: row
+        for row in conn.execute(
+            "SELECT * FROM mlb_game_team_stats WHERE game_pk = ? ORDER BY team_role",
+            (game_row["game_pk"],),
+        ).fetchall()
+    }
+    starter_rows = {
+        row["team_role"]: row
+        for row in conn.execute(
+            "SELECT * FROM mlb_starting_pitcher_game_logs WHERE game_pk = ? ORDER BY team_role",
+            (game_row["game_pk"],),
+        ).fetchall()
+    }
+    output: list[dict[str, Any]] = []
+    for role in ("away", "home"):
+        team_row = team_rows.get(role)
+        opponent_role = "home" if role == "away" else "away"
+        opponent_row = team_rows.get(opponent_role)
+        if not team_row or not opponent_row:
+            continue
+        team_name = team_row["team_name"]
+        opponent_name = team_row["opponent_name"]
+        team_inning_runs = inning_runs.get(team_name, {})
+        opponent_inning_runs = inning_runs.get(opponent_name, {})
+        runs_first1 = team_inning_runs.get(1, 0)
+        opp_runs_first1 = opponent_inning_runs.get(1, 0)
+        runs_first3 = sum(runs for inning, runs in team_inning_runs.items() if inning <= 3)
+        opp_runs_first3 = sum(runs for inning, runs in opponent_inning_runs.items() if inning <= 3)
+        runs_first5 = to_int(team_row["runs_scored_first5"]) or 0
+        opp_runs_first5 = to_int(opponent_row["runs_scored_first5"]) or 0
+        total_runs = to_int(team_row["runs_scored"]) or 0
+        total_hits = to_int(team_row["hits"]) or 0
+        hits_first5 = to_int(team_row["hits_first5"]) or 0
+        runs_late = total_runs - runs_first5
+        hits_late = total_hits - hits_first5
+        result = team_row["full_game_result"] or ""
+        lead_after5_team = story_row["lead_after5_team"]
+        winner_team = story_row["winner_team"]
+        starter_row = starter_rows.get(role)
+        starter_survived5_flag = int((to_int(starter_row["outs_recorded"]) or 0) >= 15) if starter_row else 0
+        starter_cracked_flag = to_int(
+            story_row["away_starter_cracked_flag"] if role == "away" else story_row["home_starter_cracked_flag"]
+        ) or 0
+        traffic_no_conversion_flag = to_int(
+            story_row["away_traffic_no_conversion_flag"] if role == "away" else story_row["home_traffic_no_conversion_flag"]
+        ) or 0
+        comeback_win_flag = int(bool(to_int(story_row["comeback_win_flag"])) and winner_team == team_name)
+        blew_lead_after5_flag = int(bool(lead_after5_team) and lead_after5_team == team_name and winner_team != team_name)
+        if blew_lead_after5_flag:
+            phase_path_label = "blew_lead_after5"
+        elif comeback_win_flag:
+            phase_path_label = "late_comeback"
+        elif starter_cracked_flag and result == "loss":
+            phase_path_label = "starter_crack_loss"
+        elif runs_first3 == 0 and result == "loss":
+            phase_path_label = "dead_early_loss"
+        elif runs_first1 > 0 and runs_first5 > opp_runs_first5 and result == "win":
+            phase_path_label = "jumped_early_hold"
+        elif starter_survived5_flag and result == "win" and lead_after5_team == team_name:
+            phase_path_label = "starter_carried"
+        elif runs_late > runs_first5:
+            phase_path_label = "late_push"
+        else:
+            phase_path_label = "balanced_path"
+        phase_flags = {
+            "scorelessFirst3": runs_first3 == 0,
+            "scoredFirstInning": runs_first1 > 0,
+            "allowedFirstInning": opp_runs_first1 > 0,
+            "ledAfter3": runs_first3 > opp_runs_first3,
+            "ledAfter5": runs_first5 > opp_runs_first5,
+            "tiedAfter5": runs_first5 == opp_runs_first5,
+            "starterSurvived5": bool(starter_survived5_flag),
+            "starterCracked": bool(starter_cracked_flag),
+            "trafficNoConversion": bool(traffic_no_conversion_flag),
+            "comebackWin": bool(comeback_win_flag),
+            "blewLeadAfter5": bool(blew_lead_after5_flag),
+            "bullpenFlipGame": bool(to_int(story_row["bullpen_flip_flag"])),
+        }
+        output.append(
+            {
+                "game_pk": to_int(game_row["game_pk"]) or 0,
+                "game_date": game_row["game_date"],
+                "team_name": team_name,
+                "opponent_team": opponent_name,
+                "team_role": role,
+                "result": result,
+                "runs_first1": runs_first1,
+                "runs_first3": runs_first3,
+                "runs_first5": runs_first5,
+                "runs_late": runs_late,
+                "hits_first5": hits_first5,
+                "hits_late": hits_late,
+                "scoreless_first3_flag": int(runs_first3 == 0),
+                "scored_first_inning_flag": int(runs_first1 > 0),
+                "allowed_first_inning_flag": int(opp_runs_first1 > 0),
+                "led_after3_flag": int(runs_first3 > opp_runs_first3),
+                "trailed_after3_flag": int(runs_first3 < opp_runs_first3),
+                "tied_after3_flag": int(runs_first3 == opp_runs_first3),
+                "led_after5_flag": int(runs_first5 > opp_runs_first5),
+                "trailed_after5_flag": int(runs_first5 < opp_runs_first5),
+                "tied_after5_flag": int(runs_first5 == opp_runs_first5),
+                "won_full_game_flag": int(result == "win"),
+                "won_first5_flag": int((team_row["first5_result"] or "") == "win"),
+                "first5_push_flag": int((team_row["first5_result"] or "") == "push"),
+                "starter_survived5_flag": starter_survived5_flag,
+                "starter_cracked_flag": int(starter_cracked_flag),
+                "traffic_no_conversion_flag": int(traffic_no_conversion_flag),
+                "comeback_win_flag": comeback_win_flag,
+                "blew_lead_after5_flag": blew_lead_after5_flag,
+                "bullpen_flip_game_flag": int(to_int(story_row["bullpen_flip_flag"]) or 0),
+                "phase_path_label": phase_path_label,
+                "phase_flags_json": json.dumps(phase_flags, sort_keys=True),
+            }
+        )
+    return output
+
+
+def _price_bucket_label(market_probability: float | None) -> str:
+    if market_probability is None:
+        return "unknown"
+    if market_probability >= 0.63:
+        return "heavy_favorite"
+    if market_probability >= 0.54:
+        return "moderate_favorite"
+    if market_probability >= 0.46:
+        return "coinflip"
+    if market_probability >= 0.37:
+        return "moderate_dog"
+    return "long_dog"
+
+
+def _market_side_label(record: dict[str, Any]) -> str:
+    if record.get("pickIsMarketFavorite"):
+        return "favorite"
+    if record.get("pickIsMarketUnderdog"):
+        return "underdog"
+    return "unknown"
+
+
+def _market_phase_preference_label(result: dict[str, Any]) -> str:
+    hit_full = bool(result.get("fullGameHit"))
+    hit_first5 = bool(result.get("first5Hit"))
+    first5_push = str(result.get("actualFirst5Winner") or "").lower() == "tie"
+    if hit_first5 and not hit_full:
+        return "first5_cleaner"
+    if hit_full and (not hit_first5 or first5_push):
+        return "full_game_cleaner"
+    if hit_full and hit_first5:
+        return "both_worked"
+    return "neither_worked"
+
+
+def _market_mispricing_label(record: dict[str, Any], result: dict[str, Any]) -> str:
+    market_probability = to_float(record.get("marketProbability"))
+    hit_full = bool(result.get("fullGameHit"))
+    if record.get("pickIsMarketFavorite") and (market_probability or 0.0) >= 0.60 and not hit_full:
+        return "expensive_favorite_failed"
+    if record.get("pickIsMarketUnderdog") and hit_full:
+        return "underdog_beat_market"
+    if record.get("pickIsMarketFavorite") and hit_full and (market_probability or 0.0) >= 0.60:
+        return "expensive_favorite_held"
+    if record.get("pickIsMarketFavorite") and hit_full:
+        return "favorite_held"
+    if record.get("pickIsMarketUnderdog") and not hit_full:
+        return "underdog_failed"
+    return "market_neutral"
+
+
+def iter_moneyline_history_records(
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> list[dict[str, Any]]:
+    if not HISTORY_DIR.exists():
+        return []
+    records: list[dict[str, Any]] = []
+    for path in sorted(HISTORY_DIR.glob("mlb-results-*.jsonl")):
+        date_text = path.stem.replace("mlb-results-", "")
+        if as_of_date and date_text != as_of_date:
+            continue
+        if through_date and date_text > through_date:
+            continue
+        with path.open(encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                record = json.loads(line)
+                if record.get("sport") != "MLB" or record.get("marketType") != "moneyline":
+                    continue
+                records.append(record)
+    return records
+
+
+def build_market_mispricing_row(record: dict[str, Any]) -> dict[str, Any]:
+    result = record.get("result") or {}
+    market_probability = to_float(record.get("marketProbability"))
+    hit_full = int(bool(result.get("fullGameHit")))
+    hit_first5 = int(bool(result.get("first5Hit")))
+    first5_push_flag = int(str(result.get("actualFirst5Winner") or "").lower() == "tie")
+    summary = {
+        "resultJustification": record.get("resultJustification"),
+        "pickJustification": record.get("pickJustification"),
+        "pointEdge": to_float(record.get("pointEdge")) or 0.0,
+        "confidence": to_int(record.get("confidence")) or 0,
+        "priceBucketLabel": _price_bucket_label(market_probability),
+        "marketMispricingLabel": _market_mispricing_label(record, result),
+        "marketPhasePreferenceLabel": _market_phase_preference_label(result),
+    }
+    return {
+        "prediction_date": record.get("date"),
+        "market_type": record.get("marketType"),
+        "model_name": record.get("modelName"),
+        "matchup": record.get("matchup"),
+        "predicted_pick": record.get("predictedPick"),
+        "opponent_team": record.get("homeTeam") if record.get("predictedSide") == "away" else record.get("awayTeam"),
+        "confidence": to_int(record.get("confidence")) or 0,
+        "volatility": to_int(record.get("volatility")) or 0,
+        "point_edge": to_float(record.get("pointEdge")) or 0.0,
+        "market_american_odds": to_int(record.get("marketAmericanOdds")),
+        "market_probability": market_probability,
+        "opponent_market_american_odds": to_int(record.get("opponentMarketAmericanOdds")),
+        "opponent_market_probability": to_float(record.get("opponentMarketProbability")),
+        "market_favorite_team": record.get("marketFavoriteTeam"),
+        "market_favorite_probability": to_float(record.get("marketFavoriteProbability")),
+        "market_price_gap": to_float(record.get("marketPriceGap")),
+        "pick_is_market_favorite": int(bool(record.get("pickIsMarketFavorite"))),
+        "pick_is_market_underdog": int(bool(record.get("pickIsMarketUnderdog"))),
+        "hit_full_game": hit_full,
+        "hit_first5": hit_first5,
+        "first5_push_flag": first5_push_flag,
+        "price_bucket_label": _price_bucket_label(market_probability),
+        "market_side_label": _market_side_label(record),
+        "market_disagreement_win_flag": int(bool(record.get("pickIsMarketUnderdog")) and bool(hit_full)),
+        "expensive_favorite_failure_flag": int(bool(record.get("pickIsMarketFavorite")) and (market_probability or 0.0) >= 0.60 and not bool(hit_full)),
+        "underdog_value_win_flag": int(bool(record.get("pickIsMarketUnderdog")) and bool(hit_full)),
+        "first5_cleaner_than_full_flag": int(bool(hit_first5) and not bool(hit_full)),
+        "full_game_cleaner_than_first5_flag": int(bool(hit_full) and (not bool(hit_first5) or bool(first5_push_flag))),
+        "market_mispricing_label": _market_mispricing_label(record, result),
+        "market_phase_preference_label": _market_phase_preference_label(result),
+        "summary_json": json.dumps(summary, sort_keys=True),
+    }
+
+
+def refresh_story_phase_label_tables(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+    if as_of_date:
+        conn.execute(
+            "DELETE FROM mlb_game_story_labels WHERE game_date = ?",
+            (as_of_date,),
+        )
+        conn.execute(
+            "DELETE FROM mlb_phase_outcomes_daily WHERE game_date = ?",
+            (as_of_date,),
+        )
+        conn.execute(
+            "DELETE FROM mlb_market_mispricing_labels WHERE prediction_date = ?",
+            (as_of_date,),
+        )
+    elif through_date:
+        conn.execute(
+            "DELETE FROM mlb_game_story_labels WHERE game_date <= ?",
+            (through_date,),
+        )
+        conn.execute(
+            "DELETE FROM mlb_phase_outcomes_daily WHERE game_date <= ?",
+            (through_date,),
+        )
+        conn.execute(
+            "DELETE FROM mlb_market_mispricing_labels WHERE prediction_date <= ?",
+            (through_date,),
+        )
+    else:
+        conn.execute("DELETE FROM mlb_game_story_labels")
+        conn.execute("DELETE FROM mlb_phase_outcomes_daily")
+        conn.execute("DELETE FROM mlb_market_mispricing_labels")
+
+    params: list[Any] = []
+    query = "SELECT game_pk, game_date, away_team, home_team FROM mlb_games"
+    if as_of_date:
+        query += " WHERE game_date = ?"
+        params.append(as_of_date)
+    elif through_date:
+        query += " WHERE game_date <= ?"
+        params.append(through_date)
+    query += " ORDER BY game_date, game_pk"
+    games = conn.execute(query, params).fetchall()
+
+    for game_row in games:
+        outcome_row = conn.execute(
+            "SELECT * FROM mlb_game_outcomes WHERE game_pk = ?",
+            (game_row["game_pk"],),
+        ).fetchone()
+        story_row = conn.execute(
+            "SELECT * FROM mlb_game_story_signals WHERE game_pk = ?",
+            (game_row["game_pk"],),
+        ).fetchone()
+        if not outcome_row or not story_row:
+            continue
+        game_label_row = build_game_story_label_row(game_row, outcome_row, story_row)
+        conn.execute(
+            """
+            INSERT INTO mlb_game_story_labels (
+              game_pk, game_date, away_team, home_team, winner_team,
+              primary_story_label, early_phase_label, late_phase_label,
+              scoring_shape_label, winner_path_label,
+              story_tags_json, label_flags_json, summary_json
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                game_label_row["game_pk"],
+                game_label_row["game_date"],
+                game_label_row["away_team"],
+                game_label_row["home_team"],
+                game_label_row["winner_team"],
+                game_label_row["primary_story_label"],
+                game_label_row["early_phase_label"],
+                game_label_row["late_phase_label"],
+                game_label_row["scoring_shape_label"],
+                game_label_row["winner_path_label"],
+                game_label_row["story_tags_json"],
+                game_label_row["label_flags_json"],
+                game_label_row["summary_json"],
+            ),
+        )
+        for phase_row in build_phase_outcome_rows(conn, game_row, outcome_row, story_row):
+            conn.execute(
+                """
+                INSERT INTO mlb_phase_outcomes_daily (
+                  game_pk, game_date, team_name, opponent_team, team_role, result,
+                  runs_first1, runs_first3, runs_first5, runs_late,
+                  hits_first5, hits_late,
+                  scoreless_first3_flag, scored_first_inning_flag, allowed_first_inning_flag,
+                  led_after3_flag, trailed_after3_flag, tied_after3_flag,
+                  led_after5_flag, trailed_after5_flag, tied_after5_flag,
+                  won_full_game_flag, won_first5_flag, first5_push_flag,
+                  starter_survived5_flag, starter_cracked_flag, traffic_no_conversion_flag,
+                  comeback_win_flag, blew_lead_after5_flag, bullpen_flip_game_flag,
+                  phase_path_label, phase_flags_json
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    phase_row["game_pk"],
+                    phase_row["game_date"],
+                    phase_row["team_name"],
+                    phase_row["opponent_team"],
+                    phase_row["team_role"],
+                    phase_row["result"],
+                    phase_row["runs_first1"],
+                    phase_row["runs_first3"],
+                    phase_row["runs_first5"],
+                    phase_row["runs_late"],
+                    phase_row["hits_first5"],
+                    phase_row["hits_late"],
+                    phase_row["scoreless_first3_flag"],
+                    phase_row["scored_first_inning_flag"],
+                    phase_row["allowed_first_inning_flag"],
+                    phase_row["led_after3_flag"],
+                    phase_row["trailed_after3_flag"],
+                    phase_row["tied_after3_flag"],
+                    phase_row["led_after5_flag"],
+                    phase_row["trailed_after5_flag"],
+                    phase_row["tied_after5_flag"],
+                    phase_row["won_full_game_flag"],
+                    phase_row["won_first5_flag"],
+                    phase_row["first5_push_flag"],
+                    phase_row["starter_survived5_flag"],
+                    phase_row["starter_cracked_flag"],
+                    phase_row["traffic_no_conversion_flag"],
+                    phase_row["comeback_win_flag"],
+                    phase_row["blew_lead_after5_flag"],
+                    phase_row["bullpen_flip_game_flag"],
+                    phase_row["phase_path_label"],
+                    phase_row["phase_flags_json"],
+                ),
+            )
+
+    for record in iter_moneyline_history_records(through_date=through_date, as_of_date=as_of_date):
+        label_row = build_market_mispricing_row(record)
+        conn.execute(
+            """
+            INSERT INTO mlb_market_mispricing_labels (
+              prediction_date, market_type, model_name, matchup, predicted_pick, opponent_team,
+              confidence, volatility, point_edge,
+              market_american_odds, market_probability,
+              opponent_market_american_odds, opponent_market_probability,
+              market_favorite_team, market_favorite_probability, market_price_gap,
+              pick_is_market_favorite, pick_is_market_underdog,
+              hit_full_game, hit_first5, first5_push_flag,
+              price_bucket_label, market_side_label,
+              market_disagreement_win_flag, expensive_favorite_failure_flag,
+              underdog_value_win_flag, first5_cleaner_than_full_flag, full_game_cleaner_than_first5_flag,
+              market_mispricing_label, market_phase_preference_label, summary_json
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                label_row["prediction_date"],
+                label_row["market_type"],
+                label_row["model_name"],
+                label_row["matchup"],
+                label_row["predicted_pick"],
+                label_row["opponent_team"],
+                label_row["confidence"],
+                label_row["volatility"],
+                label_row["point_edge"],
+                label_row["market_american_odds"],
+                label_row["market_probability"],
+                label_row["opponent_market_american_odds"],
+                label_row["opponent_market_probability"],
+                label_row["market_favorite_team"],
+                label_row["market_favorite_probability"],
+                label_row["market_price_gap"],
+                label_row["pick_is_market_favorite"],
+                label_row["pick_is_market_underdog"],
+                label_row["hit_full_game"],
+                label_row["hit_first5"],
+                label_row["first5_push_flag"],
+                label_row["price_bucket_label"],
+                label_row["market_side_label"],
+                label_row["market_disagreement_win_flag"],
+                label_row["expensive_favorite_failure_flag"],
+                label_row["underdog_value_win_flag"],
+                label_row["first5_cleaner_than_full_flag"],
+                label_row["full_game_cleaner_than_first5_flag"],
+                label_row["market_mispricing_label"],
+                label_row["market_phase_preference_label"],
+                label_row["summary_json"],
+            ),
+        )
+
+    conn.commit()
+
+
 def build_series_context_row(conn: sqlite3.Connection, as_of_date: str, game_row: sqlite3.Row) -> dict[str, Any]:
     as_of = datetime.strptime(as_of_date, "%Y-%m-%d").date()
     away_team = game_row["away_team"]
@@ -6924,6 +7609,16 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier mistake-shape rows.",
     )
 
+    derive_story_labels = subparsers.add_parser(
+        "derive-story-labels",
+        help="Refresh game-story, phase-outcome, and market-mispricing label tables from stored outcomes and history records.",
+    )
+    derive_story_labels.add_argument("--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date.")
+    derive_story_labels.add_argument(
+        "--as-of-date",
+        help="Optional single date to rebuild incrementally without touching earlier label rows.",
+    )
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -7070,6 +7765,16 @@ def main() -> None:
                 print(f"Refreshed MLB mistake-shape profile tables through {args.through_date}")
             else:
                 print("Refreshed MLB mistake-shape profile tables for all loaded dates")
+            return
+
+        if args.command == "derive-story-labels":
+            refresh_story_phase_label_tables(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB story/phase label tables for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed MLB story/phase label tables through {args.through_date}")
+            else:
+                print("Refreshed MLB story/phase label tables for all loaded dates")
             return
 
         if args.command == "ingest-statcast-hr":

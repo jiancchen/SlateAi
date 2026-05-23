@@ -30,6 +30,7 @@
     "data:close:mlb-day": "node pipeline/close-mlb-day.mjs",
     "data:verify:mlb-refresh": "node pipeline/verify-mlb-refresh.mjs",
     "data:derive:stories": "python3 pipeline/mlb_warehouse.py derive-story-signals",
+    "data:derive:story-labels": "python3 pipeline/mlb_warehouse.py derive-story-labels",
     "data:export:stories": "python3 pipeline/export_story_archive.py",
     "data:import:hr": "python3 pipeline/mlb_warehouse.py import-predictions",
     "data:grade:hr": "python3 pipeline/mlb_warehouse.py grade-home-run-picks",

@@ -71,6 +71,7 @@ const main = () => {
 
   runPythonWarehouse('grade-prop-picks', ['--date', options.date, '--model-name', options.propModelName])
   runNodeScript('export-history-journal.mjs')
+  runPythonWarehouse('derive-story-labels', ['--through-date', options.date])
   execFileSync('npm', ['run', 'data:export:published'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-hidden-edges'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-stateful-edges'], { cwd: rootDir, stdio: 'inherit' })
