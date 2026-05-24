@@ -28,21 +28,21 @@ export const standingsContextByTeam = {
   "Blue Jays": {
     "divisionLeader": false,
     "divisionRank": "3",
-    "gamesBack": "11.0",
+    "gamesBack": "10.5",
     "losses": 27,
-    "runDifferential": -6,
-    "streakCode": "W3",
-    "winningPercentage": ".471",
-    "wins": 24
+    "runDifferential": -3,
+    "streakCode": "W4",
+    "winningPercentage": ".481",
+    "wins": 25
   },
   "Red Sox": {
     "divisionLeader": false,
     "divisionRank": "4",
-    "gamesBack": "12.5",
-    "losses": 28,
-    "runDifferential": -13,
-    "streakCode": "L1",
-    "winningPercentage": ".440",
+    "gamesBack": "13.0",
+    "losses": 29,
+    "runDifferential": -15,
+    "streakCode": "L2",
+    "winningPercentage": ".431",
     "wins": 22
   },
   "Orioles": {
@@ -68,32 +68,32 @@ export const standingsContextByTeam = {
   "White Sox": {
     "divisionLeader": false,
     "divisionRank": "2",
-    "gamesBack": "3.5",
-    "losses": 24,
-    "runDifferential": -7,
-    "streakCode": "W1",
-    "winningPercentage": ".520",
+    "gamesBack": "4.0",
+    "losses": 25,
+    "runDifferential": -14,
+    "streakCode": "L1",
+    "winningPercentage": ".510",
     "wins": 26
   },
   "Twins": {
     "divisionLeader": false,
     "divisionRank": "3",
-    "gamesBack": "6.0",
+    "gamesBack": "5.5",
     "losses": 27,
-    "runDifferential": 1,
-    "streakCode": "W2",
-    "winningPercentage": ".471",
-    "wins": 24
+    "runDifferential": 3,
+    "streakCode": "W3",
+    "winningPercentage": ".481",
+    "wins": 25
   },
   "Royals": {
     "divisionLeader": false,
     "divisionRank": "4",
-    "gamesBack": "10.0",
+    "gamesBack": "9.5",
     "losses": 31,
-    "runDifferential": -32,
-    "streakCode": "L4",
-    "winningPercentage": ".392",
-    "wins": 20
+    "runDifferential": -27,
+    "streakCode": "W1",
+    "winningPercentage": ".404",
+    "wins": 21
   },
   "Tigers": {
     "divisionLeader": false,
@@ -115,25 +115,25 @@ export const standingsContextByTeam = {
     "winningPercentage": ".510",
     "wins": 26
   },
-  "Mariners": {
-    "divisionLeader": false,
-    "divisionRank": "2",
-    "gamesBack": "1.5",
-    "losses": 27,
-    "runDifferential": 13,
-    "streakCode": "W2",
-    "winningPercentage": ".481",
-    "wins": 25
-  },
   "Rangers": {
     "divisionLeader": false,
-    "divisionRank": "3",
+    "divisionRank": "2",
     "gamesBack": "1.5",
     "losses": 26,
     "runDifferential": 10,
     "streakCode": "L1",
     "winningPercentage": ".480",
     "wins": 24
+  },
+  "Mariners": {
+    "divisionLeader": false,
+    "divisionRank": "3",
+    "gamesBack": "2.0",
+    "losses": 28,
+    "runDifferential": 8,
+    "streakCode": "L1",
+    "winningPercentage": ".472",
+    "wins": 25
   },
   "Astros": {
     "divisionLeader": false,
@@ -159,50 +159,50 @@ export const standingsContextByTeam = {
     "divisionLeader": true,
     "divisionRank": "1",
     "gamesBack": "-",
-    "losses": 16,
-    "runDifferential": 105,
-    "streakCode": "W4",
-    "winningPercentage": ".692",
+    "losses": 17,
+    "runDifferential": 103,
+    "streakCode": "L1",
+    "winningPercentage": ".679",
     "wins": 36
+  },
+  "Nationals": {
+    "divisionLeader": false,
+    "divisionRank": "2",
+    "gamesBack": "10.0",
+    "losses": 27,
+    "runDifferential": -15,
+    "streakCode": "W1",
+    "winningPercentage": ".491",
+    "wins": 26
   },
   "Phillies": {
     "divisionLeader": false,
-    "divisionRank": "2",
-    "gamesBack": "10.5",
+    "divisionRank": "3",
+    "gamesBack": "10.0",
     "losses": 26,
     "runDifferential": -25,
     "streakCode": "L3",
     "winningPercentage": ".490",
     "wins": 25
   },
-  "Nationals": {
-    "divisionLeader": false,
-    "divisionRank": "3",
-    "gamesBack": "11.0",
-    "losses": 27,
-    "runDifferential": -17,
-    "streakCode": "L2",
-    "winningPercentage": ".481",
-    "wins": 25
-  },
   "Marlins": {
     "divisionLeader": false,
     "divisionRank": "4",
-    "gamesBack": "13.0",
+    "gamesBack": "12.0",
     "losses": 29,
-    "runDifferential": -18,
-    "streakCode": "W1",
-    "winningPercentage": ".442",
-    "wins": 23
+    "runDifferential": -15,
+    "streakCode": "W2",
+    "winningPercentage": ".453",
+    "wins": 24
   },
   "Mets": {
     "divisionLeader": false,
     "divisionRank": "5",
     "gamesBack": "13.5",
-    "losses": 29,
-    "runDifferential": -14,
-    "streakCode": "L1",
-    "winningPercentage": ".431",
+    "losses": 30,
+    "runDifferential": -17,
+    "streakCode": "L2",
+    "winningPercentage": ".423",
     "wins": 22
   },
   "Brewers": {
@@ -235,24 +235,24 @@ export const standingsContextByTeam = {
     "winningPercentage": ".558",
     "wins": 29
   },
-  "Pirates": {
-    "divisionLeader": false,
-    "divisionRank": "4",
-    "gamesBack": "5.5",
-    "losses": 25,
-    "runDifferential": 22,
-    "streakCode": "L1",
-    "winningPercentage": ".510",
-    "wins": 26
-  },
   "Reds": {
     "divisionLeader": false,
-    "divisionRank": "5",
+    "divisionRank": "4",
     "gamesBack": "5.5",
     "losses": 25,
     "runDifferential": -35,
     "streakCode": "L1",
     "winningPercentage": ".510",
+    "wins": 26
+  },
+  "Pirates": {
+    "divisionLeader": false,
+    "divisionRank": "5",
+    "gamesBack": "6.0",
+    "losses": 26,
+    "runDifferential": 19,
+    "streakCode": "L2",
+    "winningPercentage": ".500",
     "wins": 26
   },
   "Dodgers": {
@@ -288,12 +288,12 @@ export const standingsContextByTeam = {
   "Giants": {
     "divisionLeader": false,
     "divisionRank": "4",
-    "gamesBack": "11.0",
+    "gamesBack": "10.5",
     "losses": 31,
-    "runDifferential": -57,
-    "streakCode": "L4",
-    "winningPercentage": ".392",
-    "wins": 20
+    "runDifferential": -50,
+    "streakCode": "W1",
+    "winningPercentage": ".404",
+    "wins": 21
   },
   "Rockies": {
     "divisionLeader": false,

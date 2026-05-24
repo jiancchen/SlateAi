@@ -388,6 +388,50 @@ const applyMlbTierOneControls = ({
   }
 }
 
+const buildMlbResearchVetoFlags = ({
+  marketProbability,
+  pickIsMarketFavorite,
+  pickIsMarketUnderdog,
+  pickLineupConversionIndex,
+  pickBullpenMistakeChaos,
+  pickTeamMistakeChaos,
+  oppTeamMistakeChaos
+}) => {
+  const heavyFavoriteWeakLineupFlag =
+    pickIsMarketFavorite === true &&
+    Number.isFinite(marketProbability) &&
+    marketProbability >= 0.6 &&
+    Number.isFinite(pickLineupConversionIndex) &&
+    pickLineupConversionIndex <= 25
+
+  const heavyFavoriteNoisyBullpenFlag =
+    pickIsMarketFavorite === true &&
+    Number.isFinite(marketProbability) &&
+    marketProbability >= 0.6 &&
+    Number.isFinite(pickBullpenMistakeChaos) &&
+    pickBullpenMistakeChaos >= 50
+
+  const marketDogOpponentChaosGapFlag =
+    pickIsMarketUnderdog === true &&
+    Number.isFinite(pickTeamMistakeChaos) &&
+    Number.isFinite(oppTeamMistakeChaos) &&
+    oppTeamMistakeChaos - pickTeamMistakeChaos >= 8
+
+  const researchOnlyVetoFlags = []
+
+  if (heavyFavoriteWeakLineupFlag) researchOnlyVetoFlags.push('heavyFavoriteWeakLineup')
+  if (heavyFavoriteNoisyBullpenFlag) researchOnlyVetoFlags.push('heavyFavoriteNoisyBullpen')
+  if (marketDogOpponentChaosGapFlag) researchOnlyVetoFlags.push('marketDogOpponentChaosGap')
+
+  return {
+    heavyFavoriteWeakLineupFlag,
+    heavyFavoriteNoisyBullpenFlag,
+    marketDogOpponentChaosGapFlag,
+    researchOnlyVetoFlags,
+    researchOnlyVetoFlagCount: researchOnlyVetoFlags.length
+  }
+}
+
 const findAnalysisParticipant = (leanText, participants) => {
   const normalizedLean = normalizeText(leanText).replace(/^lean\s+/, '')
   let bestMatch = null
@@ -3228,6 +3272,9 @@ const buildMlbAnalysisContext = (game, participants) => {
       storyPriors: [game.tierTwoContext?.storyPriors?.away ?? null, game.tierTwoContext?.storyPriors?.home ?? null],
       teamStateSnapshots: [game.stateContext?.teamState?.away ?? null, game.stateContext?.teamState?.home ?? null],
       hitterStateSnapshots: [game.stateContext?.hitterState?.away ?? null, game.stateContext?.hitterState?.home ?? null],
+      teamMistakeShapes: [game.stateContext?.teamMistakeShape?.away ?? null, game.stateContext?.teamMistakeShape?.home ?? null],
+      lineupConversionShapes: [game.stateContext?.lineupConversion?.away ?? null, game.stateContext?.lineupConversion?.home ?? null],
+      bullpenMistakeShapes: [game.stateContext?.bullpenMistake?.away ?? null, game.stateContext?.bullpenMistake?.home ?? null],
       tierThreeBullpenProfiles: [game.tierThreeContext?.bullpenCommand?.away ?? null, game.tierThreeContext?.bullpenCommand?.home ?? null],
       starterThirdTimeProfiles: [game.tierThreeContext?.starterThirdTime?.away ?? null, game.tierThreeContext?.starterThirdTime?.home ?? null]
     }
@@ -3499,6 +3546,12 @@ const buildMlbDecisionIndicators = ({
   const opponentTeamState = riskContext.teamStateSnapshots?.[loserIndex] ?? null
   const pickHitterState = riskContext.hitterStateSnapshots?.[winnerIndex] ?? null
   const opponentHitterState = riskContext.hitterStateSnapshots?.[loserIndex] ?? null
+  const pickTeamMistakeShape = riskContext.teamMistakeShapes?.[winnerIndex] ?? null
+  const opponentTeamMistakeShape = riskContext.teamMistakeShapes?.[loserIndex] ?? null
+  const pickLineupConversionShape = riskContext.lineupConversionShapes?.[winnerIndex] ?? null
+  const opponentLineupConversionShape = riskContext.lineupConversionShapes?.[loserIndex] ?? null
+  const pickBullpenMistakeShape = riskContext.bullpenMistakeShapes?.[winnerIndex] ?? null
+  const opponentBullpenMistakeShape = riskContext.bullpenMistakeShapes?.[loserIndex] ?? null
   const pickSnapbackPressure = Number(pickTeamState?.snapbackPressureIndex)
   const opponentSnapbackPressure = Number(opponentTeamState?.snapbackPressureIndex)
   const pickHeatRegression = Number(pickTeamState?.heatRegressionIndex)
@@ -3511,6 +3564,18 @@ const buildMlbDecisionIndicators = ({
   const opponentTop6Cold = Number(opponentHitterState?.top6ColdIndex)
   const pickTop6Heat = Number(pickHitterState?.top6HeatIndex)
   const opponentTop6Heat = Number(opponentHitterState?.top6HeatIndex)
+  const pickTeamMistakeChaos = Number(pickTeamMistakeShape?.mistakeChaosIndex)
+  const opponentTeamMistakeChaos = Number(opponentTeamMistakeShape?.mistakeChaosIndex)
+  const pickTeamRunClustering = Number(pickTeamMistakeShape?.runClusteringIndex)
+  const opponentTeamRunClustering = Number(opponentTeamMistakeShape?.runClusteringIndex)
+  const pickTeamScorelessFirst3Rate = Number(pickTeamMistakeShape?.scorelessFirst3Rate)
+  const opponentTeamScorelessFirst3Rate = Number(opponentTeamMistakeShape?.scorelessFirst3Rate)
+  const pickLineupConversionIndex = Number(pickLineupConversionShape?.lineupConversionIndex)
+  const opponentLineupConversionIndex = Number(opponentLineupConversionShape?.lineupConversionIndex)
+  const pickQuietFirst5Rate = Number(pickLineupConversionShape?.quietFirst5Rate)
+  const opponentQuietFirst5Rate = Number(opponentLineupConversionShape?.quietFirst5Rate)
+  const pickBullpenMistakeChaos = Number(pickBullpenMistakeShape?.bullpenChaosIndex)
+  const opponentBullpenMistakeChaos = Number(opponentBullpenMistakeShape?.bullpenChaosIndex)
   const pickRelieverCommandRisk = Number(riskContext.tierThreeBullpenProfiles?.[winnerIndex]?.commandRiskIndex)
   const opponentRelieverCommandRisk = Number(riskContext.tierThreeBullpenProfiles?.[loserIndex]?.commandRiskIndex)
   const pickThirdTimePenalty = Number(riskContext.starterThirdTimeProfiles?.[winnerIndex]?.thirdTimePenaltyIndex)
@@ -3890,6 +3955,42 @@ const buildMlbDecisionIndicators = ({
     oppTop6Heat: Number.isFinite(opponentTop6Heat)
       ? roundToTenths(opponentTop6Heat)
       : null,
+    pickTeamMistakeChaos: Number.isFinite(pickTeamMistakeChaos)
+      ? roundToTenths(pickTeamMistakeChaos)
+      : null,
+    oppTeamMistakeChaos: Number.isFinite(opponentTeamMistakeChaos)
+      ? roundToTenths(opponentTeamMistakeChaos)
+      : null,
+    pickTeamRunClustering: Number.isFinite(pickTeamRunClustering)
+      ? roundToTenths(pickTeamRunClustering)
+      : null,
+    oppTeamRunClustering: Number.isFinite(opponentTeamRunClustering)
+      ? roundToTenths(opponentTeamRunClustering)
+      : null,
+    pickTeamScorelessFirst3Rate: Number.isFinite(pickTeamScorelessFirst3Rate)
+      ? roundToTenths(pickTeamScorelessFirst3Rate)
+      : null,
+    oppTeamScorelessFirst3Rate: Number.isFinite(opponentTeamScorelessFirst3Rate)
+      ? roundToTenths(opponentTeamScorelessFirst3Rate)
+      : null,
+    pickLineupConversionIndex: Number.isFinite(pickLineupConversionIndex)
+      ? roundToTenths(pickLineupConversionIndex)
+      : null,
+    oppLineupConversionIndex: Number.isFinite(opponentLineupConversionIndex)
+      ? roundToTenths(opponentLineupConversionIndex)
+      : null,
+    pickQuietFirst5Rate: Number.isFinite(pickQuietFirst5Rate)
+      ? roundToTenths(pickQuietFirst5Rate)
+      : null,
+    oppQuietFirst5Rate: Number.isFinite(opponentQuietFirst5Rate)
+      ? roundToTenths(opponentQuietFirst5Rate)
+      : null,
+    pickBullpenMistakeChaos: Number.isFinite(pickBullpenMistakeChaos)
+      ? roundToTenths(pickBullpenMistakeChaos)
+      : null,
+    oppBullpenMistakeChaos: Number.isFinite(opponentBullpenMistakeChaos)
+      ? roundToTenths(opponentBullpenMistakeChaos)
+      : null,
     pickStateSeriesGameNumber: Number(pickTeamState?.scheduledSeriesGameNumber || 0) || null,
     oppStateSeriesGameNumber: Number(opponentTeamState?.scheduledSeriesGameNumber || 0) || null,
     pickStreakDirection: pickTeamState?.streakDirection || null,
@@ -4043,6 +4144,14 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
   const agreementBonus =
     marketWinnerIndex === null ? 0 : marketWinnerIndex === winnerIndex ? 5 : -3
   const marketSupport = marketProbabilities[winnerIndex] ?? participant.impliedProbability ?? 0.5
+  const pickIsMarketFavorite =
+    marketProbabilities.length === participants.length
+      ? winnerIndex === marketWinnerIndex
+      : participant.impliedProbability >= (opponent?.impliedProbability ?? 0)
+  const pickIsMarketUnderdog =
+    marketProbabilities.length === participants.length
+      ? winnerIndex !== marketWinnerIndex
+      : participant.impliedProbability < (opponent?.impliedProbability ?? 0)
   const baseConfidence = Math.round(
     clamp(
       50 +
@@ -4126,16 +4235,25 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           pickStarterLeashScore: mlbIndicators.pickStarterLeashScore,
           oppStarterLeashScore: mlbIndicators.oppStarterLeashScore,
           marketProbability: marketSupport,
-          pickIsMarketFavorite:
-            marketProbabilities.length === participants.length
-              ? winnerIndex === marketWinnerIndex
-              : participant.impliedProbability >= (opponent?.impliedProbability ?? 0),
+          pickIsMarketFavorite,
           statefulSuggestedEdgeHaircut: mlbIndicators.statefulSuggestedEdgeHaircut ?? 0,
           statefulSuggestedConfidenceHaircut: mlbIndicators.statefulSuggestedConfidenceHaircut ?? 0,
           statefulOpponentSnapbackTrapFlag: Boolean(mlbIndicators.statefulOpponentSnapbackTrapFlag),
           tierThreeSuggestedEdgeHaircut: mlbIndicators.tierThreeSuggestedEdgeHaircut ?? 0,
           tierThreeSuggestedConfidenceHaircut: mlbIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,
           tierThreeBullpenCommandMismatchFlag: Boolean(mlbIndicators.tierThreeBullpenCommandMismatchFlag)
+        })
+      : null
+  const researchVetoFlags =
+    game.league === 'MLB' && mlbIndicators
+      ? buildMlbResearchVetoFlags({
+          marketProbability: marketSupport,
+          pickIsMarketFavorite,
+          pickIsMarketUnderdog,
+          pickLineupConversionIndex: mlbIndicators.pickLineupConversionIndex,
+          pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos,
+          pickTeamMistakeChaos: mlbIndicators.pickTeamMistakeChaos,
+          oppTeamMistakeChaos: mlbIndicators.oppTeamMistakeChaos
         })
       : null
   const finalConfidence = tierOneControls?.adjustedConfidence ?? confidence
@@ -4201,6 +4319,18 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           oppTop6Cold: mlbIndicators.oppTop6Cold,
           pickTop6Heat: mlbIndicators.pickTop6Heat,
           oppTop6Heat: mlbIndicators.oppTop6Heat,
+          pickTeamMistakeChaos: mlbIndicators.pickTeamMistakeChaos,
+          oppTeamMistakeChaos: mlbIndicators.oppTeamMistakeChaos,
+          pickTeamRunClustering: mlbIndicators.pickTeamRunClustering,
+          oppTeamRunClustering: mlbIndicators.oppTeamRunClustering,
+          pickTeamScorelessFirst3Rate: mlbIndicators.pickTeamScorelessFirst3Rate,
+          oppTeamScorelessFirst3Rate: mlbIndicators.oppTeamScorelessFirst3Rate,
+          pickLineupConversionIndex: mlbIndicators.pickLineupConversionIndex,
+          oppLineupConversionIndex: mlbIndicators.oppLineupConversionIndex,
+          pickQuietFirst5Rate: mlbIndicators.pickQuietFirst5Rate,
+          oppQuietFirst5Rate: mlbIndicators.oppQuietFirst5Rate,
+          pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos,
+          oppBullpenMistakeChaos: mlbIndicators.oppBullpenMistakeChaos,
           pickStateSeriesGameNumber: mlbIndicators.pickStateSeriesGameNumber,
           oppStateSeriesGameNumber: mlbIndicators.oppStateSeriesGameNumber,
           pickStreakDirection: mlbIndicators.pickStreakDirection,
@@ -4223,6 +4353,11 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           tierThreeSuggestedConfidenceHaircut: mlbIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,
           projectedHitEdgeForPick: mlbIndicators.projectedHitEdgeForPick,
           hitEdgeAgainstPick: mlbIndicators.hitEdgeAgainstPick,
+          heavyFavoriteWeakLineupFlag: Boolean(researchVetoFlags?.heavyFavoriteWeakLineupFlag),
+          heavyFavoriteNoisyBullpenFlag: Boolean(researchVetoFlags?.heavyFavoriteNoisyBullpenFlag),
+          marketDogOpponentChaosGapFlag: Boolean(researchVetoFlags?.marketDogOpponentChaosGapFlag),
+          researchOnlyVetoFlags: researchVetoFlags?.researchOnlyVetoFlags ?? [],
+          researchOnlyVetoFlagCount: researchVetoFlags?.researchOnlyVetoFlagCount ?? 0,
           tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,
           tierOnePassFlag: Boolean(tierOneControls?.passFlag),
           tierOneRiskFlags: tierOneControls?.riskFlags ?? [],

@@ -683,6 +683,120 @@ const buildTeamStateByTeam = ({ date, games }) => {
   )
 }
 
+const buildTeamMistakeShapeByTeam = ({ date, games, windowGames = 8 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `select team_name, window_games, games_sample, low_scoring_game_rate, high_scoring_game_rate, scoreless_first3_rate, first_inning_run_allowed_rate, early_multi_run_allowed_rate, one_big_inning_rate, one_bad_inning_allowed_rate, traffic_game_rate, dead_bat_traffic_rate, traffic_no_conversion_rate, base_runner_conversion_rate, stranded_traffic_rate, top_order_pressure_no_conversion_rate, bullpen_meltdown_rate, run_clustering_index, mistake_chaos_index from mlb_team_mistake_shape_daily where as_of_date='${date}' and window_games=${windowGames} and team_name in (${quotedTeams}) order by team_name;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+      return [
+        deskTeam,
+        {
+          windowGames: Number(row.window_games || 0) || null,
+          gamesSample: Number(row.games_sample || 0) || 0,
+          lowScoringGameRate: roundMaybe(row.low_scoring_game_rate),
+          highScoringGameRate: roundMaybe(row.high_scoring_game_rate),
+          scorelessFirst3Rate: roundMaybe(row.scoreless_first3_rate),
+          firstInningRunAllowedRate: roundMaybe(row.first_inning_run_allowed_rate),
+          earlyMultiRunAllowedRate: roundMaybe(row.early_multi_run_allowed_rate),
+          oneBigInningRate: roundMaybe(row.one_big_inning_rate),
+          oneBadInningAllowedRate: roundMaybe(row.one_bad_inning_allowed_rate),
+          trafficGameRate: roundMaybe(row.traffic_game_rate),
+          deadBatTrafficRate: roundMaybe(row.dead_bat_traffic_rate),
+          trafficNoConversionRate: roundMaybe(row.traffic_no_conversion_rate),
+          baseRunnerConversionRate: roundMaybe(row.base_runner_conversion_rate),
+          strandedTrafficRate: roundMaybe(row.stranded_traffic_rate),
+          topOrderPressureNoConversionRate: roundMaybe(row.top_order_pressure_no_conversion_rate),
+          bullpenMeltdownRate: roundMaybe(row.bullpen_meltdown_rate),
+          runClusteringIndex: roundMaybe(row.run_clustering_index),
+          mistakeChaosIndex: roundMaybe(row.mistake_chaos_index)
+        }
+      ]
+    })
+  )
+}
+
+const buildLineupConversionShapeByTeam = ({ date, games, windowGames = 8 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `select team_name, window_games, games_sample, baserunners_per_game, runs_per_baserunner, stranded_traffic_rate, early_baserunners_per_game, early_conversion_rate, top_order_baserunners_first3_per_game, top_order_conversion_share, traffic_no_conversion_rate, dead_bat_traffic_rate, quiet_first5_rate, conversion_volatility, lineup_conversion_index from mlb_lineup_conversion_shape_daily where as_of_date='${date}' and window_games=${windowGames} and team_name in (${quotedTeams}) order by team_name;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+      return [
+        deskTeam,
+        {
+          windowGames: Number(row.window_games || 0) || null,
+          gamesSample: Number(row.games_sample || 0) || 0,
+          baserunnersPerGame: roundMaybe(row.baserunners_per_game),
+          runsPerBaserunner: roundMaybe(row.runs_per_baserunner),
+          strandedTrafficRate: roundMaybe(row.stranded_traffic_rate),
+          earlyBaserunnersPerGame: roundMaybe(row.early_baserunners_per_game),
+          earlyConversionRate: roundMaybe(row.early_conversion_rate),
+          topOrderBaserunnersFirst3PerGame: roundMaybe(row.top_order_baserunners_first3_per_game),
+          topOrderConversionShare: roundMaybe(row.top_order_conversion_share),
+          trafficNoConversionRate: roundMaybe(row.traffic_no_conversion_rate),
+          deadBatTrafficRate: roundMaybe(row.dead_bat_traffic_rate),
+          quietFirst5Rate: roundMaybe(row.quiet_first5_rate),
+          conversionVolatility: roundMaybe(row.conversion_volatility),
+          lineupConversionIndex: roundMaybe(row.lineup_conversion_index)
+        }
+      ]
+    })
+  )
+}
+
+const buildBullpenMistakeShapeByTeam = ({ date, games, windowDays = 14 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `select team_name, window_days, appearances_sample, games_sample, first_batter_reach_rate, first_batter_walk_rate, meltdown_appearance_rate, home_run_appearance_rate, inherited_traffic_entry_rate, inherited_traffic_score_rate, bullpen_meltdown_game_rate, lead_loss_after_entry_rate, bridge_clean_game_rate, bullpen_chaos_index from mlb_bullpen_mistake_shape_daily where as_of_date='${date}' and window_days=${windowDays} and team_name in (${quotedTeams}) order by team_name;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+      return [
+        deskTeam,
+        {
+          windowDays: Number(row.window_days || 0) || null,
+          appearancesSample: Number(row.appearances_sample || 0) || 0,
+          gamesSample: Number(row.games_sample || 0) || 0,
+          firstBatterReachRate: roundMaybe(row.first_batter_reach_rate),
+          firstBatterWalkRate: roundMaybe(row.first_batter_walk_rate),
+          meltdownAppearanceRate: roundMaybe(row.meltdown_appearance_rate),
+          homeRunAppearanceRate: roundMaybe(row.home_run_appearance_rate),
+          inheritedTrafficEntryRate: roundMaybe(row.inherited_traffic_entry_rate),
+          inheritedTrafficScoreRate: roundMaybe(row.inherited_traffic_score_rate),
+          bullpenMeltdownGameRate: roundMaybe(row.bullpen_meltdown_game_rate),
+          leadLossAfterEntryRate: roundMaybe(row.lead_loss_after_entry_rate),
+          bridgeCleanGameRate: roundMaybe(row.bridge_clean_game_rate),
+          bullpenChaosIndex: roundMaybe(row.bullpen_chaos_index)
+        }
+      ]
+    })
+  )
+}
+
 const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
@@ -1314,6 +1428,9 @@ const main = async () => {
   const teamStoryPriorsByTeam = buildTeamStoryPriorsByTeam({ date: options.date, games: rawGames })
   const teamStateByTeam = buildTeamStateByTeam({ date: options.date, games: rawGames })
   const hitterStateByTeam = buildHitterStateByTeam({ date: options.date, games: rawGames })
+  const teamMistakeShapeByTeam = buildTeamMistakeShapeByTeam({ date: options.date, games: rawGames })
+  const lineupConversionShapeByTeam = buildLineupConversionShapeByTeam({ date: options.date, games: rawGames })
+  const bullpenMistakeShapeByTeam = buildBullpenMistakeShapeByTeam({ date: options.date, games: rawGames })
   const recentGamesByTeam = buildRecentGamesByTeam({ date: options.date, games: rawGames })
   const seriesContextByGamePk = buildSeriesContextByGamePk({ date: options.date, games: rawGames })
   const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
@@ -1372,6 +1489,18 @@ const main = async () => {
       hitterState: {
         away: hitterStateByTeam[game.away] ?? null,
         home: hitterStateByTeam[game.home] ?? null
+      },
+      teamMistakeShape: {
+        away: teamMistakeShapeByTeam[game.away] ?? null,
+        home: teamMistakeShapeByTeam[game.home] ?? null
+      },
+      lineupConversion: {
+        away: lineupConversionShapeByTeam[game.away] ?? null,
+        home: lineupConversionShapeByTeam[game.home] ?? null
+      },
+      bullpenMistake: {
+        away: bullpenMistakeShapeByTeam[game.away] ?? null,
+        home: bullpenMistakeShapeByTeam[game.home] ?? null
       },
       recentGames: {
         away: recentGamesByTeam[game.away] ?? [],
