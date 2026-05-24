@@ -435,6 +435,7 @@ const exportPredictions = async ({ startDate, endDate, out, modelName }) => {
         predictionDate: date,
         modelName,
         gameId: game.id,
+        gamePk: Number.isFinite(Number(game.gamePk)) ? Number(game.gamePk) : null,
         gameTitle: game.title,
         awayTeam: toOfficialTeam(game.participants[0].name),
         homeTeam: toOfficialTeam(game.participants[1].name),

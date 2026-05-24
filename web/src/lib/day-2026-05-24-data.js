@@ -96,9 +96,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +132",
+    "spread": "+1.5 -140 / -1.5 +128",
     "total": "o7.5 -110 / u7.5 -105",
-    "moneyline": "Pirates +152 / Blue Jays -174",
+    "moneyline": "Pirates +148 / Blue Jays -170",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays",
     "tierTwoContext": {
@@ -726,9 +726,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -190 / +1.5 -230",
-    "total": "o7.5 -102 / u7.5 -114",
-    "moneyline": "Tigers +115 / Orioles -122",
+    "spread": "+1.5 -188 / -1.5 +170",
+    "total": "o7.5 -115 / u8 -115",
+    "moneyline": "Tigers +110 / Orioles -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
     "tierTwoContext": {
@@ -1357,8 +1357,8 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +152 / +1.5 -170",
-    "total": "o7 -125 / u7.5 -115",
-    "moneyline": "Guardians -114 / Phillies -105",
+    "total": "o7 -125 / u7.5 -120",
+    "moneyline": "Guardians -115 / Phillies -105",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
     "tierTwoContext": {
@@ -1986,9 +1986,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -184 / -1.5 +165",
-    "total": "o7 -114 / u7.5 -124",
-    "moneyline": "Rays +116 / Yankees -130",
+    "spread": "+1.5 -188 / -1.5 +175",
+    "total": "o7 -105 / u7 -106",
+    "moneyline": "Rays +117 / Yankees -130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rays-vs-yankees",
     "tierTwoContext": {
@@ -2616,9 +2616,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -165 / -1.5 +146",
-    "total": "o7.5 +105 / u7.5 -113",
-    "moneyline": "Twins +135 / Red Sox -150",
+    "spread": "+1.5 -165 / -1.5 +145",
+    "total": "o7.5 +105 / u7.5 -120",
+    "moneyline": "Twins +125 / Red Sox -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
     "tierTwoContext": {
@@ -3157,48 +3157,48 @@ export const rawGames = [
     "start": "10:40 AM PT",
     "startMinutes": 640,
     "awayPitcher": {
-      "id": 669461,
-      "fullName": "Matthew Liberatore",
+      "id": 802408,
+      "fullName": "Brycen Mautz",
       "pitchHand": "L",
-      "wins": 2,
-      "losses": 2,
-      "era": "4.70",
-      "strikeOuts": 43,
-      "inningsPitched": "51.2",
-      "hitsAllowed": 60,
-      "walks": 20,
-      "homeRunsAllowed": 9,
-      "whip": "1.55",
-      "gamesStarted": 10,
+      "wins": 0,
+      "losses": 0,
+      "era": "-",
+      "strikeOuts": 0,
+      "inningsPitched": "-",
+      "hitsAllowed": 0,
+      "walks": 0,
+      "homeRunsAllowed": 0,
+      "whip": null,
+      "gamesStarted": 0,
       "probableSource": "mlb-api",
       "savant": {
-        "playerId": 669461,
-        "playerUrl": "https://baseballsavant.mlb.com/savant-player/matthew-liberatore-669461",
+        "playerId": 802408,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408",
         "statsSuffix": "r-pitching-mlb",
         "season": 2026,
         "statsUrls": {
-          "statcast": "https://baseballsavant.mlb.com/savant-player/matthew-liberatore-669461?stats=statcast-r-pitching-mlb&season=2026",
-          "splits": "https://baseballsavant.mlb.com/savant-player/matthew-liberatore-669461?stats=splits-r-pitching-mlb&season=2026",
-          "gamelogs": "https://baseballsavant.mlb.com/savant-player/matthew-liberatore-669461?stats=gamelogs-r-pitching-mlb&season=2026"
+          "statcast": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
       "recentForm": null,
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.17,
-        "daysSinceLastStart": 5,
-        "startsLoaded": 10,
-        "shortLeashRisk": 0.1,
-        "durableRate": 0.3,
+        "status": "debut-window",
+        "label": "Debut / opener watch",
+        "note": "No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.",
+        "expectedInnings": 0,
+        "daysSinceLastStart": null,
+        "startsLoaded": 0,
+        "shortLeashRisk": 0,
+        "durableRate": 0,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "5-inning lane"
+        "workloadLabel": "Unknown leash"
       }
     },
     "homePitcher": {
@@ -3246,7 +3246,7 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -190 / +1.5 -184",
+    "spread": "+1.5 -190 / +1.5 -190",
     "total": "o10 -110 / u10 -110",
     "moneyline": "Cardinals +102 / Reds -120",
     "pitcherSourceNote": "",
@@ -3524,20 +3524,7 @@ export const rawGames = [
         }
       },
       "firstInningPitcher": {
-        "away": {
-          "pitcherName": "Matthew Liberatore",
-          "windowStarts": 5,
-          "startsSample": 2,
-          "firstBatterReachRate": 0,
-          "firstInningRunAllowedRate": 0,
-          "firstInningRunsAllowedPerStart": 0,
-          "firstInningMultiRunAllowedRate": 0,
-          "firstInningBaserunnersPerStart": 0,
-          "firstInningWalkRate": 0,
-          "firstInningHomeRunRate": 0,
-          "firstInningCleanRate": 1,
-          "firstInningPressureIndex": 4
-        },
+        "away": null,
         "home": {
           "pitcherName": "Brady Singer",
           "windowStarts": 5,
@@ -3876,9 +3863,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +158 / +1.5 -170",
-    "total": "o8 -118 / u8.5 -120",
-    "moneyline": "Mets -105 / Marlins -105",
+    "spread": "+1.5 -200 / +1.5 -195",
+    "total": "o7.5 -110 / u7.5 even",
+    "moneyline": "Mets +110 / Marlins -124",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins",
     "tierTwoContext": {
@@ -4493,9 +4480,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +105 / +1.5 -120",
+    "spread": "-1.5 +105 / +1.5 -125",
     "total": "o8 -105 / u8 -110",
-    "moneyline": "Dodgers -160 / Brewers +143",
+    "moneyline": "Dodgers -155 / Brewers +135",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers",
     "tierTwoContext": {
@@ -5123,9 +5110,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -148",
-    "total": "o8.5 -105 / u8.5 -105",
-    "moneyline": "Mariners -120 / Royals +114",
+    "spread": "-1.5 +135 / +1.5 -155",
+    "total": "o8 -115 / u8.5 -115",
+    "moneyline": "Mariners -120 / Royals +108",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals",
     "tierTwoContext": {
@@ -5753,8 +5740,8 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -152 / -1.5 +130",
-    "total": "o7 -110 / u7.5 -124",
+    "spread": "+1.5 -150 / -1.5 +133",
+    "total": "o7 -110 / u7.5 -128",
     "moneyline": "Astros +150 / Cubs -175",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs",
@@ -6383,7 +6370,7 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -193",
+    "spread": "+1.5 -210 / +1.5 -193",
     "total": "o8 -110 / u8 -110",
     "moneyline": "White Sox even / Giants -115",
     "pitcherSourceNote": "",
@@ -7013,8 +7000,8 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -145 / -1.5 +125",
-    "total": "o7.5 -110 / u8 -122",
+    "spread": "+1.5 -145 / -1.5 +126",
+    "total": "o7.5 -110 / u7.5 -102",
     "moneyline": "Athletics +148 / Padres -170",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
@@ -7632,7 +7619,7 @@ export const rawGames = [
     },
     "spread": "+1.5 -149 / -1.5 +133",
     "total": "o8.5 -104 / u8.5 -115",
-    "moneyline": "Nationals +139 / Braves -160",
+    "moneyline": "Nationals +135 / Braves -160",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves",
     "tierTwoContext": {
@@ -8260,9 +8247,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -120 / -1.5 +108",
-    "total": "o9 -110 / u9 -110",
-    "moneyline": "Rockies +175 / Diamondbacks -190",
+    "spread": "+1.5 -120 / -1.5 +106",
+    "total": "o8.5 -115 / u9 -113",
+    "moneyline": "Rockies +175 / Diamondbacks -200",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks",
     "tierTwoContext": {
@@ -8890,9 +8877,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -190 / +1.5 -230",
-    "total": "o7.5 -102 / u7.5 -114",
-    "moneyline": "Tigers +115 / Orioles -122",
+    "spread": "+1.5 -188 / -1.5 +170",
+    "total": "o7.5 -115 / u8 -115",
+    "moneyline": "Tigers +110 / Orioles -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
     "tierTwoContext": {
@@ -9520,9 +9507,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -200 / +1.5 -191",
+    "spread": "+1.5 -205 / +1.5 -191",
     "total": "o8 -110 / u8 -110",
-    "moneyline": "Rangers +107 / Angels -120",
+    "moneyline": "Rangers +102 / Angels -120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels",
     "tierTwoContext": {

@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS mlb_side_predictions (
   prediction_date TEXT NOT NULL,
   model_name TEXT NOT NULL,
   game_id TEXT NOT NULL,
+  game_pk INTEGER,
   game_title TEXT NOT NULL,
   away_team TEXT NOT NULL,
   home_team TEXT NOT NULL,
@@ -45,6 +46,7 @@ CREATE TABLE IF NOT EXISTS mlb_side_backtests (
   prediction_date TEXT NOT NULL,
   model_name TEXT NOT NULL,
   game_id TEXT NOT NULL,
+  game_pk INTEGER,
   game_title TEXT NOT NULL,
   away_team TEXT NOT NULL,
   home_team TEXT NOT NULL,
@@ -82,25 +84,49 @@ def get_connection() -> sqlite3.Connection:
 
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA)
+    prediction_columns = {row["name"] for row in conn.execute("PRAGMA table_info(mlb_side_predictions)").fetchall()}
+    if "game_pk" not in prediction_columns:
+        conn.execute("ALTER TABLE mlb_side_predictions ADD COLUMN game_pk INTEGER")
+    backtest_columns = {row["name"] for row in conn.execute("PRAGMA table_info(mlb_side_backtests)").fetchall()}
+    if "game_pk" not in backtest_columns:
+        conn.execute("ALTER TABLE mlb_side_backtests ADD COLUMN game_pk INTEGER")
     conn.commit()
 
 
 def import_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     init_db(conn)
     payload = json.loads(file_path.read_text(encoding="utf-8"))
+    prediction_keys = sorted(
+        {
+            (pick["predictionDate"], pick["modelName"])
+            for pick in payload["picks"]
+            if pick.get("predictionDate") and pick.get("modelName")
+        }
+    )
+    for prediction_date, model_name in prediction_keys:
+        conn.execute(
+            "DELETE FROM mlb_side_backtests WHERE prediction_date = ? AND model_name = ?",
+            (prediction_date, model_name),
+        )
+        conn.execute(
+            "DELETE FROM mlb_side_predictions WHERE prediction_date = ? AND model_name = ?",
+            (prediction_date, model_name),
+        )
+
     for pick in payload["picks"]:
         indicators = pick.get("indicators") or {}
         conn.execute(
             """
             INSERT INTO mlb_side_predictions (
-              prediction_date, model_name, game_id, game_title, away_team, home_team,
+              prediction_date, model_name, game_id, game_pk, game_title, away_team, home_team,
               predicted_team, predicted_side, confidence, volatility, model_edge, source_label,
               input_labels_json, projection_json, starter_leverage_index, late_inning_stability_index,
               relief_pitching_risk, coinflip_pressure, pick_bullpen_score, opp_bullpen_score,
               pick_starter_score, opp_starter_score, projected_hit_edge_for_pick,
               hit_edge_against_pick_flag, metadata_json
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(prediction_date, model_name, game_id) DO UPDATE SET
+              game_pk=excluded.game_pk,
               game_title=excluded.game_title,
               away_team=excluded.away_team,
               home_team=excluded.home_team,
@@ -128,6 +154,7 @@ def import_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
                 pick["predictionDate"],
                 pick["modelName"],
                 pick["gameId"],
+                pick.get("gamePk"),
                 pick["gameTitle"],
                 pick["awayTeam"],
                 pick["homeTeam"],
@@ -162,15 +189,34 @@ def grade_predictions(conn: sqlite3.Connection, model_name: str) -> None:
         (model_name,),
     ).fetchall()
 
+    skipped_missing_outcome = 0
+    skipped_ambiguous_outcome = 0
+
     for row in rows:
-        outcome = conn.execute(
-            """
-            SELECT * FROM mlb_game_outcomes
-            WHERE game_date = ? AND away_team = ? AND home_team = ?
-            """,
-            (row["prediction_date"], row["away_team"], row["home_team"]),
-        ).fetchone()
+        outcome = None
+        game_pk = row["game_pk"]
+        if game_pk is not None:
+            outcome = conn.execute(
+                "SELECT * FROM mlb_game_outcomes WHERE game_pk = ?",
+                (game_pk,),
+            ).fetchone()
+        else:
+            outcomes = conn.execute(
+                """
+                SELECT * FROM mlb_game_outcomes
+                WHERE game_date = ? AND away_team = ? AND home_team = ?
+                ORDER BY game_pk
+                """,
+                (row["prediction_date"], row["away_team"], row["home_team"]),
+            ).fetchall()
+            if len(outcomes) == 1:
+                outcome = outcomes[0]
+            elif len(outcomes) > 1:
+                skipped_ambiguous_outcome += 1
+                continue
+
         if outcome is None:
+            skipped_missing_outcome += 1
             continue
 
         away_stats = conn.execute(
@@ -204,15 +250,16 @@ def grade_predictions(conn: sqlite3.Connection, model_name: str) -> None:
         conn.execute(
             """
             INSERT INTO mlb_side_backtests (
-              prediction_date, model_name, game_id, game_title, away_team, home_team,
+              prediction_date, model_name, game_id, game_pk, game_title, away_team, home_team,
               predicted_team, predicted_side, actual_winner, actual_first5_winner,
               hit_full_game, hit_first5, bullpen_flip_loss, starter_rescue_win,
               thin_edge_flag, high_volatility_flag, hit_edge_against_pick_flag,
               predicted_runs_final, opponent_runs_final, predicted_runs_first5, opponent_runs_first5,
               predicted_bullpen_runs, opponent_bullpen_runs, bullpen_net_diff,
               relief_pitching_risk, coinflip_pressure, summary_json
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(prediction_date, model_name, game_id) DO UPDATE SET
+              game_pk=excluded.game_pk,
               actual_winner=excluded.actual_winner,
               actual_first5_winner=excluded.actual_first5_winner,
               hit_full_game=excluded.hit_full_game,
@@ -237,6 +284,7 @@ def grade_predictions(conn: sqlite3.Connection, model_name: str) -> None:
                 row["prediction_date"],
                 row["model_name"],
                 row["game_id"],
+                outcome["game_pk"],
                 row["game_title"],
                 row["away_team"],
                 row["home_team"],
@@ -265,6 +313,11 @@ def grade_predictions(conn: sqlite3.Connection, model_name: str) -> None:
         )
 
     conn.commit()
+    if skipped_missing_outcome or skipped_ambiguous_outcome:
+        print(
+            f"Skipped {skipped_missing_outcome} rows with no outcome and "
+            f"{skipped_ambiguous_outcome} rows with ambiguous doubleheader outcomes for {model_name}"
+        )
 
 
 def summarize_window(conn: sqlite3.Connection, model_name: str, start_date: str, end_date: str) -> dict[str, float | int]:

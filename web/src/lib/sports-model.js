@@ -452,6 +452,24 @@ const buildMlbResearchVetoFlags = ({
   }
 }
 
+const buildMlbVetoLayer = ({
+  researchOnlyVetoFlagCount = 0,
+  researchOnlyVetoFlags = [],
+  protectedMarketDogFlag = false
+}) => {
+  let recommendedAction = 'Eligible'
+  if (protectedMarketDogFlag && researchOnlyVetoFlagCount === 0) recommendedAction = 'Protected dog'
+  else if (researchOnlyVetoFlagCount >= 2) recommendedAction = 'Hard pass'
+  else if (researchOnlyVetoFlagCount === 1) recommendedAction = 'Pass'
+
+  return {
+    recommendedAction,
+    vetoCount: researchOnlyVetoFlagCount,
+    vetoReasons: Array.isArray(researchOnlyVetoFlags) ? researchOnlyVetoFlags : [],
+    protectedMarketDogFlag: Boolean(protectedMarketDogFlag)
+  }
+}
+
 const buildMlbEfficientFavoriteLane = ({
   marketProbability,
   pickIsMarketFavorite,
@@ -4613,6 +4631,14 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos
         })
       : null
+  const vetoLayer =
+    game.league === 'MLB'
+      ? buildMlbVetoLayer({
+          researchOnlyVetoFlagCount: researchVetoFlags?.researchOnlyVetoFlagCount ?? 0,
+          researchOnlyVetoFlags: researchVetoFlags?.researchOnlyVetoFlags ?? [],
+          protectedMarketDogFlag: Boolean(researchVetoFlags?.protectedMarketDogFlag)
+        })
+      : null
   const vetoPassFlag = Number(researchVetoFlags?.researchOnlyVetoFlagCount || 0) > 0
   const finalConfidence = tierOneControls?.adjustedConfidence ?? confidence
   const finalVolatility = tierOneControls?.adjustedVolatility ?? volatility
@@ -4726,6 +4752,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           marketDogOpponentChaosGapFlag: Boolean(researchVetoFlags?.marketDogOpponentChaosGapFlag),
           researchOnlyVetoFlags: researchVetoFlags?.researchOnlyVetoFlags ?? [],
           researchOnlyVetoFlagCount: researchVetoFlags?.researchOnlyVetoFlagCount ?? 0,
+          vetoLayer,
           efficientFavoriteCandidateFlag: Boolean(efficientFavoriteLane?.candidateFlag),
           efficientFavoriteScore: efficientFavoriteLane?.score ?? null,
           efficientFavoriteTier: efficientFavoriteLane?.laneTier ?? null,

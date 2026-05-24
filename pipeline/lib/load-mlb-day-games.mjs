@@ -50,6 +50,7 @@ const getWindowLabel = (startMinutes = 0) => {
 const buildGenericMlbGame = (
   raw,
   {
+    uniqueId = raw.id,
     standingsContextByTeam,
     teamOffenseContextByTeam,
     teamBullpenContextByTeam,
@@ -66,7 +67,8 @@ const buildGenericMlbGame = (
   ]
 
   return {
-    id: raw.id,
+    id: uniqueId,
+    gamePk: Number.isFinite(Number(raw.gamePk)) ? Number(raw.gamePk) : null,
     league: 'MLB',
     title: `${raw.away} @ ${raw.home}`,
     start: raw.start,
@@ -148,5 +150,17 @@ export const loadMlbDayGames = async (date) => {
     lineupMatchupContextByGameId: lineupModule.lineupMatchupContextByGameId ?? {}
   }
 
-  return rawGames.map((raw) => createSportsMatchModel(buildGenericMlbGame(raw, dependencies), oddsProvider))
+  const rawIdCounts = new Map()
+  return rawGames.map((raw) => {
+    const baseId = raw.id
+    const seenCount = rawIdCounts.get(baseId) ?? 0
+    rawIdCounts.set(baseId, seenCount + 1)
+    const uniqueId =
+      seenCount > 0 && Number.isFinite(Number(raw.gamePk))
+        ? `${baseId}-${Number(raw.gamePk)}`
+        : seenCount > 0
+          ? `${baseId}-g${seenCount + 1}`
+          : baseId
+    return createSportsMatchModel(buildGenericMlbGame(raw, { ...dependencies, uniqueId }), oddsProvider)
+  })
 }

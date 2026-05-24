@@ -53,6 +53,7 @@ const buildMlbGame = (raw, instanceIndex = 0) => {
   return createSportsMatchModel(
     {
       id: uniqueId,
+      gamePk: Number.isFinite(Number(raw.gamePk)) ? Number(raw.gamePk) : null,
       league: 'MLB',
       title: `${raw.away} @ ${raw.home}`,
       start: raw.start,

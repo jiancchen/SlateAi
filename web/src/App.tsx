@@ -539,6 +539,7 @@ const buildMlbGameStory = ({
   const vetoCount = Number(indicators.researchOnlyVetoFlagCount || 0)
   const vetoReasons = Array.isArray(indicators.researchOnlyVetoFlags) ? indicators.researchOnlyVetoFlags : []
   const protectedMarketDogFlag = Boolean(indicators.protectedMarketDogFlag)
+  const chaosAction = String(indicators.vetoLayer?.recommendedAction || '')
   const efficientFavoriteFlag = Boolean(indicators.efficientFavoriteCandidateFlag)
   const efficientFavoriteReasons = Array.isArray(indicators.efficientFavoriteReasons)
     ? indicators.efficientFavoriteReasons
@@ -725,6 +726,9 @@ const buildMlbGameStory = ({
   }
 
   const chips = [
+    chaosAction === 'Hard pass' ? { label: 'Hard pass', tone: 'danger' } : null,
+    chaosAction === 'Pass' ? { label: 'Chaos pass', tone: 'danger' } : null,
+    chaosAction === 'Eligible' ? { label: 'Chaos clear', tone: 'accent' } : null,
     vetoCount > 0 ? { label: `Veto ${vetoCount}x`, tone: 'danger' } : null,
     efficientFavoriteFlag ? { label: 'Efficient favorite', tone: 'accent' } : null,
     protectedMarketDogFlag ? { label: 'Protected dog', tone: 'accent' } : null,
@@ -848,6 +852,14 @@ const buildGameHighlights = (game: AnyRecord) => {
     }
     if ((game.analysis?.indicators?.coinflipPressure ?? 0) >= 64) {
       chips.push({ tone: 'danger', label: 'Flip live' })
+    }
+    const chaosAction = game.analysis?.indicators?.vetoLayer?.recommendedAction
+    if (chaosAction === 'Hard pass') {
+      chips.push({ tone: 'danger', label: 'Hard pass' })
+    } else if (chaosAction === 'Pass') {
+      chips.push({ tone: 'danger', label: 'Chaos pass' })
+    } else if (chaosAction === 'Eligible') {
+      chips.push({ tone: 'accent', label: 'Chaos clear' })
     }
     if ((game.analysis?.indicators?.researchOnlyVetoFlagCount ?? 0) > 0) {
       chips.push({
