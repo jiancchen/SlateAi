@@ -363,7 +363,11 @@ const getEventState = (game: AnyRecord, dayIsoDate: string, pacificClock: Return
   return { invalid: false, label: 'Open', tone: 'open' }
 }
 
-const buildPitcherSummary = (pitcher: AnyRecord = {}, holdConfidence?: number | null) => {
+const buildPitcherSummary = (
+  pitcher: AnyRecord = {},
+  holdConfidence?: number | null,
+  firstInningSeason: AnyRecord | null = null
+) => {
   const pitcherName = pitcher.fullName || pitcher.name || 'TBD starter'
   const pitchHand = pitcher.pitchHand ? `${pitcher.pitchHand}HP` : '?HP'
   const record = `${pitcher.wins ?? 0}-${pitcher.losses ?? 0}`
@@ -396,11 +400,17 @@ const buildPitcherSummary = (pitcher: AnyRecord = {}, holdConfidence?: number | 
     trendStats.push({ label: 'EXP IP', value: formatNumber(usageContext.expectedInnings, 1) })
   }
 
+  const firstInningSeasonLine =
+    firstInningSeason && Number(firstInningSeason.startsSample || 0) > 0
+      ? `1st inning season: ${Number(firstInningSeason.firstInningRunsAllowedTotal || 0)} runs in ${Number(firstInningSeason.startsSample || 0)} starts (${formatNumber(firstInningSeason.firstInningRunsAllowedPerStart, 2)}/start) · damage in ${Number(firstInningSeason.firstInningRunGames || 0)} games`
+      : ''
+
   return {
     headline: pitcherName === 'TBD starter' ? pitcherName : `${pitcherName} (${pitchHand})`,
     primary: `${record} | ${era} | ${whip}`,
     detailStats,
     recent,
+    firstInningSeasonLine,
     trendStats,
     usageLabel: usageContext.workloadLabel || '',
     usageNote: usageContext.note || '',
@@ -500,6 +510,76 @@ const renderRecentGamesStrip = (teamName: string, games: AnyRecord[] = []) => {
     </div>
   )
 }
+
+const formatMatchupHistoryDate = (date: string) => {
+  if (!date) return 'Recent'
+  return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T12:00:00Z`))
+}
+
+const renderInningHistoryTable = (teamName: string, headerLabel: string, games: AnyRecord[] = []) => {
+  if (!games.length) return null
+
+  const maxInning = Math.max(
+    9,
+    ...games.map((game) => Array.isArray(game.innings) ? game.innings.length : 0)
+  )
+  const gridTemplateColumns = `84px repeat(${maxInning}, minmax(22px, 1fr)) 28px`
+
+  return (
+    <section className="matchup-history-block" aria-label={`${teamName} ${headerLabel} inning history`}>
+      <div className="matchup-history-scroll">
+        <div className="matchup-history-table">
+          <div className="matchup-history-row matchup-history-header" style={{ gridTemplateColumns }}>
+            <span className="matchup-history-meta">{headerLabel}</span>
+            {Array.from({ length: maxInning }, (_, index) => (
+              <span key={`${teamName}-${headerLabel}-inning-head-${index + 1}`} className="matchup-history-cell heading">
+                {index + 1}
+              </span>
+            ))}
+            <span className="matchup-history-cell heading">R</span>
+          </div>
+          {games.map((game, index) => {
+            const venueLabel = game.venueRole === 'road' ? '@' : 'vs'
+            const scoreLabel =
+              Number.isFinite(Number(game.runsFor)) && Number.isFinite(Number(game.runsAgainst))
+                ? `${game.runsFor}-${game.runsAgainst}`
+                : 'n/a'
+            return (
+              <div
+                key={`${teamName}-${headerLabel}-${game.gamePk || `${game.date}-${index}`}`}
+                className="matchup-history-row"
+                style={{ gridTemplateColumns }}
+              >
+                <span className="matchup-history-meta">
+                  <strong>{formatMatchupHistoryDate(game.date)}</strong>
+                  <small>{game.result || '?'} {scoreLabel} {venueLabel}</small>
+                </span>
+                {Array.from({ length: maxInning }, (_, inningIndex) => {
+                  const runValue = Number(game.innings?.[inningIndex]?.runs || 0) || 0
+                  return (
+                    <span
+                      key={`${teamName}-${game.gamePk || index}-inning-${inningIndex + 1}`}
+                      className={`matchup-history-cell ${runValue > 0 ? 'scored' : ''}`}
+                    >
+                      {runValue}
+                    </span>
+                  )
+                })}
+                <span className="matchup-history-cell total">{Number(game.runsFor || 0) || 0}</span>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+const renderMatchupInningHistory = (teamName: string, opponentName: string, games: AnyRecord[] = []) =>
+  renderInningHistoryTable(teamName, `vs ${opponentName}`, games)
+
+const renderRecentInningHistory = (teamName: string, games: AnyRecord[] = []) =>
+  renderInningHistoryTable(teamName, 'Last 5 overall', games)
 
 const buildMlbGameStory = ({
   game,
@@ -1936,8 +2016,16 @@ function App() {
     const projection = game.analysis?.mlbProjection
     const awayHold = Number(projection?.awayStarterHoldConfidence)
     const homeHold = Number(projection?.homeStarterHoldConfidence)
-    const awayStarter = buildPitcherSummary(game.starterContext?.away, awayHold)
-    const homeStarter = buildPitcherSummary(game.starterContext?.home, homeHold)
+    const awayStarter = buildPitcherSummary(
+      game.starterContext?.away,
+      awayHold,
+      game.stateContext?.firstInningPitcherSeason?.away ?? null
+    )
+    const homeStarter = buildPitcherSummary(
+      game.starterContext?.home,
+      homeHold,
+      game.stateContext?.firstInningPitcherSeason?.home ?? null
+    )
     const awayTeam = game.matchup?.[0]?.name ?? 'Away'
     const homeTeam = game.matchup?.[1]?.name ?? 'Home'
     const awayLineup = game.lineupBoard?.away
@@ -1993,6 +2081,10 @@ function App() {
     const homeStory = game.storyContext?.home?.summary
     const awayRecentGames = game.stateContext?.recentGames?.away ?? []
     const homeRecentGames = game.stateContext?.recentGames?.home ?? []
+    const awayRecentInningHistory = game.stateContext?.recentInningHistory?.away ?? []
+    const homeRecentInningHistory = game.stateContext?.recentInningHistory?.home ?? []
+    const awayMatchupHistory = game.stateContext?.matchupInningHistory?.away ?? []
+    const homeMatchupHistory = game.stateContext?.matchupInningHistory?.home ?? []
     const gameStory = buildMlbGameStory({ game, projection, awayTeam, homeTeam })
     const totals = projection?.totals
     const totalsCards = totals
@@ -2121,6 +2213,8 @@ function App() {
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.away)}</span>
             </div>
+            {renderRecentInningHistory(awayTeam, awayRecentInningHistory)}
+            {renderMatchupInningHistory(awayTeam, homeTeam, awayMatchupHistory)}
             <div className="pitcher-summary-block">
               <strong className="pitcher-summary-headline">{awayStarter.headline}</strong>
               <p className="pitcher-summary-line">{awayStarter.primary}</p>
@@ -2166,6 +2260,7 @@ function App() {
               ) : null}
             </div>
             {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
+            {awayStarter.firstInningSeasonLine ? <small>{awayStarter.firstInningSeasonLine}</small> : null}
             {!awayStarter.recent && awayStarter.usageNote ? <small>{awayStarter.usageNote}</small> : null}
             {awayStory ? <p className="react-section-copy">{awayStory}</p> : null}
             {awayScript ? (
@@ -2194,6 +2289,8 @@ function App() {
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.home)}</span>
             </div>
+            {renderRecentInningHistory(homeTeam, homeRecentInningHistory)}
+            {renderMatchupInningHistory(homeTeam, awayTeam, homeMatchupHistory)}
             <div className="pitcher-summary-block">
               <strong className="pitcher-summary-headline">{homeStarter.headline}</strong>
               <p className="pitcher-summary-line">{homeStarter.primary}</p>
@@ -2239,6 +2336,7 @@ function App() {
               ) : null}
             </div>
             {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
+            {homeStarter.firstInningSeasonLine ? <small>{homeStarter.firstInningSeasonLine}</small> : null}
             {!homeStarter.recent && homeStarter.usageNote ? <small>{homeStarter.usageNote}</small> : null}
             {homeStory ? <p className="react-section-copy">{homeStory}</p> : null}
             {homeScript ? (
@@ -2459,13 +2557,13 @@ function App() {
                       </div>
                       <p className="react-section-copy">{lineupTeam.summary?.overview || lineupTeam.summary?.bullpenOverview || lineupTeam.opposingStarter?.pitchMixSummary}</p>
                       <div className="react-pill-row">
-                        {(lineupTeam.summary?.overperformHitters || []).slice(0, 3).map((hitter: AnyRecord) => (
-                          <span key={`${teamName}-carry-${hitter.name}`} className="game-highlight-chip accent">
+                        {(lineupTeam.summary?.overperformHitters || []).slice(0, 3).map((hitter: AnyRecord, hitterIndex: number) => (
+                          <span key={`${teamName}-carry-${hitter.name}-${hitter.tag || 'x'}-${hitterIndex}`} className="game-highlight-chip accent">
                             {hitter.name} {hitter.tag}
                           </span>
                         ))}
-                        {(lineupTeam.summary?.underperformHitters || []).slice(0, 2).map((hitter: AnyRecord) => (
-                          <span key={`${teamName}-fade-${hitter.name}`} className="game-highlight-chip danger">
+                        {(lineupTeam.summary?.underperformHitters || []).slice(0, 2).map((hitter: AnyRecord, hitterIndex: number) => (
+                          <span key={`${teamName}-fade-${hitter.name}-${hitter.tag || 'x'}-${hitterIndex}`} className="game-highlight-chip danger">
                             {hitter.name} {hitter.tag}
                           </span>
                         ))}
@@ -2473,8 +2571,8 @@ function App() {
                       {lineupTeam.summary?.bullpenOverview ? <small>{lineupTeam.summary.bullpenOverview}</small> : null}
                       {lineupTeam.summary?.bullpenOverperformHitters?.length ? (
                         <div className="react-pill-row">
-                          {lineupTeam.summary.bullpenOverperformHitters.slice(0, 3).map((hitter: AnyRecord) => (
-                            <span key={`${teamName}-bridge-${hitter.name}-${hitter.slot ?? 'x'}`} className="game-highlight-chip warning">
+                          {lineupTeam.summary.bullpenOverperformHitters.slice(0, 3).map((hitter: AnyRecord, hitterIndex: number) => (
+                            <span key={`${teamName}-bridge-${hitter.name}-${hitter.slot ?? 'x'}-${hitterIndex}`} className="game-highlight-chip warning">
                               Bridge: {hitter.name}
                             </span>
                           ))}
@@ -2484,14 +2582,14 @@ function App() {
                         <div className="lineup-bvp-block">
                           <small>{lineupTeam.bvpHistory.summary}</small>
                           <div className="react-pill-row">
-                            {(lineupTeam.bvpHistory.hot || []).slice(0, 2).map((entry: AnyRecord) => (
-                              <span key={`${teamName}-bvp-hot-${entry.name}`} className="game-highlight-chip accent">
+                            {(lineupTeam.bvpHistory.hot || []).slice(0, 2).map((entry: AnyRecord, entryIndex: number) => (
+                              <span key={`${teamName}-bvp-hot-${entry.name}-${entry.sample || 'x'}-${entryIndex}`} className="game-highlight-chip accent">
                                 BvP hot: {entry.name} {entry.sample}
                                 {entry.homeRuns ? `, ${entry.homeRuns} HR` : ''}
                               </span>
                             ))}
-                            {(lineupTeam.bvpHistory.cold || []).slice(0, 2).map((entry: AnyRecord) => (
-                              <span key={`${teamName}-bvp-cold-${entry.name}`} className="game-highlight-chip danger">
+                            {(lineupTeam.bvpHistory.cold || []).slice(0, 2).map((entry: AnyRecord, entryIndex: number) => (
+                              <span key={`${teamName}-bvp-cold-${entry.name}-${entry.sample || 'x'}-${entryIndex}`} className="game-highlight-chip danger">
                                 BvP cold: {entry.name} {entry.sample}
                               </span>
                             ))}

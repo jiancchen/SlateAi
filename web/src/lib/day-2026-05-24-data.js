@@ -12,14 +12,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 2,
-      "era": "3.86",
+      "era": "3.84",
       "strikeOuts": 41,
-      "inningsPitched": "58.1",
-      "hitsAllowed": 46,
-      "walks": 16,
+      "inningsPitched": "58.2",
+      "hitsAllowed": 47,
+      "walks": 17,
       "homeRunsAllowed": 4,
-      "whip": "1.06",
-      "gamesStarted": 10,
+      "whip": "1.09",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656605,
@@ -57,14 +57,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 2,
-      "era": "2.98",
-      "strikeOuts": 84,
-      "inningsPitched": "57.1",
-      "hitsAllowed": 45,
+      "era": "3.09",
+      "strikeOuts": 86,
+      "inningsPitched": "58.1",
+      "hitsAllowed": 46,
       "walks": 25,
-      "homeRunsAllowed": 3,
+      "homeRunsAllowed": 4,
       "whip": "1.22",
-      "gamesStarted": 10,
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656302,
@@ -96,9 +96,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -140 / -1.5 +128",
-    "total": "o7.5 -110 / u7.5 -105",
-    "moneyline": "Pirates +148 / Blue Jays -170",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays",
     "tierTwoContext": {
@@ -403,6 +403,28 @@ export const rawGames = [
           "firstInningPressureIndex": 27
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Mitch Keller",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Dylan Cease",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Blue Jays",
@@ -592,6 +614,680 @@ export const rawGames = [
             "seriesSlot": 2
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 823059,
+            "date": "2026-05-19",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 4
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823057,
+            "date": "2026-05-20",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823056,
+            "date": "2026-05-21",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Blue Jays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822814,
+            "date": "2026-05-23",
+            "opponent": "Blue Jays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823548,
+            "date": "2026-05-19",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823547,
+            "date": "2026-05-20",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823545,
+            "date": "2026-05-21",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822814,
+            "date": "2026-05-23",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Blue Jays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822814,
+            "date": "2026-05-23",
+            "opponent": "Blue Jays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822814,
+            "date": "2026-05-23",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -726,8 +1422,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -188 / -1.5 +170",
-    "total": "o7.5 -115 / u8 -115",
+    "spread": "+1.5 -182 / -1.5 +170",
+    "total": "o7.5 -118 / u8 -115",
     "moneyline": "Tigers +110 / Orioles -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
@@ -1033,6 +1729,28 @@ export const rawGames = [
           "firstInningPressureIndex": 22
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Framber Valdez",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Brandon Young",
+          "startsSample": 6,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Orioles",
@@ -1222,6 +1940,586 @@ export const rawGames = [
             "seriesSlot": 3
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 824277,
+            "date": "2026-05-18",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824276,
+            "date": "2026-05-19",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824273,
+            "date": "2026-05-20",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824274,
+            "date": "2026-05-21",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Orioles",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 822738,
+            "date": "2026-05-17",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 822980,
+            "date": "2026-05-18",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 16,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822979,
+            "date": "2026-05-19",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822977,
+            "date": "2026-05-20",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Tigers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Orioles",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Tigers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -1357,8 +2655,8 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +152 / +1.5 -170",
-    "total": "o7 -125 / u7.5 -120",
-    "moneyline": "Guardians -115 / Phillies -105",
+    "total": "o7 -122 / u7.5 -120",
+    "moneyline": "Guardians -115 / Phillies even",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
     "tierTwoContext": {
@@ -1663,6 +2961,28 @@ export const rawGames = [
           "firstInningPressureIndex": 18
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Parker Messick",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Andrew Painter",
+          "startsSample": 8,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Phillies",
@@ -1850,6 +3170,680 @@ export const rawGames = [
             "runsFor": 3,
             "runsAgainst": 0,
             "seriesSlot": 2
+          }
+        ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 824276,
+            "date": "2026-05-19",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824273,
+            "date": "2026-05-20",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824274,
+            "date": "2026-05-21",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 1,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823458,
+            "date": "2026-05-23",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823465,
+            "date": "2026-05-18",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823464,
+            "date": "2026-05-19",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823462,
+            "date": "2026-05-20",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823458,
+            "date": "2026-05-23",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 1,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823458,
+            "date": "2026-05-23",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823458,
+            "date": "2026-05-23",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
           }
         ]
       }
@@ -2293,6 +4287,28 @@ export const rawGames = [
           "firstInningPressureIndex": 36
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Drew Rasmussen",
+          "startsSample": 9,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Ryan Weathers",
+          "startsSample": 9,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Yankees",
@@ -2482,6 +4498,582 @@ export const rawGames = [
             "seriesSlot": 2
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 822982,
+            "date": "2026-05-17",
+            "opponent": "Marlins",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822980,
+            "date": "2026-05-18",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 16,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 5
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 4
+              },
+              {
+                "inning": 6,
+                "runs": 4
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822979,
+            "date": "2026-05-19",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822977,
+            "date": "2026-05-20",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823546,
+            "date": "2026-05-22",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823549,
+            "date": "2026-05-18",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 4
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823548,
+            "date": "2026-05-19",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823547,
+            "date": "2026-05-20",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823545,
+            "date": "2026-05-21",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823546,
+            "date": "2026-05-22",
+            "opponent": "Rays",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 823546,
+            "date": "2026-05-22",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823546,
+            "date": "2026-05-22",
+            "opponent": "Rays",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -2616,9 +5208,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -165 / -1.5 +145",
-    "total": "o7.5 +105 / u7.5 -120",
-    "moneyline": "Twins +125 / Red Sox -150",
+    "spread": "+1.5 -150 / -1.5 +130",
+    "total": "o7 -110 / u7 -105",
+    "moneyline": "Twins +150 / Red Sox -174",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
     "tierTwoContext": {
@@ -2923,6 +5515,28 @@ export const rawGames = [
           "firstInningPressureIndex": 4
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Bailey Ober",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Sonny Gray",
+          "startsSample": 8,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Red Sox",
@@ -3112,6 +5726,676 @@ export const rawGames = [
             "seriesSlot": 2
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 823705,
+            "date": "2026-05-18",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823704,
+            "date": "2026-05-19",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823703,
+            "date": "2026-05-20",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 4
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824760,
+            "date": "2026-05-23",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824114,
+            "date": "2026-05-18",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824112,
+            "date": "2026-05-19",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 4
+              }
+            ]
+          },
+          {
+            "gamePk": 824111,
+            "date": "2026-05-20",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Twins",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824760,
+            "date": "2026-05-23",
+            "opponent": "Twins",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 4
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824760,
+            "date": "2026-05-23",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Twins",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824760,
+            "date": "2026-05-23",
+            "opponent": "Twins",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -3246,8 +6530,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -190 / +1.5 -190",
-    "total": "o10 -110 / u10 -110",
+    "spread": "+1.5 -190 / +1.5 -188",
+    "total": "o10 -110 / u10 -109",
     "moneyline": "Cardinals +102 / Reds -120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-reds",
@@ -3540,6 +6824,19 @@ export const rawGames = [
           "firstInningPressureIndex": 72
         }
       },
+      "firstInningPitcherSeason": {
+        "away": null,
+        "home": {
+          "pitcherName": "Brady Singer",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 2,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.2,
+          "firstInningRunGameRate": 0.1
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Reds",
@@ -3727,6 +7024,712 @@ export const rawGames = [
             "runsFor": 7,
             "runsAgainst": 6,
             "seriesSlot": 2
+          }
+        ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 823059,
+            "date": "2026-05-19",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 3
+              }
+            ]
+          },
+          {
+            "gamePk": 823057,
+            "date": "2026-05-20",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823056,
+            "date": "2026-05-21",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824518,
+            "date": "2026-05-23",
+            "opponent": "Reds",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824516,
+            "date": "2026-05-23",
+            "opponent": "Reds",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              },
+              {
+                "inning": 11,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823465,
+            "date": "2026-05-18",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823464,
+            "date": "2026-05-19",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823462,
+            "date": "2026-05-20",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824518,
+            "date": "2026-05-23",
+            "opponent": "Cardinals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824516,
+            "date": "2026-05-23",
+            "opponent": "Cardinals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 5
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              },
+              {
+                "inning": 11,
+                "runs": 1
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824518,
+            "date": "2026-05-23",
+            "opponent": "Reds",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824516,
+            "date": "2026-05-23",
+            "opponent": "Reds",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              },
+              {
+                "inning": 11,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824518,
+            "date": "2026-05-23",
+            "opponent": "Cardinals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824516,
+            "date": "2026-05-23",
+            "opponent": "Cardinals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 5
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              },
+              {
+                "inning": 11,
+                "runs": 1
+              }
+            ]
           }
         ]
       }
@@ -4157,6 +8160,19 @@ export const rawGames = [
         },
         "home": null
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Christian Scott",
+          "startsSample": 5,
+          "firstInningRunsAllowedTotal": 2,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0.4,
+          "firstInningRunGameRate": 0.2
+        },
+        "home": null
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Marlins",
@@ -4346,6 +8362,676 @@ export const rawGames = [
             "seriesSlot": 2
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 822736,
+            "date": "2026-05-19",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822735,
+            "date": "2026-05-20",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822733,
+            "date": "2026-05-21",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823862,
+            "date": "2026-05-23",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823865,
+            "date": "2026-05-19",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823866,
+            "date": "2026-05-20",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823864,
+            "date": "2026-05-21",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823862,
+            "date": "2026-05-23",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823862,
+            "date": "2026-05-23",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823862,
+            "date": "2026-05-23",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -4480,9 +9166,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +105 / +1.5 -125",
-    "total": "o8 -105 / u8 -110",
-    "moneyline": "Dodgers -155 / Brewers +135",
+    "spread": "-1.5 +110 / +1.5 -125",
+    "total": "o8 -106 / u8 -110",
+    "moneyline": "Dodgers -149 / Brewers +130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers",
     "tierTwoContext": {
@@ -4787,6 +9473,28 @@ export const rawGames = [
           "firstInningPressureIndex": 37
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Yoshinobu Yamamoto",
+          "startsSample": 9,
+          "firstInningRunsAllowedTotal": 1,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.11,
+          "firstInningRunGameRate": 0.11
+        },
+        "home": {
+          "pitcherName": "Brandon Sproat",
+          "startsSample": 8,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 2,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Brewers",
@@ -4974,6 +9682,676 @@ export const rawGames = [
             "runsFor": 3,
             "runsAgainst": 11,
             "seriesSlot": 2
+          }
+        ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 823301,
+            "date": "2026-05-18",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823302,
+            "date": "2026-05-19",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823299,
+            "date": "2026-05-20",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Brewers",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823787,
+            "date": "2026-05-23",
+            "opponent": "Brewers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 11,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 4
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 4
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824680,
+            "date": "2026-05-18",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 4
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824677,
+            "date": "2026-05-19",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824678,
+            "date": "2026-05-20",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823787,
+            "date": "2026-05-23",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 11,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Brewers",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823787,
+            "date": "2026-05-23",
+            "opponent": "Brewers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 11,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 4
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 4
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823787,
+            "date": "2026-05-23",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 11,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
           }
         ]
       }
@@ -5417,6 +10795,28 @@ export const rawGames = [
           "firstInningPressureIndex": 12
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Bryan Woo",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Seth Lugo",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Royals",
@@ -5604,6 +11004,676 @@ export const rawGames = [
             "runsFor": 5,
             "runsAgainst": 0,
             "seriesSlot": 2
+          }
+        ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 823137,
+            "date": "2026-05-18",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823136,
+            "date": "2026-05-19",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823134,
+            "date": "2026-05-20",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 3
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824109,
+            "date": "2026-05-23",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824114,
+            "date": "2026-05-18",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824112,
+            "date": "2026-05-19",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824111,
+            "date": "2026-05-20",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Mariners",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824109,
+            "date": "2026-05-23",
+            "opponent": "Mariners",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824109,
+            "date": "2026-05-23",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Mariners",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824109,
+            "date": "2026-05-23",
+            "opponent": "Mariners",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
           }
         ]
       }
@@ -6047,6 +12117,28 @@ export const rawGames = [
           "firstInningPressureIndex": 4
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Peter Lambert",
+          "startsSample": 6,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Shota Imanaga",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Cubs",
@@ -6234,6 +12326,676 @@ export const rawGames = [
             "runsFor": 0,
             "runsAgainst": 3,
             "seriesSlot": 2
+          }
+        ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 823705,
+            "date": "2026-05-18",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 3
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823704,
+            "date": "2026-05-19",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823703,
+            "date": "2026-05-20",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824674,
+            "date": "2026-05-23",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824680,
+            "date": "2026-05-18",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824677,
+            "date": "2026-05-19",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824678,
+            "date": "2026-05-20",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824674,
+            "date": "2026-05-23",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824674,
+            "date": "2026-05-23",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824674,
+            "date": "2026-05-23",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
           }
         ]
       }
@@ -6677,6 +13439,28 @@ export const rawGames = [
           "firstInningPressureIndex": 95
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Noah Schultz",
+          "startsSample": 7,
+          "firstInningRunsAllowedTotal": 1,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.14,
+          "firstInningRunGameRate": 0.14
+        },
+        "home": {
+          "pitcherName": "Robbie Ray",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 4,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.4,
+          "firstInningRunGameRate": 0.1
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Giants",
@@ -6866,6 +13650,676 @@ export const rawGames = [
             "seriesSlot": 2
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 823137,
+            "date": "2026-05-18",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823136,
+            "date": "2026-05-19",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 823134,
+            "date": "2026-05-20",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "Giants",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 9
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823222,
+            "date": "2026-05-23",
+            "opponent": "Giants",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 10,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 825087,
+            "date": "2026-05-18",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 12,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825086,
+            "date": "2026-05-19",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825084,
+            "date": "2026-05-20",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823222,
+            "date": "2026-05-23",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 6
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "Giants",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 9
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823222,
+            "date": "2026-05-23",
+            "opponent": "Giants",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 10,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823222,
+            "date": "2026-05-23",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 6
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -7000,9 +14454,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -145 / -1.5 +126",
+    "spread": "+1.5 -145 / -1.5 +130",
     "total": "o7.5 -110 / u7.5 -102",
-    "moneyline": "Athletics +148 / Padres -170",
+    "moneyline": "Athletics +146 / Padres -170",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
     "tierTwoContext": {
@@ -7294,6 +14748,19 @@ export const rawGames = [
           "firstInningPressureIndex": 8
         }
       },
+      "firstInningPitcherSeason": {
+        "away": null,
+        "home": {
+          "pitcherName": "Michael King",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Padres",
@@ -7483,6 +14950,684 @@ export const rawGames = [
             "seriesSlot": 2
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 824033,
+            "date": "2026-05-19",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 14,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 6
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824032,
+            "date": "2026-05-20",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              },
+              {
+                "inning": 10,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824031,
+            "date": "2026-05-21",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823300,
+            "date": "2026-05-23",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823301,
+            "date": "2026-05-18",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 1,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823302,
+            "date": "2026-05-19",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823299,
+            "date": "2026-05-20",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823300,
+            "date": "2026-05-23",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823300,
+            "date": "2026-05-23",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823300,
+            "date": "2026-05-23",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -7617,8 +15762,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -149 / -1.5 +133",
-    "total": "o8.5 -104 / u8.5 -115",
+    "spread": "+1.5 -150 / -1.5 +132",
+    "total": "o8.5 -105 / u8.5 -114",
     "moneyline": "Nationals +135 / Braves -160",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves",
@@ -7924,6 +16069,28 @@ export const rawGames = [
           "firstInningPressureIndex": 100
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Foster Griffin",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 3,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.3,
+          "firstInningRunGameRate": 0.1
+        },
+        "home": {
+          "pitcherName": "Martín Pérez",
+          "startsSample": 6,
+          "firstInningRunsAllowedTotal": 3,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningRunGameRate": 0.17
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Braves",
@@ -8111,6 +16278,708 @@ export const rawGames = [
             "runsFor": 0,
             "runsAgainst": 2,
             "seriesSlot": 2
+          }
+        ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 822736,
+            "date": "2026-05-19",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 4
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822735,
+            "date": "2026-05-20",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822733,
+            "date": "2026-05-21",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              },
+              {
+                "inning": 11,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824920,
+            "date": "2026-05-23",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 823865,
+            "date": "2026-05-19",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823866,
+            "date": "2026-05-20",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 5
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823864,
+            "date": "2026-05-21",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              },
+              {
+                "inning": 11,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824920,
+            "date": "2026-05-23",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              },
+              {
+                "inning": 11,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824920,
+            "date": "2026-05-23",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              },
+              {
+                "inning": 11,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824920,
+            "date": "2026-05-23",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
           }
         ]
       }
@@ -8554,6 +17423,28 @@ export const rawGames = [
           "firstInningPressureIndex": 4
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Jose Quintana",
+          "startsSample": 8,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Ryne Nelson",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Diamondbacks",
@@ -8743,6 +17634,958 @@ export const rawGames = [
             "seriesSlot": 2
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 824356,
+            "date": "2026-05-19",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 10,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824355,
+            "date": "2026-05-20",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 825080,
+            "date": "2026-05-23",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 825086,
+            "date": "2026-05-19",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 4
+              }
+            ]
+          },
+          {
+            "gamePk": 825084,
+            "date": "2026-05-20",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825080,
+            "date": "2026-05-23",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824359,
+            "date": "2026-05-16",
+            "opponent": "Diamondbacks",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824358,
+            "date": "2026-05-17",
+            "opponent": "Diamondbacks",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 825080,
+            "date": "2026-05-23",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824359,
+            "date": "2026-05-16",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824358,
+            "date": "2026-05-17",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825080,
+            "date": "2026-05-23",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -8877,8 +18720,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -188 / -1.5 +170",
-    "total": "o7.5 -115 / u8 -115",
+    "spread": "+1.5 -182 / -1.5 +170",
+    "total": "o7.5 -118 / u8 -115",
     "moneyline": "Tigers +110 / Orioles -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
@@ -9184,6 +19027,28 @@ export const rawGames = [
           "firstInningPressureIndex": 97
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "Framber Valdez",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 0,
+          "firstInningRunGames": 0,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningRunGameRate": 0
+        },
+        "home": {
+          "pitcherName": "Trevor Rogers",
+          "startsSample": 8,
+          "firstInningRunsAllowedTotal": 2,
+          "firstInningRunGames": 2,
+          "firstInningWalkGames": 0,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.25,
+          "firstInningRunGameRate": 0.25
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Orioles",
@@ -9373,6 +19238,586 @@ export const rawGames = [
             "seriesSlot": 3
           }
         ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 824277,
+            "date": "2026-05-18",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 8,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824276,
+            "date": "2026-05-19",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824273,
+            "date": "2026-05-20",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824274,
+            "date": "2026-05-21",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Orioles",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 822738,
+            "date": "2026-05-17",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 822980,
+            "date": "2026-05-18",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 16,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822979,
+            "date": "2026-05-19",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822977,
+            "date": "2026-05-20",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Tigers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Orioles",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Tigers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
       }
     },
     "tierThreeContext": {
@@ -9507,7 +19952,7 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -191",
+    "spread": "+1.5 -205 / +1.5 -186",
     "total": "o8 -110 / u8 -110",
     "moneyline": "Rangers +102 / Angels -120",
     "pitcherSourceNote": "",
@@ -9814,6 +20259,28 @@ export const rawGames = [
           "firstInningPressureIndex": 81
         }
       },
+      "firstInningPitcherSeason": {
+        "away": {
+          "pitcherName": "MacKenzie Gore",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 2,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 0,
+          "firstInningRunsAllowedPerStart": 0.2,
+          "firstInningRunGameRate": 0.1
+        },
+        "home": {
+          "pitcherName": "Reid Detmers",
+          "startsSample": 10,
+          "firstInningRunsAllowedTotal": 2,
+          "firstInningRunGames": 1,
+          "firstInningWalkGames": 1,
+          "firstInningHomeRunGames": 1,
+          "firstInningRunsAllowedPerStart": 0.2,
+          "firstInningRunGameRate": 0.1
+        }
+      },
       "seriesEarlyPhase": {
         "away": {
           "opponentTeam": "Angels",
@@ -10001,6 +20468,684 @@ export const rawGames = [
             "runsFor": 5,
             "runsAgainst": 2,
             "seriesSlot": 2
+          }
+        ]
+      },
+      "recentInningHistory": {
+        "away": [
+          {
+            "gamePk": 824357,
+            "date": "2026-05-18",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824356,
+            "date": "2026-05-19",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 0,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824355,
+            "date": "2026-05-20",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824030,
+            "date": "2026-05-23",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824033,
+            "date": "2026-05-19",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 14,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824032,
+            "date": "2026-05-20",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 5,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824031,
+            "date": "2026-05-21",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824030,
+            "date": "2026-05-23",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ]
+      },
+      "matchupInningHistory": {
+        "away": [
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824030,
+            "date": "2026-05-23",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824030,
+            "date": "2026-05-23",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
           }
         ]
       }

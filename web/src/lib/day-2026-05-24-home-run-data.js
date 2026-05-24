@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v3",
   "date": "2026-05-24",
-  "generatedAt": "2026-05-24T15:57:48.552Z",
+  "generatedAt": "2026-05-24T16:29:59.639Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -21,14 +21,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Pirates @ Blue Jays",
         "opposingPitcher": "Dylan Cease",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.47,
+        "opposingPitcherHr9": 0.62,
         "parkHrIndex": 110,
         "isHomeToday": false,
         "opposingBullpenVulnerability": 0.4,
         "seasonHr": 13,
         "seasonXHR": 13.5,
         "xhrDiff": -0.5,
-        "baseScore": 48.190411558669005,
+        "baseScore": 49.18842512908778,
         "lineupContext": null,
         "lineupPriority": 0,
         "battingImpactContext": null,
@@ -57,7 +57,7 @@ export const homeRunTargetsByGame = {
             "Changeup"
           ]
         },
-        "score": 59.8,
+        "score": 60.8,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -66,11 +66,11 @@ export const homeRunTargetsByGame = {
           "starter ambush",
           "neutral bullpen"
         ],
-        "signalSummary": "Lineup pending | starter ambush | 0.47 HR/9 starter",
+        "signalSummary": "Lineup pending | starter ambush | 0.62 HR/9 starter",
         "rationale": [
           "13 HR and 13.5 xHR on the season",
           "5 HR since May 1 with 1 in the last 7 days and 3 in the last 10",
-          "Dylan Cease is allowing roughly 0.47 HR/9",
+          "Dylan Cease is allowing roughly 0.62 HR/9",
           "Park HR index 110",
           "Last HR came 3 days ago",
           "Road today | historical split 58% on this side",
@@ -81,9 +81,9 @@ export const homeRunTargetsByGame = {
           "Lineup slot not posted yet"
         ],
         "avoidHrChase": false,
-        "rawWeight": 14.1379487210783,
-        "modelShare": 0.676,
-        "modelSharePct": 67.6,
+        "rawWeight": 14.867064353700373,
+        "modelShare": 0.687,
+        "modelSharePct": 68.7,
         "lane": "anchor"
       },
       {
@@ -101,7 +101,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 10.3,
         "xhrDiff": -0.3,
-        "baseScore": 38.75842512908778,
+        "baseScore": 38.75118556701031,
         "lineupContext": null,
         "lineupPriority": 0,
         "battingImpactContext": null,
@@ -155,8 +155,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.324,
-        "modelSharePct": 32.4,
+        "modelShare": 0.313,
+        "modelSharePct": 31.3,
         "lane": "anchor"
       }
     ],
@@ -171,14 +171,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Pirates @ Blue Jays",
         "opposingPitcher": "Dylan Cease",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.47,
+        "opposingPitcherHr9": 0.62,
         "parkHrIndex": 110,
         "isHomeToday": false,
         "opposingBullpenVulnerability": 0.4,
         "seasonHr": 13,
         "seasonXHR": 13.5,
         "xhrDiff": -0.5,
-        "baseScore": 48.190411558669005,
+        "baseScore": 49.18842512908778,
         "lineupContext": null,
         "lineupPriority": 0,
         "battingImpactContext": null,
@@ -207,7 +207,7 @@ export const homeRunTargetsByGame = {
             "Changeup"
           ]
         },
-        "score": 59.8,
+        "score": 60.8,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -216,11 +216,11 @@ export const homeRunTargetsByGame = {
           "starter ambush",
           "neutral bullpen"
         ],
-        "signalSummary": "Lineup pending | starter ambush | 0.47 HR/9 starter",
+        "signalSummary": "Lineup pending | starter ambush | 0.62 HR/9 starter",
         "rationale": [
           "13 HR and 13.5 xHR on the season",
           "5 HR since May 1 with 1 in the last 7 days and 3 in the last 10",
-          "Dylan Cease is allowing roughly 0.47 HR/9",
+          "Dylan Cease is allowing roughly 0.62 HR/9",
           "Park HR index 110",
           "Last HR came 3 days ago",
           "Road today | historical split 58% on this side",
@@ -231,9 +231,9 @@ export const homeRunTargetsByGame = {
           "Lineup slot not posted yet"
         ],
         "avoidHrChase": false,
-        "rawWeight": 14.1379487210783,
-        "modelShare": 0.676,
-        "modelSharePct": 67.6,
+        "rawWeight": 14.867064353700373,
+        "modelShare": 0.687,
+        "modelSharePct": 68.7,
         "lane": "anchor"
       },
       {
@@ -251,7 +251,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 10.3,
         "xhrDiff": -0.3,
-        "baseScore": 38.75842512908778,
+        "baseScore": 38.75118556701031,
         "lineupContext": null,
         "lineupPriority": 0,
         "battingImpactContext": null,
@@ -305,8 +305,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.324,
-        "modelSharePct": 32.4,
+        "modelShare": 0.313,
+        "modelSharePct": 31.3,
         "lane": "anchor"
       }
     ],

@@ -3632,6 +3632,84 @@ h3 {
   opacity: 0.9;
 }
 
+.matchup-history-block {
+  display: grid;
+  gap: 6px;
+}
+
+.matchup-history-scroll {
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.matchup-history-table {
+  display: grid;
+  gap: 4px;
+  min-width: max-content;
+}
+
+.matchup-history-row {
+  display: grid;
+  align-items: center;
+  gap: 4px;
+}
+
+.matchup-history-header {
+  margin-top: 2px;
+}
+
+.matchup-history-meta {
+  display: grid;
+  gap: 1px;
+  color: var(--copy);
+  font-size: 0.68rem;
+  line-height: 1.1;
+}
+
+.matchup-history-meta strong {
+  color: var(--heading);
+  font-size: 0.7rem;
+}
+
+.matchup-history-meta small {
+  color: var(--muted);
+}
+
+.matchup-history-cell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22px;
+  padding: 0 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--copy);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.matchup-history-cell.heading {
+  min-height: auto;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.62rem;
+  padding: 0;
+}
+
+.matchup-history-cell.scored {
+  border-color: rgba(82, 214, 179, 0.28);
+  background: rgba(82, 214, 179, 0.12);
+  color: #dffcf3;
+}
+
+.matchup-history-cell.total {
+  border-color: rgba(95, 141, 255, 0.24);
+  background: rgba(95, 141, 255, 0.1);
+  color: #ebf1ff;
+}
+
 .react-team-id strong,
 .react-mini-panel strong,
 .react-lineup-card strong,

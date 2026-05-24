@@ -1,17 +1,17 @@
 {
   "modelName": "mlb-player-props-v2",
   "date": "2026-05-24",
-  "generatedAt": "2026-05-24T15:57:48.894Z",
+  "generatedAt": "2026-05-24T16:29:59.771Z",
   "sources": [
     "day-file-live-board",
     "web/src/lib/sports-model.js"
   ],
   "summary": {
     "totalGames": 16,
-    "totalPicks": 21,
+    "totalPicks": 22,
     "byType": {
       "totalBases": 16,
-      "singles": 4,
+      "singles": 5,
       "walks": 1
     }
   },
@@ -253,9 +253,9 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 82,
-      "probability": 81.5,
-      "expectedValue": 3.1,
-      "statValueLabel": "3.10 exp TB",
+      "probability": 82.7,
+      "expectedValue": 3.2,
+      "statValueLabel": "3.19 exp TB",
       "recommendationTier": "Core",
       "reason": "slot 1 carry | recent form up | split fit live",
       "scriptTags": [
@@ -296,9 +296,9 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 82,
-      "probability": 76,
-      "expectedValue": 2.7,
-      "statValueLabel": "2.75 exp TB",
+      "probability": 77.3,
+      "expectedValue": 2.8,
+      "statValueLabel": "2.82 exp TB",
       "recommendationTier": "Core",
       "reason": "slot 3 carry | recent form up | split fit live",
       "scriptTags": [
@@ -402,6 +402,46 @@
     },
     {
       "rank": 10,
+      "id": "twins-red-sox:606115:singles",
+      "gameId": "twins-red-sox",
+      "gameTitle": "Twins @ Red Sox",
+      "start": "10:35 AM PT",
+      "stage": "Morning MLB Board",
+      "awayTeam": "Twins",
+      "homeTeam": "Red Sox",
+      "awayTeamFull": "Minnesota Twins",
+      "homeTeamFull": "Boston Red Sox",
+      "playerId": 606115,
+      "playerName": "Orlando Arcia",
+      "teamName": "Twins",
+      "teamNameFull": "Minnesota Twins",
+      "opponentName": "Red Sox",
+      "opponentNameFull": "Boston Red Sox",
+      "slot": 7,
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
+      "lineThreshold": 0.5,
+      "confidence": 82,
+      "probability": 86.3,
+      "expectedValue": 2,
+      "statValueLabel": "1.99 exp singles",
+      "recommendationTier": "Core",
+      "reason": "slot 7 carry",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "carry-bat-live",
+        "contact-lane"
+      ],
+      "matchupNote": "+10.00 vs Sonny Gray",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".500 AVG | 1.000 OPS | 3 H | 0 HR | 4g: .500 AVG | 1.000 OPS | 6 H | 0 HR | vs RHP: .500 AVG | 1.000 OPS | 0 HR | arsenal Cutter 24% / 4-Seam Fastball 18% | fit +7.4 | +10.0 matchup grade in a craft lane"
+    },
+    {
+      "rank": 11,
       "id": "rockies-diamondbacks:682998:totalBases",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -441,7 +481,7 @@
       "playerSummary": ".285 AVG | .934 OPS | 49 H | 7 HR | 12g: .360 AVG | 1.207 OPS | 18 H | 4 HR | vs LHP: .435 AVG | 1.179 OPS | 1 HR | arsenal 4-Seam Fastball 30% / Changeup 21% / Sinker 19% | fit +4.2 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "white-sox-giants:545341:totalBases",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -482,7 +522,7 @@
       "playerSummary": ".255 AVG | .821 OPS | 28 H | 8 HR | 8g: .600 AVG | 1.800 OPS | 6 H | 2 HR | vs LHP: .314 AVG | 1.008 OPS | 6 HR | arsenal 4-Seam Fastball 45% / Slider 30% / Changeup 17% | fit -1.4 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "rockies-diamondbacks:606466:totalBases",
       "gameId": "rockies-diamondbacks",
       "gameTitle": "Rockies @ Diamondbacks",
@@ -522,7 +562,7 @@
       "playerSummary": ".251 AVG | .747 OPS | 48 H | 8 HR | 12g: .500 AVG | 1.494 OPS | 24 H | 6 HR | vs LHP: .259 AVG | .670 OPS | 1 HR | arsenal 4-Seam Fastball 30% / Changeup 21% / Sinker 19% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "white-sox-giants:650333:singles",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -563,7 +603,46 @@
       "playerSummary": ".323 AVG | .791 OPS | 63 H | 2 HR | 12g: .360 AVG | .930 OPS | 18 H | 2 HR | vs LHP: .297 AVG | .745 OPS | 1 HR | arsenal 4-Seam Fastball 26% / Sinker 25% / Sweeper 23% | fit +3.5 | +9.5 matchup grade in a neutral lane"
     },
     {
-      "rank": 14,
+      "rank": 15,
+      "id": "dodgers-brewers:661388:singles",
+      "gameId": "dodgers-brewers",
+      "gameTitle": "Dodgers @ Brewers",
+      "start": "11:10 AM PT",
+      "stage": "Morning MLB Board",
+      "awayTeam": "Dodgers",
+      "homeTeam": "Brewers",
+      "awayTeamFull": "Los Angeles Dodgers",
+      "homeTeamFull": "Milwaukee Brewers",
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "teamName": "Brewers",
+      "teamNameFull": "Milwaukee Brewers",
+      "opponentName": "Dodgers",
+      "opponentNameFull": "Los Angeles Dodgers",
+      "slot": 3,
+      "propType": "singles",
+      "propLabel": "Singles",
+      "marketLabel": "Over 0.5 singles",
+      "lineThreshold": 0.5,
+      "confidence": 76,
+      "probability": 78.5,
+      "expectedValue": 1.5,
+      "statValueLabel": "1.54 exp singles",
+      "recommendationTier": "Strong",
+      "reason": "slot 3 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "carry-bat-live",
+        "contact-lane"
+      ],
+      "matchupNote": "+10.00 vs Yoshinobu Yamamoto",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".304 AVG | .787 OPS | 56 H | 4 HR | 10g: .478 AVG | 1.109 OPS | 22 H | 2 HR | vs RHP: .326 AVG | .819 OPS | 3 HR | arsenal Split-Finger 29% / 4-Seam Fastball 26% / Cutter 16% | fit +1.7 | +10.0 matchup grade in a contact-suppressor lane"
+    },
+    {
+      "rank": 16,
       "id": "guardians-phillies:683953:singles",
       "gameId": "guardians-phillies",
       "gameTitle": "Guardians @ Phillies",
@@ -603,7 +682,7 @@
       "playerSummary": ".272 AVG | .756 OPS | 22 H | 2 HR | 14g: .346 AVG | .870 OPS | 18 H | 2 HR | vs RHP: .283 AVG | .784 OPS | 1 HR | arsenal 4-Seam Fastball 37% / Slider 19% / Sinker 12% | fit +1.4 | +9.1 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "id": "white-sox-giants:664056:totalBases",
       "gameId": "white-sox-giants",
       "gameTitle": "White Sox @ Giants",
@@ -643,7 +722,7 @@
       "playerSummary": ".178 AVG | .599 OPS | 16 H | 5 HR | 12g: .273 AVG | .970 OPS | 12 H | 4 HR | vs LHP: .333 AVG | 1.020 OPS | 1 HR | arsenal 4-Seam Fastball 26% / Sinker 25% / Sweeper 23% | fit -1.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "id": "pirates-blue-jays:665489:singles",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -665,9 +744,9 @@
       "marketLabel": "Over 0.5 singles",
       "lineThreshold": 0.5,
       "confidence": 71,
-      "probability": 67.7,
+      "probability": 68,
       "expectedValue": 1.1,
-      "statValueLabel": "1.13 exp singles",
+      "statValueLabel": "1.14 exp singles",
       "recommendationTier": "Strong",
       "reason": "slot 3 carry | recent form up",
       "scriptTags": [
@@ -676,13 +755,13 @@
         "bullpen-carry-bat",
         "contact-lane"
       ],
-      "matchupNote": "+6.41 vs Mitch Keller",
+      "matchupNote": "+6.32 vs Mitch Keller",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".287 AVG | .750 OPS | 54 H | 3 HR | 14g: .333 AVG | .878 OPS | 16 H | 2 HR | vs RHP: .278 AVG | .689 OPS | 1 HR | arsenal 4-Seam Fastball 34% / Sweeper 18% / Sinker 16% | fit +6.0 | +6.4 matchup grade in a contact-suppressor lane"
+      "playerSummary": ".287 AVG | .752 OPS | 54 H | 3 HR | 14g: .333 AVG | .878 OPS | 16 H | 2 HR | vs RHP: .278 AVG | .689 OPS | 1 HR | arsenal 4-Seam Fastball 34% / Sweeper 18% / Sinker 16% | fit +6.0 | +6.3 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 17,
+      "rank": 19,
       "id": "tigers-orioles-g2:683002:totalBases",
       "gameId": "tigers-orioles-g2",
       "gameTitle": "Tigers @ Orioles",
@@ -721,7 +800,7 @@
       "playerSummary": ".229 AVG | .703 OPS | 49 H | 10 HR | 10g: .478 AVG | 1.174 OPS | 22 H | 2 HR | vs LHP: .220 AVG | .750 OPS | 4 HR | arsenal Sinker 47% / Curveball 30% / Changeup 19% | fit +1.7 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 18,
+      "rank": 20,
       "id": "pirates-blue-jays:660821:totalBases",
       "gameId": "pirates-blue-jays",
       "gameTitle": "Pirates @ Blue Jays",
@@ -743,9 +822,9 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 68,
-      "probability": 66.3,
+      "probability": 67.2,
       "expectedValue": 2.3,
-      "statValueLabel": "2.27 exp TB",
+      "statValueLabel": "2.31 exp TB",
       "recommendationTier": "Strong",
       "reason": "slot 5 carry | recent form up | split fit live",
       "scriptTags": [
@@ -759,7 +838,7 @@
       "playerSummary": ".284 AVG | .767 OPS | 42 H | 5 HR | 12g: .533 AVG | 1.329 OPS | 16 H | 0 HR | vs RHP: .305 AVG | .825 OPS | 5 HR | arsenal 4-Seam Fastball 34% / Sweeper 18% / Sinker 16% | fit +0.1 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 19,
+      "rank": 21,
       "id": "rangers-angels:672724:totalBases",
       "gameId": "rangers-angels",
       "gameTitle": "Rangers @ Angels",
@@ -797,46 +876,7 @@
       "playerSummary": ".278 AVG | .821 OPS | 37 H | 6 HR | 10g: .400 AVG | 1.167 OPS | 12 H | 2 HR | vs LHP: .333 AVG | 1.033 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Curveball 21% / Changeup 12% | fit -3.7 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 20,
-      "id": "dodgers-brewers:661388:singles",
-      "gameId": "dodgers-brewers",
-      "gameTitle": "Dodgers @ Brewers",
-      "start": "11:10 AM PT",
-      "stage": "Morning MLB Board",
-      "awayTeam": "Dodgers",
-      "homeTeam": "Brewers",
-      "awayTeamFull": "Los Angeles Dodgers",
-      "homeTeamFull": "Milwaukee Brewers",
-      "playerId": 661388,
-      "playerName": "William Contreras",
-      "teamName": "Brewers",
-      "teamNameFull": "Milwaukee Brewers",
-      "opponentName": "Dodgers",
-      "opponentNameFull": "Los Angeles Dodgers",
-      "slot": 3,
-      "propType": "singles",
-      "propLabel": "Singles",
-      "marketLabel": "Over 0.5 singles",
-      "lineThreshold": 0.5,
-      "confidence": 73,
-      "probability": 79.8,
-      "expectedValue": 1.6,
-      "statValueLabel": "1.60 exp singles",
-      "recommendationTier": "Strong",
-      "reason": "slot 3 carry | recent form up | split fit live",
-      "scriptTags": [
-        "top-third-pressure",
-        "middle-order-traffic",
-        "carry-bat-live",
-        "contact-lane"
-      ],
-      "matchupNote": "+10.00 vs Yoshinobu Yamamoto",
-      "teamScriptLabel": "",
-      "lineupStatus": "partial",
-      "playerSummary": ".304 AVG | .787 OPS | 56 H | 4 HR | 10g: .478 AVG | 1.109 OPS | 22 H | 2 HR | vs RHP: .326 AVG | .819 OPS | 3 HR | arsenal Split-Finger 29% / 4-Seam Fastball 26% / Cutter 16% | fit +1.7 | +10.0 matchup grade in a contact-suppressor lane"
-    },
-    {
-      "rank": 21,
+      "rank": 22,
       "id": "rays-yankees:641355:walks",
       "gameId": "rays-yankees",
       "gameTitle": "Rays @ Yankees",

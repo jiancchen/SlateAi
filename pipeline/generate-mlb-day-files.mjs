@@ -991,6 +991,81 @@ const buildFirstInningPitcherProfilesByPitcherId = ({ date, games, windowStarts 
   return profileByPitcherId
 }
 
+const buildSeasonFirstInningByPitcherId = ({ date, games }) => {
+  const pitcherIds = [
+    ...new Set(
+      games
+        .flatMap((game) => [Number(game.awayPitcher?.id), Number(game.homePitcher?.id)])
+        .filter(Number.isFinite)
+    )
+  ]
+
+  if (!pitcherIds.length) return {}
+
+  const rows = runSqliteJson(
+    `with starts as (
+      select
+        pitcher_id,
+        max(pitcher_name) as pitcher_name,
+        count(*) as starts_sample
+      from mlb_starting_pitcher_game_logs
+      where pitcher_id in (${pitcherIds.join(',')})
+        and game_date < '${date}'
+      group by pitcher_id
+    ),
+    first_inning as (
+      select
+        pa.pitcher_id,
+        sum(coalesce(pa.run_delta, 0)) as first_inning_runs_allowed_total,
+        count(distinct case when coalesce(pa.run_delta, 0) > 0 then pa.game_pk end) as first_inning_run_games,
+        count(distinct case when lower(coalesce(pa.event_type, '')) in ('walk', 'intent_walk', 'hit_by_pitch') then pa.game_pk end) as first_inning_walk_games,
+        count(distinct case when lower(coalesce(pa.event_type, '')) = 'home_run' then pa.game_pk end) as first_inning_home_run_games
+      from mlb_plate_appearances pa
+      join mlb_starting_pitcher_game_logs gl
+        on gl.game_pk = pa.game_pk
+       and gl.pitcher_id = pa.pitcher_id
+      where pa.pitcher_id in (${pitcherIds.join(',')})
+        and gl.game_date < '${date}'
+        and pa.inning = 1
+      group by pa.pitcher_id
+    )
+    select
+      s.pitcher_id,
+      s.pitcher_name,
+      s.starts_sample,
+      coalesce(fi.first_inning_runs_allowed_total, 0) as first_inning_runs_allowed_total,
+      coalesce(fi.first_inning_run_games, 0) as first_inning_run_games,
+      coalesce(fi.first_inning_walk_games, 0) as first_inning_walk_games,
+      coalesce(fi.first_inning_home_run_games, 0) as first_inning_home_run_games
+    from starts s
+    left join first_inning fi on fi.pitcher_id = s.pitcher_id
+    order by s.pitcher_id;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const startsSample = Number(row.starts_sample || 0) || 0
+      const firstInningRunsAllowedTotal = Number(row.first_inning_runs_allowed_total || 0) || 0
+      const firstInningRunGames = Number(row.first_inning_run_games || 0) || 0
+      const firstInningWalkGames = Number(row.first_inning_walk_games || 0) || 0
+      const firstInningHomeRunGames = Number(row.first_inning_home_run_games || 0) || 0
+      return [
+        Number(row.pitcher_id),
+        {
+          pitcherName: row.pitcher_name || null,
+          startsSample,
+          firstInningRunsAllowedTotal,
+          firstInningRunGames,
+          firstInningWalkGames,
+          firstInningHomeRunGames,
+          firstInningRunsAllowedPerStart: startsSample > 0 ? roundMaybe(firstInningRunsAllowedTotal / startsSample) : null,
+          firstInningRunGameRate: startsSample > 0 ? roundMaybe(firstInningRunGames / startsSample) : null
+        }
+      ]
+    })
+  )
+}
+
 const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
@@ -1155,6 +1230,333 @@ const buildSeriesEarlyPhaseByTeam = ({ date, games, lookbackDays = 5, limit = 3 
         }
       ]
     })
+  )
+}
+
+const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 12 }) => {
+  const matchupPairs = [
+    ...new Map(
+      games
+        .map((game) => {
+          const awayOfficial = deskToOfficialTeam[game.away] || game.away
+          const homeOfficial = deskToOfficialTeam[game.home] || game.home
+          if (!awayOfficial || !homeOfficial) return null
+          const [teamA, teamB] = [awayOfficial, homeOfficial].sort((left, right) => left.localeCompare(right))
+          return [`${teamA}__${teamB}`, { teamA, teamB }]
+        })
+        .filter(Boolean)
+    ).values()
+  ]
+
+  if (!matchupPairs.length) return {}
+
+  const matchupPairRows = matchupPairs
+    .map(
+      ({ teamA, teamB }) =>
+        `select '${teamA.replace(/'/g, "''")}__${teamB.replace(/'/g, "''")}' as pair_key, '${teamA.replace(/'/g, "''")}' as team_a, '${teamB.replace(/'/g, "''")}' as team_b`
+    )
+    .join(' union all ')
+
+  const rows = runSqliteJson(
+    `with matchup_pairs as (
+      ${matchupPairRows}
+    ),
+    ranked_games as (
+      select
+        mp.pair_key,
+        o.game_pk,
+        o.game_date,
+        g.game_datetime,
+        o.away_team,
+        o.home_team,
+        o.away_runs_final,
+        o.home_runs_final,
+        row_number() over (
+          partition by mp.pair_key
+          order by coalesce(g.game_datetime, o.game_date) desc, o.game_pk desc
+        ) as rn
+      from matchup_pairs mp
+      join mlb_game_outcomes o
+        on (
+          (o.away_team = mp.team_a and o.home_team = mp.team_b)
+          or
+          (o.away_team = mp.team_b and o.home_team = mp.team_a)
+        )
+      join mlb_games g on g.game_pk = o.game_pk
+      where o.game_date < '${date}'
+    ),
+    selected_games as (
+      select *
+      from ranked_games
+      where rn <= ${Math.max(1, limit)}
+    ),
+    inning_totals as (
+      select
+        sg.pair_key,
+        sg.game_pk,
+        sg.game_date,
+        sg.game_datetime,
+        sg.away_team,
+        sg.home_team,
+        sg.away_runs_final,
+        sg.home_runs_final,
+        pa.batting_team,
+        pa.inning,
+        sum(coalesce(pa.run_delta, 0)) as runs_inning
+      from selected_games sg
+      join mlb_plate_appearances pa on pa.game_pk = sg.game_pk
+      where pa.inning between 1 and ${Math.max(9, maxInnings)}
+      group by
+        sg.pair_key,
+        sg.game_pk,
+        sg.game_date,
+        sg.game_datetime,
+        sg.away_team,
+        sg.home_team,
+        sg.away_runs_final,
+        sg.home_runs_final,
+        pa.batting_team,
+        pa.inning
+    )
+    select *
+    from inning_totals
+    order by pair_key, coalesce(game_datetime, game_date) asc, game_pk asc, inning asc;`
+  )
+
+  const gameMap = new Map()
+
+  rows.forEach((row) => {
+    const pairKey = row.pair_key || ''
+    const gamePk = Number(row.game_pk || 0) || 0
+    if (!pairKey || !gamePk) return
+    const recordKey = `${pairKey}::${gamePk}`
+
+    if (!gameMap.has(recordKey)) {
+      gameMap.set(recordKey, {
+        pairKey,
+        gamePk,
+        date: row.game_date || '',
+        gameDatetime: row.game_datetime || '',
+        awayTeam: row.away_team || '',
+        homeTeam: row.home_team || '',
+        awayRunsFinal: Number(row.away_runs_final || 0) || 0,
+        homeRunsFinal: Number(row.home_runs_final || 0) || 0,
+        inningsByTeam: new Map()
+      })
+    }
+
+    const gameRecord = gameMap.get(recordKey)
+    const battingTeam = row.batting_team || ''
+    const inning = Number(row.inning || 0) || 0
+    if (!battingTeam || !inning) return
+
+    if (!gameRecord.inningsByTeam.has(battingTeam)) {
+      gameRecord.inningsByTeam.set(battingTeam, new Map())
+    }
+
+    gameRecord.inningsByTeam.get(battingTeam).set(inning, Number(row.runs_inning || 0) || 0)
+  })
+
+  const recordsByPair = [...gameMap.values()].reduce((map, record) => {
+    if (!map.has(record.pairKey)) map.set(record.pairKey, [])
+    map.get(record.pairKey).push(record)
+    return map
+  }, new Map())
+
+  return Object.fromEntries(
+    matchupPairs.flatMap(({ teamA, teamB }) => {
+      const pairKey = `${teamA}__${teamB}`
+      const pairRecords = recordsByPair.get(pairKey) ?? []
+
+      const buildPerspectiveHistory = (officialTeam, officialOpponent) =>
+        pairRecords.map((record) => {
+          const teamIsAway = record.awayTeam === officialTeam
+          const runsFor = teamIsAway ? record.awayRunsFinal : record.homeRunsFinal
+          const runsAgainst = teamIsAway ? record.homeRunsFinal : record.awayRunsFinal
+          const venueRole = teamIsAway ? 'road' : 'home'
+          const teamInnings = record.inningsByTeam.get(officialTeam) ?? new Map()
+          const maxInning = Math.max(9, ...[...teamInnings.keys()].map((inning) => Number(inning) || 0))
+
+          return {
+            gamePk: record.gamePk,
+            date: record.date,
+            opponent: officialToDeskTeam[officialOpponent] || officialOpponent,
+            venueRole,
+            result: runsFor > runsAgainst ? 'W' : runsFor < runsAgainst ? 'L' : 'T',
+            runsFor,
+            runsAgainst,
+            innings: Array.from({ length: maxInning }, (_, index) => ({
+              inning: index + 1,
+              runs: Number(teamInnings.get(index + 1) || 0) || 0
+            }))
+          }
+        })
+
+      const deskTeamA = officialToDeskTeam[teamA] || teamA
+      const deskTeamB = officialToDeskTeam[teamB] || teamB
+
+      return [
+        [`${deskTeamA}__${deskTeamB}`, buildPerspectiveHistory(teamA, teamB)],
+        [`${deskTeamB}__${deskTeamA}`, buildPerspectiveHistory(teamB, teamA)]
+      ]
+    })
+  )
+}
+
+const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 12 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `with recent_team_games as (
+      select
+        o.game_pk,
+        o.game_date,
+        g.game_datetime,
+        o.away_team as team_name,
+        o.home_team as opponent_name,
+        'road' as venue_role,
+        o.away_runs_final as runs_for,
+        o.home_runs_final as runs_against,
+        case
+          when o.away_runs_final > o.home_runs_final then 'W'
+          when o.away_runs_final < o.home_runs_final then 'L'
+          else 'T'
+        end as result
+      from mlb_game_outcomes o
+      join mlb_games g on g.game_pk = o.game_pk
+      where o.away_team in (${quotedTeams})
+        and o.game_date < '${date}'
+
+      union all
+
+      select
+        o.game_pk,
+        o.game_date,
+        g.game_datetime,
+        o.home_team as team_name,
+        o.away_team as opponent_name,
+        'home' as venue_role,
+        o.home_runs_final as runs_for,
+        o.away_runs_final as runs_against,
+        case
+          when o.home_runs_final > o.away_runs_final then 'W'
+          when o.home_runs_final < o.away_runs_final then 'L'
+          else 'T'
+        end as result
+      from mlb_game_outcomes o
+      join mlb_games g on g.game_pk = o.game_pk
+      where o.home_team in (${quotedTeams})
+        and o.game_date < '${date}'
+    ),
+    ranked_games as (
+      select
+        *,
+        row_number() over (
+          partition by team_name
+          order by coalesce(game_datetime, game_date) desc, game_pk desc
+        ) as rn
+      from recent_team_games
+    ),
+    selected_games as (
+      select *
+      from ranked_games
+      where rn <= ${Math.max(1, limit)}
+    ),
+    inning_totals as (
+      select
+        sg.team_name,
+        sg.opponent_name,
+        sg.venue_role,
+        sg.result,
+        sg.runs_for,
+        sg.runs_against,
+        sg.game_pk,
+        sg.game_date,
+        sg.game_datetime,
+        pa.inning,
+        sum(coalesce(pa.run_delta, 0)) as runs_inning
+      from selected_games sg
+      join mlb_plate_appearances pa
+        on pa.game_pk = sg.game_pk
+       and pa.batting_team = sg.team_name
+      where pa.inning between 1 and ${Math.max(9, maxInnings)}
+      group by
+        sg.team_name,
+        sg.opponent_name,
+        sg.venue_role,
+        sg.result,
+        sg.runs_for,
+        sg.runs_against,
+        sg.game_pk,
+        sg.game_date,
+        sg.game_datetime,
+        pa.inning
+    )
+    select *
+    from inning_totals
+    order by team_name, coalesce(game_datetime, game_date) asc, game_pk asc, inning asc;`
+  )
+
+  const gameMap = new Map()
+
+  rows.forEach((row) => {
+    const officialTeam = row.team_name || ''
+    const gamePk = Number(row.game_pk || 0) || 0
+    if (!officialTeam || !gamePk) return
+    const recordKey = `${officialTeam}::${gamePk}`
+
+    if (!gameMap.has(recordKey)) {
+      gameMap.set(recordKey, {
+        teamName: officialTeam,
+        opponentName: row.opponent_name || '',
+        venueRole: row.venue_role || '',
+        result: row.result || 'T',
+        runsFor: Number(row.runs_for || 0) || 0,
+        runsAgainst: Number(row.runs_against || 0) || 0,
+        gamePk,
+        date: row.game_date || '',
+        gameDatetime: row.game_datetime || '',
+        inningsByNumber: new Map()
+      })
+    }
+
+    const record = gameMap.get(recordKey)
+    const inning = Number(row.inning || 0) || 0
+    if (!inning) return
+    record.inningsByNumber.set(inning, Number(row.runs_inning || 0) || 0)
+  })
+
+  const grouped = [...gameMap.values()].reduce((map, record) => {
+    const deskTeam = officialToDeskTeam[record.teamName] || record.teamName
+    if (!map.has(deskTeam)) map.set(deskTeam, [])
+    map.get(deskTeam).push(record)
+    return map
+  }, new Map())
+
+  return Object.fromEntries(
+    [...grouped.entries()].map(([deskTeam, records]) => [
+      deskTeam,
+      records.map((record) => {
+        const maxInning = Math.max(9, ...[...record.inningsByNumber.keys()].map((inning) => Number(inning) || 0))
+        return {
+          gamePk: record.gamePk,
+          date: record.date,
+          opponent: officialToDeskTeam[record.opponentName] || record.opponentName,
+          venueRole: record.venueRole,
+          result: record.result,
+          runsFor: record.runsFor,
+          runsAgainst: record.runsAgainst,
+          innings: Array.from({ length: maxInning }, (_, index) => ({
+            inning: index + 1,
+            runs: Number(record.inningsByNumber.get(index + 1) || 0) || 0
+          }))
+        }
+      })
+    ])
   )
 }
 
@@ -1705,8 +2107,11 @@ const main = async () => {
   const bullpenMistakeShapeByTeam = buildBullpenMistakeShapeByTeam({ date: options.date, games: rawGames })
   const firstInningTeamProfilesByTeam = buildFirstInningTeamProfilesByTeam({ date: options.date, games: rawGames })
   const firstInningPitcherProfilesByPitcherId = buildFirstInningPitcherProfilesByPitcherId({ date: options.date, games: rawGames })
+  const seasonFirstInningByPitcherId = buildSeasonFirstInningByPitcherId({ date: options.date, games: rawGames })
   const seriesEarlyPhaseByTeam = buildSeriesEarlyPhaseByTeam({ date: options.date, games: rawGames })
   const recentGamesByTeam = buildRecentGamesByTeam({ date: options.date, games: rawGames })
+  const recentInningHistoryByTeam = buildRecentInningHistoryByTeam({ date: options.date, games: rawGames })
+  const matchupInningHistoryByTeam = buildMatchupInningHistoryByTeam({ date: options.date, games: rawGames })
   const seriesContextByGamePk = buildSeriesContextByGamePk({ date: options.date, games: rawGames })
   const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
   const starterThirdTimePenaltyByPitcherId = buildStarterThirdTimePenaltyByPitcherId({ date: options.date, games: rawGames })
@@ -1785,6 +2190,10 @@ const main = async () => {
         away: Number.isFinite(game.awayPitcher?.id) ? firstInningPitcherProfilesByPitcherId[game.awayPitcher.id] ?? null : null,
         home: Number.isFinite(game.homePitcher?.id) ? firstInningPitcherProfilesByPitcherId[game.homePitcher.id] ?? null : null
       },
+      firstInningPitcherSeason: {
+        away: Number.isFinite(game.awayPitcher?.id) ? seasonFirstInningByPitcherId[game.awayPitcher.id] ?? null : null,
+        home: Number.isFinite(game.homePitcher?.id) ? seasonFirstInningByPitcherId[game.homePitcher.id] ?? null : null
+      },
       seriesEarlyPhase: {
         away: seriesEarlyPhaseByTeam[game.away] ?? null,
         home: seriesEarlyPhaseByTeam[game.home] ?? null
@@ -1792,6 +2201,14 @@ const main = async () => {
       recentGames: {
         away: recentGamesByTeam[game.away] ?? [],
         home: recentGamesByTeam[game.home] ?? []
+      },
+      recentInningHistory: {
+        away: recentInningHistoryByTeam[game.away] ?? [],
+        home: recentInningHistoryByTeam[game.home] ?? []
+      },
+      matchupInningHistory: {
+        away: matchupInningHistoryByTeam[`${game.away}__${game.home}`] ?? [],
+        home: matchupInningHistoryByTeam[`${game.home}__${game.away}`] ?? []
       }
     },
     tierThreeContext: {
