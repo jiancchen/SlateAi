@@ -128,9 +128,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +158 / +1.5 -177",
+    "spread": "+1.5 -195 / +1.5 -177",
     "total": "o9.5 -105 / u9.5 -105",
-    "moneyline": "Cardinals even / Reds -115",
+    "moneyline": "Cardinals even / Reds -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-reds",
     "tierTwoContext": {
@@ -370,6 +370,74 @@ export const rawGames = [
           "bridgeCleanGameRate": 0.36,
           "bullpenChaosIndex": 58.97
         }
+      },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.13,
+          "firstInningRunsAllowedPerGame": 0.38,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 38.25,
+          "firstInningAllowRiskIndex": 72.75
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.63,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.25,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0,
+          "firstInningScoringIndex": 57.5,
+          "firstInningAllowRiskIndex": 87.75
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Andre Pallante",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 1,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 2,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 70
+        },
+        "home": {
+          "pitcherName": "Chris Paddack",
+          "windowStarts": 5,
+          "startsSample": 1,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 4
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": null,
+        "home": null
       },
       "recentGames": {
         "away": [
@@ -724,8 +792,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -145 / -1.5 +130",
-    "total": "o7.5 -110 / u8 -115",
+    "spread": "+1.5 -150 / -1.5 +130",
+    "total": "o7.5 -110 / u7.5 even",
     "moneyline": "Astros +146 / Cubs -165",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs",
@@ -965,6 +1033,94 @@ export const rawGames = [
           "leadLossAfterEntryRate": 0,
           "bridgeCleanGameRate": 0.25,
           "bullpenChaosIndex": 41.58
+        }
+      },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.38,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.13,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.63,
+          "yrfiGameRate": 0.38,
+          "firstInningNetEdge": 0.13,
+          "firstInningScoringIndex": 67.5,
+          "firstInningAllowRiskIndex": 52.5
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.5,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.25,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0,
+          "firstInningScoringIndex": 65.25,
+          "firstInningAllowRiskIndex": 68.75
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Kai-Wei Teng",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0.5,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 8
+        },
+        "home": {
+          "pitcherName": "Colin Rea",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 4
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Cubs",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 1,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Astros",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
         }
       },
       "recentGames": {
@@ -1321,7 +1477,7 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -164 / -1.5 +140",
-    "total": "o7.5 -109 / u7.5 -108",
+    "total": "o7.5 -110 / u7.5 -108",
     "moneyline": "Pirates +136 / Blue Jays -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/pirates-vs-blue-jays",
@@ -1563,6 +1719,94 @@ export const rawGames = [
           "bullpenChaosIndex": 48.94
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.38,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
+          "allowedFirstInningRate": 0.13,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0.25,
+          "firstInningScoringIndex": 81.5,
+          "firstInningAllowRiskIndex": 52.5
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.38,
+          "firstInningRunsAllowedPerGame": 0.25,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.25,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0.13,
+          "firstInningScoringIndex": 61,
+          "firstInningAllowRiskIndex": 56.5
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Paul Skenes",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 4
+        },
+        "home": {
+          "pitcherName": "Patrick Corbin",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 1,
+          "firstInningRunsAllowedPerStart": 1,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 3,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0.5,
+          "firstInningCleanRate": 0,
+          "firstInningPressureIndex": 100
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Blue Jays",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 1,
+          "runsFirst3PerGame": 1,
+          "scoredFirstInningRate": 1,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Pirates",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 3,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 1,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -1799,7 +2043,7 @@ export const rawGames = [
       "fullName": "Slade Cecconi",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "era": "5.18",
       "strikeOuts": 47,
       "inningsPitched": "57.1",
@@ -1820,15 +2064,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/slade-cecconi-677944?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Slade Cecconi",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.23,
+        "earnedRunsPerStart": 3,
+        "hitsAllowedPerStart": 5.9,
+        "homeRunsAllowedPerStart": 0.9,
+        "walksAllowedPerStart": 1.9,
+        "strikeoutsPerStart": 4.2,
+        "whipLike": 1.49,
+        "shortStartRate": 0.3,
+        "qualityStartRate": 0.2,
+        "runVolatility": 2.4,
+        "homeRunBurstiness": 0.83,
+        "recent3EarnedRunsDelta": -1.67
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
         "expectedInnings": 5.23,
         "daysSinceLastStart": 5,
         "startsLoaded": 10,
-        "shortLeashRisk": 0,
+        "shortLeashRisk": 0.3,
         "durableRate": 0.2,
         "leashScore": null,
         "leashVolatility": null,
@@ -1843,7 +2103,7 @@ export const rawGames = [
       "id": 554430,
       "fullName": "Zack Wheeler",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 0,
       "era": "1.67",
       "strikeOuts": 36,
@@ -1865,11 +2125,27 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/zack-wheeler-554430?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Zack Wheeler",
+        "windowStarts": 5,
+        "startsSample": 5,
+        "inningsPerStart": 6.33,
+        "earnedRunsPerStart": 1.4,
+        "hitsAllowedPerStart": 4.2,
+        "homeRunsAllowedPerStart": 0.2,
+        "walksAllowedPerStart": 1.4,
+        "strikeoutsPerStart": 6,
+        "whipLike": 0.88,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.8,
+        "runVolatility": 1.02,
+        "homeRunBurstiness": 0.53,
+        "recent3EarnedRunsDelta": -0.07
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 5 starts.",
         "expectedInnings": 6.33,
         "daysSinceLastStart": 6,
         "startsLoaded": 5,
@@ -1884,9 +2160,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "-1.5 +138 / +1.5 -145",
-    "total": "o7.5 -110 / u8 -121",
-    "moneyline": "Guardians -124 / Phillies +115",
+    "spread": "-1.5 +136 / +1.5 -150",
+    "total": "o7.5 -110 / u7.5 -105",
+    "moneyline": "Guardians -124 / Phillies +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
     "tierTwoContext": {
@@ -2127,6 +2403,94 @@ export const rawGames = [
           "bullpenChaosIndex": 42.97
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.25,
+          "firstInningRunsAllowedPerGame": 0.13,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.13,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0,
+          "nrfiGameRate": 0.75,
+          "yrfiGameRate": 0.25,
+          "firstInningNetEdge": 0.13,
+          "firstInningScoringIndex": 44.75,
+          "firstInningAllowRiskIndex": 40.25
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.75,
+          "firstInningRunsAllowedPerGame": 0,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
+          "allowedFirstInningRate": 0,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0,
+          "nrfiGameRate": 0.63,
+          "yrfiGameRate": 0.38,
+          "firstInningNetEdge": 0.75,
+          "firstInningScoringIndex": 88,
+          "firstInningAllowRiskIndex": 24
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Slade Cecconi",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 2,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 46
+        },
+        "home": {
+          "pitcherName": "Zack Wheeler",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 4
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Phillies",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Guardians",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -2324,8 +2688,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Slade Cecconi",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 1,
+          "thirdTripExposureRate": 0.2,
+          "thirdTripReachedDelta": -0.08,
+          "thirdTripScoringDelta": 0.08,
+          "thirdTripRunDeltaDelta": 0.08,
+          "thirdTripHrDelta": 0.11,
+          "thirdTimePenaltyIndex": 51.25
+        },
+        "home": {
+          "pitcherName": "Zack Wheeler",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.21,
+          "thirdTripScoringDelta": 0.06,
+          "thirdTripRunDeltaDelta": 0.06,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 57.23
+        }
       }
     }
   },
@@ -2701,6 +3087,81 @@ export const rawGames = [
           "bullpenChaosIndex": 54.16
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.63,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 71.75,
+          "firstInningAllowRiskIndex": 100
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.25,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.5,
+          "firstInningMultiRunRate": 0,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": -0.63,
+          "firstInningScoringIndex": 54.5,
+          "firstInningAllowRiskIndex": 100
+        }
+      },
+      "firstInningPitcher": {
+        "away": null,
+        "home": {
+          "pitcherName": "Adrian Houser",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 1,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 2,
+          "firstInningWalkRate": 1,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 76
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Giants",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "White Sox",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -3043,9 +3504,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +125 / +1.5 -140",
+    "spread": "-1.5 +122 / +1.5 -140",
     "total": "o8.5 -110 / u8.5 -105",
-    "moneyline": "Mariners -135 / Royals +119",
+    "moneyline": "Mariners -138 / Royals +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals",
     "tierTwoContext": {
@@ -3284,6 +3745,94 @@ export const rawGames = [
           "leadLossAfterEntryRate": 0.33,
           "bridgeCleanGameRate": 0.42,
           "bullpenChaosIndex": 52.06
+        }
+      },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.13,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
+          "allowedFirstInningRate": 0.13,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0.5,
+          "firstInningScoringIndex": 81.5,
+          "firstInningAllowRiskIndex": 40.25
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.5,
+          "scoredFirstInningRate": 0.5,
+          "scorelessFirstInningRate": 0.5,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": 0,
+          "firstInningScoringIndex": 87,
+          "firstInningAllowRiskIndex": 82.75
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "George Kirby",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1.5,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0.5,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 58
+        },
+        "home": {
+          "pitcherName": "Stephen Kolek",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 21
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Royals",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Mariners",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
         }
       },
       "recentGames": {
@@ -3639,8 +4188,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -155",
-    "total": "o8 -115 / u8.5 -110",
+    "spread": "-1.5 +140 / +1.5 -155",
+    "total": "o8.5 -100 / u8.5 -105",
     "moneyline": "Mets -115 / Marlins +108",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins",
@@ -3880,6 +4429,94 @@ export const rawGames = [
           "leadLossAfterEntryRate": 0.25,
           "bridgeCleanGameRate": 0.31,
           "bullpenChaosIndex": 48.47
+        }
+      },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.38,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.13,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.63,
+          "yrfiGameRate": 0.38,
+          "firstInningNetEdge": 0.13,
+          "firstInningScoringIndex": 65.25,
+          "firstInningAllowRiskIndex": 52.5
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 1,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.63,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.38,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": -0.5,
+          "firstInningScoringIndex": 65.25,
+          "firstInningAllowRiskIndex": 100
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Freddy Peralta",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1.5,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 31
+        },
+        "home": {
+          "pitcherName": "Max Meyer",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 1,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1.5,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0.5,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 73
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Marlins",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 1,
+          "runsFirst3PerGame": 1,
+          "scoredFirstInningRate": 1,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Mets",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 1,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 1,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
         }
       },
       "recentGames": {
@@ -4478,6 +5115,94 @@ export const rawGames = [
           "bullpenChaosIndex": 39.38
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.38,
+          "firstInningRunsAllowedPerGame": 0.5,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.25,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.63,
+          "yrfiGameRate": 0.38,
+          "firstInningNetEdge": -0.13,
+          "firstInningScoringIndex": 49,
+          "firstInningAllowRiskIndex": 68.75
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 1.13,
+          "firstInningRunsAllowedPerGame": 0.5,
+          "scoredFirstInningRate": 0.63,
+          "scorelessFirstInningRate": 0.38,
+          "allowedFirstInningRate": 0.25,
+          "firstInningMultiRunRate": 0.38,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": 0.63,
+          "firstInningScoringIndex": 100,
+          "firstInningAllowRiskIndex": 73.75
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Jake Irvin",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 2.5,
+          "firstInningMultiRunAllowedRate": 0.5,
+          "firstInningBaserunnersPerStart": 4,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0.5,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 100
+        },
+        "home": {
+          "pitcherName": "Grant Holmes",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0.5,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 17
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Braves",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Nationals",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -4831,8 +5556,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -157 / -1.5 +140",
-    "total": "o7.5 -120 / u8 -115",
+    "spread": "+1.5 -155 / -1.5 +140",
+    "total": "o7.5 -119 / u8 -115",
     "moneyline": "Twins +138 / Red Sox -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
@@ -5074,6 +5799,81 @@ export const rawGames = [
           "bullpenChaosIndex": 50.31
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.13,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0,
+          "firstInningMultiRunAllowedRate": 0.25,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": -0.75,
+          "firstInningScoringIndex": 38.25,
+          "firstInningAllowRiskIndex": 97.25
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.63,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 69.5,
+          "firstInningAllowRiskIndex": 100
+        }
+      },
+      "firstInningPitcher": {
+        "away": null,
+        "home": {
+          "pitcherName": "Jovani Morán",
+          "windowStarts": 5,
+          "startsSample": 1,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 1,
+          "firstInningRunsAllowedPerStart": 1,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 1,
+          "firstInningCleanRate": 0,
+          "firstInningPressureIndex": 78
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Red Sox",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 3,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 1,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Twins",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 4,
+          "runsFirst3PerGame": 4,
+          "scoredFirstInningRate": 1,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -5289,13 +6089,13 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 3,
-      "era": "3.67",
-      "strikeOuts": 39,
-      "inningsPitched": "49.0",
-      "hitsAllowed": 54,
-      "walks": 21,
-      "homeRunsAllowed": 6,
-      "whip": "1.53",
+      "era": "4.44",
+      "strikeOuts": 42,
+      "inningsPitched": "50.2",
+      "hitsAllowed": 58,
+      "walks": 22,
+      "homeRunsAllowed": 8,
+      "whip": "1.58",
       "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
@@ -5309,15 +6109,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/kyle-leahy-681517?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Kyle Leahy",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 5.07,
+        "earnedRunsPerStart": 2.22,
+        "hitsAllowedPerStart": 5.67,
+        "homeRunsAllowedPerStart": 0.67,
+        "walksAllowedPerStart": 2.22,
+        "strikeoutsPerStart": 3.78,
+        "whipLike": 1.55,
+        "shortStartRate": 0.11,
+        "qualityStartRate": 0.11,
+        "runVolatility": 1.31,
+        "homeRunBurstiness": 1.05,
+        "recent3EarnedRunsDelta": -1.56
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
         "expectedInnings": 5.07,
         "daysSinceLastStart": 7,
         "startsLoaded": 9,
-        "shortLeashRisk": 0,
+        "shortLeashRisk": 0.11,
         "durableRate": 0.11,
         "leashScore": null,
         "leashVolatility": null,
@@ -5334,13 +6150,13 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 0,
-      "era": "3.72",
-      "strikeOuts": 1,
-      "inningsPitched": "9.2",
-      "hitsAllowed": 8,
+      "era": "5.91",
+      "strikeOuts": 2,
+      "inningsPitched": "10.2",
+      "hitsAllowed": 10,
       "walks": 3,
-      "homeRunsAllowed": 1,
-      "whip": "1.14",
+      "homeRunsAllowed": 2,
+      "whip": "1.22",
       "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
@@ -5354,11 +6170,27 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/chase-petty-695534?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Chase Petty",
+        "windowStarts": 3,
+        "startsSample": 1,
+        "inningsPerStart": 5.67,
+        "earnedRunsPerStart": 3,
+        "hitsAllowedPerStart": 4,
+        "homeRunsAllowedPerStart": 1,
+        "walksAllowedPerStart": 2,
+        "strikeoutsPerStart": 1,
+        "whipLike": 1.06,
+        "shortStartRate": 0,
+        "qualityStartRate": 0,
+        "runVolatility": 0,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 0
+      },
       "usageContext": {
         "status": "tiny-sample",
-        "label": "Tiny MLB sample",
-        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
+        "label": "Tiny recent sample",
+        "note": "Only 1 recent MLB start are in the rolling sample, so the form read is still fragile.",
         "expectedInnings": 5.67,
         "daysSinceLastStart": 19,
         "startsLoaded": 1,
@@ -5373,9 +6205,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +158 / +1.5 -177",
+    "spread": "+1.5 -195 / +1.5 -177",
     "total": "o9.5 -105 / u9.5 -105",
-    "moneyline": "Cardinals even / Reds -115",
+    "moneyline": "Cardinals even / Reds -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-reds",
     "tierTwoContext": {
@@ -5616,6 +6448,61 @@ export const rawGames = [
           "bullpenChaosIndex": 58.97
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.13,
+          "firstInningRunsAllowedPerGame": 0.38,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 38.25,
+          "firstInningAllowRiskIndex": 72.75
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.63,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.25,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0,
+          "firstInningScoringIndex": 57.5,
+          "firstInningAllowRiskIndex": 87.75
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Kyle Leahy",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1.5,
+          "firstInningWalkRate": 1,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 37
+        },
+        "home": null
+      },
+      "seriesEarlyPhase": {
+        "away": null,
+        "home": null
+      },
       "recentGames": {
         "away": [
           {
@@ -5813,7 +6700,18 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
+        "away": {
+          "pitcherName": "Kyle Leahy",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": -0.01,
+          "thirdTripScoringDelta": 0.1,
+          "thirdTripRunDeltaDelta": 0.1,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 45.5
+        },
         "home": null
       }
     }
@@ -5829,15 +6727,15 @@ export const rawGames = [
       "id": 808963,
       "fullName": "Roki Sasaki",
       "pitchHand": "R",
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
-      "era": "5.15",
-      "strikeOuts": 41,
-      "inningsPitched": "43.2",
+      "era": "4.93",
+      "strikeOuts": 43,
+      "inningsPitched": "45.2",
       "hitsAllowed": 47,
       "walks": 18,
       "homeRunsAllowed": 9,
-      "whip": "1.49",
+      "whip": "1.42",
       "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
@@ -5851,15 +6749,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/roki-sasaki-808963?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Roki Sasaki",
+        "windowStarts": 10,
+        "startsSample": 8,
+        "inningsPerStart": 5.08,
+        "earnedRunsPerStart": 2.88,
+        "hitsAllowedPerStart": 5.38,
+        "homeRunsAllowedPerStart": 1.13,
+        "walksAllowedPerStart": 2,
+        "strikeoutsPerStart": 4.88,
+        "whipLike": 1.45,
+        "shortStartRate": 0.38,
+        "qualityStartRate": 0.25,
+        "runVolatility": 1.54,
+        "homeRunBurstiness": 0.93,
+        "recent3EarnedRunsDelta": -0.54
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 8 starts.",
         "expectedInnings": 5.08,
         "daysSinceLastStart": 6,
         "startsLoaded": 8,
-        "shortLeashRisk": 0,
+        "shortLeashRisk": 0.38,
         "durableRate": 0.25,
         "leashScore": null,
         "leashVolatility": null,
@@ -5875,14 +6789,14 @@ export const rawGames = [
       "fullName": "Robert Gasser",
       "pitchHand": "L",
       "wins": 0,
-      "losses": 0,
-      "era": "2.57",
-      "strikeOuts": 5,
-      "inningsPitched": "7.0",
-      "hitsAllowed": 4,
-      "walks": 3,
-      "homeRunsAllowed": 0,
-      "whip": "1.00",
+      "losses": 1,
+      "era": "6.48",
+      "strikeOuts": 7,
+      "inningsPitched": "8.1",
+      "hitsAllowed": 7,
+      "walks": 6,
+      "homeRunsAllowed": 1,
+      "whip": "1.56",
       "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
@@ -5896,15 +6810,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/robert-gasser-688107?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Robert Gasser",
+        "windowStarts": 3,
+        "startsSample": 1,
+        "inningsPerStart": 4,
+        "earnedRunsPerStart": 2,
+        "hitsAllowedPerStart": 3,
+        "homeRunsAllowedPerStart": 0,
+        "walksAllowedPerStart": 2,
+        "strikeoutsPerStart": 3,
+        "whipLike": 1.25,
+        "shortStartRate": 1,
+        "qualityStartRate": 0,
+        "runVolatility": 0,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 0
+      },
       "usageContext": {
         "status": "tiny-sample",
-        "label": "Tiny MLB sample",
-        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
+        "label": "Tiny recent sample",
+        "note": "Only 1 recent MLB start are in the rolling sample, so the form read is still fragile.",
         "expectedInnings": 4,
         "daysSinceLastStart": 6,
         "startsLoaded": 1,
-        "shortLeashRisk": 0,
+        "shortLeashRisk": 1,
         "durableRate": 0,
         "leashScore": null,
         "leashVolatility": null,
@@ -5915,7 +6845,7 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 -105 / +1.5 -110",
+    "spread": "-1.5 -104 / +1.5 -110",
     "total": "o8 -110 / u8 -110",
     "moneyline": "Dodgers -170 / Brewers +150",
     "pitcherSourceNote": "",
@@ -6158,6 +7088,94 @@ export const rawGames = [
           "bullpenChaosIndex": 37.99
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.5,
+          "scorelessFirstInningRate": 0.5,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.25,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 93.5,
+          "firstInningAllowRiskIndex": 100
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 1.13,
+          "firstInningRunsAllowedPerGame": 0.13,
+          "scoredFirstInningRate": 0.5,
+          "scorelessFirstInningRate": 0.5,
+          "allowedFirstInningRate": 0.13,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0,
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": 1,
+          "firstInningScoringIndex": 100,
+          "firstInningAllowRiskIndex": 42.75
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Roki Sasaki",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0.5,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 8
+        },
+        "home": {
+          "pitcherName": "Robert Gasser",
+          "windowStarts": 5,
+          "startsSample": 1,
+          "firstBatterReachRate": 1,
+          "firstInningRunAllowedRate": 1,
+          "firstInningRunsAllowedPerStart": 1,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 4,
+          "firstInningWalkRate": 1,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 0,
+          "firstInningPressureIndex": 100
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Brewers",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 1,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Dodgers",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 4,
+          "runsFirst3PerGame": 5,
+          "scoredFirstInningRate": 1,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -6355,7 +7373,18 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
+        "away": {
+          "pitcherName": "Roki Sasaki",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.02,
+          "thirdTripScoringDelta": 0.04,
+          "thirdTripRunDeltaDelta": 0.13,
+          "thirdTripHrDelta": -0.03,
+          "thirdTimePenaltyIndex": 41.49
+        },
         "home": null
       }
     }
@@ -6373,14 +7402,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 2,
-      "era": "2.98",
-      "strikeOuts": 44,
-      "inningsPitched": "51.1",
+      "era": "3.02",
+      "strikeOuts": 48,
+      "inningsPitched": "53.2",
       "hitsAllowed": 38,
-      "walks": 17,
+      "walks": 22,
       "homeRunsAllowed": 6,
-      "whip": "1.07",
-      "gamesStarted": 8,
+      "whip": "1.12",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 669372,
@@ -6418,14 +7447,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 0,
-      "era": "5.40",
-      "strikeOuts": 3,
-      "inningsPitched": "5.0",
-      "hitsAllowed": 1,
-      "walks": 3,
+      "era": "3.38",
+      "strikeOuts": 5,
+      "inningsPitched": "8.0",
+      "hitsAllowed": 3,
+      "walks": 5,
       "homeRunsAllowed": 0,
-      "whip": "0.80",
-      "gamesStarted": 1,
+      "whip": "1.00",
+      "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 608337,
@@ -6442,7 +7471,7 @@ export const rawGames = [
       "usageContext": {
         "status": "tiny-sample",
         "label": "Tiny MLB sample",
-        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
+        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 5,
         "daysSinceLastStart": 6,
         "startsLoaded": 1,
@@ -6457,9 +7486,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -150",
-    "total": "o8 -110 / u8 -110",
-    "moneyline": "Athletics -121 / Padres +110",
+    "spread": "+1.5 -155 / -1.5 +130",
+    "total": "o8 -115 / u8.5 -120",
+    "moneyline": "Athletics +141 / Padres -162",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
     "tierTwoContext": {
@@ -6700,6 +7729,94 @@ export const rawGames = [
           "bullpenChaosIndex": 41.32
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.5,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0.38,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": -0.38,
+          "firstInningScoringIndex": 67.5,
+          "firstInningAllowRiskIndex": 100
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.75,
+          "firstInningRunsAllowedPerGame": 1,
+          "scoredFirstInningRate": 0.5,
+          "scorelessFirstInningRate": 0.5,
+          "allowedFirstInningRate": 0.5,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0.38,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 100,
+          "firstInningAllowRiskIndex": 100
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "J.T. Ginn",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 21
+        },
+        "home": {
+          "pitcherName": "Lucas Giolito",
+          "windowStarts": 5,
+          "startsSample": 1,
+          "firstBatterReachRate": 0,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 0,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 4
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Padres",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 2,
+          "runsFirst3PerGame": 2,
+          "scoredFirstInningRate": 1,
+          "allowedFirstInningRate": 1,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Athletics",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 2,
+          "runsFirst3PerGame": 2,
+          "scoredFirstInningRate": 1,
+          "allowedFirstInningRate": 1,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 1,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -6915,14 +8032,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 4,
-      "era": "3.62",
-      "strikeOuts": 55,
-      "inningsPitched": "54.2",
-      "hitsAllowed": 51,
-      "walks": 12,
-      "homeRunsAllowed": 10,
-      "whip": "1.15",
-      "gamesStarted": 9,
+      "era": "3.81",
+      "strikeOuts": 57,
+      "inningsPitched": "56.2",
+      "hitsAllowed": 52,
+      "walks": 14,
+      "homeRunsAllowed": 11,
+      "whip": "1.16",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 543135,
@@ -6960,14 +8077,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 4,
-      "era": "2.70",
-      "strikeOuts": 30,
-      "inningsPitched": "33.1",
-      "hitsAllowed": 26,
-      "walks": 19,
+      "era": "2.80",
+      "strikeOuts": 31,
+      "inningsPitched": "35.1",
+      "hitsAllowed": 27,
+      "walks": 21,
       "homeRunsAllowed": 2,
-      "whip": "1.35",
-      "gamesStarted": 6,
+      "whip": "1.36",
+      "gamesStarted": 7,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 700712,
@@ -6999,9 +8116,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +122 / +1.5 -140",
-    "total": "o7.5 -105 / u7.5 -110",
-    "moneyline": "Rangers -140 / Angels +125",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels",
     "tierTwoContext": {
@@ -7242,6 +8359,94 @@ export const rawGames = [
           "bullpenChaosIndex": 58.75
         }
       },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.25,
+          "firstInningRunsAllowedPerGame": 1.13,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
+          "allowedFirstInningRate": 0.5,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.38,
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": -0.88,
+          "firstInningScoringIndex": 44.75,
+          "firstInningAllowRiskIndex": 100
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 1,
+          "firstInningRunsAllowedPerGame": 0.38,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
+          "allowedFirstInningRate": 0.25,
+          "firstInningMultiRunRate": 0.38,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0.63,
+          "firstInningScoringIndex": 98.75,
+          "firstInningAllowRiskIndex": 64
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Nathan Eovaldi",
+          "windowStarts": 5,
+          "startsSample": 1,
+          "firstBatterReachRate": 1,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 30
+        },
+        "home": {
+          "pitcherName": "Walbert Ureña",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 1,
+          "firstInningRunAllowedRate": 0,
+          "firstInningRunsAllowedPerStart": 0,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 1,
+          "firstInningPressureIndex": 36
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Angels",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 1,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        },
+        "home": {
+          "opponentTeam": "Rangers",
+          "gamesSample": 1,
+          "runsFirst1PerGame": 4,
+          "runsFirst3PerGame": 6,
+          "scoredFirstInningRate": 1,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 0,
+          "tiedAfter3Rate": 0,
+          "trafficNoConversionRate": 0
+        }
+      },
       "recentGames": {
         "away": [
           {
@@ -7457,14 +8662,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 6,
-      "era": "7.03",
-      "strikeOuts": 36,
-      "inningsPitched": "48.2",
-      "hitsAllowed": 76,
+      "era": "6.75",
+      "strikeOuts": 37,
+      "inningsPitched": "50.2",
+      "hitsAllowed": 78,
       "walks": 17,
       "homeRunsAllowed": 9,
-      "whip": "1.91",
-      "gamesStarted": 10,
+      "whip": "1.88",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 547179,
@@ -7502,14 +8707,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 4,
-      "era": "4.78",
-      "strikeOuts": 34,
-      "inningsPitched": "49.0",
-      "hitsAllowed": 55,
+      "era": "4.53",
+      "strikeOuts": 37,
+      "inningsPitched": "51.2",
+      "hitsAllowed": 56,
       "walks": 15,
       "homeRunsAllowed": 7,
-      "whip": "1.43",
-      "gamesStarted": 10,
+      "whip": "1.37",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 668678,
@@ -7541,9 +8746,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -130 / -1.5 +115",
-    "total": "o9 -113 / u9.5 -117",
-    "moneyline": "Rockies +160 / Diamondbacks -188",
+    "spread": "+1.5 -125 / -1.5 +116",
+    "total": "o9 -121 / u9.5 -115",
+    "moneyline": "Rockies +165 / Diamondbacks -184",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks",
     "tierTwoContext": {
@@ -7782,6 +8987,94 @@ export const rawGames = [
           "leadLossAfterEntryRate": 0.13,
           "bridgeCleanGameRate": 0.77,
           "bullpenChaosIndex": 42.81
+        }
+      },
+      "firstInningTeam": {
+        "away": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 0.75,
+          "firstInningRunsAllowedPerGame": 1,
+          "scoredFirstInningRate": 0.5,
+          "scorelessFirstInningRate": 0.5,
+          "allowedFirstInningRate": 0.25,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0.25,
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 100,
+          "firstInningAllowRiskIndex": 93
+        },
+        "home": {
+          "windowGames": 8,
+          "gamesSample": 8,
+          "firstInningRunsPerGame": 1.5,
+          "firstInningRunsAllowedPerGame": 0.5,
+          "scoredFirstInningRate": 0.5,
+          "scorelessFirstInningRate": 0.5,
+          "allowedFirstInningRate": 0.38,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": 1,
+          "firstInningScoringIndex": 100,
+          "firstInningAllowRiskIndex": 82.75
+        }
+      },
+      "firstInningPitcher": {
+        "away": {
+          "pitcherName": "Michael Lorenzen",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 2,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 61
+        },
+        "home": {
+          "pitcherName": "Zac Gallen",
+          "windowStarts": 5,
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 0.5,
+          "firstInningRunsAllowedPerStart": 0.5,
+          "firstInningMultiRunAllowedRate": 0,
+          "firstInningBaserunnersPerStart": 1,
+          "firstInningWalkRate": 0,
+          "firstInningHomeRunRate": 0.5,
+          "firstInningCleanRate": 0.5,
+          "firstInningPressureIndex": 54
+        }
+      },
+      "seriesEarlyPhase": {
+        "away": {
+          "opponentTeam": "Diamondbacks",
+          "gamesSample": 2,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 1,
+          "tiedAfter3Rate": 0.5,
+          "trafficNoConversionRate": 0.5
+        },
+        "home": {
+          "opponentTeam": "Rockies",
+          "gamesSample": 2,
+          "runsFirst1PerGame": 0,
+          "runsFirst3PerGame": 0.5,
+          "scoredFirstInningRate": 0,
+          "allowedFirstInningRate": 0,
+          "scorelessFirst3Rate": 0.5,
+          "tiedAfter3Rate": 0.5,
+          "trafficNoConversionRate": 0
         }
       },
       "recentGames": {

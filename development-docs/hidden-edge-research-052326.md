@@ -15,14 +15,14 @@ This pass uses standard Python and SQLite because `pandas` is not bundled in the
 | Window | Games | Hit rate | Avg edge | Avg volatility |
 | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.653 | 6.3 | 83.2 |
-| Current (`05-16` to `05-22`) | 93 | 0.570 | 7.0 | 88.7 |
-| Combined | 168 | 0.607 | 6.7 | 86.3 |
+| Current (`05-16` to `05-22`) | 93 | 0.570 | 6.6 | 88.7 |
+| Combined | 168 | 0.607 | 6.5 | 86.2 |
 
 ## Hidden Edge Inventory
 
-- `mlb_team_whiff_persistence_profiles`: 2984 rows
-- `mlb_team_lead_surrender_profiles`: 2984 rows
-- `mlb_team_form_carryover_profiles`: 2924 rows
+- `mlb_team_whiff_persistence_profiles`: 3040 rows
+- `mlb_team_lead_surrender_profiles`: 3040 rows
+- `mlb_team_form_carryover_profiles`: 2980 rows
 
 All three are keyed by:
 - `as_of_date`
@@ -73,8 +73,8 @@ Pass if `pointEdge >= 10 && pick lead surrender >= 45 && late stability <= 55`
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 70 | 0.657 | 5 | 0.600 |
-| Current | 89 | 0.551 | 4 | 1.000 |
-| Combined | 159 | 0.597 | 9 | 0.778 |
+| Current | 90 | 0.556 | 3 | 1.000 |
+| Combined | 160 | 0.600 | 8 | 0.750 |
 
 Note: This is the direct "good starter, bad hold" hidden-edge fade.
 
@@ -109,8 +109,8 @@ Pass if `pointEdge >= 8 && opponent comeback resilience >= 55 && late stability 
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 71 | 0.676 | 4 | 0.250 |
-| Current | 90 | 0.567 | 3 | 0.667 |
-| Combined | 161 | 0.615 | 7 | 0.429 |
+| Current | 91 | 0.571 | 2 | 0.500 |
+| Combined | 162 | 0.617 | 6 | 0.333 |
 
 Note: This tests whether the opposing team’s comeback habit matters once the game gets into a weaker hold lane.
 
@@ -133,41 +133,41 @@ These use the two strongest hidden-edge traps as offline `-edge / -confidence` h
 ### Opponent comeback pressure haircut
 | Haircut | Score | Reserve 10+ Δ | Reserve 60+ Δ | Current 10+ Δ | Current 60+ Δ | Combined 10+ Δ | Combined 60+ Δ | Current removed (edge/conf) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `-4.0 / -8` | 0.209 | +0.000 | +0.047 | +0.027 | +0.000 | +0.010 | +0.023 | 2/0 |
-| `-2.0 / -6` | 0.164 | +0.000 | +0.022 | +0.038 | +0.000 | +0.018 | +0.011 | 1/0 |
-| `-3.0 / -6` | 0.164 | +0.000 | +0.022 | +0.038 | +0.000 | +0.018 | +0.011 | 1/0 |
-| `-4.0 / -6` | 0.153 | +0.000 | +0.022 | +0.027 | +0.000 | +0.010 | +0.011 | 2/0 |
-| `-1.5 / -4` | 0.114 | +0.000 | +0.000 | +0.038 | +0.000 | +0.018 | +0.000 | 1/0 |
-| `-2.0 / -4` | 0.114 | +0.000 | +0.000 | +0.038 | +0.000 | +0.018 | +0.000 | 1/0 |
-| `-3.0 / -4` | 0.114 | +0.000 | +0.000 | +0.038 | +0.000 | +0.018 | +0.000 | 1/0 |
+| `-4.0 / -8` | 0.212 | +0.000 | +0.047 | +0.028 | +0.000 | +0.009 | +0.024 | 2/0 |
+| `-2.0 / -6` | 0.168 | +0.000 | +0.022 | +0.039 | +0.000 | +0.019 | +0.012 | 1/0 |
+| `-3.0 / -6` | 0.168 | +0.000 | +0.022 | +0.039 | +0.000 | +0.019 | +0.012 | 1/0 |
+| `-4.0 / -6` | 0.156 | +0.000 | +0.022 | +0.028 | +0.000 | +0.009 | +0.012 | 2/0 |
+| `-1.5 / -4` | 0.117 | +0.000 | +0.000 | +0.039 | +0.000 | +0.019 | +0.000 | 1/0 |
+| `-2.0 / -4` | 0.117 | +0.000 | +0.000 | +0.039 | +0.000 | +0.019 | +0.000 | 1/0 |
+| `-3.0 / -4` | 0.117 | +0.000 | +0.000 | +0.039 | +0.000 | +0.019 | +0.000 | 1/0 |
 
-Best current combo: `-4.0` edge / `-8` confidence. Reserve deltas were `+0.000` and `+0.047`. Current deltas were `+0.027` and `+0.000`. Combined deltas were `+0.010` and `+0.023`.
+Best current combo: `-4.0` edge / `-8` confidence. Reserve deltas were `+0.000` and `+0.047`. Current deltas were `+0.028` and `+0.000`. Combined deltas were `+0.009` and `+0.024`.
 
 ### Hidden chaos stack haircut
 | Haircut | Score | Reserve 10+ Δ | Reserve 60+ Δ | Current 10+ Δ | Current 60+ Δ | Combined 10+ Δ | Combined 60+ Δ | Current removed (edge/conf) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `-3.0 / -4` | 0.256 | +0.009 | +0.000 | +0.071 | +0.000 | +0.043 | +0.000 | 3/0 |
-| `-3.0 / -6` | 0.256 | +0.009 | +0.000 | +0.071 | +0.000 | +0.043 | +0.000 | 3/0 |
-| `-2.0 / -4` | 0.137 | +0.009 | +0.000 | +0.038 | +0.000 | +0.030 | +0.000 | 1/0 |
-| `-2.0 / -6` | 0.137 | +0.009 | +0.000 | +0.038 | +0.000 | +0.030 | +0.000 | 1/0 |
-| `-4.0 / -6` | -0.044 | -0.024 | +0.000 | +0.071 | +0.000 | +0.034 | +0.000 | 3/0 |
-| `-4.0 / -8` | -0.044 | -0.024 | +0.000 | +0.071 | +0.000 | +0.034 | +0.000 | 3/0 |
-| `-1.5 / -4` | -0.180 | -0.029 | +0.000 | +0.038 | +0.000 | +0.010 | +0.000 | 1/0 |
+| `-3.0 / -4` | 0.262 | +0.009 | +0.000 | +0.074 | +0.000 | +0.043 | +0.000 | 3/0 |
+| `-3.0 / -6` | 0.262 | +0.009 | +0.000 | +0.074 | +0.000 | +0.043 | +0.000 | 3/0 |
+| `-2.0 / -4` | 0.139 | +0.009 | +0.000 | +0.039 | +0.000 | +0.030 | +0.000 | 1/0 |
+| `-2.0 / -6` | 0.139 | +0.009 | +0.000 | +0.039 | +0.000 | +0.030 | +0.000 | 1/0 |
+| `-4.0 / -6` | -0.039 | -0.024 | +0.000 | +0.074 | +0.000 | +0.033 | +0.000 | 3/0 |
+| `-4.0 / -8` | -0.039 | -0.024 | +0.000 | +0.074 | +0.000 | +0.033 | +0.000 | 3/0 |
+| `-1.5 / -4` | -0.179 | -0.029 | +0.000 | +0.039 | +0.000 | +0.009 | +0.000 | 1/0 |
 
-Best current combo: `-3.0` edge / `-4` confidence. Reserve deltas were `+0.009` and `+0.000`. Current deltas were `+0.071` and `+0.000`. Combined deltas were `+0.043` and `+0.000`.
+Best current combo: `-3.0` edge / `-4` confidence. Reserve deltas were `+0.009` and `+0.000`. Current deltas were `+0.074` and `+0.000`. Combined deltas were `+0.043` and `+0.000`.
 
 ### Combined hidden-edge haircut
 | Haircut | Score | Reserve 10+ Δ | Reserve 60+ Δ | Current 10+ Δ | Current 60+ Δ | Combined 10+ Δ | Combined 60+ Δ | Current removed (edge/conf) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `-3.0 / -6` | 0.306 | +0.009 | +0.022 | +0.071 | +0.000 | +0.043 | +0.011 | 3/0 |
-| `-3.0 / -4` | 0.256 | +0.009 | +0.000 | +0.071 | +0.000 | +0.043 | +0.000 | 3/0 |
-| `-2.0 / -6` | 0.187 | +0.009 | +0.022 | +0.038 | +0.000 | +0.030 | +0.011 | 1/0 |
-| `-2.0 / -4` | 0.137 | +0.009 | +0.000 | +0.038 | +0.000 | +0.030 | +0.000 | 1/0 |
-| `-4.0 / -8` | 0.053 | -0.024 | +0.047 | +0.062 | +0.000 | +0.024 | +0.023 | 4/0 |
-| `-4.0 / -6` | -0.003 | -0.024 | +0.022 | +0.062 | +0.000 | +0.024 | +0.011 | 4/0 |
-| `-1.5 / -4` | -0.180 | -0.029 | +0.000 | +0.038 | +0.000 | +0.010 | +0.000 | 1/0 |
+| `-3.0 / -6` | 0.313 | +0.009 | +0.022 | +0.074 | +0.000 | +0.043 | +0.012 | 3/0 |
+| `-3.0 / -4` | 0.262 | +0.009 | +0.000 | +0.074 | +0.000 | +0.043 | +0.000 | 3/0 |
+| `-2.0 / -6` | 0.190 | +0.009 | +0.022 | +0.039 | +0.000 | +0.030 | +0.012 | 1/0 |
+| `-2.0 / -4` | 0.139 | +0.009 | +0.000 | +0.039 | +0.000 | +0.030 | +0.000 | 1/0 |
+| `-4.0 / -8` | 0.053 | -0.024 | +0.047 | +0.062 | +0.000 | +0.023 | +0.024 | 4/0 |
+| `-4.0 / -6` | -0.002 | -0.024 | +0.022 | +0.062 | +0.000 | +0.023 | +0.012 | 4/0 |
+| `-1.5 / -4` | -0.179 | -0.029 | +0.000 | +0.039 | +0.000 | +0.009 | +0.000 | 1/0 |
 
-Best current combo: `-3.0` edge / `-6` confidence. Reserve deltas were `+0.009` and `+0.022`. Current deltas were `+0.071` and `+0.000`. Combined deltas were `+0.043` and `+0.011`.
+Best current combo: `-3.0` edge / `-6` confidence. Reserve deltas were `+0.009` and `+0.022`. Current deltas were `+0.074` and `+0.000`. Combined deltas were `+0.043` and `+0.012`.
 
 ## Early Read
 1. These tables are finally measuring the behaviors we were missing: whether bad early swing quality persists, how often advantages actually hold, and how quickly recent form breaks or carries.

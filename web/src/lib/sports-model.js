@@ -393,7 +393,10 @@ const buildMlbResearchVetoFlags = ({
   pickIsMarketFavorite,
   pickIsMarketUnderdog,
   pickLineupConversionIndex,
+  pickDeadBatTrafficRate,
   pickBullpenMistakeChaos,
+  oppBullpenMistakeChaos,
+  pickTeamRunClustering,
   pickTeamMistakeChaos,
   oppTeamMistakeChaos
 }) => {
@@ -411,7 +414,20 @@ const buildMlbResearchVetoFlags = ({
     Number.isFinite(pickBullpenMistakeChaos) &&
     pickBullpenMistakeChaos >= 50
 
-  const marketDogOpponentChaosGapFlag =
+  const deadEarlyRiskFlag =
+    Number.isFinite(pickLineupConversionIndex) &&
+    pickLineupConversionIndex <= 35 &&
+    Number.isFinite(pickDeadBatTrafficRate) &&
+    pickDeadBatTrafficRate >= 0.3
+
+  const clusterBullpenTrapFlag =
+    Number.isFinite(pickTeamRunClustering) &&
+    pickTeamRunClustering >= 70 &&
+    Number.isFinite(oppBullpenMistakeChaos) &&
+    Number.isFinite(pickBullpenMistakeChaos) &&
+    oppBullpenMistakeChaos - pickBullpenMistakeChaos >= 8
+
+  const protectedMarketDogFlag =
     pickIsMarketUnderdog === true &&
     Number.isFinite(pickTeamMistakeChaos) &&
     Number.isFinite(oppTeamMistakeChaos) &&
@@ -421,14 +437,160 @@ const buildMlbResearchVetoFlags = ({
 
   if (heavyFavoriteWeakLineupFlag) researchOnlyVetoFlags.push('heavyFavoriteWeakLineup')
   if (heavyFavoriteNoisyBullpenFlag) researchOnlyVetoFlags.push('heavyFavoriteNoisyBullpen')
-  if (marketDogOpponentChaosGapFlag) researchOnlyVetoFlags.push('marketDogOpponentChaosGap')
+  if (deadEarlyRiskFlag) researchOnlyVetoFlags.push('deadEarlyRisk')
+  if (clusterBullpenTrapFlag) researchOnlyVetoFlags.push('clusterBullpenTrap')
 
   return {
     heavyFavoriteWeakLineupFlag,
     heavyFavoriteNoisyBullpenFlag,
-    marketDogOpponentChaosGapFlag,
+    deadEarlyRiskFlag,
+    clusterBullpenTrapFlag,
+    protectedMarketDogFlag,
+    marketDogOpponentChaosGapFlag: protectedMarketDogFlag,
     researchOnlyVetoFlags,
     researchOnlyVetoFlagCount: researchOnlyVetoFlags.length
+  }
+}
+
+const buildMlbEfficientFavoriteLane = ({
+  marketProbability,
+  pickIsMarketFavorite,
+  confidence,
+  volatility,
+  modelEdge,
+  starterLeverageIndex,
+  lateInningStabilityIndex,
+  reliefPitchingRisk,
+  favoredSignalCount,
+  tierOneRiskPoints,
+  tierOnePassFlag,
+  riskFlags,
+  researchOnlyVetoFlagCount,
+  pickLineupConversionIndex,
+  pickDeadBatTrafficRate,
+  pickBullpenMistakeChaos
+}) => {
+  const positiveReasons = []
+  const penaltyFlags = []
+  const blockers = []
+  let score = 0
+
+  if (pickIsMarketFavorite !== true) blockers.push('notMarketFavorite')
+  if (researchOnlyVetoFlagCount > 0) blockers.push('vetoActive')
+  if (tierOnePassFlag) blockers.push('tierOnePass')
+  if (!Number.isFinite(marketProbability) || marketProbability < 0.54) blockers.push('notPricedFavorite')
+  if (Number.isFinite(marketProbability) && marketProbability > 0.66) blockers.push('tooExpensive')
+
+  if (Number.isFinite(marketProbability) && marketProbability >= 0.54 && marketProbability <= 0.63) {
+    positiveReasons.push('moderateFavoritePrice')
+    score += 18
+  } else if (
+    Number.isFinite(marketProbability) &&
+    marketProbability > 0.63 &&
+    marketProbability <= 0.66
+  ) {
+    positiveReasons.push('favoritePriceStillPlayable')
+    score += 8
+  }
+
+  if (starterLeverageIndex >= 78) {
+    positiveReasons.push('starterControl')
+    score += 16
+  }
+
+  if (lateInningStabilityIndex >= 54 && reliefPitchingRisk <= 48) {
+    positiveReasons.push('lateHoldSupport')
+    score += 14
+  }
+
+  if (
+    Number.isFinite(pickLineupConversionIndex) &&
+    pickLineupConversionIndex >= 46 &&
+    Number.isFinite(pickDeadBatTrafficRate) &&
+    pickDeadBatTrafficRate <= 0.18
+  ) {
+    positiveReasons.push('lineupConversionSupport')
+    score += 14
+  }
+
+  if (favoredSignalCount >= 7) {
+    positiveReasons.push('broadSupport')
+    score += 10
+  }
+
+  if (confidence >= 64 && modelEdge >= 6) {
+    positiveReasons.push('modelAgreement')
+    score += 12
+  }
+
+  if (volatility > 70) {
+    penaltyFlags.push('highVolatility')
+    score -= 8
+  }
+
+  if (tierOneRiskPoints >= 3) {
+    penaltyFlags.push('stackedRisk')
+    score -= 12
+  }
+
+  if (riskFlags.includes('statefulOpponentSnapback')) {
+    penaltyFlags.push('opponentSnapback')
+    score -= 12
+  }
+
+  if (riskFlags.includes('starterLateFragility')) {
+    penaltyFlags.push('lateFragility')
+    score -= 8
+  }
+
+  if (riskFlags.includes('expensiveFavoriteDanger')) {
+    penaltyFlags.push('expensiveFavorite')
+    score -= 10
+  }
+
+  if (Number.isFinite(pickBullpenMistakeChaos) && pickBullpenMistakeChaos >= 48) {
+    penaltyFlags.push('noisyBullpen')
+    score -= 8
+  }
+
+  if (Number.isFinite(pickLineupConversionIndex) && pickLineupConversionIndex < 40) {
+    penaltyFlags.push('weakConversion')
+    score -= 10
+  }
+
+  if (Number.isFinite(pickDeadBatTrafficRate) && pickDeadBatTrafficRate >= 0.26) {
+    penaltyFlags.push('deadEarlyShape')
+    score -= 8
+  }
+
+  if (confidence < 60) {
+    penaltyFlags.push('thinModelAgreement')
+    score -= 6
+  }
+
+  if (starterLeverageIndex < 70) {
+    penaltyFlags.push('starterNotClean')
+    score -= 8
+  }
+
+  if (lateInningStabilityIndex < 48) {
+    penaltyFlags.push('lateNotClean')
+    score -= 8
+  }
+
+  const roundedScore = Math.round(score)
+  const candidateFlag =
+    blockers.length === 0 && positiveReasons.length >= 3 && roundedScore >= 40
+  const laneTier =
+    roundedScore >= 58 ? 'Efficient core' : roundedScore >= 46 ? 'Efficient favorite' : 'Watch favorite'
+
+  return {
+    candidateFlag,
+    score: roundedScore,
+    laneTier,
+    positiveReasons,
+    penaltyFlags,
+    blockers
   }
 }
 
@@ -1874,11 +2036,14 @@ const buildFirstInningRunProfile = ({
   lineupProfile = null,
   hitterState = null,
   teamState = null,
-  opposingStarter = null,
-  opposingStarterHoldConfidence = null,
+  teamFirstInningProfile = null,
+  teamSeriesEarlyProfile = null,
+  opposingSeriesEarlyProfile = null,
+  opposingTeamFirstInningProfile = null,
+  opposingPitcherFirstInningProfile = null,
   weatherProfile = null
 }) => {
-  if (!projectedRunProfile || !Number.isFinite(projectedRunProfile.first5Runs)) {
+  if (!projectedRunProfile && !teamFirstInningProfile && !opposingPitcherFirstInningProfile) {
     return {
       projectedRuns: null,
       runProbability: null,
@@ -1897,59 +2062,189 @@ const buildFirstInningRunProfile = ({
   const firstInningJoltCountLast5 = Number(teamState?.firstInningJoltCountLast5 ?? 0)
   const quietFirst5CountLast5 = Number(teamState?.quietFirst5CountLast5 ?? 0)
   const snapbackPressureIndex = Number(teamState?.snapbackPressureIndex ?? 50)
-  const starterHoldConfidence = Number(opposingStarterHoldConfidence)
-  const starterWhip = Number(opposingStarter?.whip)
-  const starterBbPerNine = Number(opposingStarter?.bbPerNine)
-  const starterHrPerNine = Number(opposingStarter?.hrPerNine)
+  const teamScoredRate = Number(teamFirstInningProfile?.scoredFirstInningRate)
+  const teamScorelessRate = Number(teamFirstInningProfile?.scorelessFirstInningRate)
+  const teamRunsPerGame = Number(teamFirstInningProfile?.firstInningRunsPerGame)
+  const teamMultiRunRate = Number(teamFirstInningProfile?.firstInningMultiRunRate)
+  const teamScoringIndex = Number(teamFirstInningProfile?.firstInningScoringIndex)
+  const opposingTeamAllowedRate = Number(opposingTeamFirstInningProfile?.allowedFirstInningRate)
+  const opposingTeamRunsAllowedPerGame = Number(opposingTeamFirstInningProfile?.firstInningRunsAllowedPerGame)
+  const opposingTeamNrfiRate = Number(opposingTeamFirstInningProfile?.nrfiGameRate)
+  const seriesGamesSample = Number(teamSeriesEarlyProfile?.gamesSample || 0) || 0
+  const seriesScoredRate = Number(teamSeriesEarlyProfile?.scoredFirstInningRate)
+  const seriesAllowedRate = Number(opposingSeriesEarlyProfile?.allowedFirstInningRate)
+  const seriesRunsFirst1PerGame = Number(teamSeriesEarlyProfile?.runsFirst1PerGame)
+  const seriesRunsFirst3PerGame = Number(teamSeriesEarlyProfile?.runsFirst3PerGame)
+  const seriesScorelessFirst3Rate = Number(teamSeriesEarlyProfile?.scorelessFirst3Rate)
+  const seriesTrafficNoConversionRate = Number(teamSeriesEarlyProfile?.trafficNoConversionRate)
+  const opposingPitcherAllowedRate = Number(opposingPitcherFirstInningProfile?.firstInningRunAllowedRate)
+  const opposingPitcherRunsAllowedPerStart = Number(
+    opposingPitcherFirstInningProfile?.firstInningRunsAllowedPerStart
+  )
+  const opposingPitcherStartsSample = Number(opposingPitcherFirstInningProfile?.startsSample || 0) || 0
+  const opposingPitcherFirstBatterReachRate = Number(
+    opposingPitcherFirstInningProfile?.firstBatterReachRate
+  )
+  const opposingPitcherWalkRate = Number(opposingPitcherFirstInningProfile?.firstInningWalkRate)
+  const opposingPitcherHomeRunRate = Number(opposingPitcherFirstInningProfile?.firstInningHomeRunRate)
+  const opposingPitcherCleanRate = Number(opposingPitcherFirstInningProfile?.firstInningCleanRate)
+  const opposingPitcherPressureIndex = Number(
+    opposingPitcherFirstInningProfile?.firstInningPressureIndex
+  )
+  const projectedBaselineRuns = Number.isFinite(projectedRunProfile?.first5Runs)
+    ? projectedRunProfile.first5Runs * 0.19
+    : null
+  const projectedBaselineProbability = Number.isFinite(projectedBaselineRuns)
+    ? 1 - Math.exp(-projectedBaselineRuns)
+    : null
 
-  let share = 0.205
-  share += Math.max(topThirdScore - 50, 0) * 0.0018
-  share += Math.max(starterPressureIndex - 50, 0) * 0.0014
-  share += Math.max(overallPressureIndex - 50, 0) * 0.0008
-  share += Math.max(pitchTypePressureIndex - 50, 0) * 0.00045
-  share += Math.max(platoonPressureIndex - 50, 0) * 0.00045
-  share += Math.max(top6HeatIndex - 50, 0) * 0.0005
-  share += Math.max(top6PressureIndex - 50, 0) * 0.00055
-  share -= Math.max(top6ColdIndex - 50, 0) * 0.0007
-  share += firstInningJoltCountLast5 * 0.008
-  share -= quietFirst5CountLast5 * 0.006
-  share += Math.max(snapbackPressureIndex - 55, 0) * 0.00035
+  let projectedRunsNumerator = 0
+  let projectedRunsWeight = 0
 
-  if (Number.isFinite(starterHoldConfidence)) {
-    share -= Math.max(starterHoldConfidence - 58, 0) * 0.0015
-    share += Math.max(58 - starterHoldConfidence, 0) * 0.0011
+  if (Number.isFinite(teamRunsPerGame)) {
+    projectedRunsNumerator += teamRunsPerGame * 0.46
+    projectedRunsWeight += 0.46
+  }
+  if (Number.isFinite(opposingPitcherRunsAllowedPerStart)) {
+    projectedRunsNumerator += opposingPitcherRunsAllowedPerStart * 0.28
+    projectedRunsWeight += 0.28
+  }
+  if (Number.isFinite(opposingTeamRunsAllowedPerGame)) {
+    projectedRunsNumerator += opposingTeamRunsAllowedPerGame * 0.18
+    projectedRunsWeight += 0.18
+  }
+  if (Number.isFinite(projectedBaselineRuns)) {
+    projectedRunsNumerator += projectedBaselineRuns * 0.08
+    projectedRunsWeight += 0.08
   }
 
-  if (Number.isFinite(starterWhip)) {
-    share += (starterWhip - 1.22) * 0.055
+  let runProbabilityNumerator = 0
+  let runProbabilityWeight = 0
+  const opposingPitcherReliability = clamp(opposingPitcherStartsSample / 5, 0.2, 1)
+
+  if (Number.isFinite(teamScoredRate)) {
+    runProbabilityNumerator += teamScoredRate * 0.5
+    runProbabilityWeight += 0.5
+  }
+  if (Number.isFinite(opposingPitcherAllowedRate)) {
+    runProbabilityNumerator += opposingPitcherAllowedRate * (0.26 * opposingPitcherReliability)
+    runProbabilityWeight += 0.26 * opposingPitcherReliability
+  }
+  if (Number.isFinite(opposingTeamAllowedRate)) {
+    runProbabilityNumerator += opposingTeamAllowedRate * 0.16
+    runProbabilityWeight += 0.16
+  }
+  if (Number.isFinite(projectedBaselineProbability)) {
+    runProbabilityNumerator += projectedBaselineProbability * 0.08
+    runProbabilityWeight += 0.08
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesScoredRate)) {
+    runProbabilityNumerator += seriesScoredRate * 0.34
+    runProbabilityWeight += 0.34
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesAllowedRate)) {
+    runProbabilityNumerator += seriesAllowedRate * 0.18
+    runProbabilityWeight += 0.18
   }
 
-  if (Number.isFinite(starterBbPerNine)) {
-    share += (starterBbPerNine - 3.0) * 0.008
+  if (!projectedRunsWeight && !runProbabilityWeight) {
+    return {
+      projectedRuns: null,
+      runProbability: null,
+      firstInningShare: null
+    }
   }
 
-  if (Number.isFinite(starterHrPerNine)) {
-    share += (starterHrPerNine - 1.0) * 0.01
+  let projectedRuns =
+    projectedRunsWeight > 0 ? projectedRunsNumerator / projectedRunsWeight : projectedBaselineRuns ?? 0.2
+  let runProbability =
+    runProbabilityWeight > 0 ? runProbabilityNumerator / runProbabilityWeight : projectedBaselineProbability ?? 0.2
+
+  runProbability += Math.max(topThirdScore - 50, 0) * 0.0015
+  runProbability += Math.max(starterPressureIndex - 50, 0) * 0.001
+  runProbability += Math.max(overallPressureIndex - 50, 0) * 0.00045
+  runProbability += Math.max(pitchTypePressureIndex - 50, 0) * 0.00035
+  runProbability += Math.max(platoonPressureIndex - 50, 0) * 0.00035
+  runProbability += Math.max(top6HeatIndex - 50, 0) * 0.0004
+  runProbability += Math.max(top6PressureIndex - 50, 0) * 0.00045
+  runProbability -= Math.max(top6ColdIndex - 50, 0) * 0.00075
+  runProbability += firstInningJoltCountLast5 * 0.005
+  runProbability -= quietFirst5CountLast5 * 0.008
+  runProbability += Math.max(snapbackPressureIndex - 55, 0) * 0.00025
+  runProbability += Number.isFinite(teamMultiRunRate) ? teamMultiRunRate * 0.04 : 0
+  runProbability += Number.isFinite(teamScoringIndex)
+    ? Math.max(teamScoringIndex - 50, 0) * 0.0012
+    : 0
+  runProbability += Number.isFinite(opposingPitcherPressureIndex)
+    ? Math.max(opposingPitcherPressureIndex - 50, 0) * 0.0022 * opposingPitcherReliability
+    : 0
+  runProbability += Number.isFinite(opposingPitcherFirstBatterReachRate)
+    ? Math.max(opposingPitcherFirstBatterReachRate - 0.33, 0) * 0.16 * opposingPitcherReliability
+    : 0
+  runProbability += Number.isFinite(opposingPitcherWalkRate)
+    ? Math.max(opposingPitcherWalkRate - 0.18, 0) * 0.08 * opposingPitcherReliability
+    : 0
+  runProbability += Number.isFinite(opposingPitcherHomeRunRate)
+    ? Math.max(opposingPitcherHomeRunRate - 0.08, 0) * 0.08 * opposingPitcherReliability
+    : 0
+  runProbability -= Number.isFinite(teamScoredRate)
+    ? Math.max(0.25 - teamScoredRate, 0) * 0.55
+    : 0
+  runProbability -= Number.isFinite(teamScorelessRate)
+    ? Math.max(teamScorelessRate - 0.7, 0) * 0.12
+    : 0
+  runProbability -= Number.isFinite(opposingTeamNrfiRate)
+    ? Math.max(opposingTeamNrfiRate - 0.5, 0) * 0.08
+    : 0
+  runProbability -= Number.isFinite(opposingPitcherCleanRate)
+    ? Math.max(opposingPitcherCleanRate - 0.55, 0) * 0.1 * opposingPitcherReliability
+    : 0
+
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesScoredRate)) {
+    runProbability -= Math.max(0.2 - seriesScoredRate, 0) * 0.7
+    if (seriesScoredRate === 0) runProbability -= 0.12
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesRunsFirst1PerGame)) {
+    runProbability -= Math.max(0.35 - seriesRunsFirst1PerGame, 0) * 0.12
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesRunsFirst3PerGame)) {
+    runProbability -= Math.max(0.8 - seriesRunsFirst3PerGame, 0) * 0.07
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesScorelessFirst3Rate)) {
+    runProbability -= Math.max(seriesScorelessFirst3Rate - 0.5, 0) * 0.12
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesTrafficNoConversionRate)) {
+    runProbability -= Math.max(seriesTrafficNoConversionRate - 0.2, 0) * 0.08
   }
 
-  share = clamp(share, 0.12, 0.34)
-
-  let projectedRuns = projectedRunProfile.first5Runs * share
   if (weatherProfile) {
-    projectedRuns *= 1 + (Number(weatherProfile.runBoostFirst5 || 0) * 1.8)
+    projectedRuns *= 1 + (Number(weatherProfile.runBoostFirst5 || 0) * 1.4)
   }
-  projectedRuns = clamp(projectedRuns, 0.05, 1.35)
 
-  let runProbability = 1 - Math.exp(-projectedRuns)
-  runProbability += Math.max(topThirdScore - 60, 0) * 0.002
-  runProbability += Math.max(top6PressureIndex - 60, 0) * 0.0015
-  runProbability -= Math.max(top6ColdIndex - 62, 0) * 0.0018
-  runProbability = clamp(runProbability, 0.06, 0.76)
+  runProbability = clamp(runProbability, 0.04, 0.72)
+  const impliedRunsFromProbability = -Math.log(1 - clamp(runProbability, 0.01, 0.92))
+  projectedRuns = clamp(projectedRuns * 0.55 + impliedRunsFromProbability * 0.45, 0.03, 1.35)
+  const firstInningShare =
+    Number.isFinite(projectedRunProfile?.first5Runs) && projectedRunProfile.first5Runs > 0
+      ? (projectedRuns / projectedRunProfile.first5Runs) * 100
+      : null
 
   return {
     projectedRuns: roundToTenths(projectedRuns),
     runProbability: roundToTenths(runProbability * 100),
-    firstInningShare: roundToTenths(share * 100)
+    firstInningShare: Number.isFinite(firstInningShare) ? roundToTenths(firstInningShare) : null,
+    seriesGamesSample: seriesGamesSample || null,
+    seriesScoredRatePct: Number.isFinite(seriesScoredRate) ? roundToTenths(seriesScoredRate * 100) : null,
+    seriesRunsFirst3PerGame: Number.isFinite(seriesRunsFirst3PerGame)
+      ? roundToTenths(seriesRunsFirst3PerGame)
+      : null,
+    teamScoredRatePct: Number.isFinite(teamScoredRate) ? roundToTenths(teamScoredRate * 100) : null,
+    oppTeamAllowedRatePct: Number.isFinite(opposingTeamAllowedRate)
+      ? roundToTenths(opposingTeamAllowedRate * 100)
+      : null,
+    oppPitcherAllowedRatePct: Number.isFinite(opposingPitcherAllowedRate)
+      ? roundToTenths(opposingPitcherAllowedRate * 100)
+      : null
   }
 }
 
@@ -1973,11 +2268,21 @@ const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) 
     }
   }
 
-  const yrfiProbability = clamp(
-    1 - (1 - awayProbability) * (1 - homeProbability),
-    0.08,
-    0.92
-  )
+  let yrfiProbability = clamp(1 - (1 - awayProbability) * (1 - homeProbability), 0.08, 0.92)
+
+  const awaySeriesDeadEarly =
+    Number(awayProfile?.seriesGamesSample || 0) >= 2 &&
+    Number(awayProfile?.seriesScoredRatePct || 0) === 0 &&
+    Number(awayProfile?.seriesRunsFirst3PerGame || 0) <= 0.5
+  const homeSeriesDeadEarly =
+    Number(homeProfile?.seriesGamesSample || 0) >= 2 &&
+    Number(homeProfile?.seriesScoredRatePct || 0) === 0 &&
+    Number(homeProfile?.seriesRunsFirst3PerGame || 0) <= 0.5
+
+  if (awaySeriesDeadEarly && homeSeriesDeadEarly) {
+    yrfiProbability = Math.min(yrfiProbability, 0.42)
+  }
+
   const nrfiProbability = 1 - yrfiProbability
   const pick = yrfiProbability >= 0.5 ? 'YRFI' : 'NRFI'
   const pickedProbability = pick === 'YRFI' ? yrfiProbability : nrfiProbability
@@ -1994,6 +2299,10 @@ const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) 
     noProbabilityPct: roundToTenths(nrfiProbability * 100),
     awayRunProbabilityPct: awayProfile.runProbability,
     homeRunProbabilityPct: homeProfile.runProbability,
+    awayTeamScoredRatePct: awayProfile.teamScoredRatePct ?? null,
+    homeTeamScoredRatePct: homeProfile.teamScoredRatePct ?? null,
+    awayOppPitcherAllowedRatePct: awayProfile.oppPitcherAllowedRatePct ?? null,
+    homeOppPitcherAllowedRatePct: homeProfile.oppPitcherAllowedRatePct ?? null,
     awayProjectedRuns: awayProfile.projectedRuns,
     homeProjectedRuns: homeProfile.projectedRuns,
     projectedRuns: roundToTenths(
@@ -2743,8 +3052,16 @@ const buildMlbAnalysisContext = (game, participants) => {
             index === 0 ? game.stateContext?.hitterState?.away : game.stateContext?.hitterState?.home,
           teamState:
             index === 0 ? game.stateContext?.teamState?.away : game.stateContext?.teamState?.home,
-          opposingStarter: starters[index === 0 ? 1 : 0],
-          opposingStarterHoldConfidence: starterHoldConfidence[index === 0 ? 1 : 0],
+          teamFirstInningProfile:
+            index === 0 ? game.stateContext?.firstInningTeam?.away : game.stateContext?.firstInningTeam?.home,
+          teamSeriesEarlyProfile:
+            index === 0 ? game.stateContext?.seriesEarlyPhase?.away : game.stateContext?.seriesEarlyPhase?.home,
+          opposingSeriesEarlyProfile:
+            index === 0 ? game.stateContext?.seriesEarlyPhase?.home : game.stateContext?.seriesEarlyPhase?.away,
+          opposingTeamFirstInningProfile:
+            index === 0 ? game.stateContext?.firstInningTeam?.home : game.stateContext?.firstInningTeam?.away,
+          opposingPitcherFirstInningProfile:
+            index === 0 ? game.stateContext?.firstInningPitcher?.home : game.stateContext?.firstInningPitcher?.away,
           weatherProfile
         })
       )
@@ -3572,6 +3889,10 @@ const buildMlbDecisionIndicators = ({
   const opponentTeamScorelessFirst3Rate = Number(opponentTeamMistakeShape?.scorelessFirst3Rate)
   const pickLineupConversionIndex = Number(pickLineupConversionShape?.lineupConversionIndex)
   const opponentLineupConversionIndex = Number(opponentLineupConversionShape?.lineupConversionIndex)
+  const pickDeadBatTrafficRate = Number(pickLineupConversionShape?.deadBatTrafficRate)
+  const opponentDeadBatTrafficRate = Number(opponentLineupConversionShape?.deadBatTrafficRate)
+  const pickTrafficNoConversionRate = Number(pickLineupConversionShape?.trafficNoConversionRate)
+  const opponentTrafficNoConversionRate = Number(opponentLineupConversionShape?.trafficNoConversionRate)
   const pickQuietFirst5Rate = Number(pickLineupConversionShape?.quietFirst5Rate)
   const opponentQuietFirst5Rate = Number(opponentLineupConversionShape?.quietFirst5Rate)
   const pickBullpenMistakeChaos = Number(pickBullpenMistakeShape?.bullpenChaosIndex)
@@ -3979,6 +4300,18 @@ const buildMlbDecisionIndicators = ({
     oppLineupConversionIndex: Number.isFinite(opponentLineupConversionIndex)
       ? roundToTenths(opponentLineupConversionIndex)
       : null,
+    pickDeadBatTrafficRate: Number.isFinite(pickDeadBatTrafficRate)
+      ? roundToTenths(pickDeadBatTrafficRate)
+      : null,
+    oppDeadBatTrafficRate: Number.isFinite(opponentDeadBatTrafficRate)
+      ? roundToTenths(opponentDeadBatTrafficRate)
+      : null,
+    pickTrafficNoConversionRate: Number.isFinite(pickTrafficNoConversionRate)
+      ? roundToTenths(pickTrafficNoConversionRate)
+      : null,
+    oppTrafficNoConversionRate: Number.isFinite(opponentTrafficNoConversionRate)
+      ? roundToTenths(opponentTrafficNoConversionRate)
+      : null,
     pickQuietFirst5Rate: Number.isFinite(pickQuietFirst5Rate)
       ? roundToTenths(pickQuietFirst5Rate)
       : null,
@@ -4251,15 +4584,41 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           pickIsMarketFavorite,
           pickIsMarketUnderdog,
           pickLineupConversionIndex: mlbIndicators.pickLineupConversionIndex,
+          pickDeadBatTrafficRate: mlbIndicators.pickDeadBatTrafficRate,
           pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos,
+          oppBullpenMistakeChaos: mlbIndicators.oppBullpenMistakeChaos,
+          pickTeamRunClustering: mlbIndicators.pickTeamRunClustering,
           pickTeamMistakeChaos: mlbIndicators.pickTeamMistakeChaos,
           oppTeamMistakeChaos: mlbIndicators.oppTeamMistakeChaos
         })
       : null
+  const efficientFavoriteLane =
+    game.league === 'MLB' && mlbIndicators
+      ? buildMlbEfficientFavoriteLane({
+          marketProbability: marketSupport,
+          pickIsMarketFavorite,
+          confidence: tierOneControls?.adjustedConfidence ?? confidence,
+          volatility: tierOneControls?.adjustedVolatility ?? volatility,
+          modelEdge: tierOneControls?.adjustedModelEdge ?? modelEdge,
+          starterLeverageIndex: mlbIndicators.starterLeverageIndex,
+          lateInningStabilityIndex: mlbIndicators.lateInningStabilityIndex,
+          reliefPitchingRisk: mlbIndicators.reliefPitchingRisk,
+          favoredSignalCount,
+          tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,
+          tierOnePassFlag: Boolean(tierOneControls?.passFlag),
+          riskFlags: tierOneControls?.riskFlags ?? [],
+          researchOnlyVetoFlagCount: researchVetoFlags?.researchOnlyVetoFlagCount ?? 0,
+          pickLineupConversionIndex: mlbIndicators.pickLineupConversionIndex,
+          pickDeadBatTrafficRate: mlbIndicators.pickDeadBatTrafficRate,
+          pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos
+        })
+      : null
+  const vetoPassFlag = Number(researchVetoFlags?.researchOnlyVetoFlagCount || 0) > 0
   const finalConfidence = tierOneControls?.adjustedConfidence ?? confidence
   const finalVolatility = tierOneControls?.adjustedVolatility ?? volatility
   const finalModelEdge = tierOneControls?.adjustedModelEdge ?? modelEdge
-  const finalTier = tierOneControls?.selectionTier ?? getAnalysisTier(finalConfidence, finalVolatility)
+  const computedTier = tierOneControls?.selectionTier ?? getAnalysisTier(finalConfidence, finalVolatility)
+  const finalTier = vetoPassFlag ? 'Pass' : computedTier
   const finalRecommendationScore = Math.round(
     finalConfidence * structuredRecommendationWeight.confidence +
       (100 - finalVolatility) * structuredRecommendationWeight.stability +
@@ -4327,6 +4686,10 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           oppTeamScorelessFirst3Rate: mlbIndicators.oppTeamScorelessFirst3Rate,
           pickLineupConversionIndex: mlbIndicators.pickLineupConversionIndex,
           oppLineupConversionIndex: mlbIndicators.oppLineupConversionIndex,
+          pickDeadBatTrafficRate: mlbIndicators.pickDeadBatTrafficRate,
+          oppDeadBatTrafficRate: mlbIndicators.oppDeadBatTrafficRate,
+          pickTrafficNoConversionRate: mlbIndicators.pickTrafficNoConversionRate,
+          oppTrafficNoConversionRate: mlbIndicators.oppTrafficNoConversionRate,
           pickQuietFirst5Rate: mlbIndicators.pickQuietFirst5Rate,
           oppQuietFirst5Rate: mlbIndicators.oppQuietFirst5Rate,
           pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos,
@@ -4353,11 +4716,22 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           tierThreeSuggestedConfidenceHaircut: mlbIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,
           projectedHitEdgeForPick: mlbIndicators.projectedHitEdgeForPick,
           hitEdgeAgainstPick: mlbIndicators.hitEdgeAgainstPick,
+          pickIsMarketFavorite,
+          pickIsMarketUnderdog,
           heavyFavoriteWeakLineupFlag: Boolean(researchVetoFlags?.heavyFavoriteWeakLineupFlag),
           heavyFavoriteNoisyBullpenFlag: Boolean(researchVetoFlags?.heavyFavoriteNoisyBullpenFlag),
+          deadEarlyRiskFlag: Boolean(researchVetoFlags?.deadEarlyRiskFlag),
+          clusterBullpenTrapFlag: Boolean(researchVetoFlags?.clusterBullpenTrapFlag),
+          protectedMarketDogFlag: Boolean(researchVetoFlags?.protectedMarketDogFlag),
           marketDogOpponentChaosGapFlag: Boolean(researchVetoFlags?.marketDogOpponentChaosGapFlag),
           researchOnlyVetoFlags: researchVetoFlags?.researchOnlyVetoFlags ?? [],
           researchOnlyVetoFlagCount: researchVetoFlags?.researchOnlyVetoFlagCount ?? 0,
+          efficientFavoriteCandidateFlag: Boolean(efficientFavoriteLane?.candidateFlag),
+          efficientFavoriteScore: efficientFavoriteLane?.score ?? null,
+          efficientFavoriteTier: efficientFavoriteLane?.laneTier ?? null,
+          efficientFavoriteReasons: efficientFavoriteLane?.positiveReasons ?? [],
+          efficientFavoritePenaltyFlags: efficientFavoriteLane?.penaltyFlags ?? [],
+          efficientFavoriteBlockers: efficientFavoriteLane?.blockers ?? [],
           tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,
           tierOnePassFlag: Boolean(tierOneControls?.passFlag),
           tierOneRiskFlags: tierOneControls?.riskFlags ?? [],
@@ -4580,6 +4954,87 @@ export const rankAnalysisPicks = (games) =>
         game
       }
     })
+
+const efficientFavoriteReasonText = {
+  moderateFavoritePrice: 'moderate favorite price',
+  favoritePriceStillPlayable: 'still-playable favorite price',
+  starterControl: 'clean starter control',
+  lateHoldSupport: 'stable late hold',
+  lineupConversionSupport: 'lineup conversion support',
+  broadSupport: 'broad signal support',
+  modelAgreement: 'model agreement'
+}
+
+export const rankEfficientFavoritePicks = (games) =>
+  games
+    .filter((game) => game.analysis?.available && game.moneyline?.available)
+    .map((game) => {
+      const analysis = game.analysis ?? {}
+      const indicatorSet = analysis.indicators ?? {}
+
+      if (!indicatorSet.efficientFavoriteCandidateFlag) return null
+
+      const favoriteAndDog = getFavoriteAndUnderdog(game)
+
+      if (!favoriteAndDog) return null
+
+      const { favorite, underdog } = favoriteAndDog
+
+      if (analysis.participantId !== favorite.id) return null
+
+      const reasonLabels = (indicatorSet.efficientFavoriteReasons ?? [])
+        .map((code) => efficientFavoriteReasonText[code] ?? code)
+      const rationale =
+        reasonLabels.length > 0
+          ? `${favorite.name} qualify as an efficient favorite because the lane is supported by ${reasonLabels.join(', ')}.`
+          : `${favorite.name} qualify as an efficient favorite on the current board.`
+
+      return {
+        gameId: game.id,
+        league: game.league,
+        gameTitle: game.title,
+        start: game.start,
+        stage: game.stage,
+        confidence: analysis.confidence,
+        volatility: analysis.volatility,
+        recommendationScore: indicatorSet.efficientFavoriteScore ?? analysis.recommendationScore ?? 0,
+        tier: indicatorSet.efficientFavoriteTier ?? 'Efficient favorite',
+        participantId: favorite.id,
+        participant: favorite,
+        opponent: underdog,
+        lean: `Efficient favorite: ${favorite.name} have enough clean support to justify a favorite ticket here.`,
+        rationale,
+        modelEdge: analysis.modelEdge,
+        modelEdgeLabel: analysis.modelEdgeLabel,
+        marketProbabilityLabel: favorite.impliedProbabilityLabel,
+        inputSummaries: analysis.inputs,
+        efficientFavoriteScore: indicatorSet.efficientFavoriteScore ?? 0,
+        efficientFavoriteReasons: indicatorSet.efficientFavoriteReasons ?? [],
+        efficientFavoritePenaltyFlags: indicatorSet.efficientFavoritePenaltyFlags ?? [],
+        efficientFavoriteBlockers: indicatorSet.efficientFavoriteBlockers ?? [],
+        game
+      }
+    })
+    .filter(Boolean)
+    .sort((left, right) => {
+      if (right.efficientFavoriteScore !== left.efficientFavoriteScore) {
+        return right.efficientFavoriteScore - left.efficientFavoriteScore
+      }
+
+      if (right.confidence !== left.confidence) {
+        return right.confidence - left.confidence
+      }
+
+      if (left.volatility !== right.volatility) {
+        return left.volatility - right.volatility
+      }
+
+      return right.recommendationScore - left.recommendationScore
+    })
+    .map((pick, index) => ({
+      ...pick,
+      rank: index + 1
+    }))
 
 const getFavoriteAndUnderdog = (game) => {
   const participants = game.moneyline?.participants?.filter((participant) =>

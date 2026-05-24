@@ -7,8 +7,8 @@ This is a separate first-five research lane built on the new state snapshots, no
 | Window | Picks | Strict hit rate | Decision-only hit rate | Push rate | Avg edge | Avg starter leverage |
 | --- | --- | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.600 | 0.703 | 0.147 | 6.3 | 59.9 |
-| Current (`05-16` to `05-22`) | 93 | 0.441 | 0.539 | 0.183 | 7.0 | 71.9 |
-| Combined | 168 | 0.512 | 0.614 | 0.167 | 6.7 | 66.5 |
+| Current (`05-16` to `05-22`) | 93 | 0.441 | 0.539 | 0.183 | 6.6 | 71.9 |
+| Combined | 168 | 0.512 | 0.614 | 0.167 | 6.5 | 66.5 |
 
 ## First-Five Buckets
 
@@ -22,9 +22,9 @@ This is a separate first-five research lane built on the new state snapshots, no
 ### Point Edge Buckets
 | Bucket | Picks | Strict | Decision-only | Push rate |
 | --- | --- | --- | --- | --- |
-| `<8` | 105 | 0.495 | 0.598 | 0.171 |
-| `8-11.9` | 37 | 0.486 | 0.600 | 0.189 |
-| `12+` | 26 | 0.615 | 0.696 | 0.115 |
+| `<8` | 111 | 0.486 | 0.593 | 0.180 |
+| `8-11.9` | 32 | 0.531 | 0.630 | 0.156 |
+| `12+` | 25 | 0.600 | 0.682 | 0.120 |
 
 ### Opponent Snapback Buckets
 | Bucket | Picks | Strict | Decision-only | Push rate |
@@ -42,8 +42,8 @@ Eligible if `pointEdge >= 8 && starter leverage >= 72 && opponent snapback < 50 
 | Window | Picks | Strict hit rate | Decision-only hit rate | Push rate | Pushes |
 | --- | --- | --- | --- | --- | --- |
 | Reserve | 7 | 0.571 | 0.571 | 0.000 | 0 |
-| Current | 18 | 0.556 | 0.625 | 0.111 | 2 |
-| Combined | 25 | 0.560 | 0.609 | 0.080 | 2 |
+| Current | 16 | 0.500 | 0.571 | 0.125 | 2 |
+| Combined | 23 | 0.522 | 0.571 | 0.087 | 2 |
 
 Note: This is the first attempt at a true first-five play lane: strong starter window, no obvious bounceback trap, and lower top-order stress.
 
@@ -54,8 +54,8 @@ Flag if `pointEdge < 8 && starter leverage < 72`
 | Window | Picks | Strict hit rate | Decision-only hit rate | Push rate | Pushes |
 | --- | --- | --- | --- | --- | --- |
 | Reserve | 48 | 0.625 | 0.732 | 0.146 | 7 |
-| Current | 37 | 0.351 | 0.448 | 0.216 | 8 |
-| Combined | 85 | 0.506 | 0.614 | 0.176 | 15 |
+| Current | 38 | 0.342 | 0.433 | 0.211 | 8 |
+| Combined | 86 | 0.500 | 0.606 | 0.174 | 15 |
 
 Note: This is the simplest tie-prone lane: not enough early edge and not enough starter separation.
 
@@ -66,8 +66,8 @@ Flag if `pointEdge >= 8 && opponent snapback >= 50 && opponent loss streak >= 2`
 | Window | Picks | Strict hit rate | Decision-only hit rate | Push rate | Pushes |
 | --- | --- | --- | --- | --- | --- |
 | Reserve | 8 | 0.500 | 0.667 | 0.250 | 2 |
-| Current | 16 | 0.438 | 0.636 | 0.312 | 5 |
-| Combined | 24 | 0.458 | 0.647 | 0.292 | 7 |
+| Current | 13 | 0.538 | 0.700 | 0.231 | 3 |
+| Combined | 21 | 0.524 | 0.688 | 0.238 | 5 |
 
 Note: This tests whether first five is overfading bounceback teams in the early innings too.
 
@@ -109,17 +109,17 @@ Note: This is the same-series, different-state problem specifically for the star
 
 | Lane | Picks | Strict hit rate | Decision-only hit rate | Push rate |
 | --- | --- | --- | --- | --- |
-| Lean | 20 | 0.500 | 0.588 | 0.150 |
-| Watch | 55 | 0.418 | 0.500 | 0.164 |
-| Pass | 18 | 0.444 | 0.615 | 0.278 |
+| Lean | 17 | 0.471 | 0.571 | 0.176 |
+| Watch | 61 | 0.410 | 0.500 | 0.180 |
+| Pass | 15 | 0.533 | 0.667 | 0.200 |
 
 ### Combined
 
 | Lane | Picks | Strict hit rate | Decision-only hit rate | Push rate |
 | --- | --- | --- | --- | --- |
-| Lean | 33 | 0.576 | 0.633 | 0.091 |
-| Watch | 108 | 0.500 | 0.600 | 0.167 |
-| Pass | 27 | 0.481 | 0.650 | 0.259 |
+| Lean | 30 | 0.567 | 0.630 | 0.100 |
+| Watch | 114 | 0.491 | 0.596 | 0.175 |
+| Pass | 24 | 0.542 | 0.684 | 0.208 |
 
 ### Current classifier read
 

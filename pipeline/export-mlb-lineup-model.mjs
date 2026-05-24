@@ -554,8 +554,15 @@ const buildScheduleMap = (scheduleDates = []) => {
       const homeOfficial = game.teams?.home?.team?.name
       if (!awayOfficial || !homeOfficial) continue
 
+      const gamePk = Number(game.gamePk || 0) || null
+      if (Number.isFinite(gamePk)) {
+        scheduleMap.set(`pk:${gamePk}`, game)
+      }
+
       const key = `${awayOfficial} @ ${homeOfficial}`
-      scheduleMap.set(key, game)
+      if (!scheduleMap.has(key)) {
+        scheduleMap.set(key, game)
+      }
     }
   }
 
@@ -1561,17 +1568,13 @@ const main = async () => {
   const scheduleMap = buildScheduleMap(schedule.dates || [])
   const rotoWireCards = await fetchRotoWireLineupCards()
 
-  const rawGamesByKey = new Map(
-    rawGames.map((game) => [
-      `${deskToOfficialTeam[game.away] || game.away} @ ${deskToOfficialTeam[game.home] || game.home}`,
-      game
-    ])
-  )
-
   const feedRecords = []
 
-  for (const [officialKey, rawGame] of rawGamesByKey.entries()) {
-    const scheduleGame = scheduleMap.get(officialKey)
+  for (const rawGame of rawGames) {
+    const officialKey = `${deskToOfficialTeam[rawGame.away] || rawGame.away} @ ${deskToOfficialTeam[rawGame.home] || rawGame.home}`
+    const scheduleGame =
+      (Number.isFinite(Number(rawGame.gamePk)) ? scheduleMap.get(`pk:${Number(rawGame.gamePk)}`) : null) ||
+      scheduleMap.get(officialKey)
     if (!scheduleGame) continue
 
     const feed = await fetchJson(`https://statsapi.mlb.com/api/v1.1/game/${scheduleGame.gamePk}/feed/live`)

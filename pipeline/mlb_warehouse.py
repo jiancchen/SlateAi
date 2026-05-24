@@ -924,6 +924,50 @@ CREATE TABLE IF NOT EXISTS mlb_lineup_conversion_shape_daily (
   PRIMARY KEY (as_of_date, team_name, window_games)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_team_first_inning_profiles_daily (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  scheduled_series_game_number INTEGER,
+  division_matchup_flag INTEGER,
+  window_games INTEGER NOT NULL,
+  games_sample INTEGER NOT NULL,
+  road_games_sample INTEGER NOT NULL,
+  first_inning_runs_per_game REAL,
+  first_inning_runs_allowed_per_game REAL,
+  scored_first_inning_rate REAL,
+  scoreless_first_inning_rate REAL,
+  allowed_first_inning_rate REAL,
+  first_inning_multi_run_rate REAL,
+  first_inning_multi_run_allowed_rate REAL,
+  nrfi_game_rate REAL,
+  yrfi_game_rate REAL,
+  first_inning_net_edge REAL,
+  first_inning_scoring_index REAL,
+  first_inning_allow_risk_index REAL,
+  PRIMARY KEY (as_of_date, team_name, window_games)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_pitcher_first_inning_profiles_daily (
+  as_of_date TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  window_starts INTEGER NOT NULL,
+  starts_sample INTEGER NOT NULL,
+  first_batter_reach_rate REAL,
+  first_inning_run_allowed_rate REAL,
+  first_inning_runs_allowed_per_start REAL,
+  first_inning_multi_run_allowed_rate REAL,
+  first_inning_baserunners_per_start REAL,
+  first_inning_walk_rate REAL,
+  first_inning_home_run_rate REAL,
+  first_inning_clean_rate REAL,
+  first_inning_pressure_index REAL,
+  PRIMARY KEY (as_of_date, pitcher_id, window_starts)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_game_story_labels (
   game_pk INTEGER PRIMARY KEY,
   game_date TEXT NOT NULL,
@@ -1228,6 +1272,8 @@ EARLY_WHIFF_PITCH_RATE_THRESHOLD = 0.16
 MISTAKE_TEAM_WINDOWS = (8, 15, 30)
 MISTAKE_PITCHER_WINDOWS = (3, 5)
 MISTAKE_BULLPEN_WINDOWS = (7, 14)
+FIRST_INNING_TEAM_WINDOWS = (8, 15, 30)
+FIRST_INNING_PITCHER_WINDOWS = (3, 5)
 
 
 def is_on_base_event(event_type: Any) -> bool:
@@ -4621,6 +4667,231 @@ def build_lineup_conversion_shape_row(
     }
 
 
+def build_recent_team_first_inning_packets(
+    conn: sqlite3.Connection, team_name: str, as_of_date: str, window_games: int
+) -> list[dict[str, Any]]:
+    recent_games = conn.execute(
+        """
+        SELECT
+          phase.game_pk,
+          phase.game_date,
+          phase.runs_first1,
+          phase.scored_first_inning_flag,
+          phase.allowed_first_inning_flag,
+          opp.runs_first1 AS opp_runs_first1,
+          g.away_team,
+          g.home_team
+        FROM mlb_phase_outcomes_daily phase
+        JOIN mlb_phase_outcomes_daily opp
+          ON opp.game_pk = phase.game_pk
+         AND opp.team_name != phase.team_name
+        JOIN mlb_games g
+          ON g.game_pk = phase.game_pk
+        WHERE phase.team_name = ?
+          AND phase.game_date < ?
+        ORDER BY phase.game_date DESC, phase.game_pk DESC
+        LIMIT ?
+        """,
+        (team_name, as_of_date, window_games),
+    ).fetchall()
+
+    packets: list[dict[str, Any]] = []
+    for row in recent_games:
+        runs_first1 = to_int(row["runs_first1"]) or 0
+        opp_runs_first1 = to_int(row["opp_runs_first1"]) or 0
+        packets.append(
+            {
+                "road_game_flag": 1 if row["away_team"] == team_name else 0,
+                "runs_first1": runs_first1,
+                "opp_runs_first1": opp_runs_first1,
+                "scored_first_inning_flag": to_int(row["scored_first_inning_flag"]) or 0,
+                "allowed_first_inning_flag": to_int(row["allowed_first_inning_flag"]) or 0,
+                "first_inning_multi_run_flag": 1 if runs_first1 >= 2 else 0,
+                "first_inning_multi_run_allowed_flag": 1 if opp_runs_first1 >= 2 else 0,
+                "nrfi_flag": 1 if runs_first1 == 0 and opp_runs_first1 == 0 else 0,
+                "yrfi_flag": 1 if runs_first1 > 0 or opp_runs_first1 > 0 else 0,
+                "first_inning_net_runs": runs_first1 - opp_runs_first1,
+            }
+        )
+    return packets
+
+
+def build_team_first_inning_profile_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    window_games: int,
+    packets: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    schedule_context = build_team_schedule_context(conn, as_of_date, team_name)
+    games_sample = len(packets)
+    first_inning_runs_per_game = safe_mean([packet["runs_first1"] for packet in packets])
+    first_inning_runs_allowed_per_game = safe_mean([packet["opp_runs_first1"] for packet in packets])
+    scored_first_inning_rate = safe_mean([packet["scored_first_inning_flag"] for packet in packets])
+    scoreless_first_inning_rate = safe_mean([1 - packet["scored_first_inning_flag"] for packet in packets])
+    allowed_first_inning_rate = safe_mean([packet["allowed_first_inning_flag"] for packet in packets])
+    first_inning_multi_run_rate = safe_mean([packet["first_inning_multi_run_flag"] for packet in packets])
+    first_inning_multi_run_allowed_rate = safe_mean(
+        [packet["first_inning_multi_run_allowed_flag"] for packet in packets]
+    )
+    nrfi_game_rate = safe_mean([packet["nrfi_flag"] for packet in packets])
+    yrfi_game_rate = safe_mean([packet["yrfi_flag"] for packet in packets])
+    first_inning_net_edge = safe_mean([packet["first_inning_net_runs"] for packet in packets])
+    first_inning_scoring_index = clamp_value(
+        34
+        + scored_first_inning_rate * 84
+        + (first_inning_runs_per_game or 0.0) * 34
+        + first_inning_multi_run_rate * 18
+        - scoreless_first_inning_rate * 12,
+        0,
+        100,
+    )
+    first_inning_allow_risk_index = clamp_value(
+        24
+        + allowed_first_inning_rate * 92
+        + (first_inning_runs_allowed_per_game or 0.0) * 38
+        + first_inning_multi_run_allowed_rate * 22
+        + max((yrfi_game_rate or 0.0) - 0.5, 0.0) * 20,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": schedule_context["scheduled_opponent"],
+        "scheduled_series_game_number": schedule_context["scheduled_series_game_number"],
+        "division_matchup_flag": schedule_context["division_matchup_flag"],
+        "window_games": window_games,
+        "games_sample": games_sample,
+        "road_games_sample": sum(packet["road_game_flag"] for packet in packets),
+        "first_inning_runs_per_game": first_inning_runs_per_game,
+        "first_inning_runs_allowed_per_game": first_inning_runs_allowed_per_game,
+        "scored_first_inning_rate": scored_first_inning_rate,
+        "scoreless_first_inning_rate": scoreless_first_inning_rate,
+        "allowed_first_inning_rate": allowed_first_inning_rate,
+        "first_inning_multi_run_rate": first_inning_multi_run_rate,
+        "first_inning_multi_run_allowed_rate": first_inning_multi_run_allowed_rate,
+        "nrfi_game_rate": nrfi_game_rate,
+        "yrfi_game_rate": yrfi_game_rate,
+        "first_inning_net_edge": first_inning_net_edge,
+        "first_inning_scoring_index": first_inning_scoring_index,
+        "first_inning_allow_risk_index": first_inning_allow_risk_index,
+    }
+
+
+def build_pitcher_first_inning_profile_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    scheduled_opponent: str | None,
+    pitcher_id: int,
+    pitcher_name: str,
+    window_starts: int,
+    start_rows: list[sqlite3.Row],
+) -> dict[str, Any] | None:
+    if not start_rows:
+        return None
+
+    start_packets: list[dict[str, Any]] = []
+    for start_row in start_rows:
+        pa_rows = conn.execute(
+            """
+            SELECT at_bat_index, lower(COALESCE(event_type, '')) AS event_type, run_delta
+            FROM mlb_plate_appearances
+            WHERE game_pk = ?
+              AND pitcher_id = ?
+              AND inning = 1
+            ORDER BY at_bat_index
+            """,
+            (start_row["game_pk"], pitcher_id),
+        ).fetchall()
+        if not pa_rows:
+            continue
+
+        first_pa = pa_rows[0]
+        baserunners = 0
+        runs_allowed = 0
+        walk_flag = 0
+        home_run_flag = 0
+
+        for row in pa_rows:
+            event_type = row["event_type"]
+            run_delta = to_int(row["run_delta"]) or 0
+            runs_allowed += run_delta
+            if is_on_base_event(event_type):
+                baserunners += 1
+            if event_type in {"walk", "intent_walk", "hit_by_pitch"}:
+                walk_flag = 1
+            if event_type == "home_run":
+                home_run_flag = 1
+
+        start_packets.append(
+            {
+                "first_batter_reach_flag": 1 if is_on_base_event(first_pa["event_type"]) else 0,
+                "first_inning_run_allowed_flag": 1 if runs_allowed > 0 else 0,
+                "first_inning_multi_run_allowed_flag": 1 if runs_allowed >= 2 else 0,
+                "first_inning_runs_allowed": runs_allowed,
+                "first_inning_baserunners": baserunners,
+                "first_inning_walk_flag": walk_flag,
+                "first_inning_home_run_flag": home_run_flag,
+                "first_inning_clean_flag": 1 if runs_allowed == 0 else 0,
+            }
+        )
+
+    if not start_packets:
+        return None
+
+    starts_sample = len(start_packets)
+    first_batter_reach_rate = safe_mean([packet["first_batter_reach_flag"] for packet in start_packets])
+    first_inning_run_allowed_rate = safe_mean([packet["first_inning_run_allowed_flag"] for packet in start_packets])
+    first_inning_runs_allowed_per_start = safe_mean([packet["first_inning_runs_allowed"] for packet in start_packets])
+    first_inning_multi_run_allowed_rate = safe_mean(
+        [packet["first_inning_multi_run_allowed_flag"] for packet in start_packets]
+    )
+    first_inning_baserunners_per_start = safe_mean(
+        [packet["first_inning_baserunners"] for packet in start_packets]
+    )
+    first_inning_walk_rate = safe_mean([packet["first_inning_walk_flag"] for packet in start_packets])
+    first_inning_home_run_rate = safe_mean([packet["first_inning_home_run_flag"] for packet in start_packets])
+    first_inning_clean_rate = safe_mean([packet["first_inning_clean_flag"] for packet in start_packets])
+    first_inning_pressure_index = clamp_value(
+        12
+        + first_batter_reach_rate * 18
+        + first_inning_run_allowed_rate * 28
+        + (first_inning_runs_allowed_per_start or 0.0) * 16
+        + first_inning_multi_run_allowed_rate * 18
+        + (first_inning_baserunners_per_start or 0.0) * 8
+        + first_inning_walk_rate * 12
+        + first_inning_home_run_rate * 14
+        - first_inning_clean_rate * 8,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "pitcher_id": pitcher_id,
+        "pitcher_name": pitcher_name,
+        "team_name": team_name,
+        "scheduled_opponent": scheduled_opponent,
+        "window_starts": window_starts,
+        "starts_sample": starts_sample,
+        "first_batter_reach_rate": first_batter_reach_rate,
+        "first_inning_run_allowed_rate": first_inning_run_allowed_rate,
+        "first_inning_runs_allowed_per_start": first_inning_runs_allowed_per_start,
+        "first_inning_multi_run_allowed_rate": first_inning_multi_run_allowed_rate,
+        "first_inning_baserunners_per_start": first_inning_baserunners_per_start,
+        "first_inning_walk_rate": first_inning_walk_rate,
+        "first_inning_home_run_rate": first_inning_home_run_rate,
+        "first_inning_clean_rate": first_inning_clean_rate,
+        "first_inning_pressure_index": first_inning_pressure_index,
+    }
+
+
 def build_pitcher_mistake_shape_row(
     conn: sqlite3.Connection,
     as_of_date: str,
@@ -5158,6 +5429,177 @@ def refresh_mistake_shape_profiles(
                         pitcher_row["sixth_inning_damage_rate"],
                         pitcher_row["post_damage_recovery_rate"],
                         pitcher_row["command_break_index"],
+                    ),
+                )
+
+    conn.commit()
+
+
+def refresh_first_inning_profiles(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_team_first_inning_profiles_daily WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_pitcher_first_inning_profiles_daily WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_team_first_inning_profiles_daily WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_pitcher_first_inning_profiles_daily WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_team_first_inning_profiles_daily")
+            conn.execute("DELETE FROM mlb_pitcher_first_inning_profiles_daily")
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+
+        for team_name in teams:
+            for window_games in FIRST_INNING_TEAM_WINDOWS:
+                packets = build_recent_team_first_inning_packets(conn, team_name, current_date, window_games)
+                team_row = build_team_first_inning_profile_row(conn, current_date, team_name, window_games, packets)
+                if not team_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_team_first_inning_profiles_daily (
+                      as_of_date, team_name, scheduled_opponent, scheduled_series_game_number,
+                      division_matchup_flag, window_games, games_sample, road_games_sample,
+                      first_inning_runs_per_game, first_inning_runs_allowed_per_game,
+                      scored_first_inning_rate, scoreless_first_inning_rate,
+                      allowed_first_inning_rate, first_inning_multi_run_rate,
+                      first_inning_multi_run_allowed_rate, nrfi_game_rate, yrfi_game_rate,
+                      first_inning_net_edge, first_inning_scoring_index, first_inning_allow_risk_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        team_row["as_of_date"],
+                        team_row["team_name"],
+                        team_row["scheduled_opponent"],
+                        team_row["scheduled_series_game_number"],
+                        team_row["division_matchup_flag"],
+                        team_row["window_games"],
+                        team_row["games_sample"],
+                        team_row["road_games_sample"],
+                        team_row["first_inning_runs_per_game"],
+                        team_row["first_inning_runs_allowed_per_game"],
+                        team_row["scored_first_inning_rate"],
+                        team_row["scoreless_first_inning_rate"],
+                        team_row["allowed_first_inning_rate"],
+                        team_row["first_inning_multi_run_rate"],
+                        team_row["first_inning_multi_run_allowed_rate"],
+                        team_row["nrfi_game_rate"],
+                        team_row["yrfi_game_rate"],
+                        team_row["first_inning_net_edge"],
+                        team_row["first_inning_scoring_index"],
+                        team_row["first_inning_allow_risk_index"],
+                    ),
+                )
+
+        starters = conn.execute(
+            """
+            SELECT
+              sp.pitcher_id,
+              sp.pitcher_name,
+              sp.team_role,
+              g.away_team,
+              g.home_team
+            FROM mlb_games g
+            JOIN mlb_starting_pitchers sp
+              ON sp.game_pk = g.game_pk
+            WHERE g.game_date = ?
+              AND sp.pitcher_id IS NOT NULL
+            ORDER BY sp.pitcher_name
+            """,
+            (current_date,),
+        ).fetchall()
+        for starter in starters:
+            team_name = starter["away_team"] if starter["team_role"] == "away" else starter["home_team"]
+            scheduled_opponent = starter["home_team"] if starter["team_role"] == "away" else starter["away_team"]
+            for window_starts in FIRST_INNING_PITCHER_WINDOWS:
+                start_rows = conn.execute(
+                    """
+                    SELECT game_pk, game_date
+                    FROM mlb_starting_pitcher_game_logs
+                    WHERE pitcher_id = ?
+                      AND game_date < ?
+                    ORDER BY game_date DESC, game_pk DESC
+                    LIMIT ?
+                    """,
+                    (starter["pitcher_id"], current_date, window_starts),
+                ).fetchall()
+                pitcher_row = build_pitcher_first_inning_profile_row(
+                    conn,
+                    current_date,
+                    team_name,
+                    scheduled_opponent,
+                    to_int(starter["pitcher_id"]) or 0,
+                    starter["pitcher_name"],
+                    window_starts,
+                    start_rows,
+                )
+                if not pitcher_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_pitcher_first_inning_profiles_daily (
+                      as_of_date, pitcher_id, pitcher_name, team_name, scheduled_opponent,
+                      window_starts, starts_sample, first_batter_reach_rate,
+                      first_inning_run_allowed_rate, first_inning_runs_allowed_per_start,
+                      first_inning_multi_run_allowed_rate, first_inning_baserunners_per_start,
+                      first_inning_walk_rate, first_inning_home_run_rate,
+                      first_inning_clean_rate, first_inning_pressure_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        pitcher_row["as_of_date"],
+                        pitcher_row["pitcher_id"],
+                        pitcher_row["pitcher_name"],
+                        pitcher_row["team_name"],
+                        pitcher_row["scheduled_opponent"],
+                        pitcher_row["window_starts"],
+                        pitcher_row["starts_sample"],
+                        pitcher_row["first_batter_reach_rate"],
+                        pitcher_row["first_inning_run_allowed_rate"],
+                        pitcher_row["first_inning_runs_allowed_per_start"],
+                        pitcher_row["first_inning_multi_run_allowed_rate"],
+                        pitcher_row["first_inning_baserunners_per_start"],
+                        pitcher_row["first_inning_walk_rate"],
+                        pitcher_row["first_inning_home_run_rate"],
+                        pitcher_row["first_inning_clean_rate"],
+                        pitcher_row["first_inning_pressure_index"],
                     ),
                 )
 
@@ -7609,6 +8051,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier mistake-shape rows.",
     )
 
+    derive_first_inning = subparsers.add_parser(
+        "derive-first-inning-profiles",
+        help="Refresh daily team and starter first-inning profile tables.",
+    )
+    derive_first_inning.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_first_inning.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier first-inning rows.",
+    )
+
     derive_story_labels = subparsers.add_parser(
         "derive-story-labels",
         help="Refresh game-story, phase-outcome, and market-mispricing label tables from stored outcomes and history records.",
@@ -7765,6 +8219,16 @@ def main() -> None:
                 print(f"Refreshed MLB mistake-shape profile tables through {args.through_date}")
             else:
                 print("Refreshed MLB mistake-shape profile tables for all loaded dates")
+            return
+
+        if args.command == "derive-first-inning-profiles":
+            refresh_first_inning_profiles(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB first-inning profile tables for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed MLB first-inning profile tables through {args.through_date}")
+            else:
+                print("Refreshed MLB first-inning profile tables for all loaded dates")
             return
 
         if args.command == "derive-story-labels":

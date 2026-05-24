@@ -151,6 +151,18 @@ const slugifyDeskTeam = (teamName = '') =>
 const toMatchupSlug = (awayDeskTeam, homeDeskTeam) =>
   `${slugifyDeskTeam(awayDeskTeam)}-vs-${slugifyDeskTeam(homeDeskTeam)}`
 
+const buildDeskGameId = ({ awayDesk, homeDesk, gamePk = null, forceUnique = false, gameNumber = null } = {}) => {
+  const baseId = `${slugifyDeskTeam(awayDesk)}-${slugifyDeskTeam(homeDesk)}`
+  if (!forceUnique) return baseId
+  if (Number.isFinite(Number(gameNumber)) && Number(gameNumber) > 0) {
+    return `${baseId}-g${Number(gameNumber)}`
+  }
+  if (Number.isFinite(Number(gamePk)) && Number(gamePk) > 0) {
+    return `${baseId}-${Number(gamePk)}`
+  }
+  return `${baseId}-2`
+}
+
 const formatPtStart = (isoString) => {
   const formatter = new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/Los_Angeles',
@@ -458,6 +470,15 @@ const buildBullpenChainByTeam = ({ date, games }) => {
 const roundMaybe = (value, digits = 2) => {
   const numeric = Number(value)
   return Number.isFinite(numeric) ? Number(numeric.toFixed(digits)) : null
+}
+
+const isOnBaseEventType = (eventType = '') => {
+  const normalized = String(eventType || '').toLowerCase()
+  if (!normalized) return false
+  if (['single', 'double', 'triple', 'home_run', 'walk', 'intent_walk', 'hit_by_pitch', 'catcher_interference'].includes(normalized)) {
+    return true
+  }
+  return normalized.includes('error')
 }
 
 const daysBetweenIso = (earlierIsoDate = '', laterIsoDate = '') => {
@@ -797,6 +818,179 @@ const buildBullpenMistakeShapeByTeam = ({ date, games, windowDays = 14 }) => {
   )
 }
 
+const buildFirstInningTeamProfilesByTeam = ({ date, games, windowGames = 8 }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+
+  if (!teams.length) return {}
+
+  const officialTeams = teams.map((team) => deskToOfficialTeam[team] || team).filter(Boolean)
+  const quotedTeams = officialTeams.map((team) => `'${team.replace(/'/g, "''")}'`).join(',')
+  const rows = runSqliteJson(
+    `select team_name, window_games, games_sample, first_inning_runs_per_game, first_inning_runs_allowed_per_game, scored_first_inning_rate, scoreless_first_inning_rate, allowed_first_inning_rate, first_inning_multi_run_rate, first_inning_multi_run_allowed_rate, nrfi_game_rate, yrfi_game_rate, first_inning_net_edge, first_inning_scoring_index, first_inning_allow_risk_index from mlb_team_first_inning_profiles_daily where as_of_date='${date}' and window_games=${windowGames} and team_name in (${quotedTeams}) order by team_name;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+      return [
+        deskTeam,
+        {
+          windowGames: Number(row.window_games || 0) || null,
+          gamesSample: Number(row.games_sample || 0) || 0,
+          firstInningRunsPerGame: roundMaybe(row.first_inning_runs_per_game),
+          firstInningRunsAllowedPerGame: roundMaybe(row.first_inning_runs_allowed_per_game),
+          scoredFirstInningRate: roundMaybe(row.scored_first_inning_rate),
+          scorelessFirstInningRate: roundMaybe(row.scoreless_first_inning_rate),
+          allowedFirstInningRate: roundMaybe(row.allowed_first_inning_rate),
+          firstInningMultiRunRate: roundMaybe(row.first_inning_multi_run_rate),
+          firstInningMultiRunAllowedRate: roundMaybe(row.first_inning_multi_run_allowed_rate),
+          nrfiGameRate: roundMaybe(row.nrfi_game_rate),
+          yrfiGameRate: roundMaybe(row.yrfi_game_rate),
+          firstInningNetEdge: roundMaybe(row.first_inning_net_edge),
+          firstInningScoringIndex: roundMaybe(row.first_inning_scoring_index),
+          firstInningAllowRiskIndex: roundMaybe(row.first_inning_allow_risk_index)
+        }
+      ]
+    })
+  )
+}
+
+const buildFirstInningPitcherProfilesByPitcherId = ({ date, games, windowStarts = 5 }) => {
+  const pitcherIds = [
+    ...new Set(
+      games
+        .flatMap((game) => [Number(game.awayPitcher?.id), Number(game.homePitcher?.id)])
+        .filter(Number.isFinite)
+    )
+  ]
+
+  if (!pitcherIds.length) return {}
+
+  const rows = runSqliteJson(
+    `select pitcher_id, pitcher_name, window_starts, starts_sample, first_batter_reach_rate, first_inning_run_allowed_rate, first_inning_runs_allowed_per_start, first_inning_multi_run_allowed_rate, first_inning_baserunners_per_start, first_inning_walk_rate, first_inning_home_run_rate, first_inning_clean_rate, first_inning_pressure_index from mlb_pitcher_first_inning_profiles_daily where as_of_date='${date}' and window_starts=${windowStarts} and pitcher_id in (${pitcherIds.join(',')}) order by pitcher_id;`
+  )
+
+  const profileByPitcherId = Object.fromEntries(
+    rows.map((row) => [
+      Number(row.pitcher_id),
+      {
+        pitcherName: row.pitcher_name || null,
+        windowStarts: Number(row.window_starts || 0) || null,
+        startsSample: Number(row.starts_sample || 0) || 0,
+        firstBatterReachRate: roundMaybe(row.first_batter_reach_rate),
+        firstInningRunAllowedRate: roundMaybe(row.first_inning_run_allowed_rate),
+        firstInningRunsAllowedPerStart: roundMaybe(row.first_inning_runs_allowed_per_start),
+        firstInningMultiRunAllowedRate: roundMaybe(row.first_inning_multi_run_allowed_rate),
+        firstInningBaserunnersPerStart: roundMaybe(row.first_inning_baserunners_per_start),
+        firstInningWalkRate: roundMaybe(row.first_inning_walk_rate),
+        firstInningHomeRunRate: roundMaybe(row.first_inning_home_run_rate),
+        firstInningCleanRate: roundMaybe(row.first_inning_clean_rate),
+        firstInningPressureIndex: roundMaybe(row.first_inning_pressure_index)
+      }
+    ])
+  )
+
+  pitcherIds.forEach((pitcherId) => {
+    if (profileByPitcherId[pitcherId]) return
+
+    const startRows = runSqliteJson(
+      `select pitcher_name, game_pk, game_date from mlb_starting_pitcher_game_logs where pitcher_id=${pitcherId} and game_date<'${date}' order by game_date desc, game_pk desc limit ${windowStarts};`
+    )
+
+    if (!startRows.length) return
+
+    const packets = startRows
+      .map((startRow) => {
+        const paRows = runSqliteJson(
+          `select at_bat_index, lower(coalesce(event_type, '')) as event_type, run_delta from mlb_plate_appearances where game_pk=${Number(startRow.game_pk)} and pitcher_id=${pitcherId} and inning=1 order by at_bat_index;`
+        )
+
+        if (!paRows.length) return null
+
+        const firstPa = paRows[0]
+        let baserunners = 0
+        let runsAllowed = 0
+        let walkFlag = 0
+        let homeRunFlag = 0
+
+        paRows.forEach((row) => {
+          const eventType = row.event_type || ''
+          const runDelta = Number(row.run_delta || 0) || 0
+          runsAllowed += runDelta
+          if (isOnBaseEventType(eventType)) baserunners += 1
+          if (['walk', 'intent_walk', 'hit_by_pitch'].includes(eventType)) walkFlag = 1
+          if (eventType === 'home_run') homeRunFlag = 1
+        })
+
+        return {
+          firstBatterReachFlag: isOnBaseEventType(firstPa.event_type || '') ? 1 : 0,
+          firstInningRunAllowedFlag: runsAllowed > 0 ? 1 : 0,
+          firstInningMultiRunAllowedFlag: runsAllowed >= 2 ? 1 : 0,
+          firstInningRunsAllowed: runsAllowed,
+          firstInningBaserunners: baserunners,
+          firstInningWalkFlag: walkFlag,
+          firstInningHomeRunFlag: homeRunFlag,
+          firstInningCleanFlag: runsAllowed === 0 ? 1 : 0
+        }
+      })
+      .filter(Boolean)
+
+    if (!packets.length) return
+
+    const average = (values = []) => {
+      if (!values.length) return null
+      return values.reduce((sum, value) => sum + value, 0) / values.length
+    }
+
+    const firstBatterReachRate = average(packets.map((packet) => packet.firstBatterReachFlag))
+    const firstInningRunAllowedRate = average(packets.map((packet) => packet.firstInningRunAllowedFlag))
+    const firstInningRunsAllowedPerStart = average(packets.map((packet) => packet.firstInningRunsAllowed))
+    const firstInningMultiRunAllowedRate = average(
+      packets.map((packet) => packet.firstInningMultiRunAllowedFlag)
+    )
+    const firstInningBaserunnersPerStart = average(
+      packets.map((packet) => packet.firstInningBaserunners)
+    )
+    const firstInningWalkRate = average(packets.map((packet) => packet.firstInningWalkFlag))
+    const firstInningHomeRunRate = average(packets.map((packet) => packet.firstInningHomeRunFlag))
+    const firstInningCleanRate = average(packets.map((packet) => packet.firstInningCleanFlag))
+    const firstInningPressureIndex = roundMaybe(
+      Math.max(
+        0,
+        Math.min(
+          100,
+          12 +
+            (firstBatterReachRate || 0) * 18 +
+            (firstInningRunAllowedRate || 0) * 28 +
+            (firstInningRunsAllowedPerStart || 0) * 16 +
+            (firstInningMultiRunAllowedRate || 0) * 18 +
+            (firstInningBaserunnersPerStart || 0) * 8 +
+            (firstInningWalkRate || 0) * 12 +
+            (firstInningHomeRunRate || 0) * 14 -
+            (firstInningCleanRate || 0) * 8
+        )
+      )
+    )
+
+    profileByPitcherId[pitcherId] = {
+      pitcherName: startRows[0]?.pitcher_name || null,
+      windowStarts,
+      startsSample: packets.length,
+      firstBatterReachRate: roundMaybe(firstBatterReachRate),
+      firstInningRunAllowedRate: roundMaybe(firstInningRunAllowedRate),
+      firstInningRunsAllowedPerStart: roundMaybe(firstInningRunsAllowedPerStart),
+      firstInningMultiRunAllowedRate: roundMaybe(firstInningMultiRunAllowedRate),
+      firstInningBaserunnersPerStart: roundMaybe(firstInningBaserunnersPerStart),
+      firstInningWalkRate: roundMaybe(firstInningWalkRate),
+      firstInningHomeRunRate: roundMaybe(firstInningHomeRunRate),
+      firstInningCleanRate: roundMaybe(firstInningCleanRate),
+      firstInningPressureIndex
+    }
+  })
+
+  return profileByPitcherId
+}
+
 const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
@@ -893,6 +1087,73 @@ const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
       })
 
       return [deskTeam, recentGames]
+    })
+  )
+}
+
+const buildSeriesEarlyPhaseByTeam = ({ date, games, lookbackDays = 5, limit = 3 }) => {
+  const matchupPairs = games.flatMap((game) => [
+    { team: game.away, opponent: game.home },
+    { team: game.home, opponent: game.away }
+  ])
+
+  if (!matchupPairs.length) return {}
+
+  const whereClauses = matchupPairs
+    .map(({ team, opponent }) => {
+      const officialTeam = (deskToOfficialTeam[team] || team).replace(/'/g, "''")
+      const officialOpponent = (deskToOfficialTeam[opponent] || opponent).replace(/'/g, "''")
+      return `(team_name='${officialTeam}' and opponent_team='${officialOpponent}')`
+    })
+    .join(' or ')
+
+  const rows = runSqliteJson(
+    `with recent_series_phase as (
+      select
+        *,
+        row_number() over (
+          partition by team_name, opponent_team
+          order by game_date desc, game_pk desc
+        ) as rn
+      from mlb_phase_outcomes_daily
+      where game_date < '${date}'
+        and game_date >= date('${date}', '-${Math.max(1, lookbackDays)} days')
+        and (${whereClauses})
+    )
+    select
+      team_name,
+      opponent_team,
+      count(*) as games_sample,
+      avg(runs_first1) as runs_first1_per_game,
+      avg(runs_first3) as runs_first3_per_game,
+      avg(scored_first_inning_flag) as scored_first_inning_rate,
+      avg(allowed_first_inning_flag) as allowed_first_inning_rate,
+      avg(scoreless_first3_flag) as scoreless_first3_rate,
+      avg(tied_after3_flag) as tied_after3_rate,
+      avg(traffic_no_conversion_flag) as traffic_no_conversion_rate
+    from recent_series_phase
+    where rn <= ${Math.max(1, limit)}
+    group by team_name, opponent_team
+    order by team_name, opponent_team;`
+  )
+
+  return Object.fromEntries(
+    rows.map((row) => {
+      const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+      return [
+        deskTeam,
+        {
+          opponentTeam: officialToDeskTeam[row.opponent_team] || row.opponent_team || '',
+          gamesSample: Number(row.games_sample || 0) || 0,
+          runsFirst1PerGame: roundMaybe(row.runs_first1_per_game),
+          runsFirst3PerGame: roundMaybe(row.runs_first3_per_game),
+          scoredFirstInningRate: roundMaybe(row.scored_first_inning_rate),
+          allowedFirstInningRate: roundMaybe(row.allowed_first_inning_rate),
+          scorelessFirst3Rate: roundMaybe(row.scoreless_first3_rate),
+          tiedAfter3Rate: roundMaybe(row.tied_after3_rate),
+          trafficNoConversionRate: roundMaybe(row.traffic_no_conversion_rate)
+        }
+      ]
     })
   )
 }
@@ -1348,6 +1609,7 @@ const main = async () => {
   )
 
   const rawGames = []
+  const seenMatchupCounts = new Map()
   for (const dateEntry of schedule.dates || []) {
     for (const game of dateEntry.games || []) {
       if (isPostponedScheduleGame(game)) continue
@@ -1401,9 +1663,19 @@ const main = async () => {
             })
       const boardOdds = await parseMatchupOdds(awayDesk, homeDesk)
 
+      const matchupKey = `${slugifyDeskTeam(awayDesk)}-${slugifyDeskTeam(homeDesk)}`
+      const seenCount = seenMatchupCounts.get(matchupKey) ?? 0
+      seenMatchupCounts.set(matchupKey, seenCount + 1)
+
       rawGames.push({
         gamePk: Number(game.gamePk || 0) || null,
-        id: `${slugifyDeskTeam(awayDesk)}-${slugifyDeskTeam(homeDesk)}`,
+        id: buildDeskGameId({
+          awayDesk,
+          homeDesk,
+          gamePk: Number(game.gamePk || 0) || null,
+          gameNumber: Number(game.gameNumber || 0) || null,
+          forceUnique: seenCount > 0
+        }),
         away: awayDesk,
         home: homeDesk,
         start: formatPtStart(game.gameDate),
@@ -1431,6 +1703,9 @@ const main = async () => {
   const teamMistakeShapeByTeam = buildTeamMistakeShapeByTeam({ date: options.date, games: rawGames })
   const lineupConversionShapeByTeam = buildLineupConversionShapeByTeam({ date: options.date, games: rawGames })
   const bullpenMistakeShapeByTeam = buildBullpenMistakeShapeByTeam({ date: options.date, games: rawGames })
+  const firstInningTeamProfilesByTeam = buildFirstInningTeamProfilesByTeam({ date: options.date, games: rawGames })
+  const firstInningPitcherProfilesByPitcherId = buildFirstInningPitcherProfilesByPitcherId({ date: options.date, games: rawGames })
+  const seriesEarlyPhaseByTeam = buildSeriesEarlyPhaseByTeam({ date: options.date, games: rawGames })
   const recentGamesByTeam = buildRecentGamesByTeam({ date: options.date, games: rawGames })
   const seriesContextByGamePk = buildSeriesContextByGamePk({ date: options.date, games: rawGames })
   const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
@@ -1501,6 +1776,18 @@ const main = async () => {
       bullpenMistake: {
         away: bullpenMistakeShapeByTeam[game.away] ?? null,
         home: bullpenMistakeShapeByTeam[game.home] ?? null
+      },
+      firstInningTeam: {
+        away: firstInningTeamProfilesByTeam[game.away] ?? null,
+        home: firstInningTeamProfilesByTeam[game.home] ?? null
+      },
+      firstInningPitcher: {
+        away: Number.isFinite(game.awayPitcher?.id) ? firstInningPitcherProfilesByPitcherId[game.awayPitcher.id] ?? null : null,
+        home: Number.isFinite(game.homePitcher?.id) ? firstInningPitcherProfilesByPitcherId[game.homePitcher.id] ?? null : null
+      },
+      seriesEarlyPhase: {
+        away: seriesEarlyPhaseByTeam[game.away] ?? null,
+        home: seriesEarlyPhaseByTeam[game.home] ?? null
       },
       recentGames: {
         away: recentGamesByTeam[game.away] ?? [],

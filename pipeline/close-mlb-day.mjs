@@ -60,6 +60,7 @@ const main = () => {
   runPythonWarehouse('derive-story-signals', ['--through-date', options.date])
   runPythonWarehouse('derive-hidden-edge-features', ['--through-date', options.date])
   runPythonWarehouse('derive-mistake-shapes', ['--through-date', options.date])
+  runPythonWarehouse('derive-first-inning-profiles', ['--through-date', options.date])
   runPythonWarehouse('derive-state-snapshots', ['--through-date', options.date])
 
   if (fs.existsSync(hrPredictionPath)) {
@@ -70,6 +71,7 @@ const main = () => {
   }
 
   runPythonWarehouse('grade-prop-picks', ['--date', options.date, '--model-name', options.propModelName])
+  runNodeScript('export-mlb-veto-artifact.mjs', ['--date', options.date])
   runNodeScript('export-history-journal.mjs')
   runPythonWarehouse('derive-story-labels', ['--through-date', options.date])
   execFileSync('npm', ['run', 'data:export:published'], { cwd: rootDir, stdio: 'inherit' })
@@ -78,6 +80,10 @@ const main = () => {
   execFileSync('npm', ['run', 'data:research:mlb-first5-state-model'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-market-divergence'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-story-phase-labels'], { cwd: rootDir, stdio: 'inherit' })
+  execFileSync('npm', ['run', 'data:research:mlb-veto-engine', '--', '--end-date', options.date], {
+    cwd: rootDir,
+    stdio: 'inherit'
+  })
 }
 
 main()

@@ -55,12 +55,15 @@ const main = () => {
   runPythonWarehouse('derive-hidden-edge-features', ['--as-of-date', options.date])
   // Track mistake-shape vectors so the model stops flattening chaos into averages.
   runPythonWarehouse('derive-mistake-shapes', ['--as-of-date', options.date])
+  // First-inning betting needs its own lane: who scores early, who allows early, and which starter leaks immediately.
+  runPythonWarehouse('derive-first-inning-profiles', ['--as-of-date', options.date])
   // Keep rolling team and hitter pressure/state snapshots collecting automatically for regime research.
   runPythonWarehouse('derive-state-snapshots', ['--as-of-date', options.date])
   // Keep Tier 3 research tables collecting automatically even while the live model ignores them.
   runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
   runNodeScript('generate-mlb-day-files.mjs', generateArgs)
   runNodeScript('export-mlb-lineup-model.mjs', ['--date', options.date])
+  runNodeScript('export-mlb-veto-artifact.mjs', ['--date', options.date])
   runNodeScript('export-home-run-predictions.mjs', ['--date', options.date])
   runNodeScript('export-mlb-prop-predictions.mjs', ['--date', options.date])
   runPythonWarehouse('import-prop-predictions', [

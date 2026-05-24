@@ -3,7 +3,7 @@ import {
   buildParlayModel,
   createParlayLeg,
   formatAmericanOdds,
-  rankAnalysisPicks,
+  rankEfficientFavoritePicks,
   rankFlipRiskPicks,
   rankMlbPlayerProps
 } from './lib/sports-model.js'
@@ -87,8 +87,8 @@ const propTypeFilters = [
 const recommendationModes = [
   {
     id: 'favorites',
-    label: 'Favorites',
-    copy: 'Cleaner core reads only. On messy slates this lane stays intentionally short.'
+    label: 'Efficient favorites',
+    copy: 'Only favorites with a real price-and-shape thesis. This lane should stay short on messy slates.'
   },
   {
     id: 'balanced',
@@ -518,8 +518,14 @@ const buildMlbGameStory = ({
   const pickName = participant.name || projection?.edgeTeam || awayTeam
   const pickIsAway = pickName === awayTeam
   const opponentName = pickIsAway ? homeTeam : awayTeam
+  const pickStarter = pickIsAway ? game.starterContext?.away ?? null : game.starterContext?.home ?? null
+  const oppStarter = pickIsAway ? game.starterContext?.home ?? null : game.starterContext?.away ?? null
+  const pickLineupSummary = pickIsAway ? game.lineupBoard?.away?.summary ?? {} : game.lineupBoard?.home?.summary ?? {}
+  const oppLineupSummary = pickIsAway ? game.lineupBoard?.home?.summary ?? {} : game.lineupBoard?.away?.summary ?? {}
   const pickState = pickIsAway ? game.stateContext?.teamState?.away ?? null : game.stateContext?.teamState?.home ?? null
   const oppState = pickIsAway ? game.stateContext?.teamState?.home ?? null : game.stateContext?.teamState?.away ?? null
+  const pickSeries = pickIsAway ? game.stateContext?.seriesEarlyPhase?.away ?? null : game.stateContext?.seriesEarlyPhase?.home ?? null
+  const oppSeries = pickIsAway ? game.stateContext?.seriesEarlyPhase?.home ?? null : game.stateContext?.seriesEarlyPhase?.away ?? null
   const starterLeverage = Number(indicators.starterLeverageIndex || 0)
   const lateStability = Number(indicators.lateInningStabilityIndex || 0)
   const reliefRisk = Number(indicators.reliefPitchingRisk || 0)
@@ -530,15 +536,90 @@ const buildMlbGameStory = ({
   const pickSnapback = Number(indicators.pickSnapbackPressure || 0)
   const pickTop6Cold = Number(indicators.pickTop6Cold || 0)
   const opponentTop6Heat = Number(indicators.oppTop6Heat || 0)
+  const vetoCount = Number(indicators.researchOnlyVetoFlagCount || 0)
+  const vetoReasons = Array.isArray(indicators.researchOnlyVetoFlags) ? indicators.researchOnlyVetoFlags : []
+  const protectedMarketDogFlag = Boolean(indicators.protectedMarketDogFlag)
+  const efficientFavoriteFlag = Boolean(indicators.efficientFavoriteCandidateFlag)
+  const efficientFavoriteReasons = Array.isArray(indicators.efficientFavoriteReasons)
+    ? indicators.efficientFavoriteReasons
+    : []
   const impliedProbabilityPct = Number.isFinite(Number(participant.impliedProbability))
     ? Number(participant.impliedProbability) * 100
     : null
   const isUnderdog = Number.isFinite(Number(participant.americanOdds)) ? Number(participant.americanOdds) > 0 : impliedProbabilityPct !== null ? impliedProbabilityPct < 50 : false
   const firstInning = projection?.firstInning ?? null
+  const firstInningStrong = ['Strong', 'Clear'].includes(String(firstInning?.strength || ''))
+  const pickReasons = Array.isArray(analysis.pickReasons) ? analysis.pickReasons.filter(Boolean) : []
+  const pickStarterName = pickStarter?.fullName || pickStarter?.pitcherName || pickStarter?.name || pickName
+  const oppStarterName = oppStarter?.fullName || oppStarter?.pitcherName || oppStarter?.name || opponentName
+  const pickPressureBats = (pickLineupSummary?.overperformHitters ?? []).map((entry: AnyRecord) => entry.name).filter(Boolean).slice(0, 3)
+  const oppPressureBats = (oppLineupSummary?.overperformHitters ?? []).map((entry: AnyRecord) => entry.name).filter(Boolean).slice(0, 3)
+  const pickSoftBats = (pickLineupSummary?.underperformHitters ?? []).map((entry: AnyRecord) => entry.name).filter(Boolean).slice(0, 2)
+  const oppSoftBats = (oppLineupSummary?.underperformHitters ?? []).map((entry: AnyRecord) => entry.name).filter(Boolean).slice(0, 2)
+  const formatNameList = (names: string[]) => {
+    if (!names.length) return ''
+    if (names.length === 1) return names[0]
+    if (names.length === 2) return `${names[0]} and ${names[1]}`
+    return `${names.slice(0, -1).join(', ')}, and ${names.at(-1)}`
+  }
+  const bothSeriesDeadEarly =
+    Number(pickSeries?.gamesSample || 0) >= 2 &&
+    Number(oppSeries?.gamesSample || 0) >= 2 &&
+    Number(pickSeries?.scoredFirstInningRate || 0) === 0 &&
+    Number(oppSeries?.scoredFirstInningRate || 0) === 0
+  const seriesQuietThroughThree =
+    Number(pickSeries?.runsFirst3PerGame || 0) <= 0.5 &&
+    Number(oppSeries?.runsFirst3PerGame || 0) <= 0.5
+  const pickQuietFirst5Rate = Number(indicators.pickQuietFirst5Rate || 0)
+  const oppQuietFirst5Rate = Number(indicators.oppQuietFirst5Rate || 0)
+  const pickScorelessFirst3Rate = Number(indicators.pickTeamScorelessFirst3Rate || 0)
+  const oppScorelessFirst3Rate = Number(indicators.oppTeamScorelessFirst3Rate || 0)
+  const pickConversionIndex = Number(indicators.pickLineupConversionIndex || 0)
+  const oppConversionIndex = Number(indicators.oppLineupConversionIndex || 0)
+  const pickDeadTraffic = Number(indicators.pickDeadBatTrafficRate || 0)
+  const oppDeadTraffic = Number(indicators.oppDeadBatTrafficRate || 0)
+  const quietStartShape =
+    pickQuietFirst5Rate >= 0.4 &&
+    oppQuietFirst5Rate >= 0.4 &&
+    pickScorelessFirst3Rate >= 0.35 &&
+    oppScorelessFirst3Rate >= 0.35
+  const conversionEdgeTeam =
+    pickConversionIndex === oppConversionIndex
+      ? null
+      : pickConversionIndex > oppConversionIndex
+        ? pickName
+        : opponentName
+  const conversionGap = Math.abs(pickConversionIndex - oppConversionIndex)
 
-  let headline = `${pickName} are the paper side, but the real question is how much of that edge survives the shape of this game.`
-  if (tierOnePassFlag) {
+  const vetoReasonLabels = vetoReasons.map((reason) => {
+    if (reason === 'heavyFavoriteWeakLineup') return 'favorite price with weak lineup conversion'
+    if (reason === 'heavyFavoriteNoisyBullpen') return 'favorite price with noisy bullpen shape'
+    if (reason === 'deadEarlyRisk') return 'dead-early offensive shape'
+    if (reason === 'clusterBullpenTrap') return 'run-cluster profile against a louder opposing bullpen'
+    return reason
+  })
+  const efficientFavoriteReasonLabels = efficientFavoriteReasons.map((reason) => {
+    if (reason === 'moderateFavoritePrice') return 'moderate favorite price'
+    if (reason === 'favoritePriceStillPlayable') return 'playable favorite price'
+    if (reason === 'starterControl') return 'clean starter control'
+    if (reason === 'lateHoldSupport') return 'stable late hold'
+    if (reason === 'lineupConversionSupport') return 'lineup conversion support'
+    if (reason === 'broadSupport') return 'broad signal support'
+    if (reason === 'modelAgreement') return 'model agreement'
+    return reason
+  })
+
+  let headline = `${pickName} are the paper side, but the useful question is which exact trigger makes that edge real tonight.`
+  if (vetoCount > 0) {
+    headline = `${pickName} still rate as the paper side, but the chaos veto layer says this should not be a playable side.`
+  } else if (bothSeriesDeadEarly && seriesQuietThroughThree) {
+    headline = `${awayTeam} and ${homeTeam} have been playing a dead-early series, so the first turn of the game matters more than the broad paper numbers.`
+  } else if (efficientFavoriteFlag) {
+    headline = `${pickName} are one of the few favorites that actually clear the efficient-favorite lane instead of just grading well on paper.`
+  } else if (tierOnePassFlag) {
     headline = `${pickName} may still rate best on paper, but the risk stack is louder than the edge here.`
+  } else if (protectedMarketDogFlag) {
+    headline = `${pickName} are a live dog because the opponent is carrying the louder chaos profile into this matchup.`
   } else if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
     headline = `${pickName} look much cleaner through five than over the full nine innings.`
   } else if (isUnderdog) {
@@ -548,7 +629,11 @@ const buildMlbGameStory = ({
   }
 
   let marketText = 'This price is close enough that state and inning shape matter more than raw roster strength.'
-  if (isUnderdog) {
+  if (protectedMarketDogFlag) {
+    marketText = `${pickName} are priced as the dog${participant.americanLabel ? ` at ${participant.americanLabel}` : ''}, and this is exactly the kind of market-dog chaos lane we are trying to isolate.`
+  } else if (efficientFavoriteFlag) {
+    marketText = `${pickName} are in the healthier favorite price band${participant.americanLabel ? ` at ${participant.americanLabel}` : ''}, so this is one of the few spots where favorite cost is not doing all the damage by itself.`
+  } else if (isUnderdog) {
     marketText = `${pickName} are priced as the dog${participant.americanLabel ? ` at ${participant.americanLabel}` : ''}, so this only works if the market is too smooth about current form.`
   } else if (impliedProbabilityPct !== null && impliedProbabilityPct >= 58) {
     marketText = `${pickName} are carrying a real favorite price${participant.americanLabel ? ` at ${participant.americanLabel}` : ''}, which means the story has to beat the cost, not just beat the opponent.`
@@ -557,7 +642,15 @@ const buildMlbGameStory = ({
   }
 
   let stateText = 'Neither club brings a truly stretched streak state, so this game is more about execution than snapback.'
-  if (opponentSnapback >= 50 && opponentSnapback >= pickSnapback + 10) {
+  if (vetoCount > 0 && vetoReasonLabels.length) {
+    stateText = `The veto layer is firing on ${vetoReasonLabels.join(' and ')}, which means the live state is already fighting the paper edge.`
+  } else if (bothSeriesDeadEarly && seriesQuietThroughThree) {
+    stateText = `Through ${pickSeries?.gamesSample} games in this series, ${pickName} have scored in the 1st ${formatPercent((pickSeries?.scoredFirstInningRate ?? 0) * 100, 0)} of the time and ${opponentName} ${formatPercent((oppSeries?.scoredFirstInningRate ?? 0) * 100, 0)}. That is a current-series dead-early read, not just a generic cold streak.`
+  } else if (quietStartShape) {
+    stateText = `${pickName} have gone quiet through five in ${formatPercent(pickQuietFirst5Rate * 100, 0)} of recent games and ${opponentName} in ${formatPercent(oppQuietFirst5Rate * 100, 0)}. This looks more like a slow-start conversion test than a clean side game.`
+  } else if (conversionEdgeTeam && conversionGap >= 8) {
+    stateText = `${conversionEdgeTeam} bring the cleaner traffic-to-runs shape tonight. The gap in lineup conversion is ${formatNumber(conversionGap, 1)} points, which matters more than broad season offense.`
+  } else if (opponentSnapback >= 50 && opponentSnapback >= pickSnapback + 10) {
     stateText = `${opponentName} come in with real snapback pressure, so fading them casually is more dangerous than the paper form makes it look.`
   } else if (pickState?.streakDirection === 'L' && Number(pickState?.streakLength || 0) >= 3) {
     stateText = `${pickName} are carrying bounceback pressure from a stretched skid, which can cut both ways: urgency is real, but so is fragility.`
@@ -568,7 +661,22 @@ const buildMlbGameStory = ({
   }
 
   let shapeText = 'This game does not separate cleanly by phase, so one crooked inning can rewrite the read.'
-  if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
+  if (vetoCount > 0) {
+    shapeText = 'This is not just a scary game in the abstract. The failure path is specific enough that the side is being actively suppressed.'
+  } else if (pickReasons.length >= 2) {
+    shapeText = `${pickReasons[0]} ${pickReasons[1]}`
+  } else if (pickReasons.length === 1) {
+    shapeText = pickReasons[0]
+  } else if (pickPressureBats.length || oppPressureBats.length) {
+    const attackTeam =
+      Number(indicators.pickLineupConversionIndex || 0) >= Number(indicators.oppLineupConversionIndex || 0)
+        ? pickName
+        : opponentName
+    const attackStarterName = attackTeam === pickName ? oppStarterName : pickStarterName
+    const attackNames = attackTeam === pickName ? pickPressureBats : oppPressureBats
+    const softNames = attackTeam === pickName ? oppSoftBats : pickSoftBats
+    shapeText = `${attackTeam}'s live bats are ${formatNameList(attackNames)} against ${attackStarterName}.${softNames.length ? ` The softer bats right now are ${formatNameList(softNames)}.` : ''}`
+  } else if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
     shapeText = `The starter phase is the cleanest part of the story. Once the bridge innings begin, the edge softens quickly.`
   } else if (starterLeverage >= 70 && lateStability >= 55 && reliefRisk <= 40) {
     shapeText = `The board likes both the starter lane and the late-game hold, which is the cleanest full-game shape we can get in baseball.`
@@ -579,7 +687,15 @@ const buildMlbGameStory = ({
   }
 
   let expressionText = 'Best expression: watch the early innings and avoid forcing the full-game side if the story turns immediately.'
-  if (tierOnePassFlag) {
+  if (firstInningStrong && firstInning?.pick && firstInning.pick !== 'Pass' && (bothSeriesDeadEarly || analysis.tier === 'Pass')) {
+    expressionText = `Best expression: ${firstInning.label}, not the side. The first-inning lane is clearer than the full-game moneyline here.`
+  } else if (vetoCount > 0) {
+    expressionText = 'Best expression: pass the side. The chaos veto layer is louder than the paper edge.'
+  } else if (efficientFavoriteFlag) {
+    expressionText = 'Best expression: efficient favorite side. This is one of the few games where the price and shape support a real full-game favorite ticket.'
+  } else if (protectedMarketDogFlag) {
+    expressionText = 'Best expression: if you touch this at all, it should be through the protected dog lane, not favorite math.'
+  } else if (tierOnePassFlag) {
     expressionText = 'Best expression: pass. Too many stacked risk buckets are fighting the paper edge.'
   } else if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
     expressionText = 'Best expression: first five or nothing. The story is cleaner early than late.'
@@ -589,7 +705,29 @@ const buildMlbGameStory = ({
     expressionText = `Best expression: the total may be cleaner than the side. Current totals lean is ${projection.totals.fullGame.label}.`
   }
 
+  let triggerText =
+    'Trigger: this game changes when one side starts cashing traffic instead of just creating it.'
+  if (vetoCount > 0) {
+    triggerText = `Trigger: the side dies if ${vetoReasonLabels.join(' and ')} show up again. That is why the chaos layer is suppressing it.`
+  } else if (bothSeriesDeadEarly && seriesQuietThroughThree) {
+    triggerText = `Trigger: a 1st-inning run has to come from a direct pitcher mistake because both lineups have gone dead through the first turn of this series so far.`
+  } else if (quietStartShape) {
+    triggerText = `Trigger: somebody has to cash the first traffic pocket. Until that happens, this is more likely to stay in a dead-early, low-conversion script.`
+  } else if (starterLeverage >= 70 && lateStability + 10 < starterLeverage) {
+    triggerText = `Trigger: ${pickStarterName} need to own the first two turns. If this game reaches the bridge innings still close, the edge gets much thinner.`
+  } else if (Number(indicators.pickLineupConversionIndex || 0) < Number(indicators.oppLineupConversionIndex || 0)) {
+    triggerText = `Trigger: ${pickName} need to convert their first traffic chance. If they leave men on early, the better conversion side is ${opponentName}.`
+  } else if (Number(indicators.pickBullpenMistakeChaos || 0) > Number(indicators.oppBullpenMistakeChaos || 0) + 6) {
+    triggerText = `Trigger: the game flips if ${pickName} have to expose the bullpen too early. Their relief shape is noisier than ${opponentName}'s tonight.`
+  } else if (pickDeadTraffic >= 0.25 || oppDeadTraffic >= 0.25) {
+    const deadTeam = pickDeadTraffic >= oppDeadTraffic ? pickName : opponentName
+    triggerText = `Trigger: ${deadTeam} have been creating traffic without enough cashing. If that dead-bat shape shows up again, the better looking paper side can still stall out.`
+  }
+
   const chips = [
+    vetoCount > 0 ? { label: `Veto ${vetoCount}x`, tone: 'danger' } : null,
+    efficientFavoriteFlag ? { label: 'Efficient favorite', tone: 'accent' } : null,
+    protectedMarketDogFlag ? { label: 'Protected dog', tone: 'accent' } : null,
     tierOnePassFlag ? { label: 'Pass first', tone: 'danger' } : null,
     opponentSnapback >= 50 && opponentSnapback >= pickSnapback + 10 ? { label: `${opponentName} snapback live`, tone: 'warning' } : null,
     starterLeverage >= 70 && lateStability + 10 < starterLeverage ? { label: 'Early better than late', tone: 'accent' } : null,
@@ -602,9 +740,10 @@ const buildMlbGameStory = ({
     headline,
     cards: [
       { label: 'Market', body: marketText, tone: tierOnePassFlag || isUnderdog ? 'warning' : 'neutral' },
-      { label: 'State', body: stateText, tone: opponentSnapback >= 50 || pickTop6Cold >= 45 ? 'warning' : 'neutral' },
-      { label: 'Shape', body: shapeText, tone: starterLeverage >= 70 && lateStability + 10 < starterLeverage ? 'accent' : coinflipPressure >= 65 || reliefRisk >= 70 ? 'danger' : 'neutral' },
-      { label: 'Best expression', body: expressionText, tone: tierOnePassFlag ? 'danger' : starterLeverage >= 70 && lateStability + 10 < starterLeverage ? 'accent' : 'neutral' }
+      { label: 'Series read', body: stateText, tone: opponentSnapback >= 50 || pickTop6Cold >= 45 || bothSeriesDeadEarly ? 'warning' : 'neutral' },
+      { label: 'Key matchup', body: shapeText, tone: starterLeverage >= 70 && lateStability + 10 < starterLeverage ? 'accent' : coinflipPressure >= 65 || reliefRisk >= 70 ? 'danger' : 'neutral' },
+      { label: 'Break trigger', body: triggerText, tone: vetoCount > 0 || coinflipPressure >= 65 ? 'danger' : 'warning' },
+      { label: 'Best expression', body: expressionText, tone: tierOnePassFlag || vetoCount > 0 ? 'danger' : starterLeverage >= 70 && lateStability + 10 < starterLeverage ? 'accent' : 'neutral' }
     ],
     chips
   }
@@ -709,6 +848,16 @@ const buildGameHighlights = (game: AnyRecord) => {
     }
     if ((game.analysis?.indicators?.coinflipPressure ?? 0) >= 64) {
       chips.push({ tone: 'danger', label: 'Flip live' })
+    }
+    if ((game.analysis?.indicators?.researchOnlyVetoFlagCount ?? 0) > 0) {
+      chips.push({
+        tone: 'danger',
+        label: `Veto ${(game.analysis?.indicators?.researchOnlyVetoFlagCount ?? 0)}x`
+      })
+    } else if (game.analysis?.indicators?.efficientFavoriteCandidateFlag) {
+      chips.push({ tone: 'accent', label: 'Efficient favorite' })
+    } else if (game.analysis?.indicators?.protectedMarketDogFlag) {
+      chips.push({ tone: 'accent', label: 'Dog lane' })
     }
     if (bothLineupsPosted) chips.push({ tone: 'accent', label: 'Lineups in' })
     else if (partialLineups) chips.push({ tone: 'neutral', label: 'Lineups partial' })
@@ -1325,7 +1474,7 @@ function App() {
     [activeDayIsoDate, games, pacificClock]
   )
 
-  const analysisPicks = useMemo(() => rankAnalysisPicks(games), [games])
+  const efficientFavoritePicks = useMemo(() => rankEfficientFavoritePicks(games), [games])
   const flipRiskPicks = useMemo(() => rankFlipRiskPicks(games), [games])
   const mlbPlayerProps = useMemo(() => {
     const fromApi = Object.values(activePropBoardByGame).flatMap((board: AnyRecord) => board?.targets ?? [])
@@ -1347,8 +1496,8 @@ function App() {
   }, [activePropBoardByGame, games])
 
   const favoriteRecommendationPool = useMemo(
-    () => analysisPicks.filter((pick: AnyRecord) => pick.game?.moneyline?.available),
-    [analysisPicks]
+    () => efficientFavoritePicks.filter((pick: AnyRecord) => pick.game?.moneyline?.available),
+    [efficientFavoritePicks]
   )
 
   const scopedFavoriteRecommendationPool = useMemo(
