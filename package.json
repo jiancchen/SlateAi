@@ -57,6 +57,7 @@
     "data:research:mlb-first5-state-model": "python3 pipeline/research_mlb_first5_state_model.py",
     "data:research:mlb-market-divergence": "python3 pipeline/research_mlb_market_divergence.py",
     "data:research:mlb-mistake-shapes": "python3 pipeline/research_mlb_mistake_shapes.py",
+    "data:research:mlb-story-phase-labels": "python3 pipeline/research_mlb_story_phase_labels.py",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
   }

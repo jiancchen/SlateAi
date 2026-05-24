@@ -77,6 +77,7 @@ const main = () => {
   execFileSync('npm', ['run', 'data:research:mlb-stateful-edges'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-first5-state-model'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-market-divergence'], { cwd: rootDir, stdio: 'inherit' })
+  execFileSync('npm', ['run', 'data:research:mlb-story-phase-labels'], { cwd: rootDir, stdio: 'inherit' })
 }
 
 main()
