@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from bisect import bisect_left
 import json
 import math
 import re
@@ -158,6 +159,58 @@ def load_outcome_maps(conn: sqlite3.Connection) -> tuple[dict[int, sqlite3.Row],
     return by_game_pk, by_matchup, first_inning_runs
 
 
+def load_team_profile_lookup(conn: sqlite3.Connection, table: str) -> dict[tuple[str, str], dict[str, Any]]:
+    rows = conn.execute(f"SELECT * FROM {table}").fetchall()
+    lookup: dict[tuple[str, str], dict[str, Any]] = {}
+    for row in rows:
+        lookup[(row["as_of_date"], row["team_name"])] = dict(row)
+    return lookup
+
+
+def load_pitcher_profile_lookup(conn: sqlite3.Connection, table: str) -> dict[tuple[str, str], dict[str, Any]]:
+    rows = conn.execute(f"SELECT * FROM {table}").fetchall()
+    lookup: dict[tuple[str, str], dict[str, Any]] = {}
+    for row in rows:
+        lookup[(row["as_of_date"], row["pitcher_name"])] = dict(row)
+    return lookup
+
+
+def build_profile_history(lookup: dict[tuple[str, str], dict[str, Any]]) -> dict[str, tuple[list[str], list[dict[str, Any]]]]:
+    grouped: dict[str, list[tuple[str, dict[str, Any]]]] = defaultdict(list)
+    for (as_of_date, entity_name), row in lookup.items():
+        grouped[entity_name].append((as_of_date, row))
+    history: dict[str, tuple[list[str], list[dict[str, Any]]]] = {}
+    for entity_name, values in grouped.items():
+        ordered = sorted(values, key=lambda item: item[0])
+        history[entity_name] = ([item[0] for item in ordered], [item[1] for item in ordered])
+    return history
+
+
+def resolve_prior_profile(
+    history: dict[str, tuple[list[str], list[dict[str, Any]]]],
+    entity_name: str | None,
+    as_of_date: str,
+) -> dict[str, Any] | None:
+    if not entity_name:
+        return None
+    values = history.get(entity_name)
+    if not values:
+        return None
+    dates, rows = values
+    index = bisect_left(dates, as_of_date) - 1
+    if index < 0:
+        return None
+    return rows[index]
+
+
+def load_starting_pitchers_by_game(conn: sqlite3.Connection) -> dict[int, dict[str, dict[str, Any]]]:
+    rows = conn.execute("SELECT * FROM mlb_starting_pitchers").fetchall()
+    lookup: dict[int, dict[str, dict[str, Any]]] = defaultdict(dict)
+    for row in rows:
+        lookup[int(row["game_pk"])][role_key(row["team_role"])] = dict(row)
+    return lookup
+
+
 def resolve_outcome(
     record: dict[str, Any],
     by_game_pk: dict[int, sqlite3.Row],
@@ -180,6 +233,17 @@ def participant_probabilities(record: dict[str, Any]) -> tuple[dict[str, float |
         probability_by_role[role] = safe_float(participant.get("impliedProbability"))
         odds_by_role[role] = safe_int(participant.get("americanOdds"))
     return probability_by_role, odds_by_role
+
+
+def extract_team_name(record: dict[str, Any], role: str) -> str:
+    return record["awayTeam"] if role == "away" else record["homeTeam"]
+
+
+def extract_context_role_block(context: dict[str, Any] | None, role: str) -> dict[str, Any] | None:
+    if not context:
+        return None
+    value = context.get(role)
+    return value if isinstance(value, dict) else None
 
 
 def starter_feature_set(starter: dict[str, Any] | None) -> dict[str, float]:
@@ -210,6 +274,145 @@ def starter_feature_set(starter: dict[str, Any] | None) -> dict[str, float]:
     handedness = str(starter.get("pitchHand") or "").upper()
     features["hand_l"] = 1.0 if handedness.startswith("L") else 0.0
     features["hand_r"] = 1.0 if handedness.startswith("R") else 0.0
+    return features
+
+
+def build_raw_side_features(
+    record: dict[str, Any],
+    pick_role: str,
+    team_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+    pitcher_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+) -> dict[str, Any]:
+    opp_role = opposite_role(pick_role)
+    pick_team = extract_team_name(record, pick_role)
+    opp_team = extract_team_name(record, opp_role)
+    probabilities, american_odds = participant_probabilities(record)
+    features: dict[str, Any] = {
+        "pick_role": pick_role,
+        "home_pick_flag": 1.0 if pick_role == "home" else 0.0,
+    }
+
+    feature_put(features, "market_probability_pick", probabilities.get(pick_role))
+    feature_put(features, "market_probability_opp", probabilities.get(opp_role))
+    if probabilities.get(pick_role) is not None and probabilities.get(opp_role) is not None:
+        features["market_probability_gap"] = probabilities[pick_role] - probabilities[opp_role]
+        features["pick_is_market_favorite"] = 1.0 if probabilities[pick_role] >= probabilities[opp_role] else 0.0
+    feature_put(features, "american_odds_pick", american_odds.get(pick_role))
+    feature_put(features, "american_odds_opp", american_odds.get(opp_role))
+
+    park_context = record.get("parkContext") or {}
+    for key in ("indexHr", "indexRuns", "indexWoba"):
+        feature_put(features, f"park_{key}", park_context.get(key))
+
+    team_context = record.get("teamContext") or {}
+    for role, prefix in ((pick_role, "pick_team_ctx"), (opp_role, "opp_team_ctx")):
+        block = extract_context_role_block(team_context, role) or {}
+        feature_put(features, f"{prefix}_wins", block.get("wins"))
+        feature_put(features, f"{prefix}_losses", block.get("losses"))
+        feature_put(features, f"{prefix}_run_diff", block.get("runDifferential"))
+        feature_put(features, f"{prefix}_games_back", safe_float(block.get("gamesBack")))
+        feature_put(features, f"{prefix}_win_pct", winning_pct(block.get("winningPercentage")))
+        streak_direction, streak_length = parse_streak_code(block.get("streakCode"))
+        feature_put(features, f"{prefix}_streak_direction", streak_direction)
+        feature_put(features, f"{prefix}_streak_length", streak_length)
+        features[f"{prefix}_division_leader"] = 1.0 if block.get("divisionLeader") else 0.0
+    diff_feature(
+        features,
+        "team_ctx_run_diff",
+        (extract_context_role_block(team_context, pick_role) or {}).get("runDifferential"),
+        (extract_context_role_block(team_context, opp_role) or {}).get("runDifferential"),
+    )
+
+    for context_name in ("offenseContext", "bullpenContext", "savantContext"):
+        context = record.get(context_name) or {}
+        for key in set((extract_context_role_block(context, "away") or {}).keys()) | set((extract_context_role_block(context, "home") or {}).keys()):
+            if isinstance((extract_context_role_block(context, pick_role) or {}).get(key), (dict, list)):
+                continue
+            diff_feature(
+                features,
+                f"{context_name}_{key}",
+                (extract_context_role_block(context, pick_role) or {}).get(key),
+                (extract_context_role_block(context, opp_role) or {}).get(key),
+            )
+
+    lineup_context = record.get("lineupContext") or {}
+    pick_lineup = lineup_context.get(pick_team) or lineup_context.get(pick_team.split()[-1])
+    opp_lineup = lineup_context.get(opp_team) or lineup_context.get(opp_team.split()[-1])
+    for key in (
+        "averageMatchupGrade",
+        "starterThreatCount",
+        "contactCount",
+        "powerCount",
+        "platoonCount",
+        "pitchTypeEdgeCount",
+        "platoonPressureIndex",
+        "pitchTypePressureIndex",
+        "bullpenPitchTypePressureIndex",
+        "starterPressureIndex",
+        "overallPressureIndex",
+        "topThirdScore",
+        "depthScore",
+    ):
+        diff_feature(features, f"lineup_{key}", (pick_lineup or {}).get(key), (opp_lineup or {}).get(key))
+
+    state_context = record.get("stateContext") or {}
+    raw_state_groups = {
+        "teamState": extract_context_role_block(state_context.get("teamState"), pick_role),
+        "oppTeamState": extract_context_role_block(state_context.get("teamState"), opp_role),
+        "teamMistakeShape": extract_context_role_block(state_context.get("teamMistakeShape"), pick_role),
+        "oppTeamMistakeShape": extract_context_role_block(state_context.get("teamMistakeShape"), opp_role),
+        "lineupConversion": extract_context_role_block(state_context.get("lineupConversion"), pick_role),
+        "oppLineupConversion": extract_context_role_block(state_context.get("lineupConversion"), opp_role),
+        "bullpenMistake": extract_context_role_block(state_context.get("bullpenMistake"), pick_role),
+        "oppBullpenMistake": extract_context_role_block(state_context.get("bullpenMistake"), opp_role),
+    }
+    for group_name, block in raw_state_groups.items():
+        if not isinstance(block, dict):
+            continue
+        for key, value in block.items():
+            if key in {"scheduledOpponent", "previousResult", "streakDirection"}:
+                continue
+            feature_put(features, f"{group_name}_{key}", value)
+
+    series_phase = state_context.get("seriesEarlyPhase") or {}
+    for key, value in series_phase.items():
+        feature_put(features, f"series_{key}", value)
+
+    for lookup_name, lookup in team_profiles.items():
+        pick_row = lookup.get((record["date"], pick_team))
+        opp_row = lookup.get((record["date"], opp_team))
+        keys = set((pick_row or {}).keys()) | set((opp_row or {}).keys())
+        for key in keys:
+            if key in {"as_of_date", "team_name"}:
+                continue
+            diff_feature(features, f"{lookup_name}_{key}", (pick_row or {}).get(key), (opp_row or {}).get(key))
+
+    starter_context = record.get("starterContext") or {}
+    pick_starter = starter_context.get(pick_role) or {}
+    opp_starter = starter_context.get(opp_role) or {}
+    for name, value in starter_feature_set(pick_starter).items():
+        feature_put(features, f"pick_starter_{name}", value)
+    for name, value in starter_feature_set(opp_starter).items():
+        feature_put(features, f"opp_starter_{name}", value)
+    for name in set(starter_feature_set(pick_starter).keys()) | set(starter_feature_set(opp_starter).keys()):
+        diff_feature(
+            features,
+            f"starter_{name}",
+            starter_feature_set(pick_starter).get(name),
+            starter_feature_set(opp_starter).get(name),
+        )
+
+    pick_starter_name = pick_starter.get("fullName")
+    opp_starter_name = opp_starter.get("fullName")
+    for lookup_name, lookup in pitcher_profiles.items():
+        pick_row = lookup.get((record["date"], pick_starter_name)) if pick_starter_name else None
+        opp_row = lookup.get((record["date"], opp_starter_name)) if opp_starter_name else None
+        keys = set((pick_row or {}).keys()) | set((opp_row or {}).keys())
+        for key in keys:
+            if key in {"as_of_date", "pitcher_id", "pitcher_name", "team_name", "scheduled_opponent"}:
+                continue
+            diff_feature(features, f"{lookup_name}_{key}", (pick_row or {}).get(key), (opp_row or {}).get(key))
+
     return features
 
 
@@ -644,6 +847,8 @@ def build_samples(
     outcome_rows_by_game_pk: dict[int, sqlite3.Row],
     outcome_rows_by_matchup: dict[tuple[str, str, str], list[sqlite3.Row]],
     first_inning_runs_by_game_pk: dict[int, int],
+    team_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+    pitcher_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
 ) -> dict[str, list[dict[str, Any]]]:
     samples: dict[str, list[dict[str, Any]]] = {"moneyline": [], "first5": [], "firstInning": [], "totals": []}
 
@@ -654,31 +859,6 @@ def build_samples(
         outcome = resolve_outcome(record, outcome_rows_by_game_pk, outcome_rows_by_matchup)
         if outcome is None:
             continue
-
-        features, pick_role = build_moneyline_features(record)
-        moneyline_target = int(outcome["home_full_game_result"] == "win") if pick_role == "home" else int(outcome["home_full_game_result"] == "loss")
-        samples["moneyline"].append(
-            {
-                "date": record["date"],
-                "matchup": record["title"],
-                "features": features,
-                "target": moneyline_target,
-                "meta": {"pickRole": pick_role, "title": record["title"], "analysis": analysis},
-            }
-        )
-
-        first5_result = str(outcome["home_first5_result"] or "")
-        if first5_result != "tie":
-            first5_target = int(first5_result == "win") if pick_role == "home" else int(first5_result == "loss")
-            samples["first5"].append(
-                {
-                    "date": record["date"],
-                    "matchup": record["title"],
-                    "features": features,
-                    "target": first5_target,
-                    "meta": {"pickRole": pick_role, "title": record["title"], "analysis": analysis},
-                }
-            )
 
         total_line = parse_total_line(record.get("totalMarket")) or safe_float(((analysis.get("mlbProjection") or {}).get("postedTotal")))
         projected_totals = (analysis.get("mlbProjection") or {}).get("totals") or {}
@@ -714,6 +894,119 @@ def build_samples(
     return samples
 
 
+def build_warehouse_side_features(
+    game: sqlite3.Row,
+    starters_by_game: dict[int, dict[str, dict[str, Any]]],
+    pick_role: str,
+    team_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+    pitcher_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+    team_profile_history: dict[str, dict[str, tuple[list[str], list[dict[str, Any]]]]],
+    pitcher_profile_history: dict[str, dict[str, tuple[list[str], list[dict[str, Any]]]]],
+) -> dict[str, Any]:
+    opp_role = opposite_role(pick_role)
+    pick_team = game["away_team"] if pick_role == "away" else game["home_team"]
+    opp_team = game["home_team"] if pick_role == "away" else game["away_team"]
+    as_of_date = game["game_date"]
+    features: dict[str, Any] = {
+        "pick_role": pick_role,
+        "home_pick_flag": 1.0 if pick_role == "home" else 0.0,
+    }
+
+    for lookup_name, lookup in team_profiles.items():
+        pick_row = resolve_prior_profile(team_profile_history[lookup_name], pick_team, as_of_date)
+        opp_row = resolve_prior_profile(team_profile_history[lookup_name], opp_team, as_of_date)
+        keys = set((pick_row or {}).keys()) | set((opp_row or {}).keys())
+        for key in keys:
+            if key in {"as_of_date", "team_name"}:
+                continue
+            diff_feature(features, f"{lookup_name}_{key}", (pick_row or {}).get(key), (opp_row or {}).get(key))
+
+    starters = starters_by_game.get(int(game["game_pk"])) or {}
+    pick_starter = starters.get(pick_role) or {}
+    opp_starter = starters.get(opp_role) or {}
+    pick_starter_seed = {
+        "pitchHand": pick_starter.get("pitch_hand"),
+    }
+    opp_starter_seed = {
+        "pitchHand": opp_starter.get("pitch_hand"),
+    }
+    pick_starter_features = starter_feature_set(pick_starter_seed)
+    opp_starter_features = starter_feature_set(opp_starter_seed)
+    for name, value in pick_starter_features.items():
+        feature_put(features, f"pick_starter_{name}", value)
+    for name, value in opp_starter_features.items():
+        feature_put(features, f"opp_starter_{name}", value)
+    for name in set(pick_starter_features.keys()) | set(opp_starter_features.keys()):
+        diff_feature(features, f"starter_{name}", pick_starter_features.get(name), opp_starter_features.get(name))
+
+    pick_starter_name = pick_starter.get("pitcher_name")
+    opp_starter_name = opp_starter.get("pitcher_name")
+    for lookup_name, lookup in pitcher_profiles.items():
+        pick_row = resolve_prior_profile(pitcher_profile_history[lookup_name], pick_starter_name, as_of_date)
+        opp_row = resolve_prior_profile(pitcher_profile_history[lookup_name], opp_starter_name, as_of_date)
+        keys = set((pick_row or {}).keys()) | set((opp_row or {}).keys())
+        for key in keys:
+            if key in {"as_of_date", "pitcher_id", "pitcher_name", "team_name", "scheduled_opponent"}:
+                continue
+            diff_feature(features, f"{lookup_name}_{key}", (pick_row or {}).get(key), (opp_row or {}).get(key))
+
+    return features
+
+
+def build_warehouse_side_samples(
+    conn: sqlite3.Connection,
+    team_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+    pitcher_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+) -> dict[str, list[dict[str, Any]]]:
+    starters_by_game = load_starting_pitchers_by_game(conn)
+    team_profile_history = {name: build_profile_history(lookup) for name, lookup in team_profiles.items()}
+    pitcher_profile_history = {name: build_profile_history(lookup) for name, lookup in pitcher_profiles.items()}
+    samples: dict[str, list[dict[str, Any]]] = {"moneyline": [], "first5": []}
+    games = conn.execute("SELECT * FROM mlb_game_outcomes ORDER BY game_date, game_pk").fetchall()
+    for game in games:
+        first5_result = str(game["home_first5_result"] or "")
+        title = f"{game['away_team']} @ {game['home_team']}"
+        for pick_role in ("away", "home"):
+            side_team = game["away_team"] if pick_role == "away" else game["home_team"]
+            features = build_warehouse_side_features(
+                game,
+                starters_by_game,
+                pick_role,
+                team_profiles,
+                pitcher_profiles,
+                team_profile_history,
+                pitcher_profile_history,
+            )
+            moneyline_target = int(game["home_full_game_result"] == "win") if pick_role == "home" else int(game["home_full_game_result"] == "loss")
+            meta = {
+                "pickRole": pick_role,
+                "sideTeam": side_team,
+                "title": title,
+                "gameKey": int(game["game_pk"]),
+            }
+            samples["moneyline"].append(
+                {
+                    "date": game["game_date"],
+                    "matchup": title,
+                    "features": features,
+                    "target": moneyline_target,
+                    "meta": meta,
+                }
+            )
+            if first5_result != "tie":
+                first5_target = int(first5_result == "win") if pick_role == "home" else int(first5_result == "loss")
+                samples["first5"].append(
+                    {
+                        "date": game["game_date"],
+                        "matchup": title,
+                        "features": features,
+                        "target": first5_target,
+                        "meta": meta,
+                    }
+                )
+    return samples
+
+
 def score_market(
     name: str,
     model: Pipeline | None,
@@ -727,28 +1020,44 @@ def score_market(
     probabilities = model.predict_proba([row["features"] for row in rows])[:, 1]
     scored = []
     threshold = threshold_info["threshold"]
-    for row, probability in zip(rows, probabilities):
-        action = "Pass"
-        pick = None
-        if promotable and name in {"moneyline", "first5"}:
-            if probability >= threshold:
-                action = "Play"
-                pick = row["meta"]["analysis"]["participantName"]
-        elif promotable:
+    if name in {"moneyline", "first5"}:
+        grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for row, probability in zip(rows, probabilities):
+            grouped[str(row["meta"]["gameKey"])].append(
+                {
+                    "matchup": row["matchup"],
+                    "probability": float(probability),
+                    "sideTeam": row["meta"]["sideTeam"],
+                }
+            )
+        for game_key, group in grouped.items():
+            best = max(group, key=lambda entry: entry["probability"])
+            scored.append(
+                {
+                    "matchup": best["matchup"],
+                    "probability": round(best["probability"], 4),
+                    "action": "Play" if promotable and best["probability"] >= threshold else "Pass",
+                    "pick": best["sideTeam"] if promotable and best["probability"] >= threshold else None,
+                }
+            )
+    else:
+        for row, probability in zip(rows, probabilities):
+            action = "Pass"
+            pick = None
             if probability >= threshold:
                 action = "Play"
                 pick = "Over" if name == "totals" else "YRFI"
             elif probability <= 1 - threshold:
                 action = "Play"
                 pick = "Under" if name == "totals" else "NRFI"
-        scored.append(
-            {
-                "matchup": row["matchup"],
-                "probability": round(float(probability), 4),
-                "action": action,
-                "pick": pick,
-            }
-        )
+            scored.append(
+                {
+                    "matchup": row["matchup"],
+                    "probability": round(float(probability), 4),
+                    "action": action,
+                    "pick": pick,
+                }
+            )
     scored.sort(key=lambda entry: entry["probability"], reverse=True)
     return scored
 
@@ -763,7 +1072,13 @@ def market_promotable(market_name: str, threshold_info: dict[str, Any]) -> bool:
     return threshold_info["utility"] > 0 and threshold_info["accuracy"] >= min_accuracy
 
 
-def build_score_rows(corpus_rows: list[dict[str, Any]], score_date: str, market_name: str) -> list[dict[str, Any]]:
+def build_score_rows(
+    corpus_rows: list[dict[str, Any]],
+    score_date: str,
+    market_name: str,
+    team_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+    pitcher_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for record in corpus_rows:
         if record["date"] != score_date:
@@ -772,15 +1087,21 @@ def build_score_rows(corpus_rows: list[dict[str, Any]], score_date: str, market_
         if not analysis:
             continue
         if market_name in {"moneyline", "first5"}:
-            features, pick_role = build_moneyline_features(record)
-            rows.append(
-                {
-                    "date": record["date"],
-                    "matchup": record["title"],
-                    "features": features,
-                    "meta": {"pickRole": pick_role, "title": record["title"], "analysis": analysis},
-                }
-            )
+            for pick_role in ("away", "home"):
+                rows.append(
+                    {
+                        "date": record["date"],
+                        "matchup": record["title"],
+                        "features": build_raw_side_features(record, pick_role, team_profiles, pitcher_profiles),
+                        "meta": {
+                            "pickRole": pick_role,
+                            "sideTeam": extract_team_name(record, pick_role),
+                            "title": record["title"],
+                            "analysis": analysis,
+                            "gameKey": record.get("id") or record.get("gamePk") or record["title"],
+                        },
+                    }
+                )
         elif market_name == "totals":
             total_line = parse_total_line(record.get("totalMarket")) or safe_float(((analysis.get("mlbProjection") or {}).get("postedTotal")))
             if total_line is None:
@@ -822,7 +1143,35 @@ def main() -> None:
     corpus_rows = load_corpus(args.corpus)
     conn = get_connection()
     outcome_rows_by_game_pk, outcome_rows_by_matchup, first_inning_runs_by_game_pk = load_outcome_maps(conn)
-    samples = build_samples(corpus_rows, outcome_rows_by_game_pk, outcome_rows_by_matchup, first_inning_runs_by_game_pk)
+    team_profiles = {
+        "team_rolling_form": load_team_profile_lookup(conn, "mlb_team_rolling_form"),
+        "team_story_priors": load_team_profile_lookup(conn, "mlb_team_story_priors"),
+        "lineup_dependency": load_team_profile_lookup(conn, "mlb_lineup_dependency_profiles"),
+        "form_carryover": load_team_profile_lookup(conn, "mlb_team_form_carryover_profiles"),
+        "lead_surrender": load_team_profile_lookup(conn, "mlb_team_lead_surrender_profiles"),
+        "whiff_persistence": load_team_profile_lookup(conn, "mlb_team_whiff_persistence_profiles"),
+    }
+    pitcher_profiles = {
+        "starter_rolling_form": load_pitcher_profile_lookup(conn, "mlb_starting_pitcher_rolling_form"),
+        "pitcher_mistake_shape": load_pitcher_profile_lookup(conn, "mlb_pitcher_mistake_shape_daily"),
+        "starter_leash": load_pitcher_profile_lookup(conn, "mlb_starter_leash_profiles"),
+        "starter_third_time_penalty": load_pitcher_profile_lookup(conn, "mlb_starter_third_time_penalty_profiles"),
+    }
+    corpus_samples = build_samples(
+        corpus_rows,
+        outcome_rows_by_game_pk,
+        outcome_rows_by_matchup,
+        first_inning_runs_by_game_pk,
+        team_profiles,
+        pitcher_profiles,
+    )
+    warehouse_side_samples = build_warehouse_side_samples(conn, team_profiles, pitcher_profiles)
+    samples = {
+        "moneyline": warehouse_side_samples["moneyline"],
+        "first5": warehouse_side_samples["first5"],
+        "totals": corpus_samples["totals"],
+        "firstInning": corpus_samples["firstInning"],
+    }
 
     results: dict[str, Any] = {}
     artifact: dict[str, Any] = {
@@ -857,7 +1206,7 @@ def main() -> None:
             threshold_info = choose_two_sided_threshold(evaluation["records"])
 
         final_model = fit_final_model(market_samples, best_name, args.score_date)
-        score_rows = build_score_rows(corpus_rows, args.score_date, market_name)
+        score_rows = build_score_rows(corpus_rows, args.score_date, market_name, team_profiles, pitcher_profiles)
         promotable = market_promotable(market_name, threshold_info)
         scored_today = score_market(market_name, final_model, threshold_info, score_rows, promotable=promotable)
 

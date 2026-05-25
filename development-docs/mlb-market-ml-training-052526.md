@@ -5,54 +5,54 @@ This pass replaces the old `50% is acceptable` mindset with walk-forward machine
 ## moneyline
 
 - Best model: `forest`
-- Walk-forward log loss: `0.7129`
-- Walk-forward Brier: `0.2592`
-- Walk-forward accuracy: `0.5580`
-- OOF sample size: `138`
-- Fitness threshold: `0.57`
-- Threshold record: `21-14` on `35` plays (`60.0%`)
+- Walk-forward log loss: `0.6984`
+- Walk-forward Brier: `0.2524`
+- Walk-forward accuracy: `0.5163`
+- OOF sample size: `1468`
+- Fitness threshold: `0.56`
+- Threshold record: `146-127` on `273` plays (`53.5%`)
 - Promotable today: `no`
 
 | Matchup | Action | Pick | Probability |
 | --- | --- | --- | --- |
-| Astros @ Rangers | Pass | Pass | 0.607 |
-| Rays @ Orioles | Pass | Pass | 0.601 |
-| Phillies @ Padres | Pass | Pass | 0.582 |
-| Marlins @ Blue Jays | Pass | Pass | 0.571 |
-| Reds @ Mets | Pass | Pass | 0.539 |
-| Twins @ White Sox | Pass | Pass | 0.532 |
-| Cubs @ Pirates | Pass | Pass | 0.518 |
-| Rockies @ Dodgers | Pass | Pass | 0.506 |
-| Cardinals @ Brewers | Pass | Pass | 0.505 |
-| Mariners @ Athletics | Pass | Pass | 0.495 |
-| Yankees @ Royals | Pass | Pass | 0.494 |
-| Nationals @ Guardians | Pass | Pass | 0.488 |
+| Cardinals @ Brewers | Pass | Pass | 0.539 |
+| Cubs @ Pirates | Pass | Pass | 0.536 |
+| Rays @ Orioles | Pass | Pass | 0.527 |
+| Nationals @ Guardians | Pass | Pass | 0.524 |
+| Astros @ Rangers | Pass | Pass | 0.523 |
+| Rockies @ Dodgers | Pass | Pass | 0.520 |
+| Mariners @ Athletics | Pass | Pass | 0.515 |
+| Diamondbacks @ Giants | Pass | Pass | 0.512 |
+| Yankees @ Royals | Pass | Pass | 0.512 |
+| Marlins @ Blue Jays | Pass | Pass | 0.512 |
+| Twins @ White Sox | Pass | Pass | 0.510 |
+| Phillies @ Padres | Pass | Pass | 0.507 |
 
 ## first5
 
 - Best model: `forest`
-- Walk-forward log loss: `0.7041`
-- Walk-forward Brier: `0.2546`
-- Walk-forward accuracy: `0.5128`
-- OOF sample size: `117`
-- Fitness threshold: `0.70`
-- Threshold record: `16-5` on `21` plays (`76.2%`)
-- Promotable today: `yes`
+- Walk-forward log loss: `0.6982`
+- Walk-forward Brier: `0.2522`
+- Walk-forward accuracy: `0.5258`
+- OOF sample size: `1238`
+- Fitness threshold: `0.57`
+- Threshold record: `113-91` on `204` plays (`55.4%`)
+- Promotable today: `no`
 
 | Matchup | Action | Pick | Probability |
 | --- | --- | --- | --- |
-| Marlins @ Blue Jays | Play | Blue Jays | 0.745 |
-| Cardinals @ Brewers | Pass | Pass | 0.614 |
-| Rays @ Orioles | Pass | Pass | 0.601 |
-| Cubs @ Pirates | Pass | Pass | 0.540 |
-| Astros @ Rangers | Pass | Pass | 0.515 |
-| Diamondbacks @ Giants | Pass | Pass | 0.507 |
-| Nationals @ Guardians | Pass | Pass | 0.507 |
-| Twins @ White Sox | Pass | Pass | 0.501 |
-| Yankees @ Royals | Pass | Pass | 0.496 |
-| Reds @ Mets | Pass | Pass | 0.485 |
-| Rockies @ Dodgers | Pass | Pass | 0.484 |
-| Mariners @ Athletics | Pass | Pass | 0.474 |
+| Cubs @ Pirates | Pass | Pass | 0.533 |
+| Phillies @ Padres | Pass | Pass | 0.523 |
+| Diamondbacks @ Giants | Pass | Pass | 0.522 |
+| Twins @ White Sox | Pass | Pass | 0.522 |
+| Rockies @ Dodgers | Pass | Pass | 0.515 |
+| Marlins @ Blue Jays | Pass | Pass | 0.514 |
+| Nationals @ Guardians | Pass | Pass | 0.511 |
+| Cardinals @ Brewers | Pass | Pass | 0.509 |
+| Yankees @ Royals | Pass | Pass | 0.508 |
+| Rays @ Orioles | Pass | Pass | 0.505 |
+| Reds @ Mets | Pass | Pass | 0.503 |
+| Mariners @ Athletics | Pass | Pass | 0.501 |
 
 ## totals
 
@@ -103,4 +103,4 @@ This pass replaces the old `50% is acceptable` mindset with walk-forward machine
 | Marlins @ Blue Jays | Pass | Pass | 0.428 |
 | Cardinals @ Brewers | Pass | Pass | 0.401 |
 | Astros @ Rangers | Pass | Pass | 0.381 |
-| Diamondbacks @ Giants | Pass | Pass | 0.301 |
+| Diamondbacks @ Giants | Play | NRFI | 0.301 |

@@ -1,100 +1,100 @@
 {
-  "generatedAt": "2026-05-25T22:58:36.068161Z",
+  "generatedAt": "2026-05-25T23:34:10.231543Z",
   "scoreDate": "2026-05-25",
   "markets": {
     "moneyline": {
       "bestModel": "forest",
       "metrics": {
-        "logLoss": 0.7129,
-        "brier": 0.2592,
-        "accuracy": 0.558,
-        "sampleSize": 138
+        "logLoss": 0.6984,
+        "brier": 0.2524,
+        "accuracy": 0.5163,
+        "sampleSize": 1468
       },
       "threshold": {
-        "threshold": 0.57,
-        "plays": 35,
-        "hits": 21,
-        "losses": 14,
-        "accuracy": 0.6,
-        "utility": 0.0
+        "threshold": 0.56,
+        "plays": 273,
+        "hits": 146,
+        "losses": 127,
+        "accuracy": 0.5347985347985348,
+        "utility": -44.5
       },
       "promotable": false,
       "today": [
         {
-          "matchup": "Astros @ Rangers",
-          "probability": 0.6073,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Rays @ Orioles",
-          "probability": 0.6014,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Phillies @ Padres",
-          "probability": 0.5817,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Marlins @ Blue Jays",
-          "probability": 0.5706,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Reds @ Mets",
-          "probability": 0.5394,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Twins @ White Sox",
-          "probability": 0.5321,
+          "matchup": "Cardinals @ Brewers",
+          "probability": 0.5392,
           "action": "Pass",
           "pick": null
         },
         {
           "matchup": "Cubs @ Pirates",
-          "probability": 0.518,
+          "probability": 0.5361,
           "action": "Pass",
           "pick": null
         },
         {
-          "matchup": "Rockies @ Dodgers",
-          "probability": 0.506,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Cardinals @ Brewers",
-          "probability": 0.5054,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Mariners @ Athletics",
-          "probability": 0.4949,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Yankees @ Royals",
-          "probability": 0.4942,
+          "matchup": "Rays @ Orioles",
+          "probability": 0.5275,
           "action": "Pass",
           "pick": null
         },
         {
           "matchup": "Nationals @ Guardians",
-          "probability": 0.4879,
+          "probability": 0.5236,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Astros @ Rangers",
+          "probability": 0.5231,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Rockies @ Dodgers",
+          "probability": 0.52,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Mariners @ Athletics",
+          "probability": 0.5149,
           "action": "Pass",
           "pick": null
         },
         {
           "matchup": "Diamondbacks @ Giants",
-          "probability": 0.4513,
+          "probability": 0.5122,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Yankees @ Royals",
+          "probability": 0.5119,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Marlins @ Blue Jays",
+          "probability": 0.5116,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Twins @ White Sox",
+          "probability": 0.51,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Phillies @ Padres",
+          "probability": 0.5072,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Reds @ Mets",
+          "probability": 0.507,
           "action": "Pass",
           "pick": null
         }
@@ -103,96 +103,96 @@
     "first5": {
       "bestModel": "forest",
       "metrics": {
-        "logLoss": 0.7041,
-        "brier": 0.2546,
-        "accuracy": 0.5128,
-        "sampleSize": 117
+        "logLoss": 0.6982,
+        "brier": 0.2522,
+        "accuracy": 0.5258,
+        "sampleSize": 1238
       },
       "threshold": {
-        "threshold": 0.7,
-        "plays": 21,
-        "hits": 16,
-        "losses": 5,
-        "accuracy": 0.7619047619047619,
-        "utility": 8.5
+        "threshold": 0.57,
+        "plays": 204,
+        "hits": 113,
+        "losses": 91,
+        "accuracy": 0.553921568627451,
+        "utility": -23.5
       },
-      "promotable": true,
+      "promotable": false,
       "today": [
         {
-          "matchup": "Marlins @ Blue Jays",
-          "probability": 0.7452,
-          "action": "Play",
-          "pick": "Blue Jays"
-        },
-        {
-          "matchup": "Cardinals @ Brewers",
-          "probability": 0.6139,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Rays @ Orioles",
-          "probability": 0.601,
-          "action": "Pass",
-          "pick": null
-        },
-        {
           "matchup": "Cubs @ Pirates",
-          "probability": 0.5403,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Astros @ Rangers",
-          "probability": 0.5155,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Diamondbacks @ Giants",
-          "probability": 0.5074,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Nationals @ Guardians",
-          "probability": 0.5067,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Twins @ White Sox",
-          "probability": 0.501,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Yankees @ Royals",
-          "probability": 0.4958,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Reds @ Mets",
-          "probability": 0.4852,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Rockies @ Dodgers",
-          "probability": 0.4843,
-          "action": "Pass",
-          "pick": null
-        },
-        {
-          "matchup": "Mariners @ Athletics",
-          "probability": 0.4737,
+          "probability": 0.5333,
           "action": "Pass",
           "pick": null
         },
         {
           "matchup": "Phillies @ Padres",
-          "probability": 0.4687,
+          "probability": 0.5231,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Diamondbacks @ Giants",
+          "probability": 0.5221,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Twins @ White Sox",
+          "probability": 0.5218,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Rockies @ Dodgers",
+          "probability": 0.5155,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Marlins @ Blue Jays",
+          "probability": 0.5136,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Nationals @ Guardians",
+          "probability": 0.5111,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Cardinals @ Brewers",
+          "probability": 0.5088,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Yankees @ Royals",
+          "probability": 0.5082,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Rays @ Orioles",
+          "probability": 0.5054,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Reds @ Mets",
+          "probability": 0.5032,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Mariners @ Athletics",
+          "probability": 0.5011,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Astros @ Rangers",
+          "probability": 0.494,
           "action": "Pass",
           "pick": null
         }
@@ -371,14 +371,14 @@
         {
           "matchup": "Diamondbacks @ Giants",
           "probability": 0.3011,
-          "action": "Pass",
-          "pick": null
+          "action": "Play",
+          "pick": "NRFI"
         },
         {
           "matchup": "Reds @ Mets",
           "probability": 0.2969,
-          "action": "Pass",
-          "pick": null
+          "action": "Play",
+          "pick": "NRFI"
         }
       ]
     }
