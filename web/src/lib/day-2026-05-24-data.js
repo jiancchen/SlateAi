@@ -10,15 +10,15 @@ export const rawGames = [
       "id": 656605,
       "fullName": "Mitch Keller",
       "pitchHand": "R",
-      "wins": 4,
+      "wins": 5,
       "losses": 2,
-      "era": "3.84",
-      "strikeOuts": 41,
-      "inningsPitched": "58.2",
-      "hitsAllowed": 47,
-      "walks": 17,
+      "era": "3.64",
+      "strikeOuts": 46,
+      "inningsPitched": "64.1",
+      "hitsAllowed": 50,
+      "walks": 19,
       "homeRunsAllowed": 4,
-      "whip": "1.09",
+      "whip": "1.07",
       "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
@@ -32,15 +32,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/mitch-keller-656605?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Mitch Keller",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.83,
+        "earnedRunsPerStart": 2.5,
+        "hitsAllowedPerStart": 4.6,
+        "homeRunsAllowedPerStart": 0.4,
+        "walksAllowedPerStart": 1.6,
+        "strikeoutsPerStart": 4.1,
+        "whipLike": 1.06,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.6,
+        "runVolatility": 1.91,
+        "homeRunBurstiness": 1.09,
+        "recent3EarnedRunsDelta": 1.5
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
         "expectedInnings": 5.83,
         "daysSinceLastStart": 5,
         "startsLoaded": 10,
-        "shortLeashRisk": 0,
+        "shortLeashRisk": 0.1,
         "durableRate": 0.6,
         "leashScore": null,
         "leashVolatility": null,
@@ -56,14 +72,14 @@ export const rawGames = [
       "fullName": "Dylan Cease",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 2,
-      "era": "3.09",
-      "strikeOuts": 86,
-      "inningsPitched": "58.1",
-      "hitsAllowed": 46,
-      "walks": 25,
-      "homeRunsAllowed": 4,
-      "whip": "1.22",
+      "losses": 3,
+      "era": "3.05",
+      "strikeOuts": 92,
+      "inningsPitched": "62.0",
+      "hitsAllowed": 49,
+      "walks": 26,
+      "homeRunsAllowed": 5,
+      "whip": "1.21",
       "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
@@ -77,15 +93,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/dylan-cease-656302?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Dylan Cease",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.73,
+        "earnedRunsPerStart": 1.9,
+        "hitsAllowedPerStart": 4.5,
+        "homeRunsAllowedPerStart": 0.3,
+        "walksAllowedPerStart": 2.5,
+        "strikeoutsPerStart": 8.4,
+        "whipLike": 1.22,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.4,
+        "runVolatility": 1.66,
+        "homeRunBurstiness": 1.01,
+        "recent3EarnedRunsDelta": 0.1
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
         "expectedInnings": 5.73,
         "daysSinceLastStart": 5,
         "startsLoaded": 10,
-        "shortLeashRisk": 0,
+        "shortLeashRisk": 0.1,
         "durableRate": 0.4,
         "leashScore": null,
         "leashVolatility": null,
@@ -625,6 +657,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 656605,
+                "pitcherName": "Mitch Keller",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669461,
+                "pitcherName": "Matthew Liberatore",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -676,6 +726,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 669387,
+                "pitcherName": "Carmen Mlodzinski",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 700241,
+                "pitcherName": "Michael McGreevy",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -723,6 +791,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 677952,
+                "pitcherName": "Braxton Ashcraft",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669160,
+                "pitcherName": "Dustin May",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -770,6 +856,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 696149,
+                "pitcherName": "Bubba Chandler",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 592332,
+                "pitcherName": "Kevin Gausman",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -817,6 +921,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 694973,
+                "pitcherName": "Paul Skenes",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -866,6 +988,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 656302,
+                "pitcherName": "Dylan Cease",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 701542,
+                "pitcherName": "Will Warren",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -913,6 +1053,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 702056,
+                "pitcherName": "Trey Yesavage",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 693645,
+                "pitcherName": "Cam Schlittler",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -960,6 +1118,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 680755,
+                "pitcherName": "Braydon Fisher",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607074,
+                "pitcherName": "Carlos Rodón",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1007,6 +1183,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 592332,
+                "pitcherName": "Kevin Gausman",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 696149,
+                "pitcherName": "Bubba Chandler",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1054,6 +1248,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 694973,
+                "pitcherName": "Paul Skenes",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1105,6 +1317,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 696149,
+                "pitcherName": "Bubba Chandler",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 592332,
+                "pitcherName": "Kevin Gausman",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1152,6 +1382,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 694973,
+                "pitcherName": "Paul Skenes",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1201,6 +1449,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 592332,
+                "pitcherName": "Kevin Gausman",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 696149,
+                "pitcherName": "Bubba Chandler",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1248,6 +1514,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 694973,
+                "pitcherName": "Paul Skenes",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1320,8 +1604,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Mitch Keller",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.12,
+          "thirdTripScoringDelta": -0.04,
+          "thirdTripRunDeltaDelta": 0.13,
+          "thirdTripHrDelta": 0.07,
+          "thirdTimePenaltyIndex": 55.61
+        },
+        "home": {
+          "pitcherName": "Dylan Cease",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 2,
+          "thirdTripExposureRate": 0.4,
+          "thirdTripReachedDelta": 0.18,
+          "thirdTripScoringDelta": 0.12,
+          "thirdTripRunDeltaDelta": 0.13,
+          "thirdTripHrDelta": 0.04,
+          "thirdTimePenaltyIndex": 72.29
+        }
       }
     }
   },
@@ -1338,14 +1644,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 3,
-      "era": "4.58",
-      "strikeOuts": 45,
-      "inningsPitched": "55.0",
-      "hitsAllowed": 56,
-      "walks": 21,
-      "homeRunsAllowed": 5,
-      "whip": "1.40",
-      "gamesStarted": 10,
+      "era": "4.28",
+      "strikeOuts": 50,
+      "inningsPitched": "61.0",
+      "hitsAllowed": 58,
+      "walks": 23,
+      "homeRunsAllowed": 6,
+      "whip": "1.33",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 664285,
@@ -1383,14 +1689,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 1,
-      "era": "4.25",
-      "strikeOuts": 22,
-      "inningsPitched": "29.2",
-      "hitsAllowed": 30,
-      "walks": 14,
+      "era": "3.47",
+      "strikeOuts": 26,
+      "inningsPitched": "36.1",
+      "hitsAllowed": 35,
+      "walks": 16,
       "homeRunsAllowed": 5,
-      "whip": "1.48",
-      "gamesStarted": 6,
+      "whip": "1.40",
+      "gamesStarted": 7,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 687064,
@@ -1422,9 +1728,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -182 / -1.5 +170",
-    "total": "o7.5 -118 / u8 -115",
-    "moneyline": "Tigers +110 / Orioles -125",
+    "spread": "+1.5 -195 / +1.5 -215",
+    "total": "o8 -110 / u8.5 -118",
+    "moneyline": "Tigers +106 / Orioles -122",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
     "tierTwoContext": {
@@ -1951,6 +2257,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 664285,
+                "pitcherName": "Framber Valdez",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1998,6 +2322,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 672456,
+                "pitcherName": "Keider Montero",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 800048,
+                "pitcherName": "Parker Messick",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2045,6 +2387,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 623454,
+                "pitcherName": "Drew Anderson",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676440,
+                "pitcherName": "Tanner Bibee",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2096,6 +2456,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 663554,
+                "pitcherName": "Casey Mize",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676282,
+                "pitcherName": "Joey Cantillo",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2143,6 +2521,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2192,6 +2588,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 687064,
+                "pitcherName": "Brandon Young",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2239,6 +2653,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 16,
+            "starters": {
+              "team": {
+                "pitcherId": 669432,
+                "pitcherName": "Trevor Rogers",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663556,
+                "pitcherName": "Shane McClanahan",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2286,6 +2718,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 680694,
+                "pitcherName": "Kyle Bradish",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 643377,
+                "pitcherName": "Griffin Jax",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2333,6 +2783,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 669358,
+                "pitcherName": "Shane Baz",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 571927,
+                "pitcherName": "Steven Matz",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2380,6 +2848,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2431,6 +2917,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2480,6 +2984,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2570,14 +3092,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 5,
       "losses": 1,
-      "era": "2.45",
-      "strikeOuts": 64,
-      "inningsPitched": "58.2",
-      "hitsAllowed": 43,
-      "walks": 17,
+      "era": "2.24",
+      "strikeOuts": 70,
+      "inningsPitched": "64.1",
+      "hitsAllowed": 48,
+      "walks": 19,
       "homeRunsAllowed": 6,
-      "whip": "1.02",
-      "gamesStarted": 10,
+      "whip": "1.04",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 800048,
@@ -2615,14 +3137,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 4,
-      "era": "5.77",
-      "strikeOuts": 37,
-      "inningsPitched": "43.2",
-      "hitsAllowed": 51,
-      "walks": 14,
+      "era": "5.44",
+      "strikeOuts": 40,
+      "inningsPitched": "49.2",
+      "hitsAllowed": 57,
+      "walks": 16,
       "homeRunsAllowed": 7,
-      "whip": "1.49",
-      "gamesStarted": 8,
+      "whip": "1.47",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 691725,
@@ -2654,9 +3176,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +152 / +1.5 -170",
-    "total": "o7 -122 / u7.5 -120",
-    "moneyline": "Guardians -115 / Phillies even",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/guardians-vs-phillies",
     "tierTwoContext": {
@@ -3183,6 +3705,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 800048,
+                "pitcherName": "Parker Messick",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 672456,
+                "pitcherName": "Keider Montero",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3230,6 +3770,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 676440,
+                "pitcherName": "Tanner Bibee",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 623454,
+                "pitcherName": "Drew Anderson",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3281,6 +3839,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 676282,
+                "pitcherName": "Joey Cantillo",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663554,
+                "pitcherName": "Casey Mize",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3328,6 +3904,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 1,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 668909,
+                "pitcherName": "Gavin Williams",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 650911,
+                "pitcherName": "Cristopher Sánchez",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3375,6 +3969,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 554430,
+                "pitcherName": "Zack Wheeler",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3424,6 +4036,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 691725,
+                "pitcherName": "Andrew Painter",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 666157,
+                "pitcherName": "Nick Lodolo",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3471,6 +4101,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 666200,
+                "pitcherName": "Jesús Luzardo",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 695505,
+                "pitcherName": "Chase Burns",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3518,6 +4166,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 605400,
+                "pitcherName": "Aaron Nola",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 671096,
+                "pitcherName": "Andrew Abbott",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3565,6 +4231,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 650911,
+                "pitcherName": "Cristopher Sánchez",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 668909,
+                "pitcherName": "Gavin Williams",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3612,6 +4296,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 554430,
+                "pitcherName": "Zack Wheeler",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3663,6 +4365,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 1,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 668909,
+                "pitcherName": "Gavin Williams",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 650911,
+                "pitcherName": "Cristopher Sánchez",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3710,6 +4430,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 554430,
+                "pitcherName": "Zack Wheeler",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3759,6 +4497,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 650911,
+                "pitcherName": "Cristopher Sánchez",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 668909,
+                "pitcherName": "Gavin Williams",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3806,6 +4562,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 554430,
+                "pitcherName": "Zack Wheeler",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3896,14 +4670,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 1,
-      "era": "3.19",
-      "strikeOuts": 45,
-      "inningsPitched": "48.0",
-      "hitsAllowed": 39,
-      "walks": 9,
+      "era": "2.83",
+      "strikeOuts": 49,
+      "inningsPitched": "54.0",
+      "hitsAllowed": 44,
+      "walks": 10,
       "homeRunsAllowed": 7,
       "whip": "1.00",
-      "gamesStarted": 9,
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656876,
@@ -3941,14 +4715,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 2,
-      "era": "3.58",
-      "strikeOuts": 61,
-      "inningsPitched": "50.1",
-      "hitsAllowed": 44,
-      "walks": 13,
+      "era": "3.14",
+      "strikeOuts": 65,
+      "inningsPitched": "57.1",
+      "hitsAllowed": 48,
+      "walks": 16,
       "homeRunsAllowed": 8,
-      "whip": "1.13",
-      "gamesStarted": 9,
+      "whip": "1.12",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 677960,
@@ -3980,9 +4754,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -188 / -1.5 +175",
-    "total": "o7 -105 / u7 -106",
-    "moneyline": "Rays +117 / Yankees -130",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rays-vs-yankees",
     "tierTwoContext": {
@@ -4509,6 +5283,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 656876,
+                "pitcherName": "Drew Rasmussen",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4556,6 +5348,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 16,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 663556,
+                "pitcherName": "Shane McClanahan",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669432,
+                "pitcherName": "Trevor Rogers",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4603,6 +5413,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 643377,
+                "pitcherName": "Griffin Jax",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 680694,
+                "pitcherName": "Kyle Bradish",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4650,6 +5478,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 571927,
+                "pitcherName": "Steven Matz",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669358,
+                "pitcherName": "Shane Baz",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4697,6 +5543,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 607259,
+                "pitcherName": "Nick Martinez",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 543037,
+                "pitcherName": "Gerrit Cole",
+                "teamName": "New York Yankees",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4746,6 +5610,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 677960,
+                "pitcherName": "Ryan Weathers",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4793,6 +5675,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 701542,
+                "pitcherName": "Will Warren",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656302,
+                "pitcherName": "Dylan Cease",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4840,6 +5740,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 693645,
+                "pitcherName": "Cam Schlittler",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702056,
+                "pitcherName": "Trey Yesavage",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4887,6 +5805,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 607074,
+                "pitcherName": "Carlos Rodón",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 680755,
+                "pitcherName": "Braydon Fisher",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4934,6 +5870,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 543037,
+                "pitcherName": "Gerrit Cole",
+                "teamName": "New York Yankees",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607259,
+                "pitcherName": "Nick Martinez",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4985,6 +5939,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 607259,
+                "pitcherName": "Nick Martinez",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 543037,
+                "pitcherName": "Gerrit Cole",
+                "teamName": "New York Yankees",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5034,6 +6006,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 543037,
+                "pitcherName": "Gerrit Cole",
+                "teamName": "New York Yankees",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607259,
+                "pitcherName": "Nick Martinez",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5124,14 +6114,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 2,
-      "era": "3.63",
-      "strikeOuts": 40,
-      "inningsPitched": "57.0",
-      "hitsAllowed": 44,
+      "era": "3.98",
+      "strikeOuts": 43,
+      "inningsPitched": "61.0",
+      "hitsAllowed": 50,
       "walks": 17,
-      "homeRunsAllowed": 7,
-      "whip": "1.07",
-      "gamesStarted": 10,
+      "homeRunsAllowed": 9,
+      "whip": "1.10",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 641927,
@@ -5169,14 +6159,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 1,
-      "era": "2.93",
-      "strikeOuts": 30,
-      "inningsPitched": "40.0",
-      "hitsAllowed": 36,
-      "walks": 9,
+      "era": "3.27",
+      "strikeOuts": 34,
+      "inningsPitched": "44.0",
+      "hitsAllowed": 42,
+      "walks": 11,
       "homeRunsAllowed": 4,
-      "whip": "1.13",
-      "gamesStarted": 8,
+      "whip": "1.20",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 543243,
@@ -5208,9 +6198,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +130",
-    "total": "o7 -110 / u7 -105",
-    "moneyline": "Twins +150 / Red Sox -174",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-red-sox",
     "tierTwoContext": {
@@ -5737,6 +6727,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 696070,
+                "pitcherName": "Kendry Rojas",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 837227,
+                "pitcherName": "Tatsuya Imai",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5784,6 +6792,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 805673,
+                "pitcherName": "Zebby Matthews",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 669920,
+                "pitcherName": "Jason Alexander",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5831,6 +6857,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 657746,
+                "pitcherName": "Joe Ryan",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681347,
+                "pitcherName": "Mike Burrows",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5878,6 +6922,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 8,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 687570,
+                "pitcherName": "Connor Prielipp",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 801139,
+                "pitcherName": "Payton Tolle",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5925,6 +6987,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 671737,
+                "pitcherName": "Taj Bradley",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663558,
+                "pitcherName": "Jovani Morán",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5974,6 +7054,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 543243,
+                "pitcherName": "Sonny Gray",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607625,
+                "pitcherName": "Seth Lugo",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6021,6 +7119,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 624133,
+                "pitcherName": "Ranger Suarez",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663559,
+                "pitcherName": "Bailey Falter",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6068,6 +7184,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 813349,
+                "pitcherName": "Connelly Early",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 608379,
+                "pitcherName": "Michael Wacha",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6115,6 +7249,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 801139,
+                "pitcherName": "Payton Tolle",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 687570,
+                "pitcherName": "Connor Prielipp",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6162,6 +7314,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 663558,
+                "pitcherName": "Jovani Morán",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 671737,
+                "pitcherName": "Taj Bradley",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6213,6 +7383,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 8,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 687570,
+                "pitcherName": "Connor Prielipp",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 801139,
+                "pitcherName": "Payton Tolle",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6260,6 +7448,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 671737,
+                "pitcherName": "Taj Bradley",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663558,
+                "pitcherName": "Jovani Morán",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6309,6 +7515,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 801139,
+                "pitcherName": "Payton Tolle",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 687570,
+                "pitcherName": "Connor Prielipp",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6356,6 +7580,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 663558,
+                "pitcherName": "Jovani Morán",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 671737,
+                "pitcherName": "Taj Bradley",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6434,1342 +7676,6 @@ export const rawGames = [
     }
   },
   {
-    "gamePk": 824514,
-    "id": "cardinals-reds",
-    "away": "Cardinals",
-    "home": "Reds",
-    "start": "10:40 AM PT",
-    "startMinutes": 640,
-    "awayPitcher": {
-      "id": 802408,
-      "fullName": "Brycen Mautz",
-      "pitchHand": "L",
-      "wins": 0,
-      "losses": 0,
-      "era": "-",
-      "strikeOuts": 0,
-      "inningsPitched": "-",
-      "hitsAllowed": 0,
-      "walks": 0,
-      "homeRunsAllowed": 0,
-      "whip": null,
-      "gamesStarted": 0,
-      "probableSource": "mlb-api",
-      "savant": {
-        "playerId": 802408,
-        "playerUrl": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408",
-        "statsSuffix": "r-pitching-mlb",
-        "season": 2026,
-        "statsUrls": {
-          "statcast": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408?stats=statcast-r-pitching-mlb&season=2026",
-          "splits": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408?stats=splits-r-pitching-mlb&season=2026",
-          "gamelogs": "https://baseballsavant.mlb.com/savant-player/brycen-mautz-802408?stats=gamelogs-r-pitching-mlb&season=2026"
-        }
-      },
-      "recentForm": null,
-      "usageContext": {
-        "status": "debut-window",
-        "label": "Debut / opener watch",
-        "note": "No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.",
-        "expectedInnings": 0,
-        "daysSinceLastStart": null,
-        "startsLoaded": 0,
-        "shortLeashRisk": 0,
-        "durableRate": 0,
-        "leashScore": null,
-        "leashVolatility": null,
-        "recent3OutsDelta": null,
-        "fivePlusInningRate": null,
-        "sixPlusInningRate": null,
-        "ninetyPitchRate": null,
-        "workloadLabel": "Unknown leash"
-      }
-    },
-    "homePitcher": {
-      "id": 663903,
-      "fullName": "Brady Singer",
-      "pitchHand": "R",
-      "wins": 2,
-      "losses": 4,
-      "era": "6.26",
-      "strikeOuts": 34,
-      "inningsPitched": "46.0",
-      "hitsAllowed": 66,
-      "walks": 12,
-      "homeRunsAllowed": 14,
-      "whip": "1.70",
-      "gamesStarted": 10,
-      "probableSource": "mlb-api",
-      "savant": {
-        "playerId": 663903,
-        "playerUrl": "https://baseballsavant.mlb.com/savant-player/brady-singer-663903",
-        "statsSuffix": "r-pitching-mlb",
-        "season": 2026,
-        "statsUrls": {
-          "statcast": "https://baseballsavant.mlb.com/savant-player/brady-singer-663903?stats=statcast-r-pitching-mlb&season=2026",
-          "splits": "https://baseballsavant.mlb.com/savant-player/brady-singer-663903?stats=splits-r-pitching-mlb&season=2026",
-          "gamelogs": "https://baseballsavant.mlb.com/savant-player/brady-singer-663903?stats=gamelogs-r-pitching-mlb&season=2026"
-        }
-      },
-      "recentForm": null,
-      "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 4.6,
-        "daysSinceLastStart": 7,
-        "startsLoaded": 10,
-        "shortLeashRisk": 0.3,
-        "durableRate": 0.3,
-        "leashScore": null,
-        "leashVolatility": null,
-        "recent3OutsDelta": null,
-        "fivePlusInningRate": null,
-        "sixPlusInningRate": null,
-        "ninetyPitchRate": null,
-        "workloadLabel": "Short leash"
-      }
-    },
-    "spread": "+1.5 -190 / +1.5 -188",
-    "total": "o10 -110 / u10 -109",
-    "moneyline": "Cardinals +102 / Reds -120",
-    "pitcherSourceNote": "",
-    "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-reds",
-    "tierTwoContext": {
-      "storyPriors": {
-        "away": null,
-        "home": null
-      },
-      "series": null
-    },
-    "stateContext": {
-      "teamState": {
-        "away": {
-          "scheduledOpponent": "Reds",
-          "scheduledSeriesGameNumber": null,
-          "divisionMatchupFlag": true,
-          "gamesSample": 5,
-          "previousResult": "win",
-          "streakDirection": "W",
-          "streakLength": 1,
-          "winPctLast3": 0.33,
-          "winPctLast5": 0.4,
-          "runDiffLast3": 0.67,
-          "runDiffLast5": -0.4,
-          "closeLossCountLast5": 1,
-          "blowoutWinCountLast5": 1,
-          "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 2,
-          "bullpenFlipLossCountLast5": 0,
-          "quietFirst5CountLast5": 0,
-          "firstInningJoltCountLast5": 0,
-          "opponentWinPctLast5": 0.51,
-          "snapbackPressureIndex": 24.84,
-          "heatRegressionIndex": 29,
-          "formPressureIndex": 31.05
-        },
-        "home": {
-          "scheduledOpponent": "Cardinals",
-          "scheduledSeriesGameNumber": null,
-          "divisionMatchupFlag": true,
-          "gamesSample": 5,
-          "previousResult": "loss",
-          "streakDirection": "L",
-          "streakLength": 1,
-          "winPctLast3": 0.67,
-          "winPctLast5": 0.6,
-          "runDiffLast3": -0.33,
-          "runDiffLast5": 0.2,
-          "closeLossCountLast5": 1,
-          "blowoutWinCountLast5": 1,
-          "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 4,
-          "bullpenFlipLossCountLast5": 0,
-          "quietFirst5CountLast5": 0,
-          "firstInningJoltCountLast5": 0,
-          "opponentWinPctLast5": 0.54,
-          "snapbackPressureIndex": 37,
-          "heatRegressionIndex": 20,
-          "formPressureIndex": 34.65
-        }
-      },
-      "hitterState": {
-        "away": {
-          "topSlots": 6,
-          "hittersTracked": 6,
-          "top6PressureIndex": 26.39,
-          "top6ColdIndex": 27.13,
-          "top6HeatIndex": 48.03,
-          "top6WhiffRate": 0.12,
-          "top6StrikeoutRate": 0.19,
-          "top6WalkRate": 0.11,
-          "hottestHitter": {
-            "playerId": 676475,
-            "playerName": "Alec Burleson",
-            "heatRegressionIndex": 86.99,
-            "hitStreakGames": 5,
-            "homeRunStreakGames": 1,
-            "hitsPerPaLast5": 0.36,
-            "totalBasesPerPaLast5": 0.59
-          },
-          "coldestHitter": {
-            "playerId": 669357,
-            "playerName": "Nolan Gorman",
-            "coldStreakIndex": 68.12,
-            "hitlessStreakGames": 1,
-            "whiffRateLast5": 0.18,
-            "strikeoutRateLast5": 0.27
-          },
-          "pressureHitter": {
-            "playerId": 695336,
-            "playerName": "Thomas Saggese",
-            "pressurePlateIndex": 42.19,
-            "hitlessStreakGames": 2,
-            "whiffRateLast5": 0.14,
-            "walkRateLast5": 0.11
-          }
-        },
-        "home": {
-          "topSlots": 6,
-          "hittersTracked": 6,
-          "top6PressureIndex": 38.84,
-          "top6ColdIndex": 63.81,
-          "top6HeatIndex": 20.67,
-          "top6WhiffRate": 0.11,
-          "top6StrikeoutRate": 0.27,
-          "top6WalkRate": 0.11,
-          "hottestHitter": {
-            "playerId": 666181,
-            "playerName": "Will Benson",
-            "heatRegressionIndex": 28,
-            "hitStreakGames": 1,
-            "homeRunStreakGames": 0,
-            "hitsPerPaLast5": 0.08,
-            "totalBasesPerPaLast5": 0.08
-          },
-          "coldestHitter": {
-            "playerId": 680574,
-            "playerName": "Matt McLain",
-            "coldStreakIndex": 100,
-            "hitlessStreakGames": 3,
-            "whiffRateLast5": 0.1,
-            "strikeoutRateLast5": 0.3
-          },
-          "pressureHitter": {
-            "playerId": 680574,
-            "playerName": "Matt McLain",
-            "pressurePlateIndex": 53.69,
-            "hitlessStreakGames": 3,
-            "whiffRateLast5": 0.1,
-            "walkRateLast5": 0.04
-          }
-        }
-      },
-      "teamMistakeShape": {
-        "away": {
-          "windowGames": 8,
-          "gamesSample": 8,
-          "lowScoringGameRate": 0.38,
-          "highScoringGameRate": 0.25,
-          "scorelessFirst3Rate": 0.38,
-          "firstInningRunAllowedRate": 0.25,
-          "earlyMultiRunAllowedRate": 0,
-          "oneBigInningRate": 0.25,
-          "oneBadInningAllowedRate": 0.38,
-          "trafficGameRate": 0.63,
-          "deadBatTrafficRate": 0.38,
-          "trafficNoConversionRate": 0,
-          "baseRunnerConversionRate": 0.33,
-          "strandedTrafficRate": 1.24,
-          "topOrderPressureNoConversionRate": 0.13,
-          "bullpenMeltdownRate": 0.25,
-          "runClusteringIndex": 56.29,
-          "mistakeChaosIndex": 48.14
-        },
-        "home": {
-          "windowGames": 8,
-          "gamesSample": 8,
-          "lowScoringGameRate": 0.13,
-          "highScoringGameRate": 0.38,
-          "scorelessFirst3Rate": 0.25,
-          "firstInningRunAllowedRate": 0.38,
-          "earlyMultiRunAllowedRate": 0.5,
-          "oneBigInningRate": 0.5,
-          "oneBadInningAllowedRate": 0.38,
-          "trafficGameRate": 0.75,
-          "deadBatTrafficRate": 0,
-          "trafficNoConversionRate": 0.13,
-          "baseRunnerConversionRate": 0.41,
-          "strandedTrafficRate": 1.06,
-          "topOrderPressureNoConversionRate": 0,
-          "bullpenMeltdownRate": 0.88,
-          "runClusteringIndex": 69.16,
-          "mistakeChaosIndex": 67.73
-        }
-      },
-      "lineupConversion": {
-        "away": {
-          "windowGames": 8,
-          "gamesSample": 8,
-          "baserunnersPerGame": 12.88,
-          "runsPerBaserunner": 0.33,
-          "strandedTrafficRate": 1.24,
-          "earlyBaserunnersPerGame": 3.38,
-          "earlyConversionRate": 0.26,
-          "topOrderBaserunnersFirst3PerGame": 2.13,
-          "topOrderConversionShare": 0.41,
-          "trafficNoConversionRate": 0,
-          "deadBatTrafficRate": 0.38,
-          "quietFirst5Rate": 0.38,
-          "conversionVolatility": 0.21,
-          "lineupConversionIndex": 24.14
-        },
-        "home": {
-          "windowGames": 8,
-          "gamesSample": 8,
-          "baserunnersPerGame": 11.88,
-          "runsPerBaserunner": 0.41,
-          "strandedTrafficRate": 1.06,
-          "earlyBaserunnersPerGame": 3.5,
-          "earlyConversionRate": 0.36,
-          "topOrderBaserunnersFirst3PerGame": 1.5,
-          "topOrderConversionShare": 0.83,
-          "trafficNoConversionRate": 0.13,
-          "deadBatTrafficRate": 0,
-          "quietFirst5Rate": 0.25,
-          "conversionVolatility": 0.12,
-          "lineupConversionIndex": 58.6
-        }
-      },
-      "bullpenMistake": {
-        "away": {
-          "windowDays": 14,
-          "appearancesSample": 47,
-          "gamesSample": 12,
-          "firstBatterReachRate": 0.45,
-          "firstBatterWalkRate": 0.19,
-          "meltdownAppearanceRate": 0.11,
-          "homeRunAppearanceRate": 0.13,
-          "inheritedTrafficEntryRate": 0.11,
-          "inheritedTrafficScoreRate": 0.6,
-          "bullpenMeltdownGameRate": 0.33,
-          "leadLossAfterEntryRate": 0.2,
-          "bridgeCleanGameRate": 0.42,
-          "bullpenChaosIndex": 52.32
-        },
-        "home": {
-          "windowDays": 14,
-          "appearancesSample": 44,
-          "gamesSample": 12,
-          "firstBatterReachRate": 0.34,
-          "firstBatterWalkRate": 0.18,
-          "meltdownAppearanceRate": 0.25,
-          "homeRunAppearanceRate": 0.3,
-          "inheritedTrafficEntryRate": 0.16,
-          "inheritedTrafficScoreRate": 0.57,
-          "bullpenMeltdownGameRate": 0.67,
-          "leadLossAfterEntryRate": 0.14,
-          "bridgeCleanGameRate": 0.25,
-          "bullpenChaosIndex": 59.24
-        }
-      },
-      "firstInningTeam": {
-        "away": {
-          "windowGames": 8,
-          "gamesSample": 8,
-          "firstInningRunsPerGame": 0.13,
-          "firstInningRunsAllowedPerGame": 0.25,
-          "scoredFirstInningRate": 0.13,
-          "scorelessFirstInningRate": 0.88,
-          "allowedFirstInningRate": 0.25,
-          "firstInningMultiRunRate": 0,
-          "firstInningMultiRunAllowedRate": 0,
-          "nrfiGameRate": 0.63,
-          "yrfiGameRate": 0.38,
-          "firstInningNetEdge": -0.13,
-          "firstInningScoringIndex": 38.25,
-          "firstInningAllowRiskIndex": 56.5
-        },
-        "home": {
-          "windowGames": 8,
-          "gamesSample": 8,
-          "firstInningRunsPerGame": 0,
-          "firstInningRunsAllowedPerGame": 0.63,
-          "scoredFirstInningRate": 0,
-          "scorelessFirstInningRate": 1,
-          "allowedFirstInningRate": 0.38,
-          "firstInningMultiRunRate": 0,
-          "firstInningMultiRunAllowedRate": 0.25,
-          "nrfiGameRate": 0.63,
-          "yrfiGameRate": 0.38,
-          "firstInningNetEdge": -0.63,
-          "firstInningScoringIndex": 22,
-          "firstInningAllowRiskIndex": 87.75
-        }
-      },
-      "firstInningPitcher": {
-        "away": null,
-        "home": {
-          "pitcherName": "Brady Singer",
-          "windowStarts": 5,
-          "startsSample": 2,
-          "firstBatterReachRate": 0,
-          "firstInningRunAllowedRate": 0.5,
-          "firstInningRunsAllowedPerStart": 1,
-          "firstInningMultiRunAllowedRate": 0.5,
-          "firstInningBaserunnersPerStart": 1.5,
-          "firstInningWalkRate": 0.5,
-          "firstInningHomeRunRate": 0.5,
-          "firstInningCleanRate": 0.5,
-          "firstInningPressureIndex": 72
-        }
-      },
-      "firstInningPitcherSeason": {
-        "away": null,
-        "home": {
-          "pitcherName": "Brady Singer",
-          "startsSample": 10,
-          "firstInningRunsAllowedTotal": 2,
-          "firstInningRunGames": 1,
-          "firstInningWalkGames": 1,
-          "firstInningHomeRunGames": 1,
-          "firstInningRunsAllowedPerStart": 0.2,
-          "firstInningRunGameRate": 0.1
-        }
-      },
-      "seriesEarlyPhase": {
-        "away": {
-          "opponentTeam": "Reds",
-          "gamesSample": 2,
-          "runsFirst1PerGame": 0,
-          "runsFirst3PerGame": 1.5,
-          "scoredFirstInningRate": 0,
-          "allowedFirstInningRate": 0,
-          "scorelessFirst3Rate": 0,
-          "tiedAfter3Rate": 0,
-          "trafficNoConversionRate": 0
-        },
-        "home": {
-          "opponentTeam": "Cardinals",
-          "gamesSample": 2,
-          "runsFirst1PerGame": 0,
-          "runsFirst3PerGame": 0.5,
-          "scoredFirstInningRate": 0,
-          "allowedFirstInningRate": 0,
-          "scorelessFirst3Rate": 0.5,
-          "tiedAfter3Rate": 0,
-          "trafficNoConversionRate": 0
-        }
-      },
-      "recentGames": {
-        "away": [
-          {
-            "gamePk": 823061,
-            "date": "2026-05-15",
-            "opponent": "Royals",
-            "venueRole": "home",
-            "result": "W",
-            "runsFor": 5,
-            "runsAgainst": 4,
-            "seriesSlot": 0
-          },
-          {
-            "gamePk": 823060,
-            "date": "2026-05-16",
-            "opponent": "Royals",
-            "venueRole": "home",
-            "result": "W",
-            "runsFor": 4,
-            "runsAgainst": 2,
-            "seriesSlot": 0
-          },
-          {
-            "gamePk": 823058,
-            "date": "2026-05-17",
-            "opponent": "Royals",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 0,
-            "runsAgainst": 2,
-            "seriesSlot": 0
-          },
-          {
-            "gamePk": 823059,
-            "date": "2026-05-19",
-            "opponent": "Pirates",
-            "venueRole": "home",
-            "result": "W",
-            "runsFor": 9,
-            "runsAgainst": 6,
-            "seriesSlot": 1
-          },
-          {
-            "gamePk": 823057,
-            "date": "2026-05-20",
-            "opponent": "Pirates",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 0,
-            "runsAgainst": 7,
-            "seriesSlot": 1
-          },
-          {
-            "gamePk": 823056,
-            "date": "2026-05-21",
-            "opponent": "Pirates",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 2,
-            "runsAgainst": 6,
-            "seriesSlot": 1
-          },
-          {
-            "gamePk": 824518,
-            "date": "2026-05-23",
-            "opponent": "Reds",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 8,
-            "runsAgainst": 1,
-            "seriesSlot": 2
-          },
-          {
-            "gamePk": 824516,
-            "date": "2026-05-23",
-            "opponent": "Reds",
-            "venueRole": "road",
-            "result": "L",
-            "runsFor": 6,
-            "runsAgainst": 7,
-            "seriesSlot": 2
-          }
-        ],
-        "home": [
-          {
-            "gamePk": 824439,
-            "date": "2026-05-15",
-            "opponent": "Guardians",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 7,
-            "runsAgainst": 6,
-            "seriesSlot": 0
-          },
-          {
-            "gamePk": 824435,
-            "date": "2026-05-16",
-            "opponent": "Guardians",
-            "venueRole": "road",
-            "result": "L",
-            "runsFor": 4,
-            "runsAgainst": 7,
-            "seriesSlot": 0
-          },
-          {
-            "gamePk": 824436,
-            "date": "2026-05-17",
-            "opponent": "Guardians",
-            "venueRole": "road",
-            "result": "L",
-            "runsFor": 3,
-            "runsAgainst": 10,
-            "seriesSlot": 0
-          },
-          {
-            "gamePk": 823465,
-            "date": "2026-05-18",
-            "opponent": "Phillies",
-            "venueRole": "road",
-            "result": "L",
-            "runsFor": 4,
-            "runsAgainst": 5,
-            "seriesSlot": 1
-          },
-          {
-            "gamePk": 823464,
-            "date": "2026-05-19",
-            "opponent": "Phillies",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 4,
-            "runsAgainst": 1,
-            "seriesSlot": 1
-          },
-          {
-            "gamePk": 823462,
-            "date": "2026-05-20",
-            "opponent": "Phillies",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 9,
-            "runsAgainst": 4,
-            "seriesSlot": 1
-          },
-          {
-            "gamePk": 824518,
-            "date": "2026-05-23",
-            "opponent": "Cardinals",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 1,
-            "runsAgainst": 8,
-            "seriesSlot": 2
-          },
-          {
-            "gamePk": 824516,
-            "date": "2026-05-23",
-            "opponent": "Cardinals",
-            "venueRole": "home",
-            "result": "W",
-            "runsFor": 7,
-            "runsAgainst": 6,
-            "seriesSlot": 2
-          }
-        ]
-      },
-      "recentInningHistory": {
-        "away": [
-          {
-            "gamePk": 823059,
-            "date": "2026-05-19",
-            "opponent": "Pirates",
-            "venueRole": "home",
-            "result": "W",
-            "runsFor": 9,
-            "runsAgainst": 6,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 2
-              },
-              {
-                "inning": 4,
-                "runs": 1
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 2
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 1
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              },
-              {
-                "inning": 10,
-                "runs": 3
-              }
-            ]
-          },
-          {
-            "gamePk": 823057,
-            "date": "2026-05-20",
-            "opponent": "Pirates",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 0,
-            "runsAgainst": 7,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              }
-            ]
-          },
-          {
-            "gamePk": 823056,
-            "date": "2026-05-21",
-            "opponent": "Pirates",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 2,
-            "runsAgainst": 6,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 1
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 1
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              }
-            ]
-          },
-          {
-            "gamePk": 824518,
-            "date": "2026-05-23",
-            "opponent": "Reds",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 8,
-            "runsAgainst": 1,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 2
-              },
-              {
-                "inning": 4,
-                "runs": 1
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 2
-              },
-              {
-                "inning": 8,
-                "runs": 1
-              },
-              {
-                "inning": 9,
-                "runs": 2
-              }
-            ]
-          },
-          {
-            "gamePk": 824516,
-            "date": "2026-05-23",
-            "opponent": "Reds",
-            "venueRole": "road",
-            "result": "L",
-            "runsFor": 6,
-            "runsAgainst": 7,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 1
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 3
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 2
-              },
-              {
-                "inning": 10,
-                "runs": 0
-              },
-              {
-                "inning": 11,
-                "runs": 0
-              }
-            ]
-          }
-        ],
-        "home": [
-          {
-            "gamePk": 823465,
-            "date": "2026-05-18",
-            "opponent": "Phillies",
-            "venueRole": "road",
-            "result": "L",
-            "runsFor": 4,
-            "runsAgainst": 5,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 2
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 1
-              },
-              {
-                "inning": 8,
-                "runs": 1
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              }
-            ]
-          },
-          {
-            "gamePk": 823464,
-            "date": "2026-05-19",
-            "opponent": "Phillies",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 4,
-            "runsAgainst": 1,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 2
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 2
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              }
-            ]
-          },
-          {
-            "gamePk": 823462,
-            "date": "2026-05-20",
-            "opponent": "Phillies",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 9,
-            "runsAgainst": 4,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 3
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 1
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 1
-              },
-              {
-                "inning": 7,
-                "runs": 2
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 2
-              }
-            ]
-          },
-          {
-            "gamePk": 824518,
-            "date": "2026-05-23",
-            "opponent": "Cardinals",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 1,
-            "runsAgainst": 8,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 1
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              }
-            ]
-          },
-          {
-            "gamePk": 824516,
-            "date": "2026-05-23",
-            "opponent": "Cardinals",
-            "venueRole": "home",
-            "result": "W",
-            "runsFor": 7,
-            "runsAgainst": 6,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 5
-              },
-              {
-                "inning": 6,
-                "runs": 1
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              },
-              {
-                "inning": 10,
-                "runs": 0
-              },
-              {
-                "inning": 11,
-                "runs": 1
-              }
-            ]
-          }
-        ]
-      },
-      "matchupInningHistory": {
-        "away": [
-          {
-            "gamePk": 824518,
-            "date": "2026-05-23",
-            "opponent": "Reds",
-            "venueRole": "road",
-            "result": "W",
-            "runsFor": 8,
-            "runsAgainst": 1,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 2
-              },
-              {
-                "inning": 4,
-                "runs": 1
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 2
-              },
-              {
-                "inning": 8,
-                "runs": 1
-              },
-              {
-                "inning": 9,
-                "runs": 2
-              }
-            ]
-          },
-          {
-            "gamePk": 824516,
-            "date": "2026-05-23",
-            "opponent": "Reds",
-            "venueRole": "road",
-            "result": "L",
-            "runsFor": 6,
-            "runsAgainst": 7,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 1
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 3
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 2
-              },
-              {
-                "inning": 10,
-                "runs": 0
-              },
-              {
-                "inning": 11,
-                "runs": 0
-              }
-            ]
-          }
-        ],
-        "home": [
-          {
-            "gamePk": 824518,
-            "date": "2026-05-23",
-            "opponent": "Cardinals",
-            "venueRole": "home",
-            "result": "L",
-            "runsFor": 1,
-            "runsAgainst": 8,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 1
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 0
-              },
-              {
-                "inning": 6,
-                "runs": 0
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              }
-            ]
-          },
-          {
-            "gamePk": 824516,
-            "date": "2026-05-23",
-            "opponent": "Cardinals",
-            "venueRole": "home",
-            "result": "W",
-            "runsFor": 7,
-            "runsAgainst": 6,
-            "innings": [
-              {
-                "inning": 1,
-                "runs": 0
-              },
-              {
-                "inning": 2,
-                "runs": 0
-              },
-              {
-                "inning": 3,
-                "runs": 0
-              },
-              {
-                "inning": 4,
-                "runs": 0
-              },
-              {
-                "inning": 5,
-                "runs": 5
-              },
-              {
-                "inning": 6,
-                "runs": 1
-              },
-              {
-                "inning": 7,
-                "runs": 0
-              },
-              {
-                "inning": 8,
-                "runs": 0
-              },
-              {
-                "inning": 9,
-                "runs": 0
-              },
-              {
-                "inning": 10,
-                "runs": 0
-              },
-              {
-                "inning": 11,
-                "runs": 1
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "tierThreeContext": {
-      "bullpenCommand": {
-        "away": {
-          "pitcherId": 677865,
-          "pitcherName": "Justin Bruihl",
-          "firstRelieverLikelihood": 74.2,
-          "entriesSample": 7,
-          "firstPitchBallRate": 0.29,
-          "firstPitchStrikeRate": 0.57,
-          "ballRate": 0.23,
-          "reachedRate": 0.57,
-          "freePassRate": 0,
-          "scoringPlayRate": 0.14,
-          "commandRiskIndex": 27.92
-        },
-        "home": {
-          "pitcherId": 682825,
-          "pitcherName": "Luis Mey",
-          "firstRelieverLikelihood": 82.8,
-          "entriesSample": 3,
-          "firstPitchBallRate": 0.33,
-          "firstPitchStrikeRate": 0.33,
-          "ballRate": 0.27,
-          "reachedRate": 0.67,
-          "freePassRate": 0.33,
-          "scoringPlayRate": 0,
-          "commandRiskIndex": 34.53
-        }
-      },
-      "starterThirdTime": {
-        "away": null,
-        "home": null
-      }
-    }
-  },
-  {
     "gamePk": 823861,
     "id": "mets-marlins",
     "away": "Mets",
@@ -7782,14 +7688,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 0,
-      "era": "4.12",
-      "strikeOuts": 25,
-      "inningsPitched": "19.2",
-      "hitsAllowed": 17,
-      "walks": 12,
+      "era": "3.28",
+      "strikeOuts": 29,
+      "inningsPitched": "24.2",
+      "hitsAllowed": 20,
+      "walks": 14,
       "homeRunsAllowed": 1,
-      "whip": "1.47",
-      "gamesStarted": 5,
+      "whip": "1.38",
+      "gamesStarted": 6,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 681035,
@@ -7827,14 +7733,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 0,
-      "era": "1.20",
-      "strikeOuts": 27,
-      "inningsPitched": "30.0",
-      "hitsAllowed": 22,
-      "walks": 16,
+      "era": "1.07",
+      "strikeOuts": 31,
+      "inningsPitched": "33.2",
+      "hitsAllowed": 24,
+      "walks": 18,
       "homeRunsAllowed": 1,
-      "whip": "1.27",
-      "gamesStarted": 0,
+      "whip": "1.25",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 663969,
@@ -7851,7 +7757,7 @@ export const rawGames = [
       "usageContext": {
         "status": "warehouse-gap",
         "label": "Warehouse sample incomplete",
-        "note": "The season line shows 30.0 MLB innings, but only 0 logged starts cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
+        "note": "The season line shows 33.2 MLB innings, but only 1 logged start cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
         "expectedInnings": 5.2,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -7866,9 +7772,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -200 / +1.5 -195",
-    "total": "o7.5 -110 / u7.5 even",
-    "moneyline": "Mets +110 / Marlins -124",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-marlins",
     "tierTwoContext": {
@@ -8373,6 +8279,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 690997,
+                "pitcherName": "Nolan McLean",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656492,
+                "pitcherName": "Foster Griffin",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8420,6 +8344,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 804267,
+                "pitcherName": "Zach Thornton",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 641793,
+                "pitcherName": "Zack Littell",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8467,6 +8409,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 656849,
+                "pitcherName": "David Peterson",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676917,
+                "pitcherName": "Cade Cavalli",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8514,6 +8474,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 668964,
+                "pitcherName": "Tobias Myers",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8561,6 +8539,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 642547,
+                "pitcherName": "Freddy Peralta",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676974,
+                "pitcherName": "Max Meyer",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8610,6 +8606,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 666129,
+                "pitcherName": "Braxton Garrett",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 527048,
+                "pitcherName": "Martín Pérez",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8657,6 +8671,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 676083,
+                "pitcherName": "Janson Junk",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 519242,
+                "pitcherName": "Chris Sale",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8704,6 +8736,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 645261,
+                "pitcherName": "Sandy Alcantara",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 675911,
+                "pitcherName": "Spencer Strider",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8751,6 +8801,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 668964,
+                "pitcherName": "Tobias Myers",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8798,6 +8866,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 676974,
+                "pitcherName": "Max Meyer",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 642547,
+                "pitcherName": "Freddy Peralta",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8849,6 +8935,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 668964,
+                "pitcherName": "Tobias Myers",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8896,6 +9000,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 642547,
+                "pitcherName": "Freddy Peralta",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676974,
+                "pitcherName": "Max Meyer",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8945,6 +9067,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 668964,
+                "pitcherName": "Tobias Myers",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8992,6 +9132,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 676974,
+                "pitcherName": "Max Meyer",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 642547,
+                "pitcherName": "Freddy Peralta",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9082,14 +9240,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 4,
-      "era": "3.32",
-      "strikeOuts": 56,
-      "inningsPitched": "57.0",
-      "hitsAllowed": 43,
+      "era": "3.30",
+      "strikeOuts": 58,
+      "inningsPitched": "60.0",
+      "hitsAllowed": 46,
       "walks": 12,
       "homeRunsAllowed": 9,
-      "whip": "0.96",
-      "gamesStarted": 9,
+      "whip": "0.97",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 808967,
@@ -9127,14 +9285,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 2,
-      "era": "5.75",
-      "strikeOuts": 41,
-      "inningsPitched": "40.2",
-      "hitsAllowed": 38,
-      "walks": 23,
+      "era": "5.28",
+      "strikeOuts": 48,
+      "inningsPitched": "44.1",
+      "hitsAllowed": 41,
+      "walks": 26,
       "homeRunsAllowed": 9,
-      "whip": "1.50",
-      "gamesStarted": 7,
+      "whip": "1.51",
+      "gamesStarted": 8,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 687075,
@@ -9166,9 +9324,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +110 / +1.5 -125",
-    "total": "o8 -106 / u8 -110",
-    "moneyline": "Dodgers -149 / Brewers +130",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-brewers",
     "tierTwoContext": {
@@ -9695,6 +9853,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 808967,
+                "pitcherName": "Yoshinobu Yamamoto",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 650633,
+                "pitcherName": "Michael King",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9742,6 +9918,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 686218,
+                "pitcherName": "Emmet Sheehan",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656288,
+                "pitcherName": "Griffin Canning",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9789,6 +9983,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 660271,
+                "pitcherName": "Shohei Ohtani",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681190,
+                "pitcherName": "Randy Vásquez",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9836,6 +10048,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 680736,
+                "pitcherName": "Justin Wrobleski",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 701656,
+                "pitcherName": "Logan Henderson",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9883,6 +10113,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 11,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 808963,
+                "pitcherName": "Roki Sasaki",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 688107,
+                "pitcherName": "Robert Gasser",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9932,6 +10180,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 687075,
+                "pitcherName": "Brandon Sproat",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 684007,
+                "pitcherName": "Shota Imanaga",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9979,6 +10245,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 694819,
+                "pitcherName": "Jacob Misiorowski",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676962,
+                "pitcherName": "Ben Brown",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10026,6 +10310,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 690986,
+                "pitcherName": "Kyle Harrison",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 665795,
+                "pitcherName": "Edward Cabrera",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10073,6 +10375,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 701656,
+                "pitcherName": "Logan Henderson",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 680736,
+                "pitcherName": "Justin Wrobleski",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10120,6 +10440,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 11,
+            "starters": {
+              "team": {
+                "pitcherId": 688107,
+                "pitcherName": "Robert Gasser",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 808963,
+                "pitcherName": "Roki Sasaki",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10171,6 +10509,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 680736,
+                "pitcherName": "Justin Wrobleski",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 701656,
+                "pitcherName": "Logan Henderson",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10218,6 +10574,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 11,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 808963,
+                "pitcherName": "Roki Sasaki",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 688107,
+                "pitcherName": "Robert Gasser",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10267,6 +10641,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 701656,
+                "pitcherName": "Logan Henderson",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 680736,
+                "pitcherName": "Justin Wrobleski",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10314,6 +10706,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 11,
+            "starters": {
+              "team": {
+                "pitcherId": 688107,
+                "pitcherName": "Robert Gasser",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 808963,
+                "pitcherName": "Roki Sasaki",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10404,14 +10814,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 2,
-      "era": "3.51",
-      "strikeOuts": 55,
-      "inningsPitched": "59.0",
-      "hitsAllowed": 46,
+      "era": "3.29",
+      "strikeOuts": 59,
+      "inningsPitched": "63.0",
+      "hitsAllowed": 49,
       "walks": 12,
       "homeRunsAllowed": 6,
-      "whip": "0.98",
-      "gamesStarted": 10,
+      "whip": "0.97",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 693433,
@@ -10449,14 +10859,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 4,
-      "era": "3.68",
-      "strikeOuts": 51,
-      "inningsPitched": "58.2",
-      "hitsAllowed": 61,
+      "era": "3.55",
+      "strikeOuts": 53,
+      "inningsPitched": "63.1",
+      "hitsAllowed": 63,
       "walks": 21,
-      "homeRunsAllowed": 2,
-      "whip": "1.40",
-      "gamesStarted": 10,
+      "homeRunsAllowed": 3,
+      "whip": "1.33",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 607625,
@@ -10488,9 +10898,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -155",
-    "total": "o8 -115 / u8.5 -115",
-    "moneyline": "Mariners -120 / Royals +108",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-royals",
     "tierTwoContext": {
@@ -11017,6 +11427,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 693433,
+                "pitcherName": "Bryan Woo",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702273,
+                "pitcherName": "Noah Schultz",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11064,6 +11492,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 682243,
+                "pitcherName": "Bryce Miller",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 641743,
+                "pitcherName": "Anthony Kay",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11111,6 +11557,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 676106,
+                "pitcherName": "Emerson Hancock",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 680732,
+                "pitcherName": "Sean Burke",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11158,6 +11622,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 669302,
+                "pitcherName": "Logan Gilbert",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702070,
+                "pitcherName": "Noah Cameron",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11205,6 +11687,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 669923,
+                "pitcherName": "George Kirby",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663568,
+                "pitcherName": "Stephen Kolek",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11254,6 +11754,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 607625,
+                "pitcherName": "Seth Lugo",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 543243,
+                "pitcherName": "Sonny Gray",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11301,6 +11819,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 663559,
+                "pitcherName": "Bailey Falter",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 624133,
+                "pitcherName": "Ranger Suarez",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11348,6 +11884,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 608379,
+                "pitcherName": "Michael Wacha",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 813349,
+                "pitcherName": "Connelly Early",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11395,6 +11949,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 702070,
+                "pitcherName": "Noah Cameron",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669302,
+                "pitcherName": "Logan Gilbert",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11442,6 +12014,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 663568,
+                "pitcherName": "Stephen Kolek",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669923,
+                "pitcherName": "George Kirby",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11493,6 +12083,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 669302,
+                "pitcherName": "Logan Gilbert",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702070,
+                "pitcherName": "Noah Cameron",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11540,6 +12148,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 669923,
+                "pitcherName": "George Kirby",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663568,
+                "pitcherName": "Stephen Kolek",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11589,6 +12215,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 702070,
+                "pitcherName": "Noah Cameron",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669302,
+                "pitcherName": "Logan Gilbert",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11636,6 +12280,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 663568,
+                "pitcherName": "Stephen Kolek",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669923,
+                "pitcherName": "George Kirby",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11726,14 +12388,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 4,
-      "era": "3.57",
-      "strikeOuts": 35,
-      "inningsPitched": "35.1",
-      "hitsAllowed": 24,
-      "walks": 14,
+      "era": "4.06",
+      "strikeOuts": 37,
+      "inningsPitched": "37.2",
+      "hitsAllowed": 29,
+      "walks": 16,
       "homeRunsAllowed": 2,
-      "whip": "1.08",
-      "gamesStarted": 6,
+      "whip": "1.19",
+      "gamesStarted": 7,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 663567,
@@ -11771,14 +12433,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 4,
       "losses": 4,
-      "era": "3.38",
-      "strikeOuts": 61,
-      "inningsPitched": "58.2",
-      "hitsAllowed": 45,
+      "era": "3.50",
+      "strikeOuts": 65,
+      "inningsPitched": "61.2",
+      "hitsAllowed": 47,
       "walks": 16,
-      "homeRunsAllowed": 7,
-      "whip": "1.04",
-      "gamesStarted": 10,
+      "homeRunsAllowed": 9,
+      "whip": "1.02",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 684007,
@@ -11810,9 +12472,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +133",
-    "total": "o7 -110 / u7.5 -128",
-    "moneyline": "Astros +150 / Cubs -175",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-cubs",
     "tierTwoContext": {
@@ -12339,6 +13001,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 837227,
+                "pitcherName": "Tatsuya Imai",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 696070,
+                "pitcherName": "Kendry Rojas",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12386,6 +13066,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 669920,
+                "pitcherName": "Jason Alexander",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 805673,
+                "pitcherName": "Zebby Matthews",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12433,6 +13131,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 681347,
+                "pitcherName": "Mike Burrows",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 657746,
+                "pitcherName": "Joe Ryan",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12480,6 +13196,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 681293,
+                "pitcherName": "Spencer Arrighetti",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 592791,
+                "pitcherName": "Jameson Taillon",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12527,6 +13261,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 678906,
+                "pitcherName": "Kai-Wei Teng",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607067,
+                "pitcherName": "Colin Rea",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12576,6 +13328,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 684007,
+                "pitcherName": "Shota Imanaga",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 687075,
+                "pitcherName": "Brandon Sproat",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12623,6 +13393,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 676962,
+                "pitcherName": "Ben Brown",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 694819,
+                "pitcherName": "Jacob Misiorowski",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12670,6 +13458,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 665795,
+                "pitcherName": "Edward Cabrera",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 690986,
+                "pitcherName": "Kyle Harrison",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12717,6 +13523,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 592791,
+                "pitcherName": "Jameson Taillon",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681293,
+                "pitcherName": "Spencer Arrighetti",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12764,6 +13588,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 607067,
+                "pitcherName": "Colin Rea",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 678906,
+                "pitcherName": "Kai-Wei Teng",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12815,6 +13657,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 681293,
+                "pitcherName": "Spencer Arrighetti",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 592791,
+                "pitcherName": "Jameson Taillon",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12862,6 +13722,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 678906,
+                "pitcherName": "Kai-Wei Teng",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607067,
+                "pitcherName": "Colin Rea",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12911,6 +13789,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 592791,
+                "pitcherName": "Jameson Taillon",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681293,
+                "pitcherName": "Spencer Arrighetti",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12958,6 +13854,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 607067,
+                "pitcherName": "Colin Rea",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 678906,
+                "pitcherName": "Kai-Wei Teng",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13132,9 +14046,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -193",
+    "spread": "+1.5 -195 / +1.5 -199",
     "total": "o8 -110 / u8 -110",
-    "moneyline": "White Sox even / Giants -115",
+    "moneyline": "White Sox +110 / Giants -122",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-giants",
     "tierTwoContext": {
@@ -13661,6 +14575,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 702273,
+                "pitcherName": "Noah Schultz",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 693433,
+                "pitcherName": "Bryan Woo",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13708,6 +14640,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 641743,
+                "pitcherName": "Anthony Kay",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 682243,
+                "pitcherName": "Bryce Miller",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13755,6 +14705,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 680732,
+                "pitcherName": "Sean Burke",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676106,
+                "pitcherName": "Emerson Hancock",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13802,6 +14770,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 663436,
+                "pitcherName": "Davis Martin",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 686790,
+                "pitcherName": "Trevor McDonald",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13849,6 +14835,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 10,
+            "starters": {
+              "team": {
+                "pitcherId": 663542,
+                "pitcherName": "Bryan Hudson",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 605288,
+                "pitcherName": "Adrian Houser",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13898,6 +14902,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 12,
+            "starters": {
+              "team": {
+                "pitcherId": 592662,
+                "pitcherName": "Robbie Ray",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 668678,
+                "pitcherName": "Zac Gallen",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13945,6 +14967,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 694738,
+                "pitcherName": "Landen Roupp",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 669194,
+                "pitcherName": "Ryne Nelson",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13992,6 +15032,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 641816,
+                "pitcherName": "Tyler Mahle",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 518876,
+                "pitcherName": "Merrill Kelly",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14039,6 +15097,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 686790,
+                "pitcherName": "Trevor McDonald",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663436,
+                "pitcherName": "Davis Martin",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14086,6 +15162,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 10,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 605288,
+                "pitcherName": "Adrian Houser",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663542,
+                "pitcherName": "Bryan Hudson",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14137,6 +15231,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 663436,
+                "pitcherName": "Davis Martin",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 686790,
+                "pitcherName": "Trevor McDonald",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14184,6 +15296,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 10,
+            "starters": {
+              "team": {
+                "pitcherId": 663542,
+                "pitcherName": "Bryan Hudson",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 605288,
+                "pitcherName": "Adrian Houser",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14233,6 +15363,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 686790,
+                "pitcherName": "Trevor McDonald",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663436,
+                "pitcherName": "Davis Martin",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14280,6 +15428,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 10,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 605288,
+                "pitcherName": "Adrian Houser",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663542,
+                "pitcherName": "Bryan Hudson",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14454,9 +15620,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -145 / -1.5 +130",
-    "total": "o7.5 -110 / u7.5 -102",
-    "moneyline": "Athletics +146 / Padres -170",
+    "spread": "+1.5 -145 / -1.5 +128",
+    "total": "o7.5 -108 / u7.5 -105",
+    "moneyline": "Athletics +150 / Padres -175",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/athletics-vs-padres",
     "tierTwoContext": {
@@ -14961,6 +16127,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 14,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 682052,
+                "pitcherName": "Jacob Lopez",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 672282,
+                "pitcherName": "Reid Detmers",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15008,6 +16192,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 650644,
+                "pitcherName": "Aaron Civale",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 686799,
+                "pitcherName": "Jack Kochanowicz",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15059,6 +16261,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 622663,
+                "pitcherName": "Luis Severino",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 667755,
+                "pitcherName": "José Soriano",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15110,6 +16330,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 605488,
+                "pitcherName": "Jeffrey Springs",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 621111,
+                "pitcherName": "Walker Buehler",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15157,6 +16395,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 669372,
+                "pitcherName": "J.T. Ginn",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 608337,
+                "pitcherName": "Lucas Giolito",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15206,6 +16462,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 1,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 650633,
+                "pitcherName": "Michael King",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 808967,
+                "pitcherName": "Yoshinobu Yamamoto",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15253,6 +16527,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 656288,
+                "pitcherName": "Griffin Canning",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 686218,
+                "pitcherName": "Emmet Sheehan",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15300,6 +16592,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 681190,
+                "pitcherName": "Randy Vásquez",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 660271,
+                "pitcherName": "Shohei Ohtani",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15347,6 +16657,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 621111,
+                "pitcherName": "Walker Buehler",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 605488,
+                "pitcherName": "Jeffrey Springs",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15394,6 +16722,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 608337,
+                "pitcherName": "Lucas Giolito",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669372,
+                "pitcherName": "J.T. Ginn",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15445,6 +16791,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 605488,
+                "pitcherName": "Jeffrey Springs",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 621111,
+                "pitcherName": "Walker Buehler",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15492,6 +16856,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 669372,
+                "pitcherName": "J.T. Ginn",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 608337,
+                "pitcherName": "Lucas Giolito",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15541,6 +16923,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 621111,
+                "pitcherName": "Walker Buehler",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 605488,
+                "pitcherName": "Jeffrey Springs",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15588,6 +16988,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 608337,
+                "pitcherName": "Lucas Giolito",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669372,
+                "pitcherName": "J.T. Ginn",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15762,9 +17180,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +132",
-    "total": "o8.5 -105 / u8.5 -114",
-    "moneyline": "Nationals +135 / Braves -160",
+    "spread": "+1.5 -149 / -1.5 +132",
+    "total": "o8 -118 / u8.5 -115",
+    "moneyline": "Nationals +140 / Braves -160",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-braves",
     "tierTwoContext": {
@@ -16291,6 +17709,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 656492,
+                "pitcherName": "Foster Griffin",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 690997,
+                "pitcherName": "Nolan McLean",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16338,6 +17774,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 8,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 641793,
+                "pitcherName": "Zack Littell",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 804267,
+                "pitcherName": "Zach Thornton",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16385,6 +17839,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 676917,
+                "pitcherName": "Cade Cavalli",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656849,
+                "pitcherName": "David Peterson",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16432,6 +17904,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 693821,
+                "pitcherName": "Bryce Elder",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16487,6 +17977,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 663623,
+                "pitcherName": "Jake Irvin",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656550,
+                "pitcherName": "Grant Holmes",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16536,6 +18044,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 8,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 527048,
+                "pitcherName": "Martín Pérez",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 666129,
+                "pitcherName": "Braxton Garrett",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16583,6 +18109,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 519242,
+                "pitcherName": "Chris Sale",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 676083,
+                "pitcherName": "Janson Junk",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16630,6 +18174,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 675911,
+                "pitcherName": "Spencer Strider",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 645261,
+                "pitcherName": "Sandy Alcantara",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16677,6 +18239,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 693821,
+                "pitcherName": "Bryce Elder",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16732,6 +18312,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 656550,
+                "pitcherName": "Grant Holmes",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663623,
+                "pitcherName": "Jake Irvin",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16783,6 +18381,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 693821,
+                "pitcherName": "Bryce Elder",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16838,6 +18454,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 663623,
+                "pitcherName": "Jake Irvin",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656550,
+                "pitcherName": "Grant Holmes",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16887,6 +18521,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 693821,
+                "pitcherName": "Bryce Elder",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16942,6 +18594,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 656550,
+                "pitcherName": "Grant Holmes",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663623,
+                "pitcherName": "Jake Irvin",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17116,9 +18786,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -120 / -1.5 +106",
-    "total": "o8.5 -115 / u9 -113",
-    "moneyline": "Rockies +175 / Diamondbacks -200",
+    "spread": "+1.5 -123 / -1.5 +110",
+    "total": "o8.5 -115 / u9 -121",
+    "moneyline": "Rockies +170 / Diamondbacks -190",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-diamondbacks",
     "tierTwoContext": {
@@ -17645,6 +19315,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 0,
             "runsAgainst": 10,
+            "starters": {
+              "team": {
+                "pitcherId": 671111,
+                "pitcherName": "Sammy Peralta",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 641302,
+                "pitcherName": "Tyler Alexander",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17692,6 +19380,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 607536,
+                "pitcherName": "Kyle Freeland",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 683004,
+                "pitcherName": "Jack Leiter",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17739,6 +19445,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 688642,
+                "pitcherName": "Zach Agnos",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17786,6 +19510,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17833,6 +19575,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 547179,
+                "pitcherName": "Michael Lorenzen",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 668678,
+                "pitcherName": "Zac Gallen",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17882,6 +19642,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 669194,
+                "pitcherName": "Ryne Nelson",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 694738,
+                "pitcherName": "Landen Roupp",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17929,6 +19707,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 6,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 518876,
+                "pitcherName": "Merrill Kelly",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 641816,
+                "pitcherName": "Tyler Mahle",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17976,6 +19772,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 688642,
+                "pitcherName": "Zach Agnos",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18023,6 +19837,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18070,6 +19902,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 668678,
+                "pitcherName": "Zac Gallen",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 547179,
+                "pitcherName": "Michael Lorenzen",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18121,6 +19971,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 4,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18168,6 +20036,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 547179,
+                "pitcherName": "Michael Lorenzen",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18215,6 +20101,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 688642,
+                "pitcherName": "Zach Agnos",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18262,6 +20166,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 3,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18309,6 +20231,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 547179,
+                "pitcherName": "Michael Lorenzen",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 668678,
+                "pitcherName": "Zac Gallen",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18358,6 +20298,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18405,6 +20363,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 8,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 547179,
+                "pitcherName": "Michael Lorenzen",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18452,6 +20428,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 2,
             "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 688642,
+                "pitcherName": "Zach Agnos",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18499,6 +20493,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18546,6 +20558,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 668678,
+                "pitcherName": "Zac Gallen",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 547179,
+                "pitcherName": "Michael Lorenzen",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -18636,14 +20666,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 3,
-      "era": "4.58",
-      "strikeOuts": 45,
-      "inningsPitched": "55.0",
-      "hitsAllowed": 56,
-      "walks": 21,
-      "homeRunsAllowed": 5,
-      "whip": "1.40",
-      "gamesStarted": 10,
+      "era": "4.28",
+      "strikeOuts": 50,
+      "inningsPitched": "61.0",
+      "hitsAllowed": 58,
+      "walks": 23,
+      "homeRunsAllowed": 6,
+      "whip": "1.33",
+      "gamesStarted": 11,
       "probableSource": "rtsports-fallback",
       "savant": {
         "playerId": 664285,
@@ -18720,9 +20750,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -182 / -1.5 +170",
-    "total": "o7.5 -118 / u8 -115",
-    "moneyline": "Tigers +110 / Orioles -125",
+    "spread": "+1.5 -195 / +1.5 -215",
+    "total": "o8 -110 / u8.5 -118",
+    "moneyline": "Tigers +106 / Orioles -122",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-orioles",
     "tierTwoContext": {
@@ -19249,6 +21279,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 664285,
+                "pitcherName": "Framber Valdez",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19296,6 +21344,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 672456,
+                "pitcherName": "Keider Montero",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 800048,
+                "pitcherName": "Parker Messick",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19343,6 +21409,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 623454,
+                "pitcherName": "Drew Anderson",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676440,
+                "pitcherName": "Tanner Bibee",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19394,6 +21478,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 663554,
+                "pitcherName": "Casey Mize",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676282,
+                "pitcherName": "Joey Cantillo",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19441,6 +21543,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19490,6 +21610,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 687064,
+                "pitcherName": "Brandon Young",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19537,6 +21675,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 16,
+            "starters": {
+              "team": {
+                "pitcherId": 669432,
+                "pitcherName": "Trevor Rogers",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663556,
+                "pitcherName": "Shane McClanahan",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19584,6 +21740,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 1,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 680694,
+                "pitcherName": "Kyle Bradish",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 643377,
+                "pitcherName": "Griffin Jax",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19631,6 +21805,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 3,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 669358,
+                "pitcherName": "Shane Baz",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 571927,
+                "pitcherName": "Steven Matz",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19678,6 +21870,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19729,6 +21939,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 4,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19778,6 +22006,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 7,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -19952,9 +22198,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -186",
-    "total": "o8 -110 / u8 -110",
-    "moneyline": "Rangers +102 / Angels -120",
+    "spread": "+1.5 -210 / +1.5 -184",
+    "total": "o8 -109 / u8 -110",
+    "moneyline": "Rangers +102 / Angels -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-angels",
     "tierTwoContext": {
@@ -20481,6 +22727,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 669022,
+                "pitcherName": "MacKenzie Gore",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 500779,
+                "pitcherName": "Jose Quintana",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20528,6 +22792,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 10,
             "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 641302,
+                "pitcherName": "Tyler Alexander",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 671111,
+                "pitcherName": "Sammy Peralta",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20575,6 +22857,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 683004,
+                "pitcherName": "Jack Leiter",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 607536,
+                "pitcherName": "Kyle Freeland",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20622,6 +22922,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 594798,
+                "pitcherName": "Jacob deGrom",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 680570,
+                "pitcherName": "Grayson Rodriguez",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20669,6 +22987,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 543135,
+                "pitcherName": "Nathan Eovaldi",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 700712,
+                "pitcherName": "Walbert Ureña",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20718,6 +23054,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 14,
+            "starters": {
+              "team": {
+                "pitcherId": 672282,
+                "pitcherName": "Reid Detmers",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 682052,
+                "pitcherName": "Jacob Lopez",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20765,6 +23119,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 5,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 686799,
+                "pitcherName": "Jack Kochanowicz",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 650644,
+                "pitcherName": "Aaron Civale",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20816,6 +23188,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 667755,
+                "pitcherName": "José Soriano",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 622663,
+                "pitcherName": "Luis Severino",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20867,6 +23257,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 680570,
+                "pitcherName": "Grayson Rodriguez",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 594798,
+                "pitcherName": "Jacob deGrom",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20914,6 +23322,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 700712,
+                "pitcherName": "Walbert Ureña",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 543135,
+                "pitcherName": "Nathan Eovaldi",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -20965,6 +23391,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 6,
             "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 594798,
+                "pitcherName": "Jacob deGrom",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 680570,
+                "pitcherName": "Grayson Rodriguez",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -21012,6 +23456,24 @@ export const rawGames = [
             "result": "L",
             "runsFor": 2,
             "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 543135,
+                "pitcherName": "Nathan Eovaldi",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 700712,
+                "pitcherName": "Walbert Ureña",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -21061,6 +23523,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 9,
             "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 680570,
+                "pitcherName": "Grayson Rodriguez",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 594798,
+                "pitcherName": "Jacob deGrom",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -21108,6 +23588,24 @@ export const rawGames = [
             "result": "W",
             "runsFor": 5,
             "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 700712,
+                "pitcherName": "Walbert Ureña",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 543135,
+                "pitcherName": "Nathan Eovaldi",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -21392,7 +23890,7 @@ export const bullpenChainByTeam = {
     ]
   },
   "Reds": {
-    "opponent": "Cardinals",
+    "opponent": "",
     "topRelievers": [
       {
         "pitcherId": 682825,
@@ -21914,7 +24412,7 @@ export const bullpenChainByTeam = {
     ]
   },
   "Cardinals": {
-    "opponent": "Reds",
+    "opponent": "",
     "topRelievers": [
       {
         "pitcherId": 677865,

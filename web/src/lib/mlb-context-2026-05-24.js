@@ -28,11 +28,11 @@ export const standingsContextByTeam = {
   "Blue Jays": {
     "divisionLeader": false,
     "divisionRank": "3",
-    "gamesBack": "10.5",
-    "losses": 27,
-    "runDifferential": -3,
-    "streakCode": "W4",
-    "winningPercentage": ".481",
+    "gamesBack": "11.0",
+    "losses": 28,
+    "runDifferential": -6,
+    "streakCode": "L1",
+    "winningPercentage": ".472",
     "wins": 25
   },
   "Red Sox": {
@@ -248,12 +248,12 @@ export const standingsContextByTeam = {
   "Pirates": {
     "divisionLeader": false,
     "divisionRank": "5",
-    "gamesBack": "5.5",
+    "gamesBack": "5.0",
     "losses": 26,
-    "runDifferential": 19,
-    "streakCode": "L2",
-    "winningPercentage": ".500",
-    "wins": 26
+    "runDifferential": 22,
+    "streakCode": "W1",
+    "winningPercentage": ".509",
+    "wins": 27
   },
   "Dodgers": {
     "divisionLeader": true,

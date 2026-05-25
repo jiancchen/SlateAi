@@ -3675,6 +3675,12 @@ h3 {
   color: var(--muted);
 }
 
+.matchup-history-pitchers {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.62rem;
+  letter-spacing: 0.01em;
+}
+
 .matchup-history-cell {
   display: inline-flex;
   align-items: center;

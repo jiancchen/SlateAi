@@ -516,6 +516,26 @@ const formatMatchupHistoryDate = (date: string) => {
   return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T12:00:00Z`))
 }
 
+const shortenPitcherName = (name = '') => {
+  const parts = String(name || '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+  if (parts.length <= 1) return name || ''
+  const first = parts[0]?.[0] ? `${parts[0][0]}.` : ''
+  const last = parts.at(-1) || ''
+  return [first, last].filter(Boolean).join(' ')
+}
+
+const formatStarterFirstInningLabel = (starter: AnyRecord | null | undefined) => {
+  if (!starter?.pitcherName) return ''
+  const shortName = shortenPitcherName(starter.pitcherName)
+  const runsAllowed = Number(starter.firstInningRunsAllowed || 0) || 0
+  if (runsAllowed <= 0) return `${shortName} NRFI`
+  if (runsAllowed === 1) return `${shortName} RFI`
+  return `${shortName} ${runsAllowed}RFI`
+}
+
 const renderInningHistoryTable = (teamName: string, headerLabel: string, games: AnyRecord[] = []) => {
   if (!games.length) return null
 
@@ -553,6 +573,13 @@ const renderInningHistoryTable = (teamName: string, headerLabel: string, games: 
                 <span className="matchup-history-meta">
                   <strong>{formatMatchupHistoryDate(game.date)}</strong>
                   <small>{game.result || '?'} {scoreLabel} {venueLabel}</small>
+                  {game.starters?.team || game.starters?.opponent ? (
+                    <small className="matchup-history-pitchers">
+                      {formatStarterFirstInningLabel(game.starters?.team)}
+                      {game.starters?.team && game.starters?.opponent ? ' / ' : ''}
+                      {formatStarterFirstInningLabel(game.starters?.opponent)}
+                    </small>
+                  ) : null}
                 </span>
                 {Array.from({ length: maxInning }, (_, inningIndex) => {
                   const runValue = Number(game.innings?.[inningIndex]?.runs || 0) || 0

@@ -415,6 +415,55 @@ const runSqliteJson = (sql) => {
   return JSON.parse(output || '[]')
 }
 
+const buildStartingPitcherFirstInningByGamePk = ({ gamePks = [] }) => {
+  const uniqueGamePks = [...new Set(gamePks.map((value) => Number(value || 0)).filter(Boolean))]
+  if (!uniqueGamePks.length) return {}
+
+  const rows = runSqliteJson(
+    `with first_inning_runs as (
+      select
+        game_pk,
+        pitcher_id,
+        sum(coalesce(run_delta, 0)) as first_inning_runs_allowed
+      from mlb_plate_appearances
+      where game_pk in (${uniqueGamePks.join(',')})
+        and inning = 1
+      group by game_pk, pitcher_id
+    )
+    select
+      gl.game_pk,
+      gl.team_role,
+      gl.team_name,
+      gl.opponent_name,
+      gl.pitcher_id,
+      gl.pitcher_name,
+      coalesce(fi.first_inning_runs_allowed, 0) as first_inning_runs_allowed
+    from mlb_starting_pitcher_game_logs gl
+    left join first_inning_runs fi
+      on fi.game_pk = gl.game_pk
+     and fi.pitcher_id = gl.pitcher_id
+    where gl.game_pk in (${uniqueGamePks.join(',')})
+    order by gl.game_pk, gl.team_role;`
+  )
+
+  return rows.reduce((map, row) => {
+    const gamePk = Number(row.game_pk || 0) || 0
+    if (!gamePk) return map
+    if (!map[gamePk]) map[gamePk] = {}
+    const role = row.team_role || 'away'
+    const firstInningRunsAllowed = Number(row.first_inning_runs_allowed || 0) || 0
+    map[gamePk][role] = {
+      pitcherId: Number(row.pitcher_id || 0) || null,
+      pitcherName: row.pitcher_name || '',
+      teamName: row.team_name || '',
+      opponentName: row.opponent_name || '',
+      firstInningRunsAllowed,
+      firstInningOutcome: firstInningRunsAllowed > 0 ? 'RFI' : 'NRFI'
+    }
+    return map
+  }, {})
+}
+
 const buildBullpenChainByTeam = ({ date, games }) => {
   const rows = runSqliteJson(
     `select team_name, pitcher_id, pitcher_name, likely_role, first_reliever_likelihood, availability_score, bridge_score, worked_yesterday_flag, back_to_back_flag, last_appearance_date, avg_outs_per_appearance from mlb_bullpen_usage where as_of_date='${date}' order by team_name, first_reliever_likelihood desc;`
@@ -1362,6 +1411,9 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 
     map.get(record.pairKey).push(record)
     return map
   }, new Map())
+  const starterOutcomeByGamePk = buildStartingPitcherFirstInningByGamePk({
+    gamePks: [...gameMap.values()].map((record) => record.gamePk)
+  })
 
   return Object.fromEntries(
     matchupPairs.flatMap(({ teamA, teamB }) => {
@@ -1375,6 +1427,9 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 
           const runsAgainst = teamIsAway ? record.homeRunsFinal : record.awayRunsFinal
           const venueRole = teamIsAway ? 'road' : 'home'
           const teamInnings = record.inningsByTeam.get(officialTeam) ?? new Map()
+          const starterPacket = starterOutcomeByGamePk[record.gamePk] ?? {}
+          const teamStarter = teamIsAway ? starterPacket.away ?? null : starterPacket.home ?? null
+          const opponentStarter = teamIsAway ? starterPacket.home ?? null : starterPacket.away ?? null
           const maxInning = Math.max(9, ...[...teamInnings.keys()].map((inning) => Number(inning) || 0))
 
           return {
@@ -1385,6 +1440,10 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 
             result: runsFor > runsAgainst ? 'W' : runsFor < runsAgainst ? 'L' : 'T',
             runsFor,
             runsAgainst,
+            starters: {
+              team: teamStarter,
+              opponent: opponentStarter
+            },
             innings: Array.from({ length: maxInning }, (_, index) => ({
               inning: index + 1,
               runs: Number(teamInnings.get(index + 1) || 0) || 0
@@ -1536,11 +1595,18 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 1
     map.get(deskTeam).push(record)
     return map
   }, new Map())
+  const starterOutcomeByGamePk = buildStartingPitcherFirstInningByGamePk({
+    gamePks: [...gameMap.values()].map((record) => record.gamePk)
+  })
 
   return Object.fromEntries(
     [...grouped.entries()].map(([deskTeam, records]) => [
       deskTeam,
       records.map((record) => {
+        const teamIsAway = record.venueRole === 'road'
+        const starterPacket = starterOutcomeByGamePk[record.gamePk] ?? {}
+        const teamStarter = teamIsAway ? starterPacket.away ?? null : starterPacket.home ?? null
+        const opponentStarter = teamIsAway ? starterPacket.home ?? null : starterPacket.away ?? null
         const maxInning = Math.max(9, ...[...record.inningsByNumber.keys()].map((inning) => Number(inning) || 0))
         return {
           gamePk: record.gamePk,
@@ -1550,6 +1616,10 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 1
           result: record.result,
           runsFor: record.runsFor,
           runsAgainst: record.runsAgainst,
+          starters: {
+            team: teamStarter,
+            opponent: opponentStarter
+          },
           innings: Array.from({ length: maxInning }, (_, index) => ({
             inning: index + 1,
             runs: Number(record.inningsByNumber.get(index + 1) || 0) || 0
