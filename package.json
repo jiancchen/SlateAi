@@ -46,6 +46,7 @@
     "data:export:mlb-props": "node pipeline/export-mlb-prop-predictions.mjs",
     "data:export:mlb-sides": "node pipeline/export-mlb-side-predictions.mjs",
     "data:export:mlb-veto-artifact": "node pipeline/export-mlb-veto-artifact.mjs",
+    "data:export:mlb-training-corpus": "node pipeline/export-mlb-training-corpus.mjs",
     "data:export:history-journal": "node pipeline/export-history-journal.mjs",
     "data:import:mlb-sides": "python3 pipeline/mlb_side_backtest.py import",
     "data:grade:mlb-sides": "python3 pipeline/mlb_side_backtest.py grade",
@@ -63,6 +64,7 @@
     "data:research:mlb-veto-engine": "python3 pipeline/research_mlb_veto_engine.py",
     "data:research:mlb-slate-postmortem": "python3 pipeline/research_mlb_slate_postmortem.py",
     "data:research:mlb-first-inning-hits": "python3 pipeline/research_mlb_first_inning_hits.py",
+    "data:train:mlb-market-models": "python3 pipeline/train_mlb_market_models.py",
     "data:generate:tennis-clay-context": "node pipeline/generate-tennis-clay-context.mjs",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
