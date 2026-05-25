@@ -418,6 +418,180 @@ const pendingGames: HistoryGameReview[] = [
   })
 ]
 
+const mlbMorningGames: HistoryGameReview[] = [
+  game({
+    id: 'may24-mlb-pirates-blue-jays',
+    title: 'Pirates @ Blue Jays',
+    start: '10:05 AM PT',
+    predicted: 'Pittsburgh Pirates',
+    confidence: 56,
+    actualWinner: 'Pittsburgh Pirates',
+    finalScore: '4-1',
+    result: 'hit',
+    note: 'Pass tier | F5 hit: Pirates led 2-1 after five.'
+  }),
+  game({
+    id: 'may24-mlb-tigers-orioles-g1',
+    title: 'Tigers @ Orioles (Game 1)',
+    start: '10:05 AM PT',
+    predicted: 'Baltimore Orioles',
+    confidence: 54,
+    actualWinner: 'Baltimore Orioles',
+    finalScore: '3-5',
+    result: 'hit',
+    note: 'Pass tier | F5 miss: Tigers led 2-0 after five.'
+  }),
+  game({
+    id: 'may24-mlb-guardians-phillies',
+    title: 'Guardians @ Phillies',
+    start: '10:35 AM PT',
+    predicted: 'Cleveland Guardians',
+    confidence: 74,
+    actualWinner: 'Cleveland Guardians',
+    finalScore: '3-1',
+    result: 'hit',
+    note: 'Strong tier | F5 hit: Guardians led 1-0 after five.'
+  }),
+  game({
+    id: 'may24-mlb-rays-yankees',
+    title: 'Rays @ Yankees',
+    start: '10:35 AM PT',
+    predicted: 'Tampa Bay Rays',
+    confidence: 55,
+    actualWinner: 'New York Yankees',
+    finalScore: '0-2',
+    result: 'miss',
+    note: 'Swingy tier | F5 miss: scoreless tie through five.'
+  }),
+  game({
+    id: 'may24-mlb-twins-red-sox',
+    title: 'Twins @ Red Sox',
+    start: '10:35 AM PT',
+    predicted: 'Minnesota Twins',
+    confidence: 52,
+    actualWinner: 'Minnesota Twins',
+    finalScore: '6-5',
+    result: 'hit',
+    note: 'Pass tier | F5 miss: Red Sox led 4-3 after five.'
+  }),
+  game({
+    id: 'may24-mlb-mets-marlins',
+    title: 'Mets @ Marlins',
+    start: '10:40 AM PT',
+    predicted: 'Miami Marlins',
+    confidence: 63,
+    actualWinner: 'Miami Marlins',
+    finalScore: '0-4',
+    result: 'hit',
+    note: 'Swingy tier | F5 miss: scoreless tie through five.'
+  }),
+  game({
+    id: 'may24-mlb-dodgers-brewers',
+    title: 'Dodgers @ Brewers',
+    start: '11:10 AM PT',
+    predicted: 'Los Angeles Dodgers',
+    confidence: 56,
+    actualWinner: 'Los Angeles Dodgers',
+    finalScore: '5-1',
+    result: 'hit',
+    note: 'Swingy tier | F5 hit: Dodgers led 5-1 after five.'
+  }),
+  game({
+    id: 'may24-mlb-mariners-royals',
+    title: 'Mariners @ Royals',
+    start: '11:10 AM PT',
+    predicted: 'Seattle Mariners',
+    confidence: 69,
+    actualWinner: 'Kansas City Royals',
+    finalScore: '6-8',
+    result: 'miss',
+    note: 'Pass tier | F5 miss: Royals led 4-1 after five.'
+  }),
+  game({
+    id: 'may24-mlb-astros-cubs',
+    title: 'Astros @ Cubs',
+    start: '11:20 AM PT',
+    predicted: 'Houston Astros',
+    confidence: 52,
+    actualWinner: 'Houston Astros',
+    finalScore: '8-5',
+    result: 'hit',
+    note: 'Pass tier | F5 hit: Astros led 7-3 after five.'
+  })
+]
+
+const mlbAfternoonGames: HistoryGameReview[] = [
+  game({
+    id: 'may24-mlb-white-sox-giants',
+    title: 'White Sox @ Giants',
+    start: '1:05 PM PT',
+    predicted: 'San Francisco Giants',
+    confidence: 64,
+    actualWinner: 'San Francisco Giants',
+    finalScore: '5-8',
+    result: 'hit',
+    note: 'Pass tier | F5 hit: Giants led 8-4 after five.'
+  }),
+  game({
+    id: 'may24-mlb-athletics-padres',
+    title: 'Athletics @ Padres',
+    start: '1:10 PM PT',
+    predicted: 'San Diego Padres',
+    confidence: 75,
+    actualWinner: 'Athletics',
+    finalScore: '5-2',
+    result: 'miss',
+    note: 'Strong tier | F5 miss: Athletics led 4-0 after five.'
+  }),
+  game({
+    id: 'may24-mlb-nationals-braves',
+    title: 'Nationals @ Braves',
+    start: '1:10 PM PT',
+    predicted: 'Atlanta Braves',
+    confidence: 70,
+    actualWinner: 'Washington Nationals',
+    finalScore: '2-1',
+    result: 'miss',
+    note: 'Strong tier | F5 miss: Nationals led 1-0 after five.'
+  }),
+  game({
+    id: 'may24-mlb-rockies-dbacks',
+    title: 'Rockies @ Diamondbacks',
+    start: '1:10 PM PT',
+    predicted: 'Arizona Diamondbacks',
+    confidence: 58,
+    actualWinner: 'Arizona Diamondbacks',
+    finalScore: '1-9',
+    result: 'hit',
+    note: 'Swingy tier | F5 hit: Diamondbacks led 7-0 after five.'
+  })
+]
+
+const mlbEveningGames: HistoryGameReview[] = [
+  game({
+    id: 'may24-mlb-tigers-orioles-g2',
+    title: 'Tigers @ Orioles (Game 2)',
+    start: '4:15 PM PT',
+    predicted: 'Detroit Tigers',
+    confidence: 52,
+    actualWinner: 'Detroit Tigers',
+    finalScore: '4-1',
+    result: 'hit',
+    note: 'Pass tier | F5 hit: Tigers led 4-1 after five.'
+  }),
+  game({
+    id: 'may24-mlb-rangers-angels',
+    title: 'Rangers @ Angels',
+    start: '6:38 PM PT',
+    predicted: 'Texas Rangers',
+    confidence: 52,
+    actualWinner: 'Los Angeles Angels',
+    finalScore: '1-2',
+    result: 'miss',
+    note: 'Pass tier | F5 miss: tied 1-1 through five.'
+  })
+]
+
 export const may24HistorySportTabs: HistorySportTab[] = [
   {
     id: 'tennis',
@@ -439,12 +613,19 @@ export const may24HistorySportTabs: HistorySportTab[] = [
   {
     id: 'mlb',
     label: 'MLB',
-    summary: 'Reserved for the May 24 MLB postmortem and full per-game chaos review.',
+    summary:
+      'May 24 MLB graded much better than the empty models chart suggested: the side board finished 10-5 full game, the first-inning lane went 8-7, the first-five lane slipped to 7-8, and the tracked prop board was a wipeout.',
     metrics: [
-      { label: 'Status', value: 'Pending build', tone: 'info' },
-      { label: 'Planned', value: 'Game-by-game ledger', note: 'Official sides, chaos action, RFI/NRFI, and final score', tone: 'warning' }
+      { label: 'Full game', value: '10-5', tone: 'positive' },
+      { label: 'First 5', value: '7-8', tone: 'warning' },
+      { label: '1st inning', value: '8-7', note: 'New YRFI / NRFI lane now tracked in the archive', tone: 'warning' },
+      { label: 'HR board', value: '2/12', tone: 'warning' },
+      { label: 'Tracked props', value: '0/29', note: 'Every graded May 24 prop missed', tone: 'negative' }
     ],
-    placeholder:
-      'The MLB tab is intentionally left open for the later May 24 baseball grading pass. This slot is where the official side, chaos recommendation, inning reads, and final result ledger will land.'
+    sections: [
+      { label: 'Morning MLB Board', games: mlbMorningGames },
+      { label: 'Afternoon MLB Board', games: mlbAfternoonGames },
+      { label: 'Evening MLB Board', games: mlbEveningGames }
+    ]
   }
 ]

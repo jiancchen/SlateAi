@@ -12,14 +12,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 2,
-      "era": "2.09",
-      "strikeOuts": 40,
-      "inningsPitched": "38.2",
-      "hitsAllowed": 26,
-      "walks": 12,
+      "era": "2.01",
+      "strikeOuts": 47,
+      "inningsPitched": "44.2",
+      "hitsAllowed": 30,
+      "walks": 14,
       "homeRunsAllowed": 1,
-      "whip": "0.98",
-      "gamesStarted": 3,
+      "whip": "0.99",
+      "gamesStarted": 4,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 676962,
@@ -32,15 +32,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/ben-brown-676962?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Ben Brown",
+        "windowStarts": 3,
+        "startsSample": 3,
+        "inningsPerStart": 4.33,
+        "earnedRunsPerStart": 1,
+        "hitsAllowedPerStart": 2.67,
+        "homeRunsAllowedPerStart": 0,
+        "walksAllowedPerStart": 1.33,
+        "strikeoutsPerStart": 5.33,
+        "whipLike": 0.92,
+        "shortStartRate": 0.67,
+        "qualityStartRate": 0,
+        "runVolatility": 1.41,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 0
+      },
       "usageContext": {
-        "status": "new-look",
-        "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 3 starts.",
         "expectedInnings": 4.33,
         "daysSinceLastStart": 6,
         "startsLoaded": 3,
-        "shortLeashRisk": 0,
+        "shortLeashRisk": 0.67,
         "durableRate": 0,
         "leashScore": null,
         "leashVolatility": null,
@@ -57,14 +73,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 3,
-      "era": "3.96",
-      "strikeOuts": 44,
-      "inningsPitched": "50.0",
-      "hitsAllowed": 53,
-      "walks": 17,
-      "homeRunsAllowed": 2,
-      "whip": "1.40",
-      "gamesStarted": 8,
+      "era": "3.76",
+      "strikeOuts": 46,
+      "inningsPitched": "55.0",
+      "hitsAllowed": 58,
+      "walks": 20,
+      "homeRunsAllowed": 3,
+      "whip": "1.42",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 669387,
@@ -77,15 +93,31 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/carmen-mlodzinski-669387?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Carmen Mlodzinski",
+        "windowStarts": 10,
+        "startsSample": 8,
+        "inningsPerStart": 4.88,
+        "earnedRunsPerStart": 2.5,
+        "hitsAllowedPerStart": 5.88,
+        "homeRunsAllowedPerStart": 0.25,
+        "walksAllowedPerStart": 1.5,
+        "strikeoutsPerStart": 4.63,
+        "whipLike": 1.51,
+        "shortStartRate": 0.5,
+        "qualityStartRate": 0.13,
+        "runVolatility": 2,
+        "homeRunBurstiness": 0.85,
+        "recent3EarnedRunsDelta": -0.17
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 8 starts.",
         "expectedInnings": 4.88,
         "daysSinceLastStart": 5,
         "startsLoaded": 8,
-        "shortLeashRisk": 0.13,
+        "shortLeashRisk": 0.5,
         "durableRate": 0.13,
         "leashScore": null,
         "leashVolatility": null,
@@ -96,9 +128,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +140 / +1.5 -159",
-    "total": "o8 -110 / u8 -110",
-    "moneyline": "Cubs -124 / Pirates +110",
+    "spread": "+1.5 -190 / -1.5 +168",
+    "total": "o8 -110 / u8.5 -122",
+    "moneyline": "Cubs +115 / Pirates -126",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-pirates",
     "tierTwoContext": {
@@ -125,7 +157,7 @@ export const rawGames = [
           "closeLossCountLast5": 1,
           "blowoutWinCountLast5": 0,
           "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 0,
+          "comebackWinCountLast5": 1,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -302,9 +334,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.56,
           "trafficNoConversionRate": 0,
           "deadBatTrafficRate": 0.25,
-          "quietFirst5Rate": 0.5,
+          "quietFirst5Rate": 0.63,
           "conversionVolatility": 0.16,
-          "lineupConversionIndex": 20.29
+          "lineupConversionIndex": 19.04
         }
       },
       "bullpenMistake": {
@@ -343,34 +375,34 @@ export const rawGames = [
         "away": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsPerGame": 0.38,
           "firstInningRunsAllowedPerGame": 0.75,
-          "scoredFirstInningRate": 0.25,
-          "scorelessFirstInningRate": 0.75,
+          "scoredFirstInningRate": 0.13,
+          "scorelessFirstInningRate": 0.88,
           "allowedFirstInningRate": 0.38,
           "firstInningMultiRunRate": 0.13,
           "firstInningMultiRunAllowedRate": 0.25,
-          "nrfiGameRate": 0.38,
-          "yrfiGameRate": 0.63,
-          "firstInningNetEdge": -0.25,
-          "firstInningScoringIndex": 65.25,
-          "firstInningAllowRiskIndex": 95
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": -0.38,
+          "firstInningScoringIndex": 49,
+          "firstInningAllowRiskIndex": 92.5
         },
         "home": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.25,
+          "firstInningRunsPerGame": 0.38,
           "firstInningRunsAllowedPerGame": 0.5,
-          "scoredFirstInningRate": 0.25,
-          "scorelessFirstInningRate": 0.75,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
           "allowedFirstInningRate": 0.25,
           "firstInningMultiRunRate": 0,
           "firstInningMultiRunAllowedRate": 0.13,
-          "nrfiGameRate": 0.5,
-          "yrfiGameRate": 0.5,
-          "firstInningNetEdge": -0.25,
-          "firstInningScoringIndex": 54.5,
-          "firstInningAllowRiskIndex": 68.75
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": -0.13,
+          "firstInningScoringIndex": 70.75,
+          "firstInningAllowRiskIndex": 71.25
         }
       },
       "firstInningPitcher": {
@@ -623,6 +655,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -686,6 +736,24 @@ export const rawGames = [
                 "opponentName": "Chicago Cubs",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -753,6 +821,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -818,6 +904,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav failed",
+                "tone": "negative"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -881,6 +985,24 @@ export const rawGames = [
                 "opponentName": "Chicago Cubs",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -950,6 +1072,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1013,6 +1153,24 @@ export const rawGames = [
                 "opponentName": "Pittsburgh Pirates",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -1080,6 +1238,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1145,6 +1321,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Exp L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1208,6 +1402,24 @@ export const rawGames = [
                 "opponentName": "Pittsburgh Pirates",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -1286,8 +1498,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Ben Brown",
+          "windowStarts": 5,
+          "startsSample": 3,
+          "startsWithThirdTrip": 1,
+          "thirdTripExposureRate": 0.33,
+          "thirdTripReachedDelta": -0.22,
+          "thirdTripScoringDelta": -0.06,
+          "thirdTripRunDeltaDelta": -0.09,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 22.67
+        },
+        "home": {
+          "pitcherName": "Carmen Mlodzinski",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 1,
+          "thirdTripExposureRate": 0.2,
+          "thirdTripReachedDelta": -0.28,
+          "thirdTripScoringDelta": 0,
+          "thirdTripRunDeltaDelta": 0,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 20
+        }
       }
     }
   },
@@ -1304,14 +1538,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 5,
       "losses": 2,
-      "era": "2.82",
-      "strikeOuts": 47,
-      "inningsPitched": "44.2",
-      "hitsAllowed": 30,
-      "walks": 17,
+      "era": "2.52",
+      "strikeOuts": 50,
+      "inningsPitched": "50.0",
+      "hitsAllowed": 33,
+      "walks": 19,
       "homeRunsAllowed": 2,
-      "whip": "1.05",
-      "gamesStarted": 9,
+      "whip": "1.04",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 663556,
@@ -1349,14 +1583,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 6,
-      "era": "4.13",
-      "strikeOuts": 58,
-      "inningsPitched": "52.1",
-      "hitsAllowed": 51,
-      "walks": 28,
-      "homeRunsAllowed": 6,
-      "whip": "1.51",
-      "gamesStarted": 10,
+      "era": "3.86",
+      "strikeOuts": 61,
+      "inningsPitched": "58.1",
+      "hitsAllowed": 56,
+      "walks": 30,
+      "homeRunsAllowed": 7,
+      "whip": "1.47",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 680694,
@@ -1388,9 +1622,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +138 / +1.5 -156",
-    "total": "o7.5 -110 / u7.5 -100",
-    "moneyline": "Rays -118 / Orioles +108",
+    "spread": "-1.5 +152 / +1.5 -170",
+    "total": "o8.5 -120 / u9 -115",
+    "moneyline": "Rays -108 / Orioles -105",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rays-vs-orioles",
     "tierTwoContext": {
@@ -1441,7 +1675,7 @@ export const rawGames = [
           "closeLossCountLast5": 1,
           "blowoutWinCountLast5": 0,
           "blowoutLossCountLast5": 0,
-          "comebackWinCountLast5": 3,
+          "comebackWinCountLast5": 4,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -1578,9 +1812,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.53,
           "trafficNoConversionRate": 0,
           "deadBatTrafficRate": 0.14,
-          "quietFirst5Rate": 0.57,
+          "quietFirst5Rate": 0.71,
           "conversionVolatility": 0.18,
-          "lineupConversionIndex": 47.65
+          "lineupConversionIndex": 46.22
         },
         "home": {
           "windowGames": 8,
@@ -1594,9 +1828,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.56,
           "trafficNoConversionRate": 0.25,
           "deadBatTrafficRate": 0.13,
-          "quietFirst5Rate": 0.25,
+          "quietFirst5Rate": 0.38,
           "conversionVolatility": 0.14,
-          "lineupConversionIndex": 30.3
+          "lineupConversionIndex": 29.05
         }
       },
       "bullpenMistake": {
@@ -1652,17 +1886,17 @@ export const rawGames = [
           "windowGames": 8,
           "gamesSample": 8,
           "firstInningRunsPerGame": 0.25,
-          "firstInningRunsAllowedPerGame": 0.38,
+          "firstInningRunsAllowedPerGame": 0.63,
           "scoredFirstInningRate": 0.25,
           "scorelessFirstInningRate": 0.75,
-          "allowedFirstInningRate": 0.38,
+          "allowedFirstInningRate": 0.5,
           "firstInningMultiRunRate": 0,
-          "firstInningMultiRunAllowedRate": 0,
-          "nrfiGameRate": 0.5,
-          "yrfiGameRate": 0.5,
-          "firstInningNetEdge": -0.13,
+          "firstInningMultiRunAllowedRate": 0.13,
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": -0.38,
           "firstInningScoringIndex": 54.5,
-          "firstInningAllowRiskIndex": 72.75
+          "firstInningAllowRiskIndex": 99
         }
       },
       "firstInningPitcher": {
@@ -1935,6 +2169,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -1998,6 +2250,24 @@ export const rawGames = [
                 "opponentName": "Tampa Bay Rays",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -2065,6 +2335,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2130,6 +2418,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2193,6 +2499,24 @@ export const rawGames = [
                 "opponentName": "Tampa Bay Rays",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -2262,6 +2586,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2325,6 +2667,24 @@ export const rawGames = [
                 "opponentName": "Baltimore Orioles",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -2392,6 +2752,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2457,6 +2835,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2520,6 +2916,24 @@ export const rawGames = [
                 "opponentName": "Baltimore Orioles",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav failed",
+                "tone": "negative"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -2591,6 +3005,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2656,6 +3088,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2719,6 +3169,24 @@ export const rawGames = [
                 "opponentName": "Tampa Bay Rays",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -2788,6 +3256,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2853,6 +3339,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -2916,6 +3420,24 @@ export const rawGames = [
                 "opponentName": "Baltimore Orioles",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -3008,14 +3530,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 2,
-      "era": "4.70",
-      "strikeOuts": 43,
-      "inningsPitched": "51.2",
-      "hitsAllowed": 60,
-      "walks": 20,
-      "homeRunsAllowed": 9,
-      "whip": "1.55",
-      "gamesStarted": 10,
+      "era": "4.76",
+      "strikeOuts": 53,
+      "inningsPitched": "56.2",
+      "hitsAllowed": 67,
+      "walks": 22,
+      "homeRunsAllowed": 10,
+      "whip": "1.57",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 669461,
@@ -3053,14 +3575,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 2,
-      "era": "1.89",
-      "strikeOuts": 88,
-      "inningsPitched": "57.0",
-      "hitsAllowed": 32,
-      "walks": 18,
+      "era": "1.83",
+      "strikeOuts": 100,
+      "inningsPitched": "64.0",
+      "hitsAllowed": 34,
+      "walks": 19,
       "homeRunsAllowed": 4,
-      "whip": "0.88",
-      "gamesStarted": 10,
+      "whip": "0.83",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 694819,
@@ -3092,9 +3614,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -110 / -1.5 +102",
-    "total": "o7.5 -105 / u7.5 -105",
-    "moneyline": "Cardinals +195 / Brewers -220",
+    "spread": "+1.5 -140 / -1.5 +135",
+    "total": "o7.5 -115 / u8 -115",
+    "moneyline": "Cardinals +138 / Brewers -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cardinals-vs-brewers",
     "tierTwoContext": {
@@ -3145,7 +3667,7 @@ export const rawGames = [
           "closeLossCountLast5": 0,
           "blowoutWinCountLast5": 1,
           "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 1,
+          "comebackWinCountLast5": 2,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -3355,18 +3877,18 @@ export const rawGames = [
         "home": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 1.13,
+          "firstInningRunsPerGame": 1,
           "firstInningRunsAllowedPerGame": 0.13,
-          "scoredFirstInningRate": 0.5,
-          "scorelessFirstInningRate": 0.5,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
           "allowedFirstInningRate": 0.13,
           "firstInningMultiRunRate": 0.25,
           "firstInningMultiRunAllowedRate": 0,
-          "nrfiGameRate": 0.38,
-          "yrfiGameRate": 0.63,
-          "firstInningNetEdge": 1,
-          "firstInningScoringIndex": 100,
-          "firstInningAllowRiskIndex": 42.75
+          "nrfiGameRate": 0.5,
+          "yrfiGameRate": 0.5,
+          "firstInningNetEdge": 0.88,
+          "firstInningScoringIndex": 96.5,
+          "firstInningAllowRiskIndex": 40.25
         }
       },
       "firstInningPitcher": {
@@ -3619,6 +4141,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3688,6 +4228,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3751,6 +4309,24 @@ export const rawGames = [
                 "opponentName": "St. Louis Cardinals",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -3818,6 +4394,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -3881,6 +4475,24 @@ export const rawGames = [
                 "opponentName": "St. Louis Cardinals",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -3958,6 +4570,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4021,6 +4651,24 @@ export const rawGames = [
                 "opponentName": "Milwaukee Brewers",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -4088,6 +4736,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4153,6 +4819,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Exp L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4216,6 +4900,24 @@ export const rawGames = [
                 "opponentName": "Milwaukee Brewers",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -4312,14 +5014,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 1,
-      "era": "1.38",
-      "strikeOuts": 11,
-      "inningsPitched": "13.0",
-      "hitsAllowed": 9,
-      "walks": 1,
-      "homeRunsAllowed": 1,
-      "whip": "0.77",
-      "gamesStarted": 2,
+      "era": "2.37",
+      "strikeOuts": 17,
+      "inningsPitched": "19.0",
+      "hitsAllowed": 14,
+      "walks": 2,
+      "homeRunsAllowed": 3,
+      "whip": "0.84",
+      "gamesStarted": 3,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 805673,
@@ -4336,7 +5038,7 @@ export const rawGames = [
       "usageContext": {
         "status": "new-look",
         "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 2 starts on file, so innings expectation matters more than the raw ERA line.",
+        "note": "This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line.",
         "expectedInnings": 6.5,
         "daysSinceLastStart": 6,
         "startsLoaded": 2,
@@ -4357,14 +5059,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 3,
       "losses": 1,
-      "era": "4.27",
-      "strikeOuts": 34,
-      "inningsPitched": "46.1",
-      "hitsAllowed": 45,
-      "walks": 22,
-      "homeRunsAllowed": 6,
-      "whip": "1.45",
-      "gamesStarted": 8,
+      "era": "3.96",
+      "strikeOuts": 39,
+      "inningsPitched": "52.1",
+      "hitsAllowed": 50,
+      "walks": 23,
+      "homeRunsAllowed": 7,
+      "whip": "1.39",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 641743,
@@ -4396,9 +5098,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +152 / +1.5 -175",
-    "total": "o8.5 -105 / u8.5 -110",
-    "moneyline": "Twins -110 / White Sox -103",
+    "spread": "+1.5 -160 / +1.5 -178",
+    "total": "o7.5 -115 / u7.5 even",
+    "moneyline": "Twins +110 / White Sox -102",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-white-sox",
     "tierTwoContext": {
@@ -4425,7 +5127,7 @@ export const rawGames = [
           "closeLossCountLast5": 1,
           "blowoutWinCountLast5": 0,
           "blowoutLossCountLast5": 0,
-          "comebackWinCountLast5": 2,
+          "comebackWinCountLast5": 3,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -4449,7 +5151,7 @@ export const rawGames = [
           "closeLossCountLast5": 1,
           "blowoutWinCountLast5": 1,
           "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 1,
+          "comebackWinCountLast5": 2,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -4643,33 +5345,33 @@ export const rawGames = [
         "away": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.38,
-          "firstInningRunsAllowedPerGame": 0.88,
-          "scoredFirstInningRate": 0.25,
-          "scorelessFirstInningRate": 0.75,
-          "allowedFirstInningRate": 0.38,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.75,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
+          "allowedFirstInningRate": 0.25,
           "firstInningMultiRunRate": 0.13,
           "firstInningMultiRunAllowedRate": 0.25,
           "nrfiGameRate": 0.38,
           "yrfiGameRate": 0.63,
-          "firstInningNetEdge": -0.5,
-          "firstInningScoringIndex": 61,
-          "firstInningAllowRiskIndex": 99.75
+          "firstInningNetEdge": -0.25,
+          "firstInningScoringIndex": 77.25,
+          "firstInningAllowRiskIndex": 83.5
         },
         "home": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.38,
-          "firstInningRunsAllowedPerGame": 0.75,
-          "scoredFirstInningRate": 0.13,
-          "scorelessFirstInningRate": 0.88,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
           "allowedFirstInningRate": 0.5,
           "firstInningMultiRunRate": 0.13,
-          "firstInningMultiRunAllowedRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.25,
           "nrfiGameRate": 0.38,
           "yrfiGameRate": 0.63,
           "firstInningNetEdge": -0.38,
-          "firstInningScoringIndex": 49,
+          "firstInningScoringIndex": 65.25,
           "firstInningAllowRiskIndex": 100
         }
       },
@@ -4923,6 +5625,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -4986,6 +5706,24 @@ export const rawGames = [
                 "opponentName": "Minnesota Twins",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -5053,6 +5791,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5118,6 +5874,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5181,6 +5955,24 @@ export const rawGames = [
                 "opponentName": "Minnesota Twins",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -5250,6 +6042,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5313,6 +6123,24 @@ export const rawGames = [
                 "opponentName": "Chicago White Sox",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -5380,6 +6208,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5445,6 +6291,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -5508,6 +6372,24 @@ export const rawGames = [
                 "opponentName": "Chicago White Sox",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Exp L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -5604,14 +6486,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 6,
       "losses": 1,
-      "era": "3.61",
-      "strikeOuts": 62,
-      "inningsPitched": "52.1",
+      "era": "3.64",
+      "strikeOuts": 63,
+      "inningsPitched": "54.1",
       "hitsAllowed": 49,
-      "walks": 13,
+      "walks": 16,
       "homeRunsAllowed": 6,
-      "whip": "1.18",
-      "gamesStarted": 10,
+      "whip": "1.20",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 701542,
@@ -5649,14 +6531,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 2,
-      "era": "2.70",
-      "strikeOuts": 55,
-      "inningsPitched": "63.1",
-      "hitsAllowed": 45,
-      "walks": 20,
-      "homeRunsAllowed": 7,
-      "whip": "1.03",
-      "gamesStarted": 10,
+      "era": "2.85",
+      "strikeOuts": 56,
+      "inningsPitched": "66.1",
+      "hitsAllowed": 49,
+      "walks": 21,
+      "homeRunsAllowed": 8,
+      "whip": "1.06",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 608379,
@@ -5688,9 +6570,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "-1.5 +130 / +1.5 -137",
-    "total": "o9 -108 / u9 -110",
-    "moneyline": "Yankees -125 / Royals +118",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/yankees-vs-royals",
     "tierTwoContext": {
@@ -5741,7 +6623,7 @@ export const rawGames = [
           "closeLossCountLast5": 2,
           "blowoutWinCountLast5": 1,
           "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 1,
+          "comebackWinCountLast5": 2,
           "bullpenFlipLossCountLast5": 1,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -5878,9 +6760,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.12,
           "trafficNoConversionRate": 0.14,
           "deadBatTrafficRate": 0.29,
-          "quietFirst5Rate": 0.57,
+          "quietFirst5Rate": 0.71,
           "conversionVolatility": 0.15,
-          "lineupConversionIndex": 11.11
+          "lineupConversionIndex": 9.69
         },
         "home": {
           "windowGames": 8,
@@ -5952,17 +6834,17 @@ export const rawGames = [
           "windowGames": 8,
           "gamesSample": 8,
           "firstInningRunsPerGame": 0.75,
-          "firstInningRunsAllowedPerGame": 0.25,
+          "firstInningRunsAllowedPerGame": 0.38,
           "scoredFirstInningRate": 0.5,
           "scorelessFirstInningRate": 0.5,
-          "allowedFirstInningRate": 0.25,
+          "allowedFirstInningRate": 0.38,
           "firstInningMultiRunRate": 0.13,
           "firstInningMultiRunAllowedRate": 0,
-          "nrfiGameRate": 0.38,
-          "yrfiGameRate": 0.63,
-          "firstInningNetEdge": 0.5,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": 0.38,
           "firstInningScoringIndex": 97.75,
-          "firstInningAllowRiskIndex": 59
+          "firstInningAllowRiskIndex": 77.75
         }
       },
       "firstInningPitcher": {
@@ -6215,6 +7097,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6278,6 +7178,24 @@ export const rawGames = [
                 "opponentName": "New York Yankees",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -6345,6 +7263,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6410,6 +7346,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6473,6 +7427,24 @@ export const rawGames = [
                 "opponentName": "New York Yankees",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -6542,6 +7514,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6605,6 +7595,24 @@ export const rawGames = [
                 "opponentName": "Kansas City Royals",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
               }
             },
             "innings": [
@@ -6672,6 +7680,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6737,6 +7763,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -6800,6 +7844,24 @@ export const rawGames = [
                 "opponentName": "Kansas City Royals",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -6896,14 +7958,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 0,
       "losses": 1,
-      "era": "7.20",
-      "strikeOuts": 11,
-      "inningsPitched": "15.0",
+      "era": "6.75",
+      "strikeOuts": 13,
+      "inningsPitched": "16.0",
       "hitsAllowed": 14,
       "walks": 9,
       "homeRunsAllowed": 4,
-      "whip": "1.53",
-      "gamesStarted": 3,
+      "whip": "1.44",
+      "gamesStarted": 4,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 666157,
@@ -6920,7 +7982,7 @@ export const rawGames = [
       "usageContext": {
         "status": "new-look",
         "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line.",
+        "note": "This is still a low-sample MLB starter look with only 4 starts on file, so innings expectation matters more than the raw ERA line.",
         "expectedInnings": 5,
         "daysSinceLastStart": 7,
         "startsLoaded": 3,
@@ -6941,14 +8003,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 3,
-      "era": "3.57",
-      "strikeOuts": 69,
-      "inningsPitched": "58.0",
+      "era": "3.51",
+      "strikeOuts": 72,
+      "inningsPitched": "59.0",
       "hitsAllowed": 43,
       "walks": 17,
       "homeRunsAllowed": 6,
-      "whip": "1.03",
-      "gamesStarted": 10,
+      "whip": "1.02",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 690997,
@@ -6980,9 +8042,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -165 / -1.5 +140",
-    "total": "o7.5 -105 / u7.5 -110",
-    "moneyline": "Reds +136 / Mets -155",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/reds-vs-mets",
     "tierTwoContext": {
@@ -7186,9 +8248,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.61,
           "trafficNoConversionRate": 0,
           "deadBatTrafficRate": 0.25,
-          "quietFirst5Rate": 0.38,
+          "quietFirst5Rate": 0.5,
           "conversionVolatility": 0.22,
-          "lineupConversionIndex": 47.71
+          "lineupConversionIndex": 46.46
         }
       },
       "bullpenMistake": {
@@ -7507,6 +8569,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -7570,6 +8650,24 @@ export const rawGames = [
                 "opponentName": "Cincinnati Reds",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -7637,6 +8735,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -7702,6 +8818,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -7765,6 +8899,24 @@ export const rawGames = [
                 "opponentName": "Cincinnati Reds",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -7842,6 +8994,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -7905,6 +9075,24 @@ export const rawGames = [
                 "opponentName": "New York Mets",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -7972,6 +9160,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8037,6 +9243,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav failed",
+                "tone": "negative"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8100,6 +9324,24 @@ export const rawGames = [
                 "opponentName": "New York Mets",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -8280,9 +9522,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -185 / -1.5 +158",
-    "total": "o7.5 -115 / u7.5 -105",
-    "moneyline": "Diamondbacks +120 / Giants -135",
+    "spread": "+1.5 -185 / -1.5 +161",
+    "total": "o7.5 -114 / u7.5 even",
+    "moneyline": "Diamondbacks +110 / Giants -130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/diamondbacks-vs-giants",
     "tierTwoContext": {
@@ -8333,7 +9575,7 @@ export const rawGames = [
           "closeLossCountLast5": 1,
           "blowoutWinCountLast5": 1,
           "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 2,
+          "comebackWinCountLast5": 3,
           "bullpenFlipLossCountLast5": 1,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -8527,34 +9769,34 @@ export const rawGames = [
         "away": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.75,
-          "firstInningRunsAllowedPerGame": 0.38,
-          "scoredFirstInningRate": 0.38,
-          "scorelessFirstInningRate": 0.63,
-          "allowedFirstInningRate": 0.25,
-          "firstInningMultiRunRate": 0.13,
-          "firstInningMultiRunAllowedRate": 0.13,
+          "firstInningRunsPerGame": 1,
+          "firstInningRunsAllowedPerGame": 0.13,
+          "scoredFirstInningRate": 0.5,
+          "scorelessFirstInningRate": 0.5,
+          "allowedFirstInningRate": 0.13,
+          "firstInningMultiRunRate": 0.25,
+          "firstInningMultiRunAllowedRate": 0,
           "nrfiGameRate": 0.5,
           "yrfiGameRate": 0.5,
-          "firstInningNetEdge": 0.38,
-          "firstInningScoringIndex": 85.75,
-          "firstInningAllowRiskIndex": 64
+          "firstInningNetEdge": 0.88,
+          "firstInningScoringIndex": 100,
+          "firstInningAllowRiskIndex": 40.25
         },
         "home": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.25,
-          "firstInningRunsAllowedPerGame": 0.75,
-          "scoredFirstInningRate": 0.25,
-          "scorelessFirstInningRate": 0.75,
-          "allowedFirstInningRate": 0.38,
-          "firstInningMultiRunRate": 0,
+          "firstInningRunsPerGame": 0.5,
+          "firstInningRunsAllowedPerGame": 0.88,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
+          "allowedFirstInningRate": 0.5,
+          "firstInningMultiRunRate": 0.13,
           "firstInningMultiRunAllowedRate": 0.13,
-          "nrfiGameRate": 0.5,
-          "yrfiGameRate": 0.5,
-          "firstInningNetEdge": -0.5,
-          "firstInningScoringIndex": 54.5,
-          "firstInningAllowRiskIndex": 89.75
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": -0.38,
+          "firstInningScoringIndex": 77.25,
+          "firstInningAllowRiskIndex": 100
         }
       },
       "firstInningPitcher": {
@@ -8827,6 +10069,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -8890,6 +10150,24 @@ export const rawGames = [
                 "opponentName": "Arizona Diamondbacks",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -8957,6 +10235,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9022,6 +10318,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9085,6 +10399,24 @@ export const rawGames = [
                 "opponentName": "Arizona Diamondbacks",
                 "firstInningRunsAllowed": 2,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -9154,6 +10486,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9217,6 +10567,24 @@ export const rawGames = [
                 "opponentName": "San Francisco Giants",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -9284,6 +10652,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9349,6 +10735,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9412,6 +10816,24 @@ export const rawGames = [
                 "opponentName": "San Francisco Giants",
                 "firstInningRunsAllowed": 2,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -9483,6 +10905,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9548,6 +10988,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9611,6 +11069,24 @@ export const rawGames = [
                 "opponentName": "Arizona Diamondbacks",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -9680,6 +11156,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9745,6 +11239,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -9808,6 +11320,24 @@ export const rawGames = [
                 "opponentName": "San Francisco Giants",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -9895,48 +11425,48 @@ export const rawGames = [
     "start": "3:10 PM PT",
     "startMinutes": 910,
     "awayPitcher": {
-      "id": 641793,
-      "fullName": "Zack Littell",
-      "pitchHand": "R",
+      "id": 676571,
+      "fullName": "PJ Poulin",
+      "pitchHand": "L",
       "wins": 3,
-      "losses": 4,
-      "era": "5.83",
-      "strikeOuts": 23,
-      "inningsPitched": "46.1",
-      "hitsAllowed": 52,
-      "walks": 15,
-      "homeRunsAllowed": 15,
-      "whip": "1.45",
-      "gamesStarted": 7,
+      "losses": 0,
+      "era": "3.32",
+      "strikeOuts": 16,
+      "inningsPitched": "21.2",
+      "hitsAllowed": 18,
+      "walks": 14,
+      "homeRunsAllowed": 3,
+      "whip": "1.48",
+      "gamesStarted": 5,
       "probableSource": "mlb-api",
       "savant": {
-        "playerId": 641793,
-        "playerUrl": "https://baseballsavant.mlb.com/savant-player/zack-littell-641793",
+        "playerId": 676571,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/pj-poulin-676571",
         "statsSuffix": "r-pitching-mlb",
         "season": 2026,
         "statsUrls": {
-          "statcast": "https://baseballsavant.mlb.com/savant-player/zack-littell-641793?stats=statcast-r-pitching-mlb&season=2026",
-          "splits": "https://baseballsavant.mlb.com/savant-player/zack-littell-641793?stats=splits-r-pitching-mlb&season=2026",
-          "gamelogs": "https://baseballsavant.mlb.com/savant-player/zack-littell-641793?stats=gamelogs-r-pitching-mlb&season=2026"
+          "statcast": "https://baseballsavant.mlb.com/savant-player/pj-poulin-676571?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/pj-poulin-676571?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/pj-poulin-676571?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
       "recentForm": null,
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 4.81,
-        "daysSinceLastStart": 5,
-        "startsLoaded": 7,
-        "shortLeashRisk": 0.14,
-        "durableRate": 0.14,
+        "status": "long-layoff",
+        "label": "Long layoff",
+        "note": "Last MLB start on file was 22 days ago, so this probable comes in without a trustworthy current rhythm read.",
+        "expectedInnings": 1.27,
+        "daysSinceLastStart": 22,
+        "startsLoaded": 5,
+        "shortLeashRisk": 1,
+        "durableRate": 0,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "5-inning lane"
+        "workloadLabel": "Short leash"
       }
     },
     "homePitcher": {
@@ -9984,9 +11514,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -140 / -1.5 +125",
+    "spread": "+1.5 -145 / -1.5 +125",
     "total": "o8 -115 / u8 -105",
-    "moneyline": "Nationals +150 / Guardians -174",
+    "moneyline": "Nationals +150 / Guardians -175",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/nationals-vs-guardians",
     "tierTwoContext": {
@@ -10152,13 +11682,13 @@ export const rawGames = [
           "oneBadInningAllowedRate": 0,
           "trafficGameRate": 0.5,
           "deadBatTrafficRate": 0.13,
-          "trafficNoConversionRate": 0,
+          "trafficNoConversionRate": 0.13,
           "baseRunnerConversionRate": 0.38,
           "strandedTrafficRate": 1.05,
           "topOrderPressureNoConversionRate": 0,
           "bullpenMeltdownRate": 0,
           "runClusteringIndex": 59.29,
-          "mistakeChaosIndex": 39.67
+          "mistakeChaosIndex": 41.92
         }
       },
       "lineupConversion": {
@@ -10174,9 +11704,9 @@ export const rawGames = [
           "topOrderConversionShare": 1,
           "trafficNoConversionRate": 0.13,
           "deadBatTrafficRate": 0.38,
-          "quietFirst5Rate": 0.38,
+          "quietFirst5Rate": 0.5,
           "conversionVolatility": 0.21,
-          "lineupConversionIndex": 38.57
+          "lineupConversionIndex": 37.32
         },
         "home": {
           "windowGames": 8,
@@ -10188,11 +11718,11 @@ export const rawGames = [
           "earlyConversionRate": 0.36,
           "topOrderBaserunnersFirst3PerGame": 1.63,
           "topOrderConversionShare": 0.69,
-          "trafficNoConversionRate": 0,
+          "trafficNoConversionRate": 0.13,
           "deadBatTrafficRate": 0.13,
-          "quietFirst5Rate": 0.5,
+          "quietFirst5Rate": 0.63,
           "conversionVolatility": 0.19,
-          "lineupConversionIndex": 48.62
+          "lineupConversionIndex": 45.12
         }
       },
       "bullpenMistake": {
@@ -10262,20 +11792,7 @@ export const rawGames = [
         }
       },
       "firstInningPitcher": {
-        "away": {
-          "pitcherName": "Zack Littell",
-          "windowStarts": 5,
-          "startsSample": 2,
-          "firstBatterReachRate": 0,
-          "firstInningRunAllowedRate": 0,
-          "firstInningRunsAllowedPerStart": 0,
-          "firstInningMultiRunAllowedRate": 0,
-          "firstInningBaserunnersPerStart": 0,
-          "firstInningWalkRate": 0,
-          "firstInningHomeRunRate": 0,
-          "firstInningCleanRate": 1,
-          "firstInningPressureIndex": 4
-        },
+        "away": null,
         "home": {
           "pitcherName": "Tanner Bibee",
           "windowStarts": 5,
@@ -10293,8 +11810,8 @@ export const rawGames = [
       },
       "firstInningPitcherSeason": {
         "away": {
-          "pitcherName": "Zack Littell",
-          "startsSample": 7,
+          "pitcherName": "PJ Poulin",
+          "startsSample": 5,
           "firstInningRunsAllowedTotal": 0,
           "firstInningRunGames": 0,
           "firstInningWalkGames": 0,
@@ -10511,6 +12028,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10576,6 +12111,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10639,6 +12192,24 @@ export const rawGames = [
                 "opponentName": "Washington Nationals",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -10714,6 +12285,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10777,6 +12366,24 @@ export const rawGames = [
                 "opponentName": "Washington Nationals",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -10844,6 +12451,24 @@ export const rawGames = [
                 "opponentName": "Cleveland Guardians",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -10915,6 +12540,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -10978,6 +12621,24 @@ export const rawGames = [
                 "opponentName": "Cleveland Guardians",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -11045,6 +12706,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav failed",
+                "tone": "negative"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11108,6 +12787,24 @@ export const rawGames = [
                 "opponentName": "Cleveland Guardians",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -11244,29 +12941,29 @@ export const rawGames = [
       }
     },
     "homePitcher": {
-      "id": 681190,
-      "fullName": "Randy Vásquez",
+      "id": 656288,
+      "fullName": "Griffin Canning",
       "pitchHand": "R",
-      "wins": 5,
+      "wins": 0,
       "losses": 2,
-      "era": "2.96",
-      "strikeOuts": 45,
-      "inningsPitched": "54.2",
-      "hitsAllowed": 49,
-      "walks": 16,
-      "homeRunsAllowed": 5,
-      "whip": "1.19",
-      "gamesStarted": 10,
+      "era": "9.00",
+      "strikeOuts": 19,
+      "inningsPitched": "16.0",
+      "hitsAllowed": 19,
+      "walks": 10,
+      "homeRunsAllowed": 2,
+      "whip": "1.81",
+      "gamesStarted": 4,
       "probableSource": "mlb-api",
       "savant": {
-        "playerId": 681190,
-        "playerUrl": "https://baseballsavant.mlb.com/savant-player/randy-vasquez-681190",
+        "playerId": 656288,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/griffin-canning-656288",
         "statsSuffix": "r-pitching-mlb",
         "season": 2026,
         "statsUrls": {
-          "statcast": "https://baseballsavant.mlb.com/savant-player/randy-vasquez-681190?stats=statcast-r-pitching-mlb&season=2026",
-          "splits": "https://baseballsavant.mlb.com/savant-player/randy-vasquez-681190?stats=splits-r-pitching-mlb&season=2026",
-          "gamelogs": "https://baseballsavant.mlb.com/savant-player/randy-vasquez-681190?stats=gamelogs-r-pitching-mlb&season=2026"
+          "statcast": "https://baseballsavant.mlb.com/savant-player/griffin-canning-656288?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/griffin-canning-656288?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/griffin-canning-656288?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
       "recentForm": null,
@@ -11274,23 +12971,23 @@ export const rawGames = [
         "status": "season-only",
         "label": "Season-only form",
         "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.47,
-        "daysSinceLastStart": 5,
-        "startsLoaded": 10,
-        "shortLeashRisk": 0,
-        "durableRate": 0.4,
+        "expectedInnings": 4,
+        "daysSinceLastStart": 6,
+        "startsLoaded": 4,
+        "shortLeashRisk": 0.25,
+        "durableRate": 0,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "5-inning lane"
+        "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +140 / +1.5 -162",
-    "total": "o7.5 +102 / u7.5 -115",
-    "moneyline": "Phillies -125 / Padres +110",
+    "spread": "-1.5 +145 / +1.5 -156",
+    "total": "o7 -118 / u7.5 -118",
+    "moneyline": "Phillies -120 / Padres +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/phillies-vs-padres",
     "tierTwoContext": {
@@ -11456,13 +13153,13 @@ export const rawGames = [
           "oneBadInningAllowedRate": 0.13,
           "trafficGameRate": 0.75,
           "deadBatTrafficRate": 0.25,
-          "trafficNoConversionRate": 0,
+          "trafficNoConversionRate": 0.13,
           "baseRunnerConversionRate": 0.37,
           "strandedTrafficRate": 1.01,
           "topOrderPressureNoConversionRate": 0,
           "bullpenMeltdownRate": 0.13,
           "runClusteringIndex": 65.16,
-          "mistakeChaosIndex": 52.44
+          "mistakeChaosIndex": 54.69
         }
       },
       "lineupConversion": {
@@ -11478,9 +13175,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.53,
           "trafficNoConversionRate": 0,
           "deadBatTrafficRate": 0.13,
-          "quietFirst5Rate": 0.5,
+          "quietFirst5Rate": 0.63,
           "conversionVolatility": 0.17,
-          "lineupConversionIndex": 34.3
+          "lineupConversionIndex": 33.05
         },
         "home": {
           "windowGames": 8,
@@ -11492,11 +13189,11 @@ export const rawGames = [
           "earlyConversionRate": 0.46,
           "topOrderBaserunnersFirst3PerGame": 2,
           "topOrderConversionShare": 0.69,
-          "trafficNoConversionRate": 0,
+          "trafficNoConversionRate": 0.13,
           "deadBatTrafficRate": 0.25,
           "quietFirst5Rate": 0.5,
           "conversionVolatility": 0.23,
-          "lineupConversionIndex": 48.81
+          "lineupConversionIndex": 46.56
         }
       },
       "bullpenMistake": {
@@ -11552,17 +13249,17 @@ export const rawGames = [
           "windowGames": 8,
           "gamesSample": 8,
           "firstInningRunsPerGame": 0.75,
-          "firstInningRunsAllowedPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.75,
           "scoredFirstInningRate": 0.5,
           "scorelessFirstInningRate": 0.5,
-          "allowedFirstInningRate": 0.38,
+          "allowedFirstInningRate": 0.5,
           "firstInningMultiRunRate": 0.25,
           "firstInningMultiRunAllowedRate": 0.25,
-          "nrfiGameRate": 0.38,
-          "yrfiGameRate": 0.63,
-          "firstInningNetEdge": 0.13,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": 0,
           "firstInningScoringIndex": 100,
-          "firstInningAllowRiskIndex": 90.25
+          "firstInningAllowRiskIndex": 100
         }
       },
       "firstInningPitcher": {
@@ -11581,18 +13278,18 @@ export const rawGames = [
           "firstInningPressureIndex": 4
         },
         "home": {
-          "pitcherName": "Randy Vásquez",
+          "pitcherName": "Griffin Canning",
           "windowStarts": 5,
-          "startsSample": 3,
-          "firstBatterReachRate": 0.33,
-          "firstInningRunAllowedRate": 0.33,
-          "firstInningRunsAllowedPerStart": 0.33,
-          "firstInningMultiRunAllowedRate": 0,
-          "firstInningBaserunnersPerStart": 1.33,
-          "firstInningWalkRate": 0.33,
-          "firstInningHomeRunRate": 0.33,
-          "firstInningCleanRate": 0.67,
-          "firstInningPressureIndex": 46.67
+          "startsSample": 2,
+          "firstBatterReachRate": 0.5,
+          "firstInningRunAllowedRate": 1,
+          "firstInningRunsAllowedPerStart": 2.5,
+          "firstInningMultiRunAllowedRate": 1,
+          "firstInningBaserunnersPerStart": 3.5,
+          "firstInningWalkRate": 0.5,
+          "firstInningHomeRunRate": 0.5,
+          "firstInningCleanRate": 0,
+          "firstInningPressureIndex": 100
         }
       },
       "firstInningPitcherSeason": {
@@ -11607,14 +13304,14 @@ export const rawGames = [
           "firstInningRunGameRate": 0
         },
         "home": {
-          "pitcherName": "Randy Vásquez",
-          "startsSample": 10,
-          "firstInningRunsAllowedTotal": 1,
-          "firstInningRunGames": 1,
+          "pitcherName": "Griffin Canning",
+          "startsSample": 4,
+          "firstInningRunsAllowedTotal": 5,
+          "firstInningRunGames": 2,
           "firstInningWalkGames": 1,
           "firstInningHomeRunGames": 1,
-          "firstInningRunsAllowedPerStart": 0.1,
-          "firstInningRunGameRate": 0.1
+          "firstInningRunsAllowedPerStart": 1.25,
+          "firstInningRunGameRate": 0.5
         }
       },
       "seriesEarlyPhase": {
@@ -11815,6 +13512,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -11878,6 +13593,24 @@ export const rawGames = [
                 "opponentName": "Philadelphia Phillies",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -11945,6 +13678,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12010,6 +13761,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12073,6 +13842,24 @@ export const rawGames = [
                 "opponentName": "Philadelphia Phillies",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -12142,6 +13929,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12205,6 +14010,24 @@ export const rawGames = [
                 "opponentName": "San Diego Padres",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -12272,6 +14095,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12337,6 +14178,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -12400,6 +14259,24 @@ export const rawGames = [
                 "opponentName": "San Diego Padres",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav failed",
+                "tone": "negative"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -12580,9 +14457,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -178 / -1.5 +155",
-    "total": "o8 -105 / u8.5 -119",
-    "moneyline": "Astros +115 / Rangers -130",
+    "spread": "+1.5 -192 / +1.5 -196",
+    "total": "o8 -105 / u8 -110",
+    "moneyline": "Astros even / Rangers -118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-rangers",
     "tierTwoContext": {
@@ -12609,7 +14486,7 @@ export const rawGames = [
           "closeLossCountLast5": 0,
           "blowoutWinCountLast5": 0,
           "blowoutLossCountLast5": 0,
-          "comebackWinCountLast5": 1,
+          "comebackWinCountLast5": 2,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -12633,7 +14510,7 @@ export const rawGames = [
           "closeLossCountLast5": 1,
           "blowoutWinCountLast5": 1,
           "blowoutLossCountLast5": 0,
-          "comebackWinCountLast5": 1,
+          "comebackWinCountLast5": 2,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -12786,9 +14663,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.47,
           "trafficNoConversionRate": 0,
           "deadBatTrafficRate": 0.25,
-          "quietFirst5Rate": 0.13,
+          "quietFirst5Rate": 0.25,
           "conversionVolatility": 0.21,
-          "lineupConversionIndex": 40.45
+          "lineupConversionIndex": 39.2
         }
       },
       "bullpenMistake": {
@@ -13107,6 +14984,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13170,6 +15065,24 @@ export const rawGames = [
                 "opponentName": "Houston Astros",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -13237,6 +15150,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13302,6 +15233,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13365,6 +15314,24 @@ export const rawGames = [
                 "opponentName": "Houston Astros",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -13434,6 +15401,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13497,6 +15482,24 @@ export const rawGames = [
                 "opponentName": "Texas Rangers",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -13564,6 +15567,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13629,6 +15650,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13692,6 +15731,24 @@ export const rawGames = [
                 "opponentName": "Texas Rangers",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -13763,6 +15820,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13828,6 +15903,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -13891,6 +15984,24 @@ export const rawGames = [
                 "opponentName": "Houston Astros",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -13960,6 +16071,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14025,6 +16154,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14088,6 +16235,24 @@ export const rawGames = [
                 "opponentName": "Texas Rangers",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -14264,9 +16429,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -155 / -1.5 +135",
-    "total": "o7.5 -105 / u7.5 -108",
-    "moneyline": "Marlins +135 / Blue Jays -160",
+    "spread": "+1.5 -155 / -1.5 +140",
+    "total": "o7.5 -105 / u7.5 -105",
+    "moneyline": "Marlins +135 / Blue Jays -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-blue-jays",
     "tierTwoContext": {
@@ -14454,9 +16619,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.72,
           "trafficNoConversionRate": 0.13,
           "deadBatTrafficRate": 0,
-          "quietFirst5Rate": 0.13,
+          "quietFirst5Rate": 0.25,
           "conversionVolatility": 0.13,
-          "lineupConversionIndex": 53.3
+          "lineupConversionIndex": 52.05
         },
         "home": {
           "windowGames": 8,
@@ -14470,9 +16635,9 @@ export const rawGames = [
           "topOrderConversionShare": 0.47,
           "trafficNoConversionRate": 0,
           "deadBatTrafficRate": 0.38,
-          "quietFirst5Rate": 0.38,
+          "quietFirst5Rate": 0.5,
           "conversionVolatility": 0.14,
-          "lineupConversionIndex": 25.47
+          "lineupConversionIndex": 24.22
         }
       },
       "bullpenMistake": {
@@ -14528,17 +16693,17 @@ export const rawGames = [
           "windowGames": 8,
           "gamesSample": 8,
           "firstInningRunsPerGame": 0.5,
-          "firstInningRunsAllowedPerGame": 0.25,
+          "firstInningRunsAllowedPerGame": 0.38,
           "scoredFirstInningRate": 0.38,
           "scorelessFirstInningRate": 0.63,
-          "allowedFirstInningRate": 0.25,
+          "allowedFirstInningRate": 0.38,
           "firstInningMultiRunRate": 0.13,
           "firstInningMultiRunAllowedRate": 0,
-          "nrfiGameRate": 0.38,
-          "yrfiGameRate": 0.63,
-          "firstInningNetEdge": 0.25,
+          "nrfiGameRate": 0.25,
+          "yrfiGameRate": 0.75,
+          "firstInningNetEdge": 0.13,
           "firstInningScoringIndex": 77.25,
-          "firstInningAllowRiskIndex": 59
+          "firstInningAllowRiskIndex": 77.75
         }
       },
       "firstInningPitcher": {
@@ -14791,6 +16956,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14854,6 +17037,24 @@ export const rawGames = [
                 "opponentName": "Miami Marlins",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -14921,6 +17122,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -14986,6 +17205,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15049,6 +17286,24 @@ export const rawGames = [
                 "opponentName": "Miami Marlins",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -15118,6 +17373,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15181,6 +17454,24 @@ export const rawGames = [
                 "opponentName": "Toronto Blue Jays",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -15248,6 +17539,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15313,6 +17622,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -15376,6 +17703,24 @@ export const rawGames = [
                 "opponentName": "Toronto Blue Jays",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -15556,9 +17901,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+2.5 -125 / -1.5 -139",
+    "spread": "+1.5 +135 / -1.5 -148",
     "total": "o8.5 -120 / u9 -120",
-    "moneyline": "Rockies +266 / Dodgers -320",
+    "moneyline": "Rockies +270 / Dodgers -310",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-dodgers",
     "tierTwoContext": {
@@ -15609,7 +17954,7 @@ export const rawGames = [
           "closeLossCountLast5": 0,
           "blowoutWinCountLast5": 1,
           "blowoutLossCountLast5": 0,
-          "comebackWinCountLast5": 2,
+          "comebackWinCountLast5": 3,
           "bullpenFlipLossCountLast5": 0,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -15803,18 +18148,18 @@ export const rawGames = [
         "away": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.63,
-          "firstInningRunsAllowedPerGame": 0.25,
-          "scoredFirstInningRate": 0.38,
-          "scorelessFirstInningRate": 0.63,
-          "allowedFirstInningRate": 0.13,
-          "firstInningMultiRunRate": 0.25,
-          "firstInningMultiRunAllowedRate": 0.13,
+          "firstInningRunsPerGame": 0.38,
+          "firstInningRunsAllowedPerGame": 0.5,
+          "scoredFirstInningRate": 0.25,
+          "scorelessFirstInningRate": 0.75,
+          "allowedFirstInningRate": 0.25,
+          "firstInningMultiRunRate": 0.13,
+          "firstInningMultiRunAllowedRate": 0.25,
           "nrfiGameRate": 0.5,
           "yrfiGameRate": 0.5,
-          "firstInningNetEdge": 0.38,
-          "firstInningScoringIndex": 83.75,
-          "firstInningAllowRiskIndex": 47.75
+          "firstInningNetEdge": -0.13,
+          "firstInningScoringIndex": 61,
+          "firstInningAllowRiskIndex": 71.5
         },
         "home": {
           "windowGames": 8,
@@ -16061,6 +18406,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16124,6 +18487,24 @@ export const rawGames = [
                 "opponentName": "Colorado Rockies",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -16191,6 +18572,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16256,6 +18655,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Exp L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16319,6 +18736,24 @@ export const rawGames = [
                 "opponentName": "Colorado Rockies",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Exp L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -16388,6 +18823,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16451,6 +18904,24 @@ export const rawGames = [
                 "opponentName": "Los Angeles Dodgers",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -16518,6 +18989,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16583,6 +19072,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -16646,6 +19153,24 @@ export const rawGames = [
                 "opponentName": "Los Angeles Dodgers",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin W",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -16827,8 +19352,8 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +135 / +1.5 -155",
-    "total": "o10.5 -108 / u10.5 -110",
-    "moneyline": "Mariners -115 / Athletics even",
+    "total": "o10.5 -109 / u10.5 even",
+    "moneyline": "Mariners -115 / Athletics -102",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mariners-vs-athletics",
     "tierTwoContext": {
@@ -16855,7 +19380,7 @@ export const rawGames = [
           "closeLossCountLast5": 2,
           "blowoutWinCountLast5": 0,
           "blowoutLossCountLast5": 1,
-          "comebackWinCountLast5": 1,
+          "comebackWinCountLast5": 2,
           "bullpenFlipLossCountLast5": 1,
           "quietFirst5CountLast5": 0,
           "firstInningJoltCountLast5": 0,
@@ -17073,34 +19598,34 @@ export const rawGames = [
         "away": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.25,
+          "firstInningRunsPerGame": 0.38,
           "firstInningRunsAllowedPerGame": 0.5,
-          "scoredFirstInningRate": 0.25,
-          "scorelessFirstInningRate": 0.75,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
           "allowedFirstInningRate": 0.25,
           "firstInningMultiRunRate": 0,
           "firstInningMultiRunAllowedRate": 0.13,
-          "nrfiGameRate": 0.5,
-          "yrfiGameRate": 0.5,
-          "firstInningNetEdge": -0.25,
-          "firstInningScoringIndex": 54.5,
-          "firstInningAllowRiskIndex": 68.75
+          "nrfiGameRate": 0.38,
+          "yrfiGameRate": 0.63,
+          "firstInningNetEdge": -0.13,
+          "firstInningScoringIndex": 70.75,
+          "firstInningAllowRiskIndex": 71.25
         },
         "home": {
           "windowGames": 8,
           "gamesSample": 8,
-          "firstInningRunsPerGame": 0.5,
-          "firstInningRunsAllowedPerGame": 0.88,
-          "scoredFirstInningRate": 0.25,
-          "scorelessFirstInningRate": 0.75,
-          "allowedFirstInningRate": 0.5,
+          "firstInningRunsPerGame": 0.63,
+          "firstInningRunsAllowedPerGame": 0.75,
+          "scoredFirstInningRate": 0.38,
+          "scorelessFirstInningRate": 0.63,
+          "allowedFirstInningRate": 0.38,
           "firstInningMultiRunRate": 0.25,
           "firstInningMultiRunAllowedRate": 0.38,
           "nrfiGameRate": 0.5,
           "yrfiGameRate": 0.5,
-          "firstInningNetEdge": -0.38,
-          "firstInningScoringIndex": 67.5,
-          "firstInningAllowRiskIndex": 100
+          "firstInningNetEdge": -0.13,
+          "firstInningScoringIndex": 83.75,
+          "firstInningAllowRiskIndex": 95.25
         }
       },
       "firstInningPitcher": {
@@ -17353,6 +19878,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17416,6 +19959,24 @@ export const rawGames = [
                 "opponentName": "Seattle Mariners",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -17483,6 +20044,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17546,6 +20125,24 @@ export const rawGames = [
                 "opponentName": "Seattle Mariners",
                 "firstInningRunsAllowed": 0,
                 "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav failed",
+                "tone": "negative"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
               }
             },
             "innings": [
@@ -17613,6 +20210,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17678,6 +20293,24 @@ export const rawGames = [
                 "opponentName": "Athletics",
                 "firstInningRunsAllowed": 2,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -17749,6 +20382,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17818,6 +20469,24 @@ export const rawGames = [
                 "firstInningOutcome": "RFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17883,6 +20552,24 @@ export const rawGames = [
                 "firstInningOutcome": "NRFI"
               }
             },
+            "storyAxes": {
+              "market": {
+                "label": "Exp L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
             "innings": [
               {
                 "inning": 1,
@@ -17946,6 +20633,24 @@ export const rawGames = [
                 "opponentName": "Athletics",
                 "firstInningRunsAllowed": 1,
                 "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
               }
             },
             "innings": [
@@ -18761,18 +21466,6 @@ export const bullpenChainByTeam = {
     "opponent": "Guardians",
     "topRelievers": [
       {
-        "pitcherId": 676571,
-        "name": "PJ Poulin",
-        "role": "bridge",
-        "firstRelieverLikelihood": 90.5,
-        "availabilityScore": 95,
-        "bridgeScore": 95,
-        "expectedOuts": 2.5,
-        "workedYesterday": false,
-        "backToBack": false,
-        "lastAppearanceDate": "2026-05-18"
-      },
-      {
         "pitcherId": 695418,
         "name": "Brad Lord",
         "role": "bridge",
@@ -18783,6 +21476,18 @@ export const bullpenChainByTeam = {
         "workedYesterday": false,
         "backToBack": false,
         "lastAppearanceDate": "2026-05-23"
+      },
+      {
+        "pitcherId": 674841,
+        "name": "Andrew Alvarez",
+        "role": "bridge",
+        "firstRelieverLikelihood": 76.18,
+        "availabilityScore": 51.5,
+        "bridgeScore": 92.1,
+        "expectedOuts": 8.33,
+        "workedYesterday": true,
+        "backToBack": false,
+        "lastAppearanceDate": "2026-05-24"
       }
     ]
   }

@@ -62,6 +62,7 @@
     "data:research:mlb-story-phase-labels": "python3 pipeline/research_mlb_story_phase_labels.py",
     "data:research:mlb-veto-engine": "python3 pipeline/research_mlb_veto_engine.py",
     "data:research:mlb-slate-postmortem": "python3 pipeline/research_mlb_slate_postmortem.py",
+    "data:research:mlb-first-inning-hits": "python3 pipeline/research_mlb_first_inning_hits.py",
     "data:generate:tennis-clay-context": "node pipeline/generate-tennis-clay-context.mjs",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"

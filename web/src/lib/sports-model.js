@@ -2050,6 +2050,8 @@ const buildTotalLean = (projectedRuns, line) => {
 
 const buildFirstInningRunProfile = ({
   projectedRunProfile = null,
+  teamName = '',
+  opposingTeamName = '',
   teamScript = null,
   lineupProfile = null,
   hitterState = null,
@@ -2059,6 +2061,7 @@ const buildFirstInningRunProfile = ({
   opposingSeriesEarlyProfile = null,
   opposingTeamFirstInningProfile = null,
   opposingPitcherFirstInningProfile = null,
+  opposingPitcherFirstInningSeasonProfile = null,
   weatherProfile = null
 }) => {
   if (!projectedRunProfile && !teamFirstInningProfile && !opposingPitcherFirstInningProfile) {
@@ -2109,6 +2112,21 @@ const buildFirstInningRunProfile = ({
   const opposingPitcherPressureIndex = Number(
     opposingPitcherFirstInningProfile?.firstInningPressureIndex
   )
+  const opposingPitcherSeasonStartsSample = Number(
+    opposingPitcherFirstInningSeasonProfile?.startsSample || 0
+  ) || 0
+  const opposingPitcherSeasonRunGameRate = Number(
+    opposingPitcherFirstInningSeasonProfile?.firstInningRunGameRate
+  )
+  const opposingPitcherSeasonRunsAllowedPerStart = Number(
+    opposingPitcherFirstInningSeasonProfile?.firstInningRunsAllowedPerStart
+  )
+  const opposingPitcherSeasonWalkGameRate = Number(
+    opposingPitcherFirstInningSeasonProfile?.firstInningWalkGames
+  )
+  const opposingPitcherSeasonHomeRunGameRate = Number(
+    opposingPitcherFirstInningSeasonProfile?.firstInningHomeRunGames
+  )
   const projectedBaselineRuns = Number.isFinite(projectedRunProfile?.first5Runs)
     ? projectedRunProfile.first5Runs * 0.19
     : null
@@ -2126,6 +2144,12 @@ const buildFirstInningRunProfile = ({
   if (Number.isFinite(opposingPitcherRunsAllowedPerStart)) {
     projectedRunsNumerator += opposingPitcherRunsAllowedPerStart * 0.28
     projectedRunsWeight += 0.28
+  }
+  const opposingPitcherSeasonReliability = clamp(opposingPitcherSeasonStartsSample / 8, 0.25, 1)
+  if (Number.isFinite(opposingPitcherSeasonRunsAllowedPerStart)) {
+    projectedRunsNumerator +=
+      opposingPitcherSeasonRunsAllowedPerStart * (0.18 * opposingPitcherSeasonReliability)
+    projectedRunsWeight += 0.18 * opposingPitcherSeasonReliability
   }
   if (Number.isFinite(opposingTeamRunsAllowedPerGame)) {
     projectedRunsNumerator += opposingTeamRunsAllowedPerGame * 0.18
@@ -2147,6 +2171,11 @@ const buildFirstInningRunProfile = ({
   if (Number.isFinite(opposingPitcherAllowedRate)) {
     runProbabilityNumerator += opposingPitcherAllowedRate * (0.26 * opposingPitcherReliability)
     runProbabilityWeight += 0.26 * opposingPitcherReliability
+  }
+  if (Number.isFinite(opposingPitcherSeasonRunGameRate)) {
+    runProbabilityNumerator +=
+      opposingPitcherSeasonRunGameRate * (0.22 * opposingPitcherSeasonReliability)
+    runProbabilityWeight += 0.22 * opposingPitcherSeasonReliability
   }
   if (Number.isFinite(opposingTeamAllowedRate)) {
     runProbabilityNumerator += opposingTeamAllowedRate * 0.16
@@ -2178,6 +2207,80 @@ const buildFirstInningRunProfile = ({
   let runProbability =
     runProbabilityWeight > 0 ? runProbabilityNumerator / runProbabilityWeight : projectedBaselineProbability ?? 0.2
 
+  const supportingReasons = []
+  const suppressingReasons = []
+
+  if (Number.isFinite(teamScoredRate)) {
+    if (teamScoredRate >= 0.35) {
+      supportingReasons.push(`${teamName} are scoring in the 1st ${roundToTenths(teamScoredRate * 100)}% lately`)
+    } else if (teamScoredRate <= 0.15) {
+      suppressingReasons.push(`${teamName} are only scoring in the 1st ${roundToTenths(teamScoredRate * 100)}% lately`)
+    }
+  }
+  if (Number.isFinite(teamScorelessRate) && teamScorelessRate >= 0.75) {
+    suppressingReasons.push(`${teamName} stay scoreless in the 1st ${roundToTenths(teamScorelessRate * 100)}% of recent games`)
+  }
+  if (Number.isFinite(teamScoringIndex) && teamScoringIndex >= 62) {
+    supportingReasons.push(`${teamName} carry a live early scoring index (${roundToTenths(teamScoringIndex)})`)
+  }
+  if (Number.isFinite(topThirdScore) && topThirdScore >= 62) {
+    supportingReasons.push(`${teamName} top order is driving early pressure (${roundToTenths(topThirdScore)})`)
+  }
+  if (Number.isFinite(top6HeatIndex) && top6HeatIndex >= 58) {
+    supportingReasons.push(`${teamName} top six bats are running hot (${roundToTenths(top6HeatIndex)})`)
+  }
+  if (Number.isFinite(top6ColdIndex) && top6ColdIndex >= 58) {
+    suppressingReasons.push(`${teamName} top six bats are cold (${roundToTenths(top6ColdIndex)})`)
+  }
+  if (Number.isFinite(opposingPitcherAllowedRate) && opposingPitcherStartsSample >= 2) {
+    if (opposingPitcherAllowedRate >= 0.4) {
+      supportingReasons.push(
+        `${opposingTeamName} starter has leaked 1st-inning runs in ${roundToTenths(opposingPitcherAllowedRate * 100)}% of recent starts`
+      )
+    } else if (opposingPitcherAllowedRate <= 0.1) {
+      suppressingReasons.push(
+        `${opposingTeamName} starter has stayed clean in the 1st across recent starts`
+      )
+    }
+  }
+  if (Number.isFinite(opposingPitcherSeasonRunGameRate) && opposingPitcherSeasonStartsSample >= 3) {
+    if (
+      opposingPitcherSeasonRunGameRate >= 0.25 ||
+      (Number.isFinite(opposingPitcherSeasonRunsAllowedPerStart) && opposingPitcherSeasonRunsAllowedPerStart >= 0.5)
+    ) {
+      supportingReasons.push(
+        `${opposingTeamName} starter has real season 1st-inning damage (${roundToTenths(opposingPitcherSeasonRunGameRate * 100)}% run games, ${roundToTenths(opposingPitcherSeasonRunsAllowedPerStart)}/start)`
+      )
+    } else if (
+      opposingPitcherSeasonRunGameRate <= 0.12 &&
+      Number.isFinite(opposingPitcherSeasonRunsAllowedPerStart) &&
+      opposingPitcherSeasonRunsAllowedPerStart <= 0.35
+    ) {
+      suppressingReasons.push(
+        `${opposingTeamName} starter season line is clean early (${roundToTenths(opposingPitcherSeasonRunGameRate * 100)}% run games, ${roundToTenths(opposingPitcherSeasonRunsAllowedPerStart)}/start)`
+      )
+    }
+  }
+  if (Number.isFinite(opposingTeamAllowedRate) && opposingTeamAllowedRate >= 0.35) {
+    supportingReasons.push(`${opposingTeamName} are allowing a 1st-inning run ${roundToTenths(opposingTeamAllowedRate * 100)}% lately`)
+  }
+  if (Number.isFinite(opposingTeamNrfiRate) && opposingTeamNrfiRate >= 0.65) {
+    suppressingReasons.push(`${opposingTeamName} games have stayed NRFI ${roundToTenths(opposingTeamNrfiRate * 100)}% lately`)
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesScoredRate) && Number.isFinite(seriesRunsFirst3PerGame)) {
+    if (seriesScoredRate === 0 && seriesRunsFirst3PerGame <= 0.5) {
+      suppressingReasons.push(`${teamName} have been dead early in this series`)
+    } else if (seriesScoredRate >= 0.5 || seriesRunsFirst3PerGame >= 1) {
+      supportingReasons.push(`${teamName} have already shown early scoring life in this series`)
+    }
+  }
+  if (seriesGamesSample >= 2 && Number.isFinite(seriesTrafficNoConversionRate) && seriesTrafficNoConversionRate >= 0.3) {
+    suppressingReasons.push(`${teamName} have been stranding early traffic in this series`)
+  }
+  if (Number.isFinite(weatherProfile?.runBoostFirst5) && Number(weatherProfile.runBoostFirst5) >= 0.05) {
+    supportingReasons.push(`weather is adding early run carry`)
+  }
+
   runProbability += Math.max(topThirdScore - 50, 0) * 0.0015
   runProbability += Math.max(starterPressureIndex - 50, 0) * 0.001
   runProbability += Math.max(overallPressureIndex - 50, 0) * 0.00045
@@ -2204,6 +2307,29 @@ const buildFirstInningRunProfile = ({
     : 0
   runProbability += Number.isFinite(opposingPitcherHomeRunRate)
     ? Math.max(opposingPitcherHomeRunRate - 0.08, 0) * 0.08 * opposingPitcherReliability
+    : 0
+  runProbability += Number.isFinite(opposingPitcherSeasonRunGameRate)
+    ? Math.max(opposingPitcherSeasonRunGameRate - 0.18, 0) *
+      0.12 *
+      opposingPitcherSeasonReliability
+    : 0
+  runProbability += Number.isFinite(opposingPitcherSeasonWalkGameRate) &&
+    opposingPitcherSeasonStartsSample > 0
+    ? Math.max(
+        opposingPitcherSeasonWalkGameRate / opposingPitcherSeasonStartsSample - 0.1,
+        0
+      ) *
+      0.05 *
+      opposingPitcherSeasonReliability
+    : 0
+  runProbability += Number.isFinite(opposingPitcherSeasonHomeRunGameRate) &&
+    opposingPitcherSeasonStartsSample > 0
+    ? Math.max(
+        opposingPitcherSeasonHomeRunGameRate / opposingPitcherSeasonStartsSample - 0.05,
+        0
+      ) *
+      0.08 *
+      opposingPitcherSeasonReliability
     : 0
   runProbability -= Number.isFinite(teamScoredRate)
     ? Math.max(0.25 - teamScoredRate, 0) * 0.55
@@ -2262,7 +2388,12 @@ const buildFirstInningRunProfile = ({
       : null,
     oppPitcherAllowedRatePct: Number.isFinite(opposingPitcherAllowedRate)
       ? roundToTenths(opposingPitcherAllowedRate * 100)
-      : null
+      : null,
+    oppPitcherSeasonRunGameRatePct: Number.isFinite(opposingPitcherSeasonRunGameRate)
+      ? roundToTenths(opposingPitcherSeasonRunGameRate * 100)
+      : null,
+    supportReasons: supportingReasons,
+    suppressReasons: suppressingReasons
   }
 }
 
@@ -2308,6 +2439,36 @@ const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) 
   const strength =
     edge >= 12 ? 'Strong' : edge >= 8 ? 'Clear' : edge >= 4 ? 'Lean' : 'Thin'
 
+  const buildReasonStack = (profiles, key) => {
+    const seen = new Set()
+    const output = []
+    for (const profile of profiles) {
+      for (const reason of profile?.[key] || []) {
+        if (!reason || seen.has(reason)) continue
+        seen.add(reason)
+        output.push(reason)
+        if (output.length >= 5) return output
+      }
+    }
+    return output
+  }
+
+  const supportProfiles = [awayProfile, homeProfile].sort(
+    (a, b) => (Number(b?.runProbability) || 0) - (Number(a?.runProbability) || 0)
+  )
+  const suppressProfiles = [awayProfile, homeProfile].sort(
+    (a, b) =>
+      ((Number(b?.teamScoredRatePct) || 0) < (Number(a?.teamScoredRatePct) || 0) ? 1 : -1)
+  )
+  const reasonStack =
+    pick === 'YRFI'
+      ? buildReasonStack(supportProfiles, 'supportReasons')
+      : buildReasonStack(suppressProfiles, 'suppressReasons')
+  const cautionStack =
+    pick === 'YRFI'
+      ? buildReasonStack(suppressProfiles, 'suppressReasons').slice(0, 3)
+      : buildReasonStack(supportProfiles, 'supportReasons').slice(0, 3)
+
   return {
     pick,
     strength,
@@ -2323,6 +2484,8 @@ const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) 
     homeOppPitcherAllowedRatePct: homeProfile.oppPitcherAllowedRatePct ?? null,
     awayProjectedRuns: awayProfile.projectedRuns,
     homeProjectedRuns: homeProfile.projectedRuns,
+    reasonStack,
+    cautionStack,
     projectedRuns: roundToTenths(
       (Number(awayProfile.projectedRuns) || 0) + (Number(homeProfile.projectedRuns) || 0)
     ),
@@ -3064,6 +3227,8 @@ const buildMlbAnalysisContext = (game, participants) => {
       const firstInningProfiles = participants.map((participant, index) =>
         buildFirstInningRunProfile({
           projectedRunProfile: projectedRunProfiles[index],
+          teamName: participants[index]?.name || (index === 0 ? 'Away team' : 'Home team'),
+          opposingTeamName: participants[index === 0 ? 1 : 0]?.name || (index === 0 ? 'Home team' : 'Away team'),
           teamScript: teamScripts[index],
           lineupProfile: lineupProfiles[index],
           hitterState:
@@ -3080,6 +3245,10 @@ const buildMlbAnalysisContext = (game, participants) => {
             index === 0 ? game.stateContext?.firstInningTeam?.home : game.stateContext?.firstInningTeam?.away,
           opposingPitcherFirstInningProfile:
             index === 0 ? game.stateContext?.firstInningPitcher?.home : game.stateContext?.firstInningPitcher?.away,
+          opposingPitcherFirstInningSeasonProfile:
+            index === 0
+              ? game.stateContext?.firstInningPitcherSeason?.home
+              : game.stateContext?.firstInningPitcherSeason?.away,
           weatherProfile
         })
       )

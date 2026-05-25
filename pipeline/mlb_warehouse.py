@@ -5943,7 +5943,10 @@ def iter_moneyline_history_records(
     if not HISTORY_DIR.exists():
         return []
     records: list[dict[str, Any]] = []
+    seen_keys: set[tuple[str, str, str, str]] = set()
     for path in sorted(HISTORY_DIR.glob("mlb-results-*.jsonl")):
+        if path.name == "mlb-results-archive.jsonl":
+            continue
         date_text = path.stem.replace("mlb-results-", "")
         if as_of_date and date_text != as_of_date:
             continue
@@ -5956,6 +5959,15 @@ def iter_moneyline_history_records(
                 record = json.loads(line)
                 if record.get("sport") != "MLB" or record.get("marketType") != "moneyline":
                     continue
+                key = (
+                    str(record.get("date") or ""),
+                    str(record.get("modelName") or ""),
+                    str(record.get("matchup") or ""),
+                    str(record.get("predictedPick") or ""),
+                )
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
                 records.append(record)
     return records
 

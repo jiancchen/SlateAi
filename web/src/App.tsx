@@ -7,7 +7,7 @@ import {
   rankFlipRiskPicks,
   rankMlbPlayerProps
 } from './lib/sports-model.js'
-import type { HistoryEntry, HistoryRecord } from './lib/history-types'
+import type { HistoryEntry, HistoryRecord, HistorySportTab } from './lib/history-types'
 import type {
   StoryArchiveDaySummary,
   StoryArchiveGame,
@@ -241,6 +241,88 @@ const getHistoryReviewTone = (result?: string) => {
   if (result === 'hit') return 'positive'
   if (result === 'miss') return 'negative'
   return 'info'
+}
+
+const buildFallbackHistorySportTabs = (entry: HistoryEntry | null): HistorySportTab[] => {
+  if (!entry || entry.sportTabs?.length || entry.sports.length <= 1) return []
+
+  return entry.sports.map((sport) => {
+    const lower = sport.toLowerCase()
+    const metrics = []
+
+    if (lower === 'mlb') {
+      if (entry.performance?.mlbFullGame) {
+        metrics.push({
+          label: 'Full game',
+          value: `${entry.performance.mlbFullGame.wins}-${entry.performance.mlbFullGame.losses}`,
+          tone: entry.performance.mlbFullGame.wins >= entry.performance.mlbFullGame.losses ? 'positive' : 'warning'
+        })
+      }
+      if (entry.performance?.mlbFirst5) {
+        metrics.push({
+          label: 'First 5',
+          value: `${entry.performance.mlbFirst5.wins}-${entry.performance.mlbFirst5.losses}`,
+          tone: entry.performance.mlbFirst5.wins >= entry.performance.mlbFirst5.losses ? 'positive' : 'warning'
+        })
+      }
+      if (entry.performance?.mlbFirstInning) {
+        metrics.push({
+          label: '1st inning',
+          value: `${entry.performance.mlbFirstInning.wins}-${entry.performance.mlbFirstInning.losses}`,
+          tone: entry.performance.mlbFirstInning.wins >= entry.performance.mlbFirstInning.losses ? 'positive' : 'warning'
+        })
+      }
+      if (entry.performance?.hrBoard) {
+        metrics.push({
+          label: 'HR board',
+          value: `${entry.performance.hrBoard.hits}/${entry.performance.hrBoard.total}`,
+          tone:
+            entry.performance.hrBoard.hits / Math.max(entry.performance.hrBoard.total, 1) >= 0.25 ? 'warning' : 'negative'
+        })
+      }
+      if (entry.performance?.mlbProps) {
+        metrics.push({
+          label: 'Props',
+          value: `${entry.performance.mlbProps.hits}/${entry.performance.mlbProps.total}`,
+          tone:
+            entry.performance.mlbProps.hits / Math.max(entry.performance.mlbProps.total, 1) >= 0.5 ? 'positive' : 'warning'
+        })
+      }
+    }
+
+    if (lower === 'tennis' && entry.performance?.tennis) {
+      metrics.push({
+        label: 'Main tour',
+        value: `${entry.performance.tennis.wins}-${entry.performance.tennis.losses}`,
+        tone: entry.performance.tennis.wins >= entry.performance.tennis.losses ? 'positive' : 'warning'
+      })
+    }
+
+    if (lower === 'nba' && entry.performance?.nba) {
+      metrics.push({
+        label: 'NBA',
+        value: `${entry.performance.nba.wins}-${entry.performance.nba.losses}`,
+        tone: entry.performance.nba.wins >= entry.performance.nba.losses ? 'positive' : 'warning'
+      })
+    }
+
+    if (lower === 'wnba' && entry.performance?.wnba) {
+      metrics.push({
+        label: 'WNBA',
+        value: `${entry.performance.wnba.wins}-${entry.performance.wnba.losses}`,
+        tone: entry.performance.wnba.wins >= entry.performance.wnba.losses ? 'positive' : 'warning'
+      })
+    }
+
+    return {
+      id: lower,
+      label: sport,
+      summary: `${entry.label} ${sport} archive block.`,
+      metrics,
+      placeholder:
+        `A dedicated ${sport} game-by-game ledger was not saved for this day yet. The archive still keeps the summary metrics, notes, and artifacts above.`
+    }
+  })
 }
 
 const formatSnapshotTime = (isoString: string) => {
@@ -541,6 +623,60 @@ const formatStarterFirstInningLabel = (starter: AnyRecord | null | undefined) =>
   return `${shortName} ${runsAllowed}RFI`
 }
 
+const renderMatchupStoryChart = (teamName: string, headerLabel: string, games: AnyRecord[] = []) => {
+  if (!games.length) return null
+
+  const gridTemplateColumns = `52px repeat(${games.length}, minmax(58px, 1fr))`
+  const rows = [
+    { key: 'market', label: 'Mkt' },
+    { key: 'hitters', label: 'Bat' },
+    { key: 'starter', label: 'SP' },
+    { key: 'relief', label: 'RP' }
+  ]
+
+  return (
+    <section className="matchup-story-block" aria-label={`${teamName} ${headerLabel} story chart`}>
+      <div className="matchup-history-scroll">
+        <div className="matchup-story-chart">
+          <div className="matchup-story-row matchup-story-header" style={{ gridTemplateColumns }}>
+            <span className="matchup-story-label">Story</span>
+            {games.map((game, index) => (
+              <span
+                key={`${teamName}-${headerLabel}-story-head-${game.gamePk || index}`}
+                className="matchup-story-date"
+              >
+                <strong>{formatMatchupHistoryDate(game.date)}</strong>
+                <small>{game.result || '?'}</small>
+              </span>
+            ))}
+          </div>
+          {rows.map((row) => (
+            <div
+              key={`${teamName}-${headerLabel}-story-${row.key}`}
+              className="matchup-story-row"
+              style={{ gridTemplateColumns }}
+            >
+              <span className="matchup-story-label">{row.label}</span>
+              {games.map((game, index) => {
+                const story = game.storyAxes?.[row.key] ?? { label: 'N/A', tone: 'info' }
+                return (
+                  <span
+                    key={`${teamName}-${row.key}-${game.gamePk || index}`}
+                    className={`matchup-story-cell ${story.tone || 'info'}`}
+                    title={story.label || 'N/A'}
+                  >
+                    {story.label || 'N/A'}
+                  </span>
+                )
+              })}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 const renderInningHistoryTable = (teamName: string, headerLabel: string, games: AnyRecord[] = []) => {
   if (!games.length) return null
 
@@ -603,6 +739,7 @@ const renderInningHistoryTable = (teamName: string, headerLabel: string, games: 
           })}
         </div>
       </div>
+      {renderMatchupStoryChart(teamName, headerLabel, games)}
     </section>
   )
 }
@@ -1402,7 +1539,10 @@ function App() {
     Boolean(loadingGameDetailsByDay[activeDayId]?.[selectedGameId])
   const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
   const activeHistoryPropSummary = activeHistoryEntry ? mlbPropPerformanceByDate[activeHistoryEntry.id] ?? null : null
-  const activeHistorySportTabs = activeHistoryEntry?.sportTabs ?? []
+  const activeHistorySportTabs = useMemo(
+    () => (activeHistoryEntry?.sportTabs?.length ? activeHistoryEntry.sportTabs : buildFallbackHistorySportTabs(activeHistoryEntry)),
+    [activeHistoryEntry]
+  )
   const activeHistorySportTab =
     activeHistorySportTabs.find((tab) => tab.id === activeHistorySportTabId) ?? activeHistorySportTabs[0] ?? null
   const activeHistorySportSections = activeHistorySportTab?.sections ?? []
@@ -1448,10 +1588,7 @@ function App() {
       [...historyArchive]
         .filter(
           (entry): entry is HistoryEntry =>
-            entry.status === 'graded' &&
-            Boolean(entry.performance?.mlbFullGame) &&
-            Boolean(entry.performance?.mlbFirst5) &&
-            Boolean(entry.performance?.hrBoard)
+            entry.status === 'graded' && Boolean(entry.performance)
         )
         .sort((left, right) => left.id.localeCompare(right.id)),
     [historyArchive]
@@ -1464,6 +1601,7 @@ function App() {
         label: entry.label.replace(', 2026', '').replace('May ', 'May '),
         fullGame: percentageFromRecord(entry.performance?.mlbFullGame),
         first5: percentageFromRecord(entry.performance?.mlbFirst5),
+        firstInning: percentageFromRecord(entry.performance?.mlbFirstInning),
         hrBoard: entry.performance?.hrBoard
           ? (entry.performance.hrBoard.hits / entry.performance.hrBoard.total) * 100
           : null
@@ -1484,11 +1622,13 @@ function App() {
     return {
       fullGame: summarize(historyTrendPoints.map((entry) => entry.fullGame)),
       first5: summarize(historyTrendPoints.map((entry) => entry.first5)),
+      firstInning: summarize(historyTrendPoints.map((entry) => entry.firstInning)),
       hrBoard: summarize(historyTrendPoints.map((entry) => entry.hrBoard)),
       tennis: summarize(historyTrendPoints.map((entry) => entry.tennis)),
       props: summarize(historyTrendPoints.map((entry) => entry.props))
     }
   }, [historyTrendPoints])
+  const latestHistoryTrendLabel = historyTrendPoints.at(-1)?.label ?? historyArchive[0]?.label ?? 'the latest graded day'
 
   const storyRailDays = useMemo(() => [...storyArchive].sort((left, right) => right.id.localeCompare(left.id)), [storyArchive])
 
@@ -1562,6 +1702,12 @@ function App() {
   )
   const first5TrendSegments = buildTrendSegments(
     historyTrendPoints.map((entry) => entry.first5),
+    trendChartWidth,
+    trendChartHeight,
+    trendChartPadding
+  )
+  const firstInningTrendSegments = buildTrendSegments(
+    historyTrendPoints.map((entry) => entry.firstInning),
     trendChartWidth,
     trendChartHeight,
     trendChartPadding
@@ -2181,7 +2327,9 @@ function App() {
                   lean: projection.firstInning,
                   lineLabel: '0.5 run',
                   projectedLabel: `${formatPercent(projection.firstInning.yesProbabilityPct, 0)} YRFI / ${formatPercent(projection.firstInning.noProbabilityPct, 0)} NRFI`,
-                  splitLabel: `${awayTeam} ${formatPercent(projection.firstInning.awayRunProbabilityPct, 0)} score · ${homeTeam} ${formatPercent(projection.firstInning.homeRunProbabilityPct, 0)} score`
+                  splitLabel: `${awayTeam} ${formatPercent(projection.firstInning.awayRunProbabilityPct, 0)} score · ${homeTeam} ${formatPercent(projection.firstInning.homeRunProbabilityPct, 0)} score`,
+                  reasonStack: Array.isArray(projection.firstInning.reasonStack) ? projection.firstInning.reasonStack : [],
+                  cautionStack: Array.isArray(projection.firstInning.cautionStack) ? projection.firstInning.cautionStack : []
                 }
               ]
             : [])
@@ -2538,6 +2686,26 @@ function App() {
                   <span>{card.projectedLabel}</span>
                   <small>Line: {card.lineLabel}</small>
                   <small>{card.splitLabel}</small>
+                  {Array.isArray((card as AnyRecord).reasonStack) && (card as AnyRecord).reasonStack.length ? (
+                    <div className="first-inning-reason-stack">
+                      <strong>Why</strong>
+                      <ul>
+                        {((card as AnyRecord).reasonStack as string[]).map((reason, index) => (
+                          <li key={`${game.id}-${card.id}-reason-${index}`}>{reason}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                  {Array.isArray((card as AnyRecord).cautionStack) && (card as AnyRecord).cautionStack.length ? (
+                    <div className="first-inning-reason-stack caution">
+                      <strong>Counterweights</strong>
+                      <ul>
+                        {((card as AnyRecord).cautionStack as string[]).map((reason, index) => (
+                          <li key={`${game.id}-${card.id}-caution-${index}`}>{reason}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
                 </article>
               ))}
             </div>
@@ -3772,7 +3940,7 @@ function App() {
         <div className="desk-tool-workspace models-workspace">
           <section className="workspace-panel action-section models-chart-panel">
             <div className="action-section-header">
-              <h3>Accuracy trend through May 21</h3>
+              <h3>Accuracy trend through {latestHistoryTrendLabel}</h3>
               <span>{historyTrendPoints.length} graded days</span>
             </div>
 
@@ -3788,6 +3956,11 @@ function App() {
                     <span className="parlay-stat-label">Avg MLB first 5</span>
                     <strong>{formatPercent(historyTrendSummary.first5)}</strong>
                     <small>Starter-window hit rate</small>
+                  </article>
+                  <article className="parlay-stat-card history-metric-card first-inning">
+                    <span className="parlay-stat-label">Avg MLB 1st inning</span>
+                    <strong>{formatPercent(historyTrendSummary.firstInning)}</strong>
+                    <small>YRFI / NRFI hit rate</small>
                   </article>
                   <article className="parlay-stat-card history-metric-card negative">
                     <span className="parlay-stat-label">Avg HR board</span>
@@ -3810,6 +3983,7 @@ function App() {
                   <div className="trend-chart-legend">
                     <span><i className="trend-dot positive" />MLB full game</span>
                     <span><i className="trend-dot warning" />MLB first 5</span>
+                    <span><i className="trend-dot first-inning" />MLB 1st inning</span>
                     <span><i className="trend-dot negative" />HR board</span>
                     <span><i className="trend-dot props" />Non-HR props</span>
                     <span><i className="trend-dot tennis" />Tennis main tour</span>
@@ -3845,6 +4019,16 @@ function App() {
                           x2={segment.x2}
                           y2={segment.y2}
                           className="trend-line warning"
+                        />
+                      ))}
+                      {firstInningTrendSegments.map((segment, index) => (
+                        <line
+                          key={`first-inning-${index}`}
+                          x1={segment.x1}
+                          y1={segment.y1}
+                          x2={segment.x2}
+                          y2={segment.y2}
+                          className="trend-line first-inning"
                         />
                       ))}
                       {hrTrendSegments.map((segment, index) => (
@@ -3903,6 +4087,14 @@ function App() {
                                 className="trend-point warning"
                               />
                             ) : null}
+                            {entry.firstInning !== null ? (
+                              <circle
+                                cx={x}
+                                cy={trendChartPadding + ((100 - entry.firstInning) / 100) * (trendChartHeight - trendChartPadding * 2)}
+                                r="4"
+                                className="trend-point first-inning"
+                              />
+                            ) : null}
                             {entry.hrBoard !== null ? (
                               <circle
                                 cx={x}
@@ -3933,6 +4125,40 @@ function App() {
                       })}
                     </svg>
                   </div>
+                </div>
+
+                <div className="models-daily-grid">
+                  {historyTrendPoints.map((entry) => (
+                    <article key={`daily-${entry.id}`} className="history-ledger-card models-daily-card">
+                      <span className="parlay-stat-label">{entry.label}</span>
+                      <div className="models-daily-rows">
+                        <div>
+                          <span>MLB FG</span>
+                          <strong>{formatPercent(entry.fullGame)}</strong>
+                        </div>
+                        <div>
+                          <span>MLB F5</span>
+                          <strong>{formatPercent(entry.first5)}</strong>
+                        </div>
+                        <div>
+                          <span>MLB RFI</span>
+                          <strong>{formatPercent(entry.firstInning)}</strong>
+                        </div>
+                        <div>
+                          <span>HR</span>
+                          <strong>{formatPercent(entry.hrBoard)}</strong>
+                        </div>
+                        <div>
+                          <span>Tennis</span>
+                          <strong>{formatPercent(entry.tennis)}</strong>
+                        </div>
+                        <div>
+                          <span>Props</span>
+                          <strong>{formatPercent(entry.props)}</strong>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
                 </div>
               </>
             ) : (
@@ -4021,6 +4247,7 @@ function App() {
                   </div>
                 </div>
 
+                <div className="history-detail-body">
                 <div className="history-metric-grid">
                   {activeHistoryMetrics.map((metric) => (
                     <article
@@ -4075,8 +4302,14 @@ function App() {
 
                         {activeHistorySportTab.placeholder ? (
                           <article className="history-ledger-card">
-                            <span className="parlay-stat-label">Reserved slot</span>
-                            <strong>{activeHistorySportTab.label} review pending</strong>
+                            <span className="parlay-stat-label">
+                              {activeHistorySportTab.sections?.length ? 'Coverage note' : 'Reserved slot'}
+                            </span>
+                            <strong>
+                              {activeHistorySportTab.sections?.length
+                                ? `${activeHistorySportTab.label} detail is partial`
+                                : `${activeHistorySportTab.label} review pending`}
+                            </strong>
                             <small>{activeHistorySportTab.placeholder}</small>
                           </article>
                         ) : null}
@@ -4264,6 +4497,7 @@ function App() {
                     ))}
                   </div>
                 </section>
+                </div>
               </>
             ) : null}
           </section>

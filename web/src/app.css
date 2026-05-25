@@ -1212,16 +1212,20 @@ h3 {
 }
 
 .history-detail {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0;
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+.history-detail-body {
   min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;
-}
-
-.history-detail > * {
-  flex: 0 0 auto;
+  display: grid;
+  align-content: start;
 }
 
 .history-metric-grid {
@@ -1274,6 +1278,10 @@ h3 {
   background: linear-gradient(180deg, rgba(142, 124, 255, 0.1), rgba(15, 18, 17, 0.98));
 }
 
+.history-metric-card.first-inning {
+  background: linear-gradient(180deg, rgba(244, 184, 96, 0.1), rgba(15, 18, 17, 0.98));
+}
+
 .history-metric-card.positive::before,
 .trend-dot.positive,
 .trend-point.positive {
@@ -1320,6 +1328,17 @@ h3 {
 
 .trend-line.props {
   stroke: #8e7cff;
+}
+
+.history-metric-card.first-inning::before,
+.trend-dot.first-inning,
+.trend-point.first-inning {
+  background: #f4b860;
+  fill: #f4b860;
+}
+
+.trend-line.first-inning {
+  stroke: #f4b860;
 }
 
 .trend-dot.tennis,
@@ -1766,6 +1785,36 @@ h3 {
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.models-daily-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.models-daily-card {
+  display: grid;
+  gap: 10px;
+}
+
+.models-daily-rows {
+  display: grid;
+  gap: 8px;
+}
+
+.models-daily-rows div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.models-daily-rows strong {
+  color: var(--heading);
+  font: 600 0.82rem/1 var(--mono);
 }
 
 .games-rail-header h2 {
@@ -3876,6 +3925,86 @@ h3 {
   color: #ebf1ff;
 }
 
+.matchup-story-block {
+  display: grid;
+  gap: 4px;
+  padding-top: 2px;
+}
+
+.matchup-story-chart {
+  display: grid;
+  gap: 4px;
+  min-width: max-content;
+}
+
+.matchup-story-row {
+  display: grid;
+  align-items: center;
+  gap: 4px;
+}
+
+.matchup-story-header {
+  margin-top: 2px;
+}
+
+.matchup-story-label {
+  color: var(--muted);
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
+.matchup-story-date {
+  display: grid;
+  gap: 1px;
+  justify-items: center;
+  color: var(--muted);
+  font-size: 0.6rem;
+  line-height: 1.05;
+}
+
+.matchup-story-date strong {
+  color: var(--heading);
+  font-size: 0.64rem;
+}
+
+.matchup-story-cell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22px;
+  padding: 0 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--copy);
+  font-size: 0.62rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.matchup-story-cell.positive {
+  border-color: rgba(82, 214, 179, 0.28);
+  background: rgba(82, 214, 179, 0.12);
+  color: #dffcf3;
+}
+
+.matchup-story-cell.warning {
+  border-color: rgba(255, 196, 112, 0.28);
+  background: rgba(255, 196, 112, 0.12);
+  color: #fff3d6;
+}
+
+.matchup-story-cell.negative {
+  border-color: rgba(224, 122, 95, 0.28);
+  background: rgba(224, 122, 95, 0.12);
+  color: #ffe4dc;
+}
+
+.matchup-story-cell.info {
+  border-color: rgba(158, 198, 240, 0.22);
+  background: rgba(158, 198, 240, 0.08);
+  color: #e8f3ff;
+}
+
 .react-team-id strong,
 .react-mini-panel strong,
 .react-lineup-card strong,
@@ -3883,6 +4012,38 @@ h3 {
 .react-comparison-meta strong,
 .react-comparison-scoreline span {
   color: var(--heading);
+}
+
+.first-inning-reason-stack {
+  display: grid;
+  gap: 6px;
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.first-inning-reason-stack strong {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.first-inning-reason-stack ul {
+  margin: 0;
+  padding-left: 16px;
+  display: grid;
+  gap: 4px;
+}
+
+.first-inning-reason-stack li {
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.first-inning-reason-stack.caution strong {
+  color: #ffd38b;
 }
 
 .pitcher-summary-block {

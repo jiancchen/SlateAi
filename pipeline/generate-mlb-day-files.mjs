@@ -1,4 +1,5 @@
 import { execFileSync, execSync } from 'node:child_process'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -413,6 +414,245 @@ const runSqliteJson = (sql) => {
     { encoding: 'utf8', cwd: rootDir }
   )
   return JSON.parse(output || '[]')
+}
+
+const safeJsonParse = (value, fallback = null) => {
+  if (typeof value !== 'string' || !value.trim()) return fallback
+  try {
+    return JSON.parse(value)
+  } catch {
+    return fallback
+  }
+}
+
+const historicalPublishedMarketCacheByDate = new Map()
+
+const loadPublishedHistoricalMarketContextByDate = (date) => {
+  if (historicalPublishedMarketCacheByDate.has(date)) {
+    return historicalPublishedMarketCacheByDate.get(date)
+  }
+
+  const gamesDir = path.join(rootDir, 'published-data', 'slates', date, 'games')
+  const marketByGamePk = new Map()
+
+  if (existsSync(gamesDir)) {
+    for (const fileName of readdirSync(gamesDir)) {
+      if (!fileName.endsWith('.json')) continue
+      const game = safeJsonParse(readFileSync(path.join(gamesDir, fileName), 'utf8'), null)
+      if (!game || game.league !== 'MLB') continue
+      const gamePk = Number(game.gamePk || 0) || 0
+      if (!gamePk || marketByGamePk.has(gamePk)) continue
+
+      const participant = game.analysis?.participant ?? {}
+      const opponent = game.analysis?.opponent ?? {}
+      const participantProbability = Number(participant.impliedProbability)
+      const opponentProbability = Number(opponent.impliedProbability)
+      const participantName = deskToOfficialTeam[participant.name] || participant.name || ''
+      const opponentName = deskToOfficialTeam[opponent.name] || opponent.name || ''
+      const favoriteProbabilityGap =
+        Number.isFinite(participantProbability) && Number.isFinite(opponentProbability)
+          ? Math.abs(participantProbability - opponentProbability)
+          : null
+
+      let marketFavoriteTeam = ''
+      let marketFavoriteProbability = null
+
+      if (Number.isFinite(participantProbability) && Number.isFinite(opponentProbability)) {
+        marketFavoriteTeam = participantProbability >= opponentProbability ? participantName : opponentName
+        marketFavoriteProbability = Math.max(participantProbability, opponentProbability)
+      }
+
+      marketByGamePk.set(gamePk, {
+        marketFavoriteTeam,
+        marketFavoriteProbability,
+        favoriteProbabilityGap,
+        awayTeam: deskToOfficialTeam[game.matchup?.[0]?.name] || game.matchup?.[0]?.name || '',
+        homeTeam: deskToOfficialTeam[game.matchup?.[1]?.name] || game.matchup?.[1]?.name || ''
+      })
+    }
+  }
+
+  historicalPublishedMarketCacheByDate.set(date, marketByGamePk)
+  return marketByGamePk
+}
+
+const buildHistoricalExpectationContext = ({ records = [] }) => {
+  const uniqueRecords = [
+    ...new Map(
+      records
+        .filter((record) => Number.isFinite(Number(record.gamePk)) && record.date)
+        .map((record) => [`${record.date}::${Number(record.gamePk)}`, record])
+    ).values()
+  ]
+
+  if (!uniqueRecords.length) {
+    return {
+      phaseByGameTeam: new Map(),
+      marketByDateGamePk: new Map()
+    }
+  }
+
+  const gamePks = [...new Set(uniqueRecords.map((record) => Number(record.gamePk)).filter(Boolean))]
+  const phaseRows = runSqliteJson(
+    `select
+      game_pk,
+      game_date,
+      team_name,
+      result,
+      runs_first5,
+      runs_late,
+      hits_first5,
+      hits_late,
+      scoreless_first3_flag,
+      traffic_no_conversion_flag,
+      led_after5_flag,
+      trailed_after5_flag,
+      tied_after5_flag,
+      won_full_game_flag,
+      won_first5_flag,
+      first5_push_flag,
+      starter_survived5_flag,
+      starter_cracked_flag,
+      blew_lead_after5_flag,
+      bullpen_flip_game_flag,
+      phase_path_label
+    from mlb_phase_outcomes_daily
+    where game_pk in (${gamePks.join(',')})
+    order by game_pk, team_name;`
+  )
+
+  const phaseByGameTeam = new Map()
+  phaseRows.forEach((row) => {
+    const gamePk = Number(row.game_pk || 0) || 0
+    const teamName = row.team_name || ''
+    if (!gamePk || !teamName) return
+    phaseByGameTeam.set(`${gamePk}::${teamName}`, {
+      result: row.result || '',
+      runsFirst5: Number(row.runs_first5 || 0) || 0,
+      runsLate: Number(row.runs_late || 0) || 0,
+      hitsFirst5: Number(row.hits_first5 || 0) || 0,
+      hitsLate: Number(row.hits_late || 0) || 0,
+      scorelessFirst3Flag: Boolean(Number(row.scoreless_first3_flag || 0)),
+      trafficNoConversionFlag: Boolean(Number(row.traffic_no_conversion_flag || 0)),
+      ledAfter5Flag: Boolean(Number(row.led_after5_flag || 0)),
+      trailedAfter5Flag: Boolean(Number(row.trailed_after5_flag || 0)),
+      tiedAfter5Flag: Boolean(Number(row.tied_after5_flag || 0)),
+      wonFullGameFlag: Boolean(Number(row.won_full_game_flag || 0)),
+      wonFirst5Flag: Boolean(Number(row.won_first5_flag || 0)),
+      first5PushFlag: Boolean(Number(row.first5_push_flag || 0)),
+      starterSurvived5Flag: Boolean(Number(row.starter_survived5_flag || 0)),
+      starterCrackedFlag: Boolean(Number(row.starter_cracked_flag || 0)),
+      blewLeadAfter5Flag: Boolean(Number(row.blew_lead_after5_flag || 0)),
+      bullpenFlipGameFlag: Boolean(Number(row.bullpen_flip_game_flag || 0)),
+      phasePathLabel: row.phase_path_label || ''
+    })
+  })
+
+  const marketByDateGamePk = new Map()
+  const predictionRows = runSqliteJson(
+    `select prediction_date, game_pk, away_team, home_team, metadata_json
+     from mlb_side_predictions
+     where game_pk in (${gamePks.join(',')})
+     order by prediction_date desc, game_pk desc;`
+  )
+
+  predictionRows.forEach((row) => {
+    const gamePk = Number(row.game_pk || 0) || 0
+    const predictionDate = row.prediction_date || ''
+    if (!gamePk || !predictionDate) return
+    const key = `${predictionDate}::${gamePk}`
+    if (marketByDateGamePk.has(key)) return
+    const metadata = safeJsonParse(row.metadata_json, {}) || {}
+    const marketProbability = Number(metadata.marketProbability)
+    const opponentMarketProbability = Number(metadata.opponentMarketProbability)
+    const marketFavoriteProbability = Number(metadata.marketFavoriteProbability)
+    marketByDateGamePk.set(key, {
+      marketFavoriteTeam: metadata.marketFavoriteTeam || '',
+      marketFavoriteProbability: Number.isFinite(marketFavoriteProbability) ? marketFavoriteProbability : null,
+      favoriteProbabilityGap:
+        Number.isFinite(marketProbability) && Number.isFinite(opponentMarketProbability)
+          ? Math.abs(marketProbability - opponentMarketProbability)
+          : null,
+      awayTeam: row.away_team || '',
+      homeTeam: row.home_team || ''
+    })
+  })
+
+  uniqueRecords.forEach((record) => {
+    const key = `${record.date}::${Number(record.gamePk)}`
+    if (marketByDateGamePk.has(key)) return
+    const publishedMap = loadPublishedHistoricalMarketContextByDate(record.date)
+    const publishedContext = publishedMap.get(Number(record.gamePk))
+    if (publishedContext) {
+      marketByDateGamePk.set(key, publishedContext)
+    }
+  })
+
+  return { phaseByGameTeam, marketByDateGamePk }
+}
+
+const buildHistoricalMarketStory = ({ teamName, gameResult, marketContext = null }) => {
+  if (!teamName) return { label: 'Unknown', tone: 'info' }
+  if (!marketContext?.marketFavoriteTeam) return { label: gameResult === 'W' ? 'Won' : gameResult === 'L' ? 'Lost' : 'Push', tone: 'info' }
+
+  const favoriteGap = Number(marketContext.favoriteProbabilityGap)
+  const coinflip = Number.isFinite(favoriteGap) && favoriteGap < 0.04
+  const teamIsFavorite = marketContext.marketFavoriteTeam === teamName
+
+  if (coinflip) {
+    return {
+      label: gameResult === 'W' ? 'Coin W' : gameResult === 'L' ? 'Coin L' : 'Coin',
+      tone: gameResult === 'W' ? 'positive' : gameResult === 'L' ? 'warning' : 'info'
+    }
+  }
+
+  if (teamIsFavorite) {
+    return gameResult === 'W'
+      ? { label: 'Fav held', tone: 'positive' }
+      : { label: 'Fav failed', tone: 'negative' }
+  }
+
+  return gameResult === 'W'
+    ? { label: 'Dog upset', tone: 'positive' }
+    : { label: 'Exp L', tone: 'warning' }
+}
+
+const buildHistoricalStarterStory = (phase = null) => {
+  if (!phase) return { label: 'Unknown', tone: 'info' }
+  if (phase.starterCrackedFlag) return { label: 'Cracked', tone: 'negative' }
+  if (phase.starterSurvived5Flag && !phase.trailedAfter5Flag) return { label: 'Met', tone: 'positive' }
+  if (phase.starterSurvived5Flag && phase.trailedAfter5Flag) return { label: 'Mixed', tone: 'warning' }
+  if (!phase.starterSurvived5Flag && phase.wonFullGameFlag) return { label: 'Short', tone: 'warning' }
+  if (!phase.starterSurvived5Flag) return { label: 'Short', tone: 'negative' }
+  return { label: 'Mixed', tone: 'info' }
+}
+
+const buildHistoricalReliefStory = (phase = null) => {
+  if (!phase) return { label: 'Unknown', tone: 'info' }
+  if (phase.blewLeadAfter5Flag) return { label: 'Blew', tone: 'negative' }
+  if (phase.trailedAfter5Flag && phase.wonFullGameFlag) return { label: 'Rescued', tone: 'positive' }
+  if (phase.ledAfter5Flag && phase.wonFullGameFlag) return { label: 'Held', tone: 'positive' }
+  if (phase.tiedAfter5Flag && phase.wonFullGameFlag) return { label: 'Won late', tone: 'positive' }
+  if (phase.tiedAfter5Flag && !phase.wonFullGameFlag) return { label: 'Lost late', tone: 'warning' }
+  if (phase.trailedAfter5Flag && !phase.wonFullGameFlag) return { label: 'No rescue', tone: 'warning' }
+  return { label: 'Mixed', tone: 'info' }
+}
+
+const buildHistoricalHitterStory = (phase = null) => {
+  if (!phase) return { label: 'Unknown', tone: 'info' }
+
+  const totalRuns = (Number(phase.runsFirst5 || 0) || 0) + (Number(phase.runsLate || 0) || 0)
+  const totalHits = (Number(phase.hitsFirst5 || 0) || 0) + (Number(phase.hitsLate || 0) || 0)
+  const lateRuns = Number(phase.runsLate || 0) || 0
+  const earlyRuns = Number(phase.runsFirst5 || 0) || 0
+
+  if (phase.trafficNoConversionFlag) return { label: 'Stranded', tone: 'negative' }
+  if (phase.scorelessFirst3Flag && totalRuns <= 2) return { label: 'Flat', tone: 'warning' }
+  if (totalRuns >= 6 || (totalRuns >= 5 && totalHits >= 8)) return { label: 'Cashed', tone: 'positive' }
+  if (lateRuns >= 3 && lateRuns > earlyRuns) return { label: 'Late cash', tone: 'positive' }
+  if (totalRuns >= 4 || totalHits >= 8) return { label: 'Met', tone: 'positive' }
+  if (totalRuns <= 1 && totalHits <= 5) return { label: 'Quiet', tone: 'negative' }
+  return { label: 'Mixed', tone: 'info' }
 }
 
 const buildStartingPitcherFirstInningByGamePk = ({ gamePks = [] }) => {
@@ -1414,6 +1654,14 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 
   const starterOutcomeByGamePk = buildStartingPitcherFirstInningByGamePk({
     gamePks: [...gameMap.values()].map((record) => record.gamePk)
   })
+  const expectationContext = buildHistoricalExpectationContext({
+    records: [...gameMap.values()].map((record) => ({
+      gamePk: record.gamePk,
+      date: record.date,
+      awayTeam: record.awayTeam,
+      homeTeam: record.homeTeam
+    }))
+  })
 
   return Object.fromEntries(
     matchupPairs.flatMap(({ teamA, teamB }) => {
@@ -1431,6 +1679,8 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 
           const teamStarter = teamIsAway ? starterPacket.away ?? null : starterPacket.home ?? null
           const opponentStarter = teamIsAway ? starterPacket.home ?? null : starterPacket.away ?? null
           const maxInning = Math.max(9, ...[...teamInnings.keys()].map((inning) => Number(inning) || 0))
+          const marketContext = expectationContext.marketByDateGamePk.get(`${record.date}::${record.gamePk}`) ?? null
+          const phaseContext = expectationContext.phaseByGameTeam.get(`${record.gamePk}::${officialTeam}`) ?? null
 
           return {
             gamePk: record.gamePk,
@@ -1443,6 +1693,16 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 
             starters: {
               team: teamStarter,
               opponent: opponentStarter
+            },
+            storyAxes: {
+              market: buildHistoricalMarketStory({
+                teamName: officialTeam,
+                gameResult: runsFor > runsAgainst ? 'W' : runsFor < runsAgainst ? 'L' : 'T',
+                marketContext
+              }),
+              hitters: buildHistoricalHitterStory(phaseContext),
+              starter: buildHistoricalStarterStory(phaseContext),
+              relief: buildHistoricalReliefStory(phaseContext)
             },
             innings: Array.from({ length: maxInning }, (_, index) => ({
               inning: index + 1,
@@ -1569,16 +1829,20 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 1
     const recordKey = `${officialTeam}::${gamePk}`
 
     if (!gameMap.has(recordKey)) {
+      const venueRole = row.venue_role || ''
+      const opponentName = row.opponent_name || ''
       gameMap.set(recordKey, {
         teamName: officialTeam,
-        opponentName: row.opponent_name || '',
-        venueRole: row.venue_role || '',
+        opponentName,
+        venueRole,
         result: row.result || 'T',
         runsFor: Number(row.runs_for || 0) || 0,
         runsAgainst: Number(row.runs_against || 0) || 0,
         gamePk,
         date: row.game_date || '',
         gameDatetime: row.game_datetime || '',
+        awayTeam: venueRole === 'road' ? officialTeam : opponentName,
+        homeTeam: venueRole === 'home' ? officialTeam : opponentName,
         inningsByNumber: new Map()
       })
     }
@@ -1598,6 +1862,14 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 1
   const starterOutcomeByGamePk = buildStartingPitcherFirstInningByGamePk({
     gamePks: [...gameMap.values()].map((record) => record.gamePk)
   })
+  const expectationContext = buildHistoricalExpectationContext({
+    records: [...gameMap.values()].map((record) => ({
+      gamePk: record.gamePk,
+      date: record.date,
+      awayTeam: record.awayTeam,
+      homeTeam: record.homeTeam
+    }))
+  })
 
   return Object.fromEntries(
     [...grouped.entries()].map(([deskTeam, records]) => [
@@ -1608,6 +1880,8 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 1
         const teamStarter = teamIsAway ? starterPacket.away ?? null : starterPacket.home ?? null
         const opponentStarter = teamIsAway ? starterPacket.home ?? null : starterPacket.away ?? null
         const maxInning = Math.max(9, ...[...record.inningsByNumber.keys()].map((inning) => Number(inning) || 0))
+        const marketContext = expectationContext.marketByDateGamePk.get(`${record.date}::${record.gamePk}`) ?? null
+        const phaseContext = expectationContext.phaseByGameTeam.get(`${record.gamePk}::${record.teamName}`) ?? null
         return {
           gamePk: record.gamePk,
           date: record.date,
@@ -1619,6 +1893,16 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 1
           starters: {
             team: teamStarter,
             opponent: opponentStarter
+          },
+          storyAxes: {
+            market: buildHistoricalMarketStory({
+              teamName: record.teamName,
+              gameResult: record.result,
+              marketContext
+            }),
+            hitters: buildHistoricalHitterStory(phaseContext),
+            starter: buildHistoricalStarterStory(phaseContext),
+            relief: buildHistoricalReliefStory(phaseContext)
           },
           innings: Array.from({ length: maxInning }, (_, index) => ({
             inning: index + 1,

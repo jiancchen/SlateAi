@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { execSync } from 'node:child_process'
 import { slateDays } from '../web/src/lib/slate-days.js'
+import { games as may24Games } from '../web/src/lib/day-2026-05-24.js'
 
 const ROOT = process.cwd()
 const HISTORY_DIR = path.join(ROOT, 'data-private', 'history')
@@ -43,7 +44,8 @@ const FULL_NAMES = {
 const SIDE_MODEL_NAMES = {
   '2026-05-16': 'board-moneyline-v2-may16',
   '2026-05-17': 'board-moneyline-v2-may17',
-  '2026-05-18': 'board-moneyline-v2-may18'
+  '2026-05-18': 'board-moneyline-v2-may18',
+  '2026-05-23': 'board-moneyline-v1.1-may23'
 }
 
 const HR_MODEL_NAMES = {
@@ -53,7 +55,9 @@ const HR_MODEL_NAMES = {
   '2026-05-19': 'statcast-hr-prototype-v3',
   '2026-05-20': 'statcast-hr-prototype-v3',
   '2026-05-21': 'statcast-hr-prototype-v3',
-  '2026-05-22': 'statcast-hr-prototype-v3'
+  '2026-05-22': 'statcast-hr-prototype-v3',
+  '2026-05-23': 'statcast-hr-prototype-v3',
+  '2026-05-24': 'statcast-hr-prototype-v3'
 }
 
 const PROP_MODEL_NAMES = {
@@ -63,7 +67,13 @@ const PROP_MODEL_NAMES = {
   '2026-05-19': 'mlb-player-props-v1',
   '2026-05-20': 'mlb-player-props-v1',
   '2026-05-21': 'mlb-player-props-v1',
-  '2026-05-22': 'mlb-player-props-v2'
+  '2026-05-22': 'mlb-player-props-v2',
+  '2026-05-23': 'mlb-player-props-v2',
+  '2026-05-24': 'mlb-player-props-v2'
+}
+
+const CUSTOM_DAY_GAMES = {
+  '2026-05-24': may24Games
 }
 
 const readJsonSql = (query) => {
@@ -80,6 +90,17 @@ const ensureDir = (dir) => {
 }
 
 const fetchJson = (url) => JSON.parse(execSync(`curl -sL "${url}"`, { cwd: ROOT, encoding: 'utf8' }))
+
+const loadPublishedMlbGames = (date) => {
+  const gamesDir = path.join(ROOT, 'published-data', 'slates', date, 'games')
+  if (!fs.existsSync(gamesDir)) return []
+
+  return fs
+    .readdirSync(gamesDir)
+    .filter((fileName) => fileName.endsWith('.json'))
+    .map((fileName) => JSON.parse(fs.readFileSync(path.join(gamesDir, fileName), 'utf8')))
+    .filter((game) => game?.league === 'MLB')
+}
 
 const makeSideResultJustification = (row) => {
   const parts = []
@@ -202,10 +223,12 @@ const buildSavedSideRecords = (date) => {
 
 const buildDerivedSideRecords = (date) => {
   const day = slateDays.find((entry) => entry.id === date)
-  if (!day) return []
+  const games = day?.games ?? CUSTOM_DAY_GAMES[date] ?? []
+  if (!games.length) return []
 
   const outcomes = readJsonSql(`
     select
+      game_pk,
       away_team,
       home_team,
       away_runs_final,
@@ -218,14 +241,20 @@ const buildDerivedSideRecords = (date) => {
     where game_date = '${date}'
   `)
 
-  const outcomeMap = new Map(outcomes.map((row) => [`${row.away_team} @ ${row.home_team}`, row]))
+  const outcomeByGamePk = new Map(
+    outcomes
+      .filter((row) => Number.isFinite(Number(row.game_pk)))
+      .map((row) => [Number(row.game_pk), row])
+  )
+  const outcomeByMatchup = new Map(outcomes.map((row) => [`${row.away_team} @ ${row.home_team}`, row]))
 
-  return day.games
+  return games
     .filter((game) => game.league === 'MLB')
     .map((game) => {
       const awayName = FULL_NAMES[game.matchup?.[0]?.name] || game.matchup?.[0]?.name
       const homeName = FULL_NAMES[game.matchup?.[1]?.name] || game.matchup?.[1]?.name
-      const row = outcomeMap.get(`${awayName} @ ${homeName}`)
+      const gamePk = Number.isFinite(Number(game.gamePk)) ? Number(game.gamePk) : null
+      const row = (gamePk !== null ? outcomeByGamePk.get(gamePk) : null) ?? outcomeByMatchup.get(`${awayName} @ ${homeName}`)
       if (!row) return null
       const actualWinner = row.home_full_game_result === 'win' ? homeName : awayName
       const actualFirst5Winner = row.home_first5_result === 'win' ? homeName : row.home_first5_result === 'loss' ? awayName : 'tie'
@@ -541,6 +570,86 @@ const buildPropRecords = (date) => {
   })
 }
 
+const buildDerivedFirstInningRecords = (date) => {
+  const games = loadPublishedMlbGames(date)
+  if (!games.length) return []
+
+  const inningRows = readJsonSql(`
+    select
+      game_pk,
+      batting_team,
+      coalesce(sum(run_delta), 0) as runs_in_first
+    from mlb_plate_appearances
+    where game_date = '${date}'
+      and inning = 1
+    group by game_pk, batting_team
+  `)
+
+  const runsByGamePk = new Map()
+  for (const row of inningRows) {
+    const gamePk = Number(row.game_pk)
+    if (!Number.isFinite(gamePk)) continue
+    const existing = runsByGamePk.get(gamePk) ?? {}
+    existing[row.batting_team] = Number(row.runs_in_first) || 0
+    runsByGamePk.set(gamePk, existing)
+  }
+
+  return games
+    .map((game) => {
+      const firstInning = game.analysis?.mlbProjection?.firstInning
+      if (!firstInning?.pick || firstInning.pick === 'Pass') return null
+
+      const gamePk = Number(game.gamePk)
+      if (!Number.isFinite(gamePk)) return null
+
+      const awayTeam = FULL_NAMES[game.matchup?.[0]?.name] || game.matchup?.[0]?.name
+      const homeTeam = FULL_NAMES[game.matchup?.[1]?.name] || game.matchup?.[1]?.name
+      const inningRuns = runsByGamePk.get(gamePk) ?? {}
+      const awayRuns = Number(inningRuns[awayTeam]) || 0
+      const homeRuns = Number(inningRuns[homeTeam]) || 0
+      const totalRuns = awayRuns + homeRuns
+      const actualPick = totalRuns > 0 ? 'YRFI' : 'NRFI'
+      const predictedPick = firstInning.pick
+
+      return {
+        date,
+        sport: 'MLB',
+        marketType: 'firstInning',
+        modelName: 'day-file-first-inning',
+        sourceType: 'derived-from-published-game-file',
+        matchup: game.title,
+        gameId: game.id,
+        gamePk,
+        predictedPick,
+        confidence:
+          predictedPick === 'YRFI'
+            ? firstInning.yesProbabilityPct ?? null
+            : firstInning.noProbabilityPct ?? null,
+        meta: {
+          strength: firstInning.strength ?? null,
+          line: firstInning.line ?? null,
+          awayRunProbabilityPct: firstInning.awayRunProbabilityPct ?? null,
+          homeRunProbabilityPct: firstInning.homeRunProbabilityPct ?? null,
+          yesProbabilityPct: firstInning.yesProbabilityPct ?? null,
+          noProbabilityPct: firstInning.noProbabilityPct ?? null
+        },
+        pickJustification: firstInning.summary ?? '',
+        result: {
+          hit: predictedPick === actualPick,
+          actualPick,
+          totalRuns,
+          awayRuns,
+          homeRuns
+        },
+        resultJustification:
+          predictedPick === actualPick
+            ? `${predictedPick} hit: ${awayTeam} ${awayRuns}, ${homeTeam} ${homeRuns} in the 1st.`
+            : `${predictedPick} missed: actual first-inning result was ${actualPick} with ${awayTeam} ${awayRuns}, ${homeTeam} ${homeRuns}.`
+      }
+    })
+    .filter(Boolean)
+}
+
 const buildPropSummary = (propRecords) => {
   const grouped = {}
   for (const record of propRecords) {
@@ -697,7 +806,17 @@ const writePropCalibrationModule = (propRecords) => {
   console.log(`Wrote prop calibration -> ${target}`)
 }
 
-const dates = ['2026-05-16', '2026-05-17', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21', '2026-05-22']
+const dates = [
+  '2026-05-16',
+  '2026-05-17',
+  '2026-05-18',
+  '2026-05-19',
+  '2026-05-20',
+  '2026-05-21',
+  '2026-05-22',
+  '2026-05-23',
+  '2026-05-24'
+]
 ensureDir(HISTORY_DIR)
 
 const allRecords = []
@@ -705,9 +824,10 @@ const propSummaryByDate = {}
 
 for (const date of dates) {
   const sideRecords = SIDE_MODEL_NAMES[date] ? buildSavedSideRecords(date) : buildDerivedSideRecords(date)
+  const firstInningRecords = buildDerivedFirstInningRecords(date)
   const hrRecords = buildHrRecords(date)
   const propRecords = buildPropRecords(date)
-  const records = [...sideRecords, ...hrRecords, ...propRecords]
+  const records = [...sideRecords, ...firstInningRecords, ...hrRecords, ...propRecords]
   if (propRecords.length) {
     propSummaryByDate[date] = buildPropSummary(propRecords)
   }

@@ -52,6 +52,7 @@ export type HistoryPropRecord = {
 export type HistoryPerformance = {
   mlbFullGame?: HistoryRecord
   mlbFirst5?: HistoryRecord
+  mlbFirstInning?: HistoryRecord
   hrBoard?: HistoryPropRecord
   mlbProps?: HistoryPropRecord
   wnba?: HistoryRecord

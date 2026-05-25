@@ -1,4 +1,5 @@
 import type { HistoryEntry } from './history-types'
+import { may23HistorySportTabs } from './history-day-2026-05-23'
 import { may24HistorySportTabs } from './history-day-2026-05-24'
 
 export const historyArchive: HistoryEntry[] = [
@@ -8,49 +9,77 @@ export const historyArchive: HistoryEntry[] = [
     label: 'May 24, 2026',
     status: 'graded',
     summary:
-      'Roland Garros Day 1 was a good tennis board overall, but it leaned hard on ATP stability. The women’s dog lane stayed more volatile, and the MLB tab is being held open for the later baseball grading pass.',
+      'Roland Garros Day 1 stayed solid on the tennis side, and the same-date MLB slate was much better than the blank chart implied: 10-5 full game, 7-8 first five, 8-7 first inning, with the damage pushed into props instead of sides.',
     sports: ['Tennis', 'MLB'],
-    trackedMarkets: ['Match winner', 'MLB review pending'],
+    trackedMarkets: ['Match winner', 'MLB moneyline', 'MLB first 5', 'MLB first inning', 'HR props', 'Player props'],
     performance: {
-      tennis: { wins: 25, losses: 11 }
+      tennis: { wins: 25, losses: 11 },
+      mlbFullGame: { wins: 10, losses: 5 },
+      mlbFirst5: { wins: 7, losses: 8 },
+      mlbFirstInning: { wins: 8, losses: 7 },
+      hrBoard: { hits: 2, total: 12 },
+      mlbProps: { hits: 0, total: 29 }
     },
     journal: {
-      path: 'published-data/slates/2026-05-24/summary.json',
-      records: 36,
-      note: 'Tennis Day 1 is fully graded here; the baseball ledger for the same date is reserved for the follow-up MLB pass.'
+      path: 'data-private/history/mlb-results-2026-05-24.jsonl',
+      records: 71,
+      sideRows: 15,
+      hrRows: 12,
+      propRows: 29,
+      note: 'May 24 MLB was rebuilt from the generated live board plus the outcome warehouse after the original closeout skipped the side import, and now includes the derived first-inning lane.'
     },
     metrics: [
       { label: 'Tennis desk', value: '25-11', tone: 'positive' },
+      { label: 'MLB full game', value: '10-5', tone: 'positive' },
+      { label: 'MLB first 5', value: '7-8', note: 'The early lane lagged the stronger full-game board', tone: 'warning' },
+      { label: 'MLB 1st inning', value: '8-7', note: 'The new YRFI/NRFI lane was basically coin-flip on day two', tone: 'warning' },
+      { label: 'Tracked props', value: '0/29', note: 'The May 24 prop board completely failed', tone: 'negative' },
       { label: 'ATP board', value: '14-6', note: 'The cleaner part of the card again', tone: 'positive' },
-      { label: 'WTA board', value: '11-5', note: 'Still the shakier lane', tone: 'warning' },
-      { label: 'Pending', value: '1 match', note: 'Sinner vs Tabur rolled to May 25', tone: 'info' }
+      { label: 'WTA board', value: '11-5', note: 'Still the shakier lane', tone: 'warning' }
     ],
     notableHits: [
       'Khachanov, Zverev, Djokovic, Fonseca, Mensik, Medjedovic, Sonego, and Blockx all landed on the ATP side.',
       'Baptiste over Krejcikova, Francesca Jones over Haddad Maia, Sierra over Raducanu, and Bejlek over Stephens were the sharper women’s hits.',
-      'The desk stayed on the right side of the stronger clay-shape favorites much more often than the noisier coin-flip lanes.'
+      'The desk stayed on the right side of the stronger clay-shape favorites much more often than the noisier coin-flip lanes.',
+      'On the MLB slate, Guardians, Marlins, Dodgers, Astros, Giants, Diamondbacks, both Tigers/Orioles reads, and the Pirates all landed on the full-game board.'
     ],
     notableMisses: [
       'The biggest ATP misses were Fritz, Etcheverry, Dellien, and Diallo.',
       'The WTA misses clustered in the more volatile lanes: Burel, Valentova, Sorribes Tormo, Tauson, and the Tagger/Wang opener.',
-      'This was not a slate where broad “current form” was enough on the women’s side without cleaner surface or matchup confirmation.'
+      'This was not a slate where broad “current form” was enough on the women’s side without cleaner surface or matchup confirmation.',
+      'The strongest MLB misses were the Padres and Braves, both of which lost outright despite clearing the old favorite-side bar.'
     ],
     whatWorked: [
       'ATP clay structure remained the most trustworthy part of the tennis board.',
       'The page now has a real per-match history review instead of flattening the whole day into one summary paragraph.',
-      'The archive can finally separate where the board was strong from where it was simply busy.'
+      'The archive can finally separate where the board was strong from where it was simply busy.',
+      'May 24 MLB proves the side board can still grade positively even on a slate where the first-five and prop lanes do not.'
     ],
     whatMissed: [
       'Too many of the misses still came from trying to be clever in women’s toss-up spots.',
       'A few public-favorite ATP reads were not strong enough to justify the confidence they carried.',
-      'The slate needed a clearer separation between “clean favorite,” “live dog,” and “coin flip we should leave alone.”'
+      'The slate needed a clearer separation between “clean favorite,” “live dog,” and “coin flip we should leave alone.”',
+      'The MLB prop board was unusable on May 24, and the first-five layer still trailed the stronger full-game read.'
     ],
     takeaways: [
       'May 24 confirms the earlier lesson that ATP clay is the better predictive lane than WTA volatility.',
       'The tennis history page should be used as a benchmark archive, not just a postmortem note.',
-      'When the board has a real edge, it needs to show up game by game like this, not just in an aggregate record.'
+      'When the board has a real edge, it needs to show up game by game like this, not just in an aggregate record.',
+      'For MLB, May 24 should count as a good side day, not a blank or zero day, and the models page should say so explicitly.'
     ],
     artifacts: [
+      {
+        label: 'May 24 MLB results journal',
+        path: 'data-private/history/mlb-results-2026-05-24.jsonl'
+      },
+      {
+        label: 'Saved May 24 prop board',
+        path: 'data-private/predictions/mlb-player-props/2026-05-24-player-props.json'
+      },
+      {
+        label: 'Saved May 24 HR board',
+        path: 'data-private/predictions/mlb-home-runs/2026-05-24-statcast-prototype.json'
+      },
       {
         label: 'Published slate summary',
         path: 'published-data/slates/2026-05-24/summary.json'
@@ -65,6 +94,75 @@ export const historyArchive: HistoryEntry[] = [
       }
     ],
     sportTabs: may24HistorySportTabs
+  },
+  {
+    id: '2026-05-23',
+    date: '2026-05-23',
+    label: 'May 23, 2026',
+    status: 'graded',
+    summary:
+      'A dead-early, low-conversion MLB slate that exposed the side board’s biggest flaw: it kept leaning on paper strength even when the predicted team never got going soon enough.',
+    sports: ['MLB'],
+    trackedMarkets: ['Moneyline', 'First 5', 'First inning', 'HR props', 'Player props'],
+    performance: {
+      mlbFullGame: { wins: 7, losses: 7 },
+      mlbFirst5: { wins: 7, losses: 7 },
+      mlbFirstInning: { wins: 7, losses: 7 }
+    },
+    journal: {
+      path: 'data-private/history/mlb-results-2026-05-23.jsonl',
+      records: 68,
+      sideRows: 14,
+      hrRows: 12,
+      propRows: 28,
+      note: 'This archive block now points at the rebuilt May 23 results journal, including the derived first-inning lane and the original tracked prop rows.'
+    },
+    metrics: [
+      { label: 'MLB full game', value: '7-7', tone: 'warning' },
+      { label: 'MLB first 5', value: '7-7', tone: 'warning' },
+      { label: '1st inning lane', value: '7-7', note: 'Mostly timing misses on oversmoothed YRFI spots', tone: 'warning' },
+      { label: 'Top props', value: '3/8', note: 'All top 8 settled props were TB over 1.5', tone: 'negative' }
+    ],
+    notableHits: [
+      'Astros, Phillies, Marlins, Twins, Cardinals game 2, Dodgers, and Diamondbacks all landed on the full-game side board.',
+      'The cleaner winning paths were narrow: three starter-carried wins, two jumped-early holds, and two late comebacks.',
+      'The slate clearly separated dead-early losses from true starter-collapse games, which is useful training data.'
+    ],
+    notableMisses: [
+      'Five of the seven full-game misses came from the same failure path: dead_early_loss.',
+      'The first-inning board over-predicted YRFI in quiet-first-inning spots like Cardinals/Reds, White Sox/Giants, and Rockies/Diamondbacks.',
+      'The top prop cluster was effectively one repeated market, and it only went 3-for-8.'
+    ],
+    whatWorked: [
+      'The postmortem finally made the repeated failure path obvious instead of treating the day like random noise.',
+      'Game-by-game paths such as starter_carried, jumped_early_hold, and late_comeback gave the archive better structure.',
+      'The slate produced exactly the kind of examples needed for dead_early_loss and timing suppression work.'
+    ],
+    whatMissed: [
+      'The side engine still picked first and vetoed later, which left too many paper-side reads alive.',
+      'The first-inning lane still leaned too hard on broad recent offense instead of quiet-series and quiet-first-three shape.',
+      'The veto layer stayed too blunt to be used as a real live gate.'
+    ],
+    takeaways: [
+      'May 23 should be remembered as a dead-early timing failure, not a generic bad-luck slate.',
+      'The board needs to promote early scoring shape and suppression logic ahead of raw side confidence.',
+      'Archive quality improved the moment the day was reviewed by path instead of only wins and losses.'
+    ],
+    artifacts: [
+      {
+        label: 'May 23 postmortem',
+        path: 'development-docs/may23-slate-postmortem-052326.md'
+      },
+      {
+        label: 'May 23 chaos follow-ups',
+        path: 'development-docs/may23-chaos-followups-052326.md'
+      },
+      {
+        label: 'Stored live slate',
+        path: 'web/src/lib/day-2026-05-23.js'
+      }
+    ],
+    sportTabs: may23HistorySportTabs
   },
   {
     id: '2026-05-22',

@@ -323,5 +323,72 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Kyle Schwarber Over 1.5 total bases",
       "Michael Harris II Over 1.5 total bases"
     ]
+  },
+  "2026-05-23": {
+    "overall": {
+      "hits": 12,
+      "total": 28,
+      "hitRate": 42.9
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 8,
+        "total": 20,
+        "hitRate": 40
+      },
+      "singles": {
+        "hits": 4,
+        "total": 6,
+        "hitRate": 66.7
+      },
+      "rbi": {
+        "hits": 0,
+        "total": 2,
+        "hitRate": 0
+      }
+    },
+    "topHits": [
+      "Blake Dunn Over 1.5 total bases",
+      "Corbin Carroll Over 1.5 total bases",
+      "Ketel Marte Over 1.5 total bases",
+      "Casey Schmitt Over 1.5 total bases"
+    ],
+    "topMisses": [
+      "Randal Grichuk Over 1.5 total bases",
+      "Munetaka Murakami Over 1.5 total bases",
+      "Bryan Torres Over 1.5 total bases",
+      "Sal Stewart Over 1.5 total bases"
+    ]
+  },
+  "2026-05-24": {
+    "overall": {
+      "hits": 0,
+      "total": 29,
+      "hitRate": 0
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 0,
+        "total": 22,
+        "hitRate": 0
+      },
+      "singles": {
+        "hits": 0,
+        "total": 6,
+        "hitRate": 0
+      },
+      "walks": {
+        "hits": 0,
+        "total": 1,
+        "hitRate": 0
+      }
+    },
+    "topHits": [],
+    "topMisses": [
+      "Randal Grichuk Over 1.5 total bases",
+      "Bryan Torres Over 1.5 total bases",
+      "Corbin Carroll Over 1.5 total bases",
+      "Elly De La Cruz Over 1.5 total bases"
+    ]
   }
 }
