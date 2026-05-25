@@ -34,7 +34,8 @@ export const fallbackSlateDayManifest: SlateManifestEntry[] = [
   { id: '2026-05-21', label: 'May 21, 2026', status: 'ready', slateMeta: { date: 'May 21, 2026', isoDate: '2026-05-21' }, summary: { totalGames: 35 } },
   { id: '2026-05-22', label: 'May 22, 2026', status: 'ready', slateMeta: { date: 'May 22, 2026', isoDate: '2026-05-22' }, summary: { totalGames: 6 } },
   { id: '2026-05-23', label: 'May 23, 2026', status: 'ready', slateMeta: { date: 'May 23, 2026', isoDate: '2026-05-23' }, summary: { totalGames: 14 } },
-  { id: '2026-05-24', label: 'May 24, 2026', status: 'ready', slateMeta: { date: 'May 24, 2026', isoDate: '2026-05-24' }, summary: { totalGames: 53 } }
+  { id: '2026-05-24', label: 'May 24, 2026', status: 'ready', slateMeta: { date: 'May 24, 2026', isoDate: '2026-05-24' }, summary: { totalGames: 53 } },
+  { id: '2026-05-25', label: 'May 25, 2026', status: 'ready', slateMeta: { date: 'May 25, 2026', isoDate: '2026-05-25' }, summary: { totalGames: 62 } }
 ]
 
 const currentLocalIsoDate = () => {

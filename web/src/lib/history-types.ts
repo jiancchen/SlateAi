@@ -12,6 +12,33 @@ export type HistoryArtifact = {
   path: string
 }
 
+export type HistoryGameReview = {
+  id: string
+  title: string
+  start?: string
+  predicted: string
+  confidence?: number | null
+  crowd?: string
+  actualWinner?: string
+  finalScore?: string
+  result: 'hit' | 'miss' | 'pending'
+  note?: string
+}
+
+export type HistoryGameSection = {
+  label: string
+  games: HistoryGameReview[]
+}
+
+export type HistorySportTab = {
+  id: string
+  label: string
+  summary: string
+  metrics?: HistoryMetric[]
+  sections?: HistoryGameSection[]
+  placeholder?: string
+}
+
 export type HistoryRecord = {
   wins: number
   losses: number
@@ -58,4 +85,5 @@ export type HistoryEntry = {
   artifacts: HistoryArtifact[]
   performance?: HistoryPerformance
   journal?: HistoryJournal
+  sportTabs?: HistorySportTab[]
 }

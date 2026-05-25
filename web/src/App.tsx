@@ -237,6 +237,11 @@ const buildTrendSegments = (values: Array<number | null>, width: number, height:
 }
 
 const getHistoryMetricTone = (metric: { tone?: string }) => metric.tone || 'neutral'
+const getHistoryReviewTone = (result?: string) => {
+  if (result === 'hit') return 'positive'
+  if (result === 'miss') return 'negative'
+  return 'info'
+}
 
 const formatSnapshotTime = (isoString: string) => {
   if (!isoString) return ''
@@ -992,6 +997,17 @@ const buildGameHighlights = (game: AnyRecord) => {
     if (game.tennisContext.liveDog) chips.push({ tone: 'warning', label: 'Dog live' })
     if (game.tennisContext.fatigueFlag) chips.push({ tone: 'danger', label: 'Fatigue live' })
     if (game.tennisContext.formEdgeName === game.analysis?.participant?.name) chips.push({ tone: 'accent', label: 'Form edge' })
+    if (game.tennisContext.tradePlan?.laneLabel) {
+      chips.push({
+        tone:
+          game.tennisContext.tradePlan.tone === 'danger'
+            ? 'danger'
+            : game.tennisContext.tradePlan.tone === 'warning'
+              ? 'warning'
+              : 'accent',
+        label: game.tennisContext.tradePlan.laneLabel
+      })
+    }
     if ((game.analysis?.volatility ?? 0) >= 70) chips.push({ tone: 'danger', label: 'Volatile' })
   } else {
     if ((game.analysis?.confidence ?? 0) >= 72) chips.push({ tone: 'accent', label: 'High confidence' })
@@ -1074,6 +1090,7 @@ function App() {
   const [activeDayId, setActiveDayId] = useState(defaultSlateDayId)
   const [activeDeskTab, setActiveDeskTab] = useState<DeskTabId>('board')
   const [activeHistoryId, setActiveHistoryId] = useState('')
+  const [activeHistorySportTabId, setActiveHistorySportTabId] = useState('')
   const [activeFilter, setActiveFilter] = useState('All')
   const [activeSidebarTab, setActiveSidebarTab] = useState<SidebarTabId>('ticket')
   const [marketSearch, setMarketSearch] = useState('')
@@ -1385,6 +1402,10 @@ function App() {
     Boolean(loadingGameDetailsByDay[activeDayId]?.[selectedGameId])
   const activeHistoryEntry = historyArchive.find((entry) => entry.id === activeHistoryId) ?? historyArchive[0] ?? null
   const activeHistoryPropSummary = activeHistoryEntry ? mlbPropPerformanceByDate[activeHistoryEntry.id] ?? null : null
+  const activeHistorySportTabs = activeHistoryEntry?.sportTabs ?? []
+  const activeHistorySportTab =
+    activeHistorySportTabs.find((tab) => tab.id === activeHistorySportTabId) ?? activeHistorySportTabs[0] ?? null
+  const activeHistorySportSections = activeHistorySportTab?.sections ?? []
   const activeHistoryMetrics = useMemo(() => {
     if (!activeHistoryEntry) return []
     const metrics = [...activeHistoryEntry.metrics]
@@ -1409,6 +1430,18 @@ function App() {
       ? [...activeHistoryEntry.trackedMarkets, 'Player props']
       : activeHistoryEntry.trackedMarkets
   }, [activeHistoryEntry, activeHistoryPropSummary])
+
+  useEffect(() => {
+    if (!activeHistorySportTabs.length) {
+      setActiveHistorySportTabId('')
+      return
+    }
+
+    setActiveHistorySportTabId((current) => {
+      if (current && activeHistorySportTabs.some((tab) => tab.id === current)) return current
+      return activeHistorySportTabs[0]?.id ?? ''
+    })
+  }, [activeHistoryEntry?.id, activeHistorySportTabs])
 
   const gradedHistoryEntries = useMemo(
     () =>
@@ -2718,6 +2751,8 @@ function App() {
   const renderTennisDetail = (game: AnyRecord) => {
     const context = game.tennisContext
     const projection = context?.projection
+    const tradePlan = context?.tradePlan
+    const clayMatchupData = context?.clayMatchupData
     return (
       <>
         {context?.players?.length ? (
@@ -2777,6 +2812,104 @@ function App() {
                 )
               })}
             </div>
+          </section>
+        ) : null}
+
+        {tradePlan ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Trade lane</p>
+              <span>{tradePlan.laneLabel}</span>
+            </div>
+            <p className="react-section-copy">{tradePlan.summary}</p>
+            <div className="react-card-grid">
+              <article className="react-mini-panel">
+                <span className="eyebrow">Entry side</span>
+                <strong>{tradePlan.entrySideName}</strong>
+                <small>
+                  Board {tradePlan.dogMarketPct}% dog vs {tradePlan.favoriteName} {tradePlan.favoriteMarketPct}%
+                </small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Trigger</span>
+                <strong>{tradePlan.laneLabel}</strong>
+                <small>{tradePlan.trigger}</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Exit map</span>
+                <strong>{tradePlan.headline}</strong>
+                <small>{tradePlan.exit}</small>
+              </article>
+            </div>
+          </section>
+        ) : null}
+
+        {clayMatchupData ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Clay matchup data</p>
+              <span>Tennistonic H2H</span>
+            </div>
+            {clayMatchupData.players?.length ? (
+              <>
+                <div className="react-card-grid">
+                  <article className="react-mini-panel">
+                    <span className="eyebrow">H2H</span>
+                    <strong>{clayMatchupData.h2hRecord || clayMatchupData.h2hText || 'No H2H data'}</strong>
+                    <small>{clayMatchupData.h2hText || clayMatchupData.prediction || 'No page summary loaded'}</small>
+                  </article>
+                  <article className="react-mini-panel">
+                    <span className="eyebrow">Page call</span>
+                    <strong>{clayMatchupData.prediction || 'No page prediction'}</strong>
+                    <small>{clayMatchupData.sourceUrl ? 'Source page loaded for this matchup.' : 'Source page missing.'}</small>
+                  </article>
+                  {clayMatchupData.tradeRead ? (
+                    <article className="react-mini-panel">
+                      <span className="eyebrow">Clay trade read</span>
+                      <strong>{tradePlan?.laneLabel || 'Matchup lane'}</strong>
+                      <small>{clayMatchupData.tradeRead}</small>
+                    </article>
+                  ) : null}
+                </div>
+
+                <div className="react-card-grid">
+                  {clayMatchupData.players.map((player: AnyRecord) => (
+                    <article key={player.name} className="react-team-card">
+                      <div className="react-team-card-top">
+                        <div className="react-team-id">
+                          <div>
+                            <strong>{player.name}</strong>
+                            <small>2026 clay {player.record2026?.clay || 'N/A'}</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="react-pill-row">
+                        <span className="history-pill neutral">Overall {player.record2026?.overall || 'N/A'}</span>
+                        <span className="history-pill neutral">Hard {player.record2026?.hard || 'N/A'}</span>
+                        <span className="history-pill neutral">Clay {player.record2026?.clay || 'N/A'}</span>
+                      </div>
+                      <div className="tennis-match-log">
+                        {(player.recentMatches || []).slice(0, 6).map((match: AnyRecord, index: number) => (
+                          <div key={`${player.name}-${match.date}-${match.opponent}-${index}`} className="tennis-match-log-row">
+                            <strong>{match.opponent || 'Opponent missing'}</strong>
+                            <span>{match.result || 'No score line'}</span>
+                            <small>{[match.event, match.date].filter(Boolean).join(' | ')}</small>
+                          </div>
+                        ))}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="react-card-grid">
+                <article className="react-mini-panel">
+                  <span className="eyebrow">Source status</span>
+                  <strong>Tennistonic did not load in time</strong>
+                  <small>{clayMatchupData.error || 'Clay matchup source data was unavailable for this match.'}</small>
+                </article>
+              </div>
+            )}
           </section>
         ) : null}
 
@@ -3837,7 +3970,7 @@ function App() {
             <div className="history-rail-header">
               <div>
                 <p className="eyebrow">History</p>
-                <h3>Archive through May 21</h3>
+                <h3>Archive through {historyArchive[0]?.label ?? 'the latest graded day'}</h3>
                 <p className="react-section-copy">
                   Daily grading blocks, combined backtests, and the saved board artifacts that fed them.
                 </p>
@@ -3900,6 +4033,94 @@ function App() {
                     </article>
                   ))}
                 </div>
+
+                {activeHistorySportTabs.length ? (
+                  <section className="action-section history-deep-dive">
+                    <div className="action-section-header">
+                      <h3>Day review</h3>
+                      <span>{activeHistorySportTabs.length} sports</span>
+                    </div>
+
+                    <div className="history-sport-tabs">
+                      {activeHistorySportTabs.map((tab) => (
+                        <button
+                          key={`${activeHistoryEntry.id}-sport-tab-${tab.id}`}
+                          type="button"
+                          className={`history-sport-tab ${activeHistorySportTab?.id === tab.id ? 'active' : ''}`}
+                          onClick={() => setActiveHistorySportTabId(tab.id)}
+                        >
+                          {tab.label}
+                        </button>
+                      ))}
+                    </div>
+
+                    {activeHistorySportTab ? (
+                      <div className="history-sport-shell">
+                        <p className="react-section-copy">{activeHistorySportTab.summary}</p>
+
+                        {activeHistorySportTab.metrics?.length ? (
+                          <div className="history-sport-metric-grid">
+                            {activeHistorySportTab.metrics.map((metric) => (
+                              <article
+                                key={`${activeHistoryEntry.id}-${activeHistorySportTab.id}-${metric.label}`}
+                                className={`history-ledger-card history-sport-metric ${getHistoryMetricTone(metric)}`}
+                              >
+                                <span className="parlay-stat-label">{metric.label}</span>
+                                <strong>{metric.value}</strong>
+                                {metric.note ? <small>{metric.note}</small> : null}
+                              </article>
+                            ))}
+                          </div>
+                        ) : null}
+
+                        {activeHistorySportTab.placeholder ? (
+                          <article className="history-ledger-card">
+                            <span className="parlay-stat-label">Reserved slot</span>
+                            <strong>{activeHistorySportTab.label} review pending</strong>
+                            <small>{activeHistorySportTab.placeholder}</small>
+                          </article>
+                        ) : null}
+
+                        {activeHistorySportSections.map((section) => (
+                          <div key={`${activeHistoryEntry.id}-${activeHistorySportTab.id}-${section.label}`} className="history-review-section">
+                            <div className="action-section-header">
+                              <h3>{section.label}</h3>
+                              <span>{section.games.length} matches</span>
+                            </div>
+                            <div className="history-review-grid">
+                              {section.games.map((game) => (
+                                <article
+                                  key={`${activeHistoryEntry.id}-${activeHistorySportTab.id}-${game.id}`}
+                                  className={`history-review-card ${getHistoryReviewTone(game.result)}`}
+                                >
+                                  <div className="history-review-topline">
+                                    <strong>{game.title}</strong>
+                                    <span className={`history-review-pill ${getHistoryReviewTone(game.result)}`}>{game.result}</span>
+                                  </div>
+                                  <div className="history-review-meta">
+                                    {game.start ? <span>{game.start}</span> : null}
+                                    {game.crowd ? <span>Board {game.crowd}</span> : null}
+                                  </div>
+                                  <div className="history-review-row">
+                                    <span>Predicted</span>
+                                    <strong>{game.predicted}</strong>
+                                    <small>{game.confidence ? `${game.confidence} confidence` : 'Desk lean'}</small>
+                                  </div>
+                                  <div className="history-review-row">
+                                    <span>Actual</span>
+                                    <strong>{game.actualWinner ?? 'Pending'}</strong>
+                                    <small>{game.finalScore ?? game.note ?? 'Awaiting result'}</small>
+                                  </div>
+                                  {game.note && game.finalScore ? <p className="history-review-note">{game.note}</p> : null}
+                                </article>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                  </section>
+                ) : null}
 
                 <div className="history-section-grid">
                   <section className="action-section">

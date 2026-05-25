@@ -1,6 +1,71 @@
 import type { HistoryEntry } from './history-types'
+import { may24HistorySportTabs } from './history-day-2026-05-24'
 
 export const historyArchive: HistoryEntry[] = [
+  {
+    id: '2026-05-24',
+    date: '2026-05-24',
+    label: 'May 24, 2026',
+    status: 'graded',
+    summary:
+      'Roland Garros Day 1 was a good tennis board overall, but it leaned hard on ATP stability. The women’s dog lane stayed more volatile, and the MLB tab is being held open for the later baseball grading pass.',
+    sports: ['Tennis', 'MLB'],
+    trackedMarkets: ['Match winner', 'MLB review pending'],
+    performance: {
+      tennis: { wins: 25, losses: 11 }
+    },
+    journal: {
+      path: 'published-data/slates/2026-05-24/summary.json',
+      records: 36,
+      note: 'Tennis Day 1 is fully graded here; the baseball ledger for the same date is reserved for the follow-up MLB pass.'
+    },
+    metrics: [
+      { label: 'Tennis desk', value: '25-11', tone: 'positive' },
+      { label: 'ATP board', value: '14-6', note: 'The cleaner part of the card again', tone: 'positive' },
+      { label: 'WTA board', value: '11-5', note: 'Still the shakier lane', tone: 'warning' },
+      { label: 'Pending', value: '1 match', note: 'Sinner vs Tabur rolled to May 25', tone: 'info' }
+    ],
+    notableHits: [
+      'Khachanov, Zverev, Djokovic, Fonseca, Mensik, Medjedovic, Sonego, and Blockx all landed on the ATP side.',
+      'Baptiste over Krejcikova, Francesca Jones over Haddad Maia, Sierra over Raducanu, and Bejlek over Stephens were the sharper women’s hits.',
+      'The desk stayed on the right side of the stronger clay-shape favorites much more often than the noisier coin-flip lanes.'
+    ],
+    notableMisses: [
+      'The biggest ATP misses were Fritz, Etcheverry, Dellien, and Diallo.',
+      'The WTA misses clustered in the more volatile lanes: Burel, Valentova, Sorribes Tormo, Tauson, and the Tagger/Wang opener.',
+      'This was not a slate where broad “current form” was enough on the women’s side without cleaner surface or matchup confirmation.'
+    ],
+    whatWorked: [
+      'ATP clay structure remained the most trustworthy part of the tennis board.',
+      'The page now has a real per-match history review instead of flattening the whole day into one summary paragraph.',
+      'The archive can finally separate where the board was strong from where it was simply busy.'
+    ],
+    whatMissed: [
+      'Too many of the misses still came from trying to be clever in women’s toss-up spots.',
+      'A few public-favorite ATP reads were not strong enough to justify the confidence they carried.',
+      'The slate needed a clearer separation between “clean favorite,” “live dog,” and “coin flip we should leave alone.”'
+    ],
+    takeaways: [
+      'May 24 confirms the earlier lesson that ATP clay is the better predictive lane than WTA volatility.',
+      'The tennis history page should be used as a benchmark archive, not just a postmortem note.',
+      'When the board has a real edge, it needs to show up game by game like this, not just in an aggregate record.'
+    ],
+    artifacts: [
+      {
+        label: 'Published slate summary',
+        path: 'published-data/slates/2026-05-24/summary.json'
+      },
+      {
+        label: 'Stored day board',
+        path: 'web/src/lib/day-2026-05-24.js'
+      },
+      {
+        label: 'May 24 history detail data',
+        path: 'web/src/lib/history-day-2026-05-24.ts'
+      }
+    ],
+    sportTabs: may24HistorySportTabs
+  },
   {
     id: '2026-05-22',
     date: '2026-05-22',
