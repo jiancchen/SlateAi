@@ -8,6 +8,7 @@ import json
 import math
 import re
 import sqlite3
+import warnings
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -21,12 +22,32 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics import accuracy_score, brier_score_loss, log_loss
 from sklearn.pipeline import Pipeline
 
+try:
+    from catboost import CatBoostClassifier
+except Exception:  # pragma: no cover - optional dependency
+    CatBoostClassifier = None
+
+try:
+    from lightgbm import LGBMClassifier
+except Exception:  # pragma: no cover - optional dependency
+    LGBMClassifier = None
+
+try:
+    from xgboost import XGBClassifier
+except Exception:  # pragma: no cover - optional dependency
+    XGBClassifier = None
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 DEFAULT_CORPUS = ROOT / "data-private" / "models" / "mlb-training-corpus-2026-05-10-to-2026-05-25.json"
 DEFAULT_REPORT_OUT = ROOT / "development-docs" / "mlb-market-ml-training-052526.md"
 DEFAULT_ARTIFACT_OUT = ROOT / "data-private" / "predictions" / "mlb-market-fitness" / "2026-05-25-fitness.json"
+
+warnings.filterwarnings(
+    "ignore",
+    message="X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -37,6 +58,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--score-date", default="2026-05-25")
     parser.add_argument("--min-train-dates", type=int, default=5)
     parser.add_argument("--min-train-samples", type=int, default=40)
+    parser.add_argument("--markets", default="moneyline,first5,totals,firstInning")
+    parser.add_argument("--models", default="forest,hist_gb,catboost,lightgbm,xgboost")
     return parser.parse_args()
 
 
@@ -669,7 +692,9 @@ def build_totals_features(record: dict[str, Any], line: float) -> dict[str, Any]
 
 
 def market_model_builders() -> dict[str, Pipeline]:
-    forest = Pipeline(
+    builders: dict[str, Pipeline] = {}
+
+    builders["forest"] = Pipeline(
         [
             ("vectorize", DictVectorizer(sparse=False)),
             ("impute", SimpleImputer(strategy="median")),
@@ -684,7 +709,7 @@ def market_model_builders() -> dict[str, Pipeline]:
             ),
         ]
     )
-    gradient = Pipeline(
+    builders["hist_gb"] = Pipeline(
         [
             ("vectorize", DictVectorizer(sparse=False)),
             ("impute", SimpleImputer(strategy="median")),
@@ -700,7 +725,76 @@ def market_model_builders() -> dict[str, Pipeline]:
             ),
         ]
     )
-    return {"forest": forest, "hist_gb": gradient}
+
+    if CatBoostClassifier is not None:
+        builders["catboost"] = Pipeline(
+            [
+                ("vectorize", DictVectorizer(sparse=False)),
+                ("impute", SimpleImputer(strategy="median")),
+                (
+                    "model",
+                    CatBoostClassifier(
+                        iterations=100,
+                        depth=6,
+                        learning_rate=0.04,
+                        loss_function="Logloss",
+                        eval_metric="Logloss",
+                        verbose=False,
+                        allow_writing_files=False,
+                        random_seed=7,
+                        thread_count=-1,
+                    ),
+                ),
+            ]
+        )
+
+    if LGBMClassifier is not None:
+        builders["lightgbm"] = Pipeline(
+            [
+                ("vectorize", DictVectorizer(sparse=False)),
+                ("impute", SimpleImputer(strategy="median")),
+                (
+                    "model",
+                    LGBMClassifier(
+                        n_estimators=100,
+                        learning_rate=0.04,
+                        num_leaves=31,
+                        max_depth=-1,
+                        min_child_samples=20,
+                        subsample=0.85,
+                        colsample_bytree=0.85,
+                        random_state=7,
+                        verbosity=-1,
+                        n_jobs=-1,
+                    ),
+                ),
+            ]
+        )
+
+    if XGBClassifier is not None:
+        builders["xgboost"] = Pipeline(
+            [
+                ("vectorize", DictVectorizer(sparse=False)),
+                ("impute", SimpleImputer(strategy="median")),
+                (
+                    "model",
+                    XGBClassifier(
+                        n_estimators=100,
+                        max_depth=5,
+                        learning_rate=0.04,
+                        subsample=0.85,
+                        colsample_bytree=0.85,
+                        reg_lambda=1.0,
+                        random_state=7,
+                        eval_metric="logloss",
+                        tree_method="hist",
+                        n_jobs=-1,
+                    ),
+                ),
+            ]
+        )
+
+    return builders
 
 
 def walk_forward_predictions(
@@ -708,12 +802,13 @@ def walk_forward_predictions(
     *,
     min_train_dates: int,
     min_train_samples: int,
+    allowed_models: set[str],
 ) -> dict[str, Any]:
     by_date: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for sample in samples:
         by_date[sample["date"]].append(sample)
     ordered_dates = sorted(by_date)
-    builders = market_model_builders()
+    builders = {name: builder for name, builder in market_model_builders().items() if name in allowed_models}
     candidate_records: dict[str, list[dict[str, Any]]] = {key: [] for key in builders}
 
     for date_index, test_date in enumerate(ordered_dates):
@@ -1139,6 +1234,8 @@ def main() -> None:
     args = parse_args()
     args.report_out.parent.mkdir(parents=True, exist_ok=True)
     args.artifact_out.parent.mkdir(parents=True, exist_ok=True)
+    selected_markets = [part.strip() for part in str(args.markets or "").split(",") if part.strip()]
+    selected_models = {part.strip() for part in str(args.models or "").split(",") if part.strip()}
 
     corpus_rows = load_corpus(args.corpus)
     conn = get_connection()
@@ -1188,6 +1285,8 @@ def main() -> None:
     ]
 
     for market_name in ("moneyline", "first5", "totals", "firstInning"):
+        if market_name not in selected_markets:
+            continue
         market_samples = samples[market_name]
         if not market_samples:
             continue
@@ -1195,6 +1294,7 @@ def main() -> None:
             market_samples,
             min_train_dates=args.min_train_dates,
             min_train_samples=args.min_train_samples,
+            allowed_models=selected_models,
         )
         if not evaluation["best_model"]:
             continue
@@ -1212,6 +1312,15 @@ def main() -> None:
 
         results[market_name] = {
             "bestModel": best_name,
+            "candidates": {
+                candidate_name: {
+                    "logLoss": round(candidate_eval["log_loss"], 4),
+                    "brier": round(candidate_eval["brier"], 4),
+                    "accuracy": round(candidate_eval["accuracy"], 4),
+                    "sampleSize": candidate_eval["sample_size"],
+                }
+                for candidate_name, candidate_eval in evaluation["evaluations"].items()
+            },
             "logLoss": round(best_eval["log_loss"], 4),
             "brier": round(best_eval["brier"], 4),
             "accuracy": round(best_eval["accuracy"], 4),
@@ -1221,6 +1330,15 @@ def main() -> None:
         }
         artifact["markets"][market_name] = {
             "bestModel": best_name,
+            "candidates": {
+                candidate_name: {
+                    "logLoss": round(candidate_eval["log_loss"], 4),
+                    "brier": round(candidate_eval["brier"], 4),
+                    "accuracy": round(candidate_eval["accuracy"], 4),
+                    "sampleSize": candidate_eval["sample_size"],
+                }
+                for candidate_name, candidate_eval in evaluation["evaluations"].items()
+            },
             "metrics": {
                 "logLoss": round(best_eval["log_loss"], 4),
                 "brier": round(best_eval["brier"], 4),
@@ -1235,6 +1353,25 @@ def main() -> None:
         report_lines.extend(
             [
                 f"## {market_name}",
+                "",
+                "Candidate scoreboard:",
+                "",
+                markdown_table(
+                    ["Model", "Log loss", "Brier", "Accuracy", "Sample"],
+                    [
+                        [
+                            candidate_name,
+                            f"{candidate_eval['log_loss']:.4f}",
+                            f"{candidate_eval['brier']:.4f}",
+                            f"{candidate_eval['accuracy']:.4f}",
+                            str(candidate_eval["sample_size"]),
+                        ]
+                        for candidate_name, candidate_eval in sorted(
+                            evaluation["evaluations"].items(),
+                            key=lambda item: (item[1]["log_loss"], item[1]["brier"]),
+                        )
+                    ],
+                ),
                 "",
                 f"- Best model: `{best_name}`",
                 f"- Walk-forward log loss: `{best_eval['log_loss']:.4f}`",

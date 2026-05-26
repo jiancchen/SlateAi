@@ -30,9 +30,9 @@ Reference report:
 |E03|2026-05-25|Remove same-day profile leakage|ML / F5|Completed|Critical fix|Forced training to use prior-date team/pitcher profiles only|
 |E04|2026-05-25|Remove postgame starter-line leakage|ML / F5|Completed|Critical fix|Stopped reading same-game starter performance as features|
 |E05|2026-05-25|Honest sklearn baseline after leakage fixes|ML / F5 / Totals / 1st inning|Completed|Only totals survive|Current true baseline|
-|E06|2026-05-25|CatBoost tabular pass|ML / F5 / Totals / 1st inning|Queued|TBD|Best next candidate|
-|E07|2026-05-25|LightGBM pass|ML / F5 / Totals / 1st inning|Queued|TBD|Compare against CatBoost|
-|E08|2026-05-25|XGBoost pass|ML / F5 / Totals / 1st inning|Queued|TBD|Compare against CatBoost / LightGBM|
+|E06|2026-05-25|CatBoost tabular pass|Moneyline|Completed|Worse than forest baseline|`0.7122` log loss, `54.1%` threshold hit rate, negative utility|
+|E07|2026-05-25|LightGBM pass|Moneyline|Completed|Best boosted-tree threshold so far, still not promotable|`0.7438` log loss, `59.3%` threshold hit rate, utility still negative|
+|E08|2026-05-25|XGBoost pass|Moneyline|Completed|Worse than LightGBM|`0.7327` log loss, `55.5%` threshold hit rate, negative utility|
 |E09|2026-05-25|Calibration layer (Platt / isotonic)|All promotable lanes|Queued|TBD|Probability trust matters as much as raw hit rate|
 |E10|2026-05-25|Favorite vs dog submodels|ML / F5|Queued|TBD|Separate favorite-hold behavior from dog-live behavior|
 |E11|2026-05-25|Pass-first classifier|ML / F5 / 1st inning|Queued|TBD|Decide if a market is playable before picking a side|
@@ -48,6 +48,49 @@ After leakage fixes, the current benchmark is:
 |First 5|`RandomForestClassifier`|52.58%|113-91 on 204 plays (55.4%)|No|
 |Totals|`RandomForestClassifier`|55.66%|31-14 on 45 plays (68.9%)|Yes|
 |First inning|`RandomForestClassifier`|54.17%|19-13 on 32 plays (59.4%)|No|
+
+## First Boosted-Tree Moneyline Results
+
+Reference files:
+
+- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-catboost-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-catboost-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-lightgbm-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-lightgbm-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-xgboost-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-xgboost-052526.md)
+
+|Model|Log loss|Brier|OOF accuracy|Threshold record|Threshold utility|Promotable|
+|---|---:|---:|---:|---|---:|---|
+|Forest baseline|0.6984|0.2524|51.63%|146-127 on 273 plays (53.5%)|-44.5|No|
+|CatBoost|0.7122|0.2586|52.11%|131-111 on 242 plays (54.1%)|-35.5|No|
+|LightGBM|0.7438|0.2700|52.66%|150-103 on 253 plays (59.3%)|-4.5|No|
+|XGBoost|0.7327|0.2661|52.32%|122-98 on 220 plays (55.5%)|-25.0|No|
+
+### Early takeaway
+
+- `LightGBM` produced the best threshold hit rate of the boosted-tree group on moneyline.
+- None of the three boosted-tree tests actually cleared the profitability / promotion bar.
+- `Forest` still has the best calibration-oriented metrics (`log loss`, `Brier`) on moneyline.
+- This means better model family alone is not enough yet; we still need better side framing and probably better targets.
+
+## Totals Candidate Compare
+
+Reference file:
+
+- [/Users/jcchen/Documents/New project/development-docs/mlb-market-totals-candidates-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-totals-candidates-052526.md)
+
+|Model|Log loss|Brier|OOF accuracy|Promotable winner?|
+|---|---:|---:|---:|---|
+|Forest|0.6756|0.2414|55.66%|Yes|
+|CatBoost|0.7064|0.2540|52.83%|No|
+|LightGBM|0.7356|0.2670|53.77%|No|
+|XGBoost|0.7264|0.2582|57.55%|No|
+|HistGradientBoosting|0.8841|0.2892|57.55%|No|
+
+### Totals takeaway
+
+- `Forest` remains the best totals model so far.
+- `XGBoost` and `HistGradientBoosting` tied on raw accuracy, but both lost badly on calibration metrics.
+- That means their probabilities were worse for betting decisions even if raw winners looked similar.
+- For totals, at least on the current sample, the baseline still wins.
 
 ## Current Diagnosis
 
