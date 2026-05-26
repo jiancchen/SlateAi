@@ -49,6 +49,8 @@
     "data:export:mlb-veto-artifact": "node pipeline/export-mlb-veto-artifact.mjs",
     "data:export:mlb-training-corpus": "node pipeline/export-mlb-training-corpus.mjs",
     "data:export:history-journal": "node pipeline/export-history-journal.mjs",
+    "data:fetch:mlb-historical-odds": "python3 pipeline/fetch_historical_mlb_odds.py",
+    "data:fetch:fanduel-research-mlb": "python3 pipeline/fetch_fanduel_research_mlb.py",
     "data:import:mlb-sides": "python3 pipeline/mlb_side_backtest.py import",
     "data:grade:mlb-sides": "python3 pipeline/mlb_side_backtest.py grade",
     "data:report:mlb-sides": "python3 pipeline/mlb_side_backtest.py report",
