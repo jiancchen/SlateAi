@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 RANKINGS_PATH = ROOT / "data-private" / "reference" / "tennis" / "player-rankings.json"
 FLASHSCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "flashscore-match-stats"
+TENNIS_REFERENCE_DIR = ROOT / "data-private" / "reference" / "tennis"
 PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
 
 
@@ -222,6 +223,43 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (slate_date, match_id, source_name, normalized_name)
         );
 
+        create table if not exists tennis_match_results (
+          slate_date text not null,
+          event_id text not null,
+          match_id text,
+          title text not null,
+          round_label text,
+          court text,
+          status text,
+          completed integer,
+          player1_name text,
+          player2_name text,
+          player1_normalized_name text,
+          player2_normalized_name text,
+          winner_name text,
+          winner_normalized_name text,
+          scoreline text,
+          source_url text,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (slate_date, event_id)
+        );
+
+        create table if not exists tennis_prediction_grades (
+          slate_date text not null,
+          match_id text not null,
+          prediction_source text not null,
+          pick_name text,
+          actual_winner_name text,
+          result_status text,
+          hit integer,
+          confidence integer,
+          volatility integer,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (slate_date, match_id, prediction_source)
+        );
+
         create table if not exists tennis_flashscore_match_stats (
           flashscore_id text primary key,
           source_url text,
@@ -252,6 +290,8 @@ def init_db(conn: sqlite3.Connection) -> None:
         create index if not exists idx_tennis_context_rank on tennis_player_match_context(rank);
         create index if not exists idx_tennis_predictions_date on tennis_predictions(slate_date);
         create index if not exists idx_tennis_prediction_market_snapshots_date on tennis_prediction_market_snapshots(slate_date);
+        create index if not exists idx_tennis_match_results_date on tennis_match_results(slate_date);
+        create index if not exists idx_tennis_prediction_grades_date on tennis_prediction_grades(slate_date);
         """
     )
     existing_market_columns = {
@@ -883,6 +923,168 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
     return counts
 
 
+def import_results(conn: sqlite3.Connection, slate_date: str, file_path: Path | None = None) -> dict[str, int]:
+    path = file_path or (TENNIS_REFERENCE_DIR / f"espn-scoreboard-{slate_date}.json")
+    payload = read_json(path)
+    counts = {"results": 0, "completed": 0}
+    for match in payload.get("singles") or []:
+        players = match.get("players") or []
+        if len(players) != 2:
+            continue
+        p1 = players[0].get("name")
+        p2 = players[1].get("name")
+        winner = match.get("winnerName")
+        upsert_player(conn, p1)
+        upsert_player(conn, p2)
+        upsert_player(conn, winner)
+        title = f"{p1} vs {p2}"
+        conn.execute(
+            """
+            insert into tennis_match_results(
+              slate_date, event_id, match_id, title, round_label, court, status,
+              completed, player1_name, player2_name, player1_normalized_name,
+              player2_normalized_name, winner_name, winner_normalized_name,
+              scoreline, source_url, raw_json
+            )
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(slate_date, event_id) do update set
+              match_id=excluded.match_id,
+              title=excluded.title,
+              round_label=excluded.round_label,
+              court=excluded.court,
+              status=excluded.status,
+              completed=excluded.completed,
+              player1_name=excluded.player1_name,
+              player2_name=excluded.player2_name,
+              player1_normalized_name=excluded.player1_normalized_name,
+              player2_normalized_name=excluded.player2_normalized_name,
+              winner_name=excluded.winner_name,
+              winner_normalized_name=excluded.winner_normalized_name,
+              scoreline=excluded.scoreline,
+              source_url=excluded.source_url,
+              raw_json=excluded.raw_json,
+              updated_at=current_timestamp
+            """,
+            (
+                slate_date,
+                match.get("eventId"),
+                None,
+                title,
+                match.get("round"),
+                match.get("court"),
+                match.get("statusDescription"),
+                bool_int(match.get("completed")),
+                p1,
+                p2,
+                normalize_name(p1),
+                normalize_name(p2),
+                winner,
+                normalize_name(winner),
+                match.get("scoreline"),
+                payload.get("sourceUrl"),
+                dumps(match),
+            ),
+        )
+        counts["results"] += 1
+        if match.get("completed"):
+            counts["completed"] += 1
+    conn.commit()
+    return counts
+
+
+def grade_predictions(conn: sqlite3.Connection, slate_date: str) -> dict[str, Any]:
+    predictions = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select *
+            from tennis_predictions
+            where slate_date = ? and prediction_source = 'desk'
+            """,
+            (slate_date,),
+        ).fetchall()
+    ]
+    results = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select *
+            from tennis_match_results
+            where slate_date = ? and completed = 1 and winner_normalized_name is not null
+            """,
+            (slate_date,),
+        ).fetchall()
+    ]
+
+    def result_for_prediction(prediction: dict[str, Any]) -> dict[str, Any] | None:
+        match = conn.execute("select * from tennis_matches where match_id = ?", (prediction["match_id"],)).fetchone()
+        if not match:
+            return None
+        player_names = {match["player1_normalized_name"], match["player2_normalized_name"]}
+        for result in results:
+            result_names = {result["player1_normalized_name"], result["player2_normalized_name"]}
+            if player_names == result_names:
+                return result
+        return None
+
+    counts = {"graded": 0, "hits": 0, "misses": 0, "unmatched": 0}
+    misses = []
+    for prediction in predictions:
+        result = result_for_prediction(prediction)
+        if not result:
+            counts["unmatched"] += 1
+            continue
+        hit = normalize_name(prediction.get("pick_name")) == result.get("winner_normalized_name")
+        conn.execute(
+            """
+            insert into tennis_prediction_grades(
+              slate_date, match_id, prediction_source, pick_name, actual_winner_name,
+              result_status, hit, confidence, volatility, raw_json
+            )
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(slate_date, match_id, prediction_source) do update set
+              pick_name=excluded.pick_name,
+              actual_winner_name=excluded.actual_winner_name,
+              result_status=excluded.result_status,
+              hit=excluded.hit,
+              confidence=excluded.confidence,
+              volatility=excluded.volatility,
+              raw_json=excluded.raw_json,
+              updated_at=current_timestamp
+            """,
+            (
+                slate_date,
+                prediction["match_id"],
+                prediction["prediction_source"],
+                prediction.get("pick_name"),
+                result.get("winner_name"),
+                result.get("status"),
+                bool_int(hit),
+                prediction.get("confidence"),
+                prediction.get("volatility"),
+                dumps({"prediction": prediction, "result": result}),
+            ),
+        )
+        counts["graded"] += 1
+        if hit:
+            counts["hits"] += 1
+        else:
+            counts["misses"] += 1
+            misses.append(
+                {
+                    "match_id": prediction["match_id"],
+                    "pick": prediction.get("pick_name"),
+                    "winner": result.get("winner_name"),
+                    "status": result.get("status"),
+                    "confidence": prediction.get("confidence"),
+                    "volatility": prediction.get("volatility"),
+                }
+            )
+    conn.commit()
+    counts["hit_rate"] = round(counts["hits"] / counts["graded"], 3) if counts["graded"] else None
+    return {"counts": counts, "misses": misses}
+
+
 def print_summary(conn: sqlite3.Connection) -> None:
     queries = {
         "tennis_rankings": "select count(*) as count from tennis_rankings",
@@ -891,6 +1093,8 @@ def print_summary(conn: sqlite3.Connection) -> None:
         "tennis_player_match_context": "select count(*) as count from tennis_player_match_context",
         "tennis_recent_matches": "select count(*) as count from tennis_recent_matches",
         "tennis_flashscore_stat_rows": "select count(*) as count from tennis_flashscore_stat_rows",
+        "tennis_match_results": "select slate_date, count(*) as count from tennis_match_results group by slate_date order by slate_date",
+        "tennis_prediction_grades": "select slate_date, hit, count(*) as count from tennis_prediction_grades group by slate_date, hit order by slate_date, hit",
     }
     for label, sql in queries.items():
         rows = [dict(row) for row in conn.execute(sql).fetchall()]
@@ -912,6 +1116,13 @@ def main() -> None:
     flashscore_parser = subparsers.add_parser("import-flashscore")
     flashscore_parser.add_argument("--dir", default=str(FLASHSCORE_DIR))
 
+    results_parser = subparsers.add_parser("import-results")
+    results_parser.add_argument("--date", required=True)
+    results_parser.add_argument("--file", default="")
+
+    grade_parser = subparsers.add_parser("grade")
+    grade_parser.add_argument("--date", required=True)
+
     subparsers.add_parser("summary")
 
     args = parser.parse_args()
@@ -929,6 +1140,12 @@ def main() -> None:
     elif args.command == "import-flashscore":
         counts = import_flashscore(conn, Path(args.dir))
         print(json.dumps(counts, indent=2, sort_keys=True))
+    elif args.command == "import-results":
+        counts = import_results(conn, args.date, Path(args.file) if args.file else None)
+        print(json.dumps(counts, indent=2, sort_keys=True))
+    elif args.command == "grade":
+        report = grade_predictions(conn, args.date)
+        print(json.dumps(report, indent=2, sort_keys=True))
     elif args.command == "summary":
         print_summary(conn)
 
