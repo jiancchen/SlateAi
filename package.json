@@ -17,6 +17,7 @@
     "data:init": "python3 pipeline/mlb_warehouse.py init-db",
     "data:ingest:mlb-day": "python3 pipeline/mlb_warehouse.py ingest-mlb-day",
     "data:ingest:mlb-range": "python3 pipeline/mlb_warehouse.py ingest-mlb-range",
+    "data:replay:mlb-raw-range": "python3 pipeline/mlb_warehouse.py replay-mlb-range-from-raw",
     "data:prep:mlb-day": "python3 pipeline/mlb_warehouse.py prepare-mlb-day",
     "data:list:probables": "python3 pipeline/mlb_warehouse.py list-probable-starters",
     "data:derive:mlb": "python3 pipeline/mlb_warehouse.py derive-mlb-features",

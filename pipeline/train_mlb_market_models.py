@@ -15,6 +15,7 @@ from typing import Any
 
 import numpy as np
 from sklearn.base import clone
+from sklearn.calibration import CalibratedClassifierCV
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassifier
 from sklearn.feature_extraction import DictVectorizer
@@ -60,6 +61,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--min-train-samples", type=int, default=40)
     parser.add_argument("--markets", default="moneyline,first5,totals,firstInning")
     parser.add_argument("--models", default="forest,hist_gb,catboost,lightgbm,xgboost")
+    parser.add_argument("--side-source", default="warehouse")
+    parser.add_argument("--side-segment", default="all")
     return parser.parse_args()
 
 
@@ -709,6 +712,16 @@ def market_model_builders() -> dict[str, Pipeline]:
             ),
         ]
     )
+    builders["forest_sigmoid"] = CalibratedClassifierCV(
+        estimator=clone(builders["forest"]),
+        method="sigmoid",
+        cv=3,
+    )
+    builders["forest_isotonic"] = CalibratedClassifierCV(
+        estimator=clone(builders["forest"]),
+        method="isotonic",
+        cv=3,
+    )
     builders["hist_gb"] = Pipeline(
         [
             ("vectorize", DictVectorizer(sparse=False)),
@@ -989,6 +1002,65 @@ def build_samples(
     return samples
 
 
+def build_corpus_side_samples(
+    corpus_rows: list[dict[str, Any]],
+    outcome_rows_by_game_pk: dict[int, sqlite3.Row],
+    outcome_rows_by_matchup: dict[tuple[str, str, str], list[sqlite3.Row]],
+    team_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+    pitcher_profiles: dict[str, dict[tuple[str, str], dict[str, Any]]],
+) -> dict[str, list[dict[str, Any]]]:
+    samples: dict[str, list[dict[str, Any]]] = {"moneyline": [], "first5": []}
+    for record in corpus_rows:
+        analysis = record.get("analysis") or {}
+        if not analysis:
+            continue
+        outcome = resolve_outcome(record, outcome_rows_by_game_pk, outcome_rows_by_matchup)
+        if outcome is None:
+            continue
+        probabilities, _ = participant_probabilities(record)
+        first5_result = str(outcome["home_first5_result"] or "")
+        for pick_role in ("away", "home"):
+            opp_role = opposite_role(pick_role)
+            side_team = extract_team_name(record, pick_role)
+            features = build_raw_side_features(record, pick_role, team_profiles, pitcher_profiles)
+            side_meta = {
+                "pickRole": pick_role,
+                "sideTeam": side_team,
+                "title": record["title"],
+                "analysis": analysis,
+                "gameKey": record.get("id") or record.get("gamePk") or record["title"],
+                "marketSideClass": "favorite"
+                if (probabilities.get(pick_role) or -1) >= (probabilities.get(opp_role) or -1)
+                else "dog",
+            }
+            moneyline_target = (
+                int(outcome["home_full_game_result"] == "win")
+                if pick_role == "home"
+                else int(outcome["home_full_game_result"] == "loss")
+            )
+            samples["moneyline"].append(
+                {
+                    "date": record["date"],
+                    "matchup": record["title"],
+                    "features": features,
+                    "target": moneyline_target,
+                    "meta": side_meta,
+                }
+            )
+            if first5_result != "tie":
+                first5_target = int(first5_result == "win") if pick_role == "home" else int(first5_result == "loss")
+                samples["first5"].append(
+                    {
+                        "date": record["date"],
+                        "matchup": record["title"],
+                        "features": features,
+                        "target": first5_target,
+                        "meta": side_meta,
+                    }
+                )
+    return samples
+
+
 def build_warehouse_side_features(
     game: sqlite3.Row,
     starters_by_game: dict[int, dict[str, dict[str, Any]]],
@@ -1182,7 +1254,9 @@ def build_score_rows(
         if not analysis:
             continue
         if market_name in {"moneyline", "first5"}:
+            probabilities, _ = participant_probabilities(record)
             for pick_role in ("away", "home"):
+                opp_role = opposite_role(pick_role)
                 rows.append(
                     {
                         "date": record["date"],
@@ -1194,6 +1268,9 @@ def build_score_rows(
                             "title": record["title"],
                             "analysis": analysis,
                             "gameKey": record.get("id") or record.get("gamePk") or record["title"],
+                            "marketSideClass": "favorite"
+                            if (probabilities.get(pick_role) or -1) >= (probabilities.get(opp_role) or -1)
+                            else "dog",
                         },
                     }
                 )
@@ -1223,6 +1300,12 @@ def build_score_rows(
     return rows
 
 
+def filter_side_segment(rows: list[dict[str, Any]], segment: str) -> list[dict[str, Any]]:
+    if segment == "all":
+        return rows
+    return [row for row in rows if row.get("meta", {}).get("marketSideClass") == segment]
+
+
 def markdown_table(headers: list[str], rows: list[list[str]]) -> str:
     header_line = "| " + " | ".join(headers) + " |"
     divider = "| " + " | ".join(["---"] * len(headers)) + " |"
@@ -1236,6 +1319,8 @@ def main() -> None:
     args.artifact_out.parent.mkdir(parents=True, exist_ok=True)
     selected_markets = [part.strip() for part in str(args.markets or "").split(",") if part.strip()]
     selected_models = {part.strip() for part in str(args.models or "").split(",") if part.strip()}
+    side_source = str(args.side_source or "warehouse").strip().lower()
+    side_segment = str(args.side_segment or "all").strip().lower()
 
     corpus_rows = load_corpus(args.corpus)
     conn = get_connection()
@@ -1263,9 +1348,17 @@ def main() -> None:
         pitcher_profiles,
     )
     warehouse_side_samples = build_warehouse_side_samples(conn, team_profiles, pitcher_profiles)
+    corpus_side_samples = build_corpus_side_samples(
+        corpus_rows,
+        outcome_rows_by_game_pk,
+        outcome_rows_by_matchup,
+        team_profiles,
+        pitcher_profiles,
+    )
+    chosen_side_samples = corpus_side_samples if side_source == "corpus" else warehouse_side_samples
     samples = {
-        "moneyline": warehouse_side_samples["moneyline"],
-        "first5": warehouse_side_samples["first5"],
+        "moneyline": filter_side_segment(chosen_side_samples["moneyline"], side_segment),
+        "first5": filter_side_segment(chosen_side_samples["first5"], side_segment),
         "totals": corpus_samples["totals"],
         "firstInning": corpus_samples["firstInning"],
     }
@@ -1307,6 +1400,9 @@ def main() -> None:
 
         final_model = fit_final_model(market_samples, best_name, args.score_date)
         score_rows = build_score_rows(corpus_rows, args.score_date, market_name, team_profiles, pitcher_profiles)
+        if market_name in {"moneyline", "first5"}:
+            if side_source == "corpus":
+                score_rows = filter_side_segment(score_rows, side_segment)
         promotable = market_promotable(market_name, threshold_info)
         scored_today = score_market(market_name, final_model, threshold_info, score_rows, promotable=promotable)
 

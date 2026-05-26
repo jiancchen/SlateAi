@@ -1077,6 +1077,63 @@ CREATE TABLE IF NOT EXISTS weather_observations (
   raw_json TEXT,
   PRIMARY KEY (game_pk, observed_at)
 );
+
+CREATE INDEX IF NOT EXISTS idx_mlb_games_game_date ON mlb_games(game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_game_outcomes_game_date ON mlb_game_outcomes(game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitchers_game_pk_role ON mlb_starting_pitchers(game_pk, team_role);
+CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitcher_logs_pitcher_date
+  ON mlb_starting_pitcher_game_logs(pitcher_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitcher_logs_team_date
+  ON mlb_starting_pitcher_game_logs(team_name, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_game_team_stats_team_date ON mlb_game_team_stats(team_name, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_game_batting_player_date
+  ON mlb_player_game_batting(player_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_game_batting_team_date
+  ON mlb_player_game_batting(team_name, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_appearances_pitcher_date
+  ON mlb_pitcher_appearances(pitcher_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_appearances_team_date
+  ON mlb_pitcher_appearances(team_name, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_plate_appearances_game_atbat
+  ON mlb_plate_appearances(game_pk, at_bat_index);
+CREATE INDEX IF NOT EXISTS idx_mlb_plate_appearances_team_date
+  ON mlb_plate_appearances(batting_team, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_plate_appearances_pitcher_date
+  ON mlb_plate_appearances(pitcher_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_plate_appearances_batter_date
+  ON mlb_plate_appearances(batter_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitch_events_game_atbat
+  ON mlb_pitch_events(game_pk, at_bat_index, event_index);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitch_events_pitcher_date
+  ON mlb_pitch_events(pitcher_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitch_events_batter_date
+  ON mlb_pitch_events(batter_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitch_events_type_date
+  ON mlb_pitch_events(pitch_type_code, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_team_rolling_form_team_date
+  ON mlb_team_rolling_form(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_team_story_priors_team_date
+  ON mlb_team_story_priors(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_team_date
+  ON mlb_hitter_state_snapshots(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_player_date
+  ON mlb_hitter_state_snapshots(player_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_team_state_snapshots_team_date
+  ON mlb_team_state_snapshots(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_team_first_inning_profiles_team_date
+  ON mlb_team_first_inning_profiles_daily(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_first_inning_profiles_pitcher_date
+  ON mlb_pitcher_first_inning_profiles_daily(pitcher_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_mistake_shape_pitcher_date
+  ON mlb_pitcher_mistake_shape_daily(pitcher_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_bullpen_mistake_shape_team_date
+  ON mlb_bullpen_mistake_shape_daily(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_lineup_conversion_shape_team_date
+  ON mlb_lineup_conversion_shape_daily(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_reliever_first_batter_profiles_pitcher_date
+  ON mlb_reliever_first_batter_command_profiles(pitcher_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_starter_tttp_profiles_pitcher_date
+  ON mlb_starter_third_time_penalty_profiles(pitcher_id, as_of_date);
 """
 
 
@@ -1156,6 +1213,11 @@ def write_gzip_text(path: Path, text: str) -> None:
 def write_json(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
+
+
+def read_gzip_json(path: Path) -> Any:
+    with gzip.open(path, "rt", encoding="utf-8") as handle:
+        return json.load(handle)
 
 
 def file_hash(text: str) -> str:
@@ -1954,6 +2016,189 @@ def is_completed_mlb_game(game: dict[str, Any]) -> bool:
     if coded_state == "F":
         return True
     return detailed_state in {"final", "game over", "completed early"}
+
+
+def ingest_mlb_game_payload(
+    conn: sqlite3.Connection,
+    *,
+    date_text: str,
+    game: dict[str, Any],
+    live_payload: dict[str, Any],
+    live_path: Path,
+) -> None:
+    game_pk = game["gamePk"]
+    away_team = game["teams"]["away"]["team"]["name"]
+    home_team = game["teams"]["home"]["team"]["name"]
+    game_is_completed = is_completed_mlb_game(game) or is_completed_mlb_game(
+        {"status": ((live_payload.get("gameData") or {}).get("status") or {})}
+    )
+    linescore = (live_payload.get("liveData") or {}).get("linescore") or {}
+    conn.execute(
+        """
+        INSERT INTO mlb_games (
+          game_pk, game_date, game_datetime, status, away_team, home_team,
+          venue_name, away_score, home_score, raw_path
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk) DO UPDATE SET
+          game_date=excluded.game_date,
+          game_datetime=excluded.game_datetime,
+          status=excluded.status,
+          away_team=excluded.away_team,
+          home_team=excluded.home_team,
+          venue_name=excluded.venue_name,
+          away_score=excluded.away_score,
+          home_score=excluded.home_score,
+          raw_path=excluded.raw_path
+        """,
+        (
+            game_pk,
+            date_text,
+            game.get("gameDate"),
+            game.get("status", {}).get("detailedState"),
+            away_team,
+            home_team,
+            game.get("venue", {}).get("name"),
+            to_int(linescore.get("teams", {}).get("away", {}).get("runs")),
+            to_int(linescore.get("teams", {}).get("home", {}).get("runs")),
+            str(live_path.relative_to(ROOT)),
+        ),
+    )
+
+    if not game_is_completed:
+        conn.execute("DELETE FROM mlb_game_outcomes WHERE game_pk = ?", (game_pk,))
+        conn.execute("DELETE FROM mlb_game_story_signals WHERE game_pk = ?", (game_pk,))
+        return
+
+    starters = {}
+    starter_game_logs = []
+    for role, team_name, opponent_name in (
+        ("away", away_team, home_team),
+        ("home", home_team, away_team),
+    ):
+        starter_snapshot = starter_from_schedule_or_feed(game, live_payload, role)
+        starters[role] = starter_snapshot
+        conn.execute(
+            """
+            INSERT INTO mlb_starting_pitchers (
+              game_pk, team_role, pitcher_id, pitcher_name, pitch_hand, wins, losses,
+              era, strikeouts, innings_pitched, home_runs_allowed, whip, raw_json
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(game_pk, team_role) DO UPDATE SET
+              pitcher_id=excluded.pitcher_id,
+              pitcher_name=excluded.pitcher_name,
+              pitch_hand=excluded.pitch_hand,
+              wins=excluded.wins,
+              losses=excluded.losses,
+              era=excluded.era,
+              strikeouts=excluded.strikeouts,
+              innings_pitched=excluded.innings_pitched,
+              home_runs_allowed=excluded.home_runs_allowed,
+              whip=excluded.whip,
+              raw_json=excluded.raw_json
+            """,
+            (
+                game_pk,
+                role,
+                starter_snapshot["pitcher_id"],
+                starter_snapshot["pitcher_name"],
+                starter_snapshot["pitch_hand"],
+                starter_snapshot["wins"],
+                starter_snapshot["losses"],
+                starter_snapshot["era"],
+                starter_snapshot["strikeouts"],
+                starter_snapshot["innings_pitched"],
+                starter_snapshot["home_runs_allowed"],
+                starter_snapshot["whip"],
+                starter_snapshot["raw_json"],
+            ),
+        )
+        starter_game_logs.append(
+            starter_game_log_from_feed(game, live_payload, role, team_name, opponent_name, date_text)
+        )
+
+    for starter_log in starter_game_logs:
+        upsert_starting_pitcher_game_log(conn, starter_log)
+
+    pitcher_appearance_rows = extract_pitcher_appearance_rows(game, live_payload, date_text)
+    for row in pitcher_appearance_rows:
+        upsert_pitcher_appearance(conn, row)
+
+    plate_appearance_rows = extract_plate_appearance_rows(game, live_payload, date_text)
+    for row in plate_appearance_rows:
+        upsert_plate_appearance(conn, row)
+
+    pitch_event_rows = extract_pitch_event_rows(game, live_payload, date_text)
+    for row in pitch_event_rows:
+        upsert_pitch_event(conn, row)
+
+    home_run_rows = extract_home_run_rows(
+        live_payload,
+        away_team=away_team,
+        home_team=home_team,
+        date_text=date_text,
+        game_datetime=game.get("gameDate"),
+        game_pk=game_pk,
+    )
+    for row in home_run_rows:
+        conn.execute(
+            """
+            INSERT INTO mlb_home_run_events (
+              event_key, game_pk, game_date, game_datetime, inning, half_inning,
+              batter_id, batter_name, pitcher_id, pitcher_name, batting_team,
+              fielding_team, description, rbi, away_score, home_score, statcast_play_id, raw_json
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(event_key) DO UPDATE SET
+              batter_id=excluded.batter_id,
+              batter_name=excluded.batter_name,
+              pitcher_id=excluded.pitcher_id,
+              pitcher_name=excluded.pitcher_name,
+              batting_team=excluded.batting_team,
+              fielding_team=excluded.fielding_team,
+              description=excluded.description,
+              rbi=excluded.rbi,
+              away_score=excluded.away_score,
+              home_score=excluded.home_score,
+              statcast_play_id=excluded.statcast_play_id,
+              raw_json=excluded.raw_json
+            """,
+            (
+                row["event_key"],
+                row["game_pk"],
+                row["game_date"],
+                row["game_datetime"],
+                row["inning"],
+                row["half_inning"],
+                row["batter_id"],
+                row["batter_name"],
+                row["pitcher_id"],
+                row["pitcher_name"],
+                row["batting_team"],
+                row["fielding_team"],
+                row["description"],
+                row["rbi"],
+                row["away_score"],
+                row["home_score"],
+                row["statcast_play_id"],
+                row["raw_json"],
+            ),
+        )
+
+    team_rows = build_team_game_stats_rows(game, live_payload, date_text, home_run_rows)
+    away_row = next(row for row in team_rows if row["team_role"] == "away")
+    home_row = next(row for row in team_rows if row["team_role"] == "home")
+    for row in team_rows:
+        upsert_team_game_stats(conn, row)
+
+    player_batting_rows = extract_player_batting_rows(game, live_payload, date_text)
+    for row in player_batting_rows:
+        upsert_player_game_batting(conn, row)
+
+    outcome_row = build_outcome_row(date_text, away_row, home_row)
+    upsert_game_outcome(conn, outcome_row)
+
+    summary_path = RAW_DIR / "mlb" / date_text / "games" / f"{game_pk}-summary.json"
+    summary_payload = build_slim_game_summary(game, live_payload, starters, team_rows, outcome_row, home_run_rows)
+    write_json(summary_path, summary_payload)
 
 
 def upsert_starting_pitcher_game_log(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
@@ -2788,177 +3033,39 @@ def ingest_mlb_day(conn: sqlite3.Connection, date_text: str) -> None:
             content_text=live_text,
             meta={"date": date_text, "gamePk": game_pk},
         )
-
-        away_team = game["teams"]["away"]["team"]["name"]
-        home_team = game["teams"]["home"]["team"]["name"]
-        game_is_completed = is_completed_mlb_game(game)
-        linescore = (live_payload.get("liveData") or {}).get("linescore") or {}
-        conn.execute(
-            """
-            INSERT INTO mlb_games (
-              game_pk, game_date, game_datetime, status, away_team, home_team,
-              venue_name, away_score, home_score, raw_path
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(game_pk) DO UPDATE SET
-              game_date=excluded.game_date,
-              game_datetime=excluded.game_datetime,
-              status=excluded.status,
-              away_team=excluded.away_team,
-              home_team=excluded.home_team,
-              venue_name=excluded.venue_name,
-              away_score=excluded.away_score,
-              home_score=excluded.home_score,
-              raw_path=excluded.raw_path
-            """,
-            (
-                game_pk,
-                date_text,
-                game.get("gameDate"),
-                game.get("status", {}).get("detailedState"),
-                away_team,
-                home_team,
-                game.get("venue", {}).get("name"),
-                to_int(linescore.get("teams", {}).get("away", {}).get("runs")),
-                to_int(linescore.get("teams", {}).get("home", {}).get("runs")),
-                str(live_path.relative_to(ROOT)),
-            ),
-        )
-
-        if not game_is_completed:
-            conn.execute("DELETE FROM mlb_game_outcomes WHERE game_pk = ?", (game_pk,))
-            conn.execute("DELETE FROM mlb_game_story_signals WHERE game_pk = ?", (game_pk,))
-            continue
-
-        starters = {}
-        starter_game_logs = []
-        for role, team_name, opponent_name in (
-            ("away", away_team, home_team),
-            ("home", home_team, away_team),
-        ):
-            starter_snapshot = starter_from_schedule_or_feed(game, live_payload, role)
-            starters[role] = starter_snapshot
-            conn.execute(
-                """
-                INSERT INTO mlb_starting_pitchers (
-                  game_pk, team_role, pitcher_id, pitcher_name, pitch_hand, wins, losses,
-                  era, strikeouts, innings_pitched, home_runs_allowed, whip, raw_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ON CONFLICT(game_pk, team_role) DO UPDATE SET
-                  pitcher_id=excluded.pitcher_id,
-                  pitcher_name=excluded.pitcher_name,
-                  pitch_hand=excluded.pitch_hand,
-                  wins=excluded.wins,
-                  losses=excluded.losses,
-                  era=excluded.era,
-                  strikeouts=excluded.strikeouts,
-                  innings_pitched=excluded.innings_pitched,
-                  home_runs_allowed=excluded.home_runs_allowed,
-                  whip=excluded.whip,
-                  raw_json=excluded.raw_json
-                """,
-                (
-                    game_pk,
-                    role,
-                    starter_snapshot["pitcher_id"],
-                    starter_snapshot["pitcher_name"],
-                    starter_snapshot["pitch_hand"],
-                    starter_snapshot["wins"],
-                    starter_snapshot["losses"],
-                    starter_snapshot["era"],
-                    starter_snapshot["strikeouts"],
-                    starter_snapshot["innings_pitched"],
-                    starter_snapshot["home_runs_allowed"],
-                    starter_snapshot["whip"],
-                    starter_snapshot["raw_json"],
-                ),
-            )
-            starter_game_logs.append(
-                starter_game_log_from_feed(game, live_payload, role, team_name, opponent_name, date_text)
-            )
-
-        for starter_log in starter_game_logs:
-            upsert_starting_pitcher_game_log(conn, starter_log)
-
-        pitcher_appearance_rows = extract_pitcher_appearance_rows(game, live_payload, date_text)
-        for row in pitcher_appearance_rows:
-            upsert_pitcher_appearance(conn, row)
-
-        plate_appearance_rows = extract_plate_appearance_rows(game, live_payload, date_text)
-        for row in plate_appearance_rows:
-            upsert_plate_appearance(conn, row)
-
-        pitch_event_rows = extract_pitch_event_rows(game, live_payload, date_text)
-        for row in pitch_event_rows:
-            upsert_pitch_event(conn, row)
-
-        home_run_rows = extract_home_run_rows(
-            live_payload,
-            away_team=away_team,
-            home_team=home_team,
+        ingest_mlb_game_payload(
+            conn,
             date_text=date_text,
-            game_datetime=game.get("gameDate"),
-            game_pk=game_pk,
+            game=game,
+            live_payload=live_payload,
+            live_path=live_path,
         )
-        for row in home_run_rows:
-            conn.execute(
-                """
-                INSERT INTO mlb_home_run_events (
-                  event_key, game_pk, game_date, game_datetime, inning, half_inning,
-                  batter_id, batter_name, pitcher_id, pitcher_name, batting_team,
-                  fielding_team, description, rbi, away_score, home_score, statcast_play_id, raw_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ON CONFLICT(event_key) DO UPDATE SET
-                  batter_id=excluded.batter_id,
-                  batter_name=excluded.batter_name,
-                  pitcher_id=excluded.pitcher_id,
-                  pitcher_name=excluded.pitcher_name,
-                  batting_team=excluded.batting_team,
-                  fielding_team=excluded.fielding_team,
-                  description=excluded.description,
-                  rbi=excluded.rbi,
-                  away_score=excluded.away_score,
-                  home_score=excluded.home_score,
-                  statcast_play_id=excluded.statcast_play_id,
-                  raw_json=excluded.raw_json
-                """,
-                (
-                    row["event_key"],
-                    row["game_pk"],
-                    row["game_date"],
-                    row["game_datetime"],
-                    row["inning"],
-                    row["half_inning"],
-                    row["batter_id"],
-                    row["batter_name"],
-                    row["pitcher_id"],
-                    row["pitcher_name"],
-                    row["batting_team"],
-                    row["fielding_team"],
-                    row["description"],
-                    row["rbi"],
-                    row["away_score"],
-                    row["home_score"],
-                    row["statcast_play_id"],
-                    row["raw_json"],
-                ),
-            )
 
-        team_rows = build_team_game_stats_rows(game, live_payload, date_text, home_run_rows)
-        away_row = next(row for row in team_rows if row["team_role"] == "away")
-        home_row = next(row for row in team_rows if row["team_role"] == "home")
-        for row in team_rows:
-            upsert_team_game_stats(conn, row)
+    conn.commit()
 
-        player_batting_rows = extract_player_batting_rows(game, live_payload, date_text)
-        for row in player_batting_rows:
-            upsert_player_game_batting(conn, row)
 
-        outcome_row = build_outcome_row(date_text, away_row, home_row)
-        upsert_game_outcome(conn, outcome_row)
+def replay_mlb_day_from_raw(conn: sqlite3.Connection, date_text: str) -> None:
+    init_db(conn)
+    date_dir = RAW_DIR / "mlb" / date_text
+    schedule_path = date_dir / "schedule.json"
+    if not schedule_path.exists():
+        raise FileNotFoundError(f"Missing raw MLB schedule snapshot for {date_text}: {schedule_path}")
 
-        summary_path = RAW_DIR / "mlb" / date_text / "games" / f"{game_pk}-summary.json"
-        summary_payload = build_slim_game_summary(game, live_payload, starters, team_rows, outcome_row, home_run_rows)
-        write_json(summary_path, summary_payload)
+    schedule_payload = json.loads(schedule_path.read_text(encoding="utf-8"))
+    games = schedule_payload.get("dates", [{}])[0].get("games", [])
+    for game in games:
+        game_pk = game["gamePk"]
+        live_path = date_dir / "games" / f"{game_pk}-feed-live.json.gz"
+        if not live_path.exists():
+            raise FileNotFoundError(f"Missing raw MLB feed/live snapshot for {date_text} game {game_pk}: {live_path}")
+        live_payload = read_gzip_json(live_path)
+        ingest_mlb_game_payload(
+            conn,
+            date_text=date_text,
+            game=game,
+            live_payload=live_payload,
+            live_path=live_path,
+        )
 
     conn.commit()
 
@@ -2970,6 +3077,16 @@ def ingest_mlb_date_range(conn: sqlite3.Connection, start_date: str, end_date: s
         raise ValueError("start_date must be on or before end_date")
     while current <= final:
         ingest_mlb_day(conn, current.isoformat())
+        current += timedelta(days=1)
+
+
+def replay_mlb_date_range_from_raw(conn: sqlite3.Connection, start_date: str, end_date: str) -> None:
+    current = datetime.strptime(start_date, "%Y-%m-%d").date()
+    final = datetime.strptime(end_date, "%Y-%m-%d").date()
+    if current > final:
+        raise ValueError("start_date must be on or before end_date")
+    while current <= final:
+        replay_mlb_day_from_raw(conn, current.isoformat())
         current += timedelta(days=1)
 
 
@@ -7401,6 +7518,25 @@ def refresh_state_snapshots(
                       strikeout_rate_last5, walk_rate_last5, whiff_rate_last5,
                       pressure_plate_index, cold_streak_index, heat_regression_index
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(as_of_date, player_id) DO UPDATE SET
+                      team_name=excluded.team_name,
+                      player_name=excluded.player_name,
+                      games_sample=excluded.games_sample,
+                      days_since_last_game=excluded.days_since_last_game,
+                      batting_order_avg_last5=excluded.batting_order_avg_last5,
+                      hit_streak_games=excluded.hit_streak_games,
+                      hitless_streak_games=excluded.hitless_streak_games,
+                      multi_hit_games_last5=excluded.multi_hit_games_last5,
+                      multi_tb_games_last5=excluded.multi_tb_games_last5,
+                      home_run_streak_games=excluded.home_run_streak_games,
+                      hits_per_pa_last5=excluded.hits_per_pa_last5,
+                      total_bases_per_pa_last5=excluded.total_bases_per_pa_last5,
+                      strikeout_rate_last5=excluded.strikeout_rate_last5,
+                      walk_rate_last5=excluded.walk_rate_last5,
+                      whiff_rate_last5=excluded.whiff_rate_last5,
+                      pressure_plate_index=excluded.pressure_plate_index,
+                      cold_streak_index=excluded.cold_streak_index,
+                      heat_regression_index=excluded.heat_regression_index
                     """,
                     (
                         hitter_row["as_of_date"],
@@ -7991,6 +8127,13 @@ def parse_args() -> argparse.Namespace:
     ingest_range.add_argument("--start-date", required=True, help="Start date in YYYY-MM-DD format.")
     ingest_range.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format.")
 
+    replay_range = subparsers.add_parser(
+        "replay-mlb-range-from-raw",
+        help="Rebuild warehouse game, plate-appearance, pitch-event, and summary rows from the locally stored raw MLB season archive.",
+    )
+    replay_range.add_argument("--start-date", required=True, help="Start date in YYYY-MM-DD format.")
+    replay_range.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format.")
+
     prep_day = subparsers.add_parser(
         "prepare-mlb-day",
         help="Ingest the target MLB day plus a recent lookback window, then refresh rolling/bullpen features.",
@@ -8157,6 +8300,13 @@ def main() -> None:
         if args.command == "ingest-mlb-range":
             ingest_mlb_date_range(conn, args.start_date, args.end_date)
             print(f"Ingested MLB games, summaries, starter logs, and HR events from {args.start_date} through {args.end_date}")
+            return
+
+        if args.command == "replay-mlb-range-from-raw":
+            replay_mlb_date_range_from_raw(conn, args.start_date, args.end_date)
+            print(
+                f"Replayed local raw MLB snapshots into warehouse rows from {args.start_date} through {args.end_date}"
+            )
             return
 
         if args.command == "prepare-mlb-day":
