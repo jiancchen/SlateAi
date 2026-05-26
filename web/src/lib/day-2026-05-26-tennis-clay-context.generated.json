@@ -1,0 +1,5190 @@
+{
+  "generatedAt": "2026-05-26T05:30:29.916Z",
+  "source": "Tennistonic H2H via Chrome DOM",
+  "matches": {
+    "rg-m-medvedev-walton-2026-05-26": {
+      "title": "Adam Walton vs Daniil Medvedev",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Adam-Walton-Vs-Daniil-Medvedev/",
+      "h2hText": "1:1",
+      "h2hRecord": "1:1",
+      "prediction": "Medvedev in 3",
+      "players": [
+        {
+          "name": "Adam Walton",
+          "record2026": {
+            "overall": "19-17",
+            "hard": "18-14",
+            "clay": "1-2",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Wuxi Challenger\nBu Yunchaokete\nCHN   Loss 6-2 6-0 1/4\n08 May 26",
+              "event": "Wuxi Challenger",
+              "opponent": "Bu Yunchaokete",
+              "result": "CHN   Loss 6-2 6-0 1/4",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "James McCabe\nAUS  6-3 7-61 2nd\n07 May 26",
+              "event": "",
+              "opponent": "James McCabe",
+              "result": "AUS  6-3 7-61 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Yu Hsiou Hsu\nTPE  6-4 6-4 1st\n05 May 26",
+              "event": "",
+              "opponent": "Yu Hsiou Hsu",
+              "result": "TPE  6-4 6-4 1st",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Jiujiang Challenger\nChak Lam Coleman Wong\nHKG   Loss 7-5 7-64 Fin.\n03 May 26",
+              "event": "Jiujiang Challenger",
+              "opponent": "Chak Lam Coleman Wong",
+              "result": "HKG   Loss 7-5 7-64 Fin.",
+              "date": "03 May 26"
+            },
+            {
+              "raw": "Alex Bolt\nAUS  6-2 3-6 7-65 1/2\n02 May 26",
+              "event": "",
+              "opponent": "Alex Bolt",
+              "result": "AUS  6-2 3-6 7-65 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Alexis Galarneau\nCAN  6-1 6-75 7-63 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Alexis Galarneau",
+              "result": "CAN  6-1 6-75 7-63 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Tung-Lin Wu\nTPE  5-7 6-3 7-64 2nd\n30 Apr 26",
+              "event": "",
+              "opponent": "Tung-Lin Wu",
+              "result": "TPE  5-7 6-3 7-64 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Jie Cui\nCHN  6-3 6-2 1st\n29 Apr 26",
+              "event": "",
+              "opponent": "Jie Cui",
+              "result": "CHN  6-3 6-2 1st",
+              "date": "29 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Daniil Medvedev",
+          "record2026": {
+            "overall": "24-8",
+            "hard": "19-4",
+            "clay": "5-3",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nJannik Sinner\nITA   Loss 6-2 5-7 6-4 1/2\n16 May 26",
+              "event": "Rome",
+              "opponent": "Jannik Sinner",
+              "result": "ITA   Loss 6-2 5-7 6-4 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Martin Landaluce\nESP  1-6 6-4 7-5 1/4\n14 May 26",
+              "event": "",
+              "opponent": "Martin Landaluce",
+              "result": "ESP  1-6 6-4 7-5 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Thiago Agustin Tirante\nARG  6-3 6-2 4th\n12 May 26",
+              "event": "",
+              "opponent": "Thiago Agustin Tirante",
+              "result": "ARG  6-3 6-2 4th",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Pablo Llamas Ruiz\nESP  3-6 6-4 6-2 3rd\n11 May 26",
+              "event": "",
+              "opponent": "Pablo Llamas Ruiz",
+              "result": "ESP  3-6 6-4 6-2 3rd",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Tomas Machac\nCZE  w/o 2nd\n09 May 26",
+              "event": "",
+              "opponent": "Tomas Machac",
+              "result": "CZE  w/o 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Madrid\nFlavio Cobolli\nITA   Loss 6-3 5-7 6-4 4th\n28 Apr 26",
+              "event": "Madrid",
+              "opponent": "Flavio Cobolli",
+              "result": "ITA   Loss 6-3 5-7 6-4 4th",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Nicolai Budkov Kjaer\nNOR  6-3 6-2 3rd\n27 Apr 26",
+              "event": "",
+              "opponent": "Nicolai Budkov Kjaer",
+              "result": "NOR  6-3 6-2 3rd",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Fabian Marozsan\nHUN  6-2 6-73 6-4 2nd\n25 Apr 26",
+              "event": "",
+              "opponent": "Fabian Marozsan",
+              "result": "HUN  6-2 6-73 6-4 2nd",
+              "date": "25 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-tabilo-majchrzak-2026-05-26": {
+      "title": "Alejandro Tabilo vs Kamil Majchrzak",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alejandro-Tabilo-Vs-Kamil-Majchrzak/",
+      "h2hText": "1:0",
+      "h2hRecord": "1:0",
+      "prediction": "Tabilo in 4",
+      "players": [
+        {
+          "name": "Alejandro Tabilo",
+          "record2026": {
+            "overall": "28-14",
+            "hard": "6-5",
+            "clay": "22-9",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Valencia Challenger\nMiomir Kecmanovic\nSRB   Loss 7-60 6-3 1/2\n16 May 26",
+              "event": "Valencia Challenger",
+              "opponent": "Miomir Kecmanovic",
+              "result": "SRB   Loss 7-60 6-3 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Dusan Lajovic\nSRB  4-6 7-5 6-4 1/4\n15 May 26",
+              "event": "",
+              "opponent": "Dusan Lajovic",
+              "result": "SRB  4-6 7-5 6-4 1/4",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Aleksandar Kovacevic\nUSA  6-3 6-1 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Aleksandar Kovacevic",
+              "result": "USA  6-3 6-1 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Rome\nFrancisco Cerundolo\nARG   Loss 6-0 6-2 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Francisco Cerundolo",
+              "result": "ARG   Loss 6-0 6-2 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Pablo Carreno-Busta\nESP  6-2 6-1 1st\n06 May 26",
+              "event": "",
+              "opponent": "Pablo Carreno-Busta",
+              "result": "ESP  6-2 6-1 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Aix En Provence Challenger\nZizou Bergs\nBEL  6-4 4-6 6-3 Fin.\n03 May 26",
+              "event": "Aix En Provence Challenger",
+              "opponent": "Zizou Bergs",
+              "result": "BEL  6-4 4-6 6-3 Fin.",
+              "date": "03 May 26"
+            },
+            {
+              "raw": "Ethan Quinn\nUSA  6-3 3-6 7-62 1/2\n02 May 26",
+              "event": "",
+              "opponent": "Ethan Quinn",
+              "result": "USA  6-3 3-6 7-62 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Ignacio Buse\nPER  6-4 6-0 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Ignacio Buse",
+              "result": "PER  6-4 6-0 1/4",
+              "date": "01 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Kamil Majchrzak",
+          "record2026": {
+            "overall": "8-10",
+            "hard": "7-8",
+            "clay": "1-2",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Hamburg\nCamilo Ugo Carabelli\nARG   Loss 1-6 6-2 6-3 1st\n18 May 26",
+              "event": "Hamburg",
+              "opponent": "Camilo Ugo Carabelli",
+              "result": "ARG   Loss 1-6 6-2 6-3 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Marrakech\nMarco Trungelliti\nARG   Loss 7-64 6-3 2nd\n01 Apr 26",
+              "event": "Marrakech",
+              "opponent": "Marco Trungelliti",
+              "result": "ARG   Loss 7-64 6-3 2nd",
+              "date": "01 Apr 26"
+            },
+            {
+              "raw": "Juan Manuel Cerundolo\nARG  7-63 3-6 6-3 1st\n31 Mar 26",
+              "event": "",
+              "opponent": "Juan Manuel Cerundolo",
+              "result": "ARG  7-63 3-6 6-3 1st",
+              "date": "31 Mar 26"
+            },
+            {
+              "raw": "Miami\nQuentin Halys\nFRA   Loss 7-64 6-1 3rd\n23 Mar 26",
+              "event": "Miami",
+              "opponent": "Quentin Halys",
+              "result": "FRA   Loss 7-64 6-1 3rd",
+              "date": "23 Mar 26"
+            },
+            {
+              "raw": "Learner Tien\nUSA  6-2 4-6 6-2 2nd\n21 Mar 26",
+              "event": "",
+              "opponent": "Learner Tien",
+              "result": "USA  6-2 4-6 6-2 2nd",
+              "date": "21 Mar 26"
+            },
+            {
+              "raw": "Miomir Kecmanovic\nSRB  4-6 6-3 6-1 1st\n19 Mar 26",
+              "event": "",
+              "opponent": "Miomir Kecmanovic",
+              "result": "SRB  4-6 6-3 6-1 1st",
+              "date": "19 Mar 26"
+            },
+            {
+              "raw": "Phoenix Challenger\nNikoloz Basilashvili\nGEO   Loss 7-63 6-3 1st\n11 Mar 26",
+              "event": "Phoenix Challenger",
+              "opponent": "Nikoloz Basilashvili",
+              "result": "GEO   Loss 7-63 6-3 1st",
+              "date": "11 Mar 26"
+            },
+            {
+              "raw": "Indian Wells\nNovak Djokovic\nSRB   Loss 4-6 6-1 6-2 2nd\n07 Mar 26",
+              "event": "Indian Wells",
+              "opponent": "Novak Djokovic",
+              "result": "SRB   Loss 4-6 6-1 6-2 2nd",
+              "date": "07 Mar 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-popyrin-svajda-2026-05-26": {
+      "title": "Alexei Popyrin vs Zachary Svajda",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alexei-Popyrin-Vs-Zachary-Svajda/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Popyrin in 3",
+      "players": [
+        {
+          "name": "Alexei Popyrin",
+          "record2026": {
+            "overall": "8-14",
+            "hard": "2-8",
+            "clay": "6-5",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nCasper Ruud\nNOR   Loss 6-4 6-3 1/4\n21 May 26",
+              "event": "Geneva",
+              "opponent": "Casper Ruud",
+              "result": "NOR   Loss 6-4 6-3 1/4",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Taylor Fritz\nUSA  6-4 6-4 2nd\n20 May 26",
+              "event": "",
+              "opponent": "Taylor Fritz",
+              "result": "USA  6-4 6-4 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Clement Tabur\nFRA  7-62 6-75 6-4 1st\n19 May 26",
+              "event": "",
+              "opponent": "Clement Tabur",
+              "result": "FRA  7-62 6-75 6-4 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Rome\nJannik Sinner\nITA   Loss 6-2 6-0 3rd\n11 May 26",
+              "event": "Rome",
+              "opponent": "Jannik Sinner",
+              "result": "ITA   Loss 6-2 6-0 3rd",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Jakub Mensik\nCZE  6-3 2-6 6-4 2nd\n09 May 26",
+              "event": "",
+              "opponent": "Jakub Mensik",
+              "result": "CZE  6-3 2-6 6-4 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Matteo Berrettini\nITA  6-2 6-3 1st\n07 May 26",
+              "event": "",
+              "opponent": "Matteo Berrettini",
+              "result": "ITA  6-2 6-3 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nMartin Damm\nUSA   Loss 7-67 6-4 1st\n23 Apr 26",
+              "event": "Madrid",
+              "opponent": "Martin Damm",
+              "result": "USA   Loss 7-67 6-4 1st",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nCasper Ruud\nNOR   Loss 6-3 6-4 1st\n07 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Casper Ruud",
+              "result": "NOR   Loss 6-3 6-4 1st",
+              "date": "07 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Zachary Svajda",
+          "record2026": {
+            "overall": "18-11",
+            "hard": "15-5",
+            "clay": "1-5",
+            "indoorHard": "2-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nMax Hans Rehberg\nGER   Loss 6-2 6-2 q1\n16 May 26",
+              "event": "Geneva",
+              "opponent": "Max Hans Rehberg",
+              "result": "GER   Loss 6-2 6-2 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Rome\nCasper Ruud\nNOR   Loss 6-1 6-3 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Casper Ruud",
+              "result": "NOR   Loss 6-1 6-3 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Marco Trungelliti\nARG  0-6 6-4 7-64 1st\n06 May 26",
+              "event": "",
+              "opponent": "Marco Trungelliti",
+              "result": "ARG  0-6 6-4 7-64 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Cagliari Challenger\nHubert Hurkacz\nPOL   Loss 6-2 7-68 1st\n28 Apr 26",
+              "event": "Cagliari Challenger",
+              "opponent": "Hubert Hurkacz",
+              "result": "POL   Loss 6-2 7-68 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nRei Sakamoto\nJPN   Loss 7-69 6-1 q1\n20 Apr 26",
+              "event": "Madrid",
+              "opponent": "Rei Sakamoto",
+              "result": "JPN   Loss 7-69 6-1 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "Houston\nAdolfo Daniel Vallejo\nPAR   Loss 6-1 6-4 1st\n30 Mar 26",
+              "event": "Houston",
+              "opponent": "Adolfo Daniel Vallejo",
+              "result": "PAR   Loss 6-1 6-4 1st",
+              "date": "30 Mar 26"
+            },
+            {
+              "raw": "Miami\nMoise Kouame\nFRA   Loss 5-7 6-4 6-4 1st\n19 Mar 26",
+              "event": "Miami",
+              "opponent": "Moise Kouame",
+              "result": "FRA   Loss 5-7 6-4 6-4 1st",
+              "date": "19 Mar 26"
+            },
+            {
+              "raw": "Daniel Merida Aguilar\nESP  6-0 6-72 6-2 Q.\n17 Mar 26",
+              "event": "",
+              "opponent": "Daniel Merida Aguilar",
+              "result": "ESP  6-0 6-72 6-2 Q.",
+              "date": "17 Mar 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-liu-uchijima-2026-05-26": {
+      "title": "Claire Liu vs Moyuka Uchijima",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Claire-Liu-Vs-Moyuka-Uchijima/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Liu in 3",
+      "players": [
+        {
+          "name": "Claire Liu",
+          "record2026": {
+            "overall": "21-9",
+            "hard": "6-3",
+            "clay": "14-4",
+            "indoorHard": "1-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nLulu Sun\nNZL  6-1 6-0 Q.\n22 May 26",
+              "event": "Paris",
+              "opponent": "Lulu Sun",
+              "result": "NZL  6-1 6-0 Q.",
+              "date": "22 May 26"
+            },
+            {
+              "raw": "Katarzyna Kawa\nPOL  6-3 6-0 q2\n20 May 26",
+              "event": "",
+              "opponent": "Katarzyna Kawa",
+              "result": "POL  6-3 6-0 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Laura Pigossi\nBRA  6-1 6-1 q1\n19 May 26",
+              "event": "",
+              "opponent": "Laura Pigossi",
+              "result": "BRA  6-1 6-1 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "W75 Trnava\nAnna Siskova\nCZE  6-70 7-64 7-65 Fin.\n16 May 26",
+              "event": "W75 Trnava",
+              "opponent": "Anna Siskova",
+              "result": "CZE  6-70 7-64 7-65 Fin.",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Mai Hontama\nJPN  7-5 6-2 1/2\n15 May 26",
+              "event": "",
+              "opponent": "Mai Hontama",
+              "result": "JPN  7-5 6-2 1/2",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Anastasiia Sobolieva\nUKR  4-6 6-3 7-61 1/4\n14 May 26",
+              "event": "",
+              "opponent": "Anastasiia Sobolieva",
+              "result": "UKR  4-6 6-3 7-61 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Harmony Tan\nFRA  1-6 6-3 6-4 2nd\n13 May 26",
+              "event": "",
+              "opponent": "Harmony Tan",
+              "result": "FRA  1-6 6-3 6-4 2nd",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Yeon Woo Ku\nKOR  6-4 6-1 1st\n11 May 26",
+              "event": "",
+              "opponent": "Yeon Woo Ku",
+              "result": "KOR  6-4 6-1 1st",
+              "date": "11 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Moyuka Uchijima",
+          "record2026": {
+            "overall": "20-14",
+            "hard": "6-5",
+            "clay": "14-8",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rabat\nAlycia Parks\nUSA   Loss 6-2 6-4 1st\n18 May 26",
+              "event": "Rabat",
+              "opponent": "Alycia Parks",
+              "result": "USA   Loss 6-2 6-4 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Parma\nKaja Juvan\nSLO   Loss 7-63 3-6 6-0 1st\n11 May 26",
+              "event": "Parma",
+              "opponent": "Kaja Juvan",
+              "result": "SLO   Loss 7-63 3-6 6-0 1st",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rome\nRebeka Masarova\nSUI   Loss 6-3 6-2 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Rebeka Masarova",
+              "result": "SUI   Loss 6-3 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Saint-Malo\nTereza Valentova\nCZE  6-72 6-3 6-1 Fin.\n03 May 26",
+              "event": "Saint-Malo",
+              "opponent": "Tereza Valentova",
+              "result": "CZE  6-72 6-3 6-1 Fin.",
+              "date": "03 May 26"
+            },
+            {
+              "raw": "Jessika Ponchet\nFRA  6-4 7-63 1/2\n02 May 26",
+              "event": "",
+              "opponent": "Jessika Ponchet",
+              "result": "FRA  6-4 7-63 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Sofia Costoulas\nBEL  6-4 6-1 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Sofia Costoulas",
+              "result": "BEL  6-4 6-1 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Lucie Nguyen Tan\nFRA  7-5 6-2 2nd\n29 Apr 26",
+              "event": "",
+              "opponent": "Lucie Nguyen Tan",
+              "result": "FRA  7-5 6-2 2nd",
+              "date": "29 Apr 26"
+            },
+            {
+              "raw": "Ksenia Efremova\nFRA  6-4 3-6 6-3 1st\n27 Apr 26",
+              "event": "",
+              "opponent": "Ksenia Efremova",
+              "result": "FRA  6-4 3-6 6-3 1st",
+              "date": "27 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-vekic-tubello-2026-05-26": {
+      "title": "Donna Vekic vs Alice Tubello",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Donna-Vekic-Vs-Alice-Tubello/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Vekic in 2",
+      "players": [
+        {
+          "name": "Donna Vekic",
+          "record2026": {
+            "overall": "18-12",
+            "hard": "7-8",
+            "clay": "11-4",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Istanbul\nMaria Timofeeva\nUZB   Loss 6-4 6-2 Fin.\n10 May 26",
+              "event": "Istanbul",
+              "opponent": "Maria Timofeeva",
+              "result": "UZB   Loss 6-4 6-2 Fin.",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Guiomar Zuleta De Reales\nESP  6-4 6-3 1/2\n09 May 26",
+              "event": "",
+              "opponent": "Guiomar Zuleta De Reales",
+              "result": "ESP  6-4 6-3 1/2",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Mia Ristic\nSRB  6-1 6-0 1/4\n08 May 26",
+              "event": "",
+              "opponent": "Mia Ristic",
+              "result": "SRB  6-1 6-0 1/4",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Berfu Cengiz\nTUR  6-2 6-4 2nd\n06 May 26",
+              "event": "",
+              "opponent": "Berfu Cengiz",
+              "result": "TUR  6-2 6-4 2nd",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Aliona Falei\nBLR  6-2 6-73 6-4 1st\n04 May 26",
+              "event": "",
+              "opponent": "Aliona Falei",
+              "result": "BLR  6-2 6-73 6-4 1st",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Madrid\nLeolia Jeanjean\nFRA   Loss 6-3 3-6 6-4 q1\n20 Apr 26",
+              "event": "Madrid",
+              "opponent": "Leolia Jeanjean",
+              "result": "FRA   Loss 6-3 3-6 6-4 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "Linz\nAnastasia Potapova\nAUT   Loss 6-4 6-2 1/2\n11 Apr 26",
+              "event": "Linz",
+              "opponent": "Anastasia Potapova",
+              "result": "AUT   Loss 6-4 6-2 1/2",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Karolina Pliskova\nCZE  7-5 6-4 1/4\n10 Apr 26",
+              "event": "",
+              "opponent": "Karolina Pliskova",
+              "result": "CZE  7-5 6-4 1/4",
+              "date": "10 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Alice Tubello",
+          "record2026": {
+            "overall": "24-11",
+            "hard": "1-2",
+            "clay": "23-6",
+            "indoorHard": "0-3",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nAlina Charaeva\nRUS   Loss 6-3 6-4 Q.\n11 May 26",
+              "event": "Paris",
+              "opponent": "Alina Charaeva",
+              "result": "RUS   Loss 6-3 6-4 Q.",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Istanbul\nMaria Timofeeva\nUZB   Loss 6-4 4-6 6-0 1/2\n09 May 26",
+              "event": "Istanbul",
+              "opponent": "Maria Timofeeva",
+              "result": "UZB   Loss 6-4 4-6 6-0 1/2",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Polina Kudermetova\nUZB  4-6 6-2 6-4 1/4\n08 May 26",
+              "event": "",
+              "opponent": "Polina Kudermetova",
+              "result": "UZB  4-6 6-2 6-4 1/4",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Elizara Yaneva\nBUL  6-1 6-1 2nd\n06 May 26",
+              "event": "",
+              "opponent": "Elizara Yaneva",
+              "result": "BUL  6-1 6-1 2nd",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Tiantsoa Rakotomanga Rajaonah\nFRA  6-0 5-7 7-62 1st\n04 May 26",
+              "event": "",
+              "opponent": "Tiantsoa Rakotomanga Rajaonah",
+              "result": "FRA  6-0 5-7 7-62 1st",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Saint-Malo\nLucie Nguyen Tan\nFRA   Loss 7-64 6-3 1st\n28 Apr 26",
+              "event": "Saint-Malo",
+              "opponent": "Lucie Nguyen Tan",
+              "result": "FRA   Loss 7-64 6-3 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "W50 Bujumbura\nSada Nahimana\nBDI  6-1 6-3 Fin.\n19 Apr 26",
+              "event": "W50 Bujumbura",
+              "opponent": "Sada Nahimana",
+              "result": "BDI  6-1 6-3 Fin.",
+              "date": "19 Apr 26"
+            },
+            {
+              "raw": "Laura Pigossi\nBRA  6-2 5-7 7-5 1/2\n18 Apr 26",
+              "event": "",
+              "opponent": "Laura Pigossi",
+              "result": "BRA  6-2 5-7 7-5 1/2",
+              "date": "18 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-navarro-tjen-2026-05-26": {
+      "title": "Emma Navarro vs Janice Tjen",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Emma-Navarro-Vs-Janice-Tjen/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Navarro in 2",
+      "players": [
+        {
+          "name": "Emma Navarro",
+          "record2026": {
+            "overall": "10-11",
+            "hard": "4-9",
+            "clay": "6-2",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nVictoria Mboko\nCAN  6-0 5-7 6-2 Fin.\n23 May 26",
+              "event": "Strasbourg",
+              "opponent": "Victoria Mboko",
+              "result": "CAN  6-0 5-7 6-2 Fin.",
+              "date": "23 May 26"
+            },
+            {
+              "raw": "Ann Li\nUSA  6-1 6-3 1/2\n22 May 26",
+              "event": "",
+              "opponent": "Ann Li",
+              "result": "USA  6-1 6-3 1/2",
+              "date": "22 May 26"
+            },
+            {
+              "raw": "Shuai Zhang\nCHN  2-6 7-65 6-2 1/4\n21 May 26",
+              "event": "",
+              "opponent": "Shuai Zhang",
+              "result": "CHN  2-6 7-65 6-2 1/4",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Iva Jovic\nUSA  6-4 4-6 6-1 2nd\n20 May 26",
+              "event": "",
+              "opponent": "Iva Jovic",
+              "result": "USA  6-4 4-6 6-1 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Sara Bejlek\nCZE  6-1 6-4 1st\n17 May 26",
+              "event": "",
+              "opponent": "Sara Bejlek",
+              "result": "CZE  6-1 6-4 1st",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Paris\nKatie Volynets\nUSA   Loss 6-3 6-2 2nd\n14 May 26",
+              "event": "Paris",
+              "opponent": "Katie Volynets",
+              "result": "USA   Loss 6-3 6-2 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Lola Radivojevic\nSRB  6-2 7-64 1st\n12 May 26",
+              "event": "",
+              "opponent": "Lola Radivojevic",
+              "result": "SRB  6-2 7-64 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nElisabetta Cocciaretto\nITA   Loss 6-3 6-3 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Elisabetta Cocciaretto",
+              "result": "ITA   Loss 6-3 6-3 2nd",
+              "date": "08 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Janice Tjen",
+          "record2026": {
+            "overall": "11-13",
+            "hard": "9-9",
+            "clay": "2-4",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rabat\nMaria Camila Osorio Serrano\nCOL   Loss 6-3 3-6 6-0 2nd\n20 May 26",
+              "event": "Rabat",
+              "opponent": "Maria Camila Osorio Serrano",
+              "result": "COL   Loss 6-3 3-6 6-0 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Caijsa Wilda Hennemann\nSWE  6-1 7-5 1st\n19 May 26",
+              "event": "",
+              "opponent": "Caijsa Wilda Hennemann",
+              "result": "SWE  6-1 7-5 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Rome\nPeyton Stearns\nUSA   Loss 6-4 6-4 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Peyton Stearns",
+              "result": "USA   Loss 6-4 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nLiudmila Samsonova\nRUS   Loss 6-2 6-1 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Liudmila Samsonova",
+              "result": "RUS   Loss 6-2 6-1 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Alina Charaeva\nRUS  6-4 6-2 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Alina Charaeva",
+              "result": "RUS  6-4 6-2 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Group I, Asia/Oceania\nAunchisa Chanta\nTHA  6-2 6-4 Rubber 2\n11 Apr 26",
+              "event": "Billie Jean King Cup, Group I, Asia/Oceania",
+              "opponent": "Aunchisa Chanta",
+              "result": "THA  6-2 6-4 Rubber 2",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Eunhye Lee\nKOR  6-2 6-2 Rubber 2\n10 Apr 26",
+              "event": "",
+              "opponent": "Eunhye Lee",
+              "result": "KOR  6-2 6-2 Rubber 2",
+              "date": "10 Apr 26"
+            },
+            {
+              "raw": "Sahaja Yamalapalli\nIND  6-2 6-1 Rubber 2\n09 Apr 26",
+              "event": "",
+              "opponent": "Sahaja Yamalapalli",
+              "result": "IND  6-2 6-1 Rubber 2",
+              "date": "09 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-jovic-eala-2026-05-26": {
+      "title": "Iva Jovic vs Alexandra Eala",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Iva-Jovic-Vs-Alexandra-Eala/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Jovic in 2",
+      "players": [
+        {
+          "name": "Iva Jovic",
+          "record2026": {
+            "overall": "21-13",
+            "hard": "15-7",
+            "clay": "6-6",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nEmma Navarro\nUSA   Loss 6-4 4-6 6-1 2nd\n20 May 26",
+              "event": "Strasbourg",
+              "opponent": "Emma Navarro",
+              "result": "USA   Loss 6-4 4-6 6-1 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Rome\nCori Gauff\nUSA   Loss 5-7 7-5 6-2 4th\n11 May 26",
+              "event": "Rome",
+              "opponent": "Cori Gauff",
+              "result": "USA   Loss 5-7 7-5 6-2 4th",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Taylor Townsend\nUSA  7-5 6-2 3rd\n09 May 26",
+              "event": "",
+              "opponent": "Taylor Townsend",
+              "result": "USA  7-5 6-2 3rd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Mccartney Kessler\nUSA  7-65 7-64 2nd\n07 May 26",
+              "event": "",
+              "opponent": "Mccartney Kessler",
+              "result": "USA  7-65 7-64 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nLeylah Annie Fernandez\nCAN   Loss 3-6 6-3 6-2 3rd\n25 Apr 26",
+              "event": "Madrid",
+              "opponent": "Leylah Annie Fernandez",
+              "result": "CAN   Loss 3-6 6-3 6-2 3rd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Magda Linette\nPOL  6-4 6-1 2nd\n23 Apr 26",
+              "event": "",
+              "opponent": "Magda Linette",
+              "result": "POL  6-4 6-1 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Qualifiers, BEL-USA 3-1\nGreetje Minnen\nBEL   Loss 7-5 6-3 Rubber 4\n11 Apr 26",
+              "event": "Billie Jean King Cup, Qualifiers, BEL-USA 3-1",
+              "opponent": "Greetje Minnen",
+              "result": "BEL   Loss 7-5 6-3 Rubber 4",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Hanne Vandewinkel\nBEL   Loss 7-63 6-3 Rubber 1\n10 Apr 26",
+              "event": "",
+              "opponent": "Hanne Vandewinkel",
+              "result": "BEL   Loss 7-63 6-3 Rubber 1",
+              "date": "10 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Alexandra Eala",
+          "record2026": {
+            "overall": "18-13",
+            "hard": "14-8",
+            "clay": "4-5",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nOleksandra Oliynykova\nUKR   Loss 3-6 7-5 6-3 1st\n18 May 26",
+              "event": "Strasbourg",
+              "opponent": "Oleksandra Oliynykova",
+              "result": "UKR   Loss 3-6 7-5 6-3 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Rome\nElena Rybakina\nKAZ   Loss 6-4 6-3 3rd\n10 May 26",
+              "event": "Rome",
+              "opponent": "Elena Rybakina",
+              "result": "KAZ   Loss 6-4 6-3 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Xinyu Wang\nCHN  6-4 6-3 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Xinyu Wang",
+              "result": "CHN  6-4 6-3 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Magdalena Frech\nPOL  6-0 3-6 6-4 1st\n06 May 26",
+              "event": "",
+              "opponent": "Magdalena Frech",
+              "result": "POL  6-0 3-6 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nElise Mertens\nBEL   Loss 6-2 6-1 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Elise Mertens",
+              "result": "BEL   Loss 6-2 6-1 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Anastasia Pavlyuchenkova\nRUS  6-3 6-3 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Anastasia Pavlyuchenkova",
+              "result": "RUS  6-3 6-3 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Stuttgart\nLeylah Annie Fernandez\nCAN   Loss 6-1 6-4 1st\n14 Apr 26",
+              "event": "Stuttgart",
+              "opponent": "Leylah Annie Fernandez",
+              "result": "CAN   Loss 6-1 6-4 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Linz\nJelena Ostapenko\nLAT   Loss 6-4 7-5 2nd\n08 Apr 26",
+              "event": "Linz",
+              "opponent": "Jelena Ostapenko",
+              "result": "LAT   Loss 6-4 7-5 2nd",
+              "date": "08 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-cilic-kouame-2026-05-26": {
+      "title": "Marin Cilic vs Moise Kouame",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Marin-Cilic-Vs-Moise-Kouame/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Cilic in 4",
+      "players": [
+        {
+          "name": "Marin Cilic",
+          "record2026": {
+            "overall": "11-9",
+            "hard": "5-5",
+            "clay": "3-3",
+            "indoorHard": "3-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nMartin Landaluce\nESP   Loss 6-4 6-4 2nd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Martin Landaluce",
+              "result": "ESP   Loss 6-4 6-4 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Marcos Giron\nUSA  7-5 6-4 1st\n07 May 26",
+              "event": "",
+              "opponent": "Marcos Giron",
+              "result": "USA  7-5 6-4 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nJoao Fonseca\nBRA   Loss w/o 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Joao Fonseca",
+              "result": "BRA   Loss w/o 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Zizou Bergs\nBEL  4-6 6-3 6-4 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Zizou Bergs",
+              "result": "BEL  4-6 6-3 6-4 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Munich\nDaniel Altmaier\nGER   Loss 6-2 6-3 1st\n14 Apr 26",
+              "event": "Munich",
+              "opponent": "Daniel Altmaier",
+              "result": "GER   Loss 6-2 6-3 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nFelix Auger-Aliassime\nCAN   Loss 7-64 6-3 2nd\n08 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Felix Auger-Aliassime",
+              "result": "CAN   Loss 7-64 6-3 2nd",
+              "date": "08 Apr 26"
+            },
+            {
+              "raw": "Alexander Shevchenko\nKAZ  6-1 6-3 1st\n07 Apr 26",
+              "event": "",
+              "opponent": "Alexander Shevchenko",
+              "result": "KAZ  6-1 6-3 1st",
+              "date": "07 Apr 26"
+            },
+            {
+              "raw": "Miami\nAlexander Zverev\nGER   Loss 6-2 5-7 6-4 3rd\n23 Mar 26",
+              "event": "Miami",
+              "opponent": "Alexander Zverev",
+              "result": "GER   Loss 6-2 5-7 6-4 3rd",
+              "date": "23 Mar 26"
+            }
+          ]
+        },
+        {
+          "name": "Moise Kouame",
+          "record2026": {
+            "overall": "23-10",
+            "hard": "1-1",
+            "clay": "5-4",
+            "indoorHard": "17-5",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Cervia Challenger\nJacopo Vasami\nITA   Loss 6-3 7-63 1st\n19 May 26",
+              "event": "Cervia Challenger",
+              "opponent": "Jacopo Vasami",
+              "result": "ITA   Loss 6-3 7-63 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Bordeaux Challenger\nBenjamin Bonzi\nFRA   Loss 2-6 6-4 6-0 1st\n12 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Benjamin Bonzi",
+              "result": "FRA   Loss 2-6 6-4 6-0 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Madrid\nPatrick Kypson\nUSA   Loss 6-2 6-2 q1\n20 Apr 26",
+              "event": "Madrid",
+              "opponent": "Patrick Kypson",
+              "result": "USA   Loss 6-2 6-2 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "M25 Santa Margherita di Pula\nJuan Cruz Martin Manzano\nITA  6-3 4-6 6-3 Fin.\n18 Apr 26",
+              "event": "M25 Santa Margherita di Pula",
+              "opponent": "Juan Cruz Martin Manzano",
+              "result": "ITA  6-3 4-6 6-3 Fin.",
+              "date": "18 Apr 26"
+            },
+            {
+              "raw": "Philip Henning\nRSA  6-2 6-3 1/2\n17 Apr 26",
+              "event": "",
+              "opponent": "Philip Henning",
+              "result": "RSA  6-2 6-3 1/2",
+              "date": "17 Apr 26"
+            },
+            {
+              "raw": "Andrey Chepelev\nRUS  6-1 6-2 1/4\n17 Apr 26",
+              "event": "",
+              "opponent": "Andrey Chepelev",
+              "result": "RUS  6-1 6-2 1/4",
+              "date": "17 Apr 26"
+            },
+            {
+              "raw": "Francesco Ferrari\nITA  6-2 6-0 2nd\n15 Apr 26",
+              "event": "",
+              "opponent": "Francesco Ferrari",
+              "result": "ITA  6-2 6-0 2nd",
+              "date": "15 Apr 26"
+            },
+            {
+              "raw": "Henry Bernet\nSUI  7-5 2-6 6-4 1st\n14 Apr 26",
+              "event": "",
+              "opponent": "Henry Bernet",
+              "result": "SUI  7-5 2-6 6-4 1st",
+              "date": "14 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-griekspoor-arnaldi-2026-05-26": {
+      "title": "Tallon Griekspoor vs Matteo Arnaldi",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Tallon-Griekspoor-Vs-Matteo-Arnaldi/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Arnaldi in 5",
+      "players": [
+        {
+          "name": "Tallon Griekspoor",
+          "record2026": {
+            "overall": "10-12",
+            "hard": "4-4",
+            "clay": "3-6",
+            "indoorHard": "3-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Bordeaux Challenger\nRaphael Collignon\nBEL   Loss 7-5 6-1 1/2\n16 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Raphael Collignon",
+              "result": "BEL   Loss 7-5 6-1 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Alex Molcan\nSVK  6-2 6-4 1/4\n15 May 26",
+              "event": "",
+              "opponent": "Alex Molcan",
+              "result": "SVK  6-2 6-4 1/4",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Benjamin Bonzi\nFRA  6-4 6-3 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Benjamin Bonzi",
+              "result": "FRA  6-4 6-3 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Rome\nAlexander Blockx\nBEL   Loss 6-75 6-3 6-4 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Alexander Blockx",
+              "result": "BEL   Loss 6-75 6-3 6-4 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Madrid\nLorenzo Musetti\nITA   Loss 6-4 7-5 3rd\n26 Apr 26",
+              "event": "Madrid",
+              "opponent": "Lorenzo Musetti",
+              "result": "ITA   Loss 6-4 7-5 3rd",
+              "date": "26 Apr 26"
+            },
+            {
+              "raw": "Damir Dzumhur\nBIH  6-3 6-4 2nd\n24 Apr 26",
+              "event": "",
+              "opponent": "Damir Dzumhur",
+              "result": "BIH  6-3 6-4 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Munich\nDenis Shapovalov\nCAN   Loss 6-4 3-6 6-2 1st\n14 Apr 26",
+              "event": "Munich",
+              "opponent": "Denis Shapovalov",
+              "result": "CAN   Loss 6-4 3-6 6-2 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nGael Monfils\nFRA   Loss 6-77 6-1 6-4 1st\n05 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Gael Monfils",
+              "result": "FRA   Loss 6-77 6-1 6-4 1st",
+              "date": "05 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Matteo Arnaldi",
+          "record2026": {
+            "overall": "9-9",
+            "hard": "1-3",
+            "clay": "8-6",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nRafael Jodar\nESP   Loss 6-1 4-6 6-3 3rd\n10 May 26",
+              "event": "Rome",
+              "opponent": "Rafael Jodar",
+              "result": "ESP   Loss 6-1 4-6 6-3 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Alex De Minaur\nAUS  4-6 7-65 6-4 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Alex De Minaur",
+              "result": "AUS  4-6 7-65 6-4 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Jaume Antoni Munar Clar\nESP  6-3 3-6 6-3 1st\n06 May 26",
+              "event": "",
+              "opponent": "Jaume Antoni Munar Clar",
+              "result": "ESP  6-3 3-6 6-3 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Cagliari Challenger\nHubert Hurkacz\nPOL  6-4 6-4 Fin.\n03 May 26",
+              "event": "Cagliari Challenger",
+              "opponent": "Hubert Hurkacz",
+              "result": "POL  6-4 6-4 Fin.",
+              "date": "03 May 26"
+            },
+            {
+              "raw": "Gianluca Cadenasso\nITA  1-6 6-1 6-0 1/2\n02 May 26",
+              "event": "",
+              "opponent": "Gianluca Cadenasso",
+              "result": "ITA  1-6 6-1 6-0 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Nuno Borges\nPOR  6-3 6-72 7-63 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Nuno Borges",
+              "result": "POR  6-3 6-72 7-63 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Juan Manuel Cerundolo\nARG  6-2 6-3 2nd\n30 Apr 26",
+              "event": "",
+              "opponent": "Juan Manuel Cerundolo",
+              "result": "ARG  6-2 6-3 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Federico Arnaboldi\nITA  6-73 6-4 6-2 1st\n29 Apr 26",
+              "event": "",
+              "opponent": "Federico Arnaboldi",
+              "result": "ITA  6-73 6-4 6-2 1st",
+              "date": "29 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-sabalenka-maneiro-2026-05-26": {
+      "title": "Aryna Sabalenka vs Jessica Bouzas Maneiro",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Aryna-Sabalenka-Vs-Jessica-Bouzas-Maneiro/",
+      "h2hText": "2:0",
+      "h2hRecord": "2:0",
+      "prediction": "Sabalenka in 2",
+      "players": [
+        {
+          "name": "Aryna Sabalenka",
+          "record2026": {
+            "overall": "27-3",
+            "hard": "23-1",
+            "clay": "4-2",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nSorana Cirstea\nROU   Loss 2-6 6-3 7-5 3rd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Sorana Cirstea",
+              "result": "ROU   Loss 2-6 6-3 7-5 3rd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Barbora Krejcikova\nCZE  6-2 6-3 2nd\n07 May 26",
+              "event": "",
+              "opponent": "Barbora Krejcikova",
+              "result": "CZE  6-2 6-3 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nHailey Baptiste\nUSA   Loss 2-6 6-2 7-66 1/4\n28 Apr 26",
+              "event": "Madrid",
+              "opponent": "Hailey Baptiste",
+              "result": "USA   Loss 2-6 6-2 7-66 1/4",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Naomi Osaka\nJPN  6-71 6-3 6-2 4th\n27 Apr 26",
+              "event": "",
+              "opponent": "Naomi Osaka",
+              "result": "JPN  6-71 6-3 6-2 4th",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Jaqueline Cristian\nROU  6-1 6-4 3rd\n25 Apr 26",
+              "event": "",
+              "opponent": "Jaqueline Cristian",
+              "result": "ROU  6-1 6-4 3rd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Peyton Stearns\nUSA  7-5 6-3 2nd\n23 Apr 26",
+              "event": "",
+              "opponent": "Peyton Stearns",
+              "result": "USA  7-5 6-3 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Miami\nCori Gauff\nUSA  6-2 4-6 6-3 Fin.\n28 Mar 26",
+              "event": "Miami",
+              "opponent": "Cori Gauff",
+              "result": "USA  6-2 4-6 6-3 Fin.",
+              "date": "28 Mar 26"
+            },
+            {
+              "raw": "Elena Rybakina\nKAZ  6-4 6-3 1/2\n26 Mar 26",
+              "event": "",
+              "opponent": "Elena Rybakina",
+              "result": "KAZ  6-4 6-3 1/2",
+              "date": "26 Mar 26"
+            }
+          ]
+        },
+        {
+          "name": "Jessica Bouzas Maneiro",
+          "record2026": {
+            "overall": "10-14",
+            "hard": "3-8",
+            "clay": "7-6",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rabat\nPetra Marcinko\nCRO   Loss 6-3 6-4 1/4\n21 May 26",
+              "event": "Rabat",
+              "opponent": "Petra Marcinko",
+              "result": "CRO   Loss 6-3 6-4 1/4",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Fiona Ferro\nFRA  2-6 7-62 6-3 2nd\n20 May 26",
+              "event": "",
+              "opponent": "Fiona Ferro",
+              "result": "FRA  2-6 7-62 6-3 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Lisa Zaar\nSWE  6-0 7-5 1st\n19 May 26",
+              "event": "",
+              "opponent": "Lisa Zaar",
+              "result": "SWE  6-0 7-5 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Parma\nDayana Yastremska\nUKR   Loss 7-65 6-74 7-65 1/2\n16 May 26",
+              "event": "Parma",
+              "opponent": "Dayana Yastremska",
+              "result": "UKR   Loss 7-65 6-74 7-65 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Susan Bandecchi\nSUI  6-1 3-6 6-4 1/4\n14 May 26",
+              "event": "",
+              "opponent": "Susan Bandecchi",
+              "result": "SUI  6-1 3-6 6-4 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Lilli Tagger\nAUT  6-3 6-2 2nd\n13 May 26",
+              "event": "",
+              "opponent": "Lilli Tagger",
+              "result": "AUT  6-3 6-2 2nd",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Marta Lombardini\nITA  6-4 6-2 1st\n11 May 26",
+              "event": "",
+              "opponent": "Marta Lombardini",
+              "result": "ITA  6-4 6-2 1st",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rome\nKarolina Pliskova\nCZE   Loss 4-6 6-3 7-5 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Karolina Pliskova",
+              "result": "CZE   Loss 4-6 6-3 7-5 1st",
+              "date": "06 May 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-acosta-zhizhen-2026-05-26": {
+      "title": "Facundo Diaz Acosta vs Zhang Zhizhen",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Facundo-Diaz-Acosta-Vs-Zhang-Zhizhen/",
+      "error": "Page did not expose clay matchup selectors before timeout"
+    },
+    "rg-w-li-shuai-2026-05-26": {
+      "title": "Ann Li vs Zhang Shuai",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Ann-Li-Vs-Zhang-Shuai/",
+      "error": "Page did not expose clay matchup selectors before timeout"
+    },
+    "rg-w-noskova-sakkari-2026-05-26": {
+      "title": "Linda Noskova vs Maria Sakkari",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Linda-Noskova-Vs-Maria-Sakkari/",
+      "h2hText": "1:1",
+      "h2hRecord": "1:1",
+      "prediction": "Noskova in 2",
+      "players": [
+        {
+          "name": "Linda Noskova",
+          "record2026": {
+            "overall": "17-9",
+            "hard": "9-6",
+            "clay": "6-3",
+            "indoorHard": "2-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nSorana Cirstea\nROU   Loss 6-2 6-4 4th\n11 May 26",
+              "event": "Rome",
+              "opponent": "Sorana Cirstea",
+              "result": "ROU   Loss 6-2 6-4 4th",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Oleksandra Oliynykova\nUKR  6-1 6-3 3rd\n09 May 26",
+              "event": "",
+              "opponent": "Oleksandra Oliynykova",
+              "result": "UKR  6-1 6-3 3rd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Anastasia Zakharova\nRUS  6-4 6-1 2nd\n07 May 26",
+              "event": "",
+              "opponent": "Anastasia Zakharova",
+              "result": "RUS  6-4 6-1 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nMarta Kostyuk\nUKR   Loss 7-61 6-0 1/4\n29 Apr 26",
+              "event": "Madrid",
+              "opponent": "Marta Kostyuk",
+              "result": "UKR   Loss 7-61 6-0 1/4",
+              "date": "29 Apr 26"
+            },
+            {
+              "raw": "Cori Gauff\nUSA  6-4 1-6 7-65 4th\n27 Apr 26",
+              "event": "",
+              "opponent": "Cori Gauff",
+              "result": "USA  6-4 1-6 7-65 4th",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Liudmila Samsonova\nRUS  w/o 3rd\n26 Apr 26",
+              "event": "",
+              "opponent": "Liudmila Samsonova",
+              "result": "RUS  w/o 3rd",
+              "date": "26 Apr 26"
+            },
+            {
+              "raw": "Emiliana Arango\nCOL  6-3 6-2 2nd\n24 Apr 26",
+              "event": "",
+              "opponent": "Emiliana Arango",
+              "result": "COL  6-3 6-2 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Stuttgart\nElina Svitolina\nUKR   Loss 7-62 7-5 1/4\n17 Apr 26",
+              "event": "Stuttgart",
+              "opponent": "Elina Svitolina",
+              "result": "UKR   Loss 7-62 7-5 1/4",
+              "date": "17 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Maria Sakkari",
+          "record2026": {
+            "overall": "9-10",
+            "hard": "8-6",
+            "clay": "1-4",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nPeyton Stearns\nUSA   Loss 6-3 6-1 1st\n17 May 26",
+              "event": "Strasbourg",
+              "opponent": "Peyton Stearns",
+              "result": "USA   Loss 6-3 6-1 1st",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Rome\nElena Rybakina\nKAZ   Loss 6-4 6-1 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Elena Rybakina",
+              "result": "KAZ   Loss 6-4 6-1 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Lilli Tagger\nAUT  5-7 6-3 6-0 1st\n06 May 26",
+              "event": "",
+              "opponent": "Lilli Tagger",
+              "result": "AUT  5-7 6-3 6-0 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nKarolina Pliskova\nCZE   Loss 6-4 7-66 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Karolina Pliskova",
+              "result": "CZE   Loss 6-4 7-66 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Charleston\nPaula Badosa\nESP   Loss 6-3 6-4 2nd\n01 Apr 26",
+              "event": "Charleston",
+              "opponent": "Paula Badosa",
+              "result": "ESP   Loss 6-3 6-4 2nd",
+              "date": "01 Apr 26"
+            },
+            {
+              "raw": "Miami\nAlycia Parks\nUSA   Loss 6-3 6-3 2nd\n20 Mar 26",
+              "event": "Miami",
+              "opponent": "Alycia Parks",
+              "result": "USA   Loss 6-3 6-3 2nd",
+              "date": "20 Mar 26"
+            },
+            {
+              "raw": "Indian Wells\nIga Swiatek\nPOL   Loss 6-3 6-2 3rd\n09 Mar 26",
+              "event": "Indian Wells",
+              "opponent": "Iga Swiatek",
+              "result": "POL   Loss 6-3 6-2 3rd",
+              "date": "09 Mar 26"
+            },
+            {
+              "raw": "Lilli Tagger\nAUT  7-5 6-0 2nd\n07 Mar 26",
+              "event": "",
+              "opponent": "Lilli Tagger",
+              "result": "AUT  7-5 6-0 2nd",
+              "date": "07 Mar 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-landaluce-angelo-2026-05-26": {
+      "title": "Martin Landaluce vs Juan Carlos Prado Angelo",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Martin-Landaluce-Vs-Juan-Carlos-Prado-Angelo/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Landaluce in 4",
+      "players": [
+        {
+          "name": "Martin Landaluce",
+          "record2026": {
+            "overall": "20-15",
+            "hard": "10-5",
+            "clay": "8-6",
+            "indoorHard": "2-4",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nDaniil Medvedev\nRUS   Loss 1-6 6-4 7-5 1/4\n14 May 26",
+              "event": "Rome",
+              "opponent": "Daniil Medvedev",
+              "result": "RUS   Loss 1-6 6-4 7-5 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Hamad Medjedovic\nSRB  7-5 6-4 4th\n12 May 26",
+              "event": "",
+              "opponent": "Hamad Medjedovic",
+              "result": "SRB  7-5 6-4 4th",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Mattia Bellucci\nITA  6-4 6-3 3rd\n11 May 26",
+              "event": "",
+              "opponent": "Mattia Bellucci",
+              "result": "ITA  6-4 6-3 3rd",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Marin Cilic\nCRO  6-4 6-4 2nd\n09 May 26",
+              "event": "",
+              "opponent": "Marin Cilic",
+              "result": "CRO  6-4 6-4 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Andrea Pellegrino\nITA   Loss 6-3 2-6 6-2 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Andrea Pellegrino",
+              "result": "ITA   Loss 6-3 2-6 6-2 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Christopher O Connell\nAUS  6-2 6-3 q1\n04 May 26",
+              "event": "",
+              "opponent": "Christopher O Connell",
+              "result": "AUS  6-2 6-3 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Aix En Provence Challenger\nEthan Quinn\nUSA   Loss 1-6 7-65 7-65 2nd\n30 Apr 26",
+              "event": "Aix En Provence Challenger",
+              "opponent": "Ethan Quinn",
+              "result": "USA   Loss 1-6 7-65 7-65 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Daniel Jade\nFRA  4-6 6-1 6-3 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Daniel Jade",
+              "result": "FRA  4-6 6-1 6-3 1st",
+              "date": "28 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Juan Carlos Prado Angelo",
+          "record2026": {
+            "overall": "15-11",
+            "hard": "0-1",
+            "clay": "15-8",
+            "indoorHard": "0-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nChak Lam Coleman Wong\nHKG  6-4 3-6 6-3 Q.\n21 May 26",
+              "event": "Paris",
+              "opponent": "Chak Lam Coleman Wong",
+              "result": "HKG  6-4 3-6 6-3 Q.",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Daniil Glinka\nEST  6-3 6-4 q2\n20 May 26",
+              "event": "",
+              "opponent": "Daniil Glinka",
+              "result": "EST  6-3 6-4 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Mackenzie Mcdonald\nUSA  6-4 7-67 q1\n18 May 26",
+              "event": "",
+              "opponent": "Mackenzie Mcdonald",
+              "result": "USA  6-4 7-67 q1",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Valencia Challenger\nLeandro Riedi\nSUI   Loss 6-75 6-1 6-3 1st\n12 May 26",
+              "event": "Valencia Challenger",
+              "opponent": "Leandro Riedi",
+              "result": "SUI   Loss 6-75 6-1 6-3 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Francavilla Challenger\nRyan Seggerman\nUSA   Loss 6-75 7-5 7-65 2nd\n07 May 26",
+              "event": "Francavilla Challenger",
+              "opponent": "Ryan Seggerman",
+              "result": "USA   Loss 6-75 7-5 7-65 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Buvaysar Gadamauri\nBEL  6-4 6-4 1st\n06 May 26",
+              "event": "",
+              "opponent": "Buvaysar Gadamauri",
+              "result": "BEL  6-4 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Santa Cruz de la Sierra Challenger\nHugo Dellien\nBOL   Loss 6-4 7-5 Fin.\n18 Apr 26",
+              "event": "Santa Cruz de la Sierra Challenger",
+              "opponent": "Hugo Dellien",
+              "result": "BOL   Loss 6-4 7-5 Fin.",
+              "date": "18 Apr 26"
+            },
+            {
+              "raw": "Matias Soto\nCHI  6-2 7-5 1/2\n17 Apr 26",
+              "event": "",
+              "opponent": "Matias Soto",
+              "result": "CHI  6-2 7-5 1/2",
+              "date": "17 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-vacherot-faurel-2026-05-26": {
+      "title": "Thomas Faurel vs Valentin Vacherot",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Thomas-Faurel-Vs-Valentin-Vacherot/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Vacherot in 3",
+      "players": [
+        {
+          "name": "Thomas Faurel",
+          "record2026": {
+            "overall": "21-13",
+            "hard": "12-4",
+            "clay": "7-7",
+            "indoorHard": "2-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nDalibor Svrcina\nCZE  6-2 6-3 Q.\n21 May 26",
+              "event": "Paris",
+              "opponent": "Dalibor Svrcina",
+              "result": "CZE  6-2 6-3 Q.",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Jay Clarke\nGBR  6-4 6-3 q2\n20 May 26",
+              "event": "",
+              "opponent": "Jay Clarke",
+              "result": "GBR  6-4 6-3 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Genaro Alberto Olivieri\nARG  7-61 6-3 q1\n18 May 26",
+              "event": "",
+              "opponent": "Genaro Alberto Olivieri",
+              "result": "ARG  7-61 6-3 q1",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Tunis Challenger\nLukas Pokorny\nSVK   Loss 6-2 6-1 q1\n10 May 26",
+              "event": "Tunis Challenger",
+              "opponent": "Lukas Pokorny",
+              "result": "SVK   Loss 6-2 6-1 q1",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "M25 Sabadell\nDan Added\nFRA   Loss 5-7 6-1 6-2 1st\n06 May 26",
+              "event": "M25 Sabadell",
+              "opponent": "Dan Added",
+              "result": "FRA   Loss 5-7 6-1 6-2 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Aix En Provence Challenger\nIgnacio Buse\nPER   Loss 6-4 6-2 2nd\n30 Apr 26",
+              "event": "Aix En Provence Challenger",
+              "opponent": "Ignacio Buse",
+              "result": "PER   Loss 6-4 6-2 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "David Goffin\nBEL  6-1 6-4 1st\n29 Apr 26",
+              "event": "",
+              "opponent": "David Goffin",
+              "result": "BEL  6-1 6-4 1st",
+              "date": "29 Apr 26"
+            },
+            {
+              "raw": "Inaki Montes-De La Torre\nESP  6-2 6-3 Q.\n28 Apr 26",
+              "event": "",
+              "opponent": "Inaki Montes-De La Torre",
+              "result": "ESP  6-2 6-3 Q.",
+              "date": "28 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Valentin Vacherot",
+          "record2026": {
+            "overall": "14-9",
+            "hard": "8-7",
+            "clay": "4-2",
+            "indoorHard": "2-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Madrid\nEmilio Nava\nUSA   Loss 6-75 7-61 6-3 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Emilio Nava",
+              "result": "USA   Loss 6-75 7-61 6-3 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nCarlos Alcaraz\nESP   Loss 6-4 6-4 1/2\n11 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Carlos Alcaraz",
+              "result": "ESP   Loss 6-4 6-4 1/2",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Alex De Minaur\nAUS  6-4 3-6 6-3 1/4\n10 Apr 26",
+              "event": "",
+              "opponent": "Alex De Minaur",
+              "result": "AUS  6-4 3-6 6-3 1/4",
+              "date": "10 Apr 26"
+            },
+            {
+              "raw": "Hubert Hurkacz\nPOL  6-74 6-3 6-4 3rd\n09 Apr 26",
+              "event": "",
+              "opponent": "Hubert Hurkacz",
+              "result": "POL  6-74 6-3 6-4 3rd",
+              "date": "09 Apr 26"
+            },
+            {
+              "raw": "Lorenzo Musetti\nITA  7-66 7-5 2nd\n08 Apr 26",
+              "event": "",
+              "opponent": "Lorenzo Musetti",
+              "result": "ITA  7-66 7-5 2nd",
+              "date": "08 Apr 26"
+            },
+            {
+              "raw": "Juan Manuel Cerundolo\nARG  5-7 6-2 6-1 1st\n06 Apr 26",
+              "event": "",
+              "opponent": "Juan Manuel Cerundolo",
+              "result": "ARG  5-7 6-2 6-1 1st",
+              "date": "06 Apr 26"
+            },
+            {
+              "raw": "Miami\nArthur Fils\nFRA   Loss 6-4 6-74 6-4 4th\n24 Mar 26",
+              "event": "Miami",
+              "opponent": "Arthur Fils",
+              "result": "FRA   Loss 6-4 6-74 6-4 4th",
+              "date": "24 Mar 26"
+            },
+            {
+              "raw": "Matteo Berrettini\nITA  7-65 6-4 3rd\n22 Mar 26",
+              "event": "",
+              "opponent": "Matteo Berrettini",
+              "result": "ITA  7-65 6-4 3rd",
+              "date": "22 Mar 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-norrie-vallejo-2026-05-26": {
+      "title": "Cameron Norrie vs Adolfo Daniel Vallejo",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Cameron-Norrie-Vs-Adolfo-Daniel-Vallejo/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Norrie in 5",
+      "players": [
+        {
+          "name": "Cameron Norrie",
+          "record2026": {
+            "overall": "14-12",
+            "hard": "7-6",
+            "clay": "5-5",
+            "indoorHard": "2-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nMariano Navone\nARG   Loss 6-4 6-4 2nd\n20 May 26",
+              "event": "Geneva",
+              "opponent": "Mariano Navone",
+              "result": "ARG   Loss 6-4 6-4 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Rome\nThiago Agustin Tirante\nARG   Loss 6-3 7-5 2nd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Thiago Agustin Tirante",
+              "result": "ARG   Loss 6-3 7-5 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Madrid\nJannik Sinner\nITA   Loss 6-2 7-5 4th\n28 Apr 26",
+              "event": "Madrid",
+              "opponent": "Jannik Sinner",
+              "result": "ITA   Loss 6-2 7-5 4th",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Thiago Agustin Tirante\nARG  7-5 7-65 3rd\n26 Apr 26",
+              "event": "",
+              "opponent": "Thiago Agustin Tirante",
+              "result": "ARG  7-5 7-65 3rd",
+              "date": "26 Apr 26"
+            },
+            {
+              "raw": "Tomas Machac\nCZE  6-2 6-76 7-65 2nd\n24 Apr 26",
+              "event": "",
+              "opponent": "Tomas Machac",
+              "result": "CZE  6-2 6-76 7-65 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Barcelona\nRafael Jodar\nESP   Loss 6-3 6-2 1/4\n17 Apr 26",
+              "event": "Barcelona",
+              "opponent": "Rafael Jodar",
+              "result": "ESP   Loss 6-3 6-2 1/4",
+              "date": "17 Apr 26"
+            },
+            {
+              "raw": "Ethan Quinn\nUSA  6-3 4-6 6-4 2nd\n15 Apr 26",
+              "event": "",
+              "opponent": "Ethan Quinn",
+              "result": "USA  6-3 4-6 6-4 2nd",
+              "date": "15 Apr 26"
+            },
+            {
+              "raw": "Stan Wawrinka\nSUI  6-4 6-75 6-4 1st\n13 Apr 26",
+              "event": "",
+              "opponent": "Stan Wawrinka",
+              "result": "SUI  6-4 6-75 6-4 1st",
+              "date": "13 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Adolfo Daniel Vallejo",
+          "record2026": {
+            "overall": "33-10",
+            "hard": "2-1",
+            "clay": "29-9",
+            "indoorHard": "2-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Valencia Challenger\nMiomir Kecmanovic\nSRB   Loss 6-2 3-6 6-2 Fin.\n17 May 26",
+              "event": "Valencia Challenger",
+              "opponent": "Miomir Kecmanovic",
+              "result": "SRB   Loss 6-2 3-6 6-2 Fin.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Jaume Antoni Munar Clar\nESP  4-6 7-63 6-4 1/2\n16 May 26",
+              "event": "",
+              "opponent": "Jaume Antoni Munar Clar",
+              "result": "ESP  4-6 7-63 6-4 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Zizou Bergs\nBEL  6-4 6-3 1/4\n15 May 26",
+              "event": "",
+              "opponent": "Zizou Bergs",
+              "result": "BEL  6-4 6-3 1/4",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Nicolas Alvarez Varona\nESP  7-63 6-0 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Nicolas Alvarez Varona",
+              "result": "ESP  7-63 6-0 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Bernabe Zapata Miralles\nESP  6-1 6-1 1st\n12 May 26",
+              "event": "",
+              "opponent": "Bernabe Zapata Miralles",
+              "result": "ESP  6-1 6-1 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nJaime Faria\nPOR   Loss 6-3 4-6 6-4 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Jaime Faria",
+              "result": "POR   Loss 6-3 4-6 6-4 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Madrid\nFlavio Cobolli\nITA   Loss 6-3 6-2 3rd\n27 Apr 26",
+              "event": "Madrid",
+              "opponent": "Flavio Cobolli",
+              "result": "ITA   Loss 6-3 6-2 3rd",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Learner Tien\nUSA  6-4 6-3 2nd\n25 Apr 26",
+              "event": "",
+              "opponent": "Learner Tien",
+              "result": "USA  6-4 6-3 2nd",
+              "date": "25 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-osaka-siegemund-2026-05-26": {
+      "title": "Laura Siegemund vs Naomi Osaka",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Laura-Siegemund-Vs-Naomi-Osaka/",
+      "h2hText": "2:2",
+      "h2hRecord": "2:2",
+      "prediction": "Osaka in 2",
+      "players": [
+        {
+          "name": "Laura Siegemund",
+          "record2026": {
+            "overall": "7-9",
+            "hard": "3-6",
+            "clay": "4-3",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nKarolina Pliskova\nCZE   Loss 6-1 6-4 3rd\n10 May 26",
+              "event": "Rome",
+              "opponent": "Karolina Pliskova",
+              "result": "CZE   Loss 6-1 6-4 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Ekaterina Alexandrova\nRUS  6-4 6-74 6-1 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Ekaterina Alexandrova",
+              "result": "RUS  6-4 6-74 6-1 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Sara Bejlek\nCZE  6-4 6-4 1st\n06 May 26",
+              "event": "",
+              "opponent": "Sara Bejlek",
+              "result": "CZE  6-4 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nJasmine Paolini\nITA   Loss 3-6 6-2 6-4 2nd\n23 Apr 26",
+              "event": "Madrid",
+              "opponent": "Jasmine Paolini",
+              "result": "ITA   Loss 3-6 6-2 6-4 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Irina-Camelia Begu\nROU  6-4 6-0 1st\n21 Apr 26",
+              "event": "",
+              "opponent": "Irina-Camelia Begu",
+              "result": "ROU  6-4 6-0 1st",
+              "date": "21 Apr 26"
+            },
+            {
+              "raw": "Stuttgart\nIga Swiatek\nPOL   Loss 6-2 6-3 2nd\n15 Apr 26",
+              "event": "Stuttgart",
+              "opponent": "Iga Swiatek",
+              "result": "POL   Loss 6-2 6-3 2nd",
+              "date": "15 Apr 26"
+            },
+            {
+              "raw": "Viktoriya Tomova\nBUL  4-6 7-64 6-1 1st\n13 Apr 26",
+              "event": "",
+              "opponent": "Viktoriya Tomova",
+              "result": "BUL  4-6 7-64 6-1 1st",
+              "date": "13 Apr 26"
+            },
+            {
+              "raw": "Miami\nAlexandra Eala\nPHI   Loss 6-76 6-3 6-3 2nd\n19 Mar 26",
+              "event": "Miami",
+              "opponent": "Alexandra Eala",
+              "result": "PHI   Loss 6-76 6-3 6-3 2nd",
+              "date": "19 Mar 26"
+            }
+          ]
+        },
+        {
+          "name": "Naomi Osaka",
+          "record2026": {
+            "overall": "9-5",
+            "hard": "5-3",
+            "clay": "4-2",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nIga Swiatek\nPOL   Loss 6-2 6-1 4th\n11 May 26",
+              "event": "Rome",
+              "opponent": "Iga Swiatek",
+              "result": "POL   Loss 6-2 6-1 4th",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Diana Shnaider\nRUS  6-1 6-2 3rd\n10 May 26",
+              "event": "",
+              "opponent": "Diana Shnaider",
+              "result": "RUS  6-1 6-2 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Eva Lys\nGER  6-4 4-6 6-3 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Eva Lys",
+              "result": "GER  6-4 4-6 6-3 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Madrid\nAryna Sabalenka\nBLR   Loss 6-71 6-3 6-2 4th\n27 Apr 26",
+              "event": "Madrid",
+              "opponent": "Aryna Sabalenka",
+              "result": "BLR   Loss 6-71 6-3 6-2 4th",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Anhelina Kalinina\nUKR  6-1 6-3 3rd\n25 Apr 26",
+              "event": "",
+              "opponent": "Anhelina Kalinina",
+              "result": "UKR  6-1 6-3 3rd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Maria Camila Osorio Serrano\nCOL  6-2 7-5 2nd\n23 Apr 26",
+              "event": "",
+              "opponent": "Maria Camila Osorio Serrano",
+              "result": "COL  6-2 7-5 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Miami\nTalia Gibson\nAUS   Loss 7-5 6-4 2nd\n21 Mar 26",
+              "event": "Miami",
+              "opponent": "Talia Gibson",
+              "result": "AUS   Loss 7-5 6-4 2nd",
+              "date": "21 Mar 26"
+            },
+            {
+              "raw": "Indian Wells\nAryna Sabalenka\nBLR   Loss 6-2 6-4 4th\n10 Mar 26",
+              "event": "Indian Wells",
+              "opponent": "Aryna Sabalenka",
+              "result": "BLR   Loss 6-2 6-4 4th",
+              "date": "10 Mar 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-jacquemot-fruhvirtova-2026-05-26": {
+      "title": "Linda Fruhvirtova vs Elsa Jacquemot",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Linda-Fruhvirtova-Vs-Elsa-Jacquemot/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Jacquemot in 3",
+      "players": [
+        {
+          "name": "Linda Fruhvirtova",
+          "record2026": {
+            "overall": "15-11",
+            "hard": "9-6",
+            "clay": "4-4",
+            "indoorHard": "2-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nHarmony Tan\nFRA  6-3 7-64 Q.\n22 May 26",
+              "event": "Paris",
+              "opponent": "Harmony Tan",
+              "result": "FRA  6-3 7-64 Q.",
+              "date": "22 May 26"
+            },
+            {
+              "raw": "Jessika Ponchet\nFRA  6-1 6-4 q2\n20 May 26",
+              "event": "",
+              "opponent": "Jessika Ponchet",
+              "result": "FRA  6-1 6-4 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Lucie Havlickova\nCZE  6-3 6-72 6-3 q1\n19 May 26",
+              "event": "",
+              "opponent": "Lucie Havlickova",
+              "result": "CZE  6-3 6-72 6-3 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Istanbul\nLaura Pigossi\nBRA   Loss 7-62 5-7 6-2 2nd\n07 May 26",
+              "event": "Istanbul",
+              "opponent": "Laura Pigossi",
+              "result": "BRA   Loss 7-62 5-7 6-2 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Tereza Martincova\nCZE  6-0 7-5 1st\n05 May 26",
+              "event": "",
+              "opponent": "Tereza Martincova",
+              "result": "CZE  6-0 7-5 1st",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Madrid\nHanne Vandewinkel\nBEL   Loss 6-2 7-5 q1\n20 Apr 26",
+              "event": "Madrid",
+              "opponent": "Hanne Vandewinkel",
+              "result": "BEL   Loss 6-2 7-5 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "Rouen\nIryna Shymanovich\nBLR   Loss 6-3 7-5 1st\n14 Apr 26",
+              "event": "Rouen",
+              "opponent": "Iryna Shymanovich",
+              "result": "BLR   Loss 6-3 7-5 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Linz\nAliaksandra Sasnovich\nBLR   Loss 6-0 6-1 q1\n05 Apr 26",
+              "event": "Linz",
+              "opponent": "Aliaksandra Sasnovich",
+              "result": "BLR   Loss 6-0 6-1 q1",
+              "date": "05 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Elsa Jacquemot",
+          "record2026": {
+            "overall": "5-14",
+            "hard": "2-8",
+            "clay": "3-6",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nAnastasia Zakharova\nRUS   Loss 4-6 6-3 6-3 q1\n16 May 26",
+              "event": "Strasbourg",
+              "opponent": "Anastasia Zakharova",
+              "result": "RUS   Loss 4-6 6-3 6-3 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Rome\nBarbora Krejcikova\nCZE   Loss 6-2 6-4 1st\n05 May 26",
+              "event": "Rome",
+              "opponent": "Barbora Krejcikova",
+              "result": "CZE   Loss 6-2 6-4 1st",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Saint-Malo\nBianca Vanessa Andreescu\nCAN   Loss 7-63 7-65 1st\n28 Apr 26",
+              "event": "Saint-Malo",
+              "opponent": "Bianca Vanessa Andreescu",
+              "result": "CAN   Loss 7-63 7-65 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nTyra Caterina Grant\nITA   Loss 6-1 6-2 1st\n22 Apr 26",
+              "event": "Madrid",
+              "opponent": "Tyra Caterina Grant",
+              "result": "ITA   Loss 6-1 6-2 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Rouen\nTatjana Maria\nGER   Loss 6-4 6-3 1st\n15 Apr 26",
+              "event": "Rouen",
+              "opponent": "Tatjana Maria",
+              "result": "GER   Loss 6-4 6-3 1st",
+              "date": "15 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Group I, Europe/Africa\nLola Radivojevic\nSRB  6-4 4-6 6-3 Rubber 2\n11 Apr 26",
+              "event": "Billie Jean King Cup, Group I, Europe/Africa",
+              "opponent": "Lola Radivojevic",
+              "result": "SRB  6-4 4-6 6-3 Rubber 2",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Anna Bondar\nHUN   Loss 6-1 7-63 Rubber 2\n10 Apr 26",
+              "event": "",
+              "opponent": "Anna Bondar",
+              "result": "HUN   Loss 6-1 7-63 Rubber 2",
+              "date": "10 Apr 26"
+            },
+            {
+              "raw": "Adelina Lachinova\nLAT  6-1 6-0 Rubber 2\n08 Apr 26",
+              "event": "",
+              "opponent": "Adelina Lachinova",
+              "result": "LAT  6-1 6-0 Rubber 2",
+              "date": "08 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-moutet-kopriva-2026-05-26": {
+      "title": "Vit Kopriva vs Corentin Moutet",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Vit-Kopriva-Vs-Corentin-Moutet/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Moutet in 5",
+      "players": [
+        {
+          "name": "Vit Kopriva",
+          "record2026": {
+            "overall": "18-15",
+            "hard": "6-5",
+            "clay": "12-10",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Hamburg\nFelix Auger-Aliassime\nCAN   Loss 7-5 6-1 1st\n19 May 26",
+              "event": "Hamburg",
+              "opponent": "Felix Auger-Aliassime",
+              "result": "CAN   Loss 7-5 6-1 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Rome\nUgo Humbert\nFRA   Loss 6-3 6-2 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Ugo Humbert",
+              "result": "FRA   Loss 6-3 6-2 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Fabian Marozsan\nHUN  6-3 6-3 1st\n06 May 26",
+              "event": "",
+              "opponent": "Fabian Marozsan",
+              "result": "HUN  6-3 6-3 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nRafael Jodar\nESP   Loss 7-5 6-0 4th\n28 Apr 26",
+              "event": "Madrid",
+              "opponent": "Rafael Jodar",
+              "result": "ESP   Loss 7-5 6-0 4th",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Arthur Rinderknech\nFRA  6-4 3-6 ret. 3rd\n26 Apr 26",
+              "event": "",
+              "opponent": "Arthur Rinderknech",
+              "result": "FRA  6-4 3-6 ret. 3rd",
+              "date": "26 Apr 26"
+            },
+            {
+              "raw": "Andrey Rublev\nRUS  6-3 6-4 2nd\n24 Apr 26",
+              "event": "",
+              "opponent": "Andrey Rublev",
+              "result": "RUS  6-3 6-4 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Zhizhen Zhang\nCHN  6-2 6-0 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Zhizhen Zhang",
+              "result": "CHN  6-2 6-0 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Munich\nFlavio Cobolli\nITA   Loss 6-3 6-2 1/4\n17 Apr 26",
+              "event": "Munich",
+              "opponent": "Flavio Cobolli",
+              "result": "ITA   Loss 6-3 6-2 1/4",
+              "date": "17 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Corentin Moutet",
+          "record2026": {
+            "overall": "8-12",
+            "hard": "5-6",
+            "clay": "3-6",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Hamburg\nAlejandro Davidovich Fokina\nESP   Loss 6-4 6-4 1st\n18 May 26",
+              "event": "Hamburg",
+              "opponent": "Alejandro Davidovich Fokina",
+              "result": "ESP   Loss 6-4 6-4 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Rome\nPablo Llamas Ruiz\nESP   Loss 6-4 3-6 7-64 2nd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Pablo Llamas Ruiz",
+              "result": "ESP   Loss 6-4 3-6 7-64 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Madrid\nDaniel Merida Aguilar\nESP   Loss 6-3 6-4 2nd\n25 Apr 26",
+              "event": "Madrid",
+              "opponent": "Daniel Merida Aguilar",
+              "result": "ESP   Loss 6-3 6-4 2nd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Barcelona\nLorenzo Musetti\nITA   Loss 6-3 6-4 2nd\n16 Apr 26",
+              "event": "Barcelona",
+              "opponent": "Lorenzo Musetti",
+              "result": "ITA   Loss 6-3 6-4 2nd",
+              "date": "16 Apr 26"
+            },
+            {
+              "raw": "Ignacio Buse\nPER  6-4 6-4 1st\n13 Apr 26",
+              "event": "",
+              "opponent": "Ignacio Buse",
+              "result": "PER  6-4 6-4 1st",
+              "date": "13 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nCasper Ruud\nNOR   Loss 7-5 6-3 2nd\n08 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Casper Ruud",
+              "result": "NOR   Loss 7-5 6-3 2nd",
+              "date": "08 Apr 26"
+            },
+            {
+              "raw": "Alexandre Muller\nFRA  6-4 6-1 1st\n07 Apr 26",
+              "event": "",
+              "opponent": "Alexandre Muller",
+              "result": "FRA  6-4 6-1 1st",
+              "date": "07 Apr 26"
+            },
+            {
+              "raw": "Marrakech\nMarco Trungelliti\nARG   Loss 4-6 6-3 6-4 1/4\n03 Apr 26",
+              "event": "Marrakech",
+              "opponent": "Marco Trungelliti",
+              "result": "ARG   Loss 4-6 6-3 6-4 1/4",
+              "date": "03 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-tsitsipas-muller-2026-05-26": {
+      "title": "Alexandre Muller vs Stefanos Tsitsipas",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alexandre-Muller-Vs-Stefanos-Tsitsipas/",
+      "h2hText": "0:3",
+      "h2hRecord": "0:3",
+      "prediction": "Tsitsipas in 3",
+      "players": [
+        {
+          "name": "Alexandre Muller",
+          "record2026": {
+            "overall": "9-14",
+            "hard": "2-4",
+            "clay": "7-9",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nEdas Butvilas\nLTU   Loss 6-4 6-1 q1\n16 May 26",
+              "event": "Geneva",
+              "opponent": "Edas Butvilas",
+              "result": "LTU   Loss 6-4 6-1 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Bordeaux Challenger\nRei Sakamoto\nJPN   Loss 6-4 3-6 6-3 1st\n13 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Rei Sakamoto",
+              "result": "JPN   Loss 6-4 3-6 6-3 1st",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Rome\nBotic Van De Zandschulp\nNED   Loss 7-5 6-3 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Botic Van De Zandschulp",
+              "result": "NED   Loss 7-5 6-3 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Aix En Provence Challenger\nYibing Wu\nCHN   Loss 6-3 6-4 1st\n28 Apr 26",
+              "event": "Aix En Provence Challenger",
+              "opponent": "Yibing Wu",
+              "result": "CHN   Loss 6-3 6-4 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nJan-Lennard Struff\nGER   Loss 7-63 6-0 1st\n22 Apr 26",
+              "event": "Madrid",
+              "opponent": "Jan-Lennard Struff",
+              "result": "GER   Loss 7-63 6-0 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Barcelona\nOtto Virtanen\nFIN   Loss 6-4 6-4 Q.\n12 Apr 26",
+              "event": "Barcelona",
+              "opponent": "Otto Virtanen",
+              "result": "FIN   Loss 6-4 6-4 Q.",
+              "date": "12 Apr 26"
+            },
+            {
+              "raw": "Max Alcala Gurri\nESP  6-2 6-2 q1\n11 Apr 26",
+              "event": "",
+              "opponent": "Max Alcala Gurri",
+              "result": "ESP  6-2 6-2 q1",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nCorentin Moutet\nFRA   Loss 6-4 6-1 1st\n07 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Corentin Moutet",
+              "result": "FRA   Loss 6-4 6-1 1st",
+              "date": "07 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Stefanos Tsitsipas",
+          "record2026": {
+            "overall": "15-12",
+            "hard": "8-6",
+            "clay": "4-5",
+            "indoorHard": "3-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nLearner Tien\nUSA   Loss 7-64 7-62 2nd\n20 May 26",
+              "event": "Geneva",
+              "opponent": "Learner Tien",
+              "result": "USA   Loss 7-64 7-62 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Giovanni Mpetshi Perricard\nFRA  6-4 7-68 1st\n18 May 26",
+              "event": "",
+              "opponent": "Giovanni Mpetshi Perricard",
+              "result": "FRA  6-4 7-68 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Rome\nTomas Machac\nCZE   Loss 6-4 7-64 1st\n07 May 26",
+              "event": "Rome",
+              "opponent": "Tomas Machac",
+              "result": "CZE   Loss 6-4 7-64 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nCasper Ruud\nNOR   Loss 6-74 7-62 7-63 4th\n28 Apr 26",
+              "event": "Madrid",
+              "opponent": "Casper Ruud",
+              "result": "NOR   Loss 6-74 7-62 7-63 4th",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Daniel Merida Aguilar\nESP  6-4 6-2 3rd\n27 Apr 26",
+              "event": "",
+              "opponent": "Daniel Merida Aguilar",
+              "result": "ESP  6-4 6-2 3rd",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Alexander Bublik\nKAZ  6-2 7-5 2nd\n25 Apr 26",
+              "event": "",
+              "opponent": "Alexander Bublik",
+              "result": "KAZ  6-2 7-5 2nd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Patrick Kypson\nUSA  3-6 7-66 7-64 1st\n23 Apr 26",
+              "event": "",
+              "opponent": "Patrick Kypson",
+              "result": "USA  3-6 7-66 7-64 1st",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Munich\nFabian Marozsan\nHUN   Loss 3-6 7-65 6-4 1st\n15 Apr 26",
+              "event": "Munich",
+              "opponent": "Fabian Marozsan",
+              "result": "HUN   Loss 3-6 7-65 6-4 1st",
+              "date": "15 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-tien-garin-2026-05-26": {
+      "title": "Cristian Garin vs Learner Tien",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Cristian-Garin-Vs-Learner-Tien/",
+      "h2hText": "1:0",
+      "h2hRecord": "1:0",
+      "prediction": "Tien in 5",
+      "players": [
+        {
+          "name": "Cristian Garin",
+          "record2026": {
+            "overall": "9-14",
+            "hard": "0-5",
+            "clay": "9-9",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Hamburg\nHenri Squire\nGER   Loss 1-6 6-4 6-3 q1\n16 May 26",
+              "event": "Hamburg",
+              "opponent": "Henri Squire",
+              "result": "GER   Loss 1-6 6-4 6-3 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Oeiras 4 Challenger\nLautaro Midon\nARG   Loss 6-3 5-7 6-4 1st\n12 May 26",
+              "event": "Oeiras 4 Challenger",
+              "opponent": "Lautaro Midon",
+              "result": "ARG   Loss 6-3 5-7 6-4 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nAlejandro Davidovich Fokina\nESP   Loss 7-62 6-4 2nd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Alejandro Davidovich Fokina",
+              "result": "ESP   Loss 7-62 6-4 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Juan Manuel Cerundolo\nARG  7-62 7-5 1st\n07 May 26",
+              "event": "",
+              "opponent": "Juan Manuel Cerundolo",
+              "result": "ARG  7-62 7-5 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Jan Choinski\nGBR  6-2 3-6 6-2 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Jan Choinski",
+              "result": "GBR  6-2 3-6 6-2 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Moez Echargui\nTUN  6-0 6-2 q1\n04 May 26",
+              "event": "",
+              "opponent": "Moez Echargui",
+              "result": "TUN  6-0 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Cagliari Challenger\nNuno Borges\nPOR   Loss 6-4 3-6 7-66 2nd\n30 Apr 26",
+              "event": "Cagliari Challenger",
+              "opponent": "Nuno Borges",
+              "result": "POR   Loss 6-4 3-6 7-66 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Moez Echargui\nTUN  6-75 6-4 6-2 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Moez Echargui",
+              "result": "TUN  6-75 6-4 6-2 1st",
+              "date": "28 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Learner Tien",
+          "record2026": {
+            "overall": "17-9",
+            "hard": "10-5",
+            "clay": "7-3",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nMariano Navone\nARG  3-6 6-3 7-5 Fin.\n23 May 26",
+              "event": "Geneva",
+              "opponent": "Mariano Navone",
+              "result": "ARG  3-6 6-3 7-5 Fin.",
+              "date": "23 May 26"
+            },
+            {
+              "raw": "Alexander Bublik\nKAZ  6-1 4-6 7-65 1/2\n22 May 26",
+              "event": "",
+              "opponent": "Alexander Bublik",
+              "result": "KAZ  6-1 4-6 7-65 1/2",
+              "date": "22 May 26"
+            },
+            {
+              "raw": "Alex Michelsen\nUSA  6-4 3-6 6-1 1/4\n21 May 26",
+              "event": "",
+              "opponent": "Alex Michelsen",
+              "result": "USA  6-4 3-6 6-1 1/4",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Stefanos Tsitsipas\nGRE  7-64 7-62 2nd\n20 May 26",
+              "event": "",
+              "opponent": "Stefanos Tsitsipas",
+              "result": "GRE  7-64 7-62 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Rome\nRafael Jodar\nESP   Loss 6-1 6-4 4th\n12 May 26",
+              "event": "Rome",
+              "opponent": "Rafael Jodar",
+              "result": "ESP   Loss 6-1 6-4 4th",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Alexander Bublik\nKAZ  4-6 6-3 7-5 3rd\n10 May 26",
+              "event": "",
+              "opponent": "Alexander Bublik",
+              "result": "KAZ  4-6 6-3 7-5 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Damir Dzumhur\nBIH  6-2 6-1 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Damir Dzumhur",
+              "result": "BIH  6-2 6-1 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Madrid\nAdolfo Daniel Vallejo\nPAR   Loss 6-4 6-3 2nd\n25 Apr 26",
+              "event": "Madrid",
+              "opponent": "Adolfo Daniel Vallejo",
+              "result": "PAR   Loss 6-4 6-3 2nd",
+              "date": "25 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-sherif-galfi-2026-05-26": {
+      "title": "Dalma Galfi vs Mayar Sherif",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Dalma-Galfi-Vs-Mayar-Sherif/",
+      "h2hText": "1:3",
+      "h2hRecord": "1:3",
+      "prediction": "Galfi in 3",
+      "players": [
+        {
+          "name": "Dalma Galfi",
+          "record2026": {
+            "overall": "13-14",
+            "hard": "4-7",
+            "clay": "7-5",
+            "indoorHard": "2-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nAnastasia Potapova\nAUT   Loss 5-7 6-2 6-4 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Anastasia Potapova",
+              "result": "AUT   Loss 5-7 6-2 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Julia Grabher\nAUT  7-62 6-4 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Julia Grabher",
+              "result": "AUT  7-62 6-4 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Alycia Parks\nUSA  6-4 6-1 q1\n04 May 26",
+              "event": "",
+              "opponent": "Alycia Parks",
+              "result": "USA  6-4 6-1 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "La Bisbal D'Emporda\nAlina Charaeva\nRUS   Loss 6-4 6-2 1st\n28 Apr 26",
+              "event": "La Bisbal D'Emporda",
+              "opponent": "Alina Charaeva",
+              "result": "RUS   Loss 6-4 6-2 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nMirra Andreeva\nRUS   Loss 6-3 6-2 3rd\n25 Apr 26",
+              "event": "Madrid",
+              "opponent": "Mirra Andreeva",
+              "result": "RUS   Loss 6-3 6-2 3rd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Anna Kalinskaya\nRUS  6-3 6-3 2nd\n23 Apr 26",
+              "event": "",
+              "opponent": "Anna Kalinskaya",
+              "result": "RUS  6-3 6-3 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Ajla Tomljanovic\nAUS  7-67 6-4 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Ajla Tomljanovic",
+              "result": "AUS  7-67 6-4 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Darja Vidmanova\nCZE  7-5 6-3 Q.\n21 Apr 26",
+              "event": "",
+              "opponent": "Darja Vidmanova",
+              "result": "CZE  7-5 6-3 Q.",
+              "date": "21 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Mayar Sherif",
+          "record2026": {
+            "overall": "12-11",
+            "hard": "1-2",
+            "clay": "11-8",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nGreetje Minnen\nBEL  6-3 6-0 Q.\n21 May 26",
+              "event": "Paris",
+              "opponent": "Greetje Minnen",
+              "result": "BEL  6-3 6-0 Q.",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Martina Trevisan\nITA  6-76 7-5 6-1 q2\n20 May 26",
+              "event": "",
+              "opponent": "Martina Trevisan",
+              "result": "ITA  6-76 7-5 6-1 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Andrea Lazaro Garcia\nESP  6-4 3-6 6-4 q1\n18 May 26",
+              "event": "",
+              "opponent": "Andrea Lazaro Garcia",
+              "result": "ESP  6-4 3-6 6-4 q1",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Parma\nDominika Salkova\nCZE   Loss 7-64 6-2 2nd\n13 May 26",
+              "event": "Parma",
+              "opponent": "Dominika Salkova",
+              "result": "CZE   Loss 7-64 6-2 2nd",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Yue Yuan\nCHN  6-4 0-6 6-4 1st\n12 May 26",
+              "event": "",
+              "opponent": "Yue Yuan",
+              "result": "CHN  6-4 0-6 6-4 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nTamara Korpatsch\nGER   Loss 3-6 7-5 7-65 Q.\n05 May 26",
+              "event": "Rome",
+              "opponent": "Tamara Korpatsch",
+              "result": "GER   Loss 3-6 7-5 7-65 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Anna Blinkova\nRUS  6-1 6-2 q1\n04 May 26",
+              "event": "",
+              "opponent": "Anna Blinkova",
+              "result": "RUS  6-1 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Oeiras\nRobin Montgomery\nUSA   Loss 3-6 7-5 7-67 1st\n13 Apr 26",
+              "event": "Oeiras",
+              "opponent": "Robin Montgomery",
+              "result": "USA   Loss 3-6 7-5 7-67 1st",
+              "date": "13 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-baez-burruchaga-2026-05-26": {
+      "title": "Sebastian Baez vs Roman Andres Burruchaga",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Sebastian-Baez-Vs-Roman-Andres-Burruchaga/",
+      "h2hText": "2:0",
+      "h2hRecord": "2:0",
+      "prediction": "Baez in 5",
+      "players": [
+        {
+          "name": "Sebastian Baez",
+          "record2026": {
+            "overall": "18-14",
+            "hard": "10-4",
+            "clay": "8-10",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nAlex Michelsen\nUSA   Loss 7-5 6-3 1st\n18 May 26",
+              "event": "Geneva",
+              "opponent": "Alex Michelsen",
+              "result": "USA   Loss 7-5 6-3 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Valencia Challenger\nPablo Carreno-Busta\nESP   Loss 5-7 7-5 7-5 2nd\n14 May 26",
+              "event": "Valencia Challenger",
+              "opponent": "Pablo Carreno-Busta",
+              "result": "ESP   Loss 5-7 7-5 7-5 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Roberto Carballes Baena\nESP  6-4 6-2 1st\n12 May 26",
+              "event": "",
+              "opponent": "Roberto Carballes Baena",
+              "result": "ESP  6-4 6-2 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nAlexander Bublik\nKAZ   Loss 6-1 6-2 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Alexander Bublik",
+              "result": "KAZ   Loss 6-1 6-2 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Jenson Brooksby\nUSA  6-3 7-68 1st\n06 May 26",
+              "event": "",
+              "opponent": "Jenson Brooksby",
+              "result": "USA  6-3 7-68 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nVilius Gaubas\nLTU   Loss 7-5 6-1 1st\n23 Apr 26",
+              "event": "Madrid",
+              "opponent": "Vilius Gaubas",
+              "result": "LTU   Loss 7-5 6-1 1st",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Barcelona\nTomas Machac\nCZE   Loss 2-6 6-4 6-1 1st\n14 Apr 26",
+              "event": "Barcelona",
+              "opponent": "Tomas Machac",
+              "result": "CZE   Loss 2-6 6-4 6-1 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nCarlos Alcaraz\nESP   Loss 6-1 6-3 2nd\n07 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Carlos Alcaraz",
+              "result": "ESP   Loss 6-1 6-3 2nd",
+              "date": "07 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Roman Andres Burruchaga",
+          "record2026": {
+            "overall": "20-13",
+            "hard": "2-4",
+            "clay": "18-9",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Hamburg\nLuciano Darderi\nITA   Loss 6-3 7-64 1st\n19 May 26",
+              "event": "Hamburg",
+              "opponent": "Luciano Darderi",
+              "result": "ITA   Loss 6-3 7-64 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Bordeaux Challenger\nJuan Manuel Cerundolo\nARG   Loss 6-4 6-4 2nd\n15 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Juan Manuel Cerundolo",
+              "result": "ARG   Loss 6-4 6-4 2nd",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Pierre Delage\nFRA  6-3 4-6 6-4 1st\n13 May 26",
+              "event": "",
+              "opponent": "Pierre Delage",
+              "result": "FRA  6-3 4-6 6-4 1st",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Rome\nMattia Bellucci\nITA   Loss 6-4 6-4 1st\n07 May 26",
+              "event": "Rome",
+              "opponent": "Mattia Bellucci",
+              "result": "ITA   Loss 6-4 6-4 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Cagliari Challenger\nHubert Hurkacz\nPOL   Loss 4-6 7-63 6-3 1/2\n02 May 26",
+              "event": "Cagliari Challenger",
+              "opponent": "Hubert Hurkacz",
+              "result": "POL   Loss 4-6 7-63 6-3 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Marcos Giron\nUSA  6-3 2-6 7-61 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Marcos Giron",
+              "result": "USA  6-3 2-6 7-61 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Andrea Pellegrino\nITA  6-4 4-6 7-5 2nd\n30 Apr 26",
+              "event": "",
+              "opponent": "Andrea Pellegrino",
+              "result": "ITA  6-4 4-6 7-5 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Houston\nTommy Paul\nUSA   Loss 6-1 3-6 7-5 Fin.\n05 Apr 26",
+              "event": "Houston",
+              "opponent": "Tommy Paul",
+              "result": "USA   Loss 6-1 3-6 7-5 Fin.",
+              "date": "05 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-bublik-struff-2026-05-26": {
+      "title": "Alexander Bublik vs Jan-Lennard Struff",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alexander-Bublik-Vs-Jan-Lennard-Struff/",
+      "error": "Page did not expose clay matchup selectors before timeout"
+    },
+    "rg-w-parry-kalinina-2026-05-26": {
+      "title": "Anhelina Kalinina vs Diane Parry",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Anhelina-Kalinina-Vs-Diane-Parry/",
+      "h2hText": "3:1",
+      "h2hRecord": "3:1",
+      "prediction": "Kalinina in 2",
+      "players": [
+        {
+          "name": "Anhelina Kalinina",
+          "record2026": {
+            "overall": "34-10",
+            "hard": "3-2",
+            "clay": "30-6",
+            "indoorHard": "1-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rabat\nPetra Marcinko\nCRO   Loss 6-2 3-0 ret. Fin.\n23 May 26",
+              "event": "Rabat",
+              "opponent": "Petra Marcinko",
+              "result": "CRO   Loss 6-2 3-0 ret. Fin.",
+              "date": "23 May 26"
+            },
+            {
+              "raw": "Panna Udvardy\nHUN  6-0 6-3 1/2\n22 May 26",
+              "event": "",
+              "opponent": "Panna Udvardy",
+              "result": "HUN  6-0 6-3 1/2",
+              "date": "22 May 26"
+            },
+            {
+              "raw": "Anna Bondar\nHUN  6-4 7-5 1/4\n21 May 26",
+              "event": "",
+              "opponent": "Anna Bondar",
+              "result": "HUN  6-4 7-5 1/4",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Yuliia Starodubtseva\nUKR  6-3 7-63 2nd\n20 May 26",
+              "event": "",
+              "opponent": "Yuliia Starodubtseva",
+              "result": "UKR  6-3 7-63 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Simona Waltert\nSUI  6-3 6-4 1st\n18 May 26",
+              "event": "",
+              "opponent": "Simona Waltert",
+              "result": "SUI  6-3 6-4 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Rome\nSolana Sierra\nARG   Loss 6-2 6-3 2nd\n07 May 26",
+              "event": "Rome",
+              "opponent": "Solana Sierra",
+              "result": "ARG   Loss 6-2 6-3 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Katie Volynets\nUSA  6-2 6-3 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Katie Volynets",
+              "result": "USA  6-2 6-3 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Maria Camila Osorio Serrano\nCOL  6-3 7-5 q1\n04 May 26",
+              "event": "",
+              "opponent": "Maria Camila Osorio Serrano",
+              "result": "COL  6-3 7-5 q1",
+              "date": "04 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Diane Parry",
+          "record2026": {
+            "overall": "14-12",
+            "hard": "6-6",
+            "clay": "5-5",
+            "indoorHard": "3-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nShuai Zhang\nCHN   Loss 6-2 7-5 2nd\n20 May 26",
+              "event": "Strasbourg",
+              "opponent": "Shuai Zhang",
+              "result": "CHN   Loss 6-2 7-5 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Emma Raducanu\nGBR  6-4 7-64 1st\n19 May 26",
+              "event": "",
+              "opponent": "Emma Raducanu",
+              "result": "GBR  6-4 7-64 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Paris\nMadison Keys\nUSA  3-6 3-3 ret. Fin.\n17 May 26",
+              "event": "Paris",
+              "opponent": "Madison Keys",
+              "result": "USA  3-6 3-3 ret. Fin.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Alina Charaeva\nRUS  7-66 7-66 1/2\n16 May 26",
+              "event": "",
+              "opponent": "Alina Charaeva",
+              "result": "RUS  7-66 7-66 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Yulia Putintseva\nKAZ  w/o 1/4\n14 May 26",
+              "event": "",
+              "opponent": "Yulia Putintseva",
+              "result": "KAZ  w/o 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Chloe Paquet\nFRA  6-4 3-6 6-4 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Chloe Paquet",
+              "result": "FRA  6-4 3-6 6-4 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Beatriz Haddad Maia\nBRA  6-3 6-2 1st\n12 May 26",
+              "event": "",
+              "opponent": "Beatriz Haddad Maia",
+              "result": "BRA  6-3 6-2 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nLeolia Jeanjean\nFRA   Loss 6-1 7-60 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Leolia Jeanjean",
+              "result": "FRA   Loss 6-1 7-60 q1",
+              "date": "04 May 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-kalinskaya-boisson-2026-05-26": {
+      "title": "Anna Kalinskaya vs Lois Boisson",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Anna-Kalinskaya-Vs-Lois-Boisson/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Kalinskaya in 2",
+      "players": [
+        {
+          "name": "Anna Kalinskaya",
+          "record2026": {
+            "overall": "13-10",
+            "hard": "9-7",
+            "clay": "4-3",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nJelena Ostapenko\nLAT   Loss 6-1 6-2 4th\n11 May 26",
+              "event": "Rome",
+              "opponent": "Jelena Ostapenko",
+              "result": "LAT   Loss 6-1 6-2 4th",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Belinda Bencic\nSUI  6-4 6-3 3rd\n09 May 26",
+              "event": "",
+              "opponent": "Belinda Bencic",
+              "result": "SUI  6-4 6-3 3rd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Katerina Siniakova\nCZE  4-6 7-64 7-5 2nd\n07 May 26",
+              "event": "",
+              "opponent": "Katerina Siniakova",
+              "result": "CZE  4-6 7-64 7-5 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nDalma Galfi\nHUN   Loss 6-3 6-3 2nd\n23 Apr 26",
+              "event": "Madrid",
+              "opponent": "Dalma Galfi",
+              "result": "HUN   Loss 6-3 6-3 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Charleston\nIva Jovic\nUSA   Loss 6-3 6-4 1/4\n03 Apr 26",
+              "event": "Charleston",
+              "opponent": "Iva Jovic",
+              "result": "USA   Loss 6-3 6-4 1/4",
+              "date": "03 Apr 26"
+            },
+            {
+              "raw": "Paula Badosa\nESP  6-4 6-2 3rd\n02 Apr 26",
+              "event": "",
+              "opponent": "Paula Badosa",
+              "result": "ESP  6-4 6-2 3rd",
+              "date": "02 Apr 26"
+            },
+            {
+              "raw": "Viktoriya Tomova\nBUL  6-2 6-4 2nd\n31 Mar 26",
+              "event": "",
+              "opponent": "Viktoriya Tomova",
+              "result": "BUL  6-2 6-4 2nd",
+              "date": "31 Mar 26"
+            },
+            {
+              "raw": "Miami\nAnastasia Zakharova\nRUS   Loss 3-6 6-1 7-5 2nd\n20 Mar 26",
+              "event": "Miami",
+              "opponent": "Anastasia Zakharova",
+              "result": "RUS   Loss 3-6 6-1 7-5 2nd",
+              "date": "20 Mar 26"
+            }
+          ]
+        },
+        {
+          "name": "Lois Boisson",
+          "record2026": {
+            "overall": "1-4",
+            "hard": "0-0",
+            "clay": "1-4",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nVictoria Mboko\nCAN   Loss 6-4 6-3 2nd\n19 May 26",
+              "event": "Strasbourg",
+              "opponent": "Victoria Mboko",
+              "result": "CAN   Loss 6-4 6-3 2nd",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Xinyu Wang\nCHN  6-3 7-64 1st\n17 May 26",
+              "event": "",
+              "opponent": "Xinyu Wang",
+              "result": "CHN  6-3 7-64 1st",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Parma\nDominika Salkova\nCZE   Loss 6-75 6-1 6-2 1st\n11 May 26",
+              "event": "Parma",
+              "opponent": "Dominika Salkova",
+              "result": "CZE   Loss 6-75 6-1 6-2 1st",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rome\nKaterina Siniakova\nCZE   Loss 6-2 6-3 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Katerina Siniakova",
+              "result": "CZE   Loss 6-2 6-3 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nPeyton Stearns\nUSA   Loss 6-1 6-3 1st\n21 Apr 26",
+              "event": "Madrid",
+              "opponent": "Peyton Stearns",
+              "result": "USA   Loss 6-1 6-3 1st",
+              "date": "21 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-krueger-ruzic-2026-05-26": {
+      "title": "Antonia Ruzic vs Ashlyn Krueger",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Antonia-Ruzic-Vs-Ashlyn-Krueger/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Krueger in 2",
+      "players": [
+        {
+          "name": "Antonia Ruzic",
+          "record2026": {
+            "overall": "12-15",
+            "hard": "8-8",
+            "clay": "4-6",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nYulia Putintseva\nKAZ   Loss 6-4 6-3 q1\n16 May 26",
+              "event": "Strasbourg",
+              "opponent": "Yulia Putintseva",
+              "result": "KAZ   Loss 6-4 6-3 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Rome\nMirra Andreeva\nRUS   Loss 6-1 6-0 2nd\n07 May 26",
+              "event": "Rome",
+              "opponent": "Mirra Andreeva",
+              "result": "RUS   Loss 6-1 6-0 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Kamilla Rakhimova\nUZB  6-4 1-6 6-3 1st\n05 May 26",
+              "event": "",
+              "opponent": "Kamilla Rakhimova",
+              "result": "UZB  6-4 1-6 6-3 1st",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "La Bisbal D'Emporda\nSara Sorribes Tormo\nESP   Loss 1-6 6-3 6-4 2nd\n30 Apr 26",
+              "event": "La Bisbal D'Emporda",
+              "opponent": "Sara Sorribes Tormo",
+              "result": "ESP   Loss 1-6 6-3 6-4 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Victoria Bosio\nARG  6-1 7-65 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Victoria Bosio",
+              "result": "ARG  6-1 7-65 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nElena Gabriela Ruse\nROU   Loss 6-3 4-6 6-0 1st\n22 Apr 26",
+              "event": "Madrid",
+              "opponent": "Elena Gabriela Ruse",
+              "result": "ROU   Loss 6-3 4-6 6-0 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Stuttgart\nLiudmila Samsonova\nRUS   Loss 6-0 6-4 1st\n13 Apr 26",
+              "event": "Stuttgart",
+              "opponent": "Liudmila Samsonova",
+              "result": "RUS   Loss 6-0 6-4 1st",
+              "date": "13 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Group I, Europe/Africa\nJohanne Svendsen\nDEN  7-5 6-4 Rubber 2\n10 Apr 26",
+              "event": "Billie Jean King Cup, Group I, Europe/Africa",
+              "opponent": "Johanne Svendsen",
+              "result": "DEN  7-5 6-4 Rubber 2",
+              "date": "10 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Ashlyn Krueger",
+          "record2026": {
+            "overall": "11-12",
+            "hard": "6-7",
+            "clay": "5-4",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nMary Stoiana\nUSA  6-74 6-3 6-1 Q.\n21 May 26",
+              "event": "Paris",
+              "opponent": "Mary Stoiana",
+              "result": "USA  6-74 6-3 6-1 Q.",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Luisina Giovannini\nARG  6-4 6-3 q2\n20 May 26",
+              "event": "",
+              "opponent": "Luisina Giovannini",
+              "result": "ARG  6-4 6-3 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Margaux Rouvroy\nFRA  6-4 6-3 q1\n19 May 26",
+              "event": "",
+              "opponent": "Margaux Rouvroy",
+              "result": "FRA  6-4 6-3 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Rome\nNikola Bartunkova\nCZE   Loss 6-2 6-2 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Nikola Bartunkova",
+              "result": "CZE   Loss 6-2 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "La Bisbal D'Emporda\nBeatriz Haddad Maia\nBRA   Loss 6-76 6-4 6-3 2nd\n29 Apr 26",
+              "event": "La Bisbal D'Emporda",
+              "opponent": "Beatriz Haddad Maia",
+              "result": "BRA   Loss 6-76 6-4 6-3 2nd",
+              "date": "29 Apr 26"
+            },
+            {
+              "raw": "Storm Hunter\nAUS  6-2 6-73 6-1 1st\n27 Apr 26",
+              "event": "",
+              "opponent": "Storm Hunter",
+              "result": "AUS  6-2 6-73 6-1 1st",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Madrid\nSofia Kenin\nUSA   Loss 7-62 6-4 1st\n22 Apr 26",
+              "event": "Madrid",
+              "opponent": "Sofia Kenin",
+              "result": "USA   Loss 7-62 6-4 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Charleston\nPeyton Stearns\nUSA   Loss 7-68 7-5 2nd\n01 Apr 26",
+              "event": "Charleston",
+              "opponent": "Peyton Stearns",
+              "result": "USA   Loss 7-68 7-5 2nd",
+              "date": "01 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-cocciaretto-korneeva-2026-05-26": {
+      "title": "Alina Korneeva vs Elisabetta Cocciaretto",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alina-Korneeva-Vs-Elisabetta-Cocciaretto/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Cocciaretto in 3",
+      "players": [
+        {
+          "name": "Alina Korneeva",
+          "record2026": {
+            "overall": "24-8",
+            "hard": "8-3",
+            "clay": "6-4",
+            "indoorHard": "10-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nJulia Riera\nARG  6-3 6-2 Q.\n21 May 26",
+              "event": "Paris",
+              "opponent": "Julia Riera",
+              "result": "ARG  6-3 6-2 Q.",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Jazmin Ortenzi\nARG  4-6 6-4 6-2 q2\n20 May 26",
+              "event": "",
+              "opponent": "Jazmin Ortenzi",
+              "result": "ARG  4-6 6-4 6-2 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Nao Hibino\nJPN  6-3 7-63 q1\n18 May 26",
+              "event": "",
+              "opponent": "Nao Hibino",
+              "result": "JPN  6-3 7-63 q1",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Paris\nKatie Volynets\nUSA   Loss 6-1 6-4 1st\n11 May 26",
+              "event": "Paris",
+              "opponent": "Katie Volynets",
+              "result": "USA   Loss 6-1 6-4 1st",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rome\nPanna Udvardy\nHUN   Loss 6-2 7-62 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Panna Udvardy",
+              "result": "HUN   Loss 6-2 7-62 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Lilli Tagger\nAUT  6-3 6-3 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Lilli Tagger",
+              "result": "AUT  6-3 6-3 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Ella Seidel\nGER  7-61 3-6 6-2 q1\n04 May 26",
+              "event": "",
+              "opponent": "Ella Seidel",
+              "result": "GER  7-61 3-6 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Saint-Malo\nAmandine Monnot\nFRA   Loss 6-2 6-3 1st\n28 Apr 26",
+              "event": "Saint-Malo",
+              "opponent": "Amandine Monnot",
+              "result": "FRA   Loss 6-2 6-3 1st",
+              "date": "28 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Elisabetta Cocciaretto",
+          "record2026": {
+            "overall": "20-9",
+            "hard": "15-5",
+            "clay": "5-4",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nIga Swiatek\nPOL   Loss 6-1 6-0 3rd\n10 May 26",
+              "event": "Rome",
+              "opponent": "Iga Swiatek",
+              "result": "POL   Loss 6-1 6-0 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Emma Navarro\nUSA  6-3 6-3 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Emma Navarro",
+              "result": "USA  6-3 6-3 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Sinja Kraus\nAUT  6-2 6-4 1st\n06 May 26",
+              "event": "",
+              "opponent": "Sinja Kraus",
+              "result": "AUT  6-2 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nAlycia Parks\nUSA   Loss 6-3 6-2 1st\n22 Apr 26",
+              "event": "Madrid",
+              "opponent": "Alycia Parks",
+              "result": "USA   Loss 6-3 6-2 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Rouen\nVeronika Podrez\nUKR   Loss 7-65 4-6 6-4 2nd\n16 Apr 26",
+              "event": "Rouen",
+              "opponent": "Veronika Podrez",
+              "result": "UKR   Loss 7-65 4-6 6-4 2nd",
+              "date": "16 Apr 26"
+            },
+            {
+              "raw": "Alina Charaeva\nRUS  6-3 4-6 6-2 1st\n14 Apr 26",
+              "event": "",
+              "opponent": "Alina Charaeva",
+              "result": "RUS  6-3 4-6 6-2 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Qualifiers, ITA-JPN 3-1\nMoyuka Uchijima\nJPN  7-5 6-2 Rubber 1\n10 Apr 26",
+              "event": "Billie Jean King Cup, Qualifiers, ITA-JPN 3-1",
+              "opponent": "Moyuka Uchijima",
+              "result": "JPN  7-5 6-2 Rubber 1",
+              "date": "10 Apr 26"
+            },
+            {
+              "raw": "Charleston\nJessica Pegula\nUSA   Loss 1-6 6-1 7-61 3rd\n02 Apr 26",
+              "event": "Charleston",
+              "opponent": "Jessica Pegula",
+              "result": "USA   Loss 1-6 6-1 7-61 3rd",
+              "date": "02 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-keys-vandewinkel-2026-05-26": {
+      "title": "Hanne Vandewinkel vs Madison Keys",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Hanne-Vandewinkel-Vs-Madison-Keys/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Keys in 2",
+      "players": [
+        {
+          "name": "Hanne Vandewinkel",
+          "record2026": {
+            "overall": "25-11",
+            "hard": "12-4",
+            "clay": "4-6",
+            "indoorHard": "9-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rabat\nPanna Udvardy\nHUN   Loss 6-4 6-2 1st\n18 May 26",
+              "event": "Rabat",
+              "opponent": "Panna Udvardy",
+              "result": "HUN   Loss 6-4 6-2 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Parma\nDayana Yastremska\nUKR   Loss 6-3 6-2 2nd\n13 May 26",
+              "event": "Parma",
+              "opponent": "Dayana Yastremska",
+              "result": "UKR   Loss 6-3 6-2 2nd",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Whitney Osuigwe\nUSA  7-5 6-4 1st\n11 May 26",
+              "event": "",
+              "opponent": "Whitney Osuigwe",
+              "result": "USA  7-5 6-4 1st",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rome\nJil Teichmann\nSUI   Loss 6-4 6-3 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Jil Teichmann",
+              "result": "SUI   Loss 6-4 6-3 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "W100 Wiesbaden\nErika Andreeva\nRUS   Loss 6-2 6-0 1st\n29 Apr 26",
+              "event": "W100 Wiesbaden",
+              "opponent": "Erika Andreeva",
+              "result": "RUS   Loss 6-2 6-0 1st",
+              "date": "29 Apr 26"
+            },
+            {
+              "raw": "Madrid\nDaria Snigur\nUKR   Loss 7-64 6-4 Q.\n21 Apr 26",
+              "event": "Madrid",
+              "opponent": "Daria Snigur",
+              "result": "UKR   Loss 7-64 6-4 Q.",
+              "date": "21 Apr 26"
+            },
+            {
+              "raw": "Linda Fruhvirtova\nCZE  6-2 7-5 q1\n20 Apr 26",
+              "event": "",
+              "opponent": "Linda Fruhvirtova",
+              "result": "CZE  6-2 7-5 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Qualifiers, BEL-USA 3-1\nIva Jovic\nUSA  7-63 6-3 Rubber 1\n10 Apr 26",
+              "event": "Billie Jean King Cup, Qualifiers, BEL-USA 3-1",
+              "opponent": "Iva Jovic",
+              "result": "USA  7-63 6-3 Rubber 1",
+              "date": "10 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Madison Keys",
+          "record2026": {
+            "overall": "16-8",
+            "hard": "8-5",
+            "clay": "8-3",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nDiane Parry\nFRA   Loss 3-6 3-3 ret. Fin.\n17 May 26",
+              "event": "Paris",
+              "opponent": "Diane Parry",
+              "result": "FRA   Loss 3-6 3-3 ret. Fin.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Yuliia Starodubtseva\nUKR  1-6 6-2 6-3 1/2\n16 May 26",
+              "event": "",
+              "opponent": "Yuliia Starodubtseva",
+              "result": "UKR  1-6 6-2 6-3 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Anastasia Zakharova\nRUS  6-4 6-1 1/4\n15 May 26",
+              "event": "",
+              "opponent": "Anastasia Zakharova",
+              "result": "RUS  6-4 6-1 1/4",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Tiantsoa Rakotomanga Rajaonah\nFRA  6-4 6-1 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Tiantsoa Rakotomanga Rajaonah",
+              "result": "FRA  6-4 6-1 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Fiona Ferro\nFRA  6-4 6-2 1st\n12 May 26",
+              "event": "",
+              "opponent": "Fiona Ferro",
+              "result": "FRA  6-4 6-2 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nNikola Bartunkova\nCZE   Loss 6-3 1-6 6-4 3rd\n10 May 26",
+              "event": "Rome",
+              "opponent": "Nikola Bartunkova",
+              "result": "CZE   Loss 6-3 1-6 6-4 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Peyton Stearns\nUSA  4-6 6-4 6-2 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Peyton Stearns",
+              "result": "USA  4-6 6-4 6-2 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Charleston\nYuliia Starodubtseva\nUKR   Loss 6-1 6-4 1/2\n04 Apr 26",
+              "event": "Charleston",
+              "opponent": "Yuliia Starodubtseva",
+              "result": "UKR   Loss 6-1 6-4 1/2",
+              "date": "04 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-gauff-townsend-2026-05-26": {
+      "title": "Coco Gauff vs Taylor Townsend",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Coco-Gauff-Vs-Taylor-Townsend/",
+      "error": "Page did not expose clay matchup selectors before timeout"
+    },
+    "rg-w-pridankina-oliynykova-2026-05-26": {
+      "title": "Elena Pridankina vs Oleksandra Oliynykova",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Elena-Pridankina-Vs-Oleksandra-Oliynykova/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Oliynykova in 2",
+      "players": [
+        {
+          "name": "Elena Pridankina",
+          "record2026": {
+            "overall": "18-12",
+            "hard": "6-4",
+            "clay": "12-7",
+            "indoorHard": "0-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nHimeno Sakatsume\nJPN  6-2 6-1 Q.\n21 May 26",
+              "event": "Paris",
+              "opponent": "Himeno Sakatsume",
+              "result": "JPN  6-2 6-1 Q.",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Julia Avdeeva\nRUS  7-5 6-1 q2\n20 May 26",
+              "event": "",
+              "opponent": "Julia Avdeeva",
+              "result": "RUS  7-5 6-1 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Victoria Jimenez Kasintseva\nAND  6-73 6-2 6-4 q1\n18 May 26",
+              "event": "",
+              "opponent": "Victoria Jimenez Kasintseva",
+              "result": "AND  6-73 6-2 6-4 q1",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "La Bisbal D'Emporda\nSara Sorribes Tormo\nESP   Loss 3-6 7-5 7-5 1/4\n01 May 26",
+              "event": "La Bisbal D'Emporda",
+              "opponent": "Sara Sorribes Tormo",
+              "result": "ESP   Loss 3-6 7-5 7-5 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Rebeka Masarova\nSUI  2-6 6-2 6-1 2nd\n30 Apr 26",
+              "event": "",
+              "opponent": "Rebeka Masarova",
+              "result": "SUI  2-6 6-2 6-1 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Kamilla Rakhimova\nUZB  6-4 6-3 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Kamilla Rakhimova",
+              "result": "UZB  6-4 6-3 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Oeiras\nFiona Ferro\nFRA   Loss 7-61 6-1 1/4\n24 Apr 26",
+              "event": "Oeiras",
+              "opponent": "Fiona Ferro",
+              "result": "FRA   Loss 7-61 6-1 1/4",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Sofia Costoulas\nBEL  6-2 6-3 2nd\n22 Apr 26",
+              "event": "",
+              "opponent": "Sofia Costoulas",
+              "result": "BEL  6-2 6-3 2nd",
+              "date": "22 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Oleksandra Oliynykova",
+          "record2026": {
+            "overall": "15-9",
+            "hard": "0-1",
+            "clay": "12-7",
+            "indoorHard": "3-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nMarie Bouzkova\nCZE   Loss 3-1 ret. 2nd\n20 May 26",
+              "event": "Strasbourg",
+              "opponent": "Marie Bouzkova",
+              "result": "CZE   Loss 3-1 ret. 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Alexandra Eala\nPHI  3-6 7-5 6-3 1st\n18 May 26",
+              "event": "",
+              "opponent": "Alexandra Eala",
+              "result": "PHI  3-6 7-5 6-3 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Yulia Putintseva\nKAZ  6-4 6-4 Q.\n17 May 26",
+              "event": "",
+              "opponent": "Yulia Putintseva",
+              "result": "KAZ  6-4 6-4 Q.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Ksenia Efremova\nFRA  6-1 6-2 q1\n16 May 26",
+              "event": "",
+              "opponent": "Ksenia Efremova",
+              "result": "FRA  6-1 6-2 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Rome\nLinda Noskova\nCZE   Loss 6-1 6-3 3rd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Linda Noskova",
+              "result": "CZE   Loss 6-1 6-3 3rd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Clara Tauson\nDEN  6-1 3-1 ret. 2nd\n07 May 26",
+              "event": "",
+              "opponent": "Clara Tauson",
+              "result": "DEN  6-1 3-1 ret. 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Petra Marcinko\nCRO  6-1 6-3 1st\n05 May 26",
+              "event": "",
+              "opponent": "Petra Marcinko",
+              "result": "CRO  6-1 6-3 1st",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Madrid\nSimona Waltert\nSUI   Loss 7-5 6-0 1st\n22 Apr 26",
+              "event": "Madrid",
+              "opponent": "Simona Waltert",
+              "result": "SUI   Loss 7-5 6-0 1st",
+              "date": "22 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-comesana-quinn-2026-05-26": {
+      "title": "Ethan Quinn vs Francisco Comesana",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Ethan-Quinn-Vs-Francisco-Comesana/",
+      "h2hText": "0:1",
+      "h2hRecord": "0:1",
+      "prediction": "Comesana in 5",
+      "players": [
+        {
+          "name": "Ethan Quinn",
+          "record2026": {
+            "overall": "18-14",
+            "hard": "10-6",
+            "clay": "7-7",
+            "indoorHard": "1-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Hamburg\nTommy Paul\nUSA   Loss 6-1 6-3 1st\n17 May 26",
+              "event": "Hamburg",
+              "opponent": "Tommy Paul",
+              "result": "USA   Loss 6-1 6-3 1st",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Rome\nPablo Llamas Ruiz\nESP   Loss 6-3 5-7 6-3 1st\n07 May 26",
+              "event": "Rome",
+              "opponent": "Pablo Llamas Ruiz",
+              "result": "ESP   Loss 6-3 5-7 6-3 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Aix En Provence Challenger\nAlejandro Tabilo\nCHI   Loss 6-3 3-6 7-62 1/2\n02 May 26",
+              "event": "Aix En Provence Challenger",
+              "opponent": "Alejandro Tabilo",
+              "result": "CHI   Loss 6-3 3-6 7-62 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Yibing Wu\nCHN  6-4 5-7 6-4 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Yibing Wu",
+              "result": "CHN  6-4 5-7 6-4 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Martin Landaluce\nESP  1-6 7-65 7-65 2nd\n30 Apr 26",
+              "event": "",
+              "opponent": "Martin Landaluce",
+              "result": "ESP  1-6 7-65 7-65 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Madrid\nFabian Marozsan\nHUN   Loss 7-65 7-66 1st\n23 Apr 26",
+              "event": "Madrid",
+              "opponent": "Fabian Marozsan",
+              "result": "HUN   Loss 7-65 7-66 1st",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Barcelona\nCameron Norrie\nGBR   Loss 6-3 4-6 6-4 2nd\n15 Apr 26",
+              "event": "Barcelona",
+              "opponent": "Cameron Norrie",
+              "result": "GBR   Loss 6-3 4-6 6-4 2nd",
+              "date": "15 Apr 26"
+            },
+            {
+              "raw": "Reilly Opelka\nUSA  7-5 7-67 1st\n13 Apr 26",
+              "event": "",
+              "opponent": "Reilly Opelka",
+              "result": "USA  7-5 7-67 1st",
+              "date": "13 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Francisco Comesana",
+          "record2026": {
+            "overall": "11-16",
+            "hard": "2-5",
+            "clay": "9-11",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nJaume Antoni Munar Clar\nESP   Loss 6-4 6-4 2nd\n20 May 26",
+              "event": "Geneva",
+              "opponent": "Jaume Antoni Munar Clar",
+              "result": "ESP   Loss 6-4 6-4 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Valentin Royer\nFRA  2-6 6-3 6-4 1st\n18 May 26",
+              "event": "",
+              "opponent": "Valentin Royer",
+              "result": "FRA  2-6 6-3 6-4 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Max Hans Rehberg\nGER  6-3 6-2 Q.\n17 May 26",
+              "event": "",
+              "opponent": "Max Hans Rehberg",
+              "result": "GER  6-3 6-2 Q.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Henry Bernet\nSUI  6-3 6-1 q1\n16 May 26",
+              "event": "",
+              "opponent": "Henry Bernet",
+              "result": "SUI  6-3 6-1 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Valencia Challenger\nPablo Carreno-Busta\nESP   Loss 6-4 6-3 1st\n12 May 26",
+              "event": "Valencia Challenger",
+              "opponent": "Pablo Carreno-Busta",
+              "result": "ESP   Loss 6-4 6-3 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nJan-Lennard Struff\nGER   Loss 6-2 6-4 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Jan-Lennard Struff",
+              "result": "GER   Loss 6-2 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Leandro Riedi\nSUI  6-4 2-6 6-4 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Leandro Riedi",
+              "result": "SUI  6-4 2-6 6-4 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Billy Harris\nGBR  6-3 6-4 q1\n04 May 26",
+              "event": "",
+              "opponent": "Billy Harris",
+              "result": "GBR  6-3 6-4 q1",
+              "date": "04 May 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-auger-aliassime-altmaier-2026-05-26": {
+      "title": "Felix Auger-Aliassime vs Daniel Altmaier",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Felix-Auger-Aliassime-Vs-Daniel-Altmaier/",
+      "error": "Page did not expose clay matchup selectors before timeout"
+    },
+    "rg-m-cerundolo-fearnley-2026-05-26": {
+      "title": "Jacob Fearnley vs Juan Manuel Cerundolo",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Jacob-Fearnley-Vs-Juan-Manuel-Cerundolo/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Manuel Cerundolo in 5",
+      "players": [
+        {
+          "name": "Jacob Fearnley",
+          "record2026": {
+            "overall": "7-12",
+            "hard": "4-8",
+            "clay": "2-2",
+            "indoorHard": "1-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Bordeaux Challenger\nTitouan Droguet\nFRA   Loss 6-2 6-72 6-2 1st\n12 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Titouan Droguet",
+              "result": "FRA   Loss 6-2 6-72 6-2 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nGiovanni Mpetshi Perricard\nFRA   Loss 7-66 4-6 6-2 1st\n07 May 26",
+              "event": "Rome",
+              "opponent": "Giovanni Mpetshi Perricard",
+              "result": "FRA   Loss 7-66 4-6 6-2 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Aleksandar Kovacevic\nUSA  2-6 6-2 6-3 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Aleksandar Kovacevic",
+              "result": "USA  2-6 6-2 6-3 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Shintaro Mochizuki\nJPN  6-3 6-1 q1\n04 May 26",
+              "event": "",
+              "opponent": "Shintaro Mochizuki",
+              "result": "JPN  6-3 6-1 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Miami\nMartin Damm\nUSA   Loss 6-0 ret. 1st\n19 Mar 26",
+              "event": "Miami",
+              "opponent": "Martin Damm",
+              "result": "USA   Loss 6-0 ret. 1st",
+              "date": "19 Mar 26"
+            },
+            {
+              "raw": "Phoenix Challenger\nArthur Cazaux\nFRA   Loss 6-2 3-6 6-1 1st\n11 Mar 26",
+              "event": "Phoenix Challenger",
+              "opponent": "Arthur Cazaux",
+              "result": "FRA   Loss 6-2 3-6 6-1 1st",
+              "date": "11 Mar 26"
+            },
+            {
+              "raw": "Indian Wells\nTaylor Fritz\nUSA   Loss 6-3 6-78 6-1 2nd\n07 Mar 26",
+              "event": "Indian Wells",
+              "opponent": "Taylor Fritz",
+              "result": "USA   Loss 6-3 6-78 6-1 2nd",
+              "date": "07 Mar 26"
+            },
+            {
+              "raw": "Damir Dzumhur\nBIH  6-3 6-3 1st\n05 Mar 26",
+              "event": "",
+              "opponent": "Damir Dzumhur",
+              "result": "BIH  6-3 6-3 1st",
+              "date": "05 Mar 26"
+            }
+          ]
+        },
+        {
+          "name": "Juan Manuel Cerundolo",
+          "record2026": {
+            "overall": "19-12",
+            "hard": "2-2",
+            "clay": "17-10",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Bordeaux Challenger\nRaphael Collignon\nBEL  5-7 6-1 7-64 Fin.\n17 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Raphael Collignon",
+              "result": "BEL  5-7 6-1 7-64 Fin.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Quentin Halys\nFRA  6-2 6-4 1/2\n16 May 26",
+              "event": "",
+              "opponent": "Quentin Halys",
+              "result": "FRA  6-2 6-4 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Martin Damm\nUSA  6-2 6-2 1/4\n15 May 26",
+              "event": "",
+              "opponent": "Martin Damm",
+              "result": "USA  6-2 6-2 1/4",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Roman Andres Burruchaga\nARG  6-4 6-4 2nd\n15 May 26",
+              "event": "",
+              "opponent": "Roman Andres Burruchaga",
+              "result": "ARG  6-4 6-4 2nd",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Luca Van Assche\nFRA  7-62 6-4 1st\n13 May 26",
+              "event": "",
+              "opponent": "Luca Van Assche",
+              "result": "FRA  7-62 6-4 1st",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Rome\nCristian Garin\nCHI   Loss 7-62 7-5 1st\n07 May 26",
+              "event": "Rome",
+              "opponent": "Cristian Garin",
+              "result": "CHI   Loss 7-62 7-5 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Cagliari Challenger\nMatteo Arnaldi\nITA   Loss 6-2 6-3 2nd\n30 Apr 26",
+              "event": "Cagliari Challenger",
+              "opponent": "Matteo Arnaldi",
+              "result": "ITA   Loss 6-2 6-3 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Federico Cina\nITA  6-78 6-4 6-3 1st\n29 Apr 26",
+              "event": "",
+              "opponent": "Federico Cina",
+              "result": "ITA  6-78 6-4 6-3 1st",
+              "date": "29 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-shapovalov-faria-2026-05-26": {
+      "title": "Jaime Faria vs Denis Shapovalov",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Jaime-Faria-Vs-Denis-Shapovalov/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Faria in 5",
+      "players": [
+        {
+          "name": "Jaime Faria",
+          "record2026": {
+            "overall": "31-14",
+            "hard": "5-2",
+            "clay": "24-11",
+            "indoorHard": "2-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nLukas Neumayer\nAUT  6-3 7-69 Q.\n21 May 26",
+              "event": "Paris",
+              "opponent": "Lukas Neumayer",
+              "result": "AUT  6-3 7-69 Q.",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Colton Smith\nUSA  6-1 3-6 6-3 q2\n20 May 26",
+              "event": "",
+              "opponent": "Colton Smith",
+              "result": "USA  6-1 3-6 6-3 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Grigor Dimitrov\nBUL  3-6 7-5 7-66 q1\n19 May 26",
+              "event": "",
+              "opponent": "Grigor Dimitrov",
+              "result": "BUL  3-6 7-5 7-66 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Oeiras 4 Challenger\nEmilio Nava\nUSA   Loss 6-2 6-77 7-65 1/2\n15 May 26",
+              "event": "Oeiras 4 Challenger",
+              "opponent": "Emilio Nava",
+              "result": "USA   Loss 6-2 6-77 7-65 1/2",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Petr Brunclik\nCZE  1-6 7-63 6-2 1/4\n14 May 26",
+              "event": "",
+              "opponent": "Petr Brunclik",
+              "result": "CZE  1-6 7-63 6-2 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Eero Vasa\nFIN  6-3 6-1 2nd\n13 May 26",
+              "event": "",
+              "opponent": "Eero Vasa",
+              "result": "FIN  6-3 6-1 2nd",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Tiago Torres\nPOR  6-3 6-4 1st\n12 May 26",
+              "event": "",
+              "opponent": "Tiago Torres",
+              "result": "POR  6-3 6-4 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nPablo Llamas Ruiz\nESP   Loss 3-6 6-2 6-3 Q.\n05 May 26",
+              "event": "Rome",
+              "opponent": "Pablo Llamas Ruiz",
+              "result": "ESP   Loss 3-6 6-2 6-3 Q.",
+              "date": "05 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Denis Shapovalov",
+          "record2026": {
+            "overall": "8-10",
+            "hard": "3-5",
+            "clay": "2-4",
+            "indoorHard": "3-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nMariano Navone\nARG   Loss 6-4 6-2 1st\n07 May 26",
+              "event": "Rome",
+              "opponent": "Mariano Navone",
+              "result": "ARG   Loss 6-4 6-2 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nNicolai Budkov Kjaer\nNOR   Loss 6-2 6-1 2nd\n25 Apr 26",
+              "event": "Madrid",
+              "opponent": "Nicolai Budkov Kjaer",
+              "result": "NOR   Loss 6-2 6-1 2nd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Munich\nAlex Molcan\nSVK   Loss 6-4 6-4 1/4\n17 Apr 26",
+              "event": "Munich",
+              "opponent": "Alex Molcan",
+              "result": "SVK   Loss 6-4 6-4 1/4",
+              "date": "17 Apr 26"
+            },
+            {
+              "raw": "Fabian Marozsan\nHUN  7-64 6-2 2nd\n16 Apr 26",
+              "event": "",
+              "opponent": "Fabian Marozsan",
+              "result": "HUN  7-64 6-2 2nd",
+              "date": "16 Apr 26"
+            },
+            {
+              "raw": "Tallon Griekspoor\nNED  6-4 3-6 6-2 1st\n14 Apr 26",
+              "event": "",
+              "opponent": "Tallon Griekspoor",
+              "result": "NED  6-4 3-6 6-2 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Monte-Carlo\nAlexander Blockx\nBEL   Loss 6-4 4-6 6-3 1st\n06 Apr 26",
+              "event": "Monte-Carlo",
+              "opponent": "Alexander Blockx",
+              "result": "BEL   Loss 6-4 4-6 6-3 1st",
+              "date": "06 Apr 26"
+            },
+            {
+              "raw": "Miami\nBotic Van De Zandschulp\nNED   Loss 7-5 6-3 1st\n19 Mar 26",
+              "event": "Miami",
+              "opponent": "Botic Van De Zandschulp",
+              "result": "NED   Loss 7-5 6-3 1st",
+              "date": "19 Mar 26"
+            },
+            {
+              "raw": "Indian Wells\nJannik Sinner\nITA   Loss 6-3 6-2 3rd\n08 Mar 26",
+              "event": "Indian Wells",
+              "opponent": "Jannik Sinner",
+              "result": "ITA   Loss 6-3 6-2 3rd",
+              "date": "08 Mar 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-darderi-ofner-2026-05-26": {
+      "title": "Sebastian Ofner vs Luciano Darderi",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Sebastian-Ofner-Vs-Luciano-Darderi/",
+      "h2hText": "1:1",
+      "h2hRecord": "1:1",
+      "prediction": "Darderi in 4",
+      "players": [
+        {
+          "name": "Sebastian Ofner",
+          "record2026": {
+            "overall": "21-13",
+            "hard": "1-3",
+            "clay": "10-8",
+            "indoorHard": "10-2",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nKilian Feldbausch\nSUI   Loss 6-4 6-0 q1\n16 May 26",
+              "event": "Geneva",
+              "opponent": "Kilian Feldbausch",
+              "result": "SUI   Loss 6-4 6-0 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Rome\nJannik Sinner\nITA   Loss 6-3 6-4 2nd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Jannik Sinner",
+              "result": "ITA   Loss 6-3 6-4 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Alex Michelsen\nUSA  6-3 6-3 1st\n07 May 26",
+              "event": "",
+              "opponent": "Alex Michelsen",
+              "result": "USA  6-3 6-3 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Aix En Provence Challenger\nRinky Hijikata\nAUS   Loss 6-4 2-6 7-65 2nd\n30 Apr 26",
+              "event": "Aix En Provence Challenger",
+              "opponent": "Rinky Hijikata",
+              "result": "AUS   Loss 6-4 2-6 7-65 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Stan Wawrinka\nSUI  6-3 6-4 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Stan Wawrinka",
+              "result": "SUI  6-3 6-4 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nTomas Martin Etcheverry\nARG   Loss 6-4 6-4 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Tomas Martin Etcheverry",
+              "result": "ARG   Loss 6-4 6-4 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Nikoloz Basilashvili\nGEO  7-65 7-60 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Nikoloz Basilashvili",
+              "result": "GEO  7-65 7-60 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Barcelona\nAlex De Minaur\nAUS   Loss 7-67 6-4 1st\n14 Apr 26",
+              "event": "Barcelona",
+              "opponent": "Alex De Minaur",
+              "result": "AUS   Loss 7-67 6-4 1st",
+              "date": "14 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Luciano Darderi",
+          "record2026": {
+            "overall": "20-12",
+            "hard": "4-4",
+            "clay": "16-8",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Hamburg\nAlex De Minaur\nAUS   Loss 6-0 6-3 1/4\n21 May 26",
+              "event": "Hamburg",
+              "opponent": "Alex De Minaur",
+              "result": "AUS   Loss 6-0 6-3 1/4",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Yannick Hanfmann\nGER  7-67 7-5 2nd\n20 May 26",
+              "event": "",
+              "opponent": "Yannick Hanfmann",
+              "result": "GER  7-67 7-5 2nd",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Roman Andres Burruchaga\nARG  6-3 7-64 1st\n19 May 26",
+              "event": "",
+              "opponent": "Roman Andres Burruchaga",
+              "result": "ARG  6-3 7-64 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Rome\nCasper Ruud\nNOR   Loss 6-1 6-1 1/2\n15 May 26",
+              "event": "Rome",
+              "opponent": "Casper Ruud",
+              "result": "NOR   Loss 6-1 6-1 1/2",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Rafael Jodar\nESP  7-65 5-7 6-0 1/4\n13 May 26",
+              "event": "",
+              "opponent": "Rafael Jodar",
+              "result": "ESP  7-65 5-7 6-0 1/4",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Alexander Zverev\nGER  1-6 7-610 6-0 4th\n12 May 26",
+              "event": "",
+              "opponent": "Alexander Zverev",
+              "result": "GER  1-6 7-610 6-0 4th",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Tommy Paul\nUSA  3-6 6-3 6-2 3rd\n10 May 26",
+              "event": "",
+              "opponent": "Tommy Paul",
+              "result": "USA  3-6 6-3 6-2 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Yannick Hanfmann\nGER  6-4 6-4 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Yannick Hanfmann",
+              "result": "GER  6-4 6-4 2nd",
+              "date": "08 May 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-pegula-birrell-2026-05-26": {
+      "title": "Kimberly Birrell vs Jessica Pegula",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Kimberly-Birrell-Vs-Jessica-Pegula/",
+      "h2hText": "0:1",
+      "h2hRecord": "0:1",
+      "prediction": "Pegula in 2",
+      "players": [
+        {
+          "name": "Kimberly Birrell",
+          "record2026": {
+            "overall": "16-13",
+            "hard": "16-10",
+            "clay": "0-3",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nKatie Boulter\nGBR   Loss 7-5 7-62 1st\n12 May 26",
+              "event": "Paris",
+              "opponent": "Katie Boulter",
+              "result": "GBR   Loss 7-5 7-62 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nYue Yuan\nCHN   Loss 6-3 6-2 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Yue Yuan",
+              "result": "CHN   Loss 6-3 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Madrid\nPanna Udvardy\nHUN   Loss 6-4 1-6 6-1 1st\n22 Apr 26",
+              "event": "Madrid",
+              "opponent": "Panna Udvardy",
+              "result": "HUN   Loss 6-4 1-6 6-1 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Qualifiers, AUS-GBR 1-3\nHarriet Dart\nGBR   Loss 4-6 6-3 6-3 Rubber 2\n10 Apr 26",
+              "event": "Billie Jean King Cup, Qualifiers, AUS-GBR 1-3",
+              "opponent": "Harriet Dart",
+              "result": "GBR   Loss 4-6 6-3 6-3 Rubber 2",
+              "date": "10 Apr 26"
+            },
+            {
+              "raw": "Miami\nAnn Li\nUSA   Loss 6-2 2-6 6-3 1st\n19 Mar 26",
+              "event": "Miami",
+              "opponent": "Ann Li",
+              "result": "USA   Loss 6-2 2-6 6-3 1st",
+              "date": "19 Mar 26"
+            },
+            {
+              "raw": "Yue Yuan\nCHN  6-2 2-6 6-4 Q.\n17 Mar 26",
+              "event": "",
+              "opponent": "Yue Yuan",
+              "result": "CHN  6-2 2-6 6-4 Q.",
+              "date": "17 Mar 26"
+            },
+            {
+              "raw": "Viktoriya Tomova\nBUL  6-3 6-2 q1\n16 Mar 26",
+              "event": "",
+              "opponent": "Viktoriya Tomova",
+              "result": "BUL  6-3 6-2 q1",
+              "date": "16 Mar 26"
+            },
+            {
+              "raw": "Austin\nLanlana Tararudee\nTHA   Loss 6-4 7-64 1/2\n13 Mar 26",
+              "event": "Austin",
+              "opponent": "Lanlana Tararudee",
+              "result": "THA   Loss 6-4 7-64 1/2",
+              "date": "13 Mar 26"
+            }
+          ]
+        },
+        {
+          "name": "Jessica Pegula",
+          "record2026": {
+            "overall": "28-6",
+            "hard": "19-4",
+            "clay": "9-2",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nIga Swiatek\nPOL   Loss 6-1 6-2 1/4\n13 May 26",
+              "event": "Rome",
+              "opponent": "Iga Swiatek",
+              "result": "POL   Loss 6-1 6-2 1/4",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Anastasia Potapova\nAUT  7-66 6-2 4th\n11 May 26",
+              "event": "",
+              "opponent": "Anastasia Potapova",
+              "result": "AUT  7-66 6-2 4th",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rebeka Masarova\nSUI  6-0 6-0 3rd\n10 May 26",
+              "event": "",
+              "opponent": "Rebeka Masarova",
+              "result": "SUI  6-0 6-0 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Zeynep Sonmez\nTUR  6-4 6-0 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Zeynep Sonmez",
+              "result": "TUR  6-4 6-0 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Madrid\nMarta Kostyuk\nUKR   Loss 6-1 6-4 3rd\n26 Apr 26",
+              "event": "Madrid",
+              "opponent": "Marta Kostyuk",
+              "result": "UKR   Loss 6-1 6-4 3rd",
+              "date": "26 Apr 26"
+            },
+            {
+              "raw": "Katie Boulter\nGBR  6-4 6-4 2nd\n24 Apr 26",
+              "event": "",
+              "opponent": "Katie Boulter",
+              "result": "GBR  6-4 6-4 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Charleston\nYuliia Starodubtseva\nUKR  6-2 6-2 Fin.\n05 Apr 26",
+              "event": "Charleston",
+              "opponent": "Yuliia Starodubtseva",
+              "result": "UKR  6-2 6-2 Fin.",
+              "date": "05 Apr 26"
+            },
+            {
+              "raw": "Iva Jovic\nUSA  6-4 5-7 6-3 1/2\n04 Apr 26",
+              "event": "",
+              "opponent": "Iva Jovic",
+              "result": "USA  6-4 5-7 6-3 1/2",
+              "date": "04 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-siniakova-waltert-2026-05-26": {
+      "title": "Simona Waltert vs Katerina Siniakova",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Simona-Waltert-Vs-Katerina-Siniakova/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Siniakova in 2",
+      "players": [
+        {
+          "name": "Simona Waltert",
+          "record2026": {
+            "overall": "15-15",
+            "hard": "6-9",
+            "clay": "9-6",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rabat\nAnhelina Kalinina\nUKR   Loss 6-3 6-4 1st\n18 May 26",
+              "event": "Rabat",
+              "opponent": "Anhelina Kalinina",
+              "result": "UKR   Loss 6-3 6-4 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Rome\nHailey Baptiste\nUSA   Loss 6-79 6-4 6-4 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Hailey Baptiste",
+              "result": "USA   Loss 6-79 6-4 6-4 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Yuliia Starodubtseva\nUKR  7-5 4-6 6-1 1st\n07 May 26",
+              "event": "",
+              "opponent": "Yuliia Starodubtseva",
+              "result": "UKR  7-5 4-6 6-1 1st",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Yue Yuan\nCHN  6-2 1-6 7-5 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Yue Yuan",
+              "result": "CHN  6-2 1-6 7-5 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Georgia Pedone\nITA  6-2 7-64 q1\n04 May 26",
+              "event": "",
+              "opponent": "Georgia Pedone",
+              "result": "ITA  6-2 7-64 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "W100 Wiesbaden\nMia Pohankova\nSVK   Loss 3-6 7-68 6-1 2nd\n30 Apr 26",
+              "event": "W100 Wiesbaden",
+              "opponent": "Mia Pohankova",
+              "result": "SVK   Loss 3-6 7-68 6-1 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Lucija Ciric Bagaric\nCRO  7-5 4-6 6-3 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Lucija Ciric Bagaric",
+              "result": "CRO  7-5 4-6 6-3 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nJelena Ostapenko\nLAT   Loss 6-2 7-5 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Jelena Ostapenko",
+              "result": "LAT   Loss 6-2 7-5 2nd",
+              "date": "24 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Katerina Siniakova",
+          "record2026": {
+            "overall": "10-10",
+            "hard": "7-7",
+            "clay": "3-3",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nMarie Bouzkova\nCZE   Loss 7-63 6-3 1st\n18 May 26",
+              "event": "Strasbourg",
+              "opponent": "Marie Bouzkova",
+              "result": "CZE   Loss 7-63 6-3 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Rome\nAnna Kalinskaya\nRUS   Loss 4-6 7-64 7-5 2nd\n07 May 26",
+              "event": "Rome",
+              "opponent": "Anna Kalinskaya",
+              "result": "RUS   Loss 4-6 7-64 7-5 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Lois Boisson\nFRA  6-2 6-3 1st\n06 May 26",
+              "event": "",
+              "opponent": "Lois Boisson",
+              "result": "FRA  6-2 6-3 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nCaty McNally\nUSA   Loss 6-3 2-6 7-62 3rd\n26 Apr 26",
+              "event": "Madrid",
+              "opponent": "Caty McNally",
+              "result": "USA   Loss 6-3 2-6 7-62 3rd",
+              "date": "26 Apr 26"
+            },
+            {
+              "raw": "Anna Blinkova\nRUS  6-2 6-2 2nd\n24 Apr 26",
+              "event": "",
+              "opponent": "Anna Blinkova",
+              "result": "RUS  6-2 6-2 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Elvina Kalieva\nUSA  6-3 6-4 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Elvina Kalieva",
+              "result": "USA  6-3 6-4 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Miami\nMaria Camila Osorio Serrano\nCOL   Loss 6-1 6-4 1st\n17 Mar 26",
+              "event": "Miami",
+              "opponent": "Maria Camila Osorio Serrano",
+              "result": "COL   Loss 6-1 6-4 1st",
+              "date": "17 Mar 26"
+            },
+            {
+              "raw": "Indian Wells\nElina Svitolina\nUKR   Loss 6-1 1-1 ret. 4th\n11 Mar 26",
+              "event": "Indian Wells",
+              "opponent": "Elina Svitolina",
+              "result": "UKR   Loss 6-1 1-1 ret. 4th",
+              "date": "11 Mar 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-w-mboko-bartunkova-2026-05-26": {
+      "title": "Victoria Mboko vs Nikola Bartunkova",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Victoria-Mboko-Vs-Nikola-Bartunkova/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Mboko in 2",
+      "players": [
+        {
+          "name": "Victoria Mboko",
+          "record2026": {
+            "overall": "22-8",
+            "hard": "19-6",
+            "clay": "3-2",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Strasbourg\nEmma Navarro\nUSA   Loss 6-0 5-7 6-2 Fin.\n23 May 26",
+              "event": "Strasbourg",
+              "opponent": "Emma Navarro",
+              "result": "USA   Loss 6-0 5-7 6-2 Fin.",
+              "date": "23 May 26"
+            },
+            {
+              "raw": "Jaqueline Cristian\nROU  7-63 3-6 6-2 1/2\n22 May 26",
+              "event": "",
+              "opponent": "Jaqueline Cristian",
+              "result": "ROU  7-63 3-6 6-2 1/2",
+              "date": "22 May 26"
+            },
+            {
+              "raw": "Leylah Annie Fernandez\nCAN  6-4 6-4 1/4\n21 May 26",
+              "event": "",
+              "opponent": "Leylah Annie Fernandez",
+              "result": "CAN  6-4 6-4 1/4",
+              "date": "21 May 26"
+            },
+            {
+              "raw": "Lois Boisson\nFRA  6-4 6-3 2nd\n19 May 26",
+              "event": "",
+              "opponent": "Lois Boisson",
+              "result": "FRA  6-4 6-3 2nd",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Madrid\nCaty McNally\nUSA   Loss 6-4 6-1 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Caty McNally",
+              "result": "USA   Loss 6-4 6-1 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Miami\nKarolina Muchova\nCZE   Loss 7-5 7-65 1/4\n24 Mar 26",
+              "event": "Miami",
+              "opponent": "Karolina Muchova",
+              "result": "CZE   Loss 7-5 7-65 1/4",
+              "date": "24 Mar 26"
+            },
+            {
+              "raw": "Mirra Andreeva\nRUS  7-64 4-6 6-0 4th\n23 Mar 26",
+              "event": "",
+              "opponent": "Mirra Andreeva",
+              "result": "RUS  7-64 4-6 6-0 4th",
+              "date": "23 Mar 26"
+            },
+            {
+              "raw": "Anastasia Zakharova\nRUS  6-1 7-5 3rd\n21 Mar 26",
+              "event": "",
+              "opponent": "Anastasia Zakharova",
+              "result": "RUS  6-1 7-5 3rd",
+              "date": "21 Mar 26"
+            }
+          ]
+        },
+        {
+          "name": "Nikola Bartunkova",
+          "record2026": {
+            "overall": "17-10",
+            "hard": "10-5",
+            "clay": "5-4",
+            "indoorHard": "2-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nElina Svitolina\nUKR   Loss 6-2 6-3 4th\n11 May 26",
+              "event": "Rome",
+              "opponent": "Elina Svitolina",
+              "result": "UKR   Loss 6-2 6-3 4th",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Madison Keys\nUSA  6-3 1-6 6-4 3rd\n10 May 26",
+              "event": "",
+              "opponent": "Madison Keys",
+              "result": "USA  6-3 1-6 6-4 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Tyra Caterina Grant\nITA  4-6 6-3 6-4 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Tyra Caterina Grant",
+              "result": "ITA  4-6 6-3 6-4 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Anastasia Potapova\nAUT   Loss 4-6 6-4 6-2 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Anastasia Potapova",
+              "result": "AUT   Loss 4-6 6-4 6-2 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Ashlyn Krueger\nUSA  6-2 6-2 q1\n04 May 26",
+              "event": "",
+              "opponent": "Ashlyn Krueger",
+              "result": "USA  6-2 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Madrid\nAlina Charaeva\nRUS   Loss 6-76 6-2 7-66 Q.\n21 Apr 26",
+              "event": "Madrid",
+              "opponent": "Alina Charaeva",
+              "result": "RUS   Loss 6-76 6-2 7-66 Q.",
+              "date": "21 Apr 26"
+            },
+            {
+              "raw": "Katarzyna Kawa\nPOL  6-4 2-6 6-3 q1\n20 Apr 26",
+              "event": "",
+              "opponent": "Katarzyna Kawa",
+              "result": "POL  6-4 2-6 6-3 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "Madrid\nAne Mintegi Del Olmo\nESP   Loss 3-6 6-2 6-1 2nd\n08 Apr 26",
+              "event": "Madrid",
+              "opponent": "Ane Mintegi Del Olmo",
+              "result": "ESP   Loss 3-6 6-2 6-1 2nd",
+              "date": "08 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    },
+    "rg-m-sinner-tabur-2026-05-26": {
+      "title": "Jannik Sinner vs Clement Tabur",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Jannik-Sinner-Vs-Clement-Tabur/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Sinner in 3",
+      "players": [
+        {
+          "name": "Jannik Sinner",
+          "record2026": {
+            "overall": "36-2",
+            "hard": "19-2",
+            "clay": "17-0",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Rome\nCasper Ruud\nNOR  6-4 6-4 Fin.\n17 May 26",
+              "event": "Rome",
+              "opponent": "Casper Ruud",
+              "result": "NOR  6-4 6-4 Fin.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Daniil Medvedev\nRUS  6-2 5-7 6-4 1/2\n16 May 26",
+              "event": "",
+              "opponent": "Daniil Medvedev",
+              "result": "RUS  6-2 5-7 6-4 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Andrey Rublev\nRUS  6-2 6-4 1/4\n14 May 26",
+              "event": "",
+              "opponent": "Andrey Rublev",
+              "result": "RUS  6-2 6-4 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Andrea Pellegrino\nITA  6-2 6-3 4th\n12 May 26",
+              "event": "",
+              "opponent": "Andrea Pellegrino",
+              "result": "ITA  6-2 6-3 4th",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Alexei Popyrin\nAUS  6-2 6-0 3rd\n11 May 26",
+              "event": "",
+              "opponent": "Alexei Popyrin",
+              "result": "AUS  6-2 6-0 3rd",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Sebastian Ofner\nAUT  6-3 6-4 2nd\n09 May 26",
+              "event": "",
+              "opponent": "Sebastian Ofner",
+              "result": "AUT  6-3 6-4 2nd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Madrid\nAlexander Zverev\nGER  6-1 6-2 Fin.\n03 May 26",
+              "event": "Madrid",
+              "opponent": "Alexander Zverev",
+              "result": "GER  6-1 6-2 Fin.",
+              "date": "03 May 26"
+            },
+            {
+              "raw": "Arthur Fils\nFRA  6-2 6-4 1/2\n01 May 26",
+              "event": "",
+              "opponent": "Arthur Fils",
+              "result": "FRA  6-2 6-4 1/2",
+              "date": "01 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Clement Tabur",
+          "record2026": {
+            "overall": "21-13",
+            "hard": "2-2",
+            "clay": "10-5",
+            "indoorHard": "9-6",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Geneva\nAlexei Popyrin\nAUS   Loss 7-62 6-75 6-4 1st\n19 May 26",
+              "event": "Geneva",
+              "opponent": "Alexei Popyrin",
+              "result": "AUS   Loss 7-62 6-75 6-4 1st",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Raul Brancaccio\nITA  0-6 6-2 6-2 Q.\n17 May 26",
+              "event": "",
+              "opponent": "Raul Brancaccio",
+              "result": "ITA  0-6 6-2 6-2 Q.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Marc-Andrea Huesler\nSUI  6-4 6-4 q1\n16 May 26",
+              "event": "",
+              "opponent": "Marc-Andrea Huesler",
+              "result": "SUI  6-4 6-4 q1",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Bordeaux Challenger\nGeoffrey Blancaneaux\nFRA   Loss 7-64 1-6 6-4 q1\n11 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Geoffrey Blancaneaux",
+              "result": "FRA   Loss 7-64 1-6 6-4 q1",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Savannah Challenger\nKilian Feldbausch\nSUI   Loss 3-6 6-3 7-64 1/4\n24 Apr 26",
+              "event": "Savannah Challenger",
+              "opponent": "Kilian Feldbausch",
+              "result": "SUI   Loss 3-6 6-3 7-64 1/4",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Jeff Wolf\nUSA  6-4 6-72 6-1 2nd\n22 Apr 26",
+              "event": "",
+              "opponent": "Jeff Wolf",
+              "result": "USA  6-4 6-72 6-1 2nd",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Andres Martin\nUSA  6-4 3-6 6-3 1st\n21 Apr 26",
+              "event": "",
+              "opponent": "Andres Martin",
+              "result": "USA  6-4 3-6 6-3 1st",
+              "date": "21 Apr 26"
+            },
+            {
+              "raw": "Tallahassee Challenger\nJoao Lucas Reis Da Silva\nBRA  6-4 1-0 ret. Fin.\n19 Apr 26",
+              "event": "Tallahassee Challenger",
+              "opponent": "Joao Lucas Reis Da Silva",
+              "result": "BRA  6-4 1-0 ret. Fin.",
+              "date": "19 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
+    }
+  }
+}

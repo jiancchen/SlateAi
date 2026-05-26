@@ -23,3 +23,9 @@ Opponent-adjusted clay context:
 - Run `node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json`.
 - The output scores recent scoreline resistance, 2026 clay record, set/game share, and opponent quality when rankings are available.
 - Tennistonic score rows do not include true service games held, break points, or return-break rates. Those need a separate stats source before we expose them as hard features.
+
+Flashscore service/return stats:
+- Run `node pipeline/fetch-flashscore-tennis-stats.mjs --url "https://www.flashscoreusa.com/game/tennis/.../?mid=MATCHID"`.
+- Outputs are written to `flashscore-match-stats/MATCHID.json`.
+- The parser stores match and set-level service data, including first-serve percentage, first/second serve points won, break points saved/converted, service games won, return games won, and total games won.
+- SH/SI columns are mapped to the left/right player order in the supplied Flashscore URL.

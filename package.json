@@ -67,6 +67,11 @@
     "data:research:mlb-first-inning-hits": "python3 pipeline/research_mlb_first_inning_hits.py",
     "data:train:mlb-market-models": "python3 pipeline/train_mlb_market_models.py",
     "data:generate:tennis-clay-context": "node pipeline/generate-tennis-clay-context.mjs",
+    "data:init:tennis": "python3 pipeline/tennis_warehouse.py init-db",
+    "data:import:tennis-rankings": "python3 pipeline/tennis_warehouse.py import-rankings",
+    "data:import:tennis-slate": "python3 pipeline/tennis_warehouse.py import-slate",
+    "data:import:tennis-flashscore": "python3 pipeline/tennis_warehouse.py import-flashscore",
+    "data:summary:tennis": "python3 pipeline/tennis_warehouse.py summary",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"
   }

@@ -4236,6 +4236,43 @@ h3 {
   gap: 8px;
 }
 
+.tennis-quality-grid {
+  margin-top: 10px;
+}
+
+.tennis-quality-card {
+  align-content: start;
+}
+
+.tennis-quality-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.tennis-quality-metrics div {
+  min-height: 58px;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  display: grid;
+  align-content: center;
+  gap: 4px;
+}
+
+.tennis-quality-metrics span,
+.tennis-data-note {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.tennis-quality-metrics strong {
+  color: var(--heading);
+  font: 700 0.86rem/1.15 var(--mono);
+}
+
 .tennis-match-log-row {
   display: grid;
   gap: 3px;
@@ -4840,6 +4877,7 @@ h3 {
   .lineup-board-grid,
   .tennis-player-grid,
   .tennis-projection-grid,
+  .tennis-quality-metrics,
   .story-game-grid,
   .story-summary-grid,
   .story-log-summary,

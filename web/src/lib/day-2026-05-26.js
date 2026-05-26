@@ -1,5 +1,7 @@
 import { createSportsMatchModel } from './sports-model.js'
 import { buildTennistonicH2HUrl } from './tennis-source-mapping.js'
+import tennisClayContext from './day-2026-05-26-tennis-clay-context.generated.json' with { type: 'json' }
+import tennisOpponentQualityContext from './day-2026-05-26-tennis-opponent-quality.generated.json' with { type: 'json' }
 
 const oddsProvider = 'Roland Garros desk board'
 
@@ -90,7 +92,8 @@ const buildMatch = (raw) => {
           fantasy: []
         },
         tradePlan: null,
-        clayMatchupData: null,
+        clayMatchupData: tennisClayContext.matches?.[id] ?? null,
+        opponentQualityData: tennisOpponentQualityContext.matches?.[id] ?? null,
         researchLinks: [
           { label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260526' },
           { label: 'Roland Garros order of play', url: 'https://www.rolandgarros.com/en-us/order-of-play?annexeCourt=all&competition=all&country=all&date=2026-05-26&favoriteFilter=false&principalCourt=all&year=2026' },

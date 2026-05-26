@@ -2921,6 +2921,17 @@ function App() {
     const projection = context?.projection
     const tradePlan = context?.tradePlan
     const clayMatchupData = context?.clayMatchupData
+    const opponentQualityData = context?.opponentQualityData
+    const qualityPlayers = Array.isArray(opponentQualityData?.players) ? opponentQualityData.players : []
+    const formatRecord = (record?: AnyRecord | null) => {
+      if (!record || !Number.isFinite(Number(record.wins)) || !Number.isFinite(Number(record.losses))) return 'N/A'
+      const pct = Number.isFinite(Number(record.winPct)) ? ` · ${formatPercent(Number(record.winPct) * 100, 1)}` : ''
+      return `${record.wins}-${record.losses}${pct}`
+    }
+    const formatRank = (player: AnyRecord) => {
+      const rank = player?.ranking?.rank
+      return Number.isFinite(Number(rank)) ? `#${rank} ${player?.ranking?.tour || ''}`.trim() : 'Rank outside board'
+    }
     return (
       <>
         {context?.players?.length ? (
@@ -2983,6 +2994,102 @@ function App() {
           </section>
         ) : null}
 
+        {qualityPlayers.length ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Clay evidence stack</p>
+              <span>Our model input, not the source-site pick</span>
+            </div>
+            {opponentQualityData?.matchupRead ? (
+              <p className="react-section-copy">{opponentQualityData.matchupRead}</p>
+            ) : null}
+            <div className="react-card-grid tennis-quality-grid">
+              {qualityPlayers.map((player: AnyRecord) => {
+                const window = player.recentWindow || {}
+                const clayRecord = player.records?.clay2026
+                const overallRecord = player.records?.overall2026
+                const adjustedScore = Number.isFinite(Number(window.opponentAdjustedFormScore))
+                  ? formatNumber(window.opponentAdjustedFormScore, 1)
+                  : 'Low coverage'
+                return (
+                  <article key={`${game.id}-${player.name}-quality`} className="react-team-card tennis-quality-card">
+                    <div className="react-team-card-top">
+                      <div className="react-team-id">
+                        <div>
+                          <strong>{player.name}</strong>
+                          <small>{formatRank(player)}</small>
+                        </div>
+                      </div>
+                      <span className="builder-status-pill open">
+                        {Number.isFinite(Number(window.rankingCoveragePct))
+                          ? `${Math.round(Number(window.rankingCoveragePct) * 100)}% ranked`
+                          : 'No rank coverage'}
+                      </span>
+                    </div>
+
+                    <div className="tennis-quality-metrics">
+                      <div>
+                        <span>2026 clay</span>
+                        <strong>{formatRecord(clayRecord)}</strong>
+                      </div>
+                      <div>
+                        <span>Overall</span>
+                        <strong>{formatRecord(overallRecord)}</strong>
+                      </div>
+                      <div>
+                        <span>Recent W-L</span>
+                        <strong>
+                          {Number.isFinite(Number(window.wins)) && Number.isFinite(Number(window.losses))
+                            ? `${window.wins}-${window.losses}`
+                            : 'N/A'}
+                        </strong>
+                      </div>
+                      <div>
+                        <span>Game share</span>
+                        <strong>{Number.isFinite(Number(window.gamePct)) ? formatPercent(Number(window.gamePct) * 100, 1) : 'N/A'}</strong>
+                      </div>
+                      <div>
+                        <span>Top-50 opps</span>
+                        <strong>{Number.isFinite(Number(window.top50Opponents)) ? window.top50Opponents : 'N/A'}</strong>
+                      </div>
+                      <div>
+                        <span>Adj form</span>
+                        <strong>{adjustedScore}</strong>
+                      </div>
+                    </div>
+
+                    <p className="tennis-player-note">
+                      Recent opponents ranked: {window.knownOpponentRanks ?? 0}/{window.matches ?? 0}
+                      {Number.isFinite(Number(window.avgKnownOpponentRank))
+                        ? ` · avg rank ${formatNumber(window.avgKnownOpponentRank, 1)}`
+                        : ''}
+                      {Number.isFinite(Number(window.resistanceMatches))
+                        ? ` · ${window.resistanceMatches} pressure matches`
+                        : ''}
+                    </p>
+
+                    <div className="tennis-match-log">
+                      {(player.recentMatches || []).slice(0, 4).map((match: AnyRecord, index: number) => (
+                        <div key={`${player.name}-quality-${match.date}-${match.opponent}-${index}`} className="tennis-match-log-row">
+                          <strong>{match.opponent || 'Opponent missing'}</strong>
+                          <span>{match.result || 'No score line'}</span>
+                          <small>
+                            {[match.eventTier || match.event, match.opponentRanking?.rank ? `opp #${match.opponentRanking.rank}` : 'opp rank missing', match.date]
+                              .filter(Boolean)
+                              .join(' | ')}
+                          </small>
+                        </div>
+                      ))}
+                    </div>
+
+                    <small className="tennis-data-note">{player.serviceData?.note || 'Service hold data has not been joined for this player yet.'}</small>
+                  </article>
+                )
+              })}
+            </div>
+          </section>
+        ) : null}
+
         {tradePlan ? (
           <section className="detail-panel">
             <div className="detail-panel-header">
@@ -3016,7 +3123,7 @@ function App() {
           <section className="detail-panel">
             <div className="detail-panel-header">
               <p className="eyebrow">Clay matchup data</p>
-              <span>Tennistonic H2H</span>
+              <span>Tennistonic source context</span>
             </div>
             {clayMatchupData.players?.length ? (
               <>
@@ -3027,9 +3134,9 @@ function App() {
                     <small>{clayMatchupData.h2hText || clayMatchupData.prediction || 'No page summary loaded'}</small>
                   </article>
                   <article className="react-mini-panel">
-                    <span className="eyebrow">Page call</span>
+                    <span className="eyebrow">Source-site call</span>
                     <strong>{clayMatchupData.prediction || 'No page prediction'}</strong>
-                    <small>{clayMatchupData.sourceUrl ? 'Source page loaded for this matchup.' : 'Source page missing.'}</small>
+                    <small>{clayMatchupData.sourceUrl ? 'Stored as context only; our prediction is the desk lean above.' : 'Source page missing.'}</small>
                   </article>
                   {clayMatchupData.tradeRead ? (
                     <article className="react-mini-panel">

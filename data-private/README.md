@@ -12,6 +12,7 @@ This project now keeps the deployable web app separate from the local event ware
   Saved home-run model outputs that can be imported and graded later.
 - `data-private/predictions/mlb-sides/`
   Saved MLB side-pick snapshots with model indicators for retrospective grading and train/verify reports.
+- Tennis data now lands in the same SQLite warehouse via normalized tables for rankings, slate matches, H2H source snapshots, player clay/recent-form context, recent opponent logs, desk/source predictions, and Flashscore service/return stat rows.
 
 ## Why This Shape
 
@@ -43,6 +44,11 @@ npm run data:export:mlb-sides -- --start-date 2026-05-10 --end-date 2026-05-15
 npm run data:import:mlb-sides -- --file data-private/predictions/mlb-sides/2026-05-10-to-2026-05-15-board-v2.json
 npm run data:grade:mlb-sides -- --model-name board-moneyline-v2
 npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 2026-05-12 --verify-start 2026-05-13 --verify-end 2026-05-15 --out data-private/reports/mlb-side-backtest-2026-05-10-to-2026-05-15.md
+npm run data:init:tennis
+npm run data:import:tennis-rankings
+npm run data:import:tennis-slate -- --date 2026-05-26
+npm run data:import:tennis-flashscore
+npm run data:summary:tennis
 ```
 
 ## Notes
