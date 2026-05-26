@@ -4,10 +4,108 @@ import tennisClayContext from './day-2026-05-26-tennis-clay-context.generated.js
 import tennisOpponentQualityContext from './day-2026-05-26-tennis-opponent-quality.generated.json' with { type: 'json' }
 
 const oddsProvider = 'Roland Garros desk board'
+const marketSource = 'Prediction market screenshot'
+const marketCapturedAt = '2026-05-26 12:16 AM PT'
 
-const buildPredictionOnlyOdds = () => ({
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
+const formatPct = (value) => (Number.isFinite(value) ? `${Math.round(value)}%` : 'n/a')
+const formatAmount = (value) => (Number.isFinite(value) ? value.toLocaleString('en-US') : 'n/a')
+const formatSignedPct = (value) => (Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${Math.round(value)} pts` : 'n/a')
+
+const buildPlayerEconomics = (name, pricePct, amount) => {
+  if (!Number.isFinite(pricePct) || pricePct <= 0) return null
+  const cost = pricePct / 100
+  const grossProfitPct = ((1 - cost) / cost) * 100
+  const priceBand =
+    pricePct >= 85
+      ? 'tiny-upside favorite'
+      : pricePct >= 70
+        ? 'fee-sensitive favorite'
+        : pricePct >= 55
+          ? 'moderate favorite'
+          : pricePct >= 40
+            ? 'coinflip zone'
+            : 'dog payout lane'
+
+  return {
+    name,
+    pricePct,
+    amount,
+    priceBand,
+    grossProfitPct: Math.round(grossProfitPct),
+    grossPayoutMultiple: Number((1 / cost).toFixed(2)),
+    centsAtRisk: pricePct,
+    centsProfitIfWin: 100 - pricePct
+  }
+}
+
+const buildMarketEconomics = ({ raw, market, marketA, marketB }) => {
+  if (!market || !Number.isFinite(marketA?.pct) || !Number.isFinite(marketB?.pct)) return null
+
+  const players = [
+    buildPlayerEconomics(raw.a, marketA.pct, marketA.amount),
+    buildPlayerEconomics(raw.b, marketB.pct, marketB.amount)
+  ].filter(Boolean)
+  const picked = players.find((player) => player.name === raw.pick)
+  const other = players.find((player) => player.name !== raw.pick)
+  const favorite = players.reduce((winner, player) => (player.pricePct > winner.pricePct ? player : winner), players[0])
+  const deskEdgePct = picked ? raw.conf - picked.pricePct : null
+  const feeBufferPct = 3
+  const favoriteTax = Number.isFinite(picked?.pricePct) && picked.pricePct >= 70
+  const priceAction =
+    !picked
+      ? 'No market read'
+      : favoriteTax && deskEdgePct <= feeBufferPct
+        ? 'Pass at price'
+        : favoriteTax && deskEdgePct <= feeBufferPct + 5
+          ? 'Watch, do not chase'
+          : picked.pricePct < 45 && raw.conf >= 55
+            ? 'Dog value lane'
+            : deskEdgePct >= feeBufferPct + 4
+              ? 'Playable edge'
+              : 'No clear price edge'
+  const summary =
+    !picked
+      ? 'No screenshot price was captured for the desk side.'
+      : favoriteTax
+        ? `${raw.pick} is priced at ${formatPct(picked.pricePct)}, leaving only ${picked.centsProfitIfWin}c gross profit per share before platform fees. The pick can be likely and still be a poor buy unless our true edge clears the price by more than the fee buffer.`
+        : `${raw.pick} is priced at ${formatPct(picked.pricePct)}, a ${picked.priceBand} with roughly ${picked.grossProfitPct}% gross profit on stake before platform fees if it wins.`
+
+  return {
+    source: marketSource,
+    capturedAt: marketCapturedAt,
+    feeBufferPct,
+    totalVolume: market.total,
+    deskPickName: raw.pick,
+    deskConfidencePct: raw.conf,
+    deskPricePct: picked?.pricePct ?? null,
+    deskEdgePct,
+    favoriteName: favorite?.name ?? null,
+    favoritePricePct: favorite?.pricePct ?? null,
+    otherSideName: other?.name ?? null,
+    otherSidePricePct: other?.pricePct ?? null,
+    priceAction,
+    summary,
+    players
+  }
+}
+
+const buildPredictionOnlyOdds = (raw, market) => ({
   participantOrder: [0, 1],
-  markets: [],
+  markets: market
+    ? [
+        {
+          label: 'Prediction market',
+          book: marketSource,
+          value: `${raw.a} ${formatPct(market.players?.[raw.a]?.pct)} / ${raw.b} ${formatPct(market.players?.[raw.b]?.pct)}`
+        },
+        {
+          label: 'Market volume',
+          book: marketSource,
+          value: formatAmount(market.total)
+        }
+      ]
+    : [],
   note: 'This Roland Garros board is a prediction desk built from the official May 26 singles schedule, ESPN scoreboard data, and manual ATP/WTA clay decision rules. Doubles are intentionally excluded.',
   provider: oddsProvider
 })
@@ -29,6 +127,11 @@ const stage = (format) => `Roland Garros ${format === 'ATP' ? 'Men' : 'Women'} |
 
 const buildMatch = (raw) => {
   const id = `rg-${raw.fmt === 'ATP' ? 'm' : 'w'}-${raw.idSlug}-2026-05-26`
+  const market = marketByMatchId[id] ?? null
+  const marketA = market?.players?.[raw.a] ?? null
+  const marketB = market?.players?.[raw.b] ?? null
+  const hasMarket = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
+  const marketEconomics = buildMarketEconomics({ raw, market, marketA, marketB })
   const pickIndex = raw.pick === raw.a ? 0 : 1
   const playerA = { side: 'Player 1', name: raw.a, displayName: raw.a, detail: raw.profileA }
   const playerB = { side: 'Player 2', name: raw.b, displayName: raw.b, detail: raw.profileB }
@@ -41,6 +144,12 @@ const buildMatch = (raw) => {
   const dogNote = raw.vol >= 68 ? ' This is deliberately capped as a volatility read, not a forced high-conviction pick.' : ''
   const summary = `${raw.pick} gets the desk lean because ${raw.angle}.${dogNote}`
   const factors = [
+    ...(hasMarket
+      ? [
+          `Prediction market: ${raw.a} ${formatPct(marketA.pct)} (${formatAmount(marketA.amount)}) vs ${raw.b} ${formatPct(marketB.pct)} (${formatAmount(marketB.amount)}), ${formatAmount(market.total)} total captured from screenshots.`,
+          `Market economics: ${marketEconomics.priceAction}. ${marketEconomics.summary} Desk edge vs captured price: ${formatSignedPct(marketEconomics.deskEdgePct)}.`
+        ]
+      : []),
     `${raw.a}: ${raw.noteA}`,
     `${raw.b}: ${raw.noteB}`,
     `Clay desk angle: ${raw.angle}.`,
@@ -66,21 +175,37 @@ const buildMatch = (raw) => {
       lean: `Lean ${raw.pick} because ${raw.angle}.`,
       swing: `Swing factor: ${raw.swing}`,
       swingFactor: `Swing factor: ${raw.swing}`,
-      odds: buildPredictionOnlyOdds(),
+      odds: buildPredictionOnlyOdds(raw, market),
       tennisContext: {
         surface: 'Clay',
         court: raw.court,
         h2hLeader: '',
         fatigueFlag: false,
-        liveDog: raw.conf < 60,
+        liveDog: hasMarket ? (raw.pick === raw.a ? marketA.pct < marketB.pct : marketB.pct < marketA.pct) : raw.conf < 60,
         players: [
-          { name: raw.a, rank: null, label: raw.a, form: null, boardPct: null, decimalOdds: null, marketLabel: 'Desk only', clayLine: raw.profileA, record2026: '', notes: raw.noteA, matchupNote: raw.pick === raw.a ? `${raw.a} is the desk lean.` : `${raw.a} needs the upset script.` },
-          { name: raw.b, rank: null, label: raw.b, form: null, boardPct: null, decimalOdds: null, marketLabel: 'Desk only', clayLine: raw.profileB, record2026: '', notes: raw.noteB, matchupNote: raw.pick === raw.b ? `${raw.b} is the desk lean.` : `${raw.b} needs the upset script.` }
+          { name: raw.a, rank: null, label: raw.a, form: null, boardPct: Number.isFinite(marketA?.pct) ? marketA.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketA?.pct) ? `Market ${formatPct(marketA.pct)}` : 'Desk only', clayLine: raw.profileA, record2026: '', notes: raw.noteA, matchupNote: raw.pick === raw.a ? `${raw.a} is the desk lean.` : `${raw.a} needs the upset script.` },
+          { name: raw.b, rank: null, label: raw.b, form: null, boardPct: Number.isFinite(marketB?.pct) ? marketB.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketB?.pct) ? `Market ${formatPct(marketB.pct)}` : 'Desk only', clayLine: raw.profileB, record2026: '', notes: raw.noteB, matchupNote: raw.pick === raw.b ? `${raw.b} is the desk lean.` : `${raw.b} needs the upset script.` }
         ],
         comparisonRows: [
+          ...(hasMarket
+            ? [
+                { label: 'Prediction market', metric: 'Screenshot split', leftScore: clamp(Math.round(marketA.pct), 0, 100), rightScore: clamp(Math.round(marketB.pct), 0, 100), leftLabel: raw.a, rightLabel: raw.b, winner: marketA.pct === marketB.pct ? 'Even' : marketA.pct > marketB.pct ? raw.a : raw.b }
+              ]
+            : []),
           { label: 'Desk lean', metric: 'Confidence split', leftScore: raw.pick === raw.a ? raw.conf : 100 - raw.conf, rightScore: raw.pick === raw.b ? raw.conf : 100 - raw.conf, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick },
           { label: 'Volatility', metric: 'Lower chaos side', leftScore: raw.pick === raw.a ? 100 - raw.vol : raw.vol, rightScore: raw.pick === raw.b ? 100 - raw.vol : raw.vol, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick }
         ],
+        predictionMarket: market
+          ? {
+              source: marketSource,
+              capturedAt: marketCapturedAt,
+              totalVolume: market.total,
+              players: [
+                { name: raw.a, probabilityPct: marketA?.pct ?? null, amount: marketA?.amount ?? null },
+                { name: raw.b, probabilityPct: marketB?.pct ?? null, amount: marketB?.amount ?? null }
+              ]
+            }
+          : null,
         projection: {
           projectedWinner: raw.pick,
           projectedSetLine: raw.fmt === 'ATP' ? (raw.conf >= 72 ? '3-0 or 3-1' : '3-1 or 3-2') : (raw.conf >= 70 ? '2-0 or 2-1' : '2-1'),
@@ -91,7 +216,36 @@ const buildMatch = (raw) => {
           overview: `${raw.pick} is projected to own the cleaner normal script, with volatility at ${raw.vol} because ${raw.swing}`,
           fantasy: []
         },
-        tradePlan: null,
+        tradePlan: marketEconomics
+          ? {
+              laneLabel: marketEconomics.priceAction,
+              tone:
+                marketEconomics.priceAction === 'Pass at price'
+                  ? 'danger'
+                  : marketEconomics.priceAction === 'Watch, do not chase'
+                    ? 'warning'
+                    : marketEconomics.priceAction === 'Playable edge' || marketEconomics.priceAction === 'Dog value lane'
+                      ? 'accent'
+                      : 'neutral',
+              entrySideName: marketEconomics.deskPickName,
+              favoriteName: marketEconomics.favoriteName,
+              headline: marketEconomics.priceAction,
+              summary: marketEconomics.summary,
+              trigger:
+                marketEconomics.priceAction === 'Pass at price'
+                  ? 'Need a better live entry or stronger evidence than the current desk edge. Do not buy the favorite just because it is likely.'
+                  : 'Use the market price as an entry filter; win probability is not enough by itself.',
+              exit: `Desk confidence ${raw.conf}% vs market ${marketEconomics.deskPricePct ?? 'n/a'}%, with a ${marketEconomics.feeBufferPct} pt fee buffer.`,
+              marketGap: Math.round(marketEconomics.deskEdgePct ?? 0),
+              dogLift: null,
+              entryPricePct: marketEconomics.deskPricePct,
+              otherSideName: marketEconomics.otherSideName,
+              otherSideMarketPct: marketEconomics.otherSidePricePct,
+              favoriteMarketPct: marketEconomics.favoritePricePct,
+              dogMarketPct: Math.min(marketA.pct, marketB.pct)
+            }
+          : null,
+        marketEconomics,
         clayMatchupData: tennisClayContext.matches?.[id] ?? null,
         opponentQualityData: tennisOpponentQualityContext.matches?.[id] ?? null,
         researchLinks: [
@@ -123,8 +277,8 @@ const buildMatch = (raw) => {
         sourceLabel: 'Editorial slate read',
         modelEdge: 0,
         modelEdgeLabel: 'Model-only read',
-        marketProbability: null,
-        marketProbabilityLabel: 'N/A',
+        marketProbability: hasMarket ? (raw.pick === raw.a ? marketA.pct : marketB.pct) : null,
+        marketProbabilityLabel: hasMarket ? `Market ${formatPct(raw.pick === raw.a ? marketA.pct : marketB.pct)}` : 'N/A',
         inputs: [],
         inputsUsed: 0,
         volatilityNotes: raw.vol >= 68 ? [{ label: 'Volatility gate: treated as swingy/watch-grade rather than clean favorite.', delta: raw.vol - 60 }] : []
@@ -332,8 +486,8 @@ const rawSingles = [
     "a": "Laura Siegemund",
     "b": "Naomi Osaka",
     "pick": "Naomi Osaka",
-    "conf": 63,
-    "vol": 64,
+    "conf": 58,
+    "vol": 70,
     "tags": [
       "Women"
     ],
@@ -341,8 +495,8 @@ const rawSingles = [
     "profileB": "Higher ceiling favorite",
     "noteA": "Siegemund has the craft to make Osaka uncomfortable, especially if she varies height and tempo.",
     "noteB": "Osaka still has the bigger serve and ball-striking ceiling, and that should be enough if the error count stays reasonable.",
-    "angle": "Osaka gets the lean because the weapons ceiling is real, but Siegemund’s clay craft prevents this from being a simple favorite stamp",
-    "swing": "If Siegemund drags Osaka into drop-shot and shape management, this can get ugly fast.",
+    "angle": "Osaka keeps the weapons lean, but Siegemund’s opponent-adjusted clay form is a real warning against treating this as a normal favorite spot",
+    "swing": "If Siegemund drags Osaka into drop-shot and shape management, the data warning can turn into a full upset lane.",
     "idSlug": "osaka-siegemund",
     "recommendationScore": 56,
     "tier": "Lean"
@@ -377,19 +531,19 @@ const rawSingles = [
     "court": "Court 7",
     "a": "Anhelina Kalinina",
     "b": "Diane Parry",
-    "pick": "Diane Parry",
-    "conf": 58,
+    "pick": "Anhelina Kalinina",
+    "conf": 56,
     "vol": 70,
     "tags": [
       "Women",
       "Volatile"
     ],
-    "profileA": "Cleaner baseline if settled",
-    "profileB": "Home-clay shape edge",
-    "noteA": "Kalinina is dangerous if she controls neutral rallies and prevents Parry from changing tempo.",
-    "noteB": "Parry has the crowd, variety, and clay-specific disruption to make this a complicated opener.",
-    "angle": "Parry gets the narrow home-clay lean because the variety and crowd can matter in a match without a clean favorite lane",
-    "swing": "If Kalinina keeps this linear and controls depth, Parry’s variety can become decorative instead of decisive.",
+    "profileA": "Data-led clay control lean",
+    "profileB": "Home variety danger",
+    "noteA": "Kalinina has the stronger ranking and clay-win profile, and the enriched data makes the home-underdog story less automatic.",
+    "noteB": "Parry still has the crowd, variety, and a nearly level opponent-adjusted read, so this is not clean.",
+    "angle": "Kalinina has the sturdier clay and ranking profile, while Parry’s home variety keeps this in the swingy WTA band",
+    "swing": "If Parry changes tempo early and gets the crowd into return games, Kalinina’s data edge can flatten quickly.",
     "idSlug": "parry-kalinina",
     "recommendationScore": 49,
     "tier": "Swingy"
@@ -449,8 +603,8 @@ const rawSingles = [
     "a": "Alina Korneeva",
     "b": "Elisabetta Cocciaretto",
     "pick": "Elisabetta Cocciaretto",
-    "conf": 59,
-    "vol": 68,
+    "conf": 55,
+    "vol": 72,
     "tags": [
       "Women",
       "Volatile"
@@ -459,8 +613,8 @@ const rawSingles = [
     "profileB": "Clay-seasoned counter",
     "noteA": "Korneeva has the talent to make this noisy, especially if she takes time away early.",
     "noteB": "Cocciaretto is the steadier clay operator and should ask more reliable questions over a full match.",
-    "angle": "Cocciaretto gets the lean because her clay point construction is easier to trust against a younger volatility profile",
-    "swing": "If Korneeva starts fast and hits through the court, the desk side gets fragile.",
+    "angle": "Cocciaretto keeps the narrow ranking and clay-construction lean, but Korneeva’s limited-coverage form profile makes this closer to a coin flip",
+    "swing": "If Korneeva starts fast and hits through the court, the desk side gets fragile quickly.",
     "idSlug": "cocciaretto-korneeva",
     "recommendationScore": 51,
     "tier": "Swingy"
@@ -544,18 +698,18 @@ const rawSingles = [
     "court": "Court 13",
     "a": "Simona Waltert",
     "b": "Katerina Siniakova",
-    "pick": "Katerina Siniakova",
-    "conf": 62,
-    "vol": 61,
+    "pick": "Simona Waltert",
+    "conf": 55,
+    "vol": 70,
     "tags": [
       "Women"
     ],
-    "profileA": "Needs first-strike control",
-    "profileB": "Variety and doubles-hardened hands",
-    "noteA": "Waltert needs to keep Siniakova from turning points into awkward all-court problems.",
-    "noteB": "Siniakova has the variety, court sense, and clay adaptability to solve a messy opener.",
-    "angle": "Siniakova has the more complete clay-toolbox read if this turns into a problem-solving match",
-    "swing": "If Waltert keeps the ball deep and takes away Siniakova’s variety, the favorite path narrows.",
+    "profileA": "Data-led clay form lean",
+    "profileB": "Variety counterweight",
+    "noteA": "Waltert has the better recent clay record and opponent-adjusted form read, enough to flip this from Siniakova at a low-confidence level.",
+    "noteB": "Siniakova still has the more complete toolbox, so Waltert needs depth and patience rather than a loose tactical match.",
+    "angle": "Waltert has the stronger current clay evidence, but Siniakova’s all-court craft keeps the confidence capped",
+    "swing": "If Siniakova breaks rhythm with variety and gets Waltert playing reactive tennis, the original toolbox read can win.",
     "idSlug": "siniakova-waltert",
     "recommendationScore": 56,
     "tier": "Lean"
@@ -637,19 +791,19 @@ const rawSingles = [
     "court": "Court 7",
     "a": "Tallon Griekspoor",
     "b": "Matteo Arnaldi",
-    "pick": "Tallon Griekspoor",
-    "conf": 60,
-    "vol": 64,
+    "pick": "Matteo Arnaldi",
+    "conf": 58,
+    "vol": 68,
     "tags": [
       "Men",
       "Volatile"
     ],
-    "profileA": "Seeded serve-plus-one",
-    "profileB": "Clay grinder pressure",
-    "noteA": "Griekspoor has the seed and first-strike lane, but this is not a pristine clay mismatch.",
-    "noteB": "Arnaldi can absolutely make this physical and test Griekspoor’s patience over five sets.",
-    "angle": "Griekspoor gets a modest ATP lean on serve-plus-one stability, but Arnaldi’s clay tolerance keeps this in the swingy band",
-    "swing": "If Arnaldi extends rallies and wins the legs battle, the seeded edge can leak.",
+    "profileA": "Seeded serve-plus-one risk",
+    "profileB": "Data-led clay form lean",
+    "noteA": "Griekspoor still has the ranking and first-strike serve path, but his recent clay profile is weaker than the old desk lean implied.",
+    "noteB": "Arnaldi brings the better opponent-adjusted clay read and enough rally tolerance to drag this away from a simple seed script.",
+    "angle": "Arnaldi has the stronger clay-form and opponent-quality profile, while Griekspoor keeps this capped through serve and ranking equity",
+    "swing": "If Griekspoor lands cheap holds and avoids long neutral exchanges, the original seeded path can still hold.",
     "idSlug": "griekspoor-arnaldi",
     "recommendationScore": 53,
     "tier": "Lean"
@@ -778,19 +932,19 @@ const rawSingles = [
     "court": "Court 9",
     "a": "Martin Landaluce",
     "b": "Juan Carlos Prado Angelo",
-    "pick": "Martin Landaluce",
-    "conf": 57,
-    "vol": 70,
+    "pick": "Juan Carlos Prado Angelo",
+    "conf": 54,
+    "vol": 74,
     "tags": [
       "Men",
       "Volatile"
     ],
-    "profileA": "Higher prospect ceiling",
-    "profileB": "Clay-dog pressure",
-    "noteA": "Landaluce has the higher ceiling and should be slightly more trustworthy if he controls the forehand patterns.",
-    "noteB": "Prado Angelo can flip this by making it a dirtball patience test and stretching the match physically.",
-    "angle": "Landaluce is a small upside lean, but this is too thin to treat like a clean ATP favorite",
-    "swing": "If Prado Angelo wins the long exchanges early, the projection moves toward even.",
+    "profileA": "Upside counterweight",
+    "profileB": "Clay-form upset lean",
+    "noteA": "Landaluce still has the higher-ceiling profile and enough ranked-opponent exposure to stay live.",
+    "noteB": "Prado Angelo carries the better clay record and slightly better scoreline-form read, but ranking coverage is thinner.",
+    "angle": "Prado Angelo gets the smallest data-led lean on clay form, with Landaluce’s upside keeping this nearly coin-flip",
+    "swing": "If Landaluce controls the forehand patterns and gets cheap holds, the upside profile can still be enough.",
     "idSlug": "landaluce-angelo",
     "recommendationScore": 48,
     "tier": "Swingy"
@@ -802,18 +956,18 @@ const rawSingles = [
     "court": "Court 13",
     "a": "Cameron Norrie",
     "b": "Adolfo Daniel Vallejo",
-    "pick": "Cameron Norrie",
-    "conf": 69,
-    "vol": 48,
+    "pick": "Adolfo Daniel Vallejo",
+    "conf": 56,
+    "vol": 70,
     "tags": [
       "Men"
     ],
-    "profileA": "Best-of-five grinder edge",
-    "profileB": "Needs breakthrough level",
-    "noteA": "Norrie’s lefty patterns, fitness, and five-set tolerance are strong assets against a younger opponent.",
-    "noteB": "Vallejo needs to hit through the structure early before Norrie turns this into attrition.",
-    "angle": "Norrie has the better five-set clay problem-solving and fitness profile",
-    "swing": "If Vallejo lands enough first-strike forehands and avoids long neutral rallies, the upset lane opens.",
+    "profileA": "Veteran five-set counterweight",
+    "profileB": "Data-led clay form lean",
+    "noteA": "Norrie still owns the experience, lefty patterns, and best-of-five problem-solving edge, so he cannot be dismissed.",
+    "noteB": "Vallejo has the stronger 2026 clay record and opponent-adjusted form profile, making the original confidence too rich.",
+    "angle": "Vallejo owns the better current clay evidence, while Norrie keeps this in high-volatility territory through experience and fitness",
+    "swing": "If Norrie turns this into attrition and forces Vallejo to solve patterns over five sets, the data edge can leak.",
     "idSlug": "norrie-vallejo",
     "recommendationScore": 68,
     "tier": "Strong"
@@ -825,19 +979,19 @@ const rawSingles = [
     "court": "Court Simonne-Mathieu",
     "a": "Vit Kopriva",
     "b": "Corentin Moutet",
-    "pick": "Corentin Moutet",
-    "conf": 63,
-    "vol": 66,
+    "pick": "Vit Kopriva",
+    "conf": 56,
+    "vol": 69,
     "tags": [
       "Men",
       "Volatile"
     ],
-    "profileA": "Steady clay grinder",
-    "profileB": "French disruption edge",
-    "noteA": "Kopriva is dangerous if he stays emotionally flat and keeps the match in repeatable clay patterns.",
-    "noteB": "Moutet gets the crowd, variety, and lefty disruption, but that also brings volatility.",
-    "angle": "Moutet gets the home-clay disruption lean, though it is not clean enough for a core tag",
-    "swing": "If Kopriva neutralizes the crowd and makes Moutet play disciplined tennis, this can flip.",
+    "profileA": "Data-led clay grinder",
+    "profileB": "Home disruption risk",
+    "noteA": "Kopriva grades better on recent clay strength and opponent-quality context, with enough patience to mute crowd swings.",
+    "noteB": "Moutet still has home support, lefty variety, and disruption, which is why this stays a volatile lean.",
+    "angle": "Kopriva has the cleaner recent clay evidence, but Moutet’s home-variety path keeps the margin thin",
+    "swing": "If Moutet turns the match into crowd-driven problem solving instead of disciplined clay patterns, the French lean can reappear.",
     "idSlug": "moutet-kopriva",
     "recommendationScore": 56,
     "tier": "Lean"
@@ -873,18 +1027,18 @@ const rawSingles = [
     "court": "Court 12",
     "a": "Sebastian Baez",
     "b": "Roman Andres Burruchaga",
-    "pick": "Sebastian Baez",
-    "conf": 68,
-    "vol": 50,
+    "pick": "Roman Andres Burruchaga",
+    "conf": 57,
+    "vol": 66,
     "tags": [
       "Men"
     ],
-    "profileA": "Clay specialist favorite",
-    "profileB": "Needs physical upset",
-    "noteA": "Baez is the more proven clay engine and should be comfortable in the exact rally shape this match invites.",
-    "noteB": "Burruchaga needs to outlast the specialist and create enough depth pressure to avoid being moved side to side.",
-    "angle": "Baez has the cleaner clay-specialist profile and should win the physical baseline script",
-    "swing": "If Burruchaga keeps Baez from owning court position, the match can stretch.",
+    "profileA": "Reputation clay favorite",
+    "profileB": "Data-led clay form lean",
+    "noteA": "Baez still owns the name, H2H, and known clay-specialist reputation, but his 2026 clay form is not supporting a strong favorite tag.",
+    "noteB": "Burruchaga has the stronger 2026 clay record and opponent-adjusted form profile, making him the revised lean.",
+    "angle": "Burruchaga has the better current clay evidence even though Baez keeps H2H and reputation counterweights",
+    "swing": "If Baez owns court position early and turns this into his preferred forehand patterns, the revision can look too cute.",
     "idSlug": "baez-burruchaga",
     "recommendationScore": 66,
     "tier": "Strong"
@@ -1079,6 +1233,170 @@ const rawSingles = [
     "tier": "Core"
   }
 ]
+
+const market = (total, rows) => ({
+  total,
+  players: Object.fromEntries(rows.map(([name, amount, pct]) => [name, { amount, pct }]))
+})
+
+const marketByMatchId = {
+  'rg-m-acosta-zhizhen-2026-05-26': market(20086, [
+    ['Facundo Diaz Acosta', 13892, 69],
+    ['Zhang Zhizhen', 6194, 33]
+  ]),
+  'rg-m-auger-aliassime-altmaier-2026-05-26': market(58946, [
+    ['Felix Auger-Aliassime', 28770, 76],
+    ['Daniel Altmaier', 30176, 25]
+  ]),
+  'rg-m-baez-burruchaga-2026-05-26': market(216775, [
+    ['Sebastian Baez', 33789, 53],
+    ['Roman Andres Burruchaga', 182986, 49]
+  ]),
+  'rg-m-bublik-struff-2026-05-26': market(43127, [
+    ['Alexander Bublik', 34702, 78],
+    ['Jan-Lennard Struff', 8425, 24]
+  ]),
+  'rg-m-cerundolo-fearnley-2026-05-26': market(7831, [
+    ['Juan Manuel Cerundolo', 4326, 79],
+    ['Jacob Fearnley', 3505, 22]
+  ]),
+  'rg-m-cilic-kouame-2026-05-26': market(203190, [
+    ['Marin Cilic', 126317, 77],
+    ['Moise Kouame', 76873, 26]
+  ]),
+  'rg-m-comesana-quinn-2026-05-26': market(19265, [
+    ['Francisco Comesana', 8961, 59],
+    ['Ethan Quinn', 10304, 42]
+  ]),
+  'rg-m-darderi-ofner-2026-05-26': market(44990, [
+    ['Luciano Darderi', 32883, 75],
+    ['Sebastian Ofner', 12107, 26]
+  ]),
+  'rg-m-griekspoor-arnaldi-2026-05-26': market(162459, [
+    ['Tallon Griekspoor', 57504, 43],
+    ['Matteo Arnaldi', 104955, 57]
+  ]),
+  'rg-m-landaluce-angelo-2026-05-26': market(62477, [
+    ['Martin Landaluce', 56244, 74],
+    ['Juan Carlos Prado Angelo', 6233, 25]
+  ]),
+  'rg-m-medvedev-walton-2026-05-26': market(209158, [
+    ['Daniil Medvedev', 79678, 94],
+    ['Adam Walton', 129480, 7]
+  ]),
+  'rg-m-moutet-kopriva-2026-05-26': market(49355, [
+    ['Corentin Moutet', 23237, 60],
+    ['Vit Kopriva', 26118, 41]
+  ]),
+  'rg-m-norrie-vallejo-2026-05-26': market(162791, [
+    ['Cameron Norrie', 71125, 46],
+    ['Adolfo Daniel Vallejo', 91666, 55]
+  ]),
+  'rg-m-popyrin-svajda-2026-05-26': market(38688, [
+    ['Alexei Popyrin', 7551, 89],
+    ['Zachary Svajda', 31137, 13]
+  ]),
+  'rg-m-shapovalov-faria-2026-05-26': market(61554, [
+    ['Denis Shapovalov', 36086, 40],
+    ['Jaime Faria', 25468, 61]
+  ]),
+  'rg-m-sinner-tabur-2026-05-26': market(234984, [
+    ['Jannik Sinner', 71972, 99],
+    ['Clement Tabur', 163012, 2]
+  ]),
+  'rg-m-tabilo-majchrzak-2026-05-26': market(18564, [
+    ['Alejandro Tabilo', 8179, 80],
+    ['Kamil Majchrzak', 10385, 21]
+  ]),
+  'rg-m-tien-garin-2026-05-26': market(296071, [
+    ['Learner Tien', 284429, 66],
+    ['Cristian Garin', 11642, 36]
+  ]),
+  'rg-m-tsitsipas-muller-2026-05-26': market(35549, [
+    ['Stefanos Tsitsipas', 8551, 84],
+    ['Alexandre Muller', 26998, 17]
+  ]),
+  'rg-m-vacherot-faurel-2026-05-26': market(33881, [
+    ['Valentin Vacherot', 25685, 87],
+    ['Thomas Faurel', 8196, 15]
+  ]),
+  'rg-w-cocciaretto-korneeva-2026-05-26': market(1357, [
+    ['Elisabetta Cocciaretto', 1009, 66],
+    ['Alina Korneeva', 348, 34]
+  ]),
+  'rg-w-gauff-townsend-2026-05-26': market(28846, [
+    ['Coco Gauff', 21322, 89],
+    ['Taylor Townsend', 7524, 12]
+  ]),
+  'rg-w-jacquemot-fruhvirtova-2026-05-26': market(8137, [
+    ['Elsa Jacquemot', 2047, 55],
+    ['Linda Fruhvirtova', 6090, 47]
+  ]),
+  'rg-w-jovic-eala-2026-05-26': market(73803, [
+    ['Iva Jovic', 41526, 72],
+    ['Alexandra Eala', 32277, 30]
+  ]),
+  'rg-w-kalinskaya-boisson-2026-05-26': market(19460, [
+    ['Anna Kalinskaya', 9597, 64],
+    ['Lois Boisson', 9863, 37]
+  ]),
+  'rg-w-keys-vandewinkel-2026-05-26': market(5640, [
+    ['Madison Keys', 2682, 88],
+    ['Hanne Vandewinkel', 2958, 13]
+  ]),
+  'rg-w-krueger-ruzic-2026-05-26': market(1982, [
+    ['Ashlyn Krueger', 960, 62],
+    ['Antonia Ruzic', 1022, 39]
+  ]),
+  'rg-w-li-shuai-2026-05-26': market(17126, [
+    ['Ann Li', 10959, 73],
+    ['Zhang Shuai', 6167, 30]
+  ]),
+  'rg-w-liu-uchijima-2026-05-26': market(41649, [
+    ['Claire Liu', 37035, 60],
+    ['Moyuka Uchijima', 4614, 43]
+  ]),
+  'rg-w-mboko-bartunkova-2026-05-26': market(8910, [
+    ['Victoria Mboko', 8064, 75],
+    ['Nikola Bartunkova', 846, 26]
+  ]),
+  'rg-w-navarro-tjen-2026-05-26': market(41086, [
+    ['Emma Navarro', 29745, 76],
+    ['Janice Tjen', 11341, 27]
+  ]),
+  'rg-w-noskova-sakkari-2026-05-26': market(33162, [
+    ['Linda Noskova', 20987, 72],
+    ['Maria Sakkari', 12175, 30]
+  ]),
+  'rg-w-osaka-siegemund-2026-05-26': market(20125, [
+    ['Naomi Osaka', 17800, 76],
+    ['Laura Siegemund', 2325, 25]
+  ]),
+  'rg-w-parry-kalinina-2026-05-26': market(13071, [
+    ['Diane Parry', 7237, 30],
+    ['Anhelina Kalinina', 5834, 71]
+  ]),
+  'rg-w-pegula-birrell-2026-05-26': market(34041, [
+    ['Jessica Pegula', 19001, 98],
+    ['Kimberly Birrell', 15040, 3]
+  ]),
+  'rg-w-pridankina-oliynykova-2026-05-26': market(3518, [
+    ['Elena Pridankina', 604, 35],
+    ['Oleksandra Oliynykova', 2914, 67]
+  ]),
+  'rg-w-sabalenka-maneiro-2026-05-26': market(143271, [
+    ['Aryna Sabalenka', 102599, 96],
+    ['Jessica Bouzas Maneiro', 40672, 5]
+  ]),
+  'rg-w-siniakova-waltert-2026-05-26': market(2263, [
+    ['Katerina Siniakova', 2089, 68],
+    ['Simona Waltert', 174, 33]
+  ]),
+  'rg-w-vekic-tubello-2026-05-26': market(30171, [
+    ['Donna Vekic', 28547, 76],
+    ['Alice Tubello', 1624, 26]
+  ])
+}
 
 const matches = rawSingles.map(buildMatch)
 

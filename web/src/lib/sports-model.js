@@ -4558,6 +4558,14 @@ const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
   const confidence = Number(game.confidence) || 0
   const volatility = Number(game.volatility) || 0
   const allowModelOnlyAnalysis = game.league === 'Tennis'
+  const tennisMarketPlayer = game.tennisContext?.players?.find((entry) =>
+    participant ? teamNamesMatch(entry.name, participant.name) : false
+  )
+  const tennisMarketProbability =
+    allowModelOnlyAnalysis && Number.isFinite(tennisMarketPlayer?.boardPct)
+      ? tennisMarketPlayer.boardPct / 100
+      : null
+  const marketProbability = participant?.impliedProbability ?? tennisMarketProbability
   const recommendationScore = Math.round(
     confidence * fallbackRecommendationWeight.confidence +
       (100 - volatility) * fallbackRecommendationWeight.stability
@@ -4580,9 +4588,14 @@ const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
     sourceLabel: 'Editorial slate read',
     modelEdge: 0,
     modelEdgeLabel: allowModelOnlyAnalysis && !hasFullMoneyline ? 'Model-only read' : 'Editorial read',
-    marketProbability: participant?.impliedProbability ?? null,
+    marketProbability,
     marketProbabilityLabel:
-      participant?.impliedProbabilityLabel ?? (allowModelOnlyAnalysis && !hasFullMoneyline ? 'Model only' : 'N/A'),
+      (Number.isFinite(participant?.impliedProbability) ? participant.impliedProbabilityLabel : null) ??
+      (Number.isFinite(tennisMarketProbability)
+        ? formatProbability(tennisMarketProbability)
+        : allowModelOnlyAnalysis && !hasFullMoneyline
+          ? 'Model only'
+          : 'N/A'),
     inputs: [],
     inputsUsed: 0,
     volatilityNotes: []

@@ -3102,7 +3102,8 @@ function App() {
                 <span className="eyebrow">Entry side</span>
                 <strong>{tradePlan.entrySideName}</strong>
                 <small>
-                  Board {tradePlan.dogMarketPct}% dog vs {tradePlan.favoriteName} {tradePlan.favoriteMarketPct}%
+                  Market {tradePlan.entryPricePct ?? tradePlan.dogMarketPct}% vs {tradePlan.otherSideName || tradePlan.favoriteName}{' '}
+                  {tradePlan.otherSideMarketPct ?? tradePlan.favoriteMarketPct}%
                 </small>
               </article>
               <article className="react-mini-panel">
@@ -3481,8 +3482,17 @@ function App() {
                   </article>
                   <article className="detail-kpi-card">
                     <span className="eyebrow">Market</span>
-                    <strong>{selectedGame.moneyline?.available ? selectedGame.analysis?.marketProbabilityLabel : 'Model only'}</strong>
-                    <small>{selectedGame.moneyline?.available ? selectedGame.moneyline.provider : 'No moneyline'}</small>
+                    <strong>
+                      {selectedGame.tennisContext?.predictionMarket
+                        ? selectedGame.analysis?.marketProbabilityLabel
+                        : selectedGame.moneyline?.available
+                          ? selectedGame.analysis?.marketProbabilityLabel
+                          : 'Model only'}
+                    </strong>
+                    <small>
+                      {selectedGame.tennisContext?.marketEconomics?.priceAction ||
+                        (selectedGame.moneyline?.available ? selectedGame.moneyline.provider : 'No moneyline')}
+                    </small>
                   </article>
                   <article className="detail-kpi-card">
                     <span className="eyebrow">Inputs</span>

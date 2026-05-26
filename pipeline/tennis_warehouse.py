@@ -202,6 +202,26 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (slate_date, match_id, prediction_source)
         );
 
+        create table if not exists tennis_prediction_market_snapshots (
+          slate_date text not null,
+          match_id text not null,
+          source_name text not null,
+          captured_at text,
+          total_volume integer,
+          player_name text not null,
+          normalized_name text not null,
+          probability_pct real,
+          traded_amount integer,
+          price_band text,
+          gross_profit_pct real,
+          gross_payout_multiple real,
+          cents_at_risk real,
+          cents_profit_if_win real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (slate_date, match_id, source_name, normalized_name)
+        );
+
         create table if not exists tennis_flashscore_match_stats (
           flashscore_id text primary key,
           source_url text,
@@ -231,8 +251,21 @@ def init_db(conn: sqlite3.Connection) -> None:
         create index if not exists idx_tennis_recent_opponent_rank on tennis_recent_matches(opponent_rank);
         create index if not exists idx_tennis_context_rank on tennis_player_match_context(rank);
         create index if not exists idx_tennis_predictions_date on tennis_predictions(slate_date);
+        create index if not exists idx_tennis_prediction_market_snapshots_date on tennis_prediction_market_snapshots(slate_date);
         """
     )
+    existing_market_columns = {
+        row["name"] for row in conn.execute("pragma table_info(tennis_prediction_market_snapshots)").fetchall()
+    }
+    for column_name, column_type in (
+        ("price_band", "text"),
+        ("gross_profit_pct", "real"),
+        ("gross_payout_multiple", "real"),
+        ("cents_at_risk", "real"),
+        ("cents_profit_if_win", "real"),
+    ):
+        if column_name not in existing_market_columns:
+            conn.execute(f"alter table tennis_prediction_market_snapshots add column {column_name} {column_type}")
     conn.commit()
 
 
@@ -336,6 +369,7 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
         "desk_predictions": 0,
         "source_predictions": 0,
         "source_rows": 0,
+        "market_rows": 0,
     }
 
     for file_path in sorted(slate_dir.glob("*.json")):
@@ -434,6 +468,63 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
             ),
         )
         counts["desk_predictions"] += 1
+
+        prediction_market = context.get("predictionMarket") or {}
+        if prediction_market:
+            source_name = prediction_market.get("source") or "prediction_market"
+            market_economics_by_player = {
+                normalize_name(player.get("name")): player
+                for player in ((context.get("marketEconomics") or {}).get("players") or [])
+            }
+            for market_player in prediction_market.get("players") or []:
+                player_name = market_player.get("name")
+                normalized = normalize_name(player_name)
+                if not player_name or not normalized:
+                    continue
+                market_economics = market_economics_by_player.get(normalized) or {}
+                upsert_player(conn, player_name)
+                conn.execute(
+                    """
+                    insert into tennis_prediction_market_snapshots(
+                      slate_date, match_id, source_name, captured_at, total_volume,
+                      player_name, normalized_name, probability_pct, traded_amount,
+                      price_band, gross_profit_pct, gross_payout_multiple,
+                      cents_at_risk, cents_profit_if_win, raw_json
+                    )
+                    values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    on conflict(slate_date, match_id, source_name, normalized_name) do update set
+                      captured_at=excluded.captured_at,
+                      total_volume=excluded.total_volume,
+                      player_name=excluded.player_name,
+                      probability_pct=excluded.probability_pct,
+                      traded_amount=excluded.traded_amount,
+                      price_band=excluded.price_band,
+                      gross_profit_pct=excluded.gross_profit_pct,
+                      gross_payout_multiple=excluded.gross_payout_multiple,
+                      cents_at_risk=excluded.cents_at_risk,
+                      cents_profit_if_win=excluded.cents_profit_if_win,
+                      raw_json=excluded.raw_json,
+                      updated_at=current_timestamp
+                    """,
+                    (
+                        slate_date,
+                        match_id,
+                        source_name,
+                        prediction_market.get("capturedAt"),
+                        as_int(prediction_market.get("totalVolume")),
+                        player_name,
+                        normalized,
+                        as_float(market_player.get("probabilityPct")),
+                        as_int(market_player.get("amount")),
+                        market_economics.get("priceBand"),
+                        as_float(market_economics.get("grossProfitPct")),
+                        as_float(market_economics.get("grossPayoutMultiple")),
+                        as_float(market_economics.get("centsAtRisk")),
+                        as_float(market_economics.get("centsProfitIfWin")),
+                        dumps({"market": market_player, "economics": market_economics}),
+                    ),
+                )
+                counts["market_rows"] += 1
 
         for source_name, source_payload in (
             ("tennistonic_h2h", context.get("clayMatchupData")),
