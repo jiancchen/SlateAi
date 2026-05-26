@@ -10,6 +10,7 @@ import {
 import { lineupBoardsByGameId, lineupMatchupContextByGameId } from './day-2026-05-25-lineups.js'
 import { parkContextByHomeTeam } from './day-2026-05-13-mlb-data.js'
 import tennisClayContext from './day-2026-05-25-tennis-clay-context.generated.json' with { type: 'json' }
+import tennisOpponentQualityContext from './day-2026-05-25-tennis-opponent-quality.generated.json' with { type: 'json' }
 
 const oddsProvider = 'Roland Garros desk board'
 const mlbOddsProvider = 'Official MLB data + ScoresAndOdds live board'
@@ -475,6 +476,7 @@ const makeRolandGarrosMatch = ({
         projection,
         tradePlan,
         clayMatchupData: tennisClayContext.matches?.[id] ?? null,
+        opponentQualityData: tennisOpponentQualityContext.matches?.[id] ?? null,
         researchLinks: [
           { label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard' },
           { label: 'Tennistonic H2H', url: h2hUrl }
