@@ -4668,6 +4668,49 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     }
   }
 
+  const initialModelEdge = Math.abs(adjustedSideScores[0] - adjustedSideScores[1])
+  let consensusOverrideNote = null
+
+  if (game.league === 'MLB' && context.mlbProjection && participants.length === 2) {
+    const phaseTeamNames = [
+      context.mlbProjection.edgeTeam,
+      context.mlbProjection.first5EdgeTeam,
+      context.mlbProjection.lateEdgeTeam,
+      context.mlbProjection.bridgeEdgeTeam
+    ].filter(Boolean)
+
+    const normalizedPhaseIndices = phaseTeamNames
+      .map((teamName) => participants.findIndex((participant) => teamNamesMatch(participant.name, teamName)))
+      .filter((index) => index >= 0)
+
+    const unanimousPhaseIndex =
+      normalizedPhaseIndices.length === 4 && normalizedPhaseIndices.every((index) => index === normalizedPhaseIndices[0])
+        ? normalizedPhaseIndices[0]
+        : null
+
+    if (unanimousPhaseIndex !== null) {
+      const oppositeIndex = unanimousPhaseIndex === 0 ? 1 : 0
+      const phaseConsensusStrength =
+        (Number(context.mlbProjection.edgeHits) || 0) +
+        (Number(context.mlbProjection.first5EdgeHits) || 0) +
+        (Number(context.mlbProjection.lateEdgeHits) || 0) +
+        (Number(context.mlbProjection.bridgeEdgeScore) || 0) * 0.2
+
+      if (
+        adjustedSideScores[unanimousPhaseIndex] < adjustedSideScores[oppositeIndex] &&
+        initialModelEdge <= 6 &&
+        phaseConsensusStrength >= 1
+      ) {
+        const overrideBump = Math.max(0.8, Math.min(3.6, phaseConsensusStrength * 0.9))
+        adjustedSideScores[unanimousPhaseIndex] = Math.max(
+          adjustedSideScores[unanimousPhaseIndex],
+          adjustedSideScores[oppositeIndex] + overrideBump
+        )
+        consensusOverrideNote = `${participants[unanimousPhaseIndex].name} owned every phase edge, so the side pick was pulled back toward the full-game script.`
+      }
+    }
+  }
+
   const winnerIndex = adjustedSideScores[0] >= adjustedSideScores[1] ? 0 : 1
   const loserIndex = winnerIndex === 0 ? 1 : 0
   const participant = participants[winnerIndex]
@@ -4855,7 +4898,8 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     volatilityNotes: [
       ...(context.volatilityModifiers || []),
       ...(mlbIndicators?.notes || []),
-      ...(tierOneControls?.notes || [])
+      ...(tierOneControls?.notes || []),
+      ...(consensusOverrideNote ? [{ label: consensusOverrideNote, delta: 0 }] : [])
     ],
     pickReasons: pickScript?.winPath?.slice(0, 4) ?? [],
     indicators: mlbIndicators

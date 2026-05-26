@@ -57,7 +57,8 @@ const HR_MODEL_NAMES = {
   '2026-05-21': 'statcast-hr-prototype-v3',
   '2026-05-22': 'statcast-hr-prototype-v3',
   '2026-05-23': 'statcast-hr-prototype-v3',
-  '2026-05-24': 'statcast-hr-prototype-v3'
+  '2026-05-24': 'statcast-hr-prototype-v3',
+  '2026-05-25': 'statcast-hr-prototype-v3'
 }
 
 const PROP_MODEL_NAMES = {
@@ -69,7 +70,8 @@ const PROP_MODEL_NAMES = {
   '2026-05-21': 'mlb-player-props-v1',
   '2026-05-22': 'mlb-player-props-v2',
   '2026-05-23': 'mlb-player-props-v2',
-  '2026-05-24': 'mlb-player-props-v2'
+  '2026-05-24': 'mlb-player-props-v2',
+  '2026-05-25': 'mlb-player-props-v2'
 }
 
 const CUSTOM_DAY_GAMES = {
@@ -89,7 +91,14 @@ const ensureDir = (dir) => {
   fs.mkdirSync(dir, { recursive: true })
 }
 
-const fetchJson = (url) => JSON.parse(execSync(`curl -sL "${url}"`, { cwd: ROOT, encoding: 'utf8' }))
+const fetchJson = (url) =>
+  JSON.parse(
+    execSync(`curl -sL "${url}"`, {
+      cwd: ROOT,
+      encoding: 'utf8',
+      maxBuffer: 64 * 1024 * 1024
+    })
+  )
 
 const loadPublishedMlbGames = (date) => {
   const gamesDir = path.join(ROOT, 'published-data', 'slates', date, 'games')
@@ -223,7 +232,7 @@ const buildSavedSideRecords = (date) => {
 
 const buildDerivedSideRecords = (date) => {
   const day = slateDays.find((entry) => entry.id === date)
-  const games = day?.games ?? CUSTOM_DAY_GAMES[date] ?? []
+  const games = day?.games ?? CUSTOM_DAY_GAMES[date] ?? loadPublishedMlbGames(date)
   if (!games.length) return []
 
   const outcomes = readJsonSql(`
@@ -815,7 +824,8 @@ const dates = [
   '2026-05-21',
   '2026-05-22',
   '2026-05-23',
-  '2026-05-24'
+  '2026-05-24',
+  '2026-05-25'
 ]
 ensureDir(HISTORY_DIR)
 

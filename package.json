@@ -13,7 +13,7 @@
     "build:api": "npm --prefix api run build",
     "preview": "npm --prefix web run preview",
     "start:api": "npm --prefix api run start",
-    "data:export:published": "npm --prefix api run export:published",
+    "data:export:published": "npm run data:export:stories && npm --prefix api run export:published",
     "data:init": "python3 pipeline/mlb_warehouse.py init-db",
     "data:ingest:mlb-day": "python3 pipeline/mlb_warehouse.py ingest-mlb-day",
     "data:ingest:mlb-range": "python3 pipeline/mlb_warehouse.py ingest-mlb-range",

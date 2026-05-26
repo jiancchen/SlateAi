@@ -2643,7 +2643,9 @@ function App() {
                 <strong>{game.analysis?.modelEdgeLabel || 'No edge stored'}</strong>
                 <small>
                   {game.analysis?.indicators?.projectedHitEdgeForPick !== undefined
-                    ? `${game.analysis?.participant?.name || projection.edgeTeam} carry ${formatNumber(game.analysis.indicators.projectedHitEdgeForPick, 1)} projected-hit edge for the side pick.`
+                    ? Number(game.analysis.indicators.projectedHitEdgeForPick) >= 0
+                      ? `${game.analysis?.participant?.name || projection.edgeTeam} carry ${formatNumber(game.analysis.indicators.projectedHitEdgeForPick, 1)} projected-hit edge for the side pick.`
+                      : `${game.analysis?.participant?.name || projection.edgeTeam} trail by ${formatNumber(Math.abs(Number(game.analysis.indicators.projectedHitEdgeForPick)), 1)} projected hits against the side pick.`
                     : 'Use together with hit edge, bridge chain, and lineup pressure.'}
                 </small>
               </article>

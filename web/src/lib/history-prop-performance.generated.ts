@@ -390,5 +390,41 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Corbin Carroll Over 1.5 total bases",
       "Elly De La Cruz Over 1.5 total bases"
     ]
+  },
+  "2026-05-25": {
+    "overall": {
+      "hits": 0,
+      "total": 28,
+      "hitRate": 0
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 0,
+        "total": 15,
+        "hitRate": 0
+      },
+      "singles": {
+        "hits": 0,
+        "total": 6,
+        "hitRate": 0
+      },
+      "rbi": {
+        "hits": 0,
+        "total": 3,
+        "hitRate": 0
+      },
+      "walks": {
+        "hits": 0,
+        "total": 4,
+        "hitRate": 0
+      }
+    },
+    "topHits": [],
+    "topMisses": [
+      "Junior Caminero Over 1.5 total bases",
+      "Yandy Díaz Over 1.5 total bases",
+      "Alejandro Osuna Over 0.5 singles",
+      "Tommy Troy Over 1.5 total bases"
+    ]
   }
 }

@@ -1,9 +1,19 @@
 import { createSportsMatchModel } from './sports-model.js'
 import { buildTennistonicH2HUrl } from './tennis-source-mapping.js'
+import { rawGames, bullpenChainByTeam } from './day-2026-05-26-data.js'
+import {
+  standingsContextByTeam,
+  teamOffenseContextByTeam,
+  teamBullpenContextByTeam,
+  teamSavantContextByTeam
+} from './mlb-context-2026-05-26.js'
+import { lineupBoardsByGameId, lineupMatchupContextByGameId } from './day-2026-05-26-lineups.js'
+import { parkContextByHomeTeam } from './day-2026-05-13-mlb-data.js'
 import tennisClayContext from './day-2026-05-26-tennis-clay-context.generated.json' with { type: 'json' }
 import tennisOpponentQualityContext from './day-2026-05-26-tennis-opponent-quality.generated.json' with { type: 'json' }
 
 const oddsProvider = 'Roland Garros desk board'
+const mlbOddsProvider = 'Official MLB data + ScoresAndOdds live board'
 const marketSource = 'Prediction market screenshot'
 const marketCapturedAt = '2026-05-26 12:16 AM PT'
 
@@ -11,6 +21,101 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
 const formatPct = (value) => (Number.isFinite(value) ? `${Math.round(value)}%` : 'n/a')
 const formatAmount = (value) => (Number.isFinite(value) ? value.toLocaleString('en-US') : 'n/a')
 const formatSignedPct = (value) => (Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${Math.round(value)} pts` : 'n/a')
+const mlbMarket = (label, book, value) => ({ label, book, value })
+
+const buildMlbBoardOdds = ({ spread = '', total = '', moneyline = '', provider = mlbOddsProvider }) => ({
+  participantOrder: [0, 1],
+  markets: [
+    ...(spread ? [mlbMarket('Spread', provider, spread)] : []),
+    ...(total ? [mlbMarket('Total', provider, total)] : []),
+    ...(moneyline ? [mlbMarket('Moneyline', provider, moneyline)] : [])
+  ],
+  note: 'Board snapshot plus model context.',
+  provider
+})
+
+const formatPitcherMetric = (value, suffix = '') => {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? `${parsed.toFixed(2)}${suffix}` : `${value || '-'}${suffix}`
+}
+
+const pitcherDetail = (pitcher) =>
+  `${pitcher.fullName} (${pitcher.pitchHand || '?'}HP) | ${pitcher.wins}-${pitcher.losses} | ${pitcher.era} ERA | ${pitcher.strikeOuts} SO | ${formatPitcherMetric(pitcher.whip, ' WHIP')} | ${pitcher.inningsPitched} IP`
+
+const getWindowLabel = (startMinutes = 0) => {
+  if (startMinutes < 720) return 'Morning MLB Board'
+  if (startMinutes < 900) return 'Afternoon MLB Board'
+  return 'Evening MLB Board'
+}
+
+const buildMlbGame = (raw, instanceIndex = 0) => {
+  const uniqueId = instanceIndex > 0 ? `${raw.id}-${raw.gamePk}` : raw.id
+  const factors = [
+    `Current board: ${raw.moneyline} | ${raw.total} | ${raw.spread}.`,
+    `${raw.awayPitcher.fullName} vs ${raw.homePitcher.fullName}.`
+  ]
+
+  return createSportsMatchModel(
+    {
+      id: uniqueId,
+      gamePk: Number.isFinite(Number(raw.gamePk)) ? Number(raw.gamePk) : null,
+      league: 'MLB',
+      title: `${raw.away} @ ${raw.home}`,
+      start: raw.start,
+      startMinutes: raw.startMinutes,
+      stage: getWindowLabel(raw.startMinutes),
+      spotlight: false,
+      tags: ['MLB'],
+      matchup: [
+        { side: 'Away', name: raw.away, detail: pitcherDetail(raw.awayPitcher) },
+        { side: 'Home', name: raw.home, detail: pitcherDetail(raw.homePitcher) }
+      ],
+      summary: `${raw.away} @ ${raw.home} with ${raw.awayPitcher.fullName} against ${raw.homePitcher.fullName}.`,
+      lean: 'Lean on the modeled side, but respect the split between starter phase and late-game hold.',
+      factors,
+      swingFactor: 'Swing factor: whether the starter edge survives the bridge innings.',
+      teamContext: {
+        away: standingsContextByTeam[raw.away] ?? null,
+        home: standingsContextByTeam[raw.home] ?? null
+      },
+      parkContext: parkContextByHomeTeam[raw.home] ?? null,
+      offenseContext: {
+        away: teamOffenseContextByTeam[raw.away] ?? null,
+        home: teamOffenseContextByTeam[raw.home] ?? null
+      },
+      bullpenContext: {
+        away: teamBullpenContextByTeam[raw.away] ?? null,
+        home: teamBullpenContextByTeam[raw.home] ?? null
+      },
+      bullpenChainContext: {
+        away: bullpenChainByTeam[raw.away] ?? null,
+        home: bullpenChainByTeam[raw.home] ?? null
+      },
+      savantContext: {
+        away: teamSavantContextByTeam[raw.away] ?? null,
+        home: teamSavantContextByTeam[raw.home] ?? null
+      },
+      storyContext: {
+        away: null,
+        home: null
+      },
+      tierTwoContext: raw.tierTwoContext ?? null,
+      tierThreeContext: raw.tierThreeContext ?? null,
+      stateContext: raw.stateContext ?? null,
+      lineupContext: lineupMatchupContextByGameId[raw.id] ?? null,
+      lineupBoard: lineupBoardsByGameId[raw.id] ?? null,
+      starterContext: { away: raw.awayPitcher, home: raw.homePitcher },
+      pitcherSourceNote: raw.pitcherSourceNote || '',
+      odds: buildMlbBoardOdds({
+        spread: raw.spread,
+        total: raw.total,
+        moneyline: raw.moneyline,
+        provider: mlbOddsProvider
+      })
+    },
+    mlbOddsProvider
+  )
+}
 
 const buildPlayerEconomics = (name, pricePct, amount) => {
   if (!Number.isFinite(pricePct) || pricePct <= 0) return null
@@ -1399,17 +1504,41 @@ const marketByMatchId = {
 }
 
 const matches = rawSingles.map(buildMatch)
+const mlbIdCounts = new Map()
+const mlbGames = rawGames.map((raw) => {
+  const seen = mlbIdCounts.get(raw.id) ?? 0
+  mlbIdCounts.set(raw.id, seen + 1)
+  return buildMlbGame(raw, seen)
+})
 
-export const slateMeta = { date: 'May 26, 2026', isoDate: '2026-05-26' }
-export const filters = ['All', 'Tennis']
+export const slateMeta = {
+  title: 'Tuesday MLB + Roland Garros Desk',
+  date: 'May 26, 2026',
+  isoDate: '2026-05-26',
+  timeZone: 'America/Los_Angeles',
+  subtitle:
+    'A combined Tuesday slate with the live May 26 MLB board plus the Roland Garros singles desk.',
+  notes: [
+    'MLB is coming from the generated May 26 split files, including starter context, lineup boards, park context, bullpen-chain context, and the current state / mistake-shape layers.',
+    'The tennis portion remains singles-only; doubles are intentionally excluded from the prediction desk.',
+    'Where no public market split was saved locally for tennis, the card is using official schedule context and manual clay matchup reads only.'
+  ]
+}
+export const filters = ['All', 'MLB', 'Tennis']
 export const oddsMeta = {
-  provider: oddsProvider,
-  snapshot: 'May 26, 2026 Roland Garros singles desk',
-  note: 'Singles only. Doubles from the ESPN slate are intentionally excluded from predictions.'
+  provider: 'Official MLB data + ScoresAndOdds live board / Roland Garros desk board',
+  snapshot: 'May 26, 2026 MLB + Roland Garros desk',
+  note:
+    'MLB uses the generated live board pipeline with official data and accessible odds snapshots. Tennis remains a singles-only clay desk.'
 }
 export const sources = [
+  { label: 'MLB probable pitchers', url: 'https://www.mlb.com/probable-pitchers' },
+  { label: 'MLB starting lineups', url: 'https://www.mlb.com/starting-lineups' },
+  { label: 'ScoresAndOdds MLB board', url: 'https://www.scoresandodds.com/mlb' },
   { label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260526' },
   { label: 'Roland Garros order of play', url: 'https://www.rolandgarros.com/en-us/order-of-play?annexeCourt=all&competition=all&country=all&date=2026-05-26&favoriteFilter=false&principalCourt=all&year=2026' }
 ]
 
-export const games = matches.sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
+export const games = [...mlbGames, ...matches].sort(
+  (left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title)
+)
