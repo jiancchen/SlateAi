@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-camilo-ugo-carabelli-andrey-rublev-2026-05-27",
+  "boardTitle": "Camilo Ugo Carabelli vs Andrey Rublev",
+  "boardPlayerName": "Andrey Rublev",
+  "recentOpponentName": "Alejandro Davidovich Fokina",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "11 May 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "ESP  6-4 6-4 3rd",
+  "flashscoreLabel": "Rublev A. - Davidovich Fokina A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Rublev A.",
+    "Davidovich Fokina A."
+  ],
+  "generatedAt": "2026-05-27T06:48:05.195Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nZpuWsfl/",
+  "matchId": "nZpuWsfl",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nZpuWsfl",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nZpuWsfl"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "85%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (33/39)",
+              "right": "57% (26/46)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/4",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "187 km/h",
+              "right": "175 km/h",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "160 km/h",
+              "right": "162 km/h",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (20/46)",
+              "right": "15% (6/39)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/4",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "16",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "22",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (40/54)",
+              "right": "56% (30/54)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (24/54)",
+              "right": "26% (14/54)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (64/108)",
+              "right": "41% (44/108)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "83%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (17/21)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/3",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (12/24)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/4",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (20/31)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (15/29)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (35/60)",
+              "right": "42% (25/60)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "88%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (16/18)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (1/3)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "87% (20/23)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (9/25)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (29/48)",
+              "right": "40% (19/48)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Davidovich Fokina A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

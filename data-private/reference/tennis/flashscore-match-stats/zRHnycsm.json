@@ -1,0 +1,35 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-tomas-machac-alexander-zverev-2026-05-27",
+  "boardTitle": "Tomas Machac vs Alexander Zverev",
+  "boardPlayerName": "Tomas Machac",
+  "recentOpponentName": "Daniil Medvedev",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "RUS   Loss w/o 2nd",
+  "flashscoreLabel": "Machac T. - Medvedev D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Machac T.",
+    "Medvedev D."
+  ],
+  "generatedAt": "2026-05-27T06:48:56.693Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zRHnycsm/",
+  "matchId": "zRHnycsm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zRHnycsm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zRHnycsm"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

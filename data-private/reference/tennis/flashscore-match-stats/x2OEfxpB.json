@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27",
+  "boardTitle": "Yuliia Starodubtseva vs Elena Rybakina",
+  "boardPlayerName": "Elena Rybakina",
+  "recentOpponentName": "Karolina Pliskova",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "11 May 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "CZE  6-0 6-2 4th",
+  "flashscoreLabel": "Pliskova Ka. - Rybakina E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Pliskova Ka.",
+    "Rybakina E."
+  ],
+  "generatedAt": "2026-05-27T06:48:19.549Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/x2OEfxpB/",
+  "matchId": "x2OEfxpB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_x2OEfxpB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_x2OEfxpB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:22"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "0:59"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "55%",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (13/26)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (4/18)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "2/3",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "6/9",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "39% (17/44)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (15/42)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (32/86)",
+              "right": "63% (54/86)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "67%",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (4/10)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "1/1",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/3",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "29% (5/17)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (10/35)",
+              "right": "71% (25/35)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "46%",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/2",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/6",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (12/27)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (10/24)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (22/51)",
+              "right": "57% (29/51)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Pliskova Ka.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

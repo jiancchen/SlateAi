@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jasmine-paolini-solana-sierra-2026-05-27",
+  "boardTitle": "Jasmine Paolini vs Solana Sierra",
+  "boardPlayerName": "Solana Sierra",
+  "recentOpponentName": "Emma Raducanu",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "GBR  6-0 7-64 1st",
+  "flashscoreLabel": "Raducanu E. - Sierra S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Raducanu E.",
+    "Sierra S."
+  ],
+  "generatedAt": "2026-05-27T06:48:30.184Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nkBqZbx2/",
+  "matchId": "nkBqZbx2",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nkBqZbx2",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nkBqZbx2"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:21"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "55%",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (19/40)",
+              "right": "63% (25/40)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (12/29)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/15",
+              "right": "3/6",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "162 km/h",
+              "right": "159 km/h",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "149 km/h",
+              "right": "143 km/h",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (15/40)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (16/33)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "6/15",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "24",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "27",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (31/69)",
+              "right": "58% (42/73)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (31/73)",
+              "right": "55% (38/69)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (62/142)",
+              "right": "56% (80/142)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "35%",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (5/13)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/5)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/1",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (2/7)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/6",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "6",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "28% (5/18)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (11/38)",
+              "right": "71% (27/38)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "62%",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (14/27)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (12/24)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "2/5",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (13/33)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/9",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "18",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "21",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (26/51)",
+              "right": "53% (28/53)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (25/53)",
+              "right": "49% (25/51)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (51/104)",
+              "right": "51% (53/104)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

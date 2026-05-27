@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jil-teichmann-magdalena-frech-2026-05-27",
+  "boardTitle": "Jil Teichmann vs Magdalena Frech",
+  "boardPlayerName": "Jil Teichmann",
+  "recentOpponentName": "Rebeka Masarova",
+  "recentIndex": 5,
+  "recentEvent": "Rome",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "SUI   Loss 1-6 6-1 6-1 Q.",
+  "flashscoreLabel": "Teichmann J. - Masarova R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Teichmann J.",
+    "Masarova R."
+  ],
+  "generatedAt": "2026-05-27T06:48:40.771Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bFZjegzQ/",
+  "matchId": "bFZjegzQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bFZjegzQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bFZjegzQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "63%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (26/51)",
+              "right": "71% (24/34)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "2/4",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (10/34)",
+              "right": "49% (25/51)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (9/20)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "5/7",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (35/66)",
+              "right": "65% (35/54)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (19/54)",
+              "right": "47% (31/66)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (54/120)",
+              "right": "55% (66/120)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "55% (6/11)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "71%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (6/10)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (9/14)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "72% (26/36)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "55%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "42% (5/12)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (1/3)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (2/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "40% (6/15)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (10/35)",
+              "right": "71% (25/35)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "86%",
+              "right": "65%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (10/25)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/1",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/5",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (12/29)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Masarova R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -75,6 +75,7 @@
     "data:import:tennis-slate": "python3 pipeline/tennis_warehouse.py import-slate",
     "data:fetch:tennis-scoreboard": "node pipeline/fetch-espn-tennis-scoreboard.mjs",
     "data:fetch:tennis-flashscore-slate": "node pipeline/fetch-flashscore-tennis-slate.mjs",
+    "data:fetch:tennis-flashscore-recent": "node pipeline/fetch-flashscore-tennis-recent-stats.mjs",
     "data:import:tennis-results": "python3 pipeline/tennis_warehouse.py import-results",
     "data:grade:tennis": "python3 pipeline/tennis_warehouse.py grade",
     "data:import:tennis-flashscore": "python3 pipeline/tennis_warehouse.py import-flashscore",

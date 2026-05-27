@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Alex Michelsen",
+  "recentOpponentName": "Stan Wawrinka",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "SUI  7-61 7-64 2nd",
+  "flashscoreLabel": "Wawrinka S. - Michelsen A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Wawrinka S.",
+    "Michelsen A."
+  ],
+  "generatedAt": "2026-05-27T06:48:43.867Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MNJsl4hT/",
+  "matchId": "MNJsl4hT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MNJsl4hT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MNJsl4hT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:57"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "55%",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (32/40)",
+              "right": "78% (32/41)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (16/34)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/4",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (9/41)",
+              "right": "20% (8/40)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (14/33)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/2",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "25",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "29",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (48/74)",
+              "right": "69% (51/74)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (23/74)",
+              "right": "35% (26/74)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (71/148)",
+              "right": "52% (77/148)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (10/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (2/12)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "59%",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "17",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (23/36)",
+              "right": "68% (25/37)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/37)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (35/73)",
+              "right": "52% (38/73)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "51%",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (18/21)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/1",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "14% (3/21)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/1",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "18",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "12",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (25/38)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (11/37)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (36/75)",
+              "right": "52% (39/75)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Wawrinka S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

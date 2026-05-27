@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Thiago Agustin Tirante",
+  "recentOpponentName": "Arthur Rinderknech",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "FRA   Loss 6-4 6-1 1st",
+  "flashscoreLabel": "Rinderknech A. - Tirante T. A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Rinderknech A.",
+    "Tirante T. A."
+  ],
+  "generatedAt": "2026-05-27T06:47:45.977Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nu25Ven2/",
+  "matchId": "nu25Ven2",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nu25Ven2",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nu25Ven2"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "0:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "65%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (29/34)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "5/8",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (12/34)",
+              "right": "15% (5/34)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "0/1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "13",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "20",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (39/51)",
+              "right": "56% (29/52)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (23/52)",
+              "right": "24% (12/51)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (62/103)",
+              "right": "40% (41/103)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "69%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (19/23)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (9/25)",
+              "right": "17% (4/23)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "58% (21/36)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (15/36)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (38/69)",
+              "right": "45% (31/69)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "56%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "86% (6/7)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (3/9)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "89% (16/18)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (8/16)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "71% (24/34)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

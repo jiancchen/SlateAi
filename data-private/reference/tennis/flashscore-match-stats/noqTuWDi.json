@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Thiago Agustin Tirante",
+  "recentOpponentName": "Daniil Medvedev",
+  "recentIndex": 2,
+  "recentEvent": "Rome",
+  "recentDate": "12 May 26",
+  "recentIsoDate": "2026-05-12",
+  "recentResult": "RUS   Loss 6-3 6-2 4th",
+  "flashscoreLabel": "Tirante T. A. - Medvedev D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Tirante T. A.",
+    "Medvedev D."
+  ],
+  "generatedAt": "2026-05-27T06:47:46.200Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/noqTuWDi/",
+  "matchId": "noqTuWDi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_noqTuWDi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_noqTuWDi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "65%",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (22/34)",
+              "right": "77% (30/39)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (6/22)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/10",
+              "right": "5/6",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "194 km/h",
+              "right": "205 km/h",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "153 km/h",
+              "right": "156 km/h",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (9/39)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "4/10",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "21",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "16",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (28/56)",
+              "right": "63% (38/60)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (22/60)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (50/116)",
+              "right": "57% (66/116)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "66%",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (12/24)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (25/56)",
+              "right": "55% (31/56)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "64%",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (14/23)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/3",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/6",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (16/32)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/60)",
+              "right": "58% (35/60)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

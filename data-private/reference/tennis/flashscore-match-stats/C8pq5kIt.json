@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
+  "boardTitle": "Mariano Navone vs Jakub Mensik",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Ignacio Buse",
+  "recentIndex": 1,
+  "recentEvent": "Hamburg",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "PER   Loss 6-0 6-3 2nd",
+  "flashscoreLabel": "Buse I. - Mensik J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Buse I.",
+    "Mensik J."
+  ],
+  "generatedAt": "2026-05-27T06:48:14.350Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/C8pq5kIt/",
+  "matchId": "C8pq5kIt",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_C8pq5kIt",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_C8pq5kIt"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:22"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:04"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "59%",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (25/31)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/4",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "19% (6/31)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "0/4",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "7",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "20",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (37/51)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "27% (14/51)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (56/88)",
+              "right": "36% (32/88)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "57% (4/7)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "53%",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (6/6)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "89% (8/9)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (12/14)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "76% (13/17)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "81% (25/31)",
+              "right": "19% (6/31)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "65%",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (19/25)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/1",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "24% (6/25)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/4",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (25/37)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (31/57)",
+              "right": "46% (26/57)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Buse I.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

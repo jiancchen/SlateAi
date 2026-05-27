@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jelena-ostapenko-magda-linette-2026-05-27",
+  "boardTitle": "Jelena Ostapenko vs Magda Linette",
+  "boardPlayerName": "Jelena Ostapenko",
+  "recentOpponentName": "Ella Seidel",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "GER  6-4 6-4 1st",
+  "flashscoreLabel": "Ostapenko J. - Seidel E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Ostapenko J.",
+    "Seidel E."
+  ],
+  "generatedAt": "2026-05-27T06:48:09.300Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vqbVd2U8/",
+  "matchId": "vqbVd2U8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vqbVd2U8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vqbVd2U8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:04"
+      }
+    ],
+    "totalDuration": "1:50"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "59%",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (26/33)",
+              "right": "71% (30/42)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (18/37)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/7",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "148 km/h",
+              "right": "167 km/h",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "122 km/h",
+              "right": "137 km/h",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (12/42)",
+              "right": "21% (7/33)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (20/29)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "2/4",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "14",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "24",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (44/70)",
+              "right": "55% (39/71)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (32/71)",
+              "right": "37% (26/70)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (76/141)",
+              "right": "46% (65/141)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "37%",
+              "right": "67%",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (9/11)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "3",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "13",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (15/33)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (35/63)",
+              "right": "44% (28/63)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "53%",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "11",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "11",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (24/40)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (17/38)",
+              "right": "40% (16/40)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (41/78)",
+              "right": "47% (37/78)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

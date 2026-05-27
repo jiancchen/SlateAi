@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-james-duckworth-rafael-jodar-2026-05-27",
+  "boardTitle": "James Duckworth vs Rafael Jodar",
+  "boardPlayerName": "Rafael Jodar",
+  "recentOpponentName": "Nuno Borges",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "POR  7-64 6-4 2nd",
+  "flashscoreLabel": "Borges N. - Jodar R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Borges N.",
+    "Jodar R."
+  ],
+  "generatedAt": "2026-05-27T06:48:28.071Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UcO5NkQ1/",
+  "matchId": "UcO5NkQ1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UcO5NkQ1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UcO5NkQ1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:57"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "59%",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (33/51)",
+              "right": "77% (37/48)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (13/28)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "7/8",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (11/48)",
+              "right": "35% (18/51)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (17/33)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "2/7",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "30",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "34",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (5/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (46/79)",
+              "right": "65% (53/81)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (28/81)",
+              "right": "42% (33/79)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (74/160)",
+              "right": "54% (86/160)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "55%",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (19/29)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "4/5",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/24)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/5",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (25/43)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (15/44)",
+              "right": "42% (18/43)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (40/87)",
+              "right": "54% (47/87)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "65%",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/3",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/2",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "16",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (21/36)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (13/37)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/73)",
+              "right": "53% (39/73)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

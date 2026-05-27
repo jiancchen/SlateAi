@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Tommy Paul",
+  "recentOpponentName": "Tomas Martin Etcheverry",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "ARG  6-75 7-65 7-67 2nd",
+  "flashscoreLabel": "Paul T. - Etcheverry T. M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Paul T.",
+    "Etcheverry T. M."
+  ],
+  "generatedAt": "2026-05-27T06:48:49.776Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/j1WfNNV6/",
+  "matchId": "j1WfNNV6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_j1WfNNV6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_j1WfNNV6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:18"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "76%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (61/91)",
+              "right": "65% (60/93)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (25/49)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/15",
+              "right": "0/5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (33/93)",
+              "right": "33% (30/91)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (11/30)",
+              "right": "49% (24/49)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/5",
+              "right": "5/15",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "52",
+              "right": "22",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "70",
+              "right": "36",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "72% (41/57)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (86/140)",
+              "right": "64% (79/123)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (44/123)",
+              "right": "39% (54/140)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (130/263)",
+              "right": "51% (133/263)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "7",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "72% (13/18)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "28% (5/18)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (18/36)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "77%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (9/30)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "17",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (30/48)",
+              "right": "72% (28/39)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/39)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (41/87)",
+              "right": "53% (46/87)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "69%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (22/35)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (15/31)",
+              "right": "37% (13/35)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "3/7",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "9",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "11",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (11/16)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (25/47)",
+              "right": "51% (23/45)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (22/45)",
+              "right": "47% (22/47)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (47/92)",
+              "right": "49% (45/92)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "82%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (19/26)",
+              "right": "72% (23/32)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (12/19)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (9/32)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "8",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "72% (21/29)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (31/45)",
+              "right": "72% (28/39)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/39)",
+              "right": "31% (14/45)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (42/84)",
+              "right": "50% (42/84)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Casper Ruud",
+  "recentOpponentName": "Jenson Brooksby",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "USA  6-3 7-5 1st",
+  "flashscoreLabel": "Brooksby J. - Ruud C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Brooksby J.",
+    "Ruud C."
+  ],
+  "generatedAt": "2026-05-27T06:48:46.077Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/U1GHKvYq/",
+  "matchId": "U1GHKvYq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_U1GHKvYq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_U1GHKvYq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:56"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "78%",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (28/53)",
+              "right": "66% (31/47)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/10",
+              "right": "2/5",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (16/47)",
+              "right": "47% (25/53)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "5/10",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "21",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "12",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (37/71)",
+              "right": "65% (39/60)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (21/60)",
+              "right": "48% (34/71)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (58/131)",
+              "right": "56% (73/131)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "70%",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "35% (7/20)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "2/4",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/6",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (12/27)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "85%",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (21/33)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/1",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (8/28)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/4",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "13",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (25/44)",
+              "right": "70% (23/33)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (10/33)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (35/77)",
+              "right": "55% (42/77)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Brooksby J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

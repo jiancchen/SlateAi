@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
+  "boardTitle": "Francesca Jones vs Marie Bouzkova",
+  "boardPlayerName": "Marie Bouzkova",
+  "recentOpponentName": "Anhelina Kalinina",
+  "recentIndex": 5,
+  "recentEvent": "Madrid",
+  "recentDate": "23 Apr 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "UKR   Loss 6-4 6-3 2nd",
+  "flashscoreLabel": "Bouzkova M. - Kalinina A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Bouzkova M.",
+    "Kalinina A."
+  ],
+  "generatedAt": "2026-05-27T06:48:26.044Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IPXXkBNc/",
+  "matchId": "IPXXkBNc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IPXXkBNc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IPXXkBNc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "68%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (25/50)",
+              "right": "67% (29/43)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (4/15)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "4/6",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (14/43)",
+              "right": "50% (25/50)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "5/8",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (29/65)",
+              "right": "59% (37/63)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (26/63)",
+              "right": "55% (36/65)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (55/128)",
+              "right": "57% (73/128)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "22% (2/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "70%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (2/8)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/4",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/5",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (18/35)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (30/68)",
+              "right": "56% (38/68)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "67%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "39% (9/23)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "1/2",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/3",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "37% (11/30)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (14/30)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/60)",
+              "right": "58% (35/60)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

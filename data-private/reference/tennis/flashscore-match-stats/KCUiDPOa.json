@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-viktorija-golubic-alycia-parks-2026-05-27",
+  "boardTitle": "Viktorija Golubic vs Alycia Parks",
+  "boardPlayerName": "Viktorija Golubic",
+  "recentOpponentName": "Federica Urgesi",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "ITA  6-1 6-1 1st",
+  "flashscoreLabel": "Golubic V. - Urgesi F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Golubic V.",
+    "Urgesi F."
+  ],
+  "generatedAt": "2026-05-27T06:48:01.501Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KCUiDPOa/",
+  "matchId": "KCUiDPOa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KCUiDPOa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KCUiDPOa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "75%",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (18/29)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "6/13",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "62% (24/39)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "85% (11/13)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/13",
+              "right": "2/4",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (25/42)",
+              "right": "33% (17/52)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (35/52)",
+              "right": "40% (17/42)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (60/94)",
+              "right": "36% (34/94)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (5/7)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (7/7)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (12/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "75%",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "5/8",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (9/15)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (5/5)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "1/1",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (15/23)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "70% (14/20)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (29/43)",
+              "right": "33% (14/43)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "75%",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/5",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "63% (15/24)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "1/3",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (10/19)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "66% (21/32)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (31/51)",
+              "right": "39% (20/51)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Golubic V.",
+              "rightPlayer": "Urgesi F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-james-duckworth-rafael-jodar-2026-05-27",
+  "boardTitle": "James Duckworth vs Rafael Jodar",
+  "boardPlayerName": "James Duckworth",
+  "recentOpponentName": "Edas Butvilas",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "LTU   Loss 7-5 7-64 Q.",
+  "flashscoreLabel": "Duckworth J. - Butvilas E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Duckworth J.",
+    "Butvilas E."
+  ],
+  "generatedAt": "2026-05-27T06:48:26.724Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/02YWFUsn/",
+  "matchId": "02YWFUsn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_02YWFUsn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_02YWFUsn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:58"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "74%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (37/46)",
+              "right": "83% (40/48)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (13/27)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (8/48)",
+              "right": "20% (9/46)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "24% (4/17)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "27",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "9",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (19/24)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (50/73)",
+              "right": "82% (53/65)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "18% (12/65)",
+              "right": "32% (23/73)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (62/138)",
+              "right": "55% (76/138)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (11/12)",
+              "right": "100% (12/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/12)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (11/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "77%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "14% (1/7)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "14",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (20/29)",
+              "right": "83% (24/29)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (5/29)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (25/58)",
+              "right": "57% (33/58)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "71%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (20/24)",
+              "right": "84% (21/25)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (4/25)",
+              "right": "13% (3/24)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/4",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "13",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "5",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Net points won",
+              "left": "76% (13/17)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (30/44)",
+              "right": "81% (29/36)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (7/36)",
+              "right": "32% (14/44)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (37/80)",
+              "right": "54% (43/80)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

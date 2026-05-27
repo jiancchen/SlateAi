@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-tomas-machac-alexander-zverev-2026-05-27",
+  "boardTitle": "Tomas Machac vs Alexander Zverev",
+  "boardPlayerName": "Alexander Zverev",
+  "recentOpponentName": "Daniel Altmaier",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "GER  7-5 6-3 2nd",
+  "flashscoreLabel": "Altmaier D. - Zverev A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Altmaier D.",
+    "Zverev A."
+  ],
+  "generatedAt": "2026-05-27T06:48:58.769Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6Jci7uCF/",
+  "matchId": "6Jci7uCF",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6Jci7uCF",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6Jci7uCF"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "75%",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (22/36)",
+              "right": "70% (35/50)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (10/20)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "6/8",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "181 km/h",
+              "right": "197 km/h",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "148 km/h",
+              "right": "173 km/h",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (15/50)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "4/5",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "26",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "23",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "79% (26/33)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (32/56)",
+              "right": "64% (43/67)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (24/67)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (56/123)",
+              "right": "54% (67/123)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (2/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "77%",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/4",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (6/27)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/3",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "66% (23/35)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (12/35)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (33/69)",
+              "right": "52% (36/69)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "72%",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/4",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/2",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (11/22)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (12/32)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

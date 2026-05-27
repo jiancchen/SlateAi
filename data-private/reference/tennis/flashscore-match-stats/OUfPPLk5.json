@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Thiago Agustin Tirante",
+  "recentOpponentName": "Flavio Cobolli",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "11 May 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "ITA  6-3 6-4 3rd",
+  "flashscoreLabel": "Cobolli F. - Tirante T. A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Cobolli F.",
+    "Tirante T. A."
+  ],
+  "generatedAt": "2026-05-27T06:47:46.416Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OUfPPLk5/",
+  "matchId": "OUfPPLk5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OUfPPLk5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OUfPPLk5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:57"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "50%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (15/26)",
+              "right": "88% (22/25)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (15/28)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/2",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "189 km/h",
+              "right": "204 km/h",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "156 km/h",
+              "right": "161 km/h",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (3/25)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (9/25)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/6",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "15",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/3)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (30/53)",
+              "right": "76% (38/50)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (12/50)",
+              "right": "43% (23/53)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (42/103)",
+              "right": "59% (61/103)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "44%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (9/15)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (14/27)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "57%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (2/10)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "87% (20/23)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "13% (3/23)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (19/49)",
+              "right": "61% (30/49)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

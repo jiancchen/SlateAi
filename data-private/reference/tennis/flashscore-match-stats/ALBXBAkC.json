@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-james-duckworth-rafael-jodar-2026-05-27",
+  "boardTitle": "James Duckworth vs Rafael Jodar",
+  "boardPlayerName": "James Duckworth",
+  "recentOpponentName": "Miguel Damas",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "ESP  3-6 7-5 6-3 q1",
+  "flashscoreLabel": "Duckworth J. - Damas M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Duckworth J.",
+    "Damas M."
+  ],
+  "generatedAt": "2026-05-27T06:48:26.950Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ALBXBAkC/",
+  "matchId": "ALBXBAkC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ALBXBAkC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ALBXBAkC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "71%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (33/53)",
+              "right": "52% (35/67)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (28/56)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/16",
+              "right": "5/11",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (32/67)",
+              "right": "38% (20/53)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (10/27)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "5/16",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "49",
+              "right": "23",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "72",
+              "right": "44",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (12/15)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (61/109)",
+              "right": "55% (52/94)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (42/94)",
+              "right": "44% (48/109)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (103/203)",
+              "right": "49% (100/203)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (10/15)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (6/15)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (16/30)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "68%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "9",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (12/23)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (22/51)",
+              "right": "57% (29/51)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "69%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (15/24)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (10/23)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/6",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (16/29)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/6",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "10",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "16",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (25/46)",
+              "right": "52% (22/42)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (20/42)",
+              "right": "46% (21/46)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (45/88)",
+              "right": "49% (43/88)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "79%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (11/21)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "1/3",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (9/19)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/7",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "19",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (24/40)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (12/24)",
+              "right": "40% (16/40)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (36/64)",
+              "right": "44% (28/64)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Damas M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

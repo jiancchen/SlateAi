@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Thiago Agustin Tirante",
+  "recentOpponentName": "Gianluca Cadenasso",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "ITA  6-75 6-4 6-0 1st",
+  "flashscoreLabel": "Tirante T. A. - Cadenasso G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Tirante T. A.",
+    "Cadenasso G."
+  ],
+  "generatedAt": "2026-05-27T06:47:46.876Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bHI0BztA/",
+  "matchId": "bHI0BztA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bHI0BztA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bHI0BztA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:11"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "73%",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (38/47)",
+              "right": "62% (36/58)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (24/37)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/7",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (22/58)",
+              "right": "19% (9/47)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (9/21)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/7",
+              "right": "1/5",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "23",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "29",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "92% (11/12)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (62/84)",
+              "right": "61% (48/79)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (31/79)",
+              "right": "26% (22/84)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (93/163)",
+              "right": "43% (70/163)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (5/14)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "64% (18/28)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "84%",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (21/24)",
+              "right": "77% (24/31)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (7/31)",
+              "right": "13% (3/24)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (1/6)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "13",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (30/39)",
+              "right": "78% (29/37)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (8/37)",
+              "right": "23% (9/39)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (38/76)",
+              "right": "50% (38/76)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "60%",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/2",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/4",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (11/25)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (31/55)",
+              "right": "44% (24/55)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "71%",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (7/7)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "75% (9/12)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "10",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (12/15)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "71% (12/17)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "75% (24/32)",
+              "right": "25% (8/32)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Tirante T. A.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

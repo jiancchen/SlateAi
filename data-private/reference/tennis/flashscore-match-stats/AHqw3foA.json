@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
+  "boardTitle": "Daria Snigur vs Peyton Stearns",
+  "boardPlayerName": "Daria Snigur",
+  "recentOpponentName": "Noemi Basiletti",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "ITA   Loss 6-3 6-78 6-4 Q.",
+  "flashscoreLabel": "Basiletti N. - Snigur D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Basiletti N.",
+    "Snigur D."
+  ],
+  "generatedAt": "2026-05-27T06:48:06.098Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AHqw3foA/",
+  "matchId": "AHqw3foA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AHqw3foA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AHqw3foA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 8,
+        "rightGames": 10,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "83%",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (50/95)",
+              "right": "54% (50/93)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (16/28)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/15",
+              "right": "12/19",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (43/93)",
+              "right": "47% (45/95)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (9/19)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/19",
+              "right": "5/15",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (66/123)",
+              "right": "54% (60/112)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (52/112)",
+              "right": "46% (57/123)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (118/235)",
+              "right": "50% (117/235)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (11/16)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "47% (7/15)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (18/31)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "80%",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (18/31)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "0/2",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (8/16)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/7",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (23/40)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (10/20)",
+              "right": "43% (17/40)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (33/60)",
+              "right": "45% (27/60)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "86%",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (22/44)",
+              "right": "57% (25/44)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "7/9",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (19/44)",
+              "right": "50% (22/44)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/9",
+              "right": "2/6",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (28/53)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (21/51)",
+              "right": "47% (25/53)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (49/104)",
+              "right": "53% (55/104)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "80%",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (10/20)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "5/8",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (16/33)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "2/2",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (15/30)",
+              "right": "49% (20/41)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (21/41)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (36/71)",
+              "right": "49% (35/71)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Basiletti N.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

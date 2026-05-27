@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Alex Michelsen",
+  "recentOpponentName": "Jan-Lennard Struff",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "GER  6-2 6-1 2nd",
+  "flashscoreLabel": "Struff J-L. - Michelsen A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Struff J-L.",
+    "Michelsen A."
+  ],
+  "generatedAt": "2026-05-27T06:48:44.823Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2B2uVe8m/",
+  "matchId": "2B2uVe8m",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2B2uVe8m",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2B2uVe8m"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "0:58"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "70%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (17/32)",
+              "right": "93% (26/28)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (11/24)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "0/0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (2/28)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "4/11",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "19",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "11",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (28/56)",
+              "right": "80% (32/40)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (8/40)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (36/96)",
+              "right": "63% (60/96)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (3/7)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "74%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (8/16)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/6",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "8",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (16/32)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (19/51)",
+              "right": "63% (32/51)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "67%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (12/24)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (17/45)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

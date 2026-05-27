@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-kamilla-rakhimova-karolina-muchova-2026-05-27",
+  "boardTitle": "Kamilla Rakhimova vs Karolina Muchova",
+  "boardPlayerName": "Karolina Muchova",
+  "recentOpponentName": "Anastasia Potapova",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "AUT   Loss 6-3 6-2 2nd",
+  "flashscoreLabel": "Potapova A. - Muchova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Potapova A.",
+    "Muchova K."
+  ],
+  "generatedAt": "2026-05-27T06:48:53.603Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UNqA9ix0/",
+  "matchId": "UNqA9ix0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UNqA9ix0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UNqA9ix0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "70%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (29/43)",
+              "right": "53% (23/43)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (12/21)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "7/11",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (20/43)",
+              "right": "33% (14/43)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "1/8",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (41/64)",
+              "right": "49% (30/61)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (31/61)",
+              "right": "36% (23/64)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (72/125)",
+              "right": "42% (53/125)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "67%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (20/33)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "3/5",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/8",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (25/44)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (17/33)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (42/77)",
+              "right": "45% (35/77)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "75%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (9/10)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/6",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (11/21)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (30/48)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jil-teichmann-magdalena-frech-2026-05-27",
+  "boardTitle": "Jil Teichmann vs Magdalena Frech",
+  "boardPlayerName": "Magdalena Frech",
+  "recentOpponentName": "Talia Gibson",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "AUS  7-60 6-3 1st",
+  "flashscoreLabel": "Frech M. - Gibson T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Frech M.",
+    "Gibson T."
+  ],
+  "generatedAt": "2026-05-27T06:48:41.829Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MV7rNIth/",
+  "matchId": "MV7rNIth",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MV7rNIth",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MV7rNIth"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 0,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "54%",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (31/39)",
+              "right": "59% (22/37)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (15/27)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "4/7",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (16/37)",
+              "right": "10% (4/39)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (16/32)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/4",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "71% (48/68)",
+              "right": "54% (38/71)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (33/71)",
+              "right": "29% (20/68)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (81/139)",
+              "right": "42% (58/139)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "54%",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (17/20)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/4",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (12/26)",
+              "right": "15% (3/20)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (9/22)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "70% (28/40)",
+              "right": "56% (28/50)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (22/50)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (50/90)",
+              "right": "44% (40/90)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "52%",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "5% (1/19)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "71% (20/28)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (11/21)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (31/49)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

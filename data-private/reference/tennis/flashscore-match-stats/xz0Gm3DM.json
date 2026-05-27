@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jelena-ostapenko-magda-linette-2026-05-27",
+  "boardTitle": "Jelena Ostapenko vs Magda Linette",
+  "boardPlayerName": "Jelena Ostapenko",
+  "recentOpponentName": "Lucrezia Stefanini",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "ITA  6-0 6-1 1st",
+  "flashscoreLabel": "Stefanini L. - Ostapenko J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Stefanini L.",
+    "Ostapenko J."
+  ],
+  "generatedAt": "2026-05-27T06:48:10.426Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xz0Gm3DM/",
+  "matchId": "xz0Gm3DM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xz0Gm3DM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xz0Gm3DM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:23"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "0:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "64%",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "35% (8/23)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "15% (2/13)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/6",
+              "right": "3/3",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (7/27)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "6/6",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "28% (10/36)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (15/42)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "32% (25/78)",
+              "right": "68% (53/78)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "14% (1/7)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "8% (1/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "50%",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "22% (2/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/0",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (4/9)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/3",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "20% (3/15)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (6/18)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "27% (9/33)",
+              "right": "73% (24/33)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "75%",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (6/14)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/3",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (6/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/3",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "33% (7/21)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/45)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Stefanini L.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

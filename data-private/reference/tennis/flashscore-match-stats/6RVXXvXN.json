@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-marta-kostyuk-katie-volynets-2026-05-27",
+  "boardTitle": "Marta Kostyuk vs Katie Volynets",
+  "boardPlayerName": "Marta Kostyuk",
+  "recentOpponentName": "Caty McNally",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "27 Apr 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "USA  6-2 6-3 4th",
+  "flashscoreLabel": "Kostyuk M. - McNally C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Kostyuk M.",
+    "McNally C."
+  ],
+  "generatedAt": "2026-05-27T06:48:16.554Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6RVXXvXN/",
+  "matchId": "6RVXXvXN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6RVXXvXN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6RVXXvXN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "67%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (25/37)",
+              "right": "52% (23/44)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (12/28)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "7/13",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (21/44)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (16/22)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/13",
+              "right": "3/10",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (37/65)",
+              "right": "44% (31/70)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (39/70)",
+              "right": "43% (28/65)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (76/135)",
+              "right": "44% (59/135)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (6/8)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "68%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (13/20)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "4/7",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (12/26)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "1/8",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "58% (22/38)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (22/42)",
+              "right": "42% (16/38)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (44/80)",
+              "right": "45% (36/80)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "64%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/6",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (9/18)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (17/28)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "McNally C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

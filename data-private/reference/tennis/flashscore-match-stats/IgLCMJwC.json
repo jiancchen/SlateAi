@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
+  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
+  "boardPlayerName": "Kaitlin Quevedo",
+  "recentOpponentName": "Leolia Jeanjean",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "FRA  7-65 7-62 1st",
+  "flashscoreLabel": "Quevedo K. - Jeanjean L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Quevedo K.",
+    "Jeanjean L."
+  ],
+  "generatedAt": "2026-05-27T06:48:22.325Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IgLCMJwC/",
+  "matchId": "IgLCMJwC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IgLCMJwC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IgLCMJwC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:01"
+      }
+    ],
+    "totalDuration": "2:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "68%",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (35/46)",
+              "right": "70% (38/54)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (16/30)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/2",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "167 km/h",
+              "right": "167 km/h",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "136 km/h",
+              "right": "139 km/h",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (16/54)",
+              "right": "24% (11/46)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (15/25)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "2/3",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "32",
+              "right": "20",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "31",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (12/21)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (51/76)",
+              "right": "61% (48/79)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (31/79)",
+              "right": "33% (25/76)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (82/155)",
+              "right": "47% (73/155)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (10/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (2/12)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "68%",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (10/22)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/2",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "2/3",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "7",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "12",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (9/13)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (24/42)",
+              "right": "59% (22/37)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (15/37)",
+              "right": "43% (18/42)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (39/79)",
+              "right": "51% (40/79)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "69%",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (21/26)",
+              "right": "69% (20/29)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (9/29)",
+              "right": "19% (5/26)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "19",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (27/34)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (16/42)",
+              "right": "21% (7/34)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (43/76)",
+              "right": "43% (33/76)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Quevedo K.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

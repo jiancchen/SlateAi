@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
+  "boardTitle": "Daria Snigur vs Peyton Stearns",
+  "boardPlayerName": "Peyton Stearns",
+  "recentOpponentName": "Daria Kasatkina",
+  "recentIndex": 1,
+  "recentEvent": "Strasbourg",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "AUS   Loss 6-1 6-3 2nd",
+  "flashscoreLabel": "Stearns P. - Kasatkina D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Stearns P.",
+    "Kasatkina D."
+  ],
+  "generatedAt": "2026-05-27T06:48:07.785Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/t6awnkJD/",
+  "matchId": "t6awnkJD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_t6awnkJD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_t6awnkJD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:03"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "77%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (16/30)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (3/15)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "4/5",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (14/40)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "5/8",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "42% (19/45)",
+              "right": "65% (34/52)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (18/52)",
+              "right": "58% (26/45)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (37/97)",
+              "right": "62% (60/97)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "76%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (8/17)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/7)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (1/5)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/5",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "35% (8/23)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (15/44)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "77%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/4",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (8/24)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/3",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (11/22)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (11/31)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/53)",
+              "right": "58% (31/53)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

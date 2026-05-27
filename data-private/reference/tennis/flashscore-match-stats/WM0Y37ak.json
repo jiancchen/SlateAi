@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Alejandro Davidovich Fokina",
+  "recentOpponentName": "Alex De Minaur",
+  "recentIndex": 1,
+  "recentEvent": "Hamburg",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "AUS   Loss 6-2 4-6 6-4 2nd",
+  "flashscoreLabel": "Davidovich Fokina A. - De Minaur A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Davidovich Fokina A.",
+    "De Minaur A."
+  ],
+  "generatedAt": "2026-05-27T06:47:44.390Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WM0Y37ak/",
+  "matchId": "WM0Y37ak",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WM0Y37ak",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WM0Y37ak"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "50%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (40/71)",
+              "right": "67% (32/48)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (14/26)",
+              "right": "54% (26/48)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/9",
+              "right": "10/13",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (16/48)",
+              "right": "44% (31/71)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (22/48)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/13",
+              "right": "5/9",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "14",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "63",
+              "right": "46",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (12/16)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (54/97)",
+              "right": "60% (58/96)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (38/96)",
+              "right": "44% (43/97)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (92/193)",
+              "right": "52% (101/193)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (9/14)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (12/28)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "50%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (12/26)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/5",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "15",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (17/34)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (26/62)",
+              "right": "58% (36/62)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "32%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "5/7",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (12/25)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "1/1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "16",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (18/29)",
+              "right": "54% (20/37)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (17/37)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (35/66)",
+              "right": "47% (31/66)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "71%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (15/26)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "15",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (31/65)",
+              "right": "52% (34/65)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

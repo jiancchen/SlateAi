@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-ugo-humbert-quentin-halys-2026-05-27",
+  "boardTitle": "Ugo Humbert vs Quentin Halys",
+  "boardPlayerName": "Quentin Halys",
+  "recentOpponentName": "Jaime Faria",
+  "recentIndex": 5,
+  "recentEvent": "Madrid",
+  "recentDate": "20 Apr 26",
+  "recentIsoDate": "2026-04-20",
+  "recentResult": "POR   Loss 6-79 6-3 6-4 q1",
+  "flashscoreLabel": "Halys Q. - Faria J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Halys Q.",
+    "Faria J."
+  ],
+  "generatedAt": "2026-05-27T06:48:35.977Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hYpttKzH/",
+  "matchId": "hYpttKzH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hYpttKzH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hYpttKzH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 11,
+        "rightGames": 9,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "56%",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (50/68)",
+              "right": "80% (52/65)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (21/48)",
+              "right": "48% (25/52)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "10/11",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (13/65)",
+              "right": "26% (18/68)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (27/52)",
+              "right": "56% (27/48)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/11",
+              "right": "3/10",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "48",
+              "right": "60",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "38",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (9/18)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (71/116)",
+              "right": "66% (77/117)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (40/117)",
+              "right": "39% (45/116)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (111/233)",
+              "right": "52% (122/233)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "6% (1/16)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (13/31)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "57%",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (25/30)",
+              "right": "80% (24/30)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "6/6",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (6/30)",
+              "right": "17% (5/30)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (12/23)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "0/4",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "23",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "22",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "42% (5/12)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (33/48)",
+              "right": "66% (35/53)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (18/53)",
+              "right": "31% (15/48)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (51/101)",
+              "right": "50% (50/101)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "52%",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "18",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/2)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (17/28)",
+              "right": "69% (20/29)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (9/29)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/57)",
+              "right": "54% (31/57)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "57%",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (6/19)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "4/5",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (3/20)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/4",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "19",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (21/40)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (13/35)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (34/75)",
+              "right": "55% (41/75)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Halys Q.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

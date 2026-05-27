@@ -1,0 +1,872 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Nishesh Basavareddy",
+  "recentOpponentName": "Taylor Fritz",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "USA  7-65 7-65 6-79 6-1 1st",
+  "flashscoreLabel": "Fritz T. - Basavareddy N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Fritz T.",
+    "Basavareddy N."
+  ],
+  "generatedAt": "2026-05-27T06:48:42.496Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KGAzv3tK/",
+  "matchId": "KGAzv3tK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KGAzv3tK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KGAzv3tK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 11,
+        "rightGames": 9,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "21",
+              "right": "4",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "62%",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (76/100)",
+              "right": "78% (69/89)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (22/45)",
+              "right": "64% (35/55)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/4",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "195 km/h",
+              "right": "178 km/h",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "149 km/h",
+              "right": "143 km/h",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (20/89)",
+              "right": "24% (24/100)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (20/55)",
+              "right": "51% (23/45)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/6",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "71",
+              "right": "51",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "48",
+              "right": "36",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "47% (15/32)",
+              "right": "84% (31/37)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (98/145)",
+              "right": "72% (104/144)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (40/144)",
+              "right": "32% (47/145)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (138/289)",
+              "right": "52% (151/289)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (18/21)",
+              "right": "95% (21/22)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "5% (1/22)",
+              "right": "14% (3/21)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (19/43)",
+              "right": "56% (24/43)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "50%",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (21/25)",
+              "right": "90% (18/20)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (2/20)",
+              "right": "16% (4/25)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (9/20)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "12",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (28/37)",
+              "right": "73% (29/40)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/40)",
+              "right": "24% (9/37)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (39/77)",
+              "right": "49% (38/77)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "73%",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (18/24)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "14",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (4/10)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (25/36)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (12/40)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (37/76)",
+              "right": "51% (39/76)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "60%",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (27/33)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (10/27)",
+              "right": "18% (6/33)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (4/18)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "17",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "13",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (6/12)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (34/47)",
+              "right": "69% (31/45)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (14/45)",
+              "right": "28% (13/47)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (48/92)",
+              "right": "48% (44/92)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "68%",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "100% (13/13)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/13)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (11/25)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "32% (14/44)",
+              "right": "68% (30/44)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Fritz T.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

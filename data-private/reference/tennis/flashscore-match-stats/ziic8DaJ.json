@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Nishesh Basavareddy",
+  "recentOpponentName": "Kilian Feldbausch",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "SUI  6-3 6-2 Q.",
+  "flashscoreLabel": "Feldbausch K. - Basavareddy N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Feldbausch K.",
+    "Basavareddy N."
+  ],
+  "generatedAt": "2026-05-27T06:48:42.946Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ziic8DaJ/",
+  "matchId": "ziic8DaJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ziic8DaJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ziic8DaJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:27"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "89%",
+              "right": "65%",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (27/58)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/13",
+              "right": "3/5",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (13/35)",
+              "right": "53% (31/58)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (9/19)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "6/13",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "17",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "18",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (29/65)",
+              "right": "59% (32/54)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (22/54)",
+              "right": "55% (36/65)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (51/119)",
+              "right": "57% (68/119)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (3/9)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "89%",
+              "right": "77%",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (17/33)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (1/4)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (18/37)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (11/26)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (29/63)",
+              "right": "54% (34/63)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "89%",
+              "right": "54%",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (10/25)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (1/3)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "3/4",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/7",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (11/28)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (22/56)",
+              "right": "61% (34/56)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Feldbausch K.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

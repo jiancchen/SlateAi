@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-james-duckworth-rafael-jodar-2026-05-27",
+  "boardTitle": "James Duckworth vs Rafael Jodar",
+  "boardPlayerName": "Rafael Jodar",
+  "recentOpponentName": "Learner Tien",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "12 May 26",
+  "recentIsoDate": "2026-05-12",
+  "recentResult": "USA  6-1 6-4 4th",
+  "flashscoreLabel": "Jodar R. - Tien L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Jodar R.",
+    "Tien L."
+  ],
+  "generatedAt": "2026-05-27T06:48:27.628Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/v7p7wvAC/",
+  "matchId": "v7p7wvAC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_v7p7wvAC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_v7p7wvAC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "63%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (22/33)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (11/17)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/8",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "186 km/h",
+              "right": "189 km/h",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "152 km/h",
+              "right": "171 km/h",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (16/33)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (10/19)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "1/1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "23",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (34/50)",
+              "right": "50% (26/52)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (26/52)",
+              "right": "32% (16/50)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (60/102)",
+              "right": "41% (42/102)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "60%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (11/20)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (27/40)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "66%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/5",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (11/21)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "15",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (18/30)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (15/32)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (33/62)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
+  "boardTitle": "Sara Bejlek vs Iga Swiatek",
+  "boardPlayerName": "Sara Bejlek",
+  "recentOpponentName": "Sloane Stephens",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "USA  6-3 6-2 1st",
+  "flashscoreLabel": "Bejlek S. - Stephens S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Bejlek S.",
+    "Stephens S."
+  ],
+  "generatedAt": "2026-05-27T06:47:58.095Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QJOKKc8O/",
+  "matchId": "QJOKKc8O",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QJOKKc8O",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QJOKKc8O"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "55%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (32/43)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (12/22)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "2/5",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "140 km/h",
+              "right": "159 km/h",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "126 km/h",
+              "right": "130 km/h",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (14/30)",
+              "right": "26% (11/43)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (13/25)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/4",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "40",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (44/65)",
+              "right": "51% (28/55)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (27/55)",
+              "right": "32% (21/65)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (71/120)",
+              "right": "41% (49/120)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "45%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/2",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/4",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "27",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (26/39)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (13/29)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (39/68)",
+              "right": "43% (29/68)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "65%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "59% (10/17)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (14/26)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (32/52)",
+              "right": "38% (20/52)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Stephens S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27",
+  "boardTitle": "Mirra Andreeva vs Marina Bassols Ribera",
+  "boardPlayerName": "Marina Bassols Ribera",
+  "recentOpponentName": "Aliaksandra Sasnovich",
+  "recentIndex": 1,
+  "recentEvent": "",
+  "recentDate": "22 May 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "BLR  7-64 7-5 Q.",
+  "flashscoreLabel": "Sasnovich A. - Bassols M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Sasnovich A.",
+    "Bassols M."
+  ],
+  "generatedAt": "2026-05-27T06:48:55.803Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UDf0hQeE/",
+  "matchId": "UDf0hQeE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UDf0hQeE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UDf0hQeE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:08"
+      }
+    ],
+    "totalDuration": "2:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "69%",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (29/58)",
+              "right": "55% (34/62)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (11/25)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/15",
+              "right": "4/10",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "152 km/h",
+              "right": "144 km/h",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "117 km/h",
+              "right": "126 km/h",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (28/62)",
+              "right": "50% (29/58)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (15/28)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "7/15",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "16",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "59",
+              "right": "27",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (16/23)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (40/83)",
+              "right": "52% (47/90)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (43/90)",
+              "right": "52% (43/83)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (83/173)",
+              "right": "52% (90/173)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "42% (5/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (6/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (11/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "71%",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (16/33)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/10",
+              "right": "1/5",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (17/32)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "4/10",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "7",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "16",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (21/44)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (23/45)",
+              "right": "52% (23/44)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (44/89)",
+              "right": "51% (45/89)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "67%",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (13/25)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "3/5",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (11/30)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/5",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "9",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "11",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (19/39)",
+              "right": "56% (25/45)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (20/45)",
+              "right": "51% (20/39)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (39/84)",
+              "right": "54% (45/84)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sasnovich A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

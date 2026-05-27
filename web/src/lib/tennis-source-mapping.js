@@ -6,7 +6,11 @@ const normalizeTennisSlug = (value) =>
     .replace(/^-+|-+$/g, '')
 
 export const tennistonicPlayerSlugMap = {
+  'Catherine McNally': 'Caty-McNally',
+  'Pablo Carreno Busta': 'Pablo-Carreno-Busta',
   'Pedro Martinez': 'Pedro-Martinez-Portero',
+  'Wang Xinyu': 'Xinyu-Wang',
+  'Wang Xiyu': 'Xiyu-Wang',
   'Guiomar Maristany Zuleta De Reales': 'Guiomar-Zuleta-De-Reales',
   'Pierre-Hugues Herbert': 'Pierre~Hugues-Herbert'
 }

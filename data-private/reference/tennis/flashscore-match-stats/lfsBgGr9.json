@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jasmine-paolini-solana-sierra-2026-05-27",
+  "boardTitle": "Jasmine Paolini vs Solana Sierra",
+  "boardPlayerName": "Jasmine Paolini",
+  "recentOpponentName": "Leolia Jeanjean",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "FRA  6-74 6-2 6-4 2nd",
+  "flashscoreLabel": "Paolini J. - Jeanjean L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Paolini J.",
+    "Jeanjean L."
+  ],
+  "generatedAt": "2026-05-27T06:48:29.487Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lfsBgGr9/",
+  "matchId": "lfsBgGr9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lfsBgGr9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lfsBgGr9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:58"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "61%",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (44/59)",
+              "right": "60% (45/75)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (17/42)",
+              "right": "40% (19/47)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "9/16",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (30/75)",
+              "right": "25% (15/59)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (28/47)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/16",
+              "right": "4/8",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (61/101)",
+              "right": "52% (64/122)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (58/122)",
+              "right": "40% (40/101)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (119/223)",
+              "right": "47% (104/223)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (11/15)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return games won",
+              "left": "47% (7/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (18/30)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "65%",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "24% (4/17)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "2/5",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (12/31)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (10/17)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/3",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (21/42)",
+              "right": "54% (26/48)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (22/48)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (43/90)",
+              "right": "52% (47/90)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "56%",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/5",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (6/14)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (9/11)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/5",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (15/25)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (34/59)",
+              "right": "42% (25/59)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "61%",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/6",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (12/30)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (9/19)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "0/0",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "84% (21/25)",
+              "right": "57% (28/49)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (21/49)",
+              "right": "16% (4/25)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (42/74)",
+              "right": "43% (32/74)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Jeanjean L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

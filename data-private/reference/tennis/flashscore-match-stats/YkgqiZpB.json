@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "boardPlayerName": "Hailey Baptiste",
+  "recentOpponentName": "Elina Svitolina",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "UKR   Loss 6-1 6-2 3rd",
+  "flashscoreLabel": "Svitolina E. - Baptiste H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Svitolina E.",
+    "Baptiste H."
+  ],
+  "generatedAt": "2026-05-27T06:48:36.225Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YkgqiZpB/",
+  "matchId": "YkgqiZpB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YkgqiZpB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YkgqiZpB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:08"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "48%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (21/28)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "76% (16/21)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "4/8",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (14/24)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "0/5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "76% (37/49)",
+              "right": "48% (22/46)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (24/46)",
+              "right": "24% (12/49)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (61/95)",
+              "right": "36% (34/95)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "57% (4/7)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "54%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "4/6",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (6/13)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (13/24)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (33/51)",
+              "right": "35% (18/51)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "41%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "90% (9/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (4/9)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (28/44)",
+              "right": "36% (16/44)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

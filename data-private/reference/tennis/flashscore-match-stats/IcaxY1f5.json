@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
+  "boardTitle": "Sara Bejlek vs Iga Swiatek",
+  "boardPlayerName": "Iga Swiatek",
+  "recentOpponentName": "Caty McNally",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "USA  6-1 6-75 6-3 2nd",
+  "flashscoreLabel": "McNally C. - Swiatek I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "McNally C.",
+    "Swiatek I."
+  ],
+  "generatedAt": "2026-05-27T06:48:00.196Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IcaxY1f5/",
+  "matchId": "IcaxY1f5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IcaxY1f5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IcaxY1f5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:23"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "70%",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (38/67)",
+              "right": "63% (40/64)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (10/28)",
+              "right": "61% (17/28)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/15",
+              "right": "1/5",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (24/64)",
+              "right": "43% (29/67)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (11/28)",
+              "right": "64% (18/28)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "7/15",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (48/95)",
+              "right": "62% (57/92)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (35/92)",
+              "right": "49% (47/95)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (83/187)",
+              "right": "56% (104/187)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "46% (6/13)",
+              "right": "73% (11/15)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "54% (7/13)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "36% (10/28)",
+              "right": "64% (18/28)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "74%",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (4/10)",
+              "right": "79% (11/14)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "40% (2/5)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "60% (6/10)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "86% (6/7)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "29% (5/17)",
+              "right": "68% (13/19)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (6/19)",
+              "right": "71% (12/17)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "31% (11/36)",
+              "right": "69% (25/36)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "61%",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (22/36)",
+              "right": "48% (12/25)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "69% (11/16)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "0/2",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (13/25)",
+              "right": "39% (14/36)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (5/16)",
+              "right": "50% (6/12)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "2/8",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "58% (28/48)",
+              "right": "56% (23/41)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "42% (20/48)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (46/89)",
+              "right": "48% (43/89)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "78%",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (12/21)",
+              "right": "68% (17/25)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "57% (4/7)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "43% (9/21)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "67% (6/9)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (15/30)",
+              "right": "66% (21/32)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (11/32)",
+              "right": "50% (15/30)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (26/62)",
+              "right": "58% (36/62)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "McNally C.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

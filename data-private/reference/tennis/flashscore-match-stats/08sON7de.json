@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jelena-ostapenko-magda-linette-2026-05-27",
+  "boardTitle": "Jelena Ostapenko vs Magda Linette",
+  "boardPlayerName": "Jelena Ostapenko",
+  "recentOpponentName": "Simona Waltert",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "SUI  6-2 7-5 2nd",
+  "flashscoreLabel": "Waltert S. - Ostapenko J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Waltert S.",
+    "Ostapenko J."
+  ],
+  "generatedAt": "2026-05-27T06:48:11.055Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/08sON7de/",
+  "matchId": "08sON7de",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_08sON7de",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_08sON7de"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:04"
+      }
+    ],
+    "totalDuration": "1:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "49%",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (19/41)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (11/26)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "4/7",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (10/30)",
+              "right": "54% (22/41)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (14/31)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "6/10",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (30/68)",
+              "right": "61% (37/61)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (24/61)",
+              "right": "56% (38/68)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (54/129)",
+              "right": "58% (75/129)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (4/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "52%",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (5/13)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "1/2",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/4",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "35% (8/23)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (9/23)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (17/46)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "47%",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (14/28)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/5",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (8/20)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/6",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (22/45)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (15/38)",
+              "right": "51% (23/45)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (37/83)",
+              "right": "55% (46/83)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Waltert S.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

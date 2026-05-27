@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
+  "boardTitle": "Daria Snigur vs Peyton Stearns",
+  "boardPlayerName": "Peyton Stearns",
+  "recentOpponentName": "Maria Sakkari",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "GRE  6-3 6-1 1st",
+  "flashscoreLabel": "Sakkari M. - Stearns P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Sakkari M.",
+    "Stearns P."
+  ],
+  "generatedAt": "2026-05-27T06:48:08.009Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SAV2040k/",
+  "matchId": "SAV2040k",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SAV2040k",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SAV2040k"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:31"
+      }
+    ],
+    "totalDuration": "1:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "57%",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (16/31)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (8/22)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "4/5",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (7/28)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (7/21)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "5/8",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (24/53)",
+              "right": "71% (35/49)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (14/49)",
+              "right": "55% (29/53)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (38/102)",
+              "right": "63% (64/102)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "59%",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "4/5",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "3/6",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (15/33)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (28/65)",
+              "right": "57% (37/65)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "53%",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (5/11)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "13% (1/8)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (9/20)",
+              "right": "94% (16/17)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "6% (1/17)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "27% (10/37)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

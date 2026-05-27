@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-federico-cina-jesper-de-jong-2026-05-27",
+  "boardTitle": "Federico Cina vs Jesper de Jong",
+  "boardPlayerName": "Jesper De Jong",
+  "recentOpponentName": "Pedro Martinez Portero",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "04 May 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "ESP  7-65 7-5 q1",
+  "flashscoreLabel": "Martinez P. - De Jong J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Martinez P.",
+    "De Jong J."
+  ],
+  "generatedAt": "2026-05-27T06:47:52.665Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ATigRt4S/",
+  "matchId": "ATigRt4S",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ATigRt4S",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ATigRt4S"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:21"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:10"
+      }
+    ],
+    "totalDuration": "2:31"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "61%",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (42/67)",
+              "right": "67% (34/51)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (11/24)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/12",
+              "right": "5/8",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "172 km/h",
+              "right": "194 km/h",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "156 km/h",
+              "right": "173 km/h",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (17/51)",
+              "right": "37% (25/67)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (14/32)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "4/12",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "38",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "36",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (16/22)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (53/91)",
+              "right": "63% (52/83)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (31/83)",
+              "right": "42% (38/91)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (84/174)",
+              "right": "52% (90/174)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (8/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (3/12)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (11/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "66%",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (21/35)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (10/20)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "2/4",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (9/27)",
+              "right": "40% (14/35)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/9",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "21",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "16",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (10/12)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (31/55)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (14/41)",
+              "right": "44% (24/55)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (45/96)",
+              "right": "53% (51/96)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "89%",
+              "right": "57%",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (21/32)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (1/4)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/4",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (8/24)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/3",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "17",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "20",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (22/36)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (17/42)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (39/78)",
+              "right": "50% (39/78)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Martinez P.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Tommy Paul",
+  "recentOpponentName": "Luciano Darderi",
+  "recentIndex": 6,
+  "recentEvent": "Rome",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "ITA   Loss 3-6 6-3 6-2 3rd",
+  "flashscoreLabel": "Paul T. - Darderi L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Paul T.",
+    "Darderi L."
+  ],
+  "generatedAt": "2026-05-27T06:48:50.242Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/G6jyyiVg/",
+  "matchId": "G6jyyiVg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_G6jyyiVg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_G6jyyiVg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "61%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (29/52)",
+              "right": "65% (32/49)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (23/41)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/9",
+              "right": "2/4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "200 km/h",
+              "right": "202 km/h",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "163 km/h",
+              "right": "170 km/h",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (17/49)",
+              "right": "44% (23/52)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (10/31)",
+              "right": "44% (18/41)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "4/9",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "22",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "47",
+              "right": "28",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (16/23)",
+              "right": "100% (12/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (52/93)",
+              "right": "66% (53/80)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (27/80)",
+              "right": "44% (41/93)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (79/173)",
+              "right": "54% (94/173)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (9/13)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "15% (2/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (11/26)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "70%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (12/14)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (20/28)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (31/55)",
+              "right": "44% (24/55)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "64%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "42% (11/26)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "2/3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/7",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "11",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (21/43)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "51% (22/43)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (33/76)",
+              "right": "57% (43/76)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "45%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (6/12)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (3/9)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "9% (1/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (11/22)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (15/42)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

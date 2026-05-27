@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
+  "boardTitle": "Sara Bejlek vs Iga Swiatek",
+  "boardPlayerName": "Iga Swiatek",
+  "recentOpponentName": "Elisabetta Cocciaretto",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "ITA  6-1 6-0 3rd",
+  "flashscoreLabel": "Cocciaretto E. - Swiatek I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Cocciaretto E.",
+    "Swiatek I."
+  ],
+  "generatedAt": "2026-05-27T06:48:00.162Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4EVnj8I7/",
+  "matchId": "4EVnj8I7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4EVnj8I7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4EVnj8I7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "61%",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (13/23)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "12% (2/17)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "3/3",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (7/28)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (6/18)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "5/7",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "38% (15/40)",
+              "right": "72% (33/46)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (13/46)",
+              "right": "63% (25/40)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (28/86)",
+              "right": "67% (58/86)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "17% (1/6)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "8% (1/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "67%",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/7)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (2/14)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (10/23)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (15/44)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "56%",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (3/7)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "3/3",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (3/11)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/4",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "29% (5/17)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "31% (13/42)",
+              "right": "69% (29/42)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Cocciaretto E.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Thiago Agustin Tirante",
+  "recentOpponentName": "Cameron Norrie",
+  "recentIndex": 6,
+  "recentEvent": "Madrid",
+  "recentDate": "26 Apr 26",
+  "recentIsoDate": "2026-04-26",
+  "recentResult": "GBR   Loss 7-5 7-65 3rd",
+  "flashscoreLabel": "Norrie C. - Tirante T. A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Norrie C.",
+    "Tirante T. A."
+  ],
+  "generatedAt": "2026-05-27T06:47:47.115Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SnZIGdP7/",
+  "matchId": "SnZIGdP7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SnZIGdP7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SnZIGdP7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:00"
+      }
+    ],
+    "totalDuration": "1:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "58%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (38/52)",
+              "right": "75% (30/40)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (14/20)",
+              "right": "69% (20/29)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (10/40)",
+              "right": "27% (14/52)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (9/29)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "27",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "23",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "47% (7/15)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (52/72)",
+              "right": "72% (50/69)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (19/69)",
+              "right": "28% (20/72)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (71/141)",
+              "right": "50% (70/141)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (12/12)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "8% (1/12)",
+              "right": "0% (0/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (13/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "50%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "88% (7/8)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (24/30)",
+              "right": "71% (24/34)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (10/34)",
+              "right": "20% (6/30)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (34/64)",
+              "right": "47% (30/64)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "66%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (21/30)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (28/42)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (9/35)",
+              "right": "33% (14/42)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (37/77)",
+              "right": "52% (40/77)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Tirante T. A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

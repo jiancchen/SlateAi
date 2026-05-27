@@ -1,0 +1,324 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
+  "boardTitle": "Francesca Jones vs Marie Bouzkova",
+  "boardPlayerName": "Marie Bouzkova",
+  "recentOpponentName": "Oleksandra Oliynykova",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "UKR  3-1 ret. 2nd",
+  "flashscoreLabel": "Bouzkova M. - Oliynykova O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Bouzkova M.",
+    "Oliynykova O."
+  ],
+  "generatedAt": "2026-05-27T06:48:25.367Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vPHfY0dE/",
+  "matchId": "vPHfY0dE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vPHfY0dE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vPHfY0dE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 1,
+        "duration": "0:21"
+      }
+    ],
+    "totalDuration": "0:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "80%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (6/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (2/2)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (9/13)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (6/10)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (15/23)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (2/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (1/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "80%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (6/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (2/2)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (9/13)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (6/10)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (15/23)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (2/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (1/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

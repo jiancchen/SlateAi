@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Lorenzo Sonego",
+  "recentOpponentName": "Dusan Lajovic",
+  "recentIndex": 4,
+  "recentEvent": "Madrid",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "SRB   Loss 6-3 7-61 1st",
+  "flashscoreLabel": "Sonego L. - Lajovic D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Sonego L.",
+    "Lajovic D."
+  ],
+  "generatedAt": "2026-05-27T06:48:48.669Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0E6Cq9sK/",
+  "matchId": "0E6Cq9sK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0E6Cq9sK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0E6Cq9sK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": "1:02"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "68%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (26/36)",
+              "right": "76% (31/41)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (10/41)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "26% (5/19)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/6",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "18",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "16",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (9/15)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (36/55)",
+              "right": "75% (45/60)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (15/60)",
+              "right": "35% (19/55)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (51/115)",
+              "right": "56% (64/115)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "62%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (1/4)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (10/20)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (9/26)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (19/46)",
+              "right": "59% (27/46)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "74%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (17/20)",
+              "right": "84% (21/25)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (4/25)",
+              "right": "15% (3/20)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (26/35)",
+              "right": "82% (28/34)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "18% (6/34)",
+              "right": "26% (9/35)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (32/69)",
+              "right": "54% (37/69)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

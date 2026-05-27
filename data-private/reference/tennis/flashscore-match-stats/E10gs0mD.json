@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-federico-cina-jesper-de-jong-2026-05-27",
+  "boardTitle": "Federico Cina vs Jesper de Jong",
+  "boardPlayerName": "Federico Cina",
+  "recentOpponentName": "Alexis Galarneau",
+  "recentIndex": 1,
+  "recentEvent": "",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "CAN  5-7 6-2 7-5 Q.",
+  "flashscoreLabel": "Galarneau A. - Cina F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Galarneau A.",
+    "Cina F."
+  ],
+  "generatedAt": "2026-05-27T06:47:50.692Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/E10gs0mD/",
+  "matchId": "E10gs0mD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_E10gs0mD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_E10gs0mD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "67%",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (39/60)",
+              "right": "75% (48/64)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (21/42)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "4/7",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "187 km/h",
+              "right": "184 km/h",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "144 km/h",
+              "right": "143 km/h",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (16/64)",
+              "right": "35% (21/60)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (15/31)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "5/11",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "27",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "31",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (18/26)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (60/102)",
+              "right": "67% (64/95)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (31/95)",
+              "right": "41% (42/102)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (91/197)",
+              "right": "54% (106/197)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (11/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return games won",
+              "left": "19% (3/16)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (14/32)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "61%",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "1/3",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/5",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "18",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (26/37)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "30% (11/37)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (44/78)",
+              "right": "44% (34/78)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "64%",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (6/13)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "9",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (13/26)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (18/48)",
+              "right": "63% (30/48)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "78%",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (6/17)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (21/39)",
+              "right": "75% (24/32)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (8/32)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (29/71)",
+              "right": "59% (42/71)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Galarneau A.",
+              "rightPlayer": "Cina F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

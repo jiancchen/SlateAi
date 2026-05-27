@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-federico-cina-jesper-de-jong-2026-05-27",
+  "boardTitle": "Federico Cina vs Jesper de Jong",
+  "boardPlayerName": "Jesper De Jong",
+  "recentOpponentName": "Michael Zheng",
+  "recentIndex": 1,
+  "recentEvent": "",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "USA   Loss 7-5 6-3 Q.",
+  "flashscoreLabel": "De Jong J. - Zheng M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "De Jong J.",
+    "Zheng M."
+  ],
+  "generatedAt": "2026-05-27T06:47:51.604Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jBT6oaBU/",
+  "matchId": "jBT6oaBU",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jBT6oaBU",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jBT6oaBU"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:49"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "56%",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (33/48)",
+              "right": "79% (27/34)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (13/32)",
+              "right": "59% (16/27)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/11",
+              "right": "3/3",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "182 km/h",
+              "right": "179 km/h",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "155 km/h",
+              "right": "146 km/h",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (7/34)",
+              "right": "31% (15/48)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (11/27)",
+              "right": "59% (19/32)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/11",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "29",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "23",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (12/20)",
+              "right": "64% (9/14)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (46/80)",
+              "right": "70% (43/61)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (18/61)",
+              "right": "43% (34/80)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (64/141)",
+              "right": "55% (77/141)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (8/11)",
+              "right": "100% (10/10)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "56%",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (22/32)",
+              "right": "74% (14/19)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (8/20)",
+              "right": "73% (11/15)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "0/0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "31% (10/32)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "60% (12/20)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/7",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "18",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Net points won",
+              "left": "91% (10/11)",
+              "right": "75% (6/8)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (30/52)",
+              "right": "74% (25/34)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (9/34)",
+              "right": "42% (22/52)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (39/86)",
+              "right": "55% (47/86)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "56%",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "87% (13/15)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/3",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/15)",
+              "right": "31% (5/16)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/4",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "13",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Net points won",
+              "left": "22% (2/9)",
+              "right": "50% (3/6)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (16/28)",
+              "right": "67% (18/27)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "43% (12/28)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (25/55)",
+              "right": "55% (30/55)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Zheng M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

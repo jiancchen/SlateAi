@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nuno-borges-miomir-kecmanovic-2026-05-27",
+  "boardTitle": "Nuno Borges vs Miomir Kecmanovic",
+  "boardPlayerName": "Miomir Kecmanovic",
+  "recentOpponentName": "Fabian Marozsan",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "HUN  7-60 6-3 6-4 1st",
+  "flashscoreLabel": "Kecmanovic M. - Marozsan F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Kecmanovic M.",
+    "Marozsan F."
+  ],
+  "generatedAt": "2026-05-27T06:48:24.047Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hAIlGalD/",
+  "matchId": "hAIlGalD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hAIlGalD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hAIlGalD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 0,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "56%",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (52/66)",
+              "right": "64% (42/66)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (15/29)",
+              "right": "45% (23/51)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "5/9",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "184 km/h",
+              "right": "185 km/h",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "144 km/h",
+              "right": "151 km/h",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (24/66)",
+              "right": "21% (14/66)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (28/51)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "2/5",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "46",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "45",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (12/18)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (67/95)",
+              "right": "56% (64/115)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (51/115)",
+              "right": "29% (28/95)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (118/210)",
+              "right": "44% (92/210)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (14/16)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (18/31)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "50%",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (10/24)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (11/24)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "14",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "21",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (28/40)",
+              "right": "56% (27/48)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (21/48)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (49/88)",
+              "right": "44% (39/88)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "63%",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/5",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "77% (10/13)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/3",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "16",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (18/35)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (37/64)",
+              "right": "42% (27/64)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "59%",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (17/20)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "15% (3/20)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "16",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (12/32)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kecmanovic M.",
+              "rightPlayer": "Marozsan F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+  "boardTitle": "Tamara Korpatsch vs Wang Xinyu",
+  "boardPlayerName": "Xinyu Wang",
+  "recentOpponentName": "Lois Boisson",
+  "recentIndex": 1,
+  "recentEvent": "Strasbourg",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "FRA   Loss 6-3 7-64 1st",
+  "flashscoreLabel": "Wang Xin. - Boisson L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Wang Xin.",
+    "Boisson L."
+  ],
+  "generatedAt": "2026-05-27T06:47:57.266Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xbrH98w3/",
+  "matchId": "xbrH98w3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xbrH98w3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xbrH98w3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:05"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "66%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (27/49)",
+              "right": "71% (35/49)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "1/4",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (14/49)",
+              "right": "47% (23/49)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (13/25)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "4/7",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (35/65)",
+              "right": "63% (46/73)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (27/73)",
+              "right": "46% (30/65)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (62/138)",
+              "right": "55% (76/138)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "73%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "89% (17/19)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (4/4)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (14/22)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (6/27)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "63%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (17/31)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/4",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (9/30)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "3/6",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (21/43)",
+              "right": "54% (25/46)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (21/46)",
+              "right": "51% (22/43)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (42/89)",
+              "right": "53% (47/89)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

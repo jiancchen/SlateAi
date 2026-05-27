@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
+  "boardTitle": "Mariano Navone vs Jakub Mensik",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Alexei Popyrin",
+  "recentIndex": 3,
+  "recentEvent": "Rome",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "AUS   Loss 6-3 2-6 6-4 2nd",
+  "flashscoreLabel": "Popyrin A. - Mensik J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Popyrin A.",
+    "Mensik J."
+  ],
+  "generatedAt": "2026-05-27T06:48:14.797Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rNNRX7oo/",
+  "matchId": "rNNRX7oo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rNNRX7oo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rNNRX7oo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "56%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (40/53)",
+              "right": "71% (32/45)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (13/26)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "3/6",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (13/45)",
+              "right": "25% (13/53)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (15/35)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/7",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "25",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "27",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (15/24)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (53/79)",
+              "right": "65% (52/80)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (28/80)",
+              "right": "33% (26/79)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (81/159)",
+              "right": "49% (78/159)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "85% (11/13)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (14/27)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "89%",
+              "right": "50%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (1/2)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (26/45)",
+              "right": "42% (19/45)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "63%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/5",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (23/52)",
+              "right": "56% (29/52)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "56%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (5/10)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (23/35)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (32/62)",
+              "right": "48% (30/62)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

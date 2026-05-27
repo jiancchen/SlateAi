@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jil-teichmann-magdalena-frech-2026-05-27",
+  "boardTitle": "Jil Teichmann vs Magdalena Frech",
+  "boardPlayerName": "Jil Teichmann",
+  "recentOpponentName": "Yasmine Kabbaj",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "MAR  6-1 5-7 7-66 1/4",
+  "flashscoreLabel": "Teichmann J. - Kabbaj Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rabat/results/",
+  "players": [
+    "Teichmann J.",
+    "Kabbaj Y."
+  ],
+  "generatedAt": "2026-05-27T06:48:40.248Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SbRgNAL0/",
+  "matchId": "SbRgNAL0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SbRgNAL0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SbRgNAL0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 8,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "71%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (40/68)",
+              "right": "45% (37/83)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (17/29)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/11",
+              "right": "10/18",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (46/83)",
+              "right": "41% (28/68)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (15/34)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/18",
+              "right": "6/11",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (57/97)",
+              "right": "48% (56/117)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (61/117)",
+              "right": "41% (40/97)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (118/214)",
+              "right": "45% (96/214)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (9/15)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (8/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (17/31)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "75%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (7/10)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (6/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "4/7",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (12/18)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/2",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "81% (13/16)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (17/27)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "70% (30/43)",
+              "right": "30% (13/43)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "75%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (8/20)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "3/6",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (19/33)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "4/4",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (15/33)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (22/42)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (37/75)",
+              "right": "51% (38/75)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "65%",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (25/38)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/5",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (15/32)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/5",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (29/48)",
+              "right": "54% (26/48)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (22/48)",
+              "right": "40% (19/48)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (51/96)",
+              "right": "47% (45/96)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Teichmann J.",
+              "rightPlayer": "Kabbaj Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

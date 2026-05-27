@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-joao-fonseca-dino-prizmic-2026-05-27",
+  "boardTitle": "Joao Fonseca vs Dino Prizmic",
+  "boardPlayerName": "Dino Prizmic",
+  "recentOpponentName": "Federico Bondioli",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "ITA  6-2 6-4 Q.",
+  "flashscoreLabel": "Prizmic D. - Bondioli F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Prizmic D.",
+    "Bondioli F."
+  ],
+  "generatedAt": "2026-05-27T06:48:33.619Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2wqeS8Pr/",
+  "matchId": "2wqeS8Pr",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2wqeS8Pr",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2wqeS8Pr"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "77%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (27/35)",
+              "right": "62% (23/37)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (12/16)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/4",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (14/37)",
+              "right": "23% (8/35)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "11",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "12",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (39/51)",
+              "right": "58% (28/48)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (20/48)",
+              "right": "24% (12/51)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (59/99)",
+              "right": "40% (40/99)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "84%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (8/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (1/3)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (16/22)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (9/19)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (25/41)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "72%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (23/29)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (11/29)",
+              "right": "21% (6/29)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (34/58)",
+              "right": "41% (24/58)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Bondioli F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

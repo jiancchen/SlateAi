@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jasmine-paolini-solana-sierra-2026-05-27",
+  "boardTitle": "Jasmine Paolini vs Solana Sierra",
+  "boardPlayerName": "Solana Sierra",
+  "recentOpponentName": "Tamara Korpatsch",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "GER  6-3 6-1 1st",
+  "flashscoreLabel": "Sierra S. - Korpatsch T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Sierra S.",
+    "Korpatsch T."
+  ],
+  "generatedAt": "2026-05-27T06:48:30.828Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GGuEK7WP/",
+  "matchId": "GGuEK7WP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GGuEK7WP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GGuEK7WP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "52%",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (30/44)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "7/12",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (10/24)",
+              "right": "32% (14/44)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (16/22)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/12",
+              "right": "1/4",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "66% (37/56)",
+              "right": "43% (20/46)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (26/46)",
+              "right": "34% (19/56)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (63/102)",
+              "right": "38% (39/102)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (7/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "63% (5/8)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "53%",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (16/26)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "6/9",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (11/15)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "1/3",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (19/32)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (17/32)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (36/64)",
+              "right": "44% (28/64)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "50%",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (4/7)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (9/14)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "71% (27/38)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Sierra S.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

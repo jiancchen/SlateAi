@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-kamilla-rakhimova-karolina-muchova-2026-05-27",
+  "boardTitle": "Kamilla Rakhimova vs Karolina Muchova",
+  "boardPlayerName": "Kamilla Rakhimova",
+  "recentOpponentName": "Antonia Ruzic",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "CRO   Loss 6-4 1-6 6-3 1st",
+  "flashscoreLabel": "Ruzic A. - Rakhimova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Ruzic A.",
+    "Rakhimova K."
+  ],
+  "generatedAt": "2026-05-27T06:48:52.920Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/I3vLG1s9/",
+  "matchId": "I3vLG1s9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_I3vLG1s9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_I3vLG1s9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "57%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (32/48)",
+              "right": "66% (31/47)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (7/23)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/6",
+              "right": "5/10",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (16/47)",
+              "right": "33% (16/48)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (22/36)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/10",
+              "right": "5/6",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (39/71)",
+              "right": "54% (45/83)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (38/83)",
+              "right": "45% (32/71)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (77/154)",
+              "right": "50% (77/154)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "62% (8/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (13/26)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "63%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (14/30)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "58%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (5/8)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (4/18)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (7/17)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (10/31)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (17/48)",
+              "right": "65% (31/48)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "45%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (5/10)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (9/12)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (14/22)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (28/48)",
+              "right": "42% (20/48)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

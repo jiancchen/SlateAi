@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27",
+  "boardTitle": "Mirra Andreeva vs Marina Bassols Ribera",
+  "boardPlayerName": "Mirra Andreeva",
+  "recentOpponentName": "Fiona Ferro",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "FRA  6-3 6-3 1st",
+  "flashscoreLabel": "Andreeva M. - Ferro F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Andreeva M.",
+    "Ferro F."
+  ],
+  "generatedAt": "2026-05-27T06:48:53.852Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/p6Wl7qlo/",
+  "matchId": "p6Wl7qlo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_p6Wl7qlo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_p6Wl7qlo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "63%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (32/43)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "2/6",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "166 km/h",
+              "right": "144 km/h",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "118 km/h",
+              "right": "113 km/h",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (13/31)",
+              "right": "26% (11/43)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "1/7",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "11",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "24",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Net points won",
+              "left": "85% (11/13)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (37/56)",
+              "right": "51% (25/49)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (24/49)",
+              "right": "34% (19/56)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (61/105)",
+              "right": "42% (44/105)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "84%",
+              "right": "54%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (20/27)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "1/2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/5",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "72%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (7/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (9/9)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (15/24)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (15/25)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (30/49)",
+              "right": "39% (19/49)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Ferro F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

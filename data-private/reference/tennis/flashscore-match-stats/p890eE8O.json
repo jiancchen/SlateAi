@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
+  "boardTitle": "Mariano Navone vs Jakub Mensik",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Jan-Lennard Struff",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "GER  7-63 6-2 1st",
+  "flashscoreLabel": "Mensik J. - Struff J-L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Mensik J.",
+    "Struff J-L."
+  ],
+  "generatedAt": "2026-05-27T06:48:14.569Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/p890eE8O/",
+  "matchId": "p890eE8O",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_p890eE8O",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_p890eE8O"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "47%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (34/41)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (13/27)",
+              "right": "54% (21/39)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "6/8",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (12/34)",
+              "right": "17% (7/41)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (18/39)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "0/4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "25",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "28",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (47/67)",
+              "right": "59% (43/73)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (30/73)",
+              "right": "30% (20/67)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (77/140)",
+              "right": "45% (63/140)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "38%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (19/22)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "14% (3/22)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (12/26)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "0/3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "19",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (28/39)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (15/42)",
+              "right": "28% (11/39)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (43/81)",
+              "right": "47% (38/81)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "58%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/5",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (9/18)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "14",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (15/31)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (34/59)",
+              "right": "42% (25/59)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Struff J-L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

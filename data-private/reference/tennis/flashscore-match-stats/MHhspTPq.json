@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
+  "boardTitle": "Mariano Navone vs Jakub Mensik",
+  "boardPlayerName": "Mariano Navone",
+  "recentOpponentName": "Felix Auger-Aliassime",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "CAN  7-64 7-65 2nd",
+  "flashscoreLabel": "Auger-Aliassime F. - Navone M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Auger-Aliassime F.",
+    "Navone M."
+  ],
+  "generatedAt": "2026-05-27T06:48:13.882Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MHhspTPq/",
+  "matchId": "MHhspTPq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MHhspTPq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MHhspTPq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:30"
+      }
+    ],
+    "totalDuration": "2:55"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "1",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "76%",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (46/72)",
+              "right": "66% (49/74)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (14/31)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/11",
+              "right": "8/11",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (25/74)",
+              "right": "36% (26/72)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (11/24)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/11",
+              "right": "3/11",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "20",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "52",
+              "right": "32",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Net points won",
+              "left": "84% (16/19)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (60/103)",
+              "right": "63% (62/98)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (36/98)",
+              "right": "42% (43/103)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (96/201)",
+              "right": "52% (105/201)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (9/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (3/12)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "65%",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (24/36)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "4/5",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (10/31)",
+              "right": "33% (12/36)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/3",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "17",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (8/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (31/52)",
+              "right": "67% (32/48)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (16/48)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (47/100)",
+              "right": "53% (53/100)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "86%",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (22/36)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "4/6",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (15/43)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/8",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "15",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (29/51)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (20/50)",
+              "right": "43% (22/51)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (49/101)",
+              "right": "51% (52/101)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Auger-Aliassime F.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-joao-fonseca-dino-prizmic-2026-05-27",
+  "boardTitle": "Joao Fonseca vs Dino Prizmic",
+  "boardPlayerName": "Joao Fonseca",
+  "recentOpponentName": "Marin Cilic",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "CRO  w/o 2nd",
+  "flashscoreLabel": "Fonseca J. - Cilic M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Fonseca J.",
+    "Cilic M."
+  ],
+  "generatedAt": "2026-05-27T06:48:31.944Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/td2YvtV8/",
+  "matchId": "td2YvtV8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_td2YvtV8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_td2YvtV8"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

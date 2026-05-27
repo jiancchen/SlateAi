@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Tommy Paul",
+  "recentOpponentName": "Aleksandar Vukic",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "AUS  6-4 6-2 2nd",
+  "flashscoreLabel": "Paul T. - Vukic A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Paul T.",
+    "Vukic A."
+  ],
+  "generatedAt": "2026-05-27T06:48:50.464Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/E7Xj8DLj/",
+  "matchId": "E7Xj8DLj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_E7Xj8DLj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_E7Xj8DLj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "57%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (20/26)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (13/20)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "6/10",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (13/37)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (17/28)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "1/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "28",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (33/46)",
+              "right": "54% (35/65)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (30/65)",
+              "right": "28% (13/46)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (63/111)",
+              "right": "43% (48/111)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "57%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "14",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (16/35)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "57%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (12/14)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/6",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "14",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (14/30)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (31/53)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

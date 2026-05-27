@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-ugo-humbert-quentin-halys-2026-05-27",
+  "boardTitle": "Ugo Humbert vs Quentin Halys",
+  "boardPlayerName": "Ugo Humbert",
+  "recentOpponentName": "Vit Kopriva",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "CZE  6-3 6-2 2nd",
+  "flashscoreLabel": "Humbert U. - Kopriva V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Humbert U.",
+    "Kopriva V."
+  ],
+  "generatedAt": "2026-05-27T06:48:35.195Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YZzNXP26/",
+  "matchId": "YZzNXP26",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YZzNXP26",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YZzNXP26"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (31/43)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (12/21)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "1/4",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (9/27)",
+              "right": "28% (12/43)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/6",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "22",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (43/64)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (17/40)",
+              "right": "33% (21/64)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (60/104)",
+              "right": "42% (44/104)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "72%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (24/35)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (6/18)",
+              "right": "31% (11/35)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (30/53)",
+              "right": "43% (23/53)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "64%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "1/3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (6/14)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (30/51)",
+              "right": "41% (21/51)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

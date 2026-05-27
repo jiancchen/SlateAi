@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27",
+  "boardTitle": "Mirra Andreeva vs Marina Bassols Ribera",
+  "boardPlayerName": "Mirra Andreeva",
+  "recentOpponentName": "Cori Gauff",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "12 May 26",
+  "recentIsoDate": "2026-05-12",
+  "recentResult": "USA   Loss 4-6 6-2 6-4 1/4",
+  "flashscoreLabel": "Gauff C. - Andreeva M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Gauff C.",
+    "Andreeva M."
+  ],
+  "generatedAt": "2026-05-27T06:48:54.071Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xhqAT0t4/",
+  "matchId": "xhqAT0t4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xhqAT0t4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xhqAT0t4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "63%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (41/67)",
+              "right": "52% (34/65)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (10/26)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/12",
+              "right": "10/17",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (31/65)",
+              "right": "36% (24/67)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (20/39)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/17",
+              "right": "5/12",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (51/93)",
+              "right": "51% (53/104)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (51/104)",
+              "right": "45% (42/93)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (102/197)",
+              "right": "48% (95/197)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (9/14)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (7/14)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (16/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "64%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (16/28)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (6/22)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (22/50)",
+              "right": "56% (28/50)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "54%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (15/24)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "54% (7/13)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (19/30)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (13/24)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (32/54)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "66%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (14/24)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "18% (2/11)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "8/12",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (20/38)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/12",
+              "right": "3/5",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "46% (16/35)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (32/58)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (48/93)",
+              "right": "48% (45/93)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Andreeva M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

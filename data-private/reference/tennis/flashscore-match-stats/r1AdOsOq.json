@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27",
+  "boardTitle": "Yuliia Starodubtseva vs Elena Rybakina",
+  "boardPlayerName": "Elena Rybakina",
+  "recentOpponentName": "Veronika Erjavec",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "SLO  6-2 6-2 1st",
+  "flashscoreLabel": "Erjavec V. - Rybakina E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Erjavec V.",
+    "Rybakina E."
+  ],
+  "generatedAt": "2026-05-27T06:48:19.084Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/r1AdOsOq/",
+  "matchId": "r1AdOsOq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_r1AdOsOq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_r1AdOsOq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "45%",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (12/23)",
+              "right": "84% (21/25)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (16/30)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "4/4",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "161 km/h",
+              "right": "180 km/h",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "136 km/h",
+              "right": "139 km/h",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (4/25)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (15/31)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "4/5",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "27",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "27",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (28/53)",
+              "right": "66% (37/56)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (19/56)",
+              "right": "47% (25/53)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (47/109)",
+              "right": "57% (62/109)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "43%",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/3",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/2",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "17",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/54)",
+              "right": "56% (30/54)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "46%",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (6/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (15/29)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (23/55)",
+              "right": "58% (32/55)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Erjavec V.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

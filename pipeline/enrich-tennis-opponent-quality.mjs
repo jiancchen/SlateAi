@@ -4,13 +4,15 @@ import path from 'node:path'
 const DEFAULT_INPUT = 'web/src/lib/day-2026-05-25-tennis-clay-context.generated.json'
 const DEFAULT_OUTPUT = 'web/src/lib/day-2026-05-25-tennis-opponent-quality.generated.json'
 const DEFAULT_RANKINGS = 'data-private/reference/tennis/player-rankings.json'
+const DEFAULT_FLASHSCORE_RECENT_MAP = ''
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
   const options = {
     input: DEFAULT_INPUT,
     output: DEFAULT_OUTPUT,
-    rankings: DEFAULT_RANKINGS
+    rankings: DEFAULT_RANKINGS,
+    flashscoreRecentMap: DEFAULT_FLASHSCORE_RECENT_MAP
   }
 
   for (let index = 0; index < args.length; index += 1) {
@@ -23,6 +25,9 @@ const parseArgs = () => {
       index += 1
     } else if (arg === '--rankings') {
       options.rankings = args[index + 1]
+      index += 1
+    } else if (arg === '--flashscore-recent-map') {
+      options.flashscoreRecentMap = args[index + 1]
       index += 1
     }
   }
@@ -37,6 +42,8 @@ const normalizeName = (value) =>
     .replace(/[^a-z0-9]+/gi, ' ')
     .trim()
     .toLowerCase()
+
+const recentMapKey = (matchId, playerName, recentIndex) => `${matchId}::${normalizeName(playerName)}::${recentIndex}`
 
 const parseRecord = (value) => {
   const match = String(value || '').match(/(\d+)-(\d+)/)
@@ -157,12 +164,15 @@ const loadJsonIfExists = async (filePath, fallback) => {
 const RANKING_NAME_ALIASES = {
   'alexander shevchenko': 'aleksandr shevchenko',
   'caijsa wilda hennemann': 'caijsa hennemann',
+  'catherine mcnally': 'caty mcnally',
+  'bianca vanessa andreescu': 'bianca andreescu',
   'cori gauff': 'coco gauff',
   'daniel merida aguilar': 'daniel merida',
   'guiomar zuleta de reales': 'guiomar maristany',
   'jaume antoni munar clar': 'jaume munar',
   'joel schwaerzler': 'joel schwarzler',
   'leylah annie fernandez': 'leylah fernandez',
+  'pablo carreno busta': 'pablo carreno-busta',
   'pedro martinez portero': 'pedro martinez',
   'tyra caterina grant': 'tyra grant'
 }
@@ -186,11 +196,11 @@ const getRanking = (rankings, name) => {
   }
 }
 
-const summarizePlayer = (player, rankings) => {
+const summarizePlayer = (player, rankings, flashscoreRecentByKey = {}, matchId = '') => {
   const ranking = getRanking(rankings, player.name)
   const clayRecord = parseRecord(player.record2026?.clay)
   const overallRecord = parseRecord(player.record2026?.overall)
-  const recentMatches = (player.recentMatches || []).map((match) => {
+  const recentMatches = (player.recentMatches || []).map((match, recentIndex) => {
     const parsed = parseMatchResult(match)
     const opponentRanking = getRanking(rankings, match.opponent)
     const tier = eventTier(match.event)
@@ -206,6 +216,9 @@ const summarizePlayer = (player, rankings) => {
     const gameDiff = parsed.gamesWon - parsed.gamesLost
     const pressureBonus = parsed.resistance ? 0.08 : 0
 
+    const flashscoreRecent = flashscoreRecentByKey[recentMapKey(matchId, player.name, recentIndex)]
+    const serviceStats = flashscoreRecent?.serviceStats
+
     return {
       event: match.event || '',
       eventTier: tier,
@@ -215,7 +228,15 @@ const summarizePlayer = (player, rankings) => {
       date: match.date || '',
       parsed,
       opponentWeight: Number(opponentWeight.toFixed(3)),
-      qualityPoints: Number((resultPoints * opponentWeight + pressureBonus + gameDiff * 0.01).toFixed(3))
+      qualityPoints: Number((resultPoints * opponentWeight + pressureBonus + gameDiff * 0.01).toFixed(3)),
+      flashscore: flashscoreRecent
+        ? {
+            flashscoreId: flashscoreRecent.flashscoreId,
+            label: flashscoreRecent.flashscoreLabel,
+            tournamentUrl: flashscoreRecent.flashscoreTournamentUrl
+          }
+        : null,
+      serviceStats: serviceStats || null
     }
   })
 
@@ -244,6 +265,14 @@ const summarizePlayer = (player, rankings) => {
   const avgKnownOpponentRank = knownRankMatches.length
     ? Number((knownRankMatches.reduce((sum, match) => sum + match.opponentRanking.rank, 0) / knownRankMatches.length).toFixed(1))
     : null
+  const serviceMatches = recentMatches.filter((match) => match.serviceStats)
+  const serviceHoldValues = serviceMatches
+    .map((match) => Number(match.serviceStats?.serviceHoldPct))
+    .filter((value) => Number.isFinite(value))
+  const aceValues = serviceMatches.map((match) => Number(match.serviceStats?.aces)).filter((value) => Number.isFinite(value))
+  const firstServeWonValues = serviceMatches
+    .map((match) => Number(match.serviceStats?.firstServeWonPct))
+    .filter((value) => Number.isFinite(value))
 
   return {
     name: player.name,
@@ -280,8 +309,18 @@ const summarizePlayer = (player, rankings) => {
       opponentAdjustedFormScore
     },
     serviceData: {
-      source: 'not available in Tennistonic scrape',
-      note: 'Recent scores support set/game resistance only. True service games held, break points, hold percentage, and return-break percentage require a separate stats source.'
+      source: serviceMatches.length ? 'Flashscore recent-match stats' : 'not available in Tennistonic scrape',
+      matchesWithStats: serviceMatches.length,
+      avgServiceHoldPct: serviceHoldValues.length
+        ? Number((serviceHoldValues.reduce((sum, value) => sum + value, 0) / serviceHoldValues.length).toFixed(1))
+        : null,
+      avgAces: aceValues.length ? Number((aceValues.reduce((sum, value) => sum + value, 0) / aceValues.length).toFixed(1)) : null,
+      avgFirstServeWonPct: firstServeWonValues.length
+        ? Number((firstServeWonValues.reduce((sum, value) => sum + value, 0) / firstServeWonValues.length).toFixed(1))
+        : null,
+      note: serviceMatches.length
+        ? 'Service hold, aces, and serve/return stat rows are joined from Flashscore where a recent match could be resolved.'
+        : 'Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved.'
     },
     recentMatches
   }
@@ -338,16 +377,22 @@ const main = async () => {
     asOf: null,
     players: {}
   })
+  const flashscoreRecent = options.flashscoreRecentMap
+    ? await loadJsonIfExists(path.resolve(options.flashscoreRecentMap), { map: {} })
+    : { map: {} }
+  const flashscoreRecentByKey = flashscoreRecent.map || {}
 
   const matches = {}
   const missingRankingNames = new Set()
+  let recentServiceRows = 0
 
   for (const [matchId, match] of Object.entries(rawContext.matches)) {
-    const players = (match.players || []).map((player) => summarizePlayer(player, rankings))
+    const players = (match.players || []).map((player) => summarizePlayer(player, rankings, flashscoreRecentByKey, matchId))
     for (const player of players) {
       if (!player.ranking?.rank) missingRankingNames.add(player.name)
       for (const recentMatch of player.recentMatches) {
         if (!recentMatch.opponentRanking?.rank) missingRankingNames.add(recentMatch.opponent)
+        if (recentMatch.serviceStats) recentServiceRows += 1
       }
     }
 
@@ -371,11 +416,13 @@ const main = async () => {
     },
     coverage: {
       matches: Object.keys(matches).length,
-      missingRankingNames: [...missingRankingNames].filter(Boolean).sort()
+      missingRankingNames: [...missingRankingNames].filter(Boolean).sort(),
+      recentServiceRows,
+      flashscoreRecentRows: Object.keys(flashscoreRecentByKey).length
     },
     notes: [
       'Opponent-adjusted form is derived from Tennistonic recent-match scores plus optional local rankings.',
-      'Service hold/break rates are intentionally marked unavailable unless a separate stats source is supplied.'
+      'Recent-match service stats are joined from Flashscore when the match can be resolved from tournament results pages.'
     ],
     matches
   }

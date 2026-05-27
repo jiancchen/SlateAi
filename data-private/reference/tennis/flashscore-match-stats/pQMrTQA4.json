@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jasmine-paolini-solana-sierra-2026-05-27",
+  "boardTitle": "Jasmine Paolini vs Solana Sierra",
+  "boardPlayerName": "Jasmine Paolini",
+  "recentOpponentName": "Dayana Yastremska",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "UKR  7-5 6-3 1st",
+  "flashscoreLabel": "Paolini J. - Yastremska D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Paolini J.",
+    "Yastremska D."
+  ],
+  "generatedAt": "2026-05-27T06:48:29.036Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pQMrTQA4/",
+  "matchId": "pQMrTQA4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pQMrTQA4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pQMrTQA4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:54"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "74%",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (38/53)",
+              "right": "57% (33/58)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (6/19)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "8/12",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "149 km/h",
+              "right": "151 km/h",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "132 km/h",
+              "right": "138 km/h",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (25/58)",
+              "right": "28% (15/53)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/12",
+              "right": "2/6",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "21",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "54",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (44/72)",
+              "right": "53% (41/78)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (37/78)",
+              "right": "39% (28/72)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (81/150)",
+              "right": "46% (69/150)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (13/21)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "78%",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (16/23)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "5/8",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (15/29)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "2/2",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "27",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (18/32)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (37/69)",
+              "right": "46% (32/69)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "71%",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (22/30)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "3/4",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (10/29)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/4",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "27",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (26/40)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "35% (14/40)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (44/81)",
+              "right": "46% (37/81)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Paolini J.",
+              "rightPlayer": "Yastremska D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "boardPlayerName": "Hailey Baptiste",
+  "recentOpponentName": "Barbora Krejcikova",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "CZE  6-77 7-66 6-2 1st",
+  "flashscoreLabel": "Baptiste H. - Krejcikova B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Baptiste H.",
+    "Krejcikova B."
+  ],
+  "generatedAt": "2026-05-27T06:48:36.193Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2JnBEReB/",
+  "matchId": "2JnBEReB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2JnBEReB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2JnBEReB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 9,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 8,
+        "rightGames": 6,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:57"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "67%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (50/63)",
+              "right": "68% (49/72)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (26/44)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "5/8",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "174 km/h",
+              "right": "160 km/h",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "146 km/h",
+              "right": "147 km/h",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (23/72)",
+              "right": "21% (13/63)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (14/35)",
+              "right": "41% (18/44)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "1/3",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "31",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "47",
+              "right": "47",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Net points won",
+              "left": "65% (15/23)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (76/107)",
+              "right": "65% (70/107)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (37/107)",
+              "right": "29% (31/107)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (113/214)",
+              "right": "47% (101/214)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (15/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return games won",
+              "left": "19% (3/16)",
+              "right": "6% (1/16)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (18/32)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "74%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "81% (25/31)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (13/20)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (6/31)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "16",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (29/40)",
+              "right": "74% (31/42)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (11/42)",
+              "right": "28% (11/40)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (40/82)",
+              "right": "51% (42/82)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "65%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (19/23)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (10/26)",
+              "right": "17% (4/23)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (4/14)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "15",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (28/40)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (14/40)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (42/80)",
+              "right": "48% (38/80)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "60%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/4",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (12/25)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Krejcikova B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

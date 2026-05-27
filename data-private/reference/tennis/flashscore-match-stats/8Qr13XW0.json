@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-joao-fonseca-dino-prizmic-2026-05-27",
+  "boardTitle": "Joao Fonseca vs Dino Prizmic",
+  "boardPlayerName": "Joao Fonseca",
+  "recentOpponentName": "Rafael Jodar",
+  "recentIndex": 2,
+  "recentEvent": "Madrid",
+  "recentDate": "26 Apr 26",
+  "recentIsoDate": "2026-04-26",
+  "recentResult": "ESP   Loss 7-64 4-6 6-1 3rd",
+  "flashscoreLabel": "Fonseca J. - Jodar R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Fonseca J.",
+    "Jodar R."
+  ],
+  "generatedAt": "2026-05-27T06:48:31.719Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8Qr13XW0/",
+  "matchId": "8Qr13XW0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8Qr13XW0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8Qr13XW0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "59%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (38/55)",
+              "right": "81% (46/57)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (17/28)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "5/7",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (11/57)",
+              "right": "31% (17/55)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (21/39)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "3/4",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "29",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "29",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (55/83)",
+              "right": "67% (64/96)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (32/96)",
+              "right": "34% (28/83)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (87/179)",
+              "right": "51% (92/179)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (13/29)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "59%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (21/30)",
+              "right": "88% (21/24)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/4",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (3/24)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (11/17)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "12",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (26/39)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (14/41)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (40/80)",
+              "right": "50% (40/80)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "63%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (21/26)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (10/30)",
+              "right": "19% (5/26)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "56%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (4/9)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "11",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (8/18)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (16/43)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

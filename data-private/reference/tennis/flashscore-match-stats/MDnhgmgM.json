@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
+  "boardTitle": "Francesca Jones vs Marie Bouzkova",
+  "boardPlayerName": "Marie Bouzkova",
+  "recentOpponentName": "Katerina Siniakova",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "CZE  7-63 6-3 1st",
+  "flashscoreLabel": "Bouzkova M. - Siniakova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Bouzkova M.",
+    "Siniakova K."
+  ],
+  "generatedAt": "2026-05-27T06:48:25.593Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MDnhgmgM/",
+  "matchId": "MDnhgmgM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MDnhgmgM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MDnhgmgM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:23"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "2:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "57%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (30/52)",
+              "right": "56% (24/43)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (14/26)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "11/16",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (19/43)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (20/33)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/16",
+              "right": "4/8",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (44/78)",
+              "right": "49% (37/76)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (39/76)",
+              "right": "44% (34/78)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (83/154)",
+              "right": "46% (71/154)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (7/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "54%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (18/33)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "6/9",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (11/26)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "3/5",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (26/51)",
+              "right": "48% (23/48)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (25/48)",
+              "right": "49% (25/51)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (51/99)",
+              "right": "48% (48/99)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "61%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "5/7",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (8/17)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "1/3",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

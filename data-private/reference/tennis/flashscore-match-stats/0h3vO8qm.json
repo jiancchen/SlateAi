@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-viktorija-golubic-alycia-parks-2026-05-27",
+  "boardTitle": "Viktorija Golubic vs Alycia Parks",
+  "boardPlayerName": "Alycia Parks",
+  "recentOpponentName": "Elisabetta Cocciaretto",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "ITA  6-3 6-2 1st",
+  "flashscoreLabel": "Parks A. - Cocciaretto E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Parks A.",
+    "Cocciaretto E."
+  ],
+  "generatedAt": "2026-05-27T06:48:02.954Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0h3vO8qm/",
+  "matchId": "0h3vO8qm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0h3vO8qm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0h3vO8qm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "64%",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (24/29)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (16/27)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "4/7",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (9/28)",
+              "right": "17% (5/29)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/3",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "71% (40/56)",
+              "right": "59% (26/44)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (18/44)",
+              "right": "29% (16/56)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (58/100)",
+              "right": "42% (42/100)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "71%",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "78% (21/27)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "22% (6/27)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (28/48)",
+              "right": "42% (20/48)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "57%",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/4",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/2",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (11/23)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

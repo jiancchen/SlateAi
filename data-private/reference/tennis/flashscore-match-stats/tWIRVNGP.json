@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
+  "boardTitle": "Francesca Jones vs Marie Bouzkova",
+  "boardPlayerName": "Marie Bouzkova",
+  "recentOpponentName": "Lucia Bronzetti",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "ITA  6-3 6-1 1st",
+  "flashscoreLabel": "Bronzetti L. - Bouzkova M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Bronzetti L.",
+    "Bouzkova M."
+  ],
+  "generatedAt": "2026-05-27T06:48:25.150Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tWIRVNGP/",
+  "matchId": "tWIRVNGP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tWIRVNGP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tWIRVNGP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "76%",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (14/28)",
+              "right": "69% (24/35)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "18% (3/17)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "1/2",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "164 km/h",
+              "right": "150 km/h",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "137 km/h",
+              "right": "115 km/h",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (11/35)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "5/7",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "12",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Net points won",
+              "left": "22% (2/9)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (17/45)",
+              "right": "67% (31/46)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (15/46)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (32/91)",
+              "right": "65% (59/91)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "81%",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (7/12)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "13% (1/8)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (9/25)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/4)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (8/20)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "67%",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (7/16)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (2/10)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (1/5)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "4",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "36% (9/25)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "30% (12/40)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

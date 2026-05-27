@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
+  "boardTitle": "Daria Snigur vs Peyton Stearns",
+  "boardPlayerName": "Daria Snigur",
+  "recentOpponentName": "Hanne Vandewinkel",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "21 Apr 26",
+  "recentIsoDate": "2026-04-21",
+  "recentResult": "BEL  7-64 6-4 Q.",
+  "flashscoreLabel": "Vandewinkel H. - Snigur D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Vandewinkel H.",
+    "Snigur D."
+  ],
+  "generatedAt": "2026-05-27T06:48:06.958Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/W2W1jV7m/",
+  "matchId": "W2W1jV7m",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_W2W1jV7m",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_W2W1jV7m"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:08"
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "70%",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (31/56)",
+              "right": "58% (39/67)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (11/30)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/17",
+              "right": "7/12",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (28/67)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (16/29)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/12",
+              "right": "6/17",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (42/86)",
+              "right": "54% (52/96)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (44/96)",
+              "right": "51% (44/86)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (86/182)",
+              "right": "53% (96/182)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "45% (5/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "45% (5/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "69%",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "2/5",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (13/29)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/6",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (20/41)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (38/82)",
+              "right": "54% (44/82)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "70%",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (15/29)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/11",
+              "right": "5/7",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (15/38)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "3/11",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (22/45)",
+              "right": "53% (29/55)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (26/55)",
+              "right": "51% (23/45)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (48/100)",
+              "right": "52% (52/100)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Snigur D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

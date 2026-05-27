@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27",
+  "boardTitle": "Yuliia Starodubtseva vs Elena Rybakina",
+  "boardPlayerName": "Elena Rybakina",
+  "recentOpponentName": "Elena Gabriela Ruse",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "ROU  4-6 6-3 7-5 2nd",
+  "flashscoreLabel": "Ruse G. - Rybakina E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Ruse G.",
+    "Rybakina E."
+  ],
+  "generatedAt": "2026-05-27T06:48:20.666Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8h7vJb8k/",
+  "matchId": "8h7vJb8k",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8h7vJb8k",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8h7vJb8k"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "52%",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (25/42)",
+              "right": "70% (40/57)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (22/42)",
+              "right": "45% (24/53)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/8",
+              "right": "4/9",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (17/57)",
+              "right": "40% (17/42)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (29/53)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "6/8",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (47/84)",
+              "right": "58% (64/110)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (46/110)",
+              "right": "44% (37/84)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (93/194)",
+              "right": "52% (101/194)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (9/15)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (5/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (14/31)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "41%",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (17/28)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (15/34)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (32/62)",
+              "right": "48% (30/62)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "32%",
+              "right": "58%",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (2/6)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/2",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (9/21)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/3",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "37% (7/19)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (17/36)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/55)",
+              "right": "56% (31/55)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "55%",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (23/37)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (14/40)",
+              "right": "38% (14/37)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (37/77)",
+              "right": "52% (40/77)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ruse G.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

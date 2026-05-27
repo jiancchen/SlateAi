@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-joao-fonseca-dino-prizmic-2026-05-27",
+  "boardTitle": "Joao Fonseca vs Dino Prizmic",
+  "boardPlayerName": "Dino Prizmic",
+  "recentOpponentName": "Chris Rodesch",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "04 May 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "LUX  6-4 6-3 q1",
+  "flashscoreLabel": "Prizmic D. - Rodesch C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Prizmic D.",
+    "Rodesch C."
+  ],
+  "generatedAt": "2026-05-27T06:48:33.839Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Q1ci2ZUa/",
+  "matchId": "Q1ci2ZUa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Q1ci2ZUa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Q1ci2ZUa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "66%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (30/36)",
+              "right": "63% (25/40)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "196 km/h",
+              "right": "189 km/h",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "187 km/h",
+              "right": "182 km/h",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (15/40)",
+              "right": "17% (6/36)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "15",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "24",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (38/49)",
+              "right": "57% (35/61)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (26/61)",
+              "right": "22% (11/49)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (64/110)",
+              "right": "42% (46/110)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "88%",
+              "right": "67%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (17/21)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (2/3)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (20/25)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (10/27)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "65%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "15",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (16/34)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (34/58)",
+              "right": "41% (24/58)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

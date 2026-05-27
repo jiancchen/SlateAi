@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-camilo-ugo-carabelli-andrey-rublev-2026-05-27",
+  "boardTitle": "Camilo Ugo Carabelli vs Andrey Rublev",
+  "boardPlayerName": "Andrey Rublev",
+  "recentOpponentName": "Nikoloz Basilashvili",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "12 May 26",
+  "recentIsoDate": "2026-05-12",
+  "recentResult": "GEO  3-6 7-65 6-2 4th",
+  "flashscoreLabel": "Rublev A. - Basilashvili N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Rublev A.",
+    "Basilashvili N."
+  ],
+  "generatedAt": "2026-05-27T06:48:05.166Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YaWLuVIa/",
+  "matchId": "YaWLuVIa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YaWLuVIa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YaWLuVIa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "10",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "52%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (46/59)",
+              "right": "80% (44/55)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (22/43)",
+              "right": "50% (25/50)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/13",
+              "right": "4/7",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "196 km/h",
+              "right": "205 km/h",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "156 km/h",
+              "right": "159 km/h",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (11/55)",
+              "right": "22% (13/59)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (25/50)",
+              "right": "49% (21/43)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/13",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "31",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "41",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (68/103)",
+              "right": "66% (69/105)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (36/105)",
+              "right": "34% (35/103)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (104/208)",
+              "right": "50% (104/208)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (12/14)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (15/29)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "52%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/9",
+              "right": "0/0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/9",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (21/37)",
+              "right": "84% (21/25)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (4/25)",
+              "right": "43% (16/37)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (25/62)",
+              "right": "60% (37/62)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "62%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (21/24)",
+              "right": "81% (21/26)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/1",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/26)",
+              "right": "13% (3/24)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/1",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (29/42)",
+              "right": "69% (29/42)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (13/42)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (42/84)",
+              "right": "50% (42/84)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "42%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "4/6",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/3",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "16",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "50% (19/38)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (19/38)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (37/62)",
+              "right": "40% (25/62)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

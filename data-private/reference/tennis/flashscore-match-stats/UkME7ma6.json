@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
+  "boardTitle": "Daria Snigur vs Peyton Stearns",
+  "boardPlayerName": "Daria Snigur",
+  "recentOpponentName": "Daria Kasatkina",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "AUS  6-3 3-6 7-613 1st",
+  "flashscoreLabel": "Snigur D. - Kasatkina D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Snigur D.",
+    "Kasatkina D."
+  ],
+  "generatedAt": "2026-05-27T06:48:06.574Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UkME7ma6/",
+  "matchId": "UkME7ma6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UkME7ma6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UkME7ma6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 15,
+        "rightGames": 13,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "77%",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (45/81)",
+              "right": "54% (52/97)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (12/34)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/16",
+              "right": "17/24",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (45/97)",
+              "right": "44% (36/81)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (18/29)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/24",
+              "right": "7/16",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (57/115)",
+              "right": "50% (63/126)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (63/126)",
+              "right": "50% (58/115)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (120/241)",
+              "right": "50% (121/241)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "47% (7/15)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "88%",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "7/10",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "51% (18/35)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "1/1",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (12/20)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (21/40)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (33/60)",
+              "right": "45% (27/60)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "77%",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (12/29)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "5/7",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (10/23)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "4/11",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (16/39)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (14/30)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (30/69)",
+              "right": "57% (39/69)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "70%",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (27/41)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "13% (2/15)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/7",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (17/39)",
+              "right": "34% (14/41)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (11/17)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "2/4",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (29/56)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (28/56)",
+              "right": "48% (27/56)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (57/112)",
+              "right": "49% (55/112)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

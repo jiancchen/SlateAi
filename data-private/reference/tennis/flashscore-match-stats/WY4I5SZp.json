@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27",
+  "boardTitle": "Mirra Andreeva vs Marina Bassols Ribera",
+  "boardPlayerName": "Marina Bassols Ribera",
+  "recentOpponentName": "Amandine Monnot",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "FRA  6-2 6-1 q1",
+  "flashscoreLabel": "Monnot A. - Bassols M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Monnot A.",
+    "Bassols M."
+  ],
+  "generatedAt": "2026-05-27T06:48:56.249Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WY4I5SZp/",
+  "matchId": "WY4I5SZp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WY4I5SZp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WY4I5SZp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      }
+    ],
+    "totalDuration": "0:59"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "66%",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (14/25)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (6/24)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/7",
+              "right": "0/1",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "155 km/h",
+              "right": "145 km/h",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "120 km/h",
+              "right": "118 km/h",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (2/12)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "6/7",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "23",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "17",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (20/49)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (9/35)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (29/84)",
+              "right": "65% (55/84)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (1/7)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "70%",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (1/6)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "11",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (11/26)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (17/46)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "60%",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (6/10)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "23% (3/13)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (2/9)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (1/6)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "13",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (9/23)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "32% (12/38)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Monnot A.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

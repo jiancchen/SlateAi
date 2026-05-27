@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+  "boardTitle": "Tamara Korpatsch vs Wang Xinyu",
+  "boardPlayerName": "Tamara Korpatsch",
+  "recentOpponentName": "Mayar Sherif",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "EGY  3-6 7-5 7-65 Q.",
+  "flashscoreLabel": "Sherif M. - Korpatsch T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Sherif M.",
+    "Korpatsch T."
+  ],
+  "generatedAt": "2026-05-27T06:47:56.581Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/d8prLLhd/",
+  "matchId": "d8prLLhd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_d8prLLhd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_d8prLLhd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:29"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "69%",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (37/72)",
+              "right": "57% (50/87)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (15/31)",
+              "right": "38% (15/40)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/13",
+              "right": "11/19",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (37/87)",
+              "right": "49% (35/72)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (25/40)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/19",
+              "right": "7/13",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (52/103)",
+              "right": "51% (65/127)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (62/127)",
+              "right": "50% (51/103)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (114/230)",
+              "right": "50% (116/230)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (9/16)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "47% (8/17)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (17/33)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "86%",
+              "right": "75%",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (15/24)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (1/4)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/4",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (12/21)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/4",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (16/28)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (15/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "71%",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (10/23)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "6/8",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (14/36)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "3/5",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (20/38)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (24/52)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (44/90)",
+              "right": "51% (46/90)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "63%",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (12/25)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/7",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (11/30)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "3/4",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (16/37)",
+              "right": "51% (24/47)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (23/47)",
+              "right": "57% (21/37)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (39/84)",
+              "right": "54% (45/84)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sherif M.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

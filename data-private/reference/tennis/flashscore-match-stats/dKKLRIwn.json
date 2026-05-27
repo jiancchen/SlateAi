@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Alex Michelsen",
+  "recentOpponentName": "Jiri Lehecka",
+  "recentIndex": 6,
+  "recentEvent": "Madrid",
+  "recentDate": "26 Apr 26",
+  "recentIsoDate": "2026-04-26",
+  "recentResult": "CZE   Loss 6-4 6-2 3rd",
+  "flashscoreLabel": "Lehecka J. - Michelsen A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Lehecka J.",
+    "Michelsen A."
+  ],
+  "generatedAt": "2026-05-27T06:48:44.599Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dKKLRIwn/",
+  "matchId": "dKKLRIwn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dKKLRIwn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dKKLRIwn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "3",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "62%",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (33/43)",
+              "right": "63% (24/38)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (15/38)",
+              "right": "28% (12/43)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (12/23)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "11",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "23",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (10/10)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (41/57)",
+              "right": "57% (35/61)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (26/61)",
+              "right": "28% (16/57)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (67/118)",
+              "right": "43% (51/118)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "67%",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (24/34)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (13/33)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (37/67)",
+              "right": "45% (30/67)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "57%",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (15/18)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "2",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (7/7)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (13/28)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (30/51)",
+              "right": "41% (21/51)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Lehecka J.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

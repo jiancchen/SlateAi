@@ -1,0 +1,1036 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Casper Ruud",
+  "recentOpponentName": "Roman Safiullin",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "RUS  6-2 7-65 5-7 0-6 6-2 1st",
+  "flashscoreLabel": "Ruud C. - Safiullin R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Ruud C.",
+    "Safiullin R."
+  ],
+  "generatedAt": "2026-05-27T06:48:45.050Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ELCMg9nB/",
+  "matchId": "ELCMg9nB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ELCMg9nB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ELCMg9nB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:10"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:52"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "60%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (57/93)",
+              "right": "68% (64/94)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (30/48)",
+              "right": "52% (33/63)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/15",
+              "right": "12/18",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "186 km/h",
+              "right": "180 km/h",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "162 km/h",
+              "right": "152 km/h",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (30/94)",
+              "right": "39% (36/93)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (30/63)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/18",
+              "right": "6/15",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "45",
+              "right": "69",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "52",
+              "right": "57",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (12/17)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (87/141)",
+              "right": "62% (97/157)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (60/157)",
+              "right": "38% (54/141)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (147/298)",
+              "right": "51% (151/298)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "74% (17/23)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "26% (6/23)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (23/46)",
+              "right": "50% (23/46)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "47%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (16/34)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (32/54)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "53%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (19/30)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "1/2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (6/18)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/8",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "25",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (30/50)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/38)",
+              "right": "40% (20/50)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/88)",
+              "right": "52% (46/88)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "62%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (14/24)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (22/37)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (13/37)",
+              "right": "41% (15/37)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (35/74)",
+              "right": "53% (39/74)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "87%",
+              "right": "71%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "15% (2/13)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (1/2)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (1/10)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "17",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "20% (3/15)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (2/14)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "17% (5/29)",
+              "right": "83% (24/29)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "74%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/7",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (11/25)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (17/34)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (33/53)",
+              "right": "38% (20/53)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

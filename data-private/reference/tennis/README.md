@@ -25,12 +25,15 @@ Ranking warehouse:
 - Historical chart source: query `tennis_rankings` by `normalized_name`, `tour`, and `as_of_date`; do not overwrite old dated rows.
 
 Opponent-adjusted clay context:
-- Run `node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json`.
+- Run `node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --flashscore-recent-map data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json`.
 - The output scores recent scoreline resistance, 2026 clay record, set/game share, and opponent quality when rankings are available.
-- Tennistonic score rows do not include true service games held, break points, or return-break rates. Those need a separate stats source before we expose them as hard features.
+- Tennistonic score rows do not include true service games held, break points, or return-break rates. Run the Flashscore recent-match pass first when match-detail pages need those fields.
 
 Flashscore service/return stats:
 - Run `node pipeline/fetch-flashscore-tennis-stats.mjs --url "https://www.flashscoreusa.com/game/tennis/.../?mid=MATCHID"`.
 - Outputs are written to `flashscore-match-stats/MATCHID.json`.
 - The parser stores match and set-level service data, including first-serve percentage, first/second serve points won, break points saved/converted, service games won, return games won, and total games won.
 - SH/SI columns are mapped to the left/right player order in the supplied Flashscore URL.
+- For slate detail pages, run `npm run data:fetch:tennis-flashscore-recent -- --input web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --map-output data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json`.
+- The recent-match pass resolves known tournament result pages, fetches each matched Flashscore stat feed, stores the raw match JSON, and writes a join map keyed by board match, player, and recent-match index.
+- Import the stored Flashscore rows into SQLite with `npm run data:import:tennis-flashscore` so service/return stats are available in `tennis_flashscore_player_stat_rows` and recent-card joins are queryable from `tennis_flashscore_recent_links`.

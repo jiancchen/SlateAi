@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-marta-kostyuk-katie-volynets-2026-05-27",
+  "boardTitle": "Marta Kostyuk vs Katie Volynets",
+  "boardPlayerName": "Marta Kostyuk",
+  "recentOpponentName": "Linda Noskova",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "29 Apr 26",
+  "recentIsoDate": "2026-04-29",
+  "recentResult": "CZE  7-61 6-0 1/4",
+  "flashscoreLabel": "Kostyuk M. - Noskova L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Kostyuk M.",
+    "Noskova L."
+  ],
+  "generatedAt": "2026-05-27T06:48:16.358Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vRGUaOB7/",
+  "matchId": "vRGUaOB7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vRGUaOB7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vRGUaOB7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:24"
+      }
+    ],
+    "totalDuration": "1:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "60%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (19/27)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (11/21)",
+              "right": "18% (6/34)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "17/24",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (20/50)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (28/34)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/24",
+              "right": "4/5",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (30/48)",
+              "right": "43% (37/86)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (49/86)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (79/134)",
+              "right": "41% (55/134)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Return games won",
+              "left": "78% (7/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "61%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (11/19)",
+              "right": "66% (25/38)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "15/19",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (13/38)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (20/24)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/19",
+              "right": "4/5",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (18/35)",
+              "right": "46% (30/65)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (35/65)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (53/100)",
+              "right": "47% (47/100)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "55%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (8/8)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (7/12)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "92% (12/13)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (14/21)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "76% (26/34)",
+              "right": "24% (8/34)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Noskova L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-eva-lys-sorana-cirstea-2026-05-27",
+  "boardTitle": "Eva Lys vs Sorana Cirstea",
+  "boardPlayerName": "Sorana Cirstea",
+  "recentOpponentName": "Tyra Caterina Grant",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "ITA  6-2 7-65 2nd",
+  "flashscoreLabel": "Cirstea S. - Grant T. C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Cirstea S.",
+    "Grant T. C."
+  ],
+  "generatedAt": "2026-05-27T06:48:52.442Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nXDbEkGq/",
+  "matchId": "nXDbEkGq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nXDbEkGq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nXDbEkGq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:01"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "71%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (23/26)",
+              "right": "68% (32/47)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (22/36)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/5",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (15/47)",
+              "right": "12% (3/26)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (12/19)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/3",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "73% (45/62)",
+              "right": "59% (39/66)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (27/66)",
+              "right": "27% (17/62)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (72/128)",
+              "right": "44% (56/128)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "67%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (8/9)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "86% (6/7)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (10/21)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (26/41)",
+              "right": "37% (15/41)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "73%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (14/25)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (11/33)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (29/42)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (17/45)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (46/87)",
+              "right": "47% (41/87)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Grant T. C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

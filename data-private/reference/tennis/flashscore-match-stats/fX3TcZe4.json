@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+  "boardTitle": "Tamara Korpatsch vs Wang Xinyu",
+  "boardPlayerName": "Tamara Korpatsch",
+  "recentOpponentName": "Beatrice Ricci",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "04 May 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "ITA  3-6 6-1 6-2 q1",
+  "flashscoreLabel": "Ricci B. - Korpatsch T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Ricci B.",
+    "Korpatsch T."
+  ],
+  "generatedAt": "2026-05-27T06:47:56.810Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fX3TcZe4/",
+  "matchId": "fX3TcZe4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fX3TcZe4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fX3TcZe4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "74%",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (26/46)",
+              "right": "65% (33/51)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (15/38)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/8",
+              "right": "3/6",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (18/51)",
+              "right": "43% (20/46)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "6/8",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (41/84)",
+              "right": "64% (44/69)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (25/69)",
+              "right": "51% (43/84)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (66/153)",
+              "right": "57% (87/153)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (6/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (3/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (9/24)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "90%",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (9/19)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/2)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (20/33)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (9/21)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (29/54)",
+              "right": "46% (25/54)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "30%",
+              "right": "67%",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (2/6)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "30% (6/20)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (15/44)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "67%",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/2",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/4",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "48% (15/31)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (22/55)",
+              "right": "60% (33/55)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Ricci B.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

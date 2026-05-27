@@ -21,6 +21,36 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
 const formatPct = (value) => (Number.isFinite(value) ? `${Math.round(value)}%` : 'n/a')
 const formatAmount = (value) => (Number.isFinite(value) ? value.toLocaleString('en-US') : 'n/a')
 const formatSignedPct = (value) => (Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${Math.round(value)} pts` : 'n/a')
+const sentence = (value) => String(value || '').replace(/\.+$/u, '')
+const confidenceTags = (confidence) => [
+  `Confidence ${confidence}`,
+  confidence >= 80
+    ? 'Elite confidence'
+    : confidence >= 72
+      ? 'High confidence'
+      : confidence >= 64
+        ? 'Lean confidence'
+        : 'Watch confidence'
+]
+const payoffTags = (economics) => {
+  if (!economics || !Number.isFinite(economics.deskPricePct)) return []
+  const profitCents = Math.max(0, Math.round(100 - economics.deskPricePct))
+  const edge = Number.isFinite(economics.deskEdgePct) ? Math.round(economics.deskEdgePct) : null
+  const payoffTier =
+    profitCents <= 12
+      ? 'Tiny payoff'
+      : profitCents <= 30
+        ? 'Fee-sensitive payoff'
+        : profitCents <= 55
+          ? 'Playable payoff'
+          : 'Underdog payoff'
+  return [
+    `Payoff ${profitCents}c`,
+    payoffTier,
+    economics.priceAction,
+    edge === null ? null : `Price edge ${edge >= 0 ? '+' : ''}${edge} pts`
+  ].filter(Boolean)
+}
 const mlbMarket = (label, book, value) => ({ label, book, value })
 
 const buildMlbBoardOdds = ({ spread = '', total = '', moneyline = '', provider = mlbOddsProvider }) => ({
@@ -130,7 +160,7 @@ const buildPlayerEconomics = (name, pricePct, amount) => {
           ? 'moderate favorite'
           : pricePct >= 40
             ? 'coinflip zone'
-            : 'dog payout lane'
+            : 'underdog payout'
 
   return {
     name,
@@ -165,7 +195,7 @@ const buildMarketEconomics = ({ raw, market, marketA, marketB }) => {
         : favoriteTax && deskEdgePct <= feeBufferPct + 5
           ? 'Watch, do not chase'
           : picked.pricePct < 45 && raw.conf >= 55
-            ? 'Dog value lane'
+            ? 'Underdog value'
             : deskEdgePct >= feeBufferPct + 4
               ? 'Playable edge'
               : 'No clear price edge'
@@ -174,7 +204,7 @@ const buildMarketEconomics = ({ raw, market, marketA, marketB }) => {
       ? 'No screenshot price was captured for the desk side.'
       : favoriteTax
         ? `${raw.pick} is priced at ${formatPct(picked.pricePct)}, leaving only ${picked.centsProfitIfWin}c gross profit per share before platform fees. The pick can be likely and still be a poor buy unless our true edge clears the price by more than the fee buffer.`
-        : `${raw.pick} is priced at ${formatPct(picked.pricePct)}, a ${picked.priceBand} with roughly ${picked.grossProfitPct}% gross profit on stake before platform fees if it wins.`
+        : `${raw.pick} is priced at ${formatPct(picked.pricePct)}, ${picked.priceBand === 'underdog payout' ? 'an' : 'a'} ${picked.priceBand} with roughly ${picked.grossProfitPct}% gross profit on stake before platform fees if it wins.`
 
   return {
     source: marketSource,
@@ -215,6 +245,117 @@ const buildPredictionOnlyOdds = (raw, market) => ({
   provider: oddsProvider
 })
 
+const formatRecord = (record) => {
+  if (!record || !Number.isFinite(record.wins) || !Number.isFinite(record.losses)) return null
+  const pct = Number.isFinite(record.winPct) ? `, ${Math.round(record.winPct * 100)}%` : ''
+  return `${record.wins}-${record.losses}${pct}`
+}
+
+const findQualityPlayer = (qualityContext, name) =>
+  (qualityContext?.players || []).find((player) => player.name === name) ?? null
+
+const playerPressureOverrides = {
+  'Jessica Pegula': {
+    label: 'major favorite-pressure discount',
+    note:
+      'Do not turn her top-five form into an auto-bet in a major. When the price is extreme, require dominant recent serve/return data or mark the favorite as a pass/fade candidate.'
+  }
+}
+
+const summarizeQualityEvidence = (name, qualityPlayer) => {
+  const window = qualityPlayer?.recentWindow || {}
+  const service = qualityPlayer?.serviceData || {}
+  const parts = [
+    `${name} recent window: ${window.wins ?? 'n/a'}-${window.losses ?? 'n/a'} over ${window.completed ?? window.matches ?? 'n/a'} completed matches`,
+    Number.isFinite(Number(window.avgKnownOpponentRank)) ? `avg opponent rank ${Number(window.avgKnownOpponentRank).toFixed(1)}` : null,
+    Number.isFinite(Number(window.top25Opponents)) ? `${window.top25Opponents} top-25 opponents` : null,
+    Number.isFinite(Number(window.straightSetLosses)) ? `${window.straightSetLosses} straight-set losses` : null,
+    Number.isFinite(Number(window.resistanceMatches)) ? `${window.resistanceMatches} pressure/resistance matches` : null,
+    Number.isFinite(Number(service.avgServiceHoldPct)) ? `avg hold ${Math.round(service.avgServiceHoldPct)}% in resolved Flashscore rows` : null,
+    Number.isFinite(Number(service.avgAces)) ? `avg aces ${Number(service.avgAces).toFixed(1)}` : null
+  ].filter(Boolean)
+  return `${parts.join('; ')}.`
+}
+
+const buildBettingCase = ({ raw, marketA, marketB, qualityA, qualityB }) => {
+  const pickedQuality = raw.pick === raw.a ? qualityA : qualityB
+  const underdogName = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
+    ? marketA.pct < marketB.pct
+      ? raw.a
+      : raw.b
+    : ''
+  const favoriteName = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
+    ? marketA.pct > marketB.pct
+      ? raw.a
+      : raw.b
+    : ''
+  const pickedMarket = raw.pick === raw.a ? marketA?.pct : marketB?.pct
+  const underdogMarket = underdogName === raw.a ? marketA?.pct : underdogName === raw.b ? marketB?.pct : null
+  const override = playerPressureOverrides[raw.pick]
+  const lines = [
+    `Betting case: model ${raw.pick} ${raw.conf}% vs market ${Number.isFinite(pickedMarket) ? formatPct(pickedMarket) : 'n/a'}; volatility ${raw.vol}.`,
+    summarizeQualityEvidence(raw.a, qualityA),
+    summarizeQualityEvidence(raw.b, qualityB)
+  ]
+
+  if (Number.isFinite(pickedMarket) && pickedMarket >= 85) {
+    lines.push(
+      `Favorite tax: ${raw.pick} at ${formatPct(pickedMarket)} leaves only ${100 - pickedMarket}c gross profit before fees, so this cannot be a buy without a much stronger edge than the base model shows.`
+    )
+  }
+  if (raw.fmt === 'WTA' && favoriteName && Number.isFinite(underdogMarket) && underdogMarket <= 15) {
+    lines.push(
+      `Upset screen: WTA best-of-three plus ${favoriteName} carrying the market burden makes ${underdogName} worth monitoring if the first set produces early break chances.`
+    )
+  }
+  if (override) {
+    lines.push(`${override.label}: ${override.note}`)
+  }
+  return lines
+}
+
+const tennisRisk = (raw, opponentName = '') =>
+  sentence(raw.swing)
+    .replace(/long deuce clusters/giu, 'repeated break points')
+    .replace(/gets irritated early/giu, 'starts slowly')
+    .replace(/live dog/giu, 'live underdog')
+    .replace(/dog lane/giu, 'underdog path')
+
+const buildTennisPlayerCard = ({ raw, name, profile, marketPlayer, economics, qualityPlayer }) => {
+  const isPick = raw.pick === name
+  const rank = qualityPlayer?.ranking?.rank ?? null
+  const clayRecord = formatRecord(qualityPlayer?.records?.clay2026)
+  const recent = qualityPlayer?.recentWindow || {}
+  const adjustedScore = Number.isFinite(Number(recent.opponentAdjustedFormScore))
+    ? Math.round(Number(recent.opponentAdjustedFormScore))
+    : null
+  const modelPct = isPick ? raw.conf : 100 - raw.conf
+  const priceEdge = Number.isFinite(marketPlayer?.pct) ? Math.round(modelPct - marketPlayer.pct) : null
+  const contextParts = [
+    rank ? `Live rank #${rank}` : profile,
+    adjustedScore ? `opponent-adjusted form ${adjustedScore}` : null,
+    Number.isFinite(Number(recent.avgKnownOpponentRank)) ? `avg recent opp rank ${Number(recent.avgKnownOpponentRank).toFixed(1)}` : null
+  ].filter(Boolean)
+  const economicsText = economics ? `${economics.centsProfitIfWin}c gross profit per 100c contract` : null
+  const roleText = isPick
+    ? `Pick: model ${formatPct(raw.conf)} vs market ${Number.isFinite(marketPlayer?.pct) ? formatPct(marketPlayer.pct) : 'n/a'}${priceEdge !== null ? ` (${priceEdge >= 0 ? '+' : ''}${priceEdge} pts)` : ''}`
+    : `Market check: model ${formatPct(modelPct)} vs market ${Number.isFinite(marketPlayer?.pct) ? formatPct(marketPlayer.pct) : 'n/a'}${priceEdge !== null ? ` (${priceEdge >= 0 ? '+' : ''}${priceEdge} pts)` : ''}`
+
+  return {
+    name,
+    rank,
+    label: name,
+    form: null,
+    boardPct: Number.isFinite(marketPlayer?.pct) ? marketPlayer.pct : null,
+    decimalOdds: null,
+    marketLabel: Number.isFinite(marketPlayer?.pct) ? `Market price ${formatPct(marketPlayer.pct)}` : 'Desk only',
+    clayLine: contextParts.join(' | ') || profile,
+    record2026: clayRecord || '',
+    notes: [roleText, economicsText].filter(Boolean).join(' | '),
+    matchupNote: isPick ? `Why pick: ${sentence(raw.angle)}.` : `Upset path: ${tennisRisk(raw, name)}.`
+  }
+}
+
 const participant = (id, index, role, name, detail) => ({
   id: `${id}:${index}`,
   index,
@@ -237,6 +378,13 @@ const buildMatch = (raw) => {
   const marketB = market?.players?.[raw.b] ?? null
   const hasMarket = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
   const marketEconomics = buildMarketEconomics({ raw, market, marketA, marketB })
+  const qualityContext = tennisOpponentQualityContext.matches?.[id] ?? null
+  const qualityA = findQualityPlayer(qualityContext, raw.a)
+  const qualityB = findQualityPlayer(qualityContext, raw.b)
+  const economicsA = marketEconomics?.players?.find((player) => player.name === raw.a) ?? null
+  const economicsB = marketEconomics?.players?.find((player) => player.name === raw.b) ?? null
+  const tennisPlayerA = buildTennisPlayerCard({ raw, name: raw.a, profile: raw.profileA, marketPlayer: marketA, economics: economicsA, qualityPlayer: qualityA })
+  const tennisPlayerB = buildTennisPlayerCard({ raw, name: raw.b, profile: raw.profileB, marketPlayer: marketB, economics: economicsB, qualityPlayer: qualityB })
   const pickIndex = raw.pick === raw.a ? 0 : 1
   const playerA = { side: 'Player 1', name: raw.a, displayName: raw.a, detail: raw.profileA }
   const playerB = { side: 'Player 2', name: raw.b, displayName: raw.b, detail: raw.profileB }
@@ -246,19 +394,21 @@ const buildMatch = (raw) => {
   ]
   const picked = participants[pickIndex]
   const opponent = participants[pickIndex === 0 ? 1 : 0]
+  const riskText = tennisRisk(raw)
   const dogNote = raw.vol >= 68 ? ' This is deliberately capped as a volatility read, not a forced high-conviction pick.' : ''
-  const summary = `${raw.pick} gets the desk lean because ${raw.angle}.${dogNote}`
+  const summary = `${raw.pick} is the model pick because ${sentence(raw.angle)}.${dogNote}`
   const factors = [
     ...(hasMarket
       ? [
           `Prediction market: ${raw.a} ${formatPct(marketA.pct)} (${formatAmount(marketA.amount)}) vs ${raw.b} ${formatPct(marketB.pct)} (${formatAmount(marketB.amount)}), ${formatAmount(market.total)} total captured from screenshots.`,
-          `Market economics: ${marketEconomics.priceAction}. ${marketEconomics.summary} Desk edge vs captured price: ${formatSignedPct(marketEconomics.deskEdgePct)}.`
+          `Market economics: ${marketEconomics.priceAction}. ${marketEconomics.summary} Model edge vs captured price: ${formatSignedPct(marketEconomics.deskEdgePct)}.`
         ]
       : []),
-    `${raw.a}: ${raw.noteA}`,
-    `${raw.b}: ${raw.noteB}`,
-    `Clay desk angle: ${raw.angle}.`,
-    `Swing factor: ${raw.swing}`
+    `${raw.a}: ${tennisPlayerA.clayLine}. ${tennisPlayerA.notes}.`,
+    `${raw.b}: ${tennisPlayerB.clayLine}. ${tennisPlayerB.notes}.`,
+    ...buildBettingCase({ raw, marketA, marketB, qualityA, qualityB }),
+    `Clay model angle: ${sentence(raw.angle)}.`,
+    `Risk: ${riskText}`
   ]
   const h2hUrl = buildTennistonicH2HUrl(raw.a, raw.b)
 
@@ -273,13 +423,13 @@ const buildMatch = (raw) => {
       spotlight: raw.conf >= 72 || raw.tags.includes('Favorite'),
       confidence: raw.conf,
       volatility: raw.vol,
-      tags: ['Clay', 'Roland Garros', ...raw.tags],
+      tags: ['Clay', 'Roland Garros', ...raw.tags, ...confidenceTags(raw.conf), ...payoffTags(marketEconomics)],
       matchup: [playerA, playerB],
       summary,
       factors,
-      lean: `Lean ${raw.pick} because ${raw.angle}.`,
-      swing: `Swing factor: ${raw.swing}`,
-      swingFactor: `Swing factor: ${raw.swing}`,
+      lean: `Lean ${raw.pick} because ${sentence(raw.angle)}.`,
+      swing: `Risk: ${riskText}`,
+      swingFactor: `Risk: ${riskText}`,
       odds: buildPredictionOnlyOdds(raw, market),
       tennisContext: {
         surface: 'Clay',
@@ -288,8 +438,8 @@ const buildMatch = (raw) => {
         fatigueFlag: false,
         liveDog: hasMarket ? (raw.pick === raw.a ? marketA.pct < marketB.pct : marketB.pct < marketA.pct) : raw.conf < 60,
         players: [
-          { name: raw.a, rank: null, label: raw.a, form: null, boardPct: Number.isFinite(marketA?.pct) ? marketA.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketA?.pct) ? `Market ${formatPct(marketA.pct)}` : 'Desk only', clayLine: raw.profileA, record2026: '', notes: raw.noteA, matchupNote: raw.pick === raw.a ? `${raw.a} is the desk lean.` : `${raw.a} needs the upset script.` },
-          { name: raw.b, rank: null, label: raw.b, form: null, boardPct: Number.isFinite(marketB?.pct) ? marketB.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketB?.pct) ? `Market ${formatPct(marketB.pct)}` : 'Desk only', clayLine: raw.profileB, record2026: '', notes: raw.noteB, matchupNote: raw.pick === raw.b ? `${raw.b} is the desk lean.` : `${raw.b} needs the upset script.` }
+          tennisPlayerA,
+          tennisPlayerB
         ],
         comparisonRows: [
           ...(hasMarket
@@ -297,8 +447,8 @@ const buildMatch = (raw) => {
                 { label: 'Prediction market', metric: 'Screenshot split', leftScore: clamp(Math.round(marketA.pct), 0, 100), rightScore: clamp(Math.round(marketB.pct), 0, 100), leftLabel: raw.a, rightLabel: raw.b, winner: marketA.pct === marketB.pct ? 'Even' : marketA.pct > marketB.pct ? raw.a : raw.b }
               ]
             : []),
-          { label: 'Desk lean', metric: 'Confidence split', leftScore: raw.pick === raw.a ? raw.conf : 100 - raw.conf, rightScore: raw.pick === raw.b ? raw.conf : 100 - raw.conf, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick },
-          { label: 'Volatility', metric: 'Lower chaos side', leftScore: raw.pick === raw.a ? 100 - raw.vol : raw.vol, rightScore: raw.pick === raw.b ? 100 - raw.vol : raw.vol, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick }
+          { label: 'Model pick', metric: 'Confidence split', leftScore: raw.pick === raw.a ? raw.conf : 100 - raw.conf, rightScore: raw.pick === raw.b ? raw.conf : 100 - raw.conf, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick },
+          { label: 'Volatility', metric: 'Lower risk side', leftScore: raw.pick === raw.a ? 100 - raw.vol : raw.vol, rightScore: raw.pick === raw.b ? 100 - raw.vol : raw.vol, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick }
         ],
         predictionMarket: market
           ? {
@@ -318,7 +468,7 @@ const buildMatch = (raw) => {
           totalGames: null,
           straightSetsProbability: Math.max(38, Math.min(72, Math.round(raw.conf - raw.vol * 0.18))),
           upsetRisk: Math.max(10, Math.min(48, Math.round(100 - raw.conf + raw.vol * 0.22))),
-          overview: `${raw.pick} is projected to own the cleaner normal script, with volatility at ${raw.vol} because ${raw.swing}`,
+          overview: `${raw.pick} is the model side, with volatility at ${raw.vol}. Risk: ${riskText}`,
           fantasy: []
         },
         tradePlan: marketEconomics
@@ -329,7 +479,7 @@ const buildMatch = (raw) => {
                   ? 'danger'
                   : marketEconomics.priceAction === 'Watch, do not chase'
                     ? 'warning'
-                    : marketEconomics.priceAction === 'Playable edge' || marketEconomics.priceAction === 'Dog value lane'
+                    : marketEconomics.priceAction === 'Playable edge' || marketEconomics.priceAction === 'Underdog value'
                       ? 'accent'
                       : 'neutral',
               entrySideName: marketEconomics.deskPickName,
@@ -340,7 +490,7 @@ const buildMatch = (raw) => {
                 marketEconomics.priceAction === 'Pass at price'
                   ? 'Need a better live entry or stronger evidence than the current desk edge. Do not buy the favorite just because it is likely.'
                   : 'Use the market price as an entry filter; win probability is not enough by itself.',
-              exit: `Desk confidence ${raw.conf}% vs market ${marketEconomics.deskPricePct ?? 'n/a'}%, with a ${marketEconomics.feeBufferPct} pt fee buffer.`,
+              exit: `Model confidence ${raw.conf}% vs market price ${marketEconomics.deskPricePct ?? 'n/a'}%, with a ${marketEconomics.feeBufferPct} pt fee buffer.`,
               marketGap: Math.round(marketEconomics.deskEdgePct ?? 0),
               dogLift: null,
               entryPricePct: marketEconomics.deskPricePct,
@@ -352,7 +502,7 @@ const buildMatch = (raw) => {
           : null,
         marketEconomics,
         clayMatchupData: tennisClayContext.matches?.[id] ?? null,
-        opponentQualityData: tennisOpponentQualityContext.matches?.[id] ?? null,
+        opponentQualityData: qualityContext,
         researchLinks: [
           { label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260526' },
           { label: 'Roland Garros order of play', url: 'https://www.rolandgarros.com/en-us/order-of-play?annexeCourt=all&competition=all&country=all&date=2026-05-26&favoriteFilter=false&principalCourt=all&year=2026' },
@@ -361,10 +511,10 @@ const buildMatch = (raw) => {
         formEdgeName: raw.pick
       },
       playerAnalysis: [
-        `${raw.pick} is the desk side because ${raw.angle}.`,
-        `${raw.a} note: ${raw.noteA}`,
-        `${raw.b} note: ${raw.noteB}`,
-        `Swing factor: ${raw.swing}`
+        `${raw.pick} pick reason: ${sentence(raw.angle)}.`,
+        `${raw.a}: ${tennisPlayerA.clayLine}. ${tennisPlayerA.notes}.`,
+        `${raw.b}: ${tennisPlayerB.clayLine}. ${tennisPlayerB.notes}.`,
+        `Risk: ${riskText}`
       ],
       participants,
       moneyline: { available: false, label: 'Moneyline', provider: oddsProvider, participants: [] },
@@ -373,7 +523,7 @@ const buildMatch = (raw) => {
         participantId: picked.id,
         participant: picked,
         opponent,
-        lean: `Lean ${raw.pick} because ${raw.angle}.`,
+        lean: `Lean ${raw.pick} because ${sentence(raw.angle)}.`,
         rationale: factors[2],
         confidence: raw.conf,
         volatility: raw.vol,
@@ -383,7 +533,7 @@ const buildMatch = (raw) => {
         modelEdge: 0,
         modelEdgeLabel: 'Model-only read',
         marketProbability: hasMarket ? (raw.pick === raw.a ? marketA.pct : marketB.pct) : null,
-        marketProbabilityLabel: hasMarket ? `Market ${formatPct(raw.pick === raw.a ? marketA.pct : marketB.pct)}` : 'N/A',
+        marketProbabilityLabel: hasMarket ? `Market price ${formatPct(raw.pick === raw.a ? marketA.pct : marketB.pct)}` : 'N/A',
         inputs: [],
         inputsUsed: 0,
         volatilityNotes: raw.vol >= 68 ? [{ label: 'Volatility gate: treated as swingy/watch-grade rather than clean favorite.', delta: raw.vol - 60 }] : []
@@ -850,21 +1000,22 @@ const rawSingles = [
     "a": "Kimberly Birrell",
     "b": "Jessica Pegula",
     "pick": "Jessica Pegula",
-    "conf": 74,
-    "vol": 40,
+    "conf": 62,
+    "vol": 74,
     "tags": [
       "Women",
-      "Favorite"
+      "Favorite",
+      "Volatile"
     ],
-    "profileA": "Needs favorite leakage",
-    "profileB": "Top-five stability edge",
-    "noteA": "Birrell needs Pegula to get passive and donate enough short balls to keep return games live.",
-    "noteB": "Pegula is one of the cleaner WTA early-round trust profiles because she rarely needs perfect shotmaking to create pressure.",
-    "angle": "Pegula has the steadier top-five baseline and return profile, which is exactly the cleaner WTA lane the board should promote",
-    "swing": "If Pegula becomes too passive and Birrell owns the front foot, the match can stretch.",
+    "profileA": "Tiny-price dog with pressure path",
+    "profileB": "Likely winner, bad buy",
+    "noteA": "Birrell did not need to be the better season-long player; at 3% she only needed Pegula to leak one passive set and make the favorite price absurd.",
+    "noteB": "Pegula had the ranking/form edge, but the model should have treated the major favorite-pressure profile and 98% market price as a hard downgrade.",
+    "angle": "Pegula was more likely to win, but not close to bettable at 98%; the stronger betting case was pass the favorite and monitor Birrell as the only side with payout",
+    "swing": "If Pegula got passive under favorite pressure and Birrell created long return games, the upset path was live despite the ranking gap.",
     "idSlug": "pegula-birrell",
-    "recommendationScore": 78,
-    "tier": "Core"
+    "recommendationScore": 35,
+    "tier": "Pass/fade favorite"
   },
   {
     "fmt": "ATP",

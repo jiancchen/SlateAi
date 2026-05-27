@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-james-duckworth-rafael-jodar-2026-05-27",
+  "boardTitle": "James Duckworth vs Rafael Jodar",
+  "boardPlayerName": "James Duckworth",
+  "recentOpponentName": "Laslo Djere",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "SRB   Loss 6-4 3-6 6-3 1st",
+  "flashscoreLabel": "Djere L. - Duckworth J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Djere L.",
+    "Duckworth J."
+  ],
+  "generatedAt": "2026-05-27T06:48:26.487Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/04XlLlpR/",
+  "matchId": "04XlLlpR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_04XlLlpR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_04XlLlpR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:59"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "60%",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (35/53)",
+              "right": "67% (39/58)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (16/27)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "10/14",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (19/58)",
+              "right": "34% (18/53)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (20/38)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/14",
+              "right": "3/7",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "21",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "43",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (51/80)",
+              "right": "59% (57/96)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (39/96)",
+              "right": "36% (29/80)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (90/176)",
+              "right": "49% (86/176)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (15/28)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "65%",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/6",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (11/24)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/2",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "16",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (33/63)",
+              "right": "48% (30/63)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "63%",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "4/4",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (4/20)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/4",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "72% (23/32)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (9/32)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (25/58)",
+              "right": "57% (33/58)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "52%",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "12",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (21/28)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Djere L.",
+              "rightPlayer": "Duckworth J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

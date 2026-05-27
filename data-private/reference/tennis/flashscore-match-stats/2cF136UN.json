@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-karen-khachanov-marco-trungelliti-2026-05-27",
+  "boardTitle": "Karen Khachanov vs Marco Trungelliti",
+  "boardPlayerName": "Karen Khachanov",
+  "recentOpponentName": "Alexander Shevchenko",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "KAZ  6-4 6-4 2nd",
+  "flashscoreLabel": "Khachanov K. - Shevchenko A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Khachanov K.",
+    "Shevchenko A."
+  ],
+  "generatedAt": "2026-05-27T06:47:54.162Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2cF136UN/",
+  "matchId": "2cF136UN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2cF136UN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2cF136UN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:53"
+      }
+    ],
+    "totalDuration": "1:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "63%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (37/55)",
+              "right": "57% (21/37)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "12/13",
+              "right": "1/4",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (16/37)",
+              "right": "33% (18/55)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (9/22)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/13",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "32",
+              "right": "23",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "21",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Net points won",
+              "left": "85% (11/13)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (47/76)",
+              "right": "58% (34/59)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (25/59)",
+              "right": "38% (29/76)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (72/135)",
+              "right": "47% (63/135)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "57%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (20/27)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/4",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (24/36)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "33% (12/36)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (34/64)",
+              "right": "47% (30/64)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "68%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (17/28)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/9",
+              "right": "1/3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (11/21)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/9",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "14",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (23/40)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (15/31)",
+              "right": "43% (17/40)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (38/71)",
+              "right": "46% (33/71)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Shevchenko A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

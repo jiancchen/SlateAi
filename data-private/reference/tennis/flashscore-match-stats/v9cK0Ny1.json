@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-catherine-mcnally-belinda-bencic-2026-05-27",
+  "boardTitle": "Catherine McNally vs Belinda Bencic",
+  "boardPlayerName": "Belinda Bencic",
+  "recentOpponentName": "Bianca Vanessa Andreescu",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "CAN  6-4 6-1 2nd",
+  "flashscoreLabel": "Bencic B. - Andreescu B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Bencic B.",
+    "Andreescu B."
+  ],
+  "generatedAt": "2026-05-27T06:47:49.568Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/v9cK0Ny1/",
+  "matchId": "v9cK0Ny1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_v9cK0Ny1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_v9cK0Ny1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "1:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "7",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "64%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (11/17)",
+              "right": "17% (3/18)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/9",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (14/32)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (15/18)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "2/4",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (29/42)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (29/50)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (58/92)",
+              "right": "37% (34/92)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "70%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (13/30)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (31/54)",
+              "right": "43% (23/54)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "55%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/5",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "73% (8/11)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "89% (8/9)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "1/3",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (11/18)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "80% (16/20)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "71% (27/38)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Andreescu B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

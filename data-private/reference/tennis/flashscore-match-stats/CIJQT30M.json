@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-viktorija-golubic-alycia-parks-2026-05-27",
+  "boardTitle": "Viktorija Golubic vs Alycia Parks",
+  "boardPlayerName": "Viktorija Golubic",
+  "recentOpponentName": "Panna Udvardy",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "HUN  6-0 6-2 1st",
+  "flashscoreLabel": "Udvardy P. - Golubic V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Udvardy P.",
+    "Golubic V."
+  ],
+  "generatedAt": "2026-05-27T06:48:00.810Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/CIJQT30M/",
+  "matchId": "CIJQT30M",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_CIJQT30M",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_CIJQT30M"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "71%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (10/23)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (9/26)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "1/2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (13/32)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "6/9",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "15",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "14",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Net points won",
+              "left": "31% (4/13)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (19/49)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (17/45)",
+              "right": "61% (30/49)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (36/94)",
+              "right": "62% (58/94)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "71%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (4/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "35% (8/23)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (5/17)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (13/40)",
+              "right": "68% (27/40)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "71%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Net points won",
+              "left": "17% (1/6)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (11/26)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (12/28)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

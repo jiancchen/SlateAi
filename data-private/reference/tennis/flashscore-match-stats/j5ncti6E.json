@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-catherine-mcnally-belinda-bencic-2026-05-27",
+  "boardTitle": "Catherine McNally vs Belinda Bencic",
+  "boardPlayerName": "Belinda Bencic",
+  "recentOpponentName": "Petra Marcinko",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "23 Apr 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "CRO  6-4 6-2 2nd",
+  "flashscoreLabel": "Bencic B. - Marcinko P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Bencic B.",
+    "Marcinko P."
+  ],
+  "generatedAt": "2026-05-27T06:47:50.236Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/j5ncti6E/",
+  "matchId": "j5ncti6E",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_j5ncti6E",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_j5ncti6E"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "1:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "46%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (25/32)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (12/24)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "5/10",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (10/28)",
+              "right": "22% (7/32)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (22/33)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/10",
+              "right": "2/8",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "66% (37/56)",
+              "right": "48% (30/63)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (33/63)",
+              "right": "34% (19/56)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (70/119)",
+              "right": "41% (49/119)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Return games won",
+              "left": "56% (5/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "43%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "4/7",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/8",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (39/73)",
+              "right": "47% (34/73)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "50%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (13/14)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (4/12)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (9/12)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "85% (17/20)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (14/26)",
+              "right": "15% (3/20)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (31/46)",
+              "right": "33% (15/46)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Marcinko P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

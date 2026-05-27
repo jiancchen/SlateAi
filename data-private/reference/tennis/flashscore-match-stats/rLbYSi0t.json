@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-camilo-ugo-carabelli-andrey-rublev-2026-05-27",
+  "boardTitle": "Camilo Ugo Carabelli vs Andrey Rublev",
+  "boardPlayerName": "Camilo Ugo Carabelli",
+  "recentOpponentName": "Flavio Cobolli",
+  "recentIndex": 7,
+  "recentEvent": "Madrid",
+  "recentDate": "25 Apr 26",
+  "recentIsoDate": "2026-04-25",
+  "recentResult": "ITA   Loss 6-77 6-1 6-4 2nd",
+  "flashscoreLabel": "Ugo Carabelli C. - Cobolli F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Ugo Carabelli C.",
+    "Cobolli F."
+  ],
+  "generatedAt": "2026-05-27T06:48:04.313Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rLbYSi0t/",
+  "matchId": "rLbYSi0t",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rLbYSi0t",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rLbYSi0t"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "51%",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (47/66)",
+              "right": "78% (36/46)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (20/44)",
+              "right": "69% (31/45)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/11",
+              "right": "2/2",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (10/46)",
+              "right": "29% (19/66)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (14/45)",
+              "right": "55% (24/44)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/11",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "43",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "43",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (67/110)",
+              "right": "74% (67/91)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (24/91)",
+              "right": "39% (43/110)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (91/201)",
+              "right": "55% (110/201)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "100% (15/15)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/15)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (11/29)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "48%",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (21/25)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "16% (4/25)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (9/23)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "27",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (31/42)",
+              "right": "68% (30/44)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (14/44)",
+              "right": "26% (11/42)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (45/86)",
+              "right": "48% (41/86)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "61%",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (6/10)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/6",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (10/22)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/45)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "46%",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (20/31)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (2/11)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "15% (2/13)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (26/46)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (4/24)",
+              "right": "43% (20/46)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (30/70)",
+              "right": "57% (40/70)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ugo Carabelli C.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

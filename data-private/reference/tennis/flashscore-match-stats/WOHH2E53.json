@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Casper Ruud",
+  "recentOpponentName": "Luciano Darderi",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "15 May 26",
+  "recentIsoDate": "2026-05-15",
+  "recentResult": "ITA  6-1 6-1 1/2",
+  "flashscoreLabel": "Ruud C. - Darderi L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Ruud C.",
+    "Darderi L."
+  ],
+  "generatedAt": "2026-05-27T06:48:46.522Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WOHH2E53/",
+  "matchId": "WOHH2E53",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WOHH2E53",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WOHH2E53"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "46%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (12/19)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/9",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "199 km/h",
+              "right": "196 km/h",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "170 km/h",
+              "right": "157 km/h",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "77% (20/26)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "1/2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "9",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "23",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (29/42)",
+              "right": "40% (19/48)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (29/48)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (58/90)",
+              "right": "36% (32/90)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (12/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "43%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (9/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (6/10)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (12/17)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "65% (15/23)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (27/40)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "48%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "85% (11/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (14/25)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (31/50)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

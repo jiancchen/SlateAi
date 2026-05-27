@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
+  "boardTitle": "Daria Snigur vs Peyton Stearns",
+  "boardPlayerName": "Peyton Stearns",
+  "recentOpponentName": "Lois Boisson",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "21 Apr 26",
+  "recentIsoDate": "2026-04-21",
+  "recentResult": "FRA  6-1 6-3 1st",
+  "flashscoreLabel": "Stearns P. - Boisson L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Stearns P.",
+    "Boisson L."
+  ],
+  "generatedAt": "2026-05-27T06:48:09.073Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YowmpFPc/",
+  "matchId": "YowmpFPc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YowmpFPc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YowmpFPc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:21"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "65%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (21/27)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (14/20)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/6",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (12/30)",
+              "right": "22% (6/27)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (12/16)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "0/2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "74% (35/47)",
+              "right": "48% (22/46)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (24/46)",
+              "right": "26% (12/47)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (59/93)",
+              "right": "37% (34/93)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "63%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (10/10)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (6/6)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (7/12)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "86% (6/7)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "100% (12/12)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "68% (13/19)",
+              "right": "0% (0/12)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "81% (25/31)",
+              "right": "19% (6/31)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "67%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/3",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "66% (23/35)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (34/62)",
+              "right": "45% (28/62)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

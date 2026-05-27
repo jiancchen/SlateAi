@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Alex Michelsen",
+  "recentOpponentName": "Sebastian Ofner",
+  "recentIndex": 4,
+  "recentEvent": "Rome",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "AUT   Loss 6-3 6-3 1st",
+  "flashscoreLabel": "Ofner S. - Michelsen A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Ofner S.",
+    "Michelsen A."
+  ],
+  "generatedAt": "2026-05-27T06:48:44.317Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jiFhDdBc/",
+  "matchId": "jiFhDdBc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jiFhDdBc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jiFhDdBc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "64%",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (27/32)",
+              "right": "77% (23/30)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (15/29)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (7/30)",
+              "right": "16% (5/32)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (11/17)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "9",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "24",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (42/61)",
+              "right": "62% (29/47)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (18/47)",
+              "right": "31% (19/61)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (60/108)",
+              "right": "44% (48/108)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "70%",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "86% (6/7)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (18/25)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (9/23)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (27/48)",
+              "right": "44% (21/48)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "58%",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (24/36)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "33% (12/36)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (33/60)",
+              "right": "45% (27/60)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Michelsen A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27",
+  "boardTitle": "Yuliia Starodubtseva vs Elena Rybakina",
+  "boardPlayerName": "Yuliia Starodubtseva",
+  "recentOpponentName": "Angela Fita Boluda",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "ESP  6-4 6-2 1st",
+  "flashscoreLabel": "Starodubtseva Y. - Fita Boluda A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rabat/results/",
+  "players": [
+    "Starodubtseva Y.",
+    "Fita Boluda A."
+  ],
+  "generatedAt": "2026-05-27T06:48:18.633Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4GOSTB8D/",
+  "matchId": "4GOSTB8D",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4GOSTB8D",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4GOSTB8D"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "67%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (32/40)",
+              "right": "59% (22/37)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (15/37)",
+              "right": "25% (10/40)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "76% (41/54)",
+              "right": "56% (31/55)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (24/55)",
+              "right": "24% (13/54)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (65/109)",
+              "right": "40% (44/109)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "88%",
+              "right": "61%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (18/22)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (2/3)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "78% (21/27)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (10/27)",
+              "right": "22% (6/27)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (31/54)",
+              "right": "43% (23/54)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "74%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (34/55)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Fita Boluda A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

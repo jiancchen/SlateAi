@@ -1,0 +1,872 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Tommy Paul",
+  "recentOpponentName": "Rinky Hijikata",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "AUS  4-6 6-3 7-5 6-4 1st",
+  "flashscoreLabel": "Hijikata R. - Paul T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Hijikata R.",
+    "Paul T."
+  ],
+  "generatedAt": "2026-05-27T06:48:48.890Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MLWSM46L/",
+  "matchId": "MLWSM46L",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MLWSM46L",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MLWSM46L"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "59%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (56/79)",
+              "right": "67% (55/82)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (18/44)",
+              "right": "62% (36/58)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "9/12",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "178 km/h",
+              "right": "183 km/h",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "148 km/h",
+              "right": "145 km/h",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (27/82)",
+              "right": "29% (23/79)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (22/58)",
+              "right": "59% (26/44)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/12",
+              "right": "5/11",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "39",
+              "right": "48",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "52",
+              "right": "51",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (14/17)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (74/123)",
+              "right": "65% (91/140)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (49/140)",
+              "right": "40% (49/123)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (123/263)",
+              "right": "53% (140/263)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (15/20)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (3/21)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (18/41)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "63%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (16/18)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (21/29)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (10/27)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "52%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (9/17)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "3/3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "19% (3/16)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/5",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "9",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "73% (24/33)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (9/33)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (23/59)",
+              "right": "61% (36/59)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "56%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "21",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "18",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (17/45)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (36/79)",
+              "right": "54% (43/79)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "66%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (20/34)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (13/35)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (33/69)",
+              "right": "52% (36/69)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

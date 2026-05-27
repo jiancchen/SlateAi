@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Casper Ruud",
+  "recentOpponentName": "Jannik Sinner",
+  "recentIndex": 5,
+  "recentEvent": "Rome",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "ITA   Loss 6-4 6-4 Fin.",
+  "flashscoreLabel": "Sinner J. - Ruud C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Sinner J.",
+    "Ruud C."
+  ],
+  "generatedAt": "2026-05-27T06:48:46.299Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pSLCS7Ri/",
+  "matchId": "pSLCS7Ri",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pSLCS7Ri",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pSLCS7Ri"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:56"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "58%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (29/35)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (10/20)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "198 km/h",
+              "right": "192 km/h",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "157 km/h",
+              "right": "165 km/h",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (13/37)",
+              "right": "17% (6/35)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (14/27)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "22",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "23",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (5/10)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (39/55)",
+              "right": "58% (37/64)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (27/64)",
+              "right": "29% (16/55)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (66/119)",
+              "right": "45% (53/119)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "61%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "15",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (14/31)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "55%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "12",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (22/30)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (13/33)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (35/63)",
+              "right": "44% (28/63)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

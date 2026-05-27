@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "boardPlayerName": "Hailey Baptiste",
+  "recentOpponentName": "Jasmine Paolini",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "25 Apr 26",
+  "recentIsoDate": "2026-04-25",
+  "recentResult": "ITA  7-5 6-3 3rd",
+  "flashscoreLabel": "Baptiste H. - Paolini J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Baptiste H.",
+    "Paolini J."
+  ],
+  "generatedAt": "2026-05-27T06:48:37.292Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xAnnvQdR/",
+  "matchId": "xAnnvQdR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xAnnvQdR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xAnnvQdR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "62%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (35/48)",
+              "right": "60% (32/53)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (19/35)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/9",
+              "right": "6/9",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (21/53)",
+              "right": "27% (13/48)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (17/32)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "1/9",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (53/81)",
+              "right": "55% (47/85)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (38/85)",
+              "right": "35% (28/81)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (91/166)",
+              "right": "45% (75/166)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "91% (10/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (13/21)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "72%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (22/30)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (9/23)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/4",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (14/31)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/5",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (30/51)",
+              "right": "56% (24/43)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (19/43)",
+              "right": "41% (21/51)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (49/94)",
+              "right": "48% (45/94)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "52%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (10/12)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "4/5",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (7/22)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/4",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "77% (23/30)",
+              "right": "55% (23/42)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (19/42)",
+              "right": "23% (7/30)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (42/72)",
+              "right": "42% (30/72)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Paolini J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

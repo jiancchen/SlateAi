@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-marta-kostyuk-katie-volynets-2026-05-27",
+  "boardTitle": "Marta Kostyuk vs Katie Volynets",
+  "boardPlayerName": "Katie Volynets",
+  "recentOpponentName": "Tamara Korpatsch",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "21 Apr 26",
+  "recentIsoDate": "2026-04-21",
+  "recentResult": "GER  7-5 5-7 6-2 Q.",
+  "flashscoreLabel": "Volynets K. - Korpatsch T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Volynets K.",
+    "Korpatsch T."
+  ],
+  "generatedAt": "2026-05-27T06:48:17.953Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jPSyiqno/",
+  "matchId": "jPSyiqno",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jPSyiqno",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jPSyiqno"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "66%",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (41/77)",
+              "right": "58% (47/81)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (20/30)",
+              "right": "44% (18/41)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "6/13",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (34/81)",
+              "right": "47% (36/77)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (23/41)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/13",
+              "right": "5/7",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (60/106)",
+              "right": "53% (65/122)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (57/122)",
+              "right": "43% (46/106)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (117/228)",
+              "right": "49% (111/228)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (11/16)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (7/16)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (18/32)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "74%",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (18/34)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "4/7",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (14/35)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (9/12)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/4",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (24/42)",
+              "right": "51% (24/47)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (23/47)",
+              "right": "43% (18/42)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (47/89)",
+              "right": "47% (42/89)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "67%",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (13/28)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "1/3",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (11/26)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/3",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (17/35)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (16/39)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (33/74)",
+              "right": "55% (41/74)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "56%",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (9/20)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (18/36)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (37/65)",
+              "right": "43% (28/65)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Volynets K.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
+  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
+  "boardPlayerName": "Elina Svitolina",
+  "recentOpponentName": "Elena Rybakina",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "13 May 26",
+  "recentIsoDate": "2026-05-13",
+  "recentResult": "KAZ  2-6 6-4 6-4 1/4",
+  "flashscoreLabel": "Svitolina E. - Rybakina E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Svitolina E.",
+    "Rybakina E."
+  ],
+  "generatedAt": "2026-05-27T06:48:21.174Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jR7BVJdU/",
+  "matchId": "jR7BVJdU",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jR7BVJdU",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jR7BVJdU"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "55%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (41/66)",
+              "right": "70% (38/54)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (20/44)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "16/20",
+              "right": "9/13",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (16/54)",
+              "right": "38% (25/66)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (25/44)",
+              "right": "55% (24/44)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/13",
+              "right": "4/20",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (61/110)",
+              "right": "58% (57/98)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (41/98)",
+              "right": "45% (49/110)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (102/208)",
+              "right": "51% (106/208)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (14/28)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "38%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (12/21)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (8/19)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/11",
+              "right": "0/0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (1/8)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/11",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (20/40)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "50% (20/40)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (25/61)",
+              "right": "59% (36/61)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "49%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (15/23)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/7",
+              "right": "4/5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (2/17)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/7",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (24/38)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (14/35)",
+              "right": "37% (14/38)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (38/73)",
+              "right": "48% (35/73)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "69%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "5/8",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (13/29)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "2/2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (17/32)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (22/42)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (39/74)",
+              "right": "47% (35/74)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

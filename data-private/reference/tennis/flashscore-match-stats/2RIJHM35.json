@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-eva-lys-sorana-cirstea-2026-05-27",
+  "boardTitle": "Eva Lys vs Sorana Cirstea",
+  "boardPlayerName": "Sorana Cirstea",
+  "recentOpponentName": "Aryna Sabalenka",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "BLR  2-6 6-3 7-5 3rd",
+  "flashscoreLabel": "Sabalenka A. - Cirstea S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Sabalenka A.",
+    "Cirstea S."
+  ],
+  "generatedAt": "2026-05-27T06:48:51.773Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2RIJHM35/",
+  "matchId": "2RIJHM35",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2RIJHM35",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2RIJHM35"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "52%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (37/66)",
+              "right": "56% (27/48)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (11/26)",
+              "right": "51% (23/45)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/12",
+              "right": "5/11",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (21/48)",
+              "right": "44% (29/66)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "49% (22/45)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "6/12",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (50/95)",
+              "right": "54% (51/95)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (44/95)",
+              "right": "47% (45/95)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (94/190)",
+              "right": "51% (96/190)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "57% (8/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (6/15)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (14/29)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "59%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (9/17)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (17/31)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (35/58)",
+              "right": "40% (23/58)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "52%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "39% (7/18)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "1/3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "38% (9/24)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (13/29)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/53)",
+              "right": "58% (31/53)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "46%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (17/29)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (9/19)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/7",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (23/44)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (14/35)",
+              "right": "48% (21/44)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (37/79)",
+              "right": "53% (42/79)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

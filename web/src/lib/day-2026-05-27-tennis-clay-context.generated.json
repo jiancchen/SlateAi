@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T23:25:27.009Z",
+  "generatedAt": "2026-05-27T06:40:20.207Z",
   "source": "Tennistonic H2H via Chrome DOM",
   "matches": {
     "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27": {
@@ -152,8 +152,151 @@
     },
     "rg-w-catherine-mcnally-belinda-bencic-2026-05-27": {
       "title": "Catherine McNally vs Belinda Bencic",
-      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Catherine-McNally-Vs-Belinda-Bencic/",
-      "error": "Page did not expose clay matchup selectors before timeout"
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Caty-McNally-Vs-Belinda-Bencic/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Bencic in 2",
+      "players": [
+        {
+          "name": "Caty McNally",
+          "record2026": {
+            "overall": "14-12",
+            "hard": "6-7",
+            "clay": "6-4",
+            "indoorHard": "2-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nAjla Tomljanovic\nAUS  3-6 7-65 6-3 1st\n24 May 26",
+              "event": "Paris",
+              "opponent": "Ajla Tomljanovic",
+              "result": "AUS  3-6 7-65 6-3 1st",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Rome\nIga Swiatek\nPOL   Loss 6-1 6-75 6-3 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Iga Swiatek",
+              "result": "POL   Loss 6-1 6-75 6-3 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Daria Kasatkina\nAUS  6-2 6-3 1st\n06 May 26",
+              "event": "",
+              "opponent": "Daria Kasatkina",
+              "result": "AUS  6-2 6-3 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nMarta Kostyuk\nUKR   Loss 6-2 6-3 4th\n27 Apr 26",
+              "event": "Madrid",
+              "opponent": "Marta Kostyuk",
+              "result": "UKR   Loss 6-2 6-3 4th",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Katerina Siniakova\nCZE  6-3 2-6 7-62 3rd\n26 Apr 26",
+              "event": "",
+              "opponent": "Katerina Siniakova",
+              "result": "CZE  6-3 2-6 7-62 3rd",
+              "date": "26 Apr 26"
+            },
+            {
+              "raw": "Victoria Mboko\nCAN  6-4 6-1 2nd\n24 Apr 26",
+              "event": "",
+              "opponent": "Victoria Mboko",
+              "result": "CAN  6-4 6-1 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Katie Volynets\nUSA  6-1 6-2 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Katie Volynets",
+              "result": "USA  6-1 6-2 1st",
+              "date": "22 Apr 26"
+            },
+            {
+              "raw": "Rouen\nMarta Kostyuk\nUKR   Loss 2-6 6-2 6-1 2nd\n15 Apr 26",
+              "event": "Rouen",
+              "opponent": "Marta Kostyuk",
+              "result": "UKR   Loss 2-6 6-2 6-1 2nd",
+              "date": "15 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Belinda Bencic",
+          "record2026": {
+            "overall": "19-8",
+            "hard": "12-4",
+            "clay": "6-3",
+            "indoorHard": "1-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nSinja Kraus\nAUT  6-2 6-3 1st\n24 May 26",
+              "event": "Paris",
+              "opponent": "Sinja Kraus",
+              "result": "AUT  6-2 6-3 1st",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Rome\nAnna Kalinskaya\nRUS   Loss 6-4 6-3 3rd\n09 May 26",
+              "event": "Rome",
+              "opponent": "Anna Kalinskaya",
+              "result": "RUS   Loss 6-4 6-3 3rd",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Bianca Vanessa Andreescu\nCAN  6-4 6-1 2nd\n07 May 26",
+              "event": "",
+              "opponent": "Bianca Vanessa Andreescu",
+              "result": "CAN  6-4 6-1 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Madrid\nHailey Baptiste\nUSA   Loss 6-1 6-714 6-3 4th\n27 Apr 26",
+              "event": "Madrid",
+              "opponent": "Hailey Baptiste",
+              "result": "USA   Loss 6-1 6-714 6-3 4th",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Diana Shnaider\nRUS  6-2 7-66 3rd\n25 Apr 26",
+              "event": "",
+              "opponent": "Diana Shnaider",
+              "result": "RUS  6-2 7-66 3rd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Petra Marcinko\nCRO  6-4 6-2 2nd\n23 Apr 26",
+              "event": "",
+              "opponent": "Petra Marcinko",
+              "result": "CRO  6-4 6-2 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Billie Jean King Cup, Qualifiers, SUI-CZE 2-3\nLinda Noskova\nCZE   Loss 6-3 3-6 7-69 Rubber 4\n11 Apr 26",
+              "event": "Billie Jean King Cup, Qualifiers, SUI-CZE 2-3",
+              "opponent": "Linda Noskova",
+              "result": "CZE   Loss 6-3 3-6 7-69 Rubber 4",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Marie Bouzkova\nCZE  6-3 6-74 6-4 Rubber 1\n10 Apr 26",
+              "event": "",
+              "opponent": "Marie Bouzkova",
+              "result": "CZE  6-3 6-74 6-4 Rubber 1",
+              "date": "10 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": null
     },
     "rg-m-federico-cina-jesper-de-jong-2026-05-27": {
       "title": "Federico Cina vs Jesper de Jong",
@@ -453,8 +596,151 @@
     },
     "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27": {
       "title": "Tamara Korpatsch vs Wang Xinyu",
-      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Tamara-Korpatsch-Vs-Wang-Xinyu/",
-      "error": "Page did not expose clay matchup selectors before timeout"
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Tamara-Korpatsch-Vs-Xinyu-Wang/",
+      "h2hText": "0:3",
+      "h2hRecord": "0:3",
+      "prediction": "Wang in 3",
+      "players": [
+        {
+          "name": "Tamara Korpatsch",
+          "record2026": {
+            "overall": "21-13",
+            "hard": "2-2",
+            "clay": "14-7",
+            "indoorHard": "5-4",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nSara Sorribes Tormo\nESP  6-4 6-2 1st\n24 May 26",
+              "event": "Paris",
+              "opponent": "Sara Sorribes Tormo",
+              "result": "ESP  6-4 6-2 1st",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Paris\nAlina Charaeva\nRUS   Loss 6-4 6-73 7-5 2nd\n14 May 26",
+              "event": "Paris",
+              "opponent": "Alina Charaeva",
+              "result": "RUS   Loss 6-4 6-73 7-5 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Clara Burel\nFRA  4-6 7-65 6-4 1st\n12 May 26",
+              "event": "",
+              "opponent": "Clara Burel",
+              "result": "FRA  4-6 7-65 6-4 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Ksenia Efremova\nFRA  3-6 7-5 6-2 Q.\n11 May 26",
+              "event": "",
+              "opponent": "Ksenia Efremova",
+              "result": "FRA  3-6 7-5 6-2 Q.",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rome\nSolana Sierra\nARG   Loss 6-3 6-1 1st\n06 May 26",
+              "event": "Rome",
+              "opponent": "Solana Sierra",
+              "result": "ARG   Loss 6-3 6-1 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Mayar Sherif\nEGY  3-6 7-5 7-65 Q.\n05 May 26",
+              "event": "",
+              "opponent": "Mayar Sherif",
+              "result": "EGY  3-6 7-5 7-65 Q.",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Beatrice Ricci\nITA  3-6 6-1 6-2 q1\n04 May 26",
+              "event": "",
+              "opponent": "Beatrice Ricci",
+              "result": "ITA  3-6 6-1 6-2 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "La Bisbal D'Emporda\nDaria Kasatkina\nAUS   Loss 2-6 6-3 7-5 Fin.\n03 May 26",
+              "event": "La Bisbal D'Emporda",
+              "opponent": "Daria Kasatkina",
+              "result": "AUS   Loss 2-6 6-3 7-5 Fin.",
+              "date": "03 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Xinyu Wang",
+          "record2026": {
+            "overall": "16-13",
+            "hard": "9-7",
+            "clay": "5-5",
+            "indoorHard": "2-1",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nLilli Tagger\nAUT  6-3 3-6 6-4 1st\n24 May 26",
+              "event": "Paris",
+              "opponent": "Lilli Tagger",
+              "result": "AUT  6-3 3-6 6-4 1st",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Strasbourg\nLois Boisson\nFRA   Loss 6-3 7-64 1st\n17 May 26",
+              "event": "Strasbourg",
+              "opponent": "Lois Boisson",
+              "result": "FRA   Loss 6-3 7-64 1st",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Rome\nAlexandra Eala\nPHI   Loss 6-4 6-3 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Alexandra Eala",
+              "result": "PHI   Loss 6-4 6-3 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "La Bisbal D'Emporda\nAlina Charaeva\nRUS   Loss 7-5 3-6 7-61 2nd\n30 Apr 26",
+              "event": "La Bisbal D'Emporda",
+              "opponent": "Alina Charaeva",
+              "result": "RUS   Loss 7-5 3-6 7-61 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Kaitlin Quevedo\nESP  6-3 6-0 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Kaitlin Quevedo",
+              "result": "ESP  6-3 6-0 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nLaura Samson\nCZE   Loss 2-6 6-3 6-0 2nd\n23 Apr 26",
+              "event": "Madrid",
+              "opponent": "Laura Samson",
+              "result": "CZE   Loss 2-6 6-3 6-0 2nd",
+              "date": "23 Apr 26"
+            },
+            {
+              "raw": "Rouen\nSorana Cirstea\nROU   Loss 5-3 ret. 2nd\n16 Apr 26",
+              "event": "Rouen",
+              "opponent": "Sorana Cirstea",
+              "result": "ROU   Loss 5-3 ret. 2nd",
+              "date": "16 Apr 26"
+            },
+            {
+              "raw": "Chloe Paquet\nFRA  3-6 6-4 6-3 1st\n14 Apr 26",
+              "event": "",
+              "opponent": "Chloe Paquet",
+              "result": "FRA  3-6 6-4 6-3 1st",
+              "date": "14 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Tamara Korpatsch is not a dead clay dog at 14-7 on clay in 2026. Xinyu Wang is good, but not spotless on clay at 5-5. Tamara Korpatsch has multiple recent clay fights with a tiebreak or three-set shape, which is exactly the hold-to-4-4 profile for a scalp. Xinyu Wang's recent clay lane has already shown enough leakage that the dog does not need much to get a 2-3x repricing."
     },
     "rg-w-sara-bejlek-iga-swiatek-2026-05-27": {
       "title": "Sara Bejlek vs Iga Swiatek",
@@ -2683,8 +2969,151 @@
     },
     "rg-w-hailey-baptiste-wang-xiyu-2026-05-27": {
       "title": "Hailey Baptiste vs Wang Xiyu",
-      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Hailey-Baptiste-Vs-Wang-Xiyu/",
-      "error": "Page did not expose clay matchup selectors before timeout"
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Hailey-Baptiste-Vs-Xiyu-Wang/",
+      "h2hText": "1:0",
+      "h2hRecord": "1:0",
+      "prediction": "Baptiste in 3",
+      "players": [
+        {
+          "name": "Hailey Baptiste",
+          "record2026": {
+            "overall": "18-12",
+            "hard": "11-8",
+            "clay": "7-4",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nBarbora Krejcikova\nCZE  6-77 7-66 6-2 1st\n24 May 26",
+              "event": "Paris",
+              "opponent": "Barbora Krejcikova",
+              "result": "CZE  6-77 7-66 6-2 1st",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Rome\nElina Svitolina\nUKR   Loss 6-1 6-2 3rd\n10 May 26",
+              "event": "Rome",
+              "opponent": "Elina Svitolina",
+              "result": "UKR   Loss 6-1 6-2 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Simona Waltert\nSUI  6-79 6-4 6-4 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Simona Waltert",
+              "result": "SUI  6-79 6-4 6-4 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Madrid\nMirra Andreeva\nRUS   Loss 6-4 7-68 1/2\n30 Apr 26",
+              "event": "Madrid",
+              "opponent": "Mirra Andreeva",
+              "result": "RUS   Loss 6-4 7-68 1/2",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Aryna Sabalenka\nBLR  2-6 6-2 7-66 1/4\n28 Apr 26",
+              "event": "",
+              "opponent": "Aryna Sabalenka",
+              "result": "BLR  2-6 6-2 7-66 1/4",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Belinda Bencic\nSUI  6-1 6-714 6-3 4th\n27 Apr 26",
+              "event": "",
+              "opponent": "Belinda Bencic",
+              "result": "SUI  6-1 6-714 6-3 4th",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Jasmine Paolini\nITA  7-5 6-3 3rd\n25 Apr 26",
+              "event": "",
+              "opponent": "Jasmine Paolini",
+              "result": "ITA  7-5 6-3 3rd",
+              "date": "25 Apr 26"
+            },
+            {
+              "raw": "Kaitlin Quevedo\nESP  6-1 6-4 2nd\n23 Apr 26",
+              "event": "",
+              "opponent": "Kaitlin Quevedo",
+              "result": "ESP  6-1 6-4 2nd",
+              "date": "23 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Xiyu Wang",
+          "record2026": {
+            "overall": "25-2",
+            "hard": "3-1",
+            "clay": "12-1",
+            "indoorHard": "10-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Paris\nDanka Kovinic\nMNE  6-3 6-1 1st\n24 May 26",
+              "event": "Paris",
+              "opponent": "Danka Kovinic",
+              "result": "MNE  6-3 6-1 1st",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Polina Kudermetova\nUZB  6-3 6-3 Q.\n22 May 26",
+              "event": "",
+              "opponent": "Polina Kudermetova",
+              "result": "UZB  6-3 6-3 Q.",
+              "date": "22 May 26"
+            },
+            {
+              "raw": "Storm Hunter\nAUS  6-2 7-5 q2\n20 May 26",
+              "event": "",
+              "opponent": "Storm Hunter",
+              "result": "AUS  6-2 7-5 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Kristina Mladenovic\nFRA  6-3 6-1 q1\n19 May 26",
+              "event": "",
+              "opponent": "Kristina Mladenovic",
+              "result": "FRA  6-3 6-1 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Huzhou\nVeronika Erjavec\nSLO   Loss 6-4 7-63 1/2\n02 May 26",
+              "event": "Huzhou",
+              "opponent": "Veronika Erjavec",
+              "result": "SLO   Loss 6-4 7-63 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Polona Hercog\nSLO  6-3 6-75 6-4 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Polona Hercog",
+              "result": "SLO  6-3 6-75 6-4 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Chengyiyi Yuan\nCHN  6-4 6-4 2nd\n30 Apr 26",
+              "event": "",
+              "opponent": "Chengyiyi Yuan",
+              "result": "CHN  6-4 6-4 2nd",
+              "date": "30 Apr 26"
+            },
+            {
+              "raw": "Zhibek Kulambayeva\nKAZ  6-3 6-4 1st\n28 Apr 26",
+              "event": "",
+              "opponent": "Zhibek Kulambayeva",
+              "result": "KAZ  6-3 6-4 1st",
+              "date": "28 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Xiyu Wang is not a dead clay dog at 12-1 on clay in 2026. Hailey Baptiste is good, but not spotless on clay at 7-4. Xiyu Wang has multiple recent clay fights with a tiebreak or three-set shape, which is exactly the hold-to-4-4 profile for a scalp. Hailey Baptiste's recent clay lane has already shown enough leakage that the dog does not need much to get a 2-3x repricing."
     },
     "rg-m-valentin-royer-novak-djokovic-2026-05-27": {
       "title": "Valentin Royer vs Novak Djokovic",

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-marta-kostyuk-katie-volynets-2026-05-27",
+  "boardTitle": "Marta Kostyuk vs Katie Volynets",
+  "boardPlayerName": "Katie Volynets",
+  "recentOpponentName": "Anhelina Kalinina",
+  "recentIndex": 4,
+  "recentEvent": "Rome",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "UKR   Loss 6-2 6-3 Q.",
+  "flashscoreLabel": "Kalinina A. - Volynets K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Kalinina A.",
+    "Volynets K."
+  ],
+  "generatedAt": "2026-05-27T06:48:17.461Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GIAa99yf/",
+  "matchId": "GIAa99yf",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GIAa99yf",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GIAa99yf"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "57%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (23/43)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "2/9",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (18/31)",
+              "right": "47% (20/43)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (18/23)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/9",
+              "right": "4/8",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (32/61)",
+              "right": "33% (18/54)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (36/54)",
+              "right": "48% (29/61)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (68/115)",
+              "right": "41% (47/115)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return games won",
+              "left": "88% (7/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "53%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (11/21)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/6",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "59% (10/17)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (11/15)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "2/5",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "66% (21/32)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (35/60)",
+              "right": "42% (25/60)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "64%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (12/22)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/3",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (8/14)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "88% (7/8)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/3",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (18/33)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "68% (15/22)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (33/55)",
+              "right": "40% (22/55)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

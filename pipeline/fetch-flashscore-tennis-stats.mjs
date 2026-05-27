@@ -174,7 +174,7 @@ const fetchText = async (url) => {
 
 export const fetchFlashscoreTennisStats = async ({ url = '', matchId = '', extra = {} } = {}) => {
   let resolvedMatchId = matchId || parseMatchId(url)
-  let players = parsePlayersFromUrl(url)
+  let players = Array.isArray(extra.players) && extra.players.length === 2 ? extra.players : parsePlayersFromUrl(url)
   let matchPageText = ''
 
   if (url && !matchId) {

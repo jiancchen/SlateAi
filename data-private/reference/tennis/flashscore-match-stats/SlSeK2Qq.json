@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-tomas-machac-alexander-zverev-2026-05-27",
+  "boardTitle": "Tomas Machac vs Alexander Zverev",
+  "boardPlayerName": "Tomas Machac",
+  "recentOpponentName": "Cameron Norrie",
+  "recentIndex": 3,
+  "recentEvent": "Madrid",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "GBR   Loss 6-2 6-76 7-65 2nd",
+  "flashscoreLabel": "Norrie C. - Machac T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Norrie C.",
+    "Machac T."
+  ],
+  "generatedAt": "2026-05-27T06:48:57.294Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SlSeK2Qq/",
+  "matchId": "SlSeK2Qq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SlSeK2Qq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SlSeK2Qq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": "1:07"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:57"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "58%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (57/84)",
+              "right": "72% (46/64)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (23/44)",
+              "right": "52% (24/46)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/12",
+              "right": "4/7",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (18/64)",
+              "right": "32% (27/84)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (22/46)",
+              "right": "48% (21/44)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "1/12",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "49",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "55",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (11/15)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (80/128)",
+              "right": "64% (70/110)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (40/110)",
+              "right": "38% (48/128)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (120/238)",
+              "right": "50% (118/238)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (15/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return games won",
+              "left": "19% (3/16)",
+              "right": "6% (1/16)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (18/32)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "50%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (6/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "19",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (13/26)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "68%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (26/38)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "0/0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (8/28)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/5",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "24",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "20",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (31/52)",
+              "right": "71% (29/41)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (12/41)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (43/93)",
+              "right": "54% (50/93)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "53%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (22/33)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "3/4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/6",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "15",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "16",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (31/50)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (15/43)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (46/93)",
+              "right": "51% (47/93)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

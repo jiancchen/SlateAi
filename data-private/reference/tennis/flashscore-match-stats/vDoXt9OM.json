@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-eva-lys-sorana-cirstea-2026-05-27",
+  "boardTitle": "Eva Lys vs Sorana Cirstea",
+  "boardPlayerName": "Sorana Cirstea",
+  "recentOpponentName": "Tatjana Maria",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "GER  6-2 6-0 2nd",
+  "flashscoreLabel": "Maria T. - Cirstea S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Maria T.",
+    "Cirstea S."
+  ],
+  "generatedAt": "2026-05-27T06:48:51.994Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vDoXt9OM/",
+  "matchId": "vDoXt9OM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vDoXt9OM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vDoXt9OM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:27"
+      }
+    ],
+    "totalDuration": "0:55"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "55%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (10/22)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (6/17)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "0/0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (5/23)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (7/19)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "5/8",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (16/39)",
+              "right": "71% (30/42)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (12/42)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (28/81)",
+              "right": "65% (53/81)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "29% (2/7)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "59%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (11/21)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (16/43)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "50%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (4/11)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (2/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "28% (5/18)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (7/20)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "32% (12/38)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

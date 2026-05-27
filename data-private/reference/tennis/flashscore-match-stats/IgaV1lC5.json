@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-viktorija-golubic-alycia-parks-2026-05-27",
+  "boardTitle": "Viktorija Golubic vs Alycia Parks",
+  "boardPlayerName": "Alycia Parks",
+  "recentOpponentName": "Leylah Annie Fernandez",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "CAN  6-4 6-4 1st",
+  "flashscoreLabel": "Parks A. - Fernandez L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Parks A.",
+    "Fernandez L."
+  ],
+  "generatedAt": "2026-05-27T06:48:01.734Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IgaV1lC5/",
+  "matchId": "IgaV1lC5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IgaV1lC5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IgaV1lC5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "71%",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (19/29)",
+              "right": "62% (33/53)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (18/30)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "5/9",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "183 km/h",
+              "right": "154 km/h",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "158 km/h",
+              "right": "143 km/h",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (20/53)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "2/8",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "10",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "23",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (37/59)",
+              "right": "55% (41/75)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (34/75)",
+              "right": "37% (22/59)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (71/134)",
+              "right": "47% (63/134)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "62%",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "3/5",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/7",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (20/33)",
+              "right": "54% (21/39)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (18/39)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (38/72)",
+              "right": "47% (34/72)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "81%",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (11/29)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (17/26)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (16/36)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (33/62)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Parks A.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

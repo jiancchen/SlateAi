@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "boardPlayerName": "Hailey Baptiste",
+  "recentOpponentName": "Kaitlin Quevedo",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "23 Apr 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "ESP  6-1 6-4 2nd",
+  "flashscoreLabel": "Baptiste H. - Quevedo K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Baptiste H.",
+    "Quevedo K."
+  ],
+  "generatedAt": "2026-05-27T06:48:37.523Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/t0OG8Vqp/",
+  "matchId": "t0OG8Vqp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_t0OG8Vqp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_t0OG8Vqp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "74%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (26/30)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (15/31)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/6",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (17/42)",
+              "right": "13% (4/30)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/3",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (41/61)",
+              "right": "54% (31/57)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (26/57)",
+              "right": "33% (20/61)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (67/118)",
+              "right": "43% (51/118)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "50%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (5/9)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (19/30)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (10/18)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (29/48)",
+              "right": "40% (19/48)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "85%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (16/18)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (12/33)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (16/39)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (38/70)",
+              "right": "46% (32/70)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

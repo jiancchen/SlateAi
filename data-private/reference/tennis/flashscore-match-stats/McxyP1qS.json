@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-tomas-machac-alexander-zverev-2026-05-27",
+  "boardTitle": "Tomas Machac vs Alexander Zverev",
+  "boardPlayerName": "Alexander Zverev",
+  "recentOpponentName": "Alexander Blockx",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "BEL  6-1 6-4 3rd",
+  "flashscoreLabel": "Blockx A. - Zverev A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Blockx A.",
+    "Zverev A."
+  ],
+  "generatedAt": "2026-05-27T06:48:58.383Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/McxyP1qS/",
+  "matchId": "McxyP1qS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_McxyP1qS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_McxyP1qS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "77%",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (18/27)",
+              "right": "73% (30/41)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (9/22)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "2/2",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "207 km/h",
+              "right": "197 km/h",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "185 km/h",
+              "right": "183 km/h",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (11/41)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/8",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "12",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (27/49)",
+              "right": "72% (38/53)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (15/53)",
+              "right": "45% (22/49)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (42/102)",
+              "right": "59% (60/102)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "63% (5/8)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "73%",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (2/6)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (6/19)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (5/13)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (13/39)",
+              "right": "67% (26/39)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "81%",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (22/36)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (7/27)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (29/63)",
+              "right": "54% (34/63)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Blockx A.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

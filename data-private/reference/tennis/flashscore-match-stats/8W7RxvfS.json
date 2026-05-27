@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
+  "boardTitle": "Mariano Navone vs Jakub Mensik",
+  "boardPlayerName": "Mariano Navone",
+  "recentOpponentName": "Marco Trungelliti",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "ARG  5-7 7-5 6-1 1st",
+  "flashscoreLabel": "Trungelliti M. - Navone M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Trungelliti M.",
+    "Navone M."
+  ],
+  "generatedAt": "2026-05-27T06:48:13.440Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8W7RxvfS/",
+  "matchId": "8W7RxvfS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8W7RxvfS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8W7RxvfS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:27"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "70%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (50/77)",
+              "right": "63% (40/63)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (24/63)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "15/22",
+              "right": "5/9",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (23/63)",
+              "right": "35% (27/77)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (10/27)",
+              "right": "62% (39/63)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "7/22",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (74/140)",
+              "right": "63% (57/90)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (33/90)",
+              "right": "47% (66/140)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (107/230)",
+              "right": "53% (123/230)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (9/16)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (13/31)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "74%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (31/42)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (11/33)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/10",
+              "right": "4/6",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (14/32)",
+              "right": "26% (11/42)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/10",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (42/75)",
+              "right": "58% (25/43)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (18/43)",
+              "right": "44% (33/75)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (60/118)",
+              "right": "49% (58/118)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "64%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (15/27)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/3",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/7",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (13/33)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (35/75)",
+              "right": "53% (40/75)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "35%",
+              "right": "71%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (4/8)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (2/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/4)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (10/23)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (2/14)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "32% (12/37)",
+              "right": "68% (25/37)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-valentin-royer-novak-djokovic-2026-05-27",
+  "boardTitle": "Valentin Royer vs Novak Djokovic",
+  "boardPlayerName": "Valentin Royer",
+  "recentOpponentName": "Francisco Comesana",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "ARG   Loss 2-6 6-3 6-4 1st",
+  "flashscoreLabel": "Royer V. - Comesana F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Royer V.",
+    "Comesana F."
+  ],
+  "generatedAt": "2026-05-27T06:48:38.862Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jykzE5pe/",
+  "matchId": "jykzE5pe",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jykzE5pe",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jykzE5pe"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "61%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (28/45)",
+              "right": "76% (35/46)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (26/41)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/4",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (11/46)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (17/30)",
+              "right": "37% (15/41)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "3/7",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "33",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "33",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (10/19)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (54/86)",
+              "right": "63% (48/76)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (28/76)",
+              "right": "37% (32/86)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (82/162)",
+              "right": "49% (80/162)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (13/27)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "50%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (18/23)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (29/45)",
+              "right": "36% (16/45)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "69%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (18/31)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (24/57)",
+              "right": "58% (33/57)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "61%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (18/32)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (29/60)",
+              "right": "52% (31/60)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

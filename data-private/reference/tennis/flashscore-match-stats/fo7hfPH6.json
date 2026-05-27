@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27",
+  "boardTitle": "Mirra Andreeva vs Marina Bassols Ribera",
+  "boardPlayerName": "Marina Bassols Ribera",
+  "recentOpponentName": "Karolina Pliskova",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "CZE  6-3 6-2 q2",
+  "flashscoreLabel": "Bassols M. - Pliskova Ka.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Bassols M.",
+    "Pliskova Ka."
+  ],
+  "generatedAt": "2026-05-27T06:48:56.027Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fo7hfPH6/",
+  "matchId": "fo7hfPH6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fo7hfPH6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fo7hfPH6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "1:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "7",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "67%",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (27/44)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "4/9",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "140 km/h",
+              "right": "162 km/h",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "127 km/h",
+              "right": "142 km/h",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (12/32)",
+              "right": "39% (17/44)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "81% (13/16)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "2/8",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "17",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "26",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (33/56)",
+              "right": "48% (23/48)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (25/48)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (58/104)",
+              "right": "44% (46/104)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Return games won",
+              "left": "63% (5/8)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "55%",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (11/23)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/6",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "85% (11/13)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/2",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "16",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (16/29)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (30/57)",
+              "right": "47% (27/57)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "84%",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "1/3",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (2/3)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/6",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (9/19)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (28/47)",
+              "right": "40% (19/47)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bassols M.",
+              "rightPlayer": "Pliskova Ka."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

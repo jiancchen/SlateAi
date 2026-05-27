@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-eva-lys-sorana-cirstea-2026-05-27",
+  "boardTitle": "Eva Lys vs Sorana Cirstea",
+  "boardPlayerName": "Sorana Cirstea",
+  "recentOpponentName": "Cori Gauff",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "14 May 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "USA   Loss 6-4 6-3 1/2",
+  "flashscoreLabel": "Cirstea S. - Gauff C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Cirstea S.",
+    "Gauff C."
+  ],
+  "generatedAt": "2026-05-27T06:48:50.925Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Wn6w4IaB/",
+  "matchId": "Wn6w4IaB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Wn6w4IaB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Wn6w4IaB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "78%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (19/37)",
+              "right": "74% (29/39)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/6",
+              "right": "2/5",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (10/39)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "5/6",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (28/56)",
+              "right": "68% (34/50)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (16/50)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (44/106)",
+              "right": "58% (62/106)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "44% (4/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "81%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (12/23)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (8/27)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (28/63)",
+              "right": "56% (35/63)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "74%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "2/4",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/3",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "40% (8/20)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (8/23)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (16/43)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

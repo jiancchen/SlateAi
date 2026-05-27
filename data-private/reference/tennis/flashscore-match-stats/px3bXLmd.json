@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+  "boardTitle": "Tamara Korpatsch vs Wang Xinyu",
+  "boardPlayerName": "Xinyu Wang",
+  "recentOpponentName": "Laura Samson",
+  "recentIndex": 5,
+  "recentEvent": "Madrid",
+  "recentDate": "23 Apr 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "CZE   Loss 2-6 6-3 6-0 2nd",
+  "flashscoreLabel": "Wang Xin. - Samson L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Wang Xin.",
+    "Samson L."
+  ],
+  "generatedAt": "2026-05-27T06:47:57.725Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/px3bXLmd/",
+  "matchId": "px3bXLmd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_px3bXLmd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_px3bXLmd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "62%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (27/47)",
+              "right": "64% (32/50)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (11/31)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/12",
+              "right": "4/7",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (18/50)",
+              "right": "43% (20/47)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (16/31)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "6/12",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (38/78)",
+              "right": "58% (47/81)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (34/81)",
+              "right": "51% (40/78)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (72/159)",
+              "right": "55% (87/159)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (6/12)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "39% (9/23)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "58%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "3/5",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (17/34)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (34/59)",
+              "right": "42% (25/59)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "58%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "40% (10/25)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (9/23)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (19/48)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "71%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (7/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/1",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/7",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "39% (11/28)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (8/24)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (19/52)",
+              "right": "63% (33/52)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Samson L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

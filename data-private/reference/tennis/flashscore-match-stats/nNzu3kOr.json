@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "boardPlayerName": "Xiyu Wang",
+  "recentOpponentName": "Storm Hunter",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "AUS  6-2 7-5 q2",
+  "flashscoreLabel": "Hunter S. - Wang Xiy.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Hunter S.",
+    "Wang Xiy."
+  ],
+  "generatedAt": "2026-05-27T06:48:38.181Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nNzu3kOr/",
+  "matchId": "nNzu3kOr",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nNzu3kOr",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nNzu3kOr"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "64%",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (20/39)",
+              "right": "66% (31/47)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "6/8",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (16/47)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (13/27)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "5/8",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "27",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "32",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (27/55)",
+              "right": "61% (45/74)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (29/74)",
+              "right": "51% (28/55)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (56/129)",
+              "right": "57% (73/129)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "63%",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (6/16)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "4/5",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "3/5",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "16",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "36% (9/25)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (22/57)",
+              "right": "61% (35/57)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "64%",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (14/23)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (9/27)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "16",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (18/30)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (16/42)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/72)",
+              "right": "53% (38/72)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Hunter S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

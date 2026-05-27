@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-joao-fonseca-dino-prizmic-2026-05-27",
+  "boardTitle": "Joao Fonseca vs Dino Prizmic",
+  "boardPlayerName": "Dino Prizmic",
+  "recentOpponentName": "Tomas Martin Etcheverry",
+  "recentIndex": 7,
+  "recentEvent": "Madrid",
+  "recentDate": "26 Apr 26",
+  "recentIsoDate": "2026-04-26",
+  "recentResult": "ARG   Loss 2-6 6-4 6-3 3rd",
+  "flashscoreLabel": "Prizmic D. - Etcheverry T. M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Prizmic D.",
+    "Etcheverry T. M."
+  ],
+  "generatedAt": "2026-05-27T06:48:34.058Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dx2tdLlf/",
+  "matchId": "dx2tdLlf",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dx2tdLlf",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dx2tdLlf"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "68%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (33/48)",
+              "right": "88% (42/48)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (18/34)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "1/4",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (6/48)",
+              "right": "31% (15/48)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (18/23)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "4/11",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "20",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "19",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "92% (11/12)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (51/82)",
+              "right": "66% (47/71)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (24/71)",
+              "right": "38% (31/82)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (75/153)",
+              "right": "51% (78/153)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (3/13)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (13/27)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "50%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (1/11)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "91% (10/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (18/25)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (29/47)",
+              "right": "38% (18/47)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "83%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "90% (18/20)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (2/20)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "3",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (4/24)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/53)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "68%",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "6",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (9/25)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/53)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Prizmic D.",
+              "rightPlayer": "Etcheverry T. M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

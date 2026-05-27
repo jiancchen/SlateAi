@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Tommy Paul",
+  "recentOpponentName": "Ethan Quinn",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "USA  6-1 6-3 1st",
+  "flashscoreLabel": "Paul T. - Quinn E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Paul T.",
+    "Quinn E."
+  ],
+  "generatedAt": "2026-05-27T06:48:50.001Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OGkEDz7e/",
+  "matchId": "OGkEDz7e",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OGkEDz7e",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OGkEDz7e"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:11"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "65%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (26/35)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/8",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (16/32)",
+              "right": "26% (9/35)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (12/17)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/8",
+              "right": "0/0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "25",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (7/7)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (22/38)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (14/25)",
+              "right": "42% (16/38)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "70% (44/63)",
+              "right": "30% (19/63)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Return games won",
+              "left": "83% (5/6)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Total games won",
+              "left": "91% (10/11)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "71%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (6/14)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (28/42)",
+              "right": "33% (14/42)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "61%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (8/17)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "13",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (8/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "73% (8/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "76% (16/21)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (2/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (2/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (4/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Quinn E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

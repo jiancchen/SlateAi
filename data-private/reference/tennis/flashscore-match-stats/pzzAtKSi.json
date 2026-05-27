@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-karen-khachanov-marco-trungelliti-2026-05-27",
+  "boardTitle": "Karen Khachanov vs Marco Trungelliti",
+  "boardPlayerName": "Karen Khachanov",
+  "recentOpponentName": "Hugo Gaston",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "FRA  3-6 6-3 7-64 1st",
+  "flashscoreLabel": "Gaston H. - Khachanov K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Gaston H.",
+    "Khachanov K."
+  ],
+  "generatedAt": "2026-05-27T06:47:53.107Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pzzAtKSi/",
+  "matchId": "pzzAtKSi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pzzAtKSi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pzzAtKSi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "60%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (43/63)",
+              "right": "77% (40/52)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (27/54)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/12",
+              "right": "3/6",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (12/52)",
+              "right": "32% (20/63)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (18/35)",
+              "right": "50% (27/54)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "3/12",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "33",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "48",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (70/117)",
+              "right": "66% (57/87)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (30/87)",
+              "right": "40% (47/117)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (100/204)",
+              "right": "51% (104/204)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "67%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (8/21)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "3/5",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/5",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (23/40)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (15/27)",
+              "right": "43% (17/40)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (38/67)",
+              "right": "43% (29/67)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "52%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (15/26)",
+              "right": "80% (20/25)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (5/25)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "60%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (21/30)",
+              "right": "90% (19/21)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (11/21)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "0/1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (2/21)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/6",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "17",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "21",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (32/51)",
+              "right": "71% (25/35)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (10/35)",
+              "right": "37% (19/51)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (42/86)",
+              "right": "51% (44/86)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Khachanov K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

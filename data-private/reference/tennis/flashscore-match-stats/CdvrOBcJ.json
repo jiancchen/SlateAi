@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-catherine-mcnally-belinda-bencic-2026-05-27",
+  "boardTitle": "Catherine McNally vs Belinda Bencic",
+  "boardPlayerName": "Belinda Bencic",
+  "recentOpponentName": "Sinja Kraus",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "AUT  6-2 6-3 1st",
+  "flashscoreLabel": "Kraus S. - Bencic B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Kraus S.",
+    "Bencic B."
+  ],
+  "generatedAt": "2026-05-27T06:47:49.121Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/CdvrOBcJ/",
+  "matchId": "CdvrOBcJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_CdvrOBcJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_CdvrOBcJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "59%",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (24/41)",
+              "right": "78% (25/32)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (12/28)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "4/5",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "160 km/h",
+              "right": "164 km/h",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "123 km/h",
+              "right": "137 km/h",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (7/32)",
+              "right": "41% (17/41)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (11/22)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "4/8",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "23",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "14",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (5/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (36/69)",
+              "right": "67% (36/54)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (18/54)",
+              "right": "48% (33/69)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (54/123)",
+              "right": "56% (69/123)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "65%",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "2",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (13/23)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (21/49)",
+              "right": "57% (28/49)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "54%",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (14/26)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (9/20)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "16",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "12",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (23/46)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "50% (23/46)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (33/74)",
+              "right": "55% (41/74)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kraus S.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

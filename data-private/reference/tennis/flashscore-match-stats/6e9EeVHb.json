@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-valentin-royer-novak-djokovic-2026-05-27",
+  "boardTitle": "Valentin Royer vs Novak Djokovic",
+  "boardPlayerName": "Valentin Royer",
+  "recentOpponentName": "Hugo Dellien",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "BOL  6-4 6-2 6-2 1st",
+  "flashscoreLabel": "Dellien H. - Royer V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Dellien H.",
+    "Royer V."
+  ],
+  "generatedAt": "2026-05-27T06:48:38.641Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6e9EeVHb/",
+  "matchId": "6e9EeVHb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6e9EeVHb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6e9EeVHb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "68%",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (39/70)",
+              "right": "69% (33/48)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (7/23)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/15",
+              "right": "3/5",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "174 km/h",
+              "right": "196 km/h",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "149 km/h",
+              "right": "154 km/h",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (15/48)",
+              "right": "44% (31/70)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (7/23)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "7/15",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "43",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "23",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Net points won",
+              "left": "44% (4/9)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (46/93)",
+              "right": "69% (49/71)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (22/71)",
+              "right": "51% (47/93)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (68/164)",
+              "right": "59% (96/164)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "46% (6/13)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return games won",
+              "left": "15% (2/13)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total games won",
+              "left": "31% (8/26)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "81%",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (17/27)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/5)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "17",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (21/40)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (30/67)",
+              "right": "55% (37/67)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "62%",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (13/25)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (18/46)",
+              "right": "61% (28/46)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "57%",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (11/23)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (1/5)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "3/4",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/8",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "14",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (12/28)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (8/23)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

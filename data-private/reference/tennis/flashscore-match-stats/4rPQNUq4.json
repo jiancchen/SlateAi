@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
+  "boardTitle": "Francesca Jones vs Marie Bouzkova",
+  "boardPlayerName": "Marie Bouzkova",
+  "recentOpponentName": "Taylor Townsend",
+  "recentIndex": 4,
+  "recentEvent": "Rome",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "USA   Loss 6-3 7-5 2nd",
+  "flashscoreLabel": "Bouzkova M. - Townsend T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Bouzkova M.",
+    "Townsend T."
+  ],
+  "generatedAt": "2026-05-27T06:48:25.821Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4rPQNUq4/",
+  "matchId": "4rPQNUq4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4rPQNUq4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4rPQNUq4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:03"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "73%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (27/40)",
+              "right": "79% (41/52)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/5",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (11/52)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (10/19)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "2/4",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (34/57)",
+              "right": "70% (50/71)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (21/71)",
+              "right": "40% (23/57)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (55/128)",
+              "right": "57% (73/128)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "100% (11/11)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "74%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/3",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (5/23)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/3",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (23/56)",
+              "right": "59% (33/56)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "73%",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/2",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (6/29)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/1",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (12/40)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (32/72)",
+              "right": "56% (40/72)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bouzkova M.",
+              "rightPlayer": "Townsend T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -275,6 +275,15 @@ def init_db(conn: sqlite3.Connection) -> None:
           right_player_name text,
           flashscore_label text,
           board_title text,
+          source_kind text,
+          board_player_name text,
+          recent_opponent_name text,
+          recent_index integer,
+          recent_event text,
+          recent_date text,
+          recent_iso_date text,
+          recent_result text,
+          flashscore_tournament_url text,
           score_summary_json text,
           raw_json text not null,
           updated_at text not null default current_timestamp
@@ -314,10 +323,31 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (flashscore_id, player_side, scope_label, section_label, stat_label)
         );
 
+        create table if not exists tennis_flashscore_recent_links (
+          board_match_id text not null,
+          board_player_name text not null,
+          recent_index integer not null,
+          flashscore_id text not null,
+          slate_date text,
+          board_title text,
+          recent_opponent_name text,
+          recent_event text,
+          recent_date text,
+          recent_iso_date text,
+          recent_result text,
+          flashscore_label text,
+          flashscore_tournament_url text,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (board_match_id, board_player_name, recent_index)
+        );
+
         create index if not exists idx_tennis_matches_slate_date on tennis_matches(slate_date);
         create index if not exists idx_tennis_recent_opponent_rank on tennis_recent_matches(opponent_rank);
         create index if not exists idx_tennis_context_rank on tennis_player_match_context(rank);
         create index if not exists idx_tennis_predictions_date on tennis_predictions(slate_date);
+        create index if not exists idx_tennis_flashscore_recent_links_flashscore
+          on tennis_flashscore_recent_links(flashscore_id);
         create index if not exists idx_tennis_prediction_market_snapshots_date on tennis_prediction_market_snapshots(slate_date);
         create index if not exists idx_tennis_match_results_date on tennis_match_results(slate_date);
         create index if not exists idx_tennis_prediction_grades_date on tennis_prediction_grades(slate_date);
@@ -355,6 +385,15 @@ def init_db(conn: sqlite3.Connection) -> None:
         ("board_match_id", "text"),
         ("flashscore_label", "text"),
         ("board_title", "text"),
+        ("source_kind", "text"),
+        ("board_player_name", "text"),
+        ("recent_opponent_name", "text"),
+        ("recent_index", "integer"),
+        ("recent_event", "text"),
+        ("recent_date", "text"),
+        ("recent_iso_date", "text"),
+        ("recent_result", "text"),
+        ("flashscore_tournament_url", "text"),
     ):
         if column_name not in existing_flashscore_columns:
             conn.execute(f"alter table tennis_flashscore_match_stats add column {column_name} {column_type}")
@@ -934,7 +973,7 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
 
 
 def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR) -> dict[str, int]:
-    counts = {"matches": 0, "stat_rows": 0, "player_stat_rows": 0}
+    counts = {"matches": 0, "stat_rows": 0, "player_stat_rows": 0, "recent_links": 0}
     if not directory.exists():
         return counts
     for file_path in sorted(directory.glob("*.json")):
@@ -950,9 +989,12 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
             insert into tennis_flashscore_match_stats(
               flashscore_id, slate_date, board_match_id, source_url, generated_at,
               left_player_name, right_player_name, flashscore_label, board_title,
+              source_kind, board_player_name, recent_opponent_name, recent_index,
+              recent_event, recent_date, recent_iso_date, recent_result,
+              flashscore_tournament_url,
               score_summary_json, raw_json
             )
-            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             on conflict(flashscore_id) do update set
               slate_date=excluded.slate_date,
               board_match_id=excluded.board_match_id,
@@ -962,6 +1004,15 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
               right_player_name=excluded.right_player_name,
               flashscore_label=excluded.flashscore_label,
               board_title=excluded.board_title,
+              source_kind=excluded.source_kind,
+              board_player_name=excluded.board_player_name,
+              recent_opponent_name=excluded.recent_opponent_name,
+              recent_index=excluded.recent_index,
+              recent_event=excluded.recent_event,
+              recent_date=excluded.recent_date,
+              recent_iso_date=excluded.recent_iso_date,
+              recent_result=excluded.recent_result,
+              flashscore_tournament_url=excluded.flashscore_tournament_url,
               score_summary_json=excluded.score_summary_json,
               raw_json=excluded.raw_json,
               updated_at=current_timestamp
@@ -976,10 +1027,60 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
                 right_name,
                 payload.get("flashscoreLabel"),
                 payload.get("boardTitle"),
+                payload.get("sourceKind"),
+                payload.get("boardPlayerName"),
+                payload.get("recentOpponentName"),
+                payload.get("recentIndex"),
+                payload.get("recentEvent"),
+                payload.get("recentDate"),
+                payload.get("recentIsoDate"),
+                payload.get("recentResult"),
+                payload.get("flashscoreTournamentUrl"),
                 dumps(payload.get("scoreSummary")),
                 dumps(payload),
             ),
         )
+        if payload.get("sourceKind") == "recent-match" and payload.get("boardPlayerName") is not None:
+            conn.execute(
+                """
+                insert into tennis_flashscore_recent_links(
+                  board_match_id, board_player_name, recent_index, flashscore_id,
+                  slate_date, board_title, recent_opponent_name, recent_event,
+                  recent_date, recent_iso_date, recent_result, flashscore_label,
+                  flashscore_tournament_url, raw_json
+                )
+                values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                on conflict(board_match_id, board_player_name, recent_index) do update set
+                  flashscore_id=excluded.flashscore_id,
+                  slate_date=excluded.slate_date,
+                  board_title=excluded.board_title,
+                  recent_opponent_name=excluded.recent_opponent_name,
+                  recent_event=excluded.recent_event,
+                  recent_date=excluded.recent_date,
+                  recent_iso_date=excluded.recent_iso_date,
+                  recent_result=excluded.recent_result,
+                  flashscore_label=excluded.flashscore_label,
+                  flashscore_tournament_url=excluded.flashscore_tournament_url,
+                  raw_json=excluded.raw_json,
+                  updated_at=current_timestamp
+                """,
+                (
+                    payload.get("boardMatchId"),
+                    payload.get("boardPlayerName"),
+                    payload.get("recentIndex"),
+                    flashscore_id,
+                    payload.get("slateDate"),
+                    payload.get("boardTitle"),
+                    payload.get("recentOpponentName"),
+                    payload.get("recentEvent"),
+                    payload.get("recentDate"),
+                    payload.get("recentIsoDate"),
+                    payload.get("recentResult"),
+                    payload.get("flashscoreLabel"),
+                    payload.get("flashscoreTournamentUrl"),
+                    dumps(payload),
+                ),
+            )
         counts["matches"] += 1
 
         for scope in payload.get("scopes") or []:
@@ -1061,6 +1162,54 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
                             ),
                         )
                         counts["player_stat_rows"] += 1
+    maps_dir = directory.parent
+    for map_path in sorted(maps_dir.glob("flashscore-recent-match-map-*.json")):
+        map_payload = read_json(map_path)
+        for link in (map_payload.get("map") or {}).values():
+            board_player_name = link.get("boardPlayerName") or link.get("playerName")
+            if not link.get("boardMatchId") or not board_player_name:
+                continue
+            conn.execute(
+                """
+                insert into tennis_flashscore_recent_links(
+                  board_match_id, board_player_name, recent_index, flashscore_id,
+                  slate_date, board_title, recent_opponent_name, recent_event,
+                  recent_date, recent_iso_date, recent_result, flashscore_label,
+                  flashscore_tournament_url, raw_json
+                )
+                values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                on conflict(board_match_id, board_player_name, recent_index) do update set
+                  flashscore_id=excluded.flashscore_id,
+                  slate_date=excluded.slate_date,
+                  board_title=excluded.board_title,
+                  recent_opponent_name=excluded.recent_opponent_name,
+                  recent_event=excluded.recent_event,
+                  recent_date=excluded.recent_date,
+                  recent_iso_date=excluded.recent_iso_date,
+                  recent_result=excluded.recent_result,
+                  flashscore_label=excluded.flashscore_label,
+                  flashscore_tournament_url=excluded.flashscore_tournament_url,
+                  raw_json=excluded.raw_json,
+                  updated_at=current_timestamp
+                """,
+                (
+                    link.get("boardMatchId"),
+                    board_player_name,
+                    link.get("recentIndex"),
+                    link.get("flashscoreId"),
+                    "2026-05-27" if "2026-05-27" in map_path.name else None,
+                    link.get("boardTitle"),
+                    link.get("opponentName"),
+                    link.get("recentEvent"),
+                    link.get("recentDate"),
+                    link.get("recentIsoDate"),
+                    link.get("recentResult"),
+                    link.get("flashscoreLabel"),
+                    link.get("flashscoreTournamentUrl"),
+                    dumps(link),
+                ),
+            )
+            counts["recent_links"] += 1
     conn.commit()
     return counts
 

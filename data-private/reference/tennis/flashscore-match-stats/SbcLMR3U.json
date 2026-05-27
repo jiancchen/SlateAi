@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Nishesh Basavareddy",
+  "recentOpponentName": "Daniel Elahi Galan",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "COL  7-65 6-2 q1",
+  "flashscoreLabel": "Galan D. E. - Basavareddy N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Galan D. E.",
+    "Basavareddy N."
+  ],
+  "generatedAt": "2026-05-27T06:48:43.171Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SbcLMR3U/",
+  "matchId": "SbcLMR3U",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SbcLMR3U",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SbcLMR3U"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "59%",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (24/44)",
+              "right": "68% (32/47)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "6/8",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (15/47)",
+              "right": "45% (20/44)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (17/32)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "4/6",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "31",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "37",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "29% (2/7)",
+              "right": "85% (22/26)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (32/61)",
+              "right": "59% (47/79)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (32/79)",
+              "right": "48% (29/61)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (64/140)",
+              "right": "54% (76/140)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "58%",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/5",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (10/25)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "23",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "23",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (20/37)",
+              "right": "58% (25/43)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (18/43)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (38/80)",
+              "right": "53% (42/80)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "61%",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (8/17)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/3",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/4",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "14",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/4)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (12/24)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (14/36)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (26/60)",
+              "right": "57% (34/60)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

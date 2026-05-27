@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
+  "boardTitle": "Mariano Navone vs Jakub Mensik",
+  "boardPlayerName": "Mariano Navone",
+  "recentOpponentName": "Cameron Norrie",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "GBR  6-4 6-4 2nd",
+  "flashscoreLabel": "Norrie C. - Navone M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Norrie C.",
+    "Navone M."
+  ],
+  "generatedAt": "2026-05-27T06:48:13.241Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MXWWYLvB/",
+  "matchId": "MXWWYLvB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MXWWYLvB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MXWWYLvB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:57"
+      }
+    ],
+    "totalDuration": "1:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "79%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (27/42)",
+              "right": "68% (28/41)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (16/38)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "2/4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (13/41)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "58% (22/38)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "4/11",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "15",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "20",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (43/80)",
+              "right": "67% (35/52)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (17/52)",
+              "right": "46% (37/80)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (60/132)",
+              "right": "55% (72/132)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "76%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (16/30)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (12/29)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (28/59)",
+              "right": "53% (31/59)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "83%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (19/28)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (8/22)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "1/2",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/8",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "9",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (27/50)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (5/23)",
+              "right": "46% (23/50)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (32/73)",
+              "right": "56% (41/73)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Navone M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

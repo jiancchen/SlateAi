@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-federico-cina-jesper-de-jong-2026-05-27",
+  "boardTitle": "Federico Cina vs Jesper de Jong",
+  "boardPlayerName": "Jesper De Jong",
+  "recentOpponentName": "Liam Draxl",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "CAN  4-6 6-1 6-3 q2",
+  "flashscoreLabel": "De Jong J. - Draxl L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "De Jong J.",
+    "Draxl L."
+  ],
+  "generatedAt": "2026-05-27T06:47:51.833Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/URuwAe6d/",
+  "matchId": "URuwAe6d",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_URuwAe6d",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_URuwAe6d"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "12",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "70%",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (31/41)",
+              "right": "54% (37/69)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (18/27)",
+              "right": "50% (15/30)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "10/15",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "188 km/h",
+              "right": "177 km/h",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "153 km/h",
+              "right": "136 km/h",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (32/69)",
+              "right": "24% (10/41)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (15/30)",
+              "right": "33% (9/27)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/15",
+              "right": "2/5",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "52",
+              "right": "12",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "24",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (27/38)",
+              "right": "69% (11/16)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (49/68)",
+              "right": "53% (52/99)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (47/99)",
+              "right": "28% (19/68)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (96/167)",
+              "right": "43% (71/167)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "85% (11/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "15% (2/13)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (16/26)",
+              "right": "38% (10/26)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "64%",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "64% (16/25)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "64% (9/14)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "5/5",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (9/25)",
+              "right": "22% (4/18)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "1/3",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "7",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "4",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Net points won",
+              "left": "76% (13/17)",
+              "right": "100% (6/6)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "64% (25/39)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (14/39)",
+              "right": "32% (9/28)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (33/67)",
+              "right": "51% (34/67)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "70%",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "47% (9/19)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "38% (3/8)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/6",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (10/19)",
+              "right": "20% (2/10)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "27% (3/11)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (10/14)",
+              "right": "50% (3/6)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "44% (12/27)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (15/27)",
+              "right": "24% (5/21)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (31/48)",
+              "right": "35% (17/48)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "76%",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "48% (12/25)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "38% (3/8)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (13/25)",
+              "right": "31% (4/13)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "17% (1/6)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "4",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "50% (2/4)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (14/19)",
+              "right": "45% (15/33)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (18/33)",
+              "right": "26% (5/19)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (32/52)",
+              "right": "38% (20/52)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "De Jong J.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

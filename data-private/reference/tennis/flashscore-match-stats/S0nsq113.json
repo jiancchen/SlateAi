@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Tommy Paul",
+  "recentOpponentName": "Daniel Altmaier",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "GER  6-2 7-5 1/4",
+  "flashscoreLabel": "Paul T. - Altmaier D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Paul T.",
+    "Altmaier D."
+  ],
+  "generatedAt": "2026-05-27T06:48:49.555Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/S0nsq113/",
+  "matchId": "S0nsq113",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_S0nsq113",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_S0nsq113"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:57"
+      }
+    ],
+    "totalDuration": "1:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "62%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (28/37)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (9/23)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "4/10",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "51% (20/39)",
+              "right": "24% (9/37)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (14/24)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "3/8",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "8",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "21",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (24/28)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (37/60)",
+              "right": "46% (29/63)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (34/63)",
+              "right": "38% (23/60)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (71/123)",
+              "right": "42% (52/123)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (6/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Total games won",
+              "left": "65% (13/20)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "62%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "69% (11/16)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (12/16)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (16/26)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (33/56)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "62%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "4/7",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "13",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (12/12)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (18/37)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (38/67)",
+              "right": "43% (29/67)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Altmaier D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

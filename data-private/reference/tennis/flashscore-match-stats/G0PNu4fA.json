@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-eva-lys-sorana-cirstea-2026-05-27",
+  "boardTitle": "Eva Lys vs Sorana Cirstea",
+  "boardPlayerName": "Sorana Cirstea",
+  "recentOpponentName": "Ksenia Efremova",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "FRA  6-3 6-1 1st",
+  "flashscoreLabel": "Efremova K. - Cirstea S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Efremova K.",
+    "Cirstea S."
+  ],
+  "generatedAt": "2026-05-27T06:48:50.685Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/G0PNu4fA/",
+  "matchId": "G0PNu4fA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_G0PNu4fA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_G0PNu4fA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "59%",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (19/34)",
+              "right": "92% (24/26)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (8/26)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "1/2",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "167 km/h",
+              "right": "165 km/h",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "134 km/h",
+              "right": "141 km/h",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (2/26)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "5/11",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "20",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (27/60)",
+              "right": "68% (30/44)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (14/44)",
+              "right": "55% (33/60)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (41/104)",
+              "right": "61% (63/104)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "61%",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (14/23)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/2",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (2/17)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/6",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (20/39)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (30/67)",
+              "right": "55% (37/67)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "56%",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (5/11)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "5",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "33% (7/21)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (4/16)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "30% (11/37)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Hamad Medjedovic",
+  "recentOpponentName": "Mariano Navone",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "11 May 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "ARG  4-6 6-3 6-4 3rd",
+  "flashscoreLabel": "Navone M. - Medjedovic H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Navone M.",
+    "Medjedovic H."
+  ],
+  "generatedAt": "2026-05-27T06:48:47.224Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KGSrjyGN/",
+  "matchId": "KGSrjyGN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KGSrjyGN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KGSrjyGN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:04"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "64%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (47/70)",
+              "right": "64% (49/77)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (14/30)",
+              "right": "53% (23/43)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "12/14",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "176 km/h",
+              "right": "191 km/h",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "159 km/h",
+              "right": "162 km/h",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (28/77)",
+              "right": "33% (23/70)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (20/43)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/14",
+              "right": "3/10",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "31",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "70",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "36% (4/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (61/100)",
+              "right": "60% (72/120)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (48/120)",
+              "right": "39% (39/100)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (109/220)",
+              "right": "50% (111/220)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (13/29)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "73%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (15/23)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "6/8",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (13/30)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/1",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "24",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (20/41)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (40/73)",
+              "right": "45% (33/73)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "64%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (17/26)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "4/4",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (10/28)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/5",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "21",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (20/35)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (17/44)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (37/79)",
+              "right": "53% (42/79)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "54%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/2",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/4",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "11",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "25",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "69% (24/35)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (11/35)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (32/68)",
+              "right": "53% (36/68)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

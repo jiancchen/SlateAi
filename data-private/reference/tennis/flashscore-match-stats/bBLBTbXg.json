@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
+  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
+  "boardPlayerName": "Elina Svitolina",
+  "recentOpponentName": "Iga Swiatek",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "14 May 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "POL  6-4 2-6 6-2 1/2",
+  "flashscoreLabel": "Swiatek I. - Svitolina E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Swiatek I.",
+    "Svitolina E."
+  ],
+  "generatedAt": "2026-05-27T06:48:21.142Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bBLBTbXg/",
+  "matchId": "bBLBTbXg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bBLBTbXg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bBLBTbXg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "55%",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (30/47)",
+              "right": "64% (34/53)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (11/30)",
+              "right": "36% (16/44)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "11/16",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (19/53)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (28/44)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/16",
+              "right": "6/9",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (41/77)",
+              "right": "52% (50/97)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (47/97)",
+              "right": "47% (36/77)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (88/174)",
+              "right": "49% (86/174)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "54% (7/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (12/26)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "49%",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/5",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "72% (13/18)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/3",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (12/27)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (17/35)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (29/62)",
+              "right": "53% (33/62)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "63%",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/6",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/3",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (15/24)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (31/50)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "55%",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "18% (2/11)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "5/5",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "2/3",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (15/38)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (28/62)",
+              "right": "55% (34/62)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Swiatek I.",
+              "rightPlayer": "Svitolina E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

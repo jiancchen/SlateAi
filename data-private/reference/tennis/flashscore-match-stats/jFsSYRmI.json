@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-federico-cina-jesper-de-jong-2026-05-27",
+  "boardTitle": "Federico Cina vs Jesper de Jong",
+  "boardPlayerName": "Federico Cina",
+  "recentOpponentName": "Bernard Tomic",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "AUS  6-2 6-4 q2",
+  "flashscoreLabel": "Cina F. - Tomic B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Cina F.",
+    "Tomic B."
+  ],
+  "generatedAt": "2026-05-27T06:47:50.918Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jFsSYRmI/",
+  "matchId": "jFsSYRmI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jFsSYRmI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jFsSYRmI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:31"
+      }
+    ],
+    "totalDuration": "0:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "57%",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (24/30)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "72% (13/18)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "20% (6/30)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (11/22)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "18",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "22",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (10/14)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (37/48)",
+              "right": "63% (32/51)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (19/51)",
+              "right": "23% (11/48)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (56/99)",
+              "right": "43% (43/99)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "54%",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (6/14)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (13/26)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (29/45)",
+              "right": "36% (16/45)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "60%",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/15)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (21/29)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (6/25)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (27/54)",
+              "right": "50% (27/54)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cina F.",
+              "rightPlayer": "Tomic B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

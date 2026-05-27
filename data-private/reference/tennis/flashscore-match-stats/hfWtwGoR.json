@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
+  "boardTitle": "Francesca Jones vs Marie Bouzkova",
+  "boardPlayerName": "Francesca Jones",
+  "recentOpponentName": "Yelyzaveta Kotliar",
+  "recentIndex": 1,
+  "recentEvent": "Rabat",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "UKR   Loss 2-6 6-3 6-4 1st",
+  "flashscoreLabel": "Jones F. - Kotliar Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rabat/results/",
+  "players": [
+    "Jones F.",
+    "Kotliar Y."
+  ],
+  "generatedAt": "2026-05-27T06:48:24.921Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hfWtwGoR/",
+  "matchId": "hfWtwGoR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hfWtwGoR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hfWtwGoR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "60%",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (32/58)",
+              "right": "62% (37/60)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (10/31)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/13",
+              "right": "9/16",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (23/60)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "68% (27/40)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/16",
+              "right": "7/13",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "47% (42/89)",
+              "right": "50% (51/102)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (51/102)",
+              "right": "53% (47/89)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (93/191)",
+              "right": "51% (98/191)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "46% (6/13)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (7/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (13/27)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "60%",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "90% (9/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (15/25)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (15/25)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (30/50)",
+              "right": "40% (20/50)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "61%",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (9/17)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "4/6",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "3/8",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (14/32)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (17/38)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (31/70)",
+              "right": "56% (39/70)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "59%",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (10/22)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/6",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "3/4",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (13/32)",
+              "right": "51% (20/39)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (19/39)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (32/71)",
+              "right": "55% (39/71)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Kotliar Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

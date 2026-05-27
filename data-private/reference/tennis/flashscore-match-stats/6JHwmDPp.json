@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jelena-ostapenko-magda-linette-2026-05-27",
+  "boardTitle": "Jelena Ostapenko vs Magda Linette",
+  "boardPlayerName": "Jelena Ostapenko",
+  "recentOpponentName": "Anastasia Potapova",
+  "recentIndex": 6,
+  "recentEvent": "Madrid",
+  "recentDate": "26 Apr 26",
+  "recentIsoDate": "2026-04-26",
+  "recentResult": "AUT   Loss 4-6 6-4 6-4 3rd",
+  "flashscoreLabel": "Potapova A. - Ostapenko J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Potapova A.",
+    "Ostapenko J."
+  ],
+  "generatedAt": "2026-05-27T06:48:10.664Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6JHwmDPp/",
+  "matchId": "6JHwmDPp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6JHwmDPp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6JHwmDPp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "59%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (31/49)",
+              "right": "51% (26/51)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (21/46)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/12",
+              "right": "5/12",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "49% (25/51)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (20/36)",
+              "right": "54% (25/46)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/12",
+              "right": "6/12",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (52/95)",
+              "right": "48% (42/87)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (45/87)",
+              "right": "45% (43/95)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (97/182)",
+              "right": "47% (85/182)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (9/15)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "47% (7/15)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (16/30)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "49%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "4/5",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/6",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (21/38)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (15/35)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (36/73)",
+              "right": "51% (37/73)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "66%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/4",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (10/19)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (17/29)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "65%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (16/30)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (13/23)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (29/53)",
+              "right": "45% (24/53)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Ostapenko J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

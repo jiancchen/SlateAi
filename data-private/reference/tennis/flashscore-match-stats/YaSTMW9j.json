@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-05-26T05:07:49.122Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/navone-mariano-YoPUeL3o/ruud-casper-zN9UpRqp/?mid=YaSTMW9j",
-  "matchId": "YaSTMW9j",
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Casper Ruud",
+  "recentOpponentName": "Mariano Navone",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "22 May 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "ARG   Loss 7-5 6-2 1/2",
+  "flashscoreLabel": "Ruud C. - Navone M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
   "players": [
-    "Mariano Navone",
-    "Casper Ruud"
+    "Ruud C.",
+    "Navone M."
   ],
+  "generatedAt": "2026-05-27T06:48:45.249Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YaSTMW9j/",
+  "matchId": "YaSTMW9j",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YaSTMW9j",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YaSTMW9j"
@@ -38,43 +51,43 @@
               "label": "Aces",
               "left": "1",
               "right": "1",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Double Faults",
               "left": "3",
               "right": "1",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "1st serve percentage",
               "left": "53%",
               "right": "80%",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "1st serve points won",
               "left": "53% (19/36)",
               "right": "67% (33/49)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "2nd serve points won",
               "left": "44% (14/32)",
               "right": "25% (3/12)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Break Points Saved",
               "left": "2/8",
               "right": "4/7",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -85,22 +98,22 @@
               "label": "1st return points won",
               "left": "33% (16/49)",
               "right": "47% (17/36)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "2nd return points won",
               "left": "75% (9/12)",
               "right": "56% (18/32)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Break Points Converted",
               "left": "3/7",
               "right": "6/8",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -111,57 +124,57 @@
               "label": "Winners",
               "left": "21",
               "right": "27",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Unforced errors",
               "left": "29",
               "right": "19",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Net points won",
               "left": "65% (11/17)",
               "right": "50% (2/4)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Service Points Won",
               "left": "49% (33/68)",
               "right": "59% (36/61)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Return Points Won",
               "left": "41% (25/61)",
               "right": "51% (35/68)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Total Points Won",
               "left": "45% (58/129)",
               "right": "55% (71/129)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Last 10 balls",
               "left": "4",
               "right": "6",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Match points saved",
               "left": "0",
               "right": "0",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -172,22 +185,22 @@
               "label": "Service games won",
               "left": "40% (4/10)",
               "right": "70% (7/10)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Return games won",
               "left": "30% (3/10)",
               "right": "60% (6/10)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Total games won",
               "left": "35% (7/20)",
               "right": "65% (13/20)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         }
@@ -203,43 +216,43 @@
               "label": "Aces",
               "left": "0",
               "right": "0",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Double Faults",
               "left": "0",
               "right": "1",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "1st serve percentage",
               "left": "55%",
               "right": "79%",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "1st serve points won",
               "left": "41% (7/17)",
               "right": "65% (17/26)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "2nd serve points won",
               "left": "64% (9/14)",
               "right": "29% (2/7)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Break Points Saved",
               "left": "0/3",
               "right": "1/3",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -250,22 +263,22 @@
               "label": "1st return points won",
               "left": "35% (9/26)",
               "right": "59% (10/17)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "2nd return points won",
               "left": "71% (5/7)",
               "right": "36% (5/14)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Break Points Converted",
               "left": "2/3",
               "right": "3/3",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -276,50 +289,50 @@
               "label": "Winners",
               "left": "9",
               "right": "13",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Unforced errors",
               "left": "11",
               "right": "12",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Net points won",
               "left": "67% (6/9)",
               "right": "50% (1/2)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Service Points Won",
               "left": "52% (16/31)",
               "right": "59% (20/34)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Return Points Won",
               "left": "41% (14/34)",
               "right": "48% (15/31)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Total Points Won",
               "left": "46% (30/65)",
               "right": "54% (35/65)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Match points saved",
               "left": "0",
               "right": "0",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -330,22 +343,22 @@
               "label": "Service games won",
               "left": "50% (3/6)",
               "right": "67% (4/6)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Return games won",
               "left": "33% (2/6)",
               "right": "50% (3/6)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Total games won",
               "left": "42% (5/12)",
               "right": "58% (7/12)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         }
@@ -361,43 +374,43 @@
               "label": "Aces",
               "left": "1",
               "right": "1",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Double Faults",
               "left": "3",
               "right": "0",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "1st serve percentage",
               "left": "51%",
               "right": "82%",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "1st serve points won",
               "left": "63% (12/19)",
               "right": "70% (16/23)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "2nd serve points won",
               "left": "28% (5/18)",
               "right": "20% (1/5)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Break Points Saved",
               "left": "2/5",
               "right": "3/4",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -408,22 +421,22 @@
               "label": "1st return points won",
               "left": "30% (7/23)",
               "right": "37% (7/19)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "2nd return points won",
               "left": "80% (4/5)",
               "right": "72% (13/18)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Break Points Converted",
               "left": "1/4",
               "right": "3/5",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -434,50 +447,50 @@
               "label": "Winners",
               "left": "12",
               "right": "14",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Unforced errors",
               "left": "18",
               "right": "7",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Net points won",
               "left": "63% (5/8)",
               "right": "50% (1/2)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Service Points Won",
               "left": "46% (17/37)",
               "right": "59% (16/27)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Return Points Won",
               "left": "41% (11/27)",
               "right": "54% (20/37)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Total Points Won",
               "left": "44% (28/64)",
               "right": "56% (36/64)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Match points saved",
               "left": "0",
               "right": "0",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         },
@@ -488,22 +501,22 @@
               "label": "Service games won",
               "left": "25% (1/4)",
               "right": "75% (3/4)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Return games won",
               "left": "25% (1/4)",
               "right": "75% (3/4)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             },
             {
               "label": "Total games won",
               "left": "25% (2/8)",
               "right": "75% (6/8)",
-              "leftPlayer": "Mariano Navone",
-              "rightPlayer": "Casper Ruud"
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Navone M."
             }
           ]
         }

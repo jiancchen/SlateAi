@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-tomas-machac-alexander-zverev-2026-05-27",
+  "boardTitle": "Tomas Machac vs Alexander Zverev",
+  "boardPlayerName": "Tomas Machac",
+  "recentOpponentName": "Stefanos Tsitsipas",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "GRE  6-4 7-64 1st",
+  "flashscoreLabel": "Tsitsipas S. - Machac T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Tsitsipas S.",
+    "Machac T."
+  ],
+  "generatedAt": "2026-05-27T06:48:57.070Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UBacosNt/",
+  "matchId": "UBacosNt",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UBacosNt",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UBacosNt"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:59"
+      }
+    ],
+    "totalDuration": "1:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "69%",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (31/42)",
+              "right": "91% (42/46)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (16/27)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (4/46)",
+              "right": "26% (11/42)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (15/21)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "20",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "15",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (47/69)",
+              "right": "72% (48/67)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (19/67)",
+              "right": "32% (22/69)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (66/136)",
+              "right": "51% (70/136)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "85%",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (4/22)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (26/58)",
+              "right": "55% (32/58)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "59%",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "100% (24/24)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/24)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "76% (13/17)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "14",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "12",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (27/37)",
+              "right": "68% (28/41)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (13/41)",
+              "right": "27% (10/37)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (40/78)",
+              "right": "49% (38/78)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Machac T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

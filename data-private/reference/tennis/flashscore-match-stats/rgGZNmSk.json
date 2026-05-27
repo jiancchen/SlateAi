@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-kamilla-rakhimova-karolina-muchova-2026-05-27",
+  "boardTitle": "Kamilla Rakhimova vs Karolina Muchova",
+  "boardPlayerName": "Kamilla Rakhimova",
+  "recentOpponentName": "Anhelina Kalinina",
+  "recentIndex": 3,
+  "recentEvent": "Madrid",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "UKR   Loss 6-2 5-7 6-2 1st",
+  "flashscoreLabel": "Kalinina A. - Rakhimova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Kalinina A.",
+    "Rakhimova K."
+  ],
+  "generatedAt": "2026-05-27T06:48:53.147Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rgGZNmSk/",
+  "matchId": "rgGZNmSk",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rgGZNmSk",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rgGZNmSk"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "57%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (36/59)",
+              "right": "59% (35/59)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (15/35)",
+              "right": "34% (15/44)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "7/14",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (24/59)",
+              "right": "39% (23/59)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "66% (29/44)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/14",
+              "right": "4/7",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (51/94)",
+              "right": "49% (50/103)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (53/103)",
+              "right": "46% (43/94)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (104/197)",
+              "right": "47% (93/197)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (7/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "61% (17/28)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "51%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/5",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (14/17)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (17/31)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (20/35)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (37/66)",
+              "right": "44% (29/66)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "63%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (12/24)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "4/6",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (11/25)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "3/6",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (17/38)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (19/40)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (36/78)",
+              "right": "54% (42/78)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "57%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (31/53)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Rakhimova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

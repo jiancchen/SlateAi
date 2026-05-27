@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27",
+  "boardTitle": "Yuliia Starodubtseva vs Elena Rybakina",
+  "boardPlayerName": "Yuliia Starodubtseva",
+  "recentOpponentName": "Anhelina Kalinina",
+  "recentIndex": 1,
+  "recentEvent": "Rabat",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "UKR   Loss 6-3 7-63 2nd",
+  "flashscoreLabel": "Starodubtseva Y. - Kalinina A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rabat/results/",
+  "players": [
+    "Starodubtseva Y.",
+    "Kalinina A."
+  ],
+  "generatedAt": "2026-05-27T06:48:18.408Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hfItWv6D/",
+  "matchId": "hfItWv6D",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hfItWv6D",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hfItWv6D"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:32"
+      }
+    ],
+    "totalDuration": "2:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "72%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "42% (24/57)",
+              "right": "47% (27/58)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (9/22)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/15",
+              "right": "7/13",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (31/58)",
+              "right": "58% (33/57)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (10/23)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/13",
+              "right": "7/15",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "42% (33/79)",
+              "right": "49% (40/81)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (41/81)",
+              "right": "58% (46/79)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (74/160)",
+              "right": "54% (86/160)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "30% (3/10)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "55% (6/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "76%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (11/25)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (9/19)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/7",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (14/34)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (14/26)",
+              "right": "59% (20/34)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (28/60)",
+              "right": "53% (32/60)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "70%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (13/32)",
+              "right": "44% (17/39)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "7/11",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (22/39)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "4/8",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "42% (19/45)",
+              "right": "51% (28/55)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (27/55)",
+              "right": "58% (26/45)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (46/100)",
+              "right": "54% (54/100)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Kalinina A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

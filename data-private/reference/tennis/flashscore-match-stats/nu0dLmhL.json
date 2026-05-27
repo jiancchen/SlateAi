@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
+  "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
+  "boardPlayerName": "Nishesh Basavareddy",
+  "recentOpponentName": "Jaume Antoni Munar Clar",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "ESP   Loss 6-0 6-3 1st",
+  "flashscoreLabel": "Basavareddy N. - Munar J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Basavareddy N.",
+    "Munar J."
+  ],
+  "generatedAt": "2026-05-27T06:48:42.719Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nu0dLmhL/",
+  "matchId": "nu0dLmhL",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nu0dLmhL",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nu0dLmhL"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "60%",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (18/29)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (7/24)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/10",
+              "right": "3/3",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/24)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "5/10",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "19",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "9",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (9/15)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (25/53)",
+              "right": "75% (30/40)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (10/40)",
+              "right": "53% (28/53)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (35/93)",
+              "right": "62% (58/93)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "52%",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (7/12)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "9% (1/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/3",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (3/11)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/6",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "35% (8/23)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (15/44)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "68%",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Basavareddy N.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

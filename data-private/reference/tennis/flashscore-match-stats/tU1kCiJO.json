@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Alejandro Davidovich Fokina",
+  "recentOpponentName": "Casper Ruud",
+  "recentIndex": 5,
+  "recentEvent": "Madrid",
+  "recentDate": "27 Apr 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "NOR   Loss 6-3 6-1 3rd",
+  "flashscoreLabel": "Davidovich Fokina A. - Ruud C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Davidovich Fokina A.",
+    "Ruud C."
+  ],
+  "generatedAt": "2026-05-27T06:47:45.287Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tU1kCiJO/",
+  "matchId": "tU1kCiJO",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tU1kCiJO",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tU1kCiJO"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:29"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "62%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (15/34)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "0/1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (8/28)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "5/8",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "14",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (22/51)",
+              "right": "69% (31/45)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (14/45)",
+              "right": "57% (29/51)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (36/96)",
+              "right": "63% (60/96)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (7/28)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (24/58)",
+              "right": "59% (34/58)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "65%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "29% (4/14)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "0/1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "4/6",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "24% (5/21)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (7/17)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "32% (12/38)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

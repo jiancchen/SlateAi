@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "boardPlayerName": "Hailey Baptiste",
+  "recentOpponentName": "Aryna Sabalenka",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "28 Apr 26",
+  "recentIsoDate": "2026-04-28",
+  "recentResult": "BLR  2-6 6-2 7-66 1/4",
+  "flashscoreLabel": "Sabalenka A. - Baptiste H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Sabalenka A.",
+    "Baptiste H."
+  ],
+  "generatedAt": "2026-05-27T06:48:36.891Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UmHkp1lm/",
+  "matchId": "UmHkp1lm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UmHkp1lm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UmHkp1lm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "55%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (41/68)",
+              "right": "68% (42/62)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (12/29)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/14",
+              "right": "11/17",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (20/62)",
+              "right": "40% (27/68)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (31/50)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/17",
+              "right": "6/14",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (53/97)",
+              "right": "54% (61/112)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (51/112)",
+              "right": "45% (44/97)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (104/209)",
+              "right": "50% (105/209)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "57% (8/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "43% (6/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (14/28)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "50%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "71% (20/28)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (13/28)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (33/56)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "52%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "39% (7/18)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "3/4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (11/27)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (14/33)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/60)",
+              "right": "58% (35/60)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (17/28)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "5/8",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (12/31)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "3/8",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "53% (27/51)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (24/51)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (46/93)",
+              "right": "51% (47/93)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

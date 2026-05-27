@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "boardPlayerName": "Hailey Baptiste",
+  "recentOpponentName": "Belinda Bencic",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "27 Apr 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "SUI  6-1 6-714 6-3 4th",
+  "flashscoreLabel": "Bencic B. - Baptiste H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Bencic B.",
+    "Baptiste H."
+  ],
+  "generatedAt": "2026-05-27T06:48:37.092Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hWPeZ6Di/",
+  "matchId": "hWPeZ6Di",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hWPeZ6Di",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hWPeZ6Di"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 16,
+        "rightGames": 14,
+        "duration": "1:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "62%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (40/63)",
+              "right": "75% (52/69)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (16/34)",
+              "right": "55% (23/42)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "7/8",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (17/69)",
+              "right": "37% (23/63)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (19/42)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "4/7",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (60/102)",
+              "right": "68% (79/116)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (37/116)",
+              "right": "41% (42/102)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (97/218)",
+              "right": "56% (121/218)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (9/13)",
+              "right": "93% (14/15)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/15)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "36% (10/28)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "80%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (4/9)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (8/18)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "32% (12/38)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "54%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (28/42)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "7/8",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (10/36)",
+              "right": "33% (14/42)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (16/31)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "1/3",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (36/57)",
+              "right": "61% (41/67)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (26/67)",
+              "right": "37% (21/57)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (62/124)",
+              "right": "50% (62/124)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "71%",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (16/27)",
+              "right": "76% (22/29)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (7/29)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (23/56)",
+              "right": "59% (33/56)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bencic B.",
+              "rightPlayer": "Baptiste H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

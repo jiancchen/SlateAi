@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-valentin-royer-novak-djokovic-2026-05-27",
+  "boardTitle": "Valentin Royer vs Novak Djokovic",
+  "boardPlayerName": "Valentin Royer",
+  "recentOpponentName": "Alejandro Tabilo",
+  "recentIndex": 5,
+  "recentEvent": "Madrid",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "CHI   Loss 6-2 6-4 1st",
+  "flashscoreLabel": "Tabilo A. - Royer V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Tabilo A.",
+    "Royer V."
+  ],
+  "generatedAt": "2026-05-27T06:48:39.318Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xvrsebxo/",
+  "matchId": "xvrsebxo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xvrsebxo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xvrsebxo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "62%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (28/32)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/7",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (16/42)",
+              "right": "13% (4/32)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (15/26)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "16",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "25",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (39/50)",
+              "right": "54% (37/68)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (31/68)",
+              "right": "22% (11/50)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (70/118)",
+              "right": "41% (48/118)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "63%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (12/24)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (31/51)",
+              "right": "39% (20/51)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "61%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/5",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (10/27)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "15",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "87% (20/23)",
+              "right": "57% (25/44)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (19/44)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (39/67)",
+              "right": "42% (28/67)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Royer V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

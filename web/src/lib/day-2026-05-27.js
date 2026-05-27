@@ -12,6 +12,35 @@ const formatPct = (value) => (Number.isFinite(value) ? `${Math.round(value)}%` :
 const formatAmount = (value) => (Number.isFinite(value) ? value.toLocaleString('en-US') : 'n/a')
 const formatSignedPct = (value) => (Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${Math.round(value)} pts` : 'n/a')
 const sentence = (value) => String(value || '').replace(/\.+$/u, '')
+const confidenceTags = (confidence) => [
+  `Confidence ${confidence}`,
+  confidence >= 80
+    ? 'Elite confidence'
+    : confidence >= 72
+      ? 'High confidence'
+      : confidence >= 64
+        ? 'Lean confidence'
+        : 'Watch confidence'
+]
+const payoffTags = (economics) => {
+  if (!economics || !Number.isFinite(economics.deskPricePct)) return []
+  const profitCents = Math.max(0, Math.round(100 - economics.deskPricePct))
+  const edge = Number.isFinite(economics.deskEdgePct) ? Math.round(economics.deskEdgePct) : null
+  const payoffTier =
+    profitCents <= 12
+      ? 'Tiny payoff'
+      : profitCents <= 30
+        ? 'Fee-sensitive payoff'
+        : profitCents <= 55
+          ? 'Playable payoff'
+          : 'Underdog payoff'
+  return [
+    `Payoff ${profitCents}c`,
+    payoffTier,
+    economics.priceAction,
+    edge === null ? null : `Price edge ${edge >= 0 ? '+' : ''}${edge} pts`
+  ].filter(Boolean)
+}
 
 const buildPlayerEconomics = (name, pricePct, amount) => {
   if (!Number.isFinite(pricePct) || pricePct <= 0) return null
@@ -26,7 +55,7 @@ const buildPlayerEconomics = (name, pricePct, amount) => {
           ? 'moderate favorite'
           : pricePct >= 40
             ? 'coinflip zone'
-            : 'dog payout lane'
+            : 'underdog payout'
 
   return {
     name,
@@ -61,7 +90,7 @@ const buildMarketEconomics = ({ raw, market, marketA, marketB }) => {
         : favoriteTax && deskEdgePct <= feeBufferPct + 5
           ? 'Watch, do not chase'
           : picked.pricePct < 45 && raw.conf >= 55
-            ? 'Dog value lane'
+            ? 'Underdog value'
             : deskEdgePct >= feeBufferPct + 4
               ? 'Playable edge'
               : 'No clear price edge'
@@ -70,7 +99,7 @@ const buildMarketEconomics = ({ raw, market, marketA, marketB }) => {
       ? 'No screenshot price was captured for the desk side.'
       : favoriteTax
         ? `${raw.pick} is priced at ${formatPct(picked.pricePct)}, leaving only ${picked.centsProfitIfWin}c gross profit per share before platform fees. The pick can be likely and still be a poor buy unless our true edge clears the price by more than the fee buffer.`
-        : `${raw.pick} is priced at ${formatPct(picked.pricePct)}, a ${picked.priceBand} with roughly ${picked.grossProfitPct}% gross profit on stake before platform fees if it wins.`
+        : `${raw.pick} is priced at ${formatPct(picked.pricePct)}, ${picked.priceBand === 'underdog payout' ? 'an' : 'a'} ${picked.priceBand} with roughly ${picked.grossProfitPct}% gross profit on stake before platform fees if it wins.`
 
   return {
     source: marketSource,
@@ -91,10 +120,11 @@ const buildMarketEconomics = ({ raw, market, marketA, marketB }) => {
   }
 }
 
-const buildPredictionOnlyOdds = (raw, market) => ({
+const buildPredictionOnlyOdds = (raw, market, derivativeMarkets = []) => ({
   participantOrder: [0, 1],
-  markets: market
-    ? [
+  markets: [
+    ...(market
+      ? [
         {
           label: 'Prediction market',
           book: marketSource,
@@ -106,7 +136,13 @@ const buildPredictionOnlyOdds = (raw, market) => ({
           value: formatAmount(market.total)
         }
       ]
-    : [],
+      : []),
+    ...derivativeMarkets.map((entry) => ({
+      label: entry.label,
+      book: entry.book || 'Manual sportsbook screenshot + tennis model',
+      value: entry.value
+    }))
+  ],
   note: 'This May 27 Roland Garros board is a singles-only prediction desk built from the ESPN scoreboard, the May 26 postmortem, conservative R2 clay rules, and captured prediction-market prices where available. Doubles and the Alex de Minaur walkover are intentionally excluded.',
   provider: oddsProvider
 })
@@ -117,8 +153,114 @@ const formatRecord = (record) => {
   return `${record.wins}-${record.losses}${pct}`
 }
 
-const findQualityPlayer = (qualityContext, name) =>
-  (qualityContext?.players || []).find((player) => player.name === name) ?? null
+const qualityNameAliases = {
+  'Catherine McNally': 'Caty McNally',
+  'Pablo Carreno Busta': 'Pablo Carreño Busta',
+  'Wang Xinyu': 'Xinyu Wang',
+  'Wang Xiyu': 'Xiyu Wang'
+}
+
+const qualityFallbacks = {
+  'Pablo Carreno Busta': {
+    name: 'Pablo Carreno Busta',
+    ranking: { rank: 84, age: 34.8, country: 'ESP', tour: 'ATP', source: 'live-tennis ranking warehouse' },
+    records: {},
+    recentWindow: {},
+    serviceData: { source: 'not joined', note: 'Tennistonic timed out for this matchup; ranking fallback only.' },
+    recentMatches: []
+  },
+  'Thanasi Kokkinakis': {
+    name: 'Thanasi Kokkinakis',
+    ranking: { rank: 521, age: 30.1, country: 'AUS', tour: 'ATP', source: 'live-tennis ranking warehouse' },
+    records: {},
+    recentWindow: {},
+    serviceData: { source: 'not joined', note: 'Tennistonic timed out for this matchup; ranking fallback only.' },
+    recentMatches: []
+  }
+}
+
+const findQualityPlayer = (qualityContext, name) => {
+  const alias = qualityNameAliases[name]
+  return (qualityContext?.players || []).find((player) => player.name === name || player.name === alias) ?? qualityFallbacks[name] ?? null
+}
+
+const playerPressureOverrides = {
+  'Jessica Pegula': {
+    label: 'major favorite-pressure discount',
+    note:
+      'Do not turn top-five form into an auto-bet in a major. When the price is extreme, require dominant recent serve/return data or mark the favorite as a pass/fade candidate.'
+  }
+}
+
+const summarizeQualityEvidence = (name, qualityPlayer) => {
+  const window = qualityPlayer?.recentWindow || {}
+  const service = qualityPlayer?.serviceData || {}
+  const parts = [
+    `${name} recent window: ${window.wins ?? 'n/a'}-${window.losses ?? 'n/a'} over ${window.completed ?? window.matches ?? 'n/a'} completed matches`,
+    Number.isFinite(Number(window.avgKnownOpponentRank)) ? `avg opponent rank ${Number(window.avgKnownOpponentRank).toFixed(1)}` : null,
+    Number.isFinite(Number(window.top25Opponents)) ? `${window.top25Opponents} top-25 opponents` : null,
+    Number.isFinite(Number(window.straightSetLosses)) ? `${window.straightSetLosses} straight-set losses` : null,
+    Number.isFinite(Number(window.resistanceMatches)) ? `${window.resistanceMatches} pressure/resistance matches` : null,
+    Number.isFinite(Number(service.avgServiceHoldPct)) ? `avg hold ${Math.round(service.avgServiceHoldPct)}% in resolved Flashscore rows` : null,
+    Number.isFinite(Number(service.avgAces)) ? `avg aces ${Number(service.avgAces).toFixed(1)}` : null
+  ].filter(Boolean)
+  return `${parts.join('; ')}.`
+}
+
+const buildBettingCase = ({ raw, marketA, marketB, qualityA, qualityB }) => {
+  const underdogName = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
+    ? marketA.pct < marketB.pct
+      ? raw.a
+      : raw.b
+    : ''
+  const favoriteName = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
+    ? marketA.pct > marketB.pct
+      ? raw.a
+      : raw.b
+    : ''
+  const pickedMarket = raw.pick === raw.a ? marketA?.pct : marketB?.pct
+  const underdogMarket = underdogName === raw.a ? marketA?.pct : underdogName === raw.b ? marketB?.pct : null
+  const override = playerPressureOverrides[raw.pick]
+  const lines = [
+    `Betting case: model ${raw.pick} ${raw.conf}% vs market ${Number.isFinite(pickedMarket) ? formatPct(pickedMarket) : 'n/a'}; volatility ${raw.vol}.`,
+    summarizeQualityEvidence(raw.a, qualityA),
+    summarizeQualityEvidence(raw.b, qualityB)
+  ]
+
+  if (Number.isFinite(pickedMarket) && pickedMarket >= 85) {
+    lines.push(
+      `Favorite tax: ${raw.pick} at ${formatPct(pickedMarket)} leaves only ${100 - pickedMarket}c gross profit before fees, so this cannot be a buy without a much stronger edge than the base model shows.`
+    )
+  }
+  if (raw.fmt === 'WTA' && favoriteName && Number.isFinite(underdogMarket) && underdogMarket <= 15) {
+    lines.push(
+      `Upset screen: WTA best-of-three plus ${favoriteName} carrying the market burden makes ${underdogName} worth monitoring if the first set produces early break chances.`
+    )
+  }
+  if (override) {
+    lines.push(`${override.label}: ${override.note}`)
+  }
+  return lines
+}
+
+const tennisRisk = (raw, opponentName = '') => {
+  const swing = sentence(raw.swing)
+  if (/favorite path holds if the first set does not turn into scoreboard stress/i.test(swing)) {
+    return opponentName
+      ? `${opponentName} needs an early break or steady holds to make the favorite price uncomfortable`
+      : `${raw.pick} needs to avoid early breaks; reduce stake or pass if the first set starts even`
+  }
+  if (/treat as watch-grade unless market price leaves real payout room/i.test(swing)) {
+    return opponentName
+      ? `${opponentName} needs cheap holds or early break chances; only play the upset side if the payout is still strong`
+      : 'Only play this if the payout is strong enough for the volatility'
+  }
+  return swing
+    .replace(/long deuce clusters/giu, 'repeated break points')
+    .replace(/gets irritated early/giu, 'starts slowly')
+    .replace(/live dog/giu, 'live underdog')
+    .replace(/dog lane/giu, 'underdog path')
+}
 
 const buildPlayerCard = ({ raw, name, seed, profile, marketPlayer, economics, qualityPlayer }) => {
   const isPick = raw.pick === name
@@ -129,19 +271,21 @@ const buildPlayerCard = ({ raw, name, seed, profile, marketPlayer, economics, qu
     ? Math.round(Number(recent.opponentAdjustedFormScore))
     : null
   const marketText = Number.isFinite(marketPlayer?.pct) ? `Market ${formatPct(marketPlayer.pct)}` : 'No market'
-  const economicsText = economics
-    ? `${economics.priceBand}; ${economics.centsProfitIfWin}c gross profit on a 100c win contract`
-    : null
-  const roleText = isPick ? `Model confidence ${raw.conf}%` : `Counter case against ${raw.conf}% model pick`
+  const modelPct = isPick ? raw.conf : 100 - raw.conf
+  const priceEdge = Number.isFinite(marketPlayer?.pct) ? Math.round(modelPct - marketPlayer.pct) : null
+  const economicsText = economics ? `${economics.centsProfitIfWin}c gross profit per 100c contract` : null
+  const roleText = isPick
+    ? `Pick: model ${formatPct(raw.conf)} vs market ${Number.isFinite(marketPlayer?.pct) ? formatPct(marketPlayer.pct) : 'n/a'}${priceEdge !== null ? ` (${priceEdge >= 0 ? '+' : ''}${priceEdge} pts)` : ''}`
+    : `Market check: model ${formatPct(modelPct)} vs market ${Number.isFinite(marketPlayer?.pct) ? formatPct(marketPlayer.pct) : 'n/a'}${priceEdge !== null ? ` (${priceEdge >= 0 ? '+' : ''}${priceEdge} pts)` : ''}`
   const contextParts = [
     rank ? `Live rank #${rank}` : profile,
-    clayRecord ? `2026 clay ${clayRecord}` : null,
-    adjustedScore ? `adj form ${adjustedScore}` : null
+    adjustedScore ? `opponent-adjusted form ${adjustedScore}` : null,
+    Number.isFinite(Number(recent.avgKnownOpponentRank)) ? `avg recent opp rank ${Number(recent.avgKnownOpponentRank).toFixed(1)}` : null
   ].filter(Boolean)
 
   return {
     name,
-    rank: seed,
+    rank,
     label: name,
     form: null,
     boardPct: Number.isFinite(marketPlayer?.pct) ? marketPlayer.pct : null,
@@ -150,7 +294,7 @@ const buildPlayerCard = ({ raw, name, seed, profile, marketPlayer, economics, qu
     clayLine: contextParts.join(' | ') || profile,
     record2026: clayRecord || '',
     notes: [roleText, economicsText].filter(Boolean).join(' | '),
-    matchupNote: isPick ? `Model reason: ${sentence(raw.angle)}.` : `Counter path: ${sentence(raw.swing)}.`
+    matchupNote: isPick ? `Why pick: ${sentence(raw.angle)}.` : `Upset path: ${tennisRisk(raw, name)}.`
   }
 }
 
@@ -169,8 +313,142 @@ const participant = (id, index, role, name, detail) => ({
 
 const stage = (raw) => `Roland Garros ${raw.fmt === 'ATP' ? 'Men' : 'Women'} | ${raw.round || 'Round 2'}`
 
+const derivativeMarketsByMatchId = {
+  'rg-m-joao-fonseca-dino-prizmic-2026-05-27': {
+    fairTotalRange: '38-42',
+    markets: [
+      {
+        label: 'ML',
+        value: 'Joao Fonseca -114',
+        lean: 'Play',
+        confidence: 72,
+        tone: 'accent',
+        reason: 'Model 66% vs roughly 53% implied; this is the cleanest listed edge, even with volatility.'
+      },
+      {
+        label: 'O/U',
+        value: 'Over if 37.5 or lower',
+        lean: 'Over lean',
+        confidence: 66,
+        tone: 'accent',
+        reason: 'Both recent hold profiles are strong: Fonseca 82%, Prizmic 86%, with best-of-five extension risk.'
+      }
+    ]
+  },
+  'rg-m-lorenzo-sonego-tommy-paul-2026-05-27': {
+    fairTotalRange: '37-41',
+    markets: [
+      {
+        label: 'Spread',
+        value: 'Tommy Paul -7.5 (-105)',
+        lean: 'Fade spread',
+        confidence: 69,
+        tone: 'danger',
+        reason: 'Paul can be the correct winner and still fail to cover if Sonego steals one set or keeps sets around 6-4.'
+      },
+      {
+        label: 'O/U',
+        value: 'Over if 36.5 or lower',
+        lean: 'Over lean',
+        confidence: 67,
+        tone: 'accent',
+        reason: 'Sonego has enough hold pressure to push this toward four sets or multiple 10-game sets.'
+      },
+      {
+        label: 'ML',
+        value: 'Tommy Paul market 85%',
+        lean: 'Pass price',
+        confidence: 64,
+        tone: 'warning',
+        reason: 'Model likes Paul more than Sonego, but not at the current favorite tax.'
+      }
+    ]
+  },
+  'rg-w-sara-bejlek-iga-swiatek-2026-05-27': {
+    fairTotalRange: '16-19',
+    markets: [
+      {
+        label: 'Spread',
+        value: 'Iga Swiatek -7.5 (-115)',
+        lean: 'Playable',
+        confidence: 70,
+        tone: 'accent',
+        reason: 'Bejlek hold profile is weak at 58%, while Swiatek is at 82% with a much cleaner clay-control script.'
+      },
+      {
+        label: 'O/U',
+        value: 'Under at 18.5+',
+        lean: 'Under',
+        confidence: 74,
+        tone: 'accent',
+        reason: 'The most likely cover path is also an under path: 6-2 6-2, 6-1 6-3, or similar.'
+      },
+      {
+        label: 'ML',
+        value: 'Swiatek market 95%',
+        lean: 'Pass price',
+        confidence: 68,
+        tone: 'warning',
+        reason: 'Likely winner, but 5c gross profit before fees is not enough payout.'
+      }
+    ]
+  },
+  'rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27': {
+    fairTotalRange: '18-20',
+    markets: [
+      {
+        label: 'Spread',
+        value: 'Elena Rybakina -6.5 (-120)',
+        lean: 'Thin lean',
+        confidence: 56,
+        tone: 'warning',
+        reason: 'Rybakina owns the serve gap, but 6-3 6-3 still loses the spread.'
+      },
+      {
+        label: 'O/U',
+        value: 'Under at 20.5+',
+        lean: 'Under lean',
+        confidence: 68,
+        tone: 'accent',
+        reason: 'Rybakina 79% recent hold and 4.6 aces against Starodubtseva 60% hold points to clean two-set control.'
+      }
+    ]
+  },
+  'rg-w-jasmine-paolini-solana-sierra-2026-05-27': {
+    fairTotalRange: '21-23',
+    markets: [
+      {
+        label: 'Spread',
+        value: 'Jasmine Paolini -3.5 (-120)',
+        lean: 'Small lean',
+        confidence: 58,
+        tone: 'warning',
+        reason: 'Paolini has the better movement and pressure profile, but Sierra is live enough to make the cover uncomfortable.'
+      },
+      {
+        label: 'O/U',
+        value: 'Over at 20.5',
+        lean: 'Over lean',
+        confidence: 62,
+        tone: 'accent',
+        reason: 'Sierra has enough form and hold profile to extend the match beyond a clean favorite squash.'
+      },
+      {
+        label: 'ML',
+        value: 'Paolini market 64%',
+        lean: 'ML better than spread',
+        confidence: 61,
+        tone: 'neutral',
+        reason: 'The model edge is on Paolini winning, not clearly on separation.'
+      }
+    ]
+  }
+}
+
 const buildMatch = (raw) => {
   const id = `rg-${raw.fmt === 'ATP' ? 'm' : 'w'}-${raw.idSlug}-2026-05-27`
+  const derivativeMarketRead = derivativeMarketsByMatchId[id] ?? null
+  const derivativeMarkets = derivativeMarketRead?.markets ?? []
   const market = marketByMatchId[id] ?? null
   const marketA = market?.players?.[raw.a] ?? null
   const marketB = market?.players?.[raw.b] ?? null
@@ -190,6 +468,7 @@ const buildMatch = (raw) => {
   ]
   const picked = participants[pickIndex]
   const opponent = participants[pickIndex === 0 ? 1 : 0]
+  const riskText = tennisRisk(raw)
   const dogNote = raw.vol >= 68 ? ' This is a watch-grade read unless the market price is generous enough to pay for the risk.' : ''
   const summary = `${raw.pick} is the model pick because ${sentence(raw.angle)}.${dogNote}`
   const factors = [
@@ -201,9 +480,11 @@ const buildMatch = (raw) => {
       : []),
     `${raw.a}: ${playerA.clayLine}. ${playerA.notes}.`,
     `${raw.b}: ${playerB.clayLine}. ${playerB.notes}.`,
+    ...buildBettingCase({ raw, marketA, marketB, qualityA, qualityB }),
+    ...derivativeMarkets.map((entry) => `${entry.label} read: ${entry.lean} on ${entry.value}. ${entry.reason}`),
     `Clay model angle: ${sentence(raw.angle)}.`,
-    `Swing factor: ${raw.swing}`,
-    'May 26 lesson applied: high-probability favorites still need price discipline, and WTA volatility dogs need a stronger technical reason before becoming core plays.'
+    `Risk: ${riskText}`,
+    'May 26 lesson applied: high-probability favorites still need price discipline, and WTA volatility underdogs need a stronger technical reason before becoming core plays.'
   ]
   const h2hUrl = buildTennistonicH2HUrl(raw.a, raw.b)
 
@@ -219,7 +500,7 @@ const buildMatch = (raw) => {
       spotlight: raw.conf >= 73 || raw.tags.includes('Favorite'),
       confidence: raw.conf,
       volatility: raw.vol,
-      tags: ['Clay', 'Roland Garros', ...raw.tags],
+      tags: ['Clay', 'Roland Garros', ...raw.tags, ...confidenceTags(raw.conf), ...payoffTags(marketEconomics)],
       matchup: [
         { side: 'Player 1', name: raw.a, displayName: raw.a, detail: raw.profileA },
         { side: 'Player 2', name: raw.b, displayName: raw.b, detail: raw.profileB }
@@ -227,9 +508,9 @@ const buildMatch = (raw) => {
       summary,
       factors,
       lean: `Lean ${raw.pick} because ${sentence(raw.angle)}.`,
-      swing: `Swing factor: ${raw.swing}`,
-      swingFactor: `Swing factor: ${raw.swing}`,
-      odds: buildPredictionOnlyOdds(raw, market),
+      swing: `Risk: ${riskText}`,
+      swingFactor: `Risk: ${riskText}`,
+      odds: buildPredictionOnlyOdds(raw, market, derivativeMarkets),
       tennisContext: {
         surface: 'Clay',
         court: raw.court,
@@ -247,7 +528,7 @@ const buildMatch = (raw) => {
               ]
             : []),
           { label: 'Model pick', metric: 'Confidence split', leftScore: raw.pick === raw.a ? raw.conf : 100 - raw.conf, rightScore: raw.pick === raw.b ? raw.conf : 100 - raw.conf, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick },
-          { label: 'Volatility', metric: 'Lower chaos side', leftScore: raw.pick === raw.a ? 100 - raw.vol : raw.vol, rightScore: raw.pick === raw.b ? 100 - raw.vol : raw.vol, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick }
+          { label: 'Volatility', metric: 'Lower risk side', leftScore: raw.pick === raw.a ? 100 - raw.vol : raw.vol, rightScore: raw.pick === raw.b ? 100 - raw.vol : raw.vol, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick }
         ],
         predictionMarket: market
           ? {
@@ -264,10 +545,10 @@ const buildMatch = (raw) => {
           projectedWinner: raw.pick,
           projectedSetLine: raw.fmt === 'ATP' ? (raw.conf >= 72 ? '3-0 or 3-1' : '3-1 or 3-2') : (raw.conf >= 70 ? '2-0 or 2-1' : '2-1'),
           projectedScoreline: raw.fmt === 'ATP' ? 'Best-of-five lean; exact score not modeled.' : 'Best-of-three lean; exact score not modeled.',
-          totalGames: null,
+          totalGames: derivativeMarketRead?.fairTotalRange || null,
           straightSetsProbability: Math.max(35, Math.min(72, Math.round(raw.conf - raw.vol * 0.16))),
           upsetRisk: Math.max(12, Math.min(52, Math.round(100 - raw.conf + raw.vol * 0.2))),
-          overview: `${raw.pick} is projected on the cleaner Round 2 script, with volatility at ${raw.vol} because ${raw.swing}`,
+          overview: `${raw.pick} is the model side, with volatility at ${raw.vol}. Risk: ${riskText}`,
           fantasy: []
         },
         tradePlan: marketEconomics
@@ -278,7 +559,7 @@ const buildMatch = (raw) => {
                   ? 'danger'
                   : marketEconomics.priceAction === 'Watch, do not chase'
                     ? 'warning'
-                    : marketEconomics.priceAction === 'Playable edge' || marketEconomics.priceAction === 'Dog value lane'
+                    : marketEconomics.priceAction === 'Playable edge' || marketEconomics.priceAction === 'Underdog value'
                       ? 'accent'
                       : 'neutral',
               entrySideName: marketEconomics.deskPickName,
@@ -299,6 +580,7 @@ const buildMatch = (raw) => {
               dogMarketPct: Math.min(marketA.pct, marketB.pct)
             }
           : null,
+        derivativeMarkets,
         marketEconomics,
         clayMatchupData: tennisClayContext.matches?.[id] ?? null,
         opponentQualityData: qualityContext,
@@ -309,10 +591,11 @@ const buildMatch = (raw) => {
         formEdgeName: raw.pick
       },
       playerAnalysis: [
-        `${raw.pick} model case: ${sentence(raw.angle)}.`,
+        `${raw.pick} pick reason: ${sentence(raw.angle)}.`,
         `${raw.a}: ${playerA.clayLine}. ${playerA.notes}.`,
         `${raw.b}: ${playerB.clayLine}. ${playerB.notes}.`,
-        `Swing factor: ${raw.swing}`
+        ...derivativeMarkets.map((entry) => `${entry.label}: ${entry.lean} (${entry.value}). ${entry.reason}`),
+        `Risk: ${riskText}`
       ],
       participants,
       moneyline: { available: false, label: 'Moneyline', provider: oddsProvider, participants: [] },
@@ -1080,8 +1363,8 @@ const rawSingles = [
     "profileB": "Unseeded R2 profile",
     "noteA": "Alejandro Davidovich Fokina is the desk side, but price and volatility still matter.",
     "noteB": "Thiago Agustin Tirante needs the upset script to show early.",
-    "angle": "Davidovich Fokina has the better clay-athletic and return profile over five sets.",
-    "swing": "The favorite path holds if the first set does not turn into scoreboard stress.",
+    "angle": "Davidovich Fokina is priced below Tirante, but the model gives him the return edge and more five-set experience; Tirante's stronger 2026 clay record keeps this below elite confidence.",
+    "swing": "Tirante has the stronger 2026 clay record; pass the Davidovich Fokina ML if Tirante is holding easily or getting repeated looks at second serves.",
     "idSlug": "alejandro-davidovich-fokina-thiago-agustin-tirante",
     "recommendationScore": 60
   },

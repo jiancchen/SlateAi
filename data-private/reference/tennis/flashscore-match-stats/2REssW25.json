@@ -1,0 +1,1036 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Lorenzo Sonego",
+  "recentOpponentName": "Pierre-Hugues Herbert",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "FRA  7-63 5-7 6-2 1-6 6-4 1st",
+  "flashscoreLabel": "Sonego L. - Herbert P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Sonego L.",
+    "Herbert P."
+  ],
+  "generatedAt": "2026-05-27T06:48:47.842Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2REssW25/",
+  "matchId": "2REssW25",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2REssW25",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2REssW25"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:13"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "4:13"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "68%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (68/94)",
+              "right": "75% (75/100)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (30/59)",
+              "right": "48% (22/46)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/16",
+              "right": "7/12",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "192 km/h",
+              "right": "185 km/h",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "157 km/h",
+              "right": "159 km/h",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (25/100)",
+              "right": "28% (26/94)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (23/46)",
+              "right": "49% (29/59)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/12",
+              "right": "5/16",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "55",
+              "right": "59",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "48",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (28/50)",
+              "right": "64% (42/66)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (98/153)",
+              "right": "66% (97/146)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (49/146)",
+              "right": "36% (55/153)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (147/299)",
+              "right": "51% (152/299)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (19/24)",
+              "right": "80% (20/25)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (5/25)",
+              "right": "21% (5/24)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total games won",
+              "left": "49% (24/49)",
+              "right": "51% (25/49)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "68%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (25/32)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (9/21)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/9",
+              "right": "4/5",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (6/27)",
+              "right": "22% (7/32)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/9",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "13",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "15",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (8/14)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (34/53)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (14/40)",
+              "right": "36% (19/53)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (48/93)",
+              "right": "48% (45/93)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "71%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "86% (19/22)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/22)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "16",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "77% (24/31)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (7/31)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (29/63)",
+              "right": "54% (34/63)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "67%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (11/24)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (28/48)",
+              "right": "42% (20/48)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "65%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (4/10)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (7/18)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (11/38)",
+              "right": "71% (27/38)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "71%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/3",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/3",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "13",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Net points won",
+              "left": "30% (3/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (13/31)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (31/57)",
+              "right": "46% (26/57)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Herbert P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

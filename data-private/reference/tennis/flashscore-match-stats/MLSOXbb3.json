@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jil-teichmann-magdalena-frech-2026-05-27",
+  "boardTitle": "Jil Teichmann vs Magdalena Frech",
+  "boardPlayerName": "Magdalena Frech",
+  "recentOpponentName": "Leylah Annie Fernandez",
+  "recentIndex": 1,
+  "recentEvent": "Strasbourg",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "CAN   Loss 6-4 3-6 6-4 2nd",
+  "flashscoreLabel": "Frech M. - Fernandez L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Frech M.",
+    "Fernandez L."
+  ],
+  "generatedAt": "2026-05-27T06:48:41.606Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MLSOXbb3/",
+  "matchId": "MLSOXbb3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MLSOXbb3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MLSOXbb3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:50"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (49/76)",
+              "right": "67% (41/61)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (14/38)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "4/9",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (20/61)",
+              "right": "36% (27/76)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (24/39)",
+              "right": "63% (24/38)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "5/11",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (63/114)",
+              "right": "56% (56/100)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (44/100)",
+              "right": "45% (51/114)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (107/214)",
+              "right": "50% (107/214)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (9/14)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (5/15)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (14/29)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "56%",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (17/26)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "3/5",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/5",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (21/42)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (16/36)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (37/78)",
+              "right": "53% (41/78)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "72%",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (18/27)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "1/3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (23/37)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (14/30)",
+              "right": "38% (14/37)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (37/67)",
+              "right": "45% (30/67)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "57%",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (14/23)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (19/35)",
+              "right": "59% (20/34)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (14/34)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (33/69)",
+              "right": "52% (36/69)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Frech M.",
+              "rightPlayer": "Fernandez L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

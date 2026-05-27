@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-ugo-humbert-quentin-halys-2026-05-27",
+  "boardTitle": "Ugo Humbert vs Quentin Halys",
+  "boardPlayerName": "Ugo Humbert",
+  "recentOpponentName": "Dino Prizmic",
+  "recentIndex": 4,
+  "recentEvent": "Rome",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "CRO   Loss 6-1 7-5 3rd",
+  "flashscoreLabel": "Humbert U. - Prizmic D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Humbert U.",
+    "Prizmic D."
+  ],
+  "generatedAt": "2026-05-27T06:48:34.972Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lvN8LdDG/",
+  "matchId": "lvN8LdDG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lvN8LdDG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lvN8LdDG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:53"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "72%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (23/29)",
+              "right": "84% (32/38)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (8/23)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "212 km/h",
+              "right": "195 km/h",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "198 km/h",
+              "right": "171 km/h",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (6/38)",
+              "right": "21% (6/29)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (5/15)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "12",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "10",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (31/52)",
+              "right": "79% (42/53)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "21% (11/53)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (42/105)",
+              "right": "60% (63/105)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "32% (6/19)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "81%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (5/8)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (8/18)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (4/21)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "31% (12/39)",
+              "right": "69% (27/39)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "66%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (18/21)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "14% (3/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "8",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (23/34)",
+              "right": "78% (25/32)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (7/32)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (30/66)",
+              "right": "55% (36/66)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

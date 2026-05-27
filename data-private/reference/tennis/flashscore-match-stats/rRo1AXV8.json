@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Casper Ruud",
+  "recentOpponentName": "Raphael Collignon",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "BEL  7-62 6-2 2nd",
+  "flashscoreLabel": "Collignon R. - Ruud C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Collignon R.",
+    "Ruud C."
+  ],
+  "generatedAt": "2026-05-27T06:48:45.852Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rRo1AXV8/",
+  "matchId": "rRo1AXV8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rRo1AXV8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rRo1AXV8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "68%",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (25/38)",
+              "right": "78% (31/40)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (12/30)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "2/3",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (9/40)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (6/19)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "3/7",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "19",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (37/68)",
+              "right": "75% (44/59)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (15/59)",
+              "right": "46% (31/68)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (52/127)",
+              "right": "59% (75/127)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "73%",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (7/20)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "16",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (23/40)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (12/40)",
+              "right": "43% (17/40)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (35/80)",
+              "right": "56% (45/80)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "58%",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (1/11)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/6",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "3",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (17/47)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Ruud C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

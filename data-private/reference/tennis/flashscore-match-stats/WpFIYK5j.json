@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+  "boardTitle": "Tamara Korpatsch vs Wang Xinyu",
+  "boardPlayerName": "Xinyu Wang",
+  "recentOpponentName": "Alexandra Eala",
+  "recentIndex": 2,
+  "recentEvent": "Rome",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "PHI   Loss 6-4 6-3 2nd",
+  "flashscoreLabel": "Wang Xin. - Eala A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Wang Xin.",
+    "Eala A."
+  ],
+  "generatedAt": "2026-05-27T06:47:57.493Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WpFIYK5j/",
+  "matchId": "WpFIYK5j",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WpFIYK5j",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WpFIYK5j"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:48"
+      }
+    ],
+    "totalDuration": "1:27"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "67%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (19/34)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (6/17)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "4/7",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (15/42)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "5/7",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (25/51)",
+              "right": "59% (37/63)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (26/63)",
+              "right": "51% (26/51)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (51/114)",
+              "right": "55% (63/114)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "44% (4/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "54%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (10/21)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/5",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (13/30)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (10/24)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "74%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "4/5",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (10/29)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (12/21)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (16/39)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (28/60)",
+              "right": "53% (32/60)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

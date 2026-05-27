@@ -4558,6 +4558,7 @@ const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
   const confidence = Number(game.confidence) || 0
   const volatility = Number(game.volatility) || 0
   const allowModelOnlyAnalysis = game.league === 'Tennis'
+  const isTennisMarketPrice = allowModelOnlyAnalysis && Boolean(game.tennisContext?.predictionMarket)
   const tennisMarketPlayer = game.tennisContext?.players?.find((entry) =>
     participant ? teamNamesMatch(entry.name, participant.name) : false
   )
@@ -4592,7 +4593,7 @@ const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
     marketProbabilityLabel:
       (Number.isFinite(participant?.impliedProbability) ? participant.impliedProbabilityLabel : null) ??
       (Number.isFinite(tennisMarketProbability)
-        ? formatProbability(tennisMarketProbability)
+        ? `${isTennisMarketPrice ? 'Market price ' : ''}${formatProbability(tennisMarketProbability)}`
         : allowModelOnlyAnalysis && !hasFullMoneyline
           ? 'Model only'
           : 'N/A'),

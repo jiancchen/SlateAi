@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
+  "boardTitle": "Daria Snigur vs Peyton Stearns",
+  "boardPlayerName": "Peyton Stearns",
+  "recentOpponentName": "Madison Keys",
+  "recentIndex": 3,
+  "recentEvent": "Rome",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "USA   Loss 4-6 6-4 6-2 2nd",
+  "flashscoreLabel": "Keys M. - Stearns P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Keys M.",
+    "Stearns P."
+  ],
+  "generatedAt": "2026-05-27T06:48:08.235Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4OYW1mNp/",
+  "matchId": "4OYW1mNp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4OYW1mNp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4OYW1mNp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "64%",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (40/57)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (15/34)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/13",
+              "right": "4/10",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (24/52)",
+              "right": "30% (17/57)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (11/29)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "4/13",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (55/91)",
+              "right": "57% (46/81)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (35/81)",
+              "right": "40% (36/91)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (90/172)",
+              "right": "48% (82/172)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "43% (6/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (16/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "56%",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (6/17)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "0/1",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (2/12)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/8",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (20/39)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (29/66)",
+              "right": "56% (37/66)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "65%",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/4",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/4",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (33/64)",
+              "right": "48% (31/64)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "74%",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (9/10)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/5",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (9/17)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/1",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "74% (14/19)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (14/23)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (28/42)",
+              "right": "33% (14/42)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Keys M.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

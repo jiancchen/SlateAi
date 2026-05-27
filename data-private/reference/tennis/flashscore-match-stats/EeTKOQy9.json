@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-ugo-humbert-quentin-halys-2026-05-27",
+  "boardTitle": "Ugo Humbert vs Quentin Halys",
+  "boardPlayerName": "Ugo Humbert",
+  "recentOpponentName": "Adrian Mannarino",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "FRA  6-3 6-4 6-3 1st",
+  "flashscoreLabel": "Humbert U. - Mannarino A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Humbert U.",
+    "Mannarino A."
+  ],
+  "generatedAt": "2026-05-27T06:48:34.291Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EeTKOQy9/",
+  "matchId": "EeTKOQy9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EeTKOQy9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EeTKOQy9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "58%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (33/39)",
+              "right": "74% (39/53)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (21/33)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "8/13",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "204 km/h",
+              "right": "185 km/h",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "169 km/h",
+              "right": "142 km/h",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (14/53)",
+              "right": "15% (6/39)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (23/38)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/13",
+              "right": "1/3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "26",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "35",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (54/72)",
+              "right": "59% (54/91)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (37/91)",
+              "right": "25% (18/72)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (91/163)",
+              "right": "44% (72/163)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (5/14)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "64% (18/28)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "52%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (1/11)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (27/47)",
+              "right": "43% (20/47)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "62%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (15/34)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (32/59)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "58%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (8/9)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "5/7",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "0/1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "16",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (17/21)",
+              "right": "58% (21/36)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (15/36)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (32/57)",
+              "right": "44% (25/57)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Mannarino A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

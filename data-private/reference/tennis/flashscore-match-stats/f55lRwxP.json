@@ -1,0 +1,666 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-karen-khachanov-marco-trungelliti-2026-05-27",
+  "boardTitle": "Karen Khachanov vs Marco Trungelliti",
+  "boardPlayerName": "Marco Trungelliti",
+  "recentOpponentName": "Zachary Svajda",
+  "recentIndex": 2,
+  "recentEvent": "Rome",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "USA   Loss 0-6 6-4 7-64 1st",
+  "flashscoreLabel": "Trungelliti M. - Svajda Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Trungelliti M.",
+    "Svajda Z."
+  ],
+  "generatedAt": "2026-05-27T06:47:55.231Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/f55lRwxP/",
+  "matchId": "f55lRwxP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_f55lRwxP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_f55lRwxP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:22"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "56%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (48/62)",
+              "right": "77% (40/52)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (16/36)",
+              "right": "46% (19/41)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (12/52)",
+              "right": "23% (14/62)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (22/41)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "37",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "42",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (64/98)",
+              "right": "63% (59/93)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (34/93)",
+              "right": "35% (34/98)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (98/191)",
+              "right": "49% (93/191)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (16/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "53%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (1/3)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "78% (7/9)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (13/18)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "71% (12/17)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "71% (25/35)",
+              "right": "29% (10/35)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "61%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (4/22)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "15",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "19",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "67% (24/36)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (12/36)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (32/68)",
+              "right": "53% (36/68)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "53%",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (24/29)",
+              "right": "95% (20/21)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (7/19)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "5% (1/21)",
+              "right": "17% (5/29)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (9/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "20",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "17",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (31/48)",
+              "right": "75% (30/40)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (10/40)",
+              "right": "35% (17/48)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (41/88)",
+              "right": "53% (47/88)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Trungelliti M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

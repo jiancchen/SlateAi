@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27",
+  "boardTitle": "Yuliia Starodubtseva vs Elena Rybakina",
+  "boardPlayerName": "Yuliia Starodubtseva",
+  "recentOpponentName": "Simona Waltert",
+  "recentIndex": 7,
+  "recentEvent": "Rome",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "SUI   Loss 7-5 4-6 6-1 1st",
+  "flashscoreLabel": "Starodubtseva Y. - Waltert S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Starodubtseva Y.",
+    "Waltert S."
+  ],
+  "generatedAt": "2026-05-27T06:48:18.860Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0jW79sOO/",
+  "matchId": "0jW79sOO",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0jW79sOO",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0jW79sOO"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:07"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:57"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "72%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (23/50)",
+              "right": "53% (39/73)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (16/41)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/16",
+              "right": "7/14",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (34/73)",
+              "right": "54% (27/50)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (16/29)",
+              "right": "61% (25/41)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/14",
+              "right": "9/16",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (39/91)",
+              "right": "51% (52/102)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (50/102)",
+              "right": "57% (52/91)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (89/193)",
+              "right": "54% (104/193)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "36% (5/14)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return games won",
+              "left": "47% (7/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (12/29)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "71%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (11/21)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "3/5",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (12/29)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "46% (16/35)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (34/76)",
+              "right": "55% (42/76)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "70%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (7/13)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "4/8",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "54% (15/28)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "3/3",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (13/29)",
+              "right": "43% (17/40)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (23/40)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (36/69)",
+              "right": "48% (33/69)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "76%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "31% (5/16)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "0/1",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/9",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "37% (10/27)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (9/21)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (19/48)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Waltert S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

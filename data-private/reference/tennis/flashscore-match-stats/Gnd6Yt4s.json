@@ -1,0 +1,1036 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+  "boardTitle": "Alejandro Davidovich Fokina vs Thiago Agustin Tirante",
+  "boardPlayerName": "Alejandro Davidovich Fokina",
+  "recentOpponentName": "Damir Dzumhur",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "24 May 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "BIH  6-73 6-3 2-6 7-5 6-3 1st",
+  "flashscoreLabel": "Davidovich Fokina A. - Dzumhur D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Davidovich Fokina A.",
+    "Dzumhur D."
+  ],
+  "generatedAt": "2026-05-27T06:47:44.156Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Gnd6Yt4s/",
+  "matchId": "Gnd6Yt4s",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Gnd6Yt4s",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Gnd6Yt4s"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "4:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "63%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (78/119)",
+              "right": "66% (63/96)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (21/48)",
+              "right": "53% (30/57)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/21",
+              "right": "19/28",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "182 km/h",
+              "right": "162 km/h",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "155 km/h",
+              "right": "136 km/h",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (33/96)",
+              "right": "34% (41/119)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (27/57)",
+              "right": "56% (27/48)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "9/28",
+              "right": "7/21",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "77",
+              "right": "39",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "90",
+              "right": "40",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "59% (29/49)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (99/167)",
+              "right": "61% (93/153)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (60/153)",
+              "right": "41% (68/167)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (159/320)",
+              "right": "50% (161/320)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "72% (18/25)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (9/25)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (27/50)",
+              "right": "46% (23/50)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "62%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (22/30)",
+              "right": "87% (20/23)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (3/23)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "9",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (8/15)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (27/40)",
+              "right": "76% (28/37)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/37)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (36/77)",
+              "right": "53% (41/77)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "62%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (15/23)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "6/8",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/2",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (15/29)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (35/61)",
+              "right": "43% (26/61)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "57%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/12)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/4",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "5",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (4/21)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "64%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (16/28)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "7/10",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (11/23)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "2/3",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "8",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "7",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (19/33)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (16/36)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (35/69)",
+              "right": "49% (34/69)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "67%",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "2/5",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/8",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "5",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "10",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (16/30)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (35/64)",
+              "right": "45% (29/64)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Davidovich Fokina A.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

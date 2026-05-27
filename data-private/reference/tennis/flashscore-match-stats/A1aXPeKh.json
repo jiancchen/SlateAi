@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jasmine-paolini-solana-sierra-2026-05-27",
+  "boardTitle": "Jasmine Paolini vs Solana Sierra",
+  "boardPlayerName": "Solana Sierra",
+  "recentOpponentName": "Cori Gauff",
+  "recentIndex": 4,
+  "recentEvent": "Rome",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "USA   Loss 5-7 6-0 6-4 3rd",
+  "flashscoreLabel": "Gauff C. - Sierra S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Gauff C.",
+    "Sierra S."
+  ],
+  "generatedAt": "2026-05-27T06:48:30.573Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/A1aXPeKh/",
+  "matchId": "A1aXPeKh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_A1aXPeKh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_A1aXPeKh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "65%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (34/51)",
+              "right": "51% (35/68)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (13/31)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "14/23",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "49% (33/68)",
+              "right": "33% (17/51)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (22/36)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "9/23",
+              "right": "6/10",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (47/82)",
+              "right": "47% (49/104)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (55/104)",
+              "right": "43% (35/82)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (102/186)",
+              "right": "45% (84/186)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "57% (8/14)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return games won",
+              "left": "64% (9/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total games won",
+              "left": "61% (17/28)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "71%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "5/7",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (14/36)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "3/7",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (21/37)",
+              "right": "57% (29/51)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (22/51)",
+              "right": "43% (16/37)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (43/88)",
+              "right": "51% (45/88)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "58%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (6/8)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "6/9",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (9/14)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "0/0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "75% (12/16)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (15/24)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (27/40)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "62%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (12/21)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (2/8)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/7",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (10/18)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "3/3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "48% (14/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (18/29)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Return games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Sierra S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
+  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
+  "boardPlayerName": "Elina Svitolina",
+  "recentOpponentName": "Noemi Basiletti",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "ITA  6-1 6-3 2nd",
+  "flashscoreLabel": "Svitolina E. - Basiletti N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Svitolina E.",
+    "Basiletti N."
+  ],
+  "generatedAt": "2026-05-27T06:48:21.856Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GMdOYKNH/",
+  "matchId": "GMdOYKNH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GMdOYKNH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GMdOYKNH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "71%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (27/42)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (12/24)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/11",
+              "right": "4/10",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "54% (21/39)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "2/11",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (39/66)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (32/55)",
+              "right": "41% (27/66)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (71/121)",
+              "right": "41% (50/121)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "69%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/7",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (12/20)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "1/4",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "66% (19/29)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (33/54)",
+              "right": "39% (21/54)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "73%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "1/3",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (9/19)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/7",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (25/41)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (13/26)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (38/67)",
+              "right": "43% (29/67)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Basiletti N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}
