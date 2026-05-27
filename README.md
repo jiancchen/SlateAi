@@ -75,6 +75,28 @@ That starts both:
 npm run data:export:published
 ```
 
+### Tennis Preflight
+
+Before generating or refreshing a tennis slate, capture the ranking snapshot for that calendar date. This updates the latest join file and also writes a dated history file so we can build player ranking-history charts later.
+
+```bash
+npm run data:fetch:tennis-rankings -- --date YYYY-MM-DD
+npm run data:import:tennis-rankings
+npm run data:fetch:tennis-scoreboard -- --date YYYY-MM-DD
+npm run data:generate:tennis-clay-context -- --date YYYY-MM-DD
+node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json
+npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
+npm run data:import:tennis-slate -- --date YYYY-MM-DD
+npm run data:import:tennis-flashscore
+```
+
+Ranking notes:
+- `data-private/reference/tennis/player-rankings.json` is the current join file for predictions and opponent-quality enrichment.
+- `data-private/reference/tennis/player-rankings-history/YYYY-MM-DD.json` is the dated snapshot archive.
+- `tennis_rankings` stores one row per player/tour/date, including rank, points, age, country, source, and raw JSON. Use that table for historical rank charts.
+- The ranking fetcher tries Live Tennis live ranking pages first for live rank, age, country, and points, while preserving ESPN as the fallback/source of record when Live Tennis is blocked by a browser challenge.
+- If Live Tennis is blocked, open the ATP/WTA pages in Chrome, capture the page snapshots under `data-private/reference/tennis/live-tennis-browser-snapshots/`, then rerun with `--live-snapshot-atp PATH --live-snapshot-wta PATH`.
+
 ### MLB Preflight
 
 ```bash

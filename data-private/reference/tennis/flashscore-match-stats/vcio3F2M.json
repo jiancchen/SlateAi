@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jasmine-paolini-solana-sierra-2026-05-27",
+  "boardTitle": "Jasmine Paolini vs Solana Sierra",
+  "flashscoreLabel": "Sierra Solana - Paolini Jasmine",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:18.658Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/paolini-jasmine-noaX0EJn/sierra-solana-E5xrmfn5/",
+  "matchId": "vcio3F2M",
+  "players": [
+    "Jasmine Paolini",
+    "Solana Sierra"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vcio3F2M",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vcio3F2M"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

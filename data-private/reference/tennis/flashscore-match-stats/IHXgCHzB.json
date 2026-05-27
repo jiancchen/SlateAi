@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-marta-kostyuk-katie-volynets-2026-05-27",
+  "boardTitle": "Marta Kostyuk vs Katie Volynets",
+  "flashscoreLabel": "Volynets Katie - Kostyuk Marta",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:19.754Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/kostyuk-marta-8CZqQdSa/volynets-katie-vw1oqIPi/",
+  "matchId": "IHXgCHzB",
+  "players": [
+    "Marta Kostyuk",
+    "Katie Volynets"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IHXgCHzB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IHXgCHzB"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

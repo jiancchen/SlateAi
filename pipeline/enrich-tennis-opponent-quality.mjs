@@ -154,15 +154,34 @@ const loadJsonIfExists = async (filePath, fallback) => {
   }
 }
 
+const RANKING_NAME_ALIASES = {
+  'alexander shevchenko': 'aleksandr shevchenko',
+  'caijsa wilda hennemann': 'caijsa hennemann',
+  'cori gauff': 'coco gauff',
+  'daniel merida aguilar': 'daniel merida',
+  'guiomar zuleta de reales': 'guiomar maristany',
+  'jaume antoni munar clar': 'jaume munar',
+  'joel schwaerzler': 'joel schwarzler',
+  'leylah annie fernandez': 'leylah fernandez',
+  'pedro martinez portero': 'pedro martinez',
+  'tyra caterina grant': 'tyra grant'
+}
+
 const getRanking = (rankings, name) => {
   const key = normalizeName(name)
-  const entry = rankings.players?.[key] || rankings.players?.[name] || null
+  const aliasKey = RANKING_NAME_ALIASES[key]
+  const entry = rankings.players?.[key] || rankings.players?.[aliasKey] || rankings.players?.[name] || null
   if (!entry) return null
   const rank = Number(entry.rank)
   return {
     rank: Number.isFinite(rank) ? rank : null,
+    points: Number.isFinite(Number(entry.points)) ? Number(entry.points) : null,
+    age: Number.isFinite(Number(entry.age)) ? Number(entry.age) : null,
+    country: entry.country || null,
     tour: entry.tour || null,
     source: entry.source || rankings.source || null,
+    profileUrl: entry.profileUrl || null,
+    liveRankSource: entry.liveRankSource || null,
     asOf: entry.asOf || rankings.asOf || null
   }
 }

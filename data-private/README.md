@@ -12,6 +12,10 @@ This project now keeps the deployable web app separate from the local event ware
   Saved home-run model outputs that can be imported and graded later.
 - `data-private/predictions/mlb-sides/`
   Saved MLB side-pick snapshots with model indicators for retrospective grading and train/verify reports.
+- `data-private/reference/tennis/player-rankings.json`
+  Latest tennis ranking join file used by the slate enrichment pass.
+- `data-private/reference/tennis/player-rankings-history/YYYY-MM-DD.json`
+  Dated ranking snapshots. Keep one per slate date so `tennis_rankings` can power historical ranking charts by player, tour, date, age, country, and points.
 - Tennis data now lands in the same SQLite warehouse via normalized tables for rankings, slate matches, H2H source snapshots, player clay/recent-form context, recent opponent logs, desk/source predictions, and Flashscore service/return stat rows.
 
 ## Why This Shape
@@ -45,6 +49,7 @@ npm run data:import:mlb-sides -- --file data-private/predictions/mlb-sides/2026-
 npm run data:grade:mlb-sides -- --model-name board-moneyline-v2
 npm run data:report:mlb-sides -- --model-name board-moneyline-v2 --train-end 2026-05-12 --verify-start 2026-05-13 --verify-end 2026-05-15 --out data-private/reports/mlb-side-backtest-2026-05-10-to-2026-05-15.md
 npm run data:init:tennis
+npm run data:fetch:tennis-rankings -- --date 2026-05-26
 npm run data:import:tennis-rankings
 npm run data:import:tennis-slate -- --date 2026-05-26
 npm run data:import:tennis-flashscore
@@ -60,3 +65,4 @@ npm run data:summary:tennis
 - Saved ESPN daily batting-leader files can now be normalized with `data:export:mlb-batting-impact`, which gives the HR model a reusable recent-impact pool instead of relying only on season-long xHR leaders.
 - The side-pick backtest flow is meant to expose pattern misses like `bullpen flip losses`, `thin-edge` misses, and `projected hit edge against pick` so we can tune first-5, spread, and moneyline models separately.
 - If we want semantic retrieval later, the best use would be embeddings for long-form notes, scouting blurbs, or source excerpts, while keeping game facts in SQLite.
+- For tennis, always fetch and import the ranking snapshot before opponent-quality enrichment. That preserves daily rank/points/age/country history in `tennis_rankings` instead of only keeping the latest player state.

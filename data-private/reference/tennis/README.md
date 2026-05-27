@@ -15,9 +15,14 @@ Next warehouse targets:
 
 Ranking warehouse:
 - `player-rankings.json` is the local join table for opponent-quality enrichment.
+- `player-rankings-history/YYYY-MM-DD.json` stores dated snapshots for future historical ranking charts.
 - Keys should use the normalized player name produced by `pipeline/enrich-tennis-opponent-quality.mjs` when possible.
-- Entry shape: `{ "rank": 12, "tour": "ATP", "source": "ATP rankings", "asOf": "2026-05-25" }`.
+- Entry shape: `{ "rank": 12, "points": 2665, "age": 24, "country": "CZE", "tour": "ATP", "source": "ATP rankings", "asOf": "2026-05-25" }`.
 - The enrichment layer can run with an empty warehouse, but it will mark missing ranking coverage instead of pretending opponent quality is known.
+- Daily command: `npm run data:fetch:tennis-rankings -- --date YYYY-MM-DD && npm run data:import:tennis-rankings`.
+- The fetcher attempts Live Tennis (`live-tennis.eu`) for live rank, age, country, and points, then keeps ESPN ranking rows as the fallback when Live Tennis returns a browser challenge.
+- Browser challenge fallback: capture the readable Chrome page snapshots in `live-tennis-browser-snapshots/` and pass them back with `--live-snapshot-atp PATH --live-snapshot-wta PATH`.
+- Historical chart source: query `tennis_rankings` by `normalized_name`, `tour`, and `as_of_date`; do not overwrite old dated rows.
 
 Opponent-adjusted clay context:
 - Run `node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json`.

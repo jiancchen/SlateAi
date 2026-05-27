@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-james-duckworth-rafael-jodar-2026-05-27",
+  "boardTitle": "James Duckworth vs Rafael Jodar",
+  "flashscoreLabel": "Jodar Rafael - Duckworth James",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:13.664Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/duckworth-james-2JWHPUUb/jodar-rafael-OdngshVK/",
+  "matchId": "OxyzQiSP",
+  "players": [
+    "James Duckworth",
+    "Rafael Jodar"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OxyzQiSP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OxyzQiSP"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

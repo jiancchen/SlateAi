@@ -1,12 +1,112 @@
 import { createSportsMatchModel } from './sports-model.js'
 import { buildTennistonicH2HUrl } from './tennis-source-mapping.js'
+import tennisClayContext from './day-2026-05-27-tennis-clay-context.generated.json' with { type: 'json' }
+import tennisOpponentQualityContext from './day-2026-05-27-tennis-opponent-quality.generated.json' with { type: 'json' }
 
 const oddsProvider = 'Roland Garros desk board'
+const marketSource = 'Prediction market screenshot'
+const marketCapturedAt = '2026-05-26 4:31 PM PT'
 
-const buildPredictionOnlyOdds = () => ({
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
+const formatPct = (value) => (Number.isFinite(value) ? `${Math.round(value)}%` : 'n/a')
+const formatAmount = (value) => (Number.isFinite(value) ? value.toLocaleString('en-US') : 'n/a')
+const formatSignedPct = (value) => (Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${Math.round(value)} pts` : 'n/a')
+
+const buildPlayerEconomics = (name, pricePct, amount) => {
+  if (!Number.isFinite(pricePct) || pricePct <= 0) return null
+  const cost = pricePct / 100
+  const grossProfitPct = ((1 - cost) / cost) * 100
+  const priceBand =
+    pricePct >= 85
+      ? 'tiny-upside favorite'
+      : pricePct >= 70
+        ? 'fee-sensitive favorite'
+        : pricePct >= 55
+          ? 'moderate favorite'
+          : pricePct >= 40
+            ? 'coinflip zone'
+            : 'dog payout lane'
+
+  return {
+    name,
+    pricePct,
+    amount,
+    priceBand,
+    grossProfitPct: Math.round(grossProfitPct),
+    grossPayoutMultiple: Number((1 / cost).toFixed(2)),
+    centsAtRisk: pricePct,
+    centsProfitIfWin: 100 - pricePct
+  }
+}
+
+const buildMarketEconomics = ({ raw, market, marketA, marketB }) => {
+  if (!market || !Number.isFinite(marketA?.pct) || !Number.isFinite(marketB?.pct)) return null
+
+  const players = [
+    buildPlayerEconomics(raw.a, marketA.pct, marketA.amount),
+    buildPlayerEconomics(raw.b, marketB.pct, marketB.amount)
+  ].filter(Boolean)
+  const picked = players.find((player) => player.name === raw.pick)
+  const other = players.find((player) => player.name !== raw.pick)
+  const favorite = players.reduce((winner, player) => (player.pricePct > winner.pricePct ? player : winner), players[0])
+  const deskEdgePct = picked ? raw.conf - picked.pricePct : null
+  const feeBufferPct = 3
+  const favoriteTax = Number.isFinite(picked?.pricePct) && picked.pricePct >= 70
+  const priceAction =
+    !picked
+      ? 'No market read'
+      : favoriteTax && deskEdgePct <= feeBufferPct
+        ? 'Pass at price'
+        : favoriteTax && deskEdgePct <= feeBufferPct + 5
+          ? 'Watch, do not chase'
+          : picked.pricePct < 45 && raw.conf >= 55
+            ? 'Dog value lane'
+            : deskEdgePct >= feeBufferPct + 4
+              ? 'Playable edge'
+              : 'No clear price edge'
+  const summary =
+    !picked
+      ? 'No screenshot price was captured for the desk side.'
+      : favoriteTax
+        ? `${raw.pick} is priced at ${formatPct(picked.pricePct)}, leaving only ${picked.centsProfitIfWin}c gross profit per share before platform fees. The pick can be likely and still be a poor buy unless our true edge clears the price by more than the fee buffer.`
+        : `${raw.pick} is priced at ${formatPct(picked.pricePct)}, a ${picked.priceBand} with roughly ${picked.grossProfitPct}% gross profit on stake before platform fees if it wins.`
+
+  return {
+    source: marketSource,
+    capturedAt: marketCapturedAt,
+    feeBufferPct,
+    totalVolume: market.total,
+    deskPickName: raw.pick,
+    deskConfidencePct: raw.conf,
+    deskPricePct: picked?.pricePct ?? null,
+    deskEdgePct,
+    favoriteName: favorite?.name ?? null,
+    favoritePricePct: favorite?.pricePct ?? null,
+    otherSideName: other?.name ?? null,
+    otherSidePricePct: other?.pricePct ?? null,
+    priceAction,
+    summary,
+    players
+  }
+}
+
+const buildPredictionOnlyOdds = (raw, market) => ({
   participantOrder: [0, 1],
-  markets: [],
-  note: 'This May 27 Roland Garros board is a singles-only prediction desk built from the ESPN scoreboard, the May 26 postmortem, and conservative R2 clay rules. Doubles and the Alex de Minaur walkover are intentionally excluded.',
+  markets: market
+    ? [
+        {
+          label: 'Prediction market',
+          book: marketSource,
+          value: `${raw.a} ${formatPct(market.players?.[raw.a]?.pct)} / ${raw.b} ${formatPct(market.players?.[raw.b]?.pct)}`
+        },
+        {
+          label: 'Market volume',
+          book: marketSource,
+          value: formatAmount(market.total)
+        }
+      ]
+    : [],
+  note: 'This May 27 Roland Garros board is a singles-only prediction desk built from the ESPN scoreboard, the May 26 postmortem, conservative R2 clay rules, and captured prediction-market prices where available. Doubles and the Alex de Minaur walkover are intentionally excluded.',
   provider: oddsProvider
 })
 
@@ -27,6 +127,11 @@ const stage = (raw) => `Roland Garros ${raw.fmt === 'ATP' ? 'Men' : 'Women'} | $
 
 const buildMatch = (raw) => {
   const id = `rg-${raw.fmt === 'ATP' ? 'm' : 'w'}-${raw.idSlug}-2026-05-27`
+  const market = marketByMatchId[id] ?? null
+  const marketA = market?.players?.[raw.a] ?? null
+  const marketB = market?.players?.[raw.b] ?? null
+  const hasMarket = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
+  const marketEconomics = buildMarketEconomics({ raw, market, marketA, marketB })
   const pickIndex = raw.pick === raw.a ? 0 : 1
   const participants = [
     participant(id, 0, 'Player 1', raw.a, raw.profileA),
@@ -37,6 +142,12 @@ const buildMatch = (raw) => {
   const dogNote = raw.vol >= 68 ? ' This is a watch-grade read unless the market price is generous enough to pay for the risk.' : ''
   const summary = `${raw.pick} gets the desk lean because ${raw.angle}.${dogNote}`
   const factors = [
+    ...(hasMarket
+      ? [
+          `Prediction market: ${raw.a} ${formatPct(marketA.pct)} (${formatAmount(marketA.amount)}) vs ${raw.b} ${formatPct(marketB.pct)} (${formatAmount(marketB.amount)}), ${formatAmount(market.total)} total captured from screenshots.`,
+          `Market economics: ${marketEconomics.priceAction}. ${marketEconomics.summary} Desk edge vs captured price: ${formatSignedPct(marketEconomics.deskEdgePct)}.`
+        ]
+      : []),
     `${raw.a}: ${raw.noteA}`,
     `${raw.b}: ${raw.noteB}`,
     `Clay desk angle: ${raw.angle}.`,
@@ -67,21 +178,37 @@ const buildMatch = (raw) => {
       lean: `Lean ${raw.pick} because ${raw.angle}.`,
       swing: `Swing factor: ${raw.swing}`,
       swingFactor: `Swing factor: ${raw.swing}`,
-      odds: buildPredictionOnlyOdds(),
+      odds: buildPredictionOnlyOdds(raw, market),
       tennisContext: {
         surface: 'Clay',
         court: raw.court,
         h2hLeader: '',
         fatigueFlag: false,
-        liveDog: raw.conf < 60,
+        liveDog: hasMarket ? (raw.pick === raw.a ? marketA.pct < marketB.pct : marketB.pct < marketA.pct) : raw.conf < 60,
         players: [
-          { name: raw.a, rank: raw.seedA, label: raw.a, form: null, boardPct: null, decimalOdds: null, marketLabel: 'No market', clayLine: raw.profileA, record2026: '', notes: raw.noteA, matchupNote: raw.pick === raw.a ? `${raw.a} is the desk lean.` : `${raw.a} needs the upset script.` },
-          { name: raw.b, rank: raw.seedB, label: raw.b, form: null, boardPct: null, decimalOdds: null, marketLabel: 'No market', clayLine: raw.profileB, record2026: '', notes: raw.noteB, matchupNote: raw.pick === raw.b ? `${raw.b} is the desk lean.` : `${raw.b} needs the upset script.` }
+          { name: raw.a, rank: raw.seedA, label: raw.a, form: null, boardPct: Number.isFinite(marketA?.pct) ? marketA.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketA?.pct) ? `Market ${formatPct(marketA.pct)}` : 'No market', clayLine: raw.profileA, record2026: '', notes: raw.noteA, matchupNote: raw.pick === raw.a ? `${raw.a} is the desk lean.` : `${raw.a} needs the upset script.` },
+          { name: raw.b, rank: raw.seedB, label: raw.b, form: null, boardPct: Number.isFinite(marketB?.pct) ? marketB.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketB?.pct) ? `Market ${formatPct(marketB.pct)}` : 'No market', clayLine: raw.profileB, record2026: '', notes: raw.noteB, matchupNote: raw.pick === raw.b ? `${raw.b} is the desk lean.` : `${raw.b} needs the upset script.` }
         ],
         comparisonRows: [
+          ...(hasMarket
+            ? [
+                { label: 'Prediction market', metric: 'Screenshot split', leftScore: clamp(Math.round(marketA.pct), 0, 100), rightScore: clamp(Math.round(marketB.pct), 0, 100), leftLabel: raw.a, rightLabel: raw.b, winner: marketA.pct === marketB.pct ? 'Even' : marketA.pct > marketB.pct ? raw.a : raw.b }
+              ]
+            : []),
           { label: 'Desk lean', metric: 'Confidence split', leftScore: raw.pick === raw.a ? raw.conf : 100 - raw.conf, rightScore: raw.pick === raw.b ? raw.conf : 100 - raw.conf, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick },
           { label: 'Volatility', metric: 'Lower chaos side', leftScore: raw.pick === raw.a ? 100 - raw.vol : raw.vol, rightScore: raw.pick === raw.b ? 100 - raw.vol : raw.vol, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick }
         ],
+        predictionMarket: market
+          ? {
+              source: marketSource,
+              capturedAt: marketCapturedAt,
+              totalVolume: market.total,
+              players: [
+                { name: raw.a, probabilityPct: marketA?.pct ?? null, amount: marketA?.amount ?? null },
+                { name: raw.b, probabilityPct: marketB?.pct ?? null, amount: marketB?.amount ?? null }
+              ]
+            }
+          : null,
         projection: {
           projectedWinner: raw.pick,
           projectedSetLine: raw.fmt === 'ATP' ? (raw.conf >= 72 ? '3-0 or 3-1' : '3-1 or 3-2') : (raw.conf >= 70 ? '2-0 or 2-1' : '2-1'),
@@ -92,9 +219,38 @@ const buildMatch = (raw) => {
           overview: `${raw.pick} is projected on the cleaner Round 2 script, with volatility at ${raw.vol} because ${raw.swing}`,
           fantasy: []
         },
-        tradePlan: null,
-        clayMatchupData: null,
-        opponentQualityData: null,
+        tradePlan: marketEconomics
+          ? {
+              laneLabel: marketEconomics.priceAction,
+              tone:
+                marketEconomics.priceAction === 'Pass at price'
+                  ? 'danger'
+                  : marketEconomics.priceAction === 'Watch, do not chase'
+                    ? 'warning'
+                    : marketEconomics.priceAction === 'Playable edge' || marketEconomics.priceAction === 'Dog value lane'
+                      ? 'accent'
+                      : 'neutral',
+              entrySideName: marketEconomics.deskPickName,
+              favoriteName: marketEconomics.favoriteName,
+              headline: marketEconomics.priceAction,
+              summary: marketEconomics.summary,
+              trigger:
+                marketEconomics.priceAction === 'Pass at price'
+                  ? 'Need a better live entry or stronger evidence than the current desk edge. Do not buy the favorite just because it is likely.'
+                  : 'Use the market price as an entry filter; win probability is not enough by itself.',
+              exit: `Desk confidence ${raw.conf}% vs market ${marketEconomics.deskPricePct ?? 'n/a'}%, with a ${marketEconomics.feeBufferPct} pt fee buffer.`,
+              marketGap: Math.round(marketEconomics.deskEdgePct ?? 0),
+              dogLift: null,
+              entryPricePct: marketEconomics.deskPricePct,
+              otherSideName: marketEconomics.otherSideName,
+              otherSideMarketPct: marketEconomics.otherSidePricePct,
+              favoriteMarketPct: marketEconomics.favoritePricePct,
+              dogMarketPct: Math.min(marketA.pct, marketB.pct)
+            }
+          : null,
+        marketEconomics,
+        clayMatchupData: tennisClayContext.matches?.[id] ?? null,
+        opponentQualityData: tennisOpponentQualityContext.matches?.[id] ?? null,
         researchLinks: [
           { label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260527' },
           { label: 'Tennistonic H2H', url: h2hUrl }
@@ -115,7 +271,7 @@ const buildMatch = (raw) => {
         participant: picked,
         opponent,
         lean: `Lean ${raw.pick} because ${raw.angle}.`,
-        rationale: factors[2],
+        rationale: hasMarket ? factors[1] : factors[2],
         confidence: raw.conf,
         volatility: raw.vol,
         recommendationScore: raw.recommendationScore,
@@ -123,8 +279,8 @@ const buildMatch = (raw) => {
         sourceLabel: 'Editorial slate read',
         modelEdge: 0,
         modelEdgeLabel: 'Model-only read',
-        marketProbability: null,
-        marketProbabilityLabel: 'Model only',
+        marketProbability: hasMarket ? (raw.pick === raw.a ? marketA.pct / 100 : marketB.pct / 100) : null,
+        marketProbabilityLabel: hasMarket ? formatPct(raw.pick === raw.a ? marketA.pct : marketB.pct) : 'Model only',
         inputs: [],
         inputsUsed: 0,
         volatilityNotes: raw.vol >= 68 ? [{ label: 'Volatility gate: watch-grade unless price pays enough.', delta: raw.vol - 60 }] : []
@@ -990,6 +1146,130 @@ const rawSingles = [
     "recommendationScore": 48
   }
 ]
+
+const market = (total, rows) => ({
+  total,
+  players: Object.fromEntries(rows.map(([name, amount, pct]) => [name, { amount, pct }]))
+})
+
+const marketByMatchId = {
+  'rg-w-tamara-korpatsch-wang-xinyu-2026-05-27': market(8687, [
+    ['Tamara Korpatsch', 2660, 49],
+    ['Wang Xinyu', 6027, 52]
+  ]),
+  'rg-w-sara-bejlek-iga-swiatek-2026-05-27': market(26045, [
+    ['Sara Bejlek', 11628, 6],
+    ['Iga Swiatek', 14417, 95]
+  ]),
+  'rg-w-viktorija-golubic-alycia-parks-2026-05-27': market(5148, [
+    ['Viktorija Golubic', 602, 51],
+    ['Alycia Parks', 4546, 51]
+  ]),
+  'rg-w-daria-snigur-peyton-stearns-2026-05-27': market(4622, [
+    ['Daria Snigur', 796, 35],
+    ['Peyton Stearns', 3826, 67]
+  ]),
+  'rg-w-jelena-ostapenko-magda-linette-2026-05-27': market(3940, [
+    ['Jelena Ostapenko', 1094, 78],
+    ['Magda Linette', 2846, 23]
+  ]),
+  'rg-w-marta-kostyuk-katie-volynets-2026-05-27': market(8238, [
+    ['Marta Kostyuk', 3460, 87],
+    ['Katie Volynets', 4778, 14]
+  ]),
+  'rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27': market(9997, [
+    ['Elina Svitolina', 1950, 93],
+    ['Kaitlin Quevedo', 8047, 9]
+  ]),
+  'rg-w-francesca-jones-marie-bouzkova-2026-05-27': market(2314, [
+    ['Francesca Jones', 846, 24],
+    ['Marie Bouzkova', 1468, 77]
+  ]),
+  'rg-w-jasmine-paolini-solana-sierra-2026-05-27': market(3862, [
+    ['Jasmine Paolini', 3599, 64],
+    ['Solana Sierra', 263, 36]
+  ]),
+  'rg-w-hailey-baptiste-wang-xiyu-2026-05-27': market(21125, [
+    ['Hailey Baptiste', 12847, 67],
+    ['Wang Xiyu', 8278, 33]
+  ]),
+  'rg-w-jil-teichmann-magdalena-frech-2026-05-27': market(2748, [
+    ['Jil Teichmann', 2033, 41],
+    ['Magdalena Frech', 715, 60]
+  ]),
+  'rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27': market(23128, [
+    ['Mirra Andreeva', 11515, 95],
+    ['Marina Bassols Ribera', 11613, 6]
+  ]),
+  'rg-w-kamilla-rakhimova-karolina-muchova-2026-05-27': market(5074, [
+    ['Kamilla Rakhimova', 4498, 11],
+    ['Karolina Muchova', 576, 90]
+  ]),
+  'rg-w-eva-lys-sorana-cirstea-2026-05-27': market(3282, [
+    ['Eva Lys', 795, 22],
+    ['Sorana Cirstea', 2487, 79]
+  ]),
+  'rg-m-karen-khachanov-marco-trungelliti-2026-05-27': market(48411, [
+    ['Karen Khachanov', 33192, 77],
+    ['Marco Trungelliti', 15219, 23]
+  ]),
+  'rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27': market(19119, [
+    ['Alejandro Davidovich Fokina', 9636, 43],
+    ['Thiago Agustin Tirante', 9483, 58]
+  ]),
+  'rg-m-federico-cina-jesper-de-jong-2026-05-27': market(12378, [
+    ['Federico Cina', 2319, 41],
+    ['Jesper de Jong', 10059, 59]
+  ]),
+  'rg-m-camilo-ugo-carabelli-andrey-rublev-2026-05-27': market(11613, [
+    ['Camilo Ugo Carabelli', 1934, 23],
+    ['Andrey Rublev', 9679, 78]
+  ]),
+  'rg-m-mariano-navone-jakub-mensik-2026-05-27': market(19037, [
+    ['Mariano Navone', 13725, 48],
+    ['Jakub Mensik', 5312, 53]
+  ]),
+  'rg-m-james-duckworth-rafael-jodar-2026-05-27': market(62865, [
+    ['James Duckworth', 46310, 6],
+    ['Rafael Jodar', 16555, 95]
+  ]),
+  'rg-m-nuno-borges-miomir-kecmanovic-2026-05-27': market(17930, [
+    ['Nuno Borges', 2987, 39],
+    ['Miomir Kecmanovic', 14943, 61]
+  ]),
+  'rg-m-thanasi-kokkinakis-pablo-carreno-busta-2026-05-27': market(13920, [
+    ['Thanasi Kokkinakis', 1398, 30],
+    ['Pablo Carreno Busta', 12522, 71]
+  ]),
+  'rg-m-joao-fonseca-dino-prizmic-2026-05-27': market(35557, [
+    ['Joao Fonseca', 14860, 53],
+    ['Dino Prizmic', 20697, 48]
+  ]),
+  'rg-m-ugo-humbert-quentin-halys-2026-05-27': market(4894, [
+    ['Ugo Humbert', 3162, 59],
+    ['Quentin Halys', 1732, 42]
+  ]),
+  'rg-m-valentin-royer-novak-djokovic-2026-05-27': market(58240, [
+    ['Valentin Royer', 10601, 12],
+    ['Novak Djokovic', 47639, 88]
+  ]),
+  'rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27': market(15225, [
+    ['Nishesh Basavareddy', 11677, 37],
+    ['Alex Michelsen', 3548, 65]
+  ]),
+  'rg-m-lorenzo-sonego-tommy-paul-2026-05-27': market(19260, [
+    ['Lorenzo Sonego', 5883, 16],
+    ['Tommy Paul', 13377, 85]
+  ]),
+  'rg-m-casper-ruud-hamad-medjedovic-2026-05-27': market(14880, [
+    ['Hamad Medjedovic', 2437, 31],
+    ['Casper Ruud', 12443, 70]
+  ]),
+  'rg-m-tomas-machac-alexander-zverev-2026-05-27': market(35621, [
+    ['Tomas Machac', 4726, 15],
+    ['Alexander Zverev', 30895, 85]
+  ])
+}
 
 const matches = rawSingles.map(buildMatch)
 

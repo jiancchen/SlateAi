@@ -119,6 +119,11 @@ def init_db(conn: sqlite3.Connection) -> None:
           ranking_as_of text,
           tour text,
           rank integer,
+          ranking_points integer,
+          ranking_age integer,
+          ranking_country text,
+          ranking_profile_url text,
+          ranking_source text,
           overall_wins integer,
           overall_losses integer,
           overall_win_pct real,
@@ -262,10 +267,14 @@ def init_db(conn: sqlite3.Connection) -> None:
 
         create table if not exists tennis_flashscore_match_stats (
           flashscore_id text primary key,
+          slate_date text,
+          board_match_id text,
           source_url text,
           generated_at text,
           left_player_name text,
           right_player_name text,
+          flashscore_label text,
+          board_title text,
           score_summary_json text,
           raw_json text not null,
           updated_at text not null default current_timestamp
@@ -283,6 +292,26 @@ def init_db(conn: sqlite3.Connection) -> None:
           raw_json text not null,
           updated_at text not null default current_timestamp,
           primary key (flashscore_id, scope_label, section_label, stat_label)
+        );
+
+        create table if not exists tennis_flashscore_player_stat_rows (
+          flashscore_id text not null,
+          slate_date text,
+          board_match_id text,
+          player_side text not null,
+          scope_label text not null,
+          section_label text not null,
+          stat_label text not null,
+          player_name text,
+          normalized_name text,
+          raw_value text,
+          percentage real,
+          numerator real,
+          denominator real,
+          numeric_value real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (flashscore_id, player_side, scope_label, section_label, stat_label)
         );
 
         create index if not exists idx_tennis_matches_slate_date on tennis_matches(slate_date);
@@ -306,6 +335,29 @@ def init_db(conn: sqlite3.Connection) -> None:
     ):
         if column_name not in existing_market_columns:
             conn.execute(f"alter table tennis_prediction_market_snapshots add column {column_name} {column_type}")
+    existing_context_columns = {
+        row["name"] for row in conn.execute("pragma table_info(tennis_player_match_context)").fetchall()
+    }
+    for column_name, column_type in (
+        ("ranking_points", "integer"),
+        ("ranking_age", "integer"),
+        ("ranking_country", "text"),
+        ("ranking_profile_url", "text"),
+        ("ranking_source", "text"),
+    ):
+        if column_name not in existing_context_columns:
+            conn.execute(f"alter table tennis_player_match_context add column {column_name} {column_type}")
+    existing_flashscore_columns = {
+        row["name"] for row in conn.execute("pragma table_info(tennis_flashscore_match_stats)").fetchall()
+    }
+    for column_name, column_type in (
+        ("slate_date", "text"),
+        ("board_match_id", "text"),
+        ("flashscore_label", "text"),
+        ("board_title", "text"),
+    ):
+        if column_name not in existing_flashscore_columns:
+            conn.execute(f"alter table tennis_flashscore_match_stats add column {column_name} {column_type}")
     conn.commit()
 
 
@@ -394,6 +446,28 @@ def bool_int(value: Any) -> int | None:
     if value is None:
         return None
     return 1 if bool(value) else 0
+
+
+def parse_flashscore_stat_value(value: Any) -> dict[str, float | None]:
+    text = str(value or "").strip()
+    parsed: dict[str, float | None] = {
+        "percentage": None,
+        "numerator": None,
+        "denominator": None,
+        "numeric_value": None,
+    }
+    percent_match = re.search(r"(-?\d+(?:\.\d+)?)%", text)
+    fraction_match = re.search(r"\(([-\d.]+)\s*/\s*([-\d.]+)\)", text) or re.search(r"^([-\d.]+)\s*/\s*([-\d.]+)$", text)
+    numeric_match = re.search(r"^-?\d+(?:\.\d+)?$", text)
+
+    if percent_match:
+        parsed["percentage"] = as_float(percent_match.group(1))
+    if fraction_match:
+        parsed["numerator"] = as_float(fraction_match.group(1))
+        parsed["denominator"] = as_float(fraction_match.group(2))
+    if numeric_match:
+        parsed["numeric_value"] = as_float(text)
+    return parsed
 
 
 def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
@@ -668,7 +742,8 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
                 """
                 insert into tennis_player_match_context(
                   match_id, player_slot, normalized_name, player_name, ranking_as_of,
-                  tour, rank, overall_wins, overall_losses, overall_win_pct,
+                  tour, rank, ranking_points, ranking_age, ranking_country,
+                  ranking_profile_url, ranking_source, overall_wins, overall_losses, overall_win_pct,
                   clay_wins, clay_losses, clay_win_pct, recent_matches, recent_wins,
                   recent_losses, recent_win_pct, recent_sets_won, recent_sets_lost,
                   recent_set_pct, recent_games_won, recent_games_lost, recent_game_pct,
@@ -679,13 +754,18 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
                   opponent_adjusted_form_score, service_data_source, service_data_note,
                   raw_json
                 )
-                values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 on conflict(match_id, normalized_name) do update set
                   player_slot=excluded.player_slot,
                   player_name=excluded.player_name,
                   ranking_as_of=excluded.ranking_as_of,
                   tour=excluded.tour,
                   rank=excluded.rank,
+                  ranking_points=excluded.ranking_points,
+                  ranking_age=excluded.ranking_age,
+                  ranking_country=excluded.ranking_country,
+                  ranking_profile_url=excluded.ranking_profile_url,
+                  ranking_source=excluded.ranking_source,
                   overall_wins=excluded.overall_wins,
                   overall_losses=excluded.overall_losses,
                   overall_win_pct=excluded.overall_win_pct,
@@ -728,6 +808,11 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
                     ranking.get("asOf"),
                     ranking.get("tour"),
                     as_int(ranking.get("rank")),
+                    as_int(ranking.get("points")),
+                    as_int(ranking.get("age")),
+                    ranking.get("country"),
+                    ranking.get("profileUrl"),
+                    ranking.get("source"),
                     as_int(overall.get("wins")),
                     as_int(overall.get("losses")),
                     as_float(overall.get("winPct")),
@@ -849,7 +934,7 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
 
 
 def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR) -> dict[str, int]:
-    counts = {"matches": 0, "stat_rows": 0}
+    counts = {"matches": 0, "stat_rows": 0, "player_stat_rows": 0}
     if not directory.exists():
         return counts
     for file_path in sorted(directory.glob("*.json")):
@@ -863,25 +948,34 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
         conn.execute(
             """
             insert into tennis_flashscore_match_stats(
-              flashscore_id, source_url, generated_at, left_player_name,
-              right_player_name, score_summary_json, raw_json
+              flashscore_id, slate_date, board_match_id, source_url, generated_at,
+              left_player_name, right_player_name, flashscore_label, board_title,
+              score_summary_json, raw_json
             )
-            values (?, ?, ?, ?, ?, ?, ?)
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             on conflict(flashscore_id) do update set
+              slate_date=excluded.slate_date,
+              board_match_id=excluded.board_match_id,
               source_url=excluded.source_url,
               generated_at=excluded.generated_at,
               left_player_name=excluded.left_player_name,
               right_player_name=excluded.right_player_name,
+              flashscore_label=excluded.flashscore_label,
+              board_title=excluded.board_title,
               score_summary_json=excluded.score_summary_json,
               raw_json=excluded.raw_json,
               updated_at=current_timestamp
             """,
             (
                 flashscore_id,
+                payload.get("slateDate"),
+                payload.get("boardMatchId"),
                 payload.get("sourceUrl"),
                 payload.get("generatedAt"),
                 left_name,
                 right_name,
+                payload.get("flashscoreLabel"),
+                payload.get("boardTitle"),
                 dumps(payload.get("scoreSummary")),
                 dumps(payload),
             ),
@@ -919,6 +1013,54 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
                         ),
                     )
                     counts["stat_rows"] += 1
+                    for side, player_name, raw_value in (
+                        ("left", stat.get("leftPlayer") or left_name, stat.get("left")),
+                        ("right", stat.get("rightPlayer") or right_name, stat.get("right")),
+                    ):
+                        parsed = parse_flashscore_stat_value(raw_value)
+                        normalized = normalize_name(player_name)
+                        upsert_player(conn, player_name)
+                        conn.execute(
+                            """
+                            insert into tennis_flashscore_player_stat_rows(
+                              flashscore_id, slate_date, board_match_id, player_side,
+                              scope_label, section_label, stat_label, player_name,
+                              normalized_name, raw_value, percentage, numerator,
+                              denominator, numeric_value, raw_json
+                            )
+                            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                            on conflict(flashscore_id, player_side, scope_label, section_label, stat_label) do update set
+                              slate_date=excluded.slate_date,
+                              board_match_id=excluded.board_match_id,
+                              player_name=excluded.player_name,
+                              normalized_name=excluded.normalized_name,
+                              raw_value=excluded.raw_value,
+                              percentage=excluded.percentage,
+                              numerator=excluded.numerator,
+                              denominator=excluded.denominator,
+                              numeric_value=excluded.numeric_value,
+                              raw_json=excluded.raw_json,
+                              updated_at=current_timestamp
+                            """,
+                            (
+                                flashscore_id,
+                                payload.get("slateDate"),
+                                payload.get("boardMatchId"),
+                                side,
+                                scope.get("label"),
+                                section.get("label"),
+                                stat.get("label"),
+                                player_name,
+                                normalized,
+                                raw_value,
+                                parsed["percentage"],
+                                parsed["numerator"],
+                                parsed["denominator"],
+                                parsed["numeric_value"],
+                                dumps({"stat": stat, "side": side}),
+                            ),
+                        )
+                        counts["player_stat_rows"] += 1
     conn.commit()
     return counts
 
@@ -1093,6 +1235,7 @@ def print_summary(conn: sqlite3.Connection) -> None:
         "tennis_player_match_context": "select count(*) as count from tennis_player_match_context",
         "tennis_recent_matches": "select count(*) as count from tennis_recent_matches",
         "tennis_flashscore_stat_rows": "select count(*) as count from tennis_flashscore_stat_rows",
+        "tennis_flashscore_player_stat_rows": "select count(*) as count from tennis_flashscore_player_stat_rows",
         "tennis_match_results": "select slate_date, count(*) as count from tennis_match_results group by slate_date order by slate_date",
         "tennis_prediction_grades": "select slate_date, hit, count(*) as count from tennis_prediction_grades group by slate_date, hit order by slate_date, hit",
     }

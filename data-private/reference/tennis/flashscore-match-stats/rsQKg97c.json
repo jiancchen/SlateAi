@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
+  "flashscoreLabel": "Wang Xiyu - Baptiste Hailey",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:18.074Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/baptiste-hailey-Cjagsdf4/wang-xiyu-6XSnpS5h/",
+  "matchId": "rsQKg97c",
+  "players": [
+    "Hailey Baptiste",
+    "Wang Xiyu"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rsQKg97c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rsQKg97c"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-karen-khachanov-marco-trungelliti-2026-05-27",
+  "boardTitle": "Karen Khachanov vs Marco Trungelliti",
+  "flashscoreLabel": "Trungelliti Marco - Khachanov Karen",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:14.306Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/khachanov-karen-4bNPtZT5/trungelliti-marco-dQJqWoGg/",
+  "matchId": "WbA6wfZ9",
+  "players": [
+    "Karen Khachanov",
+    "Marco Trungelliti"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WbA6wfZ9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WbA6wfZ9"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

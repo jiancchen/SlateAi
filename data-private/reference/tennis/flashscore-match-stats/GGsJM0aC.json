@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
+  "boardTitle": "Sara Bejlek vs Iga Swiatek",
+  "flashscoreLabel": "Swiatek Iga - Bejlek Sara",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:20.717Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/bejlek-sara-jVCKq0LH/swiatek-iga-jNyZsXZe/",
+  "matchId": "GGsJM0aC",
+  "players": [
+    "Sara Bejlek",
+    "Iga Swiatek"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GGsJM0aC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GGsJM0aC"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

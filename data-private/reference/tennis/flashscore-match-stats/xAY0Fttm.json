@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "flashscoreLabel": "Medjedovic Hamad - Ruud Casper",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:12.713Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/medjedovic-hamad-nDcBkcu7/ruud-casper-zN9UpRqp/",
+  "matchId": "xAY0Fttm",
+  "players": [
+    "Hamad Medjedovic",
+    "Casper Ruud"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xAY0Fttm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xAY0Fttm"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

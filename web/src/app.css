@@ -4273,13 +4273,103 @@ h3 {
   font: 700 0.86rem/1.15 var(--mono);
 }
 
-.tennis-match-log-row {
+.tennis-match-log-row,
+.tennis-recent-card {
   display: grid;
-  gap: 3px;
-  padding: 8px 9px;
+  gap: 8px;
+  padding: 10px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(255, 255, 255, 0.024);
+}
+
+.tennis-recent-card {
+  align-content: start;
+}
+
+.tennis-recent-head,
+.tennis-recent-head div,
+.tennis-recent-chip-row {
+  display: flex;
+  align-items: center;
+}
+
+.tennis-recent-head {
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tennis-recent-head div {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tennis-recent-head strong {
+  color: var(--heading);
+  font-size: 0.92rem;
+  line-height: 1.15;
+}
+
+.tennis-recent-head div > span,
+.tennis-recent-chip-row span,
+.tennis-result-pill {
+  min-height: 24px;
+  padding: 4px 7px;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font: 600 0.68rem/1 var(--mono);
+  white-space: nowrap;
+}
+
+.tennis-result-pill.positive {
+  color: var(--accent);
+  border-color: rgba(56, 211, 153, 0.22);
+  background: rgba(56, 211, 153, 0.075);
+}
+
+.tennis-result-pill.negative {
+  color: var(--danger);
+  border-color: rgba(224, 122, 95, 0.24);
+  background: rgba(224, 122, 95, 0.075);
+}
+
+.tennis-recent-score {
+  color: var(--heading);
+  font: 700 0.95rem/1.2 var(--mono);
+}
+
+.tennis-recent-chip-row {
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tennis-recent-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.tennis-recent-stat-grid div {
+  min-height: 48px;
+  padding: 7px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  display: grid;
+  align-content: center;
+  gap: 3px;
+}
+
+.tennis-recent-stat-grid span {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.tennis-recent-stat-grid strong {
+  color: var(--heading);
+  font: 700 0.78rem/1.05 var(--mono);
 }
 
 .tennis-match-log-row span {

@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
+  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
+  "flashscoreLabel": "Quevedo Kaitlin - Svitolina Elina",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:17.196Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/monfils-elina-jyngIesG/quevedo-kaitlin-Ovyv04To/",
+  "matchId": "6DjGkOWi",
+  "players": [
+    "Elina Monfils",
+    "Kaitlin Quevedo"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6DjGkOWi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6DjGkOWi"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

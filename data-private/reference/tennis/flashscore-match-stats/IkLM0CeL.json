@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27",
+  "boardTitle": "Mirra Andreeva vs Marina Bassols Ribera",
+  "flashscoreLabel": "Bassols Ribera Marina - Andreeva Mirra",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:20.483Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/andreeva-mirra-lI6fOOat/bassols-ribera-marina-dvDRCAx9/",
+  "matchId": "IkLM0CeL",
+  "players": [
+    "Mirra Andreeva",
+    "Marina Bassols Ribera"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IkLM0CeL",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IkLM0CeL"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

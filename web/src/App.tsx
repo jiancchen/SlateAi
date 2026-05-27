@@ -2934,6 +2934,96 @@ function App() {
       const rank = player?.ranking?.rank
       return Number.isFinite(Number(rank)) ? `#${rank} ${player?.ranking?.tour || ''}`.trim() : 'Rank outside board'
     }
+    const formatIdentity = (ranking?: AnyRecord | null) => {
+      const parts = [
+        ranking?.country,
+        Number.isFinite(Number(ranking?.age)) ? `Age ${ranking.age}` : null,
+        Number.isFinite(Number(ranking?.points)) ? `${Number(ranking.points).toLocaleString('en-US')} pts` : null
+      ].filter(Boolean)
+      return parts.length ? parts.join(' · ') : 'No profile data'
+    }
+    const formatRecentScore = (match: AnyRecord) => {
+      const tokens = match?.parsed?.scoreTokens
+      if (Array.isArray(tokens) && tokens.length) {
+        return tokens
+          .map((token: AnyRecord) => {
+            const left = token.leftGames
+            const right = token.rightGames
+            if (!Number.isFinite(Number(left)) || !Number.isFinite(Number(right))) return token.raw
+            const raw = String(token.raw || '')
+            const tiebreak = raw.match(/^\d+-\d+(\d+)$/)?.[1]
+            return tiebreak ? `${left}-${right}(${tiebreak})` : `${left}-${right}`
+          })
+          .join(' ')
+      }
+      return String(match?.result || 'No score line')
+        .replace(/^[A-Z]{3}\s+/, '')
+        .replace(/\s+(?:1st|2nd|3rd|4th|QF|SF|F)$/i, '')
+        .replace(/\b(\d)-(\d)(\d)\b/g, '$1-$2($3)')
+        .replace(/\s+/g, ' ')
+        .trim()
+    }
+    const formatRecentOutcome = (match: AnyRecord) => {
+      const parsed = match?.parsed || {}
+      if (parsed.walkover) return 'Walkover'
+      if (parsed.retirement) return parsed.playerWon ? 'Won by retirement' : 'Lost by retirement'
+      if (parsed.playerWon === true) return 'Win'
+      if (parsed.playerWon === false) return 'Loss'
+      if (/loss/i.test(match?.result || '')) return 'Loss'
+      return 'Result'
+    }
+    const recentStatValue = (match: AnyRecord, keys: string[]) => {
+      const stats = match?.serviceStats || match?.flashscoreStats || match?.stats || {}
+      for (const key of keys) {
+        const value = stats?.[key]
+        if (value !== undefined && value !== null && value !== '') return String(value)
+      }
+      return 'Pending'
+    }
+    const renderRecentMatchCard = (player: AnyRecord, match: AnyRecord, index: number, variant = 'quality') => {
+      const rank = match.opponentRanking?.rank
+      const rankLabel = Number.isFinite(Number(rank)) ? `#${rank}` : 'No live rank'
+      const identityLabel = formatIdentity(match.opponentRanking)
+      const eventLabel = match.eventTier || match.event || 'Event missing'
+      const outcome = formatRecentOutcome(match)
+      const outcomeClass = outcome.toLowerCase().includes('win') ? 'positive' : outcome.toLowerCase().includes('loss') ? 'negative' : 'neutral'
+      const holdValue = recentStatValue(match, ['serviceGamesWon', 'holdPct', 'serviceHoldPct'])
+      const aceValue = recentStatValue(match, ['aces', 'aceCount'])
+      const firstServeWon = recentStatValue(match, ['firstServePointsWon', 'firstServeWonPct'])
+      return (
+        <article key={`${player.name}-${variant}-${match.date}-${match.opponent}-${index}`} className="tennis-recent-card">
+          <div className="tennis-recent-head">
+            <div>
+              <strong>{match.opponent || 'Opponent missing'}</strong>
+              <span>{rankLabel}</span>
+            </div>
+            <span className={`tennis-result-pill ${outcomeClass}`}>{outcome}</span>
+          </div>
+          <p className="tennis-recent-score">{formatRecentScore(match)}</p>
+          <div className="tennis-recent-chip-row">
+            <span>{identityLabel}</span>
+            <span>{eventLabel}</span>
+            {match.date ? <span>{match.date}</span> : null}
+            {match.parsed?.decidingSet ? <span>Deciding set</span> : null}
+            {match.parsed?.resistance ? <span>Pressure</span> : null}
+          </div>
+          <div className="tennis-recent-stat-grid">
+            <div>
+              <span>Hold</span>
+              <strong>{holdValue}</strong>
+            </div>
+            <div>
+              <span>Aces</span>
+              <strong>{aceValue}</strong>
+            </div>
+            <div>
+              <span>1st won</span>
+              <strong>{firstServeWon}</strong>
+            </div>
+          </div>
+        </article>
+      )
+    }
     return (
       <>
         {context?.players?.length ? (
@@ -3020,6 +3110,7 @@ function App() {
                         <div>
                           <strong>{player.name}</strong>
                           <small>{formatRank(player)}</small>
+                          <small>{formatIdentity(player.ranking)}</small>
                         </div>
                       </div>
                       <span className="builder-status-pill open">
@@ -3061,7 +3152,7 @@ function App() {
                     </div>
 
                     <p className="tennis-player-note">
-                      Recent opponents ranked: {window.knownOpponentRanks ?? 0}/{window.matches ?? 0}
+                      Recent opponent sample: {window.knownOpponentRanks ?? 0}/{window.matches ?? 0} ranked
                       {Number.isFinite(Number(window.avgKnownOpponentRank))
                         ? ` · avg rank ${formatNumber(window.avgKnownOpponentRank, 1)}`
                         : ''}
@@ -3071,20 +3162,13 @@ function App() {
                     </p>
 
                     <div className="tennis-match-log">
-                      {(player.recentMatches || []).slice(0, 4).map((match: AnyRecord, index: number) => (
-                        <div key={`${player.name}-quality-${match.date}-${match.opponent}-${index}`} className="tennis-match-log-row">
-                          <strong>{match.opponent || 'Opponent missing'}</strong>
-                          <span>{match.result || 'No score line'}</span>
-                          <small>
-                            {[match.eventTier || match.event, match.opponentRanking?.rank ? `opp #${match.opponentRanking.rank}` : 'opp rank missing', match.date]
-                              .filter(Boolean)
-                              .join(' | ')}
-                          </small>
-                        </div>
-                      ))}
+                      {(player.recentMatches || []).slice(0, 4).map((match: AnyRecord, index: number) => renderRecentMatchCard(player, match, index))}
                     </div>
 
-                    <small className="tennis-data-note">{player.serviceData?.note || 'Service hold data has not been joined for this player yet.'}</small>
+                    <small className="tennis-data-note">
+                      {player.serviceData?.note ||
+                        'Flashscore service hold, ace, and serve-point fields will appear here once that match stat feed is joined.'}
+                    </small>
                   </article>
                 )
               })}
@@ -3167,13 +3251,9 @@ function App() {
                         <span className="history-pill neutral">Clay {player.record2026?.clay || 'N/A'}</span>
                       </div>
                       <div className="tennis-match-log">
-                        {(player.recentMatches || []).slice(0, 6).map((match: AnyRecord, index: number) => (
-                          <div key={`${player.name}-${match.date}-${match.opponent}-${index}`} className="tennis-match-log-row">
-                            <strong>{match.opponent || 'Opponent missing'}</strong>
-                            <span>{match.result || 'No score line'}</span>
-                            <small>{[match.event, match.date].filter(Boolean).join(' | ')}</small>
-                          </div>
-                        ))}
+                        {(player.recentMatches || []).slice(0, 6).map((match: AnyRecord, index: number) =>
+                          renderRecentMatchCard(player, match, index, 'source')
+                        )}
                       </div>
                     </article>
                   ))}

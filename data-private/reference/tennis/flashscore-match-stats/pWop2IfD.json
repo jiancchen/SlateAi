@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-catherine-mcnally-belinda-bencic-2026-05-27",
+  "boardTitle": "Catherine McNally vs Belinda Bencic",
+  "flashscoreLabel": "Bencic Belinda - McNally Caty",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-26T23:49:16.730Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/bencic-belinda-ObGlDvu0/mcnally-caty-YDHquro6/",
+  "matchId": "pWop2IfD",
+  "players": [
+    "Belinda Bencic",
+    "Catherine McNally"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pWop2IfD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pWop2IfD"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

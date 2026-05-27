@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 const DEFAULT_OUTPUT_DIR = 'data-private/reference/tennis/flashscore-match-stats'
 const FSIGN = 'SW9D1eZo'
@@ -56,6 +57,11 @@ const parseMatchId = (urlOrId) => {
   return value
 }
 
+const parseEventIdFromMatchPage = (text) => {
+  const eventId = String(text || '').match(/"event_id_c":"([A-Za-z0-9]+)"/)
+  return eventId?.[1] || ''
+}
+
 const parsePlayersFromUrl = (url) => {
   try {
     const parsed = new URL(url)
@@ -66,6 +72,16 @@ const parsePlayersFromUrl = (url) => {
   } catch {
     return []
   }
+}
+
+const parsePlayersFromMatchPage = (text) => {
+  const title = String(text || '').match(/<meta property="og:title" content="([^"]+)"/)?.[1]
+  if (!title) return []
+  return title
+    .replace(/\s+\d+\s*:\s*\d+.*$/, '')
+    .split(/\s+-\s+/)
+    .map((name) => name.trim())
+    .filter(Boolean)
 }
 
 const parseFeedRecords = (text) =>
@@ -156,18 +172,32 @@ const fetchText = async (url) => {
   return response.text()
 }
 
-const main = async () => {
-  const options = parseArgs()
-  const matchId = options.matchId || parseMatchId(options.url)
-  const players = parsePlayersFromUrl(options.url)
-  const statsUrl = `https://www.flashscoreusa.com/x/feed/df_st_1_${matchId}`
-  const scoreUrl = `https://www.flashscoreusa.com/x/feed/df_sui_1_${matchId}`
+export const fetchFlashscoreTennisStats = async ({ url = '', matchId = '', extra = {} } = {}) => {
+  let resolvedMatchId = matchId || parseMatchId(url)
+  let players = parsePlayersFromUrl(url)
+  let matchPageText = ''
+
+  if (url && !matchId) {
+    matchPageText = await fetchText(url)
+    const pageEventId = parseEventIdFromMatchPage(matchPageText)
+    if (pageEventId) resolvedMatchId = pageEventId
+    const pagePlayers = parsePlayersFromMatchPage(matchPageText)
+    if (players.length !== 2 && pagePlayers.length === 2) players = pagePlayers
+  }
+
+  if (!resolvedMatchId) {
+    throw new Error(`Could not resolve Flashscore match id for ${url || matchId}`)
+  }
+
+  const statsUrl = `https://www.flashscoreusa.com/x/feed/df_st_1_${resolvedMatchId}`
+  const scoreUrl = `https://www.flashscoreusa.com/x/feed/df_sui_1_${resolvedMatchId}`
   const [statsText, scoreText] = await Promise.all([fetchText(statsUrl), fetchText(scoreUrl)])
 
-  const output = {
+  return {
+    ...extra,
     generatedAt: new Date().toISOString(),
-    sourceUrl: options.url || `https://www.flashscoreusa.com/match/${matchId}/`,
-    matchId,
+    sourceUrl: url || `https://www.flashscoreusa.com/match/${resolvedMatchId}/`,
+    matchId: resolvedMatchId,
     players,
     feedUrls: {
       stats: statsUrl,
@@ -180,14 +210,21 @@ const main = async () => {
       'Service games won and return games won are sourced directly from Flashscore match statistics.'
     ]
   }
+}
 
-  const outputPath = path.resolve(options.output || path.join(options.outputDir, `${matchId}.json`))
+const main = async () => {
+  const options = parseArgs()
+  const output = await fetchFlashscoreTennisStats({ url: options.url, matchId: options.matchId })
+
+  const outputPath = path.resolve(options.output || path.join(options.outputDir, `${output.matchId}.json`))
   await fs.mkdir(path.dirname(outputPath), { recursive: true })
   await fs.writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`)
   console.log(`Wrote Flashscore tennis stats to ${outputPath}`)
 }
 
-main().catch((error) => {
-  console.error(error)
-  process.exitCode = 1
-})
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  main().catch((error) => {
+    console.error(error)
+    process.exitCode = 1
+  })
+}
