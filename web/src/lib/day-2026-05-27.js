@@ -11,6 +11,7 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
 const formatPct = (value) => (Number.isFinite(value) ? `${Math.round(value)}%` : 'n/a')
 const formatAmount = (value) => (Number.isFinite(value) ? value.toLocaleString('en-US') : 'n/a')
 const formatSignedPct = (value) => (Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${Math.round(value)} pts` : 'n/a')
+const sentence = (value) => String(value || '').replace(/\.+$/u, '')
 
 const buildPlayerEconomics = (name, pricePct, amount) => {
   if (!Number.isFinite(pricePct) || pricePct <= 0) return null
@@ -110,6 +111,49 @@ const buildPredictionOnlyOdds = (raw, market) => ({
   provider: oddsProvider
 })
 
+const formatRecord = (record) => {
+  if (!record || !Number.isFinite(record.wins) || !Number.isFinite(record.losses)) return null
+  const pct = Number.isFinite(record.winPct) ? `, ${Math.round(record.winPct * 100)}%` : ''
+  return `${record.wins}-${record.losses}${pct}`
+}
+
+const findQualityPlayer = (qualityContext, name) =>
+  (qualityContext?.players || []).find((player) => player.name === name) ?? null
+
+const buildPlayerCard = ({ raw, name, seed, profile, marketPlayer, economics, qualityPlayer }) => {
+  const isPick = raw.pick === name
+  const rank = qualityPlayer?.ranking?.rank ?? seed ?? null
+  const clayRecord = formatRecord(qualityPlayer?.records?.clay2026)
+  const recent = qualityPlayer?.recentWindow || {}
+  const adjustedScore = Number.isFinite(Number(recent.opponentAdjustedFormScore))
+    ? Math.round(Number(recent.opponentAdjustedFormScore))
+    : null
+  const marketText = Number.isFinite(marketPlayer?.pct) ? `Market ${formatPct(marketPlayer.pct)}` : 'No market'
+  const economicsText = economics
+    ? `${economics.priceBand}; ${economics.centsProfitIfWin}c gross profit on a 100c win contract`
+    : null
+  const roleText = isPick ? `Model confidence ${raw.conf}%` : `Counter case against ${raw.conf}% model pick`
+  const contextParts = [
+    rank ? `Live rank #${rank}` : profile,
+    clayRecord ? `2026 clay ${clayRecord}` : null,
+    adjustedScore ? `adj form ${adjustedScore}` : null
+  ].filter(Boolean)
+
+  return {
+    name,
+    rank: seed,
+    label: name,
+    form: null,
+    boardPct: Number.isFinite(marketPlayer?.pct) ? marketPlayer.pct : null,
+    decimalOdds: null,
+    marketLabel: marketText,
+    clayLine: contextParts.join(' | ') || profile,
+    record2026: clayRecord || '',
+    notes: [roleText, economicsText].filter(Boolean).join(' | '),
+    matchupNote: isPick ? `Model reason: ${sentence(raw.angle)}.` : `Counter path: ${sentence(raw.swing)}.`
+  }
+}
+
 const participant = (id, index, role, name, detail) => ({
   id: `${id}:${index}`,
   index,
@@ -132,6 +176,13 @@ const buildMatch = (raw) => {
   const marketB = market?.players?.[raw.b] ?? null
   const hasMarket = Number.isFinite(marketA?.pct) && Number.isFinite(marketB?.pct)
   const marketEconomics = buildMarketEconomics({ raw, market, marketA, marketB })
+  const qualityContext = tennisOpponentQualityContext.matches?.[id] ?? null
+  const qualityA = findQualityPlayer(qualityContext, raw.a)
+  const qualityB = findQualityPlayer(qualityContext, raw.b)
+  const economicsA = marketEconomics?.players?.find((player) => player.name === raw.a) ?? null
+  const economicsB = marketEconomics?.players?.find((player) => player.name === raw.b) ?? null
+  const playerA = buildPlayerCard({ raw, name: raw.a, seed: raw.seedA, profile: raw.profileA, marketPlayer: marketA, economics: economicsA, qualityPlayer: qualityA })
+  const playerB = buildPlayerCard({ raw, name: raw.b, seed: raw.seedB, profile: raw.profileB, marketPlayer: marketB, economics: economicsB, qualityPlayer: qualityB })
   const pickIndex = raw.pick === raw.a ? 0 : 1
   const participants = [
     participant(id, 0, 'Player 1', raw.a, raw.profileA),
@@ -140,17 +191,17 @@ const buildMatch = (raw) => {
   const picked = participants[pickIndex]
   const opponent = participants[pickIndex === 0 ? 1 : 0]
   const dogNote = raw.vol >= 68 ? ' This is a watch-grade read unless the market price is generous enough to pay for the risk.' : ''
-  const summary = `${raw.pick} gets the desk lean because ${raw.angle}.${dogNote}`
+  const summary = `${raw.pick} is the model pick because ${sentence(raw.angle)}.${dogNote}`
   const factors = [
     ...(hasMarket
       ? [
           `Prediction market: ${raw.a} ${formatPct(marketA.pct)} (${formatAmount(marketA.amount)}) vs ${raw.b} ${formatPct(marketB.pct)} (${formatAmount(marketB.amount)}), ${formatAmount(market.total)} total captured from screenshots.`,
-          `Market economics: ${marketEconomics.priceAction}. ${marketEconomics.summary} Desk edge vs captured price: ${formatSignedPct(marketEconomics.deskEdgePct)}.`
+          `Market economics: ${marketEconomics.priceAction}. ${marketEconomics.summary} Model edge vs captured price: ${formatSignedPct(marketEconomics.deskEdgePct)}.`
         ]
       : []),
-    `${raw.a}: ${raw.noteA}`,
-    `${raw.b}: ${raw.noteB}`,
-    `Clay desk angle: ${raw.angle}.`,
+    `${raw.a}: ${playerA.clayLine}. ${playerA.notes}.`,
+    `${raw.b}: ${playerB.clayLine}. ${playerB.notes}.`,
+    `Clay model angle: ${sentence(raw.angle)}.`,
     `Swing factor: ${raw.swing}`,
     'May 26 lesson applied: high-probability favorites still need price discipline, and WTA volatility dogs need a stronger technical reason before becoming core plays.'
   ]
@@ -175,7 +226,7 @@ const buildMatch = (raw) => {
       ],
       summary,
       factors,
-      lean: `Lean ${raw.pick} because ${raw.angle}.`,
+      lean: `Lean ${raw.pick} because ${sentence(raw.angle)}.`,
       swing: `Swing factor: ${raw.swing}`,
       swingFactor: `Swing factor: ${raw.swing}`,
       odds: buildPredictionOnlyOdds(raw, market),
@@ -186,8 +237,8 @@ const buildMatch = (raw) => {
         fatigueFlag: false,
         liveDog: hasMarket ? (raw.pick === raw.a ? marketA.pct < marketB.pct : marketB.pct < marketA.pct) : raw.conf < 60,
         players: [
-          { name: raw.a, rank: raw.seedA, label: raw.a, form: null, boardPct: Number.isFinite(marketA?.pct) ? marketA.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketA?.pct) ? `Market ${formatPct(marketA.pct)}` : 'No market', clayLine: raw.profileA, record2026: '', notes: raw.noteA, matchupNote: raw.pick === raw.a ? `${raw.a} is the desk lean.` : `${raw.a} needs the upset script.` },
-          { name: raw.b, rank: raw.seedB, label: raw.b, form: null, boardPct: Number.isFinite(marketB?.pct) ? marketB.pct : null, decimalOdds: null, marketLabel: Number.isFinite(marketB?.pct) ? `Market ${formatPct(marketB.pct)}` : 'No market', clayLine: raw.profileB, record2026: '', notes: raw.noteB, matchupNote: raw.pick === raw.b ? `${raw.b} is the desk lean.` : `${raw.b} needs the upset script.` }
+          playerA,
+          playerB
         ],
         comparisonRows: [
           ...(hasMarket
@@ -195,7 +246,7 @@ const buildMatch = (raw) => {
                 { label: 'Prediction market', metric: 'Screenshot split', leftScore: clamp(Math.round(marketA.pct), 0, 100), rightScore: clamp(Math.round(marketB.pct), 0, 100), leftLabel: raw.a, rightLabel: raw.b, winner: marketA.pct === marketB.pct ? 'Even' : marketA.pct > marketB.pct ? raw.a : raw.b }
               ]
             : []),
-          { label: 'Desk lean', metric: 'Confidence split', leftScore: raw.pick === raw.a ? raw.conf : 100 - raw.conf, rightScore: raw.pick === raw.b ? raw.conf : 100 - raw.conf, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick },
+          { label: 'Model pick', metric: 'Confidence split', leftScore: raw.pick === raw.a ? raw.conf : 100 - raw.conf, rightScore: raw.pick === raw.b ? raw.conf : 100 - raw.conf, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick },
           { label: 'Volatility', metric: 'Lower chaos side', leftScore: raw.pick === raw.a ? 100 - raw.vol : raw.vol, rightScore: raw.pick === raw.b ? 100 - raw.vol : raw.vol, leftLabel: raw.a, rightLabel: raw.b, winner: raw.pick }
         ],
         predictionMarket: market
@@ -250,7 +301,7 @@ const buildMatch = (raw) => {
           : null,
         marketEconomics,
         clayMatchupData: tennisClayContext.matches?.[id] ?? null,
-        opponentQualityData: tennisOpponentQualityContext.matches?.[id] ?? null,
+        opponentQualityData: qualityContext,
         researchLinks: [
           { label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260527' },
           { label: 'Tennistonic H2H', url: h2hUrl }
@@ -258,9 +309,9 @@ const buildMatch = (raw) => {
         formEdgeName: raw.pick
       },
       playerAnalysis: [
-        `${raw.pick} is the desk side because ${raw.angle}.`,
-        `${raw.a} note: ${raw.noteA}`,
-        `${raw.b} note: ${raw.noteB}`,
+        `${raw.pick} model case: ${sentence(raw.angle)}.`,
+        `${raw.a}: ${playerA.clayLine}. ${playerA.notes}.`,
+        `${raw.b}: ${playerB.clayLine}. ${playerB.notes}.`,
         `Swing factor: ${raw.swing}`
       ],
       participants,
@@ -270,7 +321,7 @@ const buildMatch = (raw) => {
         participantId: picked.id,
         participant: picked,
         opponent,
-        lean: `Lean ${raw.pick} because ${raw.angle}.`,
+        lean: `Lean ${raw.pick} because ${sentence(raw.angle)}.`,
         rationale: hasMarket ? factors[1] : factors[2],
         confidence: raw.conf,
         volatility: raw.vol,
