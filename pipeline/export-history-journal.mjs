@@ -6,6 +6,9 @@ import { games as may24Games } from '../web/src/lib/day-2026-05-24.js'
 
 const ROOT = process.cwd()
 const HISTORY_DIR = path.join(ROOT, 'data-private', 'history')
+const SLATES_DIR = path.join(ROOT, 'published-data', 'slates')
+const DEFAULT_HR_MODEL_NAME = 'statcast-hr-prototype-v3'
+const DEFAULT_PROP_MODEL_NAME = 'mlb-player-props-v2'
 
 const FULL_NAMES = {
   Braves: 'Atlanta Braves',
@@ -49,16 +52,16 @@ const SIDE_MODEL_NAMES = {
 }
 
 const HR_MODEL_NAMES = {
-  '2026-05-16': 'statcast-hr-prototype-v3',
-  '2026-05-17': 'statcast-hr-prototype-v3',
-  '2026-05-18': 'statcast-hr-prototype-v3',
-  '2026-05-19': 'statcast-hr-prototype-v3',
-  '2026-05-20': 'statcast-hr-prototype-v3',
-  '2026-05-21': 'statcast-hr-prototype-v3',
-  '2026-05-22': 'statcast-hr-prototype-v3',
-  '2026-05-23': 'statcast-hr-prototype-v3',
-  '2026-05-24': 'statcast-hr-prototype-v3',
-  '2026-05-25': 'statcast-hr-prototype-v3'
+  '2026-05-16': DEFAULT_HR_MODEL_NAME,
+  '2026-05-17': DEFAULT_HR_MODEL_NAME,
+  '2026-05-18': DEFAULT_HR_MODEL_NAME,
+  '2026-05-19': DEFAULT_HR_MODEL_NAME,
+  '2026-05-20': DEFAULT_HR_MODEL_NAME,
+  '2026-05-21': DEFAULT_HR_MODEL_NAME,
+  '2026-05-22': DEFAULT_HR_MODEL_NAME,
+  '2026-05-23': DEFAULT_HR_MODEL_NAME,
+  '2026-05-24': DEFAULT_HR_MODEL_NAME,
+  '2026-05-25': DEFAULT_HR_MODEL_NAME
 }
 
 const PROP_MODEL_NAMES = {
@@ -68,10 +71,10 @@ const PROP_MODEL_NAMES = {
   '2026-05-19': 'mlb-player-props-v1',
   '2026-05-20': 'mlb-player-props-v1',
   '2026-05-21': 'mlb-player-props-v1',
-  '2026-05-22': 'mlb-player-props-v2',
-  '2026-05-23': 'mlb-player-props-v2',
-  '2026-05-24': 'mlb-player-props-v2',
-  '2026-05-25': 'mlb-player-props-v2'
+  '2026-05-22': DEFAULT_PROP_MODEL_NAME,
+  '2026-05-23': DEFAULT_PROP_MODEL_NAME,
+  '2026-05-24': DEFAULT_PROP_MODEL_NAME,
+  '2026-05-25': DEFAULT_PROP_MODEL_NAME
 }
 
 const CUSTOM_DAY_GAMES = {
@@ -109,6 +112,20 @@ const loadPublishedMlbGames = (date) => {
     .filter((fileName) => fileName.endsWith('.json'))
     .map((fileName) => JSON.parse(fs.readFileSync(path.join(gamesDir, fileName), 'utf8')))
     .filter((game) => game?.league === 'MLB')
+}
+
+const discoverTrackedMlbDates = () => {
+  if (!fs.existsSync(SLATES_DIR)) return []
+  const now = new Date()
+  const todayIso = `${now.getFullYear()}-${`${now.getMonth() + 1}`.padStart(2, '0')}-${`${now.getDate()}`.padStart(2, '0')}`
+
+  return fs
+    .readdirSync(SLATES_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(entry.name))
+    .map((entry) => entry.name)
+    .filter((date) => date < todayIso)
+    .filter((date) => loadPublishedMlbGames(date).length > 0 || CUSTOM_DAY_GAMES[date]?.length)
+    .sort((left, right) => left.localeCompare(right))
 }
 
 const makeSideResultJustification = (row) => {
@@ -364,7 +381,7 @@ const buildDerivedSideRecords = (date) => {
 }
 
 const buildHrRecords = (date) => {
-  const modelName = HR_MODEL_NAMES[date]
+  const modelName = HR_MODEL_NAMES[date] ?? DEFAULT_HR_MODEL_NAME
   const rows = readJsonSql(`
     select
       b.prediction_date,
@@ -494,8 +511,7 @@ const buildDerivedHrRecords = (date, modelName) => {
 }
 
 const buildPropRecords = (date) => {
-  const modelName = PROP_MODEL_NAMES[date]
-  if (!modelName) return []
+  const modelName = PROP_MODEL_NAMES[date] ?? DEFAULT_PROP_MODEL_NAME
 
   const rows = readJsonSql(`
     select
@@ -815,19 +831,15 @@ const writePropCalibrationModule = (propRecords) => {
   console.log(`Wrote prop calibration -> ${target}`)
 }
 
-const dates = [
-  '2026-05-16',
-  '2026-05-17',
-  '2026-05-18',
-  '2026-05-19',
-  '2026-05-20',
-  '2026-05-21',
-  '2026-05-22',
-  '2026-05-23',
-  '2026-05-24',
-  '2026-05-25'
-]
+const dates = discoverTrackedMlbDates()
 ensureDir(HISTORY_DIR)
+
+const trackedFiles = new Set(dates.map((date) => `mlb-results-${date}.jsonl`))
+for (const fileName of fs.readdirSync(HISTORY_DIR)) {
+  if (!/^mlb-results-\d{4}-\d{2}-\d{2}\.jsonl$/.test(fileName)) continue
+  if (trackedFiles.has(fileName)) continue
+  fs.unlinkSync(path.join(HISTORY_DIR, fileName))
+}
 
 const allRecords = []
 const propSummaryByDate = {}

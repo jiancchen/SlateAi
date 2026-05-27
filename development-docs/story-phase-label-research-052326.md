@@ -14,29 +14,29 @@ This pass looks at the new label tables and asks a better question than `did the
 
 | Market label | Rows |
 | --- | --- |
-| expensive_favorite_failed | 8 |
-| underdog_beat_market | 13 |
-| favorite_held | 29 |
-| market_neutral | 24 |
+| expensive_favorite_failed | 15 |
+| underdog_beat_market | 26 |
+| favorite_held | 50 |
+| market_neutral | 36 |
 
 ## Phase Label Shapes
 
 | Phase label | Rows | Lineup idx | Scoreless3 | Quiet5 | Starter cmd | Bullpen chaos | Opp chaos gap | Opp lineup gap | Opp snapback gap |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| starter_crack_loss | 34 | 42.6 | 0.695 | 0.331 | 20.3 | 43.0 | -0.6 | 2.6 | -3.5 |
-| dead_early_loss | 70 | 34.6 | 0.637 | 0.368 | 26.3 | 46.7 | -0.7 | 5.6 | -4.3 |
-| blew_lead_after5 | 26 | 42.4 | 0.639 | 0.428 | 32.6 | 46.7 | -2.6 | -1.8 | 1.6 |
-| starter_carried | 31 | 37.2 | 0.645 | 0.335 | 22.3 | 43.7 | -0.5 | 3.1 | 2.5 |
-| jumped_early_hold | 49 | 39.3 | 0.622 | 0.454 | 29.9 | 42.6 | 2.2 | -3.6 | -0.5 |
+| starter_crack_loss | 34 | 36.0 | 0.449 | 0.331 | 48.8 | 47.7 | -1.2 | 4.7 | -3.7 |
+| dead_early_loss | 70 | 32.7 | 0.441 | 0.355 | 46.0 | 48.9 | -1.1 | 4.6 | -3.8 |
+| blew_lead_after5 | 26 | 36.4 | 0.471 | 0.413 | 47.2 | 46.6 | -2.4 | 0.6 | 1.9 |
+| starter_carried | 31 | 36.9 | 0.419 | 0.335 | 48.7 | 48.2 | -1.1 | -1.1 | 2.5 |
+| jumped_early_hold | 49 | 35.3 | 0.467 | 0.436 | 45.1 | 44.0 | 3.2 | -0.8 | -1.1 |
 
 ## Market / Phase Shapes
 
 | Label | Rows | Fav prob | Pick chaos | Opp chaos gap | Pick lineup | Pick lineup edge | Pick bullpen | Opp bullpen gap | Opp snapback gap |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| expensive_favorite_failed | 8 | 0.623 | 56.1 | -2.6 | 31.1 | 2.7 | 49.9 | -13.4 | -5.5 |
-| underdog_beat_market | 13 | 0.575 | 56.5 | 4.9 | 43.8 | 9.9 | 46.6 | 3.4 | 9.2 |
-| first5_cleaner | 7 | 0.574 | 53.7 | 4.9 | 36.5 | 2.2 | 46.5 | -0.8 | 13.9 |
-| full_game_cleaner | 19 | 0.545 | 52.5 | 8.1 | 45.3 | 13.2 | 45.0 | 5.9 | 15.5 |
+| expensive_favorite_failed | 15 | 0.631 | 56.4 | 1.0 | 37.7 | 8.6 | 47.2 | -2.3 | 0.2 |
+| underdog_beat_market | 26 | 0.575 | 58.2 | 1.5 | 43.0 | 9.4 | 46.4 | 0.8 | 1.0 |
+| first5_cleaner | 14 | 0.571 | 55.7 | 4.8 | 38.5 | 6.1 | 46.0 | -0.2 | 13.1 |
+| full_game_cleaner | 29 | 0.559 | 54.6 | 5.5 | 43.6 | 10.0 | 46.0 | 2.7 | 10.0 |
 
 ## Candidate Market Triggers
 
@@ -44,20 +44,20 @@ This pass looks at the new label tables and asks a better question than `did the
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Heavy favorite baseline | 18 | 0.444 | 1.000 |
-| Heavy favorite + lineup index <= 25 | 3 | 1.000 | 0.375 |
-| Heavy favorite + bullpen chaos >= 50 | 6 | 0.667 | 0.500 |
-| Heavy favorite + quiet first5 >= 50% | 5 | 0.400 | 0.250 |
+| Heavy favorite baseline | 37 | 0.405 | 1.000 |
+| Heavy favorite + lineup index <= 25 | 5 | 0.800 | 0.267 |
+| Heavy favorite + bullpen chaos >= 50 | 13 | 0.462 | 0.400 |
+| Heavy favorite + quiet first5 >= 50% | 13 | 0.385 | 0.333 |
 
 ### Underdog Beat Market
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Market dog baseline | 22 | 0.591 | 1.000 |
-| Dog + opponent chaos gap >= 8 | 8 | 1.000 | 0.615 |
-| Dog + opponent snapback gap >= 10 | 10 | 0.700 | 0.538 |
-| Dog + lineup edge >= 10 | 8 | 0.750 | 0.462 |
-| Dog + opponent bullpen gap >= 8 | 5 | 1.000 | 0.385 |
+| Market dog baseline | 45 | 0.578 | 1.000 |
+| Dog + opponent chaos gap >= 8 | 14 | 0.857 | 0.462 |
+| Dog + opponent snapback gap >= 10 | 21 | 0.571 | 0.462 |
+| Dog + lineup edge >= 10 | 20 | 0.550 | 0.423 |
+| Dog + opponent bullpen gap >= 8 | 14 | 0.714 | 0.385 |
 
 ## Read
 

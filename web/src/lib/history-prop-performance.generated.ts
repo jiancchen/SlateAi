@@ -426,5 +426,36 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Alejandro Osuna Over 0.5 singles",
       "Tommy Troy Over 1.5 total bases"
     ]
+  },
+  "2026-05-26": {
+    "overall": {
+      "hits": 10,
+      "total": 19,
+      "hitRate": 52.6
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 8,
+        "total": 15,
+        "hitRate": 53.3
+      },
+      "singles": {
+        "hits": 2,
+        "total": 4,
+        "hitRate": 50
+      }
+    },
+    "topHits": [
+      "Ketel Marte Over 1.5 total bases",
+      "James Wood Over 1.5 total bases",
+      "Enrique Hernandez Over 1.5 total bases",
+      "Juan Soto Over 1.5 total bases"
+    ],
+    "topMisses": [
+      "Victor Mesa Jr. Over 1.5 total bases",
+      "Yandy Díaz Over 1.5 total bases",
+      "Alejandro Osuna Over 0.5 singles",
+      "Corbin Carroll Over 1.5 total bases"
+    ]
   }
 }

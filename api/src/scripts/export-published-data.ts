@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises'
+import fsSync from 'node:fs'
 import path from 'node:path'
 import {
   loadHistoryArchiveFromModules,
@@ -8,7 +9,9 @@ import {
   listSlateManifestFromModules,
   loadSlateDayFromModules
 } from '../lib/day-loader.js'
-import { publishedDataRoot } from '../lib/paths.js'
+import { dataPrivateRoot, publishedDataRoot } from '../lib/paths.js'
+
+const historyJournalRoot = path.join(dataPrivateRoot, 'history')
 
 const ensureDir = async (dirPath: string) => {
   await fs.mkdir(dirPath, { recursive: true })
@@ -16,6 +19,140 @@ const ensureDir = async (dirPath: string) => {
 
 const writeJson = async (filePath: string, payload: unknown) => {
   await fs.writeFile(filePath, JSON.stringify(payload), 'utf8')
+}
+
+const toTitleDate = (date: string) => {
+  const [year, month, day] = date.split('-').map(Number)
+  const display = new Date(Date.UTC(year, month - 1, day))
+  return display.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC'
+  })
+}
+
+const toRecord = (records: any[], predicate: (record: any) => boolean, hitResolver: (record: any) => boolean) => {
+  const rows = records.filter(predicate)
+  if (!rows.length) return undefined
+  const hits = rows.filter(hitResolver).length
+  return { wins: hits, losses: rows.length - hits }
+}
+
+const toPropRecord = (records: any[], predicate: (record: any) => boolean, hitResolver: (record: any) => boolean) => {
+  const rows = records.filter(predicate)
+  if (!rows.length) return undefined
+  const hits = rows.filter(hitResolver).length
+  return { hits, total: rows.length }
+}
+
+const toneFromRecord = (wins: number, losses: number) => (wins > losses ? 'positive' : wins === losses ? 'warning' : 'negative')
+
+const readGeneratedHistoryEntries = async () => {
+  if (!fsSync.existsSync(historyJournalRoot)) return []
+
+  const files = fsSync
+    .readdirSync(historyJournalRoot)
+    .filter((fileName) => /^mlb-results-\d{4}-\d{2}-\d{2}\.jsonl$/.test(fileName))
+    .sort()
+
+  const entries = []
+
+  for (const fileName of files) {
+    const date = fileName.replace('mlb-results-', '').replace('.jsonl', '')
+    const source = path.join(historyJournalRoot, fileName)
+    const lines = fsSync.readFileSync(source, 'utf8').trim().split('\n').filter(Boolean)
+    if (!lines.length) continue
+
+    const records = lines.map((line) => JSON.parse(line))
+    const fullGame = toRecord(records, (row) => row.marketType === 'moneyline', (row) => Boolean(row.result?.fullGameHit))
+    const first5 = toRecord(records, (row) => row.marketType === 'moneyline', (row) => Boolean(row.result?.first5Hit))
+    const firstInning = toRecord(records, (row) => row.marketType === 'firstInning', (row) => Boolean(row.result?.hit))
+    const hrBoard = toPropRecord(records, (row) => row.marketType === 'homeRun', (row) => Boolean(row.result?.hit))
+    const props = toPropRecord(records, (row) => row.marketType === 'playerProp', (row) => Boolean(row.result?.hit))
+
+    const metrics = []
+    if (fullGame) metrics.push({ label: 'MLB full game', value: `${fullGame.wins}-${fullGame.losses}`, tone: toneFromRecord(fullGame.wins, fullGame.losses) })
+    if (first5) metrics.push({ label: 'MLB first 5', value: `${first5.wins}-${first5.losses}`, tone: toneFromRecord(first5.wins, first5.losses) })
+    if (firstInning) {
+      metrics.push({
+        label: 'MLB 1st inning',
+        value: `${firstInning.wins}-${firstInning.losses}`,
+        tone: toneFromRecord(firstInning.wins, firstInning.losses)
+      })
+    }
+    if (hrBoard) {
+      metrics.push({
+        label: 'HR board',
+        value: `${hrBoard.hits}/${hrBoard.total}`,
+        tone: hrBoard.hits / Math.max(hrBoard.total, 1) >= 0.25 ? 'warning' : 'negative'
+      })
+    }
+    if (props) {
+      metrics.push({
+        label: 'Tracked props',
+        value: `${props.hits}/${props.total}`,
+        tone: props.hits / Math.max(props.total, 1) >= 0.5 ? 'positive' : 'negative'
+      })
+    }
+
+    const strongestMoneylineHits = records
+      .filter((row) => row.marketType === 'moneyline' && row.result?.fullGameHit)
+      .sort((left, right) => Number(right.confidence ?? 0) - Number(left.confidence ?? 0))
+      .slice(0, 3)
+      .map((row) => row.predictedPick)
+
+    const strongestMoneylineMisses = records
+      .filter((row) => row.marketType === 'moneyline' && !row.result?.fullGameHit)
+      .sort((left, right) => Number(right.confidence ?? 0) - Number(left.confidence ?? 0))
+      .slice(0, 3)
+      .map((row) => row.predictedPick)
+
+    entries.push({
+      id: date,
+      date,
+      label: toTitleDate(date),
+      status: 'graded',
+      summary:
+        `Automated MLB closeout archive for ${toTitleDate(date)}. The day is generated directly from the settled results journal so History and Models stay current even before a hand-written review exists.`,
+      sports: ['MLB'],
+      trackedMarkets: ['MLB moneyline', 'MLB first 5', 'MLB first inning', 'HR props', 'Player props'],
+      performance: {
+        ...(fullGame ? { mlbFullGame: fullGame } : {}),
+        ...(first5 ? { mlbFirst5: first5 } : {}),
+        ...(firstInning ? { mlbFirstInning: firstInning } : {}),
+        ...(hrBoard ? { hrBoard } : {}),
+        ...(props ? { mlbProps: props } : {})
+      },
+      journal: {
+        path: `data-private/history/${fileName}`,
+        records: records.length,
+        sideRows: records.filter((row) => row.marketType === 'moneyline').length,
+        hrRows: records.filter((row) => row.marketType === 'homeRun').length,
+        propRows: records.filter((row) => row.marketType === 'playerProp').length,
+        note: 'This archive block was generated automatically from the daily MLB journal.'
+      },
+      metrics,
+      notableHits: strongestMoneylineHits.length
+        ? [`Highest-confidence full-game hits included ${strongestMoneylineHits.join(', ')}.`]
+        : [],
+      notableMisses: strongestMoneylineMisses.length
+        ? [`Highest-confidence full-game misses included ${strongestMoneylineMisses.join(', ')}.`]
+        : [],
+      whatWorked: [
+        'The archive and models numbers were generated automatically from the settled journal instead of waiting on a manual write-up.'
+      ],
+      whatMissed: [
+        'This auto-generated block does not yet include a richer per-game sport tab or full narrative postmortem.'
+      ],
+      takeaways: [
+        'Use this as the daily source of truth for model accuracy while the deeper post-analysis catches up.'
+      ],
+      artifacts: [{ label: `${toTitleDate(date)} MLB results journal`, path: `data-private/history/${fileName}` }]
+    })
+  }
+
+  return entries
 }
 
 const buildSummaryLineupBoard = (lineupBoard: any) => {
@@ -116,7 +253,11 @@ const exportHistory = async () => {
   const historyRoot = path.join(publishedDataRoot, 'history')
   await ensureDir(historyRoot)
 
-  const history = await loadHistoryArchiveFromModules()
+  const seededHistory = await loadHistoryArchiveFromModules()
+  const generatedHistory = await readGeneratedHistoryEntries()
+  const seededIds = new Set(seededHistory.map((entry: any) => String(entry.id)))
+  const history = [...seededHistory, ...generatedHistory.filter((entry) => !seededIds.has(String(entry.id)))]
+    .sort((left: any, right: any) => String(right.id).localeCompare(String(left.id)))
   await writeJson(path.join(historyRoot, 'index.json'), history)
 
   for (const entry of history) {

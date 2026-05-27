@@ -46,6 +46,15 @@ const runNodeScript = (scriptName, extraArgs = []) => {
   })
 }
 
+const buildPostmortemPaths = (date) => {
+  const [, month, day] = date.split('-')
+  const stamp = `${month}${day}${date.slice(2, 4)}`
+  return {
+    postmortem: path.join(rootDir, 'development-docs', `may${Number(day)}-slate-postmortem-${stamp}.md`),
+    followup: path.join(rootDir, 'development-docs', `may${Number(day)}-chaos-followups-${stamp}.md`)
+  }
+}
+
 const main = () => {
   const options = parseArgs()
   const hrPredictionPath = path.join(
@@ -74,6 +83,22 @@ const main = () => {
   runNodeScript('export-mlb-veto-artifact.mjs', ['--date', options.date])
   runNodeScript('export-history-journal.mjs')
   runPythonWarehouse('derive-story-labels', ['--through-date', options.date])
+  const postmortemPaths = buildPostmortemPaths(options.date)
+  execFileSync(
+    'npm',
+    [
+      'run',
+      'data:research:mlb-slate-postmortem',
+      '--',
+      '--date',
+      options.date,
+      '--postmortem-out',
+      postmortemPaths.postmortem,
+      '--followup-out',
+      postmortemPaths.followup
+    ],
+    { cwd: rootDir, stdio: 'inherit' }
+  )
   execFileSync('npm', ['run', 'data:export:published'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-hidden-edges'], { cwd: rootDir, stdio: 'inherit' })
   execFileSync('npm', ['run', 'data:research:mlb-stateful-edges'], { cwd: rootDir, stdio: 'inherit' })

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T20:50:37.472Z",
+  "generatedAt": "2026-05-27T15:48:02.365Z",
   "predictionDate": "2026-05-26",
   "picks": [
     {
@@ -316,27 +316,29 @@
       "predictionDate": "2026-05-26",
       "gameId": "mariners-athletics",
       "gameTitle": "Mariners @ Athletics",
-      "predictedTeam": "Mariners",
-      "predictedSide": "away",
+      "predictedTeam": "Athletics",
+      "predictedSide": "home",
       "confidence": 52,
-      "modelEdge": 2.2,
-      "marketProbability": 0.48560673162090345,
-      "marketProbabilityLabel": "48.6%",
-      "pickIsMarketFavorite": false,
-      "pickIsMarketUnderdog": true,
-      "vetoCount": 0,
-      "vetoReasons": [],
+      "modelEdge": 0.7,
+      "marketProbability": 0.5143932683790965,
+      "marketProbabilityLabel": "51.4%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "vetoReasons": [
+        "deadEarlyRisk"
+      ],
       "protectedMarketDogFlag": false,
-      "recommendedAction": "Eligible",
+      "recommendedAction": "Pass",
       "keyMetrics": {
-        "pickLineupConversionIndex": 43.1,
-        "pickDeadBatTrafficRate": 0.1,
+        "pickLineupConversionIndex": 30.5,
+        "pickDeadBatTrafficRate": 0.4,
         "pickTrafficNoConversionRate": 0,
-        "pickBullpenMistakeChaos": 47.8,
-        "oppBullpenMistakeChaos": 41.5,
-        "pickTeamRunClustering": 78.2,
-        "pickTeamMistakeChaos": 54.3,
-        "oppTeamMistakeChaos": 60.3
+        "pickBullpenMistakeChaos": 41.5,
+        "oppBullpenMistakeChaos": 47.8,
+        "pickTeamRunClustering": 68.5,
+        "pickTeamMistakeChaos": 60.3,
+        "oppTeamMistakeChaos": 54.3
       }
     },
     {

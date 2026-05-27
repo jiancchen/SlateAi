@@ -1,0 +1,15 @@
+{
+  "modelName": "mlb-player-props-v1-legacy",
+  "date": "2026-05-27",
+  "generatedAt": "2026-05-27T15:42:19.696Z",
+  "sources": [
+    "day-file-live-board",
+    "web/src/lib/sports-model.js"
+  ],
+  "summary": {
+    "totalGames": 0,
+    "totalPicks": 0,
+    "byType": {}
+  },
+  "picks": []
+}

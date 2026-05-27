@@ -7,6 +7,7 @@ import json
 import sqlite3
 from collections import Counter, defaultdict
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 
 
@@ -15,6 +16,39 @@ DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 DEFAULT_DATE = "2026-05-23"
 DEFAULT_POSTMORTEM_OUT = ROOT / "development-docs" / "may23-slate-postmortem-052326.md"
 DEFAULT_FOLLOWUP_OUT = ROOT / "development-docs" / "may23-chaos-followups-052326.md"
+FULL_NAMES = {
+    "Braves": "Atlanta Braves",
+    "Orioles": "Baltimore Orioles",
+    "Red Sox": "Boston Red Sox",
+    "Cubs": "Chicago Cubs",
+    "Reds": "Cincinnati Reds",
+    "Guardians": "Cleveland Guardians",
+    "Rockies": "Colorado Rockies",
+    "White Sox": "Chicago White Sox",
+    "Tigers": "Detroit Tigers",
+    "Astros": "Houston Astros",
+    "Royals": "Kansas City Royals",
+    "Angels": "Los Angeles Angels",
+    "Dodgers": "Los Angeles Dodgers",
+    "Marlins": "Miami Marlins",
+    "Brewers": "Milwaukee Brewers",
+    "Twins": "Minnesota Twins",
+    "Mets": "New York Mets",
+    "Yankees": "New York Yankees",
+    "Athletics": "Athletics",
+    "Phillies": "Philadelphia Phillies",
+    "Pirates": "Pittsburgh Pirates",
+    "Padres": "San Diego Padres",
+    "Mariners": "Seattle Mariners",
+    "Giants": "San Francisco Giants",
+    "Cardinals": "St. Louis Cardinals",
+    "Rays": "Tampa Bay Rays",
+    "Rangers": "Texas Rangers",
+    "Blue Jays": "Toronto Blue Jays",
+    "Nationals": "Washington Nationals",
+    "D-backs": "Arizona Diamondbacks",
+    "Diamondbacks": "Arizona Diamondbacks",
+}
 
 
 @dataclass
@@ -81,14 +115,72 @@ def pct(numerator: int, denominator: int) -> str:
     return f"{(numerator / denominator) * 100:.1f}%"
 
 
+def format_prediction_label(prediction_date: str) -> str:
+    return datetime.strptime(prediction_date, "%Y-%m-%d").strftime("%B %-d")
+
+
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text())
 
 
+def load_board_picks(prediction_date: str) -> list[dict]:
+    legacy_board_path = ROOT / "data-private" / "predictions" / "mlb-sides" / f"{prediction_date}-board-v1.1.post-sanity.json"
+    if legacy_board_path.exists():
+        return load_json(legacy_board_path)["picks"]
+
+    published_summary_path = ROOT / "published-data" / "slates" / prediction_date / "summary.json"
+    if not published_summary_path.exists():
+        raise FileNotFoundError(f"Missing board source for {prediction_date}: {legacy_board_path} or {published_summary_path}")
+
+    summary_games = load_json(published_summary_path).get("games", [])
+    picks: list[dict] = []
+    for game in summary_games:
+        if game.get("league") != "MLB":
+            continue
+        analysis = game.get("analysis") or {}
+        participant = analysis.get("participant") or {}
+        opponent = analysis.get("opponent") or {}
+        projection = (analysis.get("mlbProjection") or {})
+        first_inning = projection.get("firstInning") or {}
+        pick_name = participant.get("name")
+        predicted_team = FULL_NAMES.get(str(pick_name), str(pick_name))
+        away_team = FULL_NAMES.get(game["title"].split(" @ ")[0], game["title"].split(" @ ")[0])
+        home_team = FULL_NAMES.get(game["title"].split(" @ ")[1], game["title"].split(" @ ")[1])
+        picks.append(
+            {
+                "gameId": game.get("id"),
+                "gameTitle": game.get("title"),
+                "awayTeam": away_team,
+                "homeTeam": home_team,
+                "pick": predicted_team,
+                "predictedTeam": predicted_team,
+                "confidence": analysis.get("confidence") or 0,
+                "modelEdge": analysis.get("modelEdge") or 0,
+                "marketProbability": participant.get("impliedProbability"),
+                "marketIsFavorite": bool(
+                    participant.get("impliedProbability") is not None
+                    and opponent.get("impliedProbability") is not None
+                    and participant.get("impliedProbability") > opponent.get("impliedProbability")
+                ),
+                "marketIsUnderdog": bool(
+                    participant.get("impliedProbability") is not None
+                    and opponent.get("impliedProbability") is not None
+                    and participant.get("impliedProbability") < opponent.get("impliedProbability")
+                ),
+                "projection": {
+                    "firstInning": {
+                        "pick": first_inning.get("pick"),
+                        "yesProbabilityPct": first_inning.get("yesProbabilityPct")
+                    }
+                }
+            }
+        )
+    return picks
+
+
 def build_side_rows(prediction_date: str) -> tuple[list[SideRow], dict[str, int | list[str] | bool]]:
-    board_path = ROOT / "data-private" / "predictions" / "mlb-sides" / f"{prediction_date}-board-v1.1.post-sanity.json"
     veto_path = ROOT / "data-private" / "predictions" / "mlb-sides" / f"{prediction_date}-veto-artifact.json"
-    board = load_json(board_path)["picks"]
+    board = load_board_picks(prediction_date)
     veto = load_json(veto_path)["picks"]
 
     conn = get_connection()
@@ -254,6 +346,7 @@ def load_prop_rows(prediction_date: str) -> tuple[list[PropRow], list[PropRow]]:
 
 
 def build_postmortem_markdown(prediction_date: str, side_rows: list[SideRow], settled_props: list[PropRow], top_props: list[PropRow], infra: dict) -> str:
+    pretty_label = format_prediction_label(prediction_date)
     total_games = len(side_rows)
     full_hits = sum(1 for row in side_rows if row.full_hit)
     first5_hits = sum(1 for row in side_rows if row.first5_hit)
@@ -272,6 +365,8 @@ def build_postmortem_markdown(prediction_date: str, side_rows: list[SideRow], se
     phase_counter = Counter(row.phase_path_label for row in miss_rows)
     story_counter = Counter(row.primary_story_label for row in side_rows)
     title_counts = Counter(row.game_title for row in side_rows)
+    top_prop_market_counter = Counter(row.market_label for row in top_props)
+    top_prop_market_label, top_prop_market_count = top_prop_market_counter.most_common(1)[0] if top_prop_market_counter else ("none", 0)
 
     prop_type_counter: dict[str, tuple[int, int]] = {}
     for prop_type in sorted({row.prop_type for row in settled_props}):
@@ -349,7 +444,7 @@ def build_postmortem_markdown(prediction_date: str, side_rows: list[SideRow], se
         ],
     )
 
-    return f"""# May 23 MLB Postmortem
+    return f"""# {pretty_label} MLB Postmortem
 
 ## Slate snapshot
 - Side board (`board-moneyline-v1.1.post-sanity`): `{full_hits}/{total_games}` = `{pct(full_hits, total_games)}`
@@ -375,7 +470,7 @@ This was a dead-early, low-conversion slate. The board still spent too much ener
 ## What killed the side board
 - The board finished only `{full_hits}/{total_games}` even though the misses were mostly the same failure path repeated.
 - `{phase_counter['dead_early_loss']}/{len(miss_rows)}` misses were `dead_early_loss`.
-- The other two misses were `late_push` (`Cardinals @ Reds` game 1) and one `balanced_path` game (`Rangers @ Angels`).
+- The other miss paths were: {", ".join(f"`{label}` x{count}" for label, count in phase_counter.items() if label != 'dead_early_loss') or 'none'}.
 - The winning paths were cleaner and narrower:
   - `starter_carried`: `{sum(1 for row in side_rows if row.full_hit and row.phase_path_label == 'starter_carried')}`
   - `jumped_early_hold`: `{sum(1 for row in side_rows if row.full_hit and row.phase_path_label == 'jumped_early_hold')}`
@@ -401,8 +496,8 @@ Top `8` settled props:
 {prop_table}
 
 The ugly part is the concentration:
-- all top `8` settled props were `Over 1.5 total bases`
-- they went `3/8`
+- the most common top-`8` market was `{top_prop_market_label}` (`{top_prop_market_count}/8`)
+- the top `8` settled props went `{sum(1 for row in top_props if row.hit_flag)}/{len(top_props)}`
 - the model was effectively repeating the same fragile market with fake precision
 
 ## Research-only veto artifact
@@ -411,23 +506,22 @@ The ugly part is the concentration:
 
 What that means:
 - the current veto layer is not promotable yet
-- it did correctly suppress `Mariners @ Royals` and `Rangers @ Angels`
-- it also wrongly suppressed winners like `Astros @ Cubs`, `Twins @ Red Sox`, and `Cardinals @ Reds` game 2
+- it needs to be judged by the actual `Pass` vs `Eligible` buckets above, not by blanket suppression
 
 So the veto idea is right, but the current flags are still too blunt to be used as live gates.
 
 ## Pipeline gaps exposed today
-- `data-private/history/mlb-results-{prediction_date}.jsonl` was **not** written by closeout
+- `data-private/history/mlb-results-{prediction_date}.jsonl` was {"" if infra['history_day_file_exists'] else "**not **"}written by closeout
 - the board file contains duplicate `gameId` values: `{", ".join(infra['duplicate_game_ids']) if infra['duplicate_game_ids'] else 'none'}`
-- importing the May 23 side board only created `{infra['imported_prediction_count']}` rows in `mlb_side_predictions` for `{infra['board_pick_count']}` board picks
+- importing the {pretty_label} side board only created `{infra['imported_prediction_count']}` rows in `mlb_side_predictions` for `{infra['board_pick_count']}` board picks
 - the side grading path still left `mlb_side_backtests` at `{infra['graded_backtest_count']}` rows for this model/date
 
-The doubleheader collision (`Cardinals @ Reds`) is the obvious bookkeeping bug. It means part of the daily side audit path is still structurally broken on slates with duplicate matchup slugs.
+Any duplicate matchup slug or skipped side-import path still breaks part of the daily audit chain, even if the raw outcomes are present.
 
 ## Bottom line
 - This was not a “market was weird” day so much as a **dead-early, low-conversion** day that the board failed to encode tightly enough.
-- The side engine did not find an edge. It landed at straight coin-flip (`7/14`).
-- The first-inning lane was also coin-flip (`7/14`) and specifically over-predicted YRFI in quiet-first-inning spots.
+- The side engine finished `{full_hits}/{total_games}` and still needs a better filter on which edges deserve live exposure.
+- The first-inning lane finished `{yrfi_hits}/{total_games}` and still over-predicted YRFI in several quiet-first-inning spots.
 - Props were the weakest live lane of all, especially the repeated `TB over 1.5` cluster.
 
 The data from this slate is still useful, but as training data for `dead_early_loss`, timing suppression, and bookkeeping fixes, not as evidence that the current prediction engine is ready.
@@ -435,9 +529,10 @@ The data from this slate is still useful, but as training data for `dead_early_l
 
 
 def build_followup_markdown(prediction_date: str, side_rows: list[SideRow], infra: dict) -> str:
+    pretty_label = format_prediction_label(prediction_date)
     dead_early_misses = [row for row in side_rows if (not row.full_hit and row.phase_path_label == "dead_early_loss")]
     yrfi_misses = [row for row in side_rows if not row.yrfi_hit]
-    return f"""# May 23 Chaos Follow-ups
+    return f"""# {pretty_label} Chaos Follow-ups
 
 ## What this slate says to build next
 
@@ -449,7 +544,7 @@ def build_followup_markdown(prediction_date: str, side_rows: list[SideRow], infr
 Reason:
 - today had `{infra['board_pick_count']}` board picks
 - only `{infra['imported_prediction_count']}` side-prediction rows imported
-- `mlb_side_backtests` still shows `{infra['graded_backtest_count']}` rows for the May 23 v1.1 board
+- `mlb_side_backtests` still shows `{infra['graded_backtest_count']}` rows for this day/model path
 
 Until this path is trustworthy, every daily side report is partly manual.
 
@@ -498,7 +593,7 @@ Immediate rule:
 - do not show them as “core” until a much narrower lane proves itself
 
 ### P2: Build reason-coded dog lanes
-May 23 was not just favorites. The board actually took a lot of dogs, but it still did not know **why** a dog was live.
+This slate was not just favorites. The board actually took dogs too, but it still did not know **why** a dog was live.
 
 The next dog lanes should be explicit:
 - opponent dead-early
@@ -512,7 +607,7 @@ No dog pick should exist without one of those reasons.
 ## Concrete next coding tasks
 1. Fix unique `gameId` generation for doubleheaders.
 2. Audit why side backtests are not being written even after import/grade.
-3. Create a dedicated `dead_early_loss` research pass from the May 23 label set.
+3. Create a dedicated `dead_early_loss` research pass from this date's label set.
 4. Add `dead_early_loss` and `quiet_first3` as first-class market selectors, not just warnings.
 5. Strip hitter props down to research-only while we rebuild the lane by prop type.
 
