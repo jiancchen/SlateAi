@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+  "boardTitle": "Raphael Collignon vs Ben Shelton",
+  "boardPlayerName": "Ben Shelton",
+  "recentOpponentName": "Daniel Merida Aguilar",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "ESP  6-3 6-3 6-4 1st",
+  "flashscoreLabel": "Merida Aguilar D. - Shelton B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Merida Aguilar D.",
+    "Shelton B."
+  ],
+  "generatedAt": "2026-05-28T00:53:59.513Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/O8BppY3n/",
+  "matchId": "O8BppY3n",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_O8BppY3n",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_O8BppY3n"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:27"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "76%",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (38/52)",
+              "right": "86% (50/58)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (12/28)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "1/1",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "179 km/h",
+              "right": "186 km/h",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "146 km/h",
+              "right": "171 km/h",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (8/58)",
+              "right": "27% (14/52)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "4/8",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "35",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "36",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (50/80)",
+              "right": "75% (57/76)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (19/76)",
+              "right": "38% (30/80)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (69/156)",
+              "right": "56% (87/156)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "100% (14/14)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "36% (10/28)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "71%",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "94% (16/17)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/17)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "12",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (14/21)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (4/24)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (18/45)",
+              "right": "60% (27/45)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "71%",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (19/32)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (8/24)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (27/56)",
+              "right": "52% (29/56)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "86%",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/24)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (17/27)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (7/28)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/55)",
+              "right": "56% (31/55)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

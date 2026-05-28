@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-iva-jovic-emma-navarro-2026-05-28",
+  "boardTitle": "Iva Jovic vs Emma Navarro",
+  "boardPlayerName": "Iva Jovic",
+  "recentOpponentName": "Cori Gauff",
+  "recentIndex": 2,
+  "recentEvent": "Rome",
+  "recentDate": "11 May 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "USA   Loss 5-7 7-5 6-2 4th",
+  "flashscoreLabel": "Gauff C. - Jovic I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Gauff C.",
+    "Jovic I."
+  ],
+  "generatedAt": "2026-05-28T00:54:16.318Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lj986d04/",
+  "matchId": "lj986d04",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lj986d04",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lj986d04"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "10",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "56%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (37/62)",
+              "right": "60% (35/58)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (15/31)",
+              "right": "33% (15/45)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "5/13",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (23/58)",
+              "right": "40% (25/62)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (30/45)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/13",
+              "right": "6/10",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (52/93)",
+              "right": "49% (50/103)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (53/103)",
+              "right": "44% (41/93)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (105/196)",
+              "right": "46% (91/196)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "63% (10/16)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (8/16)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (18/32)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "73%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (19/27)",
+              "right": "69% (20/29)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (2/8)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (9/29)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (21/35)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (16/40)",
+              "right": "40% (14/35)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (37/75)",
+              "right": "51% (38/75)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "53%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/5",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (9/21)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "50% (20/40)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (20/40)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (39/74)",
+              "right": "47% (35/74)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "35%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (9/19)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/5",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "63% (5/8)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (12/15)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "2/4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (12/24)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "74% (17/23)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (29/47)",
+              "right": "38% (18/47)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

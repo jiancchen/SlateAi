@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "boardPlayerName": "Arthur Rinderknech",
+  "recentOpponentName": "Laslo Djere",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "SRB  4-6 7-64 6-1 2nd",
+  "flashscoreLabel": "Rinderknech A. - Djere L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Rinderknech A.",
+    "Djere L."
+  ],
+  "generatedAt": "2026-05-28T00:53:43.879Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rRaiVQJl/",
+  "matchId": "rRaiVQJl",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rRaiVQJl",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rRaiVQJl"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:14"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:49"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "19",
+              "right": "5",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "65%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (48/57)",
+              "right": "68% (49/72)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (22/47)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "7/10",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (23/72)",
+              "right": "16% (9/57)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (20/38)",
+              "right": "53% (25/47)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "1/7",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "47",
+              "right": "23",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "28",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (8/14)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (70/104)",
+              "right": "61% (67/110)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (43/110)",
+              "right": "33% (34/104)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (113/214)",
+              "right": "47% (101/214)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (16/29)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "62%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (16/18)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (7/20)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (9/28)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "12",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (23/38)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (17/45)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (40/83)",
+              "right": "52% (43/83)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "66%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (20/24)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (13/22)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "4/4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (6/29)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "0/4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "12",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (33/46)",
+              "right": "70% (31/44)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (13/44)",
+              "right": "28% (13/46)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (46/90)",
+              "right": "49% (44/90)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "71%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (14/20)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (13/21)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "66% (27/41)",
+              "right": "34% (14/41)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

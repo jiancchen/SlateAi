@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Diana Shnaider",
+  "recentOpponentName": "Jessica Bouzas Maneiro",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "23 Apr 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "ESP  3-6 7-5 6-1 2nd",
+  "flashscoreLabel": "Bouzas Maneiro J. - Shnaider D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Bouzas Maneiro J.",
+    "Shnaider D."
+  ],
+  "generatedAt": "2026-05-28T00:54:21.715Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tIVoTxk2/",
+  "matchId": "tIVoTxk2",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tIVoTxk2",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tIVoTxk2"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:03"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "65%",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (30/64)",
+              "right": "58% (35/60)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/14",
+              "right": "6/12",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (25/60)",
+              "right": "53% (34/64)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (17/32)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/12",
+              "right": "8/14",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "47% (41/87)",
+              "right": "54% (50/92)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (42/92)",
+              "right": "53% (46/87)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (83/179)",
+              "right": "54% (96/179)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (6/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "43% (6/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (12/28)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "65%",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (13/20)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "3/6",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "63% (15/24)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/5",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "58% (19/33)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (19/36)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (38/69)",
+              "right": "45% (31/69)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "71%",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (9/22)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "3/6",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (10/27)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "4/4",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (13/30)",
+              "right": "50% (20/40)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (20/40)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (33/70)",
+              "right": "53% (37/70)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "92%",
+              "right": "53%",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (8/22)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (1/2)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/9)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "38% (9/24)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (3/16)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "30% (12/40)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Bouzas Maneiro J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+  "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+  "boardPlayerName": "Brandon Nakashima",
+  "recentOpponentName": "Nikoloz Basilashvili",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "11 May 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "GEO   Loss 7-65 6-4 3rd",
+  "flashscoreLabel": "Nakashima B. - Basilashvili N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Nakashima B.",
+    "Basilashvili N."
+  ],
+  "generatedAt": "2026-05-28T00:53:55.801Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4vL1cFTQ/",
+  "matchId": "4vL1cFTQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4vL1cFTQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4vL1cFTQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:48"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "59%",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (43/54)",
+              "right": "84% (32/38)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (6/21)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/1",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "193 km/h",
+              "right": "196 km/h",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "163 km/h",
+              "right": "173 km/h",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (6/38)",
+              "right": "20% (11/54)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (12/26)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/6",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "34",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "25",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (49/75)",
+              "right": "72% (46/64)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (18/64)",
+              "right": "35% (26/75)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (67/139)",
+              "right": "52% (72/139)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "58%",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (22/26)",
+              "right": "86% (19/22)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/22)",
+              "right": "15% (4/26)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "19",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (28/37)",
+              "right": "74% (28/38)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (10/38)",
+              "right": "24% (9/37)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (38/75)",
+              "right": "49% (37/75)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "62%",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (21/28)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/1",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/6",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (21/38)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (29/64)",
+              "right": "55% (35/64)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Nakashima B.",
+              "rightPlayer": "Basilashvili N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+  "boardTitle": "Zachary Svajda vs Adam Walton",
+  "boardPlayerName": "Zachary Svajda",
+  "recentOpponentName": "Max Hans Rehberg",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "GER   Loss 6-2 6-2 q1",
+  "flashscoreLabel": "Svajda Z. - Rehberg M. H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Svajda Z.",
+    "Rehberg M. H."
+  ],
+  "generatedAt": "2026-05-28T00:54:08.816Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KYgDOmZH/",
+  "matchId": "KYgDOmZH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KYgDOmZH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KYgDOmZH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "77%",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (23/35)",
+              "right": "82% (28/34)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (7/23)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/10",
+              "right": "1/1",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (6/34)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "4/10",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "22",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "8",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (30/58)",
+              "right": "77% (34/44)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (10/44)",
+              "right": "48% (28/58)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (40/102)",
+              "right": "61% (62/102)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "72%",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/1",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/5",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (15/28)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/53)",
+              "right": "58% (31/53)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "84%",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/3)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "4",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (15/30)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Svajda Z.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

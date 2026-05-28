@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-katie-boulter-anastasia-potapova-2026-05-28",
+  "boardTitle": "Katie Boulter vs Anastasia Potapova",
+  "boardPlayerName": "Anastasia Potapova",
+  "recentOpponentName": "Jessica Pegula",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "11 May 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "USA   Loss 7-66 6-2 4th",
+  "flashscoreLabel": "Pegula J. - Potapova A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Pegula J.",
+    "Potapova A."
+  ],
+  "generatedAt": "2026-05-28T00:54:06.986Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4StK1CzJ/",
+  "matchId": "4StK1CzJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4StK1CzJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4StK1CzJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 8,
+        "rightGames": 6,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "64%",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (33/48)",
+              "right": "57% (25/44)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (11/22)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "5/10",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (19/44)",
+              "right": "31% (15/48)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (15/25)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/10",
+              "right": "3/6",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (44/70)",
+              "right": "51% (35/69)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (34/69)",
+              "right": "37% (26/70)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (78/139)",
+              "right": "44% (61/139)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "61%",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (20/34)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "5/8",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (13/28)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "3/4",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (25/44)",
+              "right": "50% (23/46)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (23/46)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (48/90)",
+              "right": "47% (42/90)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "70%",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (13/14)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/2",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/2",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "73% (19/26)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (11/23)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (30/49)",
+              "right": "39% (19/49)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

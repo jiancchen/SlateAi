@@ -1,0 +1,872 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+  "boardTitle": "Zachary Svajda vs Adam Walton",
+  "boardPlayerName": "Zachary Svajda",
+  "recentOpponentName": "Alexei Popyrin",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "AUS  3-6 6-3 7-63 7-5 1st",
+  "flashscoreLabel": "Popyrin A. - Svajda Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Popyrin A.",
+    "Svajda Z."
+  ],
+  "generatedAt": "2026-05-28T00:54:08.586Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QkRay4LE/",
+  "matchId": "QkRay4LE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QkRay4LE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QkRay4LE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "58%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (51/70)",
+              "right": "74% (52/70)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (28/45)",
+              "right": "63% (32/51)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "2/4",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "196 km/h",
+              "right": "187 km/h",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "172 km/h",
+              "right": "143 km/h",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (18/70)",
+              "right": "27% (19/70)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (19/51)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/7",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "53",
+              "right": "48",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "22",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "62% (21/34)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (79/115)",
+              "right": "69% (84/121)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (37/121)",
+              "right": "31% (36/115)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (116/236)",
+              "right": "51% (120/236)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (18/21)",
+              "right": "90% (19/21)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (2/21)",
+              "right": "14% (3/21)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (20/42)",
+              "right": "52% (22/42)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "48%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "94% (16/17)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "5",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "91% (20/22)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (9/23)",
+              "right": "9% (2/22)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (29/45)",
+              "right": "36% (16/45)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "67%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (7/11)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (5/20)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (13/21)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (21/51)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "44%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (11/17)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (6/20)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "16",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (27/41)",
+              "right": "75% (27/36)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (9/36)",
+              "right": "34% (14/41)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (36/77)",
+              "right": "53% (41/77)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "72%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "17",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (3/9)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (19/31)",
+              "right": "66% (21/32)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (11/32)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (30/63)",
+              "right": "52% (33/63)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

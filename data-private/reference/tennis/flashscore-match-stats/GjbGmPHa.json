@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28",
+  "boardTitle": "Victoria Mboko vs Katerina Siniakova",
+  "boardPlayerName": "Victoria Mboko",
+  "recentOpponentName": "Jaqueline Cristian",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "22 May 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "ROU  7-63 3-6 6-2 1/2",
+  "flashscoreLabel": "Mboko V. - Cristian J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Mboko V.",
+    "Cristian J."
+  ],
+  "generatedAt": "2026-05-28T00:54:13.295Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GjbGmPHa/",
+  "matchId": "GjbGmPHa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GjbGmPHa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GjbGmPHa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:16"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "57%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (49/76)",
+              "right": "60% (35/58)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (18/38)",
+              "right": "47% (20/43)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/10",
+              "right": "10/14",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (23/58)",
+              "right": "36% (27/76)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (23/43)",
+              "right": "53% (20/38)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/14",
+              "right": "4/10",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (67/114)",
+              "right": "54% (55/101)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (46/101)",
+              "right": "41% (47/114)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (113/215)",
+              "right": "47% (102/215)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (11/15)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (15/29)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "55%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (21/31)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "5/6",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (10/29)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (13/24)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "1/5",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (31/50)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (23/53)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (54/103)",
+              "right": "48% (49/103)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "54%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (8/21)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "4/5",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "3/3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "46% (17/37)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (11/25)",
+              "right": "54% (20/37)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (28/62)",
+              "right": "55% (34/62)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "67%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (20/24)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "63% (10/16)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (12/23)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (31/50)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

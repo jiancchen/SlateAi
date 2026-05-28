@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-iva-jovic-emma-navarro-2026-05-28",
+  "boardTitle": "Iva Jovic vs Emma Navarro",
+  "boardPlayerName": "Iva Jovic",
+  "recentOpponentName": "Alexandra Eala",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "PHI  6-4 6-2 1st",
+  "flashscoreLabel": "Jovic I. - Eala A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Jovic I.",
+    "Eala A."
+  ],
+  "generatedAt": "2026-05-28T00:54:15.861Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vP7yyL7k/",
+  "matchId": "vP7yyL7k",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vP7yyL7k",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vP7yyL7k"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "68%",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (23/33)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (14/30)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "3/9",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "169 km/h",
+              "right": "148 km/h",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "142 km/h",
+              "right": "125 km/h",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (21/42)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (14/20)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "3/9",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "15",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "28",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (37/63)",
+              "right": "44% (27/62)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (35/62)",
+              "right": "41% (26/63)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (72/125)",
+              "right": "42% (53/125)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "67%",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (7/18)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/5",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (13/28)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/5",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "9",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "12",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "45% (19/42)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (23/42)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (43/78)",
+              "right": "45% (35/78)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "70%",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/4",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (8/14)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/4",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "16",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (17/27)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (12/20)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (29/47)",
+              "right": "38% (18/47)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

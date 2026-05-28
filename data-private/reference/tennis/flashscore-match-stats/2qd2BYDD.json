@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-antonia-ruzic-madison-keys-2026-05-28",
+  "boardTitle": "Antonia Ruzic vs Madison Keys",
+  "boardPlayerName": "Antonia Ruzic",
+  "recentOpponentName": "Ashlyn Krueger",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "USA  3-6 6-2 6-2 1st",
+  "flashscoreLabel": "Ruzic A. - Krueger A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Ruzic A.",
+    "Krueger A."
+  ],
+  "generatedAt": "2026-05-28T00:54:11.032Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2qd2BYDD/",
+  "matchId": "2qd2BYDD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2qd2BYDD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2qd2BYDD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "63%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (38/59)",
+              "right": "65% (34/52)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (18/34)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "9/14",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (18/52)",
+              "right": "36% (21/59)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (20/31)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/14",
+              "right": "3/9",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "22",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "57",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (56/93)",
+              "right": "54% (45/83)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (38/83)",
+              "right": "40% (37/93)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (94/176)",
+              "right": "47% (82/176)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return games won",
+              "left": "42% (5/12)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (15/25)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "71%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/1",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/5",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "14",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (15/30)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/54)",
+              "right": "56% (30/54)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "64%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "6/8",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "0/1",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "21",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (34/58)",
+              "right": "41% (24/58)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "55%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (16/26)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/5",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "22",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (15/31)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (36/64)",
+              "right": "44% (28/64)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Krueger A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

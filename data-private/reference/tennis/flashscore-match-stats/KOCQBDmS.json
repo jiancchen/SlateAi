@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-martin-landaluce-vit-kopriva-2026-05-28",
+  "boardTitle": "Martin Landaluce vs Vit Kopriva",
+  "boardPlayerName": "Martin Landaluce",
+  "recentOpponentName": "Marin Cilic",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "CRO  6-4 6-4 2nd",
+  "flashscoreLabel": "Cilic M. - Landaluce M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Cilic M.",
+    "Landaluce M."
+  ],
+  "generatedAt": "2026-05-28T00:54:24.090Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KOCQBDmS/",
+  "matchId": "KOCQBDmS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KOCQBDmS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KOCQBDmS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:15"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:53"
+      }
+    ],
+    "totalDuration": "2:08"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "58%",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (25/34)",
+              "right": "80% (36/45)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (17/36)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/10",
+              "right": "6/6",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (9/45)",
+              "right": "26% (9/34)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (17/33)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "2/10",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "14",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "21",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (42/70)",
+              "right": "67% (52/78)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (26/78)",
+              "right": "40% (28/70)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (68/148)",
+              "right": "54% (80/148)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "60%",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "77% (23/30)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (7/19)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "6/6",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (7/30)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "1/8",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "9",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "12",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (24/41)",
+              "right": "62% (31/50)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (19/50)",
+              "right": "41% (17/41)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (43/91)",
+              "right": "53% (48/91)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "54%",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/15)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (18/29)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (7/28)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Landaluce M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

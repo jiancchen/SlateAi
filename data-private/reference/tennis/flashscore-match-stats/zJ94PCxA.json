@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Luciano Darderi",
+  "recentOpponentName": "Alex De Minaur",
+  "recentIndex": 1,
+  "recentEvent": "Hamburg",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "AUS   Loss 6-0 6-3 1/4",
+  "flashscoreLabel": "Darderi L. - De Minaur A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Darderi L.",
+    "De Minaur A."
+  ],
+  "generatedAt": "2026-05-28T00:53:40.564Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zJ94PCxA/",
+  "matchId": "zJ94PCxA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zJ94PCxA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zJ94PCxA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "49% (20/41)",
+              "right": "67% (31/46)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (8/20)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/10",
+              "right": "11/12",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (15/46)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (15/30)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/12",
+              "right": "5/10",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "30",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "25",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (28/61)",
+              "right": "61% (46/76)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (30/76)",
+              "right": "54% (33/61)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (58/137)",
+              "right": "58% (79/137)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "29% (2/7)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "62%",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (10/22)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "6/6",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "3/4",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "18",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (14/34)",
+              "right": "62% (23/37)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (14/37)",
+              "right": "59% (20/34)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (28/71)",
+              "right": "61% (43/71)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "59%",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (10/19)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "5/6",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (8/23)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "2/6",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (14/27)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (16/39)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (30/66)",
+              "right": "55% (36/66)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

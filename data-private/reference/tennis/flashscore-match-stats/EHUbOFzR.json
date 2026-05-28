@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Diana Shnaider",
+  "recentOpponentName": "Naomi Osaka",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "JPN   Loss 6-1 6-2 3rd",
+  "flashscoreLabel": "Osaka N. - Shnaider D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Osaka N.",
+    "Shnaider D."
+  ],
+  "generatedAt": "2026-05-28T00:54:21.032Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EHUbOFzR/",
+  "matchId": "EHUbOFzR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EHUbOFzR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EHUbOFzR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:24"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "0:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "72%",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (21/27)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/8",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (16/28)",
+              "right": "22% (6/27)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/8",
+              "right": "1/1",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "76% (31/41)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (24/39)",
+              "right": "24% (10/41)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "69% (55/80)",
+              "right": "31% (25/80)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (7/8)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "71% (5/7)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "72%",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (9/11)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "88% (7/8)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (6/13)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (5/5)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (11/18)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "73% (27/37)",
+              "right": "27% (10/37)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "71%",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (10/15)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (15/22)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (13/21)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (28/43)",
+              "right": "35% (15/43)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Osaka N.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

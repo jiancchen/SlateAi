@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+  "boardTitle": "Anna Kalinskaya vs Alina Korneeva",
+  "boardPlayerName": "Anna Kalinskaya",
+  "recentOpponentName": "Dalma Galfi",
+  "recentIndex": 4,
+  "recentEvent": "Madrid",
+  "recentDate": "23 Apr 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "HUN   Loss 6-3 6-3 2nd",
+  "flashscoreLabel": "Galfi D. - Kalinskaya A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Galfi D.",
+    "Kalinskaya A."
+  ],
+  "generatedAt": "2026-05-28T00:53:48.278Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GQvSoDJa/",
+  "matchId": "GQvSoDJa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GQvSoDJa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GQvSoDJa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "64%",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (28/38)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/6",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (16/30)",
+              "right": "26% (10/38)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/6",
+              "right": "2/6",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (35/55)",
+              "right": "47% (22/47)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (25/47)",
+              "right": "36% (20/55)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (60/102)",
+              "right": "41% (42/102)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return games won",
+              "left": "56% (5/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "63%",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/4",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/3",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (15/23)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (13/24)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (28/47)",
+              "right": "40% (19/47)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "65%",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (12/23)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

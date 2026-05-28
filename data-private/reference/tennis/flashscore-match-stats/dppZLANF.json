@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-ann-li-diane-parry-2026-05-28",
+  "boardTitle": "Ann Li vs Diane Parry",
+  "boardPlayerName": "Diane Parry",
+  "recentOpponentName": "Shuai Zhang",
+  "recentIndex": 1,
+  "recentEvent": "Strasbourg",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "CHN   Loss 6-2 7-5 2nd",
+  "flashscoreLabel": "Zhang S. - Parry D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Zhang S.",
+    "Parry D."
+  ],
+  "generatedAt": "2026-05-28T00:54:02.842Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dppZLANF/",
+  "matchId": "dppZLANF",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dppZLANF",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dppZLANF"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:53"
+      }
+    ],
+    "totalDuration": "1:31"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "63%",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (26/37)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "8/12",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "51% (23/45)",
+              "right": "30% (11/37)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (10/26)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/12",
+              "right": "1/1",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "73% (37/51)",
+              "right": "54% (38/71)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (33/71)",
+              "right": "27% (14/51)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (70/122)",
+              "right": "43% (52/122)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total games won",
+              "left": "65% (13/20)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "56%",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (3/4)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/6",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (9/18)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/0",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (16/32)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (33/55)",
+              "right": "40% (22/55)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "69%",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/6",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (14/27)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/1",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "71% (20/28)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (17/39)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (37/67)",
+              "right": "45% (30/67)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Zhang S.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

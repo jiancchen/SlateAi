@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Mccartney Kessler",
+  "recentOpponentName": "Oksana Selekhmeteva",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "ESP  6-4 6-4 Q.",
+  "flashscoreLabel": "Kessler M. - Selekhmeteva O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Kessler M.",
+    "Selekhmeteva O."
+  ],
+  "generatedAt": "2026-05-28T00:54:22.166Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2VtKf7rQ/",
+  "matchId": "2VtKf7rQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2VtKf7rQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2VtKf7rQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "61%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (30/46)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (13/27)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "6/11",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (19/40)",
+              "right": "35% (16/46)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (16/26)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/11",
+              "right": "3/9",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (43/73)",
+              "right": "47% (31/66)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (35/66)",
+              "right": "41% (30/73)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (78/139)",
+              "right": "44% (61/139)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "74%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "6/9",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (14/29)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "2/4",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (18/33)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (20/38)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (38/71)",
+              "right": "46% (33/71)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "41%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (17/28)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/2",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/5",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (25/40)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (15/28)",
+              "right": "38% (15/40)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (40/68)",
+              "right": "41% (28/68)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Selekhmeteva O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

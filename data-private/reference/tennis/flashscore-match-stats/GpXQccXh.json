@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-adolfo-daniel-vallejo-moise-kouame-2026-05-28",
+  "boardTitle": "Adolfo Daniel Vallejo vs Moise Kouame",
+  "boardPlayerName": "Adolfo Daniel Vallejo",
+  "recentOpponentName": "Cameron Norrie",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "GBR  7-67 2-0 ret. 1st",
+  "flashscoreLabel": "Norrie C. - Vallejo D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Norrie C.",
+    "Vallejo D."
+  ],
+  "generatedAt": "2026-05-28T00:53:28.496Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GpXQccXh/",
+  "matchId": "GpXQccXh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GpXQccXh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GpXQccXh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 9,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 2,
+        "duration": "0:24"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "63%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (19/30)",
+              "right": "83% (25/30)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (14/26)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (5/30)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "19",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "21",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (33/56)",
+              "right": "69% (33/48)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (15/48)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (48/104)",
+              "right": "54% (56/104)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (6/7)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (6/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "81% (22/27)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (11/16)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/27)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (27/40)",
+              "right": "67% (29/43)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (14/43)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (41/83)",
+              "right": "51% (42/83)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "38%",
+              "right": "60%",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (3/6)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/3)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (1/2)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (6/16)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (1/5)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (7/21)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/1)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/1)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Norrie C.",
+              "rightPlayer": "Vallejo D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

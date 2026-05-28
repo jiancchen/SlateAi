@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-martin-landaluce-vit-kopriva-2026-05-28",
+  "boardTitle": "Martin Landaluce vs Vit Kopriva",
+  "boardPlayerName": "Martin Landaluce",
+  "recentOpponentName": "Andrea Pellegrino",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "ITA   Loss 6-3 2-6 6-2 Q.",
+  "flashscoreLabel": "Landaluce M. - Pellegrino A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Landaluce M.",
+    "Pellegrino A."
+  ],
+  "generatedAt": "2026-05-28T00:54:24.321Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Cx8JueOP/",
+  "matchId": "Cx8JueOP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Cx8JueOP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Cx8JueOP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "54%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (36/61)",
+              "right": "73% (32/44)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (11/25)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "6/9",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (12/44)",
+              "right": "41% (25/61)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (19/37)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "5/11",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "22",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "47",
+              "right": "31",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (47/86)",
+              "right": "62% (50/81)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (31/81)",
+              "right": "45% (39/86)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (78/167)",
+              "right": "53% (89/167)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "62% (8/13)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (3/12)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (11/25)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "57%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/12)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (18/33)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "57%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (17/26)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (14/30)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "50%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (10/22)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/4",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/6",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "11",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (12/27)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (12/30)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (24/57)",
+              "right": "58% (33/57)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Pellegrino A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

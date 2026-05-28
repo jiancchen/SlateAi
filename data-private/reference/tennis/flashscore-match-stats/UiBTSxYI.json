@@ -1,0 +1,858 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28",
+  "boardTitle": "Francisco Cerundolo vs Hugo Gaston",
+  "boardPlayerName": "Francisco Cerundolo",
+  "recentOpponentName": "Botic Van De Zandschulp",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "NED  6-3 6-4 6-77 6-4 1st",
+  "flashscoreLabel": "Cerundolo F. - Van De Zandschulp B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Cerundolo F.",
+    "Van De Zandschulp B."
+  ],
+  "generatedAt": "2026-05-28T00:53:32.086Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UiBTSxYI/",
+  "matchId": "UiBTSxYI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UiBTSxYI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UiBTSxYI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 9,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "59%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (63/92)",
+              "right": "69% (64/93)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (29/60)",
+              "right": "42% (27/64)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/15",
+              "right": "11/19",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (29/93)",
+              "right": "32% (29/92)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (37/64)",
+              "right": "52% (31/60)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/19",
+              "right": "4/15",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "49",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "54",
+              "right": "72",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Net points won",
+              "left": "59% (10/17)",
+              "right": "66% (21/32)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (92/152)",
+              "right": "58% (91/157)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (66/157)",
+              "right": "39% (60/152)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (158/309)",
+              "right": "49% (151/309)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (16/20)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (8/21)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total games won",
+              "left": "59% (24/41)",
+              "right": "41% (17/41)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "52%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/6",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "18",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (18/31)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (16/33)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (34/64)",
+              "right": "47% (30/64)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "55%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (14/24)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/3",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/4",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "17",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (19/33)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (14/33)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (33/66)",
+              "right": "50% (33/66)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "60%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (19/21)",
+              "right": "76% (22/29)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/5",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (7/29)",
+              "right": "10% (2/21)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "17",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (29/42)",
+              "right": "69% (33/48)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (15/48)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (44/90)",
+              "right": "51% (46/90)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "67%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (19/31)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "3/5",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (11/29)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/7",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "20",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (26/46)",
+              "right": "51% (22/43)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (21/43)",
+              "right": "43% (20/46)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (47/89)",
+              "right": "47% (42/89)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Van De Zandschulp B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

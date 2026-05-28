@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Mccartney Kessler",
+  "recentOpponentName": "Iva Jovic",
+  "recentIndex": 5,
+  "recentEvent": "Rome",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "USA   Loss 7-65 7-64 2nd",
+  "flashscoreLabel": "Kessler M. - Jovic I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Kessler M.",
+    "Jovic I."
+  ],
+  "generatedAt": "2026-05-28T00:54:22.582Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EBso9UZI/",
+  "matchId": "EBso9UZI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EBso9UZI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EBso9UZI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:11"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:18"
+      }
+    ],
+    "totalDuration": "2:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "58%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (40/68)",
+              "right": "64% (36/56)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (16/35)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "2/6",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (20/56)",
+              "right": "41% (28/68)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (21/40)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "4/6",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (56/103)",
+              "right": "57% (55/96)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (41/96)",
+              "right": "46% (47/103)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (97/199)",
+              "right": "51% (102/199)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (8/12)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (4/12)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "63%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (19/33)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/3",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/3",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (29/54)",
+              "right": "63% (25/40)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (15/40)",
+              "right": "46% (25/54)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (44/94)",
+              "right": "53% (50/94)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "55%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (21/35)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/3",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (13/31)",
+              "right": "40% (14/35)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (13/25)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/3",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (27/49)",
+              "right": "54% (30/56)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (26/56)",
+              "right": "45% (22/49)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (53/105)",
+              "right": "50% (52/105)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

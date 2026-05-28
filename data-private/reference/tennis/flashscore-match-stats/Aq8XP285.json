@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Diana Shnaider",
+  "recentOpponentName": "Talia Gibson",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "AUS  5-7 6-1 6-1 2nd",
+  "flashscoreLabel": "Gibson T. - Shnaider D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Gibson T.",
+    "Shnaider D."
+  ],
+  "generatedAt": "2026-05-28T00:54:21.266Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Aq8XP285/",
+  "matchId": "Aq8XP285",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Aq8XP285",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Aq8XP285"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "63%",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (30/52)",
+              "right": "72% (36/50)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (12/37)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/14",
+              "right": "7/10",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (14/50)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (16/30)",
+              "right": "68% (25/37)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "7/14",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "47% (42/89)",
+              "right": "63% (50/80)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (30/80)",
+              "right": "53% (47/89)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (72/169)",
+              "right": "57% (97/169)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "46% (6/13)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (3/13)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (9/26)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "40%",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (9/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "2/5",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (12/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/7",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (23/43)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (17/35)",
+              "right": "47% (20/43)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (40/78)",
+              "right": "49% (38/78)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "90%",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/10)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "3/3",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/2)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/4",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "42% (11/26)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (17/46)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "72%",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (5/14)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "40% (8/20)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (15/45)",
+              "right": "67% (30/45)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

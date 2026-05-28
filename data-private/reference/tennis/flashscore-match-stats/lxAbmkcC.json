@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+  "boardTitle": "Maja Chwalinska vs Elise Mertens",
+  "boardPlayerName": "Elise Mertens",
+  "recentOpponentName": "Tatjana Maria",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "GER  7-5 6-0 1st",
+  "flashscoreLabel": "Maria T. - Mertens E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Maria T.",
+    "Mertens E."
+  ],
+  "generatedAt": "2026-05-28T00:53:50.705Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lxAbmkcC/",
+  "matchId": "lxAbmkcC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lxAbmkcC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lxAbmkcC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:26"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "64%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (15/35)",
+              "right": "74% (25/34)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (6/19)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/10",
+              "right": "5/8",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "162 km/h",
+              "right": "168 km/h",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "128 km/h",
+              "right": "139 km/h",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (9/34)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (10/19)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "7/10",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "36",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "22",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Net points won",
+              "left": "46% (13/28)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (21/54)",
+              "right": "64% (34/53)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (19/53)",
+              "right": "61% (33/54)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (40/107)",
+              "right": "63% (67/107)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "22% (2/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total games won",
+              "left": "28% (5/18)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "56%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (9/22)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "5/8",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "4/5",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "22",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "19",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (9/17)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (13/32)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (17/39)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (30/71)",
+              "right": "58% (41/71)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "86%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (6/13)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/12)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (1/2)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Net points won",
+              "left": "36% (4/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "36% (8/22)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (2/14)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "28% (10/36)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

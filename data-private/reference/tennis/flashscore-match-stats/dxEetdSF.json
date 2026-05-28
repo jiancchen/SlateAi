@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-martin-landaluce-vit-kopriva-2026-05-28",
+  "boardTitle": "Martin Landaluce vs Vit Kopriva",
+  "boardPlayerName": "Vit Kopriva",
+  "recentOpponentName": "Zhizhen Zhang",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "CHN  6-2 6-0 1st",
+  "flashscoreLabel": "Zhang Z. - Kopriva V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Zhang Z.",
+    "Kopriva V."
+  ],
+  "generatedAt": "2026-05-28T00:54:26.298Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dxEetdSF/",
+  "matchId": "dxEetdSF",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dxEetdSF",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dxEetdSF"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:22"
+      }
+    ],
+    "totalDuration": "0:58"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "64%",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (17/40)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "0/0",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "5/11",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "9",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (25/56)",
+              "right": "78% (28/36)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (8/36)",
+              "right": "55% (31/56)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (33/92)",
+              "right": "64% (59/92)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "29% (2/7)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "57%",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (15/31)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "0/0",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/7",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "5",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (20/38)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/59)",
+              "right": "58% (34/59)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "73%",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "22% (2/9)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (1/11)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "4",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "28% (5/18)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "24% (8/33)",
+              "right": "76% (25/33)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Zhang Z.",
+              "rightPlayer": "Kopriva V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

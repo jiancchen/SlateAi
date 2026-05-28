@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+  "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+  "boardPlayerName": "Frances Tiafoe",
+  "recentOpponentName": "Diego Dedura",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "GER  6-4 6-4 1st",
+  "flashscoreLabel": "Dedura D. - Tiafoe F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Dedura D.",
+    "Tiafoe F."
+  ],
+  "generatedAt": "2026-05-28T00:53:46.548Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4U7pad9a/",
+  "matchId": "4U7pad9a",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4U7pad9a",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4U7pad9a"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:01"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "58%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (25/44)",
+              "right": "73% (33/45)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (18/27)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "8/8",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (12/45)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (16/33)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/8",
+              "right": "2/8",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (43/71)",
+              "right": "64% (50/78)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (28/78)",
+              "right": "39% (28/71)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (71/149)",
+              "right": "52% (78/149)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "70%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (9/30)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (27/57)",
+              "right": "53% (30/57)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "50%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (14/27)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (11/16)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "5/5",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (5/24)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (12/24)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "1/6",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (25/44)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (19/48)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (44/92)",
+              "right": "52% (48/92)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

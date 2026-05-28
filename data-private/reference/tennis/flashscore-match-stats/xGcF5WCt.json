@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+  "boardTitle": "Anna Kalinskaya vs Alina Korneeva",
+  "boardPlayerName": "Anna Kalinskaya",
+  "recentOpponentName": "Lois Boisson",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "FRA  6-2 6-2 1st",
+  "flashscoreLabel": "Kalinskaya A. - Boisson L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Kalinskaya A.",
+    "Boisson L."
+  ],
+  "generatedAt": "2026-05-28T00:53:47.378Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xGcF5WCt/",
+  "matchId": "xGcF5WCt",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xGcF5WCt",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xGcF5WCt"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "48%",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (26/42)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (11/21)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "3/9",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "38% (16/42)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "81% (17/21)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "2/8",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "10",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "24",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (37/63)",
+              "right": "40% (16/40)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (24/40)",
+              "right": "41% (26/63)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (61/103)",
+              "right": "41% (42/103)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "42%",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/4",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (3/8)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (9/11)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/3",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (12/19)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (28/45)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "52%",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/5",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/5",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "16",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (21/37)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (12/21)",
+              "right": "43% (16/37)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (33/58)",
+              "right": "43% (25/58)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kalinskaya A.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

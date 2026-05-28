@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+  "boardTitle": "Anna Kalinskaya vs Alina Korneeva",
+  "boardPlayerName": "Alina Korneeva",
+  "recentOpponentName": "Elisabetta Cocciaretto",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "ITA  6-3 6-3 1st",
+  "flashscoreLabel": "Korneeva A. - Cocciaretto E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Korneeva A.",
+    "Cocciaretto E."
+  ],
+  "generatedAt": "2026-05-28T00:53:48.501Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vqtzQXS6/",
+  "matchId": "vqtzQXS6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vqtzQXS6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vqtzQXS6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "62%",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (28/37)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/5",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (14/41)",
+              "right": "24% (9/37)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "72% (18/25)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "1/3",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "14",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "28",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (9/9)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (37/56)",
+              "right": "52% (34/66)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (32/66)",
+              "right": "34% (19/56)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (69/122)",
+              "right": "43% (53/122)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "59%",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (12/16)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "17",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (14/23)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (21/39)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (35/62)",
+              "right": "44% (27/62)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "67%",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (34/60)",
+              "right": "43% (26/60)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Korneeva A.",
+              "rightPlayer": "Cocciaretto E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

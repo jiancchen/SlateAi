@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Luciano Darderi",
+  "recentOpponentName": "Yannick Hanfmann",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "GER  7-67 7-5 2nd",
+  "flashscoreLabel": "Darderi L. - Hanfmann Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/results/",
+  "players": [
+    "Darderi L.",
+    "Hanfmann Y."
+  ],
+  "generatedAt": "2026-05-28T00:53:40.804Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0SHZl6Pb/",
+  "matchId": "0SHZl6Pb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0SHZl6Pb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0SHZl6Pb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:56"
+      }
+    ],
+    "totalDuration": "1:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "51%",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (40/47)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (14/22)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/6",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (10/37)",
+              "right": "15% (7/47)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (14/36)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "31",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "30",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (54/69)",
+              "right": "67% (49/73)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (24/73)",
+              "right": "22% (15/69)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (78/142)",
+              "right": "45% (64/142)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (11/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (2/12)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (13/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "51%",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (23/28)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (3/19)",
+              "right": "18% (5/28)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (30/39)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (10/37)",
+              "right": "23% (9/39)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (40/76)",
+              "right": "47% (36/76)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "50%",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (17/19)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "11% (2/19)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "18",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (24/30)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (14/36)",
+              "right": "20% (6/30)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (38/66)",
+              "right": "42% (28/66)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Darderi L.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

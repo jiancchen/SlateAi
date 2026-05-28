@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "boardPlayerName": "Arthur Rinderknech",
+  "recentOpponentName": "Alexander Bublik",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "KAZ   Loss 5-7 6-4 6-2 1/4",
+  "flashscoreLabel": "Rinderknech A. - Bublik A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Rinderknech A.",
+    "Bublik A."
+  ],
+  "generatedAt": "2026-05-28T00:53:43.658Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/px94sHNE/",
+  "matchId": "px94sHNE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_px94sHNE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_px94sHNE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "16",
+              "right": "8",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "66%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (39/47)",
+              "right": "76% (45/59)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (16/32)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (14/59)",
+              "right": "17% (8/47)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (13/31)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "37",
+              "right": "33",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "26",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (12/18)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (55/79)",
+              "right": "70% (63/90)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (27/90)",
+              "right": "30% (24/79)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (82/169)",
+              "right": "51% (87/169)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "93% (14/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (13/30)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "68%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (10/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "13",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "89% (24/27)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (13/37)",
+              "right": "11% (3/27)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (37/64)",
+              "right": "42% (27/64)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "61%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (28/58)",
+              "right": "52% (30/58)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "68%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "10% (1/10)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "14% (1/7)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/3)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (12/25)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (17/47)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

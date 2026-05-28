@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28",
+  "boardTitle": "Victoria Mboko vs Katerina Siniakova",
+  "boardPlayerName": "Katerina Siniakova",
+  "recentOpponentName": "Lois Boisson",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "FRA  6-2 6-3 1st",
+  "flashscoreLabel": "Siniakova K. - Boisson L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Siniakova K.",
+    "Boisson L."
+  ],
+  "generatedAt": "2026-05-28T00:54:14.918Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GOmfyZNa/",
+  "matchId": "GOmfyZNa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GOmfyZNa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GOmfyZNa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "67%",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (21/28)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (15/24)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/7",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "49% (18/37)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "0/3",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (36/52)",
+              "right": "55% (30/55)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (25/55)",
+              "right": "31% (16/52)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (61/107)",
+              "right": "43% (46/107)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "60%",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "1/3",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (7/12)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/3",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (19/30)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (10/20)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (29/50)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "71%",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (11/25)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (15/35)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (32/57)",
+              "right": "44% (25/57)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Siniakova K.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

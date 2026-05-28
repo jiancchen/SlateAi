@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-kasatkina-susan-bandecchi-2026-05-28",
+  "boardTitle": "Daria Kasatkina vs Susan Bandecchi",
+  "boardPlayerName": "Daria Kasatkina",
+  "recentOpponentName": "Jaqueline Cristian",
+  "recentIndex": 1,
+  "recentEvent": "Strasbourg",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "ROU   Loss 7-63 3-6 6-2 1/4",
+  "flashscoreLabel": "Cristian J. - Kasatkina D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Cristian J.",
+    "Kasatkina D."
+  ],
+  "generatedAt": "2026-05-28T00:53:36.318Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EszLsNU7/",
+  "matchId": "EszLsNU7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EszLsNU7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EszLsNU7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "77%",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (32/61)",
+              "right": "55% (42/76)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (17/33)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/15",
+              "right": "8/16",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (34/76)",
+              "right": "48% (29/61)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (18/23)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/16",
+              "right": "8/15",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (49/94)",
+              "right": "47% (47/99)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (52/99)",
+              "right": "48% (45/94)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (101/193)",
+              "right": "48% (92/193)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "47% (7/15)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "57% (8/14)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (15/29)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "74%",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (12/23)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "5/9",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (16/34)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (10/12)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "4/6",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (19/38)",
+              "right": "43% (20/46)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (26/46)",
+              "right": "50% (19/38)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (45/84)",
+              "right": "46% (39/84)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "79%",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "42% (8/19)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "0/2",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "4/7",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "39% (11/28)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (25/56)",
+              "right": "55% (31/56)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "80%",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "3/5",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (9/20)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/2",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (12/25)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (31/53)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Cristian J.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

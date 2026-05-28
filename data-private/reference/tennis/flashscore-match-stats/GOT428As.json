@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+  "boardTitle": "Anna Kalinskaya vs Alina Korneeva",
+  "boardPlayerName": "Alina Korneeva",
+  "recentOpponentName": "Panna Udvardy",
+  "recentIndex": 5,
+  "recentEvent": "Rome",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "HUN   Loss 6-2 7-62 1st",
+  "flashscoreLabel": "Udvardy P. - Korneeva A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Udvardy P.",
+    "Korneeva A."
+  ],
+  "generatedAt": "2026-05-28T00:53:49.203Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GOT428As/",
+  "matchId": "GOT428As",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GOT428As",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GOT428As"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "0:59"
+      }
+    ],
+    "totalDuration": "1:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "71%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (23/36)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (18/27)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "5/9",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (24/52)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "2/5",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (41/63)",
+              "right": "49% (37/75)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (38/75)",
+              "right": "35% (22/63)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (79/138)",
+              "right": "43% (59/138)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "71%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/7",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "59% (13/22)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "1/2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (16/27)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (20/33)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (36/60)",
+              "right": "40% (24/60)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "71%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (12/18)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (11/30)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (25/36)",
+              "right": "57% (24/42)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (18/42)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (43/78)",
+              "right": "45% (35/78)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Korneeva A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

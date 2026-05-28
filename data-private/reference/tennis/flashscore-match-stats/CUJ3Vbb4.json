@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+  "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+  "boardPlayerName": "Hubert Hurkacz",
+  "recentOpponentName": "Lorenzo Musetti",
+  "recentIndex": 7,
+  "recentEvent": "Madrid",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "ITA   Loss 6-4 7-64 2nd",
+  "flashscoreLabel": "Hurkacz H. - Musetti L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Hurkacz H.",
+    "Musetti L."
+  ],
+  "generatedAt": "2026-05-28T00:53:45.884Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/CUJ3Vbb4/",
+  "matchId": "CUJ3Vbb4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_CUJ3Vbb4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_CUJ3Vbb4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:07"
+      }
+    ],
+    "totalDuration": "1:52"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "66%",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (26/37)",
+              "right": "61% (37/61)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (16/27)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "8/9",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (24/61)",
+              "right": "30% (11/37)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (13/32)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/9",
+              "right": "2/6",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "19",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "23",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Net points won",
+              "left": "81% (17/21)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (42/64)",
+              "right": "60% (56/93)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (37/93)",
+              "right": "34% (22/64)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (79/157)",
+              "right": "50% (78/157)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "63%",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (11/26)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (14/24)",
+              "right": "59% (24/41)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (17/41)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (31/65)",
+              "right": "52% (34/65)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "67%",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (11/17)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "4/4",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (13/35)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "0/3",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "11",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Net points won",
+              "left": "90% (9/10)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (28/40)",
+              "right": "62% (32/52)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (20/52)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (48/92)",
+              "right": "48% (44/92)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Musetti L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

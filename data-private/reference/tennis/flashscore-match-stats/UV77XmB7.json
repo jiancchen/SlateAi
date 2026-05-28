@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+  "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+  "boardPlayerName": "Alejandro Tabilo",
+  "recentOpponentName": "Pablo Carreno-Busta",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "ESP  6-2 6-1 1st",
+  "flashscoreLabel": "Carreno-Busta P. - Tabilo A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Carreno-Busta P.",
+    "Tabilo A."
+  ],
+  "generatedAt": "2026-05-28T00:54:10.202Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UV77XmB7/",
+  "matchId": "UV77XmB7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UV77XmB7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UV77XmB7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:29"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "63%",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (23/46)",
+              "right": "88% (23/26)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/14",
+              "right": "0/0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (3/26)",
+              "right": "50% (23/46)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "4/14",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "22",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "14",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (28/56)",
+              "right": "78% (32/41)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (9/41)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (37/97)",
+              "right": "62% (60/97)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (3/7)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "62%",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (18/33)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/10",
+              "right": "0/0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/10",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (27/63)",
+              "right": "57% (36/63)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "93%",
+              "right": "65%",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (5/13)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (1/1)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "9",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (6/14)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (10/34)",
+              "right": "71% (24/34)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Carreno-Busta P.",
+              "rightPlayer": "Tabilo A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

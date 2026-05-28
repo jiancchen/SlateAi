@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-kasatkina-susan-bandecchi-2026-05-28",
+  "boardTitle": "Daria Kasatkina vs Susan Bandecchi",
+  "boardPlayerName": "Susan Bandecchi",
+  "recentOpponentName": "Dominika Salkova",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "CZE  6-3 4-6 7-5 q2",
+  "flashscoreLabel": "Salkova D. - Bandecchi S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Salkova D.",
+    "Bandecchi S."
+  ],
+  "generatedAt": "2026-05-28T00:53:38.414Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/W6QTpma3/",
+  "matchId": "W6QTpma3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_W6QTpma3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_W6QTpma3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "78%",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (43/86)",
+              "right": "54% (50/92)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (13/27)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/14",
+              "right": "11/17",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "151 km/h",
+              "right": "154 km/h",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "133 km/h",
+              "right": "126 km/h",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (42/92)",
+              "right": "50% (43/86)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (12/26)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/17",
+              "right": "7/14",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "38",
+              "right": "37",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "58",
+              "right": "45",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (14/17)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (56/113)",
+              "right": "54% (64/118)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (54/118)",
+              "right": "50% (57/113)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (110/231)",
+              "right": "52% (121/231)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (6/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (14/31)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "83%",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "29% (4/14)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "2/4",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (11/24)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/4",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "30% (6/20)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (13/29)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (19/49)",
+              "right": "61% (30/49)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "73%",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (19/37)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/6",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (17/30)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/6",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "16",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (25/49)",
+              "right": "46% (19/41)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (22/41)",
+              "right": "49% (24/49)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (47/90)",
+              "right": "48% (43/90)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "79%",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (20/35)",
+              "right": "63% (24/38)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "6/7",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (14/38)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "2/4",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "18",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "21",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (25/44)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (19/48)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (44/92)",
+              "right": "52% (48/92)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Salkova D.",
+              "rightPlayer": "Bandecchi S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

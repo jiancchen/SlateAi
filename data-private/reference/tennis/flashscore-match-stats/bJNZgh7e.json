@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Francisco Comesana",
+  "recentOpponentName": "Jaume Antoni Munar Clar",
+  "recentIndex": 1,
+  "recentEvent": "Geneva",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "ESP   Loss 6-4 6-4 2nd",
+  "flashscoreLabel": "Comesana F. - Munar J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Comesana F.",
+    "Munar J."
+  ],
+  "generatedAt": "2026-05-28T00:53:38.843Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bJNZgh7e/",
+  "matchId": "bJNZgh7e",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bJNZgh7e",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bJNZgh7e"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "67%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (30/42)",
+              "right": "77% (27/35)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (13/25)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (8/35)",
+              "right": "29% (12/42)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "24% (4/17)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "17",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "15",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (43/67)",
+              "right": "77% (40/52)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (12/52)",
+              "right": "36% (24/67)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (55/119)",
+              "right": "54% (64/119)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "65%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (25/54)",
+              "right": "54% (29/54)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "69%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (16/23)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (4/18)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (24/39)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (30/65)",
+              "right": "54% (35/65)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

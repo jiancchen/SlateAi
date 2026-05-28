@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+  "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+  "boardPlayerName": "Oleksandra Oliynykova",
+  "recentOpponentName": "Alexandra Eala",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "PHI  3-6 7-5 6-3 1st",
+  "flashscoreLabel": "Eala A. - Oliynykova O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Eala A.",
+    "Oliynykova O."
+  ],
+  "generatedAt": "2026-05-28T00:54:18.799Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OxgPHN4C/",
+  "matchId": "OxgPHN4C",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OxgPHN4C",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OxgPHN4C"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "69%",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (45/81)",
+              "right": "62% (46/74)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (16/37)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "16/23",
+              "right": "3/9",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (28/74)",
+              "right": "44% (36/81)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "68% (23/34)",
+              "right": "57% (21/37)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "7/23",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (61/118)",
+              "right": "53% (58/110)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (52/110)",
+              "right": "48% (57/118)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (113/228)",
+              "right": "50% (115/228)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (6/15)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (14/30)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "68%",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (22/34)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/7",
+              "right": "1/2",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/7",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (30/46)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (13/31)",
+              "right": "35% (16/46)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (43/77)",
+              "right": "44% (34/77)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "67%",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (10/22)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "1/4",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (12/31)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "4/4",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "42% (14/33)",
+              "right": "52% (24/46)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (22/46)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (36/79)",
+              "right": "54% (43/79)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "71%",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (13/25)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/12",
+              "right": "1/3",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/12",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (17/39)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (17/33)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/72)",
+              "right": "53% (38/72)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Eala A.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

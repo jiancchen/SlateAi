@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+  "boardTitle": "Raphael Collignon vs Ben Shelton",
+  "boardPlayerName": "Ben Shelton",
+  "recentOpponentName": "Dino Prizmic",
+  "recentIndex": 4,
+  "recentEvent": "Madrid",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "CRO   Loss 6-4 6-74 7-65 2nd",
+  "flashscoreLabel": "Shelton B. - Prizmic D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Shelton B.",
+    "Prizmic D."
+  ],
+  "generatedAt": "2026-05-28T00:54:00.684Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zNH5K6Xh/",
+  "matchId": "zNH5K6Xh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zNH5K6Xh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zNH5K6Xh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:10"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:04"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "59%",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (59/78)",
+              "right": "80% (51/64)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (22/39)",
+              "right": "58% (26/45)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "0/0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (13/64)",
+              "right": "24% (19/78)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (19/45)",
+              "right": "44% (17/39)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/6",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "44",
+              "right": "31",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "44",
+              "right": "28",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "54% (13/24)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (81/117)",
+              "right": "71% (77/109)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (32/109)",
+              "right": "31% (36/117)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (113/226)",
+              "right": "50% (113/226)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (16/17)",
+              "right": "100% (17/17)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/17)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (16/34)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "70%",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/16)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "3",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "87% (20/23)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "13% (3/23)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (22/51)",
+              "right": "57% (29/51)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "61%",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (24/31)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "23% (7/31)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "8",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (34/48)",
+              "right": "68% (28/41)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (13/41)",
+              "right": "29% (14/48)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (47/89)",
+              "right": "47% (42/89)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "51%",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (22/30)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (10/22)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "15",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (28/41)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (16/45)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (44/86)",
+              "right": "49% (42/86)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Shelton B.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

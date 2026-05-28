@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Francisco Comesana",
+  "recentOpponentName": "Leandro Riedi",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "SUI  6-4 2-6 6-4 Q.",
+  "flashscoreLabel": "Comesana F. - Riedi L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Comesana F.",
+    "Riedi L."
+  ],
+  "generatedAt": "2026-05-28T00:53:40.107Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xIlwlG1S/",
+  "matchId": "xIlwlG1S",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xIlwlG1S",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xIlwlG1S"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "63%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (40/55)",
+              "right": "64% (34/53)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "4/7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (19/53)",
+              "right": "27% (15/55)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (11/31)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "3/9",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "30",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "35",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "62% (8/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (50/74)",
+              "right": "64% (54/84)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (30/84)",
+              "right": "32% (24/74)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (80/158)",
+              "right": "49% (78/158)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (14/28)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "60%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (16/18)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (21/26)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "19% (5/26)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (29/51)",
+              "right": "43% (22/51)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "74%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "14% (1/7)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (10/19)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (18/45)",
+              "right": "60% (27/45)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "56%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (14/33)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (33/62)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

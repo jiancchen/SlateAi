@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+  "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+  "boardPlayerName": "Frances Tiafoe",
+  "recentOpponentName": "Ignacio Buse",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "PER  6-75 6-3 6-2 2nd",
+  "flashscoreLabel": "Tiafoe F. - Buse I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Tiafoe F.",
+    "Buse I."
+  ],
+  "generatedAt": "2026-05-28T00:53:47.155Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hSu5qsHr/",
+  "matchId": "hSu5qsHr",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hSu5qsHr",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hSu5qsHr"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:10"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "10",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "54%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (39/56)",
+              "right": "65% (33/51)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (23/43)",
+              "right": "40% (17/43)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "6/13",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "197 km/h",
+              "right": "201 km/h",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "151 km/h",
+              "right": "153 km/h",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (18/51)",
+              "right": "30% (17/56)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (26/43)",
+              "right": "47% (20/43)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/13",
+              "right": "4/5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "27",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "42",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (15/22)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (62/100)",
+              "right": "53% (50/94)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (44/94)",
+              "right": "38% (38/100)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (106/194)",
+              "right": "45% (88/194)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (11/15)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (7/14)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "60%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (5/17)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/6",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (11/29)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "68% (13/19)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "3/3",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "18",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (21/39)",
+              "right": "52% (25/48)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (23/48)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (44/87)",
+              "right": "49% (43/87)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "67%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/2",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (22/34)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (10/21)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "32%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (2/8)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (11/25)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Buse I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

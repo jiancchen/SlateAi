@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+  "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+  "boardPlayerName": "Luca Van Assche",
+  "recentOpponentName": "Diego Dedura",
+  "recentIndex": 4,
+  "recentEvent": "Madrid",
+  "recentDate": "20 Apr 26",
+  "recentIsoDate": "2026-04-20",
+  "recentResult": "GER   Loss 6-3 6-2 q1",
+  "flashscoreLabel": "van Assche L. - Dedura D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "van Assche L.",
+    "Dedura D."
+  ],
+  "generatedAt": "2026-05-28T00:53:55.193Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/CfqQq2yh/",
+  "matchId": "CfqQq2yh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_CfqQq2yh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_CfqQq2yh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "65%",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (18/29)",
+              "right": "77% (24/31)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (9/22)",
+              "right": "59% (10/17)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "0/1",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (7/31)",
+              "right": "38% (11/29)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "59% (13/22)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "4/6",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "20",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "100% (3/3)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (27/51)",
+              "right": "71% (34/48)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (14/48)",
+              "right": "47% (24/51)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (41/99)",
+              "right": "59% (58/99)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "58%",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "93% (13/14)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "71% (17/24)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (20/48)",
+              "right": "58% (28/48)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "71%",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "65% (11/17)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "86% (6/7)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "38% (6/16)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "14% (1/7)",
+              "right": "64% (7/11)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "8",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "100% (1/1)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (14/27)",
+              "right": "71% (17/24)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "48% (13/27)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (21/51)",
+              "right": "59% (30/51)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dedura D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

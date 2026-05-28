@@ -1,0 +1,3728 @@
+{
+  "date": "2026-05-28",
+  "capturedAt": "2026-05-28T01:29:52.179Z",
+  "sourceUrls": [
+    "https://sportsbook.fanduel.com/tennis",
+    "https://sportsbook.fanduel.com/tennis?tab=women%27s-french-open"
+  ],
+  "mapped": 31,
+  "unmatched": [
+    "Alejandro Tabilo vs Valentin Vacherot"
+  ],
+  "matches": [
+    {
+      "match": "Adolfo Daniel Vallejo vs Moise Kouame",
+      "pick": {
+        "rank": 1,
+        "match": "Adolfo Daniel Vallejo vs Moise Kouame",
+        "format": "ATP",
+        "court": "Court Suzanne-Lenglen",
+        "start": "2:00 AM",
+        "pick": "Adolfo Daniel Vallejo",
+        "confidence": 64,
+        "volatility": 37,
+        "tier": "Lean",
+        "rationale": "Adolfo Daniel Vallejo has the recent service-hold edge 81% to 69%. Moise Kouame grades 8 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 4,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Adolfo Daniel Vallejo",
+            "serviceHoldPct": 81,
+            "firstServeWonPct": 68,
+            "firstServePct": 63,
+            "avgAces": 2.3,
+            "avgDoubleFaults": 2.7,
+            "avgBreakPointsFaced": 3.7,
+            "returnPointsWonPct": 34,
+            "servicePointsWonPct": 62,
+            "weakServeMatches": 2,
+            "pressureMatches": 5,
+            "matchesWithStats": 3,
+            "weaknessScore": 8,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "limited return pressure (34% return points won)"
+            ],
+            "strengths": [
+              "protects serve well (81% hold)"
+            ],
+            "gameFlowRead": "Adolfo Daniel Vallejo can drop points quickly through limited return pressure (34% return points won)."
+          },
+          "opponent": {
+            "name": "Moise Kouame",
+            "serviceHoldPct": 69,
+            "firstServeWonPct": 65,
+            "firstServePct": 57,
+            "avgAces": 4.5,
+            "avgDoubleFaults": 4,
+            "avgBreakPointsFaced": 8,
+            "returnPointsWonPct": 38,
+            "servicePointsWonPct": 58,
+            "weakServeMatches": 2,
+            "pressureMatches": 4,
+            "matchesWithStats": 2,
+            "weaknessScore": 12,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "double-fault pressure (4.0 avg)",
+              "faces too many break points (8.0 avg)"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Moise Kouame can drop points quickly through double-fault pressure (4.0 avg) and faces too many break points (8.0 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/adolfo-daniel-vallejo-v-moise-kouame-35654060",
+      "eventId": "35654060",
+      "parsed": {
+        "eventId": "35654060",
+        "sideA": "adolfo daniel vallejo",
+        "sideB": "moise kouame",
+        "nameSlug": "adolfo-daniel-vallejo-v-moise-kouame"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Adolfo Daniel Vallejo",
+            "odds": -330
+          },
+          {
+            "player": "Moise Kouame",
+            "odds": 260
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -6.5,
+            "player": "Adolfo Daniel Vallejo",
+            "spread": -6.5,
+            "odds": -108
+          },
+          {
+            "marketLine": -6.5,
+            "player": "Moise Kouame",
+            "spread": 6.5,
+            "odds": -126
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 35.5,
+            "side": "Over",
+            "odds": -110
+          },
+          {
+            "line": 35.5,
+            "side": "Under",
+            "odds": -122
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:16.973Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Donna Vekic vs Naomi Osaka",
+      "pick": {
+        "rank": 2,
+        "match": "Donna Vekic vs Naomi Osaka",
+        "format": "WTA",
+        "court": "Court Simonne-Mathieu",
+        "start": "2:00 AM",
+        "pick": "Naomi Osaka",
+        "confidence": 56,
+        "volatility": 52,
+        "tier": "Watch",
+        "rationale": "Donna Vekic has the recent service-hold edge 84% to 70%, so Naomi Osaka needs the rank/form edge to show up on return games. Opponent-adjusted recent form is basically even: Naomi Osaka 66, Donna Vekic 65. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": -1,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Naomi Osaka",
+            "serviceHoldPct": 70,
+            "firstServeWonPct": 66,
+            "firstServePct": 57,
+            "avgAces": 3.6,
+            "avgDoubleFaults": 3,
+            "avgBreakPointsFaced": 7.6,
+            "returnPointsWonPct": 44,
+            "servicePointsWonPct": 61,
+            "weakServeMatches": 2,
+            "pressureMatches": 3,
+            "matchesWithStats": 5,
+            "weaknessScore": 7,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Naomi Osaka has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Donna Vekic",
+            "serviceHoldPct": 84,
+            "firstServeWonPct": 71,
+            "firstServePct": 61,
+            "avgAces": 3.5,
+            "avgDoubleFaults": 4,
+            "avgBreakPointsFaced": 7,
+            "returnPointsWonPct": 44,
+            "servicePointsWonPct": 66,
+            "weakServeMatches": 1,
+            "pressureMatches": 2,
+            "matchesWithStats": 2,
+            "weaknessScore": 6,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "double-fault pressure (4.0 avg)"
+            ],
+            "strengths": [
+              "protects serve well (84% hold)",
+              "wins enough first-serve points (71%)"
+            ],
+            "gameFlowRead": "Donna Vekic can drop points quickly through double-fault pressure (4.0 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/donna-vekic-v-naomi-osaka-35654208",
+      "eventId": "35654208",
+      "parsed": {
+        "eventId": "35654208",
+        "sideA": "donna vekic",
+        "sideB": "naomi osaka",
+        "nameSlug": "donna-vekic-v-naomi-osaka"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Donna Vekic",
+            "odds": 250
+          },
+          {
+            "player": "Naomi Osaka",
+            "odds": -315
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 4.5,
+            "player": "Donna Vekic",
+            "spread": 4.5,
+            "odds": -122
+          },
+          {
+            "marketLine": 4.5,
+            "player": "Naomi Osaka",
+            "spread": -4.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 20.5,
+            "side": "Over",
+            "odds": -122
+          },
+          {
+            "line": 20.5,
+            "side": "Under",
+            "odds": -108
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:22.162Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Facundo Diaz Acosta vs Learner Tien",
+      "pick": {
+        "rank": 3,
+        "match": "Facundo Diaz Acosta vs Learner Tien",
+        "format": "ATP",
+        "court": "Court 6",
+        "start": "2:00 AM",
+        "pick": "Learner Tien",
+        "confidence": 60,
+        "volatility": 40,
+        "tier": "Watch",
+        "rationale": "Facundo Diaz Acosta has the recent service-hold edge 86% to 76%, so Learner Tien needs the rank/form edge to show up on return games. Facundo Diaz Acosta grades 17 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness warning",
+          "target": "Learner Tien",
+          "scoreGap": -9,
+          "attackingSide": null,
+          "vulnerableSide": "Learner Tien",
+          "gameFlow": "Learner Tien is the model side, but the fragile profile is on our pick: 4 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
+          "liveTrigger": "Do not upgrade Learner Tien unless they hold cleanly in the first service game and keep double faults down.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Learner Tien",
+            "serviceHoldPct": 76,
+            "firstServeWonPct": 70,
+            "firstServePct": 63,
+            "avgAces": 4.1,
+            "avgDoubleFaults": 3.1,
+            "avgBreakPointsFaced": 6.1,
+            "returnPointsWonPct": 44,
+            "servicePointsWonPct": 64,
+            "weakServeMatches": 4,
+            "pressureMatches": 6,
+            "matchesWithStats": 8,
+            "weaknessScore": 14,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [
+              "protects serve well (76% hold)"
+            ],
+            "gameFlowRead": "Learner Tien can drop points quickly through 4 recent matches with serve instability."
+          },
+          "opponent": {
+            "name": "Facundo Diaz Acosta",
+            "serviceHoldPct": 86,
+            "firstServeWonPct": 71,
+            "firstServePct": 69,
+            "avgAces": 4.7,
+            "avgDoubleFaults": 1.3,
+            "avgBreakPointsFaced": 2.7,
+            "returnPointsWonPct": 46,
+            "servicePointsWonPct": 68,
+            "weakServeMatches": 0,
+            "pressureMatches": 6,
+            "matchesWithStats": 3,
+            "weaknessScore": 5,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (86% hold)",
+              "wins enough first-serve points (71%)",
+              "creates return pressure (46% return points won)"
+            ],
+            "gameFlowRead": "Facundo Diaz Acosta has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/facundo-diaz-acosta-v-learner-tien-35654251",
+      "eventId": "35654251",
+      "parsed": {
+        "eventId": "35654251",
+        "sideA": "facundo diaz acosta",
+        "sideB": "learner tien",
+        "nameSlug": "facundo-diaz-acosta-v-learner-tien"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Facundo Diaz Acosta",
+            "odds": 275
+          },
+          {
+            "player": "Learner Tien",
+            "odds": -350
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 5.5,
+            "player": "Facundo Diaz Acosta",
+            "spread": 5.5,
+            "odds": -108
+          },
+          {
+            "marketLine": 5.5,
+            "player": "Learner Tien",
+            "spread": -5.5,
+            "odds": -126
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 36.5,
+            "side": "Over",
+            "odds": -110
+          },
+          {
+            "line": 36.5,
+            "side": "Under",
+            "odds": -120
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:27.347Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Flavio Cobolli vs Wu Yibing",
+      "pick": {
+        "rank": 4,
+        "match": "Flavio Cobolli vs Wu Yibing",
+        "format": "ATP",
+        "court": "Court 7",
+        "start": "2:00 AM",
+        "pick": "Flavio Cobolli",
+        "confidence": 61,
+        "volatility": 39,
+        "tier": "Watch",
+        "rationale": "Flavio Cobolli has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 0,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Flavio Cobolli",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Flavio Cobolli has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Wu Yibing",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Wu Yibing has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/flavio-cobolli-v-yibing-wu-35651677",
+      "eventId": "35651677",
+      "parsed": {
+        "eventId": "35651677",
+        "sideA": "flavio cobolli",
+        "sideB": "yibing wu",
+        "nameSlug": "flavio-cobolli-v-yibing-wu"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Flavio Cobolli",
+            "odds": -350
+          },
+          {
+            "player": "Yibing Wu",
+            "odds": 280
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -5.5,
+            "player": "Flavio Cobolli",
+            "spread": -5.5,
+            "odds": -118
+          },
+          {
+            "marketLine": -5.5,
+            "player": "Yibing Wu",
+            "spread": 5.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 36.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 36.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:32.519Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Iva Jovic vs Emma Navarro",
+      "pick": {
+        "rank": 5,
+        "match": "Iva Jovic vs Emma Navarro",
+        "format": "WTA",
+        "court": "Court 14",
+        "start": "2:00 AM",
+        "pick": "Emma Navarro",
+        "confidence": 51,
+        "volatility": 59,
+        "tier": "Watch",
+        "rationale": "Recent service hold is close: Emma Navarro 66%, Iva Jovic 64%. Emma Navarro grades 30 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": -7,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Game spread is fragile; prefer live entry after the first service cycle.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Emma Navarro",
+            "serviceHoldPct": 66,
+            "firstServeWonPct": 65,
+            "firstServePct": 53,
+            "avgAces": 2.8,
+            "avgDoubleFaults": 5,
+            "avgBreakPointsFaced": 10.8,
+            "returnPointsWonPct": 52,
+            "servicePointsWonPct": 57,
+            "weakServeMatches": 2,
+            "pressureMatches": 4,
+            "matchesWithStats": 5,
+            "weaknessScore": 21,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (5.0 avg)",
+              "faces too many break points (10.8 avg)"
+            ],
+            "strengths": [
+              "creates return pressure (52% return points won)"
+            ],
+            "gameFlowRead": "Emma Navarro can drop points quickly through double-fault pressure (5.0 avg) and faces too many break points (10.8 avg)."
+          },
+          "opponent": {
+            "name": "Iva Jovic",
+            "serviceHoldPct": 64,
+            "firstServeWonPct": 64,
+            "firstServePct": 58,
+            "avgAces": 2.4,
+            "avgDoubleFaults": 2.9,
+            "avgBreakPointsFaced": 7.4,
+            "returnPointsWonPct": 48,
+            "servicePointsWonPct": 57,
+            "weakServeMatches": 3,
+            "pressureMatches": 4,
+            "matchesWithStats": 7,
+            "weaknessScore": 14,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (48% return points won)"
+            ],
+            "gameFlowRead": "Iva Jovic can drop points quickly through 3 recent matches with serve instability."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/iva-jovic-v-emma-navarro-35653376",
+      "eventId": "35653376",
+      "parsed": {
+        "eventId": "35653376",
+        "sideA": "iva jovic",
+        "sideB": "emma navarro",
+        "nameSlug": "iva-jovic-v-emma-navarro"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Iva Jovic",
+            "odds": -122
+          },
+          {
+            "player": "Emma Navarro",
+            "odds": 102
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -0.5,
+            "player": "Iva Jovic",
+            "spread": -0.5,
+            "odds": -120
+          },
+          {
+            "marketLine": -0.5,
+            "player": "Emma Navarro",
+            "spread": 0.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 21.5,
+            "side": "Over",
+            "odds": -120
+          },
+          {
+            "line": 21.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:37.747Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Jan-Lennard Struff vs Jaime Faria",
+      "pick": {
+        "rank": 6,
+        "match": "Jan-Lennard Struff vs Jaime Faria",
+        "format": "ATP",
+        "court": "Court 12",
+        "start": "2:00 AM",
+        "pick": "Jan-Lennard Struff",
+        "confidence": 50,
+        "volatility": 50,
+        "tier": "Watch",
+        "rationale": "Jan-Lennard Struff has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 0,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Jan-Lennard Struff",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Jan-Lennard Struff has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Jaime Faria",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Jaime Faria has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jan-lennard-struff-v-jaime-faria-35654874",
+      "eventId": "35654874",
+      "parsed": {
+        "eventId": "35654874",
+        "sideA": "jan lennard struff",
+        "sideB": "jaime faria",
+        "nameSlug": "jan-lennard-struff-v-jaime-faria"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Jan-Lennard Struff",
+            "odds": 150
+          },
+          {
+            "player": "Jaime Faria",
+            "odds": -178
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 3.5,
+            "player": "Jan-Lennard Struff",
+            "spread": 3.5,
+            "odds": -122
+          },
+          {
+            "marketLine": 3.5,
+            "player": "Jaime Faria",
+            "spread": -3.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 38.5,
+            "side": "Over",
+            "odds": -116
+          },
+          {
+            "line": 38.5,
+            "side": "Under",
+            "odds": -116
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:42.928Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Oleksandra Oliynykova vs Kimberly Birrell",
+      "pick": {
+        "rank": 7,
+        "match": "Oleksandra Oliynykova vs Kimberly Birrell",
+        "format": "WTA",
+        "court": "Court 10",
+        "start": "2:00 AM",
+        "pick": "Oleksandra Oliynykova",
+        "confidence": 58,
+        "volatility": 49,
+        "tier": "Watch",
+        "rationale": "Oleksandra Oliynykova has the recent service-hold edge 62% to 46%. Oleksandra Oliynykova grades 13 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Kimberly Birrell",
+          "scoreGap": 29,
+          "attackingSide": "Oleksandra Oliynykova",
+          "vulnerableSide": "Kimberly Birrell",
+          "gameFlow": "Oleksandra Oliynykova has a real path if Kimberly Birrell's first two service games show the same weakness: low recent hold rate (46%); first-serve points won below comfort (52%).",
+          "liveTrigger": "Look for Kimberly Birrell facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "Weak service profile points to breaks; be careful with low unders.",
+          "pick": {
+            "name": "Oleksandra Oliynykova",
+            "serviceHoldPct": 62,
+            "firstServeWonPct": 61,
+            "firstServePct": 75,
+            "avgAces": 0.6,
+            "avgDoubleFaults": 2.6,
+            "avgBreakPointsFaced": 5.9,
+            "returnPointsWonPct": 53,
+            "servicePointsWonPct": 54,
+            "weakServeMatches": 4,
+            "pressureMatches": 1,
+            "matchesWithStats": 8,
+            "weaknessScore": 17,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "low recent hold rate (62%)",
+              "first-serve points won below comfort (61%)",
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (53% return points won)"
+            ],
+            "gameFlowRead": "Oleksandra Oliynykova can drop points quickly through low recent hold rate (62%) and first-serve points won below comfort (61%)."
+          },
+          "opponent": {
+            "name": "Kimberly Birrell",
+            "serviceHoldPct": 46,
+            "firstServeWonPct": 52,
+            "firstServePct": 69,
+            "avgAces": 1.3,
+            "avgDoubleFaults": 3.7,
+            "avgBreakPointsFaced": 9.3,
+            "returnPointsWonPct": 46,
+            "servicePointsWonPct": 48,
+            "weakServeMatches": 3,
+            "pressureMatches": 6,
+            "matchesWithStats": 3,
+            "weaknessScore": 46,
+            "firstGameComfort": "Fragile opening-service profile",
+            "liabilities": [
+              "low recent hold rate (46%)",
+              "first-serve points won below comfort (52%)",
+              "faces too many break points (9.3 avg)",
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (46% return points won)"
+            ],
+            "gameFlowRead": "Kimberly Birrell can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (52%)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/oleksandra-oliynykova-v-kimberly-birrell-35655236",
+      "eventId": "35655236",
+      "parsed": {
+        "eventId": "35655236",
+        "sideA": "oleksandra oliynykova",
+        "sideB": "kimberly birrell",
+        "nameSlug": "oleksandra-oliynykova-v-kimberly-birrell"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Oleksandra Oliynykova",
+            "odds": -225
+          },
+          {
+            "player": "Kimberly Birrell",
+            "odds": 184
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -3.5,
+            "player": "Oleksandra Oliynykova",
+            "spread": -3.5,
+            "odds": -126
+          },
+          {
+            "marketLine": -3.5,
+            "player": "Kimberly Birrell",
+            "spread": 3.5,
+            "odds": -108
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 21.5,
+            "side": "Over",
+            "odds": -110
+          },
+          {
+            "line": 21.5,
+            "side": "Under",
+            "odds": -122
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:48.092Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Zachary Svajda vs Adam Walton",
+      "pick": {
+        "rank": 8,
+        "match": "Zachary Svajda vs Adam Walton",
+        "format": "ATP",
+        "court": "Court 13",
+        "start": "2:00 AM",
+        "pick": "Adam Walton",
+        "confidence": 57,
+        "volatility": 43,
+        "tier": "Watch",
+        "rationale": "Adam Walton has the recent service-hold edge 74% to 68%. Adam Walton grades 52 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness warning",
+          "target": "Adam Walton",
+          "scoreGap": -13,
+          "attackingSide": null,
+          "vulnerableSide": "Adam Walton",
+          "gameFlow": "Adam Walton is the model side, but the fragile profile is on our pick: faces too many break points (21.0 avg). Avoid laying a bad price until early holds are confirmed.",
+          "liveTrigger": "Do not upgrade Adam Walton unless they hold cleanly in the first service game and keep double faults down.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Adam Walton",
+            "serviceHoldPct": 74,
+            "firstServeWonPct": 63,
+            "firstServePct": 67,
+            "avgAces": 3,
+            "avgDoubleFaults": 1,
+            "avgBreakPointsFaced": 21,
+            "returnPointsWonPct": 39,
+            "servicePointsWonPct": 57,
+            "weakServeMatches": 0,
+            "pressureMatches": 6,
+            "matchesWithStats": 1,
+            "weaknessScore": 22,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "faces too many break points (21.0 avg)"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Adam Walton can drop points quickly through faces too many break points (21.0 avg)."
+          },
+          "opponent": {
+            "name": "Zachary Svajda",
+            "serviceHoldPct": 68,
+            "firstServeWonPct": 69,
+            "firstServePct": 62,
+            "avgAces": 6,
+            "avgDoubleFaults": 2,
+            "avgBreakPointsFaced": 7.2,
+            "returnPointsWonPct": 25,
+            "servicePointsWonPct": 60,
+            "weakServeMatches": 2,
+            "pressureMatches": 5,
+            "matchesWithStats": 5,
+            "weaknessScore": 9,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "limited return pressure (25% return points won)"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Zachary Svajda can drop points quickly through limited return pressure (25% return points won)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/zachary-svajda-v-adam-walton-35653948",
+      "eventId": "35653948",
+      "parsed": {
+        "eventId": "35653948",
+        "sideA": "zachary svajda",
+        "sideB": "adam walton",
+        "nameSlug": "zachary-svajda-v-adam-walton"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Zachary Svajda",
+            "odds": -120
+          },
+          {
+            "player": "Adam Walton",
+            "odds": 100
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -0.5,
+            "player": "Zachary Svajda",
+            "spread": -0.5,
+            "odds": -118
+          },
+          {
+            "marketLine": -0.5,
+            "player": "Adam Walton",
+            "spread": 0.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 38.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 38.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:53.250Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Jannik Sinner vs Juan Manuel Cerundolo",
+      "pick": {
+        "rank": 9,
+        "match": "Jannik Sinner vs Juan Manuel Cerundolo",
+        "format": "ATP",
+        "court": "Court Philippe-Chatrier",
+        "start": "3:00 AM",
+        "pick": "Jannik Sinner",
+        "confidence": 82,
+        "volatility": 28,
+        "tier": "High confidence",
+        "rationale": "Jannik Sinner has the recent service-hold edge 96% to 82%. Jannik Sinner grades 18 points better on opponent-adjusted recent form. High win probability, but still only playable if the market is not taxed above fair value.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 7,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Jannik Sinner",
+            "serviceHoldPct": 96,
+            "firstServeWonPct": 81,
+            "firstServePct": 62,
+            "avgAces": 5.1,
+            "avgDoubleFaults": 1,
+            "avgBreakPointsFaced": 1.8,
+            "returnPointsWonPct": 47,
+            "servicePointsWonPct": 74,
+            "weakServeMatches": 0,
+            "pressureMatches": 2,
+            "matchesWithStats": 8,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (96% hold)",
+              "wins enough first-serve points (81%)",
+              "creates return pressure (47% return points won)"
+            ],
+            "gameFlowRead": "Jannik Sinner has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Juan Manuel Cerundolo",
+            "serviceHoldPct": 82,
+            "firstServeWonPct": 70,
+            "firstServePct": 68,
+            "avgAces": 5,
+            "avgDoubleFaults": 4,
+            "avgBreakPointsFaced": 8.5,
+            "returnPointsWonPct": 41,
+            "servicePointsWonPct": 63,
+            "weakServeMatches": 0,
+            "pressureMatches": 4,
+            "matchesWithStats": 2,
+            "weaknessScore": 7,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "double-fault pressure (4.0 avg)",
+              "faces too many break points (8.5 avg)"
+            ],
+            "strengths": [
+              "protects serve well (82% hold)"
+            ],
+            "gameFlowRead": "Juan Manuel Cerundolo can drop points quickly through double-fault pressure (4.0 avg) and faces too many break points (8.5 avg)."
+          }
+        },
+        "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jannik-sinner-v-juan-manuel-cerundolo-35655273",
+      "eventId": "35655273",
+      "parsed": {
+        "eventId": "35655273",
+        "sideA": "jannik sinner",
+        "sideB": "juan manuel cerundolo",
+        "nameSlug": "jannik-sinner-v-juan-manuel-cerundolo"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Jannik Sinner",
+            "odds": -10000
+          },
+          {
+            "player": "Juan Manuel Cerundolo",
+            "odds": 2400
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -10.5,
+            "player": "Jannik Sinner",
+            "spread": -10.5,
+            "odds": 104
+          },
+          {
+            "marketLine": -10.5,
+            "player": "Juan Manuel Cerundolo",
+            "spread": 10.5,
+            "odds": -138
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 26.5,
+            "side": "Over",
+            "odds": -128
+          },
+          {
+            "line": 26.5,
+            "side": "Under",
+            "odds": -104
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:27:58.423Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Martin Landaluce vs Vit Kopriva",
+      "pick": {
+        "rank": 10,
+        "match": "Martin Landaluce vs Vit Kopriva",
+        "format": "ATP",
+        "court": "Court 9",
+        "start": "3:00 AM",
+        "pick": "Martin Landaluce",
+        "confidence": 52,
+        "volatility": 48,
+        "tier": "Watch",
+        "rationale": "Martin Landaluce has the recent service-hold edge 83% to 78%. Martin Landaluce grades 20 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness warning",
+          "target": "Martin Landaluce",
+          "scoreGap": -13,
+          "attackingSide": null,
+          "vulnerableSide": "Martin Landaluce",
+          "gameFlow": "Martin Landaluce is the model side, but the fragile profile is on our pick: double-fault pressure (4.3 avg); faces too many break points (9.1 avg). Avoid laying a bad price until early holds are confirmed.",
+          "liveTrigger": "Do not upgrade Martin Landaluce unless they hold cleanly in the first service game and keep double faults down.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Martin Landaluce",
+            "serviceHoldPct": 83,
+            "firstServeWonPct": 71,
+            "firstServePct": 63,
+            "avgAces": 3.6,
+            "avgDoubleFaults": 4.3,
+            "avgBreakPointsFaced": 9.1,
+            "returnPointsWonPct": 43,
+            "servicePointsWonPct": 65,
+            "weakServeMatches": 4,
+            "pressureMatches": 4,
+            "matchesWithStats": 7,
+            "weaknessScore": 18,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (4.3 avg)",
+              "faces too many break points (9.1 avg)",
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [
+              "protects serve well (83% hold)",
+              "wins enough first-serve points (71%)"
+            ],
+            "gameFlowRead": "Martin Landaluce can drop points quickly through double-fault pressure (4.3 avg) and faces too many break points (9.1 avg)."
+          },
+          "opponent": {
+            "name": "Vit Kopriva",
+            "serviceHoldPct": 78,
+            "firstServeWonPct": 72,
+            "firstServePct": 63,
+            "avgAces": 3,
+            "avgDoubleFaults": 2.6,
+            "avgBreakPointsFaced": 6.1,
+            "returnPointsWonPct": 37,
+            "servicePointsWonPct": 64,
+            "weakServeMatches": 2,
+            "pressureMatches": 1,
+            "matchesWithStats": 8,
+            "weaknessScore": 5,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "limited return pressure (37% return points won)"
+            ],
+            "strengths": [
+              "protects serve well (78% hold)",
+              "wins enough first-serve points (72%)"
+            ],
+            "gameFlowRead": "Vit Kopriva can drop points quickly through limited return pressure (37% return points won)."
+          }
+        },
+        "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/martin-landaluce-v-vit-kopriva-35654767",
+      "eventId": "35654767",
+      "parsed": {
+        "eventId": "35654767",
+        "sideA": "martin landaluce",
+        "sideB": "vit kopriva",
+        "nameSlug": "martin-landaluce-v-vit-kopriva"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Martin Landaluce",
+            "odds": 108
+          },
+          {
+            "player": "Vit Kopriva",
+            "odds": -130
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 1.5,
+            "player": "Martin Landaluce",
+            "spread": 1.5,
+            "odds": -118
+          },
+          {
+            "marketLine": 1.5,
+            "player": "Vit Kopriva",
+            "spread": -1.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 37.5,
+            "side": "Over",
+            "odds": -120
+          },
+          {
+            "line": 37.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:03.619Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Francisco Cerundolo vs Hugo Gaston",
+      "pick": {
+        "rank": 11,
+        "match": "Francisco Cerundolo vs Hugo Gaston",
+        "format": "ATP",
+        "court": "Court Simonne-Mathieu",
+        "start": "3:30 AM",
+        "pick": "Francisco Cerundolo",
+        "confidence": 69,
+        "volatility": 31,
+        "tier": "Lean",
+        "rationale": "Francisco Cerundolo has the recent service-hold edge 78% to 63%. Francisco Cerundolo grades 19 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Hugo Gaston",
+          "scoreGap": 10,
+          "attackingSide": "Francisco Cerundolo",
+          "vulnerableSide": "Hugo Gaston",
+          "gameFlow": "Francisco Cerundolo has a real path if Hugo Gaston's first two service games show the same weakness: faces too many break points (10.2 avg); 3 recent matches with serve instability.",
+          "liveTrigger": "Look for Hugo Gaston facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Francisco Cerundolo game spread is more interesting than ML if the number is short.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Francisco Cerundolo",
+            "serviceHoldPct": 78,
+            "firstServeWonPct": 69,
+            "firstServePct": 58,
+            "avgAces": 3.9,
+            "avgDoubleFaults": 2.4,
+            "avgBreakPointsFaced": 7,
+            "returnPointsWonPct": 43,
+            "servicePointsWonPct": 64,
+            "weakServeMatches": 2,
+            "pressureMatches": 5,
+            "matchesWithStats": 7,
+            "weaknessScore": 9,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (78% hold)"
+            ],
+            "gameFlowRead": "Francisco Cerundolo has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Hugo Gaston",
+            "serviceHoldPct": 63,
+            "firstServeWonPct": 62,
+            "firstServePct": 54,
+            "avgAces": 2.2,
+            "avgDoubleFaults": 2,
+            "avgBreakPointsFaced": 10.2,
+            "returnPointsWonPct": 39,
+            "servicePointsWonPct": 56,
+            "weakServeMatches": 3,
+            "pressureMatches": 4,
+            "matchesWithStats": 5,
+            "weaknessScore": 19,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "faces too many break points (10.2 avg)",
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Hugo Gaston can drop points quickly through faces too many break points (10.2 avg) and 3 recent matches with serve instability."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/francisco-cerundolo-v-hugo-gaston-35651999",
+      "eventId": "35651999",
+      "parsed": {
+        "eventId": "35651999",
+        "sideA": "francisco cerundolo",
+        "sideB": "hugo gaston",
+        "nameSlug": "francisco-cerundolo-v-hugo-gaston"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Francisco Cerundolo",
+            "odds": -1000
+          },
+          {
+            "player": "Hugo Gaston",
+            "odds": 640
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -8.5,
+            "player": "Francisco Cerundolo",
+            "spread": -8.5,
+            "odds": 100
+          },
+          {
+            "marketLine": -8.5,
+            "player": "Hugo Gaston",
+            "spread": 8.5,
+            "odds": -134
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 31.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 31.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:08.796Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Hubert Hurkacz vs Frances Tiafoe",
+      "pick": {
+        "rank": 12,
+        "match": "Hubert Hurkacz vs Frances Tiafoe",
+        "format": "ATP",
+        "court": "Court 14",
+        "start": "3:30 AM",
+        "pick": "Frances Tiafoe",
+        "confidence": 53,
+        "volatility": 47,
+        "tier": "Watch",
+        "rationale": "Recent service hold is close: Frances Tiafoe 80%, Hubert Hurkacz 82%. Opponent-adjusted recent form is basically even: Frances Tiafoe 81, Hubert Hurkacz 81. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": -5,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Frances Tiafoe",
+            "serviceHoldPct": 80,
+            "firstServeWonPct": 72,
+            "firstServePct": 55,
+            "avgAces": 4.8,
+            "avgDoubleFaults": 3,
+            "avgBreakPointsFaced": 6.4,
+            "returnPointsWonPct": 40,
+            "servicePointsWonPct": 62,
+            "weakServeMatches": 2,
+            "pressureMatches": 7,
+            "matchesWithStats": 5,
+            "weaknessScore": 12,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (80% hold)",
+              "wins enough first-serve points (72%)"
+            ],
+            "gameFlowRead": "Frances Tiafoe has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Hubert Hurkacz",
+            "serviceHoldPct": 82,
+            "firstServeWonPct": 75,
+            "firstServePct": 61,
+            "avgAces": 11.3,
+            "avgDoubleFaults": 2.3,
+            "avgBreakPointsFaced": 8,
+            "returnPointsWonPct": 35,
+            "servicePointsWonPct": 67,
+            "weakServeMatches": 0,
+            "pressureMatches": 6,
+            "matchesWithStats": 3,
+            "weaknessScore": 7,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "faces too many break points (8.0 avg)",
+              "limited return pressure (35% return points won)"
+            ],
+            "strengths": [
+              "protects serve well (82% hold)",
+              "wins enough first-serve points (75%)"
+            ],
+            "gameFlowRead": "Hubert Hurkacz can drop points quickly through faces too many break points (8.0 avg) and limited return pressure (35% return points won)."
+          }
+        },
+        "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/hubert-hurkacz-v-frances-tiafoe-35651294",
+      "eventId": "35651294",
+      "parsed": {
+        "eventId": "35651294",
+        "sideA": "hubert hurkacz",
+        "sideB": "frances tiafoe",
+        "nameSlug": "hubert-hurkacz-v-frances-tiafoe"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Hubert Hurkacz",
+            "odds": -152
+          },
+          {
+            "player": "Frances Tiafoe",
+            "odds": 126
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -1.5,
+            "player": "Hubert Hurkacz",
+            "spread": -1.5,
+            "odds": -122
+          },
+          {
+            "marketLine": -1.5,
+            "player": "Frances Tiafoe",
+            "spread": 1.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 40.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 40.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:13.978Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Anna Kalinskaya vs Alina Korneeva",
+      "pick": {
+        "rank": 13,
+        "match": "Anna Kalinskaya vs Alina Korneeva",
+        "format": "WTA",
+        "court": "Court 6",
+        "start": "4:00 AM",
+        "pick": "Anna Kalinskaya",
+        "confidence": 54,
+        "volatility": 55,
+        "tier": "Watch",
+        "rationale": "Alina Korneeva has the recent service-hold edge 71% to 59%, so Anna Kalinskaya needs the rank/form edge to show up on return games. Alina Korneeva grades 21 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness warning",
+          "target": "Anna Kalinskaya",
+          "scoreGap": -13,
+          "attackingSide": null,
+          "vulnerableSide": "Anna Kalinskaya",
+          "gameFlow": "Anna Kalinskaya is the model side, but the fragile profile is on our pick: low recent hold rate (59%); first-serve points won below comfort (60%). Avoid laying a bad price until early holds are confirmed.",
+          "liveTrigger": "Do not upgrade Anna Kalinskaya unless they hold cleanly in the first service game and keep double faults down.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "Weak service profile points to breaks; be careful with low unders.",
+          "pick": {
+            "name": "Anna Kalinskaya",
+            "serviceHoldPct": 59,
+            "firstServeWonPct": 60,
+            "firstServePct": 64,
+            "avgAces": 1.4,
+            "avgDoubleFaults": 4.6,
+            "avgBreakPointsFaced": 9,
+            "returnPointsWonPct": 43,
+            "servicePointsWonPct": 52,
+            "weakServeMatches": 4,
+            "pressureMatches": 1,
+            "matchesWithStats": 5,
+            "weaknessScore": 28,
+            "firstGameComfort": "Fragile opening-service profile",
+            "liabilities": [
+              "low recent hold rate (59%)",
+              "first-serve points won below comfort (60%)",
+              "double-fault pressure (4.6 avg)",
+              "faces too many break points (9.0 avg)",
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (59%) and first-serve points won below comfort (60%)."
+          },
+          "opponent": {
+            "name": "Alina Korneeva",
+            "serviceHoldPct": 71,
+            "firstServeWonPct": 65,
+            "firstServePct": 68,
+            "avgAces": 3.3,
+            "avgDoubleFaults": 4.2,
+            "avgBreakPointsFaced": 9.2,
+            "returnPointsWonPct": 47,
+            "servicePointsWonPct": 58,
+            "weakServeMatches": 3,
+            "pressureMatches": 4,
+            "matchesWithStats": 6,
+            "weaknessScore": 15,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (4.2 avg)",
+              "faces too many break points (9.2 avg)",
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (47% return points won)"
+            ],
+            "gameFlowRead": "Alina Korneeva can drop points quickly through double-fault pressure (4.2 avg) and faces too many break points (9.2 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/anna-kalinskaya-v-alina-korneeva-35654774",
+      "eventId": "35654774",
+      "parsed": {
+        "eventId": "35654774",
+        "sideA": "anna kalinskaya",
+        "sideB": "alina korneeva",
+        "nameSlug": "anna-kalinskaya-v-alina-korneeva"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Anna Kalinskaya",
+            "odds": -260
+          },
+          {
+            "player": "Alina Korneeva",
+            "odds": 210
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -4.5,
+            "player": "Anna Kalinskaya",
+            "spread": -4.5,
+            "odds": -104
+          },
+          {
+            "marketLine": -4.5,
+            "player": "Alina Korneeva",
+            "spread": 4.5,
+            "odds": -130
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 20.5,
+            "side": "Over",
+            "odds": -122
+          },
+          {
+            "line": 20.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:19.158Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Diana Shnaider vs McCartney Kessler",
+      "pick": {
+        "rank": 14,
+        "match": "Diana Shnaider vs McCartney Kessler",
+        "format": "WTA",
+        "court": "Court 7",
+        "start": "4:00 AM",
+        "pick": "Diana Shnaider",
+        "confidence": 50,
+        "volatility": 60,
+        "tier": "Watch",
+        "rationale": "Diana Shnaider has the recent service-hold edge 58% to 54%. Opponent-adjusted recent form is basically even: Diana Shnaider 57, McCartney Kessler 58. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 1,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Game spread is fragile; prefer live entry after the first service cycle.",
+          "totalRead": "Weak service profile points to breaks; be careful with low unders.",
+          "pick": {
+            "name": "Diana Shnaider",
+            "serviceHoldPct": 58,
+            "firstServeWonPct": 55,
+            "firstServePct": 64,
+            "avgAces": 0.8,
+            "avgDoubleFaults": 2.8,
+            "avgBreakPointsFaced": 10.8,
+            "returnPointsWonPct": 46,
+            "servicePointsWonPct": 52,
+            "weakServeMatches": 5,
+            "pressureMatches": 4,
+            "matchesWithStats": 5,
+            "weaknessScore": 33,
+            "firstGameComfort": "Fragile opening-service profile",
+            "liabilities": [
+              "low recent hold rate (58%)",
+              "first-serve points won below comfort (55%)",
+              "faces too many break points (10.8 avg)",
+              "5 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (46% return points won)"
+            ],
+            "gameFlowRead": "Diana Shnaider can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (55%)."
+          },
+          "opponent": {
+            "name": "McCartney Kessler",
+            "serviceHoldPct": 54,
+            "firstServeWonPct": 59,
+            "firstServePct": 63,
+            "avgAces": 1.8,
+            "avgDoubleFaults": 3.6,
+            "avgBreakPointsFaced": 11,
+            "returnPointsWonPct": 48,
+            "servicePointsWonPct": 52,
+            "weakServeMatches": 4,
+            "pressureMatches": 4,
+            "matchesWithStats": 5,
+            "weaknessScore": 34,
+            "firstGameComfort": "Fragile opening-service profile",
+            "liabilities": [
+              "low recent hold rate (54%)",
+              "first-serve points won below comfort (59%)",
+              "faces too many break points (11.0 avg)",
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (48% return points won)"
+            ],
+            "gameFlowRead": "McCartney Kessler can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (59%)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/diana-shnaider-v-mccartney-kessler-35651909",
+      "eventId": "35651909",
+      "parsed": {
+        "eventId": "35651909",
+        "sideA": "diana shnaider",
+        "sideB": "mccartney kessler",
+        "nameSlug": "diana-shnaider-v-mccartney-kessler"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Diana Shnaider",
+            "odds": -400
+          },
+          {
+            "player": "Mccartney Kessler",
+            "odds": 315
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -5.5,
+            "player": "Diana Shnaider",
+            "spread": -5.5,
+            "odds": 102
+          },
+          {
+            "marketLine": -5.5,
+            "player": "Mccartney Kessler",
+            "spread": 5.5,
+            "odds": -136
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 19.5,
+            "side": "Over",
+            "odds": -122
+          },
+          {
+            "line": 19.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:24.330Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Julia Grabher vs Amanda Anisimova",
+      "pick": {
+        "rank": 15,
+        "match": "Julia Grabher vs Amanda Anisimova",
+        "format": "WTA",
+        "court": "Court Suzanne-Lenglen",
+        "start": "4:00 AM",
+        "pick": "Amanda Anisimova",
+        "confidence": 68,
+        "volatility": 37,
+        "tier": "Lean",
+        "rationale": "Recent service hold is close: Amanda Anisimova 63%, Julia Grabher 62%. Opponent-adjusted recent form is basically even: Amanda Anisimova 63, Julia Grabher 62. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Julia Grabher",
+          "scoreGap": 13,
+          "attackingSide": "Amanda Anisimova",
+          "vulnerableSide": "Julia Grabher",
+          "gameFlow": "Amanda Anisimova has a real path if Julia Grabher's first two service games show the same weakness: first-serve points won below comfort (58%); double-fault pressure (4.6 avg).",
+          "liveTrigger": "Look for Julia Grabher facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Amanda Anisimova game spread is more interesting than ML if the number is short.",
+          "totalRead": "Weak service profile points to breaks; be careful with low unders.",
+          "pick": {
+            "name": "Amanda Anisimova",
+            "serviceHoldPct": 63,
+            "firstServeWonPct": 67,
+            "firstServePct": 59,
+            "avgAces": 3,
+            "avgDoubleFaults": 5,
+            "avgBreakPointsFaced": 8,
+            "returnPointsWonPct": 69,
+            "servicePointsWonPct": 57,
+            "weakServeMatches": 1,
+            "pressureMatches": 3,
+            "matchesWithStats": 1,
+            "weaknessScore": 15,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (5.0 avg)",
+              "faces too many break points (8.0 avg)"
+            ],
+            "strengths": [
+              "creates return pressure (69% return points won)"
+            ],
+            "gameFlowRead": "Amanda Anisimova can drop points quickly through double-fault pressure (5.0 avg) and faces too many break points (8.0 avg)."
+          },
+          "opponent": {
+            "name": "Julia Grabher",
+            "serviceHoldPct": 62,
+            "firstServeWonPct": 58,
+            "firstServePct": 65,
+            "avgAces": 1.6,
+            "avgDoubleFaults": 4.6,
+            "avgBreakPointsFaced": 8.4,
+            "returnPointsWonPct": 44,
+            "servicePointsWonPct": 56,
+            "weakServeMatches": 4,
+            "pressureMatches": 5,
+            "matchesWithStats": 5,
+            "weaknessScore": 28,
+            "firstGameComfort": "Fragile opening-service profile",
+            "liabilities": [
+              "first-serve points won below comfort (58%)",
+              "double-fault pressure (4.6 avg)",
+              "faces too many break points (8.4 avg)",
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Julia Grabher can drop points quickly through first-serve points won below comfort (58%) and double-fault pressure (4.6 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/julia-grabher-v-amanda-anisimova-35651262",
+      "eventId": "35651262",
+      "parsed": {
+        "eventId": "35651262",
+        "sideA": "julia grabher",
+        "sideB": "amanda anisimova",
+        "nameSlug": "julia-grabher-v-amanda-anisimova"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Julia Grabher",
+            "odds": 420
+          },
+          {
+            "player": "Amanda Anisimova",
+            "odds": -600
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 5.5,
+            "player": "Julia Grabher",
+            "spread": 5.5,
+            "odds": -122
+          },
+          {
+            "marketLine": 5.5,
+            "player": "Amanda Anisimova",
+            "spread": -5.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 19.5,
+            "side": "Over",
+            "odds": -120
+          },
+          {
+            "line": 19.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:29.515Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Maja Chwalinska vs Elise Mertens",
+      "pick": {
+        "rank": 16,
+        "match": "Maja Chwalinska vs Elise Mertens",
+        "format": "WTA",
+        "court": "Court 12",
+        "start": "4:00 AM",
+        "pick": "Elise Mertens",
+        "confidence": 56,
+        "volatility": 52,
+        "tier": "Watch",
+        "rationale": "Recent service hold is close: Elise Mertens 76%, Maja Chwalinska 77%. Maja Chwalinska grades 27 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 0,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Elise Mertens",
+            "serviceHoldPct": 76,
+            "firstServeWonPct": 71,
+            "firstServePct": 62,
+            "avgAces": 4.2,
+            "avgDoubleFaults": 2.7,
+            "avgBreakPointsFaced": 6.3,
+            "returnPointsWonPct": 47,
+            "servicePointsWonPct": 63,
+            "weakServeMatches": 1,
+            "pressureMatches": 3,
+            "matchesWithStats": 6,
+            "weaknessScore": 3,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (76% hold)",
+              "wins enough first-serve points (71%)",
+              "creates return pressure (47% return points won)"
+            ],
+            "gameFlowRead": "Elise Mertens has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Maja Chwalinska",
+            "serviceHoldPct": 77,
+            "firstServeWonPct": 63,
+            "firstServePct": 71,
+            "avgAces": null,
+            "avgDoubleFaults": 0,
+            "avgBreakPointsFaced": 4.7,
+            "returnPointsWonPct": 62,
+            "servicePointsWonPct": 63,
+            "weakServeMatches": 1,
+            "pressureMatches": 3,
+            "matchesWithStats": 3,
+            "weaknessScore": 3,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (77% hold)",
+              "creates return pressure (62% return points won)"
+            ],
+            "gameFlowRead": "Maja Chwalinska has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/maja-chwalinska-v-elise-mertens-35650063",
+      "eventId": "35650063",
+      "parsed": {
+        "eventId": "35650063",
+        "sideA": "maja chwalinska",
+        "sideB": "elise mertens",
+        "nameSlug": "maja-chwalinska-v-elise-mertens"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Maja Chwalinska",
+            "odds": 172
+          },
+          {
+            "player": "Elise Mertens",
+            "odds": -210
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 3.5,
+            "player": "Maja Chwalinska",
+            "spread": 3.5,
+            "odds": -116
+          },
+          {
+            "marketLine": 3.5,
+            "player": "Elise Mertens",
+            "spread": -3.5,
+            "odds": -118
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 21.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 21.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:34.683Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Yulia Putintseva vs Camila Osorio",
+      "pick": {
+        "rank": 17,
+        "match": "Yulia Putintseva vs Camila Osorio",
+        "format": "WTA",
+        "court": "Court 13",
+        "start": "4:00 AM",
+        "pick": "Yulia Putintseva",
+        "confidence": 50,
+        "volatility": 60,
+        "tier": "Watch",
+        "rationale": "Yulia Putintseva has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 0,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Game spread is fragile; prefer live entry after the first service cycle.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Yulia Putintseva",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Yulia Putintseva has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Camila Osorio",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Camila Osorio has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/yulia-putintseva-v-camila-osorio-35651790",
+      "eventId": "35651790",
+      "parsed": {
+        "eventId": "35651790",
+        "sideA": "yulia putintseva",
+        "sideB": "camila osorio",
+        "nameSlug": "yulia-putintseva-v-camila-osorio"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Yulia Putintseva",
+            "odds": 125
+          },
+          {
+            "player": "Camila Osorio",
+            "odds": -152
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 2.5,
+            "player": "Yulia Putintseva",
+            "spread": 2.5,
+            "odds": -120
+          },
+          {
+            "marketLine": 2.5,
+            "player": "Camila Osorio",
+            "spread": -2.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 21.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 21.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:39.834Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Ann Li vs Diane Parry",
+      "pick": {
+        "rank": 18,
+        "match": "Ann Li vs Diane Parry",
+        "format": "WTA",
+        "court": "Court Philippe-Chatrier",
+        "start": "5:00 AM",
+        "pick": "Ann Li",
+        "confidence": 56,
+        "volatility": 52,
+        "tier": "Watch",
+        "rationale": "Diane Parry grades 21 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Diane Parry",
+          "scoreGap": 23,
+          "attackingSide": "Ann Li",
+          "vulnerableSide": "Diane Parry",
+          "gameFlow": "Ann Li has a real path if Diane Parry's first two service games show the same weakness: low recent hold rate (61%); first-serve points won below comfort (59%).",
+          "liveTrigger": "Look for Diane Parry facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Ann Li",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": 2,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Ann Li has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Diane Parry",
+            "serviceHoldPct": 61,
+            "firstServeWonPct": 59,
+            "firstServePct": 65,
+            "avgAces": 2.3,
+            "avgDoubleFaults": 2.7,
+            "avgBreakPointsFaced": 10.3,
+            "returnPointsWonPct": 40,
+            "servicePointsWonPct": 55,
+            "weakServeMatches": 3,
+            "pressureMatches": 4,
+            "matchesWithStats": 3,
+            "weaknessScore": 23,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "low recent hold rate (61%)",
+              "first-serve points won below comfort (59%)",
+              "faces too many break points (10.3 avg)",
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Diane Parry can drop points quickly through low recent hold rate (61%) and first-serve points won below comfort (59%)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/ann-li-v-diane-parry-35654881",
+      "eventId": "35654881",
+      "parsed": {
+        "eventId": "35654881",
+        "sideA": "ann li",
+        "sideB": "diane parry",
+        "nameSlug": "ann-li-v-diane-parry"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Ann Li",
+            "odds": -275
+          },
+          {
+            "player": "Diane Parry",
+            "odds": 220
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -4.5,
+            "player": "Ann Li",
+            "spread": -4.5,
+            "odds": -110
+          },
+          {
+            "marketLine": -4.5,
+            "player": "Diane Parry",
+            "spread": 4.5,
+            "odds": -122
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 20.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 20.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:45.021Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Antonia Ruzic vs Madison Keys",
+      "pick": {
+        "rank": 20,
+        "match": "Antonia Ruzic vs Madison Keys",
+        "format": "WTA",
+        "court": "Court 14",
+        "start": "5:30 AM",
+        "pick": "Madison Keys",
+        "confidence": 69,
+        "volatility": 36,
+        "tier": "Lean",
+        "rationale": "Madison Keys has the recent service-hold edge 85% to 47%. Madison Keys grades 41 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Antonia Ruzic",
+          "scoreGap": 40,
+          "attackingSide": "Madison Keys",
+          "vulnerableSide": "Antonia Ruzic",
+          "gameFlow": "Madison Keys has a real path if Antonia Ruzic's first two service games show the same weakness: low recent hold rate (47%); first-serve points won below comfort (57%).",
+          "liveTrigger": "Look for Antonia Ruzic facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Madison Keys game spread is more interesting than ML if the number is short.",
+          "totalRead": "Weak service profile points to breaks; be careful with low unders.",
+          "pick": {
+            "name": "Madison Keys",
+            "serviceHoldPct": 85,
+            "firstServeWonPct": 76,
+            "firstServePct": 68,
+            "avgAces": 4.3,
+            "avgDoubleFaults": 2.3,
+            "avgBreakPointsFaced": 7.7,
+            "returnPointsWonPct": 45,
+            "servicePointsWonPct": 67,
+            "weakServeMatches": 0,
+            "pressureMatches": 3,
+            "matchesWithStats": 3,
+            "weaknessScore": 2,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (85% hold)",
+              "wins enough first-serve points (76%)"
+            ],
+            "gameFlowRead": "Madison Keys has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Antonia Ruzic",
+            "serviceHoldPct": 47,
+            "firstServeWonPct": 57,
+            "firstServePct": 63,
+            "avgAces": 0.6,
+            "avgDoubleFaults": 3.4,
+            "avgBreakPointsFaced": 11.2,
+            "returnPointsWonPct": 41,
+            "servicePointsWonPct": 50,
+            "weakServeMatches": 3,
+            "pressureMatches": 5,
+            "matchesWithStats": 5,
+            "weaknessScore": 42,
+            "firstGameComfort": "Fragile opening-service profile",
+            "liabilities": [
+              "low recent hold rate (47%)",
+              "first-serve points won below comfort (57%)",
+              "faces too many break points (11.2 avg)",
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Antonia Ruzic can drop points quickly through low recent hold rate (47%) and first-serve points won below comfort (57%)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/antonia-ruzic-v-madison-keys-35654948",
+      "eventId": "35654948",
+      "parsed": {
+        "eventId": "35654948",
+        "sideA": "antonia ruzic",
+        "sideB": "madison keys",
+        "nameSlug": "antonia-ruzic-v-madison-keys"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Antonia Ruzic",
+            "odds": 500
+          },
+          {
+            "player": "Madison Keys",
+            "odds": -720
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 5.5,
+            "player": "Antonia Ruzic",
+            "spread": 5.5,
+            "odds": -102
+          },
+          {
+            "marketLine": 5.5,
+            "player": "Madison Keys",
+            "spread": -5.5,
+            "odds": -132
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 19.5,
+            "side": "Over",
+            "odds": -104
+          },
+          {
+            "line": 19.5,
+            "side": "Under",
+            "odds": -130
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:50.173Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Coco Gauff vs Mayar Sherif",
+      "pick": {
+        "rank": 21,
+        "match": "Coco Gauff vs Mayar Sherif",
+        "format": "WTA",
+        "court": "Court Suzanne-Lenglen",
+        "start": "5:30 AM",
+        "pick": "Coco Gauff",
+        "confidence": 64,
+        "volatility": 41,
+        "tier": "Lean",
+        "rationale": "Coco Gauff has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 0,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Coco Gauff",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Coco Gauff has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Mayar Sherif",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Mayar Sherif has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/coco-gauff-v-mayar-sherif-35654203",
+      "eventId": "35654203",
+      "parsed": {
+        "eventId": "35654203",
+        "sideA": "coco gauff",
+        "sideB": "mayar sherif",
+        "nameSlug": "coco-gauff-v-mayar-sherif"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Coco Gauff",
+            "odds": -2500
+          },
+          {
+            "player": "Mayar Sherif",
+            "odds": 1100
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -6.5,
+            "player": "Coco Gauff",
+            "spread": -6.5,
+            "odds": -152
+          },
+          {
+            "marketLine": -6.5,
+            "player": "Mayar Sherif",
+            "spread": 6.5,
+            "odds": 114
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 17.5,
+            "side": "Over",
+            "odds": -110
+          },
+          {
+            "line": 17.5,
+            "side": "Under",
+            "odds": -120
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:28:55.346Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Daria Kasatkina vs Susan Bandecchi",
+      "pick": {
+        "rank": 22,
+        "match": "Daria Kasatkina vs Susan Bandecchi",
+        "format": "WTA",
+        "court": "Court 12",
+        "start": "5:30 AM",
+        "pick": "Daria Kasatkina",
+        "confidence": 52,
+        "volatility": 58,
+        "tier": "Watch",
+        "rationale": "Susan Bandecchi has the recent service-hold edge 72% to 62%, so Daria Kasatkina needs the rank/form edge to show up on return games. Susan Bandecchi grades 18 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": -5,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Game spread is fragile; prefer live entry after the first service cycle.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Daria Kasatkina",
+            "serviceHoldPct": 62,
+            "firstServeWonPct": 60,
+            "firstServePct": 74,
+            "avgAces": 1.7,
+            "avgDoubleFaults": 4,
+            "avgBreakPointsFaced": 9.1,
+            "returnPointsWonPct": 55,
+            "servicePointsWonPct": 55,
+            "weakServeMatches": 3,
+            "pressureMatches": 2,
+            "matchesWithStats": 7,
+            "weaknessScore": 21,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "low recent hold rate (62%)",
+              "first-serve points won below comfort (60%)",
+              "double-fault pressure (4.0 avg)",
+              "faces too many break points (9.1 avg)",
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (55% return points won)"
+            ],
+            "gameFlowRead": "Daria Kasatkina can drop points quickly through low recent hold rate (62%) and first-serve points won below comfort (60%)."
+          },
+          "opponent": {
+            "name": "Susan Bandecchi",
+            "serviceHoldPct": 72,
+            "firstServeWonPct": 59,
+            "firstServePct": 79,
+            "avgAces": 3.7,
+            "avgDoubleFaults": 2,
+            "avgBreakPointsFaced": 11.3,
+            "returnPointsWonPct": 50,
+            "servicePointsWonPct": 59,
+            "weakServeMatches": 2,
+            "pressureMatches": 5,
+            "matchesWithStats": 3,
+            "weaknessScore": 16,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "first-serve points won below comfort (59%)",
+              "faces too many break points (11.3 avg)"
+            ],
+            "strengths": [
+              "creates return pressure (50% return points won)"
+            ],
+            "gameFlowRead": "Susan Bandecchi can drop points quickly through first-serve points won below comfort (59%) and faces too many break points (11.3 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/daria-kasatkina-v-susan-bandecchi-35649560",
+      "eventId": "35649560",
+      "parsed": {
+        "eventId": "35649560",
+        "sideA": "daria kasatkina",
+        "sideB": "susan bandecchi",
+        "nameSlug": "daria-kasatkina-v-susan-bandecchi"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Daria Kasatkina",
+            "odds": -1050
+          },
+          {
+            "player": "Susan Bandecchi",
+            "odds": 660
+          }
+        ],
+        "gameHandicap": [],
+        "totalGames": [
+          {
+            "line": 18.5,
+            "side": "Over",
+            "odds": -120
+          },
+          {
+            "line": 18.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:00.470Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Francisco Comesana vs Luciano Darderi",
+      "pick": {
+        "rank": 23,
+        "match": "Francisco Comesana vs Luciano Darderi",
+        "format": "ATP",
+        "court": "Court 6",
+        "start": "5:30 AM",
+        "pick": "Luciano Darderi",
+        "confidence": 64,
+        "volatility": 36,
+        "tier": "Lean",
+        "rationale": "Francisco Comesana has the recent service-hold edge 71% to 65%, so Luciano Darderi needs the rank/form edge to show up on return games. Luciano Darderi grades 13 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness warning",
+          "target": "Luciano Darderi",
+          "scoreGap": -10,
+          "attackingSide": null,
+          "vulnerableSide": "Luciano Darderi",
+          "gameFlow": "Luciano Darderi is the model side, but the fragile profile is on our pick: 3 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
+          "liveTrigger": "Do not upgrade Luciano Darderi unless they hold cleanly in the first service game and keep double faults down.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Luciano Darderi",
+            "serviceHoldPct": 65,
+            "firstServeWonPct": 67,
+            "firstServePct": 58,
+            "avgAces": 4.5,
+            "avgDoubleFaults": 2.1,
+            "avgBreakPointsFaced": 6.5,
+            "returnPointsWonPct": 40,
+            "servicePointsWonPct": 60,
+            "weakServeMatches": 3,
+            "pressureMatches": 6,
+            "matchesWithStats": 8,
+            "weaknessScore": 15,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Luciano Darderi can drop points quickly through 3 recent matches with serve instability."
+          },
+          "opponent": {
+            "name": "Francisco Comesana",
+            "serviceHoldPct": 71,
+            "firstServeWonPct": 76,
+            "firstServePct": 66,
+            "avgAces": 5.4,
+            "avgDoubleFaults": 2.7,
+            "avgBreakPointsFaced": 4.1,
+            "returnPointsWonPct": 29,
+            "servicePointsWonPct": 57,
+            "weakServeMatches": 2,
+            "pressureMatches": 3,
+            "matchesWithStats": 7,
+            "weaknessScore": 5,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "limited return pressure (29% return points won)"
+            ],
+            "strengths": [
+              "wins enough first-serve points (76%)"
+            ],
+            "gameFlowRead": "Francisco Comesana can drop points quickly through limited return pressure (29% return points won)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/francisco-comesana-v-luciano-darderi-35655002",
+      "eventId": "35655002",
+      "parsed": {
+        "eventId": "35655002",
+        "sideA": "francisco comesana",
+        "sideB": "luciano darderi",
+        "nameSlug": "francisco-comesana-v-luciano-darderi"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Francisco Comesana",
+            "odds": 250
+          },
+          {
+            "player": "Luciano Darderi",
+            "odds": -315
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 5.5,
+            "player": "Francisco Comesana",
+            "spread": 5.5,
+            "odds": -122
+          },
+          {
+            "marketLine": 5.5,
+            "player": "Luciano Darderi",
+            "spread": -5.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 37.5,
+            "side": "Over",
+            "odds": -110
+          },
+          {
+            "line": 37.5,
+            "side": "Under",
+            "odds": -120
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:05.634Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Maria Sakkari vs Claire Liu",
+      "pick": {
+        "rank": 24,
+        "match": "Maria Sakkari vs Claire Liu",
+        "format": "WTA",
+        "court": "Court 7",
+        "start": "5:30 AM",
+        "pick": "Claire Liu",
+        "confidence": 56,
+        "volatility": 52,
+        "tier": "Watch",
+        "rationale": "Claire Liu grades 82 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Maria Sakkari",
+          "scoreGap": 14,
+          "attackingSide": "Claire Liu",
+          "vulnerableSide": "Maria Sakkari",
+          "gameFlow": "Claire Liu has a real path if Maria Sakkari's first two service games show the same weakness: low recent hold rate (60%); first-serve points won below comfort (59%).",
+          "liveTrigger": "Look for Maria Sakkari facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Claire Liu",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": 4,
+            "matchesWithStats": 0,
+            "weaknessScore": 2,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Claire Liu has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Maria Sakkari",
+            "serviceHoldPct": 60,
+            "firstServeWonPct": 59,
+            "firstServePct": 61,
+            "avgAces": 2.8,
+            "avgDoubleFaults": 2.4,
+            "avgBreakPointsFaced": 7.8,
+            "returnPointsWonPct": 38,
+            "servicePointsWonPct": 55,
+            "weakServeMatches": 2,
+            "pressureMatches": 3,
+            "matchesWithStats": 5,
+            "weaknessScore": 16,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "low recent hold rate (60%)",
+              "first-serve points won below comfort (59%)"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Maria Sakkari can drop points quickly through low recent hold rate (60%) and first-serve points won below comfort (59%)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/maria-sakkari-v-claire-liu-35653955",
+      "eventId": "35653955",
+      "parsed": {
+        "eventId": "35653955",
+        "sideA": "maria sakkari",
+        "sideB": "claire liu",
+        "nameSlug": "maria-sakkari-v-claire-liu"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Maria Sakkari",
+            "odds": -220
+          },
+          {
+            "player": "Claire Liu",
+            "odds": 180
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -3.5,
+            "player": "Maria Sakkari",
+            "spread": -3.5,
+            "odds": -120
+          },
+          {
+            "marketLine": -3.5,
+            "player": "Claire Liu",
+            "spread": 3.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 21.5,
+            "side": "Over",
+            "odds": -116
+          },
+          {
+            "line": 21.5,
+            "side": "Under",
+            "odds": -116
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:10.778Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Aryna Sabalenka vs Elsa Jacquemot",
+      "pick": {
+        "rank": 25,
+        "match": "Aryna Sabalenka vs Elsa Jacquemot",
+        "format": "WTA",
+        "court": "Court Philippe-Chatrier",
+        "start": "6:30 AM",
+        "pick": "Aryna Sabalenka",
+        "confidence": 76,
+        "volatility": 28,
+        "tier": "High confidence",
+        "rationale": "Aryna Sabalenka has the recent service-hold edge 78% to 58%. Aryna Sabalenka grades 51 points better on opponent-adjusted recent form. High win probability, but still only playable if the market is not taxed above fair value.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Elsa Jacquemot",
+          "scoreGap": 18,
+          "attackingSide": "Aryna Sabalenka",
+          "vulnerableSide": "Elsa Jacquemot",
+          "gameFlow": "Aryna Sabalenka has a real path if Elsa Jacquemot's first two service games show the same weakness: low recent hold rate (58%); double-fault pressure (5.5 avg).",
+          "liveTrigger": "Look for Elsa Jacquemot facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Aryna Sabalenka game spread is more interesting than ML if the number is short.",
+          "totalRead": "Weak service profile points to breaks; be careful with low unders.",
+          "pick": {
+            "name": "Aryna Sabalenka",
+            "serviceHoldPct": 78,
+            "firstServeWonPct": 69,
+            "firstServePct": 66,
+            "avgAces": 2.7,
+            "avgDoubleFaults": 2.9,
+            "avgBreakPointsFaced": 6.7,
+            "returnPointsWonPct": 47,
+            "servicePointsWonPct": 63,
+            "weakServeMatches": 4,
+            "pressureMatches": 4,
+            "matchesWithStats": 7,
+            "weaknessScore": 11,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [
+              "protects serve well (78% hold)",
+              "creates return pressure (47% return points won)"
+            ],
+            "gameFlowRead": "Aryna Sabalenka can drop points quickly through 4 recent matches with serve instability."
+          },
+          "opponent": {
+            "name": "Elsa Jacquemot",
+            "serviceHoldPct": 58,
+            "firstServeWonPct": 63,
+            "firstServePct": 67,
+            "avgAces": 2.3,
+            "avgDoubleFaults": 5.5,
+            "avgBreakPointsFaced": 8.8,
+            "returnPointsWonPct": 40,
+            "servicePointsWonPct": 55,
+            "weakServeMatches": 3,
+            "pressureMatches": 4,
+            "matchesWithStats": 4,
+            "weaknessScore": 29,
+            "firstGameComfort": "Fragile opening-service profile",
+            "liabilities": [
+              "low recent hold rate (58%)",
+              "double-fault pressure (5.5 avg)",
+              "faces too many break points (8.8 avg)",
+              "3 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Elsa Jacquemot can drop points quickly through low recent hold rate (58%) and double-fault pressure (5.5 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/aryna-sabalenka-v-elsa-jacquemot-35654457",
+      "eventId": "35654457",
+      "parsed": {
+        "eventId": "35654457",
+        "sideA": "aryna sabalenka",
+        "sideB": "elsa jacquemot",
+        "nameSlug": "aryna-sabalenka-v-elsa-jacquemot"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Aryna Sabalenka",
+            "odds": -8000
+          },
+          {
+            "player": "Elsa Jacquemot",
+            "odds": 2200
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -7.5,
+            "player": "Aryna Sabalenka",
+            "spread": -7.5,
+            "odds": -134
+          },
+          {
+            "marketLine": -7.5,
+            "player": "Elsa Jacquemot",
+            "spread": 7.5,
+            "odds": 102
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 16.5,
+            "side": "Over",
+            "odds": -108
+          },
+          {
+            "line": 16.5,
+            "side": "Under",
+            "odds": -126
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:15.949Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Felix Auger-Aliassime vs Roman Andres Burruchaga",
+      "pick": {
+        "rank": 26,
+        "match": "Felix Auger-Aliassime vs Roman Andres Burruchaga",
+        "format": "ATP",
+        "court": "Court Simonne-Mathieu",
+        "start": "7:00 AM",
+        "pick": "Felix Auger-Aliassime",
+        "confidence": 66,
+        "volatility": 35,
+        "tier": "Lean",
+        "rationale": "Felix Auger-Aliassime has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 0,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Felix Auger-Aliassime",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Felix Auger-Aliassime has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Roman Andres Burruchaga",
+            "serviceHoldPct": null,
+            "firstServeWonPct": null,
+            "firstServePct": null,
+            "avgAces": null,
+            "avgDoubleFaults": null,
+            "avgBreakPointsFaced": null,
+            "returnPointsWonPct": null,
+            "servicePointsWonPct": null,
+            "weakServeMatches": 0,
+            "pressureMatches": null,
+            "matchesWithStats": 0,
+            "weaknessScore": 0,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [],
+            "gameFlowRead": "Roman Andres Burruchaga has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/felix-auger-aliassime-v-roman-andres-burruchaga-35655315",
+      "eventId": "35655315",
+      "parsed": {
+        "eventId": "35655315",
+        "sideA": "felix auger aliassime",
+        "sideB": "roman andres burruchaga",
+        "nameSlug": "felix-auger-aliassime-v-roman-andres-burruchaga"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Felix Auger-Aliassime",
+            "odds": -280
+          },
+          {
+            "player": "Roman Andres Burruchaga",
+            "odds": 220
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -4.5,
+            "player": "Felix Auger-Aliassime",
+            "spread": -4.5,
+            "odds": -130
+          },
+          {
+            "marketLine": -4.5,
+            "player": "Roman Andres Burruchaga",
+            "spread": 4.5,
+            "odds": -104
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 37.5,
+            "side": "Over",
+            "odds": -112
+          },
+          {
+            "line": 37.5,
+            "side": "Under",
+            "odds": -118
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:21.134Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Luca Van Assche vs Brandon Nakashima",
+      "pick": {
+        "rank": 27,
+        "match": "Luca Van Assche vs Brandon Nakashima",
+        "format": "ATP",
+        "court": "Court 7",
+        "start": "7:00 AM",
+        "pick": "Brandon Nakashima",
+        "confidence": 64,
+        "volatility": 36,
+        "tier": "Lean",
+        "rationale": "Brandon Nakashima has the recent service-hold edge 89% to 60%. Brandon Nakashima grades 24 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness edge",
+          "target": "Luca Van Assche",
+          "scoreGap": 15,
+          "attackingSide": "Brandon Nakashima",
+          "vulnerableSide": "Luca Van Assche",
+          "gameFlow": "Brandon Nakashima has a real path if Luca Van Assche's first two service games show the same weakness: low recent hold rate (60%); faces too many break points (11.3 avg).",
+          "liveTrigger": "Look for Luca Van Assche facing break points or second-serve pressure before 3-3.",
+          "spreadRead": "Brandon Nakashima game spread is more interesting than ML if the number is short.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Brandon Nakashima",
+            "serviceHoldPct": 89,
+            "firstServeWonPct": 78,
+            "firstServePct": 69,
+            "avgAces": 8,
+            "avgDoubleFaults": 0.5,
+            "avgBreakPointsFaced": 3,
+            "returnPointsWonPct": 38,
+            "servicePointsWonPct": 69,
+            "weakServeMatches": 0,
+            "pressureMatches": 5,
+            "matchesWithStats": 4,
+            "weaknessScore": 3,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (89% hold)",
+              "wins enough first-serve points (78%)"
+            ],
+            "gameFlowRead": "Brandon Nakashima has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Luca Van Assche",
+            "serviceHoldPct": 60,
+            "firstServeWonPct": 65,
+            "firstServePct": 55,
+            "avgAces": 3.8,
+            "avgDoubleFaults": 2.8,
+            "avgBreakPointsFaced": 11.3,
+            "returnPointsWonPct": 34,
+            "servicePointsWonPct": 55,
+            "weakServeMatches": 2,
+            "pressureMatches": 3,
+            "matchesWithStats": 4,
+            "weaknessScore": 18,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "low recent hold rate (60%)",
+              "faces too many break points (11.3 avg)",
+              "limited return pressure (34% return points won)"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Luca Van Assche can drop points quickly through low recent hold rate (60%) and faces too many break points (11.3 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/luca-van-assche-v-brandon-nakashima-35650148",
+      "eventId": "35650148",
+      "parsed": {
+        "eventId": "35650148",
+        "sideA": "luca van assche",
+        "sideB": "brandon nakashima",
+        "nameSlug": "luca-van-assche-v-brandon-nakashima"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Luca Van Assche",
+            "odds": 205
+          },
+          {
+            "player": "Brandon Nakashima",
+            "odds": -255
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 4.5,
+            "player": "Luca Van Assche",
+            "spread": 4.5,
+            "odds": -110
+          },
+          {
+            "marketLine": 4.5,
+            "player": "Brandon Nakashima",
+            "spread": -4.5,
+            "odds": -120
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 37.5,
+            "side": "Over",
+            "odds": -118
+          },
+          {
+            "line": 37.5,
+            "side": "Under",
+            "odds": -112
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:26.308Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Matteo Arnaldi vs Stefanos Tsitsipas",
+      "pick": {
+        "rank": 28,
+        "match": "Matteo Arnaldi vs Stefanos Tsitsipas",
+        "format": "ATP",
+        "court": "Court 14",
+        "start": "7:00 AM",
+        "pick": "Matteo Arnaldi",
+        "confidence": 50,
+        "volatility": 50,
+        "tier": "Watch",
+        "rationale": "Stefanos Tsitsipas has the recent service-hold edge 90% to 82%, so Matteo Arnaldi needs the rank/form edge to show up on return games. Matteo Arnaldi grades 32 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "Weakness warning",
+          "target": "Matteo Arnaldi",
+          "scoreGap": -11,
+          "attackingSide": null,
+          "vulnerableSide": "Matteo Arnaldi",
+          "gameFlow": "Matteo Arnaldi is the model side, but the fragile profile is on our pick: double-fault pressure (4.0 avg); limited return pressure (37% return points won). Avoid laying a bad price until early holds are confirmed.",
+          "liveTrigger": "Do not upgrade Matteo Arnaldi unless they hold cleanly in the first service game and keep double faults down.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Matteo Arnaldi",
+            "serviceHoldPct": 82,
+            "firstServeWonPct": 71,
+            "firstServePct": 63,
+            "avgAces": 5,
+            "avgDoubleFaults": 4,
+            "avgBreakPointsFaced": 6.5,
+            "returnPointsWonPct": 37,
+            "servicePointsWonPct": 64,
+            "weakServeMatches": 2,
+            "pressureMatches": 6,
+            "matchesWithStats": 4,
+            "weaknessScore": 13,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "double-fault pressure (4.0 avg)",
+              "limited return pressure (37% return points won)"
+            ],
+            "strengths": [
+              "protects serve well (82% hold)",
+              "wins enough first-serve points (71%)"
+            ],
+            "gameFlowRead": "Matteo Arnaldi can drop points quickly through double-fault pressure (4.0 avg) and limited return pressure (37% return points won)."
+          },
+          "opponent": {
+            "name": "Stefanos Tsitsipas",
+            "serviceHoldPct": 90,
+            "firstServeWonPct": 77,
+            "firstServePct": 67,
+            "avgAces": 4.6,
+            "avgDoubleFaults": 1,
+            "avgBreakPointsFaced": 4.1,
+            "returnPointsWonPct": 41,
+            "servicePointsWonPct": 69,
+            "weakServeMatches": 0,
+            "pressureMatches": 4,
+            "matchesWithStats": 8,
+            "weaknessScore": 2,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (90% hold)",
+              "wins enough first-serve points (77%)"
+            ],
+            "gameFlowRead": "Stefanos Tsitsipas has no major service weakness in the joined Flashscore sample."
+          }
+        },
+        "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/matteo-arnaldi-v-stefanos-tsitsipas-35654022",
+      "eventId": "35654022",
+      "parsed": {
+        "eventId": "35654022",
+        "sideA": "matteo arnaldi",
+        "sideB": "stefanos tsitsipas",
+        "nameSlug": "matteo-arnaldi-v-stefanos-tsitsipas"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Matteo Arnaldi",
+            "odds": 146
+          },
+          {
+            "player": "Stefanos Tsitsipas",
+            "odds": -178
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 3.5,
+            "player": "Matteo Arnaldi",
+            "spread": 3.5,
+            "odds": -120
+          },
+          {
+            "marketLine": 3.5,
+            "player": "Stefanos Tsitsipas",
+            "spread": -3.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 38.5,
+            "side": "Over",
+            "odds": -120
+          },
+          {
+            "line": 38.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:31.489Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Raphael Collignon vs Ben Shelton",
+      "pick": {
+        "rank": 29,
+        "match": "Raphael Collignon vs Ben Shelton",
+        "format": "ATP",
+        "court": "Court Suzanne-Lenglen",
+        "start": "7:00 AM",
+        "pick": "Ben Shelton",
+        "confidence": 62,
+        "volatility": 38,
+        "tier": "Watch",
+        "rationale": "Ben Shelton has the recent service-hold edge 88% to 80%. Raphael Collignon grades 9 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 0,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Ben Shelton",
+            "serviceHoldPct": 88,
+            "firstServeWonPct": 78,
+            "firstServePct": 68,
+            "avgAces": 7.6,
+            "avgDoubleFaults": 3.6,
+            "avgBreakPointsFaced": 6,
+            "returnPointsWonPct": 33,
+            "servicePointsWonPct": 69,
+            "weakServeMatches": 1,
+            "pressureMatches": 6,
+            "matchesWithStats": 5,
+            "weaknessScore": 9,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "limited return pressure (33% return points won)"
+            ],
+            "strengths": [
+              "protects serve well (88% hold)",
+              "wins enough first-serve points (78%)"
+            ],
+            "gameFlowRead": "Ben Shelton can drop points quickly through limited return pressure (33% return points won)."
+          },
+          "opponent": {
+            "name": "Raphael Collignon",
+            "serviceHoldPct": 80,
+            "firstServeWonPct": 73,
+            "firstServePct": 62,
+            "avgAces": 8,
+            "avgDoubleFaults": 3.3,
+            "avgBreakPointsFaced": 7.3,
+            "returnPointsWonPct": 37,
+            "servicePointsWonPct": 63,
+            "weakServeMatches": 1,
+            "pressureMatches": 6,
+            "matchesWithStats": 3,
+            "weaknessScore": 9,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "limited return pressure (37% return points won)"
+            ],
+            "strengths": [
+              "protects serve well (80% hold)",
+              "wins enough first-serve points (73%)"
+            ],
+            "gameFlowRead": "Raphael Collignon can drop points quickly through limited return pressure (37% return points won)."
+          }
+        },
+        "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/raphael-collignon-v-ben-shelton-35651684",
+      "eventId": "35651684",
+      "parsed": {
+        "eventId": "35651684",
+        "sideA": "raphael collignon",
+        "sideB": "ben shelton",
+        "nameSlug": "raphael-collignon-v-ben-shelton"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Raphael Collignon",
+            "odds": 172
+          },
+          {
+            "player": "Ben Shelton",
+            "odds": -210
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 3.5,
+            "player": "Raphael Collignon",
+            "spread": 3.5,
+            "odds": -112
+          },
+          {
+            "marketLine": 3.5,
+            "player": "Ben Shelton",
+            "spread": -3.5,
+            "odds": -118
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 39.5,
+            "side": "Over",
+            "odds": -116
+          },
+          {
+            "line": 39.5,
+            "side": "Under",
+            "odds": -116
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:36.664Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Katie Boulter vs Anastasia Potapova",
+      "pick": {
+        "rank": 30,
+        "match": "Katie Boulter vs Anastasia Potapova",
+        "format": "WTA",
+        "court": "Court 6",
+        "start": "7:30 AM",
+        "pick": "Anastasia Potapova",
+        "confidence": 58,
+        "volatility": 49,
+        "tier": "Watch",
+        "rationale": "Katie Boulter has the recent service-hold edge 79% to 66%, so Anastasia Potapova needs the rank/form edge to show up on return games. Anastasia Potapova grades 23 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": -6,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Anastasia Potapova",
+            "serviceHoldPct": 66,
+            "firstServeWonPct": 69,
+            "firstServePct": 56,
+            "avgAces": 1.3,
+            "avgDoubleFaults": 4,
+            "avgBreakPointsFaced": 8.9,
+            "returnPointsWonPct": 53,
+            "servicePointsWonPct": 58,
+            "weakServeMatches": 5,
+            "pressureMatches": 4,
+            "matchesWithStats": 8,
+            "weaknessScore": 21,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (4.0 avg)",
+              "faces too many break points (8.9 avg)",
+              "5 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (53% return points won)"
+            ],
+            "gameFlowRead": "Anastasia Potapova can drop points quickly through double-fault pressure (4.0 avg) and faces too many break points (8.9 avg)."
+          },
+          "opponent": {
+            "name": "Katie Boulter",
+            "serviceHoldPct": 79,
+            "firstServeWonPct": 74,
+            "firstServePct": 61,
+            "avgAces": 3,
+            "avgDoubleFaults": 5.3,
+            "avgBreakPointsFaced": 6.7,
+            "returnPointsWonPct": 41,
+            "servicePointsWonPct": 62,
+            "weakServeMatches": 2,
+            "pressureMatches": 5,
+            "matchesWithStats": 3,
+            "weaknessScore": 15,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (5.3 avg)"
+            ],
+            "strengths": [
+              "protects serve well (79% hold)",
+              "wins enough first-serve points (74%)"
+            ],
+            "gameFlowRead": "Katie Boulter can drop points quickly through double-fault pressure (5.3 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/katie-boulter-v-anastasia-potapova-35651785",
+      "eventId": "35651785",
+      "parsed": {
+        "eventId": "35651785",
+        "sideA": "katie boulter",
+        "sideB": "anastasia potapova",
+        "nameSlug": "katie-boulter-v-anastasia-potapova"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Katie Boulter",
+            "odds": 350
+          },
+          {
+            "player": "Anastasia Potapova",
+            "odds": -465
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": 5.5,
+            "player": "Katie Boulter",
+            "spread": 5.5,
+            "odds": -138
+          },
+          {
+            "marketLine": 5.5,
+            "player": "Anastasia Potapova",
+            "spread": -5.5,
+            "odds": 104
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 20.5,
+            "side": "Over",
+            "odds": -106
+          },
+          {
+            "line": 20.5,
+            "side": "Under",
+            "odds": -128
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:41.829Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Victoria Mboko vs Katerina Siniakova",
+      "pick": {
+        "rank": 31,
+        "match": "Victoria Mboko vs Katerina Siniakova",
+        "format": "WTA",
+        "court": "Court Simonne-Mathieu",
+        "start": "9:00 AM",
+        "pick": "Victoria Mboko",
+        "confidence": 59,
+        "volatility": 48,
+        "tier": "Watch",
+        "rationale": "Katerina Siniakova has the recent service-hold edge 75% to 70%, so Victoria Mboko needs the rank/form edge to show up on return games. Victoria Mboko grades 7 points better on opponent-adjusted recent form. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": 3,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Victoria Mboko",
+            "serviceHoldPct": 70,
+            "firstServeWonPct": 64,
+            "firstServePct": 64,
+            "avgAces": 3.5,
+            "avgDoubleFaults": 4.3,
+            "avgBreakPointsFaced": 8.3,
+            "returnPointsWonPct": 44,
+            "servicePointsWonPct": 59,
+            "weakServeMatches": 4,
+            "pressureMatches": 4,
+            "matchesWithStats": 6,
+            "weaknessScore": 17,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (4.3 avg)",
+              "faces too many break points (8.3 avg)",
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [],
+            "gameFlowRead": "Victoria Mboko can drop points quickly through double-fault pressure (4.3 avg) and faces too many break points (8.3 avg)."
+          },
+          "opponent": {
+            "name": "Katerina Siniakova",
+            "serviceHoldPct": 75,
+            "firstServeWonPct": 66,
+            "firstServePct": 62,
+            "avgAces": 1.1,
+            "avgDoubleFaults": 4.4,
+            "avgBreakPointsFaced": 10.3,
+            "returnPointsWonPct": 46,
+            "servicePointsWonPct": 60,
+            "weakServeMatches": 4,
+            "pressureMatches": 4,
+            "matchesWithStats": 7,
+            "weaknessScore": 20,
+            "firstGameComfort": "Needs early holds confirmed",
+            "liabilities": [
+              "double-fault pressure (4.4 avg)",
+              "faces too many break points (10.3 avg)",
+              "4 recent matches with serve instability"
+            ],
+            "strengths": [
+              "creates return pressure (46% return points won)"
+            ],
+            "gameFlowRead": "Katerina Siniakova can drop points quickly through double-fault pressure (4.4 avg) and faces too many break points (10.3 avg)."
+          }
+        },
+        "totals": "Best O/U angle: no play without a posted total."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/victoria-mboko-v-katerina-siniakova-35655115",
+      "eventId": "35655115",
+      "parsed": {
+        "eventId": "35655115",
+        "sideA": "victoria mboko",
+        "sideB": "katerina siniakova",
+        "nameSlug": "victoria-mboko-v-katerina-siniakova"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Victoria Mboko",
+            "odds": -280
+          },
+          {
+            "player": "Katerina Siniakova",
+            "odds": 225
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -4.5,
+            "player": "Victoria Mboko",
+            "spread": -4.5,
+            "odds": -108
+          },
+          {
+            "marketLine": -4.5,
+            "player": "Katerina Siniakova",
+            "spread": 4.5,
+            "odds": -124
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 20.5,
+            "side": "Over",
+            "odds": -122
+          },
+          {
+            "line": 20.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:47.006Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Arthur Rinderknech vs Matteo Berrettini",
+      "pick": {
+        "rank": 32,
+        "match": "Arthur Rinderknech vs Matteo Berrettini",
+        "format": "ATP",
+        "court": "Court Philippe-Chatrier",
+        "start": "11:15 AM",
+        "pick": "Arthur Rinderknech",
+        "confidence": 58,
+        "volatility": 42,
+        "tier": "Watch",
+        "rationale": "Arthur Rinderknech has the recent service-hold edge 92% to 79%. Opponent-adjusted recent form is basically even: Arthur Rinderknech 61, Matteo Berrettini 64. Lean, not a chase.",
+        "weaknessEdge": {
+          "edgeType": "No clear weakness edge",
+          "target": "Both sides",
+          "scoreGap": -3,
+          "attackingSide": null,
+          "vulnerableSide": null,
+          "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+          "liveTrigger": "Wait for a visible service-pressure split before entering.",
+          "spreadRead": "Spread needs the posted number before grading.",
+          "totalRead": "No total edge without posted number and first-set hold data.",
+          "pick": {
+            "name": "Arthur Rinderknech",
+            "serviceHoldPct": 92,
+            "firstServeWonPct": 81,
+            "firstServePct": 65,
+            "avgAces": 12,
+            "avgDoubleFaults": 3,
+            "avgBreakPointsFaced": 5,
+            "returnPointsWonPct": 40,
+            "servicePointsWonPct": 71,
+            "weakServeMatches": 2,
+            "pressureMatches": 4,
+            "matchesWithStats": 6,
+            "weaknessScore": 6,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [],
+            "strengths": [
+              "protects serve well (92% hold)",
+              "wins enough first-serve points (81%)"
+            ],
+            "gameFlowRead": "Arthur Rinderknech has no major service weakness in the joined Flashscore sample."
+          },
+          "opponent": {
+            "name": "Matteo Berrettini",
+            "serviceHoldPct": 79,
+            "firstServeWonPct": 70,
+            "firstServePct": 62,
+            "avgAces": 6,
+            "avgDoubleFaults": 2.3,
+            "avgBreakPointsFaced": 7.7,
+            "returnPointsWonPct": 34,
+            "servicePointsWonPct": 64,
+            "weakServeMatches": 0,
+            "pressureMatches": 4,
+            "matchesWithStats": 3,
+            "weaknessScore": 3,
+            "firstGameComfort": "Comfortable enough if first serve lands",
+            "liabilities": [
+              "limited return pressure (34% return points won)"
+            ],
+            "strengths": [
+              "protects serve well (79% hold)",
+              "wins enough first-serve points (70%)"
+            ],
+            "gameFlowRead": "Matteo Berrettini can drop points quickly through limited return pressure (34% return points won)."
+          }
+        },
+        "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets."
+      },
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/arthur-rinderknech-v-matteo-berrettini-35649678",
+      "eventId": "35649678",
+      "parsed": {
+        "eventId": "35649678",
+        "sideA": "arthur rinderknech",
+        "sideB": "matteo berrettini",
+        "nameSlug": "arthur-rinderknech-v-matteo-berrettini"
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Arthur Rinderknech",
+            "odds": -110
+          },
+          {
+            "player": "Matteo Berrettini",
+            "odds": -110
+          }
+        ],
+        "gameHandicap": [
+          {
+            "marketLine": -0.5,
+            "player": "Arthur Rinderknech",
+            "spread": -0.5,
+            "odds": -110
+          },
+          {
+            "marketLine": -0.5,
+            "player": "Matteo Berrettini",
+            "spread": 0.5,
+            "odds": -120
+          }
+        ],
+        "totalGames": [
+          {
+            "line": 40.5,
+            "side": "Over",
+            "odds": -120
+          },
+          {
+            "line": 40.5,
+            "side": "Under",
+            "odds": -110
+          }
+        ]
+      },
+      "capturedAt": "2026-05-28T01:29:52.179Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    }
+  ]
+}

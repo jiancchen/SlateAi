@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-kasatkina-susan-bandecchi-2026-05-28",
+  "boardTitle": "Daria Kasatkina vs Susan Bandecchi",
+  "boardPlayerName": "Daria Kasatkina",
+  "recentOpponentName": "Zeynep Sonmez",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "TUR  6-4 6-4 1st",
+  "flashscoreLabel": "Kasatkina D. - Sonmez Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Kasatkina D.",
+    "Sonmez Z."
+  ],
+  "generatedAt": "2026-05-28T00:53:36.088Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hlNAXo1c/",
+  "matchId": "hlNAXo1c",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hlNAXo1c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hlNAXo1c"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "10",
+              "right": "2",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "56%",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (34/55)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "26% (6/23)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "3/9",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (16/34)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (18/27)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "4/11",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "45",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (40/78)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (34/61)",
+              "right": "49% (38/78)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (74/139)",
+              "right": "47% (65/139)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "71%",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (24/39)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "21% (3/14)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "2/5",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/9",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "28",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (27/53)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (16/28)",
+              "right": "49% (26/53)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (43/81)",
+              "right": "47% (38/81)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "42%",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/4",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (6/14)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (12/19)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/2",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "17",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (13/25)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (18/33)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (31/58)",
+              "right": "47% (27/58)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kasatkina D.",
+              "rightPlayer": "Sonmez Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

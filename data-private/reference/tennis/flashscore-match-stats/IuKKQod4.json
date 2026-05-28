@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-kasatkina-susan-bandecchi-2026-05-28",
+  "boardTitle": "Daria Kasatkina vs Susan Bandecchi",
+  "boardPlayerName": "Daria Kasatkina",
+  "recentOpponentName": "Anastasia Zakharova",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "RUS  6-4 6-2 Q.",
+  "flashscoreLabel": "Zakharova A. - Kasatkina D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Zakharova A.",
+    "Kasatkina D."
+  ],
+  "generatedAt": "2026-05-28T00:53:36.989Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IuKKQod4/",
+  "matchId": "IuKKQod4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IuKKQod4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IuKKQod4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "75%",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (22/44)",
+              "right": "64% (28/44)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "7% (1/14)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "3/6",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (16/44)",
+              "right": "45% (20/44)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (11/15)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "6/9",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (23/56)",
+              "right": "54% (32/59)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (27/59)",
+              "right": "59% (33/56)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (50/115)",
+              "right": "57% (65/115)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "83%",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (13/24)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/5",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (13/29)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/3",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (14/32)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (17/35)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (31/67)",
+              "right": "54% (36/67)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "63%",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (9/20)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "13% (1/8)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "38% (9/24)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (10/24)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (19/48)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Zakharova A.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

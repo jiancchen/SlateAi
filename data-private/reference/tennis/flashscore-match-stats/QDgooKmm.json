@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-matteo-arnaldi-stefanos-tsitsipas-2026-05-28",
+  "boardTitle": "Matteo Arnaldi vs Stefanos Tsitsipas",
+  "boardPlayerName": "Stefanos Tsitsipas",
+  "recentOpponentName": "Alexandre Muller",
+  "recentIndex": 1,
+  "recentEvent": "",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "FRA  6-2 3-0 ret. 1st",
+  "flashscoreLabel": "Muller A. - Tsitsipas S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Muller A.",
+    "Tsitsipas S."
+  ],
+  "generatedAt": "2026-05-28T00:54:04.534Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QDgooKmm/",
+  "matchId": "QDgooKmm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QDgooKmm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QDgooKmm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 3,
+        "duration": "0:19"
+      }
+    ],
+    "totalDuration": "0:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "68%",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (10/20)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "19% (3/16)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "0/1",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "5/11",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "17",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "36% (13/36)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "64% (23/36)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (24/64)",
+              "right": "63% (40/64)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "17% (1/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total games won",
+              "left": "18% (2/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "68%",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/1",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/7",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "12",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (11/26)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (10/22)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (21/48)",
+              "right": "56% (27/48)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "67%",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "25% (1/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (1/2)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "20% (2/10)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (1/6)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "19% (3/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/2)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/1)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Muller A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

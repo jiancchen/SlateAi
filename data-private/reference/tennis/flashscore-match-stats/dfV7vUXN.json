@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Luciano Darderi",
+  "recentOpponentName": "Sebastian Ofner",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "AUT  7-65 6-2 6-3 1st",
+  "flashscoreLabel": "Ofner S. - Darderi L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Ofner S.",
+    "Darderi L."
+  ],
+  "generatedAt": "2026-05-28T00:53:40.344Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dfV7vUXN/",
+  "matchId": "dfV7vUXN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dfV7vUXN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dfV7vUXN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "53%",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (22/34)",
+              "right": "74% (45/61)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (26/47)",
+              "right": "50% (27/54)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "9/11",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (16/61)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (27/54)",
+              "right": "45% (21/47)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/11",
+              "right": "5/7",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "44",
+              "right": "33",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "47",
+              "right": "27",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (14/25)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (48/81)",
+              "right": "63% (72/115)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (43/115)",
+              "right": "41% (33/81)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (91/196)",
+              "right": "54% (105/196)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (9/14)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (11/29)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "23%",
+              "right": "54%",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (6/8)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (19/27)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "6/7",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (13/25)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "1/2",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "13",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "14",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (25/35)",
+              "right": "61% (33/54)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (21/54)",
+              "right": "29% (10/35)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (46/89)",
+              "right": "48% (43/89)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "60%",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (2/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "2/3",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "3/4",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "7",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "44% (4/9)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "37% (10/27)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (13/30)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (23/57)",
+              "right": "60% (34/57)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "45%",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (13/19)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (22/50)",
+              "right": "56% (28/50)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ofner S.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

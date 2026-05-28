@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+  "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+  "boardPlayerName": "Oleksandra Oliynykova",
+  "recentOpponentName": "Ksenia Efremova",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "FRA  6-1 6-2 q1",
+  "flashscoreLabel": "Efremova K. - Oliynykova O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Efremova K.",
+    "Oliynykova O."
+  ],
+  "generatedAt": "2026-05-28T00:54:19.249Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Kdz1lezi/",
+  "matchId": "Kdz1lezi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Kdz1lezi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Kdz1lezi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "80%",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (11/29)",
+              "right": "69% (25/36)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "24% (4/17)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/9",
+              "right": "3/5",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (11/36)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "89% (8/9)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "7/9",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "33% (15/46)",
+              "right": "58% (26/45)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (19/45)",
+              "right": "67% (31/46)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (34/91)",
+              "right": "63% (57/91)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "13% (1/8)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (2/7)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "79%",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "29% (4/14)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "2/3",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "4/4",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "24% (5/21)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (8/19)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (13/40)",
+              "right": "68% (27/40)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "81%",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (7/15)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (5/5)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "40% (10/25)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (11/26)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (21/51)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Efremova K.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

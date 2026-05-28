@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Francisco Comesana",
+  "recentOpponentName": "Jan-Lennard Struff",
+  "recentIndex": 6,
+  "recentEvent": "Rome",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "GER   Loss 6-2 6-4 1st",
+  "flashscoreLabel": "Struff J-L. - Comesana F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Struff J-L.",
+    "Comesana F."
+  ],
+  "generatedAt": "2026-05-28T00:53:39.881Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dx0gei3E/",
+  "matchId": "dx0gei3E",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dx0gei3E",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dx0gei3E"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "63%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (23/29)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (18/28)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "4/7",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (12/40)",
+              "right": "21% (6/29)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (15/24)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/3",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "24",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "21",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "84% (16/19)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (41/57)",
+              "right": "58% (37/64)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (27/64)",
+              "right": "28% (16/57)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (68/121)",
+              "right": "44% (53/121)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "38%",
+              "right": "68%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (8/8)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (8/8)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (15/31)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "58%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "4/5",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/3",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "18",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (25/36)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (37/69)",
+              "right": "46% (32/69)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

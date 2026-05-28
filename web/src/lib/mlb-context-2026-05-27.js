@@ -168,12 +168,12 @@ export const standingsContextByTeam = {
   "Phillies": {
     "divisionLeader": false,
     "divisionRank": "2",
-    "gamesBack": "9.0",
+    "gamesBack": "8.5",
     "losses": 27,
-    "runDifferential": -20,
-    "streakCode": "W2",
-    "winningPercentage": ".509",
-    "wins": 28
+    "runDifferential": -17,
+    "streakCode": "W3",
+    "winningPercentage": ".518",
+    "wins": 29
   },
   "Nationals": {
     "divisionLeader": false,
@@ -265,23 +265,23 @@ export const standingsContextByTeam = {
     "winningPercentage": ".636",
     "wins": 35
   },
-  "Padres": {
-    "divisionLeader": false,
-    "divisionRank": "2",
-    "gamesBack": "3.5",
-    "losses": 23,
-    "runDifferential": 2,
-    "streakCode": "L3",
-    "winningPercentage": ".574",
-    "wins": 31
-  },
   "D-backs": {
     "divisionLeader": false,
-    "divisionRank": "3",
+    "divisionRank": "2",
     "gamesBack": "4.0",
     "losses": 24,
     "runDifferential": 14,
     "streakCode": "W5",
+    "winningPercentage": ".564",
+    "wins": 31
+  },
+  "Padres": {
+    "divisionLeader": false,
+    "divisionRank": "3",
+    "gamesBack": "4.0",
+    "losses": 24,
+    "runDifferential": -1,
+    "streakCode": "L4",
     "winningPercentage": ".564",
     "wins": 31
   },

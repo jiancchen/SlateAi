@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+  "boardTitle": "Maja Chwalinska vs Elise Mertens",
+  "boardPlayerName": "Maja Chwalinska",
+  "recentOpponentName": "Suzan Lamens",
+  "recentIndex": 1,
+  "recentEvent": "",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "NED  7-64 7-5 Q.",
+  "flashscoreLabel": "Chwalinska M. - Lamens S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Chwalinska M.",
+    "Lamens S."
+  ],
+  "generatedAt": "2026-05-28T00:53:50.256Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WQYyT9CG/",
+  "matchId": "WQYyT9CG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WQYyT9CG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WQYyT9CG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:14"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:11"
+      }
+    ],
+    "totalDuration": "2:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "51%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (35/64)",
+              "right": "60% (26/43)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (12/23)",
+              "right": "37% (15/41)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/9",
+              "right": "7/13",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "136 km/h",
+              "right": "159 km/h",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "122 km/h",
+              "right": "130 km/h",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (17/43)",
+              "right": "45% (29/64)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (26/41)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/13",
+              "right": "5/9",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "40",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "42",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Net points won",
+              "left": "87% (13/15)",
+              "right": "68% (30/44)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (47/87)",
+              "right": "49% (41/84)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (43/84)",
+              "right": "46% (40/87)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (90/171)",
+              "right": "47% (81/171)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "58% (7/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (6/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (13/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "53%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (16/30)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/5",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (12/21)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/5",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "22",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "22",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (25/45)",
+              "right": "53% (24/45)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (21/45)",
+              "right": "44% (20/45)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (46/90)",
+              "right": "49% (44/90)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "49%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (19/34)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/8",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (14/20)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "3/4",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "18",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "20",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "44% (17/39)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (22/39)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (44/81)",
+              "right": "46% (37/81)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Lamens S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

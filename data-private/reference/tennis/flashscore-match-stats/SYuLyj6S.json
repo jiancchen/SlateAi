@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+  "boardTitle": "Julia Grabher vs Amanda Anisimova",
+  "boardPlayerName": "Julia Grabher",
+  "recentOpponentName": "Dalma Galfi",
+  "recentIndex": 2,
+  "recentEvent": "Rome",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "HUN   Loss 7-62 6-4 Q.",
+  "flashscoreLabel": "Galfi D. - Grabher J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Galfi D.",
+    "Grabher J."
+  ],
+  "generatedAt": "2026-05-28T00:53:35.200Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SYuLyj6S/",
+  "matchId": "SYuLyj6S",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SYuLyj6S",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SYuLyj6S"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "63%",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (30/37)",
+              "right": "62% (32/52)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (8/24)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "3/8",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (20/52)",
+              "right": "19% (7/37)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (18/31)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/8",
+              "right": "4/4",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (38/61)",
+              "right": "54% (45/83)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (38/83)",
+              "right": "38% (23/61)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (76/144)",
+              "right": "47% (68/144)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (7/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return games won",
+              "left": "45% (5/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "54% (21/39)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/6",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (18/39)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "3/3",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (20/33)",
+              "right": "51% (29/57)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (28/57)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (48/90)",
+              "right": "47% (42/90)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "50%",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/2",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/1",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (28/54)",
+              "right": "48% (26/54)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Galfi D.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

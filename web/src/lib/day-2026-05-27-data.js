@@ -32,7 +32,12 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/eury-perez-691587?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Eury Pérez",
+        "line": 5.5,
+        "overPrice": 118,
+        "underPrice": -158
+      },
       "recentForm": {
         "pitcherName": "Eury Pérez",
         "windowStarts": 10,
@@ -94,7 +99,12 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/kevin-gausman-592332?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Kevin Gausman",
+        "line": 5.5,
+        "overPrice": -154,
+        "underPrice": 126
+      },
       "recentForm": {
         "pitcherName": "Kevin Gausman",
         "windowStarts": 10,
@@ -486,8 +496,18 @@ export const rawGames = [
         }
       },
       "pitcherStrikeoutMarket": {
-        "away": null,
-        "home": null
+        "away": {
+          "playerName": "Eury Pérez",
+          "line": 5.5,
+          "overPrice": 118,
+          "underPrice": -158
+        },
+        "home": {
+          "playerName": "Kevin Gausman",
+          "line": 5.5,
+          "overPrice": -154,
+          "underPrice": 126
+        }
       },
       "seriesEarlyPhase": {
         "away": {
@@ -6126,7 +6146,12 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/logan-gilbert-669302?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Logan Gilbert",
+        "line": 6.5,
+        "overPrice": 136,
+        "underPrice": -182
+      },
       "recentForm": {
         "pitcherName": "Logan Gilbert",
         "windowStarts": 10,
@@ -6188,7 +6213,12 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/jeffrey-springs-605488?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Jeffrey Springs",
+        "line": 4.5,
+        "overPrice": 114,
+        "underPrice": -140
+      },
       "recentForm": {
         "pitcherName": "Jeffrey Springs",
         "windowStarts": 10,
@@ -6580,8 +6610,18 @@ export const rawGames = [
         }
       },
       "pitcherStrikeoutMarket": {
-        "away": null,
-        "home": null
+        "away": {
+          "playerName": "Logan Gilbert",
+          "line": 6.5,
+          "overPrice": 136,
+          "underPrice": -182
+        },
+        "home": {
+          "playerName": "Jeffrey Springs",
+          "line": 4.5,
+          "overPrice": 114,
+          "underPrice": -140
+        }
       },
       "seriesEarlyPhase": {
         "away": {
@@ -8598,7 +8638,12 @@ export const rawGames = [
           "gamelogs": "https://baseballsavant.mlb.com/savant-player/trevor-mcdonald-686790?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Trevor McDonald",
+        "line": 3.5,
+        "overPrice": -172,
+        "underPrice": 140
+      },
       "recentForm": {
         "pitcherName": "Trevor McDonald",
         "windowStarts": 5,
@@ -8991,7 +9036,12 @@ export const rawGames = [
       },
       "pitcherStrikeoutMarket": {
         "away": null,
-        "home": null
+        "home": {
+          "playerName": "Trevor McDonald",
+          "line": 3.5,
+          "overPrice": -172,
+          "underPrice": 140
+        }
       },
       "seriesEarlyPhase": {
         "away": {
@@ -10924,7 +10974,7 @@ export const rawGames = [
       "id": 650911,
       "fullName": "Cristopher Sánchez",
       "pitchHand": "L",
-      "wins": 5,
+      "wins": 6,
       "losses": 2,
       "era": "1.47",
       "strikeOuts": 95,
@@ -10952,16 +11002,32 @@ export const rawGames = [
         "overPrice": -140,
         "underPrice": 106
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Cristopher Sánchez",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 6.63,
+        "earnedRunsPerStart": 1.3,
+        "hitsAllowedPerStart": 6.4,
+        "homeRunsAllowedPerStart": 0.3,
+        "walksAllowedPerStart": 1.6,
+        "strikeoutsPerStart": 7.6,
+        "whipLike": 1.21,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.7,
+        "runVolatility": 1.94,
+        "homeRunBurstiness": 0.64,
+        "recent3EarnedRunsDelta": -1.3
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 6.58,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 6.63,
         "daysSinceLastStart": 5,
         "startsLoaded": 11,
         "shortLeashRisk": 0,
-        "durableRate": 0.73,
+        "durableRate": 0.7,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -10976,7 +11042,7 @@ export const rawGames = [
       "fullName": "Walker Buehler",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 2,
+      "losses": 3,
       "era": "4.88",
       "strikeOuts": 43,
       "inningsPitched": "51.2",
@@ -11003,15 +11069,31 @@ export const rawGames = [
         "overPrice": 124,
         "underPrice": -152
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Walker Buehler",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 4.63,
+        "earnedRunsPerStart": 2.6,
+        "hitsAllowedPerStart": 4.7,
+        "homeRunsAllowedPerStart": 0.4,
+        "walksAllowedPerStart": 1.8,
+        "strikeoutsPerStart": 4.1,
+        "whipLike": 1.4,
+        "shortStartRate": 0.4,
+        "qualityStartRate": 0.2,
+        "runVolatility": 1.2,
+        "homeRunBurstiness": 0.76,
+        "recent3EarnedRunsDelta": -0.27
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
         "expectedInnings": 4.63,
         "daysSinceLastStart": 5,
         "startsLoaded": 10,
-        "shortLeashRisk": 0.2,
+        "shortLeashRisk": 0.4,
         "durableRate": 0.2,
         "leashScore": null,
         "leashVolatility": null,
@@ -12786,8 +12868,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Cristopher Sánchez",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": 0.06,
+          "thirdTripScoringDelta": -0.02,
+          "thirdTripRunDeltaDelta": -0.02,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 41.36
+        },
+        "home": {
+          "pitcherName": "Walker Buehler",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": 0.09,
+          "thirdTripScoringDelta": -0.05,
+          "thirdTripRunDeltaDelta": -0.09,
+          "thirdTripHrDelta": 0.03,
+          "thirdTimePenaltyIndex": 47.79
+        }
       }
     }
   },
@@ -12804,14 +12908,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 4,
       "losses": 1,
-      "era": "3.70",
-      "strikeOuts": 33,
-      "inningsPitched": "41.1",
-      "hitsAllowed": 31,
-      "walks": 15,
-      "homeRunsAllowed": 6,
-      "whip": "1.11",
-      "gamesStarted": 8,
+      "era": "4.67",
+      "strikeOuts": 35,
+      "inningsPitched": "44.1",
+      "hitsAllowed": 38,
+      "walks": 17,
+      "homeRunsAllowed": 7,
+      "whip": "1.24",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 571927,
@@ -12855,14 +12959,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 0,
-      "era": "5.40",
-      "strikeOuts": 4,
-      "inningsPitched": "6.2",
-      "hitsAllowed": 7,
-      "walks": 3,
+      "era": "3.65",
+      "strikeOuts": 5,
+      "inningsPitched": "12.1",
+      "hitsAllowed": 13,
+      "walks": 7,
       "homeRunsAllowed": 2,
-      "whip": "1.50",
-      "gamesStarted": 1,
+      "whip": "1.62",
+      "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 694346,
@@ -12885,7 +12989,7 @@ export const rawGames = [
       "usageContext": {
         "status": "tiny-sample",
         "label": "Tiny MLB sample",
-        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
+        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 4.67,
         "daysSinceLastStart": 24,
         "startsLoaded": 1,
@@ -12900,9 +13004,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -150",
-    "total": "o9 -122 / u9.5 -115",
-    "moneyline": "Rays -125 / Orioles +110",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rays-vs-orioles",
     "tierTwoContext": {
@@ -15228,14 +15332,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 6,
       "losses": 3,
-      "era": "2.44",
-      "strikeOuts": 74,
-      "inningsPitched": "66.1",
-      "hitsAllowed": 44,
-      "walks": 27,
-      "homeRunsAllowed": 5,
-      "whip": "1.07",
-      "gamesStarted": 11,
+      "era": "2.65",
+      "strikeOuts": 78,
+      "inningsPitched": "71.1",
+      "hitsAllowed": 51,
+      "walks": 31,
+      "homeRunsAllowed": 6,
+      "whip": "1.15",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 667755,
@@ -15279,14 +15383,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 3,
-      "era": "2.47",
-      "strikeOuts": 43,
-      "inningsPitched": "43.2",
-      "hitsAllowed": 32,
-      "walks": 11,
+      "era": "2.27",
+      "strikeOuts": 49,
+      "inningsPitched": "47.2",
+      "hitsAllowed": 34,
+      "walks": 12,
       "homeRunsAllowed": 2,
-      "whip": "0.98",
-      "gamesStarted": 8,
+      "whip": "0.97",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 663554,
@@ -15324,9 +15428,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -183",
-    "total": "o7.5 -108 / u7.5 -110",
-    "moneyline": "Angels -104 / Tigers -112",
+    "spread": "+1.5 -175 / +1.5 -190",
+    "total": "o9 -110 / u9 -110",
+    "moneyline": "Angels +110 / Tigers -130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/angels-vs-tigers",
     "tierTwoContext": {
@@ -16944,14 +17048,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 4,
-      "era": "5.20",
-      "strikeOuts": 47,
-      "inningsPitched": "55.1",
-      "hitsAllowed": 52,
-      "walks": 18,
-      "homeRunsAllowed": 17,
-      "whip": "1.27",
-      "gamesStarted": 10,
+      "era": "5.37",
+      "strikeOuts": 51,
+      "inningsPitched": "60.1",
+      "hitsAllowed": 57,
+      "walks": 20,
+      "homeRunsAllowed": 19,
+      "whip": "1.28",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 592791,
@@ -16995,14 +17099,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 6,
-      "era": "4.60",
-      "strikeOuts": 47,
-      "inningsPitched": "47.0",
-      "hitsAllowed": 35,
-      "walks": 34,
+      "era": "4.85",
+      "strikeOuts": 52,
+      "inningsPitched": "52.0",
+      "hitsAllowed": 43,
+      "walks": 36,
       "homeRunsAllowed": 7,
-      "whip": "1.47",
-      "gamesStarted": 10,
+      "whip": "1.52",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 696149,
@@ -17035,9 +17139,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -190 / +1.5 -189",
-    "total": "o8.5 -120 / u9 -115",
-    "moneyline": "Cubs +105 / Pirates -120",
+    "spread": "+1.5 -142 / -1.5 +135",
+    "total": "o7.5 -104 / u7.5 -108",
+    "moneyline": "Cubs +146 / Pirates -170",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-pirates",
     "tierTwoContext": {
@@ -19326,14 +19430,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 2,
-      "era": "1.97",
-      "strikeOuts": 60,
-      "inningsPitched": "68.2",
-      "hitsAllowed": 47,
-      "walks": 21,
+      "era": "2.50",
+      "strikeOuts": 61,
+      "inningsPitched": "72.0",
+      "hitsAllowed": 56,
+      "walks": 22,
       "homeRunsAllowed": 5,
-      "whip": "0.99",
-      "gamesStarted": 11,
+      "whip": "1.08",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 693821,
@@ -19377,14 +19481,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 4,
       "losses": 2,
-      "era": "3.33",
-      "strikeOuts": 50,
-      "inningsPitched": "54.0",
-      "hitsAllowed": 45,
-      "walks": 19,
+      "era": "3.00",
+      "strikeOuts": 56,
+      "inningsPitched": "60.0",
+      "hitsAllowed": 48,
+      "walks": 22,
       "homeRunsAllowed": 9,
-      "whip": "1.19",
-      "gamesStarted": 10,
+      "whip": "1.17",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 813349,
@@ -19417,9 +19521,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +160 / +1.5 -185",
-    "total": "o8 -115 / u8 even",
-    "moneyline": "Braves -102 / Red Sox -115",
+    "spread": "-1.5 +126 / +1.5 -145",
+    "total": "o7 -120 / u7.5 -120",
+    "moneyline": "Braves -135 / Red Sox +118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/braves-vs-red-sox",
     "tierTwoContext": {
@@ -21542,14 +21646,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 4,
       "losses": 2,
-      "era": "3.97",
-      "strikeOuts": 38,
-      "inningsPitched": "56.2",
-      "hitsAllowed": 57,
+      "era": "4.01",
+      "strikeOuts": 40,
+      "inningsPitched": "60.2",
+      "hitsAllowed": 59,
       "walks": 26,
-      "homeRunsAllowed": 7,
-      "whip": "1.46",
-      "gamesStarted": 11,
+      "homeRunsAllowed": 9,
+      "whip": "1.40",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 671096,
@@ -21593,14 +21697,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 1,
-      "era": "1.73",
-      "strikeOuts": 19,
-      "inningsPitched": "26.0",
-      "hitsAllowed": 14,
-      "walks": 10,
+      "era": "1.67",
+      "strikeOuts": 21,
+      "inningsPitched": "27.0",
+      "hitsAllowed": 15,
+      "walks": 11,
       "homeRunsAllowed": 1,
-      "whip": "0.92",
-      "gamesStarted": 3,
+      "whip": "0.96",
+      "gamesStarted": 4,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 623211,
@@ -21618,7 +21722,7 @@ export const rawGames = [
       "usageContext": {
         "status": "new-look",
         "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line.",
+        "note": "This is still a low-sample MLB starter look with only 4 starts on file, so innings expectation matters more than the raw ERA line.",
         "expectedInnings": 1.11,
         "daysSinceLastStart": 11,
         "startsLoaded": 3,
@@ -21633,9 +21737,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -181",
-    "total": "o8 -115 / u8.5 -119",
-    "moneyline": "Reds +102 / Mets -118",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/reds-vs-mets",
     "tierTwoContext": {
@@ -23418,14 +23522,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 1,
       "losses": 2,
-      "era": "4.03",
-      "strikeOuts": 30,
-      "inningsPitched": "29.0",
-      "hitsAllowed": 22,
-      "walks": 12,
+      "era": "4.50",
+      "strikeOuts": 34,
+      "inningsPitched": "32.0",
+      "hitsAllowed": 28,
+      "walks": 14,
       "homeRunsAllowed": 4,
-      "whip": "1.17",
-      "gamesStarted": 6,
+      "whip": "1.31",
+      "gamesStarted": 7,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 687570,
@@ -23469,14 +23573,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 0,
-      "era": "-",
-      "strikeOuts": 0,
-      "inningsPitched": "-",
-      "hitsAllowed": 0,
+      "era": "2.45",
+      "strikeOuts": 3,
+      "inningsPitched": "3.2",
+      "hitsAllowed": 1,
       "walks": 0,
-      "homeRunsAllowed": 0,
-      "whip": null,
-      "gamesStarted": 0,
+      "homeRunsAllowed": 1,
+      "whip": "0.27",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 689818,
@@ -23492,9 +23596,9 @@ export const rawGames = [
       "strikeoutMarket": null,
       "recentForm": null,
       "usageContext": {
-        "status": "milb-callup",
-        "label": "MiLB call-up prior",
-        "note": "Freshly recalled from Charlotte on May 26. 2026 MiLB line before the call-up: 6 GS, 16.1 IP, 0.55 ERA, 26 SO, 1.41 WHIP, so this is a live-arm promotion with real strikeout shape but still a short-leash MLB debut lane.",
+        "status": "tiny-sample",
+        "label": "Tiny MLB sample",
+        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 3.8,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -23509,9 +23613,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -175",
-    "total": "o7.5 -122 / u8 -108",
-    "moneyline": "Twins -105 / White Sox -108",
+    "spread": "-1.5 +168 / +1.5 -190",
+    "total": "o7.5 -110 / u7.5 -105",
+    "moneyline": "Twins -102 / White Sox -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-white-sox",
     "tierTwoContext": {
@@ -25286,13 +25390,13 @@ export const rawGames = [
       "wins": 0,
       "losses": 0,
       "era": "0.00",
-      "strikeOuts": 2,
-      "inningsPitched": "6.0",
-      "hitsAllowed": 2,
+      "strikeOuts": 8,
+      "inningsPitched": "9.0",
+      "hitsAllowed": 4,
       "walks": 3,
       "homeRunsAllowed": 0,
-      "whip": "0.83",
-      "gamesStarted": 1,
+      "whip": "0.78",
+      "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 543037,
@@ -25315,7 +25419,7 @@ export const rawGames = [
       "usageContext": {
         "status": "tiny-sample",
         "label": "Tiny MLB sample",
-        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
+        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 4.8,
         "daysSinceLastStart": 5,
         "startsLoaded": 1,
@@ -25336,14 +25440,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 3,
-      "era": "4.72",
-      "strikeOuts": 44,
-      "inningsPitched": "47.2",
-      "hitsAllowed": 53,
+      "era": "4.70",
+      "strikeOuts": 48,
+      "inningsPitched": "51.2",
+      "hitsAllowed": 55,
       "walks": 16,
       "homeRunsAllowed": 5,
-      "whip": "1.45",
-      "gamesStarted": 9,
+      "whip": "1.37",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 702070,
@@ -25381,9 +25485,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +105 / +1.5 -115",
-    "total": "o8.5 -118 / u9 -120",
-    "moneyline": "Yankees -150 / Royals +135",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/yankees-vs-royals",
     "tierTwoContext": {
@@ -27661,14 +27765,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 6,
-      "era": "5.75",
-      "strikeOuts": 48,
-      "inningsPitched": "56.1",
-      "hitsAllowed": 66,
+      "era": "5.81",
+      "strikeOuts": 49,
+      "inningsPitched": "57.1",
+      "hitsAllowed": 69,
       "walks": 20,
       "homeRunsAllowed": 12,
-      "whip": "1.53",
-      "gamesStarted": 10,
+      "whip": "1.55",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 681347,
@@ -27707,14 +27811,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 4,
-      "era": "3.86",
-      "strikeOuts": 64,
-      "inningsPitched": "53.2",
-      "hitsAllowed": 44,
+      "era": "3.88",
+      "strikeOuts": 66,
+      "inningsPitched": "55.2",
+      "hitsAllowed": 45,
       "walks": 11,
       "homeRunsAllowed": 12,
-      "whip": "1.02",
-      "gamesStarted": 10,
+      "whip": "1.01",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 594798,
@@ -27752,9 +27856,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -185 / -1.5 +158",
-    "total": "o7 -119 / u7 even",
-    "moneyline": "Astros +125 / Rangers -140",
+    "spread": "+1.5 -170 / -1.5 +145",
+    "total": "o7.5 -118 / u7.5 even",
+    "moneyline": "Astros +130 / Rangers -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-rangers",
     "tierTwoContext": {
@@ -30101,7 +30205,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Shohei Ohtani",
         "line": 7.5,
-        "overPrice": 100,
+        "overPrice": 102,
         "underPrice": -122
       },
       "recentForm": null,
@@ -30123,9 +30227,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+2.5 -110 / -1.5 -166",
-    "total": "o8 -105 / u8 -104",
-    "moneyline": "Rockies +360 / Dodgers -420",
+    "spread": "+2.5 -102 / -1.5 -167",
+    "total": "o8 -109 / u8 -110",
+    "moneyline": "Rockies +350 / Dodgers -420",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-dodgers",
     "tierTwoContext": {
@@ -30488,7 +30592,7 @@ export const rawGames = [
         "home": {
           "playerName": "Shohei Ohtani",
           "line": 7.5,
-          "overPrice": 100,
+          "overPrice": 102,
           "underPrice": -122
         }
       },

@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-matteo-arnaldi-stefanos-tsitsipas-2026-05-28",
+  "boardTitle": "Matteo Arnaldi vs Stefanos Tsitsipas",
+  "boardPlayerName": "Stefanos Tsitsipas",
+  "recentOpponentName": "Giovanni Mpetshi Perricard",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "FRA  6-4 7-68 1st",
+  "flashscoreLabel": "Tsitsipas S. - Mpetshi Perricard G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Tsitsipas S.",
+    "Mpetshi Perricard G."
+  ],
+  "generatedAt": "2026-05-28T00:54:04.953Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UL6BtMf3/",
+  "matchId": "UL6BtMf3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UL6BtMf3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UL6BtMf3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 10,
+        "rightGames": 8,
+        "duration": "1:01"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "80%",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (52/62)",
+              "right": "76% (48/63)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (6/18)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/4",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (15/63)",
+              "right": "16% (10/62)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (12/16)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/3",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "32",
+              "right": "21",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "23",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (15/18)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (58/80)",
+              "right": "66% (52/79)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (27/79)",
+              "right": "28% (22/80)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (85/159)",
+              "right": "47% (74/159)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (11/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "79%",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (20/23)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (23/31)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "26% (8/31)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (33/59)",
+              "right": "44% (26/59)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "80%",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (32/39)",
+              "right": "78% (32/41)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/1",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (9/41)",
+              "right": "18% (7/39)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/2",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "13",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (35/49)",
+              "right": "67% (34/51)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (17/51)",
+              "right": "29% (14/49)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (52/100)",
+              "right": "48% (48/100)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tsitsipas S.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

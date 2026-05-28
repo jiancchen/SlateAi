@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maria-sakkari-claire-liu-2026-05-28",
+  "boardTitle": "Maria Sakkari vs Claire Liu",
+  "boardPlayerName": "Maria Sakkari",
+  "recentOpponentName": "Lilli Tagger",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "AUT  5-7 6-3 6-0 1st",
+  "flashscoreLabel": "Tagger L. - Sakkari M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Tagger L.",
+    "Sakkari M."
+  ],
+  "generatedAt": "2026-05-28T00:53:42.988Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/U56HTp9t/",
+  "matchId": "U56HTp9t",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_U56HTp9t",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_U56HTp9t"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "63%",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (28/49)",
+              "right": "63% (35/56)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (14/34)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/13",
+              "right": "2/6",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (21/56)",
+              "right": "43% (21/49)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (16/33)",
+              "right": "59% (20/34)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "7/13",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (42/83)",
+              "right": "58% (52/89)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (37/89)",
+              "right": "49% (41/83)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (79/172)",
+              "right": "54% (93/172)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "46% (6/13)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (10/27)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "48%",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/4",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (10/19)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/5",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (21/40)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (42/73)",
+              "right": "42% (31/73)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "67%",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (7/22)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (13/26)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/59)",
+              "right": "58% (34/59)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "94%",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (5/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/1)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "33% (8/24)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (4/16)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "30% (12/40)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tagger L.",
+              "rightPlayer": "Sakkari M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

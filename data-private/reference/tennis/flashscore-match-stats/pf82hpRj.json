@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+  "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+  "boardPlayerName": "Oleksandra Oliynykova",
+  "recentOpponentName": "Clara Tauson",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "DEN  6-1 3-1 ret. 2nd",
+  "flashscoreLabel": "Tauson C. - Oliynykova O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Tauson C.",
+    "Oliynykova O."
+  ],
+  "generatedAt": "2026-05-28T00:54:19.702Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pf82hpRj/",
+  "matchId": "pf82hpRj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pf82hpRj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pf82hpRj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 3,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "0:58"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "73%",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "39% (9/23)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (2/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "3/4",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (8/27)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "4/5",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "35% (11/31)",
+              "right": "62% (23/37)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (14/37)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (25/68)",
+              "right": "63% (43/68)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "18% (2/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "78%",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "20% (2/10)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (1/5)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/4",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/3",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "20% (3/15)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (12/27)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (15/42)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "60%",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (7/13)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (1/3)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/6)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (8/16)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (2/10)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (10/26)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tauson C.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

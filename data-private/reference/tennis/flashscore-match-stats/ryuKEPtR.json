@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-iva-jovic-emma-navarro-2026-05-28",
+  "boardTitle": "Iva Jovic vs Emma Navarro",
+  "boardPlayerName": "Emma Navarro",
+  "recentOpponentName": "Victoria Mboko",
+  "recentIndex": 1,
+  "recentEvent": "Strasbourg",
+  "recentDate": "23 May 26",
+  "recentIsoDate": "2026-05-23",
+  "recentResult": "CAN  6-0 5-7 6-2 Fin.",
+  "flashscoreLabel": "Mboko V. - Navarro E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Mboko V.",
+    "Navarro E."
+  ],
+  "generatedAt": "2026-05-28T00:54:17.625Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ryuKEPtR/",
+  "matchId": "ryuKEPtR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ryuKEPtR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ryuKEPtR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "59%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (32/68)",
+              "right": "74% (34/46)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (24/46)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/21",
+              "right": "7/10",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (12/46)",
+              "right": "53% (36/68)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (17/32)",
+              "right": "48% (22/46)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "7/21",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (56/114)",
+              "right": "63% (49/78)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (29/78)",
+              "right": "51% (58/114)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (85/192)",
+              "right": "56% (107/192)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "46% (6/13)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (3/13)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (9/26)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "56%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (8/21)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (9/20)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "2/2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (1/10)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/10",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (17/41)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "59% (24/41)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (22/59)",
+              "right": "63% (37/59)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "59%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/6",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (11/23)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/6",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "58% (21/36)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (20/39)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (41/75)",
+              "right": "45% (34/75)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "62%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (11/25)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/13)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/5",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (18/37)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (4/21)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (22/58)",
+              "right": "62% (36/58)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Navarro E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

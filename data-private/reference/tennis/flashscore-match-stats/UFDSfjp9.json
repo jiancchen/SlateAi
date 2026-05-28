@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-katie-boulter-anastasia-potapova-2026-05-28",
+  "boardTitle": "Katie Boulter vs Anastasia Potapova",
+  "boardPlayerName": "Anastasia Potapova",
+  "recentOpponentName": "Nikola Bartunkova",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "CZE  4-6 6-4 6-2 Q.",
+  "flashscoreLabel": "Potapova A. - Bartunkova N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Potapova A.",
+    "Bartunkova N."
+  ],
+  "generatedAt": "2026-05-28T00:54:07.900Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UFDSfjp9/",
+  "matchId": "UFDSfjp9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UFDSfjp9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UFDSfjp9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "57%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (32/40)",
+              "right": "68% (42/62)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (20/42)",
+              "right": "32% (15/47)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/10",
+              "right": "15/21",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (20/62)",
+              "right": "20% (8/40)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "68% (32/47)",
+              "right": "52% (22/42)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/21",
+              "right": "4/10",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (52/82)",
+              "right": "52% (57/109)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (52/109)",
+              "right": "37% (30/82)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (104/191)",
+              "right": "46% (87/191)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return games won",
+              "left": "43% (6/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (16/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "55%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "7/8",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (5/23)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (12/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "2/3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (17/28)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (17/42)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (34/70)",
+              "right": "51% (36/70)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "37%",
+              "right": "54%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "4/7",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "76% (13/17)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/4",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (20/37)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (37/67)",
+              "right": "45% (30/67)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "63%",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "4/6",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "-23% (-3/13)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/3",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (33/54)",
+              "right": "39% (21/54)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Potapova A.",
+              "rightPlayer": "Bartunkova N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

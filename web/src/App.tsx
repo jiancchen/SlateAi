@@ -3296,6 +3296,7 @@ function App() {
     const context = game.tennisContext
     const projection = context?.projection
     const tradePlan = context?.tradePlan
+    const weaknessEdge = context?.weaknessEdge
     const clayMatchupData = context?.clayMatchupData
     const opponentQualityData = context?.opponentQualityData
     const qualityPlayers = Array.isArray(opponentQualityData?.players) ? opponentQualityData.players : []
@@ -3422,6 +3423,15 @@ function App() {
                   <span className="builder-status-pill open">{player.marketLabel}</span>
                 </div>
                 <p>{player.clayLine}</p>
+                {player.weakness ? (
+                  <div className="react-pill-row">
+                    <span className="history-pill neutral">Weakness {player.weakness.weaknessScore}</span>
+                    <span className="history-pill neutral">{player.weakness.firstGameComfort}</span>
+                    {player.weakness.avgDoubleFaults != null ? (
+                      <span className="history-pill neutral">DF {player.weakness.avgDoubleFaults}</span>
+                    ) : null}
+                  </div>
+                ) : null}
                 <small>{player.notes}</small>
                 <p className="react-section-copy">{player.matchupNote}</p>
               </article>
@@ -3464,6 +3474,35 @@ function App() {
                   </article>
                 )
               })}
+            </div>
+          </section>
+        ) : null}
+
+        {weaknessEdge ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Weakness edge</p>
+              <span>{weaknessEdge.edgeType || 'No clear weakness edge'}</span>
+            </div>
+            <p className="react-section-copy">{weaknessEdge.gameFlow}</p>
+            <div className="react-card-grid">
+              <article className={`react-mini-panel ${weaknessEdge.edgeType === 'Weakness warning' ? 'warning' : ''}`}>
+                <span className="eyebrow">Target</span>
+                <strong>{weaknessEdge.target || 'No target'}</strong>
+                <small>
+                  Score gap {Number.isFinite(Number(weaknessEdge.scoreGap)) ? formatNumber(weaknessEdge.scoreGap, 0) : 'N/A'}
+                </small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Live trigger</span>
+                <strong>{weaknessEdge.vulnerableSide || weaknessEdge.attackingSide || 'Wait'}</strong>
+                <small>{weaknessEdge.liveTrigger}</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Spread / total</span>
+                <strong>{weaknessEdge.spreadRead}</strong>
+                <small>{weaknessEdge.totalRead}</small>
+              </article>
             </div>
           </section>
         ) : null}

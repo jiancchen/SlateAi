@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+  "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+  "boardPlayerName": "Luca Van Assche",
+  "recentOpponentName": "Hugo Dellien",
+  "recentIndex": 3,
+  "recentEvent": "Rome",
+  "recentDate": "04 May 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "BOL   Loss 6-2 7-5 q1",
+  "flashscoreLabel": "van Assche L. - Dellien H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "van Assche L.",
+    "Dellien H."
+  ],
+  "generatedAt": "2026-05-28T00:53:54.965Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EPtXJbd2/",
+  "matchId": "EPtXJbd2",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EPtXJbd2",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EPtXJbd2"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:06"
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "66%",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (23/33)",
+              "right": "78% (29/37)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (15/39)",
+              "right": "42% (8/19)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "1/3",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "194 km/h",
+              "right": "184 km/h",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "171 km/h",
+              "right": "168 km/h",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (9/37)",
+              "right": "30% (10/33)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "62% (24/39)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "5/11",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "21",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "26",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (38/72)",
+              "right": "66% (37/56)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (19/56)",
+              "right": "47% (34/72)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (57/128)",
+              "right": "55% (71/128)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "60%",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (9/15)",
+              "right": "100% (12/12)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "38% (3/8)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/12)",
+              "right": "40% (6/15)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "56% (9/16)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (16/31)",
+              "right": "76% (16/21)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "48% (15/31)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/52)",
+              "right": "60% (31/52)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "69%",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "68% (17/25)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (8/23)",
+              "right": "45% (5/11)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/3",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (9/25)",
+              "right": "22% (4/18)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "65% (15/23)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/7",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "57% (4/7)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (22/41)",
+              "right": "60% (21/35)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (14/35)",
+              "right": "46% (19/41)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (36/76)",
+              "right": "53% (40/76)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "van Assche L.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

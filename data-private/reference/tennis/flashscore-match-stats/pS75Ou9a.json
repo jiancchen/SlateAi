@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+  "boardTitle": "Maja Chwalinska vs Elise Mertens",
+  "boardPlayerName": "Maja Chwalinska",
+  "recentOpponentName": "Qinwen Zheng",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "CHN  6-4 6-0 1st",
+  "flashscoreLabel": "Chwalinska M. - Zheng Q.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Chwalinska M.",
+    "Zheng Q."
+  ],
+  "generatedAt": "2026-05-28T00:53:50.034Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pS75Ou9a/",
+  "matchId": "pS75Ou9a",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pS75Ou9a",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pS75Ou9a"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "57%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (18/28)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "76% (13/17)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/9",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "137 km/h",
+              "right": "174 km/h",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "123 km/h",
+              "right": "135 km/h",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (13/27)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (13/20)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "1/1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "24",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "32",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (31/45)",
+              "right": "45% (21/47)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (26/47)",
+              "right": "31% (14/45)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (57/92)",
+              "right": "38% (35/92)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (7/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Return games won",
+              "left": "63% (5/8)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "56%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (11/19)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "17",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "16",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (13/27)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "60%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (7/9)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (8/12)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "16",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (12/16)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "65% (13/20)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "69% (25/36)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Zheng Q."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

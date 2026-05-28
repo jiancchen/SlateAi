@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-jannik-sinner-juan-manuel-cerundolo-2026-05-28",
+  "boardTitle": "Jannik Sinner vs Juan Manuel Cerundolo",
+  "boardPlayerName": "Jannik Sinner",
+  "recentOpponentName": "Daniil Medvedev",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "RUS  6-2 5-7 6-4 1/2",
+  "flashscoreLabel": "Sinner J. - Medvedev D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Sinner J.",
+    "Medvedev D."
+  ],
+  "generatedAt": "2026-05-28T00:53:57.071Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6XMkYEio/",
+  "matchId": "6XMkYEio",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6XMkYEio",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6XMkYEio"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:34"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "7",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (41/55)",
+              "right": "67% (44/66)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (22/37)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "6/10",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "202 km/h",
+              "right": "197 km/h",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "155 km/h",
+              "right": "155 km/h",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (22/66)",
+              "right": "25% (14/55)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (23/38)",
+              "right": "41% (15/37)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "2/7",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "39",
+              "right": "23",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "37",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "59% (16/27)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (63/92)",
+              "right": "57% (59/104)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (45/104)",
+              "right": "32% (29/92)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (108/196)",
+              "right": "45% (88/196)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (13/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (17/30)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "64%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "5",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "89% (16/18)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (15/28)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (31/46)",
+              "right": "33% (15/46)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "59%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (7/18)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "1/2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/7",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "11",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "46% (6/13)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (27/48)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (13/37)",
+              "right": "44% (21/48)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (40/85)",
+              "right": "53% (45/85)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "67%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "77% (10/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/6",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "0/0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "17",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (17/39)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (37/65)",
+              "right": "43% (28/65)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

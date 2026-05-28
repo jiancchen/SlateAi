@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+  "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+  "boardPlayerName": "Alejandro Tabilo",
+  "recentOpponentName": "Francisco Cerundolo",
+  "recentIndex": 5,
+  "recentEvent": "Rome",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "ARG   Loss 6-0 6-2 2nd",
+  "flashscoreLabel": "Tabilo A. - Cerundolo F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Tabilo A.",
+    "Cerundolo F."
+  ],
+  "generatedAt": "2026-05-28T00:54:09.978Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QiQcK8jI/",
+  "matchId": "QiQcK8jI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QiQcK8jI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QiQcK8jI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "54%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (14/30)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (7/24)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/13",
+              "right": "0/1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "196 km/h",
+              "right": "196 km/h",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "151 km/h",
+              "right": "165 km/h",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "6/13",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "18",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "12",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (21/54)",
+              "right": "68% (25/37)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/37)",
+              "right": "61% (33/54)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (33/91)",
+              "right": "64% (58/91)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "47%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "23% (3/13)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (1/8)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/7",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (9/24)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (5/17)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (14/41)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "60%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "42% (8/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (12/30)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (7/20)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (19/50)",
+              "right": "62% (31/50)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Cerundolo F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+  "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+  "boardPlayerName": "Aryna Sabalenka",
+  "recentOpponentName": "Jessica Bouzas Maneiro",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "ESP  6-4 6-2 1st",
+  "flashscoreLabel": "Sabalenka A. - Bouzas Maneiro J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Sabalenka A.",
+    "Bouzas Maneiro J."
+  ],
+  "generatedAt": "2026-05-28T00:53:52.052Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GlwwJnn4/",
+  "matchId": "GlwwJnn4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GlwwJnn4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GlwwJnn4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "52%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (23/34)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "3/9",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "176 km/h",
+              "right": "156 km/h",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "140 km/h",
+              "right": "137 km/h",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (12/31)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "66% (19/29)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "3/5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "9",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "12",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Net points won",
+              "left": "72% (13/18)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (31/52)",
+              "right": "48% (29/60)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (31/60)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (62/112)",
+              "right": "45% (50/112)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "56%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (16/28)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (15/32)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (31/60)",
+              "right": "48% (29/60)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "46%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (6/13)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (15/24)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (16/28)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Bouzas Maneiro J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

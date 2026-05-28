@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "boardPlayerName": "Matteo Berrettini",
+  "recentOpponentName": "Alexei Popyrin",
+  "recentIndex": 3,
+  "recentEvent": "Rome",
+  "recentDate": "07 May 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "AUS   Loss 6-2 6-3 1st",
+  "flashscoreLabel": "Popyrin A. - Berrettini M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Popyrin A.",
+    "Berrettini M."
+  ],
+  "generatedAt": "2026-05-28T00:53:44.996Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zH2YPZf3/",
+  "matchId": "zH2YPZf3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zH2YPZf3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zH2YPZf3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:51"
+      }
+    ],
+    "totalDuration": "1:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "58%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (26/33)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (14/25)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "5/8",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (10/28)",
+              "right": "21% (7/33)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (10/20)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "0/1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "19",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "22",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (4/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (40/58)",
+              "right": "58% (28/48)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (20/48)",
+              "right": "31% (18/58)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (60/106)",
+              "right": "43% (46/106)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "4/6",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/1",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "9",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (12/25)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (29/49)",
+              "right": "41% (20/49)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "48%",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (3/11)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (23/34)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (8/23)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (31/57)",
+              "right": "46% (26/57)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Popyrin A.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

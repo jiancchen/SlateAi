@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-daria-kasatkina-susan-bandecchi-2026-05-28",
+  "boardTitle": "Daria Kasatkina vs Susan Bandecchi",
+  "boardPlayerName": "Daria Kasatkina",
+  "recentOpponentName": "Valentina Steiner",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "GER  6-3 6-1 q1",
+  "flashscoreLabel": "Steiner V. - Kasatkina D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Steiner V.",
+    "Kasatkina D."
+  ],
+  "generatedAt": "2026-05-28T00:53:37.371Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EXOqd7gc/",
+  "matchId": "EXOqd7gc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EXOqd7gc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EXOqd7gc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:22"
+      }
+    ],
+    "totalDuration": "0:58"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "85%",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (9/21)",
+              "right": "71% (24/34)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (6/22)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "2/4",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (10/34)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "6/9",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "35% (15/43)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (12/40)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (27/83)",
+              "right": "67% (56/83)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "82%",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (7/12)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "2/3",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "3/5",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (13/29)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (8/22)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (21/51)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "89%",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "22% (2/9)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/7)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/2)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "14% (2/14)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (4/18)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "19% (6/32)",
+              "right": "81% (26/32)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Steiner V.",
+              "rightPlayer": "Kasatkina D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

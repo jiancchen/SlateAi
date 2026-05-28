@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+  "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+  "boardPlayerName": "Elsa Jacquemot",
+  "recentOpponentName": "Barbora Krejcikova",
+  "recentIndex": 2,
+  "recentEvent": "Rome",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "CZE   Loss 6-2 6-4 1st",
+  "flashscoreLabel": "Krejcikova B. - Jacquemot E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Krejcikova B.",
+    "Jacquemot E."
+  ],
+  "generatedAt": "2026-05-28T00:53:54.056Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nTyt4Oc3/",
+  "matchId": "nTyt4Oc3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nTyt4Oc3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nTyt4Oc3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "75%",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (31/47)",
+              "right": "60% (28/47)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (15/26)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/10",
+              "right": "5/9",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (19/47)",
+              "right": "34% (16/47)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "1/10",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (46/73)",
+              "right": "56% (35/63)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (28/63)",
+              "right": "37% (27/73)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (74/136)",
+              "right": "46% (62/136)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "66%",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (18/28)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/7",
+              "right": "4/6",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (9/21)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/7",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (26/41)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (15/32)",
+              "right": "37% (15/41)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (41/73)",
+              "right": "44% (32/73)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "84%",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/3",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (10/26)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/3",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (13/31)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (33/63)",
+              "right": "48% (30/63)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Krejcikova B.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

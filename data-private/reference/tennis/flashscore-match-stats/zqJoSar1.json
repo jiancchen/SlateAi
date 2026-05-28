@@ -1,0 +1,858 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-facundo-diaz-acosta-learner-tien-2026-05-28",
+  "boardTitle": "Facundo Diaz Acosta vs Learner Tien",
+  "boardPlayerName": "Learner Tien",
+  "recentOpponentName": "Cristian Garin",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "CHI  6-0 2-6 6-0 6-2 1st",
+  "flashscoreLabel": "Garin C. - Tien L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Garin C.",
+    "Tien L."
+  ],
+  "generatedAt": "2026-05-28T00:53:30.281Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zqJoSar1/",
+  "matchId": "zqJoSar1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zqJoSar1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zqJoSar1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:19"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "12",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "67%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (28/51)",
+              "right": "84% (38/45)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (13/35)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/15",
+              "right": "1/3",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (7/45)",
+              "right": "45% (23/51)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (8/22)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "8/15",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "39",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "27",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (41/86)",
+              "right": "78% (52/67)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (15/67)",
+              "right": "52% (45/86)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (56/153)",
+              "right": "63% (97/153)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (6/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (8/28)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "50%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "25% (2/8)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/7)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/3",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "2",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "20% (3/15)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (2/14)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "17% (5/29)",
+              "right": "83% (24/29)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "62%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "14",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (9/21)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (25/41)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "79%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "42% (5/12)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "13% (1/8)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (1/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (1/3)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/7",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "30% (6/20)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (2/14)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "24% (8/34)",
+              "right": "76% (26/34)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "78%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (2/14)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/4)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (16/31)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "11% (2/18)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Tien L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

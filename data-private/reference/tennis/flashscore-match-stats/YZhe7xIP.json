@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-facundo-diaz-acosta-learner-tien-2026-05-28",
+  "boardTitle": "Facundo Diaz Acosta vs Learner Tien",
+  "boardPlayerName": "Learner Tien",
+  "recentOpponentName": "Alexander Bublik",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "KAZ  4-6 6-3 7-5 3rd",
+  "flashscoreLabel": "Tien L. - Bublik A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Tien L.",
+    "Bublik A."
+  ],
+  "generatedAt": "2026-05-28T00:53:31.634Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YZhe7xIP/",
+  "matchId": "YZhe7xIP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YZhe7xIP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YZhe7xIP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "62%",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (43/63)",
+              "right": "75% (48/64)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (20/31)",
+              "right": "43% (17/40)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "7/10",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "190 km/h",
+              "right": "200 km/h",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "161 km/h",
+              "right": "159 km/h",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (16/64)",
+              "right": "32% (20/63)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (23/40)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "2/6",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "27",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "44",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (15/22)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (63/94)",
+              "right": "63% (65/104)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (39/104)",
+              "right": "33% (31/94)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (102/198)",
+              "right": "48% (96/198)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (14/16)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (17/31)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "68%",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (4/21)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "11",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (29/63)",
+              "right": "54% (34/63)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "57%",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (21/30)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (12/30)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (33/60)",
+              "right": "45% (27/60)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "60%",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (17/24)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/6",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (6/26)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (12/17)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "18",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "58% (25/43)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (18/43)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (40/75)",
+              "right": "47% (35/75)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

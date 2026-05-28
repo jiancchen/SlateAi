@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-katie-boulter-anastasia-potapova-2026-05-28",
+  "boardTitle": "Katie Boulter vs Anastasia Potapova",
+  "boardPlayerName": "Katie Boulter",
+  "recentOpponentName": "Taylor Townsend",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "USA  6-4 6-2 1st",
+  "flashscoreLabel": "Townsend T. - Boulter K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Townsend T.",
+    "Boulter K."
+  ],
+  "generatedAt": "2026-05-28T00:54:06.529Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AFM7thtK/",
+  "matchId": "AFM7thtK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AFM7thtK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AFM7thtK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "67%",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (23/42)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (14/28)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/14",
+              "right": "1/2",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (10/36)",
+              "right": "45% (19/42)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "4/14",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (37/70)",
+              "right": "65% (35/54)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (19/54)",
+              "right": "47% (33/70)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (56/124)",
+              "right": "55% (68/124)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "72%",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (12/23)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/10",
+              "right": "1/2",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/10",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (35/74)",
+              "right": "53% (39/74)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "59%",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (11/19)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (15/28)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (6/22)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (21/50)",
+              "right": "58% (29/50)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

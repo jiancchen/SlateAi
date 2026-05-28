@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+  "boardTitle": "Maja Chwalinska vs Elise Mertens",
+  "boardPlayerName": "Elise Mertens",
+  "recentOpponentName": "Alexandra Eala",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "PHI  6-2 6-1 2nd",
+  "flashscoreLabel": "Mertens E. - Eala A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Mertens E.",
+    "Eala A."
+  ],
+  "generatedAt": "2026-05-28T00:53:51.827Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lWh2FSQE/",
+  "matchId": "lWh2FSQE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lWh2FSQE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lWh2FSQE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "66%",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (25/31)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "6/11",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "51% (19/37)",
+              "right": "19% (6/31)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/11",
+              "right": "0/1",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "72% (31/43)",
+              "right": "46% (26/56)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (30/56)",
+              "right": "28% (12/43)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (61/99)",
+              "right": "38% (38/99)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (7/7)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "63% (5/8)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "63%",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (13/14)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (8/17)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (14/27)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (30/46)",
+              "right": "35% (16/46)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "69%",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "5/8",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (11/20)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "0/1",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (15/24)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (16/29)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (31/53)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Eala A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

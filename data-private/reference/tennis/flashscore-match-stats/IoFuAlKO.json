@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Francisco Comesana",
+  "recentOpponentName": "Henry Bernet",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "SUI  6-3 6-1 q1",
+  "flashscoreLabel": "Bernet H. - Comesana F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Bernet H.",
+    "Comesana F."
+  ],
+  "generatedAt": "2026-05-28T00:53:39.658Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IoFuAlKO/",
+  "matchId": "IoFuAlKO",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IoFuAlKO",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IoFuAlKO"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "1:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "65%",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (21/36)",
+              "right": "81% (21/26)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (8/20)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "0/0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/26)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "21% (3/14)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "4/8",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "15",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (7/14)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (29/56)",
+              "right": "80% (32/40)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (8/40)",
+              "right": "48% (27/56)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (37/96)",
+              "right": "61% (59/96)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "72%",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/18)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (16/27)",
+              "right": "80% (20/25)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (5/25)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/52)",
+              "right": "60% (31/52)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "53%",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (3/8)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/7)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "6",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (13/29)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/44)",
+              "right": "64% (28/44)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Bernet H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-facundo-diaz-acosta-learner-tien-2026-05-28",
+  "boardTitle": "Facundo Diaz Acosta vs Learner Tien",
+  "boardPlayerName": "Learner Tien",
+  "recentOpponentName": "Damir Dzumhur",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "BIH  6-2 6-1 2nd",
+  "flashscoreLabel": "Tien L. - Dzumhur D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Tien L.",
+    "Dzumhur D."
+  ],
+  "generatedAt": "2026-05-28T00:53:31.856Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2ok1vVKE/",
+  "matchId": "2ok1vVKE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2ok1vVKE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2ok1vVKE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "66%",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (18/33)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (12/15)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "5/11",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "179 km/h",
+              "right": "177 km/h",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "148 km/h",
+              "right": "145 km/h",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (20/38)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "1/2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "30",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (30/48)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (32/58)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (62/106)",
+              "right": "42% (44/106)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (6/7)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (6/8)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "73%",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (11/21)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (9/16)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "12",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (18/30)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (13/22)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (7/12)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/7",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (11/22)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/0",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "18",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (12/18)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (19/36)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (31/54)",
+              "right": "43% (23/54)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Tien L.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

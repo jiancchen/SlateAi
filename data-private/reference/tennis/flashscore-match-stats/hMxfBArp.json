@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+  "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+  "boardPlayerName": "Kimberly Birrell",
+  "recentOpponentName": "Panna Udvardy",
+  "recentIndex": 3,
+  "recentEvent": "Madrid",
+  "recentDate": "22 Apr 26",
+  "recentIsoDate": "2026-04-22",
+  "recentResult": "HUN   Loss 6-4 1-6 6-1 1st",
+  "flashscoreLabel": "Udvardy P. - Birrell K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Udvardy P.",
+    "Birrell K."
+  ],
+  "generatedAt": "2026-05-28T00:54:20.595Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hMxfBArp/",
+  "matchId": "hMxfBArp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hMxfBArp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hMxfBArp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:00"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "77%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (23/46)",
+              "right": "49% (28/57)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (19/40)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/12",
+              "right": "1/8",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "51% (29/57)",
+              "right": "50% (23/46)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (10/17)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/8",
+              "right": "6/12",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (42/86)",
+              "right": "47% (35/74)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (39/74)",
+              "right": "51% (44/86)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (81/160)",
+              "right": "49% (79/160)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (6/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return games won",
+              "left": "58% (7/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (13/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "86%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/3",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (12/24)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/4",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (17/33)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (31/61)",
+              "right": "49% (30/61)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "68%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "29% (4/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "0/1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (6/13)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "4/6",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "31% (8/26)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (9/19)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (17/45)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "74%",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/4",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (11/20)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/2",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (17/27)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (16/27)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (33/54)",
+              "right": "39% (21/54)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Udvardy P.",
+              "rightPlayer": "Birrell K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

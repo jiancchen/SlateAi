@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-iva-jovic-emma-navarro-2026-05-28",
+  "boardTitle": "Iva Jovic vs Emma Navarro",
+  "boardPlayerName": "Iva Jovic",
+  "recentOpponentName": "Leylah Annie Fernandez",
+  "recentIndex": 5,
+  "recentEvent": "Madrid",
+  "recentDate": "25 Apr 26",
+  "recentIsoDate": "2026-04-25",
+  "recentResult": "CAN   Loss 3-6 6-3 6-2 3rd",
+  "flashscoreLabel": "Fernandez L. - Jovic I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Fernandez L.",
+    "Jovic I."
+  ],
+  "generatedAt": "2026-05-28T00:54:16.988Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/v1FXmtPa/",
+  "matchId": "v1FXmtPa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_v1FXmtPa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_v1FXmtPa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "58%",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (34/50)",
+              "right": "53% (24/45)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (18/33)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/5",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (21/45)",
+              "right": "32% (16/50)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (17/33)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/5",
+              "right": "3/7",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (53/84)",
+              "right": "51% (40/78)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (38/78)",
+              "right": "37% (31/84)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (91/162)",
+              "right": "44% (71/162)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (15/26)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "56%",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (6/19)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (5/15)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (14/23)",
+              "right": "68% (23/34)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (11/34)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "64%",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (13/20)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (7/14)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (12/22)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (33/55)",
+              "right": "40% (22/55)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "55%",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/3",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (8/12)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/3",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "68% (15/22)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "66% (33/50)",
+              "right": "34% (17/50)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

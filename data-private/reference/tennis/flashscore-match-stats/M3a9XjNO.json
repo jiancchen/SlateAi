@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+  "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+  "boardPlayerName": "Oleksandra Oliynykova",
+  "recentOpponentName": "Petra Marcinko",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "05 May 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "CRO  6-1 6-3 1st",
+  "flashscoreLabel": "Marcinko P. - Oliynykova O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Marcinko P.",
+    "Oliynykova O."
+  ],
+  "generatedAt": "2026-05-28T00:54:19.929Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/M3a9XjNO/",
+  "matchId": "M3a9XjNO",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_M3a9XjNO",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_M3a9XjNO"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "77%",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (14/24)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "21% (6/29)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/9",
+              "right": "1/4",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (14/36)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "7/9",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "38% (20/53)",
+              "right": "60% (28/47)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (19/47)",
+              "right": "62% (33/53)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (39/100)",
+              "right": "61% (61/100)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "80%",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "13% (2/15)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "0/1",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/3)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "4/5",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "34% (10/29)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (5/15)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (15/44)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "75%",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (6/10)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "1/3",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/4",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "42% (10/24)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (14/32)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (24/56)",
+              "right": "57% (32/56)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Marcinko P.",
+              "rightPlayer": "Oliynykova O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

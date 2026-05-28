@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-martin-landaluce-vit-kopriva-2026-05-28",
+  "boardTitle": "Martin Landaluce vs Vit Kopriva",
+  "boardPlayerName": "Vit Kopriva",
+  "recentOpponentName": "Arthur Rinderknech",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "26 Apr 26",
+  "recentIsoDate": "2026-04-26",
+  "recentResult": "FRA  6-4 3-6 ret. 3rd",
+  "flashscoreLabel": "Kopriva V. - Rinderknech A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Kopriva V.",
+    "Rinderknech A."
+  ],
+  "generatedAt": "2026-05-28T00:54:25.849Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Sz9IiLFb/",
+  "matchId": "Sz9IiLFb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Sz9IiLFb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Sz9IiLFb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "11",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "66%",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (26/37)",
+              "right": "77% (30/39)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (14/26)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/9",
+              "right": "5/6",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (9/39)",
+              "right": "30% (11/37)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (8/20)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "1/9",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "27",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "20",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (40/63)",
+              "right": "71% (42/59)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (17/59)",
+              "right": "37% (23/63)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (57/122)",
+              "right": "53% (65/122)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (9/19)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "74%",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (20/29)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/8",
+              "right": "1/2",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (1/6)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/8",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (28/45)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (5/23)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (33/68)",
+              "right": "51% (35/68)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "61%",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (6/8)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/4",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/1",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (12/18)",
+              "right": "67% (24/36)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (12/36)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/54)",
+              "right": "56% (30/54)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kopriva V.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

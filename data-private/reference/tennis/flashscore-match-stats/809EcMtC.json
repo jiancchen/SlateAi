@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "boardPlayerName": "Arthur Rinderknech",
+  "recentOpponentName": "Dusan Lajovic",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "SRB  6-3 6-2 2nd",
+  "flashscoreLabel": "Lajovic D. - Rinderknech A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Lajovic D.",
+    "Rinderknech A."
+  ],
+  "generatedAt": "2026-05-28T00:53:44.559Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/809EcMtC/",
+  "matchId": "809EcMtC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_809EcMtC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_809EcMtC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:13"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "10",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "79%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (20/33)",
+              "right": "79% (33/42)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/3",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (9/42)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/6",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "30",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (26/48)",
+              "right": "75% (40/53)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (13/53)",
+              "right": "46% (22/48)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (39/101)",
+              "right": "61% (62/101)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "63% (5/8)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "76%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (3/19)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (13/22)",
+              "right": "80% (20/25)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (5/25)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (18/47)",
+              "right": "62% (29/47)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "82%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/3",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (13/26)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (8/28)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (21/54)",
+              "right": "61% (33/54)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Rinderknech A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

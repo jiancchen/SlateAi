@@ -1,0 +1,872 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+  "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+  "boardPlayerName": "Hubert Hurkacz",
+  "recentOpponentName": "Jaume Antoni Munar Clar",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "ESP  6-3 6-3 2-6 6-3 1st",
+  "flashscoreLabel": "Munar J. - Hurkacz H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Munar J.",
+    "Hurkacz H."
+  ],
+  "generatedAt": "2026-05-28T00:53:45.437Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EB7aaA8c/",
+  "matchId": "EB7aaA8c",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EB7aaA8c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EB7aaA8c"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "60%",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (50/78)",
+              "right": "79% (53/67)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (22/46)",
+              "right": "48% (21/44)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/14",
+              "right": "6/9",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "193 km/h",
+              "right": "201 km/h",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "141 km/h",
+              "right": "168 km/h",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (14/67)",
+              "right": "36% (28/78)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (23/44)",
+              "right": "52% (24/46)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "5/14",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "53",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "44",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (17/24)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (72/124)",
+              "right": "67% (74/111)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (37/111)",
+              "right": "42% (52/124)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (109/235)",
+              "right": "54% (126/235)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (12/17)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (3/18)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (15/35)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "70%",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/16)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "15",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (14/24)",
+              "right": "87% (20/23)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "13% (3/23)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (17/47)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "61%",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (7/23)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (27/59)",
+              "right": "54% (32/59)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "36%",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (6/10)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (17/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (16/28)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (33/56)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "73%",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "85% (23/27)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "5/5",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (4/27)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "1/5",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (21/36)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (11/37)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (32/73)",
+              "right": "56% (41/73)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Munar J.",
+              "rightPlayer": "Hurkacz H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

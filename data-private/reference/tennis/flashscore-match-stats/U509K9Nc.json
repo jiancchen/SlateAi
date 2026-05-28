@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-facundo-diaz-acosta-learner-tien-2026-05-28",
+  "boardTitle": "Facundo Diaz Acosta vs Learner Tien",
+  "boardPlayerName": "Facundo Diaz Acosta",
+  "recentOpponentName": "August Holmgren",
+  "recentIndex": 1,
+  "recentEvent": "",
+  "recentDate": "21 May 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "DEN  6-72 6-4 6-2 Q.",
+  "flashscoreLabel": "Holmgren A. - Diaz Acosta F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Holmgren A.",
+    "Diaz Acosta F."
+  ],
+  "generatedAt": "2026-05-28T00:53:29.832Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/U509K9Nc/",
+  "matchId": "U509K9Nc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_U509K9Nc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_U509K9Nc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "74%",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (34/49)",
+              "right": "75% (53/71)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (30/52)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "2/2",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "191 km/h",
+              "right": "180 km/h",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "176 km/h",
+              "right": "150 km/h",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (18/71)",
+              "right": "31% (15/49)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (12/25)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/10",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "29",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "18",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Net points won",
+              "left": "59% (16/27)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (64/101)",
+              "right": "69% (66/96)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (30/96)",
+              "right": "37% (37/101)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (94/197)",
+              "right": "52% (103/197)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "100% (15/15)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (12/30)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "76%",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "69% (22/32)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "68% (15/22)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (10/32)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (12/19)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (30/42)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (14/42)",
+              "right": "29% (12/42)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (44/84)",
+              "right": "48% (40/84)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "74%",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "6",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (20/31)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (10/31)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (30/62)",
+              "right": "52% (32/62)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "70%",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/6",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Diaz Acosta F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

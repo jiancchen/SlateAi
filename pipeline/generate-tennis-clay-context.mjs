@@ -218,7 +218,7 @@ const buildTradeRead = (game, clayData) => {
   const notes = []
 
   if (dogClay?.pct !== null && dogClay?.pct >= 0.5) {
-    notes.push(`${dog.name} is not a dead clay dog at ${dog.record2026.clay} on clay in 2026.`)
+    notes.push(`${dog.name} has a credible clay record at ${dog.record2026.clay} in 2026, so the favorite still has to prove the service gap.`)
   } else if (dogClay?.pct !== null && dogClay?.pct >= 0.4) {
     notes.push(`${dog.name} is at least live enough on clay (${dog.record2026.clay}) to make the favorite work for holds.`)
   }
@@ -228,18 +228,18 @@ const buildTradeRead = (game, clayData) => {
   }
 
   if (dogResistanceCount >= 2) {
-    notes.push(`${dog.name} has multiple recent clay fights with a tiebreak or three-set shape, which is exactly the hold-to-4-4 profile for a scalp.`)
+    notes.push(`${dog.name} has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous.`)
   } else if (dogResistanceCount === 1) {
     notes.push(`${dog.name} has at least one recent clay-style match that dragged into real pressure points instead of a clean collapse.`)
   }
 
   if (favoriteLeakCount >= 2) {
-    notes.push(`${favorite.name}'s recent clay lane has already shown enough leakage that the dog does not need much to get a 2-3x repricing.`)
+    notes.push(`${favorite.name}'s recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve.`)
   }
 
   if (!notes.length) {
     notes.push(
-      `${dog.name} does not need the upset here. At ${dogBoard}% against a ${favoriteBoard}% favorite, a simple on-serve first set can be enough for the contract to re-rate.`
+      `${dog.name} does not need the upset for this to matter. At ${dogBoard}% against a ${favoriteBoard}% favorite, an on-serve first set can be enough for the contract to re-rate.`
     )
   }
 

@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-donna-vekic-naomi-osaka-2026-05-28",
+  "boardTitle": "Donna Vekic vs Naomi Osaka",
+  "boardPlayerName": "Naomi Osaka",
+  "recentOpponentName": "Aryna Sabalenka",
+  "recentIndex": 4,
+  "recentEvent": "Madrid",
+  "recentDate": "27 Apr 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "BLR   Loss 6-71 6-3 6-2 4th",
+  "flashscoreLabel": "Sabalenka A. - Osaka N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Sabalenka A.",
+    "Osaka N."
+  ],
+  "generatedAt": "2026-05-28T00:54:02.167Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0rlSKBhL/",
+  "matchId": "0rlSKBhL",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0rlSKBhL",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0rlSKBhL"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "60%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (40/50)",
+              "right": "67% (49/73)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (21/34)",
+              "right": "43% (21/49)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "10/14",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (24/73)",
+              "right": "20% (10/50)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (28/49)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/14",
+              "right": "1/1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "73% (61/84)",
+              "right": "57% (70/122)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (52/122)",
+              "right": "27% (23/84)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (113/206)",
+              "right": "45% (93/206)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (14/15)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "68%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "89% (24/27)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (3/27)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "76% (25/33)",
+              "right": "75% (30/40)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (10/40)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (35/73)",
+              "right": "52% (38/73)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "56%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (12/28)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "48% (24/50)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (26/50)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (46/82)",
+              "right": "44% (36/82)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "56%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (11/11)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/7",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (9/18)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "0/0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (16/32)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (32/51)",
+              "right": "37% (19/51)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-adolfo-daniel-vallejo-moise-kouame-2026-05-28",
+  "boardTitle": "Adolfo Daniel Vallejo vs Moise Kouame",
+  "boardPlayerName": "Adolfo Daniel Vallejo",
+  "recentOpponentName": "Flavio Cobolli",
+  "recentIndex": 7,
+  "recentEvent": "Madrid",
+  "recentDate": "27 Apr 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "ITA   Loss 6-3 6-2 3rd",
+  "flashscoreLabel": "Vallejo D. - Cobolli F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Vallejo D.",
+    "Cobolli F."
+  ],
+  "generatedAt": "2026-05-28T00:53:28.941Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/W0XBzBfD/",
+  "matchId": "W0XBzBfD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_W0XBzBfD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_W0XBzBfD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "1:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "51%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (15/28)",
+              "right": "86% (25/29)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "1/1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (4/29)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (14/28)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/4",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "22",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "22",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (25/47)",
+              "right": "68% (39/57)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (18/57)",
+              "right": "47% (22/47)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (43/104)",
+              "right": "59% (61/104)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "63% (5/8)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "50%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (15/25)",
+              "right": "64% (23/36)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (13/36)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (28/61)",
+              "right": "54% (33/61)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "52%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "30% (3/10)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (1/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "9",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (10/22)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (15/43)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

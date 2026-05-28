@@ -1,0 +1,1036 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28",
+  "boardTitle": "Francisco Cerundolo vs Hugo Gaston",
+  "boardPlayerName": "Hugo Gaston",
+  "recentOpponentName": "Gael Monfils",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "FRA  6-2 6-3 3-6 2-6 6-0 1st",
+  "flashscoreLabel": "Gaston H. - Monfils G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Gaston H.",
+    "Monfils G."
+  ],
+  "generatedAt": "2026-05-28T00:53:33.642Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6ie1sxmC/",
+  "matchId": "6ie1sxmC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6ie1sxmC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6ie1sxmC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "12",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "52%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (51/81)",
+              "right": "69% (51/74)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (30/57)",
+              "right": "36% (24/67)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "12/17",
+              "right": "9/17",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "169 km/h",
+              "right": "189 km/h",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "140 km/h",
+              "right": "159 km/h",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (23/74)",
+              "right": "37% (30/81)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (43/67)",
+              "right": "47% (27/57)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/17",
+              "right": "5/17",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "57",
+              "right": "47",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "41",
+              "right": "58",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Net points won",
+              "left": "74% (26/35)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (81/138)",
+              "right": "53% (75/141)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (66/141)",
+              "right": "41% (57/138)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (147/279)",
+              "right": "47% (132/279)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (15/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (8/20)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (23/40)",
+              "right": "43% (17/40)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "40%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (7/10)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (4/12)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (31/53)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "49%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "3/5",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (4/18)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "79% (15/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/6",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "13",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (12/16)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (25/42)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "40% (17/42)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (44/79)",
+              "right": "44% (35/79)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "68%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (9/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "0/1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/7",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "14",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (15/31)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/62)",
+              "right": "56% (35/62)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "58%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/2",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/4",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (13/27)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (6/24)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (19/51)",
+              "right": "63% (32/51)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "47%",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (7/7)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (6/9)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "14",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (12/15)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "74% (14/19)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "76% (26/34)",
+              "right": "24% (8/34)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Gaston H.",
+              "rightPlayer": "Monfils G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

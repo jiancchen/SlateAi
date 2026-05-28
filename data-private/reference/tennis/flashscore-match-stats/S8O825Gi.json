@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-iva-jovic-emma-navarro-2026-05-28",
+  "boardTitle": "Iva Jovic vs Emma Navarro",
+  "boardPlayerName": "Iva Jovic",
+  "recentOpponentName": "Taylor Townsend",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "USA  7-5 6-2 3rd",
+  "flashscoreLabel": "Townsend T. - Jovic I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rome/results/",
+  "players": [
+    "Townsend T.",
+    "Jovic I."
+  ],
+  "generatedAt": "2026-05-28T00:54:16.541Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/S8O825Gi/",
+  "matchId": "S8O825Gi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_S8O825Gi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_S8O825Gi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "60%",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (17/36)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (4/15)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/6",
+              "right": "1/4",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (12/34)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (10/23)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "6/6",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (21/51)",
+              "right": "61% (35/57)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (22/57)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (43/108)",
+              "right": "60% (65/108)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (4/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "57%",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "1/3",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/3",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "48% (15/31)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (14/35)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (29/66)",
+              "right": "56% (37/66)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "64%",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (6/16)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/4)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "30% (6/20)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (8/22)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (14/42)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Townsend T.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

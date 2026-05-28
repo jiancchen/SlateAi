@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-donna-vekic-naomi-osaka-2026-05-28",
+  "boardTitle": "Donna Vekic vs Naomi Osaka",
+  "boardPlayerName": "Naomi Osaka",
+  "recentOpponentName": "Anhelina Kalinina",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "25 Apr 26",
+  "recentIsoDate": "2026-04-25",
+  "recentResult": "UKR  6-1 6-3 3rd",
+  "flashscoreLabel": "Kalinina A. - Osaka N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Kalinina A.",
+    "Osaka N."
+  ],
+  "generatedAt": "2026-05-28T00:54:02.397Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AFvFNdO0/",
+  "matchId": "AFvFNdO0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AFvFNdO0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AFvFNdO0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "52%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (27/53)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (5/16)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/13",
+              "right": "3/5",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "49% (26/53)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (8/22)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "6/13",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "46% (32/69)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (17/46)",
+              "right": "54% (37/69)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (49/115)",
+              "right": "57% (66/115)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "52%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (7/17)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/3)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/4",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/6",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "35% (7/20)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (10/27)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (17/47)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "53%",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (20/36)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/1",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (4/10)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/7",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (25/49)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (7/19)",
+              "right": "49% (24/49)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (32/68)",
+              "right": "53% (36/68)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kalinina A.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

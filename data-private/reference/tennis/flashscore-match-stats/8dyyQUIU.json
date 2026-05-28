@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Francisco Comesana",
+  "recentOpponentName": "Ethan Quinn",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "USA  6-4 7-68 7-64 1st",
+  "flashscoreLabel": "Quinn E. - Comesana F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Quinn E.",
+    "Comesana F."
+  ],
+  "generatedAt": "2026-05-28T00:53:38.629Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8dyyQUIU/",
+  "matchId": "8dyyQUIU",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8dyyQUIU",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8dyyQUIU"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 8,
+        "rightGames": 10,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "67%",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (54/70)",
+              "right": "74% (59/80)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (19/40)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "3/4",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (21/80)",
+              "right": "23% (16/70)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (16/39)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/8",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "41",
+              "right": "35",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "48",
+              "right": "28",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "72% (26/36)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (73/110)",
+              "right": "69% (82/119)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (37/119)",
+              "right": "34% (37/110)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (110/229)",
+              "right": "52% (119/229)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (15/17)",
+              "right": "94% (16/17)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "6% (1/17)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (16/34)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "83%",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (6/24)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "4",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (8/29)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/56)",
+              "right": "54% (30/56)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "67%",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (25/31)",
+              "right": "77% (23/30)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "2/2",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (7/30)",
+              "right": "19% (6/31)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/4",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "12",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (9/16)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (32/47)",
+              "right": "71% (32/45)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (13/45)",
+              "right": "32% (15/47)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (45/92)",
+              "right": "51% (47/92)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "58%",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "12",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "85% (11/13)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (23/36)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (16/45)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (39/81)",
+              "right": "52% (42/81)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Quinn E.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

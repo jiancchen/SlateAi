@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-adolfo-daniel-vallejo-moise-kouame-2026-05-28",
+  "boardTitle": "Adolfo Daniel Vallejo vs Moise Kouame",
+  "boardPlayerName": "Moise Kouame",
+  "recentOpponentName": "Marin Cilic",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "CRO  7-64 6-2 6-1 1st",
+  "flashscoreLabel": "Cilic M. - Kouame M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Cilic M.",
+    "Kouame M."
+  ],
+  "generatedAt": "2026-05-28T00:53:29.164Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pMne85iS/",
+  "matchId": "pMne85iS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pMne85iS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pMne85iS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:14"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "61%",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (32/53)",
+              "right": "71% (44/62)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (18/39)",
+              "right": "67% (26/39)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "7/7",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "197 km/h",
+              "right": "188 km/h",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "143 km/h",
+              "right": "145 km/h",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (18/62)",
+              "right": "40% (21/53)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (13/39)",
+              "right": "54% (21/39)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/7",
+              "right": "4/7",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "28",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "57",
+              "right": "34",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (11/20)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (50/92)",
+              "right": "69% (70/101)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (31/101)",
+              "right": "46% (42/92)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (81/193)",
+              "right": "58% (112/193)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (9/13)",
+              "right": "100% (14/14)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/14)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (9/27)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "62%",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (17/27)",
+              "right": "66% (21/32)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/3",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (11/32)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (7/20)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "0/0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "17",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (26/40)",
+              "right": "65% (34/52)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (18/52)",
+              "right": "35% (14/40)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (44/92)",
+              "right": "52% (48/92)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "71%",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/2",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/4",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "9",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/4)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (16/32)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (6/24)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (22/56)",
+              "right": "61% (34/56)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "52%",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (5/9)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "8",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (8/20)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (15/45)",
+              "right": "67% (30/45)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Cilic M.",
+              "rightPlayer": "Kouame M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

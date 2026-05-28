@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-jannik-sinner-juan-manuel-cerundolo-2026-05-28",
+  "boardTitle": "Jannik Sinner vs Juan Manuel Cerundolo",
+  "boardPlayerName": "Jannik Sinner",
+  "recentOpponentName": "Clement Tabur",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "FRA  6-1 6-3 6-4 1st",
+  "flashscoreLabel": "Sinner J. - Tabur C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Sinner J.",
+    "Tabur C."
+  ],
+  "generatedAt": "2026-05-28T00:53:56.623Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dOYtfFWH/",
+  "matchId": "dOYtfFWH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dOYtfFWH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dOYtfFWH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:11"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "63%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (40/50)",
+              "right": "61% (34/56)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (19/26)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "8/13",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (22/56)",
+              "right": "20% (10/50)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (19/33)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/13",
+              "right": "0/0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "40",
+              "right": "20",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "27",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Net points won",
+              "left": "61% (14/23)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (59/76)",
+              "right": "54% (48/89)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (41/89)",
+              "right": "22% (17/76)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (100/165)",
+              "right": "39% (65/165)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (13/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "0% (0/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total games won",
+              "left": "69% (18/26)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "67%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (4/4)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/7",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (12/18)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "13",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (12/14)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (17/27)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "71% (29/41)",
+              "right": "29% (12/41)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "52%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "86% (6/7)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "5",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (22/27)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (9/25)",
+              "right": "19% (5/27)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "68%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/5",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Net points won",
+              "left": "44% (4/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (25/35)",
+              "right": "59% (22/37)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (15/37)",
+              "right": "29% (10/35)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (40/72)",
+              "right": "44% (32/72)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Tabur C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

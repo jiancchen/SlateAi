@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+  "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+  "boardPlayerName": "Hubert Hurkacz",
+  "recentOpponentName": "Yannick Hanfmann",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "06 May 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "GER   Loss 6-73 7-62 6-2 1st",
+  "flashscoreLabel": "Hurkacz H. - Hanfmann Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Hurkacz H.",
+    "Hanfmann Y."
+  ],
+  "generatedAt": "2026-05-28T00:53:45.664Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0p7v4hYq/",
+  "matchId": "0p7v4hYq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0p7v4hYq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0p7v4hYq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "61%",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (48/64)",
+              "right": "80% (44/55)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (18/34)",
+              "right": "71% (25/35)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "0/1",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (11/55)",
+              "right": "25% (16/64)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (10/35)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/9",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "32",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "27",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (9/14)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (66/98)",
+              "right": "77% (69/90)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (21/90)",
+              "right": "33% (32/98)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (87/188)",
+              "right": "54% (101/188)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "81% (13/16)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "6% (1/16)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (14/32)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "74%",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (21/21)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "0% (0/21)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "11% (1/9)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/4",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "83% (30/36)",
+              "right": "76% (26/34)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (8/34)",
+              "right": "17% (6/36)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (38/70)",
+              "right": "46% (32/70)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "68%",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "88% (22/25)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (3/25)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "20",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (26/38)",
+              "right": "78% (29/37)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (8/37)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (34/75)",
+              "right": "55% (41/75)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "26%",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (9/20)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (1/4)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (1/5)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (4/14)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "3",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (10/24)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (5/19)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (15/43)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Hurkacz H.",
+              "rightPlayer": "Hanfmann Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

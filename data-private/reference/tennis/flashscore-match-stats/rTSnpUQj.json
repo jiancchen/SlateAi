@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28",
+  "boardTitle": "Victoria Mboko vs Katerina Siniakova",
+  "boardPlayerName": "Victoria Mboko",
+  "recentOpponentName": "Lois Boisson",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "19 May 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "FRA  6-4 6-3 2nd",
+  "flashscoreLabel": "Mboko V. - Boisson L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Mboko V.",
+    "Boisson L."
+  ],
+  "generatedAt": "2026-05-28T00:54:13.732Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rTSnpUQj/",
+  "matchId": "rTSnpUQj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rTSnpUQj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rTSnpUQj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "63%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (24/37)",
+              "right": "68% (27/40)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "5/10",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (13/40)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (17/24)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/10",
+              "right": "2/2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (35/54)",
+              "right": "53% (34/64)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (30/64)",
+              "right": "35% (19/54)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (65/118)",
+              "right": "45% (53/118)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "60%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (13/30)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (33/60)",
+              "right": "45% (27/60)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "65%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/6",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (7/22)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (10/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (15/24)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (17/34)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Boisson L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

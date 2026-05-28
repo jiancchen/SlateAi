@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-donna-vekic-naomi-osaka-2026-05-28",
+  "boardTitle": "Donna Vekic vs Naomi Osaka",
+  "boardPlayerName": "Naomi Osaka",
+  "recentOpponentName": "Laura Siegemund",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "GER  6-3 7-63 1st",
+  "flashscoreLabel": "Siegemund L. - Osaka N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Siegemund L.",
+    "Osaka N."
+  ],
+  "generatedAt": "2026-05-28T00:54:01.522Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8tH5tspS/",
+  "matchId": "8tH5tspS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8tH5tspS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8tH5tspS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:15"
+      }
+    ],
+    "totalDuration": "1:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "55%",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (32/50)",
+              "right": "75% (30/40)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (12/27)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "4/5",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (10/40)",
+              "right": "36% (18/50)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (14/33)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/7",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "27",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "34",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (44/77)",
+              "right": "67% (49/73)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (24/73)",
+              "right": "43% (33/77)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (68/150)",
+              "right": "55% (82/150)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "54%",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/2",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/3",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (15/26)",
+              "right": "66% (23/35)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (12/35)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "55%",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (20/32)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/3",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/4",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "22",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (29/51)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/38)",
+              "right": "43% (22/51)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (41/89)",
+              "right": "54% (48/89)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Siegemund L.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

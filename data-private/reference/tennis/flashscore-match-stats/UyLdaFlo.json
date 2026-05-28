@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Mccartney Kessler",
+  "recentOpponentName": "Jaqueline Cristian",
+  "recentIndex": 1,
+  "recentEvent": "Strasbourg",
+  "recentDate": "18 May 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "ROU   Loss 6-1 6-1 1st",
+  "flashscoreLabel": "Kessler M. - Cristian J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Kessler M.",
+    "Cristian J."
+  ],
+  "generatedAt": "2026-05-28T00:54:21.941Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UyLdaFlo/",
+  "matchId": "UyLdaFlo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UyLdaFlo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UyLdaFlo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "61%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (17/32)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "21% (5/24)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/12",
+              "right": "0/1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "6/12",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "39% (22/56)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (14/41)",
+              "right": "61% (34/56)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (36/97)",
+              "right": "63% (61/97)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "71%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (6/12)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "11% (1/9)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "33% (7/21)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/45)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "47%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (4/15)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "0/0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (2/8)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/8",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (15/35)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (5/17)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (20/52)",
+              "right": "62% (32/52)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

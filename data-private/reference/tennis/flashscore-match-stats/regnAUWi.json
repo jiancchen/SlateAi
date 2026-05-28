@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "boardPlayerName": "Arthur Rinderknech",
+  "recentOpponentName": "Jurij Rodionov",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "AUT  7-65 6-2 6-3 1st",
+  "flashscoreLabel": "Rinderknech A. - Rodionov J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Rinderknech A.",
+    "Rodionov J."
+  ],
+  "generatedAt": "2026-05-28T00:53:43.438Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/regnAUWi/",
+  "matchId": "regnAUWi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_regnAUWi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_regnAUWi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:13"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "54%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (42/54)",
+              "right": "70% (37/53)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (15/31)",
+              "right": "42% (19/45)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "10/16",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "188 km/h",
+              "right": "182 km/h",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "159 km/h",
+              "right": "150 km/h",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (16/53)",
+              "right": "22% (12/54)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (26/45)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/16",
+              "right": "2/7",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "23",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "26",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (28/41)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (57/85)",
+              "right": "57% (56/98)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (42/98)",
+              "right": "33% (28/85)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (99/183)",
+              "right": "46% (84/183)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (12/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (6/15)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "57%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (21/29)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "4/5",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (9/20)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/5",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "13",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "11",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (17/27)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (28/46)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (17/46)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (45/92)",
+              "right": "51% (47/92)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "56%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (12/27)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (28/48)",
+              "right": "42% (20/48)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "48%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (4/12)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "9",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (13/18)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (13/25)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (26/43)",
+              "right": "40% (17/43)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Rodionov J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

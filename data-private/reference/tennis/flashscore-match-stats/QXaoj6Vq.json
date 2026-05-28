@@ -1,0 +1,872 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "boardPlayerName": "Matteo Berrettini",
+  "recentOpponentName": "Marton Fucsovics",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "25 May 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "HUN  6-72 7-5 6-1 6-2 1st",
+  "flashscoreLabel": "Fucsovics M. - Berrettini M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Fucsovics M.",
+    "Berrettini M."
+  ],
+  "generatedAt": "2026-05-28T00:53:44.779Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QXaoj6Vq/",
+  "matchId": "QXaoj6Vq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QXaoj6Vq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QXaoj6Vq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "14",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "13",
+              "right": "3",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "58%",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (50/73)",
+              "right": "79% (54/68)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (28/60)",
+              "right": "66% (33/50)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/12",
+              "right": "6/7",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "188 km/h",
+              "right": "200 km/h",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "160 km/h",
+              "right": "173 km/h",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (14/68)",
+              "right": "32% (23/73)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "34% (17/50)",
+              "right": "53% (32/60)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "6/12",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "33",
+              "right": "44",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "51",
+              "right": "37",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "72% (13/18)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (78/133)",
+              "right": "74% (87/118)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (31/118)",
+              "right": "41% (55/133)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (109/251)",
+              "right": "57% (142/251)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "68% (13/19)",
+              "right": "95% (19/20)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "5% (1/20)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "36% (14/39)",
+              "right": "64% (25/39)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "53%",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (12/17)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (30/40)",
+              "right": "73% (29/40)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/40)",
+              "right": "25% (10/40)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (41/80)",
+              "right": "49% (39/80)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "58%",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/3",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (4/16)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/1",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "13",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "76% (29/38)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/38)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (29/68)",
+              "right": "57% (39/68)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "70%",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/2",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/5",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (13/28)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (19/51)",
+              "right": "63% (32/51)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "53%",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "8% (1/13)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (3/9)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "4",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (15/35)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (5/17)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (20/52)",
+              "right": "62% (32/52)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Fucsovics M.",
+              "rightPlayer": "Berrettini M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

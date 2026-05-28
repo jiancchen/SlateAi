@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+  "boardTitle": "Zachary Svajda vs Adam Walton",
+  "boardPlayerName": "Zachary Svajda",
+  "recentOpponentName": "Casper Ruud",
+  "recentIndex": 2,
+  "recentEvent": "Rome",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "NOR   Loss 6-1 6-3 2nd",
+  "flashscoreLabel": "Ruud C. - Svajda Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Ruud C.",
+    "Svajda Z."
+  ],
+  "generatedAt": "2026-05-28T00:54:09.039Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ryPqjsxH/",
+  "matchId": "ryPqjsxH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ryPqjsxH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ryPqjsxH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:03"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "67%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (18/22)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "88% (14/16)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/7",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (16/36)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "9",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "26",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (32/38)",
+              "right": "50% (27/54)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (27/54)",
+              "right": "16% (6/38)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (59/92)",
+              "right": "36% (33/92)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "57% (4/7)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "67%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (12/16)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (18/30)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (30/46)",
+              "right": "35% (16/46)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "67%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (10/10)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "91% (20/22)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "9% (2/22)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (29/46)",
+              "right": "37% (17/46)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

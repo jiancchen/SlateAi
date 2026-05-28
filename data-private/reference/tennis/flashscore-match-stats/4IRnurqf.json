@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-iva-jovic-emma-navarro-2026-05-28",
+  "boardTitle": "Iva Jovic vs Emma Navarro",
+  "boardPlayerName": "Emma Navarro",
+  "recentOpponentName": "Iva Jovic",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "20 May 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "USA  6-4 4-6 6-1 2nd",
+  "flashscoreLabel": "Navarro E. - Jovic I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Navarro E.",
+    "Jovic I."
+  ],
+  "generatedAt": "2026-05-28T00:54:17.887Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4IRnurqf/",
+  "matchId": "4IRnurqf",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4IRnurqf",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4IRnurqf"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "65%",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (34/60)",
+              "right": "57% (28/49)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (25/49)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/10",
+              "right": "5/12",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (23/49)",
+              "right": "43% (26/60)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (19/26)",
+              "right": "49% (24/49)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/12",
+              "right": "5/10",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (60/110)",
+              "right": "47% (35/75)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (40/75)",
+              "right": "45% (50/110)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (100/185)",
+              "right": "46% (85/185)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (9/14)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "54% (7/13)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "59% (16/27)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "75%",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (15/25)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "2/5",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (7/7)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/6",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (24/46)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (17/30)",
+              "right": "48% (22/46)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (41/76)",
+              "right": "46% (35/76)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "61%",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (9/20)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "3/5",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (11/19)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/4",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "49% (20/41)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (13/30)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (33/71)",
+              "right": "54% (38/71)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "56%",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (4/9)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "86% (6/7)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (10/15)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (26/38)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Navarro E.",
+              "rightPlayer": "Jovic I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

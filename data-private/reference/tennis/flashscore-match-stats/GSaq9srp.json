@@ -1,0 +1,544 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-martin-landaluce-vit-kopriva-2026-05-28",
+  "boardTitle": "Martin Landaluce vs Vit Kopriva",
+  "boardPlayerName": "Martin Landaluce",
+  "recentOpponentName": "Christopher O Connell",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "04 May 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "AUS  6-2 6-3 q1",
+  "flashscoreLabel": "Landaluce M. - O'Connell C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Landaluce M.",
+    "O'Connell C."
+  ],
+  "generatedAt": "2026-05-28T00:54:24.544Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GSaq9srp/",
+  "matchId": "GSaq9srp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GSaq9srp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GSaq9srp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:34"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "52%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (26/36)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (16/30)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "2/6",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "197 km/h",
+              "right": "190 km/h",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "183 km/h",
+              "right": "182 km/h",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (11/28)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (16/26)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "1/8",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "17",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "30",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (42/66)",
+              "right": "50% (27/54)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (27/54)",
+              "right": "36% (24/66)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (69/120)",
+              "right": "43% (51/120)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "59%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (7/10)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "77% (10/13)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "14",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (14/29)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "44%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (19/26)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (6/17)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "2/4",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/7",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "16",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (25/43)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (13/25)",
+              "right": "42% (18/43)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (38/68)",
+              "right": "44% (30/68)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

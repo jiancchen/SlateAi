@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-matteo-arnaldi-stefanos-tsitsipas-2026-05-28",
+  "boardTitle": "Matteo Arnaldi vs Stefanos Tsitsipas",
+  "boardPlayerName": "Matteo Arnaldi",
+  "recentOpponentName": "Alex De Minaur",
+  "recentIndex": 2,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "AUS  4-6 7-65 6-4 2nd",
+  "flashscoreLabel": "De Minaur A. - Arnaldi M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "De Minaur A.",
+    "Arnaldi M."
+  ],
+  "generatedAt": "2026-05-28T00:54:03.730Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OzfBezxo/",
+  "matchId": "OzfBezxo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OzfBezxo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OzfBezxo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:16"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:57"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (44/64)",
+              "right": "77% (47/61)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (23/42)",
+              "right": "56% (20/36)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "5/7",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (14/61)",
+              "right": "31% (20/64)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (16/36)",
+              "right": "45% (19/42)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "2/6",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "18",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "29",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (16/25)",
+              "right": "75% (9/12)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (68/107)",
+              "right": "69% (67/97)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (30/97)",
+              "right": "36% (39/107)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (98/204)",
+              "right": "52% (106/204)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (14/16)",
+              "right": "88% (14/16)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/16)",
+              "right": "13% (2/16)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (16/32)",
+              "right": "50% (16/32)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "64%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "72% (13/18)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "24% (4/17)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "100% (3/3)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (21/29)",
+              "right": "68% (19/28)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "28% (8/29)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (30/57)",
+              "right": "47% (27/57)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "66%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (20/27)",
+              "right": "85% (23/27)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "50% (7/14)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (4/27)",
+              "right": "26% (7/27)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "44% (8/18)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "7",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "9",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "71% (5/7)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (30/45)",
+              "right": "73% (30/41)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (11/41)",
+              "right": "33% (15/45)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (41/86)",
+              "right": "52% (45/86)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "57%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "69% (11/16)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "58% (7/12)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "45% (9/20)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "54% (7/13)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "50% (1/2)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (17/33)",
+              "right": "64% (18/28)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "48% (16/33)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+  "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+  "boardPlayerName": "Aryna Sabalenka",
+  "recentOpponentName": "Jaqueline Cristian",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "25 Apr 26",
+  "recentIsoDate": "2026-04-25",
+  "recentResult": "ROU  6-1 6-4 3rd",
+  "flashscoreLabel": "Sabalenka A. - Cristian J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Sabalenka A.",
+    "Cristian J."
+  ],
+  "generatedAt": "2026-05-28T00:53:53.174Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fqY9Jwb5/",
+  "matchId": "fqY9Jwb5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fqY9Jwb5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fqY9Jwb5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "60%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (30/38)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "4/7",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (14/35)",
+              "right": "21% (8/38)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (12/23)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "73% (41/56)",
+              "right": "55% (32/58)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (26/58)",
+              "right": "27% (15/56)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (67/114)",
+              "right": "41% (47/114)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "64%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (9/9)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/6",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (10/18)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "89% (16/18)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (15/28)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (31/46)",
+              "right": "33% (15/46)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "57%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (21/29)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/1",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/4",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "66% (25/38)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (36/68)",
+              "right": "47% (32/68)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Cristian J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

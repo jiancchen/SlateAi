@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+  "boardTitle": "Julia Grabher vs Amanda Anisimova",
+  "boardPlayerName": "Julia Grabher",
+  "recentOpponentName": "Leylah Annie Fernandez",
+  "recentIndex": 7,
+  "recentEvent": "Madrid",
+  "recentDate": "23 Apr 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "CAN   Loss 6-2 6-3 2nd",
+  "flashscoreLabel": "Fernandez L. - Grabher J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/madrid/results/",
+  "players": [
+    "Fernandez L.",
+    "Grabher J."
+  ],
+  "generatedAt": "2026-05-28T00:53:35.634Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vJ0JjTmI/",
+  "matchId": "vJ0JjTmI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vJ0JjTmI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vJ0JjTmI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "54%",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (23/29)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (12/23)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/6",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (15/27)",
+              "right": "21% (6/29)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (10/23)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "1/2",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (35/52)",
+              "right": "50% (25/50)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (25/50)",
+              "right": "33% (17/52)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (60/102)",
+              "right": "41% (42/102)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "63%",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/4",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (11/19)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "40%",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/2",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (10/20)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (28/47)",
+              "right": "40% (19/47)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Fernandez L.",
+              "rightPlayer": "Grabher J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -4,6 +4,77 @@ import { may24HistorySportTabs } from './history-day-2026-05-24'
 
 export const historyArchive: HistoryEntry[] = [
   {
+    id: '2026-05-27',
+    date: '2026-05-27',
+    label: 'May 27, 2026',
+    status: 'graded',
+    summary:
+      'Roland Garros May 27 graded 23-8, but the shape mattered more than the headline record: ATP structure held up at 12-3 while WTA volatility, retirements, and taxed favorites created most of the damage.',
+    sports: ['Tennis', 'MLB'],
+    trackedMarkets: ['Match winner', 'Model fair value', 'O/U watch angles', 'MLB first inning'],
+    performance: {
+      tennis: { wins: 23, losses: 8 },
+      atp: { wins: 12, losses: 3 },
+      wta: { wins: 11, losses: 5 },
+      mlbFirstInning: { wins: 2, losses: 13 }
+    },
+    journal: {
+      path: 'data-private/reports/tennis-backtest-2026-05-27.md',
+      records: 31,
+      note: 'May 27 tennis was graded from the ESPN result import and the tennis warehouse desk_predictions table; the de Minaur walkover was excluded from the tracked desk record.'
+    },
+    metrics: [
+      { label: 'Tennis desk', value: '23-8', tone: 'positive' },
+      { label: 'ATP board', value: '12-3', note: 'The more stable side of the tournament again', tone: 'positive' },
+      { label: 'WTA board', value: '11-5', note: 'Still profitable on record, but most of the severe misses came here', tone: 'warning' },
+      { label: 'High-profile favorite misses', value: 'Rybakina, Paolini', note: 'Good names were not enough without price and volatility gates', tone: 'negative' },
+      { label: 'May 28 change', value: 'Pass-first pricing', note: 'High probability now needs a playable payout before it becomes a bet', tone: 'positive' }
+    ],
+    notableHits: [
+      'The ATP core held with Ruud, Rublev, Djokovic, Paul, Fonseca, Zverev, Khachanov, Mensik, Michelsen, Jodar, De Jong, and Carreno Busta.',
+      'The WTA board still landed Swiatek, Svitolina, Muchova, Stearns, Andreeva, Bouzkova, Bencic, Kostyuk, Cirstea, Golubic, and Linette.',
+      'Flashscore service joins improved the match-detail evidence stack compared with the earlier rank-heavy slate.'
+    ],
+    notableMisses: [
+      'Elena Rybakina over Yuliia Starodubtseva and Jasmine Paolini over Solana Sierra were the two biggest reminder misses: name strength and ranking did not price the upset risk correctly.',
+      'The ATP misses were Davidovich Fokina over Tirante, Kecmanovic over Borges, and Humbert over Halys.',
+      'The WTA misses also included Wang Xinyu over Korpatsch, Frech over Teichmann, and Baptiste over Wang Xiyu by retirement.'
+    ],
+    whatWorked: [
+      'Mens best-of-five structure was more stable than the women’s card, especially when the pick had rank, surface profile, and service data aligned.',
+      'Recent clay opponent quality and Flashscore hold/ace/first-serve rows gave the detail pages a much stronger factual base.',
+      'Separating the source-site pick from our own desk pick made stale Tennistonic reads less dangerous.'
+    ],
+    whatMissed: [
+      'The board still treated some big-name WTA favorites as cleaner than they were.',
+      'Win probability was shown too close to bet confidence; a 70% favorite with poor payout can still be a bad trade.',
+      'Totals and spread thinking were not prominent enough before the match, even though several matches projected as close or set-extended.'
+    ],
+    takeaways: [
+      'For May 28, ATP remains the cleaner lane, but only high-confidence favorites with usable price should graduate beyond a lean.',
+      'WTA favorites need a volatility discount unless recent hold, return, and opponent-strength data all agree.',
+      'O/U and game-spread angles should start from service holds and break frequency, not from the match-winner pick.'
+    ],
+    artifacts: [
+      {
+        label: 'May 27 tennis backtest',
+        path: 'data-private/reports/tennis-backtest-2026-05-27.md'
+      },
+      {
+        label: 'May 27 stored slate',
+        path: 'web/src/lib/day-2026-05-27.js'
+      },
+      {
+        label: 'May 27 ESPN result import',
+        path: 'data-private/reference/tennis/espn-scoreboard-2026-05-27.json'
+      },
+      {
+        label: 'May 28 tennis prediction file',
+        path: 'data-private/predictions/tennis/2026-05-28-roland-garros-singles.json'
+      }
+    ]
+  },
+  {
     id: '2026-05-25',
     date: '2026-05-25',
     label: 'May 25, 2026',

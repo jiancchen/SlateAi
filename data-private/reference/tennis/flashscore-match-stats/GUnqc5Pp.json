@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-antonia-ruzic-madison-keys-2026-05-28",
+  "boardTitle": "Antonia Ruzic vs Madison Keys",
+  "boardPlayerName": "Madison Keys",
+  "recentOpponentName": "Hanne Vandewinkel",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "26 May 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "BEL  6-3 6-0 1st",
+  "flashscoreLabel": "Vandewinkel H. - Keys M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Vandewinkel H.",
+    "Keys M."
+  ],
+  "generatedAt": "2026-05-28T00:54:12.150Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GUnqc5Pp/",
+  "matchId": "GUnqc5Pp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GUnqc5Pp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GUnqc5Pp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:31"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "73%",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (17/33)",
+              "right": "78% (31/40)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "7/7",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (9/40)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/7",
+              "right": "4/7",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "29",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "21",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (21/47)",
+              "right": "71% (39/55)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (16/55)",
+              "right": "55% (26/47)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (37/102)",
+              "right": "64% (65/102)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (3/7)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "72%",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (15/23)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/3",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/4",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "12",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "16",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (18/31)",
+              "right": "72% (23/32)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (9/32)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (27/63)",
+              "right": "57% (36/63)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "74%",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "20% (2/10)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "4/4",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "3/3",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "17",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "19% (3/16)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (7/23)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "26% (10/39)",
+              "right": "74% (29/39)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Vandewinkel H.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

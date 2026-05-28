@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-matteo-arnaldi-stefanos-tsitsipas-2026-05-28",
+  "boardTitle": "Matteo Arnaldi vs Stefanos Tsitsipas",
+  "boardPlayerName": "Stefanos Tsitsipas",
+  "recentOpponentName": "Alexander Bublik",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "25 Apr 26",
+  "recentIsoDate": "2026-04-25",
+  "recentResult": "KAZ  6-2 7-5 2nd",
+  "flashscoreLabel": "Bublik A. - Tsitsipas S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Bublik A.",
+    "Tsitsipas S."
+  ],
+  "generatedAt": "2026-05-28T00:54:05.856Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8QU3p72L/",
+  "matchId": "8QU3p72L",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8QU3p72L",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8QU3p72L"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "10",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "73%",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (30/40)",
+              "right": "94% (33/35)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (8/27)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (2/35)",
+              "right": "25% (10/40)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "22",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "11",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (38/67)",
+              "right": "83% (40/48)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (8/48)",
+              "right": "43% (29/67)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (46/115)",
+              "right": "60% (69/115)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "75%",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "93% (14/15)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/15)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (13/25)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (17/45)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "8",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "71%",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (22/30)",
+              "right": "95% (19/20)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "5% (1/20)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "6",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (25/42)",
+              "right": "86% (24/28)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (4/28)",
+              "right": "40% (17/42)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (29/70)",
+              "right": "59% (41/70)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bublik A.",
+              "rightPlayer": "Tsitsipas S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

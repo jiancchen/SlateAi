@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-martin-landaluce-vit-kopriva-2026-05-28",
+  "boardTitle": "Martin Landaluce vs Vit Kopriva",
+  "boardPlayerName": "Martin Landaluce",
+  "recentOpponentName": "Daniil Medvedev",
+  "recentIndex": 1,
+  "recentEvent": "Rome",
+  "recentDate": "14 May 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "RUS   Loss 1-6 6-4 7-5 1/4",
+  "flashscoreLabel": "Landaluce M. - Medvedev D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Landaluce M.",
+    "Medvedev D."
+  ],
+  "generatedAt": "2026-05-28T00:54:23.412Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0nv4awzn/",
+  "matchId": "0nv4awzn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0nv4awzn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0nv4awzn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "59%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (38/64)",
+              "right": "72% (34/47)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (21/43)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/15",
+              "right": "2/7",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "196 km/h",
+              "right": "201 km/h",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "153 km/h",
+              "right": "157 km/h",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (13/47)",
+              "right": "41% (26/64)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (20/32)",
+              "right": "51% (22/43)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/7",
+              "right": "5/15",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "27",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "24",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (59/107)",
+              "right": "58% (46/79)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (33/79)",
+              "right": "45% (48/107)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (92/186)",
+              "right": "51% (94/186)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (10/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (5/14)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (15/29)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "56%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (4/10)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (10/18)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (26/38)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "63%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (5/17)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/3",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/6",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "5",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (16/35)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/62)",
+              "right": "56% (35/62)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "59%",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (16/33)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (11/19)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "1/2",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (3/20)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/9",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "11",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (27/52)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (12/34)",
+              "right": "48% (25/52)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (39/86)",
+              "right": "55% (47/86)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Landaluce M.",
+              "rightPlayer": "Medvedev D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

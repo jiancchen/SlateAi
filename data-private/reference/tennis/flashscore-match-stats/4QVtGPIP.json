@@ -1,0 +1,504 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "boardPlayerName": "Francisco Comesana",
+  "recentOpponentName": "Max Hans Rehberg",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "17 May 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "GER  6-3 6-2 Q.",
+  "flashscoreLabel": "Rehberg M. H. - Comesana F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/results/",
+  "players": [
+    "Rehberg M. H.",
+    "Comesana F."
+  ],
+  "generatedAt": "2026-05-28T00:53:39.441Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4QVtGPIP/",
+  "matchId": "4QVtGPIP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4QVtGPIP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4QVtGPIP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:08"
+      }
+    ],
+    "totalDuration": "0:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "71%",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (21/40)",
+              "right": "90% (26/29)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/0",
+              "right": "0/0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (3/29)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "22",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "11",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "77%",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "100% (17/17)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/0",
+              "right": "0/0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/17)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "91% (20/22)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "9% (2/22)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (18/48)",
+              "right": "63% (30/48)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "63%",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "39% (7/18)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/0",
+              "right": "0/0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "-1/0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (-16/-26)",
+              "right": "91% (-20/-22)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "9% (-2/-22)",
+              "right": "38% (-10/-26)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (-18/-48)",
+              "right": "63% (-30/-48)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

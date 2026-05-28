@@ -1,0 +1,708 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-adolfo-daniel-vallejo-moise-kouame-2026-05-28",
+  "boardTitle": "Adolfo Daniel Vallejo vs Moise Kouame",
+  "boardPlayerName": "Adolfo Daniel Vallejo",
+  "recentOpponentName": "Jaime Faria",
+  "recentIndex": 6,
+  "recentEvent": "Rome",
+  "recentDate": "04 May 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "POR   Loss 6-3 4-6 6-4 q1",
+  "flashscoreLabel": "Vallejo D. - Faria J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Vallejo D.",
+    "Faria J."
+  ],
+  "generatedAt": "2026-05-28T00:53:28.721Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EuLBfrTj/",
+  "matchId": "EuLBfrTj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EuLBfrTj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EuLBfrTj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:00"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "72%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (38/57)",
+              "right": "78% (46/59)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (16/29)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "2/4",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "182 km/h",
+              "right": "201 km/h",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "173 km/h",
+              "right": "192 km/h",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (13/59)",
+              "right": "33% (19/57)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (11/23)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/6",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "33",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "25",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (54/86)",
+              "right": "71% (58/82)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (24/82)",
+              "right": "37% (32/86)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (78/168)",
+              "right": "54% (90/168)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (13/29)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "79%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (4/22)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "13",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (7/28)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "80%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (18/22)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (1/5)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (30/58)",
+              "right": "48% (28/58)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "59%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (10/19)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (25/56)",
+              "right": "55% (31/56)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

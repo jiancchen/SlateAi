@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Mccartney Kessler",
+  "recentOpponentName": "Renata Zarazua",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "16 May 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "MEX  7-5 6-2 q1",
+  "flashscoreLabel": "Kessler M. - Zarazua R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/strasbourg/results/",
+  "players": [
+    "Kessler M.",
+    "Zarazua R."
+  ],
+  "generatedAt": "2026-05-28T00:54:22.388Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/G0oNewrH/",
+  "matchId": "G0oNewrH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_G0oNewrH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_G0oNewrH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:07"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "80%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (32/54)",
+              "right": "45% (24/53)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (12/28)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/13",
+              "right": "5/12",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (29/53)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "85% (11/13)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/12",
+              "right": "4/13",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (44/82)",
+              "right": "39% (26/66)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (40/66)",
+              "right": "46% (38/82)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (84/148)",
+              "right": "43% (64/148)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Return games won",
+              "left": "70% (7/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Total games won",
+              "left": "65% (13/20)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "80%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (21/33)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "5/8",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (16/35)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "2/5",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (29/51)",
+              "right": "48% (21/44)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (23/44)",
+              "right": "43% (22/51)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (52/95)",
+              "right": "45% (43/95)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "82%",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (11/21)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "0/4",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "72% (13/18)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (4/4)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "2/8",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "48% (15/31)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "77% (17/22)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (32/53)",
+              "right": "40% (21/53)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Kessler M.",
+              "rightPlayer": "Zarazua R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}
