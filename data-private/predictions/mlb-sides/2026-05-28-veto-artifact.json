@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T21:33:29.469Z",
+  "generatedAt": "2026-05-28T22:00:57.100Z",
   "predictionDate": "2026-05-28",
   "picks": [
     {
@@ -95,8 +95,8 @@
       "predictedSide": "away",
       "confidence": 52,
       "modelEdge": 2.4,
-      "marketProbability": 0.46066041581736655,
-      "marketProbabilityLabel": "46.1%",
+      "marketProbability": 0.4615384615384615,
+      "marketProbabilityLabel": "46.2%",
       "pickIsMarketFavorite": false,
       "pickIsMarketUnderdog": true,
       "vetoCount": 1,
@@ -152,9 +152,9 @@
       "predictedTeam": "Rangers",
       "predictedSide": "home",
       "confidence": 62,
-      "modelEdge": 1,
-      "marketProbability": 0.5598086124401913,
-      "marketProbabilityLabel": "56.0%",
+      "modelEdge": 1.2,
+      "marketProbability": 0.5653370013755159,
+      "marketProbabilityLabel": "56.5%",
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
       "vetoCount": 0,

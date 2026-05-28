@@ -1,6 +1,6 @@
 export const lineupSnapshotMeta = {
   "date": "2026-05-28",
-  "snapshot": "2026-05-28T21:33:29.328Z",
+  "snapshot": "2026-05-28T22:00:56.970Z",
   "recentWindow": {
     "start": "2026-05-21",
     "end": "2026-05-27"
@@ -14,7 +14,7 @@ export const lineupBoardsByGameId = {
   "angels-tigers": {
     "gameId": "angels-tigers",
     "title": "Angels @ Tigers",
-    "snapshot": "2026-05-28T21:33:29.316Z",
+    "snapshot": "2026-05-28T22:00:56.965Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -2865,7 +2865,7 @@ export const lineupBoardsByGameId = {
   "twins-white-sox": {
     "gameId": "twins-white-sox",
     "title": "Twins @ White Sox",
-    "snapshot": "2026-05-28T21:33:29.318Z",
+    "snapshot": "2026-05-28T22:00:56.967Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -5720,7 +5720,7 @@ export const lineupBoardsByGameId = {
   "braves-red-sox": {
     "gameId": "braves-red-sox",
     "title": "Braves @ Red Sox",
-    "snapshot": "2026-05-28T21:33:29.320Z",
+    "snapshot": "2026-05-28T22:00:56.967Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -5735,8 +5735,8 @@ export const lineupBoardsByGameId = {
       "label": "64°F | Wind 8 mph Out | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "ATL -372",
-      "total": "6.5 Runs",
+      "line": "BOS -162",
+      "total": "7.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -5790,19 +5790,19 @@ export const lineupBoardsByGameId = {
             "doubles": 9,
             "triples": 1,
             "homeRuns": 2,
-            "walks": 27,
+            "walks": 28,
             "totalBases": 54,
             "atBats": 158,
-            "plateAppearances": 190,
+            "plateAppearances": 191,
             "avg": 0.234,
-            "obp": 0.353,
+            "obp": 0.356,
             "slg": 0.342,
-            "ops": 0.694,
-            "hitRate": 0.19469999999999998,
-            "singlesRate": 0.1316,
+            "ops": 0.698,
+            "hitRate": 0.1937,
+            "singlesRate": 0.1309,
             "hrRate": 0.0105,
-            "walkRate": 0.1421,
-            "totalBasesRate": 0.2842
+            "walkRate": 0.1466,
+            "totalBasesRate": 0.2827
           },
           "recent": {
             "gamesPlayed": 12,
@@ -5847,8 +5847,8 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 23.1,
-            "contactScore": 43.3,
-            "patienceScore": 73.6,
+            "contactScore": 43.4,
+            "patienceScore": 75.3,
             "formScore": 18,
             "splitScore": 18,
             "varianceScore": 92,
@@ -5896,7 +5896,7 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "split edge",
-          "summary": ".234 AVG | .694 OPS | 37 H | 2 HR | 12g: .136 AVG | .406 OPS | 6 H | 0 HR | vs LHP: .167 AVG | .556 OPS | 0 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -2.5 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".234 AVG | .698 OPS | 37 H | 2 HR | 12g: .136 AVG | .406 OPS | 6 H | 0 HR | vs LHP: .167 AVG | .556 OPS | 0 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -2.5 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Payton Tolle"
         },
         {
@@ -5925,17 +5925,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 3,
             "walks": 13,
             "totalBases": 76,
-            "atBats": 199,
-            "plateAppearances": 214,
-            "avg": 0.256,
-            "obp": 0.308,
-            "slg": 0.382,
-            "ops": 0.69,
-            "hitRate": 0.23829999999999998,
-            "singlesRate": 0.1589,
+            "atBats": 200,
+            "plateAppearances": 215,
+            "avg": 0.255,
+            "obp": 0.307,
+            "slg": 0.38,
+            "ops": 0.687,
+            "hitRate": 0.2372,
+            "singlesRate": 0.15810000000000002,
             "hrRate": 0.013999999999999999,
-            "walkRate": 0.060700000000000004,
-            "totalBasesRate": 0.35509999999999997
+            "walkRate": 0.0605,
+            "totalBasesRate": 0.35350000000000004
           },
           "recent": {
             "gamesPlayed": 12,
@@ -5979,17 +5979,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3171
           },
           "metrics": {
-            "powerScore": 28.5,
-            "contactScore": 61.6,
-            "patienceScore": 42.2,
-            "formScore": 34.8,
-            "splitScore": 28,
-            "varianceScore": 50.9,
+            "powerScore": 28.3,
+            "contactScore": 61.7,
+            "patienceScore": 42.1,
+            "formScore": 35.5,
+            "splitScore": 28.7,
+            "varianceScore": 49.8,
             "pitchTypeFitScore": 49.4,
             "pitchTypeGrade": -2.84,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 23,
-            "matchupGrade": -5.45
+            "matchupScore": 23.6,
+            "matchupGrade": -5.35
           },
           "pitchType": {
             "fitScore": 49.4,
@@ -6029,8 +6029,8 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "split edge",
-          "summary": ".256 AVG | .690 OPS | 51 H | 3 HR | 12g: .286 AVG | .652 OPS | 12 H | 0 HR | vs LHP: .256 AVG | .626 OPS | 0 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -2.8 | -5.4 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-5.45 vs Payton Tolle"
+          "summary": ".255 AVG | .687 OPS | 51 H | 3 HR | 12g: .286 AVG | .652 OPS | 12 H | 0 HR | vs LHP: .256 AVG | .626 OPS | 0 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -2.8 | -5.3 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-5.35 vs Payton Tolle"
         },
         {
           "playerId": 621566,
@@ -6058,17 +6058,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 15,
             "walks": 27,
             "totalBases": 119,
-            "atBats": 218,
-            "plateAppearances": 248,
-            "avg": 0.261,
-            "obp": 0.343,
-            "slg": 0.546,
-            "ops": 0.889,
-            "hitRate": 0.2298,
-            "singlesRate": 0.1008,
-            "hrRate": 0.0605,
-            "walkRate": 0.10890000000000001,
-            "totalBasesRate": 0.47979999999999995
+            "atBats": 219,
+            "plateAppearances": 249,
+            "avg": 0.26,
+            "obp": 0.341,
+            "slg": 0.543,
+            "ops": 0.885,
+            "hitRate": 0.2289,
+            "singlesRate": 0.10039999999999999,
+            "hrRate": 0.0602,
+            "walkRate": 0.1084,
+            "totalBasesRate": 0.4779
           },
           "recent": {
             "gamesPlayed": 12,
@@ -6112,11 +6112,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.466
           },
           "metrics": {
-            "powerScore": 80,
-            "contactScore": 53.9,
-            "patienceScore": 59,
+            "powerScore": 79.6,
+            "contactScore": 53.4,
+            "patienceScore": 58.8,
             "formScore": 18,
-            "splitScore": 30.2,
+            "splitScore": 31.1,
             "varianceScore": 92,
             "pitchTypeFitScore": 88.9,
             "pitchTypeGrade": 1.59,
@@ -6161,7 +6161,7 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".261 AVG | .889 OPS | 57 H | 15 HR | 12g: .083 AVG | .435 OPS | 4 H | 2 HR | vs LHP: .250 AVG | .842 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".260 AVG | .885 OPS | 57 H | 15 HR | 12g: .083 AVG | .435 OPS | 4 H | 2 HR | vs LHP: .250 AVG | .842 OPS | 5 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Payton Tolle"
         },
         {
@@ -6183,24 +6183,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 57,
-            "hits": 59,
-            "singles": 42,
+            "hits": 60,
+            "singles": 43,
             "doubles": 9,
             "triples": 0,
             "homeRuns": 8,
             "walks": 18,
-            "totalBases": 92,
-            "atBats": 218,
-            "plateAppearances": 243,
-            "avg": 0.271,
-            "obp": 0.329,
-            "slg": 0.422,
-            "ops": 0.751,
-            "hitRate": 0.24280000000000002,
-            "singlesRate": 0.1728,
-            "hrRate": 0.0329,
-            "walkRate": 0.0741,
-            "totalBasesRate": 0.3786
+            "totalBases": 93,
+            "atBats": 219,
+            "plateAppearances": 244,
+            "avg": 0.274,
+            "obp": 0.332,
+            "slg": 0.425,
+            "ops": 0.757,
+            "hitRate": 0.2459,
+            "singlesRate": 0.17620000000000002,
+            "hrRate": 0.032799999999999996,
+            "walkRate": 0.0738,
+            "totalBasesRate": 0.3811
           },
           "recent": {
             "gamesPlayed": 12,
@@ -6244,17 +6244,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4343
           },
           "metrics": {
-            "powerScore": 51,
-            "contactScore": 71.7,
-            "patienceScore": 46.5,
+            "powerScore": 51.2,
+            "contactScore": 72.3,
+            "patienceScore": 46.3,
             "formScore": 18,
-            "splitScore": 56.4,
-            "varianceScore": 78.8,
+            "splitScore": 55.3,
+            "varianceScore": 78.9,
             "pitchTypeFitScore": 67.5,
             "pitchTypeGrade": -0.74,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 22.2,
-            "matchupGrade": -6.26
+            "matchupScore": 21.4,
+            "matchupGrade": -6.43
           },
           "pitchType": {
             "fitScore": 67.5,
@@ -6294,8 +6294,8 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "split edge",
-          "summary": ".271 AVG | .751 OPS | 59 H | 8 HR | 12g: .208 AVG | .505 OPS | 10 H | 0 HR | vs LHP: .293 AVG | .791 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -0.7 | -6.3 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-6.26 vs Payton Tolle"
+          "summary": ".274 AVG | .757 OPS | 60 H | 8 HR | 12g: .208 AVG | .505 OPS | 10 H | 0 HR | vs LHP: .293 AVG | .791 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -0.7 | -6.4 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-6.43 vs Payton Tolle"
         },
         {
           "playerId": 663586,
@@ -6323,17 +6323,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 8,
             "walks": 18,
             "totalBases": 80,
-            "atBats": 210,
-            "plateAppearances": 233,
-            "avg": 0.219,
-            "obp": 0.292,
-            "slg": 0.381,
-            "ops": 0.673,
-            "hitRate": 0.1974,
-            "singlesRate": 0.1245,
-            "hrRate": 0.034300000000000004,
-            "walkRate": 0.07730000000000001,
-            "totalBasesRate": 0.3433
+            "atBats": 211,
+            "plateAppearances": 234,
+            "avg": 0.218,
+            "obp": 0.291,
+            "slg": 0.379,
+            "ops": 0.67,
+            "hitRate": 0.1966,
+            "singlesRate": 0.12390000000000001,
+            "hrRate": 0.0342,
+            "walkRate": 0.07690000000000001,
+            "totalBasesRate": 0.3419
           },
           "recent": {
             "gamesPlayed": 12,
@@ -6377,17 +6377,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3176
           },
           "metrics": {
-            "powerScore": 39.1,
-            "contactScore": 39.9,
-            "patienceScore": 49.8,
-            "formScore": 38,
-            "splitScore": 34.5,
-            "varianceScore": 72.2,
+            "powerScore": 38.8,
+            "contactScore": 40,
+            "patienceScore": 49.7,
+            "formScore": 38.7,
+            "splitScore": 35.2,
+            "varianceScore": 73,
             "pitchTypeFitScore": 70.8,
             "pitchTypeGrade": -0.82,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 50.9,
-            "matchupGrade": 0.43
+            "matchupScore": 51.5,
+            "matchupGrade": 0.52
           },
           "pitchType": {
             "fitScore": 70.8,
@@ -6426,8 +6426,8 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "split edge",
-          "summary": ".219 AVG | .673 OPS | 46 H | 8 HR | 12g: .300 AVG | .791 OPS | 12 H | 0 HR | vs LHP: .250 AVG | .685 OPS | 1 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -0.8 | +0.4 matchup grade in a contact-suppressor lane",
-          "matchupNote": "+0.43 vs Payton Tolle"
+          "summary": ".218 AVG | .670 OPS | 46 H | 8 HR | 12g: .300 AVG | .791 OPS | 12 H | 0 HR | vs LHP: .250 AVG | .685 OPS | 1 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -0.8 | +0.5 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+0.52 vs Payton Tolle"
         },
         {
           "playerId": 671739,
@@ -6448,24 +6448,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 54,
-            "hits": 56,
-            "singles": 38,
+            "hits": 57,
+            "singles": 39,
             "doubles": 6,
             "triples": 0,
             "homeRuns": 12,
             "walks": 7,
-            "totalBases": 98,
-            "atBats": 190,
-            "plateAppearances": 199,
-            "avg": 0.295,
-            "obp": 0.322,
-            "slg": 0.516,
-            "ops": 0.837,
-            "hitRate": 0.2814,
-            "singlesRate": 0.191,
-            "hrRate": 0.0603,
-            "walkRate": 0.0352,
-            "totalBasesRate": 0.4925
+            "totalBases": 99,
+            "atBats": 191,
+            "plateAppearances": 200,
+            "avg": 0.298,
+            "obp": 0.325,
+            "slg": 0.518,
+            "ops": 0.843,
+            "hitRate": 0.285,
+            "singlesRate": 0.195,
+            "hrRate": 0.06,
+            "walkRate": 0.035,
+            "totalBasesRate": 0.495
           },
           "recent": {
             "gamesPlayed": 12,
@@ -6509,17 +6509,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.40299999999999997
           },
           "metrics": {
-            "powerScore": 75,
-            "contactScore": 60.9,
-            "patienceScore": 31.5,
+            "powerScore": 75.2,
+            "contactScore": 61.6,
+            "patienceScore": 31.4,
             "formScore": 92,
             "splitScore": 18,
             "varianceScore": 92,
             "pitchTypeFitScore": 82.5,
             "pitchTypeGrade": 1.59,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 83.1,
-            "matchupGrade": 6.67
+            "matchupScore": 82.3,
+            "matchupGrade": 6.49
           },
           "pitchType": {
             "fitScore": 82.5,
@@ -6559,8 +6559,8 @@ export const lineupBoardsByGameId = {
             "arsenal edge"
           ],
           "primaryTag": "carry",
-          "summary": ".295 AVG | .837 OPS | 56 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.7 matchup grade in a contact-suppressor lane",
-          "matchupNote": "+6.67 vs Payton Tolle"
+          "summary": ".298 AVG | .843 OPS | 57 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.5 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+6.49 vs Payton Tolle"
         },
         {
           "playerId": 622761,
@@ -6586,19 +6586,19 @@ export const lineupBoardsByGameId = {
             "doubles": 4,
             "triples": 0,
             "homeRuns": 2,
-            "walks": 4,
+            "walks": 5,
             "totalBases": 32,
             "atBats": 66,
-            "plateAppearances": 70,
+            "plateAppearances": 71,
             "avg": 0.333,
-            "obp": 0.371,
+            "obp": 0.38,
             "slg": 0.485,
-            "ops": 0.856,
-            "hitRate": 0.3143,
-            "singlesRate": 0.2286,
-            "hrRate": 0.0286,
-            "walkRate": 0.0571,
-            "totalBasesRate": 0.4571
+            "ops": 0.865,
+            "hitRate": 0.3099,
+            "singlesRate": 0.2254,
+            "hrRate": 0.0282,
+            "walkRate": 0.0704,
+            "totalBasesRate": 0.4507
           },
           "recent": {
             "gamesPlayed": 6,
@@ -6642,17 +6642,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3704
           },
           "metrics": {
-            "powerScore": 59.5,
-            "contactScore": 45.1,
-            "patienceScore": 38.8,
-            "formScore": 22.9,
-            "splitScore": 25,
-            "varianceScore": 90.4,
+            "powerScore": 59.4,
+            "contactScore": 45.6,
+            "patienceScore": 43.6,
+            "formScore": 22.4,
+            "splitScore": 24.3,
+            "varianceScore": 92,
             "pitchTypeFitScore": 57.1,
             "pitchTypeGrade": -1.26,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 22.7,
-            "matchupGrade": -5.31
+            "matchupScore": 21.4,
+            "matchupGrade": -5.57
           },
           "pitchType": {
             "fitScore": 57.1,
@@ -6691,8 +6691,8 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "split edge",
-          "summary": ".333 AVG | .856 OPS | 22 H | 2 HR | 6g: .400 AVG | .800 OPS | 4 H | 0 HR | vs LHP: .269 AVG | .681 OPS | 1 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -1.3 | -5.3 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-5.31 vs Payton Tolle"
+          "summary": ".333 AVG | .865 OPS | 22 H | 2 HR | 6g: .400 AVG | .800 OPS | 4 H | 0 HR | vs LHP: .269 AVG | .681 OPS | 1 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit -1.3 | -5.6 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-5.57 vs Payton Tolle"
         },
         {
           "playerId": 642086,
@@ -6967,7 +6967,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": -4.66,
+        "averageMatchupGrade": -4.7,
         "trackedBatters": 9,
         "starterThreatCount": 1,
         "contactCount": 4,
@@ -6981,13 +6981,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 1,
         "heaterCount": 1,
         "suppressorCount": 2,
-        "platoonPressureIndex": 48.5,
+        "platoonPressureIndex": 48.3,
         "pitchTypePressureIndex": 51.1,
         "bullpenPitchTypePressureIndex": 68.8,
         "starterPressureIndex": 18,
         "overallPressureIndex": 21,
-        "topThirdScore": 19.7,
-        "depthScore": 19.6,
+        "topThirdScore": 19.9,
+        "depthScore": 19.1,
         "bullpenOverperformHitters": [
           {
             "name": "Michael Harris II",
@@ -7011,7 +7011,7 @@ export const lineupBoardsByGameId = {
         "overperformHitters": [
           {
             "name": "Michael Harris II",
-            "tag": "carry | +6.67 vs Payton Tolle"
+            "tag": "carry | +6.49 vs Payton Tolle"
           }
         ],
         "bullpenOverperformHitters": [
@@ -7044,9 +7044,9 @@ export const lineupBoardsByGameId = {
         "underperformNote": "Ronald Acuña Jr. and Matt Olson carry the softer form or split fit into a contact suppressor lane.",
         "overview": "Braves can lean on Michael Harris II to drive early pressure against Payton Tolle.",
         "bullpenOverview": "Danny Coulombe is the first bridge look, and this lineup grades +2.4 against that likely first-up arsenal.",
-        "topThirdScore": 19.7,
-        "middleScore": 52.1,
-        "depthScore": 19.6,
+        "topThirdScore": 19.9,
+        "middleScore": 51.7,
+        "depthScore": 19.1,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 68.8,
           "averageFitScore": 61,
@@ -7460,17 +7460,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 6,
             "walks": 21,
             "totalBases": 91,
-            "atBats": 208,
-            "plateAppearances": 231,
-            "avg": 0.288,
-            "obp": 0.352,
-            "slg": 0.438,
-            "ops": 0.79,
-            "hitRate": 0.2597,
-            "singlesRate": 0.1818,
-            "hrRate": 0.026000000000000002,
-            "walkRate": 0.0909,
-            "totalBasesRate": 0.39390000000000003
+            "atBats": 209,
+            "plateAppearances": 232,
+            "avg": 0.287,
+            "obp": 0.351,
+            "slg": 0.435,
+            "ops": 0.786,
+            "hitRate": 0.2586,
+            "singlesRate": 0.18100000000000002,
+            "hrRate": 0.0259,
+            "walkRate": 0.09050000000000001,
+            "totalBasesRate": 0.3922
           },
           "recent": {
             "gamesPlayed": 10,
@@ -7514,17 +7514,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.48479999999999995
           },
           "metrics": {
-            "powerScore": 44.4,
-            "contactScore": 76.6,
-            "patienceScore": 51.5,
+            "powerScore": 44.1,
+            "contactScore": 76.1,
+            "patienceScore": 51.4,
             "formScore": 18,
-            "splitScore": 82.8,
-            "varianceScore": 91.2,
+            "splitScore": 83.6,
+            "varianceScore": 91.5,
             "pitchTypeFitScore": 52.9,
             "pitchTypeGrade": -3.61,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 45.5,
-            "matchupGrade": -1
+            "matchupScore": 46,
+            "matchupGrade": -0.9
           },
           "pitchType": {
             "fitScore": 52.9,
@@ -7565,8 +7565,8 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "split edge",
-          "summary": ".288 AVG | .790 OPS | 60 H | 6 HR | 10g: .227 AVG | .625 OPS | 10 H | 0 HR | vs LHP: .410 AVG | .964 OPS | 1 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -3.6 | -1.0 matchup grade in a power-arm lane",
-          "matchupNote": "-1.00 vs Chris Sale"
+          "summary": ".287 AVG | .786 OPS | 60 H | 6 HR | 10g: .227 AVG | .625 OPS | 10 H | 0 HR | vs LHP: .410 AVG | .964 OPS | 1 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -3.6 | -0.9 matchup grade in a power-arm lane",
+          "matchupNote": "-0.90 vs Chris Sale"
         },
         {
           "playerId": 575929,
@@ -7587,24 +7587,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 53,
-            "hits": 53,
-            "singles": 34,
+            "hits": 54,
+            "singles": 35,
             "doubles": 6,
             "triples": 2,
             "homeRuns": 11,
             "walks": 22,
-            "totalBases": 96,
-            "atBats": 187,
-            "plateAppearances": 221,
-            "avg": 0.283,
-            "obp": 0.38,
-            "slg": 0.513,
-            "ops": 0.893,
-            "hitRate": 0.2398,
-            "singlesRate": 0.15380000000000002,
-            "hrRate": 0.049800000000000004,
-            "walkRate": 0.09949999999999999,
-            "totalBasesRate": 0.43439999999999995
+            "totalBases": 97,
+            "atBats": 188,
+            "plateAppearances": 222,
+            "avg": 0.287,
+            "obp": 0.383,
+            "slg": 0.516,
+            "ops": 0.899,
+            "hitRate": 0.2432,
+            "singlesRate": 0.1577,
+            "hrRate": 0.0495,
+            "walkRate": 0.09910000000000001,
+            "totalBasesRate": 0.43689999999999996
           },
           "recent": {
             "gamesPlayed": 10,
@@ -7648,10 +7648,10 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.5357
           },
           "metrics": {
-            "powerScore": 83,
-            "contactScore": 56.7,
-            "patienceScore": 59.5,
-            "formScore": 91.1,
+            "powerScore": 83.2,
+            "contactScore": 57.4,
+            "patienceScore": 59.2,
+            "formScore": 90,
             "splitScore": 92,
             "varianceScore": 92,
             "pitchTypeFitScore": 69.2,
@@ -7700,7 +7700,7 @@ export const lineupBoardsByGameId = {
             "arsenal risk"
           ],
           "primaryTag": "carry",
-          "summary": ".283 AVG | .893 OPS | 53 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane",
+          "summary": ".287 AVG | .899 OPS | 54 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane",
           "matchupNote": "+10.00 vs Chris Sale"
         },
         {
@@ -7729,17 +7729,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 1,
             "walks": 6,
             "totalBases": 32,
-            "atBats": 87,
-            "plateAppearances": 93,
-            "avg": 0.241,
-            "obp": 0.29,
-            "slg": 0.368,
-            "ops": 0.658,
-            "hitRate": 0.22579999999999997,
-            "singlesRate": 0.129,
-            "hrRate": 0.0108,
-            "walkRate": 0.0645,
-            "totalBasesRate": 0.34409999999999996
+            "atBats": 88,
+            "plateAppearances": 94,
+            "avg": 0.239,
+            "obp": 0.287,
+            "slg": 0.364,
+            "ops": 0.651,
+            "hitRate": 0.2234,
+            "singlesRate": 0.1277,
+            "hrRate": 0.0106,
+            "walkRate": 0.0638,
+            "totalBasesRate": 0.3404
           },
           "recent": {
             "gamesPlayed": 6,
@@ -7783,17 +7783,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3611
           },
           "metrics": {
-            "powerScore": 37.7,
-            "contactScore": 46.2,
-            "patienceScore": 42.5,
+            "powerScore": 37.2,
+            "contactScore": 45,
+            "patienceScore": 42.3,
             "formScore": 18,
-            "splitScore": 69.7,
-            "varianceScore": 70.2,
+            "splitScore": 71.2,
+            "varianceScore": 70.9,
             "pitchTypeFitScore": 37.1,
             "pitchTypeGrade": -4.23,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 22.1,
-            "matchupGrade": -5.9
+            "matchupScore": 23.1,
+            "matchupGrade": -5.68
           },
           "pitchType": {
             "fitScore": 37.1,
@@ -7833,8 +7833,8 @@ export const lineupBoardsByGameId = {
             "cold"
           ],
           "primaryTag": "split edge",
-          "summary": ".241 AVG | .658 OPS | 21 H | 1 HR | 6g: .200 AVG | .533 OPS | 2 H | 0 HR | vs LHP: .219 AVG | .712 OPS | 1 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -4.2 | -5.9 matchup grade in a power-arm lane",
-          "matchupNote": "-5.90 vs Chris Sale"
+          "summary": ".239 AVG | .651 OPS | 21 H | 1 HR | 6g: .200 AVG | .533 OPS | 2 H | 0 HR | vs LHP: .219 AVG | .712 OPS | 1 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -4.2 | -5.7 matchup grade in a power-arm lane",
+          "matchupNote": "-5.68 vs Chris Sale"
         },
         {
           "playerId": 686765,
@@ -7862,17 +7862,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 5,
             "totalBases": 13,
-            "atBats": 32,
-            "plateAppearances": 38,
-            "avg": 0.281,
-            "obp": 0.378,
-            "slg": 0.406,
-            "ops": 0.785,
-            "hitRate": 0.2368,
-            "singlesRate": 0.15789999999999998,
+            "atBats": 33,
+            "plateAppearances": 39,
+            "avg": 0.273,
+            "obp": 0.368,
+            "slg": 0.394,
+            "ops": 0.762,
+            "hitRate": 0.23079999999999998,
+            "singlesRate": 0.15380000000000002,
             "hrRate": 0,
-            "walkRate": 0.1316,
-            "totalBasesRate": 0.3421
+            "walkRate": 0.1282,
+            "totalBasesRate": 0.3333
           },
           "recent": {
             "gamesPlayed": 10,
@@ -7916,17 +7916,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2857
           },
           "metrics": {
-            "powerScore": 27.3,
-            "contactScore": 72.5,
-            "patienceScore": 67.3,
-            "formScore": 71.3,
-            "splitScore": 59.4,
-            "varianceScore": 55.5,
+            "powerScore": 25.9,
+            "contactScore": 69.4,
+            "patienceScore": 66.2,
+            "formScore": 75.4,
+            "splitScore": 60.9,
+            "varianceScore": 61.7,
             "pitchTypeFitScore": 56.3,
             "pitchTypeGrade": -1.52,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 80.6,
-            "matchupGrade": 6.32
+            "matchupScore": 82,
+            "matchupGrade": 6.48
           },
           "pitchType": {
             "fitScore": 56.3,
@@ -7968,8 +7968,8 @@ export const lineupBoardsByGameId = {
             "arsenal risk"
           ],
           "primaryTag": "carry",
-          "summary": ".281 AVG | .785 OPS | 9 H | 0 HR | 10g: .313 AVG | .921 OPS | 10 H | 0 HR | vs LHP: .333 AVG | .762 OPS | 0 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +6.3 matchup grade in a power-arm lane",
-          "matchupNote": "+6.32 vs Chris Sale"
+          "summary": ".273 AVG | .762 OPS | 9 H | 0 HR | 10g: .313 AVG | .921 OPS | 10 H | 0 HR | vs LHP: .333 AVG | .762 OPS | 0 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +6.5 matchup grade in a power-arm lane",
+          "matchupNote": "+6.48 vs Chris Sale"
         },
         {
           "playerId": 643396,
@@ -8379,7 +8379,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 1.69,
+        "averageMatchupGrade": 1.74,
         "trackedBatters": 9,
         "starterThreatCount": 4,
         "contactCount": 3,
@@ -8393,12 +8393,12 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 0,
         "heaterCount": 5,
         "suppressorCount": 2,
-        "platoonPressureIndex": 88.7,
+        "platoonPressureIndex": 89,
         "pitchTypePressureIndex": 18,
         "bullpenPitchTypePressureIndex": 27.8,
-        "starterPressureIndex": 68.8,
-        "overallPressureIndex": 65.3,
-        "topThirdScore": 59.5,
+        "starterPressureIndex": 69.3,
+        "overallPressureIndex": 65.7,
+        "topThirdScore": 59.7,
         "depthScore": 49.3,
         "bullpenOverperformHitters": [
           {
@@ -8427,7 +8427,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Nick Sogard",
-            "tag": "carry | +6.32 vs Chris Sale"
+            "tag": "carry | +6.48 vs Chris Sale"
           },
           {
             "name": "Isiah Kiner-Falefa",
@@ -8458,14 +8458,14 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Andruw Monasterio",
-            "tag": "split edge | -5.90 vs Chris Sale"
+            "tag": "split edge | -5.68 vs Chris Sale"
           }
         ],
         "underperformNote": "Caleb Durbin and Andruw Monasterio carry the softer form or split fit into a power lane.",
         "overview": "Red Sox can lean on Willson Contreras, Nick Sogard, Isiah Kiner-Falefa to drive early pressure against Chris Sale.",
         "bullpenOverview": "Didier Fuentes is the first bridge look, and this lineup grades -3.1 against that likely first-up arsenal.",
-        "topThirdScore": 59.5,
-        "middleScore": 65.6,
+        "topThirdScore": 59.7,
+        "middleScore": 66.4,
         "depthScore": 49.3,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 27.8,
@@ -8564,7 +8564,7 @@ export const lineupBoardsByGameId = {
   "blue-jays-orioles": {
     "gameId": "blue-jays-orioles",
     "title": "Blue Jays @ Orioles",
-    "snapshot": "2026-05-28T21:33:29.322Z",
+    "snapshot": "2026-05-28T22:00:56.968Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -8579,7 +8579,7 @@ export const lineupBoardsByGameId = {
       "label": "76°F | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "BAL -129",
+      "line": "BAL -128",
       "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -11459,7 +11459,7 @@ export const lineupBoardsByGameId = {
   "cubs-pirates": {
     "gameId": "cubs-pirates",
     "title": "Cubs @ Pirates",
-    "snapshot": "2026-05-28T21:33:29.325Z",
+    "snapshot": "2026-05-28T22:00:56.969Z",
     "status": {
       "away": "posted",
       "home": "partial"
@@ -14351,7 +14351,7 @@ export const lineupBoardsByGameId = {
   "astros-rangers": {
     "gameId": "astros-rangers",
     "title": "Astros @ Rangers",
-    "snapshot": "2026-05-28T21:33:29.328Z",
+    "snapshot": "2026-05-28T22:00:56.970Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -14366,7 +14366,7 @@ export const lineupBoardsByGameId = {
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "TEX -138",
+      "line": "TEX -144",
       "total": "7.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -17391,7 +17391,7 @@ export const lineupMatchupContextByGameId = {
   },
   "braves-red-sox": {
     "Braves": {
-      "averageMatchupGrade": -4.66,
+      "averageMatchupGrade": -4.7,
       "trackedBatters": 9,
       "starterThreatCount": 1,
       "contactCount": 4,
@@ -17405,13 +17405,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 1,
       "heaterCount": 1,
       "suppressorCount": 2,
-      "platoonPressureIndex": 48.5,
+      "platoonPressureIndex": 48.3,
       "pitchTypePressureIndex": 51.1,
       "bullpenPitchTypePressureIndex": 68.8,
       "starterPressureIndex": 18,
       "overallPressureIndex": 21,
-      "topThirdScore": 19.7,
-      "depthScore": 19.6,
+      "topThirdScore": 19.9,
+      "depthScore": 19.1,
       "bullpenOverperformHitters": [
         {
           "name": "Michael Harris II",
@@ -17431,7 +17431,7 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Red Sox": {
-      "averageMatchupGrade": 1.69,
+      "averageMatchupGrade": 1.74,
       "trackedBatters": 9,
       "starterThreatCount": 4,
       "contactCount": 3,
@@ -17445,12 +17445,12 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 0,
       "heaterCount": 5,
       "suppressorCount": 2,
-      "platoonPressureIndex": 88.7,
+      "platoonPressureIndex": 89,
       "pitchTypePressureIndex": 18,
       "bullpenPitchTypePressureIndex": 27.8,
-      "starterPressureIndex": 68.8,
-      "overallPressureIndex": 65.3,
-      "topThirdScore": 59.5,
+      "starterPressureIndex": 69.3,
+      "overallPressureIndex": 65.7,
+      "topThirdScore": 59.7,
       "depthScore": 49.3,
       "bullpenOverperformHitters": [
         {

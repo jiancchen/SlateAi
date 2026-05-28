@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { loadMlbDayGames } from './lib/load-mlb-day-games.mjs'
 
@@ -333,6 +333,31 @@ const buildLineupLookup = (lineupBoardsByGameId = {}) => {
           lineupStateLabel: lineupStatus === 'posted' ? 'posted order' : 'projected order'
         })
       }
+    }
+  }
+
+  return lookup
+}
+
+const buildLineupAvailabilityByTeam = (lineupBoardsByGameId = {}) => {
+  const lookup = new Map()
+
+  for (const board of Object.values(lineupBoardsByGameId)) {
+    for (const sideKey of ['away', 'home']) {
+      const side = board?.[sideKey]
+      if (!side?.teamName) continue
+      const lineupStatus = board?.status?.[sideKey] || 'pending'
+      const lineupCoverage = Number(side.lineup?.length || 0)
+      const hasUsableProjectedOrder =
+        lineupStatus === 'partial' &&
+        /rotowire|official-feed/i.test(side.lineupSource || '') &&
+        lineupCoverage >= 7
+      lookup.set(side.teamName, {
+        lineupStatus,
+        lineupCoverage,
+        lineupSource: side.lineupSource || '',
+        restrictToCurrentOrder: lineupStatus === 'posted' || hasUsableProjectedOrder
+      })
     }
   }
 
@@ -879,6 +904,7 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
   const matchupByAbbr = buildMatchupMap(games)
   const lineupBoardsByGameId = await loadLineupBoards(date)
   const lineupLookup = buildLineupLookup(lineupBoardsByGameId)
+  const lineupAvailabilityByTeam = buildLineupAvailabilityByTeam(lineupBoardsByGameId)
   const weatherLookup = buildWeatherLookup(lineupBoardsByGameId)
   const battingImpactByPlayerName = await loadBattingImpactHistory()
   const fetchGameFeedContext = buildGameFeedContextFetcher()
@@ -939,6 +965,11 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
   const preScoredCandidates = leaderboard
     .filter((row) => matchupByAbbr[row.team_abbrev])
     .map(createCandidate)
+    .filter((candidate) => {
+      const teamLineup = lineupAvailabilityByTeam.get(candidate.teamName)
+      if (!teamLineup?.restrictToCurrentOrder) return true
+      return Boolean(candidate.lineupContext)
+    })
     .filter(
       (candidate) =>
         candidate.seasonHr >= 5 ||
@@ -978,14 +1009,26 @@ const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
         right.battingImpactContext.impactWindowScore - left.battingImpactContext.impactWindowScore
     )
 
+  const isAllowedCurrentLineupCandidate = (candidate) => {
+    const teamLineup = lineupAvailabilityByTeam.get(candidate.teamName)
+    if (!teamLineup?.restrictToCurrentOrder) return true
+    return Boolean(candidate.lineupContext)
+  }
+
   const mergedCandidates = [...preScoredCandidates]
   for (const candidate of supplementalCandidates) {
-    if (!mergedCandidates.some((existing) => existing.playerId === candidate.playerId)) {
+    if (
+      isAllowedCurrentLineupCandidate(candidate) &&
+      !mergedCandidates.some((existing) => existing.playerId === candidate.playerId)
+    ) {
       mergedCandidates.push(candidate)
     }
   }
   for (const candidate of battingImpactCandidates) {
-    if (!mergedCandidates.some((existing) => existing.playerId === candidate.playerId)) {
+    if (
+      isAllowedCurrentLineupCandidate(candidate) &&
+      !mergedCandidates.some((existing) => existing.playerId === candidate.playerId)
+    ) {
       mergedCandidates.push(candidate)
     }
   }

@@ -8863,18 +8863,21 @@ def list_probable_starters_snapshot(date_text: str) -> list[dict[str, Any]]:
         home_details = fetch_pitcher_season_snapshot(to_int(home_probable.get("id")), season)
         rows.append(
             {
+                "game_pk": to_int(game.get("gamePk")),
                 "game_date": date_text,
                 "game_datetime": game.get("gameDate"),
                 "game_title": f"{away} @ {home}",
                 "venue_name": (game.get("venue") or {}).get("name"),
                 "away_team": away,
                 "home_team": home,
+                "away_pitcher_id": to_int(away_probable.get("id")),
                 "away_pitcher_name": away_probable.get("fullName") or "TBD",
                 "away_pitcher_hand": away_details.get("pitch_hand") or "",
                 "away_pitcher_wins": away_details.get("wins"),
                 "away_pitcher_losses": away_details.get("losses"),
                 "away_pitcher_era": away_details.get("era"),
                 "away_pitcher_strikeouts": away_details.get("strikeouts"),
+                "home_pitcher_id": to_int(home_probable.get("id")),
                 "home_pitcher_name": home_probable.get("fullName") or "TBD",
                 "home_pitcher_hand": home_details.get("pitch_hand") or "",
                 "home_pitcher_wins": home_details.get("wins"),

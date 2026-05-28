@@ -1,7 +1,7 @@
 {
   "modelName": "mlb-player-props-v1-legacy",
   "date": "2026-05-28",
-  "generatedAt": "2026-05-28T21:33:34.142Z",
+  "generatedAt": "2026-05-28T22:01:00.763Z",
   "sources": [
     "day-file-live-board",
     "web/src/lib/sports-model.js",
@@ -2241,7 +2241,7 @@
       "marketLabel": "Over 0.5 RBI",
       "lineThreshold": 0.5,
       "confidence": 68,
-      "probability": 67.4,
+      "probability": 67.3,
       "expectedValue": 1.1,
       "statValueLabel": "1.12 exp RBI",
       "recommendationTier": "Strong",
@@ -2256,7 +2256,7 @@
       "matchupNote": "+10.00 vs Chris Sale",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".283 AVG | .893 OPS | 53 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
+      "playerSummary": ".287 AVG | .899 OPS | 54 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
       "rank": 54,
@@ -2384,46 +2384,6 @@
     },
     {
       "rank": 57,
-      "id": "braves-red-sox:575929:totalBases",
-      "gameId": "braves-red-sox",
-      "gameTitle": "Braves @ Red Sox",
-      "start": "1:10 PM PT",
-      "stage": "Afternoon MLB Board",
-      "awayTeam": "Braves",
-      "homeTeam": "Red Sox",
-      "awayTeamFull": "Atlanta Braves",
-      "homeTeamFull": "Boston Red Sox",
-      "playerId": 575929,
-      "playerName": "Willson Contreras",
-      "teamName": "Red Sox",
-      "teamNameFull": "Boston Red Sox",
-      "opponentName": "Braves",
-      "opponentNameFull": "Atlanta Braves",
-      "slot": 4,
-      "propType": "totalBases",
-      "propLabel": "TB",
-      "marketLabel": "Over 1.5 total bases",
-      "lineThreshold": 1.5,
-      "confidence": 66,
-      "probability": 62.1,
-      "expectedValue": 2.1,
-      "statValueLabel": "2.10 exp TB",
-      "recommendationTier": "Lean",
-      "reason": "slot 4 carry | recent form up | split fit live",
-      "scriptTags": [
-        "posted-lineup",
-        "top-third-pressure",
-        "middle-order-traffic",
-        "carry-bat-live",
-        "power-lane"
-      ],
-      "matchupNote": "+10.00 vs Chris Sale",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".283 AVG | .893 OPS | 53 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
-    },
-    {
-      "rank": 58,
       "id": "blue-jays-orioles:664770:totalBases",
       "gameId": "blue-jays-orioles",
       "gameTitle": "Blue Jays @ Orioles",
@@ -2466,7 +2426,7 @@
       "playerSummary": ".283 AVG | .690 OPS | 17 H | 0 HR | 4g: .500 AVG | 1.181 OPS | 8 H | 0 HR | vs RHP: .298 AVG | .714 OPS | 0 HR | arsenal Sinker 36% / Curveball 25% / Cutter 22% | fit +1.6 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 59,
+      "rank": 58,
       "id": "twins-white-sox:805367:hits",
       "gameId": "twins-white-sox",
       "gameTitle": "Twins @ White Sox",
@@ -2510,7 +2470,7 @@
       "playerSummary": ".269 AVG | .732 OPS | 54 H | 5 HR | 12g: .296 AVG | .863 OPS | 16 H | 4 HR | vs RHP: .235 AVG | .645 OPS | 4 HR | arsenal 4-Seam Fastball 43% / Split-Finger 27% / Slider 24% | fit +8.7 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 60,
+      "rank": 59,
       "id": "angels-tigers:687263:walks",
       "gameId": "angels-tigers",
       "gameTitle": "Angels @ Tigers",
@@ -2552,7 +2512,7 @@
       "playerSummary": ".233 AVG | .776 OPS | 52 H | 10 HR | 12g: .304 AVG | 1.037 OPS | 14 H | 4 HR | vs RHP: .228 AVG | .760 OPS | 8 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +4.5 | +10.0 matchup grade in a whiff-variance lane"
     },
     {
-      "rank": 61,
+      "rank": 60,
       "id": "blue-jays-orioles:660821:singles",
       "gameId": "blue-jays-orioles",
       "gameTitle": "Blue Jays @ Orioles",
@@ -2595,7 +2555,7 @@
       "playerSummary": ".281 AVG | .776 OPS | 45 H | 6 HR | 12g: .316 AVG | 1.034 OPS | 12 H | 2 HR | vs RHP: .302 AVG | .836 OPS | 6 HR | arsenal Sinker 36% / Curveball 25% / Cutter 22% | fit +3.8 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 62,
+      "rank": 61,
       "id": "blue-jays-orioles:543807:totalBases",
       "gameId": "blue-jays-orioles",
       "gameTitle": "Blue Jays @ Orioles",
@@ -2635,6 +2595,46 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".211 AVG | .657 OPS | 30 H | 5 HR | 14g: .269 AVG | .944 OPS | 14 H | 4 HR | vs RHP: .190 AVG | .607 OPS | 4 HR | arsenal Sinker 36% / Curveball 25% / Cutter 22% | fit -0.3 | +7.4 matchup grade in a traffic-risk lane"
+    },
+    {
+      "rank": 62,
+      "id": "braves-red-sox:575929:totalBases",
+      "gameId": "braves-red-sox",
+      "gameTitle": "Braves @ Red Sox",
+      "start": "1:10 PM PT",
+      "stage": "Afternoon MLB Board",
+      "awayTeam": "Braves",
+      "homeTeam": "Red Sox",
+      "awayTeamFull": "Atlanta Braves",
+      "homeTeamFull": "Boston Red Sox",
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "teamName": "Red Sox",
+      "teamNameFull": "Boston Red Sox",
+      "opponentName": "Braves",
+      "opponentNameFull": "Atlanta Braves",
+      "slot": 4,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 65,
+      "probability": 61.9,
+      "expectedValue": 2.1,
+      "statValueLabel": "2.10 exp TB",
+      "recommendationTier": "Lean",
+      "reason": "slot 4 carry | recent form up | split fit live",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "carry-bat-live",
+        "power-lane"
+      ],
+      "matchupNote": "+10.00 vs Chris Sale",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".287 AVG | .899 OPS | 54 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
       "rank": 63,
@@ -4141,8 +4141,8 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 58,
-      "probability": 49.1,
-      "expectedValue": 1.7,
+      "probability": 49,
+      "expectedValue": 1.6,
       "statValueLabel": "1.65 exp TB",
       "recommendationTier": "Lean",
       "reason": "slot 6 carry | recent form up | power lane",
@@ -4152,10 +4152,10 @@
         "carry-bat-live",
         "power-lane"
       ],
-      "matchupNote": "+6.67 vs Payton Tolle",
+      "matchupNote": "+6.49 vs Payton Tolle",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".295 AVG | .837 OPS | 56 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.7 matchup grade in a contact-suppressor lane"
+      "playerSummary": ".298 AVG | .843 OPS | 57 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.5 matchup grade in a contact-suppressor lane"
     },
     {
       "rank": 105,
@@ -5084,7 +5084,7 @@
       "marketLabel": "Over 1.5 hits",
       "lineThreshold": 1.5,
       "confidence": 56,
-      "probability": 23.1,
+      "probability": 23.3,
       "expectedValue": 0.9,
       "statValueLabel": "0.91 exp hits",
       "recommendationTier": "Lean",
@@ -5098,7 +5098,7 @@
       "matchupNote": "+10.00 vs Chris Sale",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".283 AVG | .893 OPS | 53 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
+      "playerSummary": ".287 AVG | .899 OPS | 54 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
       "rank": 134,
@@ -5290,9 +5290,9 @@
       "marketLabel": "Over 0.5 RBI",
       "lineThreshold": 0.5,
       "confidence": 56,
-      "probability": 47.2,
+      "probability": 47,
       "expectedValue": 0.6,
-      "statValueLabel": "0.64 exp RBI",
+      "statValueLabel": "0.63 exp RBI",
       "recommendationTier": "Lean",
       "reason": "slot 6 carry | recent form up",
       "scriptTags": [
@@ -5300,10 +5300,10 @@
         "bullpen-carry-bat",
         "carry-bat-live"
       ],
-      "matchupNote": "+6.67 vs Payton Tolle",
+      "matchupNote": "+6.49 vs Payton Tolle",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".295 AVG | .837 OPS | 56 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.7 matchup grade in a contact-suppressor lane"
+      "playerSummary": ".298 AVG | .843 OPS | 57 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.5 matchup grade in a contact-suppressor lane"
     },
     {
       "rank": 139,
@@ -5915,9 +5915,9 @@
       "marketLabel": "Over 0.5 singles",
       "lineThreshold": 0.5,
       "confidence": 55,
-      "probability": 43.1,
+      "probability": 43.4,
       "expectedValue": 0.6,
-      "statValueLabel": "0.56 exp singles",
+      "statValueLabel": "0.57 exp singles",
       "recommendationTier": "Lean",
       "reason": "slot 4 carry | recent form up | split fit live",
       "scriptTags": [
@@ -5929,7 +5929,7 @@
       "matchupNote": "+10.00 vs Chris Sale",
       "teamScriptLabel": "",
       "lineupStatus": "posted",
-      "playerSummary": ".283 AVG | .893 OPS | 53 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
+      "playerSummary": ".287 AVG | .899 OPS | 54 H | 11 HR | 10g: .400 AVG | 1.079 OPS | 16 H | 2 HR | vs LHP: .298 AVG | 1.049 OPS | 4 HR | arsenal Slider 41% / 4-Seam Fastball 39% / Changeup 12% | fit -1.5 | +10.0 matchup grade in a power-arm lane"
     },
     {
       "rank": 156,
@@ -6061,6 +6061,44 @@
     },
     {
       "rank": 161,
+      "id": "braves-red-sox:671739:hits",
+      "gameId": "braves-red-sox",
+      "gameTitle": "Braves @ Red Sox",
+      "start": "1:10 PM PT",
+      "stage": "Afternoon MLB Board",
+      "awayTeam": "Braves",
+      "homeTeam": "Red Sox",
+      "awayTeamFull": "Atlanta Braves",
+      "homeTeamFull": "Boston Red Sox",
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "teamName": "Braves",
+      "teamNameFull": "Atlanta Braves",
+      "opponentName": "Red Sox",
+      "opponentNameFull": "Boston Red Sox",
+      "slot": 6,
+      "propType": "hits",
+      "propLabel": "Hits",
+      "marketLabel": "Over 1.5 hits",
+      "lineThreshold": 1.5,
+      "confidence": 54,
+      "probability": 17.4,
+      "expectedValue": 0.8,
+      "statValueLabel": "0.75 exp hits",
+      "recommendationTier": "Lean",
+      "reason": "slot 6 carry | recent form up",
+      "scriptTags": [
+        "posted-lineup",
+        "bullpen-carry-bat",
+        "carry-bat-live"
+      ],
+      "matchupNote": "+6.49 vs Payton Tolle",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".298 AVG | .843 OPS | 57 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.5 matchup grade in a contact-suppressor lane"
+    },
+    {
+      "rank": 162,
       "id": "angels-tigers:672724:rbi",
       "gameId": "angels-tigers",
       "gameTitle": "Angels @ Tigers",
@@ -6097,44 +6135,6 @@
       "teamScriptLabel": "",
       "lineupStatus": "posted",
       "playerSummary": ".267 AVG | .781 OPS | 39 H | 6 HR | 10g: .333 AVG | .900 OPS | 12 H | 2 HR | vs RHP: .235 AVG | .648 OPS | 1 HR | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.0 | +2.2 matchup grade in a whiff-variance lane"
-    },
-    {
-      "rank": 162,
-      "id": "braves-red-sox:671739:hits",
-      "gameId": "braves-red-sox",
-      "gameTitle": "Braves @ Red Sox",
-      "start": "1:10 PM PT",
-      "stage": "Afternoon MLB Board",
-      "awayTeam": "Braves",
-      "homeTeam": "Red Sox",
-      "awayTeamFull": "Atlanta Braves",
-      "homeTeamFull": "Boston Red Sox",
-      "playerId": 671739,
-      "playerName": "Michael Harris II",
-      "teamName": "Braves",
-      "teamNameFull": "Atlanta Braves",
-      "opponentName": "Red Sox",
-      "opponentNameFull": "Boston Red Sox",
-      "slot": 6,
-      "propType": "hits",
-      "propLabel": "Hits",
-      "marketLabel": "Over 1.5 hits",
-      "lineThreshold": 1.5,
-      "confidence": 54,
-      "probability": 17.3,
-      "expectedValue": 0.7,
-      "statValueLabel": "0.75 exp hits",
-      "recommendationTier": "Lean",
-      "reason": "slot 6 carry | recent form up",
-      "scriptTags": [
-        "posted-lineup",
-        "bullpen-carry-bat",
-        "carry-bat-live"
-      ],
-      "matchupNote": "+6.67 vs Payton Tolle",
-      "teamScriptLabel": "",
-      "lineupStatus": "posted",
-      "playerSummary": ".295 AVG | .837 OPS | 56 H | 12 HR | 12g: .320 AVG | 1.066 OPS | 16 H | 6 HR | vs LHP: .254 AVG | .727 OPS | 3 HR | arsenal 4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6 | +6.7 matchup grade in a contact-suppressor lane"
     },
     {
       "rank": 163,

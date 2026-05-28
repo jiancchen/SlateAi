@@ -1,7 +1,7 @@
 {
   "modelName": "mlb-player-props-v2",
   "date": "2026-05-28",
-  "generatedAt": "2026-05-28T21:33:34.142Z",
+  "generatedAt": "2026-05-28T22:01:00.763Z",
   "sources": [
     "day-file-live-board",
     "web/src/lib/sports-model.js",
@@ -253,7 +253,7 @@
       "marketLabel": "Over 5.5 strikeouts",
       "lineThreshold": 5.5,
       "confidence": 81,
-      "probability": 73.1,
+      "probability": 73.2,
       "expectedValue": 7.2,
       "statValueLabel": "7.2 exp K · O +102 / U -122",
       "recommendationTier": "Core",
@@ -267,7 +267,7 @@
       "matchupNote": "FanDuel K line 5.5 · Over price +102",
       "teamScriptLabel": "Workhorse lane",
       "lineupStatus": "posted",
-      "playerSummary": "2.66 ERA | 40.2 IP | 45 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
+      "playerSummary": "2.61 ERA | 41.1 IP | 46 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
       "rank": 7,

@@ -1,0 +1,161 @@
+{
+  "fetchedAt": "2026-05-28T21:41:25Z",
+  "games": [
+    {
+      "awayPitcher": {
+        "era": 7.53,
+        "losses": 1,
+        "pitchHand": "R",
+        "pitcherId": 680570,
+        "pitcherName": "Grayson Rodriguez",
+        "strikeouts": 14,
+        "wins": 2
+      },
+      "awayTeam": "Los Angeles Angels",
+      "gameDate": "2026-05-28",
+      "gameDatetime": "2026-05-28T17:10:00Z",
+      "gamePk": 824272,
+      "gameTitle": "Los Angeles Angels @ Detroit Tigers",
+      "homePitcher": {
+        "era": 5.81,
+        "losses": 7,
+        "pitchHand": "R",
+        "pitcherId": 656427,
+        "pitcherName": "Jack Flaherty",
+        "strikeouts": 64,
+        "wins": 0
+      },
+      "homeTeam": "Detroit Tigers"
+    },
+    {
+      "awayPitcher": {
+        "era": 7.74,
+        "losses": 7,
+        "pitchHand": "R",
+        "pitcherId": 680573,
+        "pitcherName": "Simeon Woods Richardson",
+        "strikeouts": 26,
+        "wins": 0
+      },
+      "awayTeam": "Minnesota Twins",
+      "gameDate": "2026-05-28",
+      "gameDatetime": "2026-05-28T18:10:00Z",
+      "gamePk": 824595,
+      "gameTitle": "Minnesota Twins @ Chicago White Sox",
+      "homePitcher": {
+        "era": 2.0,
+        "losses": 1,
+        "pitchHand": "R",
+        "pitcherId": 663436,
+        "pitcherName": "Davis Martin",
+        "strikeouts": 71,
+        "wins": 8
+      },
+      "homeTeam": "Chicago White Sox"
+    },
+    {
+      "awayPitcher": {
+        "era": 2.05,
+        "losses": 3,
+        "pitchHand": "L",
+        "pitcherId": 519242,
+        "pitcherName": "Chris Sale",
+        "strikeouts": 78,
+        "wins": 7
+      },
+      "awayTeam": "Atlanta Braves",
+      "gameDate": "2026-05-28",
+      "gameDatetime": "2026-05-28T20:10:00Z",
+      "gamePk": 824757,
+      "gameTitle": "Atlanta Braves @ Boston Red Sox",
+      "homePitcher": {
+        "era": 2.61,
+        "losses": 2,
+        "pitchHand": "L",
+        "pitcherId": 801139,
+        "pitcherName": "Payton Tolle",
+        "strikeouts": 46,
+        "wins": 2
+      },
+      "homeTeam": "Boston Red Sox"
+    },
+    {
+      "awayPitcher": {
+        "era": 3.86,
+        "losses": 1,
+        "pitchHand": "L",
+        "pitcherId": 571578,
+        "pitcherName": "Patrick Corbin",
+        "strikeouts": 32,
+        "wins": 2
+      },
+      "awayTeam": "Toronto Blue Jays",
+      "gameDate": "2026-05-28",
+      "gameDatetime": "2026-05-28T22:35:00Z",
+      "gamePk": 824834,
+      "gameTitle": "Toronto Blue Jays @ Baltimore Orioles",
+      "homePitcher": {
+        "era": 5.51,
+        "losses": 3,
+        "pitchHand": "R",
+        "pitcherId": 605135,
+        "pitcherName": "Chris Bassitt",
+        "strikeouts": 34,
+        "wins": 4
+      },
+      "homeTeam": "Baltimore Orioles"
+    },
+    {
+      "awayPitcher": {
+        "era": 4.83,
+        "losses": 3,
+        "pitchHand": "R",
+        "pitcherId": 607067,
+        "pitcherName": "Colin Rea",
+        "strikeouts": 44,
+        "wins": 4
+      },
+      "awayTeam": "Chicago Cubs",
+      "gameDate": "2026-05-28",
+      "gameDatetime": "2026-05-28T22:40:00Z",
+      "gamePk": 823378,
+      "gameTitle": "Chicago Cubs @ Pittsburgh Pirates",
+      "homePitcher": {
+        "era": 3.0,
+        "losses": 4,
+        "pitchHand": "R",
+        "pitcherId": 694973,
+        "pitcherName": "Paul Skenes",
+        "strikeouts": 65,
+        "wins": 6
+      },
+      "homeTeam": "Pittsburgh Pirates"
+    },
+    {
+      "awayPitcher": {
+        "era": 1.32,
+        "losses": 1,
+        "pitchHand": "R",
+        "pitcherId": 681293,
+        "pitcherName": "Spencer Arrighetti",
+        "strikeouts": 40,
+        "wins": 6
+      },
+      "awayTeam": "Houston Astros",
+      "gameDate": "2026-05-28",
+      "gameDatetime": "2026-05-29T00:05:00Z",
+      "gamePk": 822896,
+      "gameTitle": "Houston Astros @ Texas Rangers",
+      "homePitcher": {
+        "era": 3.65,
+        "losses": 5,
+        "pitchHand": "R",
+        "pitcherId": 543135,
+        "pitcherName": "Nathan Eovaldi",
+        "strikeouts": 61,
+        "wins": 5
+      },
+      "homeTeam": "Texas Rangers"
+    }
+  ]
+}
