@@ -5,7 +5,7 @@
   "slateDate": "2026-05-28",
   "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
   "boardTitle": "Francisco Comesana vs Luciano Darderi",
-  "capturedAt": "2026-05-28T02:55:41.473Z",
+  "capturedAt": "2026-05-28T04:04:58.598Z",
   "compactEvent": {
     "id": 16198502,
     "slug": "luciano-darderi-francisco-comesana",
@@ -468,13 +468,230 @@
         "managerDuel": null
       }
     },
-    "odds": {
-      "status": 404,
-      "ok": false,
+    "votes": {
+      "status": 200,
+      "ok": true,
       "body": {
-        "error": {
-          "code": 404,
-          "message": "Not Found"
+        "vote": {
+          "vote1": 716,
+          "vote2": 5608,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "12/5",
+          "expected": 29,
+          "actual": 22,
+          "id": 22109058
+        },
+        "away": {
+          "fractionalValue": "33/100",
+          "expected": 75,
+          "actual": 82,
+          "id": 22109059
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195304811,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195304811,
+            "suspended": false,
+            "id": 312072295,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/5",
+                "fractionalValue": "12/5",
+                "sourceId": 1378521775,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "9/25",
+                "fractionalValue": "33/100",
+                "sourceId": 1378521818,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195304811,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "37.5",
+            "isLive": false,
+            "fid": 195304811,
+            "suspended": false,
+            "id": 312091983,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1379060140,
+                "name": "Over",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1379059909,
+                "name": "Under",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195304811,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195304811,
+            "suspended": false,
+            "id": 312072295,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/5",
+                "fractionalValue": "12/5",
+                "sourceId": 1378521775,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "9/25",
+                "fractionalValue": "33/100",
+                "sourceId": 1378521818,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 158,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 2,
+          "wins": 1,
+          "aces": 13,
+          "firstServePointsScored": 59,
+          "firstServePointsTotal": 80,
+          "firstServeTotal": 119,
+          "secondServePointsScored": 23,
+          "secondServePointsTotal": 36,
+          "secondServeTotal": 39,
+          "breakPointsScored": 2,
+          "breakPointsTotal": 8,
+          "opponentBreakPointsTotal": 4,
+          "opponentBreakPointsScored": 1,
+          "winnersTotal": 33,
+          "unforcedErrorsTotal": 29,
+          "doubleFaults": 3,
+          "avgDoubleFaults": 3,
+          "firstServePercentage": 67.226890756303,
+          "firstServePointsWonPercentage": 73.75,
+          "secondServePercentage": 92.307692307692,
+          "secondServePointsWonPercentage": 58.974358974359,
+          "avgAces": 13,
+          "breakPointsSavedPercentage": 75,
+          "breakPointsSavedConvertedPercentage": 25,
+          "tiebreakWinPercentage": 100,
+          "id": 93582,
+          "matches": 1,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 162,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 1,
+          "wins": 1,
+          "aces": 10,
+          "firstServePointsScored": 48,
+          "firstServePointsTotal": 72,
+          "firstServeTotal": 117,
+          "secondServePointsScored": 24,
+          "secondServePointsTotal": 41,
+          "secondServeTotal": 45,
+          "breakPointsScored": 5,
+          "breakPointsTotal": 7,
+          "opponentBreakPointsTotal": 11,
+          "opponentBreakPointsScored": 2,
+          "winnersTotal": 29,
+          "unforcedErrorsTotal": 27,
+          "doubleFaults": 4,
+          "avgDoubleFaults": 4,
+          "firstServePercentage": 61.538461538462,
+          "firstServePointsWonPercentage": 66.666666666667,
+          "secondServePercentage": 91.111111111111,
+          "secondServePointsWonPercentage": 53.333333333333,
+          "avgAces": 10,
+          "breakPointsSavedPercentage": 81.818181818182,
+          "breakPointsSavedConvertedPercentage": 71.428571428571,
+          "tiebreakWinPercentage": 100,
+          "id": 93572,
+          "matches": 1,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
         }
       }
     }

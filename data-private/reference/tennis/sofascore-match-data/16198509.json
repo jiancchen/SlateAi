@@ -5,7 +5,7 @@
   "slateDate": "2026-05-27",
   "boardMatchId": "rg-m-nishesh-basavareddy-alex-michelsen-2026-05-27",
   "boardTitle": "Nishesh Basavareddy vs Alex Michelsen",
-  "capturedAt": "2026-05-28T02:55:40.724Z",
+  "capturedAt": "2026-05-28T04:05:01.449Z",
   "compactEvent": {
     "id": 16198509,
     "slug": "nishesh-basavareddy-alex-michelsen",
@@ -2075,13 +2075,477 @@
         "managerDuel": null
       }
     },
-    "odds": {
-      "status": 404,
-      "ok": false,
+    "votes": {
+      "status": 200,
+      "ok": true,
       "body": {
-        "error": {
-          "code": 404,
-          "message": "Not Found"
+        "vote": {
+          "vote1": 2138,
+          "vote2": 7670,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": [
+          {
+            "set": 1,
+            "game": 1,
+            "value": 18.836052532312,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 2,
+            "value": 80.8,
+            "breakOccurred": true
+          },
+          {
+            "set": 1,
+            "game": 3,
+            "value": -10,
+            "breakOccurred": true
+          },
+          {
+            "set": 1,
+            "game": 4,
+            "value": -14.029611541308,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 5,
+            "value": 46.2,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 6,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 7,
+            "value": 24.551820197289,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 8,
+            "value": -13.120284867334,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 9,
+            "value": 62,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 10,
+            "value": -53.6,
+            "breakOccurred": false
+          },
+          {
+            "set": 1,
+            "game": 11,
+            "value": -16.266530054071,
+            "breakOccurred": true
+          },
+          {
+            "set": 1,
+            "game": 12,
+            "value": 10,
+            "breakOccurred": true
+          },
+          {
+            "set": 1,
+            "game": 13,
+            "value": -35,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 1,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 2,
+            "value": 10,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 3,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 4,
+            "value": -38.061816496326,
+            "breakOccurred": true
+          },
+          {
+            "set": 2,
+            "game": 5,
+            "value": -31.306818346807,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 6,
+            "value": 10,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 7,
+            "value": -27.539607840345,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 8,
+            "value": 19.225763964015,
+            "breakOccurred": false
+          },
+          {
+            "set": 2,
+            "game": 9,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 1,
+            "value": 15.58845726812,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 2,
+            "value": 10,
+            "breakOccurred": true
+          },
+          {
+            "set": 3,
+            "game": 3,
+            "value": 10,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 4,
+            "value": -56.2,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 5,
+            "value": 37,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 6,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 7,
+            "value": 10,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 8,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 3,
+            "game": 9,
+            "value": 10,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 1,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 2,
+            "value": 53.8,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 3,
+            "value": -43.4,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 4,
+            "value": 18.836052532312,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 5,
+            "value": -22.083647796503,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 6,
+            "value": 61,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 7,
+            "value": -10,
+            "breakOccurred": false
+          },
+          {
+            "set": 4,
+            "game": 8,
+            "value": -10.03877283337,
+            "breakOccurred": true
+          },
+          {
+            "set": 4,
+            "game": 9,
+            "value": -23.642493523315,
+            "breakOccurred": false
+          }
+        ]
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "163/100",
+          "expected": 38,
+          "actual": 27,
+          "id": 22093475
+        },
+        "away": {
+          "fractionalValue": "1/2",
+          "expected": 67,
+          "actual": 63,
+          "id": 22093476
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195228795,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195228795,
+            "suspended": false,
+            "id": 311670232,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/5",
+                "fractionalValue": "163/100",
+                "sourceId": 1369199622,
+                "name": "1",
+                "winning": false,
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "9/25",
+                "fractionalValue": "1/2",
+                "sourceId": 1369199738,
+                "name": "2",
+                "winning": true,
+                "change": 1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195228795,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "38.5",
+            "isLive": false,
+            "fid": 195228795,
+            "suspended": false,
+            "id": 311674518,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "10/11",
+                "fractionalValue": "5/6",
+                "sourceId": 1369339610,
+                "name": "Over",
+                "winning": true,
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "4/5",
+                "fractionalValue": "5/6",
+                "sourceId": 1369339503,
+                "name": "Under",
+                "winning": false,
+                "change": 1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195228795,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195228795,
+            "suspended": false,
+            "id": 311670232,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/5",
+                "fractionalValue": "163/100",
+                "sourceId": 1369199622,
+                "name": "1",
+                "winning": false,
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "9/25",
+                "fractionalValue": "1/2",
+                "sourceId": 1369199738,
+                "name": "2",
+                "winning": true,
+                "change": 1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 386,
+          "tiebreakLosses": 2,
+          "tiebreaksWon": 2,
+          "wins": 1,
+          "aces": 11,
+          "firstServePointsScored": 120,
+          "firstServePointsTotal": 158,
+          "firstServeTotal": 272,
+          "secondServePointsScored": 66,
+          "secondServePointsTotal": 104,
+          "secondServeTotal": 114,
+          "breakPointsScored": 6,
+          "breakPointsTotal": 14,
+          "opponentBreakPointsTotal": 18,
+          "opponentBreakPointsScored": 5,
+          "winnersTotal": 89,
+          "unforcedErrorsTotal": 69,
+          "doubleFaults": 10,
+          "avgDoubleFaults": 5,
+          "firstServePercentage": 58.088235294118,
+          "firstServePointsWonPercentage": 75.949367088608,
+          "secondServePercentage": 91.228070175439,
+          "secondServePointsWonPercentage": 57.894736842105,
+          "avgAces": 5.5,
+          "breakPointsSavedPercentage": 72.222222222222,
+          "breakPointsSavedConvertedPercentage": 42.857142857143,
+          "tiebreakWinPercentage": 50,
+          "id": 93153,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 280,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 1,
+          "wins": 2,
+          "aces": 19,
+          "firstServePointsScored": 83,
+          "firstServePointsTotal": 112,
+          "firstServeTotal": 196,
+          "secondServePointsScored": 51,
+          "secondServePointsTotal": 75,
+          "secondServeTotal": 84,
+          "breakPointsScored": 11,
+          "breakPointsTotal": 25,
+          "opponentBreakPointsTotal": 14,
+          "opponentBreakPointsScored": 5,
+          "winnersTotal": 78,
+          "unforcedErrorsTotal": 67,
+          "doubleFaults": 9,
+          "avgDoubleFaults": 4.5,
+          "firstServePercentage": 57.142857142857,
+          "firstServePointsWonPercentage": 74.107142857143,
+          "secondServePercentage": 89.285714285714,
+          "secondServePointsWonPercentage": 60.714285714286,
+          "avgAces": 9.5,
+          "breakPointsSavedPercentage": 64.285714285714,
+          "breakPointsSavedConvertedPercentage": 44,
+          "tiebreakWinPercentage": 100,
+          "id": 93202,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
         }
       }
     }

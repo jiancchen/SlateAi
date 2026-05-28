@@ -166,19 +166,38 @@ const main = async () => {
   })
   await page.goto(sourceUrl, { waitUntil: 'domcontentloaded', timeout: options.timeoutMs })
 
+  const payloads = {
+    event: await fetchJson(page, `event/${eventId}`, sourceUrl)
+  }
+  const event = payloads.event?.body?.event ?? null
+  const uniqueTournamentId = event?.tournament?.uniqueTournament?.id
+  const seasonId = event?.season?.id
   const endpoints = {
-    event: `event/${eventId}`,
     statistics: `event/${eventId}/statistics`,
     h2h: `event/${eventId}/h2h`,
-    odds: `event/${eventId}/odds/featured`
+    votes: `event/${eventId}/votes`,
+    tennisPower: `event/${eventId}/tennis-power`,
+    winningOdds: `event/${eventId}/provider/1/winning-odds`,
+    odds: `event/${eventId}/odds/1/featured`
   }
-  const payloads = {}
   for (const [key, apiPath] of Object.entries(endpoints)) {
     payloads[key] = await fetchJson(page, apiPath, sourceUrl)
   }
+  if (uniqueTournamentId && seasonId && event?.homeTeam?.id) {
+    payloads.homeSeasonStats = await fetchJson(
+      page,
+      `team/${event.homeTeam.id}/unique-tournament/${uniqueTournamentId}/season/${seasonId}/statistics/overall`,
+      sourceUrl
+    )
+  }
+  if (uniqueTournamentId && seasonId && event?.awayTeam?.id) {
+    payloads.awaySeasonStats = await fetchJson(
+      page,
+      `team/${event.awayTeam.id}/unique-tournament/${uniqueTournamentId}/season/${seasonId}/statistics/overall`,
+      sourceUrl
+    )
+  }
   await browser.close()
-
-  const event = payloads.event?.body?.event ?? null
   const boardMatchId = await loadPublishedMatchId({
     slateDate: options.date,
     explicitMatchId: options.matchId,

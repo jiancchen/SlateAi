@@ -100,12 +100,21 @@ const impliedPctFromParticipant = (participant: AnyRecord) => {
 }
 
 const payoffIsPlayable = (entry: AnyRecord) => {
+  if (/bet-grade value|thin value/i.test(String(entry.valueGrade || entry.payoffAction || ''))) return true
+  if (Number.isFinite(Number(entry.evPer100)) && Number(entry.evPer100) >= 6) return true
   const action = String(entry.payoffAction || '')
   if (/playable edge|underdog value/i.test(action)) return true
   if (/pass at price|watch, do not chase|tiny payoff/i.test(action)) return false
   const pricePct = Number(entry.marketPricePct)
   const confidence = Number(entry.confidence)
   return Number.isFinite(pricePct) && Number.isFinite(confidence) && confidence - pricePct >= 7
+}
+
+const tennisValueTone = (grade?: string | null) => {
+  if (/bet-grade value/i.test(String(grade || ''))) return 'accent'
+  if (/thin value|near fair/i.test(String(grade || ''))) return 'neutral'
+  if (/negative ev/i.test(String(grade || ''))) return 'warning'
+  return ''
 }
 
 const propTypeFilters = [
@@ -2169,8 +2178,79 @@ function App() {
   )
 
   const derivativeCatalogEntries = useMemo(
-    () =>
-      games.flatMap((game: AnyRecord) => {
+    () => {
+      const publishedValueRows = (activeDay as AnyRecord | null)?.tennisValueSummary
+        ? [
+            ...(((activeDay as AnyRecord).tennisValueSummary.betGradeRows || []) as AnyRecord[]),
+            ...(((activeDay as AnyRecord).tennisValueSummary.thinRows || []) as AnyRecord[])
+          ]
+        : []
+      const publishedEntries = publishedValueRows
+        .map((row: AnyRecord) => {
+          const game = games.find((entry: AnyRecord) => entry.id === row.gameId)
+          if (!game) return null
+          const eventState = getEventState(game, activeDayIsoDate, pacificClock)
+          const confidence = Number.isFinite(Number(row.confidence)) ? Number(row.confidence) : game.analysis?.confidence ?? 50
+          const evPer100 = Number.isFinite(Number(row.evPer100)) ? Number(row.evPer100) : null
+          const edgePct = Number.isFinite(Number(row.edgePct)) ? Number(row.edgePct) : null
+          const valueGrade = row.valueGrade || null
+          const marketLabel = row.marketType || row.label || 'Market'
+          const valueLabel = [
+            row.selection || row.label || 'Selection',
+            Number.isFinite(Number(row.line)) ? row.line : null,
+            Number.isFinite(Number(row.americanOdds)) ? formatAmericanOdds(row.americanOdds) : null
+          ].filter(Boolean).join(' ')
+          const valueMeta = [
+            valueGrade,
+            edgePct != null ? `edge ${formatSignedNumber(edgePct, 1)} pts` : null,
+            evPer100 != null ? `EV ${formatSignedNumber(evPer100, 1)}/100` : null
+          ].filter(Boolean).join(' · ')
+          return {
+            id: `${game.id}:published-value:${marketLabel}:${valueLabel}`,
+            category: 'derivatives',
+            actionKind: 'total',
+            gameId: game.id,
+            league: game.league,
+            start: game.start,
+            startMinutes: Number(game.startMinutes) || 0,
+            stage: game.stage,
+            title: `${marketLabel} · ${row.selection || 'Value'}`,
+            subtitle: game.title,
+            confidence,
+            sortConfidence: confidence,
+            sortEdge: evPer100 ?? Math.abs(edgePct ?? confidence - 50),
+            payoffAction: valueGrade,
+            valueGrade,
+            evPer100,
+            edgePct,
+            priceLabel: valueLabel || 'Published value row',
+            metaLabel: valueMeta || 'Published value row',
+            summary: row.reason || 'Published tennis value row from the May 28 EV pass.',
+            tags: [`${confidence}% confidence`, confidenceTag(confidence), valueGrade, evPer100 != null ? `EV ${formatSignedNumber(evPer100, 1)}` : null, marketLabel].filter(Boolean).slice(0, 4),
+            invalid: eventState.invalid,
+            statusLabel: eventState.label,
+            tone: eventState.invalid ? eventState.tone : tennisValueTone(valueGrade) || eventState.tone,
+            selected: Boolean(selectedTotals[`${game.id}:published-value:${marketLabel}:${valueLabel}`]),
+            raw: {
+              id: `${game.id}:published-value:${marketLabel}:${valueLabel}`,
+              gameId: game.id,
+              gameTitle: game.title,
+              league: game.league,
+              marketLabel: `${marketLabel}: ${row.selection || 'Value'}`,
+              phaseLabel: 'Derivative',
+              summary: row.reason || 'Published tennis value row from the May 28 EV pass.',
+              strength: `${confidence}% confidence`,
+              projectedLabel: valueLabel,
+              confidence,
+              valueGrade,
+              evPer100,
+              edgePct
+            }
+          }
+        })
+        .filter(Boolean) as AnyRecord[]
+
+      const detailedEntries = games.flatMap((game: AnyRecord) => {
         const derivativeMarkets = game.tennisContext?.derivativeMarkets
         if (!Array.isArray(derivativeMarkets) || !derivativeMarkets.length) return []
         const eventState = getEventState(game, activeDayIsoDate, pacificClock)
@@ -2179,10 +2259,20 @@ function App() {
           const confidence = Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? 50
           const marketEconomics = market.label === 'ML' ? game.tennisContext?.marketEconomics : null
           const payoffLabel = payoffTag(marketEconomics?.deskPricePct)
+          const evPer100 = Number.isFinite(Number(market.evPer100)) ? Number(market.evPer100) : null
+          const edgePct = Number.isFinite(Number(market.edgePct)) ? Number(market.edgePct) : null
+          const valueGrade = market.valueGrade || market.payoffAction || null
           const edgeScore =
-            market.label === 'ML'
-              ? Math.abs(Number(game.tennisContext?.marketEconomics?.deskEdgePct) || 0)
-              : Math.abs(confidence - 50)
+            evPer100 != null
+              ? evPer100
+              : market.label === 'ML'
+                ? Math.abs(Number(game.tennisContext?.marketEconomics?.deskEdgePct) || 0)
+                : Math.abs(confidence - 50)
+          const valueMeta = [
+            valueGrade,
+            edgePct != null ? `edge ${formatSignedNumber(edgePct, 1)} pts` : null,
+            evPer100 != null ? `EV ${formatSignedNumber(evPer100, 1)}/100` : null
+          ].filter(Boolean).join(' · ')
           return {
             id: savedId,
             category: 'derivatives',
@@ -2198,16 +2288,19 @@ function App() {
             sortConfidence: confidence,
             sortEdge: edgeScore,
             marketPricePct: marketEconomics?.deskPricePct ?? null,
-            payoffAction: marketEconomics?.priceAction ?? null,
+            payoffAction: valueGrade || marketEconomics?.priceAction || null,
+            valueGrade,
+            evPer100,
+            edgePct,
             priceLabel: payoffLabel ? `${market.value} · ${payoffLabel}` : market.value,
-            metaLabel: game.tennisContext?.projection?.totalGames
+            metaLabel: valueMeta || (game.tennisContext?.projection?.totalGames
               ? `Projected games ${game.tennisContext.projection.totalGames}`
-              : marketEconomics?.priceAction ?? 'Derivative read',
+              : marketEconomics?.priceAction ?? 'Derivative read'),
             summary: market.reason,
-            tags: [`${confidence}% confidence`, confidenceTag(confidence), payoffLabel, marketEconomics?.priceAction, market.label, market.lean, game.analysis?.tier].filter(Boolean).slice(0, 4),
+            tags: [`${confidence}% confidence`, confidenceTag(confidence), valueGrade, evPer100 != null ? `EV ${formatSignedNumber(evPer100, 1)}` : null, market.label, market.lean, game.analysis?.tier].filter(Boolean).slice(0, 4),
             invalid: eventState.invalid,
             statusLabel: eventState.label,
-            tone: eventState.tone,
+            tone: eventState.invalid ? eventState.tone : tennisValueTone(valueGrade) || eventState.tone,
             selected: Boolean(selectedTotals[savedId]),
             raw: {
               id: savedId,
@@ -2219,12 +2312,19 @@ function App() {
               summary: market.reason,
               strength: `${confidence}% confidence`,
               projectedLabel: market.value,
-              confidence
+              confidence,
+              valueGrade,
+              evPer100,
+              edgePct
             }
           }
         })
-      }),
-    [activeDayIsoDate, games, pacificClock, selectedTotals]
+      })
+
+      const publishedIds = new Set(publishedEntries.map((entry) => entry.id))
+      return [...publishedEntries, ...detailedEntries.filter((entry: AnyRecord) => !publishedIds.has(entry.id))]
+    },
+    [activeDay, activeDayIsoDate, games, pacificClock, selectedTotals]
   )
 
   const propCatalogEntries = useMemo(
@@ -2310,6 +2410,71 @@ function App() {
     builderSort,
     builderValidityFilter
   ])
+
+  const tennisValueSummary = useMemo(() => {
+    const tennisGames = games.filter((game: AnyRecord) => game.league === 'Tennis')
+    if (!tennisGames.length) return null
+    const publishedValueSummary = (activeDay as AnyRecord | null)?.tennisValueSummary
+    if (publishedValueSummary) {
+      const summary = publishedValueSummary as AnyRecord
+      const attachGame = (row: AnyRecord) => ({
+        ...row,
+        game: games.find((game: AnyRecord) => game.id === row.gameId) ?? null
+      })
+      return {
+        ...summary,
+        rows: (summary.rows || []).map(attachGame).filter((row: AnyRecord) => row.game),
+        betGradeRows: (summary.betGradeRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
+        thinRows: (summary.thinRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
+        negativeMlRows: (summary.negativeMlRows || []).map(attachGame).filter((row: AnyRecord) => row.game)
+      }
+    }
+    const rows = tennisGames.flatMap((game: AnyRecord) =>
+      (game.tennisContext?.derivativeMarkets || []).map((market: AnyRecord) => ({
+        ...market,
+        game,
+        gameTitle: game.title,
+        start: game.start,
+        marketType: market.marketType || market.label,
+        valueGrade: market.valueGrade || 'No grade',
+        evPer100: Number.isFinite(Number(market.evPer100)) ? Number(market.evPer100) : null,
+        edgePct: Number.isFinite(Number(market.edgePct)) ? Number(market.edgePct) : null,
+        confidence: Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? 50
+      }))
+    )
+    if (!rows.length) return null
+
+    const countByGrade = rows.reduce((acc: Record<string, number>, row: AnyRecord) => {
+      acc[row.valueGrade] = (acc[row.valueGrade] || 0) + 1
+      return acc
+    }, {})
+    const betGradeRows = rows
+      .filter((row: AnyRecord) => row.valueGrade === 'Bet-grade value')
+      .sort((left: AnyRecord, right: AnyRecord) => (right.evPer100 ?? -999) - (left.evPer100 ?? -999))
+    const thinRows = rows
+      .filter((row: AnyRecord) => row.valueGrade === 'Thin value')
+      .sort((left: AnyRecord, right: AnyRecord) => (right.evPer100 ?? -999) - (left.evPer100 ?? -999))
+    const negativeMlRows = rows
+      .filter((row: AnyRecord) => row.valueGrade === 'Negative EV' && String(row.marketType).toLowerCase() === 'ml')
+      .sort((left: AnyRecord, right: AnyRecord) => (left.evPer100 ?? 999) - (right.evPer100 ?? 999))
+    const pricedRows = rows.filter((row: AnyRecord) => Number.isFinite(Number(row.evPer100)))
+    const noPriceRows = rows.filter((row: AnyRecord) => /needs posted price|no price/i.test(String(row.valueGrade)))
+
+    return {
+      rows,
+      totalRows: rows.length,
+      pricedRows: pricedRows.length,
+      noPriceRows: noPriceRows.length,
+      countByGrade,
+      betGradeRows,
+      thinRows,
+      negativeMlRows,
+      note:
+        activeDayIsoDate === '2026-05-28'
+          ? 'May 28 is pre-match. May 27 backtest: ML value rows went 3-1 with +21.9% flat ROI; spreads went 1-3 and stay downgraded until the next settled pass.'
+          : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
+    }
+  }, [activeDay, activeDayIsoDate, games])
 
   const parlayLegs = useMemo(() => {
     return Object.entries(selectedPicks)
@@ -3335,11 +3500,21 @@ function App() {
       return 'Near fair'
     }
     const statDisplay = (stat?: AnyRecord | null) => {
-      if (!stat) return 'N/A'
+      if (!stat) return 'Pending'
       if (stat.raw !== undefined && stat.raw !== null && stat.raw !== '') return String(stat.raw)
       if (Number.isFinite(Number(stat.percentage))) return `${Math.round(Number(stat.percentage))}%`
       if (Number.isFinite(Number(stat.numeric))) return formatNumber(Number(stat.numeric), 0)
-      return 'N/A'
+      return 'Pending'
+    }
+    const expectedStatDisplay = (expectedStats: AnyRecord | null | undefined, key: string, suffix = '') => {
+      const value = expectedStats?.stats?.[key]
+      if (value === null || value === undefined || value === '') return 'No expected row'
+      if (!Number.isFinite(Number(value))) return 'No expected row'
+      return `Exp ${formatNumber(Number(value), Number(value) % 1 === 0 ? 0 : 1)}${suffix}`
+    }
+    const statWithExpected = (actual: AnyRecord | null | undefined, expectedStats: AnyRecord | null | undefined, expectedKey: string, suffix = '') => {
+      if (actual) return statDisplay(actual)
+      return expectedStatDisplay(expectedStats, expectedKey, suffix)
     }
     const normalizeTennisName = (value: string) => {
       const normalized = String(value || '')
@@ -3496,6 +3671,8 @@ function App() {
                     <small>
                       {weaknessRiskLabel(player.weakness.weaknessScore)} · raw {player.weakness.weaknessScore ?? 'N/A'} internal
                       {player.weakness.avgDoubleFaults != null ? ` · double faults ${player.weakness.avgDoubleFaults}/match` : ''}
+                      {player.weakness.secondServeWonPct != null ? ` · 2nd won ${player.weakness.secondServeWonPct}%` : ''}
+                      {player.weakness.avgUnforcedErrors != null ? ` · unforced ${player.weakness.avgUnforcedErrors}/match` : ''}
                     </small>
                     <small>{player.weakness.firstGameComfort}</small>
                   </div>
@@ -3606,45 +3783,112 @@ function App() {
               <div className="tennis-warehouse-grid">
                 {context.players.map((player: AnyRecord) => {
                   const stats = player.warehouseStats?.stats || playerWarehouseStats(player.name)
+                  const expectedStats = player.warehouseStats?.expectedStats || warehouseContext?.players
+                    ?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(player.name))
+                    ?.expectedStats
                   return (
                     <article key={`${game.id}-${player.name}-warehouse`} className="tennis-warehouse-card">
                       <div className="tennis-recent-head">
                         <div>
                           <strong>{player.name}</strong>
-                          <span>{stats ? 'SofaScore ALL-period stats' : 'No completed stat row yet'}</span>
+                          <span>
+                            {stats ? 'SofaScore actual ALL-period stats' : expectedStats ? `Pregame expected from ${expectedStats.matches || 0} recent rows` : 'Stat feed pending'}
+                          </span>
                         </div>
                       </div>
                       <div className="tennis-recent-stat-grid">
                         <div>
                           <span>Aces</span>
-                          <strong>{statDisplay(stats?.aces)}</strong>
+                          <strong>{statWithExpected(stats?.aces, expectedStats, 'aces')}</strong>
                         </div>
                         <div>
                           <span>DF</span>
-                          <strong>{statDisplay(stats?.doubleFaults)}</strong>
+                          <strong>{statWithExpected(stats?.doubleFaults, expectedStats, 'doubleFaults')}</strong>
                         </div>
                         <div>
                           <span>1st won</span>
-                          <strong>{statDisplay(stats?.firstServeWonPct)}</strong>
+                          <strong>{statWithExpected(stats?.firstServeWonPct, expectedStats, 'firstServeWonPct', '%')}</strong>
                         </div>
                         <div>
-                          <span>Service games</span>
-                          <strong>{statDisplay(stats?.serviceGamesPlayed)}</strong>
+                          <span>2nd won</span>
+                          <strong>{statWithExpected(stats?.secondServeWonPct, expectedStats, 'secondServeWonPct', '%')}</strong>
+                        </div>
+                        <div>
+                          <span>1st in</span>
+                          <strong>{statWithExpected(stats?.firstServePct, expectedStats, 'firstServePct', '%')}</strong>
+                        </div>
+                        <div>
+                          <span>Service pts</span>
+                          <strong>{statWithExpected(stats?.servicePointsWon, expectedStats, 'servicePointsWonPct', '%')}</strong>
                         </div>
                         <div>
                           <span>BP saved</span>
-                          <strong>{statDisplay(stats?.breakPointsSaved)}</strong>
+                          <strong>{statWithExpected(stats?.breakPointsSaved, expectedStats, 'breakPointsSavedPct', '%')}</strong>
                         </div>
                         <div>
                           <span>BP converted</span>
-                          <strong>{statDisplay(stats?.breakPointsConverted)}</strong>
+                          <strong>{statWithExpected(stats?.breakPointsConverted, expectedStats, 'breakPointsConvertedPct', '%')}</strong>
+                        </div>
+                        <div>
+                          <span>Winners</span>
+                          <strong>{statWithExpected(stats?.winners, expectedStats, 'winners')}</strong>
+                        </div>
+                        <div>
+                          <span>Forced errors</span>
+                          <strong>{statWithExpected(stats?.forcedErrors, expectedStats, 'forcedErrors')}</strong>
+                        </div>
+                        <div>
+                          <span>Unforced</span>
+                          <strong>{statWithExpected(stats?.unforcedErrors, expectedStats, 'unforcedErrors')}</strong>
+                        </div>
+                        <div>
+                          <span>Return pts</span>
+                          <strong>{statWithExpected(stats?.returnPointsWon, expectedStats, 'returnPointsWonPct', '%')}</strong>
                         </div>
                       </div>
+                      {expectedStats?.note ? <small className="tennis-data-note">{expectedStats.note}</small> : null}
                     </article>
                   )
                 })}
               </div>
             ) : null}
+          </section>
+        ) : null}
+
+        {warehouseContext?.sofascoreSignals ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">SofaScore source signals</p>
+              <span>Stored as context, not our pick</span>
+            </div>
+            <div className="react-card-grid">
+              <article className="react-mini-panel">
+                <span className="eyebrow">Crowd vote</span>
+                <strong>
+                  {warehouseContext.sofascoreSignals.votes?.homeName || 'Home'} {formatPercent(warehouseContext.sofascoreSignals.votes?.homePct, 1)}
+                </strong>
+                <small>
+                  {warehouseContext.sofascoreSignals.votes?.awayName || 'Away'} {formatPercent(warehouseContext.sofascoreSignals.votes?.awayPct, 1)}
+                </small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Winning odds</span>
+                <strong>
+                  {warehouseContext.sofascoreSignals.winningOdds?.home?.name || 'Home'} {formatPercent(warehouseContext.sofascoreSignals.winningOdds?.home?.expected, 0)}
+                </strong>
+                <small>
+                  {warehouseContext.sofascoreSignals.winningOdds?.away?.name || 'Away'} {formatPercent(warehouseContext.sofascoreSignals.winningOdds?.away?.expected, 0)}
+                </small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Tennis power</span>
+                <strong>{warehouseContext.sofascoreSignals.tennisPower?.rows ?? 0} game-flow rows</strong>
+                <small>
+                  Positive games: {warehouseContext.sofascoreSignals.tennisPower?.homePositiveGames ?? 0} / {warehouseContext.sofascoreSignals.tennisPower?.awayPositiveGames ?? 0}
+                </small>
+              </article>
+            </div>
+            <p className="react-section-copy">{warehouseContext.sofascoreSignals.note}</p>
           </section>
         ) : null}
 
@@ -3803,6 +4047,50 @@ function App() {
           </section>
         ) : null}
 
+        {context?.valueBoard ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Bet-grade value board</p>
+              <span>ML, spread, total, set-win</span>
+            </div>
+            <p className="react-section-copy">
+              {context.valueBoard.note || 'EV is profit per 100 risked from model probability vs posted odds.'}
+            </p>
+            <div className="tennis-value-detail-grid">
+              {[context.valueBoard.ml, context.valueBoard.spread, context.valueBoard.total]
+                .filter(Boolean)
+                .map((entry: AnyRecord) => (
+                  <article
+                    key={`${game.id}-value-board-${entry.marketType}`}
+                    className={`react-mini-panel ${tennisValueTone(entry.valueGrade)}`}
+                  >
+                    <span className="eyebrow">{entry.marketType}</span>
+                    <strong>{entry.valueGrade || 'Value pending'}</strong>
+                    <small>
+                      {entry.selection || 'No bet'}
+                      {Number.isFinite(Number(entry.line)) ? ` ${entry.line}` : ''}
+                      {Number.isFinite(Number(entry.americanOdds)) ? ` ${formatAmericanOdds(entry.americanOdds)}` : ''}
+                    </small>
+                    <small>
+                      Model {formatPercent(entry.modelPct, 1)}
+                      {Number.isFinite(Number(entry.impliedPct)) ? ` vs implied ${formatPercent(entry.impliedPct, 1)}` : ''}
+                      {Number.isFinite(Number(entry.edgePct)) ? ` · edge ${formatSignedNumber(entry.edgePct, 1)} pts` : ''}
+                    </small>
+                    {Number.isFinite(Number(entry.evPer100)) ? <p className="react-section-copy">EV {formatSignedNumber(entry.evPer100, 1)} per 100</p> : null}
+                  </article>
+                ))}
+              {(context.valueBoard.setWin || []).map((entry: AnyRecord) => (
+                <article key={`${game.id}-set-win-${entry.name}`} className="react-mini-panel">
+                  <span className="eyebrow">Win a set</span>
+                  <strong>{entry.name}</strong>
+                  <small>{entry.confidence}% confidence · {entry.label}</small>
+                  <small>{entry.valueGrade || 'Needs posted price'}</small>
+                </article>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         {context?.derivativeMarkets?.length ? (
           <section className="detail-panel">
             <div className="detail-panel-header">
@@ -3818,6 +4106,13 @@ function App() {
                     {entry.value}
                     {Number.isFinite(Number(entry.confidence)) ? ` | ${entry.confidence}% confidence` : ''}
                   </small>
+                  {entry.valueGrade || Number.isFinite(Number(entry.evPer100)) ? (
+                    <small>
+                      {entry.valueGrade || 'Value pending'}
+                      {Number.isFinite(Number(entry.edgePct)) ? ` · edge ${formatSignedNumber(entry.edgePct, 1)} pts` : ''}
+                      {Number.isFinite(Number(entry.evPer100)) ? ` · EV ${formatSignedNumber(entry.evPer100, 1)} per 100` : ''}
+                    </small>
+                  ) : null}
                   <p className="react-section-copy">{entry.reason}</p>
                 </article>
               ))}
@@ -4070,6 +4365,51 @@ function App() {
                 </button>
               ))}
             </div>
+
+            {tennisValueSummary ? (
+              <section className="tennis-value-slate-card">
+                <div className="tennis-value-slate-head">
+                  <div>
+                    <p className="eyebrow">Tennis value board</p>
+                    <h3>{activeDayIsoDate} EV pass</h3>
+                  </div>
+                  <span>{tennisValueSummary.pricedRows}/{tennisValueSummary.totalRows} priced</span>
+                </div>
+                <p>{tennisValueSummary.note}</p>
+                <div className="tennis-value-pill-row">
+                  <span>Bet-grade {tennisValueSummary.countByGrade['Bet-grade value'] || 0}</span>
+                  <span>Thin {tennisValueSummary.countByGrade['Thin value'] || 0}</span>
+                  <span>Negative EV {tennisValueSummary.countByGrade['Negative EV'] || 0}</span>
+                  <span>Need price {tennisValueSummary.noPriceRows}</span>
+                </div>
+                {tennisValueSummary.betGradeRows.length ? (
+                  <div className="tennis-value-list">
+                    {tennisValueSummary.betGradeRows.slice(0, 5).map((row: AnyRecord) => (
+                      <button
+                        key={`${row.game.id}-${row.label}-${row.value}`}
+                        type="button"
+                        className="tennis-value-row"
+                        onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                      >
+                        <span>
+                          <strong>{row.selection || row.lean}</strong>
+                          <small>{row.marketType} · {row.gameTitle}</small>
+                        </span>
+                        <span>
+                          <strong>{formatSignedNumber(row.evPer100, 1)}</strong>
+                          <small>EV/100</small>
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                ) : null}
+                {tennisValueSummary.negativeMlRows.length ? (
+                  <small className="tennis-value-warning">
+                    ML traps: {tennisValueSummary.negativeMlRows.slice(0, 3).map((row: AnyRecord) => `${row.selection} ${formatSignedNumber(row.evPer100, 1)}`).join(' · ')}
+                  </small>
+                ) : null}
+              </section>
+            ) : null}
 
             <div className="games-rail-list no-scrollbar">
               {isActiveDayLoading ? (

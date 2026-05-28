@@ -1,18 +1,77 @@
 {
   "date": "2026-05-28",
-  "generatedAt": "2026-05-28T02:56:50.142358+00:00",
+  "generatedAt": "2026-05-28T04:10:35.582384+00:00",
   "source": "SQLite tennis warehouse",
   "matches": {
     "rg-m-adolfo-daniel-vallejo-moise-kouame-2026-05-28": {
       "source": "SofaScore warehouse",
       "eventId": "16198496",
       "sourceUrl": "https://www.sofascore.com/tennis/match/moise-kouame-adolfo-daniel-vallejo#id:16198496",
-      "capturedAt": "2026-05-28T02:55:38.851Z",
+      "capturedAt": "2026-05-28T04:04:55.302Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Adolfo Daniel Vallejo",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.3,
+              "avgAces": 5,
+              "doubleFaults": 2.7,
+              "avgDoubleFaults": 5,
+              "firstServePct": 63.0,
+              "firstServeWonPct": 68.0,
+              "secondServePct": 72.222222222222,
+              "secondServeWonPct": 50.7,
+              "breakPointsSavedPct": 100,
+              "breakPointsConvertedPct": 33.333333333333,
+              "winners": 19.0,
+              "unforcedErrors": 21.3,
+              "holdPct": 80.7,
+              "servicePointsWonPct": 61.7,
+              "returnPointsWonPct": 34.0
+            }
+          }
+        },
+        {
+          "name": "Moise Kouame",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 2,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 4.5,
+              "avgAces": 6,
+              "doubleFaults": 4.0,
+              "avgDoubleFaults": 6,
+              "firstServePct": 57.0,
+              "firstServeWonPct": 65.0,
+              "secondServePct": 84.615384615385,
+              "secondServeWonPct": 50.0,
+              "breakPointsSavedPct": 100,
+              "breakPointsConvertedPct": 57.142857142857,
+              "winners": 20.0,
+              "unforcedErrors": 28.0,
+              "holdPct": 69.0,
+              "servicePointsWonPct": 58.0,
+              "returnPointsWonPct": 38.0
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Adolfo Daniel Vallejo",
         "awayName": "Moise Kouame",
@@ -23,6 +82,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Adolfo Daniel Vallejo",
+          "awayName": "Moise Kouame",
+          "homeVotes": 6299,
+          "awayVotes": 4607,
+          "homePct": 57.8,
+          "awayPct": 42.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Adolfo Daniel Vallejo",
+            "fractionalValue": "7/25",
+            "impliedPct": 78.1,
+            "expected": 78,
+            "actual": 73
+          },
+          "away": {
+            "name": "Moise Kouame",
+            "fractionalValue": "11/4",
+            "impliedPct": 26.7,
+            "expected": 27,
+            "actual": 29
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 5,
+            "avgAces": 5,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 62.5,
+            "firstServeWonPct": 83.333333333333,
+            "secondServePct": 72.222222222222,
+            "secondServeWonPct": 44.444444444444,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 33.333333333333,
+            "winners": 19,
+            "unforcedErrors": 21
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 6,
+            "avgAces": 6,
+            "doubleFaults": 6,
+            "avgDoubleFaults": 6,
+            "firstServePct": 61.386138613861,
+            "firstServeWonPct": 70.967741935484,
+            "secondServePct": 84.615384615385,
+            "secondServeWonPct": 66.666666666667,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 57.142857142857,
+            "winners": 28,
+            "unforcedErrors": 42
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -36,12 +164,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198494",
       "sourceUrl": "https://www.sofascore.com/tennis/match/valentin-vacherot-alejandro-tabilo#id:16198494",
-      "capturedAt": "2026-05-28T02:55:41.228Z",
+      "capturedAt": "2026-05-28T04:04:58.406Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779969000,
-      "players": [],
+      "players": [
+        {
+          "name": "Alejandro Tabilo",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.7,
+              "avgAces": 10,
+              "doubleFaults": 1.3,
+              "avgDoubleFaults": 2,
+              "firstServePct": 60.0,
+              "firstServeWonPct": 76.0,
+              "secondServePct": 92.307692307692,
+              "secondServeWonPct": 50.3,
+              "breakPointsSavedPct": 100,
+              "breakPointsConvertedPct": 55.555555555556,
+              "winners": 23.0,
+              "unforcedErrors": 19.7,
+              "holdPct": 71.3,
+              "servicePointsWonPct": 65.7,
+              "returnPointsWonPct": 42.7
+            }
+          }
+        },
+        {
+          "name": "Valentin Vacherot",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 2,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 10.5,
+              "avgAces": 15,
+              "doubleFaults": 5.0,
+              "avgDoubleFaults": 5,
+              "firstServePct": 61.0,
+              "firstServeWonPct": 75.5,
+              "secondServePct": 89.130434782609,
+              "secondServeWonPct": 60.0,
+              "breakPointsSavedPct": 75,
+              "breakPointsConvertedPct": 20,
+              "winners": 39.0,
+              "unforcedErrors": 39.0,
+              "holdPct": 88.0,
+              "servicePointsWonPct": 69.0,
+              "returnPointsWonPct": 34.5
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Alejandro Tabilo",
         "awayName": "Valentin Vacherot",
@@ -52,6 +239,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Alejandro Tabilo",
+          "awayName": "Valentin Vacherot",
+          "homeVotes": 3029,
+          "awayVotes": 3951,
+          "homePct": 43.4,
+          "awayPct": 56.6
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Alejandro Tabilo",
+            "fractionalValue": "0/1",
+            "impliedPct": 100.0,
+            "expected": 99,
+            "actual": 86
+          },
+          "away": {
+            "name": "Valentin Vacherot",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 10,
+            "avgAces": 10,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 60.606060606061,
+            "firstServeWonPct": 92.5,
+            "secondServePct": 92.307692307692,
+            "secondServeWonPct": 61.538461538462,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 55.555555555556,
+            "winners": 38,
+            "unforcedErrors": 21
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 15,
+            "avgAces": 15,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 61.98347107438,
+            "firstServeWonPct": 82.666666666667,
+            "secondServePct": 89.130434782609,
+            "secondServeWonPct": 63.04347826087,
+            "breakPointsSavedPct": 75,
+            "breakPointsConvertedPct": 20,
+            "winners": 50,
+            "unforcedErrors": 46
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -65,12 +321,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198470",
       "sourceUrl": "https://www.sofascore.com/tennis/match/matteo-berrettini-arthur-rinderknech#id:16198470",
-      "capturedAt": "2026-05-28T02:55:43.860Z",
+      "capturedAt": "2026-05-28T04:05:00.317Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779992100,
-      "players": [],
+      "players": [
+        {
+          "name": "Arthur Rinderknech",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 6,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 12.0,
+              "avgAces": 9,
+              "doubleFaults": 3.0,
+              "avgDoubleFaults": 2,
+              "firstServePct": 65.0,
+              "firstServeWonPct": 81.0,
+              "secondServePct": 93.548387096774,
+              "secondServeWonPct": 54.7,
+              "breakPointsSavedPct": 71.428571428571,
+              "breakPointsConvertedPct": 37.5,
+              "winners": 33.7,
+              "unforcedErrors": 25.5,
+              "holdPct": 91.5,
+              "servicePointsWonPct": 71.0,
+              "returnPointsWonPct": 39.8
+            }
+          }
+        },
+        {
+          "name": "Matteo Berrettini",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 6.0,
+              "avgAces": 14,
+              "doubleFaults": 2.3,
+              "avgDoubleFaults": 3,
+              "firstServePct": 62.3,
+              "firstServeWonPct": 70.3,
+              "secondServePct": 93.333333333333,
+              "secondServeWonPct": 51.0,
+              "breakPointsSavedPct": 85.714285714286,
+              "breakPointsConvertedPct": 50,
+              "winners": 27.3,
+              "unforcedErrors": 29.0,
+              "holdPct": 78.7,
+              "servicePointsWonPct": 63.7,
+              "returnPointsWonPct": 33.7
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Arthur Rinderknech",
         "awayName": "Matteo Berrettini",
@@ -81,6 +396,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Arthur Rinderknech",
+          "awayName": "Matteo Berrettini",
+          "homeVotes": 5847,
+          "awayVotes": 2774,
+          "homePct": 67.8,
+          "awayPct": 32.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Arthur Rinderknech",
+            "fractionalValue": "4/5",
+            "impliedPct": 55.6,
+            "expected": 56,
+            "actual": 67
+          },
+          "away": {
+            "name": "Matteo Berrettini",
+            "fractionalValue": "1/1",
+            "impliedPct": 50.0,
+            "expected": 50,
+            "actual": 33
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 9,
+            "avgAces": 9,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 63.529411764706,
+            "firstServeWonPct": 77.777777777778,
+            "secondServePct": 93.548387096774,
+            "secondServeWonPct": 48.387096774194,
+            "breakPointsSavedPct": 71.428571428571,
+            "breakPointsConvertedPct": 37.5,
+            "winners": 40,
+            "unforcedErrors": 31
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 14,
+            "avgAces": 14,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 3,
+            "firstServePct": 61.538461538462,
+            "firstServeWonPct": 79.166666666667,
+            "secondServePct": 93.333333333333,
+            "secondServeWonPct": 66.666666666667,
+            "breakPointsSavedPct": 85.714285714286,
+            "breakPointsConvertedPct": 50,
+            "winners": 43,
+            "unforcedErrors": 37
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -94,12 +478,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198493",
       "sourceUrl": "https://www.sofascore.com/tennis/match/learner-tien-facundo-diaz-acosta#id:16198493",
-      "capturedAt": "2026-05-28T02:55:39.188Z",
+      "capturedAt": "2026-05-28T04:04:55.486Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Facundo Diaz Acosta",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 4,
+              "wins": 4,
+              "aces": 4.7,
+              "avgAces": 4.5,
+              "doubleFaults": 1.3,
+              "avgDoubleFaults": 1.5,
+              "firstServePct": 68.7,
+              "firstServeWonPct": 71.3,
+              "secondServePct": 94.285714285714,
+              "secondServeWonPct": 59.3,
+              "breakPointsSavedPct": -41.666666666667,
+              "breakPointsConvertedPct": 59.183673469388,
+              "winners": 20.7,
+              "unforcedErrors": 14.7,
+              "holdPct": 86.3,
+              "servicePointsWonPct": 67.7,
+              "returnPointsWonPct": 46.0
+            }
+          }
+        },
+        {
+          "name": "Learner Tien",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 8,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 4.1,
+              "avgAces": 12,
+              "doubleFaults": 3.1,
+              "avgDoubleFaults": 2,
+              "firstServePct": 63.4,
+              "firstServeWonPct": 69.6,
+              "secondServePct": 90,
+              "secondServeWonPct": 56.1,
+              "breakPointsSavedPct": 33.333333333333,
+              "breakPointsConvertedPct": 53.333333333333,
+              "winners": 27.1,
+              "unforcedErrors": 29.1,
+              "holdPct": 76.0,
+              "servicePointsWonPct": 64.4,
+              "returnPointsWonPct": 44.2
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Facundo Diaz Acosta",
         "awayName": "Learner Tien",
@@ -110,6 +553,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Facundo Diaz Acosta",
+          "awayName": "Learner Tien",
+          "homeVotes": 876,
+          "awayVotes": 8090,
+          "homePct": 9.8,
+          "awayPct": 90.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Facundo Diaz Acosta",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          },
+          "away": {
+            "name": "Learner Tien",
+            "fractionalValue": "7/25",
+            "impliedPct": 78.1,
+            "expected": 78,
+            "actual": 87
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 4,
+            "wins": 4,
+            "aces": 18,
+            "avgAces": 4.5,
+            "doubleFaults": 6,
+            "avgDoubleFaults": 1.5,
+            "firstServePct": 65.686274509804,
+            "firstServeWonPct": 69.651741293532,
+            "secondServePct": 94.285714285714,
+            "secondServeWonPct": 59.047619047619,
+            "breakPointsSavedPct": -41.666666666667,
+            "breakPointsConvertedPct": 59.183673469388,
+            "winners": 33,
+            "unforcedErrors": 16
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 12,
+            "avgAces": 12,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 70.149253731343,
+            "firstServeWonPct": 82.978723404255,
+            "secondServePct": 90,
+            "secondServeWonPct": 65,
+            "breakPointsSavedPct": 33.333333333333,
+            "breakPointsConvertedPct": 53.333333333333,
+            "winners": 39,
+            "unforcedErrors": 27
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -123,12 +635,65 @@
       "source": "SofaScore warehouse",
       "eventId": "16198490",
       "sourceUrl": "https://www.sofascore.com/tennis/match/roman-andres-burruchaga-felix-auger-aliassime#id:16198490",
-      "capturedAt": "2026-05-28T02:55:43.596Z",
+      "capturedAt": "2026-05-28T04:04:59.971Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779976800,
-      "players": [],
+      "players": [
+        {
+          "name": "Felix Auger-Aliassime",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 9,
+              "avgAces": 9,
+              "doubleFaults": 6,
+              "avgDoubleFaults": 6,
+              "firstServePct": 70.967741935484,
+              "firstServeWonPct": 72.727272727273,
+              "secondServePct": 86.666666666667,
+              "secondServeWonPct": 46.666666666667,
+              "breakPointsSavedPct": 61.538461538462,
+              "breakPointsConvertedPct": 50,
+              "winners": 54,
+              "unforcedErrors": 66
+            }
+          }
+        },
+        {
+          "name": "Roman Andres Burruchaga",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 7,
+              "avgAces": 7,
+              "doubleFaults": 1,
+              "avgDoubleFaults": 1,
+              "firstServePct": 62.280701754386,
+              "firstServeWonPct": 61.971830985915,
+              "secondServePct": 97.674418604651,
+              "secondServeWonPct": 41.860465116279,
+              "breakPointsSavedPct": 60,
+              "breakPointsConvertedPct": 28.571428571429,
+              "winners": 33,
+              "unforcedErrors": 54
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Felix Auger-Aliassime",
         "awayName": "Roman Andres Burruchaga",
@@ -139,6 +704,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Felix Auger-Aliassime",
+          "awayName": "Roman Andres Burruchaga",
+          "homeVotes": 5410,
+          "awayVotes": 831,
+          "homePct": 86.7,
+          "awayPct": 13.3
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Felix Auger-Aliassime",
+            "fractionalValue": "9/25",
+            "impliedPct": 73.5,
+            "expected": 73,
+            "actual": 66
+          },
+          "away": {
+            "name": "Roman Andres Burruchaga",
+            "fractionalValue": "11/5",
+            "impliedPct": 31.2,
+            "expected": 31,
+            "actual": 11
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 9,
+            "avgAces": 9,
+            "doubleFaults": 6,
+            "avgDoubleFaults": 6,
+            "firstServePct": 70.967741935484,
+            "firstServeWonPct": 72.727272727273,
+            "secondServePct": 86.666666666667,
+            "secondServeWonPct": 46.666666666667,
+            "breakPointsSavedPct": 61.538461538462,
+            "breakPointsConvertedPct": 50,
+            "winners": 54,
+            "unforcedErrors": 66
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 7,
+            "avgAces": 7,
+            "doubleFaults": 1,
+            "avgDoubleFaults": 1,
+            "firstServePct": 62.280701754386,
+            "firstServeWonPct": 61.971830985915,
+            "secondServePct": 97.674418604651,
+            "secondServeWonPct": 41.860465116279,
+            "breakPointsSavedPct": 60,
+            "breakPointsConvertedPct": 28.571428571429,
+            "winners": 33,
+            "unforcedErrors": 54
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -152,12 +786,65 @@
       "source": "SofaScore warehouse",
       "eventId": "16198491",
       "sourceUrl": "https://www.sofascore.com/tennis/match/flavio-cobolli-yibing-wu#id:16198491",
-      "capturedAt": "2026-05-28T02:55:39.445Z",
+      "capturedAt": "2026-05-28T04:04:55.827Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Flavio Cobolli",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 9,
+              "avgAces": 9,
+              "doubleFaults": 2,
+              "avgDoubleFaults": 2,
+              "firstServePct": 64.044943820225,
+              "firstServeWonPct": 84.210526315789,
+              "secondServePct": 93.75,
+              "secondServeWonPct": 71.875,
+              "breakPointsSavedPct": 66.666666666667,
+              "breakPointsConvertedPct": 75,
+              "winners": 40,
+              "unforcedErrors": 33
+            }
+          }
+        },
+        {
+          "name": "Yibing Wu",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 8,
+              "avgAces": 8,
+              "doubleFaults": 2,
+              "avgDoubleFaults": 2,
+              "firstServePct": 51.041666666667,
+              "firstServeWonPct": 69.387755102041,
+              "secondServePct": 95.744680851064,
+              "secondServeWonPct": 65.957446808511,
+              "breakPointsSavedPct": 83.333333333333,
+              "breakPointsConvertedPct": 50,
+              "winners": 50,
+              "unforcedErrors": 38
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Flavio Cobolli",
         "awayName": "Yibing Wu",
@@ -168,6 +855,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Flavio Cobolli",
+          "awayName": "Yibing Wu",
+          "homeVotes": 8808,
+          "awayVotes": 706,
+          "homePct": 92.6,
+          "awayPct": 7.4
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Flavio Cobolli",
+            "fractionalValue": "7/25",
+            "impliedPct": 78.1,
+            "expected": 78,
+            "actual": 75
+          },
+          "away": {
+            "name": "Yibing Wu",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 9,
+            "avgAces": 9,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 64.044943820225,
+            "firstServeWonPct": 84.210526315789,
+            "secondServePct": 93.75,
+            "secondServeWonPct": 71.875,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 75,
+            "winners": 40,
+            "unforcedErrors": 33
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 8,
+            "avgAces": 8,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 51.041666666667,
+            "firstServeWonPct": 69.387755102041,
+            "secondServePct": 95.744680851064,
+            "secondServeWonPct": 65.957446808511,
+            "breakPointsSavedPct": 83.333333333333,
+            "breakPointsConvertedPct": 50,
+            "winners": 50,
+            "unforcedErrors": 38
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -181,12 +937,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198492",
       "sourceUrl": "https://www.sofascore.com/tennis/match/francisco-cerundolo-hugo-gaston#id:16198492",
-      "capturedAt": "2026-05-28T02:55:40.471Z",
+      "capturedAt": "2026-05-28T04:04:57.660Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779963000,
-      "players": [],
+      "players": [
+        {
+          "name": "Francisco Cerundolo",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 7,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.9,
+              "avgAces": 5,
+              "doubleFaults": 2.4,
+              "avgDoubleFaults": 4,
+              "firstServePct": 57.6,
+              "firstServeWonPct": 68.9,
+              "secondServePct": 93.333333333333,
+              "secondServeWonPct": 56.7,
+              "breakPointsSavedPct": 73.333333333333,
+              "breakPointsConvertedPct": 42.105263157895,
+              "winners": 23.1,
+              "unforcedErrors": 35.4,
+              "holdPct": 78.1,
+              "servicePointsWonPct": 64.0,
+              "returnPointsWonPct": 43.4
+            }
+          }
+        },
+        {
+          "name": "Hugo Gaston",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.2,
+              "avgAces": 1,
+              "doubleFaults": 2.0,
+              "avgDoubleFaults": 7,
+              "firstServePct": 53.8,
+              "firstServeWonPct": 62.4,
+              "secondServePct": 87.5,
+              "secondServeWonPct": 48.0,
+              "breakPointsSavedPct": 70.588235294118,
+              "breakPointsConvertedPct": 47.058823529412,
+              "winners": 26.0,
+              "unforcedErrors": 25.8,
+              "holdPct": 63.4,
+              "servicePointsWonPct": 55.6,
+              "returnPointsWonPct": 38.6
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Francisco Cerundolo",
         "awayName": "Hugo Gaston",
@@ -197,6 +1012,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Francisco Cerundolo",
+          "awayName": "Hugo Gaston",
+          "homeVotes": 5681,
+          "awayVotes": 593,
+          "homePct": 90.5,
+          "awayPct": 9.5
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Francisco Cerundolo",
+            "fractionalValue": "1/10",
+            "impliedPct": 90.9,
+            "expected": 91,
+            "actual": 87
+          },
+          "away": {
+            "name": "Hugo Gaston",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 5,
+            "avgAces": 5,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 60.526315789474,
+            "firstServeWonPct": 68.478260869565,
+            "secondServePct": 93.333333333333,
+            "secondServeWonPct": 48.333333333333,
+            "breakPointsSavedPct": 73.333333333333,
+            "breakPointsConvertedPct": 42.105263157895,
+            "winners": 30,
+            "unforcedErrors": 54
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 7,
+            "avgDoubleFaults": 7,
+            "firstServePct": 59.124087591241,
+            "firstServeWonPct": 62.962962962963,
+            "secondServePct": 87.5,
+            "secondServeWonPct": 53.571428571429,
+            "breakPointsSavedPct": 70.588235294118,
+            "breakPointsConvertedPct": 47.058823529412,
+            "winners": 56,
+            "unforcedErrors": 42
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -210,12 +1094,90 @@
       "source": "SofaScore warehouse",
       "eventId": "16198502",
       "sourceUrl": "https://www.sofascore.com/tennis/match/luciano-darderi-francisco-comesana#id:16198502",
-      "capturedAt": "2026-05-28T02:55:41.473Z",
+      "capturedAt": "2026-05-28T04:04:58.598Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779969000,
-      "players": [],
+      "players": [
+        {
+          "name": "Francisco Comesana",
+          "side": null,
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 7,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "holdPct": 71.3,
+              "aces": 5.4,
+              "doubleFaults": 2.7,
+              "firstServePct": 66.3,
+              "firstServeWonPct": 76.4,
+              "secondServeWonPct": 54.6,
+              "servicePointsWonPct": 57.4,
+              "returnPointsWonPct": 29.4,
+              "winners": 24.9,
+              "unforcedErrors": 21.7
+            }
+          }
+        },
+        {
+          "name": "Luciano Darderi",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 8,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 4.5,
+              "avgAces": 10,
+              "doubleFaults": 2.1,
+              "avgDoubleFaults": 4,
+              "firstServePct": 58.0,
+              "firstServeWonPct": 67.0,
+              "secondServePct": 91.111111111111,
+              "secondServeWonPct": 51.0,
+              "breakPointsSavedPct": 81.818181818182,
+              "breakPointsConvertedPct": 71.428571428571,
+              "winners": 20.4,
+              "unforcedErrors": 26.8,
+              "holdPct": 65.2,
+              "servicePointsWonPct": 59.6,
+              "returnPointsWonPct": 39.6
+            }
+          }
+        },
+        {
+          "name": "Francisco Comesaña",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 13,
+              "avgAces": 13,
+              "doubleFaults": 3,
+              "avgDoubleFaults": 3,
+              "firstServePct": 67.226890756303,
+              "firstServeWonPct": 73.75,
+              "secondServePct": 92.307692307692,
+              "secondServeWonPct": 58.974358974359,
+              "breakPointsSavedPct": 75,
+              "breakPointsConvertedPct": 25,
+              "winners": 33,
+              "unforcedErrors": 29
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Francisco Comesaña",
         "awayName": "Luciano Darderi",
@@ -226,6 +1188,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Francisco Comesaña",
+          "awayName": "Luciano Darderi",
+          "homeVotes": 716,
+          "awayVotes": 5608,
+          "homePct": 11.3,
+          "awayPct": 88.7
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Francisco Comesaña",
+            "fractionalValue": "12/5",
+            "impliedPct": 29.4,
+            "expected": 29,
+            "actual": 22
+          },
+          "away": {
+            "name": "Luciano Darderi",
+            "fractionalValue": "33/100",
+            "impliedPct": 75.2,
+            "expected": 75,
+            "actual": 82
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 13,
+            "avgAces": 13,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 3,
+            "firstServePct": 67.226890756303,
+            "firstServeWonPct": 73.75,
+            "secondServePct": 92.307692307692,
+            "secondServeWonPct": 58.974358974359,
+            "breakPointsSavedPct": 75,
+            "breakPointsConvertedPct": 25,
+            "winners": 33,
+            "unforcedErrors": 29
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 10,
+            "avgAces": 10,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 61.538461538462,
+            "firstServeWonPct": 66.666666666667,
+            "secondServePct": 91.111111111111,
+            "secondServeWonPct": 53.333333333333,
+            "breakPointsSavedPct": 81.818181818182,
+            "breakPointsConvertedPct": 71.428571428571,
+            "winners": 29,
+            "unforcedErrors": 27
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -239,12 +1270,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198501",
       "sourceUrl": "https://www.sofascore.com/tennis/match/hubert-hurkacz-frances-tiafoe#id:16198501",
-      "capturedAt": "2026-05-28T02:55:40.710Z",
+      "capturedAt": "2026-05-28T04:04:57.857Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779963000,
-      "players": [],
+      "players": [
+        {
+          "name": "Frances Tiafoe",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 4.8,
+              "avgAces": 12,
+              "doubleFaults": 3.0,
+              "avgDoubleFaults": 6,
+              "firstServePct": 55.2,
+              "firstServeWonPct": 71.6,
+              "secondServePct": 89.830508474576,
+              "secondServeWonPct": 50.2,
+              "breakPointsSavedPct": 66.666666666667,
+              "breakPointsConvertedPct": 66.666666666667,
+              "winners": 27.8,
+              "unforcedErrors": 31.0,
+              "holdPct": 79.8,
+              "servicePointsWonPct": 61.8,
+              "returnPointsWonPct": 39.6
+            }
+          }
+        },
+        {
+          "name": "Hubert Hurkacz",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 11.3,
+              "avgAces": 16,
+              "doubleFaults": 2.3,
+              "avgDoubleFaults": 2,
+              "firstServePct": 61.0,
+              "firstServeWonPct": 74.7,
+              "secondServePct": 95.454545454545,
+              "secondServeWonPct": 53.3,
+              "breakPointsSavedPct": 66.666666666667,
+              "breakPointsConvertedPct": 35.714285714286,
+              "winners": 37.0,
+              "unforcedErrors": 37.3,
+              "holdPct": 82.0,
+              "servicePointsWonPct": 66.7,
+              "returnPointsWonPct": 35.0
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Hubert Hurkacz",
         "awayName": "Frances Tiafoe",
@@ -255,6 +1345,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Hubert Hurkacz",
+          "awayName": "Frances Tiafoe",
+          "homeVotes": 3988,
+          "awayVotes": 4437,
+          "homePct": 47.3,
+          "awayPct": 52.7
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Hubert Hurkacz",
+            "fractionalValue": "67/100",
+            "impliedPct": 59.9,
+            "expected": 60,
+            "actual": 56
+          },
+          "away": {
+            "name": "Frances Tiafoe",
+            "fractionalValue": "6/5",
+            "impliedPct": 45.5,
+            "expected": 45,
+            "actual": 45
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 16,
+            "avgAces": 16,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 60.36036036036,
+            "firstServeWonPct": 79.10447761194,
+            "secondServePct": 95.454545454545,
+            "secondServeWonPct": 47.727272727273,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 35.714285714286,
+            "winners": 54,
+            "unforcedErrors": 52
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 12,
+            "avgAces": 12,
+            "doubleFaults": 6,
+            "avgDoubleFaults": 6,
+            "firstServePct": 50.420168067227,
+            "firstServeWonPct": 88.333333333333,
+            "secondServePct": 89.830508474576,
+            "secondServeWonPct": 59.322033898305,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 66.666666666667,
+            "winners": 45,
+            "unforcedErrors": 31
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -268,12 +1427,65 @@
       "source": "SofaScore warehouse",
       "eventId": "16198497",
       "sourceUrl": "https://www.sofascore.com/tennis/match/jaime-faria-jan-lennard-struff#id:16198497",
-      "capturedAt": "2026-05-28T02:55:39.680Z",
+      "capturedAt": "2026-05-28T04:04:56.563Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Jan-Lennard Struff",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 13,
+              "avgAces": 13,
+              "doubleFaults": 6,
+              "avgDoubleFaults": 6,
+              "firstServePct": 50.340136054422,
+              "firstServeWonPct": 70.27027027027,
+              "secondServePct": 91.780821917808,
+              "secondServeWonPct": 57.534246575342,
+              "breakPointsSavedPct": 63.636363636364,
+              "breakPointsConvertedPct": 36.842105263158,
+              "winners": 58,
+              "unforcedErrors": 45
+            }
+          }
+        },
+        {
+          "name": "Jaime Faria",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 4,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 4,
+              "wins": 4,
+              "aces": 23,
+              "avgAces": 5.75,
+              "doubleFaults": 17,
+              "avgDoubleFaults": 4.25,
+              "firstServePct": 63.239074550129,
+              "firstServeWonPct": 72.764227642276,
+              "secondServePct": 88.111888111888,
+              "secondServeWonPct": 52.447552447552,
+              "breakPointsSavedPct": 77.142857142857,
+              "breakPointsConvertedPct": 37.837837837838,
+              "winners": 48,
+              "unforcedErrors": 34
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Jan-Lennard Struff",
         "awayName": "Jaime Faria",
@@ -284,6 +1496,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Jan-Lennard Struff",
+          "awayName": "Jaime Faria",
+          "homeVotes": 3942,
+          "awayVotes": 3851,
+          "homePct": 50.6,
+          "awayPct": 49.4
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Jan-Lennard Struff",
+            "fractionalValue": "13/10",
+            "impliedPct": 43.5,
+            "expected": 43,
+            "actual": 29
+          },
+          "away": {
+            "name": "Jaime Faria",
+            "fractionalValue": "31/50",
+            "impliedPct": 61.7,
+            "expected": 62,
+            "actual": 62
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 13,
+            "avgAces": 13,
+            "doubleFaults": 6,
+            "avgDoubleFaults": 6,
+            "firstServePct": 50.340136054422,
+            "firstServeWonPct": 70.27027027027,
+            "secondServePct": 91.780821917808,
+            "secondServeWonPct": 57.534246575342,
+            "breakPointsSavedPct": 63.636363636364,
+            "breakPointsConvertedPct": 36.842105263158,
+            "winners": 58,
+            "unforcedErrors": 45
+          },
+          "away": {
+            "matches": 4,
+            "wins": 4,
+            "aces": 23,
+            "avgAces": 5.75,
+            "doubleFaults": 17,
+            "avgDoubleFaults": 4.25,
+            "firstServePct": 63.239074550129,
+            "firstServeWonPct": 72.764227642276,
+            "secondServePct": 88.111888111888,
+            "secondServeWonPct": 52.447552447552,
+            "breakPointsSavedPct": 77.142857142857,
+            "breakPointsConvertedPct": 37.837837837838,
+            "winners": 48,
+            "unforcedErrors": 34
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -297,12 +1578,70 @@
       "source": "SofaScore warehouse",
       "eventId": "16198471",
       "sourceUrl": "https://www.sofascore.com/tennis/match/juan-manuel-cerundolo-jannik-sinner#id:16198471",
-      "capturedAt": "2026-05-28T02:55:40.235Z",
+      "capturedAt": "2026-05-28T04:04:57.414Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779962400,
-      "players": [],
+      "players": [
+        {
+          "name": "Jannik Sinner",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 8,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 5.1,
+              "avgAces": 8,
+              "doubleFaults": 1.0,
+              "avgDoubleFaults": 1,
+              "firstServePct": 62.4,
+              "firstServeWonPct": 80.6,
+              "secondServePct": 96.153846153846,
+              "secondServeWonPct": 62.2,
+              "breakPointsConvertedPct": 38.461538461538,
+              "winners": 24.4,
+              "unforcedErrors": 17.4,
+              "holdPct": 95.8,
+              "servicePointsWonPct": 74.1,
+              "returnPointsWonPct": 47.4
+            }
+          }
+        },
+        {
+          "name": "Juan Manuel Cerundolo",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 2,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 5.0,
+              "avgAces": 6,
+              "doubleFaults": 4.0,
+              "avgDoubleFaults": 4,
+              "firstServePct": 67.5,
+              "firstServeWonPct": 69.5,
+              "secondServePct": 89.189189189189,
+              "secondServeWonPct": 50.0,
+              "breakPointsSavedPct": 75,
+              "breakPointsConvertedPct": 36.363636363636,
+              "winners": 29.0,
+              "unforcedErrors": 32.5,
+              "holdPct": 81.5,
+              "servicePointsWonPct": 63.0,
+              "returnPointsWonPct": 40.5
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Jannik Sinner",
         "awayName": "Juan Manuel Cerundolo",
@@ -313,6 +1652,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Jannik Sinner",
+          "awayName": "Juan Manuel Cerundolo",
+          "homeVotes": 8003,
+          "awayVotes": 849,
+          "homePct": 90.4,
+          "awayPct": 9.6
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Jannik Sinner",
+            "fractionalValue": "1/100",
+            "impliedPct": 99.0,
+            "expected": 99,
+            "actual": 96
+          },
+          "away": {
+            "name": "Juan Manuel Cerundolo",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 8,
+            "avgAces": 8,
+            "doubleFaults": 1,
+            "avgDoubleFaults": 1,
+            "firstServePct": 65.789473684211,
+            "firstServeWonPct": 80,
+            "secondServePct": 96.153846153846,
+            "secondServeWonPct": 73.076923076923,
+            "breakPointsSavedPct": null,
+            "breakPointsConvertedPct": 38.461538461538,
+            "winners": 41,
+            "unforcedErrors": 25
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 6,
+            "avgAces": 6,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 66.666666666667,
+            "firstServeWonPct": 72.972972972973,
+            "secondServePct": 89.189189189189,
+            "secondServeWonPct": 62.162162162162,
+            "breakPointsSavedPct": 75,
+            "breakPointsConvertedPct": 36.363636363636,
+            "winners": 27,
+            "unforcedErrors": 28
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -326,12 +1734,70 @@
       "source": "SofaScore warehouse",
       "eventId": "16198488",
       "sourceUrl": "https://www.sofascore.com/tennis/match/luca-van-assche-brandon-nakashima#id:16198488",
-      "capturedAt": "2026-05-28T02:55:42.841Z",
+      "capturedAt": "2026-05-28T04:04:58.782Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779973200,
-      "players": [],
+      "players": [
+        {
+          "name": "Brandon Nakashima",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 4,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 8.0,
+              "avgAces": 11,
+              "avgDoubleFaults": 0,
+              "firstServePct": 69.2,
+              "firstServeWonPct": 77.5,
+              "secondServePct": 100,
+              "secondServeWonPct": 50.8,
+              "breakPointsConvertedPct": 71.428571428571,
+              "winners": 22.5,
+              "unforcedErrors": 24.0,
+              "holdPct": 89.0,
+              "doubleFaults": 0.5,
+              "servicePointsWonPct": 69.0,
+              "returnPointsWonPct": 38.2
+            }
+          }
+        },
+        {
+          "name": "Luca Van Assche",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 4,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.8,
+              "avgAces": 9,
+              "doubleFaults": 2.8,
+              "avgDoubleFaults": 4,
+              "firstServePct": 55.2,
+              "firstServeWonPct": 65.0,
+              "secondServePct": 91.666666666667,
+              "secondServeWonPct": 43.5,
+              "breakPointsSavedPct": 75,
+              "breakPointsConvertedPct": 36.842105263158,
+              "winners": 17.8,
+              "unforcedErrors": 30.5,
+              "holdPct": 60.2,
+              "servicePointsWonPct": 55.2,
+              "returnPointsWonPct": 34.2
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Luca Van Assche",
         "awayName": "Brandon Nakashima",
@@ -342,6 +1808,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Luca Van Assche",
+          "awayName": "Brandon Nakashima",
+          "homeVotes": 857,
+          "awayVotes": 5544,
+          "homePct": 13.4,
+          "awayPct": 86.6
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Luca Van Assche",
+            "fractionalValue": "2/1",
+            "impliedPct": 33.3,
+            "expected": 33,
+            "actual": 18
+          },
+          "away": {
+            "name": "Brandon Nakashima",
+            "fractionalValue": "2/5",
+            "impliedPct": 71.4,
+            "expected": 71,
+            "actual": 69
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 9,
+            "avgAces": 9,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 63.358778625954,
+            "firstServeWonPct": 63.855421686747,
+            "secondServePct": 91.666666666667,
+            "secondServeWonPct": 52.083333333333,
+            "breakPointsSavedPct": 75,
+            "breakPointsConvertedPct": 36.842105263158,
+            "winners": 35,
+            "unforcedErrors": 54
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 11,
+            "avgAces": 11,
+            "doubleFaults": null,
+            "avgDoubleFaults": 0,
+            "firstServePct": 73.333333333333,
+            "firstServeWonPct": 78.181818181818,
+            "secondServePct": 100,
+            "secondServeWonPct": 75,
+            "breakPointsSavedPct": null,
+            "breakPointsConvertedPct": 71.428571428571,
+            "winners": 31,
+            "unforcedErrors": 30
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -355,12 +1890,90 @@
       "source": "SofaScore warehouse",
       "eventId": "16198472",
       "sourceUrl": "https://www.sofascore.com/tennis/match/martin-landaluce-vit-kopriva#id:16198472",
-      "capturedAt": "2026-05-28T02:55:40.959Z",
+      "capturedAt": "2026-05-28T04:04:58.197Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779963000,
-      "players": [],
+      "players": [
+        {
+          "name": "Martin Landaluce",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 7,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.6,
+              "avgAces": 6,
+              "doubleFaults": 4.3,
+              "avgDoubleFaults": 5,
+              "firstServePct": 63.0,
+              "firstServeWonPct": 71.3,
+              "secondServePct": 91.228070175439,
+              "secondServeWonPct": 53.1,
+              "breakPointsSavedPct": 63.157894736842,
+              "breakPointsConvertedPct": 47.619047619048,
+              "winners": 27.0,
+              "unforcedErrors": 34.9,
+              "holdPct": 83.0,
+              "servicePointsWonPct": 64.7,
+              "returnPointsWonPct": 43.0
+            }
+          }
+        },
+        {
+          "name": "Vit Kopriva",
+          "side": null,
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 8,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "holdPct": 78.1,
+              "aces": 3.0,
+              "doubleFaults": 2.6,
+              "firstServePct": 62.5,
+              "firstServeWonPct": 72.2,
+              "secondServeWonPct": 48.9,
+              "servicePointsWonPct": 64.1,
+              "returnPointsWonPct": 37.0,
+              "winners": 20.6,
+              "unforcedErrors": 24.8
+            }
+          }
+        },
+        {
+          "name": "Vit Kopřiva",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 7,
+              "avgAces": 7,
+              "doubleFaults": 8,
+              "avgDoubleFaults": 8,
+              "firstServePct": 69.135802469136,
+              "firstServeWonPct": 64.285714285714,
+              "secondServePct": 84,
+              "secondServeWonPct": 44,
+              "breakPointsSavedPct": 58.823529411765,
+              "breakPointsConvertedPct": 50,
+              "winners": 60,
+              "unforcedErrors": 70
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Martin Landaluce",
         "awayName": "Vit Kopřiva",
@@ -371,6 +1984,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Martin Landaluce",
+          "awayName": "Vit Kopřiva",
+          "homeVotes": 3361,
+          "awayVotes": 3298,
+          "homePct": 50.5,
+          "awayPct": 49.5
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Martin Landaluce",
+            "fractionalValue": "11/10",
+            "impliedPct": 47.6,
+            "expected": 48,
+            "actual": 57
+          },
+          "away": {
+            "name": "Vit Kopřiva",
+            "fractionalValue": "73/100",
+            "impliedPct": 57.8,
+            "expected": 58,
+            "actual": 62
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 6,
+            "avgAces": 6,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 64.596273291925,
+            "firstServeWonPct": 66.346153846154,
+            "secondServePct": 91.228070175439,
+            "secondServeWonPct": 47.368421052632,
+            "breakPointsSavedPct": 63.157894736842,
+            "breakPointsConvertedPct": 47.619047619048,
+            "winners": 53,
+            "unforcedErrors": 68
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 7,
+            "avgAces": 7,
+            "doubleFaults": 8,
+            "avgDoubleFaults": 8,
+            "firstServePct": 69.135802469136,
+            "firstServeWonPct": 64.285714285714,
+            "secondServePct": 84,
+            "secondServeWonPct": 44,
+            "breakPointsSavedPct": 58.823529411765,
+            "breakPointsConvertedPct": 50,
+            "winners": 60,
+            "unforcedErrors": 70
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -384,12 +2066,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198500",
       "sourceUrl": "https://www.sofascore.com/tennis/match/matteo-arnaldi-stefanos-tsitsipas#id:16198500",
-      "capturedAt": "2026-05-28T02:55:43.097Z",
+      "capturedAt": "2026-05-28T04:04:59.121Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779973200,
-      "players": [],
+      "players": [
+        {
+          "name": "Matteo Arnaldi",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 4,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 5.0,
+              "avgAces": 7,
+              "doubleFaults": 4.0,
+              "avgDoubleFaults": 2,
+              "firstServePct": 63.2,
+              "firstServeWonPct": 70.8,
+              "secondServePct": 95.454545454545,
+              "secondServeWonPct": 53.8,
+              "breakPointsSavedPct": 100,
+              "breakPointsConvertedPct": 33.333333333333,
+              "winners": 32.0,
+              "unforcedErrors": 31.2,
+              "holdPct": 81.8,
+              "servicePointsWonPct": 64.2,
+              "returnPointsWonPct": 36.8
+            }
+          }
+        },
+        {
+          "name": "Stefanos Tsitsipas",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 8,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 4.6,
+              "avgAces": 1,
+              "avgDoubleFaults": 0,
+              "firstServePct": 66.6,
+              "firstServeWonPct": 77.0,
+              "secondServePct": 100,
+              "secondServeWonPct": 49.0,
+              "breakPointsSavedPct": 0,
+              "breakPointsConvertedPct": 45.454545454545,
+              "winners": 25.9,
+              "unforcedErrors": 22.4,
+              "holdPct": 89.9,
+              "doubleFaults": 1.0,
+              "servicePointsWonPct": 68.6,
+              "returnPointsWonPct": 40.5
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Matteo Arnaldi",
         "awayName": "Stefanos Tsitsipas",
@@ -400,6 +2141,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Matteo Arnaldi",
+          "awayName": "Stefanos Tsitsipas",
+          "homeVotes": 2304,
+          "awayVotes": 5254,
+          "homePct": 30.5,
+          "awayPct": 69.5
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Matteo Arnaldi",
+            "fractionalValue": "69/50",
+            "impliedPct": 42.0,
+            "expected": 42,
+            "actual": 60
+          },
+          "away": {
+            "name": "Stefanos Tsitsipas",
+            "fractionalValue": "57/100",
+            "impliedPct": 63.7,
+            "expected": 64,
+            "actual": 39
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 7,
+            "avgAces": 7,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 65.891472868217,
+            "firstServeWonPct": 77.647058823529,
+            "secondServePct": 95.454545454545,
+            "secondServeWonPct": 70.454545454545,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 33.333333333333,
+            "winners": 59,
+            "unforcedErrors": 35
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": null,
+            "avgDoubleFaults": 0,
+            "firstServePct": 67.857142857143,
+            "firstServeWonPct": 73.684210526316,
+            "secondServePct": 100,
+            "secondServeWonPct": 33.333333333333,
+            "breakPointsSavedPct": 0,
+            "breakPointsConvertedPct": 45.454545454545,
+            "winners": 17,
+            "unforcedErrors": 11
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -413,12 +2223,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198489",
       "sourceUrl": "https://www.sofascore.com/tennis/match/ben-shelton-raphael-collignon#id:16198489",
-      "capturedAt": "2026-05-28T02:55:43.345Z",
+      "capturedAt": "2026-05-28T04:04:59.334Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779973200,
-      "players": [],
+      "players": [
+        {
+          "name": "Ben Shelton",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 7.6,
+              "avgAces": 6,
+              "doubleFaults": 3.6,
+              "avgDoubleFaults": 8,
+              "firstServePct": 68.0,
+              "firstServeWonPct": 77.6,
+              "secondServePct": 55.555555555556,
+              "secondServeWonPct": 53.8,
+              "breakPointsSavedPct": 100,
+              "breakPointsConvertedPct": 50,
+              "winners": 37.4,
+              "unforcedErrors": 39.6,
+              "holdPct": 88.4,
+              "servicePointsWonPct": 69.4,
+              "returnPointsWonPct": 33.4
+            }
+          }
+        },
+        {
+          "name": "Raphael Collignon",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 8.0,
+              "avgAces": 10,
+              "doubleFaults": 3.3,
+              "avgDoubleFaults": 5,
+              "firstServePct": 61.7,
+              "firstServeWonPct": 73.0,
+              "secondServePct": 86.486486486486,
+              "secondServeWonPct": 47.7,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 60,
+              "winners": 25.0,
+              "unforcedErrors": 22.7,
+              "holdPct": 80.3,
+              "servicePointsWonPct": 63.0,
+              "returnPointsWonPct": 37.0
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Raphael Collignon",
         "awayName": "Ben Shelton",
@@ -429,6 +2298,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Raphael Collignon",
+          "awayName": "Ben Shelton",
+          "homeVotes": 1400,
+          "awayVotes": 7429,
+          "homePct": 15.9,
+          "awayPct": 84.1
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Raphael Collignon",
+            "fractionalValue": "3/2",
+            "impliedPct": 40.0,
+            "expected": 40,
+            "actual": 43
+          },
+          "away": {
+            "name": "Ben Shelton",
+            "fractionalValue": "53/100",
+            "impliedPct": 65.4,
+            "expected": 65,
+            "actual": 72
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 10,
+            "avgAces": 10,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 60.63829787234,
+            "firstServeWonPct": 77.19298245614,
+            "secondServePct": 86.486486486486,
+            "secondServeWonPct": 48.648648648649,
+            "breakPointsSavedPct": 62.5,
+            "breakPointsConvertedPct": 60,
+            "winners": 28,
+            "unforcedErrors": 28
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 6,
+            "avgAces": 6,
+            "doubleFaults": 8,
+            "avgDoubleFaults": 8,
+            "firstServePct": 76.315789473684,
+            "firstServeWonPct": 86.206896551724,
+            "secondServePct": 55.555555555556,
+            "secondServeWonPct": 38.888888888889,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 50,
+            "winners": 49,
+            "unforcedErrors": 14
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -442,12 +2380,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198487",
       "sourceUrl": "https://www.sofascore.com/tennis/match/zachary-svajda-adam-walton#id:16198487",
-      "capturedAt": "2026-05-28T02:55:39.929Z",
+      "capturedAt": "2026-05-28T04:04:57.187Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Adam Walton",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.0,
+              "avgAces": 3,
+              "doubleFaults": 1.0,
+              "avgDoubleFaults": 1,
+              "firstServePct": 67.0,
+              "firstServeWonPct": 63.0,
+              "secondServePct": 98.148148148148,
+              "secondServeWonPct": 43.0,
+              "breakPointsSavedPct": 76.190476190476,
+              "breakPointsConvertedPct": 40,
+              "winners": 34.0,
+              "unforcedErrors": 46.0,
+              "holdPct": 74.0,
+              "servicePointsWonPct": 57.0,
+              "returnPointsWonPct": 39.0
+            }
+          }
+        },
+        {
+          "name": "Zachary Svajda",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 6.0,
+              "avgAces": 17,
+              "doubleFaults": 2.0,
+              "avgDoubleFaults": 4,
+              "firstServePct": 61.6,
+              "firstServeWonPct": 69.4,
+              "secondServePct": 90,
+              "secondServeWonPct": 45.2,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 42.857142857143,
+              "winners": 25.8,
+              "unforcedErrors": 27.6,
+              "holdPct": 68.0,
+              "servicePointsWonPct": 59.8,
+              "returnPointsWonPct": 24.8
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Zachary Svajda",
         "awayName": "Adam Walton",
@@ -458,6 +2455,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Zachary Svajda",
+          "awayName": "Adam Walton",
+          "homeVotes": 3433,
+          "awayVotes": 2719,
+          "homePct": 55.8,
+          "awayPct": 44.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Zachary Svajda",
+            "fractionalValue": "4/5",
+            "impliedPct": 55.6,
+            "expected": 56,
+            "actual": 58
+          },
+          "away": {
+            "name": "Adam Walton",
+            "fractionalValue": "1/1",
+            "impliedPct": 50.0,
+            "expected": 50,
+            "actual": 27
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 17,
+            "avgAces": 17,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 63.636363636364,
+            "firstServeWonPct": 74.285714285714,
+            "secondServePct": 90,
+            "secondServeWonPct": 80,
+            "breakPointsSavedPct": 50,
+            "breakPointsConvertedPct": 42.857142857143,
+            "winners": 47,
+            "unforcedErrors": 23
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": 1,
+            "avgDoubleFaults": 1,
+            "firstServePct": 67.469879518072,
+            "firstServeWonPct": 63.392857142857,
+            "secondServePct": 98.148148148148,
+            "secondServeWonPct": 42.592592592593,
+            "breakPointsSavedPct": 76.190476190476,
+            "breakPointsConvertedPct": 40,
+            "winners": 35,
+            "unforcedErrors": 41
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -471,12 +2537,67 @@
       "source": "SofaScore warehouse",
       "eventId": "16198549",
       "sourceUrl": "https://www.sofascore.com/tennis/match/diane-parry-ann-li#id:16198549",
-      "capturedAt": "2026-05-28T02:55:46.368Z",
+      "capturedAt": "2026-05-28T04:05:05.910Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779968400,
-      "players": [],
+      "players": [
+        {
+          "name": "Ann Li",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "not available in Tennistonic scrape",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3,
+              "avgAces": 3,
+              "avgDoubleFaults": 0,
+              "firstServePct": 71.111111111111,
+              "firstServeWonPct": 75,
+              "secondServePct": 100,
+              "secondServeWonPct": 69.230769230769,
+              "breakPointsSavedPct": 0,
+              "breakPointsConvertedPct": 44.444444444444,
+              "winners": 32,
+              "unforcedErrors": 24
+            }
+          }
+        },
+        {
+          "name": "Diane Parry",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.3,
+              "avgAces": 2,
+              "doubleFaults": 2.7,
+              "avgDoubleFaults": 4,
+              "firstServePct": 64.7,
+              "firstServeWonPct": 58.7,
+              "secondServePct": 90,
+              "secondServeWonPct": 50.0,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 45.454545454545,
+              "winners": 28.0,
+              "unforcedErrors": 48.0,
+              "holdPct": 60.7,
+              "servicePointsWonPct": 55.0,
+              "returnPointsWonPct": 39.7
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Ann Li",
         "awayName": "Diane Parry",
@@ -487,6 +2608,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Ann Li",
+          "awayName": "Diane Parry",
+          "homeVotes": 2197,
+          "awayVotes": 615,
+          "homePct": 78.1,
+          "awayPct": 21.9
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Ann Li",
+            "fractionalValue": "9/25",
+            "impliedPct": 73.5,
+            "expected": 73,
+            "actual": 83
+          },
+          "away": {
+            "name": "Diane Parry",
+            "fractionalValue": "11/5",
+            "impliedPct": 31.2,
+            "expected": 31,
+            "actual": 29
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": null,
+            "avgDoubleFaults": 0,
+            "firstServePct": 71.111111111111,
+            "firstServeWonPct": 75,
+            "secondServePct": 100,
+            "secondServeWonPct": 69.230769230769,
+            "breakPointsSavedPct": 0,
+            "breakPointsConvertedPct": 44.444444444444,
+            "winners": 32,
+            "unforcedErrors": 24
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 2,
+            "avgAces": 2,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 55.555555555556,
+            "firstServeWonPct": 68,
+            "secondServePct": 90,
+            "secondServeWonPct": 37.5,
+            "breakPointsSavedPct": 50,
+            "breakPointsConvertedPct": 45.454545454545,
+            "winners": 28,
+            "unforcedErrors": 49
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -500,12 +2690,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198543",
       "sourceUrl": "https://www.sofascore.com/tennis/match/alina-korneeva-anna-kalinskaya#id:16198543",
-      "capturedAt": "2026-05-28T02:55:44.963Z",
+      "capturedAt": "2026-05-28T04:05:02.786Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779964800,
-      "players": [],
+      "players": [
+        {
+          "name": "Alina Korneeva",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 6,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 4,
+              "wins": 4,
+              "aces": 3.3,
+              "avgAces": 2,
+              "doubleFaults": 4.2,
+              "avgDoubleFaults": 3.75,
+              "firstServePct": 68.3,
+              "firstServeWonPct": 64.5,
+              "secondServePct": 84.210526315789,
+              "secondServeWonPct": 43.5,
+              "breakPointsSavedPct": 44.444444444444,
+              "breakPointsConvertedPct": 60,
+              "winners": 26.7,
+              "unforcedErrors": 34.3,
+              "holdPct": 70.8,
+              "servicePointsWonPct": 57.8,
+              "returnPointsWonPct": 46.5
+            }
+          }
+        },
+        {
+          "name": "Anna Kalinskaya",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1.4,
+              "avgAces": 3,
+              "doubleFaults": 4.6,
+              "avgDoubleFaults": 2,
+              "firstServePct": 63.8,
+              "firstServeWonPct": 60.2,
+              "secondServePct": 90.47619047619,
+              "secondServeWonPct": 39.0,
+              "breakPointsSavedPct": 75,
+              "breakPointsConvertedPct": 66.666666666667,
+              "winners": 18.0,
+              "unforcedErrors": 22.0,
+              "holdPct": 59.4,
+              "servicePointsWonPct": 52.4,
+              "returnPointsWonPct": 43.2
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Anna Kalinskaya",
         "awayName": "Alina Korneeva",
@@ -516,6 +2765,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Anna Kalinskaya",
+          "awayName": "Alina Korneeva",
+          "homeVotes": 3061,
+          "awayVotes": 276,
+          "homePct": 91.7,
+          "awayPct": 8.3
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Anna Kalinskaya",
+            "fractionalValue": "9/25",
+            "impliedPct": 73.5,
+            "expected": 73,
+            "actual": 74
+          },
+          "away": {
+            "name": "Alina Korneeva",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 66.666666666667,
+            "firstServeWonPct": 61.904761904762,
+            "secondServePct": 90.47619047619,
+            "secondServeWonPct": 52.380952380952,
+            "breakPointsSavedPct": 75,
+            "breakPointsConvertedPct": 66.666666666667,
+            "winners": 20,
+            "unforcedErrors": 22
+          },
+          "away": {
+            "matches": 4,
+            "wins": 4,
+            "aces": 8,
+            "avgAces": 2,
+            "doubleFaults": 15,
+            "avgDoubleFaults": 3.75,
+            "firstServePct": 66.192170818505,
+            "firstServeWonPct": 66.666666666667,
+            "secondServePct": 84.210526315789,
+            "secondServeWonPct": 45.263157894737,
+            "breakPointsSavedPct": 44.444444444444,
+            "breakPointsConvertedPct": 60,
+            "winners": 23,
+            "unforcedErrors": 33
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -529,12 +2847,90 @@
       "source": "SofaScore warehouse",
       "eventId": "16198583",
       "sourceUrl": "https://www.sofascore.com/tennis/match/antonia-ruzic-madison-keys#id:16198583",
-      "capturedAt": "2026-05-28T02:55:46.617Z",
+      "capturedAt": "2026-05-28T04:05:06.580Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779969000,
-      "players": [],
+      "players": [
+        {
+          "name": "Antonia Ruzic",
+          "side": null,
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "holdPct": 47.0,
+              "aces": 0.6,
+              "doubleFaults": 3.4,
+              "firstServePct": 63.2,
+              "firstServeWonPct": 57.4,
+              "secondServeWonPct": 35.2,
+              "servicePointsWonPct": 49.8,
+              "returnPointsWonPct": 40.6,
+              "winners": 19.0,
+              "unforcedErrors": 35.0
+            }
+          }
+        },
+        {
+          "name": "Madison Keys",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 4.3,
+              "avgAces": 1,
+              "doubleFaults": 2.3,
+              "avgDoubleFaults": 1,
+              "firstServePct": 68.3,
+              "firstServeWonPct": 75.7,
+              "secondServePct": 92.857142857143,
+              "secondServeWonPct": 48.3,
+              "breakPointsSavedPct": 100,
+              "breakPointsConvertedPct": 57.142857142857,
+              "winners": 29.0,
+              "unforcedErrors": 21.0,
+              "holdPct": 85.3,
+              "servicePointsWonPct": 66.7,
+              "returnPointsWonPct": 44.7
+            }
+          }
+        },
+        {
+          "name": "Antonia Ružić",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 0,
+              "avgAces": 0,
+              "doubleFaults": 3,
+              "avgDoubleFaults": 3,
+              "firstServePct": 63.440860215054,
+              "firstServeWonPct": 64.406779661017,
+              "secondServePct": 91.176470588235,
+              "secondServeWonPct": 52.941176470588,
+              "breakPointsSavedPct": 66.666666666667,
+              "breakPointsConvertedPct": 35.714285714286,
+              "winners": 19,
+              "unforcedErrors": 36
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Antonia Ružić",
         "awayName": "Madison Keys",
@@ -545,6 +2941,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Antonia Ružić",
+          "awayName": "Madison Keys",
+          "homeVotes": 349,
+          "awayVotes": 2316,
+          "homePct": 13.1,
+          "awayPct": 86.9
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Antonia Ružić",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          },
+          "away": {
+            "name": "Madison Keys",
+            "fractionalValue": "7/50",
+            "impliedPct": 87.7,
+            "expected": 88,
+            "actual": 84
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 0,
+            "avgAces": 0,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 3,
+            "firstServePct": 63.440860215054,
+            "firstServeWonPct": 64.406779661017,
+            "secondServePct": 91.176470588235,
+            "secondServeWonPct": 52.941176470588,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 35.714285714286,
+            "winners": 19,
+            "unforcedErrors": 36
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 1,
+            "avgDoubleFaults": 1,
+            "firstServePct": 74.074074074074,
+            "firstServeWonPct": 77.5,
+            "secondServePct": 92.857142857143,
+            "secondServeWonPct": 50,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 57.142857142857,
+            "winners": 29,
+            "unforcedErrors": 25
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -558,12 +3023,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198578",
       "sourceUrl": "https://www.sofascore.com/tennis/match/elsa-jacquemot-aryna-sabalenka#id:16198578",
-      "capturedAt": "2026-05-28T02:55:48.050Z",
+      "capturedAt": "2026-05-28T04:05:08.325Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779972600,
-      "players": [],
+      "players": [
+        {
+          "name": "Aryna Sabalenka",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 7,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.7,
+              "avgAces": 0,
+              "avgDoubleFaults": 0,
+              "firstServePct": 65.9,
+              "firstServeWonPct": 69.3,
+              "secondServePct": 100,
+              "secondServeWonPct": 51.7,
+              "breakPointsSavedPct": 40,
+              "breakPointsConvertedPct": 66.666666666667,
+              "winners": 29.0,
+              "unforcedErrors": 25.0,
+              "holdPct": 77.9,
+              "doubleFaults": 2.9,
+              "servicePointsWonPct": 63.4,
+              "returnPointsWonPct": 46.6
+            }
+          }
+        },
+        {
+          "name": "Elsa Jacquemot",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 4,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.2,
+              "avgAces": 1,
+              "doubleFaults": 5.5,
+              "avgDoubleFaults": 4,
+              "firstServePct": 66.8,
+              "firstServeWonPct": 63.2,
+              "secondServePct": 84.615384615385,
+              "secondServeWonPct": 38.8,
+              "breakPointsSavedPct": 57.142857142857,
+              "breakPointsConvertedPct": 60,
+              "winners": 31.0,
+              "unforcedErrors": 23.0,
+              "holdPct": 57.5,
+              "servicePointsWonPct": 54.8,
+              "returnPointsWonPct": 39.5
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Aryna Sabalenka",
         "awayName": "Elsa Jacquemot",
@@ -574,6 +3098,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Aryna Sabalenka",
+          "awayName": "Elsa Jacquemot",
+          "homeVotes": 3769,
+          "awayVotes": 396,
+          "homePct": 90.5,
+          "awayPct": 9.5
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Aryna Sabalenka",
+            "fractionalValue": "1/50",
+            "impliedPct": 98.0,
+            "expected": 98,
+            "actual": 96
+          },
+          "away": {
+            "name": "Elsa Jacquemot",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 0,
+            "avgAces": 0,
+            "doubleFaults": null,
+            "avgDoubleFaults": 0,
+            "firstServePct": 65.384615384615,
+            "firstServeWonPct": 67.647058823529,
+            "secondServePct": 100,
+            "secondServeWonPct": 44.444444444444,
+            "breakPointsSavedPct": 40,
+            "breakPointsConvertedPct": 66.666666666667,
+            "winners": 29,
+            "unforcedErrors": 26
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 57.377049180328,
+            "firstServeWonPct": 65.714285714286,
+            "secondServePct": 84.615384615385,
+            "secondServeWonPct": 46.153846153846,
+            "breakPointsSavedPct": 57.142857142857,
+            "breakPointsConvertedPct": 60,
+            "winners": 31,
+            "unforcedErrors": 22
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -587,12 +3180,65 @@
       "source": "SofaScore warehouse",
       "eventId": "16198536",
       "sourceUrl": "https://www.sofascore.com/tennis/match/coco-gauff-mayar-sherif#id:16198536",
-      "capturedAt": "2026-05-28T02:55:47.010Z",
+      "capturedAt": "2026-05-28T04:05:06.951Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779969000,
-      "players": [],
+      "players": [
+        {
+          "name": "Coco Gauff",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1,
+              "avgAces": 1,
+              "doubleFaults": 5,
+              "avgDoubleFaults": 5,
+              "firstServePct": 61.290322580645,
+              "firstServeWonPct": 65.789473684211,
+              "secondServePct": 79.166666666667,
+              "secondServeWonPct": 50,
+              "breakPointsSavedPct": 77.777777777778,
+              "breakPointsConvertedPct": 50,
+              "winners": 14,
+              "unforcedErrors": 14
+            }
+          }
+        },
+        {
+          "name": "Mayar Sherif",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 4,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 4,
+              "wins": 4,
+              "aces": 3,
+              "avgAces": 0.75,
+              "doubleFaults": 2,
+              "avgDoubleFaults": 0.5,
+              "firstServePct": 83.180428134557,
+              "firstServeWonPct": 58.088235294118,
+              "secondServePct": 96.363636363636,
+              "secondServeWonPct": 65.454545454545,
+              "breakPointsSavedPct": 51.851851851852,
+              "breakPointsConvertedPct": 54.761904761905,
+              "winners": 21,
+              "unforcedErrors": 15
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Coco Gauff",
         "awayName": "Mayar Sherif",
@@ -603,6 +3249,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Coco Gauff",
+          "awayName": "Mayar Sherif",
+          "homeVotes": 3073,
+          "awayVotes": 299,
+          "homePct": 91.1,
+          "awayPct": 8.9
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Coco Gauff",
+            "fractionalValue": "3/100",
+            "impliedPct": 97.1,
+            "expected": 97,
+            "actual": 91
+          },
+          "away": {
+            "name": "Mayar Sherif",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 61.290322580645,
+            "firstServeWonPct": 65.789473684211,
+            "secondServePct": 79.166666666667,
+            "secondServeWonPct": 50,
+            "breakPointsSavedPct": 77.777777777778,
+            "breakPointsConvertedPct": 50,
+            "winners": 14,
+            "unforcedErrors": 14
+          },
+          "away": {
+            "matches": 4,
+            "wins": 4,
+            "aces": 3,
+            "avgAces": 0.75,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 0.5,
+            "firstServePct": 83.180428134557,
+            "firstServeWonPct": 58.088235294118,
+            "secondServePct": 96.363636363636,
+            "secondServeWonPct": 65.454545454545,
+            "breakPointsSavedPct": 51.851851851852,
+            "breakPointsConvertedPct": 54.761904761905,
+            "winners": 21,
+            "unforcedErrors": 15
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -616,12 +3331,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198586",
       "sourceUrl": "https://www.sofascore.com/tennis/match/daria-kasatkina-susan-bandecchi#id:16198586",
-      "capturedAt": "2026-05-28T02:55:47.252Z",
+      "capturedAt": "2026-05-28T04:05:07.332Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779969000,
-      "players": [],
+      "players": [
+        {
+          "name": "Daria Kasatkina",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 7,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1.7,
+              "avgAces": 1,
+              "doubleFaults": 4.0,
+              "avgDoubleFaults": 10,
+              "firstServePct": 73.7,
+              "firstServeWonPct": 60.4,
+              "secondServePct": 56.521739130435,
+              "secondServeWonPct": 40.0,
+              "breakPointsSavedPct": 63.636363636364,
+              "breakPointsConvertedPct": 66.666666666667,
+              "winners": 9.0,
+              "unforcedErrors": 38.0,
+              "holdPct": 61.6,
+              "servicePointsWonPct": 54.7,
+              "returnPointsWonPct": 54.7
+            }
+          }
+        },
+        {
+          "name": "Susan Bandecchi",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 4,
+              "wins": 4,
+              "aces": 3.7,
+              "avgAces": 3,
+              "doubleFaults": 2.0,
+              "avgDoubleFaults": 2.25,
+              "firstServePct": 78.7,
+              "firstServeWonPct": 59.3,
+              "secondServePct": 88.75,
+              "secondServeWonPct": 58.7,
+              "breakPointsSavedPct": 63.636363636364,
+              "breakPointsConvertedPct": 60,
+              "winners": 27.0,
+              "unforcedErrors": 34.3,
+              "holdPct": 71.7,
+              "servicePointsWonPct": 59.3,
+              "returnPointsWonPct": 50.3
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Daria Kasatkina",
         "awayName": "Susan Bandecchi",
@@ -632,6 +3406,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Daria Kasatkina",
+          "awayName": "Susan Bandecchi",
+          "homeVotes": 2495,
+          "awayVotes": 377,
+          "homePct": 86.9,
+          "awayPct": 13.1
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Daria Kasatkina",
+            "fractionalValue": "1/10",
+            "impliedPct": 90.9,
+            "expected": 91,
+            "actual": 92
+          },
+          "away": {
+            "name": "Susan Bandecchi",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 10,
+            "avgDoubleFaults": 10,
+            "firstServePct": 70.512820512821,
+            "firstServeWonPct": 61.818181818182,
+            "secondServePct": 56.521739130435,
+            "secondServeWonPct": 26.086956521739,
+            "breakPointsSavedPct": 63.636363636364,
+            "breakPointsConvertedPct": 66.666666666667,
+            "winners": 8,
+            "unforcedErrors": 37
+          },
+          "away": {
+            "matches": 4,
+            "wins": 4,
+            "aces": 12,
+            "avgAces": 3,
+            "doubleFaults": 9,
+            "avgDoubleFaults": 2.25,
+            "firstServePct": 77.777777777778,
+            "firstServeWonPct": 57.857142857143,
+            "secondServePct": 88.75,
+            "secondServeWonPct": 57.5,
+            "breakPointsSavedPct": 63.636363636364,
+            "breakPointsConvertedPct": 60,
+            "winners": 31,
+            "unforcedErrors": 47
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -645,12 +3488,97 @@
       "source": "SofaScore warehouse",
       "eventId": "16198581",
       "sourceUrl": "https://www.sofascore.com/tennis/match/diana-shnaider-mccartney-kessler#id:16198581",
-      "capturedAt": "2026-05-28T02:55:45.195Z",
+      "capturedAt": "2026-05-28T04:05:03.740Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779964800,
-      "players": [],
+      "players": [
+        {
+          "name": "Diana Shnaider",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 0.8,
+              "avgAces": 0,
+              "doubleFaults": 2.8,
+              "avgDoubleFaults": 1,
+              "firstServePct": 64.0,
+              "firstServeWonPct": 55.4,
+              "secondServePct": 95.238095238095,
+              "secondServeWonPct": 46.6,
+              "breakPointsSavedPct": 66.666666666667,
+              "breakPointsConvertedPct": 66.666666666667,
+              "winners": 22.0,
+              "unforcedErrors": 27.0,
+              "holdPct": 58.0,
+              "servicePointsWonPct": 52.2,
+              "returnPointsWonPct": 45.8
+            }
+          }
+        },
+        {
+          "name": "Mccartney Kessler",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1.8,
+              "avgAces": 1,
+              "doubleFaults": 3.6,
+              "avgDoubleFaults": 3,
+              "firstServePct": 63.0,
+              "firstServeWonPct": 59.2,
+              "secondServePct": 93.75,
+              "secondServeWonPct": 40.8,
+              "breakPointsSavedPct": 71.428571428571,
+              "breakPointsConvertedPct": 28.571428571429,
+              "winners": 28,
+              "unforcedErrors": 70,
+              "holdPct": 54.2,
+              "servicePointsWonPct": 52.2,
+              "returnPointsWonPct": 48.4
+            }
+          }
+        },
+        {
+          "name": "McCartney Kessler",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1,
+              "avgAces": 1,
+              "doubleFaults": 3,
+              "avgDoubleFaults": 3,
+              "firstServePct": 59.663865546218,
+              "firstServeWonPct": 64.788732394366,
+              "secondServePct": 93.75,
+              "secondServeWonPct": 45.833333333333,
+              "breakPointsSavedPct": 71.428571428571,
+              "breakPointsConvertedPct": 28.571428571429,
+              "winners": 28,
+              "unforcedErrors": 70
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Diana Shnaider",
         "awayName": "McCartney Kessler",
@@ -661,6 +3589,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Diana Shnaider",
+          "awayName": "McCartney Kessler",
+          "homeVotes": 2732,
+          "awayVotes": 347,
+          "homePct": 88.7,
+          "awayPct": 11.3
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Diana Shnaider",
+            "fractionalValue": "1/4",
+            "impliedPct": 80.0,
+            "expected": 80,
+            "actual": 72
+          },
+          "away": {
+            "name": "McCartney Kessler",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 0,
+            "avgAces": 0,
+            "doubleFaults": 1,
+            "avgDoubleFaults": 1,
+            "firstServePct": 66.666666666667,
+            "firstServeWonPct": 54.761904761905,
+            "secondServePct": 95.238095238095,
+            "secondServeWonPct": 61.904761904762,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 66.666666666667,
+            "winners": 23,
+            "unforcedErrors": 26
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 3,
+            "firstServePct": 59.663865546218,
+            "firstServeWonPct": 64.788732394366,
+            "secondServePct": 93.75,
+            "secondServeWonPct": 45.833333333333,
+            "breakPointsSavedPct": 71.428571428571,
+            "breakPointsConvertedPct": 28.571428571429,
+            "winners": 28,
+            "unforcedErrors": 70
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -674,12 +3671,90 @@
       "source": "SofaScore warehouse",
       "eventId": "16198590",
       "sourceUrl": "https://www.sofascore.com/tennis/match/naomi-osaka-donna-vekic#id:16198590",
-      "capturedAt": "2026-05-28T02:55:44.098Z",
+      "capturedAt": "2026-05-28T04:05:00.667Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Donna Vekic",
+          "side": null,
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 2,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "holdPct": 84.0,
+              "aces": 3.5,
+              "doubleFaults": 4.0,
+              "firstServePct": 60.5,
+              "firstServeWonPct": 71.0,
+              "secondServeWonPct": 59.0,
+              "servicePointsWonPct": 66.0,
+              "returnPointsWonPct": 43.5,
+              "winners": 27.0,
+              "unforcedErrors": 24.0
+            }
+          }
+        },
+        {
+          "name": "Naomi Osaka",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.6,
+              "avgAces": 4,
+              "doubleFaults": 3.0,
+              "avgDoubleFaults": 2,
+              "firstServePct": 57.4,
+              "firstServeWonPct": 66.2,
+              "secondServePct": 93.939393939394,
+              "secondServeWonPct": 53.6,
+              "breakPointsSavedPct": 80,
+              "breakPointsConvertedPct": 28.571428571429,
+              "winners": 27.0,
+              "unforcedErrors": 34.0,
+              "holdPct": 70.0,
+              "servicePointsWonPct": 60.8,
+              "returnPointsWonPct": 43.8
+            }
+          }
+        },
+        {
+          "name": "Donna Vekić",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2,
+              "avgAces": 2,
+              "doubleFaults": 3,
+              "avgDoubleFaults": 3,
+              "firstServePct": 56.603773584906,
+              "firstServeWonPct": 73.333333333333,
+              "secondServePct": 86.95652173913,
+              "secondServeWonPct": 60.869565217391,
+              "breakPointsSavedPct": 80,
+              "breakPointsConvertedPct": 36.363636363636,
+              "winners": 27,
+              "unforcedErrors": 24
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Donna Vekić",
         "awayName": "Naomi Osaka",
@@ -690,6 +3765,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Donna Vekić",
+          "awayName": "Naomi Osaka",
+          "homeVotes": 723,
+          "awayVotes": 4612,
+          "homePct": 13.6,
+          "awayPct": 86.4
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Donna Vekić",
+            "fractionalValue": "12/5",
+            "impliedPct": 29.4,
+            "expected": 29,
+            "actual": 38
+          },
+          "away": {
+            "name": "Naomi Osaka",
+            "fractionalValue": "33/100",
+            "impliedPct": 75.2,
+            "expected": 75,
+            "actual": 64
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 2,
+            "avgAces": 2,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 3,
+            "firstServePct": 56.603773584906,
+            "firstServeWonPct": 73.333333333333,
+            "secondServePct": 86.95652173913,
+            "secondServeWonPct": 60.869565217391,
+            "breakPointsSavedPct": 80,
+            "breakPointsConvertedPct": 36.363636363636,
+            "winners": 27,
+            "unforcedErrors": 24
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 4,
+            "avgAces": 4,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 54.794520547945,
+            "firstServeWonPct": 75,
+            "secondServePct": 93.939393939394,
+            "secondServeWonPct": 57.575757575758,
+            "breakPointsSavedPct": 80,
+            "breakPointsConvertedPct": 28.571428571429,
+            "winners": 26,
+            "unforcedErrors": 32
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -703,12 +3847,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198585",
       "sourceUrl": "https://www.sofascore.com/tennis/match/iva-jovic-emma-navarro#id:16198585",
-      "capturedAt": "2026-05-28T02:55:44.334Z",
+      "capturedAt": "2026-05-28T04:05:01.407Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Emma Navarro",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.8,
+              "avgAces": 5,
+              "doubleFaults": 5.0,
+              "avgDoubleFaults": 3,
+              "firstServePct": 53.2,
+              "firstServeWonPct": 64.8,
+              "secondServePct": 90.909090909091,
+              "secondServeWonPct": 48.6,
+              "breakPointsSavedPct": 75,
+              "breakPointsConvertedPct": 44.444444444444,
+              "winners": 13.0,
+              "unforcedErrors": 35.0,
+              "holdPct": 66.2,
+              "servicePointsWonPct": 57.2,
+              "returnPointsWonPct": 52.4
+            }
+          }
+        },
+        {
+          "name": "Iva Jovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 7,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.4,
+              "avgAces": 3,
+              "doubleFaults": 2.9,
+              "avgDoubleFaults": 4,
+              "firstServePct": 58.0,
+              "firstServeWonPct": 64.3,
+              "secondServePct": 86.666666666667,
+              "secondServeWonPct": 47.1,
+              "breakPointsSavedPct": 66.666666666667,
+              "breakPointsConvertedPct": 66.666666666667,
+              "winners": 34.0,
+              "unforcedErrors": 29.0,
+              "holdPct": 64.4,
+              "servicePointsWonPct": 57.3,
+              "returnPointsWonPct": 48.3
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Iva Jovic",
         "awayName": "Emma Navarro",
@@ -719,6 +3922,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Iva Jovic",
+          "awayName": "Emma Navarro",
+          "homeVotes": 3130,
+          "awayVotes": 1695,
+          "homePct": 64.9,
+          "awayPct": 35.1
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Iva Jovic",
+            "fractionalValue": "4/5",
+            "impliedPct": 55.6,
+            "expected": 56,
+            "actual": 90
+          },
+          "away": {
+            "name": "Emma Navarro",
+            "fractionalValue": "1/1",
+            "impliedPct": 50.0,
+            "expected": 50,
+            "actual": 46
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": 4,
+            "avgDoubleFaults": 4,
+            "firstServePct": 52.380952380952,
+            "firstServeWonPct": 69.69696969697,
+            "secondServePct": 86.666666666667,
+            "secondServeWonPct": 46.666666666667,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 66.666666666667,
+            "winners": 34,
+            "unforcedErrors": 30
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 5,
+            "avgAces": 5,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 3,
+            "firstServePct": 56.578947368421,
+            "firstServeWonPct": 65.116279069767,
+            "secondServePct": 90.909090909091,
+            "secondServeWonPct": 51.515151515152,
+            "breakPointsSavedPct": 75,
+            "breakPointsConvertedPct": 44.444444444444,
+            "winners": 14,
+            "unforcedErrors": 35
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -732,12 +4004,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198534",
       "sourceUrl": "https://www.sofascore.com/tennis/match/amanda-anisimova-julia-grabher#id:16198534",
-      "capturedAt": "2026-05-28T02:55:45.579Z",
+      "capturedAt": "2026-05-28T04:05:04.317Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779964800,
-      "players": [],
+      "players": [
+        {
+          "name": "Amanda Anisimova",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.0,
+              "avgAces": 3,
+              "doubleFaults": 5.0,
+              "avgDoubleFaults": 5,
+              "firstServePct": 59.0,
+              "firstServeWonPct": 67.0,
+              "secondServePct": 76.190476190476,
+              "secondServeWonPct": 43.0,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 50,
+              "winners": 24.0,
+              "unforcedErrors": 24.0,
+              "holdPct": 63.0,
+              "servicePointsWonPct": 57.0,
+              "returnPointsWonPct": 69.0
+            }
+          }
+        },
+        {
+          "name": "Julia Grabher",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1.6,
+              "avgAces": 1,
+              "doubleFaults": 4.6,
+              "avgDoubleFaults": 1,
+              "firstServePct": 64.6,
+              "firstServeWonPct": 58.4,
+              "secondServePct": 90,
+              "secondServeWonPct": 50.0,
+              "breakPointsSavedPct": 80,
+              "breakPointsConvertedPct": 45.454545454545,
+              "winners": 24.0,
+              "unforcedErrors": 18.0,
+              "holdPct": 62.4,
+              "servicePointsWonPct": 56.0,
+              "returnPointsWonPct": 43.8
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Julia Grabher",
         "awayName": "Amanda Anisimova",
@@ -748,6 +4079,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Julia Grabher",
+          "awayName": "Amanda Anisimova",
+          "homeVotes": 279,
+          "awayVotes": 3260,
+          "homePct": 7.9,
+          "awayPct": 92.1
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Julia Grabher",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          },
+          "away": {
+            "name": "Amanda Anisimova",
+            "fractionalValue": "17/100",
+            "impliedPct": 85.5,
+            "expected": 86,
+            "actual": 91
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 1,
+            "avgDoubleFaults": 1,
+            "firstServePct": 76.744186046512,
+            "firstServeWonPct": 72.727272727273,
+            "secondServePct": 90,
+            "secondServeWonPct": 50,
+            "breakPointsSavedPct": 80,
+            "breakPointsConvertedPct": 45.454545454545,
+            "winners": 22,
+            "unforcedErrors": 17
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 58.823529411765,
+            "firstServeWonPct": 66.666666666667,
+            "secondServePct": 76.190476190476,
+            "secondServeWonPct": 42.857142857143,
+            "breakPointsSavedPct": 62.5,
+            "breakPointsConvertedPct": 50,
+            "winners": 40,
+            "unforcedErrors": 5
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -761,12 +4161,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198550",
       "sourceUrl": "https://www.sofascore.com/tennis/match/anastasia-potapova-katie-boulter#id:16198550",
-      "capturedAt": "2026-05-28T02:55:48.279Z",
+      "capturedAt": "2026-05-28T04:05:08.810Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779975000,
-      "players": [],
+      "players": [
+        {
+          "name": "Anastasia Potapova",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 8,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1.2,
+              "avgAces": 1,
+              "doubleFaults": 4.0,
+              "avgDoubleFaults": 5,
+              "firstServePct": 56.0,
+              "firstServeWonPct": 69.0,
+              "secondServePct": 82.758620689655,
+              "secondServeWonPct": 44.5,
+              "breakPointsSavedPct": 60,
+              "breakPointsConvertedPct": 70,
+              "winners": 12.0,
+              "unforcedErrors": 21.0,
+              "holdPct": 66.4,
+              "servicePointsWonPct": 57.6,
+              "returnPointsWonPct": 52.5
+            }
+          }
+        },
+        {
+          "name": "Katie Boulter",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.0,
+              "avgAces": 1,
+              "doubleFaults": 5.3,
+              "avgDoubleFaults": 7,
+              "firstServePct": 60.7,
+              "firstServeWonPct": 73.7,
+              "secondServePct": 77.41935483871,
+              "secondServeWonPct": 44.3,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 35.294117647059,
+              "winners": 24.0,
+              "unforcedErrors": 35.0,
+              "holdPct": 78.7,
+              "servicePointsWonPct": 62.0,
+              "returnPointsWonPct": 41.3
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Katie Boulter",
         "awayName": "Anastasia Potapova",
@@ -777,6 +4236,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Katie Boulter",
+          "awayName": "Anastasia Potapova",
+          "homeVotes": 357,
+          "awayVotes": 3135,
+          "homePct": 10.2,
+          "awayPct": 89.8
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Katie Boulter",
+            "fractionalValue": "10/3",
+            "impliedPct": 23.1,
+            "expected": 23,
+            "actual": 1
+          },
+          "away": {
+            "name": "Anastasia Potapova",
+            "fractionalValue": "11/50",
+            "impliedPct": 82.0,
+            "expected": 82,
+            "actual": 88
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 7,
+            "avgDoubleFaults": 7,
+            "firstServePct": 63.953488372093,
+            "firstServeWonPct": 70.909090909091,
+            "secondServePct": 77.41935483871,
+            "secondServeWonPct": 38.709677419355,
+            "breakPointsSavedPct": 50,
+            "breakPointsConvertedPct": 35.294117647059,
+            "winners": 24,
+            "unforcedErrors": 40
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 44.230769230769,
+            "firstServeWonPct": 69.565217391304,
+            "secondServePct": 82.758620689655,
+            "secondServeWonPct": 44.827586206897,
+            "breakPointsSavedPct": 60,
+            "breakPointsConvertedPct": 70,
+            "winners": 12,
+            "unforcedErrors": 20
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -790,12 +4318,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198548",
       "sourceUrl": "https://www.sofascore.com/tennis/match/maja-chwalinska-elise-mertens#id:16198548",
-      "capturedAt": "2026-05-28T02:55:45.829Z",
+      "capturedAt": "2026-05-28T04:05:04.656Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779964800,
-      "players": [],
+      "players": [
+        {
+          "name": "Elise Mertens",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 6,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 4.2,
+              "avgAces": 3,
+              "doubleFaults": 2.7,
+              "avgDoubleFaults": 2,
+              "firstServePct": 61.8,
+              "firstServeWonPct": 71.0,
+              "secondServePct": 89.473684210526,
+              "secondServeWonPct": 48.5,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 70,
+              "winners": 36.0,
+              "unforcedErrors": 22.0,
+              "holdPct": 76.3,
+              "servicePointsWonPct": 62.7,
+              "returnPointsWonPct": 46.7
+            }
+          }
+        },
+        {
+          "name": "Maja Chwalinska",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 4,
+              "wins": 4,
+              "aces": 0.0,
+              "avgAces": 0.25,
+              "doubleFaults": 0.0,
+              "avgDoubleFaults": 0.5,
+              "firstServePct": 71.3,
+              "firstServeWonPct": 62.7,
+              "secondServePct": 97.058823529412,
+              "secondServeWonPct": 61.3,
+              "breakPointsSavedPct": 43.75,
+              "breakPointsConvertedPct": 63.157894736842,
+              "winners": 17.3,
+              "unforcedErrors": 9.7,
+              "holdPct": 77.3,
+              "servicePointsWonPct": 63.0,
+              "returnPointsWonPct": 62.0
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Maja Chwalinska",
         "awayName": "Elise Mertens",
@@ -806,6 +4393,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Maja Chwalinska",
+          "awayName": "Elise Mertens",
+          "homeVotes": 916,
+          "awayVotes": 3376,
+          "homePct": 21.3,
+          "awayPct": 78.7
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Maja Chwalinska",
+            "fractionalValue": "163/100",
+            "impliedPct": 38.0,
+            "expected": 38,
+            "actual": 50
+          },
+          "away": {
+            "name": "Elise Mertens",
+            "fractionalValue": "1/2",
+            "impliedPct": 66.7,
+            "expected": 67,
+            "actual": 83
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 4,
+            "wins": 4,
+            "aces": 1,
+            "avgAces": 0.25,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 0.5,
+            "firstServePct": 69.230769230769,
+            "firstServeWonPct": 62.091503267974,
+            "secondServePct": 97.058823529412,
+            "secondServeWonPct": 64.705882352941,
+            "breakPointsSavedPct": 43.75,
+            "breakPointsConvertedPct": 63.157894736842,
+            "winners": 10,
+            "unforcedErrors": 7
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 67.241379310345,
+            "firstServeWonPct": 71.794871794872,
+            "secondServePct": 89.473684210526,
+            "secondServeWonPct": 47.368421052632,
+            "breakPointsSavedPct": 62.5,
+            "breakPointsConvertedPct": 70,
+            "winners": 35,
+            "unforcedErrors": 22
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -819,12 +4475,68 @@
       "source": "SofaScore warehouse",
       "eventId": "16198544",
       "sourceUrl": "https://www.sofascore.com/tennis/match/claire-liu-maria-sakkari#id:16198544",
-      "capturedAt": "2026-05-28T02:55:47.660Z",
+      "capturedAt": "2026-05-28T04:05:07.674Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779969000,
-      "players": [],
+      "players": [
+        {
+          "name": "Claire Liu",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "not available in Tennistonic scrape",
+            "matches": 4,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 4,
+              "wins": 4,
+              "aces": 5,
+              "avgAces": 1.25,
+              "doubleFaults": 3,
+              "avgDoubleFaults": 0.75,
+              "firstServePct": 72.558139534884,
+              "firstServeWonPct": 60.897435897436,
+              "secondServePct": 94.915254237288,
+              "secondServeWonPct": 61.016949152542,
+              "breakPointsSavedPct": 58.823529411765,
+              "breakPointsConvertedPct": 66.666666666667,
+              "winners": 25,
+              "unforcedErrors": 40
+            }
+          }
+        },
+        {
+          "name": "Maria Sakkari",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 2.8,
+              "avgAces": 7,
+              "doubleFaults": 2.4,
+              "avgDoubleFaults": 3,
+              "firstServePct": 61.4,
+              "firstServeWonPct": 59.4,
+              "secondServePct": 91.176470588235,
+              "secondServeWonPct": 50.8,
+              "breakPointsSavedPct": 66.666666666667,
+              "breakPointsConvertedPct": 50,
+              "winners": 24.0,
+              "unforcedErrors": 26.0,
+              "holdPct": 59.8,
+              "servicePointsWonPct": 55.4,
+              "returnPointsWonPct": 38.0
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Maria Sakkari",
         "awayName": "Claire Liu",
@@ -835,6 +4547,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Maria Sakkari",
+          "awayName": "Claire Liu",
+          "homeVotes": 2828,
+          "awayVotes": 392,
+          "homePct": 87.8,
+          "awayPct": 12.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Maria Sakkari",
+            "fractionalValue": "11/25",
+            "impliedPct": 69.4,
+            "expected": 69,
+            "actual": 41
+          },
+          "away": {
+            "name": "Claire Liu",
+            "fractionalValue": "7/4",
+            "impliedPct": 36.4,
+            "expected": 36,
+            "actual": 40
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 7,
+            "avgAces": 7,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 3,
+            "firstServePct": 58.536585365854,
+            "firstServeWonPct": 72.916666666667,
+            "secondServePct": 91.176470588235,
+            "secondServeWonPct": 52.941176470588,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 50,
+            "winners": 24,
+            "unforcedErrors": 25
+          },
+          "away": {
+            "matches": 4,
+            "wins": 4,
+            "aces": 5,
+            "avgAces": 1.25,
+            "doubleFaults": 3,
+            "avgDoubleFaults": 0.75,
+            "firstServePct": 72.558139534884,
+            "firstServeWonPct": 60.897435897436,
+            "secondServePct": 94.915254237288,
+            "secondServeWonPct": 61.016949152542,
+            "breakPointsSavedPct": 58.823529411765,
+            "breakPointsConvertedPct": 66.666666666667,
+            "winners": 25,
+            "unforcedErrors": 40
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -848,12 +4629,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198587",
       "sourceUrl": "https://www.sofascore.com/tennis/match/oleksandra-oliynykova-kimberly-birrell#id:16198587",
-      "capturedAt": "2026-05-28T02:55:44.579Z",
+      "capturedAt": "2026-05-28T04:05:01.892Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779958800,
-      "players": [],
+      "players": [
+        {
+          "name": "Kimberly Birrell",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 3,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1.3,
+              "avgAces": 1,
+              "avgDoubleFaults": 0,
+              "firstServePct": 69.3,
+              "firstServeWonPct": 52.3,
+              "secondServePct": 100,
+              "secondServeWonPct": 38.0,
+              "breakPointsSavedPct": 58.333333333333,
+              "breakPointsConvertedPct": 50,
+              "winners": 24.0,
+              "unforcedErrors": 28.0,
+              "holdPct": 46.0,
+              "doubleFaults": 3.7,
+              "servicePointsWonPct": 48.0,
+              "returnPointsWonPct": 46.0
+            }
+          }
+        },
+        {
+          "name": "Oleksandra Oliynykova",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 8,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 0.6,
+              "avgAces": 2,
+              "doubleFaults": 2.6,
+              "avgDoubleFaults": 5,
+              "firstServePct": 75.4,
+              "firstServeWonPct": 61.0,
+              "secondServePct": 68.75,
+              "secondServeWonPct": 30.5,
+              "breakPointsSavedPct": 75,
+              "breakPointsConvertedPct": 50,
+              "winners": 19.0,
+              "unforcedErrors": 25.0,
+              "holdPct": 61.8,
+              "servicePointsWonPct": 53.8,
+              "returnPointsWonPct": 52.5
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Oleksandra Oliynykova",
         "awayName": "Kimberly Birrell",
@@ -864,6 +4704,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Oleksandra Oliynykova",
+          "awayName": "Kimberly Birrell",
+          "homeVotes": 2340,
+          "awayVotes": 731,
+          "homePct": 76.2,
+          "awayPct": 23.8
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Oleksandra Oliynykova",
+            "fractionalValue": "11/25",
+            "impliedPct": 69.4,
+            "expected": 69,
+            "actual": 81
+          },
+          "away": {
+            "name": "Kimberly Birrell",
+            "fractionalValue": "7/4",
+            "impliedPct": 36.4,
+            "expected": 36,
+            "actual": 50
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 2,
+            "avgAces": 2,
+            "doubleFaults": 5,
+            "avgDoubleFaults": 5,
+            "firstServePct": 73.770491803279,
+            "firstServeWonPct": 64.444444444444,
+            "secondServePct": 68.75,
+            "secondServeWonPct": 18.75,
+            "breakPointsSavedPct": 75,
+            "breakPointsConvertedPct": 50,
+            "winners": 20,
+            "unforcedErrors": 25
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 1,
+            "avgAces": 1,
+            "doubleFaults": null,
+            "avgDoubleFaults": 0,
+            "firstServePct": 68.354430379747,
+            "firstServeWonPct": 57.407407407407,
+            "secondServePct": 100,
+            "secondServeWonPct": 40,
+            "breakPointsSavedPct": 58.333333333333,
+            "breakPointsConvertedPct": 50,
+            "winners": 23,
+            "unforcedErrors": 37
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -877,12 +4786,71 @@
       "source": "SofaScore warehouse",
       "eventId": "16198580",
       "sourceUrl": "https://www.sofascore.com/tennis/match/victoria-mboko-katerina-siniakova#id:16198580",
-      "capturedAt": "2026-05-28T02:55:48.516Z",
+      "capturedAt": "2026-05-28T04:05:09.178Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779982800,
-      "players": [],
+      "players": [
+        {
+          "name": "Katerina Siniakova",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 7,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 1.1,
+              "avgAces": 2,
+              "doubleFaults": 4.4,
+              "avgDoubleFaults": 9,
+              "firstServePct": 61.9,
+              "firstServeWonPct": 66.3,
+              "secondServePct": 79.545454545455,
+              "secondServeWonPct": 50.3,
+              "breakPointsSavedPct": 83.333333333333,
+              "breakPointsConvertedPct": 60,
+              "winners": 17.0,
+              "unforcedErrors": 39.0,
+              "holdPct": 74.6,
+              "servicePointsWonPct": 60.0,
+              "returnPointsWonPct": 46.3
+            }
+          }
+        },
+        {
+          "name": "Victoria Mboko",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-match stats",
+            "matches": 6,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3.5,
+              "avgAces": 3,
+              "doubleFaults": 4.3,
+              "avgDoubleFaults": 2,
+              "firstServePct": 63.5,
+              "firstServeWonPct": 63.5,
+              "secondServePct": 89.473684210526,
+              "secondServeWonPct": 52.0,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 60,
+              "winners": 22.0,
+              "unforcedErrors": 15.0,
+              "holdPct": 69.8,
+              "servicePointsWonPct": 58.8,
+              "returnPointsWonPct": 43.7
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Victoria Mboko",
         "awayName": "Katerina Siniakova",
@@ -893,6 +4861,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Victoria Mboko",
+          "awayName": "Katerina Siniakova",
+          "homeVotes": 3228,
+          "awayVotes": 351,
+          "homePct": 90.2,
+          "awayPct": 9.8
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Victoria Mboko",
+            "fractionalValue": "9/25",
+            "impliedPct": 73.5,
+            "expected": 73,
+            "actual": 90
+          },
+          "away": {
+            "name": "Katerina Siniakova",
+            "fractionalValue": "11/5",
+            "impliedPct": 31.2,
+            "expected": 31,
+            "actual": 11
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": 2,
+            "avgDoubleFaults": 2,
+            "firstServePct": 59.574468085106,
+            "firstServeWonPct": 64.285714285714,
+            "secondServePct": 89.473684210526,
+            "secondServeWonPct": 57.894736842105,
+            "breakPointsSavedPct": 50,
+            "breakPointsConvertedPct": 60,
+            "winners": 21,
+            "unforcedErrors": 15
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 2,
+            "avgAces": 2,
+            "doubleFaults": 9,
+            "avgDoubleFaults": 9,
+            "firstServePct": 55.555555555556,
+            "firstServeWonPct": 74.545454545455,
+            "secondServePct": 79.545454545455,
+            "secondServeWonPct": 43.181818181818,
+            "breakPointsSavedPct": 83.333333333333,
+            "breakPointsConvertedPct": 60,
+            "winners": 17,
+            "unforcedErrors": 39
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {
@@ -906,12 +4943,65 @@
       "source": "SofaScore warehouse",
       "eventId": "16198552",
       "sourceUrl": "https://www.sofascore.com/tennis/match/camila-osorio-yulia-putintseva#id:16198552",
-      "capturedAt": "2026-05-28T02:55:46.119Z",
+      "capturedAt": "2026-05-28T04:05:04.930Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "WTA",
       "startTimestamp": 1779964800,
-      "players": [],
+      "players": [
+        {
+          "name": "Yulia Putintseva",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 5,
+              "avgAces": 5,
+              "doubleFaults": 1,
+              "avgDoubleFaults": 1,
+              "firstServePct": 73.958333333333,
+              "firstServeWonPct": 54.929577464789,
+              "secondServePct": 96,
+              "secondServeWonPct": 52,
+              "breakPointsSavedPct": 54.545454545455,
+              "breakPointsConvertedPct": 61.538461538462,
+              "winners": 26,
+              "unforcedErrors": 27
+            }
+          }
+        },
+        {
+          "name": "Camila Osorio",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "SofaScore tournament-season stats",
+            "matches": 1,
+            "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+            "stats": {
+              "matches": 1,
+              "wins": 1,
+              "aces": 3,
+              "avgAces": 3,
+              "doubleFaults": 7,
+              "avgDoubleFaults": 7,
+              "firstServePct": 55.405405405405,
+              "firstServeWonPct": 60.975609756098,
+              "secondServePct": 78.787878787879,
+              "secondServeWonPct": 48.484848484848,
+              "breakPointsSavedPct": 78.571428571429,
+              "breakPointsConvertedPct": 85.714285714286,
+              "winners": 23,
+              "unforcedErrors": 33
+            }
+          }
+        }
+      ],
       "h2h": {
         "homeName": "Yulia Putintseva",
         "awayName": "Camila Osorio",
@@ -922,6 +5012,75 @@
       "score": {
         "home": {},
         "away": {}
+      },
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Yulia Putintseva",
+          "awayName": "Camila Osorio",
+          "homeVotes": 1272,
+          "awayVotes": 1814,
+          "homePct": 41.2,
+          "awayPct": 58.8
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Yulia Putintseva",
+            "fractionalValue": "6/5",
+            "impliedPct": 45.5,
+            "expected": 45,
+            "actual": 42
+          },
+          "away": {
+            "name": "Camila Osorio",
+            "fractionalValue": "67/100",
+            "impliedPct": 59.9,
+            "expected": 60,
+            "actual": 61
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 5,
+            "avgAces": 5,
+            "doubleFaults": 1,
+            "avgDoubleFaults": 1,
+            "firstServePct": 73.958333333333,
+            "firstServeWonPct": 54.929577464789,
+            "secondServePct": 96,
+            "secondServeWonPct": 52,
+            "breakPointsSavedPct": 54.545454545455,
+            "breakPointsConvertedPct": 61.538461538462,
+            "winners": 26,
+            "unforcedErrors": 27
+          },
+          "away": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 3,
+            "avgAces": 3,
+            "doubleFaults": 7,
+            "avgDoubleFaults": 7,
+            "firstServePct": 55.405405405405,
+            "firstServeWonPct": 60.975609756098,
+            "secondServePct": 78.787878787879,
+            "secondServeWonPct": 48.484848484848,
+            "breakPointsSavedPct": 78.571428571429,
+            "breakPointsConvertedPct": 85.714285714286,
+            "winners": 23,
+            "unforcedErrors": 33
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick."
       },
       "allStatRows": [],
       "coverage": {

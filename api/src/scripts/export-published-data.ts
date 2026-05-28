@@ -182,6 +182,60 @@ const buildSummaryOdds = (odds: any) => {
   }
 }
 
+const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
+  const rows = games
+    .filter((game) => game?.league === 'Tennis')
+    .flatMap((game) =>
+      (game.tennisContext?.derivativeMarkets ?? []).map((market: any) => ({
+        gameId: game.id,
+        gameTitle: game.title,
+        start: game.start,
+        marketType: market.marketType ?? market.label ?? '',
+        label: market.label ?? market.marketType ?? '',
+        selection: market.selection ?? market.lean ?? '',
+        line: market.line ?? null,
+        americanOdds: market.americanOdds ?? null,
+        confidence: Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? null,
+        modelPct: market.modelPct ?? null,
+        impliedPct: market.impliedPct ?? null,
+        edgePct: market.edgePct ?? null,
+        evPer100: market.evPer100 ?? null,
+        valueGrade: market.valueGrade ?? 'No grade',
+        betGrade: Boolean(market.betGrade),
+        reason: market.reason ?? ''
+      }))
+    )
+
+  if (!rows.length) return null
+
+  const countByGrade = rows.reduce<Record<string, number>>((acc, row) => {
+    acc[row.valueGrade] = (acc[row.valueGrade] ?? 0) + 1
+    return acc
+  }, {})
+  const byEvDesc = (left: any, right: any) => Number(right.evPer100 ?? -999) - Number(left.evPer100 ?? -999)
+  const byEvAsc = (left: any, right: any) => Number(left.evPer100 ?? 999) - Number(right.evPer100 ?? 999)
+  const pricedRows = rows.filter((row) => Number.isFinite(Number(row.evPer100)))
+  const noPriceRows = rows.filter((row) => /needs posted price|no price/i.test(String(row.valueGrade)))
+
+  return {
+    date: isoDate,
+    totalRows: rows.length,
+    pricedRows: pricedRows.length,
+    noPriceRows: noPriceRows.length,
+    countByGrade,
+    betGradeRows: rows.filter((row) => row.valueGrade === 'Bet-grade value').sort(byEvDesc).slice(0, 8),
+    thinRows: rows.filter((row) => row.valueGrade === 'Thin value').sort(byEvDesc).slice(0, 6),
+    negativeMlRows: rows
+      .filter((row) => row.valueGrade === 'Negative EV' && String(row.marketType).toLowerCase() === 'ml')
+      .sort(byEvAsc)
+      .slice(0, 6),
+    note:
+      isoDate === '2026-05-28'
+        ? 'May 28 is pre-match. May 27 backtest: ML value rows went 3-1 with +21.9% flat ROI; spreads went 1-3 and stay downgraded until the next settled pass.'
+        : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
+  }
+}
+
 const buildSlateGameSummary = (game: any) => ({
   id: game.id,
   league: game.league,
@@ -236,6 +290,7 @@ const exportSlates = async () => {
 
     const summaryDay = {
       ...day,
+      tennisValueSummary: buildTennisValueSummary(day.games ?? [], day.slateMeta?.isoDate ?? slate.id),
       games: Array.isArray(day.games) ? day.games.map(buildSlateGameSummary) : []
     }
 

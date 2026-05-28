@@ -202,13 +202,33 @@ const main = async () => {
     if (options.limit !== null && matched.length >= options.limit) continue
     const eventId = String(event.id)
     const sourceUrl = `https://www.sofascore.com/tennis/match/${event.slug || eventId}#id:${eventId}`
+    const eventPayload = await fetchJson(page, `event/${eventId}`, sourceUrl)
+    const fullEvent = eventPayload?.body?.event || event
+    const uniqueTournamentId = fullEvent?.tournament?.uniqueTournament?.id
+    const seasonId = fullEvent?.season?.id
     const payloads = {
-      event: await fetchJson(page, `event/${eventId}`, sourceUrl),
+      event: eventPayload,
       statistics: await fetchJson(page, `event/${eventId}/statistics`, sourceUrl),
       h2h: await fetchJson(page, `event/${eventId}/h2h`, sourceUrl),
-      odds: await fetchJson(page, `event/${eventId}/odds/featured`, sourceUrl)
+      votes: await fetchJson(page, `event/${eventId}/votes`, sourceUrl),
+      tennisPower: await fetchJson(page, `event/${eventId}/tennis-power`, sourceUrl),
+      winningOdds: await fetchJson(page, `event/${eventId}/provider/1/winning-odds`, sourceUrl),
+      odds: await fetchJson(page, `event/${eventId}/odds/1/featured`, sourceUrl)
     }
-    const fullEvent = payloads.event?.body?.event || event
+    if (uniqueTournamentId && seasonId && fullEvent?.homeTeam?.id) {
+      payloads.homeSeasonStats = await fetchJson(
+        page,
+        `team/${fullEvent.homeTeam.id}/unique-tournament/${uniqueTournamentId}/season/${seasonId}/statistics/overall`,
+        sourceUrl
+      )
+    }
+    if (uniqueTournamentId && seasonId && fullEvent?.awayTeam?.id) {
+      payloads.awaySeasonStats = await fetchJson(
+        page,
+        `team/${fullEvent.awayTeam.id}/unique-tournament/${uniqueTournamentId}/season/${seasonId}/statistics/overall`,
+        sourceUrl
+      )
+    }
     const output = {
       source: 'SofaScore',
       sourceUrl,

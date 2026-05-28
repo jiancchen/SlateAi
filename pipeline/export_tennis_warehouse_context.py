@@ -27,13 +27,17 @@ def as_json(value: str | None) -> Any:
         return value
 
 
+def normalize_name(value: str | None) -> str:
+    return " ".join(str(value or "").strip().lower().split())
+
+
 def stat_rows(conn: sqlite3.Connection, event_id: str, period: str = "ALL") -> list[dict[str, Any]]:
     return [
         dict(row)
         for row in conn.execute(
             """
             select player_side, player_name, normalized_name, period, group_name,
-                   stat_key, stat_name, raw_value, numeric_value, percentage
+                   stat_key, stat_name, raw_value, numeric_value, percentage, raw_json
             from tennis_sofascore_player_stat_rows
             where sofascore_event_id = ? and period = ?
             order by player_side, group_name, stat_name
@@ -43,22 +47,54 @@ def stat_rows(conn: sqlite3.Connection, event_id: str, period: str = "ALL") -> l
     ]
 
 
+def parsed_stat_payload(row: dict[str, Any]) -> dict[str, Any]:
+    raw = as_json(row.get("raw_json")) or {}
+    raw_item = raw.get("item") if isinstance(raw, dict) else {}
+    side = row.get("player_side")
+    prefix = "home" if side == "home" else "away"
+    numerator = raw_item.get(f"{prefix}Value") if isinstance(raw_item, dict) else None
+    denominator = raw_item.get(f"{prefix}Total") if isinstance(raw_item, dict) else None
+    return {
+        "label": row["stat_name"],
+        "group": row["group_name"],
+        "key": row["stat_key"],
+        "raw": row["raw_value"],
+        "numeric": row["numeric_value"],
+        "percentage": row["percentage"],
+        "numerator": numerator,
+        "denominator": denominator,
+    }
+
+
 def player_stat_summary(rows: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     summary: dict[str, dict[str, Any]] = {}
     key_map = {
         "aces": "aces",
         "doubleFaults": "doubleFaults",
         "firstServeAccuracy": "firstServePct",
+        "secondServeAccuracy": "secondServePct",
         "firstServePointsAccuracy": "firstServeWonPct",
         "secondServePointsAccuracy": "secondServeWonPct",
+        "servicePointsScored": "servicePointsWon",
         "serviceGamesTotal": "serviceGamesPlayed",
         "serviceGamesWon": "serviceGamesWon",
         "breakPointsSaved": "breakPointsSaved",
         "breakPointsScored": "breakPointsConverted",
         "firstReturnPoints": "firstReturnPointsWonPct",
         "secondReturnPoints": "secondReturnPointsWonPct",
+        "receiverPointsScored": "returnPointsWon",
         "pointsTotal": "totalPointsWon",
         "gamesWon": "gamesWon",
+        "winnersTotal": "winners",
+        "forehandWinners": "forehandWinners",
+        "backhandWinners": "backhandWinners",
+        "errorsTotal": "forcedErrors",
+        "forehandErrors": "forehandForcedErrors",
+        "backhandErrors": "backhandForcedErrors",
+        "unforcedErrorsTotal": "unforcedErrors",
+        "forehandUnforcedErrors": "forehandUnforcedErrors",
+        "backhandUnforcedErrors": "backhandUnforcedErrors",
+        "groundstrokeUnforcedErrors": "groundstrokeUnforcedErrors",
     }
     for row in rows:
         player = row["player_name"]
@@ -68,13 +104,150 @@ def player_stat_summary(rows: list[dict[str, Any]]) -> dict[str, dict[str, Any]]
         mapped = key_map.get(row["stat_key"])
         if not mapped:
             continue
-        bucket["stats"][mapped] = {
-            "label": row["stat_name"],
-            "raw": row["raw_value"],
-            "numeric": row["numeric_value"],
-            "percentage": row["percentage"],
-        }
+        bucket["stats"][mapped] = parsed_stat_payload(row)
     return summary
+
+
+def average(values: list[float]) -> float | None:
+    clean = [float(value) for value in values if isinstance(value, (int, float))]
+    if not clean:
+        return None
+    return round(sum(clean) / len(clean), 1)
+
+
+def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
+    rows = conn.execute(
+        """
+        select player_name, normalized_name, raw_json
+        from tennis_player_match_context
+        where match_id = ?
+        """,
+        (match_id,),
+    ).fetchall()
+    result: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        payload = as_json(row["raw_json"]) or {}
+        service = payload.get("serviceData") or {}
+        recent_stats = [
+            match.get("serviceStats") or {}
+            for match in payload.get("recentMatches") or []
+            if match.get("serviceStats")
+        ]
+        result[row["player_name"]] = {
+            "source": service.get("source") or "Recent-match stat average",
+            "matches": service.get("matchesWithStats") or len(recent_stats),
+            "note": service.get("note") or "Pregame expected stats are averaged from joined recent match stat rows.",
+            "stats": {
+                "holdPct": average([stat.get("holdPct") or stat.get("serviceHoldPct") for stat in recent_stats]),
+                "aces": average([stat.get("aces") for stat in recent_stats]),
+                "doubleFaults": average([stat.get("doubleFaults") for stat in recent_stats]),
+                "firstServePct": average([stat.get("firstServePct") for stat in recent_stats]),
+                "firstServeWonPct": average([stat.get("firstServeWonPct") for stat in recent_stats]) or service.get("avgFirstServeWonPct"),
+                "secondServeWonPct": average([stat.get("secondServeWonPct") for stat in recent_stats]),
+                "servicePointsWonPct": average([stat.get("servicePointsWonPct") for stat in recent_stats]),
+                "returnPointsWonPct": average([stat.get("returnPointsWonPct") for stat in recent_stats]),
+                "winners": average([stat.get("winners") for stat in recent_stats]),
+                "unforcedErrors": average([stat.get("unforcedErrors") for stat in recent_stats]),
+                "forcedErrors": None,
+            },
+        }
+    return result
+
+
+def pct_from_fractional(value: Any) -> float | None:
+    if not value:
+        return None
+    text = str(value)
+    if "/" not in text:
+        return None
+    left, right = text.split("/", 1)
+    try:
+        numerator = float(left)
+        denominator = float(right)
+    except ValueError:
+        return None
+    decimal = 1 + numerator / denominator if denominator else None
+    if not decimal:
+        return None
+    return round(100 / decimal, 1)
+
+
+def compact_sofascore_signals(raw_json: str | None, home_name: str | None, away_name: str | None) -> dict[str, Any]:
+    payload = as_json(raw_json) or {}
+    payloads = payload.get("payloads") or {}
+    votes = (payloads.get("votes") or {}).get("body") or {}
+    vote = votes.get("vote") or {}
+    vote1 = vote.get("vote1") or 0
+    vote2 = vote.get("vote2") or 0
+    vote_total = vote1 + vote2
+    winning_odds = (payloads.get("winningOdds") or {}).get("body") or {}
+    home_odds = winning_odds.get("home") or {}
+    away_odds = winning_odds.get("away") or {}
+    tennis_power_rows = ((payloads.get("tennisPower") or {}).get("body") or {}).get("tennisPowerRankings") or []
+    home_power = [row.get("value") for row in tennis_power_rows if isinstance(row.get("value"), (int, float)) and row.get("value") > 0]
+    away_power = [abs(row.get("value")) for row in tennis_power_rows if isinstance(row.get("value"), (int, float)) and row.get("value") < 0]
+
+    def season_stats(key: str) -> dict[str, Any] | None:
+        body = (payloads.get(key) or {}).get("body") or {}
+        stats = body.get("statistics") or {}
+        if not stats:
+            return None
+        return {
+            "matches": stats.get("matches"),
+            "wins": stats.get("wins"),
+            "aces": stats.get("aces"),
+            "avgAces": stats.get("avgAces"),
+            "doubleFaults": stats.get("doubleFaults"),
+            "avgDoubleFaults": stats.get("avgDoubleFaults"),
+            "firstServePct": stats.get("firstServePercentage"),
+            "firstServeWonPct": stats.get("firstServePointsWonPercentage"),
+            "secondServePct": stats.get("secondServePercentage"),
+            "secondServeWonPct": stats.get("secondServePointsWonPercentage"),
+            "breakPointsSavedPct": stats.get("breakPointsSavedPercentage"),
+            "breakPointsConvertedPct": stats.get("breakPointsSavedConvertedPercentage"),
+            "winners": stats.get("winnersTotal"),
+            "unforcedErrors": stats.get("unforcedErrorsTotal"),
+        }
+
+    return {
+        "source": "SofaScore",
+        "votes": {
+            "homeName": home_name,
+            "awayName": away_name,
+            "homeVotes": vote1,
+            "awayVotes": vote2,
+            "homePct": round(vote1 / vote_total * 100, 1) if vote_total else None,
+            "awayPct": round(vote2 / vote_total * 100, 1) if vote_total else None,
+        },
+        "winningOdds": {
+            "home": {
+                "name": home_name,
+                "fractionalValue": home_odds.get("fractionalValue"),
+                "impliedPct": pct_from_fractional(home_odds.get("fractionalValue")),
+                "expected": home_odds.get("expected"),
+                "actual": home_odds.get("actual"),
+            },
+            "away": {
+                "name": away_name,
+                "fractionalValue": away_odds.get("fractionalValue"),
+                "impliedPct": pct_from_fractional(away_odds.get("fractionalValue")),
+                "expected": away_odds.get("expected"),
+                "actual": away_odds.get("actual"),
+            },
+        },
+        "tennisPower": {
+            "rows": len(tennis_power_rows),
+            "homePositiveGames": len(home_power),
+            "awayPositiveGames": len(away_power),
+            "avgHomePositivePower": average(home_power),
+            "avgAwayPositivePower": average(away_power),
+        },
+        "seasonStats": {
+            "home": season_stats("homeSeasonStats"),
+            "away": season_stats("awaySeasonStats"),
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+    }
 
 
 def export_context(date: str) -> dict[str, Any]:
@@ -93,6 +266,79 @@ def export_context(date: str) -> dict[str, Any]:
         event_id = row["sofascore_event_id"]
         rows = stat_rows(conn, event_id)
         players = player_stat_summary(rows)
+        player_expected = expected_stats(conn, row["board_match_id"])
+        sofascore_signals = compact_sofascore_signals(
+            row.get("raw_json"),
+            row.get("home_player_name"),
+            row.get("away_player_name"),
+        )
+        season_stats = sofascore_signals.get("seasonStats") or {}
+        home_season_stats = season_stats.get("home") or {}
+        away_season_stats = season_stats.get("away") or {}
+        side_expected = {
+            "home": {
+                "source": "SofaScore tournament-season stats",
+                "matches": home_season_stats.get("matches"),
+                "note": "Fallback expected stats from SofaScore tournament-season aggregate.",
+                "stats": home_season_stats,
+            },
+            "away": {
+                "source": "SofaScore tournament-season stats",
+                "matches": away_season_stats.get("matches"),
+                "note": "Fallback expected stats from SofaScore tournament-season aggregate.",
+                "stats": away_season_stats,
+            },
+        }
+
+        def side_for_player(player_name: str | None) -> str | None:
+            if not player_name:
+                return None
+            if normalize_name(player_name) == normalize_name(row.get("home_player_name")):
+                return "home"
+            if normalize_name(player_name) == normalize_name(row.get("away_player_name")):
+                return "away"
+            return None
+
+        def merged_expected(player_name: str | None, side: str | None) -> dict[str, Any] | None:
+            recent_expected = player_expected.get(player_name or "") or {}
+            season_expected = side_expected.get(side or "") or {}
+            recent_stats = {
+                key: value
+                for key, value in (recent_expected.get("stats") or {}).items()
+                if value is not None
+            }
+            season_stats = {
+                key: value
+                for key, value in (season_expected.get("stats") or {}).items()
+                if value is not None
+            }
+            stats = {**season_stats, **recent_stats}
+            if not stats:
+                return None
+            return {
+                "source": recent_expected.get("source") or season_expected.get("source"),
+                "matches": recent_expected.get("matches") or season_expected.get("matches"),
+                "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+                "stats": stats,
+            }
+
+        for player_name, expected in player_expected.items():
+            side = side_for_player(player_name)
+            bucket = players.setdefault(player_name, {"name": player_name, "side": side, "stats": {}})
+            if not bucket.get("side"):
+                bucket["side"] = side
+            bucket["expectedStats"] = merged_expected(player_name, bucket.get("side")) or expected
+        for bucket in players.values():
+            if not bucket.get("expectedStats"):
+                bucket["expectedStats"] = merged_expected(bucket.get("name"), bucket.get("side"))
+        for side, player_name in (("home", row.get("home_player_name")), ("away", row.get("away_player_name"))):
+            if player_name and player_name not in players:
+                players[player_name] = {
+                    "name": player_name,
+                    "side": side,
+                    "stats": {},
+                    "expectedStats": merged_expected(player_name, side),
+                }
         matches[row["board_match_id"]] = {
             "source": "SofaScore warehouse",
             "eventId": event_id,
@@ -114,6 +360,7 @@ def export_context(date: str) -> dict[str, Any]:
                 "home": as_json(row["home_score_json"]),
                 "away": as_json(row["away_score_json"]),
             },
+            "sofascoreSignals": sofascore_signals,
             "allStatRows": rows,
             "coverage": {
                 "hasEvent": True,
